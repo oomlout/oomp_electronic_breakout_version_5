@@ -1,0 +1,348 @@
+bip_39_2_word_array:
+- theory
+- reward
+bip_39_2_word_no_space: theoryreward
+bip_39_2_word_space: theory reward
+bip_39_2_word_underscore: theory_reward
+bip_39_3_word_array:
+- theory
+- reward
+- addict
+bip_39_3_word_no_space: theoryrewardaddict
+bip_39_3_word_space: theory reward addict
+bip_39_3_word_underscore: theory_reward_addict
+bip_39_full_array:
+- theory
+- reward
+- addict
+- fine
+- solar
+- addict
+- pledge
+- assist
+- three
+- slender
+- world
+- hood
+bip_39_full_no_space: theoryrewardaddictfinesolaraddictpledgeassistthreeslenderworldhood
+bip_39_full_space: theory reward addict fine solar addict pledge assist three slender
+  world hood
+bip_39_full_underscore: theory_reward_addict_fine_solar_addict_pledge_assist_three_slender_world_hood
+breakout_description: 21_mm_width_51_mm_height_40_pin
+breakout_pcb_height: 51
+breakout_pcb_width: 21
+directory: parts/electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers
+id: electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers
+id_no_class: electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers
+id_no_size: electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers
+id_no_type: electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers
+id_oobb: electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers
+kwargs:
+  breakout_description: 21_mm_width_51_mm_height_40_pin
+  breakout_pcb_height: 51
+  breakout_pcb_width: 21
+  filter: ''
+  manufacturer: raspberry_pi
+  modes:
+  - 3dpr
+  navigation: true
+  oobb_name: mounting_plate_oobb
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_oobb_
+  oomp_mode: project
+  oomp_run: true
+  overwrite: true
+  part_number: pico_2_with_headers
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: raspberry_pi
+  taxonomy_15: pico_2_with_headers
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: rp2350a
+  taxonomy_5: pico
+  taxonomy_6: 21_mm_width_51_mm_height_40_pin
+  typ: all
+  type: default_mounting_plate_oobb
+  type_1: microcontroller
+  type_2: rp2350a
+  type_3: pico
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers
+manufacturer: raspberry_pi
+md5: e057140d2b6ce606a9a06ee1196bf6b6
+md5_10: e057140d2b
+md5_10_upper: E057140D2B
+md5_5: e0571
+md5_5_upper: E0571
+md5_6: e05714
+md5_6_alpha: 8r4es
+md5_6_alpha_upper: 8R4ES
+md5_6_upper: E05714
+name: Electronic Breakout Microcontroller Rp2350A Pico 21 Mm Width 51 Mm Height 40
+  Pin Raspberry Pi Pico 2 With Headers
+name_no_class: Electronic Breakout Microcontroller Rp2350A Pico 21 Mm Width 51 Mm
+  Height 40 Pin Raspberry Pi Pico 2 With Headers
+name_no_size: Electronic Breakout Microcontroller Rp2350A Pico 21 Mm Width 51 Mm Height
+  40 Pin Raspberry Pi Pico 2 With Headers
+name_no_type: Electronic Breakout Microcontroller Rp2350A Pico 21 Mm Width 51 Mm Height
+  40 Pin Raspberry Pi Pico 2 With Headers
+name_proper: Electronic Breakout Microcontroller Rp2350A Pico 21 Mm Width 51 Mm Height
+  40 Pin Raspberry Pi Pico 2 With Headers
+name_space: electronic breakout microcontroller rp2350a pico 21 mm width 51 mm height
+  40 pin raspberry pi pico 2 with headers
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2350A PICO 21 MM WIDTH 51 MM HEIGHT
+  40 PIN RASPBERRY PI PICO 2 WITH HEADERS
+oobb_details:
+- breakout_description: 21_mm_width_51_mm_height_40_pin
+  breakout_pcb_height: 51
+  breakout_pcb_width: 21
+  manufacturer: raspberry_pi
+  oobb_name: mounting_plate_default
+  part_number: pico_2_with_headers
+  taxonomy_1: electronic
+  taxonomy_14: raspberry_pi
+  taxonomy_15: pico_2_with_headers
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: rp2350a
+  taxonomy_5: pico
+  taxonomy_6: 21_mm_width_51_mm_height_40_pin
+  type_1: microcontroller
+  type_2: rp2350a
+  type_3: pico
+- breakout_description: 21_mm_width_51_mm_height_40_pin
+  breakout_pcb_height: 51
+  breakout_pcb_width: 21
+  manufacturer: raspberry_pi
+  oobb_name: mounting_plate_oobb
+  part_number: pico_2_with_headers
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: raspberry_pi
+  taxonomy_15: pico_2_with_headers
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: rp2350a
+  taxonomy_5: pico
+  taxonomy_6: 21_mm_width_51_mm_height_40_pin
+  type_1: microcontroller
+  type_2: rp2350a
+  type_3: pico
+oobb_name: mounting_plate_oobb
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      breakout_description: 21_mm_width_51_mm_height_40_pin
+      breakout_pcb_height: 51
+      breakout_pcb_width: 21
+      directory: parts\electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers
+      manufacturer: raspberry_pi
+      name: electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers
+      name_proper: Electronic Breakout Microcontroller Rp2350A Pico 21 Mm Width 51
+        Mm Height 40 Pin Raspberry Pi Pico 2 With Headers
+      name_space: electronic breakout microcontroller rp2350a pico 21 mm width 51
+        mm height 40 pin raspberry pi pico 2 with headers
+      name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2350A PICO 21 MM WIDTH 51
+        MM HEIGHT 40 PIN RASPBERRY PI PICO 2 WITH HEADERS
+      oobb_details:
+      - breakout_description: 21_mm_width_51_mm_height_40_pin
+        breakout_pcb_height: 51
+        breakout_pcb_width: 21
+        manufacturer: raspberry_pi
+        oobb_name: mounting_plate_default
+        part_number: pico_2_with_headers
+        taxonomy_1: electronic
+        taxonomy_14: raspberry_pi
+        taxonomy_15: pico_2_with_headers
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: rp2350a
+        taxonomy_5: pico
+        taxonomy_6: 21_mm_width_51_mm_height_40_pin
+        type_1: microcontroller
+        type_2: rp2350a
+        type_3: pico
+      - breakout_description: 21_mm_width_51_mm_height_40_pin
+        breakout_pcb_height: 51
+        breakout_pcb_width: 21
+        manufacturer: raspberry_pi
+        oobb_name: mounting_plate_oobb
+        part_number: pico_2_with_headers
+        scad_output: working_oobb
+        taxonomy_1: electronic
+        taxonomy_14: raspberry_pi
+        taxonomy_15: pico_2_with_headers
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: rp2350a
+        taxonomy_5: pico
+        taxonomy_6: 21_mm_width_51_mm_height_40_pin
+        type_1: microcontroller
+        type_2: rp2350a
+        type_3: pico
+      part_number: pico_2_with_headers
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: raspberry_pi
+      taxonomy_15: pico_2_with_headers
+      taxonomy_2: breakout
+      taxonomy_3: microcontroller
+      taxonomy_4: rp2350a
+      taxonomy_5: pico
+      taxonomy_6: 21_mm_width_51_mm_height_40_pin
+      taxonomy_7: ''
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: microcontroller
+      type_2: rp2350a
+      type_3: pico
+      url_chat: ''
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers
+part_number: pico_2_with_headers
+project_name: C:\gh\oomp_electronic_breakout
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: raspberry_pi
+taxonomy_14_capital: Raspberry Pi
+taxonomy_14_first_letter: r
+taxonomy_14_first_letter_upper: R
+taxonomy_14_length_1: r
+taxonomy_14_length_2: ra
+taxonomy_14_length_3: ras
+taxonomy_14_length_4: rasp
+taxonomy_14_length_5: raspb
+taxonomy_14_upper: RASPBERRY_PI
+taxonomy_14_upper_length_1: R
+taxonomy_14_upper_length_2: RA
+taxonomy_14_upper_length_3: RAS
+taxonomy_14_upper_length_4: RASP
+taxonomy_14_upper_length_5: RASPB
+taxonomy_15: pico_2_with_headers
+taxonomy_15_capital: Pico 2 With Headers
+taxonomy_15_first_letter: p
+taxonomy_15_first_letter_upper: P
+taxonomy_15_length_1: p
+taxonomy_15_length_2: pi
+taxonomy_15_length_3: pic
+taxonomy_15_length_4: pico
+taxonomy_15_length_5: pico_
+taxonomy_15_upper: PICO_2_WITH_HEADERS
+taxonomy_15_upper_length_1: P
+taxonomy_15_upper_length_2: PI
+taxonomy_15_upper_length_3: PIC
+taxonomy_15_upper_length_4: PICO
+taxonomy_15_upper_length_5: PICO_
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: rp2350a
+taxonomy_4_capital: Rp2350A
+taxonomy_4_first_letter: r
+taxonomy_4_first_letter_upper: R
+taxonomy_4_length_1: r
+taxonomy_4_length_2: rp
+taxonomy_4_length_3: rp2
+taxonomy_4_length_4: rp23
+taxonomy_4_length_5: rp235
+taxonomy_4_upper: RP2350A
+taxonomy_4_upper_length_1: R
+taxonomy_4_upper_length_2: RP
+taxonomy_4_upper_length_3: RP2
+taxonomy_4_upper_length_4: RP23
+taxonomy_4_upper_length_5: RP235
+taxonomy_5: pico
+taxonomy_5_capital: Pico
+taxonomy_5_first_letter: p
+taxonomy_5_first_letter_upper: P
+taxonomy_5_length_1: p
+taxonomy_5_length_2: pi
+taxonomy_5_length_3: pic
+taxonomy_5_length_4: pico
+taxonomy_5_length_5: pico
+taxonomy_5_upper: PICO
+taxonomy_5_upper_length_1: P
+taxonomy_5_upper_length_2: PI
+taxonomy_5_upper_length_3: PIC
+taxonomy_5_upper_length_4: PICO
+taxonomy_5_upper_length_5: PICO
+taxonomy_6: 21_mm_width_51_mm_height_40_pin
+taxonomy_6_capital: 21 mm Width 51 mm Height 40 Pin
+taxonomy_6_first_letter: '2'
+taxonomy_6_first_letter_upper: '2'
+taxonomy_6_length_1: '2'
+taxonomy_6_length_2: '21'
+taxonomy_6_length_3: '21_'
+taxonomy_6_length_4: 21_m
+taxonomy_6_length_5: 21_mm
+taxonomy_6_upper: 21_MM_WIDTH_51_MM_HEIGHT_40_PIN
+taxonomy_6_upper_length_1: '2'
+taxonomy_6_upper_length_2: '21'
+taxonomy_6_upper_length_3: '21_'
+taxonomy_6_upper_length_4: 21_M
+taxonomy_6_upper_length_5: 21_MM
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+type_1: microcontroller
+type_2: rp2350a
+type_3: pico
+url_chat: ''

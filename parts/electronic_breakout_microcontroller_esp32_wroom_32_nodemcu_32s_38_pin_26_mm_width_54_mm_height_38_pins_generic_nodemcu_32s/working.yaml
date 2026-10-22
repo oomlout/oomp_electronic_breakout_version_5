@@ -1,0 +1,315 @@
+bip_39_2_word_array:
+- result
+- execute
+bip_39_2_word_no_space: resultexecute
+bip_39_2_word_space: result execute
+bip_39_2_word_underscore: result_execute
+bip_39_3_word_array:
+- result
+- execute
+- quote
+bip_39_3_word_no_space: resultexecutequote
+bip_39_3_word_space: result execute quote
+bip_39_3_word_underscore: result_execute_quote
+bip_39_full_array:
+- result
+- execute
+- quote
+- wagon
+- wash
+- hundred
+- clinic
+- home
+- require
+- toe
+- forum
+- shuffle
+bip_39_full_no_space: resultexecutequotewagonwashhundredclinichomerequiretoeforumshuffle
+bip_39_full_space: result execute quote wagon wash hundred clinic home require toe
+    forum shuffle
+bip_39_full_underscore: result_execute_quote_wagon_wash_hundred_clinic_home_require_toe_forum_shuffle
+breakout_description: 26_mm_width_54_mm_height_38_pins
+breakout_pcb_height: 54
+breakout_pcb_width: 26
+directory: parts/electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s
+id: electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s
+id_no_class: electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s
+id_no_size: electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s
+id_no_type: electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s
+manufacturer: generic
+md5: b7c9e6c07b2f76de4acb68b71c716ee3
+md5_10: b7c9e6c07b
+md5_10_upper: B7C9E6C07B
+md5_5: b7c9e
+md5_5_upper: B7C9E
+md5_6: b7c9e6
+md5_6_alpha: 765t2
+md5_6_alpha_upper: 765T2
+md5_6_upper: B7C9E6
+name: Electronic Breakout Microcontroller Esp32 Wroom 32 Nodemcu 32S 38 Pin 26 Mm
+    Width 54 Mm Height 38 Pins Generic Nodemcu 32S
+name_no_class: Electronic Breakout Microcontroller Esp32 Wroom 32 Nodemcu 32S 38 Pin
+    26 Mm Width 54 Mm Height 38 Pins Generic Nodemcu 32S
+name_no_size: Electronic Breakout Microcontroller Esp32 Wroom 32 Nodemcu 32S 38 Pin
+    26 Mm Width 54 Mm Height 38 Pins Generic Nodemcu 32S
+name_no_type: Electronic Breakout Microcontroller Esp32 Wroom 32 Nodemcu 32S 38 Pin
+    26 Mm Width 54 Mm Height 38 Pins Generic Nodemcu 32S
+name_proper: Electronic Breakout Microcontroller Esp32 Wroom 32 Nodemcu 32S 38 Pin
+    26 Mm Width 54 Mm Height 38 Pins Generic Nodemcu 32S
+name_space: electronic breakout microcontroller esp32 wroom 32 nodemcu 32s 38 pin
+    26 mm width 54 mm height 38 pins generic nodemcu 32s
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 WROOM 32 NODEMCU 32S 38 PIN
+    26 MM WIDTH 54 MM HEIGHT 38 PINS GENERIC NODEMCU 32S
+oobb_details:
+-   breakout_description: 26_mm_width_54_mm_height_38_pins
+    breakout_pcb_height: 54
+    breakout_pcb_width: 26
+    manufacturer: generic
+    oobb_name: mounting_plate_default
+    part_number: nodemcu_32s
+    taxonomy_1: electronic
+    taxonomy_14: generic
+    taxonomy_15: nodemcu_32s
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_wroom_32
+    taxonomy_5: nodemcu_32s_38_pin
+    taxonomy_6: 26_mm_width_54_mm_height_38_pins
+    type_1: microcontroller
+    type_2: esp32_wroom_32
+    type_3: nodemcu_32s_38_pin
+-   breakout_description: 26_mm_width_54_mm_height_38_pins
+    breakout_pcb_height: 54
+    breakout_pcb_width: 26
+    manufacturer: generic
+    oobb_name: mounting_plate_oobb
+    part_number: nodemcu_32s
+    scad_output: working_oobb
+    taxonomy_1: electronic
+    taxonomy_14: generic
+    taxonomy_15: nodemcu_32s
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_wroom_32
+    taxonomy_5: nodemcu_32s_38_pin
+    taxonomy_6: 26_mm_width_54_mm_height_38_pins
+    type_1: microcontroller
+    type_2: esp32_wroom_32
+    type_3: nodemcu_32s_38_pin
+oomlout_ai_roboclick_1:
+    actions:
+    -   command: text_jinja_template
+        convert_to_pdf: false
+        convert_to_png: false
+        dict_data:
+            breakout_description: 26_mm_width_54_mm_height_38_pins
+            breakout_pcb_height: 54
+            breakout_pcb_width: 26
+            directory: parts\electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s
+            manufacturer: generic
+            name: electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s
+            name_proper: Electronic Breakout Microcontroller Esp32 Wroom 32 Nodemcu
+                32S 38 Pin 26 Mm Width 54 Mm Height 38 Pins Generic Nodemcu 32S
+            name_space: electronic breakout microcontroller esp32 wroom 32 nodemcu
+                32s 38 pin 26 mm width 54 mm height 38 pins generic nodemcu 32s
+            name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 WROOM 32 NODEMCU
+                32S 38 PIN 26 MM WIDTH 54 MM HEIGHT 38 PINS GENERIC NODEMCU 32S
+            oobb_details:
+            -   breakout_description: 26_mm_width_54_mm_height_38_pins
+                breakout_pcb_height: 54
+                breakout_pcb_width: 26
+                manufacturer: generic
+                oobb_name: mounting_plate_default
+                part_number: nodemcu_32s
+                taxonomy_1: electronic
+                taxonomy_14: generic
+                taxonomy_15: nodemcu_32s
+                taxonomy_2: breakout
+                taxonomy_3: microcontroller
+                taxonomy_4: esp32_wroom_32
+                taxonomy_5: nodemcu_32s_38_pin
+                taxonomy_6: 26_mm_width_54_mm_height_38_pins
+                type_1: microcontroller
+                type_2: esp32_wroom_32
+                type_3: nodemcu_32s_38_pin
+            -   breakout_description: 26_mm_width_54_mm_height_38_pins
+                breakout_pcb_height: 54
+                breakout_pcb_width: 26
+                manufacturer: generic
+                oobb_name: mounting_plate_oobb
+                part_number: nodemcu_32s
+                scad_output: working_oobb
+                taxonomy_1: electronic
+                taxonomy_14: generic
+                taxonomy_15: nodemcu_32s
+                taxonomy_2: breakout
+                taxonomy_3: microcontroller
+                taxonomy_4: esp32_wroom_32
+                taxonomy_5: nodemcu_32s_38_pin
+                taxonomy_6: 26_mm_width_54_mm_height_38_pins
+                type_1: microcontroller
+                type_2: esp32_wroom_32
+                type_3: nodemcu_32s_38_pin
+            part_number: nodemcu_32s
+            taxonomy_1: electronic
+            taxonomy_10: ''
+            taxonomy_11: ''
+            taxonomy_12: ''
+            taxonomy_13: ''
+            taxonomy_14: generic
+            taxonomy_15: nodemcu_32s
+            taxonomy_2: breakout
+            taxonomy_3: microcontroller
+            taxonomy_4: esp32_wroom_32
+            taxonomy_5: nodemcu_32s_38_pin
+            taxonomy_6: 26_mm_width_54_mm_height_38_pins
+            taxonomy_7: ''
+            taxonomy_8: ''
+            taxonomy_9: ''
+            type_1: microcontroller
+            type_2: esp32_wroom_32
+            type_3: nodemcu_32s_38_pin
+            url_chat: ''
+        dict_data_files: {}
+        dict_data_files_exists: {}
+        file_output: label_oomp.svg
+        file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+        search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s
+part_number: nodemcu_32s
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: generic
+taxonomy_14_capital: Generic
+taxonomy_14_first_letter: g
+taxonomy_14_first_letter_upper: G
+taxonomy_14_length_1: g
+taxonomy_14_length_2: ge
+taxonomy_14_length_3: gen
+taxonomy_14_length_4: gene
+taxonomy_14_length_5: gener
+taxonomy_14_upper: GENERIC
+taxonomy_14_upper_length_1: G
+taxonomy_14_upper_length_2: GE
+taxonomy_14_upper_length_3: GEN
+taxonomy_14_upper_length_4: GENE
+taxonomy_14_upper_length_5: GENER
+taxonomy_15: nodemcu_32s
+taxonomy_15_capital: Nodemcu 32S
+taxonomy_15_first_letter: n
+taxonomy_15_first_letter_upper: N
+taxonomy_15_length_1: n
+taxonomy_15_length_2: 'no'
+taxonomy_15_length_3: nod
+taxonomy_15_length_4: node
+taxonomy_15_length_5: nodem
+taxonomy_15_upper: NODEMCU_32S
+taxonomy_15_upper_length_1: N
+taxonomy_15_upper_length_2: 'NO'
+taxonomy_15_upper_length_3: NOD
+taxonomy_15_upper_length_4: NODE
+taxonomy_15_upper_length_5: NODEM
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: esp32_wroom_32
+taxonomy_4_capital: Esp32 Wroom 32
+taxonomy_4_first_letter: e
+taxonomy_4_first_letter_upper: E
+taxonomy_4_length_1: e
+taxonomy_4_length_2: es
+taxonomy_4_length_3: esp
+taxonomy_4_length_4: esp3
+taxonomy_4_length_5: esp32
+taxonomy_4_upper: ESP32_WROOM_32
+taxonomy_4_upper_length_1: E
+taxonomy_4_upper_length_2: ES
+taxonomy_4_upper_length_3: ESP
+taxonomy_4_upper_length_4: ESP3
+taxonomy_4_upper_length_5: ESP32
+taxonomy_5: nodemcu_32s_38_pin
+taxonomy_5_capital: Nodemcu 32S 38 Pin
+taxonomy_5_first_letter: n
+taxonomy_5_first_letter_upper: N
+taxonomy_5_length_1: n
+taxonomy_5_length_2: 'no'
+taxonomy_5_length_3: nod
+taxonomy_5_length_4: node
+taxonomy_5_length_5: nodem
+taxonomy_5_upper: NODEMCU_32S_38_PIN
+taxonomy_5_upper_length_1: N
+taxonomy_5_upper_length_2: 'NO'
+taxonomy_5_upper_length_3: NOD
+taxonomy_5_upper_length_4: NODE
+taxonomy_5_upper_length_5: NODEM
+taxonomy_6: 26_mm_width_54_mm_height_38_pins
+taxonomy_6_capital: 26 mm Width 54 mm Height 38 Pins
+taxonomy_6_first_letter: '2'
+taxonomy_6_first_letter_upper: '2'
+taxonomy_6_length_1: '2'
+taxonomy_6_length_2: '26'
+taxonomy_6_length_3: '26_'
+taxonomy_6_length_4: 26_m
+taxonomy_6_length_5: 26_mm
+taxonomy_6_upper: 26_MM_WIDTH_54_MM_HEIGHT_38_PINS
+taxonomy_6_upper_length_1: '2'
+taxonomy_6_upper_length_2: '26'
+taxonomy_6_upper_length_3: '26_'
+taxonomy_6_upper_length_4: 26_M
+taxonomy_6_upper_length_5: 26_MM
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+type_1: microcontroller
+type_2: esp32_wroom_32
+type_3: nodemcu_32s_38_pin
+url_chat: ''

@@ -1,0 +1,315 @@
+bip_39_2_word_array:
+- assist
+- like
+bip_39_2_word_no_space: assistlike
+bip_39_2_word_space: assist like
+bip_39_2_word_underscore: assist_like
+bip_39_3_word_array:
+- assist
+- like
+- exchange
+bip_39_3_word_no_space: assistlikeexchange
+bip_39_3_word_space: assist like exchange
+bip_39_3_word_underscore: assist_like_exchange
+bip_39_full_array:
+- assist
+- like
+- exchange
+- pear
+- doll
+- faint
+- jaguar
+- village
+- actress
+- fury
+- sister
+- enter
+bip_39_full_no_space: assistlikeexchangepeardollfaintjaguarvillageactressfurysisterenter
+bip_39_full_space: assist like exchange pear doll faint jaguar village actress fury
+    sister enter
+bip_39_full_underscore: assist_like_exchange_pear_doll_faint_jaguar_village_actress_fury_sister_enter
+breakout_description: 27_mm_width_40_5_mm_height_16_pins
+breakout_pcb_height: 40.5
+breakout_pcb_width: 27
+directory: parts/electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam
+id: electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam
+id_no_class: electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam
+id_no_size: electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam
+id_no_type: electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam
+manufacturer: ai_thinker
+md5: 0dd0353ad1040aa3ddcfa002cbcf2625
+md5_10: 0dd0353ad1
+md5_10_upper: 0DD0353AD1
+md5_5: 0dd03
+md5_5_upper: 0DD03
+md5_6: 0dd035
+md5_6_alpha: jeid
+md5_6_alpha_upper: JEID
+md5_6_upper: 0DD035
+name: Electronic Breakout Microcontroller Esp32 S Esp32 Cam 16 Pin 27 Mm Width 40
+    5 Mm Height 16 Pins Ai Thinker Esp32 Cam
+name_no_class: Electronic Breakout Microcontroller Esp32 S Esp32 Cam 16 Pin 27 Mm
+    Width 40 5 Mm Height 16 Pins Ai Thinker Esp32 Cam
+name_no_size: Electronic Breakout Microcontroller Esp32 S Esp32 Cam 16 Pin 27 Mm Width
+    40 5 Mm Height 16 Pins Ai Thinker Esp32 Cam
+name_no_type: Electronic Breakout Microcontroller Esp32 S Esp32 Cam 16 Pin 27 Mm Width
+    40 5 Mm Height 16 Pins Ai Thinker Esp32 Cam
+name_proper: Electronic Breakout Microcontroller Esp32 S Esp32 Cam 16 Pin 27 Mm Width
+    40 5 Mm Height 16 Pins Ai Thinker Esp32 Cam
+name_space: electronic breakout microcontroller esp32 s esp32 cam 16 pin 27 mm width
+    40 5 mm height 16 pins ai thinker esp32 cam
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 S ESP32 CAM 16 PIN 27 MM WIDTH
+    40 5 MM HEIGHT 16 PINS AI THINKER ESP32 CAM
+oobb_details:
+-   breakout_description: 27_mm_width_40_5_mm_height_16_pins
+    breakout_pcb_height: 40.5
+    breakout_pcb_width: 27
+    manufacturer: ai_thinker
+    oobb_name: mounting_plate_default
+    part_number: esp32_cam
+    taxonomy_1: electronic
+    taxonomy_14: ai_thinker
+    taxonomy_15: esp32_cam
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_s
+    taxonomy_5: esp32_cam_16_pin
+    taxonomy_6: 27_mm_width_40_5_mm_height_16_pins
+    type_1: microcontroller
+    type_2: esp32_s
+    type_3: esp32_cam_16_pin
+-   breakout_description: 27_mm_width_40_5_mm_height_16_pins
+    breakout_pcb_height: 40.5
+    breakout_pcb_width: 27
+    manufacturer: ai_thinker
+    oobb_name: mounting_plate_oobb
+    part_number: esp32_cam
+    scad_output: working_oobb
+    taxonomy_1: electronic
+    taxonomy_14: ai_thinker
+    taxonomy_15: esp32_cam
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_s
+    taxonomy_5: esp32_cam_16_pin
+    taxonomy_6: 27_mm_width_40_5_mm_height_16_pins
+    type_1: microcontroller
+    type_2: esp32_s
+    type_3: esp32_cam_16_pin
+oomlout_ai_roboclick_1:
+    actions:
+    -   command: text_jinja_template
+        convert_to_pdf: false
+        convert_to_png: false
+        dict_data:
+            breakout_description: 27_mm_width_40_5_mm_height_16_pins
+            breakout_pcb_height: 40.5
+            breakout_pcb_width: 27
+            directory: parts\electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam
+            manufacturer: ai_thinker
+            name: electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam
+            name_proper: Electronic Breakout Microcontroller Esp32 S Esp32 Cam 16
+                Pin 27 Mm Width 40 5 Mm Height 16 Pins Ai Thinker Esp32 Cam
+            name_space: electronic breakout microcontroller esp32 s esp32 cam 16 pin
+                27 mm width 40 5 mm height 16 pins ai thinker esp32 cam
+            name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 S ESP32 CAM 16 PIN
+                27 MM WIDTH 40 5 MM HEIGHT 16 PINS AI THINKER ESP32 CAM
+            oobb_details:
+            -   breakout_description: 27_mm_width_40_5_mm_height_16_pins
+                breakout_pcb_height: 40.5
+                breakout_pcb_width: 27
+                manufacturer: ai_thinker
+                oobb_name: mounting_plate_default
+                part_number: esp32_cam
+                taxonomy_1: electronic
+                taxonomy_14: ai_thinker
+                taxonomy_15: esp32_cam
+                taxonomy_2: breakout
+                taxonomy_3: microcontroller
+                taxonomy_4: esp32_s
+                taxonomy_5: esp32_cam_16_pin
+                taxonomy_6: 27_mm_width_40_5_mm_height_16_pins
+                type_1: microcontroller
+                type_2: esp32_s
+                type_3: esp32_cam_16_pin
+            -   breakout_description: 27_mm_width_40_5_mm_height_16_pins
+                breakout_pcb_height: 40.5
+                breakout_pcb_width: 27
+                manufacturer: ai_thinker
+                oobb_name: mounting_plate_oobb
+                part_number: esp32_cam
+                scad_output: working_oobb
+                taxonomy_1: electronic
+                taxonomy_14: ai_thinker
+                taxonomy_15: esp32_cam
+                taxonomy_2: breakout
+                taxonomy_3: microcontroller
+                taxonomy_4: esp32_s
+                taxonomy_5: esp32_cam_16_pin
+                taxonomy_6: 27_mm_width_40_5_mm_height_16_pins
+                type_1: microcontroller
+                type_2: esp32_s
+                type_3: esp32_cam_16_pin
+            part_number: esp32_cam
+            taxonomy_1: electronic
+            taxonomy_10: ''
+            taxonomy_11: ''
+            taxonomy_12: ''
+            taxonomy_13: ''
+            taxonomy_14: ai_thinker
+            taxonomy_15: esp32_cam
+            taxonomy_2: breakout
+            taxonomy_3: microcontroller
+            taxonomy_4: esp32_s
+            taxonomy_5: esp32_cam_16_pin
+            taxonomy_6: 27_mm_width_40_5_mm_height_16_pins
+            taxonomy_7: ''
+            taxonomy_8: ''
+            taxonomy_9: ''
+            type_1: microcontroller
+            type_2: esp32_s
+            type_3: esp32_cam_16_pin
+            url_chat: ''
+        dict_data_files: {}
+        dict_data_files_exists: {}
+        file_output: label_oomp.svg
+        file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+        search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam
+part_number: esp32_cam
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ai_thinker
+taxonomy_14_capital: Ai Thinker
+taxonomy_14_first_letter: a
+taxonomy_14_first_letter_upper: A
+taxonomy_14_length_1: a
+taxonomy_14_length_2: ai
+taxonomy_14_length_3: ai_
+taxonomy_14_length_4: ai_t
+taxonomy_14_length_5: ai_th
+taxonomy_14_upper: AI_THINKER
+taxonomy_14_upper_length_1: A
+taxonomy_14_upper_length_2: AI
+taxonomy_14_upper_length_3: AI_
+taxonomy_14_upper_length_4: AI_T
+taxonomy_14_upper_length_5: AI_TH
+taxonomy_15: esp32_cam
+taxonomy_15_capital: Esp32 Cam
+taxonomy_15_first_letter: e
+taxonomy_15_first_letter_upper: E
+taxonomy_15_length_1: e
+taxonomy_15_length_2: es
+taxonomy_15_length_3: esp
+taxonomy_15_length_4: esp3
+taxonomy_15_length_5: esp32
+taxonomy_15_upper: ESP32_CAM
+taxonomy_15_upper_length_1: E
+taxonomy_15_upper_length_2: ES
+taxonomy_15_upper_length_3: ESP
+taxonomy_15_upper_length_4: ESP3
+taxonomy_15_upper_length_5: ESP32
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: esp32_s
+taxonomy_4_capital: Esp32 S
+taxonomy_4_first_letter: e
+taxonomy_4_first_letter_upper: E
+taxonomy_4_length_1: e
+taxonomy_4_length_2: es
+taxonomy_4_length_3: esp
+taxonomy_4_length_4: esp3
+taxonomy_4_length_5: esp32
+taxonomy_4_upper: ESP32_S
+taxonomy_4_upper_length_1: E
+taxonomy_4_upper_length_2: ES
+taxonomy_4_upper_length_3: ESP
+taxonomy_4_upper_length_4: ESP3
+taxonomy_4_upper_length_5: ESP32
+taxonomy_5: esp32_cam_16_pin
+taxonomy_5_capital: Esp32 Cam 16 Pin
+taxonomy_5_first_letter: e
+taxonomy_5_first_letter_upper: E
+taxonomy_5_length_1: e
+taxonomy_5_length_2: es
+taxonomy_5_length_3: esp
+taxonomy_5_length_4: esp3
+taxonomy_5_length_5: esp32
+taxonomy_5_upper: ESP32_CAM_16_PIN
+taxonomy_5_upper_length_1: E
+taxonomy_5_upper_length_2: ES
+taxonomy_5_upper_length_3: ESP
+taxonomy_5_upper_length_4: ESP3
+taxonomy_5_upper_length_5: ESP32
+taxonomy_6: 27_mm_width_40_5_mm_height_16_pins
+taxonomy_6_capital: 27 mm Width 40 5 mm Height 16 Pins
+taxonomy_6_first_letter: '2'
+taxonomy_6_first_letter_upper: '2'
+taxonomy_6_length_1: '2'
+taxonomy_6_length_2: '27'
+taxonomy_6_length_3: '27_'
+taxonomy_6_length_4: 27_m
+taxonomy_6_length_5: 27_mm
+taxonomy_6_upper: 27_MM_WIDTH_40_5_MM_HEIGHT_16_PINS
+taxonomy_6_upper_length_1: '2'
+taxonomy_6_upper_length_2: '27'
+taxonomy_6_upper_length_3: '27_'
+taxonomy_6_upper_length_4: 27_M
+taxonomy_6_upper_length_5: 27_MM
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+type_1: microcontroller
+type_2: esp32_s
+type_3: esp32_cam_16_pin
+url_chat: ''

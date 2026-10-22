@@ -1,0 +1,2774 @@
+bip_39_2_word_array:
+- inject
+- crazy
+bip_39_2_word_no_space: injectcrazy
+bip_39_2_word_space: inject crazy
+bip_39_2_word_underscore: inject_crazy
+bip_39_3_word_array:
+- inject
+- crazy
+- diamond
+bip_39_3_word_no_space: injectcrazydiamond
+bip_39_3_word_space: inject crazy diamond
+bip_39_3_word_underscore: inject_crazy_diamond
+bip_39_full_array:
+- inject
+- crazy
+- diamond
+- element
+- slim
+- holiday
+- arrest
+- badge
+- travel
+- floor
+- ring
+- capital
+bip_39_full_no_space: injectcrazydiamondelementslimholidayarrestbadgetravelfloorringcapital
+bip_39_full_space: inject crazy diamond element slim holiday arrest badge travel floor
+  ring capital
+bip_39_full_underscore: inject_crazy_diamond_element_slim_holiday_arrest_badge_travel_floor_ring_capital
+breakout_description: 53_34_mm_width_68_58_mm_height
+breakout_pcb_height: 68.58
+breakout_pcb_width: 53.34
+directory: parts/electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+id: electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+id_no_class: electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+id_no_size: electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+id_no_type: electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+id_oobb: electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+kwargs:
+  breakout_description: 53_34_mm_width_68_58_mm_height
+  breakout_pcb_height: 68.58
+  breakout_pcb_width: 53.34
+  filter: ''
+  manufacturer: generic
+  modes:
+  - 3dpr
+  navigation: true
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  oomp_mode: project
+  oomp_run: true
+  overwrite: true
+  part_number: esp32_d1_r32
+  taxonomy_1: electronic
+  taxonomy_14: generic
+  taxonomy_15: esp32_d1_r32
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_wroom_32
+  taxonomy_5: d1_r32
+  taxonomy_6: 53_34_mm_width_68_58_mm_height
+  typ: all
+  type: default_mounting_plate_default
+  type_1: microcontroller
+  type_2: esp32_wroom_32
+  type_3: d1_r32
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+manufacturer: generic
+md5: 740658f4a3dcbcd983188be78b2ee811
+md5_10: 740658f4a3
+md5_10_upper: 740658F4A3
+md5_5: '74065'
+md5_5_upper: '74065'
+md5_6: '740658'
+md5_6_alpha: 4iz4o
+md5_6_alpha_upper: 4IZ4O
+md5_6_upper: '740658'
+name: Electronic Breakout Microcontroller Esp32 Wroom 32 D1 R32 53 34 Mm Width 68
+  58 Mm Height Generic Esp32 D1 R32
+name_no_class: Electronic Breakout Microcontroller Esp32 Wroom 32 D1 R32 53 34 Mm
+  Width 68 58 Mm Height Generic Esp32 D1 R32
+name_no_size: Electronic Breakout Microcontroller Esp32 Wroom 32 D1 R32 53 34 Mm Width
+  68 58 Mm Height Generic Esp32 D1 R32
+name_no_type: Electronic Breakout Microcontroller Esp32 Wroom 32 D1 R32 53 34 Mm Width
+  68 58 Mm Height Generic Esp32 D1 R32
+name_proper: Electronic Breakout Microcontroller Esp32 Wroom 32 D1 R32 53 34 Mm Width
+  68 58 Mm Height Generic Esp32 D1 R32
+name_space: electronic breakout microcontroller esp32 wroom 32 d1 r32 53 34 mm width
+  68 58 mm height generic esp32 d1 r32
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 WROOM 32 D1 R32 53 34 MM WIDTH
+  68 58 MM HEIGHT GENERIC ESP32 D1 R32
+oobb_details:
+- breakout_description: 53_34_mm_width_68_58_mm_height
+  breakout_pcb_height: 68.58
+  breakout_pcb_width: 53.34
+  manufacturer: generic
+  oobb_name: mounting_plate_default
+  part_number: esp32_d1_r32
+  taxonomy_1: electronic
+  taxonomy_14: generic
+  taxonomy_15: esp32_d1_r32
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_wroom_32
+  taxonomy_5: d1_r32
+  taxonomy_6: 53_34_mm_width_68_58_mm_height
+  type_1: microcontroller
+  type_2: esp32_wroom_32
+  type_3: d1_r32
+- breakout_description: 53_34_mm_width_68_58_mm_height
+  breakout_pcb_height: 68.58
+  breakout_pcb_width: 53.34
+  manufacturer: generic
+  oobb_name: mounting_plate_oobb
+  part_number: esp32_d1_r32
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: generic
+  taxonomy_15: esp32_d1_r32
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_wroom_32
+  taxonomy_5: d1_r32
+  taxonomy_6: 53_34_mm_width_68_58_mm_height
+  type_1: microcontroller
+  type_2: esp32_wroom_32
+  type_3: d1_r32
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      breakout_description: 53_34_mm_width_68_58_mm_height
+      breakout_pcb_height: 68.58
+      breakout_pcb_width: 53.34
+      directory: parts\electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+      manufacturer: generic
+      name: electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+      name_proper: Electronic Breakout Microcontroller Esp32 Wroom 32 D1 R32 53 34
+        Mm Width 68 58 Mm Height Generic Esp32 D1 R32
+      name_space: electronic breakout microcontroller esp32 wroom 32 d1 r32 53 34
+        mm width 68 58 mm height generic esp32 d1 r32
+      name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 WROOM 32 D1 R32 53 34
+        MM WIDTH 68 58 MM HEIGHT GENERIC ESP32 D1 R32
+      oobb_details:
+      - breakout_description: 53_34_mm_width_68_58_mm_height
+        breakout_pcb_height: 68.58
+        breakout_pcb_width: 53.34
+        manufacturer: generic
+        oobb_name: mounting_plate_default
+        part_number: esp32_d1_r32
+        taxonomy_1: electronic
+        taxonomy_14: generic
+        taxonomy_15: esp32_d1_r32
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_wroom_32
+        taxonomy_5: d1_r32
+        taxonomy_6: 53_34_mm_width_68_58_mm_height
+        type_1: microcontroller
+        type_2: esp32_wroom_32
+        type_3: d1_r32
+      - breakout_description: 53_34_mm_width_68_58_mm_height
+        breakout_pcb_height: 68.58
+        breakout_pcb_width: 53.34
+        manufacturer: generic
+        oobb_name: mounting_plate_oobb
+        part_number: esp32_d1_r32
+        scad_output: working_oobb
+        taxonomy_1: electronic
+        taxonomy_14: generic
+        taxonomy_15: esp32_d1_r32
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_wroom_32
+        taxonomy_5: d1_r32
+        taxonomy_6: 53_34_mm_width_68_58_mm_height
+        type_1: microcontroller
+        type_2: esp32_wroom_32
+        type_3: d1_r32
+      part_number: esp32_d1_r32
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: generic
+      taxonomy_15: esp32_d1_r32
+      taxonomy_2: breakout
+      taxonomy_3: microcontroller
+      taxonomy_4: esp32_wroom_32
+      taxonomy_5: d1_r32
+      taxonomy_6: 53_34_mm_width_68_58_mm_height
+      taxonomy_7: ''
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: microcontroller
+      type_2: esp32_wroom_32
+      type_3: d1_r32
+      url_chat: ''
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+part_number: esp32_d1_r32
+project_name: C:\gh\oomp_electronic_breakout
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: generic
+taxonomy_14_capital: Generic
+taxonomy_14_first_letter: g
+taxonomy_14_first_letter_upper: G
+taxonomy_14_length_1: g
+taxonomy_14_length_2: ge
+taxonomy_14_length_3: gen
+taxonomy_14_length_4: gene
+taxonomy_14_length_5: gener
+taxonomy_14_upper: GENERIC
+taxonomy_14_upper_length_1: G
+taxonomy_14_upper_length_2: GE
+taxonomy_14_upper_length_3: GEN
+taxonomy_14_upper_length_4: GENE
+taxonomy_14_upper_length_5: GENER
+taxonomy_15: esp32_d1_r32
+taxonomy_15_capital: Esp32 D1 R32
+taxonomy_15_first_letter: e
+taxonomy_15_first_letter_upper: E
+taxonomy_15_length_1: e
+taxonomy_15_length_2: es
+taxonomy_15_length_3: esp
+taxonomy_15_length_4: esp3
+taxonomy_15_length_5: esp32
+taxonomy_15_upper: ESP32_D1_R32
+taxonomy_15_upper_length_1: E
+taxonomy_15_upper_length_2: ES
+taxonomy_15_upper_length_3: ESP
+taxonomy_15_upper_length_4: ESP3
+taxonomy_15_upper_length_5: ESP32
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: esp32_wroom_32
+taxonomy_4_capital: Esp32 Wroom 32
+taxonomy_4_first_letter: e
+taxonomy_4_first_letter_upper: E
+taxonomy_4_length_1: e
+taxonomy_4_length_2: es
+taxonomy_4_length_3: esp
+taxonomy_4_length_4: esp3
+taxonomy_4_length_5: esp32
+taxonomy_4_upper: ESP32_WROOM_32
+taxonomy_4_upper_length_1: E
+taxonomy_4_upper_length_2: ES
+taxonomy_4_upper_length_3: ESP
+taxonomy_4_upper_length_4: ESP3
+taxonomy_4_upper_length_5: ESP32
+taxonomy_5: d1_r32
+taxonomy_5_capital: D1 R32
+taxonomy_5_first_letter: d
+taxonomy_5_first_letter_upper: D
+taxonomy_5_length_1: d
+taxonomy_5_length_2: d1
+taxonomy_5_length_3: d1_
+taxonomy_5_length_4: d1_r
+taxonomy_5_length_5: d1_r3
+taxonomy_5_upper: D1_R32
+taxonomy_5_upper_length_1: D
+taxonomy_5_upper_length_2: D1
+taxonomy_5_upper_length_3: D1_
+taxonomy_5_upper_length_4: D1_R
+taxonomy_5_upper_length_5: D1_R3
+taxonomy_6: 53_34_mm_width_68_58_mm_height
+taxonomy_6_capital: 53.34 mm Width 68.58 mm Height
+taxonomy_6_first_letter: '5'
+taxonomy_6_first_letter_upper: '5'
+taxonomy_6_length_1: '5'
+taxonomy_6_length_2: '53'
+taxonomy_6_length_3: '53_'
+taxonomy_6_length_4: '53_3'
+taxonomy_6_length_5: '53_34'
+taxonomy_6_upper: 53_34_MM_WIDTH_68_58_MM_HEIGHT
+taxonomy_6_upper_length_1: '5'
+taxonomy_6_upper_length_2: '53'
+taxonomy_6_upper_length_3: '53_'
+taxonomy_6_upper_length_4: '53_3'
+taxonomy_6_upper_length_5: '53_34'
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+thing:
+  bip_39_2_word_array:
+  - inject
+  - crazy
+  bip_39_2_word_no_space: injectcrazy
+  bip_39_2_word_space: inject crazy
+  bip_39_2_word_underscore: inject_crazy
+  bip_39_3_word_array:
+  - inject
+  - crazy
+  - diamond
+  bip_39_3_word_no_space: injectcrazydiamond
+  bip_39_3_word_space: inject crazy diamond
+  bip_39_3_word_underscore: inject_crazy_diamond
+  bip_39_full_array:
+  - inject
+  - crazy
+  - diamond
+  - element
+  - slim
+  - holiday
+  - arrest
+  - badge
+  - travel
+  - floor
+  - ring
+  - capital
+  bip_39_full_no_space: injectcrazydiamondelementslimholidayarrestbadgetravelfloorringcapital
+  bip_39_full_space: inject crazy diamond element slim holiday arrest badge travel
+    floor ring capital
+  bip_39_full_underscore: inject_crazy_diamond_element_slim_holiday_arrest_badge_travel_floor_ring_capital
+  breakout_description: 53_34_mm_width_68_58_mm_height
+  breakout_pcb_height: 68.58
+  breakout_pcb_width: 53.34
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 7
+      pos:
+      - 0
+      - 0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 89
+      - 104
+      - 3
+      type: positive
+      width: 6
+  - - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - -45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - -30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - -30.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - -30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - -15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - 0.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - 0.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - 0.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - 15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - 30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - 30.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - 30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - 45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - -45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - 45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - -45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - 45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - -45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - -30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - -30.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - -30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - -15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - 0.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - 0.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - 0.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - 15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - 30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - 30.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - 30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - 45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - -37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - -30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - -30.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - -30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - -7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - 0.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - 7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - 30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - 30.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - 30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - 37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -37.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -37.5
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -37.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -30.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -30.0
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -30.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -30.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -30.0
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -30.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 30.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 30.0
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 30.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 30.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 30.0
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 30.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - -37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - -30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - -30.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - -30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - -7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - 0.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - 7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - 30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - 30.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - 30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - 37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 37.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 37.5
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 37.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+  components_objects:
+  - breakout_description: 53_34_mm_width_68_58_mm_height
+    breakout_pcb_height: 68.58
+    breakout_pcb_width: 53.34
+    depth: 3
+    filter: ''
+    height: 7
+    manufacturer: generic
+    modes:
+    - 3dpr
+    navigation: true
+    oobb_name: mounting_plate_default
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: esp32_d1_r32
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    shape: oobb_plate
+    taxonomy_1: electronic
+    taxonomy_14: generic
+    taxonomy_15: esp32_d1_r32
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_wroom_32
+    taxonomy_5: d1_r32
+    taxonomy_6: 53_34_mm_width_68_58_mm_height
+    typ: all
+    type: positive
+    type_1: microcontroller
+    type_2: esp32_wroom_32
+    type_3: d1_r32
+    width: 6
+  - both_holes: true
+    breakout_description: 53_34_mm_width_68_58_mm_height
+    breakout_pcb_height: 68.58
+    breakout_pcb_width: 53.34
+    depth: 3
+    filter: ''
+    height: 7
+    holes: perimeter
+    manufacturer: generic
+    modes:
+    - 3dpr
+    navigation: true
+    oobb_name: mounting_plate_default
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: esp32_d1_r32
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    shape: oobb_holes
+    taxonomy_1: electronic
+    taxonomy_14: generic
+    taxonomy_15: esp32_d1_r32
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_wroom_32
+    taxonomy_5: d1_r32
+    taxonomy_6: 53_34_mm_width_68_58_mm_height
+    typ: all
+    type: p
+    type_1: microcontroller
+    type_2: esp32_wroom_32
+    type_3: d1_r32
+    width: 6
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_53_34_mm_width_68_58_mm_height_breakout_description_68.58_breakout_pcb_height_53.34_breakout_pcb_width_generic_manufacturer_mounting_plate_default_oobb_name_esp32_d1_r32_part_number_electronic_taxonomy_1_generic_taxonomy_14_esp32_d1_r32_taxonomy_15_breakout_taxonomy_2_microcontroller_taxonomy_3_esp32_wroom_32_taxonomy_4_d1_r32_taxonomy_5_53_34_mm_width_68_58_mm_height_taxonomy_6_microcontroller_type_1_esp32_wroom_32_type_2_d1_r32_type_3_6_width_7_height
+  - oobb_holes_shape_p_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_53_34_mm_width_68_58_mm_height_breakout_description_68.58_breakout_pcb_height_53.34_breakout_pcb_width_generic_manufacturer_mounting_plate_default_oobb_name_esp32_d1_r32_part_number_electronic_taxonomy_1_generic_taxonomy_14_esp32_d1_r32_taxonomy_15_breakout_taxonomy_2_microcontroller_taxonomy_3_esp32_wroom_32_taxonomy_4_d1_r32_taxonomy_5_53_34_mm_width_68_58_mm_height_taxonomy_6_microcontroller_type_1_esp32_wroom_32_type_2_d1_r32_type_3_6_width_7_height_true_both_holes_perimeter_holes
+  description: default mounting plate default 0x0x0
+  description_extra: ''
+  description_main: ''
+  directory: parts/electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+  id: electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+  id_no_class: electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+  id_no_size: electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+  id_no_type: electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+  kwargs:
+    breakout_description: 53_34_mm_width_68_58_mm_height
+    breakout_pcb_height: 68.58
+    breakout_pcb_width: 53.34
+    filter: ''
+    manufacturer: generic
+    modes:
+    - 3dpr
+    navigation: true
+    oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: esp32_d1_r32
+    save_type: all
+    taxonomy_1: electronic
+    taxonomy_14: generic
+    taxonomy_15: esp32_d1_r32
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_wroom_32
+    taxonomy_5: d1_r32
+    taxonomy_6: 53_34_mm_width_68_58_mm_height
+    typ: all
+    type: default_mounting_plate_default
+    type_1: microcontroller
+    type_2: esp32_wroom_32
+    type_3: d1_r32
+  link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+  link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+  link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+  manufacturer: generic
+  md5: 740658f4a3dcbcd983188be78b2ee811
+  md5_10: 740658f4a3
+  md5_10_upper: 740658F4A3
+  md5_5: '74065'
+  md5_5_upper: '74065'
+  md5_6: '740658'
+  md5_6_alpha: 4iz4o
+  md5_6_alpha_upper: 4IZ4O
+  md5_6_upper: '740658'
+  name: Electronic Breakout Microcontroller Esp32 Wroom 32 D1 R32 53 34 Mm Width 68
+    58 Mm Height Generic Esp32 D1 R32
+  name_no_class: Electronic Breakout Microcontroller Esp32 Wroom 32 D1 R32 53 34 Mm
+    Width 68 58 Mm Height Generic Esp32 D1 R32
+  name_no_size: Electronic Breakout Microcontroller Esp32 Wroom 32 D1 R32 53 34 Mm
+    Width 68 58 Mm Height Generic Esp32 D1 R32
+  name_no_type: Electronic Breakout Microcontroller Esp32 Wroom 32 D1 R32 53 34 Mm
+    Width 68 58 Mm Height Generic Esp32 D1 R32
+  name_proper: Electronic Breakout Microcontroller Esp32 Wroom 32 D1 R32 53 34 Mm
+    Width 68 58 Mm Height Generic Esp32 D1 R32
+  name_short: Default Mounting Plate Default
+  name_space: electronic breakout microcontroller esp32 wroom 32 d1 r32 53 34 mm width
+    68 58 mm height generic esp32 d1 r32
+  name_text: Oobb Part Default Mounting Plate Default
+  name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 WROOM 32 D1 R32 53 34 MM WIDTH
+    68 58 MM HEIGHT GENERIC ESP32 D1 R32
+  oobb_details:
+  - breakout_description: 53_34_mm_width_68_58_mm_height
+    breakout_pcb_height: 68.58
+    breakout_pcb_width: 53.34
+    manufacturer: generic
+    oobb_name: mounting_plate_default
+    part_number: esp32_d1_r32
+    taxonomy_1: electronic
+    taxonomy_14: generic
+    taxonomy_15: esp32_d1_r32
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_wroom_32
+    taxonomy_5: d1_r32
+    taxonomy_6: 53_34_mm_width_68_58_mm_height
+    type_1: microcontroller
+    type_2: esp32_wroom_32
+    type_3: d1_r32
+  - breakout_description: 53_34_mm_width_68_58_mm_height
+    breakout_pcb_height: 68.58
+    breakout_pcb_width: 53.34
+    manufacturer: generic
+    oobb_name: mounting_plate_oobb
+    part_number: esp32_d1_r32
+    scad_output: working_oobb
+    taxonomy_1: electronic
+    taxonomy_14: generic
+    taxonomy_15: esp32_d1_r32
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_wroom_32
+    taxonomy_5: d1_r32
+    taxonomy_6: 53_34_mm_width_68_58_mm_height
+    type_1: microcontroller
+    type_2: esp32_wroom_32
+    type_3: d1_r32
+  oobb_name: mounting_plate_default
+  oomlout_ai_roboclick_1:
+    actions:
+    - command: text_jinja_template
+      convert_to_pdf: false
+      convert_to_png: false
+      dict_data:
+        breakout_description: 53_34_mm_width_68_58_mm_height
+        breakout_pcb_height: 68.58
+        breakout_pcb_width: 53.34
+        directory: parts\electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+        manufacturer: generic
+        name: electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+        name_proper: Electronic Breakout Microcontroller Esp32 Wroom 32 D1 R32 53
+          34 Mm Width 68 58 Mm Height Generic Esp32 D1 R32
+        name_space: electronic breakout microcontroller esp32 wroom 32 d1 r32 53 34
+          mm width 68 58 mm height generic esp32 d1 r32
+        name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 WROOM 32 D1 R32 53 34
+          MM WIDTH 68 58 MM HEIGHT GENERIC ESP32 D1 R32
+        oobb_details:
+        - breakout_description: 53_34_mm_width_68_58_mm_height
+          breakout_pcb_height: 68.58
+          breakout_pcb_width: 53.34
+          manufacturer: generic
+          oobb_name: mounting_plate_default
+          part_number: esp32_d1_r32
+          taxonomy_1: electronic
+          taxonomy_14: generic
+          taxonomy_15: esp32_d1_r32
+          taxonomy_2: breakout
+          taxonomy_3: microcontroller
+          taxonomy_4: esp32_wroom_32
+          taxonomy_5: d1_r32
+          taxonomy_6: 53_34_mm_width_68_58_mm_height
+          type_1: microcontroller
+          type_2: esp32_wroom_32
+          type_3: d1_r32
+        - breakout_description: 53_34_mm_width_68_58_mm_height
+          breakout_pcb_height: 68.58
+          breakout_pcb_width: 53.34
+          manufacturer: generic
+          oobb_name: mounting_plate_oobb
+          part_number: esp32_d1_r32
+          scad_output: working_oobb
+          taxonomy_1: electronic
+          taxonomy_14: generic
+          taxonomy_15: esp32_d1_r32
+          taxonomy_2: breakout
+          taxonomy_3: microcontroller
+          taxonomy_4: esp32_wroom_32
+          taxonomy_5: d1_r32
+          taxonomy_6: 53_34_mm_width_68_58_mm_height
+          type_1: microcontroller
+          type_2: esp32_wroom_32
+          type_3: d1_r32
+        part_number: esp32_d1_r32
+        taxonomy_1: electronic
+        taxonomy_10: ''
+        taxonomy_11: ''
+        taxonomy_12: ''
+        taxonomy_13: ''
+        taxonomy_14: generic
+        taxonomy_15: esp32_d1_r32
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_wroom_32
+        taxonomy_5: d1_r32
+        taxonomy_6: 53_34_mm_width_68_58_mm_height
+        taxonomy_7: ''
+        taxonomy_8: ''
+        taxonomy_9: ''
+        type_1: microcontroller
+        type_2: esp32_wroom_32
+        type_3: d1_r32
+        url_chat: ''
+      dict_data_files: {}
+      dict_data_files_exists: {}
+      file_output: label_oomp.svg
+      file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+      search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+  oomp_key: oomp_electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+  part_number: esp32_d1_r32
+  short_name: ''
+  size: default_mounting_plate_default
+  taxonomy_1: electronic
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: generic
+  taxonomy_14_capital: Generic
+  taxonomy_14_first_letter: g
+  taxonomy_14_first_letter_upper: G
+  taxonomy_14_length_1: g
+  taxonomy_14_length_2: ge
+  taxonomy_14_length_3: gen
+  taxonomy_14_length_4: gene
+  taxonomy_14_length_5: gener
+  taxonomy_14_upper: GENERIC
+  taxonomy_14_upper_length_1: G
+  taxonomy_14_upper_length_2: GE
+  taxonomy_14_upper_length_3: GEN
+  taxonomy_14_upper_length_4: GENE
+  taxonomy_14_upper_length_5: GENER
+  taxonomy_15: esp32_d1_r32
+  taxonomy_15_capital: Esp32 D1 R32
+  taxonomy_15_first_letter: e
+  taxonomy_15_first_letter_upper: E
+  taxonomy_15_length_1: e
+  taxonomy_15_length_2: es
+  taxonomy_15_length_3: esp
+  taxonomy_15_length_4: esp3
+  taxonomy_15_length_5: esp32
+  taxonomy_15_upper: ESP32_D1_R32
+  taxonomy_15_upper_length_1: E
+  taxonomy_15_upper_length_2: ES
+  taxonomy_15_upper_length_3: ESP
+  taxonomy_15_upper_length_4: ESP3
+  taxonomy_15_upper_length_5: ESP32
+  taxonomy_1_capital: Electronic
+  taxonomy_1_first_letter: e
+  taxonomy_1_first_letter_upper: E
+  taxonomy_1_length_1: e
+  taxonomy_1_length_2: el
+  taxonomy_1_length_3: ele
+  taxonomy_1_length_4: elec
+  taxonomy_1_length_5: elect
+  taxonomy_1_upper: ELECTRONIC
+  taxonomy_1_upper_length_1: E
+  taxonomy_1_upper_length_2: EL
+  taxonomy_1_upper_length_3: ELE
+  taxonomy_1_upper_length_4: ELEC
+  taxonomy_1_upper_length_5: ELECT
+  taxonomy_2: breakout
+  taxonomy_2_capital: Breakout
+  taxonomy_2_first_letter: b
+  taxonomy_2_first_letter_upper: B
+  taxonomy_2_length_1: b
+  taxonomy_2_length_2: br
+  taxonomy_2_length_3: bre
+  taxonomy_2_length_4: brea
+  taxonomy_2_length_5: break
+  taxonomy_2_upper: BREAKOUT
+  taxonomy_2_upper_length_1: B
+  taxonomy_2_upper_length_2: BR
+  taxonomy_2_upper_length_3: BRE
+  taxonomy_2_upper_length_4: BREA
+  taxonomy_2_upper_length_5: BREAK
+  taxonomy_3: microcontroller
+  taxonomy_3_capital: Microcontroller
+  taxonomy_3_first_letter: m
+  taxonomy_3_first_letter_upper: M
+  taxonomy_3_length_1: m
+  taxonomy_3_length_2: mi
+  taxonomy_3_length_3: mic
+  taxonomy_3_length_4: micr
+  taxonomy_3_length_5: micro
+  taxonomy_3_upper: MICROCONTROLLER
+  taxonomy_3_upper_length_1: M
+  taxonomy_3_upper_length_2: MI
+  taxonomy_3_upper_length_3: MIC
+  taxonomy_3_upper_length_4: MICR
+  taxonomy_3_upper_length_5: MICRO
+  taxonomy_4: esp32_wroom_32
+  taxonomy_4_capital: Esp32 Wroom 32
+  taxonomy_4_first_letter: e
+  taxonomy_4_first_letter_upper: E
+  taxonomy_4_length_1: e
+  taxonomy_4_length_2: es
+  taxonomy_4_length_3: esp
+  taxonomy_4_length_4: esp3
+  taxonomy_4_length_5: esp32
+  taxonomy_4_upper: ESP32_WROOM_32
+  taxonomy_4_upper_length_1: E
+  taxonomy_4_upper_length_2: ES
+  taxonomy_4_upper_length_3: ESP
+  taxonomy_4_upper_length_4: ESP3
+  taxonomy_4_upper_length_5: ESP32
+  taxonomy_5: d1_r32
+  taxonomy_5_capital: D1 R32
+  taxonomy_5_first_letter: d
+  taxonomy_5_first_letter_upper: D
+  taxonomy_5_length_1: d
+  taxonomy_5_length_2: d1
+  taxonomy_5_length_3: d1_
+  taxonomy_5_length_4: d1_r
+  taxonomy_5_length_5: d1_r3
+  taxonomy_5_upper: D1_R32
+  taxonomy_5_upper_length_1: D
+  taxonomy_5_upper_length_2: D1
+  taxonomy_5_upper_length_3: D1_
+  taxonomy_5_upper_length_4: D1_R
+  taxonomy_5_upper_length_5: D1_R3
+  taxonomy_6: 53_34_mm_width_68_58_mm_height
+  taxonomy_6_capital: 53.34 mm Width 68.58 mm Height
+  taxonomy_6_first_letter: '5'
+  taxonomy_6_first_letter_upper: '5'
+  taxonomy_6_length_1: '5'
+  taxonomy_6_length_2: '53'
+  taxonomy_6_length_3: '53_'
+  taxonomy_6_length_4: '53_3'
+  taxonomy_6_length_5: '53_34'
+  taxonomy_6_upper: 53_34_MM_WIDTH_68_58_MM_HEIGHT
+  taxonomy_6_upper_length_1: '5'
+  taxonomy_6_upper_length_2: '53'
+  taxonomy_6_upper_length_3: '53_'
+  taxonomy_6_upper_length_4: '53_3'
+  taxonomy_6_upper_length_5: '53_34'
+  taxonomy_7: ''
+  taxonomy_8: ''
+  taxonomy_9: ''
+  type: part
+  type_1: microcontroller
+  type_2: esp32_wroom_32
+  type_3: d1_r32
+  url_chat: ''
+type_1: microcontroller
+type_2: esp32_wroom_32
+type_3: d1_r32
+url_chat: ''

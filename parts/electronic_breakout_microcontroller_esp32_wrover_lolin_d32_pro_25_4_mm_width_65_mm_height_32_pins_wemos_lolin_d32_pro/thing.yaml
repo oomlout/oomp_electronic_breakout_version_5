@@ -1,0 +1,2414 @@
+bip_39_2_word_array:
+- palm
+- athlete
+bip_39_2_word_no_space: palmathlete
+bip_39_2_word_space: palm athlete
+bip_39_2_word_underscore: palm_athlete
+bip_39_3_word_array:
+- palm
+- athlete
+- jacket
+bip_39_3_word_no_space: palmathletejacket
+bip_39_3_word_space: palm athlete jacket
+bip_39_3_word_underscore: palm_athlete_jacket
+bip_39_full_array:
+- palm
+- athlete
+- jacket
+- brick
+- cluster
+- knock
+- spike
+- chronic
+- hockey
+- nephew
+- nephew
+- ribbon
+bip_39_full_no_space: palmathletejacketbrickclusterknockspikechronichockeynephewnephewribbon
+bip_39_full_space: palm athlete jacket brick cluster knock spike chronic hockey nephew
+  nephew ribbon
+bip_39_full_underscore: palm_athlete_jacket_brick_cluster_knock_spike_chronic_hockey_nephew_nephew_ribbon
+breakout_description: 25_4_mm_width_65_mm_height_32_pins
+breakout_pcb_height: 65
+breakout_pcb_width: 25.4
+directory: parts/electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+id: electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+id_no_class: electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+id_no_size: electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+id_no_type: electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+id_oobb: electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+kwargs:
+  breakout_description: 25_4_mm_width_65_mm_height_32_pins
+  breakout_pcb_height: 65
+  breakout_pcb_width: 25.4
+  filter: ''
+  manufacturer: wemos
+  modes:
+  - 3dpr
+  navigation: true
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  oomp_mode: project
+  oomp_run: true
+  overwrite: true
+  part_number: lolin_d32_pro
+  taxonomy_1: electronic
+  taxonomy_14: wemos
+  taxonomy_15: lolin_d32_pro
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_wrover
+  taxonomy_5: lolin_d32_pro
+  taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+  typ: all
+  type: default_mounting_plate_default
+  type_1: microcontroller
+  type_2: esp32_wrover
+  type_3: lolin_d32_pro
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+manufacturer: wemos
+md5: 9f41c5dc0dd2c6f7b471436c728a515c
+md5_10: 9f41c5dc0d
+md5_10_upper: 9F41C5DC0D
+md5_5: 9f41c
+md5_5_upper: 9F41C
+md5_6: 9f41c5
+md5_6_alpha: 67pad
+md5_6_alpha_upper: 67PAD
+md5_6_upper: 9F41C5
+name: Electronic Breakout Microcontroller Esp32 Wrover Lolin D32 Pro 25 4 Mm Width
+  65 Mm Height 32 Pins Wemos Lolin D32 Pro
+name_no_class: Electronic Breakout Microcontroller Esp32 Wrover Lolin D32 Pro 25 4
+  Mm Width 65 Mm Height 32 Pins Wemos Lolin D32 Pro
+name_no_size: Electronic Breakout Microcontroller Esp32 Wrover Lolin D32 Pro 25 4
+  Mm Width 65 Mm Height 32 Pins Wemos Lolin D32 Pro
+name_no_type: Electronic Breakout Microcontroller Esp32 Wrover Lolin D32 Pro 25 4
+  Mm Width 65 Mm Height 32 Pins Wemos Lolin D32 Pro
+name_proper: Electronic Breakout Microcontroller Esp32 Wrover Lolin D32 Pro 25 4 Mm
+  Width 65 Mm Height 32 Pins Wemos Lolin D32 Pro
+name_space: electronic breakout microcontroller esp32 wrover lolin d32 pro 25 4 mm
+  width 65 mm height 32 pins wemos lolin d32 pro
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 WROVER LOLIN D32 PRO 25 4 MM
+  WIDTH 65 MM HEIGHT 32 PINS WEMOS LOLIN D32 PRO
+oobb_details:
+- breakout_description: 25_4_mm_width_65_mm_height_32_pins
+  breakout_pcb_height: 65
+  breakout_pcb_width: 25.4
+  manufacturer: wemos
+  oobb_name: mounting_plate_default
+  part_number: lolin_d32_pro
+  taxonomy_1: electronic
+  taxonomy_14: wemos
+  taxonomy_15: lolin_d32_pro
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_wrover
+  taxonomy_5: lolin_d32_pro
+  taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+  type_1: microcontroller
+  type_2: esp32_wrover
+  type_3: lolin_d32_pro
+- breakout_description: 25_4_mm_width_65_mm_height_32_pins
+  breakout_pcb_height: 65
+  breakout_pcb_width: 25.4
+  manufacturer: wemos
+  oobb_name: mounting_plate_oobb
+  part_number: lolin_d32_pro
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: wemos
+  taxonomy_15: lolin_d32_pro
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_wrover
+  taxonomy_5: lolin_d32_pro
+  taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+  type_1: microcontroller
+  type_2: esp32_wrover
+  type_3: lolin_d32_pro
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      breakout_description: 25_4_mm_width_65_mm_height_32_pins
+      breakout_pcb_height: 65
+      breakout_pcb_width: 25.4
+      directory: parts\electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+      manufacturer: wemos
+      name: electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+      name_proper: Electronic Breakout Microcontroller Esp32 Wrover Lolin D32 Pro
+        25 4 Mm Width 65 Mm Height 32 Pins Wemos Lolin D32 Pro
+      name_space: electronic breakout microcontroller esp32 wrover lolin d32 pro 25
+        4 mm width 65 mm height 32 pins wemos lolin d32 pro
+      name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 WROVER LOLIN D32 PRO 25
+        4 MM WIDTH 65 MM HEIGHT 32 PINS WEMOS LOLIN D32 PRO
+      oobb_details:
+      - breakout_description: 25_4_mm_width_65_mm_height_32_pins
+        breakout_pcb_height: 65
+        breakout_pcb_width: 25.4
+        manufacturer: wemos
+        oobb_name: mounting_plate_default
+        part_number: lolin_d32_pro
+        taxonomy_1: electronic
+        taxonomy_14: wemos
+        taxonomy_15: lolin_d32_pro
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_wrover
+        taxonomy_5: lolin_d32_pro
+        taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+        type_1: microcontroller
+        type_2: esp32_wrover
+        type_3: lolin_d32_pro
+      - breakout_description: 25_4_mm_width_65_mm_height_32_pins
+        breakout_pcb_height: 65
+        breakout_pcb_width: 25.4
+        manufacturer: wemos
+        oobb_name: mounting_plate_oobb
+        part_number: lolin_d32_pro
+        scad_output: working_oobb
+        taxonomy_1: electronic
+        taxonomy_14: wemos
+        taxonomy_15: lolin_d32_pro
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_wrover
+        taxonomy_5: lolin_d32_pro
+        taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+        type_1: microcontroller
+        type_2: esp32_wrover
+        type_3: lolin_d32_pro
+      part_number: lolin_d32_pro
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: wemos
+      taxonomy_15: lolin_d32_pro
+      taxonomy_2: breakout
+      taxonomy_3: microcontroller
+      taxonomy_4: esp32_wrover
+      taxonomy_5: lolin_d32_pro
+      taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+      taxonomy_7: ''
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: microcontroller
+      type_2: esp32_wrover
+      type_3: lolin_d32_pro
+      url_chat: ''
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+part_number: lolin_d32_pro
+project_name: C:\gh\oomp_electronic_breakout
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: wemos
+taxonomy_14_capital: Wemos
+taxonomy_14_first_letter: w
+taxonomy_14_first_letter_upper: W
+taxonomy_14_length_1: w
+taxonomy_14_length_2: we
+taxonomy_14_length_3: wem
+taxonomy_14_length_4: wemo
+taxonomy_14_length_5: wemos
+taxonomy_14_upper: WEMOS
+taxonomy_14_upper_length_1: W
+taxonomy_14_upper_length_2: WE
+taxonomy_14_upper_length_3: WEM
+taxonomy_14_upper_length_4: WEMO
+taxonomy_14_upper_length_5: WEMOS
+taxonomy_15: lolin_d32_pro
+taxonomy_15_capital: Lolin D32 Pro
+taxonomy_15_first_letter: l
+taxonomy_15_first_letter_upper: L
+taxonomy_15_length_1: l
+taxonomy_15_length_2: lo
+taxonomy_15_length_3: lol
+taxonomy_15_length_4: loli
+taxonomy_15_length_5: lolin
+taxonomy_15_upper: LOLIN_D32_PRO
+taxonomy_15_upper_length_1: L
+taxonomy_15_upper_length_2: LO
+taxonomy_15_upper_length_3: LOL
+taxonomy_15_upper_length_4: LOLI
+taxonomy_15_upper_length_5: LOLIN
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: esp32_wrover
+taxonomy_4_capital: Esp32 Wrover
+taxonomy_4_first_letter: e
+taxonomy_4_first_letter_upper: E
+taxonomy_4_length_1: e
+taxonomy_4_length_2: es
+taxonomy_4_length_3: esp
+taxonomy_4_length_4: esp3
+taxonomy_4_length_5: esp32
+taxonomy_4_upper: ESP32_WROVER
+taxonomy_4_upper_length_1: E
+taxonomy_4_upper_length_2: ES
+taxonomy_4_upper_length_3: ESP
+taxonomy_4_upper_length_4: ESP3
+taxonomy_4_upper_length_5: ESP32
+taxonomy_5: lolin_d32_pro
+taxonomy_5_capital: Lolin D32 Pro
+taxonomy_5_first_letter: l
+taxonomy_5_first_letter_upper: L
+taxonomy_5_length_1: l
+taxonomy_5_length_2: lo
+taxonomy_5_length_3: lol
+taxonomy_5_length_4: loli
+taxonomy_5_length_5: lolin
+taxonomy_5_upper: LOLIN_D32_PRO
+taxonomy_5_upper_length_1: L
+taxonomy_5_upper_length_2: LO
+taxonomy_5_upper_length_3: LOL
+taxonomy_5_upper_length_4: LOLI
+taxonomy_5_upper_length_5: LOLIN
+taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+taxonomy_6_capital: 25.4 mm Width 65 mm Height 32 Pins
+taxonomy_6_first_letter: '2'
+taxonomy_6_first_letter_upper: '2'
+taxonomy_6_length_1: '2'
+taxonomy_6_length_2: '25'
+taxonomy_6_length_3: '25_'
+taxonomy_6_length_4: '25_4'
+taxonomy_6_length_5: '25_4_'
+taxonomy_6_upper: 25_4_MM_WIDTH_65_MM_HEIGHT_32_PINS
+taxonomy_6_upper_length_1: '2'
+taxonomy_6_upper_length_2: '25'
+taxonomy_6_upper_length_3: '25_'
+taxonomy_6_upper_length_4: '25_4'
+taxonomy_6_upper_length_5: '25_4_'
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+thing:
+  bip_39_2_word_array:
+  - palm
+  - athlete
+  bip_39_2_word_no_space: palmathlete
+  bip_39_2_word_space: palm athlete
+  bip_39_2_word_underscore: palm_athlete
+  bip_39_3_word_array:
+  - palm
+  - athlete
+  - jacket
+  bip_39_3_word_no_space: palmathletejacket
+  bip_39_3_word_space: palm athlete jacket
+  bip_39_3_word_underscore: palm_athlete_jacket
+  bip_39_full_array:
+  - palm
+  - athlete
+  - jacket
+  - brick
+  - cluster
+  - knock
+  - spike
+  - chronic
+  - hockey
+  - nephew
+  - nephew
+  - ribbon
+  bip_39_full_no_space: palmathletejacketbrickclusterknockspikechronichockeynephewnephewribbon
+  bip_39_full_space: palm athlete jacket brick cluster knock spike chronic hockey
+    nephew nephew ribbon
+  bip_39_full_underscore: palm_athlete_jacket_brick_cluster_knock_spike_chronic_hockey_nephew_nephew_ribbon
+  breakout_description: 25_4_mm_width_65_mm_height_32_pins
+  breakout_pcb_height: 65
+  breakout_pcb_width: 25.4
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 7
+      pos:
+      - 0
+      - 0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 59
+      - 104
+      - 3
+      type: positive
+      width: 4
+  - - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -30.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 30.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - -45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - 45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - -45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - 45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -30.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 30.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 30.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 45.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 45.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -30.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 30.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -30.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 30.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 45.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 45.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+  components_objects:
+  - breakout_description: 25_4_mm_width_65_mm_height_32_pins
+    breakout_pcb_height: 65
+    breakout_pcb_width: 25.4
+    depth: 3
+    filter: ''
+    height: 7
+    manufacturer: wemos
+    modes:
+    - 3dpr
+    navigation: true
+    oobb_name: mounting_plate_default
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: lolin_d32_pro
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    shape: oobb_plate
+    taxonomy_1: electronic
+    taxonomy_14: wemos
+    taxonomy_15: lolin_d32_pro
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_wrover
+    taxonomy_5: lolin_d32_pro
+    taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+    typ: all
+    type: positive
+    type_1: microcontroller
+    type_2: esp32_wrover
+    type_3: lolin_d32_pro
+    width: 4
+  - both_holes: true
+    breakout_description: 25_4_mm_width_65_mm_height_32_pins
+    breakout_pcb_height: 65
+    breakout_pcb_width: 25.4
+    depth: 3
+    filter: ''
+    height: 7
+    holes: perimeter
+    manufacturer: wemos
+    modes:
+    - 3dpr
+    navigation: true
+    oobb_name: mounting_plate_default
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: lolin_d32_pro
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    shape: oobb_holes
+    taxonomy_1: electronic
+    taxonomy_14: wemos
+    taxonomy_15: lolin_d32_pro
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_wrover
+    taxonomy_5: lolin_d32_pro
+    taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+    typ: all
+    type: p
+    type_1: microcontroller
+    type_2: esp32_wrover
+    type_3: lolin_d32_pro
+    width: 4
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_25_4_mm_width_65_mm_height_32_pins_breakout_description_65_breakout_pcb_height_25.4_breakout_pcb_width_wemos_manufacturer_mounting_plate_default_oobb_name_lolin_d32_pro_part_number_electronic_taxonomy_1_wemos_taxonomy_14_lolin_d32_pro_taxonomy_15_breakout_taxonomy_2_microcontroller_taxonomy_3_esp32_wrover_taxonomy_4_lolin_d32_pro_taxonomy_5_25_4_mm_width_65_mm_height_32_pins_taxonomy_6_microcontroller_type_1_esp32_wrover_type_2_lolin_d32_pro_type_3_4_width_7_height
+  - oobb_holes_shape_p_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_25_4_mm_width_65_mm_height_32_pins_breakout_description_65_breakout_pcb_height_25.4_breakout_pcb_width_wemos_manufacturer_mounting_plate_default_oobb_name_lolin_d32_pro_part_number_electronic_taxonomy_1_wemos_taxonomy_14_lolin_d32_pro_taxonomy_15_breakout_taxonomy_2_microcontroller_taxonomy_3_esp32_wrover_taxonomy_4_lolin_d32_pro_taxonomy_5_25_4_mm_width_65_mm_height_32_pins_taxonomy_6_microcontroller_type_1_esp32_wrover_type_2_lolin_d32_pro_type_3_4_width_7_height_true_both_holes_perimeter_holes
+  description: default mounting plate default 0x0x0
+  description_extra: ''
+  description_main: ''
+  directory: parts/electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+  id: electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+  id_no_class: electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+  id_no_size: electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+  id_no_type: electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+  kwargs:
+    breakout_description: 25_4_mm_width_65_mm_height_32_pins
+    breakout_pcb_height: 65
+    breakout_pcb_width: 25.4
+    filter: ''
+    manufacturer: wemos
+    modes:
+    - 3dpr
+    navigation: true
+    oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: lolin_d32_pro
+    save_type: all
+    taxonomy_1: electronic
+    taxonomy_14: wemos
+    taxonomy_15: lolin_d32_pro
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_wrover
+    taxonomy_5: lolin_d32_pro
+    taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+    typ: all
+    type: default_mounting_plate_default
+    type_1: microcontroller
+    type_2: esp32_wrover
+    type_3: lolin_d32_pro
+  link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+  link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+  link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+  manufacturer: wemos
+  md5: 9f41c5dc0dd2c6f7b471436c728a515c
+  md5_10: 9f41c5dc0d
+  md5_10_upper: 9F41C5DC0D
+  md5_5: 9f41c
+  md5_5_upper: 9F41C
+  md5_6: 9f41c5
+  md5_6_alpha: 67pad
+  md5_6_alpha_upper: 67PAD
+  md5_6_upper: 9F41C5
+  name: Electronic Breakout Microcontroller Esp32 Wrover Lolin D32 Pro 25 4 Mm Width
+    65 Mm Height 32 Pins Wemos Lolin D32 Pro
+  name_no_class: Electronic Breakout Microcontroller Esp32 Wrover Lolin D32 Pro 25
+    4 Mm Width 65 Mm Height 32 Pins Wemos Lolin D32 Pro
+  name_no_size: Electronic Breakout Microcontroller Esp32 Wrover Lolin D32 Pro 25
+    4 Mm Width 65 Mm Height 32 Pins Wemos Lolin D32 Pro
+  name_no_type: Electronic Breakout Microcontroller Esp32 Wrover Lolin D32 Pro 25
+    4 Mm Width 65 Mm Height 32 Pins Wemos Lolin D32 Pro
+  name_proper: Electronic Breakout Microcontroller Esp32 Wrover Lolin D32 Pro 25 4
+    Mm Width 65 Mm Height 32 Pins Wemos Lolin D32 Pro
+  name_short: Default Mounting Plate Default
+  name_space: electronic breakout microcontroller esp32 wrover lolin d32 pro 25 4
+    mm width 65 mm height 32 pins wemos lolin d32 pro
+  name_text: Oobb Part Default Mounting Plate Default
+  name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 WROVER LOLIN D32 PRO 25 4
+    MM WIDTH 65 MM HEIGHT 32 PINS WEMOS LOLIN D32 PRO
+  oobb_details:
+  - breakout_description: 25_4_mm_width_65_mm_height_32_pins
+    breakout_pcb_height: 65
+    breakout_pcb_width: 25.4
+    manufacturer: wemos
+    oobb_name: mounting_plate_default
+    part_number: lolin_d32_pro
+    taxonomy_1: electronic
+    taxonomy_14: wemos
+    taxonomy_15: lolin_d32_pro
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_wrover
+    taxonomy_5: lolin_d32_pro
+    taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+    type_1: microcontroller
+    type_2: esp32_wrover
+    type_3: lolin_d32_pro
+  - breakout_description: 25_4_mm_width_65_mm_height_32_pins
+    breakout_pcb_height: 65
+    breakout_pcb_width: 25.4
+    manufacturer: wemos
+    oobb_name: mounting_plate_oobb
+    part_number: lolin_d32_pro
+    scad_output: working_oobb
+    taxonomy_1: electronic
+    taxonomy_14: wemos
+    taxonomy_15: lolin_d32_pro
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_wrover
+    taxonomy_5: lolin_d32_pro
+    taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+    type_1: microcontroller
+    type_2: esp32_wrover
+    type_3: lolin_d32_pro
+  oobb_name: mounting_plate_default
+  oomlout_ai_roboclick_1:
+    actions:
+    - command: text_jinja_template
+      convert_to_pdf: false
+      convert_to_png: false
+      dict_data:
+        breakout_description: 25_4_mm_width_65_mm_height_32_pins
+        breakout_pcb_height: 65
+        breakout_pcb_width: 25.4
+        directory: parts\electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+        manufacturer: wemos
+        name: electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+        name_proper: Electronic Breakout Microcontroller Esp32 Wrover Lolin D32 Pro
+          25 4 Mm Width 65 Mm Height 32 Pins Wemos Lolin D32 Pro
+        name_space: electronic breakout microcontroller esp32 wrover lolin d32 pro
+          25 4 mm width 65 mm height 32 pins wemos lolin d32 pro
+        name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 WROVER LOLIN D32 PRO
+          25 4 MM WIDTH 65 MM HEIGHT 32 PINS WEMOS LOLIN D32 PRO
+        oobb_details:
+        - breakout_description: 25_4_mm_width_65_mm_height_32_pins
+          breakout_pcb_height: 65
+          breakout_pcb_width: 25.4
+          manufacturer: wemos
+          oobb_name: mounting_plate_default
+          part_number: lolin_d32_pro
+          taxonomy_1: electronic
+          taxonomy_14: wemos
+          taxonomy_15: lolin_d32_pro
+          taxonomy_2: breakout
+          taxonomy_3: microcontroller
+          taxonomy_4: esp32_wrover
+          taxonomy_5: lolin_d32_pro
+          taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+          type_1: microcontroller
+          type_2: esp32_wrover
+          type_3: lolin_d32_pro
+        - breakout_description: 25_4_mm_width_65_mm_height_32_pins
+          breakout_pcb_height: 65
+          breakout_pcb_width: 25.4
+          manufacturer: wemos
+          oobb_name: mounting_plate_oobb
+          part_number: lolin_d32_pro
+          scad_output: working_oobb
+          taxonomy_1: electronic
+          taxonomy_14: wemos
+          taxonomy_15: lolin_d32_pro
+          taxonomy_2: breakout
+          taxonomy_3: microcontroller
+          taxonomy_4: esp32_wrover
+          taxonomy_5: lolin_d32_pro
+          taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+          type_1: microcontroller
+          type_2: esp32_wrover
+          type_3: lolin_d32_pro
+        part_number: lolin_d32_pro
+        taxonomy_1: electronic
+        taxonomy_10: ''
+        taxonomy_11: ''
+        taxonomy_12: ''
+        taxonomy_13: ''
+        taxonomy_14: wemos
+        taxonomy_15: lolin_d32_pro
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_wrover
+        taxonomy_5: lolin_d32_pro
+        taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+        taxonomy_7: ''
+        taxonomy_8: ''
+        taxonomy_9: ''
+        type_1: microcontroller
+        type_2: esp32_wrover
+        type_3: lolin_d32_pro
+        url_chat: ''
+      dict_data_files: {}
+      dict_data_files_exists: {}
+      file_output: label_oomp.svg
+      file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+      search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+  oomp_key: oomp_electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+  part_number: lolin_d32_pro
+  short_name: ''
+  size: default_mounting_plate_default
+  taxonomy_1: electronic
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: wemos
+  taxonomy_14_capital: Wemos
+  taxonomy_14_first_letter: w
+  taxonomy_14_first_letter_upper: W
+  taxonomy_14_length_1: w
+  taxonomy_14_length_2: we
+  taxonomy_14_length_3: wem
+  taxonomy_14_length_4: wemo
+  taxonomy_14_length_5: wemos
+  taxonomy_14_upper: WEMOS
+  taxonomy_14_upper_length_1: W
+  taxonomy_14_upper_length_2: WE
+  taxonomy_14_upper_length_3: WEM
+  taxonomy_14_upper_length_4: WEMO
+  taxonomy_14_upper_length_5: WEMOS
+  taxonomy_15: lolin_d32_pro
+  taxonomy_15_capital: Lolin D32 Pro
+  taxonomy_15_first_letter: l
+  taxonomy_15_first_letter_upper: L
+  taxonomy_15_length_1: l
+  taxonomy_15_length_2: lo
+  taxonomy_15_length_3: lol
+  taxonomy_15_length_4: loli
+  taxonomy_15_length_5: lolin
+  taxonomy_15_upper: LOLIN_D32_PRO
+  taxonomy_15_upper_length_1: L
+  taxonomy_15_upper_length_2: LO
+  taxonomy_15_upper_length_3: LOL
+  taxonomy_15_upper_length_4: LOLI
+  taxonomy_15_upper_length_5: LOLIN
+  taxonomy_1_capital: Electronic
+  taxonomy_1_first_letter: e
+  taxonomy_1_first_letter_upper: E
+  taxonomy_1_length_1: e
+  taxonomy_1_length_2: el
+  taxonomy_1_length_3: ele
+  taxonomy_1_length_4: elec
+  taxonomy_1_length_5: elect
+  taxonomy_1_upper: ELECTRONIC
+  taxonomy_1_upper_length_1: E
+  taxonomy_1_upper_length_2: EL
+  taxonomy_1_upper_length_3: ELE
+  taxonomy_1_upper_length_4: ELEC
+  taxonomy_1_upper_length_5: ELECT
+  taxonomy_2: breakout
+  taxonomy_2_capital: Breakout
+  taxonomy_2_first_letter: b
+  taxonomy_2_first_letter_upper: B
+  taxonomy_2_length_1: b
+  taxonomy_2_length_2: br
+  taxonomy_2_length_3: bre
+  taxonomy_2_length_4: brea
+  taxonomy_2_length_5: break
+  taxonomy_2_upper: BREAKOUT
+  taxonomy_2_upper_length_1: B
+  taxonomy_2_upper_length_2: BR
+  taxonomy_2_upper_length_3: BRE
+  taxonomy_2_upper_length_4: BREA
+  taxonomy_2_upper_length_5: BREAK
+  taxonomy_3: microcontroller
+  taxonomy_3_capital: Microcontroller
+  taxonomy_3_first_letter: m
+  taxonomy_3_first_letter_upper: M
+  taxonomy_3_length_1: m
+  taxonomy_3_length_2: mi
+  taxonomy_3_length_3: mic
+  taxonomy_3_length_4: micr
+  taxonomy_3_length_5: micro
+  taxonomy_3_upper: MICROCONTROLLER
+  taxonomy_3_upper_length_1: M
+  taxonomy_3_upper_length_2: MI
+  taxonomy_3_upper_length_3: MIC
+  taxonomy_3_upper_length_4: MICR
+  taxonomy_3_upper_length_5: MICRO
+  taxonomy_4: esp32_wrover
+  taxonomy_4_capital: Esp32 Wrover
+  taxonomy_4_first_letter: e
+  taxonomy_4_first_letter_upper: E
+  taxonomy_4_length_1: e
+  taxonomy_4_length_2: es
+  taxonomy_4_length_3: esp
+  taxonomy_4_length_4: esp3
+  taxonomy_4_length_5: esp32
+  taxonomy_4_upper: ESP32_WROVER
+  taxonomy_4_upper_length_1: E
+  taxonomy_4_upper_length_2: ES
+  taxonomy_4_upper_length_3: ESP
+  taxonomy_4_upper_length_4: ESP3
+  taxonomy_4_upper_length_5: ESP32
+  taxonomy_5: lolin_d32_pro
+  taxonomy_5_capital: Lolin D32 Pro
+  taxonomy_5_first_letter: l
+  taxonomy_5_first_letter_upper: L
+  taxonomy_5_length_1: l
+  taxonomy_5_length_2: lo
+  taxonomy_5_length_3: lol
+  taxonomy_5_length_4: loli
+  taxonomy_5_length_5: lolin
+  taxonomy_5_upper: LOLIN_D32_PRO
+  taxonomy_5_upper_length_1: L
+  taxonomy_5_upper_length_2: LO
+  taxonomy_5_upper_length_3: LOL
+  taxonomy_5_upper_length_4: LOLI
+  taxonomy_5_upper_length_5: LOLIN
+  taxonomy_6: 25_4_mm_width_65_mm_height_32_pins
+  taxonomy_6_capital: 25.4 mm Width 65 mm Height 32 Pins
+  taxonomy_6_first_letter: '2'
+  taxonomy_6_first_letter_upper: '2'
+  taxonomy_6_length_1: '2'
+  taxonomy_6_length_2: '25'
+  taxonomy_6_length_3: '25_'
+  taxonomy_6_length_4: '25_4'
+  taxonomy_6_length_5: '25_4_'
+  taxonomy_6_upper: 25_4_MM_WIDTH_65_MM_HEIGHT_32_PINS
+  taxonomy_6_upper_length_1: '2'
+  taxonomy_6_upper_length_2: '25'
+  taxonomy_6_upper_length_3: '25_'
+  taxonomy_6_upper_length_4: '25_4'
+  taxonomy_6_upper_length_5: '25_4_'
+  taxonomy_7: ''
+  taxonomy_8: ''
+  taxonomy_9: ''
+  type: part
+  type_1: microcontroller
+  type_2: esp32_wrover
+  type_3: lolin_d32_pro
+  url_chat: ''
+type_1: microcontroller
+type_2: esp32_wrover
+type_3: lolin_d32_pro
+url_chat: ''

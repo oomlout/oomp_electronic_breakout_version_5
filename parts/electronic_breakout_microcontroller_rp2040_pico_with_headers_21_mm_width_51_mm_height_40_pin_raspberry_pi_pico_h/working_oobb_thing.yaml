@@ -1,0 +1,3436 @@
+bip_39_2_word_array:
+- clay
+- benefit
+bip_39_2_word_no_space: claybenefit
+bip_39_2_word_space: clay benefit
+bip_39_2_word_underscore: clay_benefit
+bip_39_3_word_array:
+- clay
+- benefit
+- material
+bip_39_3_word_no_space: claybenefitmaterial
+bip_39_3_word_space: clay benefit material
+bip_39_3_word_underscore: clay_benefit_material
+bip_39_full_array:
+- clay
+- benefit
+- material
+- thing
+- stove
+- rally
+- health
+- student
+- clarify
+- mushroom
+- fence
+- shrimp
+bip_39_full_no_space: claybenefitmaterialthingstoverallyhealthstudentclarifymushroomfenceshrimp
+bip_39_full_space: clay benefit material thing stove rally health student clarify
+  mushroom fence shrimp
+bip_39_full_underscore: clay_benefit_material_thing_stove_rally_health_student_clarify_mushroom_fence_shrimp
+breakout_description: 21_mm_width_51_mm_height_40_pin
+breakout_pcb_height: 51
+breakout_pcb_width: 21
+directory: parts/electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+id: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+id_no_class: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+id_no_size: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+id_no_type: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+id_oobb: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+kwargs:
+  breakout_description: 21_mm_width_51_mm_height_40_pin
+  breakout_pcb_height: 51
+  breakout_pcb_width: 21
+  filter: ''
+  manufacturer: raspberry_pi
+  modes:
+  - 3dpr
+  navigation: true
+  oobb_name: mounting_plate_oobb
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_oobb_
+  oomp_mode: project
+  oomp_run: true
+  overwrite: true
+  part_number: pico_h
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: raspberry_pi
+  taxonomy_15: pico_h
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: rp2040
+  taxonomy_5: pico
+  taxonomy_6: with_headers
+  taxonomy_7: 21_mm_width_51_mm_height_40_pin
+  typ: all
+  type: default_mounting_plate_oobb
+  type_1: microcontroller
+  type_2: rp2040
+  type_3: pico
+  type_4: with_headers
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+manufacturer: raspberry_pi
+md5: 2a22a623f05d6b629a8ebb29f2395463
+md5_10: 2a22a623f0
+md5_10_upper: 2A22A623F0
+md5_5: 2a22a
+md5_5_upper: 2A22A
+md5_6: 2a22a6
+md5_6_alpha: 1n6p2
+md5_6_alpha_upper: 1N6P2
+md5_6_upper: 2A22A6
+name: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm Width 51
+  Mm Height 40 Pin Raspberry Pi Pico H
+name_no_class: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm
+  Width 51 Mm Height 40 Pin Raspberry Pi Pico H
+name_no_size: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm Width
+  51 Mm Height 40 Pin Raspberry Pi Pico H
+name_no_type: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm Width
+  51 Mm Height 40 Pin Raspberry Pi Pico H
+name_proper: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm Width
+  51 Mm Height 40 Pin Raspberry Pi Pico H
+name_space: electronic breakout microcontroller rp2040 pico with headers 21 mm width
+  51 mm height 40 pin raspberry pi pico h
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2040 PICO WITH HEADERS 21 MM WIDTH
+  51 MM HEIGHT 40 PIN RASPBERRY PI PICO H
+oobb_details:
+- breakout_description: 21_mm_width_51_mm_height_40_pin
+  breakout_pcb_height: 51
+  breakout_pcb_width: 21
+  manufacturer: raspberry_pi
+  oobb_name: mounting_plate_default
+  part_number: pico_h
+  taxonomy_1: electronic
+  taxonomy_14: raspberry_pi
+  taxonomy_15: pico_h
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: rp2040
+  taxonomy_5: pico
+  taxonomy_6: with_headers
+  taxonomy_7: 21_mm_width_51_mm_height_40_pin
+  type_1: microcontroller
+  type_2: rp2040
+  type_3: pico
+  type_4: with_headers
+- breakout_description: 21_mm_width_51_mm_height_40_pin
+  breakout_pcb_height: 51
+  breakout_pcb_width: 21
+  manufacturer: raspberry_pi
+  oobb_name: mounting_plate_oobb
+  part_number: pico_h
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: raspberry_pi
+  taxonomy_15: pico_h
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: rp2040
+  taxonomy_5: pico
+  taxonomy_6: with_headers
+  taxonomy_7: 21_mm_width_51_mm_height_40_pin
+  type_1: microcontroller
+  type_2: rp2040
+  type_3: pico
+  type_4: with_headers
+oobb_name: mounting_plate_oobb
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      breakout_description: 21_mm_width_51_mm_height_40_pin
+      breakout_pcb_height: 51
+      breakout_pcb_width: 21
+      directory: parts\electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+      manufacturer: raspberry_pi
+      name: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+      name_proper: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21
+        Mm Width 51 Mm Height 40 Pin Raspberry Pi Pico H
+      name_space: electronic breakout microcontroller rp2040 pico with headers 21
+        mm width 51 mm height 40 pin raspberry pi pico h
+      name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2040 PICO WITH HEADERS 21
+        MM WIDTH 51 MM HEIGHT 40 PIN RASPBERRY PI PICO H
+      oobb_details:
+      - breakout_description: 21_mm_width_51_mm_height_40_pin
+        breakout_pcb_height: 51
+        breakout_pcb_width: 21
+        manufacturer: raspberry_pi
+        oobb_name: mounting_plate_default
+        part_number: pico_h
+        taxonomy_1: electronic
+        taxonomy_14: raspberry_pi
+        taxonomy_15: pico_h
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: rp2040
+        taxonomy_5: pico
+        taxonomy_6: with_headers
+        taxonomy_7: 21_mm_width_51_mm_height_40_pin
+        type_1: microcontroller
+        type_2: rp2040
+        type_3: pico
+        type_4: with_headers
+      - breakout_description: 21_mm_width_51_mm_height_40_pin
+        breakout_pcb_height: 51
+        breakout_pcb_width: 21
+        manufacturer: raspberry_pi
+        oobb_name: mounting_plate_oobb
+        part_number: pico_h
+        scad_output: working_oobb
+        taxonomy_1: electronic
+        taxonomy_14: raspberry_pi
+        taxonomy_15: pico_h
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: rp2040
+        taxonomy_5: pico
+        taxonomy_6: with_headers
+        taxonomy_7: 21_mm_width_51_mm_height_40_pin
+        type_1: microcontroller
+        type_2: rp2040
+        type_3: pico
+        type_4: with_headers
+      part_number: pico_h
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: raspberry_pi
+      taxonomy_15: pico_h
+      taxonomy_2: breakout
+      taxonomy_3: microcontroller
+      taxonomy_4: rp2040
+      taxonomy_5: pico
+      taxonomy_6: with_headers
+      taxonomy_7: 21_mm_width_51_mm_height_40_pin
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: microcontroller
+      type_2: rp2040
+      type_3: pico
+      type_4: with_headers
+      url_chat: ''
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+part_number: pico_h
+project_name: C:\gh\oomp_electronic_breakout
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: raspberry_pi
+taxonomy_14_capital: Raspberry Pi
+taxonomy_14_first_letter: r
+taxonomy_14_first_letter_upper: R
+taxonomy_14_length_1: r
+taxonomy_14_length_2: ra
+taxonomy_14_length_3: ras
+taxonomy_14_length_4: rasp
+taxonomy_14_length_5: raspb
+taxonomy_14_upper: RASPBERRY_PI
+taxonomy_14_upper_length_1: R
+taxonomy_14_upper_length_2: RA
+taxonomy_14_upper_length_3: RAS
+taxonomy_14_upper_length_4: RASP
+taxonomy_14_upper_length_5: RASPB
+taxonomy_15: pico_h
+taxonomy_15_capital: Pico H
+taxonomy_15_first_letter: p
+taxonomy_15_first_letter_upper: P
+taxonomy_15_length_1: p
+taxonomy_15_length_2: pi
+taxonomy_15_length_3: pic
+taxonomy_15_length_4: pico
+taxonomy_15_length_5: pico_
+taxonomy_15_upper: PICO_H
+taxonomy_15_upper_length_1: P
+taxonomy_15_upper_length_2: PI
+taxonomy_15_upper_length_3: PIC
+taxonomy_15_upper_length_4: PICO
+taxonomy_15_upper_length_5: PICO_
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: rp2040
+taxonomy_4_capital: Rp2040
+taxonomy_4_first_letter: r
+taxonomy_4_first_letter_upper: R
+taxonomy_4_length_1: r
+taxonomy_4_length_2: rp
+taxonomy_4_length_3: rp2
+taxonomy_4_length_4: rp20
+taxonomy_4_length_5: rp204
+taxonomy_4_upper: RP2040
+taxonomy_4_upper_length_1: R
+taxonomy_4_upper_length_2: RP
+taxonomy_4_upper_length_3: RP2
+taxonomy_4_upper_length_4: RP20
+taxonomy_4_upper_length_5: RP204
+taxonomy_5: pico
+taxonomy_5_capital: Pico
+taxonomy_5_first_letter: p
+taxonomy_5_first_letter_upper: P
+taxonomy_5_length_1: p
+taxonomy_5_length_2: pi
+taxonomy_5_length_3: pic
+taxonomy_5_length_4: pico
+taxonomy_5_length_5: pico
+taxonomy_5_upper: PICO
+taxonomy_5_upper_length_1: P
+taxonomy_5_upper_length_2: PI
+taxonomy_5_upper_length_3: PIC
+taxonomy_5_upper_length_4: PICO
+taxonomy_5_upper_length_5: PICO
+taxonomy_6: with_headers
+taxonomy_6_capital: With Headers
+taxonomy_6_first_letter: w
+taxonomy_6_first_letter_upper: W
+taxonomy_6_length_1: w
+taxonomy_6_length_2: wi
+taxonomy_6_length_3: wit
+taxonomy_6_length_4: with
+taxonomy_6_length_5: with_
+taxonomy_6_upper: WITH_HEADERS
+taxonomy_6_upper_length_1: W
+taxonomy_6_upper_length_2: WI
+taxonomy_6_upper_length_3: WIT
+taxonomy_6_upper_length_4: WITH
+taxonomy_6_upper_length_5: WITH_
+taxonomy_7: 21_mm_width_51_mm_height_40_pin
+taxonomy_7_capital: 21 mm Width 51 mm Height 40 Pin
+taxonomy_7_first_letter: '2'
+taxonomy_7_first_letter_upper: '2'
+taxonomy_7_length_1: '2'
+taxonomy_7_length_2: '21'
+taxonomy_7_length_3: '21_'
+taxonomy_7_length_4: 21_m
+taxonomy_7_length_5: 21_mm
+taxonomy_7_upper: 21_MM_WIDTH_51_MM_HEIGHT_40_PIN
+taxonomy_7_upper_length_1: '2'
+taxonomy_7_upper_length_2: '21'
+taxonomy_7_upper_length_3: '21_'
+taxonomy_7_upper_length_4: 21_M
+taxonomy_7_upper_length_5: 21_MM
+taxonomy_8: ''
+taxonomy_9: ''
+thing:
+  bip_39_2_word_array:
+  - clay
+  - benefit
+  bip_39_2_word_no_space: claybenefit
+  bip_39_2_word_space: clay benefit
+  bip_39_2_word_underscore: clay_benefit
+  bip_39_3_word_array:
+  - clay
+  - benefit
+  - material
+  bip_39_3_word_no_space: claybenefitmaterial
+  bip_39_3_word_space: clay benefit material
+  bip_39_3_word_underscore: clay_benefit_material
+  bip_39_full_array:
+  - clay
+  - benefit
+  - material
+  - thing
+  - stove
+  - rally
+  - health
+  - student
+  - clarify
+  - mushroom
+  - fence
+  - shrimp
+  bip_39_full_no_space: claybenefitmaterialthingstoverallyhealthstudentclarifymushroomfenceshrimp
+  bip_39_full_space: clay benefit material thing stove rally health student clarify
+    mushroom fence shrimp
+  bip_39_full_underscore: clay_benefit_material_thing_stove_rally_health_student_clarify_mushroom_fence_shrimp
+  breakout_description: 21_mm_width_51_mm_height_40_pin
+  breakout_pcb_height: 51
+  breakout_pcb_width: 21
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 6
+      pos:
+      - 0
+      - 0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 59
+      - 89
+      - 3
+      type: positive
+      width: 4
+  - - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -37.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -7.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 7.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 37.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - -37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - -37.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - -37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - 37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - 37.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - 37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - -37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - -37.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - -37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - 37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - 37.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - 37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -37.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -7.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 7.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 37.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 37.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -30.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 30.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - -37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - -37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - 37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - -37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - 37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - -37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - 37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - -37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -30.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 30.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 30.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 37.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 37.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+  - - depth: 4
+      h: 4
+      inclusion: laser
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 6
+      radius: 6
+      shape: cylinder
+      type: negative
+    - depth: 4
+      h: 4
+      inclusion: 3dpr
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 6
+      shape: cylinder
+      type: negative
+    - depth: 4
+      h: 4
+      inclusion: 'true'
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 6
+      radius: 6
+      shape: cylinder
+      type: negative
+  - - depth: 3
+      h: 3
+      inclusion: laser
+      pos: &id001
+      - 22.5
+      - -30.0
+      - 3.0
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 3dpr
+      pos: *id001
+      r: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 'true'
+      pos: *id001
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+  - - depth: 8
+      h: 8
+      inclusion: laser
+      pos:
+      - 22.5
+      - -30.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -30.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -30.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - clearance: top
+        depth: 4
+        height: 54
+        inclusion: laser
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 104
+        inclusion: 3dpr
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.4619999999999997
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 154
+        inclusion: 'true'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      pos:
+      - 22.5
+      - -30.0
+      - 3
+      rot:
+      - 0
+      - 0
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      inclusion: laser
+      pos: &id002
+      - -7.5
+      - -30.0
+      - 3.0
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 3dpr
+      pos: *id002
+      r: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 'true'
+      pos: *id002
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+  - - depth: 8
+      h: 8
+      inclusion: laser
+      pos:
+      - -7.5
+      - -30.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 3dpr
+      pos:
+      - -7.5
+      - -30.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 'true'
+      pos:
+      - -7.5
+      - -30.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - clearance: top
+        depth: 4
+        height: 54
+        inclusion: laser
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 104
+        inclusion: 3dpr
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.4619999999999997
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 154
+        inclusion: 'true'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      pos:
+      - -7.5
+      - -30.0
+      - 3
+      rot:
+      - 0
+      - 0
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      inclusion: laser
+      pos: &id003
+      - 22.5
+      - -15.0
+      - 3.0
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 3dpr
+      pos: *id003
+      r: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 'true'
+      pos: *id003
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+  - - depth: 8
+      h: 8
+      inclusion: laser
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - clearance: top
+        depth: 4
+        height: 54
+        inclusion: laser
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 104
+        inclusion: 3dpr
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.4619999999999997
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 154
+        inclusion: 'true'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      pos:
+      - 22.5
+      - -15.0
+      - 3
+      rot:
+      - 0
+      - 0
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      inclusion: laser
+      pos: &id004
+      - -7.5
+      - -15.0
+      - 3.0
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 3dpr
+      pos: *id004
+      r: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 'true'
+      pos: *id004
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+  - - depth: 8
+      h: 8
+      inclusion: laser
+      pos:
+      - -7.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 3dpr
+      pos:
+      - -7.5
+      - -15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 'true'
+      pos:
+      - -7.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - clearance: top
+        depth: 4
+        height: 54
+        inclusion: laser
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 104
+        inclusion: 3dpr
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.4619999999999997
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 154
+        inclusion: 'true'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      pos:
+      - -7.5
+      - -15.0
+      - 3
+      rot:
+      - 0
+      - 0
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 4
+      h: 4
+      inclusion: laser
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 6
+      radius: 6
+      shape: cylinder
+      type: negative
+    - depth: 4
+      h: 4
+      inclusion: 3dpr
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 6
+      shape: cylinder
+      type: negative
+    - depth: 4
+      h: 4
+      inclusion: 'true'
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 6
+      radius: 6
+      shape: cylinder
+      type: negative
+  - - depth: 3
+      h: 3
+      inclusion: laser
+      pos: &id005
+      - 22.5
+      - 15.0
+      - 3.0
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 3dpr
+      pos: *id005
+      r: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 'true'
+      pos: *id005
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+  - - depth: 8
+      h: 8
+      inclusion: laser
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - clearance: top
+        depth: 4
+        height: 54
+        inclusion: laser
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 104
+        inclusion: 3dpr
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.4619999999999997
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 154
+        inclusion: 'true'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      pos:
+      - 22.5
+      - 15.0
+      - 3
+      rot:
+      - 0
+      - 0
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      inclusion: laser
+      pos: &id006
+      - -7.5
+      - 15.0
+      - 3.0
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 3dpr
+      pos: *id006
+      r: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 'true'
+      pos: *id006
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+  - - depth: 8
+      h: 8
+      inclusion: laser
+      pos:
+      - -7.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 3dpr
+      pos:
+      - -7.5
+      - 15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 'true'
+      pos:
+      - -7.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - clearance: top
+        depth: 4
+        height: 54
+        inclusion: laser
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 104
+        inclusion: 3dpr
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.4619999999999997
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 154
+        inclusion: 'true'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      pos:
+      - -7.5
+      - 15.0
+      - 3
+      rot:
+      - 0
+      - 0
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      inclusion: laser
+      pos: &id007
+      - 22.5
+      - 30.0
+      - 3.0
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 3dpr
+      pos: *id007
+      r: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 'true'
+      pos: *id007
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+  - - depth: 8
+      h: 8
+      inclusion: laser
+      pos:
+      - 22.5
+      - 30.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 30.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 30.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - clearance: top
+        depth: 4
+        height: 54
+        inclusion: laser
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 104
+        inclusion: 3dpr
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.4619999999999997
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 154
+        inclusion: 'true'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      pos:
+      - 22.5
+      - 30.0
+      - 3
+      rot:
+      - 0
+      - 0
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      inclusion: laser
+      pos: &id008
+      - -7.5
+      - 30.0
+      - 3.0
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 3dpr
+      pos: *id008
+      r: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 'true'
+      pos: *id008
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+  - - depth: 8
+      h: 8
+      inclusion: laser
+      pos:
+      - -7.5
+      - 30.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 3dpr
+      pos:
+      - -7.5
+      - 30.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 'true'
+      pos:
+      - -7.5
+      - 30.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - clearance: top
+        depth: 4
+        height: 54
+        inclusion: laser
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 104
+        inclusion: 3dpr
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.4619999999999997
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 154
+        inclusion: 'true'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      pos:
+      - -7.5
+      - 30.0
+      - 3
+      rot:
+      - 0
+      - 0
+      - 0
+      type: rotation
+      typetype: negative
+  components_objects:
+  - breakout_description: 21_mm_width_51_mm_height_40_pin
+    breakout_pcb_height: 51
+    breakout_pcb_width: 21
+    depth: 3
+    filter: ''
+    height: 6
+    manufacturer: raspberry_pi
+    modes:
+    - 3dpr
+    mounting_lift: 6
+    navigation: true
+    oobb_name: mounting_plate_oobb
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: pico_h
+    pos:
+    - 0
+    - 0
+    - 0
+    prepare_print: false
+    save_type: all
+    scad_output: working_oobb
+    shape: oobb_plate
+    taxonomy_1: electronic
+    taxonomy_14: raspberry_pi
+    taxonomy_15: pico_h
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: rp2040
+    taxonomy_5: pico
+    taxonomy_6: with_headers
+    taxonomy_7: 21_mm_width_51_mm_height_40_pin
+    typ: all
+    type: positive
+    type_1: microcontroller
+    type_2: rp2040
+    type_3: pico
+    type_4: with_headers
+    width: 4
+  - both_holes: true
+    breakout_description: 21_mm_width_51_mm_height_40_pin
+    breakout_pcb_height: 51
+    breakout_pcb_width: 21
+    depth: 3
+    filter: ''
+    height: 6
+    holes: perimeter
+    manufacturer: raspberry_pi
+    modes:
+    - 3dpr
+    mounting_lift: 6
+    navigation: true
+    oobb_name: mounting_plate_oobb
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: pico_h
+    pos:
+    - 0
+    - 0
+    - 0
+    prepare_print: false
+    save_type: all
+    scad_output: working_oobb
+    shape: oobb_holes
+    taxonomy_1: electronic
+    taxonomy_14: raspberry_pi
+    taxonomy_15: pico_h
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: rp2040
+    taxonomy_5: pico
+    taxonomy_6: with_headers
+    taxonomy_7: 21_mm_width_51_mm_height_40_pin
+    typ: all
+    type: p
+    type_1: microcontroller
+    type_2: rp2040
+    type_3: pico
+    type_4: with_headers
+    width: 4
+  - depth: 4
+    pos:
+    - 7.5
+    - -22.5
+    - -1
+    radius: 6
+    shape: oobb_hole
+    type: negative
+  - depth: 3
+    pos:
+    - 22.5
+    - -30.0
+    - 4.5
+    radius: 4.962
+    shape: oobb_cylinder
+    type: positive
+  - depth: 8
+    pos:
+    - 22.5
+    - -30.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - clearance: top
+    depth: 4
+    pos:
+    - 22.5
+    - -30.0
+    - 3
+    radius_name: m3
+    shape: oobb_nut
+    type: negative
+    zz: bottom
+  - depth: 3
+    pos:
+    - -7.5
+    - -30.0
+    - 4.5
+    radius: 4.962
+    shape: oobb_cylinder
+    type: positive
+  - depth: 8
+    pos:
+    - -7.5
+    - -30.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - clearance: top
+    depth: 4
+    pos:
+    - -7.5
+    - -30.0
+    - 3
+    radius_name: m3
+    shape: oobb_nut
+    type: negative
+    zz: bottom
+  - depth: 3
+    pos:
+    - 22.5
+    - -15.0
+    - 4.5
+    radius: 4.962
+    shape: oobb_cylinder
+    type: positive
+  - depth: 8
+    pos:
+    - 22.5
+    - -15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - clearance: top
+    depth: 4
+    pos:
+    - 22.5
+    - -15.0
+    - 3
+    radius_name: m3
+    shape: oobb_nut
+    type: negative
+    zz: bottom
+  - depth: 3
+    pos:
+    - -7.5
+    - -15.0
+    - 4.5
+    radius: 4.962
+    shape: oobb_cylinder
+    type: positive
+  - depth: 8
+    pos:
+    - -7.5
+    - -15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - clearance: top
+    depth: 4
+    pos:
+    - -7.5
+    - -15.0
+    - 3
+    radius_name: m3
+    shape: oobb_nut
+    type: negative
+    zz: bottom
+  - depth: 4
+    pos:
+    - 7.5
+    - 22.5
+    - -1
+    radius: 6
+    shape: oobb_hole
+    type: negative
+  - depth: 3
+    pos:
+    - 22.5
+    - 15.0
+    - 4.5
+    radius: 4.962
+    shape: oobb_cylinder
+    type: positive
+  - depth: 8
+    pos:
+    - 22.5
+    - 15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - clearance: top
+    depth: 4
+    pos:
+    - 22.5
+    - 15.0
+    - 3
+    radius_name: m3
+    shape: oobb_nut
+    type: negative
+    zz: bottom
+  - depth: 3
+    pos:
+    - -7.5
+    - 15.0
+    - 4.5
+    radius: 4.962
+    shape: oobb_cylinder
+    type: positive
+  - depth: 8
+    pos:
+    - -7.5
+    - 15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - clearance: top
+    depth: 4
+    pos:
+    - -7.5
+    - 15.0
+    - 3
+    radius_name: m3
+    shape: oobb_nut
+    type: negative
+    zz: bottom
+  - depth: 3
+    pos:
+    - 22.5
+    - 30.0
+    - 4.5
+    radius: 4.962
+    shape: oobb_cylinder
+    type: positive
+  - depth: 8
+    pos:
+    - 22.5
+    - 30.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - clearance: top
+    depth: 4
+    pos:
+    - 22.5
+    - 30.0
+    - 3
+    radius_name: m3
+    shape: oobb_nut
+    type: negative
+    zz: bottom
+  - depth: 3
+    pos:
+    - -7.5
+    - 30.0
+    - 4.5
+    radius: 4.962
+    shape: oobb_cylinder
+    type: positive
+  - depth: 8
+    pos:
+    - -7.5
+    - 30.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - clearance: top
+    depth: 4
+    pos:
+    - -7.5
+    - 30.0
+    - 3
+    radius_name: m3
+    shape: oobb_nut
+    type: negative
+    zz: bottom
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_21_mm_width_51_mm_height_40_pin_breakout_description_51_breakout_pcb_height_21_breakout_pcb_width_raspberry_pi_manufacturer_mounting_plate_oobb_oobb_name_pico_h_part_number_working_oobb_scad_output_electronic_taxonomy_1_raspberry_pi_taxonomy_14_pico_h_taxonomy_15_breakout_taxonomy_2_microcontroller_taxonomy_3_rp2040_taxonomy_4_pico_taxonomy_5_with_headers_taxonomy_6_21_mm_width_51_mm_height_40_pin_taxonomy_7_microcontroller_type_1_rp2040_type_2_pico_type_3_with_headers_type_4_6_mounting_lift_false_prepare_print_4_width_6_height
+  - oobb_holes_shape_p_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_21_mm_width_51_mm_height_40_pin_breakout_description_51_breakout_pcb_height_21_breakout_pcb_width_raspberry_pi_manufacturer_mounting_plate_oobb_oobb_name_pico_h_part_number_working_oobb_scad_output_electronic_taxonomy_1_raspberry_pi_taxonomy_14_pico_h_taxonomy_15_breakout_taxonomy_2_microcontroller_taxonomy_3_rp2040_taxonomy_4_pico_taxonomy_5_with_headers_taxonomy_6_21_mm_width_51_mm_height_40_pin_taxonomy_7_microcontroller_type_1_rp2040_type_2_pico_type_3_with_headers_type_4_6_mounting_lift_false_prepare_print_4_width_6_height_true_both_holes_perimeter_holes
+  - oobb_hole_shape_negative_type_4_depth_7.5_-22.5_-1_pos_6_radius
+  - oobb_cylinder_shape_positive_type_3_depth_22.5_-30.0_4.5_pos_4.962_radius
+  - oobb_hole_shape_negative_type_m3_radius_name_8_depth_22.5_-30.0_-1_pos
+  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_22.5_-30.0_3_pos_top_clearance_bottom_zz
+  - oobb_cylinder_shape_positive_type_3_depth_-7.5_-30.0_4.5_pos_4.962_radius
+  - oobb_hole_shape_negative_type_m3_radius_name_8_depth_-7.5_-30.0_-1_pos
+  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_-7.5_-30.0_3_pos_top_clearance_bottom_zz
+  - oobb_cylinder_shape_positive_type_3_depth_22.5_-15.0_4.5_pos_4.962_radius
+  - oobb_hole_shape_negative_type_m3_radius_name_8_depth_22.5_-15.0_-1_pos
+  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_22.5_-15.0_3_pos_top_clearance_bottom_zz
+  - oobb_cylinder_shape_positive_type_3_depth_-7.5_-15.0_4.5_pos_4.962_radius
+  - oobb_hole_shape_negative_type_m3_radius_name_8_depth_-7.5_-15.0_-1_pos
+  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_-7.5_-15.0_3_pos_top_clearance_bottom_zz
+  - oobb_hole_shape_negative_type_4_depth_7.5_22.5_-1_pos_6_radius
+  - oobb_cylinder_shape_positive_type_3_depth_22.5_15.0_4.5_pos_4.962_radius
+  - oobb_hole_shape_negative_type_m3_radius_name_8_depth_22.5_15.0_-1_pos
+  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_22.5_15.0_3_pos_top_clearance_bottom_zz
+  - oobb_cylinder_shape_positive_type_3_depth_-7.5_15.0_4.5_pos_4.962_radius
+  - oobb_hole_shape_negative_type_m3_radius_name_8_depth_-7.5_15.0_-1_pos
+  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_-7.5_15.0_3_pos_top_clearance_bottom_zz
+  - oobb_cylinder_shape_positive_type_3_depth_22.5_30.0_4.5_pos_4.962_radius
+  - oobb_hole_shape_negative_type_m3_radius_name_8_depth_22.5_30.0_-1_pos
+  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_22.5_30.0_3_pos_top_clearance_bottom_zz
+  - oobb_cylinder_shape_positive_type_3_depth_-7.5_30.0_4.5_pos_4.962_radius
+  - oobb_hole_shape_negative_type_m3_radius_name_8_depth_-7.5_30.0_-1_pos
+  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_-7.5_30.0_3_pos_top_clearance_bottom_zz
+  description: default mounting plate oobb 0x0x0
+  description_extra: ''
+  description_main: ''
+  directory: parts/electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+  id: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+  id_no_class: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+  id_no_size: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+  id_no_type: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+  kwargs:
+    breakout_description: 21_mm_width_51_mm_height_40_pin
+    breakout_pcb_height: 51
+    breakout_pcb_width: 21
+    filter: ''
+    manufacturer: raspberry_pi
+    modes:
+    - 3dpr
+    navigation: true
+    oobb_name: mounting_plate_oobb
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_oobb_
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: pico_h
+    save_type: all
+    scad_output: working_oobb
+    taxonomy_1: electronic
+    taxonomy_14: raspberry_pi
+    taxonomy_15: pico_h
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: rp2040
+    taxonomy_5: pico
+    taxonomy_6: with_headers
+    taxonomy_7: 21_mm_width_51_mm_height_40_pin
+    typ: all
+    type: default_mounting_plate_oobb
+    type_1: microcontroller
+    type_2: rp2040
+    type_3: pico
+    type_4: with_headers
+  link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+  link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+  link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+  manufacturer: raspberry_pi
+  md5: 2a22a623f05d6b629a8ebb29f2395463
+  md5_10: 2a22a623f0
+  md5_10_upper: 2A22A623F0
+  md5_5: 2a22a
+  md5_5_upper: 2A22A
+  md5_6: 2a22a6
+  md5_6_alpha: 1n6p2
+  md5_6_alpha_upper: 1N6P2
+  md5_6_upper: 2A22A6
+  name: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm Width 51
+    Mm Height 40 Pin Raspberry Pi Pico H
+  name_no_class: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm
+    Width 51 Mm Height 40 Pin Raspberry Pi Pico H
+  name_no_size: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm
+    Width 51 Mm Height 40 Pin Raspberry Pi Pico H
+  name_no_type: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm
+    Width 51 Mm Height 40 Pin Raspberry Pi Pico H
+  name_proper: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm
+    Width 51 Mm Height 40 Pin Raspberry Pi Pico H
+  name_short: Default Mounting Plate Oobb
+  name_space: electronic breakout microcontroller rp2040 pico with headers 21 mm width
+    51 mm height 40 pin raspberry pi pico h
+  name_text: Oobb Part Default Mounting Plate Oobb
+  name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2040 PICO WITH HEADERS 21 MM WIDTH
+    51 MM HEIGHT 40 PIN RASPBERRY PI PICO H
+  oobb_details:
+  - breakout_description: 21_mm_width_51_mm_height_40_pin
+    breakout_pcb_height: 51
+    breakout_pcb_width: 21
+    manufacturer: raspberry_pi
+    oobb_name: mounting_plate_default
+    part_number: pico_h
+    taxonomy_1: electronic
+    taxonomy_14: raspberry_pi
+    taxonomy_15: pico_h
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: rp2040
+    taxonomy_5: pico
+    taxonomy_6: with_headers
+    taxonomy_7: 21_mm_width_51_mm_height_40_pin
+    type_1: microcontroller
+    type_2: rp2040
+    type_3: pico
+    type_4: with_headers
+  - breakout_description: 21_mm_width_51_mm_height_40_pin
+    breakout_pcb_height: 51
+    breakout_pcb_width: 21
+    manufacturer: raspberry_pi
+    oobb_name: mounting_plate_oobb
+    part_number: pico_h
+    scad_output: working_oobb
+    taxonomy_1: electronic
+    taxonomy_14: raspberry_pi
+    taxonomy_15: pico_h
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: rp2040
+    taxonomy_5: pico
+    taxonomy_6: with_headers
+    taxonomy_7: 21_mm_width_51_mm_height_40_pin
+    type_1: microcontroller
+    type_2: rp2040
+    type_3: pico
+    type_4: with_headers
+  oobb_name: mounting_plate_oobb
+  oomlout_ai_roboclick_1:
+    actions:
+    - command: text_jinja_template
+      convert_to_pdf: false
+      convert_to_png: false
+      dict_data:
+        breakout_description: 21_mm_width_51_mm_height_40_pin
+        breakout_pcb_height: 51
+        breakout_pcb_width: 21
+        directory: parts\electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+        manufacturer: raspberry_pi
+        name: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+        name_proper: Electronic Breakout Microcontroller Rp2040 Pico With Headers
+          21 Mm Width 51 Mm Height 40 Pin Raspberry Pi Pico H
+        name_space: electronic breakout microcontroller rp2040 pico with headers 21
+          mm width 51 mm height 40 pin raspberry pi pico h
+        name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2040 PICO WITH HEADERS 21
+          MM WIDTH 51 MM HEIGHT 40 PIN RASPBERRY PI PICO H
+        oobb_details:
+        - breakout_description: 21_mm_width_51_mm_height_40_pin
+          breakout_pcb_height: 51
+          breakout_pcb_width: 21
+          manufacturer: raspberry_pi
+          oobb_name: mounting_plate_default
+          part_number: pico_h
+          taxonomy_1: electronic
+          taxonomy_14: raspberry_pi
+          taxonomy_15: pico_h
+          taxonomy_2: breakout
+          taxonomy_3: microcontroller
+          taxonomy_4: rp2040
+          taxonomy_5: pico
+          taxonomy_6: with_headers
+          taxonomy_7: 21_mm_width_51_mm_height_40_pin
+          type_1: microcontroller
+          type_2: rp2040
+          type_3: pico
+          type_4: with_headers
+        - breakout_description: 21_mm_width_51_mm_height_40_pin
+          breakout_pcb_height: 51
+          breakout_pcb_width: 21
+          manufacturer: raspberry_pi
+          oobb_name: mounting_plate_oobb
+          part_number: pico_h
+          scad_output: working_oobb
+          taxonomy_1: electronic
+          taxonomy_14: raspberry_pi
+          taxonomy_15: pico_h
+          taxonomy_2: breakout
+          taxonomy_3: microcontroller
+          taxonomy_4: rp2040
+          taxonomy_5: pico
+          taxonomy_6: with_headers
+          taxonomy_7: 21_mm_width_51_mm_height_40_pin
+          type_1: microcontroller
+          type_2: rp2040
+          type_3: pico
+          type_4: with_headers
+        part_number: pico_h
+        taxonomy_1: electronic
+        taxonomy_10: ''
+        taxonomy_11: ''
+        taxonomy_12: ''
+        taxonomy_13: ''
+        taxonomy_14: raspberry_pi
+        taxonomy_15: pico_h
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: rp2040
+        taxonomy_5: pico
+        taxonomy_6: with_headers
+        taxonomy_7: 21_mm_width_51_mm_height_40_pin
+        taxonomy_8: ''
+        taxonomy_9: ''
+        type_1: microcontroller
+        type_2: rp2040
+        type_3: pico
+        type_4: with_headers
+        url_chat: ''
+      dict_data_files: {}
+      dict_data_files_exists: {}
+      file_output: label_oomp.svg
+      file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+      search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+  oomp_key: oomp_electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+  part_number: pico_h
+  short_name: ''
+  size: default_mounting_plate_oobb
+  taxonomy_1: electronic
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: raspberry_pi
+  taxonomy_14_capital: Raspberry Pi
+  taxonomy_14_first_letter: r
+  taxonomy_14_first_letter_upper: R
+  taxonomy_14_length_1: r
+  taxonomy_14_length_2: ra
+  taxonomy_14_length_3: ras
+  taxonomy_14_length_4: rasp
+  taxonomy_14_length_5: raspb
+  taxonomy_14_upper: RASPBERRY_PI
+  taxonomy_14_upper_length_1: R
+  taxonomy_14_upper_length_2: RA
+  taxonomy_14_upper_length_3: RAS
+  taxonomy_14_upper_length_4: RASP
+  taxonomy_14_upper_length_5: RASPB
+  taxonomy_15: pico_h
+  taxonomy_15_capital: Pico H
+  taxonomy_15_first_letter: p
+  taxonomy_15_first_letter_upper: P
+  taxonomy_15_length_1: p
+  taxonomy_15_length_2: pi
+  taxonomy_15_length_3: pic
+  taxonomy_15_length_4: pico
+  taxonomy_15_length_5: pico_
+  taxonomy_15_upper: PICO_H
+  taxonomy_15_upper_length_1: P
+  taxonomy_15_upper_length_2: PI
+  taxonomy_15_upper_length_3: PIC
+  taxonomy_15_upper_length_4: PICO
+  taxonomy_15_upper_length_5: PICO_
+  taxonomy_1_capital: Electronic
+  taxonomy_1_first_letter: e
+  taxonomy_1_first_letter_upper: E
+  taxonomy_1_length_1: e
+  taxonomy_1_length_2: el
+  taxonomy_1_length_3: ele
+  taxonomy_1_length_4: elec
+  taxonomy_1_length_5: elect
+  taxonomy_1_upper: ELECTRONIC
+  taxonomy_1_upper_length_1: E
+  taxonomy_1_upper_length_2: EL
+  taxonomy_1_upper_length_3: ELE
+  taxonomy_1_upper_length_4: ELEC
+  taxonomy_1_upper_length_5: ELECT
+  taxonomy_2: breakout
+  taxonomy_2_capital: Breakout
+  taxonomy_2_first_letter: b
+  taxonomy_2_first_letter_upper: B
+  taxonomy_2_length_1: b
+  taxonomy_2_length_2: br
+  taxonomy_2_length_3: bre
+  taxonomy_2_length_4: brea
+  taxonomy_2_length_5: break
+  taxonomy_2_upper: BREAKOUT
+  taxonomy_2_upper_length_1: B
+  taxonomy_2_upper_length_2: BR
+  taxonomy_2_upper_length_3: BRE
+  taxonomy_2_upper_length_4: BREA
+  taxonomy_2_upper_length_5: BREAK
+  taxonomy_3: microcontroller
+  taxonomy_3_capital: Microcontroller
+  taxonomy_3_first_letter: m
+  taxonomy_3_first_letter_upper: M
+  taxonomy_3_length_1: m
+  taxonomy_3_length_2: mi
+  taxonomy_3_length_3: mic
+  taxonomy_3_length_4: micr
+  taxonomy_3_length_5: micro
+  taxonomy_3_upper: MICROCONTROLLER
+  taxonomy_3_upper_length_1: M
+  taxonomy_3_upper_length_2: MI
+  taxonomy_3_upper_length_3: MIC
+  taxonomy_3_upper_length_4: MICR
+  taxonomy_3_upper_length_5: MICRO
+  taxonomy_4: rp2040
+  taxonomy_4_capital: Rp2040
+  taxonomy_4_first_letter: r
+  taxonomy_4_first_letter_upper: R
+  taxonomy_4_length_1: r
+  taxonomy_4_length_2: rp
+  taxonomy_4_length_3: rp2
+  taxonomy_4_length_4: rp20
+  taxonomy_4_length_5: rp204
+  taxonomy_4_upper: RP2040
+  taxonomy_4_upper_length_1: R
+  taxonomy_4_upper_length_2: RP
+  taxonomy_4_upper_length_3: RP2
+  taxonomy_4_upper_length_4: RP20
+  taxonomy_4_upper_length_5: RP204
+  taxonomy_5: pico
+  taxonomy_5_capital: Pico
+  taxonomy_5_first_letter: p
+  taxonomy_5_first_letter_upper: P
+  taxonomy_5_length_1: p
+  taxonomy_5_length_2: pi
+  taxonomy_5_length_3: pic
+  taxonomy_5_length_4: pico
+  taxonomy_5_length_5: pico
+  taxonomy_5_upper: PICO
+  taxonomy_5_upper_length_1: P
+  taxonomy_5_upper_length_2: PI
+  taxonomy_5_upper_length_3: PIC
+  taxonomy_5_upper_length_4: PICO
+  taxonomy_5_upper_length_5: PICO
+  taxonomy_6: with_headers
+  taxonomy_6_capital: With Headers
+  taxonomy_6_first_letter: w
+  taxonomy_6_first_letter_upper: W
+  taxonomy_6_length_1: w
+  taxonomy_6_length_2: wi
+  taxonomy_6_length_3: wit
+  taxonomy_6_length_4: with
+  taxonomy_6_length_5: with_
+  taxonomy_6_upper: WITH_HEADERS
+  taxonomy_6_upper_length_1: W
+  taxonomy_6_upper_length_2: WI
+  taxonomy_6_upper_length_3: WIT
+  taxonomy_6_upper_length_4: WITH
+  taxonomy_6_upper_length_5: WITH_
+  taxonomy_7: 21_mm_width_51_mm_height_40_pin
+  taxonomy_7_capital: 21 mm Width 51 mm Height 40 Pin
+  taxonomy_7_first_letter: '2'
+  taxonomy_7_first_letter_upper: '2'
+  taxonomy_7_length_1: '2'
+  taxonomy_7_length_2: '21'
+  taxonomy_7_length_3: '21_'
+  taxonomy_7_length_4: 21_m
+  taxonomy_7_length_5: 21_mm
+  taxonomy_7_upper: 21_MM_WIDTH_51_MM_HEIGHT_40_PIN
+  taxonomy_7_upper_length_1: '2'
+  taxonomy_7_upper_length_2: '21'
+  taxonomy_7_upper_length_3: '21_'
+  taxonomy_7_upper_length_4: 21_M
+  taxonomy_7_upper_length_5: 21_MM
+  taxonomy_8: ''
+  taxonomy_9: ''
+  type: part
+  type_1: microcontroller
+  type_2: rp2040
+  type_3: pico
+  type_4: with_headers
+  url_chat: ''
+type_1: microcontroller
+type_2: rp2040
+type_3: pico
+type_4: with_headers
+url_chat: ''

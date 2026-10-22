@@ -1,0 +1,2271 @@
+bip_39_2_word_array:
+- catalog
+- wedding
+bip_39_2_word_no_space: catalogwedding
+bip_39_2_word_space: catalog wedding
+bip_39_2_word_underscore: catalog_wedding
+bip_39_3_word_array:
+- catalog
+- wedding
+- build
+bip_39_3_word_no_space: catalogweddingbuild
+bip_39_3_word_space: catalog wedding build
+bip_39_3_word_underscore: catalog_wedding_build
+bip_39_full_array:
+- catalog
+- wedding
+- build
+- sun
+- cave
+- pepper
+- parent
+- opera
+- enemy
+- sugar
+- over
+- power
+bip_39_full_no_space: catalogweddingbuildsuncavepepperparentoperaenemysugaroverpower
+bip_39_full_space: catalog wedding build sun cave pepper parent opera enemy sugar
+  over power
+bip_39_full_underscore: catalog_wedding_build_sun_cave_pepper_parent_opera_enemy_sugar_over_power
+breakout_description: 17_8_mm_width_21_mm_height_14_pins
+breakout_pcb_height: 21
+breakout_pcb_width: 17.8
+directory: parts/electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+id: electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+id_no_class: electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+id_no_size: electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+id_no_type: electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+id_oobb: electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+kwargs:
+  breakout_description: 17_8_mm_width_21_mm_height_14_pins
+  breakout_pcb_height: 21
+  breakout_pcb_width: 17.8
+  filter: ''
+  manufacturer: seeed_studio
+  modes:
+  - 3dpr
+  navigation: true
+  oobb_name: mounting_plate_oobb
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_oobb_
+  oomp_mode: project
+  oomp_run: true
+  overwrite: true
+  part_number: xiao_esp32c3
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: seeed_studio
+  taxonomy_15: xiao_esp32c3
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_c3
+  taxonomy_5: xiao_esp32c3
+  taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+  typ: all
+  type: default_mounting_plate_oobb
+  type_1: microcontroller
+  type_2: esp32_c3
+  type_3: xiao_esp32c3
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+manufacturer: seeed_studio
+md5: 23ff1c776ca24d45e80cda49fb1a77d4
+md5_10: 23ff1c776c
+md5_10_upper: 23FF1C776C
+md5_5: 23ff1
+md5_5_upper: 23FF1
+md5_6: 23ff1c
+md5_6_alpha: 1ek9o
+md5_6_alpha_upper: 1EK9O
+md5_6_upper: 23FF1C
+name: Electronic Breakout Microcontroller Esp32 C3 Xiao Esp32C3 17 8 Mm Width 21 Mm
+  Height 14 Pins Seeed Studio Xiao Esp32C3
+name_no_class: Electronic Breakout Microcontroller Esp32 C3 Xiao Esp32C3 17 8 Mm Width
+  21 Mm Height 14 Pins Seeed Studio Xiao Esp32C3
+name_no_size: Electronic Breakout Microcontroller Esp32 C3 Xiao Esp32C3 17 8 Mm Width
+  21 Mm Height 14 Pins Seeed Studio Xiao Esp32C3
+name_no_type: Electronic Breakout Microcontroller Esp32 C3 Xiao Esp32C3 17 8 Mm Width
+  21 Mm Height 14 Pins Seeed Studio Xiao Esp32C3
+name_proper: Electronic Breakout Microcontroller Esp32 C3 Xiao Esp32C3 17 8 Mm Width
+  21 Mm Height 14 Pins Seeed Studio Xiao Esp32C3
+name_space: electronic breakout microcontroller esp32 c3 xiao esp32c3 17 8 mm width
+  21 mm height 14 pins seeed studio xiao esp32c3
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 C3 XIAO ESP32C3 17 8 MM WIDTH
+  21 MM HEIGHT 14 PINS SEEED STUDIO XIAO ESP32C3
+oobb_details:
+- breakout_description: 17_8_mm_width_21_mm_height_14_pins
+  breakout_pcb_height: 21
+  breakout_pcb_width: 17.8
+  manufacturer: seeed_studio
+  oobb_name: mounting_plate_default
+  part_number: xiao_esp32c3
+  taxonomy_1: electronic
+  taxonomy_14: seeed_studio
+  taxonomy_15: xiao_esp32c3
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_c3
+  taxonomy_5: xiao_esp32c3
+  taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+  type_1: microcontroller
+  type_2: esp32_c3
+  type_3: xiao_esp32c3
+- breakout_description: 17_8_mm_width_21_mm_height_14_pins
+  breakout_pcb_height: 21
+  breakout_pcb_width: 17.8
+  manufacturer: seeed_studio
+  oobb_name: mounting_plate_oobb
+  part_number: xiao_esp32c3
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: seeed_studio
+  taxonomy_15: xiao_esp32c3
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_c3
+  taxonomy_5: xiao_esp32c3
+  taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+  type_1: microcontroller
+  type_2: esp32_c3
+  type_3: xiao_esp32c3
+oobb_name: mounting_plate_oobb
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      breakout_description: 17_8_mm_width_21_mm_height_14_pins
+      breakout_pcb_height: 21
+      breakout_pcb_width: 17.8
+      directory: parts\electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+      manufacturer: seeed_studio
+      name: electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+      name_proper: Electronic Breakout Microcontroller Esp32 C3 Xiao Esp32C3 17 8
+        Mm Width 21 Mm Height 14 Pins Seeed Studio Xiao Esp32C3
+      name_space: electronic breakout microcontroller esp32 c3 xiao esp32c3 17 8 mm
+        width 21 mm height 14 pins seeed studio xiao esp32c3
+      name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 C3 XIAO ESP32C3 17 8 MM
+        WIDTH 21 MM HEIGHT 14 PINS SEEED STUDIO XIAO ESP32C3
+      oobb_details:
+      - breakout_description: 17_8_mm_width_21_mm_height_14_pins
+        breakout_pcb_height: 21
+        breakout_pcb_width: 17.8
+        manufacturer: seeed_studio
+        oobb_name: mounting_plate_default
+        part_number: xiao_esp32c3
+        taxonomy_1: electronic
+        taxonomy_14: seeed_studio
+        taxonomy_15: xiao_esp32c3
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_c3
+        taxonomy_5: xiao_esp32c3
+        taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+        type_1: microcontroller
+        type_2: esp32_c3
+        type_3: xiao_esp32c3
+      - breakout_description: 17_8_mm_width_21_mm_height_14_pins
+        breakout_pcb_height: 21
+        breakout_pcb_width: 17.8
+        manufacturer: seeed_studio
+        oobb_name: mounting_plate_oobb
+        part_number: xiao_esp32c3
+        scad_output: working_oobb
+        taxonomy_1: electronic
+        taxonomy_14: seeed_studio
+        taxonomy_15: xiao_esp32c3
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_c3
+        taxonomy_5: xiao_esp32c3
+        taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+        type_1: microcontroller
+        type_2: esp32_c3
+        type_3: xiao_esp32c3
+      part_number: xiao_esp32c3
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: seeed_studio
+      taxonomy_15: xiao_esp32c3
+      taxonomy_2: breakout
+      taxonomy_3: microcontroller
+      taxonomy_4: esp32_c3
+      taxonomy_5: xiao_esp32c3
+      taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+      taxonomy_7: ''
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: microcontroller
+      type_2: esp32_c3
+      type_3: xiao_esp32c3
+      url_chat: ''
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+part_number: xiao_esp32c3
+project_name: C:\gh\oomp_electronic_breakout
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: seeed_studio
+taxonomy_14_capital: Seeed Studio
+taxonomy_14_first_letter: s
+taxonomy_14_first_letter_upper: S
+taxonomy_14_length_1: s
+taxonomy_14_length_2: se
+taxonomy_14_length_3: see
+taxonomy_14_length_4: seee
+taxonomy_14_length_5: seeed
+taxonomy_14_upper: SEEED_STUDIO
+taxonomy_14_upper_length_1: S
+taxonomy_14_upper_length_2: SE
+taxonomy_14_upper_length_3: SEE
+taxonomy_14_upper_length_4: SEEE
+taxonomy_14_upper_length_5: SEEED
+taxonomy_15: xiao_esp32c3
+taxonomy_15_capital: Xiao Esp32C3
+taxonomy_15_first_letter: x
+taxonomy_15_first_letter_upper: X
+taxonomy_15_length_1: x
+taxonomy_15_length_2: xi
+taxonomy_15_length_3: xia
+taxonomy_15_length_4: xiao
+taxonomy_15_length_5: xiao_
+taxonomy_15_upper: XIAO_ESP32C3
+taxonomy_15_upper_length_1: X
+taxonomy_15_upper_length_2: XI
+taxonomy_15_upper_length_3: XIA
+taxonomy_15_upper_length_4: XIAO
+taxonomy_15_upper_length_5: XIAO_
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: esp32_c3
+taxonomy_4_capital: Esp32 C3
+taxonomy_4_first_letter: e
+taxonomy_4_first_letter_upper: E
+taxonomy_4_length_1: e
+taxonomy_4_length_2: es
+taxonomy_4_length_3: esp
+taxonomy_4_length_4: esp3
+taxonomy_4_length_5: esp32
+taxonomy_4_upper: ESP32_C3
+taxonomy_4_upper_length_1: E
+taxonomy_4_upper_length_2: ES
+taxonomy_4_upper_length_3: ESP
+taxonomy_4_upper_length_4: ESP3
+taxonomy_4_upper_length_5: ESP32
+taxonomy_5: xiao_esp32c3
+taxonomy_5_capital: Xiao Esp32C3
+taxonomy_5_first_letter: x
+taxonomy_5_first_letter_upper: X
+taxonomy_5_length_1: x
+taxonomy_5_length_2: xi
+taxonomy_5_length_3: xia
+taxonomy_5_length_4: xiao
+taxonomy_5_length_5: xiao_
+taxonomy_5_upper: XIAO_ESP32C3
+taxonomy_5_upper_length_1: X
+taxonomy_5_upper_length_2: XI
+taxonomy_5_upper_length_3: XIA
+taxonomy_5_upper_length_4: XIAO
+taxonomy_5_upper_length_5: XIAO_
+taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+taxonomy_6_capital: 17.8 mm Width 21 mm Height 14 Pins
+taxonomy_6_first_letter: '1'
+taxonomy_6_first_letter_upper: '1'
+taxonomy_6_length_1: '1'
+taxonomy_6_length_2: '17'
+taxonomy_6_length_3: '17_'
+taxonomy_6_length_4: '17_8'
+taxonomy_6_length_5: '17_8_'
+taxonomy_6_upper: 17_8_MM_WIDTH_21_MM_HEIGHT_14_PINS
+taxonomy_6_upper_length_1: '1'
+taxonomy_6_upper_length_2: '17'
+taxonomy_6_upper_length_3: '17_'
+taxonomy_6_upper_length_4: '17_8'
+taxonomy_6_upper_length_5: '17_8_'
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+thing:
+  bip_39_2_word_array:
+  - catalog
+  - wedding
+  bip_39_2_word_no_space: catalogwedding
+  bip_39_2_word_space: catalog wedding
+  bip_39_2_word_underscore: catalog_wedding
+  bip_39_3_word_array:
+  - catalog
+  - wedding
+  - build
+  bip_39_3_word_no_space: catalogweddingbuild
+  bip_39_3_word_space: catalog wedding build
+  bip_39_3_word_underscore: catalog_wedding_build
+  bip_39_full_array:
+  - catalog
+  - wedding
+  - build
+  - sun
+  - cave
+  - pepper
+  - parent
+  - opera
+  - enemy
+  - sugar
+  - over
+  - power
+  bip_39_full_no_space: catalogweddingbuildsuncavepepperparentoperaenemysugaroverpower
+  bip_39_full_space: catalog wedding build sun cave pepper parent opera enemy sugar
+    over power
+  bip_39_full_underscore: catalog_wedding_build_sun_cave_pepper_parent_opera_enemy_sugar_over_power
+  breakout_description: 17_8_mm_width_21_mm_height_14_pins
+  breakout_pcb_height: 21
+  breakout_pcb_width: 17.8
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 4
+      pos:
+      - 0
+      - 0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 44
+      - 59
+      - 3
+      type: positive
+      width: 3
+  - - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - -22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - -22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - 22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - -22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 0.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 0.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+  - - depth: 4
+      h: 4
+      inclusion: laser
+      pos:
+      - 0
+      - 7.5
+      - -1
+      r: 6
+      radius: 6
+      shape: cylinder
+      type: negative
+    - depth: 4
+      h: 4
+      inclusion: 3dpr
+      pos:
+      - 0
+      - 7.5
+      - -1
+      r: 6
+      shape: cylinder
+      type: negative
+    - depth: 4
+      h: 4
+      inclusion: 'true'
+      pos:
+      - 0
+      - 7.5
+      - -1
+      r: 6
+      radius: 6
+      shape: cylinder
+      type: negative
+  - - depth: 3
+      h: 3
+      inclusion: laser
+      pos: &id001
+      - 15
+      - 0.0
+      - 3.0
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 3dpr
+      pos: *id001
+      r: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 'true'
+      pos: *id001
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+  - - depth: 8
+      h: 8
+      inclusion: laser
+      pos:
+      - 15
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 3dpr
+      pos:
+      - 15
+      - 0.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 'true'
+      pos:
+      - 15
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - clearance: top
+        depth: 4
+        height: 54
+        inclusion: laser
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 104
+        inclusion: 3dpr
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.4619999999999997
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 154
+        inclusion: 'true'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      pos:
+      - 15
+      - 0.0
+      - 3
+      rot:
+      - 0
+      - 0
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      inclusion: laser
+      pos: &id002
+      - -15
+      - 0.0
+      - 3.0
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 3dpr
+      pos: *id002
+      r: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 'true'
+      pos: *id002
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+  - - depth: 8
+      h: 8
+      inclusion: laser
+      pos:
+      - -15
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 3dpr
+      pos:
+      - -15
+      - 0.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 'true'
+      pos:
+      - -15
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - clearance: top
+        depth: 4
+        height: 54
+        inclusion: laser
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 104
+        inclusion: 3dpr
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.4619999999999997
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 154
+        inclusion: 'true'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      pos:
+      - -15
+      - 0.0
+      - 3
+      rot:
+      - 0
+      - 0
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      inclusion: laser
+      pos: &id003
+      - 15
+      - 15.0
+      - 3.0
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 3dpr
+      pos: *id003
+      r: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 'true'
+      pos: *id003
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+  - - depth: 8
+      h: 8
+      inclusion: laser
+      pos:
+      - 15
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 3dpr
+      pos:
+      - 15
+      - 15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 'true'
+      pos:
+      - 15
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - clearance: top
+        depth: 4
+        height: 54
+        inclusion: laser
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 104
+        inclusion: 3dpr
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.4619999999999997
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 154
+        inclusion: 'true'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      pos:
+      - 15
+      - 15.0
+      - 3
+      rot:
+      - 0
+      - 0
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      inclusion: laser
+      pos: &id004
+      - -15
+      - 15.0
+      - 3.0
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 3dpr
+      pos: *id004
+      r: 4.962
+      shape: cylinder
+      type: positive
+    - depth: 3
+      h: 3
+      inclusion: 'true'
+      pos: *id004
+      r: 4.962
+      radius: 4.962
+      shape: cylinder
+      type: positive
+  - - depth: 8
+      h: 8
+      inclusion: laser
+      pos:
+      - -15
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 3dpr
+      pos:
+      - -15
+      - 15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 8
+      h: 8
+      inclusion: 'true'
+      pos:
+      - -15
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - clearance: top
+        depth: 4
+        height: 54
+        inclusion: laser
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 104
+        inclusion: 3dpr
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.4619999999999997
+        shape: polyg
+        sides: 6
+        type: positive
+      - clearance: top
+        depth: 4
+        height: 154
+        inclusion: 'true'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.1734999999999998
+        shape: polyg
+        sides: 6
+        type: positive
+      pos:
+      - -15
+      - 15.0
+      - 3
+      rot:
+      - 0
+      - 0
+      - 0
+      type: rotation
+      typetype: negative
+  components_objects:
+  - breakout_description: 17_8_mm_width_21_mm_height_14_pins
+    breakout_pcb_height: 21
+    breakout_pcb_width: 17.8
+    depth: 3
+    filter: ''
+    height: 4
+    manufacturer: seeed_studio
+    modes:
+    - 3dpr
+    mounting_lift: 6
+    navigation: true
+    oobb_name: mounting_plate_oobb
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: xiao_esp32c3
+    pos:
+    - 0
+    - 0
+    - 0
+    prepare_print: false
+    save_type: all
+    scad_output: working_oobb
+    shape: oobb_plate
+    taxonomy_1: electronic
+    taxonomy_14: seeed_studio
+    taxonomy_15: xiao_esp32c3
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_c3
+    taxonomy_5: xiao_esp32c3
+    taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+    typ: all
+    type: positive
+    type_1: microcontroller
+    type_2: esp32_c3
+    type_3: xiao_esp32c3
+    width: 3
+  - both_holes: true
+    breakout_description: 17_8_mm_width_21_mm_height_14_pins
+    breakout_pcb_height: 21
+    breakout_pcb_width: 17.8
+    depth: 3
+    filter: ''
+    height: 4
+    holes: perimeter
+    manufacturer: seeed_studio
+    modes:
+    - 3dpr
+    mounting_lift: 6
+    navigation: true
+    oobb_name: mounting_plate_oobb
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: xiao_esp32c3
+    pos:
+    - 0
+    - 0
+    - 0
+    prepare_print: false
+    save_type: all
+    scad_output: working_oobb
+    shape: oobb_holes
+    taxonomy_1: electronic
+    taxonomy_14: seeed_studio
+    taxonomy_15: xiao_esp32c3
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_c3
+    taxonomy_5: xiao_esp32c3
+    taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+    typ: all
+    type: p
+    type_1: microcontroller
+    type_2: esp32_c3
+    type_3: xiao_esp32c3
+    width: 3
+  - depth: 4
+    pos:
+    - 0
+    - 7.5
+    - -1
+    radius: 6
+    shape: oobb_hole
+    type: negative
+  - depth: 3
+    pos:
+    - 15
+    - 0.0
+    - 4.5
+    radius: 4.962
+    shape: oobb_cylinder
+    type: positive
+  - depth: 8
+    pos:
+    - 15
+    - 0.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - clearance: top
+    depth: 4
+    pos:
+    - 15
+    - 0.0
+    - 3
+    radius_name: m3
+    shape: oobb_nut
+    type: negative
+    zz: bottom
+  - depth: 3
+    pos:
+    - -15
+    - 0.0
+    - 4.5
+    radius: 4.962
+    shape: oobb_cylinder
+    type: positive
+  - depth: 8
+    pos:
+    - -15
+    - 0.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - clearance: top
+    depth: 4
+    pos:
+    - -15
+    - 0.0
+    - 3
+    radius_name: m3
+    shape: oobb_nut
+    type: negative
+    zz: bottom
+  - depth: 3
+    pos:
+    - 15
+    - 15.0
+    - 4.5
+    radius: 4.962
+    shape: oobb_cylinder
+    type: positive
+  - depth: 8
+    pos:
+    - 15
+    - 15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - clearance: top
+    depth: 4
+    pos:
+    - 15
+    - 15.0
+    - 3
+    radius_name: m3
+    shape: oobb_nut
+    type: negative
+    zz: bottom
+  - depth: 3
+    pos:
+    - -15
+    - 15.0
+    - 4.5
+    radius: 4.962
+    shape: oobb_cylinder
+    type: positive
+  - depth: 8
+    pos:
+    - -15
+    - 15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - clearance: top
+    depth: 4
+    pos:
+    - -15
+    - 15.0
+    - 3
+    radius_name: m3
+    shape: oobb_nut
+    type: negative
+    zz: bottom
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_17_8_mm_width_21_mm_height_14_pins_breakout_description_21_breakout_pcb_height_17.8_breakout_pcb_width_seeed_studio_manufacturer_mounting_plate_oobb_oobb_name_xiao_esp32c3_part_number_working_oobb_scad_output_electronic_taxonomy_1_seeed_studio_taxonomy_14_xiao_esp32c3_taxonomy_15_breakout_taxonomy_2_microcontroller_taxonomy_3_esp32_c3_taxonomy_4_xiao_esp32c3_taxonomy_5_17_8_mm_width_21_mm_height_14_pins_taxonomy_6_microcontroller_type_1_esp32_c3_type_2_xiao_esp32c3_type_3_6_mounting_lift_false_prepare_print_3_width_4_height
+  - oobb_holes_shape_p_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_17_8_mm_width_21_mm_height_14_pins_breakout_description_21_breakout_pcb_height_17.8_breakout_pcb_width_seeed_studio_manufacturer_mounting_plate_oobb_oobb_name_xiao_esp32c3_part_number_working_oobb_scad_output_electronic_taxonomy_1_seeed_studio_taxonomy_14_xiao_esp32c3_taxonomy_15_breakout_taxonomy_2_microcontroller_taxonomy_3_esp32_c3_taxonomy_4_xiao_esp32c3_taxonomy_5_17_8_mm_width_21_mm_height_14_pins_taxonomy_6_microcontroller_type_1_esp32_c3_type_2_xiao_esp32c3_type_3_6_mounting_lift_false_prepare_print_3_width_4_height_true_both_holes_perimeter_holes
+  - oobb_hole_shape_negative_type_4_depth_0_7.5_-1_pos_6_radius
+  - oobb_cylinder_shape_positive_type_3_depth_15_0.0_4.5_pos_4.962_radius
+  - oobb_hole_shape_negative_type_m3_radius_name_8_depth_15_0.0_-1_pos
+  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_15_0.0_3_pos_top_clearance_bottom_zz
+  - oobb_cylinder_shape_positive_type_3_depth_-15_0.0_4.5_pos_4.962_radius
+  - oobb_hole_shape_negative_type_m3_radius_name_8_depth_-15_0.0_-1_pos
+  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_-15_0.0_3_pos_top_clearance_bottom_zz
+  - oobb_cylinder_shape_positive_type_3_depth_15_15.0_4.5_pos_4.962_radius
+  - oobb_hole_shape_negative_type_m3_radius_name_8_depth_15_15.0_-1_pos
+  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_15_15.0_3_pos_top_clearance_bottom_zz
+  - oobb_cylinder_shape_positive_type_3_depth_-15_15.0_4.5_pos_4.962_radius
+  - oobb_hole_shape_negative_type_m3_radius_name_8_depth_-15_15.0_-1_pos
+  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_-15_15.0_3_pos_top_clearance_bottom_zz
+  description: default mounting plate oobb 0x0x0
+  description_extra: ''
+  description_main: ''
+  directory: parts/electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+  id: electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+  id_no_class: electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+  id_no_size: electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+  id_no_type: electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+  kwargs:
+    breakout_description: 17_8_mm_width_21_mm_height_14_pins
+    breakout_pcb_height: 21
+    breakout_pcb_width: 17.8
+    filter: ''
+    manufacturer: seeed_studio
+    modes:
+    - 3dpr
+    navigation: true
+    oobb_name: mounting_plate_oobb
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_oobb_
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: xiao_esp32c3
+    save_type: all
+    scad_output: working_oobb
+    taxonomy_1: electronic
+    taxonomy_14: seeed_studio
+    taxonomy_15: xiao_esp32c3
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_c3
+    taxonomy_5: xiao_esp32c3
+    taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+    typ: all
+    type: default_mounting_plate_oobb
+    type_1: microcontroller
+    type_2: esp32_c3
+    type_3: xiao_esp32c3
+  link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+  link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+  link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+  manufacturer: seeed_studio
+  md5: 23ff1c776ca24d45e80cda49fb1a77d4
+  md5_10: 23ff1c776c
+  md5_10_upper: 23FF1C776C
+  md5_5: 23ff1
+  md5_5_upper: 23FF1
+  md5_6: 23ff1c
+  md5_6_alpha: 1ek9o
+  md5_6_alpha_upper: 1EK9O
+  md5_6_upper: 23FF1C
+  name: Electronic Breakout Microcontroller Esp32 C3 Xiao Esp32C3 17 8 Mm Width 21
+    Mm Height 14 Pins Seeed Studio Xiao Esp32C3
+  name_no_class: Electronic Breakout Microcontroller Esp32 C3 Xiao Esp32C3 17 8 Mm
+    Width 21 Mm Height 14 Pins Seeed Studio Xiao Esp32C3
+  name_no_size: Electronic Breakout Microcontroller Esp32 C3 Xiao Esp32C3 17 8 Mm
+    Width 21 Mm Height 14 Pins Seeed Studio Xiao Esp32C3
+  name_no_type: Electronic Breakout Microcontroller Esp32 C3 Xiao Esp32C3 17 8 Mm
+    Width 21 Mm Height 14 Pins Seeed Studio Xiao Esp32C3
+  name_proper: Electronic Breakout Microcontroller Esp32 C3 Xiao Esp32C3 17 8 Mm Width
+    21 Mm Height 14 Pins Seeed Studio Xiao Esp32C3
+  name_short: Default Mounting Plate Oobb
+  name_space: electronic breakout microcontroller esp32 c3 xiao esp32c3 17 8 mm width
+    21 mm height 14 pins seeed studio xiao esp32c3
+  name_text: Oobb Part Default Mounting Plate Oobb
+  name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 C3 XIAO ESP32C3 17 8 MM WIDTH
+    21 MM HEIGHT 14 PINS SEEED STUDIO XIAO ESP32C3
+  oobb_details:
+  - breakout_description: 17_8_mm_width_21_mm_height_14_pins
+    breakout_pcb_height: 21
+    breakout_pcb_width: 17.8
+    manufacturer: seeed_studio
+    oobb_name: mounting_plate_default
+    part_number: xiao_esp32c3
+    taxonomy_1: electronic
+    taxonomy_14: seeed_studio
+    taxonomy_15: xiao_esp32c3
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_c3
+    taxonomy_5: xiao_esp32c3
+    taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+    type_1: microcontroller
+    type_2: esp32_c3
+    type_3: xiao_esp32c3
+  - breakout_description: 17_8_mm_width_21_mm_height_14_pins
+    breakout_pcb_height: 21
+    breakout_pcb_width: 17.8
+    manufacturer: seeed_studio
+    oobb_name: mounting_plate_oobb
+    part_number: xiao_esp32c3
+    scad_output: working_oobb
+    taxonomy_1: electronic
+    taxonomy_14: seeed_studio
+    taxonomy_15: xiao_esp32c3
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: esp32_c3
+    taxonomy_5: xiao_esp32c3
+    taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+    type_1: microcontroller
+    type_2: esp32_c3
+    type_3: xiao_esp32c3
+  oobb_name: mounting_plate_oobb
+  oomlout_ai_roboclick_1:
+    actions:
+    - command: text_jinja_template
+      convert_to_pdf: false
+      convert_to_png: false
+      dict_data:
+        breakout_description: 17_8_mm_width_21_mm_height_14_pins
+        breakout_pcb_height: 21
+        breakout_pcb_width: 17.8
+        directory: parts\electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+        manufacturer: seeed_studio
+        name: electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+        name_proper: Electronic Breakout Microcontroller Esp32 C3 Xiao Esp32C3 17
+          8 Mm Width 21 Mm Height 14 Pins Seeed Studio Xiao Esp32C3
+        name_space: electronic breakout microcontroller esp32 c3 xiao esp32c3 17 8
+          mm width 21 mm height 14 pins seeed studio xiao esp32c3
+        name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 C3 XIAO ESP32C3 17 8
+          MM WIDTH 21 MM HEIGHT 14 PINS SEEED STUDIO XIAO ESP32C3
+        oobb_details:
+        - breakout_description: 17_8_mm_width_21_mm_height_14_pins
+          breakout_pcb_height: 21
+          breakout_pcb_width: 17.8
+          manufacturer: seeed_studio
+          oobb_name: mounting_plate_default
+          part_number: xiao_esp32c3
+          taxonomy_1: electronic
+          taxonomy_14: seeed_studio
+          taxonomy_15: xiao_esp32c3
+          taxonomy_2: breakout
+          taxonomy_3: microcontroller
+          taxonomy_4: esp32_c3
+          taxonomy_5: xiao_esp32c3
+          taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+          type_1: microcontroller
+          type_2: esp32_c3
+          type_3: xiao_esp32c3
+        - breakout_description: 17_8_mm_width_21_mm_height_14_pins
+          breakout_pcb_height: 21
+          breakout_pcb_width: 17.8
+          manufacturer: seeed_studio
+          oobb_name: mounting_plate_oobb
+          part_number: xiao_esp32c3
+          scad_output: working_oobb
+          taxonomy_1: electronic
+          taxonomy_14: seeed_studio
+          taxonomy_15: xiao_esp32c3
+          taxonomy_2: breakout
+          taxonomy_3: microcontroller
+          taxonomy_4: esp32_c3
+          taxonomy_5: xiao_esp32c3
+          taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+          type_1: microcontroller
+          type_2: esp32_c3
+          type_3: xiao_esp32c3
+        part_number: xiao_esp32c3
+        taxonomy_1: electronic
+        taxonomy_10: ''
+        taxonomy_11: ''
+        taxonomy_12: ''
+        taxonomy_13: ''
+        taxonomy_14: seeed_studio
+        taxonomy_15: xiao_esp32c3
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_c3
+        taxonomy_5: xiao_esp32c3
+        taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+        taxonomy_7: ''
+        taxonomy_8: ''
+        taxonomy_9: ''
+        type_1: microcontroller
+        type_2: esp32_c3
+        type_3: xiao_esp32c3
+        url_chat: ''
+      dict_data_files: {}
+      dict_data_files_exists: {}
+      file_output: label_oomp.svg
+      file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+      search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+  oomp_key: oomp_electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+  part_number: xiao_esp32c3
+  short_name: ''
+  size: default_mounting_plate_oobb
+  taxonomy_1: electronic
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: seeed_studio
+  taxonomy_14_capital: Seeed Studio
+  taxonomy_14_first_letter: s
+  taxonomy_14_first_letter_upper: S
+  taxonomy_14_length_1: s
+  taxonomy_14_length_2: se
+  taxonomy_14_length_3: see
+  taxonomy_14_length_4: seee
+  taxonomy_14_length_5: seeed
+  taxonomy_14_upper: SEEED_STUDIO
+  taxonomy_14_upper_length_1: S
+  taxonomy_14_upper_length_2: SE
+  taxonomy_14_upper_length_3: SEE
+  taxonomy_14_upper_length_4: SEEE
+  taxonomy_14_upper_length_5: SEEED
+  taxonomy_15: xiao_esp32c3
+  taxonomy_15_capital: Xiao Esp32C3
+  taxonomy_15_first_letter: x
+  taxonomy_15_first_letter_upper: X
+  taxonomy_15_length_1: x
+  taxonomy_15_length_2: xi
+  taxonomy_15_length_3: xia
+  taxonomy_15_length_4: xiao
+  taxonomy_15_length_5: xiao_
+  taxonomy_15_upper: XIAO_ESP32C3
+  taxonomy_15_upper_length_1: X
+  taxonomy_15_upper_length_2: XI
+  taxonomy_15_upper_length_3: XIA
+  taxonomy_15_upper_length_4: XIAO
+  taxonomy_15_upper_length_5: XIAO_
+  taxonomy_1_capital: Electronic
+  taxonomy_1_first_letter: e
+  taxonomy_1_first_letter_upper: E
+  taxonomy_1_length_1: e
+  taxonomy_1_length_2: el
+  taxonomy_1_length_3: ele
+  taxonomy_1_length_4: elec
+  taxonomy_1_length_5: elect
+  taxonomy_1_upper: ELECTRONIC
+  taxonomy_1_upper_length_1: E
+  taxonomy_1_upper_length_2: EL
+  taxonomy_1_upper_length_3: ELE
+  taxonomy_1_upper_length_4: ELEC
+  taxonomy_1_upper_length_5: ELECT
+  taxonomy_2: breakout
+  taxonomy_2_capital: Breakout
+  taxonomy_2_first_letter: b
+  taxonomy_2_first_letter_upper: B
+  taxonomy_2_length_1: b
+  taxonomy_2_length_2: br
+  taxonomy_2_length_3: bre
+  taxonomy_2_length_4: brea
+  taxonomy_2_length_5: break
+  taxonomy_2_upper: BREAKOUT
+  taxonomy_2_upper_length_1: B
+  taxonomy_2_upper_length_2: BR
+  taxonomy_2_upper_length_3: BRE
+  taxonomy_2_upper_length_4: BREA
+  taxonomy_2_upper_length_5: BREAK
+  taxonomy_3: microcontroller
+  taxonomy_3_capital: Microcontroller
+  taxonomy_3_first_letter: m
+  taxonomy_3_first_letter_upper: M
+  taxonomy_3_length_1: m
+  taxonomy_3_length_2: mi
+  taxonomy_3_length_3: mic
+  taxonomy_3_length_4: micr
+  taxonomy_3_length_5: micro
+  taxonomy_3_upper: MICROCONTROLLER
+  taxonomy_3_upper_length_1: M
+  taxonomy_3_upper_length_2: MI
+  taxonomy_3_upper_length_3: MIC
+  taxonomy_3_upper_length_4: MICR
+  taxonomy_3_upper_length_5: MICRO
+  taxonomy_4: esp32_c3
+  taxonomy_4_capital: Esp32 C3
+  taxonomy_4_first_letter: e
+  taxonomy_4_first_letter_upper: E
+  taxonomy_4_length_1: e
+  taxonomy_4_length_2: es
+  taxonomy_4_length_3: esp
+  taxonomy_4_length_4: esp3
+  taxonomy_4_length_5: esp32
+  taxonomy_4_upper: ESP32_C3
+  taxonomy_4_upper_length_1: E
+  taxonomy_4_upper_length_2: ES
+  taxonomy_4_upper_length_3: ESP
+  taxonomy_4_upper_length_4: ESP3
+  taxonomy_4_upper_length_5: ESP32
+  taxonomy_5: xiao_esp32c3
+  taxonomy_5_capital: Xiao Esp32C3
+  taxonomy_5_first_letter: x
+  taxonomy_5_first_letter_upper: X
+  taxonomy_5_length_1: x
+  taxonomy_5_length_2: xi
+  taxonomy_5_length_3: xia
+  taxonomy_5_length_4: xiao
+  taxonomy_5_length_5: xiao_
+  taxonomy_5_upper: XIAO_ESP32C3
+  taxonomy_5_upper_length_1: X
+  taxonomy_5_upper_length_2: XI
+  taxonomy_5_upper_length_3: XIA
+  taxonomy_5_upper_length_4: XIAO
+  taxonomy_5_upper_length_5: XIAO_
+  taxonomy_6: 17_8_mm_width_21_mm_height_14_pins
+  taxonomy_6_capital: 17.8 mm Width 21 mm Height 14 Pins
+  taxonomy_6_first_letter: '1'
+  taxonomy_6_first_letter_upper: '1'
+  taxonomy_6_length_1: '1'
+  taxonomy_6_length_2: '17'
+  taxonomy_6_length_3: '17_'
+  taxonomy_6_length_4: '17_8'
+  taxonomy_6_length_5: '17_8_'
+  taxonomy_6_upper: 17_8_MM_WIDTH_21_MM_HEIGHT_14_PINS
+  taxonomy_6_upper_length_1: '1'
+  taxonomy_6_upper_length_2: '17'
+  taxonomy_6_upper_length_3: '17_'
+  taxonomy_6_upper_length_4: '17_8'
+  taxonomy_6_upper_length_5: '17_8_'
+  taxonomy_7: ''
+  taxonomy_8: ''
+  taxonomy_9: ''
+  type: part
+  type_1: microcontroller
+  type_2: esp32_c3
+  type_3: xiao_esp32c3
+  url_chat: ''
+type_1: microcontroller
+type_2: esp32_c3
+type_3: xiao_esp32c3
+url_chat: ''

@@ -56,7 +56,7 @@ kwargs:
   oomp_description_extra: ''
   oomp_description_main: mounting_plate_default_
   oomp_mode: project
-  oomp_run: false
+  oomp_run: true
   overwrite: true
   part_number_aliexpress: '1005009566745868'
   taxonomy_1: electronic
@@ -66,6 +66,7 @@ kwargs:
   taxonomy_4: remote_control
   taxonomy_5: servo_tester
   taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+  typ: all
   type: default_mounting_plate_default
   type_1: input
   type_2: remote_control

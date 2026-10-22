@@ -1,0 +1,348 @@
+bip_39_2_word_array:
+- practice
+- affair
+bip_39_2_word_no_space: practiceaffair
+bip_39_2_word_space: practice affair
+bip_39_2_word_underscore: practice_affair
+bip_39_3_word_array:
+- practice
+- affair
+- bread
+bip_39_3_word_no_space: practiceaffairbread
+bip_39_3_word_space: practice affair bread
+bip_39_3_word_underscore: practice_affair_bread
+bip_39_full_array:
+- practice
+- affair
+- bread
+- thank
+- hybrid
+- filter
+- loyal
+- chimney
+- harsh
+- robust
+- hand
+- cool
+bip_39_full_no_space: practiceaffairbreadthankhybridfilterloyalchimneyharshrobusthandcool
+bip_39_full_space: practice affair bread thank hybrid filter loyal chimney harsh robust
+  hand cool
+bip_39_full_underscore: practice_affair_bread_thank_hybrid_filter_loyal_chimney_harsh_robust_hand_cool
+breakout_description: 20_3_mm_width_52_mm_height_20_pins
+breakout_pcb_height: 52
+breakout_pcb_width: 20.3
+directory: parts/electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4
+id: electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4
+id_no_class: electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4
+id_no_size: electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4
+id_no_type: electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4
+id_oobb: electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4
+kwargs:
+  breakout_description: 20_3_mm_width_52_mm_height_20_pins
+  breakout_pcb_height: 52
+  breakout_pcb_width: 20.3
+  filter: ''
+  manufacturer: espressif
+  modes:
+  - 3dpr
+  navigation: true
+  oobb_name: mounting_plate_oobb
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_oobb_
+  oomp_mode: project
+  oomp_run: true
+  overwrite: true
+  part_number: esp32_pico_kit_v4
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: espressif
+  taxonomy_15: esp32_pico_kit_v4
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_pico_d4
+  taxonomy_5: pico_kit_20_pin
+  taxonomy_6: 20_3_mm_width_52_mm_height_20_pins
+  typ: all
+  type: default_mounting_plate_oobb
+  type_1: microcontroller
+  type_2: esp32_pico_d4
+  type_3: pico_kit_20_pin
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4
+manufacturer: espressif
+md5: a960886defe700ace12140695769a317
+md5_10: a960886def
+md5_10_upper: A960886DEF
+md5_5: a9608
+md5_5_upper: A9608
+md5_6: a96088
+md5_6_alpha: 6lx1k
+md5_6_alpha_upper: 6LX1K
+md5_6_upper: A96088
+name: Electronic Breakout Microcontroller Esp32 Pico D4 Pico Kit 20 Pin 20 3 Mm Width
+  52 Mm Height 20 Pins Espressif Esp32 Pico Kit V4
+name_no_class: Electronic Breakout Microcontroller Esp32 Pico D4 Pico Kit 20 Pin 20
+  3 Mm Width 52 Mm Height 20 Pins Espressif Esp32 Pico Kit V4
+name_no_size: Electronic Breakout Microcontroller Esp32 Pico D4 Pico Kit 20 Pin 20
+  3 Mm Width 52 Mm Height 20 Pins Espressif Esp32 Pico Kit V4
+name_no_type: Electronic Breakout Microcontroller Esp32 Pico D4 Pico Kit 20 Pin 20
+  3 Mm Width 52 Mm Height 20 Pins Espressif Esp32 Pico Kit V4
+name_proper: Electronic Breakout Microcontroller Esp32 Pico D4 Pico Kit 20 Pin 20
+  3 Mm Width 52 Mm Height 20 Pins Espressif Esp32 Pico Kit V4
+name_space: electronic breakout microcontroller esp32 pico d4 pico kit 20 pin 20 3
+  mm width 52 mm height 20 pins espressif esp32 pico kit v4
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 PICO D4 PICO KIT 20 PIN 20 3
+  MM WIDTH 52 MM HEIGHT 20 PINS ESPRESSIF ESP32 PICO KIT V4
+oobb_details:
+- breakout_description: 20_3_mm_width_52_mm_height_20_pins
+  breakout_pcb_height: 52
+  breakout_pcb_width: 20.3
+  manufacturer: espressif
+  oobb_name: mounting_plate_default
+  part_number: esp32_pico_kit_v4
+  taxonomy_1: electronic
+  taxonomy_14: espressif
+  taxonomy_15: esp32_pico_kit_v4
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_pico_d4
+  taxonomy_5: pico_kit_20_pin
+  taxonomy_6: 20_3_mm_width_52_mm_height_20_pins
+  type_1: microcontroller
+  type_2: esp32_pico_d4
+  type_3: pico_kit_20_pin
+- breakout_description: 20_3_mm_width_52_mm_height_20_pins
+  breakout_pcb_height: 52
+  breakout_pcb_width: 20.3
+  manufacturer: espressif
+  oobb_name: mounting_plate_oobb
+  part_number: esp32_pico_kit_v4
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: espressif
+  taxonomy_15: esp32_pico_kit_v4
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_pico_d4
+  taxonomy_5: pico_kit_20_pin
+  taxonomy_6: 20_3_mm_width_52_mm_height_20_pins
+  type_1: microcontroller
+  type_2: esp32_pico_d4
+  type_3: pico_kit_20_pin
+oobb_name: mounting_plate_oobb
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      breakout_description: 20_3_mm_width_52_mm_height_20_pins
+      breakout_pcb_height: 52
+      breakout_pcb_width: 20.3
+      directory: parts\electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4
+      manufacturer: espressif
+      name: electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4
+      name_proper: Electronic Breakout Microcontroller Esp32 Pico D4 Pico Kit 20 Pin
+        20 3 Mm Width 52 Mm Height 20 Pins Espressif Esp32 Pico Kit V4
+      name_space: electronic breakout microcontroller esp32 pico d4 pico kit 20 pin
+        20 3 mm width 52 mm height 20 pins espressif esp32 pico kit v4
+      name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 PICO D4 PICO KIT 20 PIN
+        20 3 MM WIDTH 52 MM HEIGHT 20 PINS ESPRESSIF ESP32 PICO KIT V4
+      oobb_details:
+      - breakout_description: 20_3_mm_width_52_mm_height_20_pins
+        breakout_pcb_height: 52
+        breakout_pcb_width: 20.3
+        manufacturer: espressif
+        oobb_name: mounting_plate_default
+        part_number: esp32_pico_kit_v4
+        taxonomy_1: electronic
+        taxonomy_14: espressif
+        taxonomy_15: esp32_pico_kit_v4
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_pico_d4
+        taxonomy_5: pico_kit_20_pin
+        taxonomy_6: 20_3_mm_width_52_mm_height_20_pins
+        type_1: microcontroller
+        type_2: esp32_pico_d4
+        type_3: pico_kit_20_pin
+      - breakout_description: 20_3_mm_width_52_mm_height_20_pins
+        breakout_pcb_height: 52
+        breakout_pcb_width: 20.3
+        manufacturer: espressif
+        oobb_name: mounting_plate_oobb
+        part_number: esp32_pico_kit_v4
+        scad_output: working_oobb
+        taxonomy_1: electronic
+        taxonomy_14: espressif
+        taxonomy_15: esp32_pico_kit_v4
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_pico_d4
+        taxonomy_5: pico_kit_20_pin
+        taxonomy_6: 20_3_mm_width_52_mm_height_20_pins
+        type_1: microcontroller
+        type_2: esp32_pico_d4
+        type_3: pico_kit_20_pin
+      part_number: esp32_pico_kit_v4
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: espressif
+      taxonomy_15: esp32_pico_kit_v4
+      taxonomy_2: breakout
+      taxonomy_3: microcontroller
+      taxonomy_4: esp32_pico_d4
+      taxonomy_5: pico_kit_20_pin
+      taxonomy_6: 20_3_mm_width_52_mm_height_20_pins
+      taxonomy_7: ''
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: microcontroller
+      type_2: esp32_pico_d4
+      type_3: pico_kit_20_pin
+      url_chat: ''
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4
+part_number: esp32_pico_kit_v4
+project_name: C:\gh\oomp_electronic_breakout
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: espressif
+taxonomy_14_capital: Espressif
+taxonomy_14_first_letter: e
+taxonomy_14_first_letter_upper: E
+taxonomy_14_length_1: e
+taxonomy_14_length_2: es
+taxonomy_14_length_3: esp
+taxonomy_14_length_4: espr
+taxonomy_14_length_5: espre
+taxonomy_14_upper: ESPRESSIF
+taxonomy_14_upper_length_1: E
+taxonomy_14_upper_length_2: ES
+taxonomy_14_upper_length_3: ESP
+taxonomy_14_upper_length_4: ESPR
+taxonomy_14_upper_length_5: ESPRE
+taxonomy_15: esp32_pico_kit_v4
+taxonomy_15_capital: Esp32 Pico Kit V4
+taxonomy_15_first_letter: e
+taxonomy_15_first_letter_upper: E
+taxonomy_15_length_1: e
+taxonomy_15_length_2: es
+taxonomy_15_length_3: esp
+taxonomy_15_length_4: esp3
+taxonomy_15_length_5: esp32
+taxonomy_15_upper: ESP32_PICO_KIT_V4
+taxonomy_15_upper_length_1: E
+taxonomy_15_upper_length_2: ES
+taxonomy_15_upper_length_3: ESP
+taxonomy_15_upper_length_4: ESP3
+taxonomy_15_upper_length_5: ESP32
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: esp32_pico_d4
+taxonomy_4_capital: Esp32 Pico D4
+taxonomy_4_first_letter: e
+taxonomy_4_first_letter_upper: E
+taxonomy_4_length_1: e
+taxonomy_4_length_2: es
+taxonomy_4_length_3: esp
+taxonomy_4_length_4: esp3
+taxonomy_4_length_5: esp32
+taxonomy_4_upper: ESP32_PICO_D4
+taxonomy_4_upper_length_1: E
+taxonomy_4_upper_length_2: ES
+taxonomy_4_upper_length_3: ESP
+taxonomy_4_upper_length_4: ESP3
+taxonomy_4_upper_length_5: ESP32
+taxonomy_5: pico_kit_20_pin
+taxonomy_5_capital: Pico Kit 20 Pin
+taxonomy_5_first_letter: p
+taxonomy_5_first_letter_upper: P
+taxonomy_5_length_1: p
+taxonomy_5_length_2: pi
+taxonomy_5_length_3: pic
+taxonomy_5_length_4: pico
+taxonomy_5_length_5: pico_
+taxonomy_5_upper: PICO_KIT_20_PIN
+taxonomy_5_upper_length_1: P
+taxonomy_5_upper_length_2: PI
+taxonomy_5_upper_length_3: PIC
+taxonomy_5_upper_length_4: PICO
+taxonomy_5_upper_length_5: PICO_
+taxonomy_6: 20_3_mm_width_52_mm_height_20_pins
+taxonomy_6_capital: 20 3 mm Width 52 mm Height 20 Pins
+taxonomy_6_first_letter: '2'
+taxonomy_6_first_letter_upper: '2'
+taxonomy_6_length_1: '2'
+taxonomy_6_length_2: '20'
+taxonomy_6_length_3: '20_'
+taxonomy_6_length_4: '20_3'
+taxonomy_6_length_5: '20_3_'
+taxonomy_6_upper: 20_3_MM_WIDTH_52_MM_HEIGHT_20_PINS
+taxonomy_6_upper_length_1: '2'
+taxonomy_6_upper_length_2: '20'
+taxonomy_6_upper_length_3: '20_'
+taxonomy_6_upper_length_4: '20_3'
+taxonomy_6_upper_length_5: '20_3_'
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+type_1: microcontroller
+type_2: esp32_pico_d4
+type_3: pico_kit_20_pin
+url_chat: ''

@@ -1,0 +1,347 @@
+bip_39_2_word_array:
+- plate
+- knee
+bip_39_2_word_no_space: plateknee
+bip_39_2_word_space: plate knee
+bip_39_2_word_underscore: plate_knee
+bip_39_3_word_array:
+- plate
+- knee
+- bean
+bip_39_3_word_no_space: platekneebean
+bip_39_3_word_space: plate knee bean
+bip_39_3_word_underscore: plate_knee_bean
+bip_39_full_array:
+- plate
+- knee
+- bean
+- convince
+- hidden
+- day
+- crowd
+- cash
+- spatial
+- acquire
+- scene
+- first
+bip_39_full_no_space: platekneebeanconvincehiddendaycrowdcashspatialacquirescenefirst
+bip_39_full_space: plate knee bean convince hidden day crowd cash spatial acquire
+  scene first
+bip_39_full_underscore: plate_knee_bean_convince_hidden_day_crowd_cash_spatial_acquire_scene_first
+breakout_description: 25_4_mm_width_34_3_mm_height
+breakout_pcb_height: 34.3
+breakout_pcb_width: 25.4
+directory: parts/electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini
+id: electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini
+id_no_class: electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini
+id_no_size: electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini
+id_no_type: electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini
+id_oobb: electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini
+kwargs:
+  breakout_description: 25_4_mm_width_34_3_mm_height
+  breakout_pcb_height: 34.3
+  breakout_pcb_width: 25.4
+  filter: ''
+  manufacturer: wemos
+  modes:
+  - 3dpr
+  navigation: true
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  oomp_mode: project
+  oomp_run: true
+  overwrite: true
+  part_number: lolin_s3_mini
+  taxonomy_1: electronic
+  taxonomy_14: wemos
+  taxonomy_15: lolin_s3_mini
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_s3
+  taxonomy_5: lolin_s3_mini
+  taxonomy_6: 25_4_mm_width_34_3_mm_height
+  typ: all
+  type: default_mounting_plate_default
+  type_1: microcontroller
+  type_2: esp32_s3
+  type_3: lolin_s3_mini
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini
+manufacturer: wemos
+md5: a62f704e17c6b6700d111ad08047022b
+md5_10: a62f704e17
+md5_10_upper: A62F704E17
+md5_5: a62f7
+md5_5_upper: A62F7
+md5_6: a62f70
+md5_6_alpha: 6hfn4
+md5_6_alpha_upper: 6HFN4
+md5_6_upper: A62F70
+name: Electronic Breakout Microcontroller Esp32 S3 Lolin S3 Mini 25 4 Mm Width 34
+  3 Mm Height Wemos Lolin S3 Mini
+name_no_class: Electronic Breakout Microcontroller Esp32 S3 Lolin S3 Mini 25 4 Mm
+  Width 34 3 Mm Height Wemos Lolin S3 Mini
+name_no_size: Electronic Breakout Microcontroller Esp32 S3 Lolin S3 Mini 25 4 Mm Width
+  34 3 Mm Height Wemos Lolin S3 Mini
+name_no_type: Electronic Breakout Microcontroller Esp32 S3 Lolin S3 Mini 25 4 Mm Width
+  34 3 Mm Height Wemos Lolin S3 Mini
+name_proper: Electronic Breakout Microcontroller Esp32 S3 Lolin S3 Mini 25 4 Mm Width
+  34 3 Mm Height Wemos Lolin S3 Mini
+name_space: electronic breakout microcontroller esp32 s3 lolin s3 mini 25 4 mm width
+  34 3 mm height wemos lolin s3 mini
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 S3 LOLIN S3 MINI 25 4 MM WIDTH
+  34 3 MM HEIGHT WEMOS LOLIN S3 MINI
+oobb_details:
+- breakout_description: 25_4_mm_width_34_3_mm_height
+  breakout_pcb_height: 34.3
+  breakout_pcb_width: 25.4
+  manufacturer: wemos
+  oobb_name: mounting_plate_default
+  part_number: lolin_s3_mini
+  taxonomy_1: electronic
+  taxonomy_14: wemos
+  taxonomy_15: lolin_s3_mini
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_s3
+  taxonomy_5: lolin_s3_mini
+  taxonomy_6: 25_4_mm_width_34_3_mm_height
+  type_1: microcontroller
+  type_2: esp32_s3
+  type_3: lolin_s3_mini
+- breakout_description: 25_4_mm_width_34_3_mm_height
+  breakout_pcb_height: 34.3
+  breakout_pcb_width: 25.4
+  manufacturer: wemos
+  oobb_name: mounting_plate_oobb
+  part_number: lolin_s3_mini
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: wemos
+  taxonomy_15: lolin_s3_mini
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_s3
+  taxonomy_5: lolin_s3_mini
+  taxonomy_6: 25_4_mm_width_34_3_mm_height
+  type_1: microcontroller
+  type_2: esp32_s3
+  type_3: lolin_s3_mini
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      breakout_description: 25_4_mm_width_34_3_mm_height
+      breakout_pcb_height: 34.3
+      breakout_pcb_width: 25.4
+      directory: parts\electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini
+      manufacturer: wemos
+      name: electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini
+      name_proper: Electronic Breakout Microcontroller Esp32 S3 Lolin S3 Mini 25 4
+        Mm Width 34 3 Mm Height Wemos Lolin S3 Mini
+      name_space: electronic breakout microcontroller esp32 s3 lolin s3 mini 25 4
+        mm width 34 3 mm height wemos lolin s3 mini
+      name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 S3 LOLIN S3 MINI 25 4
+        MM WIDTH 34 3 MM HEIGHT WEMOS LOLIN S3 MINI
+      oobb_details:
+      - breakout_description: 25_4_mm_width_34_3_mm_height
+        breakout_pcb_height: 34.3
+        breakout_pcb_width: 25.4
+        manufacturer: wemos
+        oobb_name: mounting_plate_default
+        part_number: lolin_s3_mini
+        taxonomy_1: electronic
+        taxonomy_14: wemos
+        taxonomy_15: lolin_s3_mini
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_s3
+        taxonomy_5: lolin_s3_mini
+        taxonomy_6: 25_4_mm_width_34_3_mm_height
+        type_1: microcontroller
+        type_2: esp32_s3
+        type_3: lolin_s3_mini
+      - breakout_description: 25_4_mm_width_34_3_mm_height
+        breakout_pcb_height: 34.3
+        breakout_pcb_width: 25.4
+        manufacturer: wemos
+        oobb_name: mounting_plate_oobb
+        part_number: lolin_s3_mini
+        scad_output: working_oobb
+        taxonomy_1: electronic
+        taxonomy_14: wemos
+        taxonomy_15: lolin_s3_mini
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_s3
+        taxonomy_5: lolin_s3_mini
+        taxonomy_6: 25_4_mm_width_34_3_mm_height
+        type_1: microcontroller
+        type_2: esp32_s3
+        type_3: lolin_s3_mini
+      part_number: lolin_s3_mini
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: wemos
+      taxonomy_15: lolin_s3_mini
+      taxonomy_2: breakout
+      taxonomy_3: microcontroller
+      taxonomy_4: esp32_s3
+      taxonomy_5: lolin_s3_mini
+      taxonomy_6: 25_4_mm_width_34_3_mm_height
+      taxonomy_7: ''
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: microcontroller
+      type_2: esp32_s3
+      type_3: lolin_s3_mini
+      url_chat: ''
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini
+part_number: lolin_s3_mini
+project_name: C:\gh\oomp_electronic_breakout
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: wemos
+taxonomy_14_capital: Wemos
+taxonomy_14_first_letter: w
+taxonomy_14_first_letter_upper: W
+taxonomy_14_length_1: w
+taxonomy_14_length_2: we
+taxonomy_14_length_3: wem
+taxonomy_14_length_4: wemo
+taxonomy_14_length_5: wemos
+taxonomy_14_upper: WEMOS
+taxonomy_14_upper_length_1: W
+taxonomy_14_upper_length_2: WE
+taxonomy_14_upper_length_3: WEM
+taxonomy_14_upper_length_4: WEMO
+taxonomy_14_upper_length_5: WEMOS
+taxonomy_15: lolin_s3_mini
+taxonomy_15_capital: Lolin S3 Mini
+taxonomy_15_first_letter: l
+taxonomy_15_first_letter_upper: L
+taxonomy_15_length_1: l
+taxonomy_15_length_2: lo
+taxonomy_15_length_3: lol
+taxonomy_15_length_4: loli
+taxonomy_15_length_5: lolin
+taxonomy_15_upper: LOLIN_S3_MINI
+taxonomy_15_upper_length_1: L
+taxonomy_15_upper_length_2: LO
+taxonomy_15_upper_length_3: LOL
+taxonomy_15_upper_length_4: LOLI
+taxonomy_15_upper_length_5: LOLIN
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: esp32_s3
+taxonomy_4_capital: Esp32 S3
+taxonomy_4_first_letter: e
+taxonomy_4_first_letter_upper: E
+taxonomy_4_length_1: e
+taxonomy_4_length_2: es
+taxonomy_4_length_3: esp
+taxonomy_4_length_4: esp3
+taxonomy_4_length_5: esp32
+taxonomy_4_upper: ESP32_S3
+taxonomy_4_upper_length_1: E
+taxonomy_4_upper_length_2: ES
+taxonomy_4_upper_length_3: ESP
+taxonomy_4_upper_length_4: ESP3
+taxonomy_4_upper_length_5: ESP32
+taxonomy_5: lolin_s3_mini
+taxonomy_5_capital: Lolin S3 Mini
+taxonomy_5_first_letter: l
+taxonomy_5_first_letter_upper: L
+taxonomy_5_length_1: l
+taxonomy_5_length_2: lo
+taxonomy_5_length_3: lol
+taxonomy_5_length_4: loli
+taxonomy_5_length_5: lolin
+taxonomy_5_upper: LOLIN_S3_MINI
+taxonomy_5_upper_length_1: L
+taxonomy_5_upper_length_2: LO
+taxonomy_5_upper_length_3: LOL
+taxonomy_5_upper_length_4: LOLI
+taxonomy_5_upper_length_5: LOLIN
+taxonomy_6: 25_4_mm_width_34_3_mm_height
+taxonomy_6_capital: 25.4 mm Width 34.3 mm Height
+taxonomy_6_first_letter: '2'
+taxonomy_6_first_letter_upper: '2'
+taxonomy_6_length_1: '2'
+taxonomy_6_length_2: '25'
+taxonomy_6_length_3: '25_'
+taxonomy_6_length_4: '25_4'
+taxonomy_6_length_5: '25_4_'
+taxonomy_6_upper: 25_4_MM_WIDTH_34_3_MM_HEIGHT
+taxonomy_6_upper_length_1: '2'
+taxonomy_6_upper_length_2: '25'
+taxonomy_6_upper_length_3: '25_'
+taxonomy_6_upper_length_4: '25_4'
+taxonomy_6_upper_length_5: '25_4_'
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+type_1: microcontroller
+type_2: esp32_s3
+type_3: lolin_s3_mini
+url_chat: ''

@@ -1,0 +1,347 @@
+bip_39_2_word_array:
+- window
+- winner
+bip_39_2_word_no_space: windowwinner
+bip_39_2_word_space: window winner
+bip_39_2_word_underscore: window_winner
+bip_39_3_word_array:
+- window
+- winner
+- mixture
+bip_39_3_word_no_space: windowwinnermixture
+bip_39_3_word_space: window winner mixture
+bip_39_3_word_underscore: window_winner_mixture
+bip_39_full_array:
+- window
+- winner
+- mixture
+- wife
+- bread
+- winner
+- sudden
+- flush
+- laugh
+- erode
+- opera
+- bomb
+bip_39_full_no_space: windowwinnermixturewifebreadwinnersuddenflushlaugherodeoperabomb
+bip_39_full_space: window winner mixture wife bread winner sudden flush laugh erode
+  opera bomb
+bip_39_full_underscore: window_winner_mixture_wife_bread_winner_sudden_flush_laugh_erode_opera_bomb
+breakout_description: 18_mm_width_23_5_mm_height_20_pins
+breakout_pcb_height: 23.5
+breakout_pcb_width: 18
+directory: parts/electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini
+id: electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini
+id_no_class: electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini
+id_no_size: electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini
+id_no_type: electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini
+id_oobb: electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini
+kwargs:
+  breakout_description: 18_mm_width_23_5_mm_height_20_pins
+  breakout_pcb_height: 23.5
+  breakout_pcb_width: 18
+  filter: ''
+  manufacturer: tenstar
+  modes:
+  - 3dpr
+  navigation: true
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  oomp_mode: project
+  oomp_run: true
+  overwrite: true
+  part_number: esp32_c6_supermini
+  taxonomy_1: electronic
+  taxonomy_14: tenstar
+  taxonomy_15: esp32_c6_supermini
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_c6
+  taxonomy_5: supermini_20_pin
+  taxonomy_6: 18_mm_width_23_5_mm_height_20_pins
+  typ: all
+  type: default_mounting_plate_default
+  type_1: microcontroller
+  type_2: esp32_c6
+  type_3: supermini_20_pin
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini
+manufacturer: tenstar
+md5: fb7f7e397d71b7f7f622ce7d89926d0c
+md5_10: fb7f7e397d
+md5_10_upper: FB7F7E397D
+md5_5: fb7f7
+md5_5_upper: FB7F7
+md5_6: fb7f7e
+md5_6_alpha: 9t9q6
+md5_6_alpha_upper: 9T9Q6
+md5_6_upper: FB7F7E
+name: Electronic Breakout Microcontroller Esp32 C6 Supermini 20 Pin 18 Mm Width 23
+  5 Mm Height 20 Pins Tenstar Esp32 C6 Supermini
+name_no_class: Electronic Breakout Microcontroller Esp32 C6 Supermini 20 Pin 18 Mm
+  Width 23 5 Mm Height 20 Pins Tenstar Esp32 C6 Supermini
+name_no_size: Electronic Breakout Microcontroller Esp32 C6 Supermini 20 Pin 18 Mm
+  Width 23 5 Mm Height 20 Pins Tenstar Esp32 C6 Supermini
+name_no_type: Electronic Breakout Microcontroller Esp32 C6 Supermini 20 Pin 18 Mm
+  Width 23 5 Mm Height 20 Pins Tenstar Esp32 C6 Supermini
+name_proper: Electronic Breakout Microcontroller Esp32 C6 Supermini 20 Pin 18 Mm Width
+  23 5 Mm Height 20 Pins Tenstar Esp32 C6 Supermini
+name_space: electronic breakout microcontroller esp32 c6 supermini 20 pin 18 mm width
+  23 5 mm height 20 pins tenstar esp32 c6 supermini
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 C6 SUPERMINI 20 PIN 18 MM WIDTH
+  23 5 MM HEIGHT 20 PINS TENSTAR ESP32 C6 SUPERMINI
+oobb_details:
+- breakout_description: 18_mm_width_23_5_mm_height_20_pins
+  breakout_pcb_height: 23.5
+  breakout_pcb_width: 18
+  manufacturer: tenstar
+  oobb_name: mounting_plate_default
+  part_number: esp32_c6_supermini
+  taxonomy_1: electronic
+  taxonomy_14: tenstar
+  taxonomy_15: esp32_c6_supermini
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_c6
+  taxonomy_5: supermini_20_pin
+  taxonomy_6: 18_mm_width_23_5_mm_height_20_pins
+  type_1: microcontroller
+  type_2: esp32_c6
+  type_3: supermini_20_pin
+- breakout_description: 18_mm_width_23_5_mm_height_20_pins
+  breakout_pcb_height: 23.5
+  breakout_pcb_width: 18
+  manufacturer: tenstar
+  oobb_name: mounting_plate_oobb
+  part_number: esp32_c6_supermini
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: tenstar
+  taxonomy_15: esp32_c6_supermini
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_c6
+  taxonomy_5: supermini_20_pin
+  taxonomy_6: 18_mm_width_23_5_mm_height_20_pins
+  type_1: microcontroller
+  type_2: esp32_c6
+  type_3: supermini_20_pin
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      breakout_description: 18_mm_width_23_5_mm_height_20_pins
+      breakout_pcb_height: 23.5
+      breakout_pcb_width: 18
+      directory: parts\electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini
+      manufacturer: tenstar
+      name: electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini
+      name_proper: Electronic Breakout Microcontroller Esp32 C6 Supermini 20 Pin 18
+        Mm Width 23 5 Mm Height 20 Pins Tenstar Esp32 C6 Supermini
+      name_space: electronic breakout microcontroller esp32 c6 supermini 20 pin 18
+        mm width 23 5 mm height 20 pins tenstar esp32 c6 supermini
+      name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 C6 SUPERMINI 20 PIN 18
+        MM WIDTH 23 5 MM HEIGHT 20 PINS TENSTAR ESP32 C6 SUPERMINI
+      oobb_details:
+      - breakout_description: 18_mm_width_23_5_mm_height_20_pins
+        breakout_pcb_height: 23.5
+        breakout_pcb_width: 18
+        manufacturer: tenstar
+        oobb_name: mounting_plate_default
+        part_number: esp32_c6_supermini
+        taxonomy_1: electronic
+        taxonomy_14: tenstar
+        taxonomy_15: esp32_c6_supermini
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_c6
+        taxonomy_5: supermini_20_pin
+        taxonomy_6: 18_mm_width_23_5_mm_height_20_pins
+        type_1: microcontroller
+        type_2: esp32_c6
+        type_3: supermini_20_pin
+      - breakout_description: 18_mm_width_23_5_mm_height_20_pins
+        breakout_pcb_height: 23.5
+        breakout_pcb_width: 18
+        manufacturer: tenstar
+        oobb_name: mounting_plate_oobb
+        part_number: esp32_c6_supermini
+        scad_output: working_oobb
+        taxonomy_1: electronic
+        taxonomy_14: tenstar
+        taxonomy_15: esp32_c6_supermini
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_c6
+        taxonomy_5: supermini_20_pin
+        taxonomy_6: 18_mm_width_23_5_mm_height_20_pins
+        type_1: microcontroller
+        type_2: esp32_c6
+        type_3: supermini_20_pin
+      part_number: esp32_c6_supermini
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: tenstar
+      taxonomy_15: esp32_c6_supermini
+      taxonomy_2: breakout
+      taxonomy_3: microcontroller
+      taxonomy_4: esp32_c6
+      taxonomy_5: supermini_20_pin
+      taxonomy_6: 18_mm_width_23_5_mm_height_20_pins
+      taxonomy_7: ''
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: microcontroller
+      type_2: esp32_c6
+      type_3: supermini_20_pin
+      url_chat: ''
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini
+part_number: esp32_c6_supermini
+project_name: C:\gh\oomp_electronic_breakout
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: tenstar
+taxonomy_14_capital: Tenstar
+taxonomy_14_first_letter: t
+taxonomy_14_first_letter_upper: T
+taxonomy_14_length_1: t
+taxonomy_14_length_2: te
+taxonomy_14_length_3: ten
+taxonomy_14_length_4: tens
+taxonomy_14_length_5: tenst
+taxonomy_14_upper: TENSTAR
+taxonomy_14_upper_length_1: T
+taxonomy_14_upper_length_2: TE
+taxonomy_14_upper_length_3: TEN
+taxonomy_14_upper_length_4: TENS
+taxonomy_14_upper_length_5: TENST
+taxonomy_15: esp32_c6_supermini
+taxonomy_15_capital: Esp32 C6 Supermini
+taxonomy_15_first_letter: e
+taxonomy_15_first_letter_upper: E
+taxonomy_15_length_1: e
+taxonomy_15_length_2: es
+taxonomy_15_length_3: esp
+taxonomy_15_length_4: esp3
+taxonomy_15_length_5: esp32
+taxonomy_15_upper: ESP32_C6_SUPERMINI
+taxonomy_15_upper_length_1: E
+taxonomy_15_upper_length_2: ES
+taxonomy_15_upper_length_3: ESP
+taxonomy_15_upper_length_4: ESP3
+taxonomy_15_upper_length_5: ESP32
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: esp32_c6
+taxonomy_4_capital: Esp32 C6
+taxonomy_4_first_letter: e
+taxonomy_4_first_letter_upper: E
+taxonomy_4_length_1: e
+taxonomy_4_length_2: es
+taxonomy_4_length_3: esp
+taxonomy_4_length_4: esp3
+taxonomy_4_length_5: esp32
+taxonomy_4_upper: ESP32_C6
+taxonomy_4_upper_length_1: E
+taxonomy_4_upper_length_2: ES
+taxonomy_4_upper_length_3: ESP
+taxonomy_4_upper_length_4: ESP3
+taxonomy_4_upper_length_5: ESP32
+taxonomy_5: supermini_20_pin
+taxonomy_5_capital: Supermini 20 Pin
+taxonomy_5_first_letter: s
+taxonomy_5_first_letter_upper: S
+taxonomy_5_length_1: s
+taxonomy_5_length_2: su
+taxonomy_5_length_3: sup
+taxonomy_5_length_4: supe
+taxonomy_5_length_5: super
+taxonomy_5_upper: SUPERMINI_20_PIN
+taxonomy_5_upper_length_1: S
+taxonomy_5_upper_length_2: SU
+taxonomy_5_upper_length_3: SUP
+taxonomy_5_upper_length_4: SUPE
+taxonomy_5_upper_length_5: SUPER
+taxonomy_6: 18_mm_width_23_5_mm_height_20_pins
+taxonomy_6_capital: 18 mm Width 23.5 mm Height 20 Pins
+taxonomy_6_first_letter: '1'
+taxonomy_6_first_letter_upper: '1'
+taxonomy_6_length_1: '1'
+taxonomy_6_length_2: '18'
+taxonomy_6_length_3: '18_'
+taxonomy_6_length_4: 18_m
+taxonomy_6_length_5: 18_mm
+taxonomy_6_upper: 18_MM_WIDTH_23_5_MM_HEIGHT_20_PINS
+taxonomy_6_upper_length_1: '1'
+taxonomy_6_upper_length_2: '18'
+taxonomy_6_upper_length_3: '18_'
+taxonomy_6_upper_length_4: 18_M
+taxonomy_6_upper_length_5: 18_MM
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+type_1: microcontroller
+type_2: esp32_c6
+type_3: supermini_20_pin
+url_chat: ''

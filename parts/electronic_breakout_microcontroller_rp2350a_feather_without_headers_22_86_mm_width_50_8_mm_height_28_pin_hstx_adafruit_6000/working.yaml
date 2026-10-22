@@ -1,0 +1,338 @@
+bip_39_2_word_array:
+- you
+- patient
+bip_39_2_word_no_space: youpatient
+bip_39_2_word_space: you patient
+bip_39_2_word_underscore: you_patient
+bip_39_3_word_array:
+- you
+- patient
+- miss
+bip_39_3_word_no_space: youpatientmiss
+bip_39_3_word_space: you patient miss
+bip_39_3_word_underscore: you_patient_miss
+bip_39_full_array:
+- you
+- patient
+- miss
+- sunny
+- just
+- slab
+- myself
+- silver
+- mad
+- light
+- just
+- abuse
+bip_39_full_no_space: youpatientmisssunnyjustslabmyselfsilvermadlightjustabuse
+bip_39_full_space: you patient miss sunny just slab myself silver mad light just abuse
+bip_39_full_underscore: you_patient_miss_sunny_just_slab_myself_silver_mad_light_just_abuse
+breakout_description: 22_86_mm_width_50_8_mm_height_28_pin
+breakout_pcb_height: 50.8
+breakout_pcb_width: 22.86
+directory: parts/electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000
+id: electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000
+id_no_class: electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000
+id_no_size: electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000
+id_no_type: electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000
+manufacturer: hstx_adafruit
+md5: ff3422376cb79795e4964685b031e580
+md5_10: ff3422376c
+md5_10_upper: FF3422376C
+md5_5: ff342
+md5_5_upper: FF342
+md5_6: ff3422
+md5_6_alpha: 9yh42
+md5_6_alpha_upper: 9YH42
+md5_6_upper: FF3422
+name: Electronic Breakout Microcontroller Rp2350A Feather Without Headers 22 86 Mm
+    Width 50 8 Mm Height 28 Pin Hstx Adafruit 6000
+name_no_class: Electronic Breakout Microcontroller Rp2350A Feather Without Headers
+    22 86 Mm Width 50 8 Mm Height 28 Pin Hstx Adafruit 6000
+name_no_size: Electronic Breakout Microcontroller Rp2350A Feather Without Headers
+    22 86 Mm Width 50 8 Mm Height 28 Pin Hstx Adafruit 6000
+name_no_type: Electronic Breakout Microcontroller Rp2350A Feather Without Headers
+    22 86 Mm Width 50 8 Mm Height 28 Pin Hstx Adafruit 6000
+name_proper: Electronic Breakout Microcontroller Rp2350A Feather Without Headers 22
+    86 Mm Width 50 8 Mm Height 28 Pin Hstx Adafruit 6000
+name_space: electronic breakout microcontroller rp2350a feather without headers 22
+    86 mm width 50 8 mm height 28 pin hstx adafruit 6000
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2350A FEATHER WITHOUT HEADERS 22
+    86 MM WIDTH 50 8 MM HEIGHT 28 PIN HSTX ADAFRUIT 6000
+oobb_details:
+-   breakout_description: 22_86_mm_width_50_8_mm_height_28_pin
+    breakout_pcb_height: 50.8
+    breakout_pcb_width: 22.86
+    manufacturer: hstx_adafruit
+    oobb_name: mounting_plate_default
+    part_number: '6000'
+    taxonomy_1: electronic
+    taxonomy_14: hstx_adafruit
+    taxonomy_15: '6000'
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: rp2350a
+    taxonomy_5: feather
+    taxonomy_6: without_headers
+    taxonomy_7: 22_86_mm_width_50_8_mm_height_28_pin
+    type_1: microcontroller
+    type_2: rp2350a
+    type_3: feather
+    type_4: without_headers
+-   breakout_description: 22_86_mm_width_50_8_mm_height_28_pin
+    breakout_pcb_height: 50.8
+    breakout_pcb_width: 22.86
+    manufacturer: hstx_adafruit
+    oobb_name: mounting_plate_oobb
+    part_number: '6000'
+    scad_output: working_oobb
+    taxonomy_1: electronic
+    taxonomy_14: hstx_adafruit
+    taxonomy_15: '6000'
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: rp2350a
+    taxonomy_5: feather
+    taxonomy_6: without_headers
+    taxonomy_7: 22_86_mm_width_50_8_mm_height_28_pin
+    type_1: microcontroller
+    type_2: rp2350a
+    type_3: feather
+    type_4: without_headers
+oomlout_ai_roboclick_1:
+    actions:
+    -   command: text_jinja_template
+        convert_to_pdf: false
+        convert_to_png: false
+        dict_data:
+            breakout_description: 22_86_mm_width_50_8_mm_height_28_pin
+            breakout_pcb_height: 50.8
+            breakout_pcb_width: 22.86
+            directory: parts\electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000
+            manufacturer: hstx_adafruit
+            name: electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000
+            name_proper: Electronic Breakout Microcontroller Rp2350A Feather Without
+                Headers 22 86 Mm Width 50 8 Mm Height 28 Pin Hstx Adafruit 6000
+            name_space: electronic breakout microcontroller rp2350a feather without
+                headers 22 86 mm width 50 8 mm height 28 pin hstx adafruit 6000
+            name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2350A FEATHER WITHOUT
+                HEADERS 22 86 MM WIDTH 50 8 MM HEIGHT 28 PIN HSTX ADAFRUIT 6000
+            oobb_details:
+            -   breakout_description: 22_86_mm_width_50_8_mm_height_28_pin
+                breakout_pcb_height: 50.8
+                breakout_pcb_width: 22.86
+                manufacturer: hstx_adafruit
+                oobb_name: mounting_plate_default
+                part_number: '6000'
+                taxonomy_1: electronic
+                taxonomy_14: hstx_adafruit
+                taxonomy_15: '6000'
+                taxonomy_2: breakout
+                taxonomy_3: microcontroller
+                taxonomy_4: rp2350a
+                taxonomy_5: feather
+                taxonomy_6: without_headers
+                taxonomy_7: 22_86_mm_width_50_8_mm_height_28_pin
+                type_1: microcontroller
+                type_2: rp2350a
+                type_3: feather
+                type_4: without_headers
+            -   breakout_description: 22_86_mm_width_50_8_mm_height_28_pin
+                breakout_pcb_height: 50.8
+                breakout_pcb_width: 22.86
+                manufacturer: hstx_adafruit
+                oobb_name: mounting_plate_oobb
+                part_number: '6000'
+                scad_output: working_oobb
+                taxonomy_1: electronic
+                taxonomy_14: hstx_adafruit
+                taxonomy_15: '6000'
+                taxonomy_2: breakout
+                taxonomy_3: microcontroller
+                taxonomy_4: rp2350a
+                taxonomy_5: feather
+                taxonomy_6: without_headers
+                taxonomy_7: 22_86_mm_width_50_8_mm_height_28_pin
+                type_1: microcontroller
+                type_2: rp2350a
+                type_3: feather
+                type_4: without_headers
+            part_number: '6000'
+            taxonomy_1: electronic
+            taxonomy_10: ''
+            taxonomy_11: ''
+            taxonomy_12: ''
+            taxonomy_13: ''
+            taxonomy_14: hstx_adafruit
+            taxonomy_15: '6000'
+            taxonomy_2: breakout
+            taxonomy_3: microcontroller
+            taxonomy_4: rp2350a
+            taxonomy_5: feather
+            taxonomy_6: without_headers
+            taxonomy_7: 22_86_mm_width_50_8_mm_height_28_pin
+            taxonomy_8: ''
+            taxonomy_9: ''
+            type_1: microcontroller
+            type_2: rp2350a
+            type_3: feather
+            type_4: without_headers
+            url_chat: ''
+        dict_data_files: {}
+        dict_data_files_exists: {}
+        file_output: label_oomp.svg
+        file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+        search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000
+part_number: '6000'
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: hstx_adafruit
+taxonomy_14_capital: Hstx Adafruit
+taxonomy_14_first_letter: h
+taxonomy_14_first_letter_upper: H
+taxonomy_14_length_1: h
+taxonomy_14_length_2: hs
+taxonomy_14_length_3: hst
+taxonomy_14_length_4: hstx
+taxonomy_14_length_5: hstx_
+taxonomy_14_upper: HSTX_ADAFRUIT
+taxonomy_14_upper_length_1: H
+taxonomy_14_upper_length_2: HS
+taxonomy_14_upper_length_3: HST
+taxonomy_14_upper_length_4: HSTX
+taxonomy_14_upper_length_5: HSTX_
+taxonomy_15: '6000'
+taxonomy_15_capital: '6000'
+taxonomy_15_first_letter: '6'
+taxonomy_15_first_letter_upper: '6'
+taxonomy_15_length_1: '6'
+taxonomy_15_length_2: '60'
+taxonomy_15_length_3: '600'
+taxonomy_15_length_4: '6000'
+taxonomy_15_length_5: '6000'
+taxonomy_15_upper: '6000'
+taxonomy_15_upper_length_1: '6'
+taxonomy_15_upper_length_2: '60'
+taxonomy_15_upper_length_3: '600'
+taxonomy_15_upper_length_4: '6000'
+taxonomy_15_upper_length_5: '6000'
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: rp2350a
+taxonomy_4_capital: Rp2350A
+taxonomy_4_first_letter: r
+taxonomy_4_first_letter_upper: R
+taxonomy_4_length_1: r
+taxonomy_4_length_2: rp
+taxonomy_4_length_3: rp2
+taxonomy_4_length_4: rp23
+taxonomy_4_length_5: rp235
+taxonomy_4_upper: RP2350A
+taxonomy_4_upper_length_1: R
+taxonomy_4_upper_length_2: RP
+taxonomy_4_upper_length_3: RP2
+taxonomy_4_upper_length_4: RP23
+taxonomy_4_upper_length_5: RP235
+taxonomy_5: feather
+taxonomy_5_capital: Feather
+taxonomy_5_first_letter: f
+taxonomy_5_first_letter_upper: F
+taxonomy_5_length_1: f
+taxonomy_5_length_2: fe
+taxonomy_5_length_3: fea
+taxonomy_5_length_4: feat
+taxonomy_5_length_5: feath
+taxonomy_5_upper: FEATHER
+taxonomy_5_upper_length_1: F
+taxonomy_5_upper_length_2: FE
+taxonomy_5_upper_length_3: FEA
+taxonomy_5_upper_length_4: FEAT
+taxonomy_5_upper_length_5: FEATH
+taxonomy_6: without_headers
+taxonomy_6_capital: Without Headers
+taxonomy_6_first_letter: w
+taxonomy_6_first_letter_upper: W
+taxonomy_6_length_1: w
+taxonomy_6_length_2: wi
+taxonomy_6_length_3: wit
+taxonomy_6_length_4: with
+taxonomy_6_length_5: witho
+taxonomy_6_upper: WITHOUT_HEADERS
+taxonomy_6_upper_length_1: W
+taxonomy_6_upper_length_2: WI
+taxonomy_6_upper_length_3: WIT
+taxonomy_6_upper_length_4: WITH
+taxonomy_6_upper_length_5: WITHO
+taxonomy_7: 22_86_mm_width_50_8_mm_height_28_pin
+taxonomy_7_capital: 22.86 mm Width 50 8 mm Height 28 Pin
+taxonomy_7_first_letter: '2'
+taxonomy_7_first_letter_upper: '2'
+taxonomy_7_length_1: '2'
+taxonomy_7_length_2: '22'
+taxonomy_7_length_3: '22_'
+taxonomy_7_length_4: '22_8'
+taxonomy_7_length_5: '22_86'
+taxonomy_7_upper: 22_86_MM_WIDTH_50_8_MM_HEIGHT_28_PIN
+taxonomy_7_upper_length_1: '2'
+taxonomy_7_upper_length_2: '22'
+taxonomy_7_upper_length_3: '22_'
+taxonomy_7_upper_length_4: '22_8'
+taxonomy_7_upper_length_5: '22_86'
+taxonomy_8: ''
+taxonomy_9: ''
+type_1: microcontroller
+type_2: rp2350a
+type_3: feather
+type_4: without_headers
+url_chat: ''

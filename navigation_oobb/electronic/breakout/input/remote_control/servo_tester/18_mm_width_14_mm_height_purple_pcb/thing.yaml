@@ -56,7 +56,7 @@ kwargs:
   oomp_description_extra: ''
   oomp_description_main: mounting_plate_default_
   oomp_mode: project
-  oomp_run: false
+  oomp_run: true
   overwrite: true
   part_number_aliexpress: '1005009566745868'
   taxonomy_1: electronic
@@ -66,6 +66,7 @@ kwargs:
   taxonomy_4: remote_control
   taxonomy_5: servo_tester
   taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+  typ: all
   type: default_mounting_plate_default
   type_1: input
   type_2: remote_control
@@ -1542,14 +1543,14 @@ thing:
     navigation: true
     oobb_name: mounting_plate_default
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005009566745868'
     pos:
     - 0
     - 0
     - 0
-    save_type: none
+    save_type: all
     shape: oobb_plate
     taxonomy_1: electronic
     taxonomy_14: aliexpress
@@ -1558,6 +1559,7 @@ thing:
     taxonomy_4: remote_control
     taxonomy_5: servo_tester
     taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+    typ: all
     type: positive
     type_1: input
     type_2: remote_control
@@ -1584,14 +1586,14 @@ thing:
     navigation: true
     oobb_name: mounting_plate_default
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005009566745868'
     pos:
     - 0
     - 0
     - 0
-    save_type: none
+    save_type: all
     shape: oobb_holes
     taxonomy_1: electronic
     taxonomy_14: aliexpress
@@ -1600,6 +1602,7 @@ thing:
     taxonomy_4: remote_control
     taxonomy_5: servo_tester
     taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+    typ: all
     type: p
     type_1: input
     type_2: remote_control
@@ -1624,7 +1627,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_default
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005009566745868'
     pos:
@@ -1636,7 +1639,7 @@ thing:
     - 0
     - 180
     - 0
-    save_type: none
+    save_type: all
     shape: oobb_screw_countersunk
     taxonomy_1: electronic
     taxonomy_14: aliexpress
@@ -1645,6 +1648,7 @@ thing:
     taxonomy_4: remote_control
     taxonomy_5: servo_tester
     taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+    typ: all
     type: negative
     type_1: input
     type_2: remote_control
@@ -1669,7 +1673,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_default
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005009566745868'
     pos:
@@ -1677,7 +1681,7 @@ thing:
     - 5.5
     - 4.5
     radius: 2.75
-    save_type: none
+    save_type: all
     shape: oobb_cylinder
     taxonomy_1: electronic
     taxonomy_14: aliexpress
@@ -1686,6 +1690,7 @@ thing:
     taxonomy_4: remote_control
     taxonomy_5: servo_tester
     taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+    typ: all
     type: positive
     type_1: input
     type_2: remote_control
@@ -1710,7 +1715,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_default
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005009566745868'
     pos:
@@ -1722,7 +1727,7 @@ thing:
     - 0
     - 180
     - 0
-    save_type: none
+    save_type: all
     shape: oobb_screw_countersunk
     taxonomy_1: electronic
     taxonomy_14: aliexpress
@@ -1731,6 +1736,7 @@ thing:
     taxonomy_4: remote_control
     taxonomy_5: servo_tester
     taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+    typ: all
     type: negative
     type_1: input
     type_2: remote_control
@@ -1755,7 +1761,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_default
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005009566745868'
     pos:
@@ -1763,7 +1769,7 @@ thing:
     - -5.5
     - 4.5
     radius: 2.75
-    save_type: none
+    save_type: all
     shape: oobb_cylinder
     taxonomy_1: electronic
     taxonomy_14: aliexpress
@@ -1772,6 +1778,7 @@ thing:
     taxonomy_4: remote_control
     taxonomy_5: servo_tester
     taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+    typ: all
     type: positive
     type_1: input
     type_2: remote_control
@@ -1779,12 +1786,12 @@ thing:
     webpage_aliexpress: https://www.aliexpress.com/item/1005009566745868.html
     width: 3
   components_string:
-  - oobb_plate_shape_positive_type_3_depth_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_18_mm_width_14_mm_height_purple_pcb_breakout_description_14_breakout_pcb_height_18_breakout_pcb_width_aliexpress_manufacturer_m2_mounting_hole_radius_name_7.5_5.5_7.5_-5.5_mounting_holes_mounting_plate_default_oobb_name_1005009566745868_part_number_aliexpress_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_input_taxonomy_3_remote_control_taxonomy_4_servo_tester_taxonomy_5_18_mm_width_14_mm_height_purple_pcb_taxonomy_6_input_type_1_remote_control_type_2_servo_tester_type_3_https://www.aliexpress.com/item/1005009566745868.html_webpage_aliexpress_3_width_3_height
-  - oobb_holes_shape_p_type_3_depth_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_18_mm_width_14_mm_height_purple_pcb_breakout_description_14_breakout_pcb_height_18_breakout_pcb_width_aliexpress_manufacturer_m2_mounting_hole_radius_name_7.5_5.5_7.5_-5.5_mounting_holes_mounting_plate_default_oobb_name_1005009566745868_part_number_aliexpress_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_input_taxonomy_3_remote_control_taxonomy_4_servo_tester_taxonomy_5_18_mm_width_14_mm_height_purple_pcb_taxonomy_6_input_type_1_remote_control_type_2_servo_tester_type_3_https://www.aliexpress.com/item/1005009566745868.html_webpage_aliexpress_3_width_3_height_true_both_holes_perimeter_holes
-  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_7.5_5.5_0_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_18_mm_width_14_mm_height_purple_pcb_breakout_description_14_breakout_pcb_height_18_breakout_pcb_width_aliexpress_manufacturer_m2_mounting_hole_radius_name_7.5_5.5_7.5_-5.5_mounting_holes_mounting_plate_default_oobb_name_1005009566745868_part_number_aliexpress_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_input_taxonomy_3_remote_control_taxonomy_4_servo_tester_taxonomy_5_18_mm_width_14_mm_height_purple_pcb_taxonomy_6_input_type_1_remote_control_type_2_servo_tester_type_3_https://www.aliexpress.com/item/1005009566745868.html_webpage_aliexpress_3_width_3_height_0_180_0_rot
-  - oobb_cylinder_shape_positive_type_3_depth_7.5_5.5_4.5_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_18_mm_width_14_mm_height_purple_pcb_breakout_description_14_breakout_pcb_height_18_breakout_pcb_width_aliexpress_manufacturer_m2_mounting_hole_radius_name_7.5_5.5_7.5_-5.5_mounting_holes_mounting_plate_default_oobb_name_1005009566745868_part_number_aliexpress_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_input_taxonomy_3_remote_control_taxonomy_4_servo_tester_taxonomy_5_18_mm_width_14_mm_height_purple_pcb_taxonomy_6_input_type_1_remote_control_type_2_servo_tester_type_3_https://www.aliexpress.com/item/1005009566745868.html_webpage_aliexpress_3_width_3_height_2.75_radius
-  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_7.5_-5.5_0_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_18_mm_width_14_mm_height_purple_pcb_breakout_description_14_breakout_pcb_height_18_breakout_pcb_width_aliexpress_manufacturer_m2_mounting_hole_radius_name_7.5_5.5_7.5_-5.5_mounting_holes_mounting_plate_default_oobb_name_1005009566745868_part_number_aliexpress_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_input_taxonomy_3_remote_control_taxonomy_4_servo_tester_taxonomy_5_18_mm_width_14_mm_height_purple_pcb_taxonomy_6_input_type_1_remote_control_type_2_servo_tester_type_3_https://www.aliexpress.com/item/1005009566745868.html_webpage_aliexpress_3_width_3_height_0_180_0_rot
-  - oobb_cylinder_shape_positive_type_3_depth_7.5_-5.5_4.5_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_18_mm_width_14_mm_height_purple_pcb_breakout_description_14_breakout_pcb_height_18_breakout_pcb_width_aliexpress_manufacturer_m2_mounting_hole_radius_name_7.5_5.5_7.5_-5.5_mounting_holes_mounting_plate_default_oobb_name_1005009566745868_part_number_aliexpress_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_input_taxonomy_3_remote_control_taxonomy_4_servo_tester_taxonomy_5_18_mm_width_14_mm_height_purple_pcb_taxonomy_6_input_type_1_remote_control_type_2_servo_tester_type_3_https://www.aliexpress.com/item/1005009566745868.html_webpage_aliexpress_3_width_3_height_2.75_radius
+  - oobb_plate_shape_positive_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_18_mm_width_14_mm_height_purple_pcb_breakout_description_14_breakout_pcb_height_18_breakout_pcb_width_aliexpress_manufacturer_m2_mounting_hole_radius_name_7.5_5.5_7.5_-5.5_mounting_holes_mounting_plate_default_oobb_name_1005009566745868_part_number_aliexpress_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_input_taxonomy_3_remote_control_taxonomy_4_servo_tester_taxonomy_5_18_mm_width_14_mm_height_purple_pcb_taxonomy_6_input_type_1_remote_control_type_2_servo_tester_type_3_https://www.aliexpress.com/item/1005009566745868.html_webpage_aliexpress_3_width_3_height
+  - oobb_holes_shape_p_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_18_mm_width_14_mm_height_purple_pcb_breakout_description_14_breakout_pcb_height_18_breakout_pcb_width_aliexpress_manufacturer_m2_mounting_hole_radius_name_7.5_5.5_7.5_-5.5_mounting_holes_mounting_plate_default_oobb_name_1005009566745868_part_number_aliexpress_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_input_taxonomy_3_remote_control_taxonomy_4_servo_tester_taxonomy_5_18_mm_width_14_mm_height_purple_pcb_taxonomy_6_input_type_1_remote_control_type_2_servo_tester_type_3_https://www.aliexpress.com/item/1005009566745868.html_webpage_aliexpress_3_width_3_height_true_both_holes_perimeter_holes
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_7.5_5.5_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_18_mm_width_14_mm_height_purple_pcb_breakout_description_14_breakout_pcb_height_18_breakout_pcb_width_aliexpress_manufacturer_m2_mounting_hole_radius_name_7.5_5.5_7.5_-5.5_mounting_holes_mounting_plate_default_oobb_name_1005009566745868_part_number_aliexpress_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_input_taxonomy_3_remote_control_taxonomy_4_servo_tester_taxonomy_5_18_mm_width_14_mm_height_purple_pcb_taxonomy_6_input_type_1_remote_control_type_2_servo_tester_type_3_https://www.aliexpress.com/item/1005009566745868.html_webpage_aliexpress_3_width_3_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_7.5_5.5_4.5_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_18_mm_width_14_mm_height_purple_pcb_breakout_description_14_breakout_pcb_height_18_breakout_pcb_width_aliexpress_manufacturer_m2_mounting_hole_radius_name_7.5_5.5_7.5_-5.5_mounting_holes_mounting_plate_default_oobb_name_1005009566745868_part_number_aliexpress_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_input_taxonomy_3_remote_control_taxonomy_4_servo_tester_taxonomy_5_18_mm_width_14_mm_height_purple_pcb_taxonomy_6_input_type_1_remote_control_type_2_servo_tester_type_3_https://www.aliexpress.com/item/1005009566745868.html_webpage_aliexpress_3_width_3_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_7.5_-5.5_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_18_mm_width_14_mm_height_purple_pcb_breakout_description_14_breakout_pcb_height_18_breakout_pcb_width_aliexpress_manufacturer_m2_mounting_hole_radius_name_7.5_5.5_7.5_-5.5_mounting_holes_mounting_plate_default_oobb_name_1005009566745868_part_number_aliexpress_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_input_taxonomy_3_remote_control_taxonomy_4_servo_tester_taxonomy_5_18_mm_width_14_mm_height_purple_pcb_taxonomy_6_input_type_1_remote_control_type_2_servo_tester_type_3_https://www.aliexpress.com/item/1005009566745868.html_webpage_aliexpress_3_width_3_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_7.5_-5.5_4.5_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_18_mm_width_14_mm_height_purple_pcb_breakout_description_14_breakout_pcb_height_18_breakout_pcb_width_aliexpress_manufacturer_m2_mounting_hole_radius_name_7.5_5.5_7.5_-5.5_mounting_holes_mounting_plate_default_oobb_name_1005009566745868_part_number_aliexpress_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_input_taxonomy_3_remote_control_taxonomy_4_servo_tester_taxonomy_5_18_mm_width_14_mm_height_purple_pcb_taxonomy_6_input_type_1_remote_control_type_2_servo_tester_type_3_https://www.aliexpress.com/item/1005009566745868.html_webpage_aliexpress_3_width_3_height_2.75_radius
   description: default mounting plate default 0x0x0
   description_extra: ''
   description_main: ''
@@ -1812,10 +1819,10 @@ thing:
     oomp_description_extra: ''
     oomp_description_main: mounting_plate_default_
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005009566745868'
-    save_type: none
+    save_type: all
     taxonomy_1: electronic
     taxonomy_14: aliexpress
     taxonomy_2: breakout
@@ -1823,6 +1830,7 @@ thing:
     taxonomy_4: remote_control
     taxonomy_5: servo_tester
     taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+    typ: all
     type: default_mounting_plate_default
     type_1: input
     type_2: remote_control

@@ -60,7 +60,7 @@ kwargs:
   oomp_description_extra: ''
   oomp_description_main: mounting_plate_oobb_
   oomp_mode: project
-  oomp_run: false
+  oomp_run: true
   overwrite: true
   part_number_aliexpress: '1005002867727977'
   scad_output: working_oobb
@@ -70,6 +70,7 @@ kwargs:
   taxonomy_3: output
   taxonomy_4: relay
   taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+  typ: all
   type: default_mounting_plate_oobb
   type_1: output
   type_2: relay
@@ -3719,7 +3720,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005002867727977'
     pos:
@@ -3727,7 +3728,7 @@ thing:
     - 0
     - 0
     prepare_print: false
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_plate
     taxonomy_1: electronic
@@ -3736,6 +3737,7 @@ thing:
     taxonomy_3: output
     taxonomy_4: relay
     taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+    typ: all
     type: positive
     type_1: output
     type_2: relay
@@ -3766,7 +3768,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005002867727977'
     pos:
@@ -3774,7 +3776,7 @@ thing:
     - 0
     - 0
     prepare_print: false
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_holes
     taxonomy_1: electronic
@@ -3783,6 +3785,7 @@ thing:
     taxonomy_3: output
     taxonomy_4: relay
     taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+    typ: all
     type: p
     type_1: output
     type_2: relay
@@ -3811,7 +3814,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005002867727977'
     pos:
@@ -3824,7 +3827,7 @@ thing:
     - 0
     - 180
     - 0
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_screw_countersunk
     taxonomy_1: electronic
@@ -3833,6 +3836,7 @@ thing:
     taxonomy_3: output
     taxonomy_4: relay
     taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+    typ: all
     type: negative
     type_1: output
     type_2: relay
@@ -3861,7 +3865,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005002867727977'
     pos:
@@ -3870,7 +3874,7 @@ thing:
     - 6.0
     prepare_print: false
     radius: 3.75
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_cylinder
     taxonomy_1: electronic
@@ -3879,6 +3883,7 @@ thing:
     taxonomy_3: output
     taxonomy_4: relay
     taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+    typ: all
     type: positive
     type_1: output
     type_2: relay
@@ -3907,7 +3912,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005002867727977'
     pos:
@@ -3920,7 +3925,7 @@ thing:
     - 0
     - 180
     - 0
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_screw_countersunk
     taxonomy_1: electronic
@@ -3929,6 +3934,7 @@ thing:
     taxonomy_3: output
     taxonomy_4: relay
     taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+    typ: all
     type: negative
     type_1: output
     type_2: relay
@@ -3957,7 +3963,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005002867727977'
     pos:
@@ -3966,7 +3972,7 @@ thing:
     - 6.0
     prepare_print: false
     radius: 3.75
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_cylinder
     taxonomy_1: electronic
@@ -3975,6 +3981,7 @@ thing:
     taxonomy_3: output
     taxonomy_4: relay
     taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+    typ: all
     type: positive
     type_1: output
     type_2: relay
@@ -4003,7 +4010,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005002867727977'
     pos:
@@ -4016,7 +4023,7 @@ thing:
     - 0
     - 180
     - 0
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_screw_countersunk
     taxonomy_1: electronic
@@ -4025,6 +4032,7 @@ thing:
     taxonomy_3: output
     taxonomy_4: relay
     taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+    typ: all
     type: negative
     type_1: output
     type_2: relay
@@ -4053,7 +4061,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005002867727977'
     pos:
@@ -4062,7 +4070,7 @@ thing:
     - 6.0
     prepare_print: false
     radius: 3.75
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_cylinder
     taxonomy_1: electronic
@@ -4071,6 +4079,7 @@ thing:
     taxonomy_3: output
     taxonomy_4: relay
     taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+    typ: all
     type: positive
     type_1: output
     type_2: relay
@@ -4099,7 +4108,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005002867727977'
     pos:
@@ -4112,7 +4121,7 @@ thing:
     - 0
     - 180
     - 0
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_screw_countersunk
     taxonomy_1: electronic
@@ -4121,6 +4130,7 @@ thing:
     taxonomy_3: output
     taxonomy_4: relay
     taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+    typ: all
     type: negative
     type_1: output
     type_2: relay
@@ -4149,7 +4159,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005002867727977'
     pos:
@@ -4158,7 +4168,7 @@ thing:
     - 6.0
     prepare_print: false
     radius: 3.75
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_cylinder
     taxonomy_1: electronic
@@ -4167,6 +4177,7 @@ thing:
     taxonomy_3: output
     taxonomy_4: relay
     taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+    typ: all
     type: positive
     type_1: output
     type_2: relay
@@ -4397,16 +4408,16 @@ thing:
     type: negative
     zz: bottom
   components_string:
-  - oobb_plate_shape_positive_type_3_depth_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height
-  - oobb_holes_shape_p_type_3_depth_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_true_both_holes_perimeter_holes
-  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_22.0_16.5_0_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_0_180_0_rot
-  - oobb_cylinder_shape_positive_type_6_depth_22.0_16.5_6.0_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_3.75_radius
-  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_22.0_-16.5_0_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_0_180_0_rot
-  - oobb_cylinder_shape_positive_type_6_depth_22.0_-16.5_6.0_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_3.75_radius
-  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_-22.0_16.5_0_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_0_180_0_rot
-  - oobb_cylinder_shape_positive_type_6_depth_-22.0_16.5_6.0_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_3.75_radius
-  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_-22.0_-16.5_0_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_0_180_0_rot
-  - oobb_cylinder_shape_positive_type_6_depth_-22.0_-16.5_6.0_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_3.75_radius
+  - oobb_plate_shape_positive_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height
+  - oobb_holes_shape_p_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_true_both_holes_perimeter_holes
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_22.0_16.5_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_6_depth_22.0_16.5_6.0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_3.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_22.0_-16.5_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_6_depth_22.0_-16.5_6.0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_3.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_-22.0_16.5_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_6_depth_-22.0_16.5_6.0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_3.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_-22.0_-16.5_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_6_depth_-22.0_-16.5_6.0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_49_mm_width_38_mm_height_black_pcb_breakout_description_38_breakout_pcb_height_49_breakout_pcb_width_aliexpress_manufacturer_m3_mounting_hole_radius_name_22.0_16.5_22.0_-16.5_-22.0_16.5_-22.0_-16.5_mounting_holes_mounting_plate_oobb_oobb_name_1005002867727977_part_number_aliexpress_working_oobb_scad_output_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_output_taxonomy_3_relay_taxonomy_4_49_mm_width_38_mm_height_black_pcb_taxonomy_5_output_type_1_relay_type_2_https://www.aliexpress.com/item/1005002867727977.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_5_height_3.75_radius
   - oobb_hole_shape_negative_type_4_depth_-22.5_0_-1_pos_6_radius
   - oobb_cylinder_shape_positive_type_3_depth_-30.0_-15_4.5_pos_4.962_radius
   - oobb_hole_shape_negative_type_m3_radius_name_8_depth_-30.0_-15_-1_pos
@@ -4464,10 +4475,10 @@ thing:
     oomp_description_extra: ''
     oomp_description_main: mounting_plate_oobb_
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005002867727977'
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     taxonomy_1: electronic
     taxonomy_14: aliexpress
@@ -4475,6 +4486,7 @@ thing:
     taxonomy_3: output
     taxonomy_4: relay
     taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+    typ: all
     type: default_mounting_plate_oobb
     type_1: output
     type_2: relay

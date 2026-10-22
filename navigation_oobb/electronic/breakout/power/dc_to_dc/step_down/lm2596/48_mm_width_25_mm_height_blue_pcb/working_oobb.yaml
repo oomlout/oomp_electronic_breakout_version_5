@@ -58,7 +58,7 @@ kwargs:
   oomp_description_extra: ''
   oomp_description_main: mounting_plate_oobb_
   oomp_mode: project
-  oomp_run: false
+  oomp_run: true
   overwrite: true
   part_number_aliexpress: '1005010001439374'
   scad_output: working_oobb
@@ -72,6 +72,7 @@ kwargs:
   taxonomy_5: step_down
   taxonomy_6: lm2596
   taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+  typ: all
   type: default_mounting_plate_oobb
   type_1: power
   type_2: dc_to_dc

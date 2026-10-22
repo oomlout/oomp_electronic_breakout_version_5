@@ -1,0 +1,1750 @@
+bip_39_2_word_array:
+- rough
+- library
+bip_39_2_word_no_space: roughlibrary
+bip_39_2_word_space: rough library
+bip_39_2_word_underscore: rough_library
+bip_39_3_word_array:
+- rough
+- library
+- hurry
+bip_39_3_word_no_space: roughlibraryhurry
+bip_39_3_word_space: rough library hurry
+bip_39_3_word_underscore: rough_library_hurry
+bip_39_full_array:
+- rough
+- library
+- hurry
+- absurd
+- drop
+- fly
+- chaos
+- circle
+- jungle
+- casual
+- ranch
+- heavy
+bip_39_full_no_space: roughlibraryhurryabsurddropflychaoscirclejunglecasualranchheavy
+bip_39_full_space: rough library hurry absurd drop fly chaos circle jungle casual
+  ranch heavy
+bip_39_full_underscore: rough_library_hurry_absurd_drop_fly_chaos_circle_jungle_casual_ranch_heavy
+breakout_description: 18_mm_width_21_mm_height_14_pin
+breakout_pcb_height: 21
+breakout_pcb_width: 18
+directory: parts/electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+id: electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+id_no_class: electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+id_no_size: electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+id_no_type: electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+id_oobb: electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+kwargs:
+  breakout_description: 18_mm_width_21_mm_height_14_pin
+  breakout_pcb_height: 21
+  breakout_pcb_width: 18
+  filter: ''
+  manufacturer: adafruit
+  modes:
+  - 3dpr
+  navigation: true
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  oomp_mode: project
+  oomp_run: true
+  overwrite: true
+  part_number: '4900'
+  taxonomy_1: electronic
+  taxonomy_14: adafruit
+  taxonomy_15: '4900'
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: rp2040
+  taxonomy_5: qt_py
+  taxonomy_6: without_headers
+  taxonomy_7: 18_mm_width_21_mm_height_14_pin
+  typ: all
+  type: default_mounting_plate_default
+  type_1: microcontroller
+  type_2: rp2040
+  type_3: qt_py
+  type_4: without_headers
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+manufacturer: adafruit
+md5: bc5021be808436b3c99149790476c635
+md5_10: bc5021be80
+md5_10_upper: BC5021BE80
+md5_5: bc502
+md5_5_upper: BC502
+md5_6: bc5021
+md5_6_alpha: 7cild
+md5_6_alpha_upper: 7CILD
+md5_6_upper: BC5021
+name: Electronic Breakout Microcontroller Rp2040 Qt Py Without Headers 18 Mm Width
+  21 Mm Height 14 Pin Adafruit 4900
+name_no_class: Electronic Breakout Microcontroller Rp2040 Qt Py Without Headers 18
+  Mm Width 21 Mm Height 14 Pin Adafruit 4900
+name_no_size: Electronic Breakout Microcontroller Rp2040 Qt Py Without Headers 18
+  Mm Width 21 Mm Height 14 Pin Adafruit 4900
+name_no_type: Electronic Breakout Microcontroller Rp2040 Qt Py Without Headers 18
+  Mm Width 21 Mm Height 14 Pin Adafruit 4900
+name_proper: Electronic Breakout Microcontroller Rp2040 Qt Py Without Headers 18 Mm
+  Width 21 Mm Height 14 Pin Adafruit 4900
+name_space: electronic breakout microcontroller rp2040 qt py without headers 18 mm
+  width 21 mm height 14 pin adafruit 4900
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2040 QT PY WITHOUT HEADERS 18 MM
+  WIDTH 21 MM HEIGHT 14 PIN ADAFRUIT 4900
+oobb_details:
+- breakout_description: 18_mm_width_21_mm_height_14_pin
+  breakout_pcb_height: 21
+  breakout_pcb_width: 18
+  manufacturer: adafruit
+  oobb_name: mounting_plate_default
+  part_number: '4900'
+  taxonomy_1: electronic
+  taxonomy_14: adafruit
+  taxonomy_15: '4900'
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: rp2040
+  taxonomy_5: qt_py
+  taxonomy_6: without_headers
+  taxonomy_7: 18_mm_width_21_mm_height_14_pin
+  type_1: microcontroller
+  type_2: rp2040
+  type_3: qt_py
+  type_4: without_headers
+- breakout_description: 18_mm_width_21_mm_height_14_pin
+  breakout_pcb_height: 21
+  breakout_pcb_width: 18
+  manufacturer: adafruit
+  oobb_name: mounting_plate_oobb
+  part_number: '4900'
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: adafruit
+  taxonomy_15: '4900'
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: rp2040
+  taxonomy_5: qt_py
+  taxonomy_6: without_headers
+  taxonomy_7: 18_mm_width_21_mm_height_14_pin
+  type_1: microcontroller
+  type_2: rp2040
+  type_3: qt_py
+  type_4: without_headers
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      breakout_description: 18_mm_width_21_mm_height_14_pin
+      breakout_pcb_height: 21
+      breakout_pcb_width: 18
+      directory: parts\electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+      manufacturer: adafruit
+      name: electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+      name_proper: Electronic Breakout Microcontroller Rp2040 Qt Py Without Headers
+        18 Mm Width 21 Mm Height 14 Pin Adafruit 4900
+      name_space: electronic breakout microcontroller rp2040 qt py without headers
+        18 mm width 21 mm height 14 pin adafruit 4900
+      name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2040 QT PY WITHOUT HEADERS
+        18 MM WIDTH 21 MM HEIGHT 14 PIN ADAFRUIT 4900
+      oobb_details:
+      - breakout_description: 18_mm_width_21_mm_height_14_pin
+        breakout_pcb_height: 21
+        breakout_pcb_width: 18
+        manufacturer: adafruit
+        oobb_name: mounting_plate_default
+        part_number: '4900'
+        taxonomy_1: electronic
+        taxonomy_14: adafruit
+        taxonomy_15: '4900'
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: rp2040
+        taxonomy_5: qt_py
+        taxonomy_6: without_headers
+        taxonomy_7: 18_mm_width_21_mm_height_14_pin
+        type_1: microcontroller
+        type_2: rp2040
+        type_3: qt_py
+        type_4: without_headers
+      - breakout_description: 18_mm_width_21_mm_height_14_pin
+        breakout_pcb_height: 21
+        breakout_pcb_width: 18
+        manufacturer: adafruit
+        oobb_name: mounting_plate_oobb
+        part_number: '4900'
+        scad_output: working_oobb
+        taxonomy_1: electronic
+        taxonomy_14: adafruit
+        taxonomy_15: '4900'
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: rp2040
+        taxonomy_5: qt_py
+        taxonomy_6: without_headers
+        taxonomy_7: 18_mm_width_21_mm_height_14_pin
+        type_1: microcontroller
+        type_2: rp2040
+        type_3: qt_py
+        type_4: without_headers
+      part_number: '4900'
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: adafruit
+      taxonomy_15: '4900'
+      taxonomy_2: breakout
+      taxonomy_3: microcontroller
+      taxonomy_4: rp2040
+      taxonomy_5: qt_py
+      taxonomy_6: without_headers
+      taxonomy_7: 18_mm_width_21_mm_height_14_pin
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: microcontroller
+      type_2: rp2040
+      type_3: qt_py
+      type_4: without_headers
+      url_chat: ''
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+part_number: '4900'
+project_name: C:\gh\oomp_electronic_breakout
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_14_capital: Adafruit
+taxonomy_14_first_letter: a
+taxonomy_14_first_letter_upper: A
+taxonomy_14_length_1: a
+taxonomy_14_length_2: ad
+taxonomy_14_length_3: ada
+taxonomy_14_length_4: adaf
+taxonomy_14_length_5: adafr
+taxonomy_14_upper: ADAFRUIT
+taxonomy_14_upper_length_1: A
+taxonomy_14_upper_length_2: AD
+taxonomy_14_upper_length_3: ADA
+taxonomy_14_upper_length_4: ADAF
+taxonomy_14_upper_length_5: ADAFR
+taxonomy_15: '4900'
+taxonomy_15_capital: '4900'
+taxonomy_15_first_letter: '4'
+taxonomy_15_first_letter_upper: '4'
+taxonomy_15_length_1: '4'
+taxonomy_15_length_2: '49'
+taxonomy_15_length_3: '490'
+taxonomy_15_length_4: '4900'
+taxonomy_15_length_5: '4900'
+taxonomy_15_upper: '4900'
+taxonomy_15_upper_length_1: '4'
+taxonomy_15_upper_length_2: '49'
+taxonomy_15_upper_length_3: '490'
+taxonomy_15_upper_length_4: '4900'
+taxonomy_15_upper_length_5: '4900'
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: rp2040
+taxonomy_4_capital: Rp2040
+taxonomy_4_first_letter: r
+taxonomy_4_first_letter_upper: R
+taxonomy_4_length_1: r
+taxonomy_4_length_2: rp
+taxonomy_4_length_3: rp2
+taxonomy_4_length_4: rp20
+taxonomy_4_length_5: rp204
+taxonomy_4_upper: RP2040
+taxonomy_4_upper_length_1: R
+taxonomy_4_upper_length_2: RP
+taxonomy_4_upper_length_3: RP2
+taxonomy_4_upper_length_4: RP20
+taxonomy_4_upper_length_5: RP204
+taxonomy_5: qt_py
+taxonomy_5_capital: Qt Py
+taxonomy_5_first_letter: q
+taxonomy_5_first_letter_upper: Q
+taxonomy_5_length_1: q
+taxonomy_5_length_2: qt
+taxonomy_5_length_3: qt_
+taxonomy_5_length_4: qt_p
+taxonomy_5_length_5: qt_py
+taxonomy_5_upper: QT_PY
+taxonomy_5_upper_length_1: Q
+taxonomy_5_upper_length_2: QT
+taxonomy_5_upper_length_3: QT_
+taxonomy_5_upper_length_4: QT_P
+taxonomy_5_upper_length_5: QT_PY
+taxonomy_6: without_headers
+taxonomy_6_capital: Without Headers
+taxonomy_6_first_letter: w
+taxonomy_6_first_letter_upper: W
+taxonomy_6_length_1: w
+taxonomy_6_length_2: wi
+taxonomy_6_length_3: wit
+taxonomy_6_length_4: with
+taxonomy_6_length_5: witho
+taxonomy_6_upper: WITHOUT_HEADERS
+taxonomy_6_upper_length_1: W
+taxonomy_6_upper_length_2: WI
+taxonomy_6_upper_length_3: WIT
+taxonomy_6_upper_length_4: WITH
+taxonomy_6_upper_length_5: WITHO
+taxonomy_7: 18_mm_width_21_mm_height_14_pin
+taxonomy_7_capital: 18 mm Width 21 mm Height 14 Pin
+taxonomy_7_first_letter: '1'
+taxonomy_7_first_letter_upper: '1'
+taxonomy_7_length_1: '1'
+taxonomy_7_length_2: '18'
+taxonomy_7_length_3: '18_'
+taxonomy_7_length_4: 18_m
+taxonomy_7_length_5: 18_mm
+taxonomy_7_upper: 18_MM_WIDTH_21_MM_HEIGHT_14_PIN
+taxonomy_7_upper_length_1: '1'
+taxonomy_7_upper_length_2: '18'
+taxonomy_7_upper_length_3: '18_'
+taxonomy_7_upper_length_4: 18_M
+taxonomy_7_upper_length_5: 18_MM
+taxonomy_8: ''
+taxonomy_9: ''
+thing:
+  bip_39_2_word_array:
+  - rough
+  - library
+  bip_39_2_word_no_space: roughlibrary
+  bip_39_2_word_space: rough library
+  bip_39_2_word_underscore: rough_library
+  bip_39_3_word_array:
+  - rough
+  - library
+  - hurry
+  bip_39_3_word_no_space: roughlibraryhurry
+  bip_39_3_word_space: rough library hurry
+  bip_39_3_word_underscore: rough_library_hurry
+  bip_39_full_array:
+  - rough
+  - library
+  - hurry
+  - absurd
+  - drop
+  - fly
+  - chaos
+  - circle
+  - jungle
+  - casual
+  - ranch
+  - heavy
+  bip_39_full_no_space: roughlibraryhurryabsurddropflychaoscirclejunglecasualranchheavy
+  bip_39_full_space: rough library hurry absurd drop fly chaos circle jungle casual
+    ranch heavy
+  bip_39_full_underscore: rough_library_hurry_absurd_drop_fly_chaos_circle_jungle_casual_ranch_heavy
+  breakout_description: 18_mm_width_21_mm_height_14_pin
+  breakout_pcb_height: 21
+  breakout_pcb_width: 18
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 4
+      pos:
+      - 0
+      - 0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 44
+      - 59
+      - 3
+      type: positive
+      width: 3
+  - - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - -22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - -22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - 22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - -22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - -22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 22.5
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 22.5
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 0.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - -22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - -22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 0.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 22.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 22.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+  components_objects:
+  - breakout_description: 18_mm_width_21_mm_height_14_pin
+    breakout_pcb_height: 21
+    breakout_pcb_width: 18
+    depth: 3
+    filter: ''
+    height: 4
+    manufacturer: adafruit
+    modes:
+    - 3dpr
+    navigation: true
+    oobb_name: mounting_plate_default
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: '4900'
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    shape: oobb_plate
+    taxonomy_1: electronic
+    taxonomy_14: adafruit
+    taxonomy_15: '4900'
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: rp2040
+    taxonomy_5: qt_py
+    taxonomy_6: without_headers
+    taxonomy_7: 18_mm_width_21_mm_height_14_pin
+    typ: all
+    type: positive
+    type_1: microcontroller
+    type_2: rp2040
+    type_3: qt_py
+    type_4: without_headers
+    width: 3
+  - both_holes: true
+    breakout_description: 18_mm_width_21_mm_height_14_pin
+    breakout_pcb_height: 21
+    breakout_pcb_width: 18
+    depth: 3
+    filter: ''
+    height: 4
+    holes: perimeter
+    manufacturer: adafruit
+    modes:
+    - 3dpr
+    navigation: true
+    oobb_name: mounting_plate_default
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: '4900'
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    shape: oobb_holes
+    taxonomy_1: electronic
+    taxonomy_14: adafruit
+    taxonomy_15: '4900'
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: rp2040
+    taxonomy_5: qt_py
+    taxonomy_6: without_headers
+    taxonomy_7: 18_mm_width_21_mm_height_14_pin
+    typ: all
+    type: p
+    type_1: microcontroller
+    type_2: rp2040
+    type_3: qt_py
+    type_4: without_headers
+    width: 3
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_18_mm_width_21_mm_height_14_pin_breakout_description_21_breakout_pcb_height_18_breakout_pcb_width_adafruit_manufacturer_mounting_plate_default_oobb_name_4900_part_number_electronic_taxonomy_1_adafruit_taxonomy_14_4900_taxonomy_15_breakout_taxonomy_2_microcontroller_taxonomy_3_rp2040_taxonomy_4_qt_py_taxonomy_5_without_headers_taxonomy_6_18_mm_width_21_mm_height_14_pin_taxonomy_7_microcontroller_type_1_rp2040_type_2_qt_py_type_3_without_headers_type_4_3_width_4_height
+  - oobb_holes_shape_p_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_18_mm_width_21_mm_height_14_pin_breakout_description_21_breakout_pcb_height_18_breakout_pcb_width_adafruit_manufacturer_mounting_plate_default_oobb_name_4900_part_number_electronic_taxonomy_1_adafruit_taxonomy_14_4900_taxonomy_15_breakout_taxonomy_2_microcontroller_taxonomy_3_rp2040_taxonomy_4_qt_py_taxonomy_5_without_headers_taxonomy_6_18_mm_width_21_mm_height_14_pin_taxonomy_7_microcontroller_type_1_rp2040_type_2_qt_py_type_3_without_headers_type_4_3_width_4_height_true_both_holes_perimeter_holes
+  description: default mounting plate default 0x0x0
+  description_extra: ''
+  description_main: ''
+  directory: parts/electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+  id: electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+  id_no_class: electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+  id_no_size: electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+  id_no_type: electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+  kwargs:
+    breakout_description: 18_mm_width_21_mm_height_14_pin
+    breakout_pcb_height: 21
+    breakout_pcb_width: 18
+    filter: ''
+    manufacturer: adafruit
+    modes:
+    - 3dpr
+    navigation: true
+    oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
+    oomp_mode: project
+    oomp_run: true
+    overwrite: true
+    part_number: '4900'
+    save_type: all
+    taxonomy_1: electronic
+    taxonomy_14: adafruit
+    taxonomy_15: '4900'
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: rp2040
+    taxonomy_5: qt_py
+    taxonomy_6: without_headers
+    taxonomy_7: 18_mm_width_21_mm_height_14_pin
+    typ: all
+    type: default_mounting_plate_default
+    type_1: microcontroller
+    type_2: rp2040
+    type_3: qt_py
+    type_4: without_headers
+  link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+  link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+  link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+  manufacturer: adafruit
+  md5: bc5021be808436b3c99149790476c635
+  md5_10: bc5021be80
+  md5_10_upper: BC5021BE80
+  md5_5: bc502
+  md5_5_upper: BC502
+  md5_6: bc5021
+  md5_6_alpha: 7cild
+  md5_6_alpha_upper: 7CILD
+  md5_6_upper: BC5021
+  name: Electronic Breakout Microcontroller Rp2040 Qt Py Without Headers 18 Mm Width
+    21 Mm Height 14 Pin Adafruit 4900
+  name_no_class: Electronic Breakout Microcontroller Rp2040 Qt Py Without Headers
+    18 Mm Width 21 Mm Height 14 Pin Adafruit 4900
+  name_no_size: Electronic Breakout Microcontroller Rp2040 Qt Py Without Headers 18
+    Mm Width 21 Mm Height 14 Pin Adafruit 4900
+  name_no_type: Electronic Breakout Microcontroller Rp2040 Qt Py Without Headers 18
+    Mm Width 21 Mm Height 14 Pin Adafruit 4900
+  name_proper: Electronic Breakout Microcontroller Rp2040 Qt Py Without Headers 18
+    Mm Width 21 Mm Height 14 Pin Adafruit 4900
+  name_short: Default Mounting Plate Default
+  name_space: electronic breakout microcontroller rp2040 qt py without headers 18
+    mm width 21 mm height 14 pin adafruit 4900
+  name_text: Oobb Part Default Mounting Plate Default
+  name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2040 QT PY WITHOUT HEADERS 18
+    MM WIDTH 21 MM HEIGHT 14 PIN ADAFRUIT 4900
+  oobb_details:
+  - breakout_description: 18_mm_width_21_mm_height_14_pin
+    breakout_pcb_height: 21
+    breakout_pcb_width: 18
+    manufacturer: adafruit
+    oobb_name: mounting_plate_default
+    part_number: '4900'
+    taxonomy_1: electronic
+    taxonomy_14: adafruit
+    taxonomy_15: '4900'
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: rp2040
+    taxonomy_5: qt_py
+    taxonomy_6: without_headers
+    taxonomy_7: 18_mm_width_21_mm_height_14_pin
+    type_1: microcontroller
+    type_2: rp2040
+    type_3: qt_py
+    type_4: without_headers
+  - breakout_description: 18_mm_width_21_mm_height_14_pin
+    breakout_pcb_height: 21
+    breakout_pcb_width: 18
+    manufacturer: adafruit
+    oobb_name: mounting_plate_oobb
+    part_number: '4900'
+    scad_output: working_oobb
+    taxonomy_1: electronic
+    taxonomy_14: adafruit
+    taxonomy_15: '4900'
+    taxonomy_2: breakout
+    taxonomy_3: microcontroller
+    taxonomy_4: rp2040
+    taxonomy_5: qt_py
+    taxonomy_6: without_headers
+    taxonomy_7: 18_mm_width_21_mm_height_14_pin
+    type_1: microcontroller
+    type_2: rp2040
+    type_3: qt_py
+    type_4: without_headers
+  oobb_name: mounting_plate_default
+  oomlout_ai_roboclick_1:
+    actions:
+    - command: text_jinja_template
+      convert_to_pdf: false
+      convert_to_png: false
+      dict_data:
+        breakout_description: 18_mm_width_21_mm_height_14_pin
+        breakout_pcb_height: 21
+        breakout_pcb_width: 18
+        directory: parts\electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+        manufacturer: adafruit
+        name: electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+        name_proper: Electronic Breakout Microcontroller Rp2040 Qt Py Without Headers
+          18 Mm Width 21 Mm Height 14 Pin Adafruit 4900
+        name_space: electronic breakout microcontroller rp2040 qt py without headers
+          18 mm width 21 mm height 14 pin adafruit 4900
+        name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2040 QT PY WITHOUT HEADERS
+          18 MM WIDTH 21 MM HEIGHT 14 PIN ADAFRUIT 4900
+        oobb_details:
+        - breakout_description: 18_mm_width_21_mm_height_14_pin
+          breakout_pcb_height: 21
+          breakout_pcb_width: 18
+          manufacturer: adafruit
+          oobb_name: mounting_plate_default
+          part_number: '4900'
+          taxonomy_1: electronic
+          taxonomy_14: adafruit
+          taxonomy_15: '4900'
+          taxonomy_2: breakout
+          taxonomy_3: microcontroller
+          taxonomy_4: rp2040
+          taxonomy_5: qt_py
+          taxonomy_6: without_headers
+          taxonomy_7: 18_mm_width_21_mm_height_14_pin
+          type_1: microcontroller
+          type_2: rp2040
+          type_3: qt_py
+          type_4: without_headers
+        - breakout_description: 18_mm_width_21_mm_height_14_pin
+          breakout_pcb_height: 21
+          breakout_pcb_width: 18
+          manufacturer: adafruit
+          oobb_name: mounting_plate_oobb
+          part_number: '4900'
+          scad_output: working_oobb
+          taxonomy_1: electronic
+          taxonomy_14: adafruit
+          taxonomy_15: '4900'
+          taxonomy_2: breakout
+          taxonomy_3: microcontroller
+          taxonomy_4: rp2040
+          taxonomy_5: qt_py
+          taxonomy_6: without_headers
+          taxonomy_7: 18_mm_width_21_mm_height_14_pin
+          type_1: microcontroller
+          type_2: rp2040
+          type_3: qt_py
+          type_4: without_headers
+        part_number: '4900'
+        taxonomy_1: electronic
+        taxonomy_10: ''
+        taxonomy_11: ''
+        taxonomy_12: ''
+        taxonomy_13: ''
+        taxonomy_14: adafruit
+        taxonomy_15: '4900'
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: rp2040
+        taxonomy_5: qt_py
+        taxonomy_6: without_headers
+        taxonomy_7: 18_mm_width_21_mm_height_14_pin
+        taxonomy_8: ''
+        taxonomy_9: ''
+        type_1: microcontroller
+        type_2: rp2040
+        type_3: qt_py
+        type_4: without_headers
+        url_chat: ''
+      dict_data_files: {}
+      dict_data_files_exists: {}
+      file_output: label_oomp.svg
+      file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+      search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+  oomp_key: oomp_electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900
+  part_number: '4900'
+  short_name: ''
+  size: default_mounting_plate_default
+  taxonomy_1: electronic
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_14_capital: Adafruit
+  taxonomy_14_first_letter: a
+  taxonomy_14_first_letter_upper: A
+  taxonomy_14_length_1: a
+  taxonomy_14_length_2: ad
+  taxonomy_14_length_3: ada
+  taxonomy_14_length_4: adaf
+  taxonomy_14_length_5: adafr
+  taxonomy_14_upper: ADAFRUIT
+  taxonomy_14_upper_length_1: A
+  taxonomy_14_upper_length_2: AD
+  taxonomy_14_upper_length_3: ADA
+  taxonomy_14_upper_length_4: ADAF
+  taxonomy_14_upper_length_5: ADAFR
+  taxonomy_15: '4900'
+  taxonomy_15_capital: '4900'
+  taxonomy_15_first_letter: '4'
+  taxonomy_15_first_letter_upper: '4'
+  taxonomy_15_length_1: '4'
+  taxonomy_15_length_2: '49'
+  taxonomy_15_length_3: '490'
+  taxonomy_15_length_4: '4900'
+  taxonomy_15_length_5: '4900'
+  taxonomy_15_upper: '4900'
+  taxonomy_15_upper_length_1: '4'
+  taxonomy_15_upper_length_2: '49'
+  taxonomy_15_upper_length_3: '490'
+  taxonomy_15_upper_length_4: '4900'
+  taxonomy_15_upper_length_5: '4900'
+  taxonomy_1_capital: Electronic
+  taxonomy_1_first_letter: e
+  taxonomy_1_first_letter_upper: E
+  taxonomy_1_length_1: e
+  taxonomy_1_length_2: el
+  taxonomy_1_length_3: ele
+  taxonomy_1_length_4: elec
+  taxonomy_1_length_5: elect
+  taxonomy_1_upper: ELECTRONIC
+  taxonomy_1_upper_length_1: E
+  taxonomy_1_upper_length_2: EL
+  taxonomy_1_upper_length_3: ELE
+  taxonomy_1_upper_length_4: ELEC
+  taxonomy_1_upper_length_5: ELECT
+  taxonomy_2: breakout
+  taxonomy_2_capital: Breakout
+  taxonomy_2_first_letter: b
+  taxonomy_2_first_letter_upper: B
+  taxonomy_2_length_1: b
+  taxonomy_2_length_2: br
+  taxonomy_2_length_3: bre
+  taxonomy_2_length_4: brea
+  taxonomy_2_length_5: break
+  taxonomy_2_upper: BREAKOUT
+  taxonomy_2_upper_length_1: B
+  taxonomy_2_upper_length_2: BR
+  taxonomy_2_upper_length_3: BRE
+  taxonomy_2_upper_length_4: BREA
+  taxonomy_2_upper_length_5: BREAK
+  taxonomy_3: microcontroller
+  taxonomy_3_capital: Microcontroller
+  taxonomy_3_first_letter: m
+  taxonomy_3_first_letter_upper: M
+  taxonomy_3_length_1: m
+  taxonomy_3_length_2: mi
+  taxonomy_3_length_3: mic
+  taxonomy_3_length_4: micr
+  taxonomy_3_length_5: micro
+  taxonomy_3_upper: MICROCONTROLLER
+  taxonomy_3_upper_length_1: M
+  taxonomy_3_upper_length_2: MI
+  taxonomy_3_upper_length_3: MIC
+  taxonomy_3_upper_length_4: MICR
+  taxonomy_3_upper_length_5: MICRO
+  taxonomy_4: rp2040
+  taxonomy_4_capital: Rp2040
+  taxonomy_4_first_letter: r
+  taxonomy_4_first_letter_upper: R
+  taxonomy_4_length_1: r
+  taxonomy_4_length_2: rp
+  taxonomy_4_length_3: rp2
+  taxonomy_4_length_4: rp20
+  taxonomy_4_length_5: rp204
+  taxonomy_4_upper: RP2040
+  taxonomy_4_upper_length_1: R
+  taxonomy_4_upper_length_2: RP
+  taxonomy_4_upper_length_3: RP2
+  taxonomy_4_upper_length_4: RP20
+  taxonomy_4_upper_length_5: RP204
+  taxonomy_5: qt_py
+  taxonomy_5_capital: Qt Py
+  taxonomy_5_first_letter: q
+  taxonomy_5_first_letter_upper: Q
+  taxonomy_5_length_1: q
+  taxonomy_5_length_2: qt
+  taxonomy_5_length_3: qt_
+  taxonomy_5_length_4: qt_p
+  taxonomy_5_length_5: qt_py
+  taxonomy_5_upper: QT_PY
+  taxonomy_5_upper_length_1: Q
+  taxonomy_5_upper_length_2: QT
+  taxonomy_5_upper_length_3: QT_
+  taxonomy_5_upper_length_4: QT_P
+  taxonomy_5_upper_length_5: QT_PY
+  taxonomy_6: without_headers
+  taxonomy_6_capital: Without Headers
+  taxonomy_6_first_letter: w
+  taxonomy_6_first_letter_upper: W
+  taxonomy_6_length_1: w
+  taxonomy_6_length_2: wi
+  taxonomy_6_length_3: wit
+  taxonomy_6_length_4: with
+  taxonomy_6_length_5: witho
+  taxonomy_6_upper: WITHOUT_HEADERS
+  taxonomy_6_upper_length_1: W
+  taxonomy_6_upper_length_2: WI
+  taxonomy_6_upper_length_3: WIT
+  taxonomy_6_upper_length_4: WITH
+  taxonomy_6_upper_length_5: WITHO
+  taxonomy_7: 18_mm_width_21_mm_height_14_pin
+  taxonomy_7_capital: 18 mm Width 21 mm Height 14 Pin
+  taxonomy_7_first_letter: '1'
+  taxonomy_7_first_letter_upper: '1'
+  taxonomy_7_length_1: '1'
+  taxonomy_7_length_2: '18'
+  taxonomy_7_length_3: '18_'
+  taxonomy_7_length_4: 18_m
+  taxonomy_7_length_5: 18_mm
+  taxonomy_7_upper: 18_MM_WIDTH_21_MM_HEIGHT_14_PIN
+  taxonomy_7_upper_length_1: '1'
+  taxonomy_7_upper_length_2: '18'
+  taxonomy_7_upper_length_3: '18_'
+  taxonomy_7_upper_length_4: 18_M
+  taxonomy_7_upper_length_5: 18_MM
+  taxonomy_8: ''
+  taxonomy_9: ''
+  type: part
+  type_1: microcontroller
+  type_2: rp2040
+  type_3: qt_py
+  type_4: without_headers
+  url_chat: ''
+type_1: microcontroller
+type_2: rp2040
+type_3: qt_py
+type_4: without_headers
+url_chat: ''

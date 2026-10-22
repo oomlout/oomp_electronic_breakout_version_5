@@ -58,7 +58,7 @@ kwargs:
   oomp_description_extra: ''
   oomp_description_main: mounting_plate_oobb_
   oomp_mode: project
-  oomp_run: false
+  oomp_run: true
   overwrite: true
   part_number_aliexpress: '1005010001439374'
   scad_output: working_oobb
@@ -72,6 +72,7 @@ kwargs:
   taxonomy_5: step_down
   taxonomy_6: lm2596
   taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+  typ: all
   type: default_mounting_plate_oobb
   type_1: power
   type_2: dc_to_dc
@@ -3200,7 +3201,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005010001439374'
     pos:
@@ -3208,7 +3209,7 @@ thing:
     - 0
     - 0
     prepare_print: false
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_plate
     shift_wire_hole_x: -5
@@ -3221,6 +3222,7 @@ thing:
     taxonomy_5: step_down
     taxonomy_6: lm2596
     taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+    typ: all
     type: positive
     type_1: power
     type_2: dc_to_dc
@@ -3250,7 +3252,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005010001439374'
     pos:
@@ -3258,7 +3260,7 @@ thing:
     - 0
     - 0
     prepare_print: false
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_holes
     shift_wire_hole_x: -5
@@ -3271,6 +3273,7 @@ thing:
     taxonomy_5: step_down
     taxonomy_6: lm2596
     taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+    typ: all
     type: p
     type_1: power
     type_2: dc_to_dc
@@ -3298,7 +3301,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005010001439374'
     pos:
@@ -3311,7 +3314,7 @@ thing:
     - 0
     - 180
     - 0
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_screw_countersunk
     shift_wire_hole_x: -5
@@ -3324,6 +3327,7 @@ thing:
     taxonomy_5: step_down
     taxonomy_6: lm2596
     taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+    typ: all
     type: negative
     type_1: power
     type_2: dc_to_dc
@@ -3351,7 +3355,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005010001439374'
     pos:
@@ -3360,7 +3364,7 @@ thing:
     - 6.0
     prepare_print: false
     radius: 3.75
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_cylinder
     shift_wire_hole_x: -5
@@ -3373,6 +3377,7 @@ thing:
     taxonomy_5: step_down
     taxonomy_6: lm2596
     taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+    typ: all
     type: positive
     type_1: power
     type_2: dc_to_dc
@@ -3400,7 +3405,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005010001439374'
     pos:
@@ -3413,7 +3418,7 @@ thing:
     - 0
     - 180
     - 0
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_screw_countersunk
     shift_wire_hole_x: -5
@@ -3426,6 +3431,7 @@ thing:
     taxonomy_5: step_down
     taxonomy_6: lm2596
     taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+    typ: all
     type: negative
     type_1: power
     type_2: dc_to_dc
@@ -3453,7 +3459,7 @@ thing:
     navigation: true
     oobb_name: mounting_plate_oobb
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005010001439374'
     pos:
@@ -3462,7 +3468,7 @@ thing:
     - 6.0
     prepare_print: false
     radius: 3.75
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shape: oobb_cylinder
     shift_wire_hole_x: -5
@@ -3475,6 +3481,7 @@ thing:
     taxonomy_5: step_down
     taxonomy_6: lm2596
     taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+    typ: all
     type: positive
     type_1: power
     type_2: dc_to_dc
@@ -3707,12 +3714,12 @@ thing:
     type: negative
     zz: bottom
   components_string:
-  - oobb_plate_shape_positive_type_3_depth_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height
-  - oobb_holes_shape_p_type_3_depth_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_true_both_holes_perimeter_holes
-  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_18.0_-10.0_0_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_0_180_0_rot
-  - oobb_cylinder_shape_positive_type_6_depth_18.0_-10.0_6.0_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_3.75_radius
-  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_-18.0_10.0_0_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_0_180_0_rot
-  - oobb_cylinder_shape_positive_type_6_depth_-18.0_10.0_6.0_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_3.75_radius
+  - oobb_plate_shape_positive_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height
+  - oobb_holes_shape_p_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_true_both_holes_perimeter_holes
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_18.0_-10.0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_6_depth_18.0_-10.0_6.0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_3.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_-18.0_10.0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_6_depth_-18.0_10.0_6.0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_3.75_radius
   - oobb_hole_shape_negative_type_4_depth_-27.5_2.5_-1_pos_6_radius
   - oobb_cylinder_shape_positive_type_3_depth_-30.0_-7.5_4.5_pos_4.962_radius
   - oobb_hole_shape_negative_type_m3_radius_name_8_depth_-30.0_-7.5_-1_pos
@@ -3767,10 +3774,10 @@ thing:
     oomp_description_extra: ''
     oomp_description_main: mounting_plate_oobb_
     oomp_mode: project
-    oomp_run: false
+    oomp_run: true
     overwrite: true
     part_number_aliexpress: '1005010001439374'
-    save_type: none
+    save_type: all
     scad_output: working_oobb
     shift_wire_hole_x: -5
     shift_wire_hole_y: -5
@@ -3782,6 +3789,7 @@ thing:
     taxonomy_5: step_down
     taxonomy_6: lm2596
     taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+    typ: all
     type: default_mounting_plate_oobb
     type_1: power
     type_2: dc_to_dc

@@ -23,6 +23,10 @@ def main(**kwargs):
     if True:
         import working_oomp_populate_power
         options.extend(working_oomp_populate_power.main(**kwargs))
+    #microcontroller
+    if True:
+        import working_oomp_populate_microcontroller
+        options.extend(working_oomp_populate_microcontroller.main(**kwargs))
     
 ###### populate taxonomy details and oobb details
     if True:

@@ -1,0 +1,374 @@
+bip_39_2_word_array:
+- clay
+- benefit
+bip_39_2_word_no_space: claybenefit
+bip_39_2_word_space: clay benefit
+bip_39_2_word_underscore: clay_benefit
+bip_39_3_word_array:
+- clay
+- benefit
+- material
+bip_39_3_word_no_space: claybenefitmaterial
+bip_39_3_word_space: clay benefit material
+bip_39_3_word_underscore: clay_benefit_material
+bip_39_full_array:
+- clay
+- benefit
+- material
+- thing
+- stove
+- rally
+- health
+- student
+- clarify
+- mushroom
+- fence
+- shrimp
+bip_39_full_no_space: claybenefitmaterialthingstoverallyhealthstudentclarifymushroomfenceshrimp
+bip_39_full_space: clay benefit material thing stove rally health student clarify
+  mushroom fence shrimp
+bip_39_full_underscore: clay_benefit_material_thing_stove_rally_health_student_clarify_mushroom_fence_shrimp
+breakout_description: 21_mm_width_51_mm_height_40_pin
+breakout_pcb_height: 51
+breakout_pcb_width: 21
+directory: parts/electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+id: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+id_no_class: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+id_no_size: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+id_no_type: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+id_oobb: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+kwargs:
+  breakout_description: 21_mm_width_51_mm_height_40_pin
+  breakout_pcb_height: 51
+  breakout_pcb_width: 21
+  filter: ''
+  manufacturer: raspberry_pi
+  modes:
+  - 3dpr
+  navigation: true
+  oobb_name: mounting_plate_oobb
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_oobb_
+  oomp_mode: project
+  oomp_run: true
+  overwrite: true
+  part_number: pico_h
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: raspberry_pi
+  taxonomy_15: pico_h
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: rp2040
+  taxonomy_5: pico
+  taxonomy_6: with_headers
+  taxonomy_7: 21_mm_width_51_mm_height_40_pin
+  typ: all
+  type: default_mounting_plate_oobb
+  type_1: microcontroller
+  type_2: rp2040
+  type_3: pico
+  type_4: with_headers
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+manufacturer: raspberry_pi
+md5: 2a22a623f05d6b629a8ebb29f2395463
+md5_10: 2a22a623f0
+md5_10_upper: 2A22A623F0
+md5_5: 2a22a
+md5_5_upper: 2A22A
+md5_6: 2a22a6
+md5_6_alpha: 1n6p2
+md5_6_alpha_upper: 1N6P2
+md5_6_upper: 2A22A6
+name: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm Width 51
+  Mm Height 40 Pin Raspberry Pi Pico H
+name_no_class: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm
+  Width 51 Mm Height 40 Pin Raspberry Pi Pico H
+name_no_size: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm Width
+  51 Mm Height 40 Pin Raspberry Pi Pico H
+name_no_type: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm Width
+  51 Mm Height 40 Pin Raspberry Pi Pico H
+name_proper: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21 Mm Width
+  51 Mm Height 40 Pin Raspberry Pi Pico H
+name_space: electronic breakout microcontroller rp2040 pico with headers 21 mm width
+  51 mm height 40 pin raspberry pi pico h
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2040 PICO WITH HEADERS 21 MM WIDTH
+  51 MM HEIGHT 40 PIN RASPBERRY PI PICO H
+oobb_details:
+- breakout_description: 21_mm_width_51_mm_height_40_pin
+  breakout_pcb_height: 51
+  breakout_pcb_width: 21
+  manufacturer: raspberry_pi
+  oobb_name: mounting_plate_default
+  part_number: pico_h
+  taxonomy_1: electronic
+  taxonomy_14: raspberry_pi
+  taxonomy_15: pico_h
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: rp2040
+  taxonomy_5: pico
+  taxonomy_6: with_headers
+  taxonomy_7: 21_mm_width_51_mm_height_40_pin
+  type_1: microcontroller
+  type_2: rp2040
+  type_3: pico
+  type_4: with_headers
+- breakout_description: 21_mm_width_51_mm_height_40_pin
+  breakout_pcb_height: 51
+  breakout_pcb_width: 21
+  manufacturer: raspberry_pi
+  oobb_name: mounting_plate_oobb
+  part_number: pico_h
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: raspberry_pi
+  taxonomy_15: pico_h
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: rp2040
+  taxonomy_5: pico
+  taxonomy_6: with_headers
+  taxonomy_7: 21_mm_width_51_mm_height_40_pin
+  type_1: microcontroller
+  type_2: rp2040
+  type_3: pico
+  type_4: with_headers
+oobb_name: mounting_plate_oobb
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      breakout_description: 21_mm_width_51_mm_height_40_pin
+      breakout_pcb_height: 51
+      breakout_pcb_width: 21
+      directory: parts\electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+      manufacturer: raspberry_pi
+      name: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+      name_proper: Electronic Breakout Microcontroller Rp2040 Pico With Headers 21
+        Mm Width 51 Mm Height 40 Pin Raspberry Pi Pico H
+      name_space: electronic breakout microcontroller rp2040 pico with headers 21
+        mm width 51 mm height 40 pin raspberry pi pico h
+      name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2040 PICO WITH HEADERS 21
+        MM WIDTH 51 MM HEIGHT 40 PIN RASPBERRY PI PICO H
+      oobb_details:
+      - breakout_description: 21_mm_width_51_mm_height_40_pin
+        breakout_pcb_height: 51
+        breakout_pcb_width: 21
+        manufacturer: raspberry_pi
+        oobb_name: mounting_plate_default
+        part_number: pico_h
+        taxonomy_1: electronic
+        taxonomy_14: raspberry_pi
+        taxonomy_15: pico_h
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: rp2040
+        taxonomy_5: pico
+        taxonomy_6: with_headers
+        taxonomy_7: 21_mm_width_51_mm_height_40_pin
+        type_1: microcontroller
+        type_2: rp2040
+        type_3: pico
+        type_4: with_headers
+      - breakout_description: 21_mm_width_51_mm_height_40_pin
+        breakout_pcb_height: 51
+        breakout_pcb_width: 21
+        manufacturer: raspberry_pi
+        oobb_name: mounting_plate_oobb
+        part_number: pico_h
+        scad_output: working_oobb
+        taxonomy_1: electronic
+        taxonomy_14: raspberry_pi
+        taxonomy_15: pico_h
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: rp2040
+        taxonomy_5: pico
+        taxonomy_6: with_headers
+        taxonomy_7: 21_mm_width_51_mm_height_40_pin
+        type_1: microcontroller
+        type_2: rp2040
+        type_3: pico
+        type_4: with_headers
+      part_number: pico_h
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: raspberry_pi
+      taxonomy_15: pico_h
+      taxonomy_2: breakout
+      taxonomy_3: microcontroller
+      taxonomy_4: rp2040
+      taxonomy_5: pico
+      taxonomy_6: with_headers
+      taxonomy_7: 21_mm_width_51_mm_height_40_pin
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: microcontroller
+      type_2: rp2040
+      type_3: pico
+      type_4: with_headers
+      url_chat: ''
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h
+part_number: pico_h
+project_name: C:\gh\oomp_electronic_breakout
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: raspberry_pi
+taxonomy_14_capital: Raspberry Pi
+taxonomy_14_first_letter: r
+taxonomy_14_first_letter_upper: R
+taxonomy_14_length_1: r
+taxonomy_14_length_2: ra
+taxonomy_14_length_3: ras
+taxonomy_14_length_4: rasp
+taxonomy_14_length_5: raspb
+taxonomy_14_upper: RASPBERRY_PI
+taxonomy_14_upper_length_1: R
+taxonomy_14_upper_length_2: RA
+taxonomy_14_upper_length_3: RAS
+taxonomy_14_upper_length_4: RASP
+taxonomy_14_upper_length_5: RASPB
+taxonomy_15: pico_h
+taxonomy_15_capital: Pico H
+taxonomy_15_first_letter: p
+taxonomy_15_first_letter_upper: P
+taxonomy_15_length_1: p
+taxonomy_15_length_2: pi
+taxonomy_15_length_3: pic
+taxonomy_15_length_4: pico
+taxonomy_15_length_5: pico_
+taxonomy_15_upper: PICO_H
+taxonomy_15_upper_length_1: P
+taxonomy_15_upper_length_2: PI
+taxonomy_15_upper_length_3: PIC
+taxonomy_15_upper_length_4: PICO
+taxonomy_15_upper_length_5: PICO_
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: rp2040
+taxonomy_4_capital: Rp2040
+taxonomy_4_first_letter: r
+taxonomy_4_first_letter_upper: R
+taxonomy_4_length_1: r
+taxonomy_4_length_2: rp
+taxonomy_4_length_3: rp2
+taxonomy_4_length_4: rp20
+taxonomy_4_length_5: rp204
+taxonomy_4_upper: RP2040
+taxonomy_4_upper_length_1: R
+taxonomy_4_upper_length_2: RP
+taxonomy_4_upper_length_3: RP2
+taxonomy_4_upper_length_4: RP20
+taxonomy_4_upper_length_5: RP204
+taxonomy_5: pico
+taxonomy_5_capital: Pico
+taxonomy_5_first_letter: p
+taxonomy_5_first_letter_upper: P
+taxonomy_5_length_1: p
+taxonomy_5_length_2: pi
+taxonomy_5_length_3: pic
+taxonomy_5_length_4: pico
+taxonomy_5_length_5: pico
+taxonomy_5_upper: PICO
+taxonomy_5_upper_length_1: P
+taxonomy_5_upper_length_2: PI
+taxonomy_5_upper_length_3: PIC
+taxonomy_5_upper_length_4: PICO
+taxonomy_5_upper_length_5: PICO
+taxonomy_6: with_headers
+taxonomy_6_capital: With Headers
+taxonomy_6_first_letter: w
+taxonomy_6_first_letter_upper: W
+taxonomy_6_length_1: w
+taxonomy_6_length_2: wi
+taxonomy_6_length_3: wit
+taxonomy_6_length_4: with
+taxonomy_6_length_5: with_
+taxonomy_6_upper: WITH_HEADERS
+taxonomy_6_upper_length_1: W
+taxonomy_6_upper_length_2: WI
+taxonomy_6_upper_length_3: WIT
+taxonomy_6_upper_length_4: WITH
+taxonomy_6_upper_length_5: WITH_
+taxonomy_7: 21_mm_width_51_mm_height_40_pin
+taxonomy_7_capital: 21 mm Width 51 mm Height 40 Pin
+taxonomy_7_first_letter: '2'
+taxonomy_7_first_letter_upper: '2'
+taxonomy_7_length_1: '2'
+taxonomy_7_length_2: '21'
+taxonomy_7_length_3: '21_'
+taxonomy_7_length_4: 21_m
+taxonomy_7_length_5: 21_mm
+taxonomy_7_upper: 21_MM_WIDTH_51_MM_HEIGHT_40_PIN
+taxonomy_7_upper_length_1: '2'
+taxonomy_7_upper_length_2: '21'
+taxonomy_7_upper_length_3: '21_'
+taxonomy_7_upper_length_4: 21_M
+taxonomy_7_upper_length_5: 21_MM
+taxonomy_8: ''
+taxonomy_9: ''
+type_1: microcontroller
+type_2: rp2040
+type_3: pico
+type_4: with_headers
+url_chat: ''

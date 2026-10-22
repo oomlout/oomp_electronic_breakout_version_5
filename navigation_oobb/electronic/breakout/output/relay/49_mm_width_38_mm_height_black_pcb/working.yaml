@@ -60,7 +60,7 @@ kwargs:
   oomp_description_extra: ''
   oomp_description_main: mounting_plate_default_
   oomp_mode: project
-  oomp_run: false
+  oomp_run: true
   overwrite: true
   part_number_aliexpress: '1005002867727977'
   taxonomy_1: electronic
@@ -69,6 +69,7 @@ kwargs:
   taxonomy_3: output
   taxonomy_4: relay
   taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+  typ: all
   type: default_mounting_plate_default
   type_1: output
   type_2: relay

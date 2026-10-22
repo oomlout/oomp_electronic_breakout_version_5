@@ -1,0 +1,348 @@
+bip_39_2_word_array:
+- assume
+- clutch
+bip_39_2_word_no_space: assumeclutch
+bip_39_2_word_space: assume clutch
+bip_39_2_word_underscore: assume_clutch
+bip_39_3_word_array:
+- assume
+- clutch
+- debate
+bip_39_3_word_no_space: assumeclutchdebate
+bip_39_3_word_space: assume clutch debate
+bip_39_3_word_underscore: assume_clutch_debate
+bip_39_full_array:
+- assume
+- clutch
+- debate
+- impact
+- minimum
+- chimney
+- glimpse
+- situate
+- when
+- pencil
+- lawsuit
+- tourist
+bip_39_full_no_space: assumeclutchdebateimpactminimumchimneyglimpsesituatewhenpencillawsuittourist
+bip_39_full_space: assume clutch debate impact minimum chimney glimpse situate when
+  pencil lawsuit tourist
+bip_39_full_underscore: assume_clutch_debate_impact_minimum_chimney_glimpse_situate_when_pencil_lawsuit_tourist
+breakout_description: 22_7_mm_width_51_mm_height_28_pins
+breakout_pcb_height: 51
+breakout_pcb_width: 22.7
+directory: parts/electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405
+id: electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405
+id_no_class: electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405
+id_no_size: electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405
+id_no_type: electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405
+id_oobb: electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405
+kwargs:
+  breakout_description: 22_7_mm_width_51_mm_height_28_pins
+  breakout_pcb_height: 51
+  breakout_pcb_width: 22.7
+  filter: ''
+  manufacturer: adafruit
+  modes:
+  - 3dpr
+  navigation: true
+  oobb_name: mounting_plate_oobb
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_oobb_
+  oomp_mode: project
+  oomp_run: true
+  overwrite: true
+  part_number: '3405'
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: adafruit
+  taxonomy_15: '3405'
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_wroom_32
+  taxonomy_5: huzzah32_feather
+  taxonomy_6: 22_7_mm_width_51_mm_height_28_pins
+  typ: all
+  type: default_mounting_plate_oobb
+  type_1: microcontroller
+  type_2: esp32_wroom_32
+  type_3: huzzah32_feather
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405
+manufacturer: adafruit
+md5: 0de590e138e8d05018ce4dfa3455f8f2
+md5_10: 0de590e138
+md5_10_upper: 0DE590E138
+md5_5: 0de59
+md5_5_upper: 0DE59
+md5_6: 0de590
+md5_6_alpha: jiq8
+md5_6_alpha_upper: JIQ8
+md5_6_upper: 0DE590
+name: Electronic Breakout Microcontroller Esp32 Wroom 32 Huzzah32 Feather 22 7 Mm
+  Width 51 Mm Height 28 Pins Adafruit 3405
+name_no_class: Electronic Breakout Microcontroller Esp32 Wroom 32 Huzzah32 Feather
+  22 7 Mm Width 51 Mm Height 28 Pins Adafruit 3405
+name_no_size: Electronic Breakout Microcontroller Esp32 Wroom 32 Huzzah32 Feather
+  22 7 Mm Width 51 Mm Height 28 Pins Adafruit 3405
+name_no_type: Electronic Breakout Microcontroller Esp32 Wroom 32 Huzzah32 Feather
+  22 7 Mm Width 51 Mm Height 28 Pins Adafruit 3405
+name_proper: Electronic Breakout Microcontroller Esp32 Wroom 32 Huzzah32 Feather 22
+  7 Mm Width 51 Mm Height 28 Pins Adafruit 3405
+name_space: electronic breakout microcontroller esp32 wroom 32 huzzah32 feather 22
+  7 mm width 51 mm height 28 pins adafruit 3405
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 WROOM 32 HUZZAH32 FEATHER 22
+  7 MM WIDTH 51 MM HEIGHT 28 PINS ADAFRUIT 3405
+oobb_details:
+- breakout_description: 22_7_mm_width_51_mm_height_28_pins
+  breakout_pcb_height: 51
+  breakout_pcb_width: 22.7
+  manufacturer: adafruit
+  oobb_name: mounting_plate_default
+  part_number: '3405'
+  taxonomy_1: electronic
+  taxonomy_14: adafruit
+  taxonomy_15: '3405'
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_wroom_32
+  taxonomy_5: huzzah32_feather
+  taxonomy_6: 22_7_mm_width_51_mm_height_28_pins
+  type_1: microcontroller
+  type_2: esp32_wroom_32
+  type_3: huzzah32_feather
+- breakout_description: 22_7_mm_width_51_mm_height_28_pins
+  breakout_pcb_height: 51
+  breakout_pcb_width: 22.7
+  manufacturer: adafruit
+  oobb_name: mounting_plate_oobb
+  part_number: '3405'
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: adafruit
+  taxonomy_15: '3405'
+  taxonomy_2: breakout
+  taxonomy_3: microcontroller
+  taxonomy_4: esp32_wroom_32
+  taxonomy_5: huzzah32_feather
+  taxonomy_6: 22_7_mm_width_51_mm_height_28_pins
+  type_1: microcontroller
+  type_2: esp32_wroom_32
+  type_3: huzzah32_feather
+oobb_name: mounting_plate_oobb
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      breakout_description: 22_7_mm_width_51_mm_height_28_pins
+      breakout_pcb_height: 51
+      breakout_pcb_width: 22.7
+      directory: parts\electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405
+      manufacturer: adafruit
+      name: electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405
+      name_proper: Electronic Breakout Microcontroller Esp32 Wroom 32 Huzzah32 Feather
+        22 7 Mm Width 51 Mm Height 28 Pins Adafruit 3405
+      name_space: electronic breakout microcontroller esp32 wroom 32 huzzah32 feather
+        22 7 mm width 51 mm height 28 pins adafruit 3405
+      name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 WROOM 32 HUZZAH32 FEATHER
+        22 7 MM WIDTH 51 MM HEIGHT 28 PINS ADAFRUIT 3405
+      oobb_details:
+      - breakout_description: 22_7_mm_width_51_mm_height_28_pins
+        breakout_pcb_height: 51
+        breakout_pcb_width: 22.7
+        manufacturer: adafruit
+        oobb_name: mounting_plate_default
+        part_number: '3405'
+        taxonomy_1: electronic
+        taxonomy_14: adafruit
+        taxonomy_15: '3405'
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_wroom_32
+        taxonomy_5: huzzah32_feather
+        taxonomy_6: 22_7_mm_width_51_mm_height_28_pins
+        type_1: microcontroller
+        type_2: esp32_wroom_32
+        type_3: huzzah32_feather
+      - breakout_description: 22_7_mm_width_51_mm_height_28_pins
+        breakout_pcb_height: 51
+        breakout_pcb_width: 22.7
+        manufacturer: adafruit
+        oobb_name: mounting_plate_oobb
+        part_number: '3405'
+        scad_output: working_oobb
+        taxonomy_1: electronic
+        taxonomy_14: adafruit
+        taxonomy_15: '3405'
+        taxonomy_2: breakout
+        taxonomy_3: microcontroller
+        taxonomy_4: esp32_wroom_32
+        taxonomy_5: huzzah32_feather
+        taxonomy_6: 22_7_mm_width_51_mm_height_28_pins
+        type_1: microcontroller
+        type_2: esp32_wroom_32
+        type_3: huzzah32_feather
+      part_number: '3405'
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: adafruit
+      taxonomy_15: '3405'
+      taxonomy_2: breakout
+      taxonomy_3: microcontroller
+      taxonomy_4: esp32_wroom_32
+      taxonomy_5: huzzah32_feather
+      taxonomy_6: 22_7_mm_width_51_mm_height_28_pins
+      taxonomy_7: ''
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: microcontroller
+      type_2: esp32_wroom_32
+      type_3: huzzah32_feather
+      url_chat: ''
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405
+part_number: '3405'
+project_name: C:\gh\oomp_electronic_breakout
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_14_capital: Adafruit
+taxonomy_14_first_letter: a
+taxonomy_14_first_letter_upper: A
+taxonomy_14_length_1: a
+taxonomy_14_length_2: ad
+taxonomy_14_length_3: ada
+taxonomy_14_length_4: adaf
+taxonomy_14_length_5: adafr
+taxonomy_14_upper: ADAFRUIT
+taxonomy_14_upper_length_1: A
+taxonomy_14_upper_length_2: AD
+taxonomy_14_upper_length_3: ADA
+taxonomy_14_upper_length_4: ADAF
+taxonomy_14_upper_length_5: ADAFR
+taxonomy_15: '3405'
+taxonomy_15_capital: '3405'
+taxonomy_15_first_letter: '3'
+taxonomy_15_first_letter_upper: '3'
+taxonomy_15_length_1: '3'
+taxonomy_15_length_2: '34'
+taxonomy_15_length_3: '340'
+taxonomy_15_length_4: '3405'
+taxonomy_15_length_5: '3405'
+taxonomy_15_upper: '3405'
+taxonomy_15_upper_length_1: '3'
+taxonomy_15_upper_length_2: '34'
+taxonomy_15_upper_length_3: '340'
+taxonomy_15_upper_length_4: '3405'
+taxonomy_15_upper_length_5: '3405'
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: esp32_wroom_32
+taxonomy_4_capital: Esp32 Wroom 32
+taxonomy_4_first_letter: e
+taxonomy_4_first_letter_upper: E
+taxonomy_4_length_1: e
+taxonomy_4_length_2: es
+taxonomy_4_length_3: esp
+taxonomy_4_length_4: esp3
+taxonomy_4_length_5: esp32
+taxonomy_4_upper: ESP32_WROOM_32
+taxonomy_4_upper_length_1: E
+taxonomy_4_upper_length_2: ES
+taxonomy_4_upper_length_3: ESP
+taxonomy_4_upper_length_4: ESP3
+taxonomy_4_upper_length_5: ESP32
+taxonomy_5: huzzah32_feather
+taxonomy_5_capital: Huzzah32 Feather
+taxonomy_5_first_letter: h
+taxonomy_5_first_letter_upper: H
+taxonomy_5_length_1: h
+taxonomy_5_length_2: hu
+taxonomy_5_length_3: huz
+taxonomy_5_length_4: huzz
+taxonomy_5_length_5: huzza
+taxonomy_5_upper: HUZZAH32_FEATHER
+taxonomy_5_upper_length_1: H
+taxonomy_5_upper_length_2: HU
+taxonomy_5_upper_length_3: HUZ
+taxonomy_5_upper_length_4: HUZZ
+taxonomy_5_upper_length_5: HUZZA
+taxonomy_6: 22_7_mm_width_51_mm_height_28_pins
+taxonomy_6_capital: 22.7 mm Width 51 mm Height 28 Pins
+taxonomy_6_first_letter: '2'
+taxonomy_6_first_letter_upper: '2'
+taxonomy_6_length_1: '2'
+taxonomy_6_length_2: '22'
+taxonomy_6_length_3: '22_'
+taxonomy_6_length_4: '22_7'
+taxonomy_6_length_5: '22_7_'
+taxonomy_6_upper: 22_7_MM_WIDTH_51_MM_HEIGHT_28_PINS
+taxonomy_6_upper_length_1: '2'
+taxonomy_6_upper_length_2: '22'
+taxonomy_6_upper_length_3: '22_'
+taxonomy_6_upper_length_4: '22_7'
+taxonomy_6_upper_length_5: '22_7_'
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+type_1: microcontroller
+type_2: esp32_wroom_32
+type_3: huzzah32_feather
+url_chat: ''
