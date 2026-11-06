@@ -2324,32 +2324,6 @@ thing:
       radius: 6
       shape: cylinder
       type: negative
-  - - depth: 3
-      h: 3
-      inclusion: laser
-      pos: &id005
-      - -30.0
-      - -7.5
-      - 3.0
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 3dpr
-      pos: *id005
-      r: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 'true'
-      pos: *id005
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
   - - depth: 8
       h: 8
       inclusion: laser
@@ -2380,79 +2354,6 @@ thing:
       r: 1.5
       shape: cylinder
       type: negative
-  - - objects:
-      - clearance: top
-        depth: 4
-        height: 54
-        inclusion: laser
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 104
-        inclusion: 3dpr
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.4619999999999997
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 154
-        inclusion: 'true'
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      pos:
-      - -30.0
-      - -7.5
-      - 3
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: negative
-  - - depth: 3
-      h: 3
-      inclusion: laser
-      pos: &id006
-      - -30.0
-      - 22.5
-      - 3.0
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 3dpr
-      pos: *id006
-      r: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 'true'
-      pos: *id006
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
   - - depth: 8
       h: 8
       inclusion: laser
@@ -2483,79 +2384,6 @@ thing:
       r: 1.5
       shape: cylinder
       type: negative
-  - - objects:
-      - clearance: top
-        depth: 4
-        height: 54
-        inclusion: laser
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 104
-        inclusion: 3dpr
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.4619999999999997
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 154
-        inclusion: 'true'
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      pos:
-      - -30.0
-      - 22.5
-      - 3
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: negative
-  - - depth: 3
-      h: 3
-      inclusion: laser
-      pos: &id007
-      - -15.0
-      - -7.5
-      - 3.0
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 3dpr
-      pos: *id007
-      r: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 'true'
-      pos: *id007
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
   - - depth: 8
       h: 8
       inclusion: laser
@@ -2586,79 +2414,6 @@ thing:
       r: 1.5
       shape: cylinder
       type: negative
-  - - objects:
-      - clearance: top
-        depth: 4
-        height: 54
-        inclusion: laser
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 104
-        inclusion: 3dpr
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.4619999999999997
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 154
-        inclusion: 'true'
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      pos:
-      - -15.0
-      - -7.5
-      - 3
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: negative
-  - - depth: 3
-      h: 3
-      inclusion: laser
-      pos: &id008
-      - -15.0
-      - 22.5
-      - 3.0
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 3dpr
-      pos: *id008
-      r: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 'true'
-      pos: *id008
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
   - - depth: 8
       h: 8
       inclusion: laser
@@ -2689,53 +2444,6 @@ thing:
       r: 1.5
       shape: cylinder
       type: negative
-  - - objects:
-      - clearance: top
-        depth: 4
-        height: 54
-        inclusion: laser
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 104
-        inclusion: 3dpr
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.4619999999999997
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 154
-        inclusion: 'true'
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      pos:
-      - -15.0
-      - 22.5
-      - 3
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: negative
   - - depth: 4
       h: 4
       inclusion: laser
@@ -2768,32 +2476,6 @@ thing:
       radius: 6
       shape: cylinder
       type: negative
-  - - depth: 3
-      h: 3
-      inclusion: laser
-      pos: &id009
-      - 15.0
-      - -7.5
-      - 3.0
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 3dpr
-      pos: *id009
-      r: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 'true'
-      pos: *id009
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
   - - depth: 8
       h: 8
       inclusion: laser
@@ -2824,79 +2506,6 @@ thing:
       r: 1.5
       shape: cylinder
       type: negative
-  - - objects:
-      - clearance: top
-        depth: 4
-        height: 54
-        inclusion: laser
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 104
-        inclusion: 3dpr
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.4619999999999997
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 154
-        inclusion: 'true'
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      pos:
-      - 15.0
-      - -7.5
-      - 3
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: negative
-  - - depth: 3
-      h: 3
-      inclusion: laser
-      pos: &id010
-      - 15.0
-      - 22.5
-      - 3.0
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 3dpr
-      pos: *id010
-      r: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 'true'
-      pos: *id010
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
   - - depth: 8
       h: 8
       inclusion: laser
@@ -2927,79 +2536,6 @@ thing:
       r: 1.5
       shape: cylinder
       type: negative
-  - - objects:
-      - clearance: top
-        depth: 4
-        height: 54
-        inclusion: laser
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 104
-        inclusion: 3dpr
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.4619999999999997
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 154
-        inclusion: 'true'
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      pos:
-      - 15.0
-      - 22.5
-      - 3
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: negative
-  - - depth: 3
-      h: 3
-      inclusion: laser
-      pos: &id011
-      - 30.0
-      - -7.5
-      - 3.0
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 3dpr
-      pos: *id011
-      r: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 'true'
-      pos: *id011
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
   - - depth: 8
       h: 8
       inclusion: laser
@@ -3030,79 +2566,6 @@ thing:
       r: 1.5
       shape: cylinder
       type: negative
-  - - objects:
-      - clearance: top
-        depth: 4
-        height: 54
-        inclusion: laser
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 104
-        inclusion: 3dpr
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.4619999999999997
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 154
-        inclusion: 'true'
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      pos:
-      - 30.0
-      - -7.5
-      - 3
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: negative
-  - - depth: 3
-      h: 3
-      inclusion: laser
-      pos: &id012
-      - 30.0
-      - 22.5
-      - 3.0
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 3dpr
-      pos: *id012
-      r: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 'true'
-      pos: *id012
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
   - - depth: 8
       h: 8
       inclusion: laser
@@ -3133,53 +2596,6 @@ thing:
       r: 1.5
       shape: cylinder
       type: negative
-  - - objects:
-      - clearance: top
-        depth: 4
-        height: 54
-        inclusion: laser
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 104
-        inclusion: 3dpr
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.4619999999999997
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 154
-        inclusion: 'true'
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      pos:
-      - 30.0
-      - 22.5
-      - 3
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: negative
   components_objects:
   - breakout_description: 48_mm_width_25_mm_height_blue_pcb
     breakout_pcb_height: 25
@@ -3200,6 +2616,8 @@ thing:
     mounting_lift: 6
     navigation: true
     oobb_name: mounting_plate_oobb
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_oobb_
     oomp_mode: project
     oomp_run: true
     overwrite: true
@@ -3209,7 +2627,6 @@ thing:
     - 0
     - 0
     prepare_print: false
-    save_type: all
     scad_output: working_oobb
     shape: oobb_plate
     shift_wire_hole_x: -5
@@ -3251,6 +2668,8 @@ thing:
     mounting_lift: 6
     navigation: true
     oobb_name: mounting_plate_oobb
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_oobb_
     oomp_mode: project
     oomp_run: true
     overwrite: true
@@ -3260,7 +2679,6 @@ thing:
     - 0
     - 0
     prepare_print: false
-    save_type: all
     scad_output: working_oobb
     shape: oobb_holes
     shift_wire_hole_x: -5
@@ -3300,6 +2718,8 @@ thing:
     mounting_lift: 6
     navigation: true
     oobb_name: mounting_plate_oobb
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_oobb_
     oomp_mode: project
     oomp_run: true
     overwrite: true
@@ -3314,7 +2734,6 @@ thing:
     - 0
     - 180
     - 0
-    save_type: all
     scad_output: working_oobb
     shape: oobb_screw_countersunk
     shift_wire_hole_x: -5
@@ -3354,6 +2773,8 @@ thing:
     mounting_lift: 6
     navigation: true
     oobb_name: mounting_plate_oobb
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_oobb_
     oomp_mode: project
     oomp_run: true
     overwrite: true
@@ -3364,7 +2785,6 @@ thing:
     - 6.0
     prepare_print: false
     radius: 3.75
-    save_type: all
     scad_output: working_oobb
     shape: oobb_cylinder
     shift_wire_hole_x: -5
@@ -3404,6 +2824,8 @@ thing:
     mounting_lift: 6
     navigation: true
     oobb_name: mounting_plate_oobb
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_oobb_
     oomp_mode: project
     oomp_run: true
     overwrite: true
@@ -3418,7 +2840,6 @@ thing:
     - 0
     - 180
     - 0
-    save_type: all
     scad_output: working_oobb
     shape: oobb_screw_countersunk
     shift_wire_hole_x: -5
@@ -3458,6 +2879,8 @@ thing:
     mounting_lift: 6
     navigation: true
     oobb_name: mounting_plate_oobb
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_oobb_
     oomp_mode: project
     oomp_run: true
     overwrite: true
@@ -3468,7 +2891,6 @@ thing:
     - 6.0
     prepare_print: false
     radius: 3.75
-    save_type: all
     scad_output: working_oobb
     shape: oobb_cylinder
     shift_wire_hole_x: -5
@@ -3497,14 +2919,6 @@ thing:
     radius: 6
     shape: oobb_hole
     type: negative
-  - depth: 3
-    pos:
-    - -30.0
-    - -7.5
-    - 4.5
-    radius: 4.962
-    shape: oobb_cylinder
-    type: positive
   - depth: 8
     pos:
     - -30.0
@@ -3513,24 +2927,6 @@ thing:
     radius_name: m3
     shape: oobb_hole
     type: negative
-  - clearance: top
-    depth: 4
-    pos:
-    - -30.0
-    - -7.5
-    - 3
-    radius_name: m3
-    shape: oobb_nut
-    type: negative
-    zz: bottom
-  - depth: 3
-    pos:
-    - -30.0
-    - 22.5
-    - 4.5
-    radius: 4.962
-    shape: oobb_cylinder
-    type: positive
   - depth: 8
     pos:
     - -30.0
@@ -3539,24 +2935,6 @@ thing:
     radius_name: m3
     shape: oobb_hole
     type: negative
-  - clearance: top
-    depth: 4
-    pos:
-    - -30.0
-    - 22.5
-    - 3
-    radius_name: m3
-    shape: oobb_nut
-    type: negative
-    zz: bottom
-  - depth: 3
-    pos:
-    - -15.0
-    - -7.5
-    - 4.5
-    radius: 4.962
-    shape: oobb_cylinder
-    type: positive
   - depth: 8
     pos:
     - -15.0
@@ -3565,24 +2943,6 @@ thing:
     radius_name: m3
     shape: oobb_hole
     type: negative
-  - clearance: top
-    depth: 4
-    pos:
-    - -15.0
-    - -7.5
-    - 3
-    radius_name: m3
-    shape: oobb_nut
-    type: negative
-    zz: bottom
-  - depth: 3
-    pos:
-    - -15.0
-    - 22.5
-    - 4.5
-    radius: 4.962
-    shape: oobb_cylinder
-    type: positive
   - depth: 8
     pos:
     - -15.0
@@ -3591,16 +2951,6 @@ thing:
     radius_name: m3
     shape: oobb_hole
     type: negative
-  - clearance: top
-    depth: 4
-    pos:
-    - -15.0
-    - 22.5
-    - 3
-    radius_name: m3
-    shape: oobb_nut
-    type: negative
-    zz: bottom
   - depth: 4
     pos:
     - 17.5
@@ -3609,14 +2959,6 @@ thing:
     radius: 6
     shape: oobb_hole
     type: negative
-  - depth: 3
-    pos:
-    - 15.0
-    - -7.5
-    - 4.5
-    radius: 4.962
-    shape: oobb_cylinder
-    type: positive
   - depth: 8
     pos:
     - 15.0
@@ -3625,24 +2967,6 @@ thing:
     radius_name: m3
     shape: oobb_hole
     type: negative
-  - clearance: top
-    depth: 4
-    pos:
-    - 15.0
-    - -7.5
-    - 3
-    radius_name: m3
-    shape: oobb_nut
-    type: negative
-    zz: bottom
-  - depth: 3
-    pos:
-    - 15.0
-    - 22.5
-    - 4.5
-    radius: 4.962
-    shape: oobb_cylinder
-    type: positive
   - depth: 8
     pos:
     - 15.0
@@ -3651,24 +2975,6 @@ thing:
     radius_name: m3
     shape: oobb_hole
     type: negative
-  - clearance: top
-    depth: 4
-    pos:
-    - 15.0
-    - 22.5
-    - 3
-    radius_name: m3
-    shape: oobb_nut
-    type: negative
-    zz: bottom
-  - depth: 3
-    pos:
-    - 30.0
-    - -7.5
-    - 4.5
-    radius: 4.962
-    shape: oobb_cylinder
-    type: positive
   - depth: 8
     pos:
     - 30.0
@@ -3677,24 +2983,6 @@ thing:
     radius_name: m3
     shape: oobb_hole
     type: negative
-  - clearance: top
-    depth: 4
-    pos:
-    - 30.0
-    - -7.5
-    - 3
-    radius_name: m3
-    shape: oobb_nut
-    type: negative
-    zz: bottom
-  - depth: 3
-    pos:
-    - 30.0
-    - 22.5
-    - 4.5
-    radius: 4.962
-    shape: oobb_cylinder
-    type: positive
   - depth: 8
     pos:
     - 30.0
@@ -3703,49 +2991,23 @@ thing:
     radius_name: m3
     shape: oobb_hole
     type: negative
-  - clearance: top
-    depth: 4
-    pos:
-    - 30.0
-    - 22.5
-    - 3
-    radius_name: m3
-    shape: oobb_nut
-    type: negative
-    zz: bottom
   components_string:
-  - oobb_plate_shape_positive_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height
-  - oobb_holes_shape_p_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_true_both_holes_perimeter_holes
-  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_18.0_-10.0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_0_180_0_rot
-  - oobb_cylinder_shape_positive_type_6_depth_18.0_-10.0_6.0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_3.75_radius
-  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_-18.0_10.0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_0_180_0_rot
-  - oobb_cylinder_shape_positive_type_6_depth_-18.0_10.0_6.0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_mounting_plate_oobb_oobb_name_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_3.75_radius
+  - oobb_plate_shape_positive_type_3_depth_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_'3dpr'_modes_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_true_navigation_mounting_plate_oobb_oobb_name_mounting_plate_oobb__oomp_description_main_project_oomp_mode_true_oomp_run_true_overwrite_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_all_typ_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height
+  - oobb_holes_shape_p_type_3_depth_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_'3dpr'_modes_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_true_navigation_mounting_plate_oobb_oobb_name_mounting_plate_oobb__oomp_description_main_project_oomp_mode_true_oomp_run_true_overwrite_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_all_typ_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_true_both_holes_perimeter_holes
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_18.0_-10.0_0_pos_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_'3dpr'_modes_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_true_navigation_mounting_plate_oobb_oobb_name_mounting_plate_oobb__oomp_description_main_project_oomp_mode_true_oomp_run_true_overwrite_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_all_typ_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_6_depth_18.0_-10.0_6.0_pos_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_'3dpr'_modes_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_true_navigation_mounting_plate_oobb_oobb_name_mounting_plate_oobb__oomp_description_main_project_oomp_mode_true_oomp_run_true_overwrite_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_all_typ_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_3.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_9_depth_-18.0_10.0_0_pos_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_'3dpr'_modes_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_true_navigation_mounting_plate_oobb_oobb_name_mounting_plate_oobb__oomp_description_main_project_oomp_mode_true_oomp_run_true_overwrite_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_all_typ_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_6_depth_-18.0_10.0_6.0_pos_48_mm_width_25_mm_height_blue_pcb_breakout_description_25_breakout_pcb_height_48_breakout_pcb_width_10_breakout_pcb_width_extra_aliexpress_manufacturer_'3dpr'_modes_m3_mounting_hole_radius_name_18.0_-10.0_-18.0_10.0_mounting_holes_true_navigation_mounting_plate_oobb_oobb_name_mounting_plate_oobb__oomp_description_main_project_oomp_mode_true_oomp_run_true_overwrite_1005010001439374_part_number_aliexpress_working_oobb_scad_output_-5_shift_wire_hole_x_-5_shift_wire_hole_y_electronic_taxonomy_1_aliexpress_taxonomy_14_breakout_taxonomy_2_power_taxonomy_3_dc_to_dc_taxonomy_4_step_down_taxonomy_5_lm2596_taxonomy_6_48_mm_width_25_mm_height_blue_pcb_taxonomy_7_all_typ_power_type_1_dc_to_dc_type_2_step_down_type_3_lm2596_type_4_https://www.aliexpress.com/item/1005010001439374.html_webpage_aliexpress_6_mounting_lift_false_prepare_print_6_width_4_height_3.75_radius
   - oobb_hole_shape_negative_type_4_depth_-27.5_2.5_-1_pos_6_radius
-  - oobb_cylinder_shape_positive_type_3_depth_-30.0_-7.5_4.5_pos_4.962_radius
   - oobb_hole_shape_negative_type_m3_radius_name_8_depth_-30.0_-7.5_-1_pos
-  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_-30.0_-7.5_3_pos_top_clearance_bottom_zz
-  - oobb_cylinder_shape_positive_type_3_depth_-30.0_22.5_4.5_pos_4.962_radius
   - oobb_hole_shape_negative_type_m3_radius_name_8_depth_-30.0_22.5_-1_pos
-  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_-30.0_22.5_3_pos_top_clearance_bottom_zz
-  - oobb_cylinder_shape_positive_type_3_depth_-15.0_-7.5_4.5_pos_4.962_radius
   - oobb_hole_shape_negative_type_m3_radius_name_8_depth_-15.0_-7.5_-1_pos
-  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_-15.0_-7.5_3_pos_top_clearance_bottom_zz
-  - oobb_cylinder_shape_positive_type_3_depth_-15.0_22.5_4.5_pos_4.962_radius
   - oobb_hole_shape_negative_type_m3_radius_name_8_depth_-15.0_22.5_-1_pos
-  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_-15.0_22.5_3_pos_top_clearance_bottom_zz
   - oobb_hole_shape_negative_type_4_depth_17.5_2.5_-1_pos_6_radius
-  - oobb_cylinder_shape_positive_type_3_depth_15.0_-7.5_4.5_pos_4.962_radius
   - oobb_hole_shape_negative_type_m3_radius_name_8_depth_15.0_-7.5_-1_pos
-  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_15.0_-7.5_3_pos_top_clearance_bottom_zz
-  - oobb_cylinder_shape_positive_type_3_depth_15.0_22.5_4.5_pos_4.962_radius
   - oobb_hole_shape_negative_type_m3_radius_name_8_depth_15.0_22.5_-1_pos
-  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_15.0_22.5_3_pos_top_clearance_bottom_zz
-  - oobb_cylinder_shape_positive_type_3_depth_30.0_-7.5_4.5_pos_4.962_radius
   - oobb_hole_shape_negative_type_m3_radius_name_8_depth_30.0_-7.5_-1_pos
-  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_30.0_-7.5_3_pos_top_clearance_bottom_zz
-  - oobb_cylinder_shape_positive_type_3_depth_30.0_22.5_4.5_pos_4.962_radius
   - oobb_hole_shape_negative_type_m3_radius_name_8_depth_30.0_22.5_-1_pos
-  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_30.0_22.5_3_pos_top_clearance_bottom_zz
   description: default mounting plate oobb 0x0x0
   description_extra: ''
   description_main: ''
@@ -3810,7 +3072,7 @@ thing:
   md5_6_alpha_upper: 1C046
   md5_6_upper: 222C96
   mounting_hole_radius_name: m3
-  mounting_holes: &id013
+  mounting_holes: &id005
   - - 18.0
     - -10.0
   - - -18.0
@@ -3838,7 +3100,7 @@ thing:
     breakout_pcb_width_extra: 10
     manufacturer: aliexpress
     mounting_hole_radius_name: m3
-    mounting_holes: *id013
+    mounting_holes: *id005
     oobb_name: mounting_plate_default
     part_number_aliexpress: '1005010001439374'
     shift_wire_hole_x: -5
@@ -3899,7 +3161,7 @@ thing:
         directory: parts\electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress
         manufacturer: aliexpress
         mounting_hole_radius_name: m3
-        mounting_holes: &id014
+        mounting_holes: &id006
         - - 18.0
           - -10.0
         - - -18.0
@@ -3918,7 +3180,7 @@ thing:
           breakout_pcb_width_extra: 10
           manufacturer: aliexpress
           mounting_hole_radius_name: m3
-          mounting_holes: *id014
+          mounting_holes: *id006
           oobb_name: mounting_plate_default
           part_number_aliexpress: '1005010001439374'
           shift_wire_hole_x: -5

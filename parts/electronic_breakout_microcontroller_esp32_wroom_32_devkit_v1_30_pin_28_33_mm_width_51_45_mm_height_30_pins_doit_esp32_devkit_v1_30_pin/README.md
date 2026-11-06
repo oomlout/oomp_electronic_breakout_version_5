@@ -14,7 +14,7 @@ One board and one plate. Choose a plate variant.
 | Part | Type | Specification | Qty | MD5 alpha |
 | --- | --- | --- | ---: | --- |
 | [Default plate](3dpr.stl) | Printed | 59 × 88.98 × 3 mm | 1 | — |
-| [OOBB wire-holder plate](working_oobb.stl) | Printed | 59 × 88.98 × 6 mm | 1 | — |
+| [OOBB wire-holder plate](working_oobb.stl) | Printed | 59 × 88.98 × 3 mm | 1 | — |
 | [Doit ESP32 wroom 32 devkit v1 30 pin](working.yaml) | Hardware | 28.33 × 51.45 mm | 1 | [5rs3y](working.yaml) |
 
 ## OOBB variant

@@ -55,12 +55,11 @@ def get_base(thing, **kwargs):
 
 def add_adapter(thing, pos, depth, rotated=False,
                 shift_wire_hole_x=0, shift_wire_hole_y=0):
-    # The opening cuts the plate only: the raised nut-pocket walls
-    # bridge its edge and must remain intact above the plate.
+    # Cable opening through the plate.
     oobb.append_full(
         thing, type="negative", shape="oobb_hole", radius=6,
         depth=depth + 1,
-        # Shift the opening in plate X/Y coordinates, keeping the nut grid fixed.
+        # Shift the opening in plate X/Y coordinates, keeping the screw grid fixed.
         pos=[pos[0] + shift_wire_hole_x, pos[1] + shift_wire_hole_y, pos[2] - 1],
     )
 
@@ -69,24 +68,13 @@ def add_adapter(thing, pos, depth, rotated=False,
     spacing = oobb.gv("osp")
     offsets = [(x, y) for x in (-spacing / 2, spacing / 2)
                for y in (-spacing, spacing)]
-    bump_depth = 3
-    bump_radius = oobb.gv("nut_radius_m3", "3dpr") + 1.5
     for offset_x, offset_y in offsets:
         if rotated:
             offset_x, offset_y = -offset_y, offset_x
         x = pos[0] + offset_x
         y = pos[1] + offset_y
         oobb.append_full(
-            thing, type="positive", shape="oobb_cylinder",
-            radius=bump_radius, depth=bump_depth,
-            pos=[x, y, pos[2] + depth + bump_depth / 2],
-        )
-        oobb.append_full(
             thing, type="negative", shape="oobb_hole", radius_name="m3",
-            depth=depth + bump_depth + 2, pos=[x, y, pos[2] - 1],
-        )
-        oobb.append_full(
-            thing, type="negative", shape="oobb_nut", radius_name="m3",
-            clearance="top",
-            depth=bump_depth + 1, zz="bottom", pos=[x, y, pos[2] + depth],
+            # Preserve the original cutter reach where a PCB post overlaps.
+            depth=depth + 5, pos=[x, y, pos[2] - 1],
         )

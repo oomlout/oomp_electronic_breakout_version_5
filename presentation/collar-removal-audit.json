@@ -1,0 +1,480 @@
+{
+  "source_revision": "404436e9e4e1c150f02ac02dbd4732a6cf83622e",
+  "parts": 67,
+  "watertight": true,
+  "footprints_unchanged": true,
+  "all_volumes_reduced": true,
+  "unique_meshes": 9,
+  "support_post_variants": 3,
+  "parts_detail": [
+    {
+      "id": "electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress",
+      "old_volume_mm3": 5044.967,
+      "new_volume_mm3": 4529.502,
+      "old_height_mm": 9.0,
+      "new_height_mm": 9.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_c3_fn4_qt_py_esp32_c3_17_8_mm_width_22_mm_height_14_pins_adafruit_5405",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_c3_fn4_supermini_16_pin_18_mm_width_22_5_mm_height_16_pins_generic_esp32_c3_supermini",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_c3_m5stamp_c3u_20_mm_width_34_mm_height_m5stack_stamp_c3u",
+      "old_volume_mm3": 11343.571,
+      "new_volume_mm3": 10814.38,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_c3_mini_1_devkitm_1_20_pin_30_mm_width_50_9_mm_height_20_pins_espressif_esp32_c3_devkitm_1",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_c3_wroom_02_devkitc_02_30_pin_38_9_mm_width_25_4_mm_height_30_pins_espressif_esp32_c3_devkitc_02",
+      "old_volume_mm3": 11342.694,
+      "new_volume_mm3": 10813.492,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_c3fh4_lolin_c3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_c3_mini",
+      "old_volume_mm3": 11343.571,
+      "new_volume_mm3": 10814.38,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_c6_mini_1_n4_devkitm_1_30_pin_25_4_mm_width_53_65_mm_height_30_pins_espressif_esp32_c6_devkitm_1_n4",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_c6_wroom_1_n8_devkitc_1_30_pin_25_4_mm_width_58_15_mm_height_30_pins_espressif_esp32_c6_devkitc_1_n8",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_c6_xiao_esp32c6_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c6",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_h2_supermini_18_pin_18_mm_width_23_5_mm_height_18_pins_tenstar_esp32_h2_supermini",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_s2_lolin_s2_mini_25_4_mm_width_34_3_mm_height_32_pins_wemos_lolin_s2_mini",
+      "old_volume_mm3": 11343.571,
+      "new_volume_mm3": 10814.38,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_s2_wroom_devkitc_1_44_pin_25_4_mm_width_62_74_mm_height_44_pins_espressif_esp32_s2_devkitc_1",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini",
+      "old_volume_mm3": 11343.571,
+      "new_volume_mm3": 10814.38,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_s3_qt_py_esp32_s3_17_8_mm_width_21_7_mm_height_14_pins_adafruit_qt_py_esp32_s3",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_s3_supermini_18_pin_18_mm_width_23_5_mm_height_18_pins_tenstar_esp32_s3_supermini",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_s3_wroom_1_n8r8_devkitc_1_44_pin_25_4_mm_width_62_74_mm_height_44_pins_espressif_esp32_s3_devkitc_1_n8r8",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_s3_xiao_esp32s3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32s3",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam",
+      "old_volume_mm3": 11343.571,
+      "new_volume_mm3": 10814.38,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32",
+      "old_volume_mm3": 25009.39,
+      "new_volume_mm3": 23923.521,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_wroom_32_devkit_v1_30_pin_28_33_mm_width_51_45_mm_height_30_pins_doit_esp32_devkit_v1_30_pin",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_wroom_32_lolin_d32_25_4_mm_width_57_mm_height_20_pins_wemos_lolin_d32",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_wroom_32e_devkitc_v4_38_pin_27_9_mm_width_54_4_mm_height_38_pins_espressif_esp32_devkitc_32e",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro",
+      "old_volume_mm3": 16264.477,
+      "new_volume_mm3": 15206.095,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_feather_22_86_mm_width_50_8_mm_height_28_pin_adafruit_4884",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_feather_without_headers_22_86_mm_width_50_8_mm_height_28_pin_adafruit_4884",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_w",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_wh",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_wh",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_without_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_w",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_pico_without_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_pro_micro_17_78_mm_width_33_02_mm_height_24_pin_sparkfun_dev_18288",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_pro_micro_without_headers_17_78_mm_width_33_02_mm_height_24_pin_sparkfun_dev_18288",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_qt_py_18_mm_width_21_mm_height_14_pin_adafruit_4900",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_14_pin_adafruit_4900",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_xiao_17_8_mm_width_21_mm_height_14_pin_seeed_studio_102010428",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_xiao_without_headers_17_8_mm_width_21_mm_height_14_pin_seeed_studio_102010428",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_zero_18_mm_width_23_5_mm_height_20_pin_waveshare_rp2040_zero",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_zero_18_mm_width_23_5_mm_height_20_pin_waveshare_rp2040_zero_m",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_zero_with_headers_18_mm_width_23_5_mm_height_20_pin_waveshare_rp2040_zero_m",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2040_zero_without_headers_18_mm_width_23_5_mm_height_20_pin_waveshare_rp2040_zero",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_feather_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_w",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_w_with_headers",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_w_with_headers",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_without_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_w",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_pico_with_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_pico_without_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2",
+      "old_volume_mm3": 13868.964,
+      "new_volume_mm3": 12810.581,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_xiao_17_8_mm_width_21_mm_height_14_pin_seeed_studio_102010550",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_xiao_without_headers_17_8_mm_width_21_mm_height_14_pin_seeed_studio_102010550",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_zero_18_mm_width_23_5_mm_height_20_pin_waveshare_rp2350_zero",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_20_pin_waveshare_rp2350_zero_m",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_microcontroller_rp2350a_zero_without_headers_18_mm_width_23_5_mm_height_20_pin_waveshare_rp2350_zero",
+      "old_volume_mm3": 6600.601,
+      "new_volume_mm3": 6085.153,
+      "old_height_mm": 6.0,
+      "new_height_mm": 3.0
+    },
+    {
+      "id": "electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress",
+      "old_volume_mm3": 18032.4,
+      "new_volume_mm3": 17021.649,
+      "old_height_mm": 9.0,
+      "new_height_mm": 9.0
+    },
+    {
+      "id": "electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress",
+      "old_volume_mm3": 14062.783,
+      "new_volume_mm3": 13089.56,
+      "old_height_mm": 9.0,
+      "new_height_mm": 9.0
+    }
+  ]
+}

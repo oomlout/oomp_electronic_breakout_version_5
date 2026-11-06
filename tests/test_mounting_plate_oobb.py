@@ -33,7 +33,7 @@ class AdapterLayoutTests(unittest.TestCase):
                     self.assertLessEqual(abs(x) + 22, (width * 15 - 1) / 2)
                     self.assertLessEqual(abs(y) + 22, (height * 15 - 1) / 2)
 
-    def test_opening_and_nuts_match_wire_holder_side_m3_holes(self):
+    def test_opening_and_plain_through_holes_match_wire_holder(self):
         for rotated in (False, True):
             with self.subTest(rotated=rotated):
                 calls = []
@@ -43,17 +43,19 @@ class AdapterLayoutTests(unittest.TestCase):
                     wire_plate.add_adapter({}, [10, 20, 5], 4, rotated)
                 opening = calls[0]
                 self.assertEqual(opening["radius"] * 2, 12)
-                # Aperture exits exactly at the plate top, preserving the
-                # boss walls even where they overlap the opening's edge.
+                # Aperture exits at the plate top; screw holes cross both faces.
                 self.assertEqual(opening["pos"][2] + opening["depth"], 9)
-                nuts = [c for c in calls if c["shape"] == "oobb_nut"]
-                actual = {(c["pos"][0] - 10, c["pos"][1] - 20) for c in nuts}
+                holes = [c for c in calls if c.get("radius_name") == "m3"]
+                actual = {(c["pos"][0] - 10, c["pos"][1] - 20) for c in holes}
                 expected = ({(-15, -7.5), (-15, 7.5), (15, -7.5), (15, 7.5)}
                             if rotated else
                             {(-7.5, -15), (-7.5, 15), (7.5, -15), (7.5, 15)})
                 self.assertEqual(actual, expected)
-                self.assertTrue(all(c["radius_name"] == "m3" for c in nuts))
-                self.assertTrue(all(c["clearance"] == "top" for c in nuts))
+                self.assertEqual(len(holes), 4)
+                self.assertTrue(all(c["type"] == "negative" for c in calls))
+                self.assertTrue(all(c["shape"] == "oobb_hole" for c in calls))
+                self.assertTrue(all(c["depth"] == 9 for c in holes))
+                self.assertTrue(all(c["pos"][2] < 5 and c["pos"][2] + c["depth"] > 9 for c in holes))
 
     def test_relay_uses_actual_plate_dimensions_and_retains_extra_lift(self):
         kwargs = dict(breakout_pcb_width=49, breakout_pcb_height=38,
@@ -66,7 +68,8 @@ class AdapterLayoutTests(unittest.TestCase):
         self.assertEqual(kwargs, original)
         openings = [c for c in calls if c["shape"] == "oobb_hole" and "radius" in c]
         self.assertEqual([c["pos"][:2] for c in openings], [[-22.5, 0], [22.5, 0]])
-        self.assertEqual(sum(c["shape"] == "oobb_nut" for c in calls), 8)
+        self.assertFalse(any(c["shape"] == "oobb_nut" for c in calls))
+        self.assertEqual(sum(c["shape"] == "oobb_hole" and c.get("radius_name") == "m3" for c in calls), 8)
         standoff = next(c for c in calls if c["shape"] == "oobb_cylinder")
         self.assertEqual(standoff["depth"], 6)
 
@@ -88,7 +91,8 @@ class AdapterLayoutTests(unittest.TestCase):
         self.assertEqual(opening["pos"][:2], [15, 7.5])
         # The holder's positive outer M6 row coincides with the host edge.
         self.assertEqual(opening["pos"][0] + 15, (width - 1) * 7.5)
-        self.assertEqual(sum(c["shape"] == "oobb_nut" for c in calls), 4)
+        self.assertFalse(any(c["shape"] == "oobb_nut" for c in calls))
+        self.assertEqual(sum(c["shape"] == "oobb_hole" and c.get("radius_name") == "m3" for c in calls), 4)
 
 
 if __name__ == "__main__":

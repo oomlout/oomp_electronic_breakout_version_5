@@ -1349,32 +1349,6 @@ thing:
       radius: 6
       shape: cylinder
       type: negative
-  - - depth: 3
-      h: 3
-      inclusion: laser
-      pos: &id001
-      - 15
-      - 0.0
-      - 3.0
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 3dpr
-      pos: *id001
-      r: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 'true'
-      pos: *id001
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
   - - depth: 8
       h: 8
       inclusion: laser
@@ -1405,79 +1379,6 @@ thing:
       r: 1.5
       shape: cylinder
       type: negative
-  - - objects:
-      - clearance: top
-        depth: 4
-        height: 54
-        inclusion: laser
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 104
-        inclusion: 3dpr
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.4619999999999997
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 154
-        inclusion: 'true'
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      pos:
-      - 15
-      - 0.0
-      - 3
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: negative
-  - - depth: 3
-      h: 3
-      inclusion: laser
-      pos: &id002
-      - -15
-      - 0.0
-      - 3.0
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 3dpr
-      pos: *id002
-      r: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 'true'
-      pos: *id002
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
   - - depth: 8
       h: 8
       inclusion: laser
@@ -1508,79 +1409,6 @@ thing:
       r: 1.5
       shape: cylinder
       type: negative
-  - - objects:
-      - clearance: top
-        depth: 4
-        height: 54
-        inclusion: laser
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 104
-        inclusion: 3dpr
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.4619999999999997
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 154
-        inclusion: 'true'
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      pos:
-      - -15
-      - 0.0
-      - 3
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: negative
-  - - depth: 3
-      h: 3
-      inclusion: laser
-      pos: &id003
-      - 15
-      - 15.0
-      - 3.0
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 3dpr
-      pos: *id003
-      r: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 'true'
-      pos: *id003
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
   - - depth: 8
       h: 8
       inclusion: laser
@@ -1611,79 +1439,6 @@ thing:
       r: 1.5
       shape: cylinder
       type: negative
-  - - objects:
-      - clearance: top
-        depth: 4
-        height: 54
-        inclusion: laser
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 104
-        inclusion: 3dpr
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.4619999999999997
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 154
-        inclusion: 'true'
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      pos:
-      - 15
-      - 15.0
-      - 3
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: negative
-  - - depth: 3
-      h: 3
-      inclusion: laser
-      pos: &id004
-      - -15
-      - 15.0
-      - 3.0
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 3dpr
-      pos: *id004
-      r: 4.962
-      shape: cylinder
-      type: positive
-    - depth: 3
-      h: 3
-      inclusion: 'true'
-      pos: *id004
-      r: 4.962
-      radius: 4.962
-      shape: cylinder
-      type: positive
   - - depth: 8
       h: 8
       inclusion: laser
@@ -1714,53 +1469,6 @@ thing:
       r: 1.5
       shape: cylinder
       type: negative
-  - - objects:
-      - clearance: top
-        depth: 4
-        height: 54
-        inclusion: laser
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 104
-        inclusion: 3dpr
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.4619999999999997
-        shape: polyg
-        sides: 6
-        type: positive
-      - clearance: top
-        depth: 4
-        height: 154
-        inclusion: 'true'
-        pos:
-        - 0
-        - 0
-        - 0
-        r: 3.1734999999999998
-        shape: polyg
-        sides: 6
-        type: positive
-      pos:
-      - -15
-      - 15.0
-      - 3
-      rot:
-      - 0
-      - 0
-      - 0
-      type: rotation
-      typetype: negative
   components_objects:
   - breakout_description: 18_mm_width_23_5_mm_height_20_pin
     breakout_pcb_height: 23.5
@@ -1774,6 +1482,8 @@ thing:
     mounting_lift: 6
     navigation: true
     oobb_name: mounting_plate_oobb
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_oobb_
     oomp_mode: project
     oomp_run: true
     overwrite: true
@@ -1783,7 +1493,6 @@ thing:
     - 0
     - 0
     prepare_print: false
-    save_type: all
     scad_output: working_oobb
     shape: oobb_plate
     taxonomy_1: electronic
@@ -1816,6 +1525,8 @@ thing:
     mounting_lift: 6
     navigation: true
     oobb_name: mounting_plate_oobb
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_oobb_
     oomp_mode: project
     oomp_run: true
     overwrite: true
@@ -1825,7 +1536,6 @@ thing:
     - 0
     - 0
     prepare_print: false
-    save_type: all
     scad_output: working_oobb
     shape: oobb_holes
     taxonomy_1: electronic
@@ -1852,14 +1562,6 @@ thing:
     radius: 6
     shape: oobb_hole
     type: negative
-  - depth: 3
-    pos:
-    - 15
-    - 0.0
-    - 4.5
-    radius: 4.962
-    shape: oobb_cylinder
-    type: positive
   - depth: 8
     pos:
     - 15
@@ -1868,24 +1570,6 @@ thing:
     radius_name: m3
     shape: oobb_hole
     type: negative
-  - clearance: top
-    depth: 4
-    pos:
-    - 15
-    - 0.0
-    - 3
-    radius_name: m3
-    shape: oobb_nut
-    type: negative
-    zz: bottom
-  - depth: 3
-    pos:
-    - -15
-    - 0.0
-    - 4.5
-    radius: 4.962
-    shape: oobb_cylinder
-    type: positive
   - depth: 8
     pos:
     - -15
@@ -1894,24 +1578,6 @@ thing:
     radius_name: m3
     shape: oobb_hole
     type: negative
-  - clearance: top
-    depth: 4
-    pos:
-    - -15
-    - 0.0
-    - 3
-    radius_name: m3
-    shape: oobb_nut
-    type: negative
-    zz: bottom
-  - depth: 3
-    pos:
-    - 15
-    - 15.0
-    - 4.5
-    radius: 4.962
-    shape: oobb_cylinder
-    type: positive
   - depth: 8
     pos:
     - 15
@@ -1920,24 +1586,6 @@ thing:
     radius_name: m3
     shape: oobb_hole
     type: negative
-  - clearance: top
-    depth: 4
-    pos:
-    - 15
-    - 15.0
-    - 3
-    radius_name: m3
-    shape: oobb_nut
-    type: negative
-    zz: bottom
-  - depth: 3
-    pos:
-    - -15
-    - 15.0
-    - 4.5
-    radius: 4.962
-    shape: oobb_cylinder
-    type: positive
   - depth: 8
     pos:
     - -15
@@ -1946,32 +1594,14 @@ thing:
     radius_name: m3
     shape: oobb_hole
     type: negative
-  - clearance: top
-    depth: 4
-    pos:
-    - -15
-    - 15.0
-    - 3
-    radius_name: m3
-    shape: oobb_nut
-    type: negative
-    zz: bottom
   components_string:
-  - oobb_plate_shape_positive_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_18_mm_width_23_5_mm_height_20_pin_breakout_description_23.5_breakout_pcb_height_18_breakout_pcb_width_waveshare_manufacturer_mounting_plate_oobb_oobb_name_rp2350_zero_m_part_number_working_oobb_scad_output_electronic_taxonomy_1_waveshare_taxonomy_14_rp2350_zero_m_taxonomy_15_breakout_taxonomy_2_microcontroller_taxonomy_3_rp2350a_taxonomy_4_zero_taxonomy_5_with_headers_taxonomy_6_18_mm_width_23_5_mm_height_20_pin_taxonomy_7_microcontroller_type_1_rp2350a_type_2_zero_type_3_with_headers_type_4_6_mounting_lift_false_prepare_print_3_width_4_height
-  - oobb_holes_shape_p_type_3_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_18_mm_width_23_5_mm_height_20_pin_breakout_description_23.5_breakout_pcb_height_18_breakout_pcb_width_waveshare_manufacturer_mounting_plate_oobb_oobb_name_rp2350_zero_m_part_number_working_oobb_scad_output_electronic_taxonomy_1_waveshare_taxonomy_14_rp2350_zero_m_taxonomy_15_breakout_taxonomy_2_microcontroller_taxonomy_3_rp2350a_taxonomy_4_zero_taxonomy_5_with_headers_taxonomy_6_18_mm_width_23_5_mm_height_20_pin_taxonomy_7_microcontroller_type_1_rp2350a_type_2_zero_type_3_with_headers_type_4_6_mounting_lift_false_prepare_print_3_width_4_height_true_both_holes_perimeter_holes
+  - oobb_plate_shape_positive_type_3_depth_18_mm_width_23_5_mm_height_20_pin_breakout_description_23.5_breakout_pcb_height_18_breakout_pcb_width_waveshare_manufacturer_'3dpr'_modes_true_navigation_mounting_plate_oobb_oobb_name_mounting_plate_oobb__oomp_description_main_project_oomp_mode_true_oomp_run_true_overwrite_rp2350_zero_m_part_number_working_oobb_scad_output_electronic_taxonomy_1_waveshare_taxonomy_14_rp2350_zero_m_taxonomy_15_breakout_taxonomy_2_microcontroller_taxonomy_3_rp2350a_taxonomy_4_zero_taxonomy_5_with_headers_taxonomy_6_18_mm_width_23_5_mm_height_20_pin_taxonomy_7_all_typ_microcontroller_type_1_rp2350a_type_2_zero_type_3_with_headers_type_4_6_mounting_lift_false_prepare_print_3_width_4_height
+  - oobb_holes_shape_p_type_3_depth_18_mm_width_23_5_mm_height_20_pin_breakout_description_23.5_breakout_pcb_height_18_breakout_pcb_width_waveshare_manufacturer_'3dpr'_modes_true_navigation_mounting_plate_oobb_oobb_name_mounting_plate_oobb__oomp_description_main_project_oomp_mode_true_oomp_run_true_overwrite_rp2350_zero_m_part_number_working_oobb_scad_output_electronic_taxonomy_1_waveshare_taxonomy_14_rp2350_zero_m_taxonomy_15_breakout_taxonomy_2_microcontroller_taxonomy_3_rp2350a_taxonomy_4_zero_taxonomy_5_with_headers_taxonomy_6_18_mm_width_23_5_mm_height_20_pin_taxonomy_7_all_typ_microcontroller_type_1_rp2350a_type_2_zero_type_3_with_headers_type_4_6_mounting_lift_false_prepare_print_3_width_4_height_true_both_holes_perimeter_holes
   - oobb_hole_shape_negative_type_4_depth_0_7.5_-1_pos_6_radius
-  - oobb_cylinder_shape_positive_type_3_depth_15_0.0_4.5_pos_4.962_radius
   - oobb_hole_shape_negative_type_m3_radius_name_8_depth_15_0.0_-1_pos
-  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_15_0.0_3_pos_top_clearance_bottom_zz
-  - oobb_cylinder_shape_positive_type_3_depth_-15_0.0_4.5_pos_4.962_radius
   - oobb_hole_shape_negative_type_m3_radius_name_8_depth_-15_0.0_-1_pos
-  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_-15_0.0_3_pos_top_clearance_bottom_zz
-  - oobb_cylinder_shape_positive_type_3_depth_15_15.0_4.5_pos_4.962_radius
   - oobb_hole_shape_negative_type_m3_radius_name_8_depth_15_15.0_-1_pos
-  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_15_15.0_3_pos_top_clearance_bottom_zz
-  - oobb_cylinder_shape_positive_type_3_depth_-15_15.0_4.5_pos_4.962_radius
   - oobb_hole_shape_negative_type_m3_radius_name_8_depth_-15_15.0_-1_pos
-  - oobb_nut_shape_negative_type_m3_radius_name_4_depth_-15_15.0_3_pos_top_clearance_bottom_zz
   description: default mounting plate oobb 0x0x0
   description_extra: ''
   description_main: ''

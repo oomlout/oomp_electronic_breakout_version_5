@@ -13,5 +13,17 @@
     "trimesh": "5.1.0",
     "numpy": "2.4.4"
   },
-  "browser_review": "GitHub Pico README at desktop and 420 px; shortened plate names and numeric quantities after review."
+  "browser_review": "GitHub Pico README at desktop and 420 px; shortened plate names and numeric quantities after review.",
+  "collar_removal": {
+    "source_revision": "404436e9e4e1c150f02ac02dbd4732a6cf83622e",
+    "parts": 67,
+    "watertight": true,
+    "footprints_unchanged": true,
+    "all_volumes_reduced": true,
+    "unique_meshes": 9,
+    "support_post_variants": 3,
+    "regression_tests_passed": 4,
+    "preview_copies_refreshed": 67,
+    "navigation_files_refreshed": 248
+  }
 }

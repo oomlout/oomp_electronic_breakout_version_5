@@ -14,7 +14,7 @@ One board and one plate. Choose a plate variant.
 | Part | Type | Specification | Qty | MD5 alpha |
 | --- | --- | --- | ---: | --- |
 | [Default plate](3dpr.stl) | Printed | 59 × 88.98 × 3 mm | 1 | — |
-| [OOBB wire-holder plate](working_oobb.stl) | Printed | 59 × 88.98 × 6 mm | 1 | — |
+| [OOBB wire-holder plate](working_oobb.stl) | Printed | 59 × 88.98 × 3 mm | 1 | — |
 | [Adafruit RP2040 Feather](working.yaml) | Hardware | 22.86 × 50.8 mm; without headers | 1 | [79khh](working.yaml) |
 
 ## OOBB variant

@@ -34,11 +34,23 @@ The batch uses Git-tracked catalogue records. New local records require `--all -
 
 ## Agent handoff
 
+The wire-holder plate uses plain M3 through-holes without raised hex-pocket collars. Keep the cable openings and PCB support posts. Regenerate saved CAD parameters, then refresh renders and navigation copies:
+
+```bat
+python presentation/scripts/rebuild_wire_plates.py
+oobb-present --all
+python presentation/scripts/sync_wire_previews.py
+```
+
+The CAD command requires OpenSCAD and the OOBB Python library. Set `OPENSCAD_EXE` if needed. It processes only tracked wire-plate records and checks watertightness, footprint and material removal. Its audit is saved in `presentation/.cache/wire-plates/`. It does not repopulate the catalogue from board research.
+
 Read [the reusable rules](https://github.com/oomlout/oomlout_oobb_version_5/blob/main/presentation/CATALOGUE.md) before extending the renderer. Source scripts live in the OOBB base repository; do not fork a renderer into every part folder. Cache keys combine the source mesh and renderer hashes. Use `--force` after changes to Blender or its rendering environment.
 
 Only files belonging to this presentation build are included in its sync. Existing uncommitted catalogue research, source generators and new part records are separate work.
 
 ## Build review
+
+The collar-removal revision updates all 67 wire-holder plates. [Geometry audit](collar-removal-audit.json): watertight meshes, unchanged footprints and reduced material volume. Three variants retain their PCB support posts. Four adapter regression tests cover the hole pattern, cutter reach and retained post height. Legacy previews and 248 tracked navigation files are refreshed from the canonical parts.
 
 Built on 2026-11-06 with Python 3.12.2 and Blender 5.2.2 LTS: 67 part pages, 134 image sheets and 18 unique source meshes. The [audit record](qa.json) records library versions and the identical second rebuild. Source hashes, catalogue codes, PNG copies and all relative README links passed the read-only audit.
 
