@@ -3,9 +3,9 @@
 
 AI-generated images and instructions. Errors possible.
 
-![AI-generated CAD render: Raspberry Pi Pico, OOBB wire-holder mounting plate](parts/electronic_breakout_microcontroller_rp2040_pico_without_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico/presentation/images/working_oobb.png)
+![AI-generated CAD renders: Raspberry Pi Pico mounting plates](parts/electronic_breakout_microcontroller_rp2040_pico_without_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico/presentation/images/standard-layouts.png)
 
-67 catalogue entries. Open a part for plate renders, STL downloads and linked parts.
+69 catalogue entries. Open a part for plate renders, STL downloads and linked parts.
 
 [Worked example: Raspberry Pi Pico](parts/electronic_breakout_microcontroller_rp2040_pico_without_headers_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico) · [Rebuild instructions](presentation/README.md)
 
@@ -95,6 +95,13 @@ AI-generated images and instructions. Errors possible.
 | Board | PCB size (mm) | Variant | MD5 alpha |
 | --- | --- | --- | --- |
 | [Aliexpress dc to dc step down](parts/electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress) | 48 × 25 | lm2596 | [1c046](parts/electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress/working.yaml) |
+
+## Sensor
+
+| Board | PCB size (mm) | Variant | MD5 alpha |
+| --- | --- | --- | --- |
+| [SparkFun Qwiic BME280](parts/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440) | 25.4 × 25.4 | bme280 | [1l2i6](parts/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440/working.yaml) |
+| [Adafruit ADXL345 STEMMA QT](parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231) | 25.4 × 17.78 | adxl345 | [1ut2v](parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/working.yaml) |
 <!-- oobb-presentation:end -->
 
 ## Mounting geometry research

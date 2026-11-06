@@ -109,6 +109,7 @@ kwargs:
     - 10.16
   - - 10.16
     - -10.16
+  mounting_layout: full_wrap
   mounting_lift: 3
   oobb_name: mounting_plate_default
   oomp_description_extra: ''
@@ -808,1098 +809,738 @@ thing:
   color: ''
   components:
   - - depth: 3
-      height: 4
+      height: 4.0
       pos:
-      - 0
-      - 0
+      - 0.0
+      - 0.0
       - 0
       shape: rounded_rectangle
       size:
-      - 59
-      - 59
+      - 59.0
+      - 59.0
       - 3
       type: positive
-      width: 4
-  - - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -22.5
-        - -22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -22.5
-        - -22.5
-        - -100.0
-        r: 3.25
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -22.5
-        - -22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -22.5
-        - -7.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -22.5
-        - -7.5
-        - -100.0
-        r: 3.25
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -22.5
-        - -7.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -22.5
-        - 7.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -22.5
-        - 7.5
-        - -100.0
-        r: 3.25
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -22.5
-        - 7.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -22.5
-        - 22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -22.5
-        - 22.5
-        - -100.0
-        r: 3.25
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -22.5
-        - 22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -7.5
-        - -22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -7.5
-        - -22.5
-        - -100.0
-        r: 3.25
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -7.5
-        - -22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -7.5
-        - 22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -7.5
-        - 22.5
-        - -100.0
-        r: 3.25
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -7.5
-        - 22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 7.5
-        - -22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 7.5
-        - -22.5
-        - -100.0
-        r: 3.25
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 7.5
-        - -22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 7.5
-        - 22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 7.5
-        - 22.5
-        - -100.0
-        r: 3.25
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 7.5
-        - 22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 22.5
-        - -22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 22.5
-        - -22.5
-        - -100.0
-        r: 3.25
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 22.5
-        - -22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 22.5
-        - -7.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 22.5
-        - -7.5
-        - -100.0
-        r: 3.25
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 22.5
-        - -7.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 22.5
-        - 7.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 22.5
-        - 7.5
-        - -100.0
-        r: 3.25
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 22.5
-        - 7.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 22.5
-        - 22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 22.5
-        - 22.5
-        - -100.0
-        r: 3.25
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 22.5
-        - 22.5
-        - -100.0
-        r: 3.0
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -22.5
-        - -22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -22.5
-        - -22.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -22.5
-        - -22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -22.5
-        - -15.0
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -22.5
-        - -15.0
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -22.5
-        - -15.0
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -22.5
-        - -7.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -22.5
-        - -7.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -22.5
-        - -7.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -22.5
-        - 0.0
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -22.5
-        - 0.0
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -22.5
-        - 0.0
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -22.5
-        - 7.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -22.5
-        - 7.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -22.5
-        - 7.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -22.5
-        - 15.0
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -22.5
-        - 15.0
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -22.5
-        - 15.0
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -22.5
-        - 22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -22.5
-        - 22.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -22.5
-        - 22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -15.0
-        - -22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -15.0
-        - -22.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -15.0
-        - -22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -15.0
-        - 22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -15.0
-        - 22.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -15.0
-        - 22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -7.5
-        - -22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -7.5
-        - -22.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -7.5
-        - -22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - -7.5
-        - 22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - -7.5
-        - 22.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - -7.5
-        - 22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 0.0
-        - -22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 0.0
-        - -22.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 0.0
-        - -22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 0.0
-        - 22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 0.0
-        - 22.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 0.0
-        - 22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 7.5
-        - -22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 7.5
-        - -22.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 7.5
-        - -22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 7.5
-        - 22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 7.5
-        - 22.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 7.5
-        - 22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 15.0
-        - -22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 15.0
-        - -22.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 15.0
-        - -22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 15.0
-        - 22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 15.0
-        - 22.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 15.0
-        - 22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 22.5
-        - -22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 22.5
-        - -22.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 22.5
-        - -22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 22.5
-        - -15.0
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 22.5
-        - -15.0
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 22.5
-        - -15.0
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 22.5
-        - -7.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 22.5
-        - -7.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 22.5
-        - -7.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 22.5
-        - 0.0
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 22.5
-        - 0.0
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 22.5
-        - 0.0
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 22.5
-        - 7.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 22.5
-        - 7.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 22.5
-        - 7.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 22.5
-        - 15.0
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 22.5
-        - 15.0
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 22.5
-        - 15.0
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-    - - h: 200
-        inclusion: laser
-        m: ''
-        pos:
-        - 22.5
-        - 22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 3dpr
-        m: ''
-        pos:
-        - 22.5
-        - 22.5
-        - -100.0
-        r: 1.8
-        shape: cylinder
-        type: negative
-      - h: 200
-        inclusion: 'true'
-        m: ''
-        pos:
-        - 22.5
-        - 22.5
-        - -100.0
-        r: 1.5
-        shape: cylinder
-        type: negative
+      width: 4.0
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - -7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - 7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -7.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -7.5
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -7.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - -15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - 0.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - 15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -15.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -15.0
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -15.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -15.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -15.0
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -15.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 0.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 0.0
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 0.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 15.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 15.0
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 15.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 15.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 15.0
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 15.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
   - - objects:
       - - depth: 6
           h: 1.7
@@ -2492,7 +2133,7 @@ thing:
   - breakout_pcb_height: 25.4
     breakout_pcb_width: 25.4
     depth: 3
-    height: 4
+    height: 4.0
     modes:
     - 3dpr
     mounting_hole_details:
@@ -2529,70 +2170,211 @@ thing:
       - 10.16
     - - 10.16
       - -10.16
+    mounting_layout: full_wrap
     mounting_lift: 3
     oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
     overwrite: true
     pos:
+    - 0.0
+    - 0.0
     - 0
-    - 0
-    - 0
-    save_type: none
     shape: oobb_plate
     type: positive
-    width: 4
-  - both_holes: true
-    breakout_pcb_height: 25.4
-    breakout_pcb_width: 25.4
-    depth: 3
-    height: 4
-    holes: perimeter
-    modes:
-    - 3dpr
-    mounting_hole_details:
-    - diameter_mm: 3.302
-      id: H4:hole:1
-      package: STAND-OFF
-      plated: false
-      source_id: mounting_cad
-      x_mm: 10.16
-      y_mm: 10.16
-    - diameter_mm: 3.302
-      id: H2:hole:1
-      package: STAND-OFF
-      plated: false
-      source_id: mounting_cad
-      x_mm: -10.16
-      y_mm: 10.16
-    - diameter_mm: 3.302
-      id: H1:hole:1
-      package: STAND-OFF
-      plated: false
-      source_id: mounting_cad
-      x_mm: 10.16
-      y_mm: -10.16
-    mounting_hole_radius_name: m3
-    mounting_hole_radius_names:
-    - m3
-    - m3
-    - m3
-    mounting_holes:
-    - - 10.16
-      - 10.16
-    - - -10.16
-      - 10.16
-    - - 10.16
-      - -10.16
-    mounting_lift: 3
-    oobb_name: mounting_plate_default
-    overwrite: true
+    width: 4.0
+  - depth: 5
     pos:
-    - 0
-    - 0
-    - 0
-    save_type: none
-    shape: oobb_holes
-    type: p
-    width: 4
+    - -22.5
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - -7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - 7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -7.5
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -7.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 7.5
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 7.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - -7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - -15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - 0.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - 15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -15.0
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -15.0
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 0.0
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 0.0
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 15.0
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 15.0
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - -15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 0.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
   - breakout_pcb_height: 25.4
     breakout_pcb_width: 25.4
     depth: 6
@@ -2633,8 +2415,11 @@ thing:
       - 10.16
     - - 10.16
       - -10.16
+    mounting_layout: full_wrap
     mounting_lift: 3
     oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
     overwrite: true
     pos:
     - 10.16
@@ -2645,7 +2430,6 @@ thing:
     - 0
     - 180
     - 0
-    save_type: none
     shape: oobb_screw_countersunk
     type: negative
     width: 4
@@ -2689,15 +2473,17 @@ thing:
       - 10.16
     - - 10.16
       - -10.16
+    mounting_layout: full_wrap
     mounting_lift: 3
     oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
     overwrite: true
     pos:
     - 10.16
     - 10.16
     - 4.5
     radius: 3.75
-    save_type: none
     shape: oobb_cylinder
     type: positive
     width: 4
@@ -2741,8 +2527,11 @@ thing:
       - 10.16
     - - 10.16
       - -10.16
+    mounting_layout: full_wrap
     mounting_lift: 3
     oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
     overwrite: true
     pos:
     - -10.16
@@ -2753,7 +2542,6 @@ thing:
     - 0
     - 180
     - 0
-    save_type: none
     shape: oobb_screw_countersunk
     type: negative
     width: 4
@@ -2797,15 +2585,17 @@ thing:
       - 10.16
     - - 10.16
       - -10.16
+    mounting_layout: full_wrap
     mounting_lift: 3
     oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
     overwrite: true
     pos:
     - -10.16
     - 10.16
     - 4.5
     radius: 3.75
-    save_type: none
     shape: oobb_cylinder
     type: positive
     width: 4
@@ -2849,8 +2639,11 @@ thing:
       - 10.16
     - - 10.16
       - -10.16
+    mounting_layout: full_wrap
     mounting_lift: 3
     oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
     overwrite: true
     pos:
     - 10.16
@@ -2861,7 +2654,6 @@ thing:
     - 0
     - 180
     - 0
-    save_type: none
     shape: oobb_screw_countersunk
     type: negative
     width: 4
@@ -2905,27 +2697,52 @@ thing:
       - 10.16
     - - 10.16
       - -10.16
+    mounting_layout: full_wrap
     mounting_lift: 3
     oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
     overwrite: true
     pos:
     - 10.16
     - -10.16
     - 4.5
     radius: 3.75
-    save_type: none
     shape: oobb_cylinder
     type: positive
     width: 4
   components_string:
-  - oobb_plate_shape_positive_type_3_depth_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height
-  - oobb_holes_shape_p_type_3_depth_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_true_both_holes_perimeter_holes
-  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_6_depth_10.16_10.16_0_pos_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_0_180_0_rot
-  - oobb_cylinder_shape_positive_type_3_depth_10.16_10.16_4.5_pos_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_3.75_radius
-  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_6_depth_-10.16_10.16_0_pos_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_0_180_0_rot
-  - oobb_cylinder_shape_positive_type_3_depth_-10.16_10.16_4.5_pos_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_3.75_radius
-  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_6_depth_10.16_-10.16_0_pos_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_0_180_0_rot
-  - oobb_cylinder_shape_positive_type_3_depth_10.16_-10.16_4.5_pos_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_3.75_radius
+  - oobb_plate_shape_positive_type_3_depth_25.4_breakout_pcb_height_25.4_breakout_pcb_width_'3dpr'_modes_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_mounting_plate_default__oomp_description_main_true_overwrite_full_wrap_mounting_layout_4.0_width_4.0_height
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-22.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-22.5_-7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-22.5_7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-22.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-7.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-7.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_7.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_7.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_-7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-22.5_-15.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-22.5_0.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-22.5_15.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-15.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-15.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_0.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_0.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_15.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_15.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_-15.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_0.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_15.0_-1_pos
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_6_depth_10.16_10.16_0_pos_25.4_breakout_pcb_height_25.4_breakout_pcb_width_'3dpr'_modes_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_mounting_plate_default__oomp_description_main_true_overwrite_full_wrap_mounting_layout_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_10.16_10.16_4.5_pos_25.4_breakout_pcb_height_25.4_breakout_pcb_width_'3dpr'_modes_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_mounting_plate_default__oomp_description_main_true_overwrite_full_wrap_mounting_layout_4_width_4_height_3.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_6_depth_-10.16_10.16_0_pos_25.4_breakout_pcb_height_25.4_breakout_pcb_width_'3dpr'_modes_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_mounting_plate_default__oomp_description_main_true_overwrite_full_wrap_mounting_layout_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-10.16_10.16_4.5_pos_25.4_breakout_pcb_height_25.4_breakout_pcb_width_'3dpr'_modes_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_mounting_plate_default__oomp_description_main_true_overwrite_full_wrap_mounting_layout_4_width_4_height_3.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_6_depth_10.16_-10.16_0_pos_25.4_breakout_pcb_height_25.4_breakout_pcb_width_'3dpr'_modes_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_mounting_plate_default__oomp_description_main_true_overwrite_full_wrap_mounting_layout_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_10.16_-10.16_4.5_pos_25.4_breakout_pcb_height_25.4_breakout_pcb_width_'3dpr'_modes_{'diameter_mm':3.302_'id':'h4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':10.16}_{'diameter_mm':3.302_'id':'h1:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-10.16}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_mounting_hole_radius_names_10.16_10.16_-10.16_10.16_10.16_-10.16_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_mounting_plate_default__oomp_description_main_true_overwrite_full_wrap_mounting_layout_4_width_4_height_3.75_radius
   data_gaps:
   - Physical connector/pad map and coordinates not imported.
   - Located mounting holes and complete assembly/connector clearances not imported.

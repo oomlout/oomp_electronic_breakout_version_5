@@ -12,9 +12,218 @@
   "variants": [
     {
       "source": "3dpr.stl",
-      "label": "Default mounting plate",
-      "sha256": "970923438218867b6f43ad6e70baf7cf5f1e1cba6c888f19f504a68b9fb26d53",
-      "key": "13f471f1abe739780a3a602e",
+      "label": "Standard — Full wrap",
+      "family": "Standard",
+      "layout": "full_wrap",
+      "geometry": {
+        "layout": "full_wrap",
+        "label": "Full wrap",
+        "grid_units": [
+          6,
+          7
+        ],
+        "pcb_mm": [
+          53.34,
+          68.58
+        ],
+        "bounds_mm": [
+          -44.5,
+          44.5,
+          -52.0,
+          52.0
+        ],
+        "m6_centres_mm": [
+          [
+            -37.5,
+            -45.0
+          ],
+          [
+            -37.5,
+            -30.0
+          ],
+          [
+            -37.5,
+            -15.0
+          ],
+          [
+            -37.5,
+            0.0
+          ],
+          [
+            -37.5,
+            15.0
+          ],
+          [
+            -37.5,
+            30.0
+          ],
+          [
+            -37.5,
+            45.0
+          ],
+          [
+            -22.5,
+            -45.0
+          ],
+          [
+            -22.5,
+            45.0
+          ],
+          [
+            -7.5,
+            -45.0
+          ],
+          [
+            -7.5,
+            45.0
+          ],
+          [
+            7.5,
+            -45.0
+          ],
+          [
+            7.5,
+            45.0
+          ],
+          [
+            22.5,
+            -45.0
+          ],
+          [
+            22.5,
+            45.0
+          ],
+          [
+            37.5,
+            -45.0
+          ],
+          [
+            37.5,
+            -30.0
+          ],
+          [
+            37.5,
+            -15.0
+          ],
+          [
+            37.5,
+            0.0
+          ],
+          [
+            37.5,
+            15.0
+          ],
+          [
+            37.5,
+            30.0
+          ],
+          [
+            37.5,
+            45.0
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            -37.5,
+            -37.5
+          ],
+          [
+            -37.5,
+            -22.5
+          ],
+          [
+            -37.5,
+            -7.5
+          ],
+          [
+            -37.5,
+            7.5
+          ],
+          [
+            -37.5,
+            22.5
+          ],
+          [
+            -37.5,
+            37.5
+          ],
+          [
+            -30.0,
+            -45.0
+          ],
+          [
+            -30.0,
+            45.0
+          ],
+          [
+            -15.0,
+            -45.0
+          ],
+          [
+            -15.0,
+            45.0
+          ],
+          [
+            0.0,
+            -45.0
+          ],
+          [
+            0.0,
+            45.0
+          ],
+          [
+            15.0,
+            -45.0
+          ],
+          [
+            15.0,
+            45.0
+          ],
+          [
+            30.0,
+            -45.0
+          ],
+          [
+            30.0,
+            45.0
+          ],
+          [
+            37.5,
+            -37.5
+          ],
+          [
+            37.5,
+            -22.5
+          ],
+          [
+            37.5,
+            -7.5
+          ],
+          [
+            37.5,
+            7.5
+          ],
+          [
+            37.5,
+            22.5
+          ],
+          [
+            37.5,
+            37.5
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "left",
+          "right",
+          "bottom",
+          "top"
+        ],
+        "adapter_positions": []
+      },
+      "sha256": "e16b74fe4144c1a659587f5b804b7ca7662709f5d9c2079118c0074b6b19f217",
+      "key": "13d37a88e409731c5528e742",
       "dimensions_mm": [
         89.0,
         103.98,
@@ -23,18 +232,634 @@
       "image": "presentation/images/3dpr.png"
     },
     {
+      "source": "3dpr_short_sides.stl",
+      "label": "Standard — Two short sides",
+      "family": "Standard",
+      "layout": "short_sides",
+      "geometry": {
+        "layout": "short_sides",
+        "label": "Two short sides",
+        "grid_units": [
+          6,
+          7
+        ],
+        "pcb_mm": [
+          53.34,
+          68.58
+        ],
+        "bounds_mm": [
+          -29.67,
+          29.67,
+          -52.0,
+          52.0
+        ],
+        "m6_centres_mm": [
+          [
+            -22.5,
+            -45.0
+          ],
+          [
+            -22.5,
+            45.0
+          ],
+          [
+            -7.5,
+            -45.0
+          ],
+          [
+            -7.5,
+            45.0
+          ],
+          [
+            7.5,
+            -45.0
+          ],
+          [
+            7.5,
+            45.0
+          ],
+          [
+            22.5,
+            -45.0
+          ],
+          [
+            22.5,
+            45.0
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            -15.0,
+            -45.0
+          ],
+          [
+            -15.0,
+            45.0
+          ],
+          [
+            0.0,
+            -45.0
+          ],
+          [
+            0.0,
+            45.0
+          ],
+          [
+            15.0,
+            -45.0
+          ],
+          [
+            15.0,
+            45.0
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "bottom",
+          "top"
+        ],
+        "adapter_positions": []
+      },
+      "sha256": "ec13ad0377af66bf485c9af4cbff9b3a69e4cfa88183f72efd789fea4351571d",
+      "key": "64c82e71ee6e6c3e1304018a",
+      "dimensions_mm": [
+        59.34,
+        103.98,
+        3.0
+      ],
+      "image": "presentation/images/3dpr_short_sides.png"
+    },
+    {
+      "source": "3dpr_long_side.stl",
+      "label": "Standard — One long side",
+      "family": "Standard",
+      "layout": "long_side",
+      "geometry": {
+        "layout": "long_side",
+        "label": "One long side",
+        "grid_units": [
+          6,
+          7
+        ],
+        "pcb_mm": [
+          53.34,
+          68.58
+        ],
+        "bounds_mm": [
+          -29.67,
+          44.5,
+          -37.29,
+          37.29
+        ],
+        "m6_centres_mm": [
+          [
+            37.5,
+            -30.0
+          ],
+          [
+            37.5,
+            -15.0
+          ],
+          [
+            37.5,
+            0.0
+          ],
+          [
+            37.5,
+            15.0
+          ],
+          [
+            37.5,
+            30.0
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            37.5,
+            -22.5
+          ],
+          [
+            37.5,
+            -7.5
+          ],
+          [
+            37.5,
+            7.5
+          ],
+          [
+            37.5,
+            22.5
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "right"
+        ],
+        "adapter_positions": []
+      },
+      "sha256": "792973f281ff2238a15a793645f1e64b0287a5dd255b329bb363da2013570836",
+      "key": "a0ff452e1a31e9a949ba74e7",
+      "dimensions_mm": [
+        74.17,
+        74.56,
+        3.0
+      ],
+      "image": "presentation/images/3dpr_long_side.png"
+    },
+    {
       "source": "working_oobb.stl",
-      "label": "OOBB wire-holder mounting plate",
-      "sha256": "1919de700012d819f84424ce8c4f472770598627f112a1378413c4e4f05f57f8",
-      "key": "cd46c8b6238effa313185f25",
+      "label": "Wire-holder — Full wrap",
+      "family": "Wire-holder",
+      "layout": "full_wrap",
+      "geometry": {
+        "layout": "full_wrap",
+        "label": "Full wrap",
+        "grid_units": [
+          6,
+          7
+        ],
+        "pcb_mm": [
+          53.34,
+          68.58
+        ],
+        "bounds_mm": [
+          -44.5,
+          44.5,
+          -52.0,
+          52.0
+        ],
+        "m6_centres_mm": [
+          [
+            -37.5,
+            -45.0
+          ],
+          [
+            -37.5,
+            -30.0
+          ],
+          [
+            -37.5,
+            -15.0
+          ],
+          [
+            -37.5,
+            0.0
+          ],
+          [
+            -37.5,
+            15.0
+          ],
+          [
+            -37.5,
+            30.0
+          ],
+          [
+            -37.5,
+            45.0
+          ],
+          [
+            -22.5,
+            -45.0
+          ],
+          [
+            -22.5,
+            45.0
+          ],
+          [
+            -7.5,
+            -45.0
+          ],
+          [
+            -7.5,
+            45.0
+          ],
+          [
+            7.5,
+            -45.0
+          ],
+          [
+            7.5,
+            45.0
+          ],
+          [
+            22.5,
+            -45.0
+          ],
+          [
+            22.5,
+            45.0
+          ],
+          [
+            37.5,
+            -45.0
+          ],
+          [
+            37.5,
+            -30.0
+          ],
+          [
+            37.5,
+            -15.0
+          ],
+          [
+            37.5,
+            0.0
+          ],
+          [
+            37.5,
+            15.0
+          ],
+          [
+            37.5,
+            30.0
+          ],
+          [
+            37.5,
+            45.0
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            -37.5,
+            -37.5
+          ],
+          [
+            -37.5,
+            -22.5
+          ],
+          [
+            -37.5,
+            -7.5
+          ],
+          [
+            -37.5,
+            7.5
+          ],
+          [
+            -37.5,
+            22.5
+          ],
+          [
+            -37.5,
+            37.5
+          ],
+          [
+            -30.0,
+            -45.0
+          ],
+          [
+            -30.0,
+            45.0
+          ],
+          [
+            -15.0,
+            -45.0
+          ],
+          [
+            -15.0,
+            45.0
+          ],
+          [
+            0.0,
+            -45.0
+          ],
+          [
+            0.0,
+            45.0
+          ],
+          [
+            15.0,
+            -45.0
+          ],
+          [
+            15.0,
+            45.0
+          ],
+          [
+            30.0,
+            -45.0
+          ],
+          [
+            30.0,
+            45.0
+          ],
+          [
+            37.5,
+            -37.5
+          ],
+          [
+            37.5,
+            -22.5
+          ],
+          [
+            37.5,
+            -7.5
+          ],
+          [
+            37.5,
+            7.5
+          ],
+          [
+            37.5,
+            22.5
+          ],
+          [
+            37.5,
+            37.5
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "left",
+          "right",
+          "bottom",
+          "top"
+        ],
+        "adapter_positions": [
+          [
+            7.5,
+            -30.0,
+            true
+          ],
+          [
+            7.5,
+            30.0,
+            true
+          ]
+        ]
+      },
+      "sha256": "b74c0a70c09de01c0539b572dc2fdd5128c3a482b03e6c8554a18235ab5d0875",
+      "key": "4683087dd19c8b1723297a07",
       "dimensions_mm": [
         89.0,
         103.98,
         3.0
       ],
       "image": "presentation/images/working_oobb.png"
+    },
+    {
+      "source": "working_oobb_short_sides.stl",
+      "label": "Wire-holder — Two short sides",
+      "family": "Wire-holder",
+      "layout": "short_sides",
+      "geometry": {
+        "layout": "short_sides",
+        "label": "Two short sides",
+        "grid_units": [
+          6,
+          7
+        ],
+        "pcb_mm": [
+          53.34,
+          68.58
+        ],
+        "bounds_mm": [
+          -29.67,
+          29.67,
+          -52.0,
+          52.0
+        ],
+        "m6_centres_mm": [
+          [
+            -22.5,
+            -45.0
+          ],
+          [
+            -22.5,
+            45.0
+          ],
+          [
+            -7.5,
+            -45.0
+          ],
+          [
+            -7.5,
+            45.0
+          ],
+          [
+            7.5,
+            -45.0
+          ],
+          [
+            7.5,
+            45.0
+          ],
+          [
+            22.5,
+            -45.0
+          ],
+          [
+            22.5,
+            45.0
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            -15.0,
+            -45.0
+          ],
+          [
+            -15.0,
+            45.0
+          ],
+          [
+            0.0,
+            -45.0
+          ],
+          [
+            0.0,
+            45.0
+          ],
+          [
+            15.0,
+            -45.0
+          ],
+          [
+            15.0,
+            45.0
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "bottom",
+          "top"
+        ],
+        "adapter_positions": [
+          [
+            7.5,
+            -30.0,
+            true
+          ],
+          [
+            7.5,
+            30.0,
+            true
+          ]
+        ]
+      },
+      "sha256": "e288dc6556732c6bfee67c06a379ada79e4608ab51117165d8cc29b9318ef479",
+      "key": "5effcb5e6c087e5c932c8071",
+      "dimensions_mm": [
+        59.34,
+        103.98,
+        3.0
+      ],
+      "image": "presentation/images/working_oobb_short_sides.png"
+    },
+    {
+      "source": "working_oobb_long_side.stl",
+      "label": "Wire-holder — One long side",
+      "family": "Wire-holder",
+      "layout": "long_side",
+      "geometry": {
+        "layout": "long_side",
+        "label": "One long side",
+        "grid_units": [
+          6,
+          7
+        ],
+        "pcb_mm": [
+          53.34,
+          68.58
+        ],
+        "bounds_mm": [
+          -29.67,
+          44.5,
+          -52.0,
+          52.0
+        ],
+        "m6_centres_mm": [
+          [
+            37.5,
+            -45.0
+          ],
+          [
+            37.5,
+            -30.0
+          ],
+          [
+            37.5,
+            -15.0
+          ],
+          [
+            37.5,
+            0.0
+          ],
+          [
+            37.5,
+            15.0
+          ],
+          [
+            37.5,
+            30.0
+          ],
+          [
+            37.5,
+            45.0
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            37.5,
+            -37.5
+          ],
+          [
+            37.5,
+            -22.5
+          ],
+          [
+            37.5,
+            -7.5
+          ],
+          [
+            37.5,
+            7.5
+          ],
+          [
+            37.5,
+            22.5
+          ],
+          [
+            37.5,
+            37.5
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "right"
+        ],
+        "adapter_positions": [
+          [
+            7.5,
+            -30.0,
+            true
+          ],
+          [
+            7.5,
+            30.0,
+            true
+          ]
+        ]
+      },
+      "sha256": "c5a10a20d8214c3dd266e8f595f75e39452df87933eed7a3a94e5308afa83401",
+      "key": "937b3d89de19f5dae0126b41",
+      "dimensions_mm": [
+        74.17,
+        103.98,
+        3.0
+      ],
+      "image": "presentation/images/working_oobb_long_side.png"
     }
   ],
+  "galleries": {
+    "Standard": "presentation/images/standard-layouts.png",
+    "Wire-holder": "presentation/images/wire-holder-layouts.png"
+  },
   "notice": "AI-generated images and instructions. Errors possible.",
   "generator": "oomlout_oobb_version_5/presentation/scripts/catalogue.py"
 }

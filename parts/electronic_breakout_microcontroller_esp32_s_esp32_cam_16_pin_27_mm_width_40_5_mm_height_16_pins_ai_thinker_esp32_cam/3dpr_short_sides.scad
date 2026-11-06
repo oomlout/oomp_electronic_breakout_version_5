@@ -1,0 +1,40 @@
+$fn = 50;
+
+difference() {
+	union() {
+		hull() {
+			translate(v = [-11.5, 32.0, 0]) {
+				cylinder(h = 3, r = 5);
+			}
+			translate(v = [11.5, 32.0, 0]) {
+				cylinder(h = 3, r = 5);
+			}
+			translate(v = [-11.5, -32.0, 0]) {
+				cylinder(h = 3, r = 5);
+			}
+			translate(v = [11.5, -32.0, 0]) {
+				cylinder(h = 3, r = 5);
+			}
+		}
+	}
+	union() {
+		translate(v = [-7.5, -30.0, -1]) {
+			cylinder(h = 5, r = 3.25);
+		}
+		translate(v = [-7.5, 30.0, -1]) {
+			cylinder(h = 5, r = 3.25);
+		}
+		translate(v = [7.5, -30.0, -1]) {
+			cylinder(h = 5, r = 3.25);
+		}
+		translate(v = [7.5, 30.0, -1]) {
+			cylinder(h = 5, r = 3.25);
+		}
+		translate(v = [0.0, -30.0, -1]) {
+			cylinder(h = 5, r = 1.8);
+		}
+		translate(v = [0.0, 30.0, -1]) {
+			cylinder(h = 5, r = 1.8);
+		}
+	}
+}

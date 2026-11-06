@@ -4,15 +4,11 @@ import yaml
 import os
 import scad_help
 from mounting_geometry import normalize_kwargs
+import mounting_layouts
 
 def get_plate_dimensions(**kwargs):
     """Size the plate in OOBB units, adding optional per-axis extras in mm."""
-    kwargs = normalize_kwargs(kwargs)
-    dimensions = []
-    for key, default in (("breakout_pcb_width", 49), ("breakout_pcb_height", 38)):
-        minimum = kwargs.get(key, default) + kwargs.get(f"{key}_extra", 0) + 12
-        dimensions.append(int((minimum + 14) // 15) + 1)
-    return tuple(dimensions)
+    return mounting_layouts.dimensions(**kwargs)
 
 def get_base(thing, **kwargs):
     kwargs = normalize_kwargs(kwargs)
@@ -32,30 +28,29 @@ def get_base(thing, **kwargs):
     width, height = get_plate_dimensions(**kwargs)
     kwargs["width"] = width
     kwargs["height"] = height
+    layout = mounting_layouts.plan(**kwargs)
     #add plate
     if True:
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "positive"
-        p3["shape"] = f"oobb_plate"    
+        p3["shape"] = f"oobb_plate"
+        left, right, bottom, top = layout['bounds_mm']
+        p3['width'] = (right-left+1)/15
+        p3['height'] = (top-bottom+1)/15
         p3["depth"] = depth
         #p3["holes"] = True         uncomment to include default holes
         #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)         
+        pos1[0] += (left+right)/2
+        pos1[1] += (bottom+top)/2
         p3["pos"] = pos1
         oobb.append_full(thing,**p3)
     
-    #add holes seperate
-    if True:
-        p3 = copy.deepcopy(kwargs)
-        p3["type"] = "p"
-        p3["shape"] = f"oobb_holes"
-        p3["both_holes"] = True  
-        p3["depth"] = depth
-        p3["holes"] = "perimeter"
-        #p3["m"] = "#"
-        pos1 = copy.deepcopy(pos)         
-        p3["pos"] = pos1
-        oobb.append_full(thing,**p3)
+    # Keep the 15 mm M6 grid and its optional, empty half-grid M3 holes.
+    for key, radius_name in [('m6_centres_mm', 'm6'), ('m3_centres_mm', 'm3')]:
+        for x, y in layout[key]:
+            oobb.append_full(thing, type='negative', shape='oobb_hole', radius_name=radius_name,
+                             depth=depth+2, pos=[pos[0]+x, pos[1]+y, pos[2]-1])
 
     # Add PCB standoffs; the default lift is 3 mm.
     mounting_holes = kwargs.get("mounting_holes", [])

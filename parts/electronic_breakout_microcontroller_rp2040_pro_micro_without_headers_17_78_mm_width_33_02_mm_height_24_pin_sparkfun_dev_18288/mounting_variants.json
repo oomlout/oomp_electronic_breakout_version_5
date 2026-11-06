@@ -1,0 +1,571 @@
+{
+  "schema": 1,
+  "variants": [
+    {
+      "source": "3dpr.stl",
+      "label": "Standard \u2014 Full wrap",
+      "family": "Standard",
+      "layout": "full_wrap",
+      "geometry": {
+        "layout": "full_wrap",
+        "label": "Full wrap",
+        "grid_units": [
+          4,
+          5
+        ],
+        "pcb_mm": [
+          17.78,
+          33.02
+        ],
+        "bounds_mm": [
+          -29.5,
+          29.5,
+          -37.0,
+          37.0
+        ],
+        "m6_centres_mm": [
+          [
+            -22.5,
+            -30.0
+          ],
+          [
+            -22.5,
+            -15.0
+          ],
+          [
+            -22.5,
+            0.0
+          ],
+          [
+            -22.5,
+            15.0
+          ],
+          [
+            -22.5,
+            30.0
+          ],
+          [
+            -7.5,
+            -30.0
+          ],
+          [
+            -7.5,
+            30.0
+          ],
+          [
+            7.5,
+            -30.0
+          ],
+          [
+            7.5,
+            30.0
+          ],
+          [
+            22.5,
+            -30.0
+          ],
+          [
+            22.5,
+            -15.0
+          ],
+          [
+            22.5,
+            0.0
+          ],
+          [
+            22.5,
+            15.0
+          ],
+          [
+            22.5,
+            30.0
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            -22.5,
+            -22.5
+          ],
+          [
+            -22.5,
+            -7.5
+          ],
+          [
+            -22.5,
+            7.5
+          ],
+          [
+            -22.5,
+            22.5
+          ],
+          [
+            -15.0,
+            -30.0
+          ],
+          [
+            -15.0,
+            30.0
+          ],
+          [
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            30.0
+          ],
+          [
+            15.0,
+            -30.0
+          ],
+          [
+            15.0,
+            30.0
+          ],
+          [
+            22.5,
+            -22.5
+          ],
+          [
+            22.5,
+            -7.5
+          ],
+          [
+            22.5,
+            7.5
+          ],
+          [
+            22.5,
+            22.5
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "left",
+          "right",
+          "bottom",
+          "top"
+        ],
+        "adapter_positions": []
+      }
+    },
+    {
+      "source": "3dpr_short_sides.stl",
+      "label": "Standard \u2014 Two short sides",
+      "family": "Standard",
+      "layout": "short_sides",
+      "geometry": {
+        "layout": "short_sides",
+        "label": "Two short sides",
+        "grid_units": [
+          4,
+          5
+        ],
+        "pcb_mm": [
+          17.78,
+          33.02
+        ],
+        "bounds_mm": [
+          -14.5,
+          14.5,
+          -37.0,
+          37.0
+        ],
+        "m6_centres_mm": [
+          [
+            -7.5,
+            -30.0
+          ],
+          [
+            -7.5,
+            30.0
+          ],
+          [
+            7.5,
+            -30.0
+          ],
+          [
+            7.5,
+            30.0
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            30.0
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "bottom",
+          "top"
+        ],
+        "adapter_positions": []
+      }
+    },
+    {
+      "source": "3dpr_long_side.stl",
+      "label": "Standard \u2014 One long side",
+      "family": "Standard",
+      "layout": "long_side",
+      "geometry": {
+        "layout": "long_side",
+        "label": "One long side",
+        "grid_units": [
+          4,
+          5
+        ],
+        "pcb_mm": [
+          17.78,
+          33.02
+        ],
+        "bounds_mm": [
+          -14.5,
+          29.5,
+          -22.0,
+          22.0
+        ],
+        "m6_centres_mm": [
+          [
+            22.5,
+            -15.0
+          ],
+          [
+            22.5,
+            0.0
+          ],
+          [
+            22.5,
+            15.0
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            22.5,
+            -7.5
+          ],
+          [
+            22.5,
+            7.5
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "right"
+        ],
+        "adapter_positions": []
+      }
+    },
+    {
+      "source": "working_oobb.stl",
+      "label": "Wire-holder \u2014 Full wrap",
+      "family": "Wire-holder",
+      "layout": "full_wrap",
+      "geometry": {
+        "layout": "full_wrap",
+        "label": "Full wrap",
+        "grid_units": [
+          4,
+          5
+        ],
+        "pcb_mm": [
+          17.78,
+          33.02
+        ],
+        "bounds_mm": [
+          -29.5,
+          29.5,
+          -37.0,
+          37.0
+        ],
+        "m6_centres_mm": [
+          [
+            -22.5,
+            -30.0
+          ],
+          [
+            -22.5,
+            -15.0
+          ],
+          [
+            -22.5,
+            0.0
+          ],
+          [
+            -22.5,
+            15.0
+          ],
+          [
+            -22.5,
+            30.0
+          ],
+          [
+            -7.5,
+            -30.0
+          ],
+          [
+            -7.5,
+            30.0
+          ],
+          [
+            7.5,
+            -30.0
+          ],
+          [
+            7.5,
+            30.0
+          ],
+          [
+            22.5,
+            -30.0
+          ],
+          [
+            22.5,
+            -15.0
+          ],
+          [
+            22.5,
+            0.0
+          ],
+          [
+            22.5,
+            15.0
+          ],
+          [
+            22.5,
+            30.0
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            -22.5,
+            -22.5
+          ],
+          [
+            -22.5,
+            -7.5
+          ],
+          [
+            -22.5,
+            7.5
+          ],
+          [
+            -22.5,
+            22.5
+          ],
+          [
+            -15.0,
+            -30.0
+          ],
+          [
+            -15.0,
+            30.0
+          ],
+          [
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            30.0
+          ],
+          [
+            15.0,
+            -30.0
+          ],
+          [
+            15.0,
+            30.0
+          ],
+          [
+            22.5,
+            -22.5
+          ],
+          [
+            22.5,
+            -7.5
+          ],
+          [
+            22.5,
+            7.5
+          ],
+          [
+            22.5,
+            22.5
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "left",
+          "right",
+          "bottom",
+          "top"
+        ],
+        "adapter_positions": [
+          [
+            7.5,
+            15.0,
+            true
+          ]
+        ]
+      }
+    },
+    {
+      "source": "working_oobb_short_sides.stl",
+      "label": "Wire-holder \u2014 Two short sides",
+      "family": "Wire-holder",
+      "layout": "short_sides",
+      "geometry": {
+        "layout": "short_sides",
+        "label": "Two short sides",
+        "grid_units": [
+          4,
+          5
+        ],
+        "pcb_mm": [
+          17.78,
+          33.02
+        ],
+        "bounds_mm": [
+          -14.5,
+          29.5,
+          -37.0,
+          37.0
+        ],
+        "m6_centres_mm": [
+          [
+            -7.5,
+            -30.0
+          ],
+          [
+            -7.5,
+            30.0
+          ],
+          [
+            7.5,
+            -30.0
+          ],
+          [
+            7.5,
+            30.0
+          ],
+          [
+            22.5,
+            -30.0
+          ],
+          [
+            22.5,
+            30.0
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            30.0
+          ],
+          [
+            15.0,
+            -30.0
+          ],
+          [
+            15.0,
+            30.0
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "bottom",
+          "top"
+        ],
+        "adapter_positions": [
+          [
+            7.5,
+            15.0,
+            true
+          ]
+        ]
+      }
+    },
+    {
+      "source": "working_oobb_long_side.stl",
+      "label": "Wire-holder \u2014 One long side",
+      "family": "Wire-holder",
+      "layout": "long_side",
+      "geometry": {
+        "layout": "long_side",
+        "label": "One long side",
+        "grid_units": [
+          4,
+          5
+        ],
+        "pcb_mm": [
+          17.78,
+          33.02
+        ],
+        "bounds_mm": [
+          -14.5,
+          29.5,
+          -22.0,
+          37.0
+        ],
+        "m6_centres_mm": [
+          [
+            22.5,
+            -15.0
+          ],
+          [
+            22.5,
+            0.0
+          ],
+          [
+            22.5,
+            15.0
+          ],
+          [
+            22.5,
+            30.0
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            22.5,
+            -7.5
+          ],
+          [
+            22.5,
+            7.5
+          ],
+          [
+            22.5,
+            22.5
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "right"
+        ],
+        "adapter_positions": [
+          [
+            7.5,
+            15.0,
+            true
+          ]
+        ]
+      }
+    }
+  ]
+}

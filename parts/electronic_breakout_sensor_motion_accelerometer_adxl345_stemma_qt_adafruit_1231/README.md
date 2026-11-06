@@ -3,9 +3,11 @@
 
 AI-generated images and instructions. Errors possible.
 
-![AI-generated CAD render of Adafruit ADXL345 STEMMA QT default mounting plate](presentation/images/3dpr.png)
+![AI-generated CAD renders of Adafruit ADXL345 STEMMA QT mounting plates](presentation/images/standard-layouts.png)
 
 Mounting plates for the listed board. Board not shown.
+
+M6: Ø6.5 mm holes, Ø13 mm head/nut clearance, 15 mm pitch.
 
 ## Parts
 
@@ -13,7 +15,9 @@ One board and one plate. Choose a plate variant.
 
 | Part | Type | Specification | Qty | MD5 alpha |
 | --- | --- | --- | ---: | --- |
-| [Default plate](3dpr.stl) | Printed | 59 × 43.98 × 6 mm | 1 | — |
+| [Standard — Full wrap](3dpr.stl) | Printed | 59 × 58.98 × 6 mm | 1 | — |
+| [Standard — Two short sides](3dpr_short_sides.stl) | Printed | 59 × 28.98 × 6 mm | 1 | — |
+| [Standard — One long side](3dpr_long_side.stl) | Printed | 31.4 × 43.98 × 6 mm | 1 | — |
 | [Adafruit ADXL345 STEMMA QT](working.yaml) | Hardware | 25.4 × 17.78 mm; adxl345 | 1 | [1ut2v](working.yaml) |
 
 ## Installation

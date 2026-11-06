@@ -38,6 +38,7 @@ def get_base(thing, **kwargs):
     base_kwargs = copy.deepcopy(kwargs)
     base_kwargs["mounting_lift"] = kwargs.get("mounting_lift", 3) + 3
     base_kwargs["prepare_print"] = False
+    base_kwargs["wire_adapter"] = True
     working_scad_mounting_plate_default.get_base(thing, **base_kwargs)
 
     width, height = working_scad_mounting_plate_default.get_plate_dimensions(**kwargs)

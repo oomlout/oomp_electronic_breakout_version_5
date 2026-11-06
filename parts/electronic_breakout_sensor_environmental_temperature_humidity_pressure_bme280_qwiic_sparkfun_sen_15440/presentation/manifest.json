@@ -12,17 +12,270 @@
   "variants": [
     {
       "source": "3dpr.stl",
-      "label": "Default mounting plate",
-      "sha256": "c073842bbfaa23b4d0c295d958c641676e60eb90817f568d2513b53a1bc66088",
-      "key": "da33476c364d155c5d4dc25f",
+      "label": "Standard — Full wrap",
+      "family": "Standard",
+      "layout": "full_wrap",
+      "geometry": {
+        "layout": "full_wrap",
+        "label": "Full wrap",
+        "grid_units": [
+          4,
+          4
+        ],
+        "pcb_mm": [
+          25.4,
+          25.4
+        ],
+        "bounds_mm": [
+          -29.5,
+          29.5,
+          -29.5,
+          29.5
+        ],
+        "m6_centres_mm": [
+          [
+            -22.5,
+            -22.5
+          ],
+          [
+            -22.5,
+            -7.5
+          ],
+          [
+            -22.5,
+            7.5
+          ],
+          [
+            -22.5,
+            22.5
+          ],
+          [
+            -7.5,
+            -22.5
+          ],
+          [
+            -7.5,
+            22.5
+          ],
+          [
+            7.5,
+            -22.5
+          ],
+          [
+            7.5,
+            22.5
+          ],
+          [
+            22.5,
+            -22.5
+          ],
+          [
+            22.5,
+            -7.5
+          ],
+          [
+            22.5,
+            7.5
+          ],
+          [
+            22.5,
+            22.5
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            -22.5,
+            -15.0
+          ],
+          [
+            -22.5,
+            0.0
+          ],
+          [
+            -22.5,
+            15.0
+          ],
+          [
+            -15.0,
+            -22.5
+          ],
+          [
+            -15.0,
+            22.5
+          ],
+          [
+            0.0,
+            -22.5
+          ],
+          [
+            0.0,
+            22.5
+          ],
+          [
+            15.0,
+            -22.5
+          ],
+          [
+            15.0,
+            22.5
+          ],
+          [
+            22.5,
+            -15.0
+          ],
+          [
+            22.5,
+            0.0
+          ],
+          [
+            22.5,
+            15.0
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "left",
+          "right",
+          "bottom",
+          "top"
+        ],
+        "adapter_positions": []
+      },
+      "sha256": "b70e39bcdd99f1daf7c3f95604a7b2704fa501196646bbe79a7a1643ea3df313",
+      "key": "4ab575e248d0e5df80f51688",
       "dimensions_mm": [
         59.0,
         58.98,
         6.0
       ],
       "image": "presentation/images/3dpr.png"
+    },
+    {
+      "source": "3dpr_short_sides.stl",
+      "label": "Standard — Two short sides",
+      "family": "Standard",
+      "layout": "short_sides",
+      "geometry": {
+        "layout": "short_sides",
+        "label": "Two short sides",
+        "grid_units": [
+          4,
+          4
+        ],
+        "pcb_mm": [
+          25.4,
+          25.4
+        ],
+        "bounds_mm": [
+          -15.7,
+          15.7,
+          -29.5,
+          29.5
+        ],
+        "m6_centres_mm": [
+          [
+            -7.5,
+            -22.5
+          ],
+          [
+            -7.5,
+            22.5
+          ],
+          [
+            7.5,
+            -22.5
+          ],
+          [
+            7.5,
+            22.5
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            0.0,
+            -22.5
+          ],
+          [
+            0.0,
+            22.5
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "bottom",
+          "top"
+        ],
+        "adapter_positions": []
+      },
+      "sha256": "10f31d8d08ee1b0560355c809038168c5e96384c48a20982aefa1378124e82d3",
+      "key": "c50243b045c6fcaebb9bd445",
+      "dimensions_mm": [
+        31.4,
+        58.98,
+        6.0
+      ],
+      "image": "presentation/images/3dpr_short_sides.png"
+    },
+    {
+      "source": "3dpr_long_side.stl",
+      "label": "Standard — One long side",
+      "family": "Standard",
+      "layout": "long_side",
+      "geometry": {
+        "layout": "long_side",
+        "label": "One long side",
+        "grid_units": [
+          4,
+          4
+        ],
+        "pcb_mm": [
+          25.4,
+          25.4
+        ],
+        "bounds_mm": [
+          -15.7,
+          29.5,
+          -15.7,
+          15.7
+        ],
+        "m6_centres_mm": [
+          [
+            22.5,
+            -7.5
+          ],
+          [
+            22.5,
+            7.5
+          ]
+        ],
+        "m3_centres_mm": [
+          [
+            22.5,
+            0.0
+          ]
+        ],
+        "m6_hole_diameter_mm": 6.5,
+        "head_clear_diameter_mm": 13,
+        "edges": [
+          "right"
+        ],
+        "adapter_positions": []
+      },
+      "sha256": "49c243344991699ed6557b0c2bf08c52a2d630e923a341b1a4de678cde56e78f",
+      "key": "822d084061243e5b2ffc2d5f",
+      "dimensions_mm": [
+        45.2,
+        31.38,
+        6.0
+      ],
+      "image": "presentation/images/3dpr_long_side.png"
     }
   ],
+  "galleries": {
+    "Standard": "presentation/images/standard-layouts.png"
+  },
   "notice": "AI-generated images and instructions. Errors possible.",
   "generator": "oomlout_oobb_version_5/presentation/scripts/catalogue.py"
 }

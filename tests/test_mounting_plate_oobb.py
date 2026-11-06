@@ -69,7 +69,7 @@ class AdapterLayoutTests(unittest.TestCase):
         openings = [c for c in calls if c["shape"] == "oobb_hole" and "radius" in c]
         self.assertEqual([c["pos"][:2] for c in openings], [[-22.5, 0], [22.5, 0]])
         self.assertFalse(any(c["shape"] == "oobb_nut" for c in calls))
-        self.assertEqual(sum(c["shape"] == "oobb_hole" and c.get("radius_name") == "m3" for c in calls), 8)
+        self.assertEqual(sum(c["shape"] == "oobb_hole" and c.get("radius_name") == "m3" and c["depth"] == 8 for c in calls), 8)
         standoff = next(c for c in calls if c["shape"] == "oobb_cylinder")
         self.assertEqual(standoff["depth"], 6)
 
@@ -77,22 +77,22 @@ class AdapterLayoutTests(unittest.TestCase):
         import working_oomp_populate_power
 
         power = working_oomp_populate_power.main()[0]
-        # Exercise the original 5 x 4 layout independently of catalogue padding.
+        # M6 head clearance increases the unpadded plate to 6 x 4 units.
         power["breakout_pcb_width_extra"] = 0
         power["breakout_pcb_height_extra"] = 0
         power["shift_wire_hole_x"] = 0
         power["shift_wire_hole_y"] = 0
         width, height = default_plate.get_plate_dimensions(**power)
-        self.assertEqual((width, height), (5, 4))
+        self.assertEqual((width, height), (6, 4))
         calls = []
         with patch.object(oobb, "append_full", side_effect=lambda thing, **kw: calls.append(kw)):
             wire_plate.get_base({"components": []}, **power)
-        opening = next(c for c in calls if c["shape"] == "oobb_hole" and "radius" in c)
-        self.assertEqual(opening["pos"][:2], [15, 7.5])
+        openings = [c for c in calls if c["shape"] == "oobb_hole" and "radius" in c]
+        self.assertEqual([c["pos"][:2] for c in openings], [[-22.5, 7.5], [22.5, 7.5]])
         # The holder's positive outer M6 row coincides with the host edge.
-        self.assertEqual(opening["pos"][0] + 15, (width - 1) * 7.5)
+        self.assertEqual(openings[-1]["pos"][0] + 15, (width - 1) * 7.5)
         self.assertFalse(any(c["shape"] == "oobb_nut" for c in calls))
-        self.assertEqual(sum(c["shape"] == "oobb_hole" and c.get("radius_name") == "m3" for c in calls), 4)
+        self.assertEqual(sum(c["shape"] == "oobb_hole" and c.get("radius_name") == "m3" and c["depth"] == 8 for c in calls), 8)
 
 
 if __name__ == "__main__":

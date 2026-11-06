@@ -3,9 +3,11 @@
 
 AI-generated images and instructions. Errors possible.
 
-![AI-generated CAD render of SparkFun Qwiic BME280 default mounting plate](presentation/images/3dpr.png)
+![AI-generated CAD renders of SparkFun Qwiic BME280 mounting plates](presentation/images/standard-layouts.png)
 
 Mounting plates for the listed board. Board not shown.
+
+M6: Ø6.5 mm holes, Ø13 mm head/nut clearance, 15 mm pitch.
 
 ## Parts
 
@@ -13,7 +15,9 @@ One board and one plate. Choose a plate variant.
 
 | Part | Type | Specification | Qty | MD5 alpha |
 | --- | --- | --- | ---: | --- |
-| [Default plate](3dpr.stl) | Printed | 59 × 58.98 × 6 mm | 1 | — |
+| [Standard — Full wrap](3dpr.stl) | Printed | 59 × 58.98 × 6 mm | 1 | — |
+| [Standard — Two short sides](3dpr_short_sides.stl) | Printed | 31.4 × 58.98 × 6 mm | 1 | — |
+| [Standard — One long side](3dpr_long_side.stl) | Printed | 45.2 × 31.38 × 6 mm | 1 | — |
 | [SparkFun Qwiic BME280](working.yaml) | Hardware | 25.4 × 25.4 mm; bme280 | 1 | [1l2i6](working.yaml) |
 
 ## Installation
