@@ -53,6 +53,8 @@ Only files belonging to this presentation build are included in its sync. Existi
 
 The M6 layout revision contains 408 variants across 69 part folders: three layouts for each available plate family. [Geometry audit](mounting-layout-audit.json) records the exported mesh checks. Current render counts and source/link checks are in [the presentation audit](mounting-presentation-audit.json). Comparison images show each family's three layouts; individual sheets retain top views and measured dimensions.
 
+Reviewed on GitHub on 2026-11-06: the root comparison image, Pico's six linked plate rows, both 1600 × 760 family images and the compact STL viewer loaded correctly. The build produced 408 individual sheets and 136 comparisons. All 3,205 M6 bores passed radial mesh measurements; 17 mounting regressions and four presentation regressions passed. One compact wire-holder variant retains its full outline to support the attachment footprint. Legacy previews and 496 tracked navigation files were refreshed.
+
 ### Previous revision
 
 The collar-removal revision updates all 67 wire-holder plates. [Geometry audit](collar-removal-audit.json): watertight meshes, unchanged footprints and reduced material volume. Three variants retain their PCB support posts. Four adapter regression tests cover the hole pattern, cutter reach and retained post height. Legacy previews and 248 tracked navigation files are refreshed from the canonical parts.
