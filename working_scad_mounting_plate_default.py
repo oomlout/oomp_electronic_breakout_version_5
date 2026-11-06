@@ -3,9 +3,11 @@ import oobb
 import yaml
 import os
 import scad_help
+from mounting_geometry import normalize_kwargs
 
 def get_plate_dimensions(**kwargs):
     """Size the plate in OOBB units, adding optional per-axis extras in mm."""
+    kwargs = normalize_kwargs(kwargs)
     dimensions = []
     for key, default in (("breakout_pcb_width", 49), ("breakout_pcb_height", 38)):
         minimum = kwargs.get(key, default) + kwargs.get(f"{key}_extra", 0) + 12
@@ -13,7 +15,7 @@ def get_plate_dimensions(**kwargs):
     return tuple(dimensions)
 
 def get_base(thing, **kwargs):
-
+    kwargs = normalize_kwargs(kwargs)
     prepare_print = kwargs.get("prepare_print", False)
     width = kwargs.get("width", 1)
     height = kwargs.get("height", 1)
@@ -57,8 +59,14 @@ def get_base(thing, **kwargs):
 
     # Add PCB standoffs; the default lift is 3 mm.
     mounting_holes = kwargs.get("mounting_holes", [])
-    for hole in mounting_holes:
-        add_mounting_hole(thing, hole, **kwargs)
+    radius_names = kwargs.get("mounting_hole_radius_names")
+    if radius_names is not None and len(radius_names) != len(mounting_holes):
+        raise ValueError("Each mounting hole must have a screw size")
+    for index, hole in enumerate(mounting_holes):
+        hole_kwargs = dict(kwargs)
+        if radius_names is not None:
+            hole_kwargs["mounting_hole_radius_name"] = radius_names[index]
+        add_mounting_hole(thing, hole, **hole_kwargs)
 
 
     #add a test screw_countersunk

@@ -1,0 +1,77 @@
+{
+  "pilots": [
+    {
+      "part_id": "electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231",
+      "title": "Adafruit ADXL345 STEMMA QT",
+      "board_size": [
+        25.4,
+        17.78
+      ],
+      "holes": 4,
+      "mesh_check": {
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 6536.564845851547,
+        "bounds_mm": [
+          [
+            -29.5,
+            -21.99013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            21.99013364214136,
+            6.0
+          ]
+        ]
+      },
+      "artifacts": {
+        "parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/3dpr.scad": "92f24968dd151c824261a4317de1b4c31d11a832d3db09f2c5978efacca855c5",
+        "parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/3dpr.stl": "902aafff349f9822fd897dca9c4486e7c157858c452fa3e597f8f950ea85f642",
+        "parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/README.md": "3d9398110042d22f74b45f98b790c328fcbc31e33ea694ccb748086d3a0d1ecd",
+        "parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/mounting.png": "c529f5c72535f90a8cdba526ffdba49f3436a7df3c95383c49507c21faf852f6",
+        "parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/mounting.svg": "84dec581e483c8b627765fcb1448b8be92af83e10272b2e357b8d5b6234fea85",
+        "parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/mounting.csv": "dee47927c87ae6e57df9a7c33b9195bd16885359983b775a624bd6e439ed0504",
+        "parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/presentation/images/3dpr.png": "e48a337e000cd3db957a7497056ab9f3d996d29a5ce2bb08dbfd98f35d318dd8",
+        "parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/presentation/manifest.json": "643dda34d8c9914149d03975f3568d890e26b846eab91a59ef97bd962956dba5"
+      }
+    },
+    {
+      "part_id": "electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440",
+      "title": "SparkFun Qwiic BME280",
+      "board_size": [
+        25.4,
+        25.4
+      ],
+      "holes": 3,
+      "mesh_check": {
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 8954.849534284065,
+        "bounds_mm": [
+          [
+            -29.5,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      "artifacts": {
+        "parts/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440/3dpr.scad": "9b12229527a3ca0ae6f0b70ea469a8149e4579f904cf3695d2c0f5115fbf42d6",
+        "parts/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440/3dpr.stl": "c073842bbfaa23b4d0c295d958c641676e60eb90817f568d2513b53a1bc66088",
+        "parts/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440/README.md": "25fde3df3a5c7a53a9bed6ac84139f9f468b09e680ae68a7c0560b5a906f4abd",
+        "parts/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440/mounting.png": "8ca24e016a7efc2feaab5e046df9ba73ba0892d7aa0dea63ce66c5bf96fe43ca",
+        "parts/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440/mounting.svg": "2fa118159d52879139d3f18d58bb0e8ff1e0018cde9a62ca7074e034deac10ea",
+        "parts/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440/mounting.csv": "cc91cab50aa655e43997898e893cc0e680b8cf4a661a40ff9e214de07a7e51b2",
+        "parts/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440/presentation/images/3dpr.png": "cb7d500ba9fd0b66a054239e4b0a25408e98e7f0b6ed5ea39d373598e980fca8",
+        "parts/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440/presentation/manifest.json": "6fc35a6a29126e722f2f55cd3dcbef84ec4bb0036eefd1892b653343c5e36e16"
+      }
+    }
+  ],
+  "result": "passed"
+}

@@ -1,0 +1,35 @@
+{
+  "record_sha256": "56a0cc9e868014081342a6b57c2e550f057dd9fb013bb32c1e8f04bbffefe8ba",
+  "generated_at": "2026-11-06T14:46:35+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440/3dpr.scad",
+      "bytes": 4873,
+      "sha256": "9b12229527a3ca0ae6f0b70ea469a8149e4579f904cf3695d2c0f5115fbf42d6"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440/3dpr.stl",
+      "bytes": 1587945,
+      "sha256": "c073842bbfaa23b4d0c295d958c641676e60eb90817f568d2513b53a1bc66088"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 8954.849534284065,
+    "bounds_mm": [
+      [
+        -29.5,
+        -29.49013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        29.49013364214136,
+        6.0
+      ]
+    ]
+  }
+}

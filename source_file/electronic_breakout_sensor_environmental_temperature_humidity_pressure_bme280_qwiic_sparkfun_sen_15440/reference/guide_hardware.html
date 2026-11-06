@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLMFVVN');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile mode if small screen device -->
+    
+    <title>Qwiic Atmospheric Sensor (BME280) Hookup Guide - SparkFun Learn</title>
+
+          <link rel="canonical" href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/all">
+              <link rel="prev" href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/introduction">
+              <link rel="next" href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/hardware-assembly">
+    
+    <link href="/css/bootstrap.min.css?rev=1792686982" rel="stylesheet">
+    <link rel="stylesheet" href="/css/theme.github.css?rev=1792686982" type="text/css" media="screen" />    <link rel="alternate" type="application/atom+xml" title="Education Blog" href="https://learn.sparkfun.com/feeds/blog" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorials" href="https://learn.sparkfun.com/feeds/tutorials" />
+    <link rel="alternate" type="application/atom+xml" title="Education Blog Comments" href="https://learn.sparkfun.com/feeds/blog_comments" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorial Comments" href="https://learn.sparkfun.com/feeds/tutorial_comments" />
+  </head>
+
+  <body id=learn class="layout-default no-type tutorials-view" ontouchstart="">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLMFVVN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <script>;
+    </script>
+    <div class="wrapper" itemscope itemtype="http://schema.org/WebSite">
+      <meta itemprop="url" content="https://learn.sparkfun.com/">
+      <div class=wrapper-inner>
+
+    <header>
+  <div class="support-nav-container container-fluid hidden-xs">
+    <div class="container">
+      <div class="support-nav">
+        <div aria-hidden="true">&nbsp;</div>
+
+        <div>
+          <ul class="professional-links">
+            <li><a href="https://www.sparkfun.com/professional">Professional</a></li>
+            <li><a href="https://www.sparkfun.com/education">EDU</a>            <li><a href="https://www.sparkfun.com/become-a-distributor">Distributor</a>          </ul>
+        </div>
+
+        <div class="cs">
+          <a href="https://www.sparkfun.com/support">Customer Support</a>        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-nav-buttons container-fluid hidden-xs">
+    <div class="container">
+      <div class="tab-bar">
+        <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header-content">
+      <div class="logo-container">
+        <button id="mobile-nav-menu-trigger" class="mobile-menu-button btn-unstyled hidden-sm hidden-md hidden-lg" type="button" aria-label="Open navigation menu">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+
+        <a class="logo" href="https://www.sparkfun.com/">
+          <span class="logo-sfe-primary"><span class="visuallyhidden">SparkFun Electronics - sparkfun.com</span></span>
+        </a>
+      </div>
+
+      <div class="search-block">
+                  <form id="search_form" class="search-block-form" action="https://learn.sparkfun.com/search/results" method="get">
+            <label for="global-search" class="sr-only">search documentation</label>
+            <input name="term" id="global-search" class="form-control" type="text" value="" placeholder="search documentation" autocomplete="off">
+            <button type="submit" class="glyphicon glyphicon-search global-search-icon" aria-label="Search"></button>
+          </form>
+        
+        <a href="https://www.sparkfun.com/" class="hidden-xs">Back to Webstore<span class="icon-header icon-header-undo" aria-hidden="true"></span></a>
+      </div>
+
+        <a class="account-link" href="https://www.sparkfun.com/customer/account">
+          <span class="img-account-silhouette visible-xs-inline-block"><span class="sr-only">My Account</span></span>
+          <span class="hidden-xs">My Account</span>
+        </a>
+
+    </div>
+  </div>
+
+  <div class="header-nav container-fluid hidden-xs">
+    <div class="container">
+      <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    </div>
+  </div>
+  <div id="nav-mobile-menu" class="nav-mobile-menu" aria-labelledby="nav-mobile-menu-heading" aria-role="dialog" aria-modal="true">
+    <h2 id="nav-mobile-menu-heading" class="sr-only">Navigation menu</h2>
+    <ul class="mobile-menu-tabs">
+      <li class="active"><a>Menu</a></li>
+      <li><a href="https://www.sparkfun.com/customer/account">Account</a></li>
+    </ul>
+    <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+  </div>
+</header>
+
+    
+    <div class=content>
+      <div class=container id=airlock>
+
+        
+        
+<div class=main-title>
+  <ul class="breadcrumb">
+    <li><a href="https://learn.sparkfun.com/">Home</a></li>
+    <li><a href="https://learn.sparkfun.com/tutorials">Tutorials</a></li>
+    <li>Qwiic Atmospheric Sensor (BME280) Hookup Guide</li>
+      </ul>
+
+  <h1>
+    Qwiic Atmospheric Sensor (BME280) Hookup Guide  </h1>
+
+</div>
+
+
+<a id=nav_toggle_pages class="nav_toggle nav-toggle-trigger" href="#"><span>&#8801;</span> Pages</a>
+
+<div id="tutorial" class="row">
+
+  <div id="sections" class="col-sm-8 tutorial-page">
+
+    <div class="contributors">
+                      Contributors:
+                <span class="contributor-alias"><img src="https://cdn.sparkfun.com/avatar/f4f3cfa206713c4cee74e50b8ddf07cd?d=retro&s=20&r=pg" /> QCPete</span>, <span class="contributor-alias"> santaimpersonator</span>          </div>
+
+    <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t929" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft929&name=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft929" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft929&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft929&t=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft929&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F9%2F2%2F9%2FAssembly_Raspberry_Pi.jpg&description=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+    <h2>Hardware Overview</h2>
+    <h3>Power</h3>
+
+<p>There is a power status LED to help make sure that your Qwiic Atmospheric Sensor is getting power. You can power the board either through the <em>polarized</em> <strong>Qwiic connector</strong> system or the breakout pins (<strong>3.3V</strong> and <strong>GND</strong>) provided. This Qwiic system is meant to use <strong>3.3V</strong>, be sure that you are <strong>NOT</strong> using another voltage when using the Qwiic system.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_Power_Attempt2.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_Power_Attempt2.jpg" alt="Power LED, VDD, and GND" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of power LED along with VCC and GND connections. (Click to enlarge)</em> </div></p>
+
+<p>If you want to conserve power, there is an available jumper on the back of the board labeled <code>LED</code> to cut power to the LED (<em>see <strong>Jumpers</strong> section below</em>).</p>
+
+<h3>BME280 Sensor</h3>
+
+<p>The Bosch BME280 is the atmospheric sensor used on this board. It measures three different atmospheric properties: <a href="https://en.wikipedia.org/wiki/Atmospheric_temperature">ambient temperature</a>, <a href="https://en.wikipedia.org/wiki/Relative_humidity">(relative) humidity</a>, and <a href="https://en.wikipedia.org/wiki/Atmospheric_pressure">barometric pressure</a>.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_Sensor.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_Sensor.jpg" alt="BME280 Sensor" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of BME280 sesnor. (Click to enlarge)</em> </div></p>
+
+<p>The BME280 uses three modes of operation: sleep mode, forced mode and normal mode. These modes dictate how the sensor performs measurement cycles. The BME280 can be interfaced via I<sup>2</sup>C (<em>used with Qwiic connections</em>) or SPI communication. In the table below, are some of the characteristics of the BME280 sensor from the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>:</p>
+
+<table class="table table-hover table-striped table-bordered">
+    <tr>
+        <th>Characteristic</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Operating Voltage (V<sub>DD</sub>)</td>
+        <td>1.71V to 3.6V (<b>Default on Qwiic System: 3.3V</b>)</td>
+    </tr>
+    <tr>
+        <td>Operational Modes</td>
+        <td><b>Sleep</b> (<b>Default</b>), Normal, and Forced (<i>low power; single measurement</i>)</td>
+    </tr>
+    <tr>
+        <td>Data Output</td>
+        <td>
+            16-bit output from ADC<br>
+            (*<i>IIR filter and oversampling can increase this to 20-bit; excludes humidity data</i>.)
+        </td>
+    </tr>
+    <tr>
+        <td>Current Consumption (<i>Typical</i>)</td>
+        <td>
+            Sleep: 0.3 &micro;A<br>
+            Standby: 0.5 &micro;A (inactive period of normal mode)<br>
+            Humidity Measurements: 340 &micro;A (peaks at 85&deg;C)<br>
+            Pressure Measurements: 714 &micro;A (peaks at -40&deg;C)<br>
+            Temperature Measurements: 350 &micro;A (peaks at 85&deg;C)<br>
+        </td>
+    </tr
+    <tr>
+        <td>Humidity Parameters</td>
+        <td>
+            Range: 0 to 100 %RH<br>
+            Absolute Accuracy: &plusmn;3 %RH (from 20 - 80 %RH)<br>
+            Resolution: 0.008 %RH<br>
+            Forced Mode Current Consumption: 2.8 &micro;A (max)
+        </td>
+    </tr>
+    <tr>
+        <td>Pressure Parameters</td>
+        <td>
+            Range: 300 to 1100 hPa (30,000 - 110,000 Pa or approx. 4.35 - 15.95 PSI)<br>
+            Absolute Accuracy: &plusmn;(1 - 1.7) hPa<br>
+            Resolution: 0.18 Pa<br>
+            Forced Mode Current Consumption: 4.2 &micro;A (max)
+        </td>
+    </tr>
+    <tr>
+        <td>Temperature Parameters</td>
+        <td>
+            Range: 0&deg;C to 65&deg;C (32&deg;F to 149&deg;F)<br>
+            Absolute Accuracy: &plusmn;(0.5 - 1.5)&deg;C<br>
+            Resolution: 0.01&deg;C<br>
+            Forced Mode Current Consumption: 1.0 &micro;A (typical)
+        </td>
+    </tr>
+    <tr>
+        <td>I<sup>2</sup>C Address</td>
+        <td><b>0x77</b> (<b>Default</b>) or 0x76</td>
+    </tr>
+</table>
+
+<h4>Modes of Operation</h4>
+
+<p>The BME280 offers three modes of operation:</p>
+
+<ul>
+<li><strong>Sleep mode</strong> (<strong>Default</strong>): No operation, all registers accessible, lowest power, selected after startup.</li>
+<li>Forced mode (<em>low power operation</em>): Performs one measurement, store results and return to sleep mode.</li>
+<li>Normal mode (<em>active measurements</em>): Perpetual cycling of measurements and inactive periods.</li>
+</ul>
+
+<p>For more details, refer to sections 3.3.2-4 in the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>. Additionally, in section 3.5 the are a set of recommended sensor settings for various applications or operations.</p>
+
+<h4>Measurements</h4>
+
+<p>All measurements can be skipped or enabled. When enabled, there are several oversampling options; with oversampling, it is possible to reduce the noise.</p>
+
+<p>For more details, refer to sections 3-4 in the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</p>
+
+<h5>Humidity</h5>
+
+<p>The resolution of the humidity measurement is fixed at 16-bit ADC output. A graph of the operational range for the humidity sensor (<em>shaded in grey</em>) is shown below; the sensor will not report and/or operate properly outside of this range.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/humidity_operational_range.PNG"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/humidity_operational_range.PNG" alt="Humidity sensor operational range" /></a> </div>
+<div class="center-block text-center"> <em>Operational range of the humidity sensor. (Click to enlarge)</em> </div></p>
+
+<h5>Pressure and Temperature</h5>
+
+<p>For temperature and pressure readings, the resolution of the data will be dependent on if the infinite impulse response (IIR) filter is enabled and the oversampling setting register setting (osrs):</p>
+
+<ul>
+<li>When the IIR filter is enabled, the measurement resolution is 20-bit.</li>
+<li>When the IIR filter is disabled, the measurement  resolution is [16 + (osrs–1)]-bit.
+
+<ul>
+<li>e.g. The temperature measurement is 18-bit when osrs_t is set to ‘3’.</li>
+</ul></li>
+</ul>
+
+<p>(&#42;<em>Note: The temperature value depends on the PCB temperature, sensor element self-heating and ambient temperature and is typically just above ambient temperature.</em>)</p>
+
+<h4>Data Analysis</h4>
+
+<p>Below are other important attributes of the sensor. For most users, this information is will either be outside their scope or trivial. However for those that are interested, these topics have been briefly summarized or quoted directly from the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>. For full details, please refer to the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>; additionally, some of the comments in the library may help.</p>
+
+<h5>Infinite Impulse Response Filter</h5>
+
+<ul>
+<li>It is recommended that the internal IIR filter be implemented to dampen rapid data fluctuations from external influences like wind blowing, closing doors, etc.</li>
+</ul>
+
+<h5>Noise</h5>
+
+<ul>
+<li>The expected noise in the measurement data is dependent on the oversampling setting. For pressure and temperature readings, it is also dependent on the IIR filter setting used.</li>
+</ul>
+
+<h5>Trimming Parameters</h5>
+
+<ul>
+<li>The trimming parameters are programmed into the devices’ non-volatile memory (NVM) during production and cannot be altered by users. These are used for the calibration/compensation parameters.</li>
+</ul>
+
+<h5>Compensation formulas</h5>
+
+<ul>
+<li>It is strongly advised (by the manufacturer) to use the API available from Bosch Sensortec to perform readout and compensation.</li>
+</ul>
+
+<h3>Qwiic or I<sup>2</sup>C</h3>
+
+<h4>I<sup>2</sup>C Address</h4>
+
+<p>The BME280 has 2 available I<sup>2</sup>C addresses, which are set by the address pin, ADR. On the Qwiic Atmospheric sensor, the default peripheral address of the BME280 is <strong>0x77</strong> (HEX).</p>
+
+<p><strong>Default I<sup>2</sup>C Peripheral Address:</strong> 0x77</p>
+
+<h4>I<sup>2</sup>C Registers</h4>
+
+<p>The BME280 register (<em>memory</em>) map is detail in section 5.3 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</p>
+
+<table class="table table-hover table-striped table-bordered">
+    <tr>
+        <th class="text-center; col-md-2">Address</th>
+        <th class="col-md-14">Description</th>
+    </tr>
+    <tr>
+        <td align="center">0xD0</td>
+        <td>ID: The chip identification number.</td>
+    </tr>
+    <tr>
+        <td align="center"  style="vertical-align:middle">0xE0</td>
+        <td>Soft Reset: If the value <b>0xB6</b> is written to the register, the device is reset using the complete power-on-reset procedure</td>
+    </tr>
+    <tr>
+        <td align="center" style="vertical-align:middle">0xF2</td>
+        <td>ctrl_hum: Sets the humidity data acquisition options of the device. Changes to this register only become effective after a write operation to <code>ctrl_meas</code>.</td>
+    </tr>
+    <tr>
+        <td align="center" style="vertical-align:middle">0xF3</td>
+        <td>
+            status: Indicate the status of the device.<br>
+            <div style="margin-left:5%;">
+                Whether a conversion is running or the results have been transferred to the data registers.<br>
+                Whether NVM data are being copied to image registers.
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="vertical-align:middle">0xF4</td>
+        <td style="padding:5px">ctrl_meas: Sets the pressure and temperature data acquisition options of the device. The register needs to be written after changing <code>ctrl_hum</code> for the changes to become effective./td>
+    </tr>
+    <tr>
+        <td align="center" style="vertical-align:middle">0xF5</td>
+        <td>config: Sets the rate, filter and interface options of the device. Writes to the <code>config</code> register in <i>normal mode</i> may be ignored. In <i>sleep mode</i> writes are not ignored.</td>
+    </tr>
+    <tr>
+        <td align="center">0xF7 to 0xF9</td>
+        <td>press: The raw pressure measurement data.</td>
+    </tr>
+    <tr>
+        <td align="center">0xFA to 0xFC</td>
+        <td>temp: The raw temperature measurement data.</td>
+    </tr>
+    <tr>
+        <td align="center">0xFD to 0xFE</td>
+        <td>hum: The raw humidity measurement data.</td>
+    </tr>
+    <tr>
+        <td align="center">
+            0xE1 to 0xF0<br>
+            0x88 to 0xA1
+        </td>
+        <td style="vertical-align:middle">Calibration Data: Holds <i>Trimming Parameters</i>.</td>
+    </tr>
+</table>
+
+<h4>Connections</h4>
+
+<p>The simplest way to use the Qwiic ADC is through the Qwiic connect system. The connectors are polarized for the I<sup>2</sup>C connection and power. (<em>*They are tied to their corresponding breakout pins.</em>)</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_Qwiic_Connectors.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_Qwiic_Connectors.jpg" alt="Qwiic Connectors" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of the Qwiic connectors.</em> </div></p>
+
+<p>However, the board also provides six labeled breakout pins. You can connect these lines to the I<sup>2</sup>C bus of your microcontroller and power pins (<strong>3.3V</strong> and <strong>GND</strong>), if it doesn't have a Qwiic connector. Otherwise, the breakout pins can also be used for an SPI connection.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_Breakout_Pins.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_Breakout_Pins.jpg" alt="Breakout Pins" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of the breakout pins.</em> </div></p>
+
+<table class="table table-hover table-striped table-bordered">
+    <tr>
+        <th class="text-center">Pin Label</th>
+        <th class="text-center">Pin Function</th>
+        <th class="text-center">Input/Output</th>
+        <th>Notes</th>
+    </tr>
+    <tr align="center">
+        <td>3.3V</td>
+        <td>Power Supply</td>
+        <td>Input</td>
+        <td align = "left"><b>3.3V</b> on Qwiic system (<i>should be stable</i>)</td>
+    </tr>
+    <tr align="center">
+        <td>GND</td>
+        <td>Ground</td>
+        <td>Input</td>
+        <td align = "left">Ground and Single-Ended Reference Voltage for ADC.</td>
+    </tr>
+    <tr align="center">
+        <td style="vertical-align:middle">SDA</td>
+        <td>I<sup>2</sup>C Data Signal</td>
+        <td style="vertical-align:middle">Bi-directional</td>
+        <td align = "left">Bi-directional data line. Voltage should not exceed power supply (e.g. 3.3V).</td>
+    </tr>
+    <tr align="center">
+        <td style="vertical-align:middle">SCL</td>
+        <td>I<sup>2</sup>C Clock Signal</td>
+        <td style="vertical-align:middle">Input</td>
+        <td align = "left">Clock signal. Voltage should not exceed power supply (e.g. 3.3V).</td>
+    </tr>
+</table>
+
+<div class="well">
+<H3>SPI Connection</H3>
+<p>There are two options for an SPI connection 3-wire or 4-wire. For a 3-wire connection, users will need to cut the <code>ADR</code> jumper on the board. For a 4-wire connection users can cut the <code>ADR</code>, <code>I2C</code>, and <code>CS</code> jumpers to remove the load from the SPI lines, but it is not necessary. For more details, check out the notes in the <a href="https://cdn.sparkfun.com/assets/0/9/6/b/4/Qwiic_BME280_Schematic_attempt2.pdf">schematic</a>.</p>
+
+<p>This tutorial will not go into detail about using an SPI connection as the Python library can only be used with an I<sup>2</sup>C connection. However, for users seeking an SPI setup, they can refer to the <a href="https://learn.sparkfun.com/tutorials/sparkfun-bme280-breakout-hookup-guide">hookup guide</a> for the original <a href="https://www.sparkfun.com/products/13676">BME280 Sensor Breakout board</a>.</p>
+
+<table class="table table-hover table-striped table-bordered">
+    <tr>
+        <th class="text-center">Pin Label</th>
+        <th class="text-center">Pin Function</th>
+        <th class="text-center">Input/Output</th>
+        <th>Notes</th>
+    </tr>
+    <tr align="center">
+        <td style="vertical-align:middle">3.3V</td>
+        <td>Power Supply</td>
+        <td style="vertical-align:middle">Input</td>
+        <td align = "left">Supply voltage for sensor. SHould be regulated between <b>1.8 and 3.6 V</b></td>
+    </tr>
+    <tr align="center">
+        <td>GND</td>
+        <td>Ground</td>
+        <td>Input</td>
+        <td align = "left">Ground</td>
+    </tr>
+    <tr align="center">
+        <td style="vertical-align:middle">SCK</td>
+        <td style="vertical-align:middle">Clock Signal</td>
+        <td style="vertical-align:middle">Input</td>
+        <td align = "left">Clock signal. Voltage should not exceed power supply (max. 3.6V).</td>
+    <tr align="center">
+        <td style="vertical-align:middle">SDI</td>
+        <td style="vertical-align:middle">Data In</td>
+        <td style="vertical-align:middle">Input</td>
+        <td align = "left">Data incoming to the BME280. Voltage should not exceed power supply (max. 3.6V).</td>
+    </tr>
+    <tr align="center">
+        <td>SDO</td>
+        <td>Data Out</td>
+        <td>Output</td>
+        <td align = "left">Data coming from the BME280.</td>
+    </tr>
+    <tr align="center">
+        <td style="vertical-align:middle">CS</td>
+        <td>
+            Chip Select<br>
+        </td>
+        <td style="vertical-align:middle">Input</td>
+        <td align="left" style="vertical-align:middle">Used to select device communication on 4-wire connections (active low). Voltage should not exceed power supply (max. 3.6V).</td>
+    </tr>
+</table>
+
+</div>
+
+<h3>Jumpers</h3>
+
+<div class="alert alert-warning"><b>Caution:</b> Be careful when cutting traces, as not to unintentionally cut other traces.</div>
+
+<p>There are 4 separate jumpers on the board for various hardware related functions. For more notes, check out the hardware <a href="https://cdn.sparkfun.com/assets/0/9/6/b/4/Qwiic_BME280_Schematic_attempt2.pdf">schematic</a>. Not sure how to modify a jumper? <a href="https://learn.sparkfun.com/tutorials/how-to-work-w-jumper-pads-and-pcb-traces/cutting-a-trace-between-jumper-pads">Read here!</a></p>
+
+<h4>LED Power</h4>
+
+<p>If you want to conserve power, the jumper labeled <code>LED</code> will allow users to isolate power to the power status indicator LED.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_LED_Jumper.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_LED_Jumper.jpg" alt="LED Jumper" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of LED jumper. (Click to enlarge)</em> </div></p>
+
+<h4>I<sup>2</sup>C Address</h4>
+
+<p>If you want to change the I<sup>2</sup>C address for the sensor, the jumper labeled <code>ADR</code> will allow users to change the I<sup>2</sup>C address from the default (<strong>0x77</strong>) to <strong>0x76</strong>.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_ADR_Jumper.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_ADR_Jumper.jpg" alt="ADR Jumper" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of ADR jumper. (Click to enlarge)</em> </div></p>
+
+<h4>Pull-Up Resistors</h4>
+
+<p>There are two jumpers (well technically three) for the pull-up resistors attached to specific pins on the sensor.</p>
+
+<h5>I<sup>2</sup>C Pull-Ups</h5>
+
+<p>The first set of pull-up resistors are tied to the SDA and SCL lines for an I<sup>2</sup>C connection. Cutting the <code>I2C</code> jumper will remove the <strong>4.7k&Omega;</strong> pull-up resistors from the I<sup>2</sup>C bus. If you have many devices on your I<sup>2</sup>C bus you may want to remove these jumpers. (<em>When there are multiple devices on the bus with pull-up resistors, the <a href="https://learn.sparkfun.com/tutorials/resistors#series-and-parallel-resistors">equivalent parallel resistance</a> may create too strong of a pull-up for the bus to operate correctly.</em>)</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_I2C_Jumper.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_I2C_Jumper.jpg" alt="I2C Jumper" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of I2C jumper. (Click to enlarge)</em> </div></p>
+
+<h5>CS (and SPI) Pull-Ups</h5>
+
+<p>The last pull-up resistor is tied to CS pin for an SPI connection. Cutting the <code>CS</code> jumper will remove the <strong>4.7k&Omega;</strong> pull-up resistor.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_CS_Jumper.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_CS_Jumper.jpg" alt="I2C Jumper" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of I2C jumper. (Click to enlarge)</em> </div></p>
+
+<p>Keep in mind that the rest of the SPI pins are shared with other pins (<em>see the note above on the SPI connection or the <a href="https://cdn.sparkfun.com/assets/0/9/6/b/4/Qwiic_BME280_Schematic_attempt2.pdf">schematic</a></em>). For a 3-wire connection, users will need to cut the <code>ADR</code> jumper for the SDO line. For a 4-wire connection users can cut the <code>ADR</code>, <code>I2C</code>, and <code>CS</code> jumpers to remove the load from the SPI lines, but it is not necessary.</p>
+
+<!-- Pete's stuff
+### Communication
+
+The BME280 communicates via I<sup>2</sup>C or optional SPI. The easiest way to hook these up for I<sup>2</sup>C is utilizing our handy Qwiic system. The Qwiic System utilizes the 4-pin polarized Qwiic connectors highlighted below.
+
+<div class="center-block text-center"> [![alt text](https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/qwiic_highlight.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/qwiic_highlight.jpg) </div>
+
+<div class="center-block text-center"> _Highlight of the two qwiic connectors._ </div>
+
+The I<sup>2</sup>C address can also be changed using the jumpers on the back of the board. This is useful if you are using two of these on the same I<sup>2</sup>C bus, or you are using another device with the same I<sup>2</sup>C address. The ADR jumper can be used to change the I<sup>2</sup>C address of the BME280 from 0x77 to 0x76. The I<sup>2</sup>C bus has pull-up resistors enabled by default. If not desired, these can be removed by separating the "I2C" triple jumper on the bottom side with a hobby knife. The locations of these jumpers are shown in the picture below.
+
+<div class="center-block text-center"> [![alt text](https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/atmospheric_jumpers.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/atmospheric_jumpers.jpg) </div>
+
+<div class="center-block text-center"> _Highlight of the jumpers._ </div>
+
+### Pins
+
+In addition to the qwiic connectors, we have also broken out the remaining pins on the BME280 to 0.1 inch headers along the bottom edge. If you'd like to use SPI to communicate to the BME280 (with the included API arduino examples code below), then you will need to solder to the correct headers. 
+
+<div class="center-block text-center"> [![alt text](https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/atmospheric_headers.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/atmospheric_headers.jpg) </div>
+
+<div class="center-block text-center"> _Highlight of the headers along the edge for use with SPI mode._ </div>
+
+Below is a list of pins made available for the BME280 qwiic and a bit more info on each.
+
+<table class="table table-hover table-striped table-bordered">
+<tr><th width=25%>Pin</th><th width=50%>Description</th><th width=25%>Direction</th></tr>
+<tr><td>SDO/ADR</td><td>Serial Data Out (aka MISO) / Address (Default: 0x77)</td><td>In/Out</td></tr>
+<tr><td><span style="text-decoration: overline">CS</span></td><td>Chip Select for SPI mode (active low)</td><td>In</td></tr>
+<tr><td>SCK/SCL</td><td>Serial Clock (for both I2C and SPI)</td><td>In</td></tr>
+<tr><td>SDI/SDA</td><td>Serial Data In / Data (I2C and SPI)</td><td>In/Out</td></tr>
+<tr><td>3V3</td><td>3.3V Power</td><td>In</td></tr>
+<tr><td>GND</td><td>Ground</td><td>In</td></tr>
+</table>
+-->
+        <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t929" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft929&name=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft929" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft929&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft929&t=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft929&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F9%2F2%2F9%2FAssembly_Raspberry_Pi.jpg&description=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+    <hr>
+
+    <div class="page-nav clearfix">
+
+      <div class="pull-right">
+        <a href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/all" class="btn">
+          View as a single page
+        </a>
+
+                  <a href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/hardware-assembly" class="btn btn-primary">
+            Next Page &rarr;<br>
+            <small>Hardware Assembly</small>
+          </a>
+              </div>
+
+              <a href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/introduction" class="btn">
+          &larr; Previous Page<br>
+          <small>Introduction</small>
+        </a>
+      
+    </div>
+  </div>
+
+  <div class="col-sm-4 nav-menu" id="nav-pages">
+    <div id="sidebar_affix">
+      <div id="tutorial-pages" class="list-group">
+        <a class="list-group-item"><b>Pages</b></a>
+                  <a data-pageid="8010" class="list-group-item " href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/introduction">
+            Introduction          </a>
+                  <a data-pageid="8011" class="list-group-item active" href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/hardware-overview">
+            Hardware Overview          </a>
+                  <a data-pageid="8012" class="list-group-item " href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/hardware-assembly">
+            Hardware Assembly          </a>
+                  <a data-pageid="8013" class="list-group-item " href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/arduino-library-overview">
+            Arduino Library Overview          </a>
+                  <a data-pageid="8014" class="list-group-item " href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/arduino-example-code">
+            Arduino Example Code          </a>
+                  <a data-pageid="8018" class="list-group-item " href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/python-package-overview">
+            Python Package Overview          </a>
+                  <a data-pageid="8019" class="list-group-item " href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/python-example-code">
+            Python Example Code          </a>
+                  <a data-pageid="8121" class="list-group-item " href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/troubleshooting-tips">
+            Troubleshooting Tips          </a>
+                  <a data-pageid="8015" class="list-group-item " href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/resources--going-further">
+            Resources and Going Further          </a>
+              </div>
+
+      <div class="list-group">
+        <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/discuss">
+          Comments
+          <span class="badge">2</span>
+        </a>
+        <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/all">
+          Single Page
+        </a>
+        <a class="list-group-item" hhref="#" onclick="window.print(); return false;">
+          Print
+        </a>
+      </div>
+
+  <!--
+      -->
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>Tags</b></li>
+        <li class="list-group-item"><ul class="tags-list">
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/arduino">Arduino</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/hookup">Hookup</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/python">Python</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/qwiic">Qwiic</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/raspberry-pi">Raspberry Pi</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/science">Science</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/sensors">Sensors</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/single-board-computer">Single Board Computer</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/weather">Weather</a>  </li>
+</ul>
+</li>
+      </ul>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>License</b></li>
+        <li class="list-group-item">
+          <span class="sfe-icon-cc">
+            <span class="visuallyhidden">Creative Commons</span>
+          </span>
+          <small>tutorials are <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a></small>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+      </div> <!-- /container -->
+    </div> <!-- /content -->
+
+    <footer>
+  <div class="container">
+
+  <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>About SparkFun</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/about-sparkfun">Read Our Story</a></li>
+            <li><a href="https://www.sparkfun.com/press-and-media">Press &amp; Media</a></li>
+            <li><a href="http://www.sparkfuneducation.com" target="_blank">SparkFun Education <span class="glyphicon glyphicon-new-window"></span></a></li>
+            <li><a href="https://www.sparkfun.com/jobs">Job Openings</a></li>
+          </ul>
+
+          <h3>Partner With Us</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/partner">See Our Partners</a></li>
+            <li><a href="https://www.sparkfun.com/services">View Our Services</a></li>
+            <li><a href="https://www.sparkfun.com/become-a-distributor">Become a Distributor/Reseller</a></li>
+            <li><a href="https://www.sparkfun.com/volume-sales">Receive Volume Discounts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/support">Customer Support</a></li>
+            <li><a href="https://www.sparkfun.com/payments">Purchase Order &amp; Payment Terms</a></li>
+            <li><a href="https://www.sparkfun.com/technical-assistance">Technical Assistance</a></li>
+            <li><a href="https://www.sparkfun.com/faq">FAQs</a></li>
+          </ul>
+          <h3>Site Information</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/terms">Terms Of Service</a></li>
+            <li><a href="https://www.sparkfun.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://www.sparkfun.com/compliance">Compliance</a></li>
+            <li><a href="https://www.sparkfun.com/sitemap">Site Map</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Subscribe</h3>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "2224003",
+              formId: "257ad1af-ab9e-4275-8788-cbad81cc229e"
+            });
+          </script>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>View Our Social Channels</h3>
+          <ul class="spew">
+            <li><a href="https://www.youtube.com/sparkfun" target="_blank" class="icon-social-youtube"><span class="sr-only">YouTube</span></a></li>
+            <li><a href="https://www.instagram.com/sparkfun/" target="_blank" class="icon-social-instagram"><span class="sr-only">Instagram</span></a></li>
+            <li><a href="https://www.github.com/sparkfun" target="_blank" class="icon-social-github"><span class="sr-only">GitHub</span></a></li>
+            <li><a href="https://www.facebook.com/SparkFun" target="_blank" class="icon-social-facebook"><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://twitter.com/sparkfun" target="_blank" class="icon-social-twitter"><span class="sr-only">Twitter</span></a></li>
+            <li><a href="https://www.sparkfun.com/feeds" class="icon-social-rss"><span class="sr-only">RSS</span></a></li>
+            <li><a href="https://www.tiktok.com/@sparkfun.electronics?lang=en" target="_blank" class="icon-social-tiktok"><span class="sr-only">TikTok</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- end .row -->
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p class="copyleft">
+          <strong>SparkFun Electronics&nbsp;&reg;</strong>
+          <span class="hidden-xs hidden-sm">/</span>
+          <br class="visible-xs-inline visible-sm-inline"/>
+          6333 Dry Creek Parkway,
+          <br class="visible-xs-inline"/>
+          Niwot, CO 80503
+        </p>
+      </div>
+    </div><!-- end .row -->
+  </div><!-- end .container -->
+</footer>
+
+      </div><!-- end .wrapper-inner -->
+    </div><!-- end .wrapper -->
+
+    <script type="text/javascript">
+      // eslint-disable-next-line no-unused-vars
+      var SFECONFIG = {
+        dnt: false,
+        http_server: 'http://learn.sparkfun.com',
+        https_server: 'https://learn.sparkfun.com',
+        http_static: 'https://cdn.sparkfun.com',
+        learn_server: 'https://learn.sparkfun.com',
+        news_server: 'https://news.sparkfun.com',
+        base_url: '/',
+        url: '/',
+        controller: 'tutorials',
+        action: 'view',
+        auth: false,
+        sparkrev: '1792686982',
+        search_key: 'search-sngw3quge7ojic1tgr4eft5c',
+        search_url: 'https://sparkfun-electronics.ent.us-central1.gcp.cloud.es.io/api/as/v1/engines/sparkfun-01/search'
+      };
+    </script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+      <script src="/js/learn-built.min.js?sparkrev=1792686982"></script>
+    
+    <script>
+      /* global $ */
+      $.sfe();
+      $.shared();
+      $('#learn').learn();
+      $('#learn').sfeutil();
+    </script>
+                            <script src="/js/tutorials-built.min.js?sparkrev=1792686982"></script>
+                              <script>
+    var fbq = null;
+  </script>
+      
+          <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2224003.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+        <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0046/4761.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+      </body>
+</html>

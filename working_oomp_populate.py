@@ -7,7 +7,7 @@ from requests import options
 from oomp_populate_helper import build_oomp_id, write_extras
 
 
-def main(**kwargs):
+def get_options(**kwargs):
     
     options = []
 
@@ -27,10 +27,20 @@ def main(**kwargs):
     if True:
         import working_oomp_populate_microcontroller
         options.extend(working_oomp_populate_microcontroller.main(**kwargs))
+
+    # Researched I2C peripherals and the separately identified analog ADXL335.
+    import working_oomp_populate_i2c
+    options.extend(working_oomp_populate_i2c.main(**kwargs))
     
 ###### populate taxonomy details and oobb details
     if True:
         for option in options:       
+            # Explicit catalogues supply fixed taxonomy, variants and output details.
+            if option.get("item_kind") == "breakout" and (
+                option.get("type_1") == "microcontroller"
+                or option.get("taxonomy_schema") == "breakout_function_v1"
+            ):
+                continue
             option["taxonomy_1"] = f"electronic"  
             option["taxonomy_2"] = f"breakout"             
             count = 3
@@ -98,7 +108,16 @@ def main(**kwargs):
     working_oomp_populate_extra_detail.main(extras=extras)
 
 
+    if kwargs.get("apply_mounting", True):
+        from working_oomp_populate_mounting import apply_mounting
+        apply_mounting(extras)
+    return extras
+
+
+def main(**kwargs):
+    extras = get_options(**kwargs)
     write_extras(extras)
+    return extras
 
 
 

@@ -1,0 +1,22 @@
+{
+  "title": "SparkFun Qwiic BME280",
+  "sources": [
+    {
+      "label": "Mounting evidence",
+      "url": "../../source_file/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440/mounting.yaml"
+    },
+    {
+      "label": "SCAD",
+      "url": "3dpr.scad"
+    },
+    {
+      "label": "Hole coordinates",
+      "url": "mounting.csv"
+    }
+  ],
+  "installation": [
+    "Download and print the default mounting plate STL.",
+    "The plate uses 3 board fixing locations, sized for M3 screws. The PCB drill diameters are listed below.",
+    "Check screw length, screw-head clearance and underside component clearance against the physical board before fastening; physical fit has not been tested."
+  ]
+}

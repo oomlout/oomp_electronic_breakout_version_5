@@ -1,0 +1,768 @@
+research_schema_version: 1
+part_id: electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440
+name_readable: SparkFun BME280 Atmospheric Sensor, Qwiic
+manufacturer: sparkfun
+part_number: sen_15440
+manufacturer_part_number: SEN-15440
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: sensor
+  taxonomy_4: environmental
+  taxonomy_5: temperature_humidity_pressure
+  taxonomy_6: bme280
+  taxonomy_7: qwiic
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: sparkfun
+  taxonomy_15: sen_15440
+default_website:
+  url: https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T19:58:34+00:00'
+  updated_at: '2026-10-23T20:03:15+00:00'
+  reviewed_by: primary_agent_pilot
+  attempts:
+  - url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/69d2067e2999ea92fe713dfb745f2955c7e2953a/Hardware/Qwiic_Atmospheric_Sensor.sch
+    source_id: cad_schematic
+    at: '2026-10-23T19:58:39+00:00'
+    outcome: failed
+    reason: '404 Client Error: Not Found for url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/69d2067e2999ea92fe713dfb745f2955c7e2953a/Hardware/Qwiic_Atmospheric_Sensor.sch'
+board_revision:
+  name: Qwiic SEN-15440 carrier, CAD commit 69d2067e2999ea92fe713dfb745f2955c7e2953a
+  status: matched_carrier_cad_with_declared_conflicts
+  source_ids:
+  - product_page
+  - cad_board
+  - cad_schematic
+  notes: Archived exact carrier CAD; schematic retrieval and hashes are recorded separately. No claim
+    that every shipped assembly fits identical components.
+description: A useful combined weather and environmental sensor. The board supports I2C and SPI.
+interfaces:
+- i2c
+- spi
+dimensions_mm:
+  width: 25.4
+  height: 25.4
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: documented_cad
+  source_ids:
+  - cad_board
+coordinate_system:
+  units: mm
+  origin: centre_of_dimension_layer_bounding_box
+  view: top
+  orientation: native_Eagle_axes_no_rotation
+  native_centre_mm:
+  - 12.7
+  - 12.7
+  status: documented_cad
+mounting_holes:
+- id: H4
+  x_mm: 10.16
+  y_mm: 10.16
+  diameter_mm: 3.302
+  plated: false
+  source_id: cad_board
+- id: H2
+  x_mm: -10.16
+  y_mm: 10.16
+  diameter_mm: 3.302
+  plated: false
+  source_id: cad_board
+- id: H1
+  x_mm: 10.16
+  y_mm: -10.16
+  diameter_mm: 3.302
+  plated: false
+  source_id: cad_board
+mounting_hole_status: documented_cad
+connectors:
+  J1:
+    kind: cable_connector
+    cad_package: JST04_1MM_RA
+    value: QWIIC
+    contacts:
+    - J1_1
+    - J1_2
+    - J1_3
+    - J1_4
+    source_id: cad_board
+  J3:
+    kind: header
+    cad_package: 1X04_NO_SILK
+    value: PTH
+    contacts:
+    - J3_1
+    - J3_2
+    - J3_3
+    - J3_4
+    source_id: cad_board
+  J2:
+    kind: cable_connector
+    cad_package: JST04_1MM_RA
+    value: QWIIC
+    contacts:
+    - J2_1
+    - J2_2
+    - J2_3
+    - J2_4
+    source_id: cad_board
+  J4:
+    kind: header
+    cad_package: 1X02_NO_SILK
+    value: ''
+    contacts:
+    - J4_1
+    - J4_2
+    source_id: cad_board
+pins:
+  J1_1:
+    connector: J1
+    number: '1'
+    name: GND
+    net_name: GND
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: 7.62
+    y_mm: -1.5
+    drill_mm: null
+    source_id: cad_board
+    aliases: []
+    source_ids:
+    - cad_board
+    - guide_hardware
+    signal_type: ground
+    direction: reference
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  J1_2:
+    connector: J1
+    number: '2'
+    name: 3.3V
+    net_name: 3.3V
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: 7.62
+    y_mm: -0.5
+    drill_mm: null
+    source_id: cad_board
+    aliases:
+    - VCC
+    source_ids:
+    - cad_board
+    - guide_hardware
+    signal_type: power
+    direction: power_input
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  J1_3:
+    connector: J1
+    number: '3'
+    name: SDA
+    net_name: SDI/SDA
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: 7.62
+    y_mm: 0.5
+    drill_mm: null
+    source_id: cad_board
+    aliases:
+    - SDI
+    source_ids:
+    - cad_board
+    - guide_hardware
+    signal_type: digital
+    direction: bidirectional
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  J1_4:
+    connector: J1
+    number: '4'
+    name: SCL
+    net_name: SCK/SCL
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: 7.62
+    y_mm: 1.5
+    drill_mm: null
+    source_id: cad_board
+    aliases:
+    - SCK
+    source_ids:
+    - cad_board
+    - guide_hardware
+    signal_type: digital
+    direction: interface_dependent
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  J3_1:
+    connector: J3
+    number: '1'
+    name: GND
+    net_name: GND
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: -6.35
+    y_mm: -11.43
+    drill_mm: 1.016
+    source_id: cad_board
+    aliases: []
+    source_ids:
+    - cad_board
+    - guide_hardware
+    signal_type: ground
+    direction: reference
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  J3_2:
+    connector: J3
+    number: '2'
+    name: 3.3V
+    net_name: 3.3V
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: -3.81
+    y_mm: -11.43
+    drill_mm: 1.016
+    source_id: cad_board
+    aliases:
+    - VCC
+    source_ids:
+    - cad_board
+    - guide_hardware
+    signal_type: power
+    direction: power_input
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  J3_3:
+    connector: J3
+    number: '3'
+    name: SDA
+    net_name: SDI/SDA
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: -1.27
+    y_mm: -11.43
+    drill_mm: 1.016
+    source_id: cad_board
+    aliases:
+    - SDI
+    source_ids:
+    - cad_board
+    - guide_hardware
+    signal_type: digital
+    direction: bidirectional
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  J3_4:
+    connector: J3
+    number: '4'
+    name: SCL
+    net_name: SCK/SCL
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: 1.27
+    y_mm: -11.43
+    drill_mm: 1.016
+    source_id: cad_board
+    aliases:
+    - SCK
+    source_ids:
+    - cad_board
+    - guide_hardware
+    signal_type: digital
+    direction: interface_dependent
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  J2_1:
+    connector: J2
+    number: '1'
+    name: GND
+    net_name: GND
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: -7.62
+    y_mm: 1.5
+    drill_mm: null
+    source_id: cad_board
+    aliases: []
+    source_ids:
+    - cad_board
+    - guide_hardware
+    signal_type: ground
+    direction: reference
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  J2_2:
+    connector: J2
+    number: '2'
+    name: 3.3V
+    net_name: 3.3V
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: -7.62
+    y_mm: 0.5
+    drill_mm: null
+    source_id: cad_board
+    aliases:
+    - VCC
+    source_ids:
+    - cad_board
+    - guide_hardware
+    signal_type: power
+    direction: power_input
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  J2_3:
+    connector: J2
+    number: '3'
+    name: SDA
+    net_name: SDI/SDA
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: -7.62
+    y_mm: -0.5
+    drill_mm: null
+    source_id: cad_board
+    aliases:
+    - SDI
+    source_ids:
+    - cad_board
+    - guide_hardware
+    signal_type: digital
+    direction: bidirectional
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  J2_4:
+    connector: J2
+    number: '4'
+    name: SCL
+    net_name: SCK/SCL
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: -7.62
+    y_mm: -1.5
+    drill_mm: null
+    source_id: cad_board
+    aliases:
+    - SCK
+    source_ids:
+    - cad_board
+    - guide_hardware
+    signal_type: digital
+    direction: interface_dependent
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  J4_1:
+    connector: J4
+    number: '1'
+    name: CS
+    net_name: '!CS'
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: 3.81
+    y_mm: -11.43
+    drill_mm: 1.016
+    source_id: cad_board
+    aliases:
+    - '!CS'
+    source_ids:
+    - cad_board
+    - guide_hardware
+    signal_type: digital
+    direction: interface_dependent
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  J4_2:
+    connector: J4
+    number: '2'
+    name: SDO
+    net_name: SDO/ADR
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: 6.35
+    y_mm: -11.43
+    drill_mm: 1.016
+    source_id: cad_board
+    aliases:
+    - ADR
+    source_ids:
+    - cad_board
+    - guide_hardware
+    signal_type: digital
+    direction: interface_dependent
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+pin_count:
+  header_contacts: 6
+  cable_connector_contacts: 8
+  total_exposed_contacts: 14
+  unique_nets: 6
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: documented_cad
+  source_ids:
+  - cad_board
+pin_names:
+- 3.3V
+- CS
+- GND
+- SCL
+- SDA
+- SDO
+electrical:
+  board_supply:
+    min_v: null
+    max_v: 3.6
+    nominal_v: 3.3
+    status: documented_nominal_with_chip_ceiling
+    source_ids:
+    - guide_hardware
+    - cad_schematic
+    - chip_datasheet
+    notes:
+    - Use 3.3 V with Qwiic. The 3.6 V ceiling follows the directly connected chip rail, not a tested whole-board
+      operating range.
+  chip_supply:
+    min_v: 1.71
+    max_v: 3.6
+    scope: BME280 VDD silicon limits
+    source_ids:
+    - chip_datasheet
+    - guide_hardware
+  logic_levels:
+    status: documented_3v3_with_product_page_conflict
+    notes:
+    - Hookup guide says SDA/SCL should not exceed the supply; archived schematic connects them directly
+      to BME280.
+    - Treat Qwiic and SPI signals as 3.3 V; the product page 5 V I2C tolerance claim is not accepted as
+      a general board guarantee.
+    source_ids:
+    - guide_hardware
+    - cad_schematic
+    - product_page
+  pullups:
+  - signals:
+    - SDA
+    - SCL
+    resistance_ohms: 4700
+    rail: 3.3V
+    reference: R3/R4 through JP4
+    disconnect_method: Cut/open I2C pull-up jumper traces per schematic and guide.
+    source_ids:
+    - cad_board
+    - cad_schematic
+    - guide_hardware
+  extra_signals:
+  - CS
+  - SDO/ADR
+  source_ids:
+  - guide_hardware
+  - cad_board
+  - cad_schematic
+  - chip_datasheet
+i2c:
+  default_address_7bit: 119
+  documented_addresses_7bit:
+  - 118
+  - 119
+  address_selection: ADR jumper selects default 0x77 or alternate 0x76; follow the hardware guide for
+    trace modifications.
+  maximum_clock_hz: null
+  chip_maximum_clock_hz: 3400000
+  chip_clock_locator: BME280 datasheet PDF page 2; high-speed silicon support does not establish carrier/cable/host
+    speed.
+  clock_stretching: unverified
+  status: documented_address_and_partial_bus_limits
+  source_ids:
+  - guide_hardware
+  - chip_datasheet
+chip:
+  manufacturer: bosch_sensortec
+  part_number: BME280
+  identity_status: consistent_product_cad_and_datasheet
+  package_pin_count: 8
+  source_ids:
+  - product_page
+  - cad_board
+  - chip_datasheet
+datasheets:
+  status: downloaded
+  items:
+  - chip: BME280
+    source_id: chip_datasheet
+    local_file: reference/bme280_datasheet.pdf
+    url: https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf
+    sha256: ccb8f856da69a3ab9983263f37036f07f449df7a455b91a29def03a0947b6729
+    page_count: 55
+    document_revision: 1.6, September 2018
+    scope: chip_datasheet_not_carrier_board_specification
+  notes:
+  - Downloaded and parsed; chip identity confirmed from title page.
+software:
+- name: SparkFun BME280 Arduino Library
+  framework: Arduino
+  url: https://github.com/sparkfun/SparkFun_BME280_Arduino_Library
+  installation: 'Arduino Library Manager: SparkFun BME280; see archived guide for examples.'
+  supported_interfaces:
+  - i2c
+  - spi
+  tested: false
+  source_ids:
+  - product_page
+  - guide_all
+- name: SparkFun Qwiic BME280 Python package
+  framework: Python on Linux/SBC
+  url: https://github.com/sparkfun/Qwiic_BME280_Py
+  installation: Use the Python Package Overview in the archived guide; dependency versions not pinned
+    here.
+  supported_interfaces:
+  - i2c
+  tested: false
+  notes:
+  - Guide says the Python library uses I2C; do not infer SPI or universal MicroPython/CircuitPython support
+    from a generic product-page category label.
+  source_ids:
+  - product_page
+  - guide_all
+extra_resources:
+- kind: guide
+  url: https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/hardware-overview
+  local_file: reference/guide_hardware.html
+  source_id: guide_hardware
+- kind: guide
+  url: https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/all
+  local_file: reference/guide_all.html
+  source_id: guide_all
+- kind: hardware_repository
+  url: https://github.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280
+  local_file: reference/hardware_repository.html
+  source_id: hardware_repository
+- kind: cad_board
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/69d2067e2999ea92fe713dfb745f2955c7e2953a/Hardware/Qwiic_Atmospheric_Sensor.brd
+  local_file: reference/qwiic_bme280.brd
+  source_id: cad_board
+- kind: schematic_pdf
+  url: https://cdn.sparkfun.com/assets/0/9/6/b/4/Qwiic_BME280_Schematic_attempt2.pdf
+  local_file: reference/qwiic_bme280_schematic.pdf
+  source_id: schematic_pdf
+- kind: license
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/master/LICENSE.md
+  local_file: reference/hardware_license.md
+  source_id: hardware_license
+- kind: cad_schematic
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/master/Hardware/Qwiic_Atmospheric_Sensor.sch
+  local_file: reference/qwiic_bme280.sch
+  source_id: cad_schematic
+sources:
+- id: product_page
+  kind: product_page
+  requested_url: https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html
+  url: https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html
+  retrieved_at: '2026-10-23T19:58:36+00:00'
+  content_type: text/html; charset=UTF-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 574671
+  sha256: 7369feea75452a4e7c89db69be84c8fe2c631910414f0ca32a4a122a32609eff
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 3068
+    sha256: 14dfeccd91a9863b729cae7ff3691b4693c815756bc6a9a3ebb2c22502e58ece
+  - kind: links
+    local_file: website.links.json
+    bytes: 57781
+    sha256: 40d1cb9478a969d84dea00fb29a1046a07fadec3d1e559aec77551042bb88123
+  title: SparkFun Atmospheric Sensor Breakout - BME280 (Qwiic) - SparkFun Electronics
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_hardware
+  kind: guide
+  requested_url: https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/hardware-overview
+  url: https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/hardware-overview
+  retrieved_at: '2026-10-23T19:58:37+00:00'
+  content_type: text/html;charset=UTF-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_hardware.html
+  bytes: 48879
+  sha256: a4c71b87c4101947e8bbf2088e91c2321608b0d6d8c133eb57e9957e57c270e4
+  derivatives:
+  - kind: text
+    local_file: reference/guide_hardware.txt
+    bytes: 12413
+    sha256: bf08caba76d95117df8e817b7057242b247f3d147f51bc3ada81fd1acf111b71
+  - kind: links
+    local_file: reference/guide_hardware.links.json
+    bytes: 13808
+    sha256: 0df4c0c5ab12471889c3cf60bff285b45621b1ee5d7e8e664b80e40e86c96445
+  title: Qwiic Atmospheric Sensor (BME280) Hookup Guide - SparkFun Learn
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_all
+  kind: guide
+  requested_url: https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/all
+  url: https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/all
+  retrieved_at: '2026-10-23T19:58:38+00:00'
+  content_type: text/html;charset=UTF-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_hardware
+  local_file: reference/guide_all.html
+  bytes: 143976
+  sha256: b847a9eb5f588a89dfb9bb6d67884f40236e0553a57fd24e337441f0dfbe03e7
+  derivatives:
+  - kind: text
+    local_file: reference/guide_all.txt
+    bytes: 56326
+    sha256: a2a81549d722643823091eedb37098e0eac6c91bfeefda56410f063cd239bd8c
+  - kind: links
+    local_file: reference/guide_all.links.json
+    bytes: 33646
+    sha256: bd1ac5b08d6f198e7d52779d0a618ea93e10fed48cfc31cf7cf186a16faaf75e
+  title: Qwiic Atmospheric Sensor (BME280) Hookup Guide - SparkFun Learn
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: hardware_repository
+  kind: hardware_repository
+  requested_url: https://github.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280
+  url: https://github.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280
+  retrieved_at: '2026-10-23T19:58:38+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/hardware_repository.html
+  bytes: 260508
+  sha256: 83fe134809a381c8f5fce2991f47a6fe114db94694b398e294c90b94332991c5
+  derivatives:
+  - kind: text
+    local_file: reference/hardware_repository.txt
+    bytes: 2274
+    sha256: 12e805159557276135ab81e94ceb7f1ce0535249c31b2fea381612e67cee8d81
+  - kind: links
+    local_file: reference/hardware_repository.links.json
+    bytes: 15402
+    sha256: 1313259ae060351c7fb76255ae0dfdb224744fcd5ad6fd0fba21bdf70c9aef16
+  title: 'GitHub - sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280: A basic Qwiic board to provide atmospheric
+    data from the BME280. · GitHub'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: cad_board
+  kind: cad_board
+  requested_url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/69d2067e2999ea92fe713dfb745f2955c7e2953a/Hardware/Qwiic_Atmospheric_Sensor.brd
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/69d2067e2999ea92fe713dfb745f2955c7e2953a/Hardware/Qwiic_Atmospheric_Sensor.brd
+  retrieved_at: '2026-10-23T19:58:39+00:00'
+  content_type: text/plain; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: hardware_repository
+  local_file: reference/qwiic_bme280.brd
+  bytes: 393744
+  sha256: 4b34fb80307cfd8d4008901a69409346b4d8c301a6afd522ce289ca682187e7c
+  derivatives:
+  - kind: cad_summary
+    generator: tools/i2c_eagle.py
+    local_file: reference/cad_summary.yaml
+    bytes: 8744
+    sha256: 82f84d1c39a373e29d269c4f044a0d42a46eeb76c640d2ba9e8084b5050a54e4
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf
+  url: https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf
+  retrieved_at: '2026-10-23T19:58:40+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/bme280_datasheet.pdf
+  bytes: 1587994
+  sha256: ccb8f856da69a3ab9983263f37036f07f449df7a455b91a29def03a0947b6729
+  derivatives:
+  - kind: pdf_text
+    local_file: reference/bme280_datasheet.txt
+    bytes: 101010
+    sha256: a58611d6d01704811a0a3ecd03dfa478015aaf3158ef9a39c3ca03de528b1bc8
+- id: schematic_pdf
+  kind: schematic_pdf
+  requested_url: https://cdn.sparkfun.com/assets/0/9/6/b/4/Qwiic_BME280_Schematic_attempt2.pdf
+  url: https://cdn.sparkfun.com/assets/0/9/6/b/4/Qwiic_BME280_Schematic_attempt2.pdf
+  retrieved_at: '2026-10-23T19:58:41+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/qwiic_bme280_schematic.pdf
+  bytes: 99593
+  sha256: 2f95d89eb56d9da67e159f47e78a420a0f78ed5403ce8f2549ea76939a1eba7c
+  derivatives: []
+- id: hardware_license
+  kind: license
+  requested_url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/master/LICENSE.md
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/master/LICENSE.md
+  retrieved_at: '2026-10-23T19:58:41+00:00'
+  content_type: text/plain; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: hardware_repository
+  local_file: reference/hardware_license.md
+  bytes: 2883
+  sha256: 6532771f09b24eadc3e75b9c2ecb035c38ebea295542833e892fab9018c678da
+  derivatives: []
+- id: cad_schematic
+  kind: cad_schematic
+  requested_url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/master/Hardware/Qwiic_Atmospheric_Sensor.sch
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/master/Hardware/Qwiic_Atmospheric_Sensor.sch
+  retrieved_at: '2026-10-23T20:00:24+00:00'
+  content_type: text/plain; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: hardware_repository
+  local_file: reference/qwiic_bme280.sch
+  bytes: 727666
+  sha256: fc70cffeee1624bff6d2c877abede0673397b48d2da60f98ee96b59185dad630
+  derivatives: []
+conflicts:
+- topic: i2c_logic_voltage
+  claims:
+  - source_ids:
+    - product_page
+    claim: Product page describes a 5 V tolerant I2C interface.
+  - source_ids:
+    - guide_hardware
+    - cad_schematic
+    claim: Guide restricts signals to supply voltage; selected schematic directly connects bus signals
+      to the 3.3 V chip.
+  resolution: Retain both claims; use the 3.3 V guide/schematic constraint for research notes. No approval
+    of 5 V use.
+  status: unresolved_vendor_documentation
+data_gaps:
+- Vendor product-page 5 V I2C tolerance statement conflicts with guide/schematic.
+- PCB thickness, assembled height and connector insertion/keepout envelopes not verified.
+- Whole-board minimum operating voltage, maximum bus clock and clock-stretching behavior not established.
+- Software links and instructions collected; no hardware or driver execution performed.
+excluded_mechanical_pads:
+- connector: J1
+  pad: NC2
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+- connector: J1
+  pad: NC1
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+- connector: J2
+  pad: NC2
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+- connector: J2
+  pad: NC1
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+evidence_notes:
+  geometry: Derived from archived Dimension-layer wires and explicitly selected carrier connectors; native
+    CAD orientation retained. Mounting packages are excluded from signal/contact counts.
+  websites: website.html is exact HTTP response HTML, plus a text and link inventory. Remote media/scripts
+    are not bundled.
+  catalogue_identity: Taxonomy/part_id intentionally retain original catalogue values even where research
+    resolves new dimensions; no catalogue regeneration was performed.

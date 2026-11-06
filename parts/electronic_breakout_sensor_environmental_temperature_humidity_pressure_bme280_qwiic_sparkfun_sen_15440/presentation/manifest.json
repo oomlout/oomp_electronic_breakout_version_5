@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440",
+  "title": "SparkFun Qwiic BME280",
+  "md5_6_alpha": "1l2i6",
+  "source": "working.yaml",
+  "source_sha256": "b92bb162df92021bc12eb112e41a7506d5a797ca84f616bb2981750241e73b77",
+  "board_dimensions_mm": [
+    25.4,
+    25.4
+  ],
+  "variants": [
+    {
+      "source": "3dpr.stl",
+      "label": "Default mounting plate",
+      "sha256": "c073842bbfaa23b4d0c295d958c641676e60eb90817f568d2513b53a1bc66088",
+      "key": "da33476c364d155c5d4dc25f",
+      "dimensions_mm": [
+        59.0,
+        58.98,
+        6.0
+      ],
+      "image": "presentation/images/3dpr.png"
+    }
+  ],
+  "notice": "AI-generated images and instructions. Errors possible.",
+  "generator": "oomlout_oobb_version_5/presentation/scripts/catalogue.py"
+}

@@ -1,0 +1,423 @@
+dimensions_mm:
+  width: 25.4
+  height: 25.4
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: documented_cad
+  source_ids:
+  - cad_board
+coordinate_system:
+  units: mm
+  origin: centre_of_dimension_layer_bounding_box
+  view: top
+  orientation: native_Eagle_axes_no_rotation
+  native_centre_mm:
+  - 12.7
+  - 12.7
+  status: documented_cad
+connectors:
+  J1:
+    kind: cable_connector
+    cad_package: JST04_1MM_RA
+    value: QWIIC
+    contacts:
+    - J1_1
+    - J1_2
+    - J1_3
+    - J1_4
+    source_id: cad_board
+  J3:
+    kind: header
+    cad_package: 1X04_NO_SILK
+    value: PTH
+    contacts:
+    - J3_1
+    - J3_2
+    - J3_3
+    - J3_4
+    source_id: cad_board
+  J2:
+    kind: cable_connector
+    cad_package: JST04_1MM_RA
+    value: QWIIC
+    contacts:
+    - J2_1
+    - J2_2
+    - J2_3
+    - J2_4
+    source_id: cad_board
+  J4:
+    kind: header
+    cad_package: 1X02_NO_SILK
+    value: ''
+    contacts:
+    - J4_1
+    - J4_2
+    source_id: cad_board
+pins:
+  J1_1:
+    connector: J1
+    number: '1'
+    name: GND
+    net_name: GND
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: 7.62
+    y_mm: -1.5
+    drill_mm: null
+    source_id: cad_board
+  J1_2:
+    connector: J1
+    number: '2'
+    name: 3.3V
+    net_name: 3.3V
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: 7.62
+    y_mm: -0.5
+    drill_mm: null
+    source_id: cad_board
+  J1_3:
+    connector: J1
+    number: '3'
+    name: SDI/SDA
+    net_name: SDI/SDA
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: 7.62
+    y_mm: 0.5
+    drill_mm: null
+    source_id: cad_board
+  J1_4:
+    connector: J1
+    number: '4'
+    name: SCK/SCL
+    net_name: SCK/SCL
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: 7.62
+    y_mm: 1.5
+    drill_mm: null
+    source_id: cad_board
+  J3_1:
+    connector: J3
+    number: '1'
+    name: GND
+    net_name: GND
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: -6.35
+    y_mm: -11.43
+    drill_mm: 1.016
+    source_id: cad_board
+  J3_2:
+    connector: J3
+    number: '2'
+    name: 3.3V
+    net_name: 3.3V
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: -3.81
+    y_mm: -11.43
+    drill_mm: 1.016
+    source_id: cad_board
+  J3_3:
+    connector: J3
+    number: '3'
+    name: SDI/SDA
+    net_name: SDI/SDA
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: -1.27
+    y_mm: -11.43
+    drill_mm: 1.016
+    source_id: cad_board
+  J3_4:
+    connector: J3
+    number: '4'
+    name: SCK/SCL
+    net_name: SCK/SCL
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: 1.27
+    y_mm: -11.43
+    drill_mm: 1.016
+    source_id: cad_board
+  J2_1:
+    connector: J2
+    number: '1'
+    name: GND
+    net_name: GND
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: -7.62
+    y_mm: 1.5
+    drill_mm: null
+    source_id: cad_board
+  J2_2:
+    connector: J2
+    number: '2'
+    name: 3.3V
+    net_name: 3.3V
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: -7.62
+    y_mm: 0.5
+    drill_mm: null
+    source_id: cad_board
+  J2_3:
+    connector: J2
+    number: '3'
+    name: SDI/SDA
+    net_name: SDI/SDA
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: -7.62
+    y_mm: -0.5
+    drill_mm: null
+    source_id: cad_board
+  J2_4:
+    connector: J2
+    number: '4'
+    name: SCK/SCL
+    net_name: SCK/SCL
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: -7.62
+    y_mm: -1.5
+    drill_mm: null
+    source_id: cad_board
+  J4_1:
+    connector: J4
+    number: '1'
+    name: '!CS'
+    net_name: '!CS'
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: 3.81
+    y_mm: -11.43
+    drill_mm: 1.016
+    source_id: cad_board
+  J4_2:
+    connector: J4
+    number: '2'
+    name: SDO/ADR
+    net_name: SDO/ADR
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: 6.35
+    y_mm: -11.43
+    drill_mm: 1.016
+    source_id: cad_board
+pin_count:
+  header_contacts: 6
+  cable_connector_contacts: 8
+  total_exposed_contacts: 14
+  unique_nets: 6
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: documented_cad
+  source_ids:
+  - cad_board
+pin_names:
+- '!CS'
+- 3.3V
+- GND
+- SCK/SCL
+- SDI/SDA
+- SDO/ADR
+mounting_holes:
+- id: H4
+  x_mm: 10.16
+  y_mm: 10.16
+  diameter_mm: 3.302
+  plated: false
+  source_id: cad_board
+- id: H2
+  x_mm: -10.16
+  y_mm: 10.16
+  diameter_mm: 3.302
+  plated: false
+  source_id: cad_board
+- id: H1
+  x_mm: 10.16
+  y_mm: -10.16
+  diameter_mm: 3.302
+  plated: false
+  source_id: cad_board
+mounting_hole_status: documented_cad
+excluded_mechanical_pads:
+- connector: J1
+  pad: NC2
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+- connector: J1
+  pad: NC1
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+- connector: J2
+  pad: NC2
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+- connector: J2
+  pad: NC1
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+cad_elements:
+- reference: FRAME1
+  value: FRAME-LETTER
+  package: CREATIVE_COMMONS
+- reference: R3
+  value: 4.7k
+  package: '0603'
+- reference: R4
+  value: 4.7k
+  package: '0603'
+- reference: H4
+  value: STAND-OFF
+  package: STAND-OFF
+- reference: H2
+  value: STAND-OFF
+  package: STAND-OFF
+- reference: JP4
+  value: ''
+  package: SMT-JUMPER_3_2-NC_TRACE_NO-SILK
+- reference: LOGO4
+  value: OSHW-LOGOS
+  package: OSHW-LOGO-S
+- reference: FD1
+  value: FIDUCIAL1X2
+  package: FIDUCIAL-1X2
+- reference: FD2
+  value: FIDUCIAL1X2
+  package: FIDUCIAL-1X2
+- reference: J1
+  value: QWIIC
+  package: JST04_1MM_RA
+- reference: J3
+  value: PTH
+  package: 1X04_NO_SILK
+- reference: J2
+  value: QWIIC
+  package: JST04_1MM_RA
+- reference: LOGO1
+  value: SFE_LOGO_NAME.1_INCH
+  package: SFE_LOGO_NAME_.1
+- reference: FD3
+  value: FIDUCIAL1X2
+  package: FIDUCIAL-1X2
+- reference: FD4
+  value: FIDUCIAL1X2
+  package: FIDUCIAL-1X2
+- reference: LOGO3
+  value: SFE_LOGO_NAME.1_INCH
+  package: SFE_LOGO_NAME_.1@1
+- reference: C1
+  value: 0.1uF
+  package: '0603'
+- reference: U1
+  value: BME280
+  package: LGA-8-2.5X2.5
+- reference: J4
+  value: ''
+  package: 1X02_NO_SILK
+- reference: C2
+  value: 0.1uF
+  package: '0603'
+- reference: R1
+  value: 4.7k
+  package: '0603'
+- reference: JP2
+  value: EN I2C MODE
+  package: PAD-JUMPER-2-NC_BY_TRACE_NO_SILK
+- reference: JP3
+  value: EN ADR PU
+  package: SMT-JUMPER_3_1-NC_TRACE_NO-SILK
+- reference: R2
+  value: 4.7k
+  package: '0603'
+- reference: U$15
+  value: ''
+  package: BME2804
+- reference: U$16
+  value: ''
+  package: QWIIC_4MM
+- reference: U$17
+  value: ''
+  package: ATMOSPHERIC_SENSOR0
+- reference: D1
+  value: RED
+  package: LED-0603
+- reference: R5
+  value: 1k
+  package: '0603'
+- reference: U$13
+  value: ''
+  package: PWR0
+- reference: U$18
+  value: ''
+  package: ADR2
+- reference: U$19
+  value: ''
+  package: 0X771
+- reference: U$20
+  value: ''
+  package: 0X760
+- reference: U$21
+  value: ''
+  package: CS_PU1
+- reference: U$22
+  value: ''
+  package: I2C0
+- reference: U$2
+  value: ''
+  package: 3V34
+- reference: U$3
+  value: ''
+  package: ADR8
+- reference: U$4
+  value: ''
+  package: GND3
+- reference: U$5
+  value: ''
+  package: SDA5
+- reference: U$6
+  value: ''
+  package: SCL6
+- reference: U$7
+  value: ''
+  package: 3V34
+- reference: U$8
+  value: ''
+  package: GND3
+- reference: U$9
+  value: ''
+  package: SDI#SDA11
+- reference: U$10
+  value: ''
+  package: SDO#ADR9
+- reference: U$11
+  value: ''
+  package: SCK#SCL10
+- reference: U$23
+  value: ''
+  package: TEMP#HUMIDITY#PRESSURE0
+- reference: JP1
+  value: ''
+  package: SMT-JUMPER_2_NC_TRACE_NO-SILK
+- reference: H1
+  value: STAND-OFF
+  package: STAND-OFF
+- reference: U$14
+  value: ''
+  package: '#CS0'
+- reference: U$24
+  value: ''
+  package: '#CS0'
+- reference: U$1
+  value: ''
+  package: LED0
+notes:
+- Header pads and cable contacts are counted separately even on shared nets.
+- Connector footprint pad centres are not connector envelope/insertion clearances.
+- A matching CAD file does not prove the fitted chip variant in every shipped unit.

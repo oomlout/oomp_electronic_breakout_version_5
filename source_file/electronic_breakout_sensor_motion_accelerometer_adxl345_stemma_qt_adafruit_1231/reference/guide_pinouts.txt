@@ -1,0 +1,200 @@
+ADXL345 Digital Accelerometer
+Pinouts
+ADXL345 Digital Accelerometer
+Triple-axis accelerometer breakout with a digital interface.
+by
+Bill Earl
+published March 26, 2013, last edited January 22, 2025
+last major update April 05, 2022
+posted in
+Adafruit Products
+Breakout Boards
+/
+Accel, Gyro, & Magnetometers
+STEMMA
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly and Wiring
+Programming and Calibration
+Library Reference
+Python and CircuitPython
+Python Docs
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+ADXL345 - Triple-Axis Accelerometer (+-2g/4g/8g/16g) w/ I2C/SPI
+$17.50
+Add  to Cart
+View product details
+36
+Intermediate
+Product guide
+Pinouts
+The ADXL345 breakout has the following pinout:
+The default I2C address for this board is
+0x53
+.
+Power Pins
+This breakout board can be run on
+3.3V
+and
+5V
+systems.
+We added an on-board 3.3V regulator and logic-level shifting circuitry, making it a perfect choice for interfacing with any 3V or 5V microcontroller such as the Arduino.
+VIN
+- This is the input to the 3.3V voltage regulator, which makes it possible to use the 3.3V sensor on 5V systems. It also determines the logic level of the SCL and SDA pins. Connect this to
+3.3V
+on the MCU for 3.3V boards (Adafruit Feathers), or
+5.0V
+for 5V Arduinos (Arduino Uno, etc.).
+3Vo
+- This is the
+OUTPUT
+of the 3.3V regulator, and can be used to provide 3.3V power to other parts of your project if required (< 100mA).
+GND
+- Connect this to the
+GND
+pin on your development board to make sure they are sharing a common GND connection, or the electrons won't have anywhere to flow!
+I2C Pins
+SCL
+- The clock line on the I2C bus. This pin has an internal pullup resistor on the PCB, which is required as part of the I2C spec, meaning you don't need to add one externally yourself. This also functions as
+SCK
+in SPI mode.
+SDA
+- The data line on the I2C bus. This pin has an internal pullup resistor on the PCB, which is required as part of the I2C spec, meaning you don't need to add one externally yourself. This also functions as
+MOSI
+in SPI mode.
+STEMMA QT
+-
+These connectors allow you to connect to development boards with
+STEMMA QT
+connectors, or to other things, with
+various associated accessories
+.
+Text emphasized with a blue exclamation:
+The available pins are identical for both versions of the boards. However, on the STEMMA QT version, pins I2 (INT2), SDO, and CS are located at the top of the board.
+Other Pins
+SDO/ALT ADDR
+- This pin can be used as
+MISO
+in SPI mode, but is more commonly used as an optional bit in the I2C bus address. By default this pin is pulled down, meaning it has a value of
+0
+at startup, which will results in an I2C address of
+0x53
+. If you set this pin high (to 3.3V), and reset, the I2C address will be updated to
+0x1D
+.
+CS
+: This dual purpose pin can be used as the chip select line in SPI mode, but also determines whether the board will boot up into I2C or SPI mode. The default of logic high sets the board up for I2C, and manually setting this pin low and resetting will cause the device to enter SPI mode. Please note that SPI mode is not actively support and the SPI pins are not all 5V safe and level shifted, so care will be required when using it!
+INT1
+and
+INT2
+: There are two optional interrupt output pins on this sensor, which can be configured to change their state when one or more 'events' occur. For details on how to use these interrupts, see the Arduino/HW Interrupts page later in this guide.
+LED Jumper
+LED jumper
+- This jumper is located on the back of the board. Cut the trace on this jumper to cut power to the "on" LED.
+Page last edited March 08, 2024
+Overview
+Assembly and Wiring
+Related Guides
+PyLeap ESP32-S3 TFT Boxing Glove Tracker w/ Adafruit IO
+By
+Trevor Beaton
+beginner
+16
+Make It Shake, Rattle, and Roll: Accelerometer Use
+By
+Anne Barela
+beginner
+43
+Adafruit BMP280 Barometric Pressure + Temperature...
+By
+lady ada
+Product Guide
+50
+Working with Multiple Same Address I2C Devices
+By
+Carter Nelson
+beginner
+43
+Adafruit BME280 Humidity + Barometric Pressure +...
+By
+lady ada
+Product Guide
+119
+Adafruit TMF8801 Time of Flight Distance Sensor
+By
+Liz Clark
+Product Guide
+0
+New
+Adafruit Metro M7 1011 with AirLift
+By
+lady ada
+Product Guide
+17
+Adafruit DRV8871 Brushed DC Motor Driver Breakout
+By
+lady ada
+Product Guide
+37
+Adafruit 3.5" 480x320 TFT FeatherWing
+By
+lady ada
+Product Guide
+51
+Introducing Adafruit Feather RP2040
+By
+Kattni Rembor
+Product Guide
+174
+Adafruit Pi Stemma QT Breakout
+By
+Liz Clark
+Product Guide
+4
+Adafruit GPIO Expander Bonnet for Raspberry Pi
+By
+Liz Clark
+Product Guide
+6
+Adafruit Feather M0 WiFi with ATWINC1500
+By
+lady ada
+Product Guide
+134
+Halloween Scream Box
+By
+Tony DiCola
+beginner
+42
+Your browser does not support the video tag. This links to the guide Adafruit Feather 32u4 Adalogger.
+Adafruit Feather 32u4 Adalogger
+By
+lady ada
+beginner
+74
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

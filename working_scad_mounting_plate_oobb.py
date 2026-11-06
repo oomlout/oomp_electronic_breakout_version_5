@@ -5,6 +5,7 @@ import copy
 import oobb
 import scad_help
 import working_scad_mounting_plate_default
+from mounting_geometry import normalize_kwargs
 
 
 def get_adapter_positions(width, height):
@@ -31,6 +32,7 @@ def get_adapter_positions(width, height):
 
 
 def get_base(thing, **kwargs):
+    kwargs = normalize_kwargs(kwargs)
     pos = kwargs.get("pos", [0, 0, 0])
     depth = kwargs.get("depth", 3)
     base_kwargs = copy.deepcopy(kwargs)

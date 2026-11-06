@@ -1,0 +1,145 @@
+{
+  "board_size": [
+    25.4,
+    25.4
+  ],
+  "native_centre_mm": [
+    12.7,
+    12.7
+  ],
+  "quarter_turn": 0,
+  "candidates": [
+    {
+      "id": "H4:hole:1",
+      "x_mm": 10.16,
+      "y_mm": 10.16,
+      "diameter_mm": 3.302,
+      "plated": false,
+      "package": "STAND-OFF"
+    },
+    {
+      "id": "H2:hole:1",
+      "x_mm": -10.16,
+      "y_mm": 10.16,
+      "diameter_mm": 3.302,
+      "plated": false,
+      "package": "STAND-OFF"
+    },
+    {
+      "id": "J3:pad:1",
+      "x_mm": -6.35,
+      "y_mm": -11.43,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X04_NO_SILK"
+    },
+    {
+      "id": "J3:pad:2",
+      "x_mm": -3.81,
+      "y_mm": -11.43,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X04_NO_SILK"
+    },
+    {
+      "id": "J3:pad:3",
+      "x_mm": -1.27,
+      "y_mm": -11.43,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X04_NO_SILK"
+    },
+    {
+      "id": "J3:pad:4",
+      "x_mm": 1.27,
+      "y_mm": -11.43,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X04_NO_SILK"
+    },
+    {
+      "id": "J4:pad:1",
+      "x_mm": 3.81,
+      "y_mm": -11.43,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X02_NO_SILK"
+    },
+    {
+      "id": "J4:pad:2",
+      "x_mm": 6.35,
+      "y_mm": -11.43,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X02_NO_SILK"
+    },
+    {
+      "id": "H1:hole:1",
+      "x_mm": 10.16,
+      "y_mm": -10.16,
+      "diameter_mm": 3.302,
+      "plated": false,
+      "package": "STAND-OFF"
+    }
+  ],
+  "outline_points": [
+    [
+      -12.7,
+      -12.7
+    ],
+    [
+      -12.7,
+      12.7
+    ],
+    [
+      -12.7,
+      12.7
+    ],
+    [
+      12.7,
+      12.7
+    ],
+    [
+      12.7,
+      12.7
+    ],
+    [
+      12.7,
+      -12.7
+    ],
+    [
+      12.7,
+      -12.7
+    ],
+    [
+      -12.7,
+      -12.7
+    ]
+  ],
+  "mounting_holes": [
+    {
+      "id": "H4:hole:1",
+      "x_mm": 10.16,
+      "y_mm": 10.16,
+      "diameter_mm": 3.302,
+      "plated": false,
+      "package": "STAND-OFF"
+    },
+    {
+      "id": "H2:hole:1",
+      "x_mm": -10.16,
+      "y_mm": 10.16,
+      "diameter_mm": 3.302,
+      "plated": false,
+      "package": "STAND-OFF"
+    },
+    {
+      "id": "H1:hole:1",
+      "x_mm": 10.16,
+      "y_mm": -10.16,
+      "diameter_mm": 3.302,
+      "plated": false,
+      "package": "STAND-OFF"
+    }
+  ]
+}

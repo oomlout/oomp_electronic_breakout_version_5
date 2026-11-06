@@ -15,6 +15,13 @@ def load_parts(**kwargs):
 def create_generic(**kwargs):
     print(f"  loading parts from part_source")
     things = {}    
+
+    # Optional exact selection for a populate file's own records. Do this before
+    # reading sources or creating template actions, so other boards stay untouched.
+    part_ids = kwargs.get("part_ids")
+    if isinstance(part_ids, str):
+        part_ids = [part_ids]
+    selected_ids = None if part_ids is None else set(part_ids)
     
     #load parts from parts_source directory
     directory_source = "parts_source"
@@ -24,7 +31,13 @@ def create_generic(**kwargs):
         #create it
         os.makedirs(directory_source)
     directories = os.listdir(directory_source)
+    if selected_ids is not None:
+        missing = selected_ids.difference(directories)
+        if missing:
+            raise FileNotFoundError("Missing parts_source records: " + ", ".join(sorted(missing)))
     for directory  in directories:
+        if selected_ids is not None and directory not in selected_ids:
+            continue
         directory_full = f"{directory_source}/{directory}"
         filenames = os.listdir(f"{directory_full}")
         for filename in filenames:
@@ -41,6 +54,11 @@ def create_generic(**kwargs):
                     things[directory] = thing_details
     
     
+    if selected_ids is not None:
+        missing = selected_ids.difference(things)
+        if missing:
+            raise FileNotFoundError("Missing working.yaml records: " + ", ".join(sorted(missing)))
+
     parts = []
 
     for thing in things:
@@ -218,7 +236,16 @@ def create_generic(**kwargs):
 
 
 
-    oomp.add_parts(parts, **kwargs)
+    generation_kwargs = {key: value for key, value in kwargs.items() if key != "part_ids"}
+    if selected_ids is None:
+        oomp.add_parts(parts, **generation_kwargs)
+    else:
+        # The shared add_parts starts unjoined threads. A targeted build must
+        # finish its writes and propagate failures before returning to its caller.
+        for part in parts:
+            part_kwargs = copy.deepcopy(part)
+            part_kwargs.update(generation_kwargs)
+            oomp.add_part(**part_kwargs)
 
     #dd file copy
     for part in parts:
@@ -236,8 +263,9 @@ def create_generic(**kwargs):
                     except Exception as e:
                         print(f"      error copying file: {e}") 
 
-    import time
-    time.sleep(2)
+    if selected_ids is None:
+        import time
+        time.sleep(2)
 
 
 

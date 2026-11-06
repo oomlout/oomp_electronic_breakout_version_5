@@ -1,0 +1,405 @@
+dimensions_mm:
+  width: 25.4
+  height: 17.78
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: documented_cad
+  source_ids:
+  - cad_board
+coordinate_system:
+  units: mm
+  origin: centre_of_dimension_layer_bounding_box
+  view: top
+  orientation: native_Eagle_axes_no_rotation
+  native_centre_mm:
+  - 12.7
+  - 8.89
+  status: documented_cad
+connectors:
+  JP1:
+    kind: header
+    cad_package: 1X06_ROUND_70
+    value: ''
+    contacts:
+    - JP1_1
+    - JP1_2
+    - JP1_3
+    - JP1_4
+    - JP1_5
+    - JP1_6
+    source_id: cad_board
+  CONN3:
+    kind: cable_connector
+    cad_package: JST_SH4
+    value: STEMMA_I2C_QT
+    contacts:
+    - CONN3_2
+    - CONN3_3
+    - CONN3_1
+    - CONN3_4
+    source_id: cad_board
+  CONN4:
+    kind: cable_connector
+    cad_package: JST_SH4
+    value: STEMMA_I2C_QT
+    contacts:
+    - CONN4_2
+    - CONN4_3
+    - CONN4_1
+    - CONN4_4
+    source_id: cad_board
+  JP2:
+    kind: header
+    cad_package: 1X04_ROUND
+    value: ''
+    contacts:
+    - JP2_1
+    - JP2_2
+    - JP2_3
+    - JP2_4
+    source_id: cad_board
+pins:
+  JP1_1:
+    connector: JP1
+    number: '1'
+    name: VCC
+    net_name: VCC
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: -6.35
+    y_mm: -6.35
+    drill_mm: 1.0
+    source_id: cad_board
+  JP1_2:
+    connector: JP1
+    number: '2'
+    name: 3.3V
+    net_name: 3.3V
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: -3.81
+    y_mm: -6.35
+    drill_mm: 1.0
+    source_id: cad_board
+  JP1_3:
+    connector: JP1
+    number: '3'
+    name: GND
+    net_name: GND
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: -1.27
+    y_mm: -6.35
+    drill_mm: 1.0
+    source_id: cad_board
+  JP1_4:
+    connector: JP1
+    number: '4'
+    name: SCL
+    net_name: SCL
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: 1.27
+    y_mm: -6.35
+    drill_mm: 1.0
+    source_id: cad_board
+  JP1_5:
+    connector: JP1
+    number: '5'
+    name: SDA/SDIO
+    net_name: SDA/SDIO
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: 3.81
+    y_mm: -6.35
+    drill_mm: 1.0
+    source_id: cad_board
+  JP1_6:
+    connector: JP1
+    number: '6'
+    name: INT1
+    net_name: INT1
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: 6.35
+    y_mm: -6.35
+    drill_mm: 1.0
+    source_id: cad_board
+  CONN3_2:
+    connector: CONN3
+    number: '2'
+    name: VCC
+    net_name: VCC
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: 7.519
+    y_mm: -0.5
+    drill_mm: null
+    source_id: cad_board
+  CONN3_3:
+    connector: CONN3
+    number: '3'
+    name: SDA/SDIO
+    net_name: SDA/SDIO
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: 7.519
+    y_mm: 0.5
+    drill_mm: null
+    source_id: cad_board
+  CONN3_1:
+    connector: CONN3
+    number: '1'
+    name: GND
+    net_name: GND
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: 7.519
+    y_mm: -1.5
+    drill_mm: null
+    source_id: cad_board
+  CONN3_4:
+    connector: CONN3
+    number: '4'
+    name: SCL
+    net_name: SCL
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: 7.519
+    y_mm: 1.5
+    drill_mm: null
+    source_id: cad_board
+  CONN4_2:
+    connector: CONN4
+    number: '2'
+    name: VCC
+    net_name: VCC
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: -7.519
+    y_mm: 0.5
+    drill_mm: null
+    source_id: cad_board
+  CONN4_3:
+    connector: CONN4
+    number: '3'
+    name: SDA/SDIO
+    net_name: SDA/SDIO
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: -7.519
+    y_mm: -0.5
+    drill_mm: null
+    source_id: cad_board
+  CONN4_1:
+    connector: CONN4
+    number: '1'
+    name: GND
+    net_name: GND
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: -7.519
+    y_mm: 1.5
+    drill_mm: null
+    source_id: cad_board
+  CONN4_4:
+    connector: CONN4
+    number: '4'
+    name: SCL
+    net_name: SCL
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: cable_connector
+    x_mm: -7.519
+    y_mm: -1.5
+    drill_mm: null
+    source_id: cad_board
+  JP2_1:
+    connector: JP2
+    number: '1'
+    name: GND
+    net_name: GND
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: -3.81
+    y_mm: 6.35
+    drill_mm: 1.0
+    source_id: cad_board
+  JP2_2:
+    connector: JP2
+    number: '2'
+    name: INT2
+    net_name: INT2
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: -1.27
+    y_mm: 6.35
+    drill_mm: 1.0
+    source_id: cad_board
+  JP2_3:
+    connector: JP2
+    number: '3'
+    name: SDO
+    net_name: SDO
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: 1.27
+    y_mm: 6.35
+    drill_mm: 1.0
+    source_id: cad_board
+  JP2_4:
+    connector: JP2
+    number: '4'
+    name: CS
+    net_name: CS
+    label_status: cad_net_name_not_verified_silkscreen
+    kind: header
+    x_mm: 3.81
+    y_mm: 6.35
+    drill_mm: 1.0
+    source_id: cad_board
+pin_count:
+  header_contacts: 10
+  cable_connector_contacts: 8
+  total_exposed_contacts: 18
+  unique_nets: 9
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: documented_cad
+  source_ids:
+  - cad_board
+pin_names:
+- 3.3V
+- CS
+- GND
+- INT1
+- INT2
+- SCL
+- SDA/SDIO
+- SDO
+- VCC
+mounting_holes:
+- id: U$1
+  x_mm: -10.16
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  source_id: cad_board
+- id: U$17
+  x_mm: 10.16
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  source_id: cad_board
+- id: U$19
+  x_mm: -10.16
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  source_id: cad_board
+- id: U$21
+  x_mm: 10.16
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  source_id: cad_board
+mounting_hole_status: documented_cad
+excluded_mechanical_pads:
+- connector: CONN3
+  pad: MT1
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+- connector: CONN3
+  pad: MT2
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+- connector: CONN4
+  pad: MT1
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+- connector: CONN4
+  pad: MT2
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+cad_elements:
+- reference: C2
+  value: 10uF
+  package: _0805MP
+- reference: U2
+  value: AP2112K-3.3
+  package: SOT23-5
+- reference: C3
+  value: 10uF
+  package: 0805-NO
+- reference: C1
+  value: 0.1uF
+  package: 0603-NO
+- reference: R3
+  value: 10K
+  package: RESPACK_4X0603
+- reference: Q2
+  value: BSS138
+  package: SOT363
+- reference: JP1
+  value: ''
+  package: 1X06_ROUND_70
+- reference: U$1
+  value: MOUNTINGHOLE2.5
+  package: MOUNTINGHOLE_2.5_PLATED
+- reference: U$17
+  value: MOUNTINGHOLE2.5
+  package: MOUNTINGHOLE_2.5_PLATED
+- reference: CONN3
+  value: STEMMA_I2C_QT
+  package: JST_SH4
+- reference: CONN4
+  value: STEMMA_I2C_QT
+  package: JST_SH4
+- reference: FID3
+  value: FIDUCIAL_1MM
+  package: FIDUCIAL_1MM
+- reference: FID4
+  value: FIDUCIAL_1MM
+  package: FIDUCIAL_1MM
+- reference: U$19
+  value: MOUNTINGHOLE2.5
+  package: MOUNTINGHOLE_2.5_PLATED
+- reference: U$21
+  value: MOUNTINGHOLE2.5
+  package: MOUNTINGHOLE_2.5_PLATED
+- reference: U$25
+  value: ''
+  package: PCBFEAT-REV-040
+- reference: U$30
+  value: ''
+  package: STEMMAQT
+- reference: U$31
+  value: ''
+  package: STEMMAQT
+- reference: D1
+  value: GREEN
+  package: CHIPLED_0603_NOOUTLINE
+- reference: D2
+  value: 1N4148
+  package: SOD-323
+- reference: U1
+  value: ADXL343
+  package: LGA14
+- reference: JP2
+  value: ''
+  package: 1X04_ROUND
+- reference: R1
+  value: 10K
+  package: RESPACK_4X0603
+- reference: U$4
+  value: ''
+  package: ADAFRUIT_3.5MM
+- reference: SJ1
+  value: ''
+  package: SOLDERJUMPER_CLOSEDWIRE
+- reference: U$11
+  value: ''
+  package: ADAFRUIT_3.5MM
+notes:
+- Header pads and cable contacts are counted separately even on shared nets.
+- Connector footprint pad centres are not connector envelope/insertion clearances.
+- A matching CAD file does not prove the fitted chip variant in every shipped unit.

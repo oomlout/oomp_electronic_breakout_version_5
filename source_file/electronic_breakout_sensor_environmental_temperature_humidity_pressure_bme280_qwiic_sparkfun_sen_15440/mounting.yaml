@@ -1,0 +1,108 @@
+schema_version: 1
+part_id: electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440
+status: verified
+board_revision: SparkFun Atmospheric Sensor Breakout - BME280 (Qwiic), SEN-15440 carrier,
+  matched to manufacturer EAGLE board file at commit 69d2067e2999ea92fe713dfb745f2955c7e2953a;
+  physical production revisions not independently inspected.
+identity_evidence: SparkFun product page names the Atmospheric Sensor Breakout - BME280
+  (Qwiic), SKU SEN-15440. SparkFun repository README names SEN-15440 and lists Hardware
+  EAGLE files; commit 69d2067e2999ea92fe713dfb745f2955c7e2953a is confirmed by GitHub
+  API and contains Hardware/Qwiic_Atmospheric_Sensor.brd. Archived local XML bytes
+  match that pinned raw URL exactly (393744 bytes, SHA-256 4b34fb80307cfd8d4008901a69409346b4d8c301a6afd522ce289ca682187e7c).
+board_size:
+- 25.4
+- 25.4
+mounting_holes:
+- id: H4:hole:1
+  x_mm: 10.16
+  y_mm: 10.16
+  diameter_mm: 3.302
+  source_id: cad
+  plated: false
+  package: STAND-OFF
+- id: H2:hole:1
+  x_mm: -10.16
+  y_mm: 10.16
+  diameter_mm: 3.302
+  source_id: cad
+  plated: false
+  package: STAND-OFF
+- id: H1:hole:1
+  x_mm: 10.16
+  y_mm: -10.16
+  diameter_mm: 3.302
+  source_id: cad
+  plated: false
+  package: STAND-OFF
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: 'Layer 20 wires define a plain rectangular carrier outline spanning native
+  x=0..25.4 mm and y=0..25.4 mm, yielding board_size=[25.4,25.4]. Centre is (12.7,12.7)
+  mm. Hole candidates in the full drill inspection: H4, H2, H1 are unplated 3.302
+  mm holes in STAND-OFF packages, giving centred locations (10.16,10.16), (-10.16,10.16),
+  (10.16,-10.16) mm. The other six drilled candidates are J3:pad:1..4 and J4:pad:1..2,
+  1.016 mm plated through-hole connector contacts at y=-11.43 mm; they are explicitly
+  excluded because their package/element references place them in the 0.1-inch header
+  footprints, not board mounting features. Full drill count is nine and all candidates
+  were inspected.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  url: https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html
+  local_file: website.html
+  kind: manufacturer_product
+  locator: Product name and SKU SEN-15440; identity only, no board outline dimensions.
+  bytes: 574671
+  sha256: 7369feea75452a4e7c89db69be84c8fe2c631910414f0ca32a4a122a32609eff
+- id: repo
+  url: https://github.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280
+  local_file: reference/hardware_repository.html
+  kind: manufacturer_repository
+  locator: README identifies SEN-15440 Qwiic product and lists Hardware Eagle files;
+    commit verified by API.
+  bytes: 260508
+  sha256: 83fe134809a381c8f5fce2991f47a6fe114db94694b398e294c90b94332991c5
+- id: cad
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/69d2067e2999ea92fe713dfb745f2955c7e2953a/Hardware/Qwiic_Atmospheric_Sensor.brd
+  local_file: reference/qwiic_bme280.brd
+  kind: manufacturer_cad
+  locator: Pinned commit and matching local file hash; XML layer 20 outline and all
+    nine drill candidates inspected.
+  bytes: 393744
+  sha256: 4b34fb80307cfd8d4008901a69409346b4d8c301a6afd522ce289ca682187e7c
+attempts: []
+conflicts: []
+notes:
+- The three 3.302 mm holes are named H4/H2/H1 and use STAND-OFF packages. No H3 instance
+  is present, so this pattern is intentionally asymmetric with three holes.
+- Header drills are excluded as electrical connector pads. Connector anchor pads have
+  no drills and therefore are not included in the drill-candidate count.
+- Standard holder is generated geometry only; physical fit, component/connector clearance,
+  screw head clearance, and underside clearance remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T11:22:44+00:00'
+extraction:
+  selected_ids:
+  - H4:hole:1
+  - H2:hole:1
+  - H1:hole:1
+  quarter_turn: 0
+  native_centre_mm:
+  - 12.7
+  - 12.7
+identity_source_ids:
+- product
+- repo
+- cad

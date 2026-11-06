@@ -1,0 +1,4027 @@
+bip_39_2_word_array:
+- convince
+- laundry
+bip_39_2_word_no_space: convincelaundry
+bip_39_2_word_space: convince laundry
+bip_39_2_word_underscore: convince_laundry
+bip_39_3_word_array:
+- convince
+- laundry
+- transfer
+bip_39_3_word_no_space: convincelaundrytransfer
+bip_39_3_word_space: convince laundry transfer
+bip_39_3_word_underscore: convince_laundry_transfer
+bip_39_full_array:
+- convince
+- laundry
+- transfer
+- shoot
+- gym
+- luggage
+- appear
+- patient
+- jewel
+- sick
+- satoshi
+- carpet
+bip_39_full_no_space: convincelaundrytransfershootgymluggageappearpatientjewelsicksatoshicarpet
+bip_39_full_space: convince laundry transfer shoot gym luggage appear patient jewel
+  sick satoshi carpet
+bip_39_full_underscore: convince_laundry_transfer_shoot_gym_luggage_appear_patient_jewel_sick_satoshi_carpet
+board_variant: stemma_qt
+breakout_description: stemma_qt
+breakout_pcb_height: 17.78
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+definition_authority: working_oomp_populate_i2c.py
+description: A classic three-axis digital accelerometer, selectable +/-2/4/8/16 g,
+  with I2C and SPI. The current carrier has regulation and level shifting; its 2022
+  QT revision changed the shape and pinout.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+directory: parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+geometry_ready: false
+i2c:
+  address_evidence_status: partial_product_page_evidence
+  address_selection: alternate_not_recorded
+  clock_stretching: unverified
+  default_address_7bit: 83
+  documented_addresses_7bit:
+  - 83
+  maximum_clock_hz: null
+  source_id: product
+id: electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+id_no_class: electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+id_no_size: electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+id_no_type: electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+id_oobb: electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+- spi
+item_kind: breakout
+kwargs:
+  breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  modes:
+  - 3dpr
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  overwrite: true
+  type: default_mounting_plate_default
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+manufacturer: adafruit
+manufacturer_part_number: '1231'
+md5: 2f8fb79ce346810982a50877f8fafd91
+md5_10: 2f8fb79ce3
+md5_10_upper: 2F8FB79CE3
+md5_5: 2f8fb
+md5_5_upper: 2F8FB
+md5_6: 2f8fb7
+md5_6_alpha: 1ut2v
+md5_6_alpha_upper: 1UT2V
+md5_6_upper: 2F8FB7
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 2.5
+  id: U$1:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 6.35
+- diameter_mm: 2.5
+  id: U$17:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 6.35
+- diameter_mm: 2.5
+  id: U$19:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: -6.35
+- diameter_mm: 2.5
+  id: U$21:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: -6.35
+mounting_hole_radius_name: m2
+mounting_hole_radius_names:
+- m2
+- m2
+- m2
+- m2
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - 6.35
+- - 10.16
+  - 6.35
+- - -10.16
+  - -6.35
+- - 10.16
+  - -6.35
+mounting_lift: 3
+mounting_research:
+  board_revision: Adafruit product 1231 STEMMA QT carrier revision introduced 2022-03-23;
+    exact manufacturer EAGLE board ADXL345 STEMMA QT.brd at Adafruit_ADXL345_PCB commit
+    1e0b3eb6c53d8b8ff424b9be11058d701cb31156 (EAGLE 9.6.2). Geometry is for this carrier
+    CAD revision.
+  board_size:
+  - 25.4
+  - 17.78
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: EAGLE layer-20 bounds; explicit package/plain drills; centred then rotated
+    CCW.
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit Product 1231 identifies the ADXL345 STEMMA QT/Qwiic
+    product and states that the March 23, 2022 QT update changed the physical shape
+    and pinout; it also states four 2.5 mm mounting holes. The manufacturer hardware
+    repository contains the exact matching filename ADXL345 STEMMA QT.brd. Its commit-pinned
+    raw file was independently fetched and byte-compared with the archived CAD (269137
+    bytes; SHA-256 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e).
+    The older repository README describes the legacy two-hole board, so it does not
+    apply to this named QT revision. CAD labels U1 ADXL343 whereas the catalogue product
+    is ADXL345; this pre-existing chip-identity conflict is outside mounting geometry
+    and does not change the explicit carrier outline or mounting pads. Actual fitted
+    IC remains unverified.
+  mounting_holes:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: -6.35
+  record_sha256: 5c890dc1e20ca8b5d5c78b2e930b18fe16e1c5a7e898ca9500121a59df43bf01
+  research_file: source_file/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 269137
+    id: cad
+    kind: manufacturer_cad
+    local_file: reference/adxl345_stemma_qt.brd
+    locator: Adafruit_ADXL345_PCB commit 1e0b3eb6c53d8b8ff424b9be11058d701cb31156,
+      exact ADXL345 STEMMA QT.brd; XML EAGLE 9.6.2; layer 20 outline, dimensions,
+      four MOUNTINGHOLE_2.5_PLATED elements and all drill candidates. Archived file
+      bytes checked against commit-pinned official raw source; manufacturer commit
+      date 2022-03-23.
+    registered_at: '2026-11-06T11:19:17+00:00'
+    sha256: 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e
+    url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.brd
+  - bytes: 98115
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: 'Adafruit Product 1231: current STEMMA QT product identity, revision
+      history says QT update March 23 2022 changed physical shape and pinout, and
+      four 2.5 mm mounting holes. Archived manufacturer page content; acquisition
+      date in archive metadata 2026-10-23.'
+    registered_at: '2026-11-06T11:19:17+00:00'
+    sha256: b662713323f687433ee7a65d4d8269d9f73e740923a0d9157d3bfd397d21fd52
+    url: https://www.adafruit.com/product/1231
+  status: verified
+name: Electronic Breakout Sensor Motion Accelerometer Adxl345 Stemma Qt Adafruit 1231
+name_no_class: Electronic Breakout Sensor Motion Accelerometer Adxl345 Stemma Qt Adafruit
+  1231
+name_no_size: Electronic Breakout Sensor Motion Accelerometer Adxl345 Stemma Qt Adafruit
+  1231
+name_no_type: Electronic Breakout Sensor Motion Accelerometer Adxl345 Stemma Qt Adafruit
+  1231
+name_proper: Electronic Breakout Sensor Motion Accelerometer Adxl345 Stemma Qt Adafruit
+  1231
+name_readable: Adafruit ADXL345, STEMMA QT
+name_space: electronic breakout sensor motion accelerometer adxl345 stemma qt adafruit
+  1231
+name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ACCELEROMETER ADXL345 STEMMA QT ADAFRUIT
+  1231
+notes: []
+oobb_details:
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      board_variant: stemma_qt
+      breakout_description: stemma_qt
+      breakout_pcb_height: 17.78
+      breakout_pcb_width: 25.4
+      catalogue: i2c_breakouts
+      catalogue_status: product_page_reference
+      data_gaps:
+      - Physical connector/pad map and coordinates not imported.
+      - Located mounting holes and complete assembly/connector clearances not imported.
+      - Pull-up values/rails and full electrical limits require schematic review.
+      - Carrier PCB outline dimensions not verified.
+      definition_authority: working_oomp_populate_i2c.py
+      description: A classic three-axis digital accelerometer, selectable +/-2/4/8/16
+        g, with I2C and SPI. The current carrier has regulation and level shifting;
+        its 2022 QT revision changed the shape and pinout.
+      dimensions_mm:
+        height: null
+        scope: pcb_outline_not_established
+        source_id: null
+        status: unverified
+        width: null
+      directory: parts\electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+      geometry_ready: false
+      i2c:
+        address_evidence_status: partial_product_page_evidence
+        address_selection: alternate_not_recorded
+        clock_stretching: unverified
+        default_address_7bit: 83
+        documented_addresses_7bit:
+        - 83
+        maximum_clock_hz: null
+        source_id: product
+      interface_scope: documented_board_interfaces_only
+      interfaces:
+      - i2c
+      - spi
+      item_kind: breakout
+      manufacturer: adafruit
+      manufacturer_part_number: '1231'
+      mounting_coordinate_system:
+        origin: pcb_bounding_box_centre
+        units: mm
+        view: top
+        x_positive: right
+        y_positive: up
+      mounting_geometry_ready: true
+      mounting_hole_details:
+      - diameter_mm: 2.5
+        id: U$1:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: -10.16
+        y_mm: 6.35
+      - diameter_mm: 2.5
+        id: U$17:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: 10.16
+        y_mm: 6.35
+      - diameter_mm: 2.5
+        id: U$19:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: -10.16
+        y_mm: -6.35
+      - diameter_mm: 2.5
+        id: U$21:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: 10.16
+        y_mm: -6.35
+      mounting_hole_radius_name: m2
+      mounting_hole_radius_names:
+      - m2
+      - m2
+      - m2
+      - m2
+      mounting_hole_status: verified
+      mounting_holes:
+      - - -10.16
+        - 6.35
+      - - 10.16
+        - 6.35
+      - - -10.16
+        - -6.35
+      - - 10.16
+        - -6.35
+      mounting_lift: 3
+      mounting_research:
+        board_revision: Adafruit product 1231 STEMMA QT carrier revision introduced
+          2022-03-23; exact manufacturer EAGLE board ADXL345 STEMMA QT.brd at Adafruit_ADXL345_PCB
+          commit 1e0b3eb6c53d8b8ff424b9be11058d701cb31156 (EAGLE 9.6.2). Geometry
+          is for this carrier CAD revision.
+        board_size:
+        - 25.4
+        - 17.78
+        coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        derivation: EAGLE layer-20 bounds; explicit package/plain drills; centred
+          then rotated CCW.
+        fit_status: generic_holder_not_physical_fit_tested
+        identity_evidence: Adafruit Product 1231 identifies the ADXL345 STEMMA QT/Qwiic
+          product and states that the March 23, 2022 QT update changed the physical
+          shape and pinout; it also states four 2.5 mm mounting holes. The manufacturer
+          hardware repository contains the exact matching filename ADXL345 STEMMA
+          QT.brd. Its commit-pinned raw file was independently fetched and byte-compared
+          with the archived CAD (269137 bytes; SHA-256 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e).
+          The older repository README describes the legacy two-hole board, so it does
+          not apply to this named QT revision. CAD labels U1 ADXL343 whereas the catalogue
+          product is ADXL345; this pre-existing chip-identity conflict is outside
+          mounting geometry and does not change the explicit carrier outline or mounting
+          pads. Actual fitted IC remains unverified.
+        mounting_holes:
+        - diameter_mm: 2.5
+          id: U$1:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: -10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$17:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: 10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$19:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: -10.16
+          y_mm: -6.35
+        - diameter_mm: 2.5
+          id: U$21:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: 10.16
+          y_mm: -6.35
+        record_sha256: 5c890dc1e20ca8b5d5c78b2e930b18fe16e1c5a7e898ca9500121a59df43bf01
+        research_file: source_file/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/mounting.yaml
+        reviewed_by: gpt-6-luna
+        sources:
+        - bytes: 269137
+          id: cad
+          kind: manufacturer_cad
+          local_file: reference/adxl345_stemma_qt.brd
+          locator: Adafruit_ADXL345_PCB commit 1e0b3eb6c53d8b8ff424b9be11058d701cb31156,
+            exact ADXL345 STEMMA QT.brd; XML EAGLE 9.6.2; layer 20 outline, dimensions,
+            four MOUNTINGHOLE_2.5_PLATED elements and all drill candidates. Archived
+            file bytes checked against commit-pinned official raw source; manufacturer
+            commit date 2022-03-23.
+          registered_at: '2026-11-06T11:19:17+00:00'
+          sha256: 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e
+          url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.brd
+        - bytes: 98115
+          id: product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: 'Adafruit Product 1231: current STEMMA QT product identity, revision
+            history says QT update March 23 2022 changed physical shape and pinout,
+            and four 2.5 mm mounting holes. Archived manufacturer page content; acquisition
+            date in archive metadata 2026-10-23.'
+          registered_at: '2026-11-06T11:19:17+00:00'
+          sha256: b662713323f687433ee7a65d4d8269d9f73e740923a0d9157d3bfd397d21fd52
+          url: https://www.adafruit.com/product/1231
+        status: verified
+      name: electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+      name_proper: Electronic Breakout Sensor Motion Accelerometer Adxl345 Stemma
+        Qt Adafruit 1231
+      name_readable: Adafruit ADXL345, STEMMA QT
+      name_space: electronic breakout sensor motion accelerometer adxl345 stemma qt
+        adafruit 1231
+      name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ACCELEROMETER ADXL345 STEMMA QT
+        ADAFRUIT 1231
+      notes: []
+      oobb_details:
+      - breakout_pcb_height: 17.78
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$1:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$17:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$19:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -6.35
+        - diameter_mm: 2.5
+          id: U$21:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: -6.35
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -10.16
+          - 6.35
+        - - 10.16
+          - 6.35
+        - - -10.16
+          - -6.35
+        - - 10.16
+          - -6.35
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+      part_number: '1231'
+      part_number_adafruit: '1231'
+      pinout_status: unverified
+      pins: {}
+      research_date: '2026-10-23'
+      schema_version: 1
+      sources:
+      - id: product
+        kind: manufacturer_product_page
+        retrieved: '2026-10-23'
+        scope: identity, stated interfaces/features and recorded nominal dimensions
+        url: https://www.adafruit.com/product/1231
+      - bytes: 269137
+        id: mounting_cad
+        kind: manufacturer_cad
+        local_file: reference/adxl345_stemma_qt.brd
+        locator: Adafruit_ADXL345_PCB commit 1e0b3eb6c53d8b8ff424b9be11058d701cb31156,
+          exact ADXL345 STEMMA QT.brd; XML EAGLE 9.6.2; layer 20 outline, dimensions,
+          four MOUNTINGHOLE_2.5_PLATED elements and all drill candidates. Archived
+          file bytes checked against commit-pinned official raw source; manufacturer
+          commit date 2022-03-23.
+        registered_at: '2026-11-06T11:19:17+00:00'
+        sha256: 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e
+        url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.brd
+      - bytes: 98115
+        id: mounting_product
+        kind: manufacturer_product
+        local_file: website.html
+        locator: 'Adafruit Product 1231: current STEMMA QT product identity, revision
+          history says QT update March 23 2022 changed physical shape and pinout,
+          and four 2.5 mm mounting holes. Archived manufacturer page content; acquisition
+          date in archive metadata 2026-10-23.'
+        registered_at: '2026-11-06T11:19:17+00:00'
+        sha256: b662713323f687433ee7a65d4d8269d9f73e740923a0d9157d3bfd397d21fd52
+        url: https://www.adafruit.com/product/1231
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: adafruit
+      taxonomy_15: '1231'
+      taxonomy_2: breakout
+      taxonomy_3: sensor
+      taxonomy_4: motion
+      taxonomy_5: accelerometer
+      taxonomy_6: adxl345
+      taxonomy_7: stemma_qt
+      taxonomy_8: ''
+      taxonomy_9: ''
+      taxonomy_schema: breakout_function_v1
+      type_1: sensor
+      type_2: motion
+      type_3: accelerometer
+      type_4: adxl345
+      url_chat: ''
+      webpage: https://www.adafruit.com/product/1231
+      webpage_adafruit: https://www.adafruit.com/product/1231
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+part_number: '1231'
+part_number_adafruit: '1231'
+pinout_status: unverified
+pins: {}
+project_name: C:\gh\oomp_electronic_breakout_version_5
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/1231
+- bytes: 269137
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: reference/adxl345_stemma_qt.brd
+  locator: Adafruit_ADXL345_PCB commit 1e0b3eb6c53d8b8ff424b9be11058d701cb31156, exact
+    ADXL345 STEMMA QT.brd; XML EAGLE 9.6.2; layer 20 outline, dimensions, four MOUNTINGHOLE_2.5_PLATED
+    elements and all drill candidates. Archived file bytes checked against commit-pinned
+    official raw source; manufacturer commit date 2022-03-23.
+  registered_at: '2026-11-06T11:19:17+00:00'
+  sha256: 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e
+  url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.brd
+- bytes: 98115
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: 'Adafruit Product 1231: current STEMMA QT product identity, revision history
+    says QT update March 23 2022 changed physical shape and pinout, and four 2.5 mm
+    mounting holes. Archived manufacturer page content; acquisition date in archive
+    metadata 2026-10-23.'
+  registered_at: '2026-11-06T11:19:17+00:00'
+  sha256: b662713323f687433ee7a65d4d8269d9f73e740923a0d9157d3bfd397d21fd52
+  url: https://www.adafruit.com/product/1231
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_14_capital: Adafruit
+taxonomy_14_first_letter: a
+taxonomy_14_first_letter_upper: A
+taxonomy_14_length_1: a
+taxonomy_14_length_2: ad
+taxonomy_14_length_3: ada
+taxonomy_14_length_4: adaf
+taxonomy_14_length_5: adafr
+taxonomy_14_upper: ADAFRUIT
+taxonomy_14_upper_length_1: A
+taxonomy_14_upper_length_2: AD
+taxonomy_14_upper_length_3: ADA
+taxonomy_14_upper_length_4: ADAF
+taxonomy_14_upper_length_5: ADAFR
+taxonomy_15: '1231'
+taxonomy_15_capital: '1231'
+taxonomy_15_first_letter: '1'
+taxonomy_15_first_letter_upper: '1'
+taxonomy_15_length_1: '1'
+taxonomy_15_length_2: '12'
+taxonomy_15_length_3: '123'
+taxonomy_15_length_4: '1231'
+taxonomy_15_length_5: '1231'
+taxonomy_15_upper: '1231'
+taxonomy_15_upper_length_1: '1'
+taxonomy_15_upper_length_2: '12'
+taxonomy_15_upper_length_3: '123'
+taxonomy_15_upper_length_4: '1231'
+taxonomy_15_upper_length_5: '1231'
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: sensor
+taxonomy_3_capital: Sensor
+taxonomy_3_first_letter: s
+taxonomy_3_first_letter_upper: S
+taxonomy_3_length_1: s
+taxonomy_3_length_2: se
+taxonomy_3_length_3: sen
+taxonomy_3_length_4: sens
+taxonomy_3_length_5: senso
+taxonomy_3_upper: SENSOR
+taxonomy_3_upper_length_1: S
+taxonomy_3_upper_length_2: SE
+taxonomy_3_upper_length_3: SEN
+taxonomy_3_upper_length_4: SENS
+taxonomy_3_upper_length_5: SENSO
+taxonomy_4: motion
+taxonomy_4_capital: Motion
+taxonomy_4_first_letter: m
+taxonomy_4_first_letter_upper: M
+taxonomy_4_length_1: m
+taxonomy_4_length_2: mo
+taxonomy_4_length_3: mot
+taxonomy_4_length_4: moti
+taxonomy_4_length_5: motio
+taxonomy_4_upper: MOTION
+taxonomy_4_upper_length_1: M
+taxonomy_4_upper_length_2: MO
+taxonomy_4_upper_length_3: MOT
+taxonomy_4_upper_length_4: MOTI
+taxonomy_4_upper_length_5: MOTIO
+taxonomy_5: accelerometer
+taxonomy_5_capital: Accelerometer
+taxonomy_5_first_letter: a
+taxonomy_5_first_letter_upper: A
+taxonomy_5_length_1: a
+taxonomy_5_length_2: ac
+taxonomy_5_length_3: acc
+taxonomy_5_length_4: acce
+taxonomy_5_length_5: accel
+taxonomy_5_upper: ACCELEROMETER
+taxonomy_5_upper_length_1: A
+taxonomy_5_upper_length_2: AC
+taxonomy_5_upper_length_3: ACC
+taxonomy_5_upper_length_4: ACCE
+taxonomy_5_upper_length_5: ACCEL
+taxonomy_6: adxl345
+taxonomy_6_capital: Adxl345
+taxonomy_6_first_letter: a
+taxonomy_6_first_letter_upper: A
+taxonomy_6_length_1: a
+taxonomy_6_length_2: ad
+taxonomy_6_length_3: adx
+taxonomy_6_length_4: adxl
+taxonomy_6_length_5: adxl3
+taxonomy_6_upper: ADXL345
+taxonomy_6_upper_length_1: A
+taxonomy_6_upper_length_2: AD
+taxonomy_6_upper_length_3: ADX
+taxonomy_6_upper_length_4: ADXL
+taxonomy_6_upper_length_5: ADXL3
+taxonomy_7: stemma_qt
+taxonomy_7_capital: Stemma Qt
+taxonomy_7_first_letter: s
+taxonomy_7_first_letter_upper: S
+taxonomy_7_length_1: s
+taxonomy_7_length_2: st
+taxonomy_7_length_3: ste
+taxonomy_7_length_4: stem
+taxonomy_7_length_5: stemm
+taxonomy_7_upper: STEMMA_QT
+taxonomy_7_upper_length_1: S
+taxonomy_7_upper_length_2: ST
+taxonomy_7_upper_length_3: STE
+taxonomy_7_upper_length_4: STEM
+taxonomy_7_upper_length_5: STEMM
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+thing:
+  bip_39_2_word_array:
+  - convince
+  - laundry
+  bip_39_2_word_no_space: convincelaundry
+  bip_39_2_word_space: convince laundry
+  bip_39_2_word_underscore: convince_laundry
+  bip_39_3_word_array:
+  - convince
+  - laundry
+  - transfer
+  bip_39_3_word_no_space: convincelaundrytransfer
+  bip_39_3_word_space: convince laundry transfer
+  bip_39_3_word_underscore: convince_laundry_transfer
+  bip_39_full_array:
+  - convince
+  - laundry
+  - transfer
+  - shoot
+  - gym
+  - luggage
+  - appear
+  - patient
+  - jewel
+  - sick
+  - satoshi
+  - carpet
+  bip_39_full_no_space: convincelaundrytransfershootgymluggageappearpatientjewelsicksatoshicarpet
+  bip_39_full_space: convince laundry transfer shoot gym luggage appear patient jewel
+    sick satoshi carpet
+  bip_39_full_underscore: convince_laundry_transfer_shoot_gym_luggage_appear_patient_jewel_sick_satoshi_carpet
+  board_variant: stemma_qt
+  breakout_description: stemma_qt
+  breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  catalogue: i2c_breakouts
+  catalogue_status: product_page_reference
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 3
+      pos:
+      - 0
+      - 0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 59
+      - 44
+      - 3
+      type: positive
+      width: 4
+  - - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - -15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - 15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - -15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - 15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - -7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -22.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -15.0
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -15.0
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -15.0
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - -7.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - -7.5
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - -7.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 0.0
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 0.0
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 0.0
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 7.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 7.5
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 7.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 15.0
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 15.0
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 15.0
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - -7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 0.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 7.5
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+    - - h: 200
+        inclusion: laser
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 3dpr
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 1.8
+        shape: cylinder
+        type: negative
+      - h: 200
+        inclusion: 'true'
+        m: ''
+        pos:
+        - 22.5
+        - 15.0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: negative
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - -10.16
+      - 6.35
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 3
+      inclusion: laser
+      pos: &id001
+      - -10.16
+      - 6.35
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 3
+      inclusion: 3dpr
+      pos: *id001
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 3
+      inclusion: 'true'
+      pos: *id001
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - 10.16
+      - 6.35
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 3
+      inclusion: laser
+      pos: &id002
+      - 10.16
+      - 6.35
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 3
+      inclusion: 3dpr
+      pos: *id002
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 3
+      inclusion: 'true'
+      pos: *id002
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - -10.16
+      - -6.35
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 3
+      inclusion: laser
+      pos: &id003
+      - -10.16
+      - -6.35
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 3
+      inclusion: 3dpr
+      pos: *id003
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 3
+      inclusion: 'true'
+      pos: *id003
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 3
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 3
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - 10.16
+      - -6.35
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 3
+      inclusion: laser
+      pos: &id004
+      - 10.16
+      - -6.35
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 3
+      inclusion: 3dpr
+      pos: *id004
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 3
+      inclusion: 'true'
+      pos: *id004
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  components_objects:
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 3
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: none
+    shape: oobb_plate
+    type: positive
+    width: 4
+  - both_holes: true
+    breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 3
+    holes: perimeter
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: none
+    shape: oobb_holes
+    type: p
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 3
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    pos:
+    - -10.16
+    - 6.35
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 3
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    pos:
+    - -10.16
+    - 6.35
+    - 4.5
+    radius: 2.75
+    save_type: none
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 3
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    pos:
+    - 10.16
+    - 6.35
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 3
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    pos:
+    - 10.16
+    - 6.35
+    - 4.5
+    radius: 2.75
+    save_type: none
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 3
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    pos:
+    - -10.16
+    - -6.35
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 3
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    pos:
+    - -10.16
+    - -6.35
+    - 4.5
+    radius: 2.75
+    save_type: none
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 3
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    pos:
+    - 10.16
+    - -6.35
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 3
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    pos:
+    - 10.16
+    - -6.35
+    - 4.5
+    radius: 2.75
+    save_type: none
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_3_height
+  - oobb_holes_shape_p_type_3_depth_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_3_height_true_both_holes_perimeter_holes
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_-10.16_6.35_0_pos_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_3_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-10.16_6.35_4.5_pos_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_3_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_10.16_6.35_0_pos_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_3_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_10.16_6.35_4.5_pos_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_3_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_-10.16_-6.35_0_pos_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_3_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-10.16_-6.35_4.5_pos_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_3_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_10.16_-6.35_0_pos_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_3_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_10.16_-6.35_4.5_pos_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_3_mounting_lift_mounting_plate_default_oobb_name_4_width_3_height_2.75_radius
+  data_gaps:
+  - Physical connector/pad map and coordinates not imported.
+  - Located mounting holes and complete assembly/connector clearances not imported.
+  - Pull-up values/rails and full electrical limits require schematic review.
+  - Carrier PCB outline dimensions not verified.
+  definition_authority: working_oomp_populate_i2c.py
+  description: A classic three-axis digital accelerometer, selectable +/-2/4/8/16
+    g, with I2C and SPI. The current carrier has regulation and level shifting; its
+    2022 QT revision changed the shape and pinout.
+  description_extra: ''
+  description_main: ''
+  dimensions_mm:
+    height: null
+    scope: pcb_outline_not_established
+    source_id: null
+    status: unverified
+    width: null
+  directory: parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+  geometry_ready: false
+  i2c:
+    address_evidence_status: partial_product_page_evidence
+    address_selection: alternate_not_recorded
+    clock_stretching: unverified
+    default_address_7bit: 83
+    documented_addresses_7bit:
+    - 83
+    maximum_clock_hz: null
+    source_id: product
+  id: electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+  id_no_class: electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+  id_no_size: electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+  id_no_type: electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+  interface_scope: documented_board_interfaces_only
+  interfaces:
+  - i2c
+  - spi
+  item_kind: breakout
+  kwargs:
+    breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
+    overwrite: true
+    save_type: none
+    type: default_mounting_plate_default
+  link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+  link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+  link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+  manufacturer: adafruit
+  manufacturer_part_number: '1231'
+  md5: 2f8fb79ce346810982a50877f8fafd91
+  md5_10: 2f8fb79ce3
+  md5_10_upper: 2F8FB79CE3
+  md5_5: 2f8fb
+  md5_5_upper: 2F8FB
+  md5_6: 2f8fb7
+  md5_6_alpha: 1ut2v
+  md5_6_alpha_upper: 1UT2V
+  md5_6_upper: 2F8FB7
+  mounting_coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  mounting_geometry_ready: true
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_hole_status: verified
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_lift: 3
+  mounting_research:
+    board_revision: Adafruit product 1231 STEMMA QT carrier revision introduced 2022-03-23;
+      exact manufacturer EAGLE board ADXL345 STEMMA QT.brd at Adafruit_ADXL345_PCB
+      commit 1e0b3eb6c53d8b8ff424b9be11058d701cb31156 (EAGLE 9.6.2). Geometry is for
+      this carrier CAD revision.
+    board_size:
+    - 25.4
+    - 17.78
+    coordinate_system:
+      origin: pcb_bounding_box_centre
+      units: mm
+      view: top
+      x_positive: right
+      y_positive: up
+    derivation: EAGLE layer-20 bounds; explicit package/plain drills; centred then
+      rotated CCW.
+    fit_status: generic_holder_not_physical_fit_tested
+    identity_evidence: Adafruit Product 1231 identifies the ADXL345 STEMMA QT/Qwiic
+      product and states that the March 23, 2022 QT update changed the physical shape
+      and pinout; it also states four 2.5 mm mounting holes. The manufacturer hardware
+      repository contains the exact matching filename ADXL345 STEMMA QT.brd. Its commit-pinned
+      raw file was independently fetched and byte-compared with the archived CAD (269137
+      bytes; SHA-256 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e).
+      The older repository README describes the legacy two-hole board, so it does
+      not apply to this named QT revision. CAD labels U1 ADXL343 whereas the catalogue
+      product is ADXL345; this pre-existing chip-identity conflict is outside mounting
+      geometry and does not change the explicit carrier outline or mounting pads.
+      Actual fitted IC remains unverified.
+    mounting_holes:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: 10.16
+      y_mm: -6.35
+    record_sha256: 5c890dc1e20ca8b5d5c78b2e930b18fe16e1c5a7e898ca9500121a59df43bf01
+    research_file: source_file/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/mounting.yaml
+    reviewed_by: gpt-6-luna
+    sources:
+    - bytes: 269137
+      id: cad
+      kind: manufacturer_cad
+      local_file: reference/adxl345_stemma_qt.brd
+      locator: Adafruit_ADXL345_PCB commit 1e0b3eb6c53d8b8ff424b9be11058d701cb31156,
+        exact ADXL345 STEMMA QT.brd; XML EAGLE 9.6.2; layer 20 outline, dimensions,
+        four MOUNTINGHOLE_2.5_PLATED elements and all drill candidates. Archived file
+        bytes checked against commit-pinned official raw source; manufacturer commit
+        date 2022-03-23.
+      registered_at: '2026-11-06T11:19:17+00:00'
+      sha256: 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e
+      url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.brd
+    - bytes: 98115
+      id: product
+      kind: manufacturer_product
+      local_file: website.html
+      locator: 'Adafruit Product 1231: current STEMMA QT product identity, revision
+        history says QT update March 23 2022 changed physical shape and pinout, and
+        four 2.5 mm mounting holes. Archived manufacturer page content; acquisition
+        date in archive metadata 2026-10-23.'
+      registered_at: '2026-11-06T11:19:17+00:00'
+      sha256: b662713323f687433ee7a65d4d8269d9f73e740923a0d9157d3bfd397d21fd52
+      url: https://www.adafruit.com/product/1231
+    status: verified
+  name: Electronic Breakout Sensor Motion Accelerometer Adxl345 Stemma Qt Adafruit
+    1231
+  name_no_class: Electronic Breakout Sensor Motion Accelerometer Adxl345 Stemma Qt
+    Adafruit 1231
+  name_no_size: Electronic Breakout Sensor Motion Accelerometer Adxl345 Stemma Qt
+    Adafruit 1231
+  name_no_type: Electronic Breakout Sensor Motion Accelerometer Adxl345 Stemma Qt
+    Adafruit 1231
+  name_proper: Electronic Breakout Sensor Motion Accelerometer Adxl345 Stemma Qt Adafruit
+    1231
+  name_readable: Adafruit ADXL345, STEMMA QT
+  name_short: Default Mounting Plate Default
+  name_space: electronic breakout sensor motion accelerometer adxl345 stemma qt adafruit
+    1231
+  name_text: Oobb Part Default Mounting Plate Default
+  name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ACCELEROMETER ADXL345 STEMMA QT ADAFRUIT
+    1231
+  notes: []
+  oobb_details:
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+  oobb_name: mounting_plate_default
+  oomlout_ai_roboclick_1:
+    actions:
+    - command: text_jinja_template
+      convert_to_pdf: false
+      convert_to_png: false
+      dict_data:
+        board_variant: stemma_qt
+        breakout_description: stemma_qt
+        breakout_pcb_height: 17.78
+        breakout_pcb_width: 25.4
+        catalogue: i2c_breakouts
+        catalogue_status: product_page_reference
+        data_gaps:
+        - Physical connector/pad map and coordinates not imported.
+        - Located mounting holes and complete assembly/connector clearances not imported.
+        - Pull-up values/rails and full electrical limits require schematic review.
+        - Carrier PCB outline dimensions not verified.
+        definition_authority: working_oomp_populate_i2c.py
+        description: A classic three-axis digital accelerometer, selectable +/-2/4/8/16
+          g, with I2C and SPI. The current carrier has regulation and level shifting;
+          its 2022 QT revision changed the shape and pinout.
+        dimensions_mm:
+          height: null
+          scope: pcb_outline_not_established
+          source_id: null
+          status: unverified
+          width: null
+        directory: parts\electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+        geometry_ready: false
+        i2c:
+          address_evidence_status: partial_product_page_evidence
+          address_selection: alternate_not_recorded
+          clock_stretching: unverified
+          default_address_7bit: 83
+          documented_addresses_7bit:
+          - 83
+          maximum_clock_hz: null
+          source_id: product
+        interface_scope: documented_board_interfaces_only
+        interfaces:
+        - i2c
+        - spi
+        item_kind: breakout
+        manufacturer: adafruit
+        manufacturer_part_number: '1231'
+        mounting_coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        mounting_geometry_ready: true
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$1:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$17:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$19:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -6.35
+        - diameter_mm: 2.5
+          id: U$21:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: -6.35
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_hole_status: verified
+        mounting_holes:
+        - - -10.16
+          - 6.35
+        - - 10.16
+          - 6.35
+        - - -10.16
+          - -6.35
+        - - 10.16
+          - -6.35
+        mounting_lift: 3
+        mounting_research:
+          board_revision: Adafruit product 1231 STEMMA QT carrier revision introduced
+            2022-03-23; exact manufacturer EAGLE board ADXL345 STEMMA QT.brd at Adafruit_ADXL345_PCB
+            commit 1e0b3eb6c53d8b8ff424b9be11058d701cb31156 (EAGLE 9.6.2). Geometry
+            is for this carrier CAD revision.
+          board_size:
+          - 25.4
+          - 17.78
+          coordinate_system:
+            origin: pcb_bounding_box_centre
+            units: mm
+            view: top
+            x_positive: right
+            y_positive: up
+          derivation: EAGLE layer-20 bounds; explicit package/plain drills; centred
+            then rotated CCW.
+          fit_status: generic_holder_not_physical_fit_tested
+          identity_evidence: Adafruit Product 1231 identifies the ADXL345 STEMMA QT/Qwiic
+            product and states that the March 23, 2022 QT update changed the physical
+            shape and pinout; it also states four 2.5 mm mounting holes. The manufacturer
+            hardware repository contains the exact matching filename ADXL345 STEMMA
+            QT.brd. Its commit-pinned raw file was independently fetched and byte-compared
+            with the archived CAD (269137 bytes; SHA-256 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e).
+            The older repository README describes the legacy two-hole board, so it
+            does not apply to this named QT revision. CAD labels U1 ADXL343 whereas
+            the catalogue product is ADXL345; this pre-existing chip-identity conflict
+            is outside mounting geometry and does not change the explicit carrier
+            outline or mounting pads. Actual fitted IC remains unverified.
+          mounting_holes:
+          - diameter_mm: 2.5
+            id: U$1:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: -10.16
+            y_mm: 6.35
+          - diameter_mm: 2.5
+            id: U$17:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: 10.16
+            y_mm: 6.35
+          - diameter_mm: 2.5
+            id: U$19:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: -10.16
+            y_mm: -6.35
+          - diameter_mm: 2.5
+            id: U$21:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: 10.16
+            y_mm: -6.35
+          record_sha256: 5c890dc1e20ca8b5d5c78b2e930b18fe16e1c5a7e898ca9500121a59df43bf01
+          research_file: source_file/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/mounting.yaml
+          reviewed_by: gpt-6-luna
+          sources:
+          - bytes: 269137
+            id: cad
+            kind: manufacturer_cad
+            local_file: reference/adxl345_stemma_qt.brd
+            locator: Adafruit_ADXL345_PCB commit 1e0b3eb6c53d8b8ff424b9be11058d701cb31156,
+              exact ADXL345 STEMMA QT.brd; XML EAGLE 9.6.2; layer 20 outline, dimensions,
+              four MOUNTINGHOLE_2.5_PLATED elements and all drill candidates. Archived
+              file bytes checked against commit-pinned official raw source; manufacturer
+              commit date 2022-03-23.
+            registered_at: '2026-11-06T11:19:17+00:00'
+            sha256: 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e
+            url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.brd
+          - bytes: 98115
+            id: product
+            kind: manufacturer_product
+            local_file: website.html
+            locator: 'Adafruit Product 1231: current STEMMA QT product identity, revision
+              history says QT update March 23 2022 changed physical shape and pinout,
+              and four 2.5 mm mounting holes. Archived manufacturer page content;
+              acquisition date in archive metadata 2026-10-23.'
+            registered_at: '2026-11-06T11:19:17+00:00'
+            sha256: b662713323f687433ee7a65d4d8269d9f73e740923a0d9157d3bfd397d21fd52
+            url: https://www.adafruit.com/product/1231
+          status: verified
+        name: electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+        name_proper: Electronic Breakout Sensor Motion Accelerometer Adxl345 Stemma
+          Qt Adafruit 1231
+        name_readable: Adafruit ADXL345, STEMMA QT
+        name_space: electronic breakout sensor motion accelerometer adxl345 stemma
+          qt adafruit 1231
+        name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ACCELEROMETER ADXL345 STEMMA
+          QT ADAFRUIT 1231
+        notes: []
+        oobb_details:
+        - breakout_pcb_height: 17.78
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 2.5
+            id: U$1:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 6.35
+          - diameter_mm: 2.5
+            id: U$17:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: 6.35
+          - diameter_mm: 2.5
+            id: U$19:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: -6.35
+          - diameter_mm: 2.5
+            id: U$21:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: -6.35
+          mounting_hole_radius_name: m2
+          mounting_hole_radius_names:
+          - m2
+          - m2
+          - m2
+          - m2
+          mounting_holes:
+          - - -10.16
+            - 6.35
+          - - 10.16
+            - 6.35
+          - - -10.16
+            - -6.35
+          - - 10.16
+            - -6.35
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+        part_number: '1231'
+        part_number_adafruit: '1231'
+        pinout_status: unverified
+        pins: {}
+        research_date: '2026-10-23'
+        schema_version: 1
+        sources:
+        - id: product
+          kind: manufacturer_product_page
+          retrieved: '2026-10-23'
+          scope: identity, stated interfaces/features and recorded nominal dimensions
+          url: https://www.adafruit.com/product/1231
+        - bytes: 269137
+          id: mounting_cad
+          kind: manufacturer_cad
+          local_file: reference/adxl345_stemma_qt.brd
+          locator: Adafruit_ADXL345_PCB commit 1e0b3eb6c53d8b8ff424b9be11058d701cb31156,
+            exact ADXL345 STEMMA QT.brd; XML EAGLE 9.6.2; layer 20 outline, dimensions,
+            four MOUNTINGHOLE_2.5_PLATED elements and all drill candidates. Archived
+            file bytes checked against commit-pinned official raw source; manufacturer
+            commit date 2022-03-23.
+          registered_at: '2026-11-06T11:19:17+00:00'
+          sha256: 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e
+          url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.brd
+        - bytes: 98115
+          id: mounting_product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: 'Adafruit Product 1231: current STEMMA QT product identity, revision
+            history says QT update March 23 2022 changed physical shape and pinout,
+            and four 2.5 mm mounting holes. Archived manufacturer page content; acquisition
+            date in archive metadata 2026-10-23.'
+          registered_at: '2026-11-06T11:19:17+00:00'
+          sha256: b662713323f687433ee7a65d4d8269d9f73e740923a0d9157d3bfd397d21fd52
+          url: https://www.adafruit.com/product/1231
+        taxonomy_1: electronic
+        taxonomy_10: ''
+        taxonomy_11: ''
+        taxonomy_12: ''
+        taxonomy_13: ''
+        taxonomy_14: adafruit
+        taxonomy_15: '1231'
+        taxonomy_2: breakout
+        taxonomy_3: sensor
+        taxonomy_4: motion
+        taxonomy_5: accelerometer
+        taxonomy_6: adxl345
+        taxonomy_7: stemma_qt
+        taxonomy_8: ''
+        taxonomy_9: ''
+        taxonomy_schema: breakout_function_v1
+        type_1: sensor
+        type_2: motion
+        type_3: accelerometer
+        type_4: adxl345
+        url_chat: ''
+        webpage: https://www.adafruit.com/product/1231
+        webpage_adafruit: https://www.adafruit.com/product/1231
+      dict_data_files: {}
+      dict_data_files_exists: {}
+      file_output: label_oomp.svg
+      file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+      search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+  oomp_key: oomp_electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+  part_number: '1231'
+  part_number_adafruit: '1231'
+  pinout_status: unverified
+  pins: {}
+  research_date: '2026-10-23'
+  schema_version: 1
+  short_name: ''
+  size: default_mounting_plate_default
+  sources:
+  - id: product
+    kind: manufacturer_product_page
+    retrieved: '2026-10-23'
+    scope: identity, stated interfaces/features and recorded nominal dimensions
+    url: https://www.adafruit.com/product/1231
+  - bytes: 269137
+    id: mounting_cad
+    kind: manufacturer_cad
+    local_file: reference/adxl345_stemma_qt.brd
+    locator: Adafruit_ADXL345_PCB commit 1e0b3eb6c53d8b8ff424b9be11058d701cb31156,
+      exact ADXL345 STEMMA QT.brd; XML EAGLE 9.6.2; layer 20 outline, dimensions,
+      four MOUNTINGHOLE_2.5_PLATED elements and all drill candidates. Archived file
+      bytes checked against commit-pinned official raw source; manufacturer commit
+      date 2022-03-23.
+    registered_at: '2026-11-06T11:19:17+00:00'
+    sha256: 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e
+    url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.brd
+  - bytes: 98115
+    id: mounting_product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: 'Adafruit Product 1231: current STEMMA QT product identity, revision
+      history says QT update March 23 2022 changed physical shape and pinout, and
+      four 2.5 mm mounting holes. Archived manufacturer page content; acquisition
+      date in archive metadata 2026-10-23.'
+    registered_at: '2026-11-06T11:19:17+00:00'
+    sha256: b662713323f687433ee7a65d4d8269d9f73e740923a0d9157d3bfd397d21fd52
+    url: https://www.adafruit.com/product/1231
+  taxonomy_1: electronic
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_14_capital: Adafruit
+  taxonomy_14_first_letter: a
+  taxonomy_14_first_letter_upper: A
+  taxonomy_14_length_1: a
+  taxonomy_14_length_2: ad
+  taxonomy_14_length_3: ada
+  taxonomy_14_length_4: adaf
+  taxonomy_14_length_5: adafr
+  taxonomy_14_upper: ADAFRUIT
+  taxonomy_14_upper_length_1: A
+  taxonomy_14_upper_length_2: AD
+  taxonomy_14_upper_length_3: ADA
+  taxonomy_14_upper_length_4: ADAF
+  taxonomy_14_upper_length_5: ADAFR
+  taxonomy_15: '1231'
+  taxonomy_15_capital: '1231'
+  taxonomy_15_first_letter: '1'
+  taxonomy_15_first_letter_upper: '1'
+  taxonomy_15_length_1: '1'
+  taxonomy_15_length_2: '12'
+  taxonomy_15_length_3: '123'
+  taxonomy_15_length_4: '1231'
+  taxonomy_15_length_5: '1231'
+  taxonomy_15_upper: '1231'
+  taxonomy_15_upper_length_1: '1'
+  taxonomy_15_upper_length_2: '12'
+  taxonomy_15_upper_length_3: '123'
+  taxonomy_15_upper_length_4: '1231'
+  taxonomy_15_upper_length_5: '1231'
+  taxonomy_1_capital: Electronic
+  taxonomy_1_first_letter: e
+  taxonomy_1_first_letter_upper: E
+  taxonomy_1_length_1: e
+  taxonomy_1_length_2: el
+  taxonomy_1_length_3: ele
+  taxonomy_1_length_4: elec
+  taxonomy_1_length_5: elect
+  taxonomy_1_upper: ELECTRONIC
+  taxonomy_1_upper_length_1: E
+  taxonomy_1_upper_length_2: EL
+  taxonomy_1_upper_length_3: ELE
+  taxonomy_1_upper_length_4: ELEC
+  taxonomy_1_upper_length_5: ELECT
+  taxonomy_2: breakout
+  taxonomy_2_capital: Breakout
+  taxonomy_2_first_letter: b
+  taxonomy_2_first_letter_upper: B
+  taxonomy_2_length_1: b
+  taxonomy_2_length_2: br
+  taxonomy_2_length_3: bre
+  taxonomy_2_length_4: brea
+  taxonomy_2_length_5: break
+  taxonomy_2_upper: BREAKOUT
+  taxonomy_2_upper_length_1: B
+  taxonomy_2_upper_length_2: BR
+  taxonomy_2_upper_length_3: BRE
+  taxonomy_2_upper_length_4: BREA
+  taxonomy_2_upper_length_5: BREAK
+  taxonomy_3: sensor
+  taxonomy_3_capital: Sensor
+  taxonomy_3_first_letter: s
+  taxonomy_3_first_letter_upper: S
+  taxonomy_3_length_1: s
+  taxonomy_3_length_2: se
+  taxonomy_3_length_3: sen
+  taxonomy_3_length_4: sens
+  taxonomy_3_length_5: senso
+  taxonomy_3_upper: SENSOR
+  taxonomy_3_upper_length_1: S
+  taxonomy_3_upper_length_2: SE
+  taxonomy_3_upper_length_3: SEN
+  taxonomy_3_upper_length_4: SENS
+  taxonomy_3_upper_length_5: SENSO
+  taxonomy_4: motion
+  taxonomy_4_capital: Motion
+  taxonomy_4_first_letter: m
+  taxonomy_4_first_letter_upper: M
+  taxonomy_4_length_1: m
+  taxonomy_4_length_2: mo
+  taxonomy_4_length_3: mot
+  taxonomy_4_length_4: moti
+  taxonomy_4_length_5: motio
+  taxonomy_4_upper: MOTION
+  taxonomy_4_upper_length_1: M
+  taxonomy_4_upper_length_2: MO
+  taxonomy_4_upper_length_3: MOT
+  taxonomy_4_upper_length_4: MOTI
+  taxonomy_4_upper_length_5: MOTIO
+  taxonomy_5: accelerometer
+  taxonomy_5_capital: Accelerometer
+  taxonomy_5_first_letter: a
+  taxonomy_5_first_letter_upper: A
+  taxonomy_5_length_1: a
+  taxonomy_5_length_2: ac
+  taxonomy_5_length_3: acc
+  taxonomy_5_length_4: acce
+  taxonomy_5_length_5: accel
+  taxonomy_5_upper: ACCELEROMETER
+  taxonomy_5_upper_length_1: A
+  taxonomy_5_upper_length_2: AC
+  taxonomy_5_upper_length_3: ACC
+  taxonomy_5_upper_length_4: ACCE
+  taxonomy_5_upper_length_5: ACCEL
+  taxonomy_6: adxl345
+  taxonomy_6_capital: Adxl345
+  taxonomy_6_first_letter: a
+  taxonomy_6_first_letter_upper: A
+  taxonomy_6_length_1: a
+  taxonomy_6_length_2: ad
+  taxonomy_6_length_3: adx
+  taxonomy_6_length_4: adxl
+  taxonomy_6_length_5: adxl3
+  taxonomy_6_upper: ADXL345
+  taxonomy_6_upper_length_1: A
+  taxonomy_6_upper_length_2: AD
+  taxonomy_6_upper_length_3: ADX
+  taxonomy_6_upper_length_4: ADXL
+  taxonomy_6_upper_length_5: ADXL3
+  taxonomy_7: stemma_qt
+  taxonomy_7_capital: Stemma Qt
+  taxonomy_7_first_letter: s
+  taxonomy_7_first_letter_upper: S
+  taxonomy_7_length_1: s
+  taxonomy_7_length_2: st
+  taxonomy_7_length_3: ste
+  taxonomy_7_length_4: stem
+  taxonomy_7_length_5: stemm
+  taxonomy_7_upper: STEMMA_QT
+  taxonomy_7_upper_length_1: S
+  taxonomy_7_upper_length_2: ST
+  taxonomy_7_upper_length_3: STE
+  taxonomy_7_upper_length_4: STEM
+  taxonomy_7_upper_length_5: STEMM
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_schema: breakout_function_v1
+  type: part
+  type_1: sensor
+  type_2: motion
+  type_3: accelerometer
+  type_4: adxl345
+  url_chat: ''
+  webpage: https://www.adafruit.com/product/1231
+  webpage_adafruit: https://www.adafruit.com/product/1231
+type_1: sensor
+type_2: motion
+type_3: accelerometer
+type_4: adxl345
+url_chat: ''
+webpage: https://www.adafruit.com/product/1231
+webpage_adafruit: https://www.adafruit.com/product/1231

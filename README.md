@@ -96,3 +96,15 @@ AI-generated images and instructions. Errors possible.
 | --- | --- | --- | --- |
 | [Aliexpress dc to dc step down](parts/electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress) | 48 × 25 | lm2596 | [1c046](parts/electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress/working.yaml) |
 <!-- oobb-presentation:end -->
+
+## Mounting geometry research
+
+[Luna board-by-board agent, standard holder API, and new-window launch prompt](MOUNTING_RESEARCH.md).
+Research is archived per board, validated against the sources, and promoted into
+the populate code before generating a holder.
+
+<!-- mounting-pilots:start -->
+## Mounting pilot review
+
+[Review the ADXL345 and BME280 holders](research/mounting/REVIEW.md): renders, mounting patterns, printable STLs and source evidence.
+<!-- mounting-pilots:end -->

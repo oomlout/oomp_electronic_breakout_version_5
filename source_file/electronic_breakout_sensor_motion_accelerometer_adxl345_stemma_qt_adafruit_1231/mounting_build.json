@@ -1,0 +1,35 @@
+{
+  "record_sha256": "5c890dc1e20ca8b5d5c78b2e930b18fe16e1c5a7e898ca9500121a59df43bf01",
+  "generated_at": "2026-11-06T14:45:56+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/3dpr.scad",
+      "bytes": 4964,
+      "sha256": "92f24968dd151c824261a4317de1b4c31d11a832d3db09f2c5978efacca855c5"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/3dpr.stl",
+      "bytes": 1517740,
+      "sha256": "902aafff349f9822fd897dca9c4486e7c157858c452fa3e597f8f950ea85f642"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 6536.564845851547,
+    "bounds_mm": [
+      [
+        -29.5,
+        -21.99013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        21.99013364214136,
+        6.0
+      ]
+    ]
+  }
+}

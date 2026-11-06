@@ -1,0 +1,408 @@
+ADXL345 Digital Accelerometer
+Python and CircuitPython
+ADXL345 Digital Accelerometer
+Triple-axis accelerometer breakout with a digital interface.
+by
+Bill Earl
+published March 26, 2013, last edited January 22, 2025
+last major update April 05, 2022
+posted in
+Adafruit Products
+Breakout Boards
+/
+Accel, Gyro, & Magnetometers
+STEMMA
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly and Wiring
+Programming and Calibration
+Library Reference
+Python and CircuitPython
+Python Docs
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+ADXL345 - Triple-Axis Accelerometer (+-2g/4g/8g/16g) w/ I2C/SPI
+$17.50
+Add  to Cart
+View product details
+36
+Intermediate
+Product guide
+Python and CircuitPython
+It's easy to use the ADXL343 or the ADXL345 with Python and CircuitPython, and the
+Adafruit CircuitPython ADXL34x
+module. This module allows you to easily write Python code that reads the acceleration, taps, motion and more from the breakout.
+You can use this sensor with any CircuitPython microcontroller board or with a computer that has GPIO and Python
+thanks to Adafruit_Blinka, our CircuitPython-for-Python compatibility library
+.
+Text emphasized with a blue exclamation:
+The pinouts on the ADXL343 and the ADXL345 are slightly different, but the chips are essentially identical. This page includes different wiring diagrams for each. Other than initialising the proper chip, the code will be the same for both!
+CircuitPython Microcontroller Wiring
+First, wire up the breakout exactly as shown in the previous pages. Here is an example of wiring the ADXL343 to a Feather M0:
+Connect
+SCL
+(yellow wire in STEMMA QT version)
+on the Feather to
+SCL
+on the ADXL343
+Connect
+SDA
+(blue wire in STEMMA QT version)
+on the Feather to
+SDA
+in the ADXL343
+Connect
+GND
+(black wire in STEMMA QT version)
+on the Feather to
+GND
+on the ADXL343
+Connect
+3.3V
+(red wire in STEMMA QT version)
+on the Feather to
+VIN
+on the ADXL343
+Here's an example of wiring the ADXL345 to a Feather M0:
+Connect
+SCL
+(blue wire) on the Feather to
+SCL
+on the ADXL345
+Connect
+SDA
+(yellow wire) on the Feather to
+SDA
+in the ADXL345
+Connect
+GND
+(black wire) on the Feather to
+GND
+on the ADXL345
+Connect
+3.3V
+(red wire) on the Feather to
+VIN
+on the ADXL345
+Python Computer Wiring
+Since there's
+dozens
+of Linux computers/boards you can use we will show wiring for Raspberry Pi. For other platforms,
+please visit the guide for CircuitPython on Linux to see whether your platform is supported
+.
+The following shows a Raspberry Pi connected to the ADXL343:
+Connect
+SCL
+(yellow wire in STEMMA QT version)
+on the RPi to
+SCL
+on the ADXL343
+Connect
+SDA
+(blue wire in STEMMA QT version)
+on the Rpi to
+SDA
+in the ADXL343
+Connect
+GND
+(black wire in STEMMA QT version)
+on the Rpi to
+GND
+on the ADXL343
+Connect
+3.3V
+(red wire in STEMMA QT version)
+on the Rpi to
+VIN
+on the ADXL343
+The following shows a Raspberry Pi connected to the ADXL345:
+Connect
+SCL
+(blue wire) on the RPi to
+SCL
+on the ADXL345
+Connect
+SDA
+(yellow wire) on the RPi to
+SDA
+in the ADXL345
+Connect
+GND
+(black wire) on the RPi to
+GND
+on the ADXL345
+Connect
+3.3V
+(red wire) on the RPi to
+VIN
+on the ADXL345
+Library Installation
+You'll need to install the
+Adafruit CircuitPython ADXL34x
+library on your CircuitPython board.
+First make sure you are running the
+latest version of Adafruit CircuitPython
+for your board.
+Next you'll need to install the necessary libraries to use the hardware--carefully follow the steps to find and install these libraries from
+Adafruit's CircuitPython library bundle
+.  Our CircuitPython starter guide has
+a great page on how to install the library bundle
+.
+For non-express boards like the Trinket M0 or Gemma M0, you'll need to manually install the necessary libraries from the bundle:
+adafruit_adxl34x.mpy
+adafruit_bus_device
+Before continuing make sure your board's lib folder or root filesystem has the
+adafruit_adxl34x.mpy,
+and
+adafruit_bus_device
+files and folders
+copied over.
+Next
+connect to the board's serial REPL
+so you are at the CircuitPython
+>>>
+prompt.
+Python Installation of the ADXL34x Library
+You'll need to install the
+Adafruit_Blinka
+library that provides the CircuitPython support in Python. This may also require enabling I2C on your platform and verifying you are running Python 3.
+Since each platform is a little different, and Linux changes often, please visit the CircuitPython on Linux guide to get your computer ready
+!
+Once that's done, from your command line run the following command:
+pip3 install adafruit-circuitpython-adxl34x
+If your default Python is version 3 you may need to run 'pip' instead. Just make sure you aren't trying to use CircuitPython on Python 2.x, it isn't supported!
+CircuitPython & Python Usage
+To demonstrate the usage of the breakout we'll initialize it and read the acceleration and more from the board's Python REPL.
+Run the following code to import the necessary modules and create the I2C object:
+Download File
+Copy Code
+import time
+import board
+import adafruit_adxl34x
+
+i2c = board.I2C()
+1
+2
+3
+4
+5
+import time
+import board
+import adafruit_adxl34x
+
+i2c = board.I2C()
+If you're using the
+ADXL343
+, run the following to initialise the I2C connection with the breakout:
+Copy Code
+accelerometer = adafruit_adxl34x.ADXL343(i2c)
+1
+accelerometer = adafruit_adxl34x.ADXL343(i2c)
+If you're using the
+ADXL345
+, run the following to initialise the I2C connection with the breakout:
+Copy Code
+accelerometer = adafruit_adxl34x.ADXL345(i2c)
+1
+accelerometer = adafruit_adxl34x.ADXL345(i2c)
+Now you're ready to read values from and enable features of the breakout using any of the following:
+acceleration
+- The acceleration values on the x, y and z axes
+enable_motion_detection
+- Enables motion detection. Allows for setting threshold. Threshold defaults to 18.
+enable_tap_detection
+- Enables tap detection. Allows for single or double-tap detection.
+enable_freefall_detection
+- Enables freefall detection. Allows for setting threshold and time. Threshold defaults to 10, time defaults to 25.
+events
+- Used to read the events when motion detection, tap detection and freefall detection are enables. Requires specifying which event you are trying to read.
+To print the acceleration values:
+Copy Code
+while True:
+    print(accelerometer.acceleration)
+    time.sleep(0.2)
+1
+2
+3
+while True:
+    print(accelerometer.acceleration)
+    time.sleep(0.2)
+That's all there is to reading acceleration values from the ADXL343 and ADXL345 using CircuitPython!
+Full Example Code
+Download Project Bundle
+Copy Code
+# SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
+# SPDX-License-Identifier: MIT
+
+import time
+
+import board
+
+import adafruit_adxl34x
+
+i2c = board.I2C()  # uses board.SCL and board.SDA
+# i2c = board.STEMMA_I2C()  # For using the built-in STEMMA QT connector on a microcontroller
+
+# For ADXL343
+accelerometer = adafruit_adxl34x.ADXL343(i2c)
+# For ADXL345
+# accelerometer = adafruit_adxl34x.ADXL345(i2c)
+
+while True:
+    print("{} {} {}".format(*accelerometer.acceleration))
+    time.sleep(0.2)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+# SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
+# SPDX-License-Identifier: MIT
+
+import time
+
+import board
+
+import adafruit_adxl34x
+
+i2c = board.I2C()  # uses board.SCL and board.SDA
+# i2c = board.STEMMA_I2C()  # For using the built-in STEMMA QT connector on a microcontroller
+
+# For ADXL343
+accelerometer = adafruit_adxl34x.ADXL343(i2c)
+# For ADXL345
+# accelerometer = adafruit_adxl34x.ADXL345(i2c)
+
+while True:
+    print("{} {} {}".format(*accelerometer.acceleration))
+    time.sleep(0.2)
+View on GitHub
+Motion, Tap and Freefall
+There are examples for enabling and using motion, tap and freefall available on GitHub:
+Motion detection on the ADXL343 and ADXL345
+Tap detection on the ADXL343 and ADXL345
+Freefall detection on the ADXL343 and ADXL345
+Save any of the files as
+code.py
+on your CircuitPython board, or run them from the Python REPL on your Linux computer, to try them out.
+Page last edited January 22, 2025
+Library Reference
+Downloads
+Related Guides
+PyLeap ESP32-S3 TFT Boxing Glove Tracker w/ Adafruit IO
+By
+Trevor Beaton
+beginner
+16
+Make It Shake, Rattle, and Roll: Accelerometer Use
+By
+Anne Barela
+beginner
+43
+Adafruit BMP280 Barometric Pressure + Temperature...
+By
+lady ada
+Product Guide
+50
+Working with Multiple Same Address I2C Devices
+By
+Carter Nelson
+beginner
+43
+Adafruit BME280 Humidity + Barometric Pressure +...
+By
+lady ada
+Product Guide
+119
+Adafruit TMF8801 Time of Flight Distance Sensor
+By
+Liz Clark
+Product Guide
+0
+New
+Adafruit Metro M7 1011 with AirLift
+By
+lady ada
+Product Guide
+17
+Adafruit DRV8871 Brushed DC Motor Driver Breakout
+By
+lady ada
+Product Guide
+37
+Adafruit 3.5" 480x320 TFT FeatherWing
+By
+lady ada
+Product Guide
+51
+Introducing Adafruit Feather RP2040
+By
+Kattni Rembor
+Product Guide
+174
+Adafruit Pi Stemma QT Breakout
+By
+Liz Clark
+Product Guide
+4
+Adafruit GPIO Expander Bonnet for Raspberry Pi
+By
+Liz Clark
+Product Guide
+6
+Adafruit Feather M0 WiFi with ATWINC1500
+By
+lady ada
+Product Guide
+134
+Halloween Scream Box
+By
+Tony DiCola
+beginner
+42
+Your browser does not support the video tag. This links to the guide Adafruit Feather 32u4 Adalogger.
+Adafruit Feather 32u4 Adalogger
+By
+lady ada
+beginner
+74
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

@@ -1,0 +1,2969 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLMFVVN');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile mode if small screen device -->
+    
+    <title>Qwiic Atmospheric Sensor (BME280) Hookup Guide - SparkFun Learn</title>
+
+          <link rel="canonical" href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/all">
+            
+    <link href="/css/bootstrap.min.css?rev=1792687498" rel="stylesheet">
+    <link rel="stylesheet" href="/css/theme.github.css?rev=1792687498" type="text/css" media="screen" />    <link rel="alternate" type="application/atom+xml" title="Education Blog" href="https://learn.sparkfun.com/feeds/blog" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorials" href="https://learn.sparkfun.com/feeds/tutorials" />
+    <link rel="alternate" type="application/atom+xml" title="Education Blog Comments" href="https://learn.sparkfun.com/feeds/blog_comments" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorial Comments" href="https://learn.sparkfun.com/feeds/tutorial_comments" />
+  </head>
+
+  <body id=learn class="layout-default no-type tutorials-view" ontouchstart="">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLMFVVN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <script>;
+    </script>
+    <div class="wrapper" itemscope itemtype="http://schema.org/WebSite">
+      <meta itemprop="url" content="https://learn.sparkfun.com/">
+      <div class=wrapper-inner>
+
+    <header>
+  <div class="support-nav-container container-fluid hidden-xs">
+    <div class="container">
+      <div class="support-nav">
+        <div aria-hidden="true">&nbsp;</div>
+
+        <div>
+          <ul class="professional-links">
+            <li><a href="https://www.sparkfun.com/professional">Professional</a></li>
+            <li><a href="https://www.sparkfun.com/education">EDU</a>            <li><a href="https://www.sparkfun.com/become-a-distributor">Distributor</a>          </ul>
+        </div>
+
+        <div class="cs">
+          <a href="https://www.sparkfun.com/support">Customer Support</a>        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-nav-buttons container-fluid hidden-xs">
+    <div class="container">
+      <div class="tab-bar">
+        <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header-content">
+      <div class="logo-container">
+        <button id="mobile-nav-menu-trigger" class="mobile-menu-button btn-unstyled hidden-sm hidden-md hidden-lg" type="button" aria-label="Open navigation menu">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+
+        <a class="logo" href="https://www.sparkfun.com/">
+          <span class="logo-sfe-primary"><span class="visuallyhidden">SparkFun Electronics - sparkfun.com</span></span>
+        </a>
+      </div>
+
+      <div class="search-block">
+                  <form id="search_form" class="search-block-form" action="https://learn.sparkfun.com/search/results" method="get">
+            <label for="global-search" class="sr-only">search documentation</label>
+            <input name="term" id="global-search" class="form-control" type="text" value="" placeholder="search documentation" autocomplete="off">
+            <button type="submit" class="glyphicon glyphicon-search global-search-icon" aria-label="Search"></button>
+          </form>
+        
+        <a href="https://www.sparkfun.com/" class="hidden-xs">Back to Webstore<span class="icon-header icon-header-undo" aria-hidden="true"></span></a>
+      </div>
+
+        <a class="account-link" href="https://www.sparkfun.com/customer/account">
+          <span class="img-account-silhouette visible-xs-inline-block"><span class="sr-only">My Account</span></span>
+          <span class="hidden-xs">My Account</span>
+        </a>
+
+    </div>
+  </div>
+
+  <div class="header-nav container-fluid hidden-xs">
+    <div class="container">
+      <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    </div>
+  </div>
+  <div id="nav-mobile-menu" class="nav-mobile-menu" aria-labelledby="nav-mobile-menu-heading" aria-role="dialog" aria-modal="true">
+    <h2 id="nav-mobile-menu-heading" class="sr-only">Navigation menu</h2>
+    <ul class="mobile-menu-tabs">
+      <li class="active"><a>Menu</a></li>
+      <li><a href="https://www.sparkfun.com/customer/account">Account</a></li>
+    </ul>
+    <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+  </div>
+</header>
+
+    
+    <div class=content>
+      <div class=container id=airlock>
+
+        
+        <div class=main-title>
+  <ul class="breadcrumb">
+    <li><a href="https://learn.sparkfun.com/">Home</a></li>
+    <li><a href="https://learn.sparkfun.com/tutorials">Tutorials</a></li>
+    <li>Qwiic Atmospheric Sensor (BME280) Hookup Guide</li>
+      </ul>
+
+  <h1>
+    Qwiic Atmospheric Sensor (BME280) Hookup Guide  </h1>
+
+</div>
+
+
+<a id=nav_toggle_pages class="nav_toggle nav-toggle-trigger" href="#"><span>&#8801;</span> Pages</a>
+
+<div id=tutorial class="row">
+
+  <div class="col-sm-8" id="sections">
+
+    <div class="contributors">
+                      Contributors:
+                <span class="contributor-alias"><img src="https://cdn.sparkfun.com/avatar/f4f3cfa206713c4cee74e50b8ddf07cd?d=retro&s=20&r=pg" /> QCPete</span>, <span class="contributor-alias"> santaimpersonator</span>          </div>
+
+    <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t929" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft929&name=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft929" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft929&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft929&t=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft929&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F9%2F2%2F9%2FAssembly_Raspberry_Pi.jpg&description=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+          <div class="section tutorial-page">
+        <h2 id="introduction">Introduction</h2>
+        <p>The new <a href="https://www.sparkfun.com/products/15440">Qwiic Atmospheric Sensor (BME280)</a> is an updated board revision of our <a href="https://www.sparkfun.com/products/13676">Atmospheric Sensor Breakout- BME280</a> to make it Qwiic compatible. The <a href="https://www.sparkfun.com/qwiic">Qwiic connector system</a> reduces the hassle of interfacing to the sensor via I<sup>2</sup>C, by utilizing polarized cables that are simple to use. The BME280 is great for measuring humidity, temperature, and barometric pressure.</p>
+
+
+
+<div >
+<div class="tile product-tile big grid " data-id="product-15440">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html">
+        <img src="https://cdn.sparkfun.com/r/600-600/assets/parts/1/4/0/1/4/15440-SparkFun_Atmospheric_Sensor_Breakout_-_BME280__Qwiic_-04a.jpg" alt="SparkFun Atmospheric Sensor Breakout - BME280 (Qwiic)" height="600">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html">
+          <span>SparkFun Atmospheric Sensor Breakout - BME280 (Qwiic)</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      SEN-15440    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun BME280 Atmospheric Sensor Breakout is an easy way to measure barometric pressure, humidity, and temperature read&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$16.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+
+<p>In addition, we now provide a Python library for compatibility with single board computer (SBC) platforms like the <a href="https://www.sparkfun.com/categories/395">Raspberry Pi boards</a>. The Arduino library is shared from the preexisting hardware. The examples below, will demonstrate how to use the <a href="https://www.sparkfun.com/products/15440">Qwiic Atmospheric Sensor</a> with a <a href="https://www.sparkfun.com/products/15123">RedBoard Qwiic</a>; and a <a href="https://www.sparkfun.com/products/14643">Raspberry Pi</a> with the <a href="https://www.sparkfun.com/products/15351">Qwiic pHAT</a> (and additional accessories) utilizing the Qwiic connection system.</p>
+
+<p>Don't forget to check out this great video of Rob playing his <strong>sparxophone</strong> thanks to the help of the BME280!
+<div class="flex-video-wrap clearfix">
+  <div class="flex-video widescreen img">
+    <iframe src="https://www.youtube.com/embed/l9xFrEx5S8E/?autohide=1&amp;border=0&amp;wmode=opaque&amp;enablejsapi=1" frameborder=0 allowfullscreen width="560" height="315"></iframe>
+  </div>
+</div>
+</p>
+
+<h3>Required Materials</h3>
+
+<p>The Qwiic Atmospheric Sensor does need a few additional items for you to get started. The <a href="https://www.sparkfun.com/products/15123">RedBoard Qwiic</a> is for the Arduino examples and the <a href="https://www.sparkfun.com/products/15351">Qwiic pHAT</a> is for the Raspberry Pi example (see note below). You may already have a few of these items, so feel free to modify your cart based on your needs. Additionally, there are also <a class="collapsed" data-toggle="collapse" data-target=".multi-collapse">alternative parts</a> options that are available as well (<em>click button below to toggle options</em>).</p>
+
+<div class="panel-group" role="tablist">
+    <div class="collapse multi-collapse in" role="tabpanel">
+        <div class="panel-body">
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid " data-id="product-15081">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-qwiic-cable-kit.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/3/4/3/1/15081-_01.jpg" alt="SparkFun Qwiic Cable Kit" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-qwiic-cable-kit.html">
+          <span>SparkFun Qwiic Cable Kit</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      KIT-15081    </span>
+
+          <p class="description" style="display:none">
+        To make it even easier to get started, we've assembled this Qwiic Cable Kit with a variety of Qwiic cables from 50mm to 500mm&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$12.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-15123">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-redboard-qwiic.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/3/4/9/2/15123-SparkFun_RedBoard_Qwiic-01a.jpg" alt="SparkFun RedBoard Qwiic" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-redboard-qwiic.html">
+          <span>SparkFun RedBoard Qwiic</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-15123    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun RedBoard Qwiic is an Arduino-compatible development board with a built in Qwiic connector, eliminating the need &hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$21.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-15351">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/15351">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/3/8/7/9/15351-SparkFun_Qwiic_pHAT_for_Raspberry_Pi-01.jpg" alt="SparkFun Qwiic pHAT for Raspberry Pi" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/15351">
+          <span>SparkFun Qwiic pHAT for Raspberry Pi</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-15351    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Qwiic pHAT for Raspberry Pi is the quickest and easiest way to make your way into the Qwiic ecosystem and still &hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+        
+        </div>
+    </div>
+    
+    <div class="collapse multi-collapse" role="tabpanel">
+        <div class="panel-body">
+
+Qwiic compatible microcontrollers:
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid " data-id="product-15123">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-redboard-qwiic.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/3/4/9/2/15123-SparkFun_RedBoard_Qwiic-01a.jpg" alt="SparkFun RedBoard Qwiic" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-redboard-qwiic.html">
+          <span>SparkFun RedBoard Qwiic</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-15123    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun RedBoard Qwiic is an Arduino-compatible development board with a built in Qwiic connector, eliminating the need &hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$21.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-14812">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-redboard-turbo-samd21-development-board.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/3/0/7/9/14812-SparkFun_RedBoard_Turbo_-_SAMD21_Development_Board-01b.jpg" alt="SparkFun RedBoard Turbo - SAMD21 Development Board" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-redboard-turbo-samd21-development-board.html">
+          <span>SparkFun RedBoard Turbo - SAMD21 Development Board</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-14812    </span>
+
+          <p class="description" style="display:none">
+        If you’re ready to step up your Arduino game from older 8-bit/16MHz microcontrollers, the SparkFun RedBoard Turbo is a form&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                  <span class="price price-retail">$22.50</span>
+                <span class="price-sale">
+          <span class="price">$11.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-14713">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-thing-plus-samd51.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/9/2/7/14713-SparkFun_Thing_Plus_-_SAMD51-01.jpg" alt="SparkFun Thing Plus - SAMD51" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-thing-plus-samd51.html">
+          <span>SparkFun Thing Plus - SAMD51</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-14713    </span>
+
+          <p class="description" style="display:none">
+        With a 32-bit ARM Cortex-M4F MCU, the SparkFun SAMD51 Thing Plus is one of our most powerful microcontroller boards yet!      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$25.50</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14689">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/14689">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/8/9/4/14689-SparkFun_Thing_Plus_-_ESP32_WROOM-01.jpg" alt="SparkFun Thing Plus - ESP32 WROOM" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/14689">
+          <span>SparkFun Thing Plus - ESP32 WROOM</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      WRL-14689    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun ESP32 Thing Plus is the next step to get started with Espressif IoT ideations while still enjoying all the ameni&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+In addition we also offer, Qwiic compatible stackable shields for microcontrollers and pHATs for single board computers (like the <a href="https://www.sparkfun.com/categories/395">Raspberry Pi boards</a>) that don't include a Qwiic connector.
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid " data-id="product-14495">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-qwiic-adapter.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/5/5/1/14495-01.jpg" alt="SparkFun Qwiic Adapter" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-qwiic-adapter.html">
+          <span>SparkFun Qwiic Adapter</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-14495    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Qwiic Adapter provides the perfect means to make any old I<sup>2</sup>C board into a Qwiic enabled board.      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$1.60</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-14352">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-qwiic-shield-for-arduino.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/3/4/3/14352-01.jpg" alt="SparkFun Qwiic Shield for Arduino" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-qwiic-shield-for-arduino.html">
+          <span>SparkFun Qwiic Shield for Arduino</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-14352    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Qwiic Shield is an easy-to-assemble board that provides a simple way to incorporate the Qwiic Connect System wit&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$7.75</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14477">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/14477">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/5/2/6/14477-01.jpg" alt="SparkFun Qwiic Shield for Photon" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/14477">
+          <span>SparkFun Qwiic Shield for Photon</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-14477    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Qwiic Shield for Photon is an easy-to-assemble board that provides a simple way to incorporate the Qwiic System &hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid " data-id="product-15794">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-qwiic-shim-for-raspberry-pi.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/4/3/9/9/16385-15794-SparkFun_Qwiic_SHIM_for_Raspberry_Pi-01.jpg" alt="SparkFun Qwiic SHIM for Raspberry Pi &amp; NVIDIA Jetson Orin Nano" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-qwiic-shim-for-raspberry-pi.html">
+          <span>SparkFun Qwiic SHIM for Raspberry Pi &amp; NVIDIA Jetson Orin Nano</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-15794    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Qwiic SHIM for Raspberry Pi is a small, easily removable breakout that easily adds a Qwiic connector to your Ras&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$1.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-14459">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-qwiic-hat-for-raspberry-pi.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/9/5/14459-01.jpg" alt="SparkFun Qwiic HAT for Raspberry Pi" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-qwiic-hat-for-raspberry-pi.html">
+          <span>SparkFun Qwiic HAT for Raspberry Pi</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-14459    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Qwiic HAT for Raspberry Pi is the quickest and easiest way to make your way into the Qwiic ecosystem and still u&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$6.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-15316">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-servo-phat-for-raspberry-pi.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/3/8/2/7/15316-SparkFun_Servo_pHAT_for_Raspberry_Pi-01b.jpg" alt="SparkFun Servo pHAT for Raspberry Pi &amp; NVIDIA Jetson Orin Nano" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-servo-phat-for-raspberry-pi.html">
+          <span>SparkFun Servo pHAT for Raspberry Pi &amp; NVIDIA Jetson Orin Nano</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-15316    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Servo pHAT for Raspberry Pi allows your Raspberry Pi to control up to 16 servo motors in a straightforward manne&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$13.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-15351">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/15351">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/3/8/7/9/15351-SparkFun_Qwiic_pHAT_for_Raspberry_Pi-01.jpg" alt="SparkFun Qwiic pHAT for Raspberry Pi" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/15351">
+          <span>SparkFun Qwiic pHAT for Raspberry Pi</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-15351    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Qwiic pHAT for Raspberry Pi is the quickest and easiest way to make your way into the Qwiic ecosystem and still &hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+You will also need a Qwiic cable to connect to your BME280 Qwiic, choose a length that suits your needs.
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid retired" data-id="product-14426">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/qwiic-cable-50mm.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/2/14426-Qwiic_Cable_-_50mm-01.jpg" alt="Qwiic Cable - 50mm" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/qwiic-cable-50mm.html">
+          <span>Qwiic Cable - 50mm</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14426    </span>
+
+          <p class="description" style="display:none">
+        This is a 50mm long 4-conductor cable with 1mm JST termination. It’s designed to connect Qwiic enabled components together &hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14427">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/qwiic-cable-100mm.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/3/14427-Qwiic_Cable_-_100mm-01.jpg" alt="Qwiic Cable - 100mm" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/qwiic-cable-100mm.html">
+          <span>Qwiic Cable - 100mm</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14427    </span>
+
+          <p class="description" style="display:none">
+        This is a 100mm long 4-conductor cable with 1mm JST termination. It’s designed to connect Qwiic enabled components together&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14428">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/14428">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/4/14428-Qwiic_Cable_-_200mm-01.jpg" alt="Qwiic Cable - 200mm" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/14428">
+          <span>Qwiic Cable - 200mm</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14428    </span>
+
+          <p class="description" style="display:none">
+        This is a 200mm long 4-conductor cable with 1mm JST termination. It’s designed to connect Qwiic enabled components together&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14429">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/14429">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/5/14429-Qwiic_Cable_-_500mm-01.jpg" alt="Qwiic Cable - 500mm" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/14429">
+          <span>Qwiic Cable - 500mm</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14429    </span>
+
+          <p class="description" style="display:none">
+        This is a 500mm long 4-conductor cable with 1mm JST termination. It’s designed to connect Qwiic enabled components together&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Button -->
+
+<p style="text-align:center;">
+<a class="collapsed btn btn-default" role="button" data-toggle="collapse" data-target=".multi-collapse"><b>Alternative Parts (Toggle)</b></a></p>
+
+<div class="alert alert-warning"><b>Raspberry Pi Example:</b> If you don't already have them, you will need a <a href="https://www.sparkfun.com/products/14644">Raspberry Pi</a> and <a href="https://www.sparkfun.com/categories/398">standard peripherals</a>. An example setup is listed below. (<i>This sensor and the Python library have not been tested on the newly released Raspberry Pi 4 because we don't carry it in out catalog yet.</i>)</div>
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid " data-id="product-14643">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/raspberry-pi-3-b.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/8/2/8/14643-Raspberry_Pi_3_B_-02.jpg" alt="Raspberry Pi 3 B+" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/raspberry-pi-3-b.html">
+          <span>Raspberry Pi 3 B+</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-14643    </span>
+
+          <p class="description" style="display:none">
+        The Raspberry Pi 3 B+ is here to provide you with the same Pi as before, but now with gigabit and PoE capable Ethernet!      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$43.50</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-14271">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/multimedia-wireless-keyboard.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/2/2/6/14271-02.jpg" alt="Multimedia Wireless Keyboard" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/multimedia-wireless-keyboard.html">
+          <span>Multimedia Wireless Keyboard</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      WIG-14271    </span>
+
+          <p class="description" style="display:none">
+        With Single-Board Computers (SBCs) on the rise, it is a good idea to have an easy way to interface with them. Operating on a &hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                  <span class="price price-retail">$29.95</span>
+                <span class="price-sale">
+          <span class="price">$19.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14035">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/pi-topceed-green.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/1/8/5/5/14035-03.jpg" alt="pi-topCEED (Green)" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/pi-topceed-green.html">
+          <span>pi-topCEED (Green)</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      KIT-14035    </span>
+
+          <p class="description" style="display:none">
+        The pi-topCEED is a DIY desktop computer that helps you start learning how to code, create awesome devices and take your know&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-15052">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-noobs-card-for-raspberry-pi-16gb.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/3/3/9/5/15052-SparkFun_Noobs_Card_for_Raspberry_Pi__16GB_-05e.jpg" alt="SparkFun Noobs Card for Raspberry Pi (16GB)" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-noobs-card-for-raspberry-pi-16gb.html">
+          <span>SparkFun Noobs Card for Raspberry Pi (16GB)</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      COM-15052    </span>
+
+          <p class="description" style="display:none">
+        This is a class 10, 16GB, micro SDHC card that has been pre-installed with the NOOBS operating system for the Raspberry Pi.      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+<h3>Suggested Reading</h3>
+
+<p>If you're unfamiliar with jumper pads, I<sup>2</sup>C, Qwiic, or Python be sure to checkout some of these foundational tutorials. Also included, in this list, are past tutorials involving the BME280 sensor.</p>
+
+<p>
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-16">
+  <a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/6/spiThumb_Updated2.png)"></div>
+      </div>
+    
+    
+    <h3 class="title">Serial Peripheral Interface (SPI)</h3>
+      </a>
+
+      <div class="description">
+      SPI is commonly used to connect microcontrollers to peripherals such as sensors, shift registers, and SD cards.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-62">
+  <a href="https://learn.sparkfun.com/tutorials/logic-levels">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/2/Input_Output_Logic_Level_Tolerances_tutorial_tile.png)"></div>
+      </div>
+    
+    
+    <h3 class="title">Logic Levels</h3>
+      </a>
+
+      <div class="description">
+      Learn the difference between 3.3V and 5V devices and logic levels.     </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-82">
+  <a href="https://learn.sparkfun.com/tutorials/i2c">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/2/I2C-Block-Diagram.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">I2C</h3>
+      </a>
+
+      <div class="description">
+      An introduction to I2C, one of the main embedded communications protocols in use today.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-664">
+  <a href="https://learn.sparkfun.com/tutorials/how-to-work-with-jumper-pads-and-pcb-traces">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">How to Work with Jumper Pads and PCB Traces</h3>
+      </a>
+
+      <div class="description">
+      Handling PCB jumper pads and traces is an essential skill. Learn how to cut a PCB trace, add a solder jumper between pads to reroute connections, and repair a trace with the green wire method if a trace is damaged.
+    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-449">
+  <a href="https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/4/4/9/wedge-n-pi.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Raspberry Pi SPI and I2C Tutorial</h3>
+      </a>
+
+      <div class="description">
+      Learn how to use serial I2C and SPI buses on your Raspberry Pi using the wiringPi I/O library for C/C++ and spidev/smbus for Python.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-783">
+  <a href="https://learn.sparkfun.com/tutorials/python-programming-tutorial-getting-started-with-the-raspberry-pi">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/7/8/3/Python_Tutorial-08.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Python Programming Tutorial: Getting Started with the Raspberry Pi</h3>
+      </a>
+
+      <div class="description">
+      This guide will show you how to write programs on your Raspberry Pi using Python to control hardware.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-906">
+  <a href="https://learn.sparkfun.com/tutorials/qwiic-phat-for-raspberry-pi-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com//assets/learn_tutorials/9/0/6/QwiicpHATs.gif)"></div>
+      </div>
+    
+    
+    <h3 class="title">Qwiic pHAT for Raspberry Pi Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      Get started interfacing your Qwiic enabled boards with your Raspberry Pi. The Qwiic pHAT connects the I2C bus (GND, 3.3V, SDA, and SCL) on your Raspberry Pi to an array of Qwiic connectors.    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-419">
+  <a href="https://learn.sparkfun.com/tutorials/sparkfun-bme280-breakout-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/4/1/9/13676-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">SparkFun BME280 Breakout Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      A guide for connecting the BME280 sensor to a microcontroller, and for using the SparkFun Arduino library.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-687">
+  <a href="https://learn.sparkfun.com/tutorials/ccs811bme280-qwiic-environmental-combo-breakout-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/8/7/14348-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">CCS811/BME280 (Qwiic) Environmental Combo Breakout Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      Sense various environmental conditions such as temperature, humidity, barometric pressure, eCO2 and tVOCs with the CCS811 and BME280 combo breakout board.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-844">
+  <a href="https://learn.sparkfun.com/tutorials/redboard-qwiic-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/4/4/15123-SparkFun_RedBoard_Qwiic-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">RedBoard Qwiic Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      This tutorial covers the basic functionality of the RedBoard Qwiic. This tutorial also covers how to get started blinking an LED and using the Qwiic system.    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+</p>
+
+<p><!-- Qwiic Banner -->
+<center></p>
+
+<div>
+    <div style="top:5px;left:5px;background-color:Gray;position:relative">
+        <div style="top:-5px;left:-5px;background-color:#ffffff;position:relative;border:1px solid #cccccc;padding: 7px;">
+            <a href="https://www.sparkfun.com/qwiic"><img src="https://cdn.sparkfun.com/assets/custom_pages/2/7/2/qwiic-logo.png" alt="Qwiic Connect System" title="Qwiic Connect System"></a>
+        </div>
+    </div>
+</div>
+
+<p></center></p>
+
+<p>The Qwiic Atmospheric Sensor utilizes the <a href="https://www.sparkfun.com/qwiic">Qwiic connect system</a>. We recommend familiarizing yourself with the <a href="https://learn.sparkfun.com/tutorials/logic-levels"><strong>Logic Levels</strong></a> and <a href="https://learn.sparkfun.com/tutorials/i2c"><strong>I<sup>2</sup>C</strong></a> tutorials before using it. Click on the banner above to learn more about our <a href="https://www.sparkfun.com/categories/399">Qwiic products</a>.</p>
+
+<div class="flex-video-wrap clearfix">
+  <div class="flex-video widescreen img">
+    <iframe src="https://www.youtube.com/embed/x0RDEHqFIF8/?autohide=1&amp;border=0&amp;wmode=opaque&amp;enablejsapi=1" frameborder=0 allowfullscreen width="560" height="315"></iframe>
+  </div>
+</div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="hardware-overview">Hardware Overview</h2>
+        <h3>Power</h3>
+
+<p>There is a power status LED to help make sure that your Qwiic Atmospheric Sensor is getting power. You can power the board either through the <em>polarized</em> <strong>Qwiic connector</strong> system or the breakout pins (<strong>3.3V</strong> and <strong>GND</strong>) provided. This Qwiic system is meant to use <strong>3.3V</strong>, be sure that you are <strong>NOT</strong> using another voltage when using the Qwiic system.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_Power_Attempt2.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_Power_Attempt2.jpg" alt="Power LED, VDD, and GND" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of power LED along with VCC and GND connections. (Click to enlarge)</em> </div></p>
+
+<p>If you want to conserve power, there is an available jumper on the back of the board labeled <code>LED</code> to cut power to the LED (<em>see <strong>Jumpers</strong> section below</em>).</p>
+
+<h3>BME280 Sensor</h3>
+
+<p>The Bosch BME280 is the atmospheric sensor used on this board. It measures three different atmospheric properties: <a href="https://en.wikipedia.org/wiki/Atmospheric_temperature">ambient temperature</a>, <a href="https://en.wikipedia.org/wiki/Relative_humidity">(relative) humidity</a>, and <a href="https://en.wikipedia.org/wiki/Atmospheric_pressure">barometric pressure</a>.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_Sensor.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_Sensor.jpg" alt="BME280 Sensor" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of BME280 sesnor. (Click to enlarge)</em> </div></p>
+
+<p>The BME280 uses three modes of operation: sleep mode, forced mode and normal mode. These modes dictate how the sensor performs measurement cycles. The BME280 can be interfaced via I<sup>2</sup>C (<em>used with Qwiic connections</em>) or SPI communication. In the table below, are some of the characteristics of the BME280 sensor from the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>:</p>
+
+<table class="table table-hover table-striped table-bordered">
+    <tr>
+        <th>Characteristic</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Operating Voltage (V<sub>DD</sub>)</td>
+        <td>1.71V to 3.6V (<b>Default on Qwiic System: 3.3V</b>)</td>
+    </tr>
+    <tr>
+        <td>Operational Modes</td>
+        <td><b>Sleep</b> (<b>Default</b>), Normal, and Forced (<i>low power; single measurement</i>)</td>
+    </tr>
+    <tr>
+        <td>Data Output</td>
+        <td>
+            16-bit output from ADC<br>
+            (*<i>IIR filter and oversampling can increase this to 20-bit; excludes humidity data</i>.)
+        </td>
+    </tr>
+    <tr>
+        <td>Current Consumption (<i>Typical</i>)</td>
+        <td>
+            Sleep: 0.3 &micro;A<br>
+            Standby: 0.5 &micro;A (inactive period of normal mode)<br>
+            Humidity Measurements: 340 &micro;A (peaks at 85&deg;C)<br>
+            Pressure Measurements: 714 &micro;A (peaks at -40&deg;C)<br>
+            Temperature Measurements: 350 &micro;A (peaks at 85&deg;C)<br>
+        </td>
+    </tr
+    <tr>
+        <td>Humidity Parameters</td>
+        <td>
+            Range: 0 to 100 %RH<br>
+            Absolute Accuracy: &plusmn;3 %RH (from 20 - 80 %RH)<br>
+            Resolution: 0.008 %RH<br>
+            Forced Mode Current Consumption: 2.8 &micro;A (max)
+        </td>
+    </tr>
+    <tr>
+        <td>Pressure Parameters</td>
+        <td>
+            Range: 300 to 1100 hPa (30,000 - 110,000 Pa or approx. 4.35 - 15.95 PSI)<br>
+            Absolute Accuracy: &plusmn;(1 - 1.7) hPa<br>
+            Resolution: 0.18 Pa<br>
+            Forced Mode Current Consumption: 4.2 &micro;A (max)
+        </td>
+    </tr>
+    <tr>
+        <td>Temperature Parameters</td>
+        <td>
+            Range: 0&deg;C to 65&deg;C (32&deg;F to 149&deg;F)<br>
+            Absolute Accuracy: &plusmn;(0.5 - 1.5)&deg;C<br>
+            Resolution: 0.01&deg;C<br>
+            Forced Mode Current Consumption: 1.0 &micro;A (typical)
+        </td>
+    </tr>
+    <tr>
+        <td>I<sup>2</sup>C Address</td>
+        <td><b>0x77</b> (<b>Default</b>) or 0x76</td>
+    </tr>
+</table>
+
+<h4>Modes of Operation</h4>
+
+<p>The BME280 offers three modes of operation:</p>
+
+<ul>
+<li><strong>Sleep mode</strong> (<strong>Default</strong>): No operation, all registers accessible, lowest power, selected after startup.</li>
+<li>Forced mode (<em>low power operation</em>): Performs one measurement, store results and return to sleep mode.</li>
+<li>Normal mode (<em>active measurements</em>): Perpetual cycling of measurements and inactive periods.</li>
+</ul>
+
+<p>For more details, refer to sections 3.3.2-4 in the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>. Additionally, in section 3.5 the are a set of recommended sensor settings for various applications or operations.</p>
+
+<h4>Measurements</h4>
+
+<p>All measurements can be skipped or enabled. When enabled, there are several oversampling options; with oversampling, it is possible to reduce the noise.</p>
+
+<p>For more details, refer to sections 3-4 in the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</p>
+
+<h5>Humidity</h5>
+
+<p>The resolution of the humidity measurement is fixed at 16-bit ADC output. A graph of the operational range for the humidity sensor (<em>shaded in grey</em>) is shown below; the sensor will not report and/or operate properly outside of this range.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/humidity_operational_range.PNG"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/humidity_operational_range.PNG" alt="Humidity sensor operational range" /></a> </div>
+<div class="center-block text-center"> <em>Operational range of the humidity sensor. (Click to enlarge)</em> </div></p>
+
+<h5>Pressure and Temperature</h5>
+
+<p>For temperature and pressure readings, the resolution of the data will be dependent on if the infinite impulse response (IIR) filter is enabled and the oversampling setting register setting (osrs):</p>
+
+<ul>
+<li>When the IIR filter is enabled, the measurement resolution is 20-bit.</li>
+<li>When the IIR filter is disabled, the measurement  resolution is [16 + (osrs–1)]-bit.
+
+<ul>
+<li>e.g. The temperature measurement is 18-bit when osrs_t is set to ‘3’.</li>
+</ul></li>
+</ul>
+
+<p>(&#42;<em>Note: The temperature value depends on the PCB temperature, sensor element self-heating and ambient temperature and is typically just above ambient temperature.</em>)</p>
+
+<h4>Data Analysis</h4>
+
+<p>Below are other important attributes of the sensor. For most users, this information is will either be outside their scope or trivial. However for those that are interested, these topics have been briefly summarized or quoted directly from the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>. For full details, please refer to the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>; additionally, some of the comments in the library may help.</p>
+
+<h5>Infinite Impulse Response Filter</h5>
+
+<ul>
+<li>It is recommended that the internal IIR filter be implemented to dampen rapid data fluctuations from external influences like wind blowing, closing doors, etc.</li>
+</ul>
+
+<h5>Noise</h5>
+
+<ul>
+<li>The expected noise in the measurement data is dependent on the oversampling setting. For pressure and temperature readings, it is also dependent on the IIR filter setting used.</li>
+</ul>
+
+<h5>Trimming Parameters</h5>
+
+<ul>
+<li>The trimming parameters are programmed into the devices’ non-volatile memory (NVM) during production and cannot be altered by users. These are used for the calibration/compensation parameters.</li>
+</ul>
+
+<h5>Compensation formulas</h5>
+
+<ul>
+<li>It is strongly advised (by the manufacturer) to use the API available from Bosch Sensortec to perform readout and compensation.</li>
+</ul>
+
+<h3>Qwiic or I<sup>2</sup>C</h3>
+
+<h4>I<sup>2</sup>C Address</h4>
+
+<p>The BME280 has 2 available I<sup>2</sup>C addresses, which are set by the address pin, ADR. On the Qwiic Atmospheric sensor, the default peripheral address of the BME280 is <strong>0x77</strong> (HEX).</p>
+
+<p><strong>Default I<sup>2</sup>C Peripheral Address:</strong> 0x77</p>
+
+<h4>I<sup>2</sup>C Registers</h4>
+
+<p>The BME280 register (<em>memory</em>) map is detail in section 5.3 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</p>
+
+<table class="table table-hover table-striped table-bordered">
+    <tr>
+        <th class="text-center; col-md-2">Address</th>
+        <th class="col-md-14">Description</th>
+    </tr>
+    <tr>
+        <td align="center">0xD0</td>
+        <td>ID: The chip identification number.</td>
+    </tr>
+    <tr>
+        <td align="center"  style="vertical-align:middle">0xE0</td>
+        <td>Soft Reset: If the value <b>0xB6</b> is written to the register, the device is reset using the complete power-on-reset procedure</td>
+    </tr>
+    <tr>
+        <td align="center" style="vertical-align:middle">0xF2</td>
+        <td>ctrl_hum: Sets the humidity data acquisition options of the device. Changes to this register only become effective after a write operation to <code>ctrl_meas</code>.</td>
+    </tr>
+    <tr>
+        <td align="center" style="vertical-align:middle">0xF3</td>
+        <td>
+            status: Indicate the status of the device.<br>
+            <div style="margin-left:5%;">
+                Whether a conversion is running or the results have been transferred to the data registers.<br>
+                Whether NVM data are being copied to image registers.
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="vertical-align:middle">0xF4</td>
+        <td style="padding:5px">ctrl_meas: Sets the pressure and temperature data acquisition options of the device. The register needs to be written after changing <code>ctrl_hum</code> for the changes to become effective./td>
+    </tr>
+    <tr>
+        <td align="center" style="vertical-align:middle">0xF5</td>
+        <td>config: Sets the rate, filter and interface options of the device. Writes to the <code>config</code> register in <i>normal mode</i> may be ignored. In <i>sleep mode</i> writes are not ignored.</td>
+    </tr>
+    <tr>
+        <td align="center">0xF7 to 0xF9</td>
+        <td>press: The raw pressure measurement data.</td>
+    </tr>
+    <tr>
+        <td align="center">0xFA to 0xFC</td>
+        <td>temp: The raw temperature measurement data.</td>
+    </tr>
+    <tr>
+        <td align="center">0xFD to 0xFE</td>
+        <td>hum: The raw humidity measurement data.</td>
+    </tr>
+    <tr>
+        <td align="center">
+            0xE1 to 0xF0<br>
+            0x88 to 0xA1
+        </td>
+        <td style="vertical-align:middle">Calibration Data: Holds <i>Trimming Parameters</i>.</td>
+    </tr>
+</table>
+
+<h4>Connections</h4>
+
+<p>The simplest way to use the Qwiic ADC is through the Qwiic connect system. The connectors are polarized for the I<sup>2</sup>C connection and power. (<em>*They are tied to their corresponding breakout pins.</em>)</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_Qwiic_Connectors.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_Qwiic_Connectors.jpg" alt="Qwiic Connectors" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of the Qwiic connectors.</em> </div></p>
+
+<p>However, the board also provides six labeled breakout pins. You can connect these lines to the I<sup>2</sup>C bus of your microcontroller and power pins (<strong>3.3V</strong> and <strong>GND</strong>), if it doesn't have a Qwiic connector. Otherwise, the breakout pins can also be used for an SPI connection.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_Breakout_Pins.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_Breakout_Pins.jpg" alt="Breakout Pins" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of the breakout pins.</em> </div></p>
+
+<table class="table table-hover table-striped table-bordered">
+    <tr>
+        <th class="text-center">Pin Label</th>
+        <th class="text-center">Pin Function</th>
+        <th class="text-center">Input/Output</th>
+        <th>Notes</th>
+    </tr>
+    <tr align="center">
+        <td>3.3V</td>
+        <td>Power Supply</td>
+        <td>Input</td>
+        <td align = "left"><b>3.3V</b> on Qwiic system (<i>should be stable</i>)</td>
+    </tr>
+    <tr align="center">
+        <td>GND</td>
+        <td>Ground</td>
+        <td>Input</td>
+        <td align = "left">Ground and Single-Ended Reference Voltage for ADC.</td>
+    </tr>
+    <tr align="center">
+        <td style="vertical-align:middle">SDA</td>
+        <td>I<sup>2</sup>C Data Signal</td>
+        <td style="vertical-align:middle">Bi-directional</td>
+        <td align = "left">Bi-directional data line. Voltage should not exceed power supply (e.g. 3.3V).</td>
+    </tr>
+    <tr align="center">
+        <td style="vertical-align:middle">SCL</td>
+        <td>I<sup>2</sup>C Clock Signal</td>
+        <td style="vertical-align:middle">Input</td>
+        <td align = "left">Clock signal. Voltage should not exceed power supply (e.g. 3.3V).</td>
+    </tr>
+</table>
+
+<div class="well">
+<H3>SPI Connection</H3>
+<p>There are two options for an SPI connection 3-wire or 4-wire. For a 3-wire connection, users will need to cut the <code>ADR</code> jumper on the board. For a 4-wire connection users can cut the <code>ADR</code>, <code>I2C</code>, and <code>CS</code> jumpers to remove the load from the SPI lines, but it is not necessary. For more details, check out the notes in the <a href="https://cdn.sparkfun.com/assets/0/9/6/b/4/Qwiic_BME280_Schematic_attempt2.pdf">schematic</a>.</p>
+
+<p>This tutorial will not go into detail about using an SPI connection as the Python library can only be used with an I<sup>2</sup>C connection. However, for users seeking an SPI setup, they can refer to the <a href="https://learn.sparkfun.com/tutorials/sparkfun-bme280-breakout-hookup-guide">hookup guide</a> for the original <a href="https://www.sparkfun.com/products/13676">BME280 Sensor Breakout board</a>.</p>
+
+<table class="table table-hover table-striped table-bordered">
+    <tr>
+        <th class="text-center">Pin Label</th>
+        <th class="text-center">Pin Function</th>
+        <th class="text-center">Input/Output</th>
+        <th>Notes</th>
+    </tr>
+    <tr align="center">
+        <td style="vertical-align:middle">3.3V</td>
+        <td>Power Supply</td>
+        <td style="vertical-align:middle">Input</td>
+        <td align = "left">Supply voltage for sensor. SHould be regulated between <b>1.8 and 3.6 V</b></td>
+    </tr>
+    <tr align="center">
+        <td>GND</td>
+        <td>Ground</td>
+        <td>Input</td>
+        <td align = "left">Ground</td>
+    </tr>
+    <tr align="center">
+        <td style="vertical-align:middle">SCK</td>
+        <td style="vertical-align:middle">Clock Signal</td>
+        <td style="vertical-align:middle">Input</td>
+        <td align = "left">Clock signal. Voltage should not exceed power supply (max. 3.6V).</td>
+    <tr align="center">
+        <td style="vertical-align:middle">SDI</td>
+        <td style="vertical-align:middle">Data In</td>
+        <td style="vertical-align:middle">Input</td>
+        <td align = "left">Data incoming to the BME280. Voltage should not exceed power supply (max. 3.6V).</td>
+    </tr>
+    <tr align="center">
+        <td>SDO</td>
+        <td>Data Out</td>
+        <td>Output</td>
+        <td align = "left">Data coming from the BME280.</td>
+    </tr>
+    <tr align="center">
+        <td style="vertical-align:middle">CS</td>
+        <td>
+            Chip Select<br>
+        </td>
+        <td style="vertical-align:middle">Input</td>
+        <td align="left" style="vertical-align:middle">Used to select device communication on 4-wire connections (active low). Voltage should not exceed power supply (max. 3.6V).</td>
+    </tr>
+</table>
+
+</div>
+
+<h3>Jumpers</h3>
+
+<div class="alert alert-warning"><b>Caution:</b> Be careful when cutting traces, as not to unintentionally cut other traces.</div>
+
+<p>There are 4 separate jumpers on the board for various hardware related functions. For more notes, check out the hardware <a href="https://cdn.sparkfun.com/assets/0/9/6/b/4/Qwiic_BME280_Schematic_attempt2.pdf">schematic</a>. Not sure how to modify a jumper? <a href="https://learn.sparkfun.com/tutorials/how-to-work-w-jumper-pads-and-pcb-traces/cutting-a-trace-between-jumper-pads">Read here!</a></p>
+
+<h4>LED Power</h4>
+
+<p>If you want to conserve power, the jumper labeled <code>LED</code> will allow users to isolate power to the power status indicator LED.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_LED_Jumper.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_LED_Jumper.jpg" alt="LED Jumper" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of LED jumper. (Click to enlarge)</em> </div></p>
+
+<h4>I<sup>2</sup>C Address</h4>
+
+<p>If you want to change the I<sup>2</sup>C address for the sensor, the jumper labeled <code>ADR</code> will allow users to change the I<sup>2</sup>C address from the default (<strong>0x77</strong>) to <strong>0x76</strong>.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_ADR_Jumper.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_ADR_Jumper.jpg" alt="ADR Jumper" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of ADR jumper. (Click to enlarge)</em> </div></p>
+
+<h4>Pull-Up Resistors</h4>
+
+<p>There are two jumpers (well technically three) for the pull-up resistors attached to specific pins on the sensor.</p>
+
+<h5>I<sup>2</sup>C Pull-Ups</h5>
+
+<p>The first set of pull-up resistors are tied to the SDA and SCL lines for an I<sup>2</sup>C connection. Cutting the <code>I2C</code> jumper will remove the <strong>4.7k&Omega;</strong> pull-up resistors from the I<sup>2</sup>C bus. If you have many devices on your I<sup>2</sup>C bus you may want to remove these jumpers. (<em>When there are multiple devices on the bus with pull-up resistors, the <a href="https://learn.sparkfun.com/tutorials/resistors#series-and-parallel-resistors">equivalent parallel resistance</a> may create too strong of a pull-up for the bus to operate correctly.</em>)</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_I2C_Jumper.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_I2C_Jumper.jpg" alt="I2C Jumper" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of I2C jumper. (Click to enlarge)</em> </div></p>
+
+<h5>CS (and SPI) Pull-Ups</h5>
+
+<p>The last pull-up resistor is tied to CS pin for an SPI connection. Cutting the <code>CS</code> jumper will remove the <strong>4.7k&Omega;</strong> pull-up resistor.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_CS_Jumper.jpg"><img src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/9/2/9/BME280_CS_Jumper.jpg" alt="I2C Jumper" /></a> </div>
+<div class="center-block text-center"> <em>Annotated image of I2C jumper. (Click to enlarge)</em> </div></p>
+
+<p>Keep in mind that the rest of the SPI pins are shared with other pins (<em>see the note above on the SPI connection or the <a href="https://cdn.sparkfun.com/assets/0/9/6/b/4/Qwiic_BME280_Schematic_attempt2.pdf">schematic</a></em>). For a 3-wire connection, users will need to cut the <code>ADR</code> jumper for the SDO line. For a 4-wire connection users can cut the <code>ADR</code>, <code>I2C</code>, and <code>CS</code> jumpers to remove the load from the SPI lines, but it is not necessary.</p>
+
+<!-- Pete's stuff
+### Communication
+
+The BME280 communicates via I<sup>2</sup>C or optional SPI. The easiest way to hook these up for I<sup>2</sup>C is utilizing our handy Qwiic system. The Qwiic System utilizes the 4-pin polarized Qwiic connectors highlighted below.
+
+<div class="center-block text-center"> [![alt text](https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/qwiic_highlight.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/qwiic_highlight.jpg) </div>
+
+<div class="center-block text-center"> _Highlight of the two qwiic connectors._ </div>
+
+The I<sup>2</sup>C address can also be changed using the jumpers on the back of the board. This is useful if you are using two of these on the same I<sup>2</sup>C bus, or you are using another device with the same I<sup>2</sup>C address. The ADR jumper can be used to change the I<sup>2</sup>C address of the BME280 from 0x77 to 0x76. The I<sup>2</sup>C bus has pull-up resistors enabled by default. If not desired, these can be removed by separating the "I2C" triple jumper on the bottom side with a hobby knife. The locations of these jumpers are shown in the picture below.
+
+<div class="center-block text-center"> [![alt text](https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/atmospheric_jumpers.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/atmospheric_jumpers.jpg) </div>
+
+<div class="center-block text-center"> _Highlight of the jumpers._ </div>
+
+### Pins
+
+In addition to the qwiic connectors, we have also broken out the remaining pins on the BME280 to 0.1 inch headers along the bottom edge. If you'd like to use SPI to communicate to the BME280 (with the included API arduino examples code below), then you will need to solder to the correct headers. 
+
+<div class="center-block text-center"> [![alt text](https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/atmospheric_headers.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/atmospheric_headers.jpg) </div>
+
+<div class="center-block text-center"> _Highlight of the headers along the edge for use with SPI mode._ </div>
+
+Below is a list of pins made available for the BME280 qwiic and a bit more info on each.
+
+<table class="table table-hover table-striped table-bordered">
+<tr><th width=25%>Pin</th><th width=50%>Description</th><th width=25%>Direction</th></tr>
+<tr><td>SDO/ADR</td><td>Serial Data Out (aka MISO) / Address (Default: 0x77)</td><td>In/Out</td></tr>
+<tr><td><span style="text-decoration: overline">CS</span></td><td>Chip Select for SPI mode (active low)</td><td>In</td></tr>
+<tr><td>SCK/SCL</td><td>Serial Clock (for both I2C and SPI)</td><td>In</td></tr>
+<tr><td>SDI/SDA</td><td>Serial Data In / Data (I2C and SPI)</td><td>In/Out</td></tr>
+<tr><td>3V3</td><td>3.3V Power</td><td>In</td></tr>
+<tr><td>GND</td><td>Ground</td><td>In</td></tr>
+</table>
+-->      </div>
+          <div class="section tutorial-page">
+        <h2 id="hardware-assembly">Hardware Assembly</h2>
+        <h3>Arduino Examples</h3>
+
+<p>With the Qwiic connector system, assembling the hardware is simple. All you need to do is connect your <a href="https://www.sparkfun.com/products/15440">Qwiic Atmospheric Sensor (BME280)</a> to the <a href="https://www.sparkfun.com/products/15123">RedBoard Qwiic</a> with a <a href="https://www.sparkfun.com/products/15081">Qwiic cable</a>. Otherwise, you can use the I<sup>2</sup>C pins of your microcontroller; just be aware of logic levels.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/Assembly_RedBoard.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/9/2/9/Assembly_RedBoard.jpg" alt="Hardware assembly with RedBoard Qwiic" /></a> </div>
+<div class="center-block text-center"> <em>RedBoard Qwiic connected the Qwiic Atmospheric Sensor with a Qwiic cable.</em> </div></p>
+
+<div class="alert alert-info"><p><b>Note:</b> This tutorial assumes you are familiar with Arduino products and you are using the latest stable version of the Arduino IDE on your desktop. If this is your first time using the Arduino IDE, please review our tutorial on <a href="https://learn.sparkfun.com/tutorials/installing-arduino-ide">installing the Arduino IDE.</a></p></div>
+
+<h3>Raspberry Pi Example</h3>
+
+<div class="alert alert-warning"><b>Note:</b> This sensor and the Python library have not been tested on the newly released Raspberry Pi 4 because we don't carry it in out catalog yet.</div>
+
+<p>With the Qwiic connector system, assembling the hardware is simple. In addition to the <a href="https://www.sparkfun.com/products/15440">Qwiic Atmospheric Sensor (BME280)</a>, you will need: a <a href="https://www.sparkfun.com/products/15081">Qwiic cable</a>, a <a href="https://www.sparkfun.com/products/15351">SparkFun Qwiic pHAT for Raspberry Pi</a>, and a <a href="https://www.sparkfun.com/products/14643">Raspberry Pi</a> setup with the <a href="https://www.sparkfun.com/products/13945">Raspbian OS</a>, monitor, and <a href="https://www.sparkfun.com/categories/398">standard peripherals</a>. (&#42;<em>If you are unfamiliar with the Qwiic pHAT, you can find the <a href="https://learn.sparkfun.com/tutorials/qwiic-phat-for-raspberry-pi-hookup-guide">Hookup Guide here</a></em>.)</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/Assembly_Raspberry_Pi.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/9/2/9/Assembly_Raspberry_Pi.jpg" alt="Hardware assembly with Raspberry Pi 3B+ with Qwiic pHAT" /></a> </div>
+<div class="center-block text-center"> <em>Raspberry Pi 3B+ connected the Qwiic Atmospheric Sensor with a Qwiic pHAT and Qwiic cable.</em> </div>
+<div class="center-block text-center"> (&#42;<em>A <a href="https://www.sparkfun.com/products/10453">4-40 screw</a> and <a href="https://www.sparkfun.com/products/10454">nut</a> were used to mount the senor to the pHAT.</em>) </div></p>
+
+<p>Alternatively, you can also use a <a href="https://www.sparkfun.com/products/13825">Raspberry Pi 3</a> and the <a href="https://www.sparkfun.com/products/14459">Qwiic HAT</a> instead.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/Assembly_Raspberry_Pi_alt.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/9/2/9/Assembly_Raspberry_Pi_alt.jpg" alt="Hardware assembly with Raspberry Pi 3B with Qwiic HAT" /></a> </div>
+<div class="center-block text-center"> <em>Raspberry Pi 3 connected the Qwiic Atmospheric Sensor with a Qwiic HAT and Qwiic cable.</em> </div></p>
+
+<div class="alert alert-info"><p><b>Note:</b> This tutorial assumes you are familiar with using a Raspberry Pi and you have the latest (full... with recommended software) version of <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian OS</a> your Raspberry Pi. You can download the latest version of the Raspbian OS from the <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspberry Pi Foundation website</a>. As of Feb. 13th 2019, we recommend the <b>Raspbian Stretch with desktop and recommended software</b> option.<br>
+<br>
+If this is your first time using a Raspberry Pi, please head over to the <a href="https://www.raspberrypi.org/help/">Raspberry Pi Foundation website</a> to use their quickstart guides. We have listed a few of them here:<br>
+<br>
+<ol>
+    <li><a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up">Setting up your Raspberry Pi</a></li>
+    <li><a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-using">Using your Raspberry Pi</a></li>
+    <li><u>Documentation</u>:</li>
+        <p style="margin-left:10px;"><a href="https://www.raspberrypi.org/documentation/setup/">Setup Documentation</a><br>
+        <a href="https://www.raspberrypi.org/documentation/installation/">Installation Documentation</a><br>
+        <a href="https://www.raspberrypi.org/documentation/raspbian/">Raspbian Documentation</a><br>
+        <a href="https://www.raspberrypi.org/documentation/installation/sd-cards.md">SD card Documentation</a></p>
+</ol>
+</div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="arduino-library-overview">Arduino Library Overview</h2>
+        <!-------------------------------------
+Note: In order to update the Hookup Guide for the Atmospheric Sensor Breakout (SEN-13676), I copied this section over to that tutorial for a quick fix. If any updates are made to this or the other breakout's guide, please make sure to modify both of them.
+
+-Mark L 3/5/2020
+
+-------------------------------------->
+
+<div class="alert alert-info"><p><b>Note:</b> This example assumes you are using the latest version of the Arduino IDE on your desktop. If this is your first time using Arduino, please review our tutorial on <a href="https://learn.sparkfun.com/tutorials/installing-arduino-ide">installing the Arduino IDE.</a> If you have not previously installed an Arduino library, please check out our <a href="https://learn.sparkfun.com/tutorials/installing-an-arduino-library">installation guide.</a></p></div>
+
+<p>We've written a library to easily get setup and take readings from the Qwiic Atmospheric Sensor. However, before we jump into getting data from the sensor, let's take a closer look at the available functions in the library.  You can install this library through the Arduino Library Manager. Search for <strong>SparkFun BME280 Arduino Library</strong> and you should be able to install the latest version. If you prefer manually downloading the libraries from the <a href="https://github.com/sparkfun/SparkFun_BME280_Arduino_Library">GitHub repository</a>, you can grab them here:</p>
+
+<p><div class="center-block text-center"> <a href="https://github.com/sparkfun/SparkFun_BME280_Arduino_Library/archive/master.zip" class="btn btn-default">Download the SparkFun BME280 Library (ZIP)</a> </div></p>
+
+<p>Let's get started by looking at the functions that set up the Qwiic Atmospheric Sensor:</p>
+
+<h3>Class</h3>
+
+<p>In the global scope, construct your sensor object (such as <code>mySensor</code> or <code>pressureSensorA</code>) without arguments.</p>
+
+<p><strong><code>BME280 mySensor;</code></strong></p>
+
+<h4>Object Parameters and setup()</h4>
+
+<p>Rather than passing a bunch of data to the constructor, configuration is accomplished by setting the values of the BME280 type in the <code>setup()</code> function.  They are exposed by being <code>public:</code> so use the <code>myName.aVariable = someValue;</code> syntax.</p>
+
+<p><em>Settable variables of the class BME280:</em></p>
+
+<pre><code>language:c
+//Main Interface and mode settings
+uint8_t commInterface;
+uint8_t I2CAddress;
+uint8_t chipSelectPin;
+
+uint8_t runMode;
+uint8_t tStandby;
+uint8_t filter;
+uint8_t tempOverSample;
+uint8_t pressOverSample;
+uint8_t humidOverSample;
+</code></pre>
+
+<h4>Functions</h4>
+
+<p><strong><code>.begin();</code></strong><br>
+Initialize the operation of the BME280 module with the following steps:</p>
+
+<ul>
+<li>Starts up the wiring library for I<sup>2</sup>C by default</li>
+<li>Checks/Validates BME280 chip ID</li>
+<li>Reads compensation data</li>
+<li>Sets default settings from table</li>
+<li>Sets operational mode to <em>Normal Mode</em></li>
+</ul>
+
+<div style="margin-left:5%;">Output: uint8_t
+<p style="margin-left:5%;">Returns the BME280 chip ID stored in the ID register.</p></div>
+
+<div class="alert alert-warning"><b>.begin() Needs to be run once during the setup</b>, or after any settings have been modified. In order to let the sensor's configuration take place, the BME280 requires a minimum time of about 2 ms in the sketch before you take data. </a></div>
+
+<p><strong><code>.beginSPI(uint8_t csPin);</code></strong><br>
+Begins communication with the BME280 over an SPI connection.</p>
+
+<div style="margin-left:5%;">Input: uint8_t
+<p style="margin-left:5%;"><b>csPin:</b> Digital pin used for the CS.</p>
+Output: Boolean
+<p style="margin-left:5%;"><b>True:</b> Connected to sensor.<br>
+<b>False:</b> Unable to establish connection.</p></div>
+
+<p><strong><code>.beginI2C(TwoWire &amp;wirePort);</code></strong> or <strong><code>.beginI2C(SoftwareWire &amp;wirePort);</code></strong> <br>
+Begins communication with the BME280 over an I<sup>2</sup>C connection. If <code>#ifdef SoftwareWire_h</code> is defined, then a software I<sup>2</sup>C connection is used.</p>
+
+<div style="margin-left:5%;">Input: &wirePort
+<p style="margin-left:5%;"><b>&wirePort:</b> Port for the I<sup>2</sup>C connection.</p>
+Output: Boolean
+<p style="margin-left:5%;"><b>True:</b> Connected to sensor.<br>
+<b>False:</b> Unable to establish connection.</p></div>
+
+<p><strong><code>.setMode(uint8_t mode);</code></strong><br>
+Sets the operational mode of the sensor. This function can be set with the predefined variables: <code>MODE_SLEEP</code>, <code>MODE_FORCED</code>, and <code>MODE_NORMAL</code>. (<em>For more details, see section 3.3 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</em>)</p>
+
+<div style="margin-left:5%;">Input: uint8_t
+<p style="margin-left:5%;">
+    <b>0:</b> Sleep Mode<br>
+    <b>1:</b> Forced Mode<br>
+    <b>3:</b> Normal Mode</p>
+</div>
+
+<p><strong><code>.getMode();</code></strong><br>
+Returns the operational mode of the sensor.</p>
+
+<div style="margin-left:5%;">Output: uint8_t
+<p style="margin-left:5%;">
+    <b>0:</b> Sleep Mode<br>
+    <b>1:</b> Forced Mode<br>
+    <b>3:</b> Normal Mode</p>
+</div>
+
+<p><strong><code>.setStandbyTime(uint8_t timeSetting);</code></strong><br>
+Sets the standby time of the cycle time. (<em>For more details, see section 3.3 and Table 27 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</em>)</p>
+
+<div style="margin-left:5%;">Input: uint8_t
+<p style="margin-left:5%;">
+    <b>0:</b> 0.5ms<br>
+    <b>1:</b> 62.5ms<br>
+    <b>2:</b> 125ms<br>
+    <b>3:</b> 250ms<br>
+    <b>4:</b> 500ms<br>
+    <b>5:</b> 1000ms<br>
+    <b>6:</b> 10ms<br>
+    <b>7:</b> 20ms</p>
+</div>
+
+<p><strong><code>.setFilter(uint8_t filterSetting)</code></strong><br>
+Sets the time constant of the IIR filter, which slows down the response time of the sensor inputs based on the number of samples required. (<em>For more details, see section 3.4.4, Table 6, and Figure 7 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</em>)</p>
+
+<div style="margin-left:5%;">Input: uint8_t
+<p style="margin-left:5%;">
+    <b>0:</b> filter off<br>
+    <b>1:</b> coefficient of 2<br>
+    <b>2:</b> coefficient of 4<br>
+    <b>3:</b> coefficient of 8<br>
+    <b>4:</b> coefficient of 16</p>
+</div>
+
+<p><strong><code>.setTempOverSample(uint8_t overSampleAmount);</code></strong><br>
+Sets the oversampling option (<code>osrs_t</code>) for the temperature measurements. (<em>Directly influences the noise and resolution of the data.</em>)</p>
+
+<div style="margin-left:5%;">Input: uint8_t
+<p style="margin-left:5%;">
+    <b>0:</b> turns off temperature sensing<br>
+    <b>1:</b> oversampling ×1<br>
+    <b>2:</b> oversampling ×2<br>
+    <b>4:</b> oversampling ×4<br>
+    <b>8:</b> oversampling ×8<br>
+    <b>16:</b> oversampling ×16<br>
+    <b>Other:</b> Bad Entry, sets to <i>oversampling ×1</i> by default.</p>
+</div>
+
+<div class="alert alert-info"><b>Note:</b> Yes, we do know there is a spelling error in the name of the method. It will get corrected in the next library update.</div>
+
+<p><strong><code>.setPressureOverSample(uint8_t overSampleAmount);</code></strong><br>
+Sets the oversampling option (<code>osrs_p</code>) for the pressure measurements. (<em>Directly influences the noise and resolution of the data.</em>)</p>
+
+<div style="margin-left:5%;">Input: uint8_t
+<p style="margin-left:5%;">
+    <b>0:</b> turns off pressure sensing<br>
+    <b>1:</b> oversampling ×1<br>
+    <b>2:</b> oversampling ×2<br>
+    <b>4:</b> oversampling ×4<br>
+    <b>8:</b> oversampling ×8<br>
+    <b>16:</b> oversampling ×16<br>
+    <b>Other:</b> Bad Entry, sets to <i>oversampling ×1</i> by default.</p>
+</div>
+
+<p><strong><code>.setHumidityOverSample(uint8_t overSampleAmount);</code></strong><br>
+Sets the oversampling option (<code>osrs_h</code>) for the humidity measurements. (<em>Directly influences the noise of the data.</em>)</p>
+
+<div style="margin-left:5%;">Input: uint8_t
+<p style="margin-left:5%;">
+    <b>0:</b> turns off humidity sensing<br>
+    <b>1:</b> oversampling ×1<br>
+    <b>2:</b> oversampling ×2<br>
+    <b>4:</b> oversampling ×4<br>
+    <b>8:</b> oversampling ×8<br>
+    <b>16:</b> oversampling ×16<br>
+    <b>Other:</b> Bad Entry, sets to <i>oversampling ×1</i> by default.</p>
+</div>
+
+<p><strong><code>.setI2CAddress(uint8_t address);</code></strong><br>
+Changes the I<sup>2</sup>C address stored in the library to access the sensor.</p>
+
+<div style="margin-left:5%;">Input: uint8_t
+<p style="margin-left:5%;"><b>address:</b> The new I<sup>2</sup>C address.</p></div>
+
+<p><strong><code>.isMeasuring();</code></strong><br>
+Checks the <code>measuring</code> bit of the <code>status</code> register for if the device is taking measurement.</p>
+
+<div style="margin-left:5%;">Output: Boolean
+<p style="margin-left:5%;"><b>True:</b> A conversion is running.<br>
+<b>False:</b> The results have been transferred to the data registers.</p></div>
+
+<p><strong><code>.reset();</code></strong><br>
+Soft resets the sensor. (<em>If called, the begin function must be called before using the sensor again.</em>)</p>
+
+<p><strong><code>.readFloatPressure();</code></strong><br>
+Reads raw pressure data stored in register and applies output compensation (<em>For more details on the data compensation, see section 4.2 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</em>)</p>
+
+<div style="margin-left:5%;">Output: float
+<p style="margin-left:5%;">Returns pressure in Pa.</p></div>
+
+<p><strong><code>.readFloatHumidity();</code></strong><br>
+Reads raw humidity data stored in register and applies output compensation (<em>For more details on the data compensation, see section 4.2 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</em>)</p>
+
+<div style="margin-left:5%;">Output: float
+<p style="margin-left:5%;">Returns humidity in %RH.</p></div>
+
+<p><strong><code>.readTempC();</code></strong><br>
+Reads raw temperature data stored in register and applies output compensation (<em>For more details on the data compensation, see section 4.2 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</em>)</p>
+
+<div style="margin-left:5%;">Output: float
+<p style="margin-left:5%;">Returns temperature in Celsius.</p></div>
+
+<p><strong><code>.readTempF();</code></strong><br>
+Reads raw temperature data stored in register and applies output compensation (<em>For more details on the data compensation, see section 4.2 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</em>)</p>
+
+<div style="margin-left:5%;">Output: float
+<p style="margin-left:5%;">Returns temperature in Fahrenheit.</p></div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="arduino-example-code">Arduino Example Code</h2>
+        <p>The examples can be found in the the drop-down menu (<strong>File > Examples > SparkFun BME280 > ...</strong>) of the Arduino IDE. They can also be downloaded from the <a href="https://github.com/sparkfun/SparkFun_BME280_Arduino_Library/tree/master/examples">GitHub repository</a>and then ran on their own. These are just a few samples of the available selection of examples.</p>
+
+<p>Below are a sample readouts from the <a href="https://learn.sparkfun.com/tutorials/terminal-basics">Serial Monitor</a> for each of the examples. The baud rate for all of the examples default to <strong>9600 baud</strong>.</p>
+
+<h3>Example 1: Basic Readings</h3>
+
+<p>This basic example configures an BME280 on the I2C bus and reports out the data.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_arduino_exp1.gif"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_arduino_exp1.gif" alt="Example 1 Readout" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>Expected readout from Example 1, where the basic readings are displayed</em> </div></p>
+
+<h3>Example 3: CSV Output</h3>
+
+<p>If you want to use the BME280 to record data as a function of time, this example is for you!  It outputs text as CSV (comma separated vales) that can be copy-pasted into a textfile or spreadsheet app for graphing.</p>
+
+<p>A note on accuracy:  This sketch use "delay(50);" to wait 50ms between reads.  The units of the 'sample' column are in (50ms + time-to-read) periods.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_arduino_exp3.gif"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_arduino_exp3.gif" alt="Example 3 Readout" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>Expected readout from Example 3, where the first few lines show the generated CSV.</em> </div></p>
+
+<h3>Example 5: Read All Registers</h3>
+
+<p>Here's an example that prints out the registers as well as the internally concatenated calibration words.  It can be used to check the state of the BME280 after a particular configuration or can be implanted in your own sketch where you need to debug.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_arduino_exp5.gif"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_arduino_exp5.gif" alt="Example 5 Readout" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>Expected readout from Example 5, where the full contents of memory are shown and a calculated pressure altitude.</em> </div></p>
+
+<h3>Example 6: Low Power</h3>
+
+<p>Here is an example with a low power operation, utilizing the sleep mode functionality. This is similar to Example 1, except the sensor is in sleep mode and data is taken at specific intervals.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_arduino_exp6.gif"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_arduino_exp6.gif" alt="Example 6 Readout" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>Expected readout from Example 6.</em> </div></p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="python-package-overview">Python Package Overview</h2>
+        <div class="alert alert-warning"><b>Note:</b> This sensor and the Python package have not been tested on the Raspberry Pi 4 yet.</div>
+
+<div class="alert alert-info"><p><b>Note:</b> This example assumes you are using the latest version of Python 3. If this is your first time using Python or I<sup>2</sup>C hardware on a Raspberry Pi, please checkout our tutorial on <a href="https://learn.sparkfun.com/tutorials/python-programming-tutorial-getting-started-with-the-raspberry-pi">Python Programming with the Raspberry Pi</a> and the <a href="https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial">Raspberry Pi SPI and I2C Tutorial</a>.</p></div>
+
+<p>We've written a Python package to easily get setup and take readings from the Qwiic Atmospheric Sensor. However, before we jump into getting data from the sensor, let's take a closer look at the available functions in the Python package.  You can install the <code>sparkfun-qwiic-bme280</code> Python package hosted by PyPi. However, if you prefer to manually download and build the libraries from the <a href="https://github.com/sparkfun/Qwiic_BME280_Py">GitHub repository</a>, you can grab them here (<em>&#42;Please be aware of any package dependencies. You can also check out the repository documentation page, hosted on <a href="https://qwiic-bme280-py.readthedocs.io">Read the Docs</a>.</em>):</p>
+
+<p><div class="center-block text-center"> <a href="https://github.com/sparkfun/Qwiic_BME280_Py/archive/main.zip" class="btn btn-default">Download the SparkFun BME280 Python Package (ZIP)</a> </div></p>
+
+<h3>Installation</h3>
+
+<div class="alert alert-info"><p><b>Note:</b> Don't forget to double check that the hardware I<sup>2</sup>C connection is enabled on your Raspberry Pi or other single board computer.</div>
+
+<h4>PyPi Installation</h4>
+
+<p>This repository is hosted on PyPi as the <code>sparkfun-qwiic-bme280 package</code>. On systems that support PyPi installation via <code>pip3</code> (use <code>pip</code> for Python 2) is simple, using the following commands:</p>
+
+<p>For <strong>all users</strong> (note: the user must have <a href="https://en.wikipedia.org/wiki/Sudo"><strong>sudo</strong></a> privileges):</p>
+
+<pre><code>language:bash
+sudo pip3 install sparkfun-qwiic-bme280
+</code></pre>
+
+<p>For the <strong>current user</strong>:</p>
+
+<pre><code>language:bash
+pip3 install sparkfun-qwiic-bme280
+</code></pre>
+
+<h4>Local Installation</h4>
+
+<p>To install, make sure the <code>setuptools</code> package is installed on the system.</p>
+
+<p>Direct installation at the command line (use <code>python</code> for Python 2):</p>
+
+<pre><code>language:bash
+python3 setup.py install
+</code></pre>
+
+<p>To build a package for use with <code>pip3</code>:</p>
+
+<pre><code>language:bash
+python3 setup.py sdist
+</code></pre>
+
+<p>A package file is built and placed in a subdirectory called dist. This package file can be installed using <code>pip3</code>.</p>
+
+<pre><code>language:bash
+cd dist
+pip3 install sparkfun_qwiic_bme280-&lt;version&gt;.tar.gz
+</code></pre>
+
+<h3>Python Package Operation</h3>
+
+<p>Below is a description of the basic functionality of the Python package. This includes the package organization, built-in methods, and their inputs and/or outputs. For more details on how the Python package works, check out the <a href="https://github.com/sparkfun/Qwiic_BME280_Py/blob/main/qwiic_bme280.py">source code</a> and the sensor <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</p>
+
+<h4>Dependencies</h4>
+
+<p>This Python package has a very few dependencies in the code, listed below:</p>
+
+<pre><code>language:python
+from __future__ import print_function
+import math
+import qwiic_i2c
+</code></pre>
+
+<h4>Default Variables</h4>
+
+<p>The default variables, in the code, for this Python package are listed below:</p>
+
+<pre><code>language:python
+#The name of this device
+_DEFAULT_NAME = "Qwiic BME280"
+
+_AVAILABLE_I2C_ADDRESS = [0x77, 0x76]
+
+#Default Setting Values
+_settings = {"runMode" : 3,         \
+            "tStandby" : 0,         \
+            "filter"   : 0,         \
+            "tempOverSample"  : 1,  \
+            "pressOverSample" : 1,  \
+            "humidOverSample" : 1,  \
+            "tempCorrection"  : 0.0}
+
+#define our valid chip IDs
+_validChipIDs = [0x58, 0x60]
+</code></pre>
+
+<h4>Class</h4>
+
+<p><strong><code>QwiicBme280()</code></strong> or <strong><code>QwiicBme280(i2caddr)</code></strong><br>
+This Python package operates as a class object, allowing new instances of that type to be made. An <code>__init__()</code> constructor is used that creates a connection to an I<sup>2</sup>C device over the I<sup>2</sup>C bus using the default or specified I<sup>2</sup>C address.</p>
+
+<h5>The Constructor</h5>
+
+<p>A constructor is a special kind of method used to initialize (assign values to) the data members needed by the object when it is created.</p>
+
+<p><strong><code>__init__(address=None, i2c_driver=None):</code></strong></p>
+
+<div style="margin-left:5%;">Input: value
+<div style="margin-left:5%;">The value of the device address. If not defined, the Python package will use the default I<sup>2</sup>C address (<b>0x77</b>) stored under <code>_AVAILABLE_I2C_ADDRESS</code> variable. The other available address is <b>0x76</b> (set by the jumper on the bottom side of the board).</div>
+
+Input: <i>i2c_driver</i>
+<div style="margin-left:5%;">Loads the specified I<sup>2</sup>C driver; by default the <a href="https://github.com/sparkfun/Qwiic_I2C_Py">Qwiic I<sup>2</sup>C driver</a> is used: <code>qwiic_i2c.getI2CDriver()</code>. Users should use the default I<sup>2</sup>C driver and leave this field blank.</div>
+
+Output: Boolean
+<p style="margin-left:5%;"><b>True:</b> Connected to I<sup>2</sup>C device on the default (or specified) address.<br>
+<b>False:</b> No device found or connected.</p></div>
+
+<h4>Functions</h4>
+
+<p>A function that is an attribute of the class, which defines a method for instances of that class. In simple terms, they are objects for the operations (or methods) of the class.</p>
+
+<p><strong><code>.is_connected()</code></strong><br>
+Determines if the BME280 device is connected to the system.</p>
+
+<div style="margin-left:5%;">Output: Boolean
+<p style="margin-left:5%;"><b>True:</b> Connected to I<sup>2</sup>C device on the default (or specified) address.<br>
+<b>False:</b> No device found or connected.</p></div>
+
+<p><strong><code>.begin()</code></strong><br>
+Initialize the operation of the BME280 module with the following steps:</p>
+
+<ul>
+<li>Checks/Validates BME280 chip ID</li>
+<li>Reads compensation data</li>
+<li>Sets default settings from table</li>
+<li>Sets operational mode to <em>Normal Mode</em></li>
+</ul>
+
+<div style="margin-left:5%;">Output: Boolean
+<p style="margin-left:5%;"><b>True:</b> The initialization was successful.<br>
+<b>False:</b> Invalid chip ID.</p></div>
+
+<p><strong><code>.set_mode(mode)</code></strong><br>
+Sets the operational mode of the sensor. <code>.mode</code> is also a property that can be set with the instance variables: <code>MODE_SLEEP</code>, <code>MODE_FORCED</code>, or <code>MODE_NORMAL</code>. (<em>For more details, see section 3.3 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</em>)</p>
+
+<div style="margin-left:5%;">Input: value
+<p style="margin-left:5%;">
+    <b>0:</b> Sleep Mode<br>
+    <b>1:</b> Forced Mode<br>
+    <b>3:</b> Normal Mode</p>
+</div>
+
+<p><strong><code>.get_mode()</code></strong><br>
+Returns the operational mode of the sensor.</p>
+
+<div style="margin-left:5%;">Output: integer
+<p style="margin-left:5%;">
+    <b>0:</b> Sleep Mode<br>
+    <b>1:</b> Forced Mode<br>
+    <b>3:</b> Normal Mode</p>
+</div>
+
+<p><strong><code>.set_standby_time(timeSetting)</code></strong><br>
+Sets the standby time of the cycle time. (<em>For more details, see section 3.3 and Table 27 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</em>)</p>
+
+<div style="margin-left:5%;">Input: value
+<p style="margin-left:5%;">
+    <b>0:</b> 0.5ms<br>
+    <b>1:</b> 62.5ms<br>
+    <b>2:</b> 125ms<br>
+    <b>3:</b> 250ms<br>
+    <b>4:</b> 500ms<br>
+    <b>5:</b> 1000ms<br>
+    <b>6:</b> 10ms<br>
+    <b>7:</b> 20ms</p>
+</div>
+
+<p><strong><code>.set_filter(filterSetting)</code></strong><br>
+Sets the time constant of the IIR filter, which slows down the response time of the sensor inputs based on the number of samples required. (<em>For more details, see section 3.4.4, Table 6, and Figure 7 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</em>)</p>
+
+<div style="margin-left:5%;">Input: value
+<p style="margin-left:5%;">
+    <b>0:</b> filter off<br>
+    <b>1:</b> coefficient of 2<br>
+    <b>2:</b> coefficient of 4<br>
+    <b>3:</b> coefficient of 8<br>
+    <b>4:</b> coefficient of 16</p>
+</div>
+
+<p><strong><code>.set_tempature_oversample(overSampleAmount)</code></strong><br>
+Sets the oversampling option (<code>osrs_t</code>) for the temperature measurements. (<em>Directly influences the noise and resolution of the data.</em>)</p>
+
+<div style="margin-left:5%;">Input: value
+<p style="margin-left:5%;">
+    <b>0:</b> turns off temperature sensing<br>
+    <b>1:</b> oversampling ×1<br>
+    <b>2:</b> oversampling ×2<br>
+    <b>4:</b> oversampling ×4<br>
+    <b>8:</b> oversampling ×8<br>
+    <b>16:</b> oversampling ×16<br>
+    <b>Other:</b> Bad Entry, sets to <i>oversampling ×1</i> by default.</p>
+</div>
+
+<div class="alert alert-info"><b>Note:</b> Yes, we do know there is a spelling error in the name of the method. It will get corrected in the next Python package update.</div>
+
+<p><strong><code>.set_pressure_oversample(overSampleAmount)</code></strong><br>
+Sets the oversampling option (<code>osrs_p</code>) for the pressure measurements. (<em>Directly influences the noise and resolution of the data.</em>)</p>
+
+<div style="margin-left:5%;">Input: value
+<p style="margin-left:5%;">
+    <b>0:</b> turns off pressure sensing<br>
+    <b>1:</b> oversampling ×1<br>
+    <b>2:</b> oversampling ×2<br>
+    <b>4:</b> oversampling ×4<br>
+    <b>8:</b> oversampling ×8<br>
+    <b>16:</b> oversampling ×16<br>
+    <b>Other:</b> Bad Entry, sets to <i>oversampling ×1</i> by default.</p>
+</div>
+
+<p><strong><code>.set_humidity_oversample(overSampleAmount)</code></strong><br>
+Sets the oversampling option (<code>osrs_h</code>) for the humidity measurements. (<em>Directly influences the noise of the data.</em>)</p>
+
+<div style="margin-left:5%;">Input: value
+<p style="margin-left:5%;">
+    <b>0:</b> turns off humidity sensing<br>
+    <b>1:</b> oversampling ×1<br>
+    <b>2:</b> oversampling ×2<br>
+    <b>4:</b> oversampling ×4<br>
+    <b>8:</b> oversampling ×8<br>
+    <b>16:</b> oversampling ×16<br>
+    <b>Other:</b> Bad Entry, sets to <i>oversampling ×1</i> by default.</p>
+</div>
+
+<!-- irrelavent
+**`.check_sample_value(userValue)`**<br>
+Validates an oversample value entered in `.set_tempature_oversample()`, `.set_pressure_oversample()`, and `.set_humidity_oversample()`.
+
+<div style="margin-left:5%;">
+Input: integer
+<p style="margin-left:5%;">
+<b>0:</b> Returns 0<br>
+<b>1:</b> Returns 1<br>
+<b>2:</b> Returns 2<br>
+<b>4:</b> Returns 3<br>
+<b>8:</b> Returns 4<br>
+<b>16:</b> Returns 5<br>
+<b>Other:</b> Bad Entry, Returns 1 by default.</p>
+
+Output: integer
+<p style="margin-left:5%;">
+<b>0:</b> From input of 0<br>
+<b>1:</b> From input of 1 or a Bad entry<br>
+<b>2:</b> From input of 2<br>
+<b>3:</b> From input of 4<br>
+<b>4:</b> From input of 8<br>
+<b>5:</b> From input of 16</p></div>
+-->
+
+<p><strong><code>.is_measuring()</code></strong><br>
+Checks the <code>measuring</code> bit of the <code>status</code> register for if the device is taking measurement.</p>
+
+<div style="margin-left:5%;">Output: Boolean
+<p style="margin-left:5%;"><b>True:</b> A conversion is running.<br>
+<b>False:</b> The results have been transferred to the data registers.</p></div>
+
+<p><strong><code>.reset()</code></strong><br>
+Soft resets the sensor. (<em>If called, the begin method must be called before using the sensor again.</em>)</p>
+
+<p><strong><code>.read_pressure()</code></strong><br>
+Reads raw pressure data stored in register and applies output compensation (<em>For more details on the data compensation, see section 4.2 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</em>)</p>
+
+<div style="margin-left:5%;">Output: float
+<p style="margin-left:5%;">Returns pressure in Pa.</p></div>
+
+<!--
+**`.set_reference_pressure(refPressure)`**<br>
+**`.get_reference_pressure`**<br>
+**`.get_altitude_meters`**<br>
+**`.get_altitude_feet`**<br>
+-->
+
+<p><strong><code>.read_humidity()</code></strong><br>
+Reads raw humidity data stored in register and applies output compensation (<em>For more details on the data compensation, see section 4.2 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</em>)</p>
+
+<div style="margin-left:5%;">Output: float
+<p style="margin-left:5%;">Returns humidity in %RH.</p></div>
+
+<p><strong><code>.get_temperature_celsius()</code></strong><br>
+Reads raw temperature data stored in register and applies output compensation (<em>For more details on the data compensation, see section 4.2 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</em>)</p>
+
+<div style="margin-left:5%;">Output: float
+<p style="margin-left:5%;">Returns temperature in Celsius.</p></div>
+
+<p><strong><code>.get_temperature_fahrenheit()</code></strong><br>
+Reads raw temperature data stored in register and applies output compensation (<em>For more details on the data compensation, see section 4.2 of the <a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">datasheet</a>.</em>)</p>
+
+<div style="margin-left:5%;">Output: float
+<p style="margin-left:5%;">Returns temperature in Fahrenheit.</p></div>
+
+<!--
+**`.get_dewpoint_celsius`**<br>
+**`get_dewpoint_fahrenheit(self)`**<br>
+-->
+
+<h3>Upgrading the Package</h3>
+
+<p>In the future, changes to the Python package might be made. Updating the installed packages has to be done individually for each package (i.e. sub-modules and dependencies won't update automatically and must be updated manually). For the <code>sparkfun-qwiic-bme280</code> Python package, use the following command (use <code>pip</code> for Python 2):</p>
+
+<p>For <strong>all users</strong> (note: the user must have <a href="https://en.wikipedia.org/wiki/Sudo"><strong>sudo</strong></a> privileges):</p>
+
+<pre><code>language:bash
+sudo pip3 install --upgrade sparkfun-qwiic-bme280
+</code></pre>
+
+<p>For the <strong>current user</strong>:</p>
+
+<pre><code>language:bash
+pip3 install --upgrade sparkfun-qwiic-bme280
+</code></pre>      </div>
+          <div class="section tutorial-page">
+        <h2 id="python-example-code">Python Example Code</h2>
+        <p>The following examples are available in the <a href="https://github.com/sparkfun/Qwiic_BME280_Py/tree/master/examples">GitHub repository</a>. To run the examples, simple download or copy the code into a file. Then, open/save the example file (if needed) and execute the code in <a href="https://www.sparkfun.com/news/2706">your favorite Python IDE</a>.</p>
+
+<p>For example, with the default Python IDLE click <strong>Run > Run Module</strong> or use the <kbd>F5</kbd> key. To terminate the example use the <kbd>Ctrl</kbd> + <kbd>C</kbd> key combination.</p>
+
+<div class="alert alert-info"><p><b>Note:</b> Yes, there is an <code>altitude_feet</code> function in the library that is available. However, that content is omitted from the Library Overview section due to the amount of confusion that was generated with the <a href="https://learn.sparkfun.com/tutorials/sparkfun-bme280-breakout-hookup-guide">previous hookup guide</a>. Some users were misinterpreting the reported "<i>altitude</i>" from the function as an exact value; when it actually is <b>calculated</b> from the (barometric) pressure measurement to report the <u>equivalent</u> <a href="https://en.wikipedia.org/wiki/Pressure_altitude"><b>pressure altitude</b></a> based on an <a href="https://en.wikipedia.org/wiki/Reference_atmospheric_model">atmospheric model</a>. If you want more details on this subject, look into how an <a href="https://en.wikipedia.org/wiki/Altimeter">altimeter</a> works.</p>
+</div>
+
+<h3>Example 1</h3>
+
+<p>This example uses the default configuration settings for the sensor. The temperature (&deg;F), humidity (%RH), pressure (Pa), and <em>calculated</em> pressure altitude (ft.) are reported repeatedly.</p>
+
+<pre><code>language:python
+#!/usr/bin/env python
+#-----------------------------------------------------------------------------
+# qwiic_env_bme280_ex1.py
+#
+# Simple Example for the Qwiic BME280 Device
+#------------------------------------------------------------------------
+#
+# Written by  SparkFun Electronics, May 2019
+# 
+# This python library supports the SparkFun Electroncis qwiic 
+# qwiic sensor/board ecosystem on a Raspberry Pi (and compatable) single
+# board computers. 
+#
+# More information on qwiic is at https://www.sparkfun.com/qwiic
+#
+# Do you like this library? Help support SparkFun. Buy a board!
+#
+#==================================================================================
+# Copyright (c) 2019 SparkFun Electronics
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy 
+# of this software and associated documentation files (the "Software"), to deal 
+# in the Software without restriction, including without limitation the rights 
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+# copies of the Software, and to permit persons to whom the Software is 
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all 
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+# SOFTWARE.
+#==================================================================================
+# Example 1
+#
+
+from __future__ import print_function
+import qwiic_bme280
+import time
+import sys
+
+def runExample():
+
+    print("\nSparkFun BME280 Sensor  Example 1\n")
+    mySensor = qwiic_bme280.QwiicBme280()
+
+    if mySensor.connected == False:
+        print("The Qwiic BME280 device isn't connected to the system. Please check your connection", \
+            file=sys.stderr)
+        return
+
+    mySensor.begin()
+
+    while True:
+        print("Humidity:\t%.3f" % mySensor.humidity)
+
+        print("Pressure:\t%.3f" % mySensor.pressure)    
+
+        print("Altitude:\t%.3f" % mySensor.altitude_feet)
+
+        print("Temperature:\t%.2f" % mySensor.temperature_fahrenheit)       
+
+        print("")
+
+        time.sleep(1)
+
+
+if __name__ == '__main__':
+    try:
+        runExample()
+    except (KeyboardInterrupt, SystemExit) as exErr:
+        print("\nEnding Example 1")
+sys.exit(0)
+</code></pre>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_exp1.gif"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_exp1.gif" alt="Example 1" /></a> </div>
+<div class="center-block text-center"> <em>Expected readout from Example 1.</em> </div></p>
+
+<h3>Experiment 4</h3>
+
+<p>This example configures the settings for the sensor before the temperature (&deg;F), humidity (%RH), pressure (Pa), and <em>calculated</em> pressure altitude (ft.) are reported repeatedly.</p>
+
+<pre><code>language:python
+#!/usr/bin/env python
+#-----------------------------------------------------------------------------
+# qwiic_env_bme280_ex4.py
+#
+# Simple Example for the Qwiic BME280 Device
+#------------------------------------------------------------------------
+#
+# Written by  SparkFun Electronics, May 2019
+# 
+# This python library supports the SparkFun Electroncis qwiic 
+# qwiic sensor/board ecosystem on a Raspberry Pi (and compatable) single
+# board computers. 
+#
+# More information on qwiic is at https:# www.sparkfun.com/qwiic
+#
+# Do you like this library? Help support SparkFun. Buy a board!
+#
+#==================================================================================
+# Copyright (c) 2019 SparkFun Electronics
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy 
+# of this software and associated documentation files (the "Software"), to deal 
+# in the Software without restriction, including without limitation the rights 
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+# copies of the Software, and to permit persons to whom the Software is 
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all 
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+# SOFTWARE.
+#==================================================================================
+# Example 4 - port of the Arduino example 4
+#
+
+from __future__ import print_function
+import qwiic_bme280
+import time
+import sys
+
+def runExample():
+
+    print("\nSparkFun BME280 Sensor  Example 4\n")
+    mySensor = qwiic_bme280.QwiicBme280()
+
+    if mySensor.connected == False:
+        print("The Qwiic BME280 device isn't connected to the system. Please check your connection", \
+            file=sys.stderr)
+        return
+
+    mySensor.begin()
+
+    # setup the sensor
+    mySensor.filter = 1         # 0 to 4 is valid. Filter coefficient. See 3.4.4
+    mySensor.standby_time = 0   # 0 to 7 valid. Time between readings. See table 27.
+
+    mySensor.over_sample = 1            # 0 to 16 are valid. 0 disables temp sensing. See table 24.
+    mySensor.pressure_oversample = 1    # 0 to 16 are valid. 0 disables pressure sensing. See table 23.
+    mySensor.humidity_oversample = 1    # 0 to 16 are valid. 0 disables humidity sensing. See table 19.
+    mySensor.mode = mySensor.MODE_NORMAL # MODE_SLEEP, MODE_FORCED, MODE_NORMAL is valid. See 3.3
+
+    while True:
+        print("Humidity:\t%.3f" % mySensor.humidity)
+
+        print("Pressure:\t%.3f" % mySensor.pressure)    
+
+        print("Altitude:\t%.3f" % mySensor.altitude_feet)
+
+        print("Temperature:\t%.2f\n" % mySensor.temperature_fahrenheit)
+
+        time.sleep(1)
+
+
+if __name__ == '__main__':
+    try:
+        runExample()
+    except (KeyboardInterrupt, SystemExit) as exErr:
+        print("\nEnding Example 4")
+sys.exit(0)
+</code></pre>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_exp4.gif"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_exp4.gif" alt="Example 4" /></a> </div>
+<div class="center-block text-center"> <em>Expected readout from Example 4.</em> </div></p>
+
+<h3>Experiment 5</h3>
+
+<p>This last example reports configuration the settings and calibration values from the memory map. Then, the temperature (&deg;F), humidity (%RH), pressure (Pa), and <em>calculated</em> pressure altitude (ft.) are reported repeatedly.</p>
+
+<pre><code>language:python
+#!/usr/bin/env python
+#-----------------------------------------------------------------------------
+# qwiic_env_bme280_ex5.py
+#
+# Simple Example for the Qwiic BME280 Device
+#------------------------------------------------------------------------
+#
+# Written by  SparkFun Electronics, May 2019
+# 
+# This python library supports the SparkFun Electroncis qwiic 
+# qwiic sensor/board ecosystem on a Raspberry Pi (and compatable) single
+# board computers. 
+#
+# More information on qwiic is at https:# www.sparkfun.com/qwiic
+#
+# Do you like this library? Help support SparkFun. Buy a board!
+#
+#==================================================================================
+# Copyright (c) 2019 SparkFun Electronics
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy 
+# of this software and associated documentation files (the "Software"), to deal 
+# in the Software without restriction, including without limitation the rights 
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+# copies of the Software, and to permit persons to whom the Software is 
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all 
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+# SOFTWARE.
+#==================================================================================
+# Example 5 - port of the Arduino example 5
+#
+
+from __future__ import print_function
+import qwiic_bme280
+import time
+import sys
+
+def runExample():
+
+    print("\nSparkFun BME280 Sensor  Example 5\n")
+    mySensor = qwiic_bme280.QwiicBme280()
+
+    if mySensor.connected == False:
+        print("The Qwiic BME280 device isn't connected to the system. Please check your connection", \
+            file=sys.stderr)
+        return
+
+    mySensor.begin()
+
+    print("ID(0xD0): 0x%.2x" % mySensor._i2c.readByte(mySensor.address, mySensor.BME280_CHIP_ID_REG))
+    print("Reset register(0xE0): 0x%.2x" % mySensor._i2c.readByte(mySensor.address, mySensor.BME280_RST_REG))
+    print("ctrl_meas(0xF4): 0x%.2x" % mySensor._i2c.readByte(mySensor.address, mySensor.BME280_CTRL_MEAS_REG))
+    print("ctrl_hum(0xF2): 0x%.2x\n" % mySensor._i2c.readByte(mySensor.address, mySensor.BME280_CTRL_HUMIDITY_REG))
+
+    print("Displaying all regs:")
+    memCounter = 0x80
+    for row in range(8,16):
+        print("0x%.2x 0:" % row, end='')
+        for column in range(0,16):
+            tempReadData = mySensor._i2c.readByte(mySensor.address, memCounter)
+            print("0x%.2x " % tempReadData, end='')
+
+            memCounter += 1
+        print("")
+
+
+    print("Displaying concatenated calibration words:")
+    print("dig_T1, uint16: %d" % mySensor.calibration["dig_T1"])
+    print("dig_T2, int16: %d" % mySensor.calibration["dig_T2"])
+    print("dig_T3, int16: %d" % mySensor.calibration["dig_T3"])
+    print("dig_P1, uint16: %d" % mySensor.calibration["dig_P1"])
+    print("dig_P2, int16: %d" % mySensor.calibration["dig_P2"])
+    print("dig_P3, int16: %d" % mySensor.calibration["dig_P3"])
+    print("dig_P4, int16: %d" % mySensor.calibration["dig_P4"])
+    print("dig_P5, int16: %d" % mySensor.calibration["dig_P5"])
+    print("dig_P6, int16: %d" % mySensor.calibration["dig_P6"])
+    print("dig_P7, int16: %d" % mySensor.calibration["dig_P7"])
+    print("dig_P8, int16: %d" % mySensor.calibration["dig_P8"])
+    print("dig_P9, int16: %d" % mySensor.calibration["dig_P9"])
+    print("dig_H1, uint8: %d" % mySensor.calibration["dig_H1"])
+    print("dig_H2, int16: %d" % mySensor.calibration["dig_H2"])
+    print("dig_H3, uint8: %d" % mySensor.calibration["dig_H3"])
+    print("dig_H4, int16: %d" % mySensor.calibration["dig_H5"])
+    print("dig_H6, int8: %d" % mySensor.calibration["dig_H6"])
+    while True:
+
+        print("Humidity:\t%.3f" % mySensor.humidity)
+
+        print("Pressure:\t%.3f" % mySensor.pressure)    
+
+        print("Altitude:\t%.3f" % mySensor.altitude_feet)
+
+        print("Temperature:\t%.2f\n" % mySensor.temperature_fahrenheit)
+
+        time.sleep(1)
+
+if __name__ == '__main__':
+    try:
+        runExample()
+    except (KeyboardInterrupt, SystemExit) as exErr:
+        print("\nEnding Example 5")
+sys.exit(0)
+</code></pre>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_exp5.gif"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/2/9/BME280_exp5.gif" alt="Example 5" /></a> </div>
+<div class="center-block text-center"> <em>Expected readout from Example 5.</em> </div></p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="troubleshooting-tips">Troubleshooting Tips</h2>
+        <p>Here are a few tips for troubleshooting this device.</p>
+
+<h3>Power</h3>
+
+<p>If you are not using the Qwiic system, make sure your supply voltage is within the electrical specifications of the BME280.</p>
+
+<h3>No Available Devices</h3>
+
+<p>Double check your connections. On a Raspberry Pi, you may get this is indicated with an <code>OSError: [Errno 121] Remote I/O error</code> readout.</p>
+
+<p>On a Raspberry Pi, also make sure that the I<sup>2</sup>C hardware is enabled. This is usually indicated with an <code>Error:  Failed to connect to I2C bus 1.</code> readout.</p>
+
+<h3>Checking Your I<sup>2</sup>C Connection</h3>
+
+<p>A simple method to check if your Raspberry Pi can communicate over I<sup>2</sup>C with the BME280 sensor, is to ping the I<sup>2</sup>C bus. On the latest releases of Raspbian Stretch, the <code>i2ctools</code> package should come pre-installed. If it isn't run the following command in the terminal:</p>
+
+<pre><code>sudo apt-get install i2ctools
+</code></pre>
+
+<p>Once the <code>i2ctools</code> package is installed, you can ping the  I<sup>2</sup>C bus with the following command in the terminal:</p>
+
+<pre><code>i2cdetect -y 1
+</code></pre>
+
+<p>You should see a table printed out in the terminal. If the BME280 is connected/working properly you should see the address space for <strong>0x77</strong> marked with 77.</p>
+
+<h3>SPI Setup</h3>
+
+<p>As mentioned earlier, this tutorial does not go into detail about using an SPI connection as the Python library can only be used with an I<sup>2</sup>C connection. However, for users seeking an SPI setup, they can refer to the <a href="https://learn.sparkfun.com/tutorials/sparkfun-bme280-breakout-hookup-guide">hookup guide</a> for the original <a href="https://www.sparkfun.com/products/13676">BME280 Sensor Breakout board</a>.</p>
+
+<h3>If you still have questions or issues with this product, please create a post on our <a href="https://forum.sparkfun.com/index.php">forum</a>.</h3>      </div>
+          <div class="section tutorial-page">
+        <h2 id="resources--going-further">Resources and Going Further</h2>
+        <p>For more product information, check out the resources below:</p>
+
+<ul>
+<li><a href="https://cdn.sparkfun.com/assets/0/9/6/b/4/Qwiic_BME280_Schematic_attempt2.pdf">Schematic (PDF)</a></li>
+<li><a href="https://cdn.sparkfun.com/assets/7/e/6/e/c/Qwiic_Atmospheric_Sensor__BME280_.zip">Eagle Files (ZIP)</a></li>
+<li><a href="https://cdn.sparkfun.com/assets/e/7/3/b/1/BME280_Datasheet.pdf">BME280 Datasheet</a></li>
+<li><a href="https://github.com/sparkfun/Fritzing_Parts/tree/main/products/15440_sfe_qwiic_atmospheric_sensor_BME280_pressure_humidity_temperature.fzpz">Fritzing Part</a></li>
+<li><a href="https://github.com/sparkfun/SparkFun_BME280_Arduino_Library">SparkFun BME280 Arduino Library</a></li>
+<li><a href="https://github.com/sparkfun/Qwiic_BME280_Py">SparkFun BME280 Python Library</a></li>
+<li><a href="https://github.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280">GitHub Hardware Repo</a></li>
+<li><a href="https://youtu.be/l9xFrEx5S8E">Product Video</a></li>
+</ul>
+
+<p>Need help getting started with Arduino and I<sup>2</sup>C? Check out these resources here:</p>
+
+<ul>
+<li><a href="https://playground.arduino.cc/Main/I2cScanner">Arduino I<sup>2</sup>C Scanner Example</a></li>
+<li><a href="https://www.arduino.cc/en/reference/wire">Arduino Wire Library Reference Page</a></li>
+<li><a href="https://playground.arduino.cc/Main/WireLibraryDetailedReference">Arduino Wire Library (In-Depth) Reference</a></li>
+</ul>
+
+<p>Need help getting started with your Raspberry Pi? Check out these resources here:</p>
+
+<ul>
+<li><a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up">Setting up your Raspberry Pi</a></li>
+<li><a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-using">Using your Raspberry Pi</a></li>
+<li><u>Documentation</u>:
+
+<ul>
+<li><a href="https://www.raspberrypi.org/documentation/setup/">Setup Documentation</a></li>
+<li><a href="https://www.raspberrypi.org/documentation/installation/">Installation Documentation</a></li>
+<li><a href="https://www.raspberrypi.org/documentation/raspbian/">Raspbian Documentation</a></li>
+<li><a href="https://www.raspberrypi.org/documentation/installation/sd-cards.md">SD card Documentation</a></li>
+</ul></li>
+</ul>
+
+<p>Need help getting started with Python and I<sup>2</sup>C? Check out these resources here:</p>
+
+<ul>
+<li><a href="https://learn.sparkfun.com/tutorials/python-programming-tutorial-getting-started-with-the-raspberry-pi/all">Python Programming Tutorial: Getting Started with the Raspberry Pi</a></li>
+<li><a href="https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial/all#i2c-on-pi">Raspberry Pi SPI and I<sup>2</sup>C Tutorial</a></li>
+</ul>
+
+<p>Need some inspiration for your next project? Check out some of these other Qwiic product tutorials:</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-612">
+  <a href="https://learn.sparkfun.com/tutorials/transparent-graphical-oled-breakout-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/1/2/15173-TransparentOLEDThumb1.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Transparent Graphical OLED Breakout Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      The future is here! Our Qwiic Transparent Graphical OLED Breakout allows you to display custom images on a transparent screen using either I2C or SPI connections.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-764">
+  <a href="https://learn.sparkfun.com/tutorials/qwiic-vr-imu-bno080-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/7/6/4/14686-Qwiic_VR_IMU_BN0080-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Qwiic VR IMU (BNO080) Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      Figure out how things are oriented with the robust 9 degrees of freedom (DOF) BNO080 IMU. Maybe even make your own virtual reality (VR) applications if you&#039;re feeling savvy.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-832">
+  <a href="https://learn.sparkfun.com/tutorials/qwiic-single-relay-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/3/2/Qwiic_Relay_Hookup_Guide-03__1_.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Qwiic Single Relay Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      Get started switching those higher power loads around with the Qwiic Single Relay.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-1100">
+  <a href="https://learn.sparkfun.com/tutorials/getting-started-with-the-autonomous-kit-for-the-sphero-rvr">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com//assets/learn_tutorials/1/1/0/0/rvr-gif.gif)"></div>
+      </div>
+    
+    
+    <h3 class="title">Getting Started with the Autonomous Kit for the Sphero RVR</h3>
+      </a>
+
+      <div class="description">
+      Want to get started in robotics? Look no further than the SparkFun autonomous kit for the Sphero RVR! Whether you purchased the Basic or Advanced kit, this tutorial will get you rolling...    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+<p>Need some inspiration for your next project? Check out some of these other weather related tutorials:</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-206">
+  <a href="https://learn.sparkfun.com/tutorials/ml8511-uv-sensor-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/2/0/6/ML8511_UV_Sensor.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">ML8511 UV Sensor Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      Get up and running quickly with this simple to use UV sensor.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-467">
+  <a href="https://learn.sparkfun.com/tutorials/si7021-humidity-and-temperature-sensor-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/4/6/7/13763-01a.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Si7021 Humidity and Temperature Sensor Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      The Si7021 humidity and temperature sensor is an easy to use, digital, low-cost sensor to aid you in all your environment sensing needs.     </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-577">
+  <a href="https://learn.sparkfun.com/tutorials/max30105-particle-and-pulse-ox-sensor-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/5/7/7/MAX30105_Pulse_Oximetry.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">MAX30105 Particle and Pulse Ox Sensor Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      The SparkFun MAX30105 Particle Sensor is a flexible and powerful sensor enabling sensing of distance, heart rate, particle detection, even the blinking of an eye. Get ready. Set. Shine!
+    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-1173">
+  <a href="https://learn.sparkfun.com/tutorials/wireless-remote-weather-station-with-microbit">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com//assets/learn_tutorials/1/1/7/3/microbit_wireless_weather_station_thumb.gif)"></div>
+      </div>
+    
+    
+    <h3 class="title">Wireless Remote Weather Station with micro:bit</h3>
+      </a>
+
+      <div class="description">
+      Monitor the weather without being exposed to it through wireless communication between two micro:bits using the radio blocks! This is useful if your weather station is installed in a location that is difficult to retrieve data from the OpenLog. We will also explore a few different ways to send and receive data.    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+<!-- omitting for TS
+
+If the concepts of pressure are weighing on you, check out these links.
+
+* [(external) Air Pressure Altitude Calculator](http://www.mide.com/products/slamstick/air-pressure-altitude-calculator.php) -- Play around to get a feel for what the pressures are at different altitudes.
+* [Wikipedia: Atmospheric_pressure](https://en.wikipedia.org/wiki/Atmospheric_pressure) -- Has a nice equation for conversion of pressure and altitude (referenced for library code).
+* [MPL3115A2 Pressure Sensor Hookup Guide: Pressure vs Altimeter Setting](https://learn.sparkfun.com/tutorials/mpl3115a2-pressure-sensor-hookup-guide#pressure-vs-altimeter-setting) -- Confused why the reading pressure doesn't match the reported pressure from your local weather station?  Read this section.
+<!---
+If your project include one or more SparkFun products, the Hookup Guide for all used products should be included here as well. 
+-->
+
+<!-- Start of CTA Callout -->
+
+<div>
+  <style type="text/css" scoped scoped>
+    hs.button { 
+    color: #fff !important;
+    background-color: #e0311d !important;
+    border-color: #c92c1a !important;
+    font-weight: 700 !important;
+    font-family: SparkGauge,"Arial Narrow","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    letter-spacing: .1em !important;
+    }
+  </style>
+<div class="col-md-12" style="padding-left:0;">
+<div class="alert alert-default" style="background-color:#f7f7f7; min-height:355px; margin-top:20px;">
+<div align="center" class="col-md-4" style="margin-top:20px;">
+<img src="https://cdn.sparkfun.com/assets/learn_tutorials/7/8/3/python-logo-gray-bg.jpg" class="img-responsive" alt="Python Logo">
+</div>
+<div class="col-md-8">
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "2224003",
+    formId: "b3d6c134-6b2f-41b9-a3c1-96beb4f5ea5d",
+    css: ""
+});
+</script>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<!-- End of CTA Callout -->      </div>
+    
+        <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t929" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft929&name=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft929" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft929&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft929&t=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft929&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F9%2F2%2F9%2FAssembly_Raspberry_Pi.jpg&description=Qwiic+Atmospheric+Sensor+%28BME280%29+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+  </div>
+
+  <div class="col-sm-4 nav-menu" id="nav-pages">
+    <div id="sidebar_affix">
+      <div id="tutorial-pages" class="list-group">
+        <a class="list-group-item"><b>Sections</b></a>
+                          <a data-pagename="introduction" class="list-group-item" href="#introduction">
+            Introduction          </a>
+                  <a data-pagename="hardware-overview" class="list-group-item" href="#hardware-overview">
+            Hardware Overview          </a>
+                  <a data-pagename="hardware-assembly" class="list-group-item" href="#hardware-assembly">
+            Hardware Assembly          </a>
+                  <a data-pagename="arduino-library-overview" class="list-group-item" href="#arduino-library-overview">
+            Arduino Library Overview          </a>
+                  <a data-pagename="arduino-example-code" class="list-group-item" href="#arduino-example-code">
+            Arduino Example Code          </a>
+                  <a data-pagename="python-package-overview" class="list-group-item" href="#python-package-overview">
+            Python Package Overview          </a>
+                  <a data-pagename="python-example-code" class="list-group-item" href="#python-example-code">
+            Python Example Code          </a>
+                  <a data-pagename="troubleshooting-tips" class="list-group-item" href="#troubleshooting-tips">
+            Troubleshooting Tips          </a>
+                  <a data-pagename="resources--going-further" class="list-group-item" href="#resources--going-further">
+            Resources and Going Further          </a>
+              </div>
+
+      <div class="list-group">
+        <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/discuss">
+          Comments
+          <span class="badge">2</span>
+        </a>
+                  <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/qwiic-atmospheric-sensor-bme280-hookup-guide/introduction">
+            View Paginated
+          </a>
+                <a class="list-group-item" href="#" onclick="window.print(); return false;">
+          Print
+        </a>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>Tags</b></li>
+        <li class="list-group-item"><ul class="tags-list">
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/arduino">Arduino</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/hookup">Hookup</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/python">Python</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/qwiic">Qwiic</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/raspberry-pi">Raspberry Pi</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/science">Science</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/sensors">Sensors</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/single-board-computer">Single Board Computer</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/weather">Weather</a>  </li>
+</ul>
+</li>
+      </ul>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>License</b></li>
+        <li class="list-group-item">
+          <span class="sfe-icon-cc">
+            <span class="visuallyhidden">Creative Commons</span>
+          </span>
+          <small>tutorials are <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a></small>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+      </div> <!-- /container -->
+    </div> <!-- /content -->
+
+    <footer>
+  <div class="container">
+
+  <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>About SparkFun</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/about-sparkfun">Read Our Story</a></li>
+            <li><a href="https://www.sparkfun.com/press-and-media">Press &amp; Media</a></li>
+            <li><a href="http://www.sparkfuneducation.com" target="_blank">SparkFun Education <span class="glyphicon glyphicon-new-window"></span></a></li>
+            <li><a href="https://www.sparkfun.com/jobs">Job Openings</a></li>
+          </ul>
+
+          <h3>Partner With Us</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/partner">See Our Partners</a></li>
+            <li><a href="https://www.sparkfun.com/services">View Our Services</a></li>
+            <li><a href="https://www.sparkfun.com/become-a-distributor">Become a Distributor/Reseller</a></li>
+            <li><a href="https://www.sparkfun.com/volume-sales">Receive Volume Discounts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/support">Customer Support</a></li>
+            <li><a href="https://www.sparkfun.com/payments">Purchase Order &amp; Payment Terms</a></li>
+            <li><a href="https://www.sparkfun.com/technical-assistance">Technical Assistance</a></li>
+            <li><a href="https://www.sparkfun.com/faq">FAQs</a></li>
+          </ul>
+          <h3>Site Information</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/terms">Terms Of Service</a></li>
+            <li><a href="https://www.sparkfun.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://www.sparkfun.com/compliance">Compliance</a></li>
+            <li><a href="https://www.sparkfun.com/sitemap">Site Map</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Subscribe</h3>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "2224003",
+              formId: "257ad1af-ab9e-4275-8788-cbad81cc229e"
+            });
+          </script>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>View Our Social Channels</h3>
+          <ul class="spew">
+            <li><a href="https://www.youtube.com/sparkfun" target="_blank" class="icon-social-youtube"><span class="sr-only">YouTube</span></a></li>
+            <li><a href="https://www.instagram.com/sparkfun/" target="_blank" class="icon-social-instagram"><span class="sr-only">Instagram</span></a></li>
+            <li><a href="https://www.github.com/sparkfun" target="_blank" class="icon-social-github"><span class="sr-only">GitHub</span></a></li>
+            <li><a href="https://www.facebook.com/SparkFun" target="_blank" class="icon-social-facebook"><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://twitter.com/sparkfun" target="_blank" class="icon-social-twitter"><span class="sr-only">Twitter</span></a></li>
+            <li><a href="https://www.sparkfun.com/feeds" class="icon-social-rss"><span class="sr-only">RSS</span></a></li>
+            <li><a href="https://www.tiktok.com/@sparkfun.electronics?lang=en" target="_blank" class="icon-social-tiktok"><span class="sr-only">TikTok</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- end .row -->
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p class="copyleft">
+          <strong>SparkFun Electronics&nbsp;&reg;</strong>
+          <span class="hidden-xs hidden-sm">/</span>
+          <br class="visible-xs-inline visible-sm-inline"/>
+          6333 Dry Creek Parkway,
+          <br class="visible-xs-inline"/>
+          Niwot, CO 80503
+        </p>
+      </div>
+    </div><!-- end .row -->
+  </div><!-- end .container -->
+</footer>
+
+      </div><!-- end .wrapper-inner -->
+    </div><!-- end .wrapper -->
+
+    <script type="text/javascript">
+      // eslint-disable-next-line no-unused-vars
+      var SFECONFIG = {
+        dnt: false,
+        http_server: 'http://learn.sparkfun.com',
+        https_server: 'https://learn.sparkfun.com',
+        http_static: 'https://cdn.sparkfun.com',
+        learn_server: 'https://learn.sparkfun.com',
+        news_server: 'https://news.sparkfun.com',
+        base_url: '/',
+        url: '/',
+        controller: 'tutorials',
+        action: 'view',
+        auth: false,
+        sparkrev: '1792687498',
+        search_key: 'search-sngw3quge7ojic1tgr4eft5c',
+        search_url: 'https://sparkfun-electronics.ent.us-central1.gcp.cloud.es.io/api/as/v1/engines/sparkfun-01/search'
+      };
+    </script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+      <script src="/js/learn-built.min.js?sparkrev=1792687498"></script>
+    
+    <script>
+      /* global $ */
+      $.sfe();
+      $.shared();
+      $('#learn').learn();
+      $('#learn').sfeutil();
+    </script>
+                            <script src="/js/tutorials-built.min.js?sparkrev=1792687498"></script>
+                              <script>
+    var fbq = null;
+  </script>
+      
+          <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2224003.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+        <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0046/4761.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+      </body>
+</html>

@@ -1,0 +1,130 @@
+[
+  {
+    "part_id": "electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440",
+    "board_size": [
+      25.4,
+      25.4
+    ],
+    "holes": [
+      {
+        "diameter_mm": 3.302,
+        "id": "H4:hole:1",
+        "package": "STAND-OFF",
+        "plated": false,
+        "source_id": "cad",
+        "x_mm": 10.16,
+        "y_mm": 10.16
+      },
+      {
+        "diameter_mm": 3.302,
+        "id": "H2:hole:1",
+        "package": "STAND-OFF",
+        "plated": false,
+        "source_id": "cad",
+        "x_mm": -10.16,
+        "y_mm": 10.16
+      },
+      {
+        "diameter_mm": 3.302,
+        "id": "H1:hole:1",
+        "package": "STAND-OFF",
+        "plated": false,
+        "source_id": "cad",
+        "x_mm": 10.16,
+        "y_mm": -10.16
+      }
+    ],
+    "screw_sizes": [
+      "m3",
+      "m3",
+      "m3"
+    ],
+    "mesh_check": {
+      "watertight": true,
+      "bodies": 1,
+      "volume_mm3": 8954.849534284065,
+      "bounds_mm": [
+        [
+          -29.5,
+          -29.49013364214136,
+          0.0
+        ],
+        [
+          29.5,
+          29.49013364214136,
+          6.0
+        ]
+      ]
+    },
+    "standoff_cross_section_centres_verified": true
+  },
+  {
+    "part_id": "electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231",
+    "board_size": [
+      25.4,
+      17.78
+    ],
+    "holes": [
+      {
+        "diameter_mm": 2.5,
+        "id": "U$1:pad:P$1",
+        "package": "MOUNTINGHOLE_2.5_PLATED",
+        "plated": true,
+        "source_id": "cad",
+        "x_mm": -10.16,
+        "y_mm": 6.35
+      },
+      {
+        "diameter_mm": 2.5,
+        "id": "U$17:pad:P$1",
+        "package": "MOUNTINGHOLE_2.5_PLATED",
+        "plated": true,
+        "source_id": "cad",
+        "x_mm": 10.16,
+        "y_mm": 6.35
+      },
+      {
+        "diameter_mm": 2.5,
+        "id": "U$19:pad:P$1",
+        "package": "MOUNTINGHOLE_2.5_PLATED",
+        "plated": true,
+        "source_id": "cad",
+        "x_mm": -10.16,
+        "y_mm": -6.35
+      },
+      {
+        "diameter_mm": 2.5,
+        "id": "U$21:pad:P$1",
+        "package": "MOUNTINGHOLE_2.5_PLATED",
+        "plated": true,
+        "source_id": "cad",
+        "x_mm": 10.16,
+        "y_mm": -6.35
+      }
+    ],
+    "screw_sizes": [
+      "m2",
+      "m2",
+      "m2",
+      "m2"
+    ],
+    "mesh_check": {
+      "watertight": true,
+      "bodies": 1,
+      "volume_mm3": 6536.564845851547,
+      "bounds_mm": [
+        [
+          -29.5,
+          -21.99013364214136,
+          0.0
+        ],
+        [
+          29.5,
+          21.99013364214136,
+          6.0
+        ]
+      ]
+    },
+    "standoff_cross_section_centres_verified": true
+  }
+]

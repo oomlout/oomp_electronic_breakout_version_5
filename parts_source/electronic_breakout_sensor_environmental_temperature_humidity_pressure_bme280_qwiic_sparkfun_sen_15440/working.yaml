@@ -1,0 +1,257 @@
+board_variant: qwiic
+breakout_description: qwiic
+breakout_pcb_height: 25.4
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+definition_authority: working_oomp_populate_i2c.py
+description: A useful combined weather and environmental sensor. The board supports
+  I2C and SPI.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+geometry_ready: false
+i2c:
+  address_evidence_status: partial_product_page_evidence
+  address_selection: board_configuration
+  clock_stretching: unverified
+  default_address_7bit: 119
+  documented_addresses_7bit:
+  - 118
+  - 119
+  maximum_clock_hz: null
+  source_id: product
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+- spi
+item_kind: breakout
+manufacturer: sparkfun
+manufacturer_part_number: SEN-15440
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 3.302
+  id: H4:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 10.16
+- diameter_mm: 3.302
+  id: H2:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 10.16
+- diameter_mm: 3.302
+  id: H1:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: -10.16
+mounting_hole_radius_name: m3
+mounting_hole_radius_names:
+- m3
+- m3
+- m3
+mounting_hole_status: verified
+mounting_holes:
+- - 10.16
+  - 10.16
+- - -10.16
+  - 10.16
+- - 10.16
+  - -10.16
+mounting_lift: 3
+mounting_research:
+  board_revision: SparkFun Atmospheric Sensor Breakout - BME280 (Qwiic), SEN-15440
+    carrier, matched to manufacturer EAGLE board file at commit 69d2067e2999ea92fe713dfb745f2955c7e2953a;
+    physical production revisions not independently inspected.
+  board_size:
+  - 25.4
+  - 25.4
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'Layer 20 wires define a plain rectangular carrier outline spanning
+    native x=0..25.4 mm and y=0..25.4 mm, yielding board_size=[25.4,25.4]. Centre
+    is (12.7,12.7) mm. Hole candidates in the full drill inspection: H4, H2, H1 are
+    unplated 3.302 mm holes in STAND-OFF packages, giving centred locations (10.16,10.16),
+    (-10.16,10.16), (10.16,-10.16) mm. The other six drilled candidates are J3:pad:1..4
+    and J4:pad:1..2, 1.016 mm plated through-hole connector contacts at y=-11.43 mm;
+    they are explicitly excluded because their package/element references place them
+    in the 0.1-inch header footprints, not board mounting features. Full drill count
+    is nine and all candidates were inspected.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: SparkFun product page names the Atmospheric Sensor Breakout -
+    BME280 (Qwiic), SKU SEN-15440. SparkFun repository README names SEN-15440 and
+    lists Hardware EAGLE files; commit 69d2067e2999ea92fe713dfb745f2955c7e2953a is
+    confirmed by GitHub API and contains Hardware/Qwiic_Atmospheric_Sensor.brd. Archived
+    local XML bytes match that pinned raw URL exactly (393744 bytes, SHA-256 4b34fb80307cfd8d4008901a69409346b4d8c301a6afd522ce289ca682187e7c).
+  mounting_holes:
+  - diameter_mm: 3.302
+    id: H4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H1:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: 10.16
+    y_mm: -10.16
+  record_sha256: 56a0cc9e868014081342a6b57c2e550f057dd9fb013bb32c1e8f04bbffefe8ba
+  research_file: source_file/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 574671
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Product name and SKU SEN-15440; identity only, no board outline dimensions.
+    sha256: 7369feea75452a4e7c89db69be84c8fe2c631910414f0ca32a4a122a32609eff
+    url: https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html
+  - bytes: 260508
+    id: repo
+    kind: manufacturer_repository
+    local_file: reference/hardware_repository.html
+    locator: README identifies SEN-15440 Qwiic product and lists Hardware Eagle files;
+      commit verified by API.
+    sha256: 83fe134809a381c8f5fce2991f47a6fe114db94694b398e294c90b94332991c5
+    url: https://github.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280
+  - bytes: 393744
+    id: cad
+    kind: manufacturer_cad
+    local_file: reference/qwiic_bme280.brd
+    locator: Pinned commit and matching local file hash; XML layer 20 outline and
+      all nine drill candidates inspected.
+    sha256: 4b34fb80307cfd8d4008901a69409346b4d8c301a6afd522ce289ca682187e7c
+    url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/69d2067e2999ea92fe713dfb745f2955c7e2953a/Hardware/Qwiic_Atmospheric_Sensor.brd
+  status: verified
+name_readable: SparkFun BME280 Atmospheric Sensor, Qwiic
+notes: []
+oobb_details:
+- breakout_pcb_height: 25.4
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: H4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H1:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -10.16
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - 10.16
+    - 10.16
+  - - -10.16
+    - 10.16
+  - - 10.16
+    - -10.16
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+part_number: sen_15440
+part_number_sparkfun: SEN-15440
+pinout_status: unverified
+pins: {}
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html
+- bytes: 574671
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: Product name and SKU SEN-15440; identity only, no board outline dimensions.
+  sha256: 7369feea75452a4e7c89db69be84c8fe2c631910414f0ca32a4a122a32609eff
+  url: https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html
+- bytes: 260508
+  id: mounting_repo
+  kind: manufacturer_repository
+  local_file: reference/hardware_repository.html
+  locator: README identifies SEN-15440 Qwiic product and lists Hardware Eagle files;
+    commit verified by API.
+  sha256: 83fe134809a381c8f5fce2991f47a6fe114db94694b398e294c90b94332991c5
+  url: https://github.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280
+- bytes: 393744
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: reference/qwiic_bme280.brd
+  locator: Pinned commit and matching local file hash; XML layer 20 outline and all
+    nine drill candidates inspected.
+  sha256: 4b34fb80307cfd8d4008901a69409346b4d8c301a6afd522ce289ca682187e7c
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/69d2067e2999ea92fe713dfb745f2955c7e2953a/Hardware/Qwiic_Atmospheric_Sensor.brd
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: sparkfun
+taxonomy_15: sen_15440
+taxonomy_2: breakout
+taxonomy_3: sensor
+taxonomy_4: environmental
+taxonomy_5: temperature_humidity_pressure
+taxonomy_6: bme280
+taxonomy_7: qwiic
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: sensor
+type_2: environmental
+type_3: temperature_humidity_pressure
+type_4: bme280
+webpage: https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html
+webpage_sparkfun: https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html

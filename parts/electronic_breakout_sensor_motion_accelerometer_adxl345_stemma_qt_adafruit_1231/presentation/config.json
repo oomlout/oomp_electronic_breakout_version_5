@@ -1,0 +1,22 @@
+{
+  "title": "Adafruit ADXL345 STEMMA QT",
+  "sources": [
+    {
+      "label": "Mounting evidence",
+      "url": "../../source_file/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/mounting.yaml"
+    },
+    {
+      "label": "SCAD",
+      "url": "3dpr.scad"
+    },
+    {
+      "label": "Hole coordinates",
+      "url": "mounting.csv"
+    }
+  ],
+  "installation": [
+    "Download and print the default mounting plate STL.",
+    "The plate uses 4 board fixing locations, sized for M2 screws. The PCB drill diameters are listed below.",
+    "Check screw length, screw-head clearance and underside component clearance against the physical board before fastening; physical fit has not been tested."
+  ]
+}

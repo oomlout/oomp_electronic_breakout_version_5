@@ -1,0 +1,98 @@
+schema_version: 1
+part_id: electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+status: verified
+board_revision: Adafruit product 1231 STEMMA QT carrier revision introduced 2022-03-23; exact manufacturer EAGLE board ADXL345 STEMMA QT.brd at Adafruit_ADXL345_PCB commit 1e0b3eb6c53d8b8ff424b9be11058d701cb31156 (EAGLE 9.6.2). Geometry is for this carrier CAD revision.
+identity_source_ids:
+- product
+- cad
+identity_evidence: Adafruit Product 1231 identifies the ADXL345 STEMMA QT/Qwiic product and states that the March 23, 2022 QT update changed the physical shape and pinout; it also states four 2.5 mm mounting holes. The manufacturer hardware repository contains the exact matching filename ADXL345 STEMMA QT.brd. Its commit-pinned raw file was independently fetched and byte-compared with the archived CAD (269137 bytes; SHA-256 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e). The older repository README describes the legacy two-hole board, so it does not apply to this named QT revision. CAD labels U1 ADXL343 whereas the catalogue product is ADXL345; this pre-existing chip-identity conflict is outside mounting geometry and does not change the explicit carrier outline or mounting pads. Actual fitted IC remains unverified.
+board_size:
+- 25.4
+- 17.78
+mounting_holes:
+- id: U$1:pad:P$1
+  x_mm: -10.16
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$17:pad:P$1
+  x_mm: 10.16
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$19:pad:P$1
+  x_mm: -10.16
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$21:pad:P$1
+  x_mm: 10.16
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: EAGLE layer-20 bounds; explicit package/plain drills; centred then rotated
+  CCW.
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad
+  local_file: reference/adxl345_stemma_qt.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.brd
+  kind: manufacturer_cad
+  locator: Adafruit_ADXL345_PCB commit 1e0b3eb6c53d8b8ff424b9be11058d701cb31156, exact
+    ADXL345 STEMMA QT.brd; XML EAGLE 9.6.2; layer 20 outline, dimensions, four MOUNTINGHOLE_2.5_PLATED
+    elements and all drill candidates. Archived file bytes checked against commit-pinned
+    official raw source; manufacturer commit date 2022-03-23.
+  registered_at: '2026-11-06T11:19:17+00:00'
+  bytes: 269137
+  sha256: 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e
+- id: product
+  local_file: website.html
+  url: https://www.adafruit.com/product/1231
+  kind: manufacturer_product
+  locator: 'Adafruit Product 1231: current STEMMA QT product identity, revision history
+    says QT update March 23 2022 changed physical shape and pinout, and four 2.5 mm
+    mounting holes. Archived manufacturer page content; acquisition date in archive
+    metadata 2026-10-23.'
+  registered_at: '2026-11-06T11:19:17+00:00'
+  bytes: 98115
+  sha256: b662713323f687433ee7a65d4d8269d9f73e740923a0d9157d3bfd397d21fd52
+attempts: []
+conflicts: []
+notes:
+- All 14 drilled candidates were reviewed: four explicit 2.5 mm MOUNTINGHOLE_2.5_PLATED pads are mounting holes; ten 1.0 mm drills belong to JP1/JP2 connector headers. The four JST SH connector mechanical anchor pads are SMD pads without drill holes and were excluded.
+- EAGLE layer 20 outline bounds are 25.4 x 17.78 mm, from (0,0) to (25.4,17.78) in native board coordinates. Centring at (12.7,8.89) yields the recorded top-view coordinates; quarter turn 0, X right, Y up.
+- The old repository README and CAD U1 value discrepancies are resolved as revision/identity notes for this mounting task; neither presents an unresolved mechanical geometry conflict.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T11:19:29+00:00'
+extraction:
+  selected_ids:
+  - U$1:pad:P$1
+  - U$17:pad:P$1
+  - U$19:pad:P$1
+  - U$21:pad:P$1
+  quarter_turn: 0
+  native_centre_mm:
+  - 12.7
+  - 8.89

@@ -1,0 +1,904 @@
+research_schema_version: 1
+part_id: electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+name_readable: Adafruit ADXL345, STEMMA QT
+manufacturer: adafruit
+part_number: '1231'
+manufacturer_part_number: '1231'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: sensor
+  taxonomy_4: motion
+  taxonomy_5: accelerometer
+  taxonomy_6: adxl345
+  taxonomy_7: stemma_qt
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '1231'
+default_website:
+  url: https://www.adafruit.com/product/1231
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T19:58:28+00:00'
+  updated_at: '2026-10-23T20:03:13+00:00'
+  reviewed_by: primary_agent_pilot
+  attempts: []
+board_revision:
+  name: STEMMA QT carrier, CAD commit 1e0b3eb6c53d8b8ff424b9be11058d701cb31156
+  status: matched_carrier_cad_with_declared_conflicts
+  source_ids:
+  - product_page
+  - cad_board
+  - cad_schematic
+  notes: Archived exact carrier CAD; schematic retrieval and hashes are recorded separately. No claim
+    that every shipped assembly fits identical components.
+description: A classic three-axis digital accelerometer, selectable +/-2/4/8/16 g, with I2C and SPI. The
+  current carrier has regulation and level shifting; its 2022 QT revision changed the shape and pinout.
+interfaces:
+- i2c
+- spi
+dimensions_mm:
+  width: 25.4
+  height: 17.78
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: documented_cad
+  source_ids:
+  - cad_board
+coordinate_system:
+  units: mm
+  origin: centre_of_dimension_layer_bounding_box
+  view: top
+  orientation: native_Eagle_axes_no_rotation
+  native_centre_mm:
+  - 12.7
+  - 8.89
+  status: documented_cad
+mounting_holes:
+- id: U$1
+  x_mm: -10.16
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  source_id: cad_board
+- id: U$17
+  x_mm: 10.16
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  source_id: cad_board
+- id: U$19
+  x_mm: -10.16
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  source_id: cad_board
+- id: U$21
+  x_mm: 10.16
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  source_id: cad_board
+mounting_hole_status: documented_cad
+connectors:
+  JP1:
+    kind: header
+    cad_package: 1X06_ROUND_70
+    value: ''
+    contacts:
+    - JP1_1
+    - JP1_2
+    - JP1_3
+    - JP1_4
+    - JP1_5
+    - JP1_6
+    source_id: cad_board
+  CONN3:
+    kind: cable_connector
+    cad_package: JST_SH4
+    value: STEMMA_I2C_QT
+    contacts:
+    - CONN3_2
+    - CONN3_3
+    - CONN3_1
+    - CONN3_4
+    source_id: cad_board
+  CONN4:
+    kind: cable_connector
+    cad_package: JST_SH4
+    value: STEMMA_I2C_QT
+    contacts:
+    - CONN4_2
+    - CONN4_3
+    - CONN4_1
+    - CONN4_4
+    source_id: cad_board
+  JP2:
+    kind: header
+    cad_package: 1X04_ROUND
+    value: ''
+    contacts:
+    - JP2_1
+    - JP2_2
+    - JP2_3
+    - JP2_4
+    source_id: cad_board
+pins:
+  JP1_1:
+    connector: JP1
+    number: '1'
+    name: VIN
+    net_name: VCC
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: -6.35
+    y_mm: -6.35
+    drill_mm: 1.0
+    source_id: cad_board
+    aliases:
+    - VCC
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: power
+    direction: power_input
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  JP1_2:
+    connector: JP1
+    number: '2'
+    name: 3Vo
+    net_name: 3.3V
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: -3.81
+    y_mm: -6.35
+    drill_mm: 1.0
+    source_id: cad_board
+    aliases:
+    - 3.3V
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: power
+    direction: power_output
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  JP1_3:
+    connector: JP1
+    number: '3'
+    name: GND
+    net_name: GND
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: -1.27
+    y_mm: -6.35
+    drill_mm: 1.0
+    source_id: cad_board
+    aliases: []
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: ground
+    direction: reference
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  JP1_4:
+    connector: JP1
+    number: '4'
+    name: SCL
+    net_name: SCL
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: 1.27
+    y_mm: -6.35
+    drill_mm: 1.0
+    source_id: cad_board
+    aliases:
+    - SCK
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: digital
+    direction: interface_dependent
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  JP1_5:
+    connector: JP1
+    number: '5'
+    name: SDA
+    net_name: SDA/SDIO
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: 3.81
+    y_mm: -6.35
+    drill_mm: 1.0
+    source_id: cad_board
+    aliases:
+    - MOSI
+    - SDIO
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: digital
+    direction: bidirectional
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  JP1_6:
+    connector: JP1
+    number: '6'
+    name: INT1
+    net_name: INT1
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: 6.35
+    y_mm: -6.35
+    drill_mm: 1.0
+    source_id: cad_board
+    aliases: []
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: digital
+    direction: output
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  CONN3_2:
+    connector: CONN3
+    number: '2'
+    name: VIN
+    net_name: VCC
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: 7.519
+    y_mm: -0.5
+    drill_mm: null
+    source_id: cad_board
+    aliases:
+    - VCC
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: power
+    direction: power_input
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  CONN3_3:
+    connector: CONN3
+    number: '3'
+    name: SDA
+    net_name: SDA/SDIO
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: 7.519
+    y_mm: 0.5
+    drill_mm: null
+    source_id: cad_board
+    aliases:
+    - MOSI
+    - SDIO
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: digital
+    direction: bidirectional
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  CONN3_1:
+    connector: CONN3
+    number: '1'
+    name: GND
+    net_name: GND
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: 7.519
+    y_mm: -1.5
+    drill_mm: null
+    source_id: cad_board
+    aliases: []
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: ground
+    direction: reference
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  CONN3_4:
+    connector: CONN3
+    number: '4'
+    name: SCL
+    net_name: SCL
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: 7.519
+    y_mm: 1.5
+    drill_mm: null
+    source_id: cad_board
+    aliases:
+    - SCK
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: digital
+    direction: interface_dependent
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  CONN4_2:
+    connector: CONN4
+    number: '2'
+    name: VIN
+    net_name: VCC
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: -7.519
+    y_mm: 0.5
+    drill_mm: null
+    source_id: cad_board
+    aliases:
+    - VCC
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: power
+    direction: power_input
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  CONN4_3:
+    connector: CONN4
+    number: '3'
+    name: SDA
+    net_name: SDA/SDIO
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: -7.519
+    y_mm: -0.5
+    drill_mm: null
+    source_id: cad_board
+    aliases:
+    - MOSI
+    - SDIO
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: digital
+    direction: bidirectional
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  CONN4_1:
+    connector: CONN4
+    number: '1'
+    name: GND
+    net_name: GND
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: -7.519
+    y_mm: 1.5
+    drill_mm: null
+    source_id: cad_board
+    aliases: []
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: ground
+    direction: reference
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  CONN4_4:
+    connector: CONN4
+    number: '4'
+    name: SCL
+    net_name: SCL
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: cable_connector
+    x_mm: -7.519
+    y_mm: -1.5
+    drill_mm: null
+    source_id: cad_board
+    aliases:
+    - SCK
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: digital
+    direction: interface_dependent
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  JP2_1:
+    connector: JP2
+    number: '1'
+    name: GND
+    net_name: GND
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: -3.81
+    y_mm: 6.35
+    drill_mm: 1.0
+    source_id: cad_board
+    aliases: []
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: ground
+    direction: reference
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  JP2_2:
+    connector: JP2
+    number: '2'
+    name: INT2
+    net_name: INT2
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: -1.27
+    y_mm: 6.35
+    drill_mm: 1.0
+    source_id: cad_board
+    aliases:
+    - I2
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: digital
+    direction: output
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  JP2_3:
+    connector: JP2
+    number: '3'
+    name: SDO
+    net_name: SDO
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: 1.27
+    y_mm: 6.35
+    drill_mm: 1.0
+    source_id: cad_board
+    aliases:
+    - ALT_ADDR
+    - MISO
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: digital
+    direction: interface_dependent
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+  JP2_4:
+    connector: JP2
+    number: '4'
+    name: CS
+    net_name: CS
+    label_status: guide_function_name_mapped_to_cad_contact
+    kind: header
+    x_mm: 3.81
+    y_mm: 6.35
+    drill_mm: 1.0
+    source_id: cad_board
+    aliases: []
+    source_ids:
+    - cad_board
+    - guide_pinouts
+    signal_type: digital
+    direction: interface_dependent
+    notes:
+    - Connector pad number is a physical carrier contact, not a chip package pin.
+pin_count:
+  header_contacts: 10
+  cable_connector_contacts: 8
+  total_exposed_contacts: 18
+  unique_nets: 9
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: documented_cad
+  source_ids:
+  - cad_board
+pin_names:
+- 3Vo
+- CS
+- GND
+- INT1
+- INT2
+- SCL
+- SDA
+- SDO
+- VIN
+electrical:
+  board_supply:
+    min_v: null
+    max_v: null
+    nominal_v: 3.3
+    supported_nominal_v:
+    - 3.3
+    - 5.0
+    status: documented_nominal_options
+    source_ids:
+    - guide_pinouts
+    notes:
+    - VIN feeds the on-board 3.3 V regulator; these are documented system voltages, not a claimed continuous
+      input range.
+  chip_supply:
+    min_v: 2.0
+    max_v: 3.6
+    scope: ADXL345 silicon supply, not VIN
+    source_ids:
+    - chip_datasheet
+  logic_levels:
+    status: documented_i2c_with_spi_restrictions
+    notes:
+    - SCL/SDA use level shifting; VIN sets their external logic rail.
+    - The guide explicitly warns that SPI pins are not all 5 V safe or level shifted; do not apply broad
+      product-page 5 V claims to all signals.
+    - 3Vo is the regulated output, not the primary VIN input.
+    source_ids:
+    - guide_pinouts
+    - cad_schematic
+  pullups:
+  - signals:
+    - SCL
+    - SDA
+    resistance_ohms: 10000
+    rail: VIN/VCC
+    reference: R3 resistor array, external bus side
+    disconnect_method: null
+    source_ids:
+    - cad_board
+    - cad_schematic
+  extra_signals:
+  - INT1
+  - INT2
+  - SDO/ALT_ADDR
+  - CS
+  - 3Vo
+  source_ids:
+  - guide_pinouts
+  - cad_board
+  - cad_schematic
+  - chip_datasheet
+i2c:
+  default_address_7bit: 83
+  documented_addresses_7bit:
+  - 83
+  - 29
+  address_selection: SDO/ALT_ADDR low gives 0x53; high to 3.3 V gives 0x1D, then reset.
+  maximum_clock_hz: null
+  chip_maximum_clock_hz: 400000
+  chip_clock_locator: ADXL345 Rev. E PDF pages 18-19; carrier-level maximum not separately established.
+  clock_stretching: unverified
+  status: documented_address_and_partial_bus_limits
+  source_ids:
+  - guide_pinouts
+  - chip_datasheet
+chip:
+  manufacturer: analog_devices
+  part_number: ADXL345
+  identity_status: manufacturer_product_claim_with_cad_value_conflict
+  package_pin_count: 14
+  cad_part_value: ADXL343
+  source_ids:
+  - product_page
+  - cad_board
+  - chip_datasheet
+datasheets:
+  status: downloaded
+  items:
+  - chip: ADXL345
+    source_id: chip_datasheet
+    local_file: reference/adxl345_datasheet.pdf
+    url: https://cdn-learn.adafruit.com/assets/assets/000/110/160/original/ADXL345.pdf?1648220243
+    sha256: 889e63f7503a0115054f9cbc5bdcdf175e549dabb629fa688167cb4dcbf80c74
+    page_count: 40
+    document_revision: Rev. E
+    scope: chip_datasheet_not_carrier_board_specification
+  notes:
+  - Downloaded and parsed; chip identity confirmed from title page.
+software:
+- name: Adafruit ADXL345 Arduino library
+  framework: Arduino
+  url: https://github.com/adafruit/Adafruit_ADXL345
+  installation: Arduino library installation; guide uses Adafruit_ADXL345_U.h and sensortest example.
+  dependencies:
+  - Adafruit Sensor Library
+  tested: false
+  source_ids:
+  - guide_arduino
+- name: Adafruit Unified Sensor dependency
+  framework: Arduino
+  url: https://github.com/adafruit/Adafruit_Sensor
+  tested: false
+  source_ids:
+  - guide_arduino
+- name: Adafruit CircuitPython ADXL34x
+  framework: CircuitPython / Python with Blinka
+  url: https://github.com/adafruit/Adafruit_CircuitPython_ADXL34x
+  example_url: https://github.com/adafruit/Adafruit_CircuitPython_ADXL34x/blob/main/examples/adxl34x_simpletest.py
+  docs_url: https://circuitpython.readthedocs.io/projects/adxl34x/en/latest/
+  tested: false
+  source_ids:
+  - guide_python
+extra_resources:
+- kind: guide
+  url: https://learn.adafruit.com/adxl345-digital-accelerometer/pinouts
+  local_file: reference/guide_pinouts.html
+  source_id: guide_pinouts
+- kind: guide
+  url: https://learn.adafruit.com/adxl345-digital-accelerometer/downloads
+  local_file: reference/guide_downloads.html
+  source_id: guide_downloads
+- kind: guide
+  url: https://learn.adafruit.com/adxl345-digital-accelerometer/python-and-circuitpython
+  local_file: reference/guide_python.html
+  source_id: guide_python
+- kind: hardware_repository
+  url: https://github.com/adafruit/Adafruit_ADXL345_PCB
+  local_file: reference/hardware_repository.html
+  source_id: hardware_repository
+- kind: cad_board
+  url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.brd
+  local_file: reference/adxl345_stemma_qt.brd
+  source_id: cad_board
+- kind: cad_schematic
+  url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.sch
+  local_file: reference/adxl345_stemma_qt.sch
+  source_id: cad_schematic
+- kind: license
+  url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/master/license.txt
+  local_file: reference/hardware_license.txt
+  source_id: hardware_license
+- kind: guide
+  url: https://learn.adafruit.com/adxl345-digital-accelerometer/programming
+  local_file: reference/guide_arduino.html
+  source_id: guide_arduino
+sources:
+- id: product_page
+  kind: product_page
+  requested_url: https://www.adafruit.com/product/1231
+  url: https://www.adafruit.com/product/1231
+  retrieved_at: '2026-10-23T19:58:29+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 98115
+  sha256: b662713323f687433ee7a65d4d8269d9f73e740923a0d9157d3bfd397d21fd52
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 7377
+    sha256: 7d34bd994ce3322d404897ccbde55e8a316b9ecb844b603527f89438c769372d
+  - kind: links
+    local_file: website.links.json
+    bytes: 15708
+    sha256: 308ca0708880858b2d04256b86cfd2add3ea5333b17f39eeb546d2bf427bcb12
+  title: 'ADXL345 - Triple-Axis Accelerometer (+-2g/4g/8g/16g) w/ I2C/SPI [STEMMA QT / Qwiic] : Adafruit
+    Industries, Unique & fun DIY electronics and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_pinouts
+  kind: guide
+  requested_url: https://learn.adafruit.com/adxl345-digital-accelerometer/pinouts
+  url: https://learn.adafruit.com/adxl345-digital-accelerometer/pinouts
+  retrieved_at: '2026-10-23T19:58:30+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_pinouts.html
+  bytes: 70369
+  sha256: 988afb3565b84cc6a82ae9a40f5e684f74717248d5c90a547c4d01efba0fa020
+  derivatives:
+  - kind: text
+    local_file: reference/guide_pinouts.txt
+    bytes: 5139
+    sha256: 16cc318e6b974068be9f950d18937d052cbfad00681eb90369e517a24572c632
+  - kind: links
+    local_file: reference/guide_pinouts.links.json
+    bytes: 18165
+    sha256: bf9c319ef062f49c18a66bea02bceaa2a806185226cba7a140d7e2cca827f5f4
+  title: Pinouts | ADXL345 Digital Accelerometer | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/adxl345-digital-accelerometer/downloads
+  url: https://learn.adafruit.com/adxl345-digital-accelerometer/downloads
+  retrieved_at: '2026-10-23T19:58:30+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_downloads.html
+  bytes: 67713
+  sha256: 25920e04c5408f27ae3fe52b454190d9bb6a841832a5ce965ddb0df9675d4be6
+  derivatives:
+  - kind: text
+    local_file: reference/guide_downloads.txt
+    bytes: 2485
+    sha256: 007f35106cf17b510aa56065dedaf8d4f5b53c4514f4f6bd8eb42873e3055652
+  - kind: links
+    local_file: reference/guide_downloads.links.json
+    bytes: 18623
+    sha256: adc156c66aa0ad5db20fbafbd6531470aef10db223e02954919fa9dcea86b5d2
+  title: Downloads | ADXL345 Digital Accelerometer | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_python
+  kind: guide
+  requested_url: https://learn.adafruit.com/adxl345-digital-accelerometer/python-and-circuitpython
+  url: https://learn.adafruit.com/adxl345-digital-accelerometer/python-and-circuitpython
+  retrieved_at: '2026-10-23T19:58:31+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_python.html
+  bytes: 92428
+  sha256: ab8c0efce84647386522f7874ae34e26e9b72565ac6fbac12425f9c0686c34e9
+  derivatives:
+  - kind: text
+    local_file: reference/guide_python.txt
+    bytes: 9488
+    sha256: 12ec12e3c629c3a00db97c1b0efc293bda70468c07107bf7d643410f65be56e0
+  - kind: links
+    local_file: reference/guide_python.links.json
+    bytes: 24091
+    sha256: cdb47740cd5ad856a84db0ebe6c0d55bb833d60b7f1444aa801c608e9e21fcc7
+  title: Python and CircuitPython | ADXL345 Digital Accelerometer | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: hardware_repository
+  kind: hardware_repository
+  requested_url: https://github.com/adafruit/Adafruit_ADXL345_PCB
+  url: https://github.com/adafruit/Adafruit_ADXL345_PCB
+  retrieved_at: '2026-10-23T19:58:32+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_downloads
+  local_file: reference/hardware_repository.html
+  bytes: 262375
+  sha256: 99d39e35eccdeab81649dc2805d2bb00e3ccf09275c912ba2309c799c4703c65
+  derivatives:
+  - kind: text
+    local_file: reference/hardware_repository.txt
+    bytes: 3006
+    sha256: ade8b6d03cad5c3402f865307fd2cf39139bda412403416f8817b975ea5f2c0a
+  - kind: links
+    local_file: reference/hardware_repository.links.json
+    bytes: 14767
+    sha256: 74e9aa1707a8739d7af9e66c8fd3b76fd2d5da8cdcd6d1289a11f5475f978e82
+  title: 'GitHub - adafruit/Adafruit_ADXL345_PCB: EagleCAD files for our ADXL345 triple-axis accelerometer
+    breakout · GitHub'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: cad_board
+  kind: cad_board
+  requested_url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.brd
+  retrieved_at: '2026-10-23T19:58:32+00:00'
+  content_type: text/plain; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: hardware_repository
+  local_file: reference/adxl345_stemma_qt.brd
+  bytes: 269137
+  sha256: 1dda7529faac26f3a075fa7c4ec9e705adc9aa0ae46119f785a8f67781a3fe7e
+  derivatives:
+  - kind: cad_summary
+    generator: tools/i2c_eagle.py
+    local_file: reference/cad_summary.yaml
+    bytes: 8585
+    sha256: 0ffd8d2b32d85250278a42bc30408a6f44164ba654caf0932cb9ee6d76ca6bdf
+- id: cad_schematic
+  kind: cad_schematic
+  requested_url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.sch
+  url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/1e0b3eb6c53d8b8ff424b9be11058d701cb31156/ADXL345%20STEMMA%20QT.sch
+  retrieved_at: '2026-10-23T19:58:33+00:00'
+  content_type: text/plain; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: hardware_repository
+  local_file: reference/adxl345_stemma_qt.sch
+  bytes: 429381
+  sha256: 0e5600cbe023e6e8d5ce2a45cc83f97e7a651879c001fdcdc0c7d73f60241164
+  derivatives: []
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn-learn.adafruit.com/assets/assets/000/110/160/original/ADXL345.pdf?1648220243
+  url: https://cdn-learn.adafruit.com/assets/assets/000/110/160/original/ADXL345.pdf?1648220243
+  retrieved_at: '2026-10-23T19:58:34+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_downloads
+  local_file: reference/adxl345_datasheet.pdf
+  bytes: 875736
+  sha256: 889e63f7503a0115054f9cbc5bdcdf175e549dabb629fa688167cb4dcbf80c74
+  derivatives:
+  - kind: pdf_text
+    local_file: reference/adxl345_datasheet.txt
+    bytes: 113167
+    sha256: d66043888c2e4bf1d889b2aca1cfa59fa3dae724002a459283abec9b5eb6cc7b
+- id: hardware_license
+  kind: license
+  requested_url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/master/license.txt
+  url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL345_PCB/master/license.txt
+  retrieved_at: '2026-10-23T19:58:34+00:00'
+  content_type: text/plain; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: hardware_repository
+  local_file: reference/hardware_license.txt
+  bytes: 22240
+  sha256: 3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f
+  derivatives: []
+- id: guide_arduino
+  kind: guide
+  requested_url: https://learn.adafruit.com/adxl345-digital-accelerometer/programming
+  url: https://learn.adafruit.com/adxl345-digital-accelerometer/programming
+  retrieved_at: '2026-10-23T20:01:19+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_arduino.html
+  bytes: 85343
+  sha256: 2217497f4c4754da97c6c44960b873244b3868e7c9bf150b7333a24b368d2635
+  derivatives:
+  - kind: text
+    local_file: reference/guide_arduino.txt
+    bytes: 11030
+    sha256: 414dadae9606abf407d7fc60e83b122eb1f0cfe081f3093a87801d84dd834f58
+  - kind: links
+    local_file: reference/guide_arduino.links.json
+    bytes: 20799
+    sha256: 61b5fc72d7924fc0463091f7b3d0532e437e871f4d7a0b2f63752f8f68bbc22b
+  title: Programming and Calibration | ADXL345 Digital Accelerometer | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+conflicts:
+- topic: fitted_chip_identity
+  claims:
+  - source_ids:
+    - product_page
+    - chip_datasheet
+    claim: Product and linked chip datasheet identify ADXL345.
+  - source_ids:
+    - cad_board
+    - cad_schematic
+    claim: The selected ADXL345 STEMMA QT CAD uses U1 value ADXL343.
+  resolution: Preserve ADXL345 catalogue identity; use this explicitly named carrier CAD for geometry
+    only. Actual fitted IC requires separate verification.
+  status: unresolved
+- topic: legacy_repository_readme
+  claims:
+  - source_ids:
+    - hardware_repository
+    claim: README describes nine header contacts and two mounting holes.
+  - source_ids:
+    - cad_board
+    - product_page
+    claim: Current QT CAD has ten header contacts and four holes; product confirms four holes.
+  resolution: Use the explicitly named STEMMA QT carrier CAD; README describes older hardware.
+  status: resolved_for_selected_carrier
+data_gaps:
+- Actual fitted ADXL345 versus CAD ADXL343 value is unresolved.
+- PCB thickness, assembled height and connector insertion/keepout envelopes not verified.
+- Board-level maximum I2C clock and clock-stretching behavior not established.
+- Software links and instructions collected; no hardware or driver execution performed.
+excluded_mechanical_pads:
+- connector: CONN3
+  pad: MT1
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+- connector: CONN3
+  pad: MT2
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+- connector: CONN4
+  pad: MT1
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+- connector: CONN4
+  pad: MT2
+  reason: mechanical_anchor_not_a_cable_contact
+  source_id: cad_board
+evidence_notes:
+  geometry: Derived from archived Dimension-layer wires and explicitly selected carrier connectors; native
+    CAD orientation retained. Mounting packages are excluded from signal/contact counts.
+  websites: website.html is exact HTTP response HTML, plus a text and link inventory. Remote media/scripts
+    are not bundled.
+  catalogue_identity: Taxonomy/part_id intentionally retain original catalogue values even where research
+    resolves new dimensions; no catalogue regeneration was performed.
