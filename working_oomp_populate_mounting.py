@@ -38,4 +38,6 @@ def apply_mounting(options, records=None):
             option["oobb_details"] = [dict(copy.deepcopy(geometry),
                                           oobb_name="mounting_plate_default")]
         # Wire-holder adapters need a separate collision review, not automatic promotion.
+    from mounting_variants import apply_variants
+    apply_variants(options)
     return options

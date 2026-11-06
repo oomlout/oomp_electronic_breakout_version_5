@@ -3,6 +3,7 @@ import oobb
 import yaml
 import os
 import scad_help
+from mounting_variants import FAMILIES, details_for, write_manifests, export_stls
 
 def main(**kwargs):
     make_scad(**kwargs)
@@ -14,18 +15,25 @@ def make_scad(**kwargs):
     filt = ""
     build_variables = scad_help.get_build_variables(typ, filter=filt)
     if True:
-        kwargs["filter"] = build_variables["filter"]
-        kwargs["save_type"] = build_variables["save_type"]
-        kwargs["navigation"] = build_variables["navigation"]
-        kwargs["overwrite"] = build_variables["overwrite"]
-        kwargs["modes"] = build_variables["modes"]
+        for key in ('filter', 'save_type', 'navigation', 'overwrite', 'modes'):
+            kwargs.setdefault(key, build_variables[key])
         kwargs["oomp_mode"] = oomp_mode
         kwargs["oomp_run"] = build_variables["oomp_run"]
     parts = get_parts(kwargs, oomp_mode)
+    if kwargs.get('export_stl'):
+        kwargs['save_type'] = 'none'
+        for part in parts:
+            part['kwargs']['save_type'] = 'none'
     
     kwargs["parts"] = parts
 
     scad_help.make_parts(**kwargs)
+    built = [p for p in parts if kwargs['filter'] in p['oobb_name'] or
+             kwargs['filter'] in p['kwargs'].get('extra', '')]
+    directory = kwargs.get('parts_directory', 'parts')
+    if kwargs.get('export_stl'):
+        export_stls(built, directory, kwargs.get('openscad_exe'))
+    write_manifests(built, directory)
 
     if kwargs["navigation"]:
         oobb_style = False  
@@ -36,11 +44,18 @@ def get_parts(kwargs, oomp_mode):
     parts = []    
 
     #load parts from parts/folder/working.yaml
-    parts_directory = os.path.join(os.path.dirname(__file__), "parts")
+    parts_directory = kwargs.get('parts_directory', os.path.join(os.path.dirname(__file__), "parts"))
+    selected = kwargs.get('part_ids')
+    selected = {selected} if isinstance(selected, str) else (set(selected) if selected is not None else None)
+    found = set()
     if not os.path.isdir(parts_directory):
+        if selected:
+            raise FileNotFoundError('Missing parts directory: ' + str(parts_directory))
         return parts
 
     for folder in os.listdir(parts_directory):
+        if selected is not None and folder not in selected:
+            continue
         folder_path = os.path.join(parts_directory, folder)
         if not os.path.isdir(folder_path):
             continue
@@ -54,14 +69,18 @@ def get_parts(kwargs, oomp_mode):
 
         if not isinstance(loaded_part, dict):
             continue
+        found.add(folder)
 
-        oobb_details = loaded_part.get("oobb_details")
+        oobb_details = details_for(loaded_part)
+        loaded_part['oobb_details'] = copy.deepcopy(oobb_details)
         if isinstance(oobb_details, dict):
             oobb_details = [oobb_details]
         if not isinstance(oobb_details, list):
             continue
 
         for details in oobb_details:
+            if kwargs.get('mounting_only') and details.get('oobb_name') not in FAMILIES:
+                continue
             if not isinstance(details, dict):
                 continue
             part = copy.deepcopy(loaded_part)
@@ -79,6 +98,8 @@ def get_parts(kwargs, oomp_mode):
             parts.append(part)
 
 
+    if selected is not None and selected - found:
+        raise FileNotFoundError('Missing part records: ' + ', '.join(sorted(selected - found)))
     return parts
 
 def get_base(thing, **kwargs):

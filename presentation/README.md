@@ -34,6 +34,8 @@ The batch uses Git-tracked catalogue records. New local records require `--all -
 
 ## Agent handoff
 
+New builds use the normal populate framework. With mounting holes defined, run `python working.py --part <id> --mounting-only --stl`, then `oobb-present` in that part folder. The [framework rules](M6_LAYOUTS.md#normal-framework) describe inputs, enabled families, filenames and the no-hole gate. The saved-CAD commands below maintain the previous catalogue exports.
+
 The wire-holder plate uses plain M3 through-holes without raised hex-pocket collars. Keep the cable openings and PCB support posts. Regenerate saved CAD parameters, then refresh renders and navigation copies:
 
 ```bat

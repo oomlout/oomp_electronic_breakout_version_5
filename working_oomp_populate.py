@@ -111,11 +111,20 @@ def get_options(**kwargs):
     if kwargs.get("apply_mounting", True):
         from working_oomp_populate_mounting import apply_mounting
         apply_mounting(extras)
+    from mounting_variants import apply_variants
+    apply_variants(extras)
     return extras
 
 
 def main(**kwargs):
     extras = get_options(**kwargs)
+    selected = kwargs.get('part_ids')
+    if selected is not None:
+        selected = {selected} if isinstance(selected, str) else set(selected)
+        extras = [e for e in extras if build_oomp_id(e) in selected]
+        missing = selected - {build_oomp_id(e) for e in extras}
+        if missing:
+            raise ValueError('Unknown populate part IDs: ' + ', '.join(sorted(missing)))
     write_extras(extras)
     return extras
 

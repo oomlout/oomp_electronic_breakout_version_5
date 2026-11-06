@@ -240,7 +240,7 @@ def make_scad_generic(part):
                 oomp_id += f"{deet}_"
         oomp_id = oomp_id[:-1]
     part["id"] = oomp_id
-    folder = f"parts/{oomp_id}"
+    folder = os.path.join(kwargs.get('parts_directory', 'parts'), oomp_id)
 
     for mode in modes:
         depth = thing.get(
@@ -270,7 +270,6 @@ def make_scad_generic(part):
         kwargs_new = part_new.get("kwargs", {})
         kwargs_new.pop("save_type","")
         part_new["kwargs"] = kwargs_new
-        import os
         cwd = os.getcwd()
         part_new["project_name"] = cwd
         part_new["id_oobb"] = thing["id"]
@@ -285,7 +284,6 @@ def make_scad_generic(part):
         kwargs_new = part_new.get("kwargs", {})
         kwargs_new.pop("save_type","")
         part_new["kwargs"] = kwargs_new
-        import os
         cwd = os.getcwd()
         part_new["project_name"] = cwd
         part_new["id_oobb"] = thing["id"]

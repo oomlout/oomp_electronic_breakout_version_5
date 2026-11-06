@@ -258,9 +258,13 @@ def archive_superseded(part_id, no_holes=False, root=ROOT):
     base = (Path(root) / "parts" / part_id).resolve()
     if not base.is_relative_to((Path(root)/"parts").resolve()):
         raise ValueError("Part path escapes parts directory")
-    names = ["working_oobb" + ext for ext in (".scad", ".stl", ".png", ".yaml", "_thing.yaml")]
+    stems = ['working_oobb', 'working_oobb_short_sides', 'working_oobb_long_side']
+    names = [stem + ext for stem in stems for ext in
+             ('.scad', '.stl', '.png', '.yaml', '_thing.yaml', '_presentation.png')]
     if no_holes:
-        names += ["3dpr" + ext for ext in (".scad", ".stl", ".png")]
+        names += [stem + ext for stem in ('3dpr', '3dpr_short_sides', '3dpr_long_side')
+                  for ext in ('.scad', '.stl', '.png', '_presentation.png')]
+        names.append('mounting_variants.json')
     paths = [base/name for name in names if (base/name).is_file()]
     if not paths:
         return []
@@ -307,33 +311,28 @@ def _generate(part_id, render_stl):
     if not record["mounting_holes"]:
         receipt([])
         return "Confirmed no holes; no screw holder generated"
-    parts = working_scad.get_parts(dict(modes=["3dpr"], save_type="none", overwrite=True), "project")
+    parts = working_scad.get_parts(dict(part_ids=[part_id], modes=["3dpr"], save_type="none", overwrite=True), "project")
     selected = [p for p in parts if p.get("id") == part_id and p["oobb_name"] == "mounting_plate_default"]
-    if len(selected) != 1:
-        raise ValueError("Expected one populated standard holder")
-    scad_help.make_scad_generic(selected[0])
+    if len(selected) != 3:
+        raise ValueError("Expected three populated standard holder layouts")
+    for part in selected:
+        scad_help.make_scad_generic(part)
     path = ROOT / "parts" / part_id / "3dpr.scad"
     if not path.is_file():
         raise ValueError("SCAD pipeline produced no output")
     mesh_check = None
     if render_stl:
-        import subprocess
-        import trimesh
-        temporary_stl = path.with_name("3dpr.mounting_tmp.stl")
-        try:
-            result = subprocess.run(["openscad", "-o", str(temporary_stl), str(path)],
-                                    capture_output=True, text=True, timeout=180)
-            if result.returncode or "ERROR:" in result.stderr or not temporary_stl.is_file():
-                raise ValueError("OpenSCAD failed: " + result.stderr[-2000:])
-            mesh = trimesh.load(temporary_stl, force="mesh")
-            if not mesh.is_watertight or mesh.body_count != 1 or mesh.volume <= 0:
-                raise ValueError("Holder STL is not one positive-volume watertight solid; needs review")
-            mesh_check = dict(watertight=True, bodies=1, volume_mm3=float(mesh.volume),
-                              bounds_mm=mesh.bounds.tolist())
-            temporary_stl.replace(path.with_suffix(".stl"))
-        finally:
-            temporary_stl.unlink(missing_ok=True)
-    paths = [path] + ([path.with_suffix(".stl")] if render_stl else [])
+        from mounting_variants import export_stls
+        checks = export_stls(selected)
+        if any(check['bodies'] != 1 for check in checks):
+            raise ValueError('Holder STL is not one solid; needs review')
+        mesh_check = dict(checks[0], variants=checks)
+    from mounting_variants import write_manifests
+    write_manifests(selected)
+    paths = [ROOT/'parts'/part_id/((p['kwargs'].get('scad_output') or '3dpr')+'.scad') for p in selected]
+    if render_stl:
+        paths += [p.with_suffix('.stl') for p in paths[:]]
+    paths.append(ROOT/'parts'/part_id/'mounting_variants.json')
     receipt([dict(path=p.relative_to(ROOT).as_posix(), bytes=p.stat().st_size,
                   sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in paths], mesh_check)
     return str(path)

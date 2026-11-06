@@ -102,7 +102,7 @@ class ResearchTests(unittest.TestCase):
         original_taxonomy = {k: v for k, v in board.items() if k.startswith("taxonomy_")}
         apply_mounting([board], {self.part_id: value})
         self.assertEqual(original_taxonomy, {k: v for k, v in board.items() if k.startswith("taxonomy_")})
-        self.assertEqual(len(board["oobb_details"]), 1)
+        self.assertEqual(len(board["oobb_details"]), 3)
         self.assertEqual(board["mounting_holes"], [[3, -1]])
         self.assertEqual(board["mounting_hole_details"][0]["source_id"], "mounting_cad")
         self.assertIn("mounting_cad", {s["id"] for s in board["sources"]})

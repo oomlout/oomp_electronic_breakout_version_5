@@ -91,6 +91,9 @@ def create_generic(**kwargs):
                     for deet in data:
                         part[deet] = data[deet]
 
+        from mounting_variants import details_for
+        part['oobb_details'] = details_for(part)
+
         #working with variables
         if True:
             if "content" in part:
@@ -237,7 +240,7 @@ def create_generic(**kwargs):
 
 
     generation_kwargs = {key: value for key, value in kwargs.items() if key != "part_ids"}
-    if selected_ids is None:
+    if selected_ids is None and not kwargs.get('wait_for_parts', False):
         oomp.add_parts(parts, **generation_kwargs)
     else:
         # The shared add_parts starts unjoined threads. A targeted build must

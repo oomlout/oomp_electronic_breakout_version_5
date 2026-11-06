@@ -45,7 +45,7 @@ class I2CBreakoutTests(unittest.TestCase):
                 self.assertEqual(built[f"taxonomy_{index}"], board[f"taxonomy_{index}"])
             self.assertEqual(build_oomp_id(built), catalogue.get_identifier(board))
             if built.get("mounting_geometry_ready"):
-                self.assertEqual([d["oobb_name"] for d in built["oobb_details"]], ["mounting_plate_default"])
+                self.assertEqual([d["oobb_name"] for d in built["oobb_details"]], ["mounting_plate_default"] * 3)
                 self.assertTrue(built["mounting_research"]["sources"])
             else:
                 self.assertEqual(built["oobb_details"], [])

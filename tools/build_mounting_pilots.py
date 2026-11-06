@@ -86,7 +86,7 @@ def build(presenter, *, render=True):
         count = len(record["mounting_holes"])
         screws = ", ".join(sorted({s.upper().replace("_", ".") for s in geometry["mounting_hole_radius_names"]}))
         config["installation"] = [
-            "Download and print the default mounting plate STL.",
+            "Select and print one mounting plate layout.",
             f"The plate uses {count} board fixing locations, sized for {screws} screws. The PCB drill diameters are listed below.",
             "Check screw length, screw-head clearance and underside component clearance against the physical board before fastening; physical fit has not been tested.",
         ]
@@ -119,7 +119,7 @@ def build(presenter, *, render=True):
             with Image.open(part/variant["image"]) as image:
                 assert image.size == (1600, 1000)
                 image.verify()
-            assert digest(part/variant["image"]) == digest(part/"3dpr_presentation.png")
+            assert digest(part/variant["image"]) == digest(part/(Path(variant['source']).stem+'_presentation.png'))
         check_links(part/"README.md")
         results.append(dict(part_id=part_id, title=title, board_size=record["board_size"],
                             holes=count, mesh_check=receipt["mesh_check"],
