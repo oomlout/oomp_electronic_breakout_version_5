@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "electronic_breakout_microcontroller_rp2040_xiao_17_8_mm_width_21_mm_height_14_pin_seeed_studio_102010428",
+  "title": "Seeed Studio RP2040 XIAO",
+  "md5_6_alpha": "704an",
+  "source": "working.yaml",
+  "source_sha256": "e5be721688b87bbd6edb2a6bc8fbdcb5fb6d66d2ed755e7c464cd9c51e7c5c6d",
+  "board_dimensions_mm": [
+    17.8,
+    21
+  ],
+  "variants": [
+    {
+      "source": "3dpr.stl",
+      "label": "Default mounting plate",
+      "sha256": "68c2b2fd7ca4cc8ad665f5001a31760a8175f5c9bfda1698f37a2de26ea1b07c",
+      "key": "8fdc44faf5266f21578089bf",
+      "dimensions_mm": [
+        44.0,
+        58.98,
+        3.0
+      ],
+      "image": "presentation/images/3dpr.png"
+    },
+    {
+      "source": "working_oobb.stl",
+      "label": "OOBB wire-holder mounting plate",
+      "sha256": "7ac5df38704b4db8843d65926bdf9684c7296376f1861615fa09e977b6546c63",
+      "key": "33bf8824e911bb9dce364d8b",
+      "dimensions_mm": [
+        44.0,
+        58.98,
+        6.0
+      ],
+      "image": "presentation/images/working_oobb.png"
+    }
+  ],
+  "notice": "AI-generated images and instructions. Errors possible.",
+  "generator": "oomlout_oobb_version_5/presentation/scripts/catalogue.py"
+}

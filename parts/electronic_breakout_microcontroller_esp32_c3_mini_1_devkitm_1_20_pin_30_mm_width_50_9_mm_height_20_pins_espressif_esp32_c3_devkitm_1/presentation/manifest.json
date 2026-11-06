@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "electronic_breakout_microcontroller_esp32_c3_mini_1_devkitm_1_20_pin_30_mm_width_50_9_mm_height_20_pins_espressif_esp32_c3_devkitm_1",
+  "title": "Espressif ESP32 c3 mini 1 devkitm 1 20 pin",
+  "md5_6_alpha": "1o184",
+  "source": "working.yaml",
+  "source_sha256": "e910fd8851ccaec64e74ecea720750ed2f541ac97666353188272c5f7b00369c",
+  "board_dimensions_mm": [
+    30,
+    50.9
+  ],
+  "variants": [
+    {
+      "source": "3dpr.stl",
+      "label": "Default mounting plate",
+      "sha256": "d34e3562abb61f80e9e6acd7f9f7e92af760139193fc54cf8ed9ab2e6c113222",
+      "key": "08b627fd7362945307dd840b",
+      "dimensions_mm": [
+        59.0,
+        88.98,
+        3.0
+      ],
+      "image": "presentation/images/3dpr.png"
+    },
+    {
+      "source": "working_oobb.stl",
+      "label": "OOBB wire-holder mounting plate",
+      "sha256": "8c04c3a5fae938958f6a180664c0e6499212c6d3e0bd2b3e5dc80fe8efd35054",
+      "key": "2e3a2eedf9ead505c2c2caa9",
+      "dimensions_mm": [
+        59.0,
+        88.98,
+        6.0
+      ],
+      "image": "presentation/images/working_oobb.png"
+    }
+  ],
+  "notice": "AI-generated images and instructions. Errors possible.",
+  "generator": "oomlout_oobb_version_5/presentation/scripts/catalogue.py"
+}

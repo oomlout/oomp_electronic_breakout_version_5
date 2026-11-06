@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress",
+  "title": "Aliexpress dc to dc step down",
+  "md5_6_alpha": "1c046",
+  "source": "working.yaml",
+  "source_sha256": "e7c19c2fa8220b8a6fce8c09159eaa17d36e942b395578ee9d2af8d7bba11f92",
+  "board_dimensions_mm": [
+    48,
+    25
+  ],
+  "variants": [
+    {
+      "source": "3dpr.stl",
+      "label": "Default mounting plate",
+      "sha256": "7695db753624044a2d421572ae07039f7a11a6115198d77f8029dc6d4c5519db",
+      "key": "21db38c8ec7f4070899f2422",
+      "dimensions_mm": [
+        89.0,
+        58.98,
+        6.0
+      ],
+      "image": "presentation/images/3dpr.png"
+    },
+    {
+      "source": "working_oobb.stl",
+      "label": "OOBB wire-holder mounting plate",
+      "sha256": "f38d3acdbd3821eb0d505c032a3cfcd298838aa66920eb5f70f9659afce9b307",
+      "key": "75aa63ca85af69f63a4dc9c6",
+      "dimensions_mm": [
+        89.0,
+        58.98,
+        9.0
+      ],
+      "image": "presentation/images/working_oobb.png"
+    }
+  ],
+  "notice": "AI-generated images and instructions. Errors possible.",
+  "generator": "oomlout_oobb_version_5/presentation/scripts/catalogue.py"
+}

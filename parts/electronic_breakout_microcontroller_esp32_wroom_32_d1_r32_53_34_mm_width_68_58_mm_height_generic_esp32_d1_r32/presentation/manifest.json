@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32",
+  "title": "Generic ESP32 wroom 32 d1 r32",
+  "md5_6_alpha": "4iz4o",
+  "source": "working.yaml",
+  "source_sha256": "643811efaaf72e7a2f5fac98d5e60f1d39a24bce9899acb7d9cc6fb56c089e7f",
+  "board_dimensions_mm": [
+    53.34,
+    68.58
+  ],
+  "variants": [
+    {
+      "source": "3dpr.stl",
+      "label": "Default mounting plate",
+      "sha256": "970923438218867b6f43ad6e70baf7cf5f1e1cba6c888f19f504a68b9fb26d53",
+      "key": "13f471f1abe739780a3a602e",
+      "dimensions_mm": [
+        89.0,
+        103.98,
+        3.0
+      ],
+      "image": "presentation/images/3dpr.png"
+    },
+    {
+      "source": "working_oobb.stl",
+      "label": "OOBB wire-holder mounting plate",
+      "sha256": "72d83ad5dd854f9daada61b32cdf5f74cfd71a7534a78d8d9c796a9eef872b30",
+      "key": "9ce9bbe34c85a5206ce26af0",
+      "dimensions_mm": [
+        89.0,
+        103.98,
+        6.0
+      ],
+      "image": "presentation/images/working_oobb.png"
+    }
+  ],
+  "notice": "AI-generated images and instructions. Errors possible.",
+  "generator": "oomlout_oobb_version_5/presentation/scripts/catalogue.py"
+}

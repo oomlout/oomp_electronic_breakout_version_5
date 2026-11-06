@@ -9,12 +9,12 @@ Mounting plates for the listed board. Board not shown.
 
 ## Parts
 
-Choose one plate variant. Quantities are for one board.
+One board and one plate. Choose a plate variant.
 
 | Part | Type | Specification | Qty | MD5 alpha |
 | --- | --- | --- | ---: | --- |
-| [Default mounting plate](3dpr.stl) | Printed | 59 × 88.98 × 3 mm | 1 alternative | — |
-| [OOBB wire-holder mounting plate](working_oobb.stl) | Printed | 59 × 88.98 × 6 mm | 1 alternative | — |
+| [Default plate](3dpr.stl) | Printed | 59 × 88.98 × 3 mm | 1 | — |
+| [OOBB wire-holder plate](working_oobb.stl) | Printed | 59 × 88.98 × 6 mm | 1 | — |
 | [Raspberry Pi Pico](working.yaml) | Hardware | 21 × 51 mm; without headers | 1 | [1owcj](working.yaml) |
 
 ## OOBB variant

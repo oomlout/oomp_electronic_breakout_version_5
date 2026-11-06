@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress",
+  "title": "Aliexpress relay",
+  "md5_6_alpha": "7zii9",
+  "source": "working.yaml",
+  "source_sha256": "51feb0522e7019880e30f24baeff3d9eac0621ae3a5a2f00fb442ee22109c26c",
+  "board_dimensions_mm": [
+    49,
+    38
+  ],
+  "variants": [
+    {
+      "source": "3dpr.stl",
+      "label": "Default mounting plate",
+      "sha256": "47941c8907f9152c5341665394e04da73ad52e73fd68345f74143a7aa2914e98",
+      "key": "a9d7c38350d7021815b20f78",
+      "dimensions_mm": [
+        89.0,
+        73.98,
+        6.0
+      ],
+      "image": "presentation/images/3dpr.png"
+    },
+    {
+      "source": "working_oobb.stl",
+      "label": "OOBB wire-holder mounting plate",
+      "sha256": "24534dc290d0d081390409b94ccfa7ec1b97c4b3660da1d822b374ab02bcb175",
+      "key": "1ce50685188bc71e0d0bb363",
+      "dimensions_mm": [
+        89.0,
+        73.98,
+        9.0
+      ],
+      "image": "presentation/images/working_oobb.png"
+    }
+  ],
+  "notice": "AI-generated images and instructions. Errors possible.",
+  "generator": "oomlout_oobb_version_5/presentation/scripts/catalogue.py"
+}

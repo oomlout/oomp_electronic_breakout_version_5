@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-06",
+  "records": 67,
+  "sheets": 134,
+  "unique_meshes": 18,
+  "idempotent_rebuild": true,
+  "source_and_link_audit": "passed",
+  "python": "3.12.2",
+  "blender": "5.2.2 LTS",
+  "libraries": {
+    "Pillow": "12.2.0",
+    "PyYAML": "6.0.3",
+    "trimesh": "5.1.0",
+    "numpy": "2.4.4"
+  },
+  "browser_review": "GitHub Pico README at desktop and 420 px; shortened plate names and numeric quantities after review."
+}

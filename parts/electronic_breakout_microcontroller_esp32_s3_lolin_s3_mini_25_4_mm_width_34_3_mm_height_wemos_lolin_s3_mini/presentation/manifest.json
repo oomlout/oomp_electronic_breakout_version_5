@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini",
+  "title": "Wemos ESP32 s3 lolin s3 mini",
+  "md5_6_alpha": "6hfn4",
+  "source": "working.yaml",
+  "source_sha256": "e9f7a04f5148c8fe468600c870d4865140ba0c2805e20163de543a374c0181ad",
+  "board_dimensions_mm": [
+    25.4,
+    34.3
+  ],
+  "variants": [
+    {
+      "source": "3dpr.stl",
+      "label": "Default mounting plate",
+      "sha256": "88898609a3a560ed846626a61507273aea361cd9800ca49f0bf773af832ad9ad",
+      "key": "2adb041f152cf3a9d80e823a",
+      "dimensions_mm": [
+        59.0,
+        73.98,
+        3.0
+      ],
+      "image": "presentation/images/3dpr.png"
+    },
+    {
+      "source": "working_oobb.stl",
+      "label": "OOBB wire-holder mounting plate",
+      "sha256": "070aabd595ba7236568a5f8fde60ef20c056b7769a1bb11f378c2da41273820a",
+      "key": "a74523a32403b105fa993679",
+      "dimensions_mm": [
+        59.0,
+        73.98,
+        6.0
+      ],
+      "image": "presentation/images/working_oobb.png"
+    }
+  ],
+  "notice": "AI-generated images and instructions. Errors possible.",
+  "generator": "oomlout_oobb_version_5/presentation/scripts/catalogue.py"
+}

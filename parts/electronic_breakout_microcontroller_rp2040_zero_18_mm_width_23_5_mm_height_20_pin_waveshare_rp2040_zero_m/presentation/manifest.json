@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "electronic_breakout_microcontroller_rp2040_zero_18_mm_width_23_5_mm_height_20_pin_waveshare_rp2040_zero_m",
+  "title": "Waveshare RP2040 zero",
+  "md5_6_alpha": "f8z1",
+  "source": "working.yaml",
+  "source_sha256": "792d53045b08e41216bedfa2ab94f8c6cfcc9e56a90337acfb85dec25866438d",
+  "board_dimensions_mm": [
+    18,
+    23.5
+  ],
+  "variants": [
+    {
+      "source": "3dpr.stl",
+      "label": "Default mounting plate",
+      "sha256": "68c2b2fd7ca4cc8ad665f5001a31760a8175f5c9bfda1698f37a2de26ea1b07c",
+      "key": "8fdc44faf5266f21578089bf",
+      "dimensions_mm": [
+        44.0,
+        58.98,
+        3.0
+      ],
+      "image": "presentation/images/3dpr.png"
+    },
+    {
+      "source": "working_oobb.stl",
+      "label": "OOBB wire-holder mounting plate",
+      "sha256": "7ac5df38704b4db8843d65926bdf9684c7296376f1861615fa09e977b6546c63",
+      "key": "33bf8824e911bb9dce364d8b",
+      "dimensions_mm": [
+        44.0,
+        58.98,
+        6.0
+      ],
+      "image": "presentation/images/working_oobb.png"
+    }
+  ],
+  "notice": "AI-generated images and instructions. Errors possible.",
+  "generator": "oomlout_oobb_version_5/presentation/scripts/catalogue.py"
+}

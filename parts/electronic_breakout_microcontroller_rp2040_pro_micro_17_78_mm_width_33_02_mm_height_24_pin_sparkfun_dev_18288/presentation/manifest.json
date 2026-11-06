@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "electronic_breakout_microcontroller_rp2040_pro_micro_17_78_mm_width_33_02_mm_height_24_pin_sparkfun_dev_18288",
+  "title": "Sparkfun Dev RP2040 pro micro",
+  "md5_6_alpha": "93k7x",
+  "source": "working.yaml",
+  "source_sha256": "f2fca007b22f21b9abb41cdab616d0eb88ad42cdbde48837d3068793ea02d041",
+  "board_dimensions_mm": [
+    17.78,
+    33.02
+  ],
+  "variants": [
+    {
+      "source": "3dpr.stl",
+      "label": "Default mounting plate",
+      "sha256": "68c2b2fd7ca4cc8ad665f5001a31760a8175f5c9bfda1698f37a2de26ea1b07c",
+      "key": "8fdc44faf5266f21578089bf",
+      "dimensions_mm": [
+        44.0,
+        58.98,
+        3.0
+      ],
+      "image": "presentation/images/3dpr.png"
+    },
+    {
+      "source": "working_oobb.stl",
+      "label": "OOBB wire-holder mounting plate",
+      "sha256": "7ac5df38704b4db8843d65926bdf9684c7296376f1861615fa09e977b6546c63",
+      "key": "33bf8824e911bb9dce364d8b",
+      "dimensions_mm": [
+        44.0,
+        58.98,
+        6.0
+      ],
+      "image": "presentation/images/working_oobb.png"
+    }
+  ],
+  "notice": "AI-generated images and instructions. Errors possible.",
+  "generator": "oomlout_oobb_version_5/presentation/scripts/catalogue.py"
+}
