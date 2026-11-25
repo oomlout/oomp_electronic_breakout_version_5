@@ -1,0 +1,112 @@
+{
+  "name_readable": "Adafruit QT Py ESP32-C3 (5405)",
+  "manufacturer": "adafruit",
+  "part_number": "5405",
+  "webpage": null,
+  "sources": [
+    {
+      "id": "original_catalogue",
+      "url": null,
+      "title": "Original populate entries in this repository",
+      "local_file": null,
+      "scope": "Nominal dimensions and identity; not manufacturer verification",
+      "accessed": "2026-10-22"
+    },
+    {
+      "id": "chip_datasheet",
+      "url": "https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf",
+      "title": "chip_datasheet",
+      "accessed": "2026-10-22",
+      "scope": "GPIO capabilities, electrical limits and strapping; not carrier geometry"
+    },
+    {
+      "id": "board_guide",
+      "url": "https://learn.adafruit.com/adafruit-qt-py-esp32-c3-wifi-dev-board/downloads",
+      "title": "qtpy_c3 manufacturer guide",
+      "accessed": "2026-10-22",
+      "scope": "Board identity, connector pinout and documented functions"
+    },
+    {
+      "id": "cad",
+      "url": "https://raw.githubusercontent.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/main/Adafruit%20QT%20Py%20ESP32-C3.brd",
+      "title": "cad",
+      "accessed": "2026-10-22",
+      "scope": "Manufacturer CAD; see revision and product applicability notes",
+      "local_file": "reference/Adafruit QT Py ESP32-C3.brd",
+      "sha256": "629effaf43d2b46e0b0d41e3e65eecc33b8e5d75da1336589cde89e68426bbe9"
+    },
+    {
+      "id": "cad_schematic",
+      "url": "https://raw.githubusercontent.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/main/Adafruit%20QT%20Py%20ESP32-C3.sch",
+      "title": "cad_schematic",
+      "accessed": "2026-10-22",
+      "scope": "Manufacturer CAD; see revision and product applicability notes",
+      "local_file": "reference/Adafruit QT Py ESP32-C3.sch",
+      "sha256": "af6d9edfde7492297091703b7d3273f6009b588ddf6af33ef4b78945db86df3d"
+    },
+    {
+      "id": "interface_variant",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/variants/adafruit_qtpy_esp32c3/pins_arduino.h",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Arduino variant pin assignments; not a physical header drawing",
+      "local_file": "reference/interface_defaults/esp32_adafruit_qtpy_esp32c3.h",
+      "sha256": "3011ff25f1c4a1648c9322e43ba2db297c30d438c7d1034993b560347581b441"
+    },
+    {
+      "id": "interface_board_selection",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/boards.txt",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework board names and variant selection; generic selections remain explicitly scoped",
+      "local_file": "reference/interface_defaults/esp32_boards.txt",
+      "sha256": "a8425cc2fd7ec019cce0b4ae2c15d119c008733aac20b4034d977126389a4966",
+      "content_scope": "excerpt_of_board_names_and_variant_selections",
+      "source_document_sha256": "11b90d1f4795ec365418635749b685a2f3d8320d0e163d886aa2099e81277b07"
+    },
+    {
+      "id": "interface_runtime_uart",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/cores/esp32/HardwareSerial.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_HardwareSerial.cpp",
+      "sha256": "a555861fb4f28a2a4c1d903a8152d714902fee2510c9eaf3ad5311dbcd779035"
+    },
+    {
+      "id": "interface_runtime_i2c",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/Wire/src/Wire.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_Wire.cpp",
+      "sha256": "0454e5becf7acaa6f7cb466397682d762461f678cbb88644f31f313e653b71bc"
+    },
+    {
+      "id": "interface_runtime_spi",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/SPI/src/SPI.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_SPI.cpp",
+      "sha256": "4caea80d21fa230a528322d9eb900880a0acd9c91cb355bc5cec514ea02ecaed"
+    }
+  ],
+  "dimensions_mm": {
+    "width": 17.78,
+    "height": 20.701,
+    "pcb_thickness": null,
+    "assembled_height": null,
+    "scope": "pcb_outline_excludes_usb_overhang",
+    "source_id": "cad",
+    "status": "manufacturer_cad"
+  },
+  "coordinate_system": {
+    "units": "mm",
+    "origin": "centre_of_pcb_outline",
+    "view": "top_with_usb_at_positive_y",
+    "x_positive": "right",
+    "y_positive": "towards_usb"
+  },
+  "mounting_hole_details": []
+}

@@ -1,0 +1,172 @@
+Adafruit DS3231 Precision RTC Breakout
+Pinouts
+Adafruit DS3231 Precision RTC Breakout
+Repent and temperature-compensate your oscillator, said the tick-tock man!
+by
+lady ada
+published February 03, 2016, last edited January 22, 2025
+posted in
+Components
+Adafruit Products
+Breakout Boards
+/
+Clocks
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly
+Arduino Usage
+CircuitPython
+Python Docs
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+Adafruit DS3231 Precision RTC Breakout
+Out of Stock
+Featured
+CR1220 12mm Diameter - 3V Lithium Coin Cell Battery
+Out of Stock
+Featured
+Adafruit DS3231 Precision RTC - STEMMA QT
+$13.95
+Add  to Cart
+View product details
+94
+Intermediate
+Product guide
+😍
+4
+Pinouts
+Power Pins:
+Vin
+- this is the power pin. Since the RTC can be powered from 2.3V to 5.5V power, you do not need a regulator or level shifter for 3.3V or 5V logic/power. To power the board, give it the same power as the logic level of your microcontroller - e.g. for a 5V micro like Arduino, use 5V
+GND
+- common ground for power and logic
+I2C Logic pins:
+SCL
+- I2C clock pin, connect to your microcontrollers I2C clock line. This pin has a 10K pullup resistor to Vin
+SDA
+- I2C data pin, connect to your microcontrollers I2C data line. This pin has a 10K pullup resistor to Vin
+STEMMA QT
+- On the STEMMA QT version only!
+These connectors allow you to connect to development boards with
+STEMMA QT
+connectors, or to other things, with
+various associated accessories
+.
+Other Pins:
+BAT
+- this is the same connection as the positive pad of the battery. You can use this if you want to power something else from the coin cell, or provide battery backup from a different separate batery. VBat can be between 2.3V and 5.5V and the DS3231 will switch over when main Vin power is lost
+32K
+- 32KHz oscillator output. Open drain, you need to attach a pullup to read this signal from a microcontroller pin
+SQW
+- optional square wave or interrupt output. Open drain, you need to attach a pullup to read this signal from a microcontroller pin
+RST
+- This one is a little different than most RST pins, rather than being just an input, it is designed to be used to reset an external device or indicate when main power is lost. Open drain, but has an internal 50K pullup. The pullup keeps this pin voltage high as long as Vin is present. When Vin drops and the chip switches to battery backup, the pin goes low.
+ON LED
+- The ON LED will glow on the black STEMMA QT version when power is present. There is an unmarked jumper on the back connected completing the circuit. You can cut the jumper to prevent the LED from turning on if you wish (and resolder to restore the functionality).
+Page last edited March 20, 2024
+Overview
+Assembly
+Related Guides
+Your browser does not support the video tag. This links to the guide Prop-Maker Feather Talking Adabot Clock.
+Prop-Maker Feather Talking Adabot Clock
+By
+Liz Clark
+beginner
+18
+Simple Vertical Wordclock
+By
+Dano Wall
+beginner
+35
+No-Code Offline Data Logger with WipperSnapper
+By
+Brent Rubell
+intermediate
+10
+Adafruit PCF8523 Real Time Clock
+By
+lady ada
+Product Guide
+42
+Your browser does not support the video tag. This links to the guide Blahaj Alarm and Lamp.
+Blahaj Alarm and Lamp
+By
+Eva Herrada
+beginner
+15
+Adafruit MicroSD SPI or SDIO Card Breakout Board
+By
+Jeff Epler
+Product Guide
+25
+QT Py CH32V203 eInk / ePaper Daily Calendar and Clock
+By
+Liz Clark
+intermediate
+24
+No-Code, No-Solder Monitoring For Perfect Bread
+By
+Ben Everard
+beginner
+13
+Disconnected CO2 Data Logger
+By
+Liz Clark
+beginner
+37
+DS1307 Real Time Clock Breakout Board Kit
+By
+Tyler Cooper
+Product Guide
+48
+Metro Minimalist Clock
+By
+John Park
+intermediate
+46
+Adafruit PiCowbell Adalogger for Pico
+By
+Liz Clark
+Product Guide
+24
+Adafruit Adalogger FeatherWing
+By
+lady ada
+Product Guide
+103
+Digital Clock with CircuitPython
+By
+Ruiz Brothers
+intermediate
+64
+Your browser does not support the video tag. This links to the guide Feather RP2040 DVI CircuitPython Day 2024 Countdown Clock.
+Feather RP2040 DVI CircuitPython Day 2024 Countdown...
+By
+Liz Clark
+beginner
+4
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

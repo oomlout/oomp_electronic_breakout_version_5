@@ -1,0 +1,276 @@
+Adafruit MCP23017 I2C GPIO Expander
+Pinouts
+Adafruit MCP23017 I2C GPIO Expander
+Add more GPIO to your project over I2C!
+by
+Liz Clark
+published March 23, 2022, last edited September 22, 2026
+posted in
+Adafruit Products
+CircuitPython
+Breakout Boards
+Programming
+/
+MicroPython / CircuitPython
+STEMMA
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Python & CircuitPython
+Python Docs
+Arduino
+Arduino Docs
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Primary
+Adafruit MCP23017 I2C GPIO Expander Breakout
+$5.95
+Add  to Cart
+View product details
+16
+Beginner
+Product guide
+Pinouts
+The default I2C address for this board is
+0x20
+.
+Power Pins
+This breakout works with both 3V and 5V power and logic, so it can be easily used with most microcontrollers from an Arduino to a Feather or something else.
+VIN
+- This is the power pin. To power the board, give it the same power as the logic level of your microcontroller - i.e. for a 5V micro like Arduino, use 5V, or for a 3V micro like a Feather, use 3V.
+GND
+- This is common ground for power and logic.
+GND pads
+- The ground pads (highlighted in white on the board's silk) are available as discrete ground connections for the GPIO.
+I2C Logic Pins
+SCL
+- I2C clock pin, connect to your microcontroller's I2C clock line. This pin is level shifted so you can use 3-5V logic, and there's a
+10K pullup
+on this pin.
+SDA
+- I2C data pin, connect to your microcontroller's I2C data line. This pin is level shifted so you can use 3-5V logic, and there's a
+10K pullup
+on this pin.
+STEMMA QT
+-
+These connectors allow you to connect to development boards with
+STEMMA QT
+connectors, or to other things, with
+various associated accessories
+.
+GPIO Pins
+Pins
+A0
+-
+A6
+and
+B0
+-
+B6
+are bidirectional digital input and digital output pins, for a total of 16 inputs or outputs. When a pin is an output, it can drive up to 25 mA. When a pin is an input, it can have an optional pull-up. The A pins are PORTA and the B pins are PORTB.
+Pins
+A7
+and
+B7
+should only be used as outputs. The register bits do allow for the direction of these I/O pins to be changed to inputs. However, the SDA signal can be corrupted during a reading of these bits if the pin voltage changes during the transmission of the bit. It has also been reported that this SDA corruption can cause some bus hosts to malfunction.
+More information can be found here from Microchip
+.
+Despite the naming convention, the A prefix
+does not
+stand for analog input/output.
+Text emphasized with a yellow exclamation:
+Despite the naming convention, the A prefix does not stand for analog input/output.
+MCP23017
+The
+MCP23017
+, the square chip located in the left-center on the front of the board, provides general purpose parallel I/O expansion over I2C.
+Interrupt Pins
+IA
+(INTA)
+- configurable for what inputs to keep track of on PORTA. It c
+an be configured as active-high, active-low or open-drain.
+IB
+(INTB)
+-
+configurable for what inputs to keep track of on PORTB. It c
+an be configured as active-high, active-low or open-drain.
+Address Pins
+On the back of the board are
+three address jumpers
+, labeled
++1
+,
++2
+, and
++4,
+above the
+I2C Addr
+label on the board silk
+. These jumpers allow you to chain up to 8 of these boards on the same pair of I2C clock and data pins. To do so, you solder the jumpers "closed" by connecting the two pads.
+On the front of the board are three address pins, labeled
+D0
+,
+D1
+and
+D2
+. Just like the jumpers, these pins allow you to change the I2C address to connect multiple boards by connecting them to
+VIN
+.
+The default I2C address is
+0x20
+. The other address options can be calculated by “adding” the
+D0/D1/D2
+to the base of
+0x20
+.
+D0
+sets the lowest bit with a value of
+1
+,
+D1
+sets the next bit with a value of
+2
+and
+D2
+sets the next bit with a value of
+4.
+The final address is
+0x20 + D2 + D1 + D0
+which would be
+0x27
+.
+So for example if
+D2
+is soldered closed and
+D0
+is soldered closed, the address is
+0x20 + 4 + 1 = 0x25
+.
+If only
+D0
+is soldered closed, the address is
+0x20 + 1 = 0x21
+If only
+D1
+is soldered closed, the address is
+0x20 + 2 = 0x22
+If only
+D2
+is soldered closed, the address is
+0x20 + 4 = 0x24
+The table below shows all possible addresses, and whether the pin(s) should be high (closed) or low (open).
+RST Pin
+RST
+- This is the reset pin. Connect this pin to ground to reset the board.
+Power LED and Jumper
+Power LED -
+In the upper left corner, above the STEMMA connector, on the front of the board, is the power LED, labeled
+on
+.
+LED jumper
+- On the back of the board is a jumper for the power LED. If you wish to disable the power LED, simply cut the trace on this jumper.
+Page last edited September 22, 2026
+Overview
+Python & CircuitPython
+Related Guides
+Ambient Sound Machine
+By
+John Park
+intermediate
+61
+Your browser does not support the video tag. This links to the guide ItsyBitsy Keybow Mechanical Keypad.
+ItsyBitsy Keybow Mechanical Keypad
+By
+John Park
+intermediate
+22
+Adafruit Feather RP2040 with DVI Output Port
+By
+Kattni Rembor
+Product Guide
+11
+Adafruit Metro RP2350
+By
+Tim C
+Product Guide
+6
+PyPortal Tides Viewer
+By
+Carter Nelson
+beginner
+15
+Your browser does not support the video tag. This links to the guide Stepper Motor Turntable.
+Stepper Motor Turntable
+By
+Ruiz Brothers
+intermediate
+37
+Adafruit Chainable DS18B20 Extender Breakout
+By
+Liz Clark
+Product Guide
+2
+CircuitPython on the Arduino Nano RP2040 Connect
+By
+Liz Clark
+beginner
+20
+Adafruit ADS7830 8-Channel 8-Bit ADC
+By
+Liz Clark
+Product Guide
+3
+May Pad Macropad with the KB2040, KMK, and...
+By
+Eva Herrada
+beginner
+33
+Adafruit TMC2209 Stepper Motor Driver Breakout Board
+By
+Tim C
+Product Guide
+17
+Adafruit LSM9DS0 Accelerometer + Gyro + Magnetometer...
+By
+lady ada
+intermediate
+20
+Adafruit TMF8801 Time of Flight Distance Sensor
+By
+Liz Clark
+Product Guide
+0
+New
+Adafruit STEMMA Reflective Photo Interrupt Sensor
+By
+Liz Clark
+Product Guide
+6
+Itertools for CircuitPython
+By
+Dave Astels
+intermediate
+3
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

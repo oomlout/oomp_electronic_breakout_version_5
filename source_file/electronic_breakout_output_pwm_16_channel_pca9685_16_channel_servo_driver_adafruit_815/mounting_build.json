@@ -1,0 +1,117 @@
+{
+  "record_sha256": "b43df1afc883fc42facef5c375afc98869916c30b3a865824e9945075cd998c6",
+  "generated_at": "2026-11-06T19:13:18+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815/3dpr.scad",
+      "bytes": 5245,
+      "sha256": "54dcbbc4c68703a06745a740fcb3cd3650011885ab8799caca85b36e4f488b7d"
+    },
+    {
+      "path": "parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815/3dpr_short_sides.scad",
+      "bytes": 3048,
+      "sha256": "aa85e348db1fcfc4f7fc39e84f2c2a5893e7bf98c38cfb8f5d57be64861603b6"
+    },
+    {
+      "path": "parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815/3dpr_long_side.scad",
+      "bytes": 3320,
+      "sha256": "4022c867bb38fc079e7ceb7348b02e6601c21ecf41c9eb94cf0908ab072aace1"
+    },
+    {
+      "path": "parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815/3dpr.stl",
+      "bytes": 2297780,
+      "sha256": "98320378c938deb724d84d393ebb2d5b26e6d52b9d1456c1fe8ddcf7442ebff6"
+    },
+    {
+      "path": "parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815/3dpr_short_sides.stl",
+      "bytes": 837907,
+      "sha256": "ad70f352d59c2c3d6e156df64cd105a08ea30da92780c5fe99721dce5e3c5d68"
+    },
+    {
+      "path": "parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815/3dpr_long_side.stl",
+      "bytes": 984069,
+      "sha256": "f1f6b9a949fcdcf18a74026e6dd4d22e4254bc9e10bfd6a5cb9fa8dcdf69dbfd"
+    },
+    {
+      "path": "parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815/mounting_variants.json",
+      "bytes": 5595,
+      "sha256": "912f8c0bc62eabc4b255127cf33c1cf9d8f01f0fe7b65185b2e9bd0b13bfb632"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 16115.95375546693,
+    "bounds_mm": [
+      [
+        -52.0,
+        -29.49013364214136,
+        0.0
+      ],
+      [
+        52.0,
+        29.49013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 16115.95375546693,
+        "bounds_mm": [
+          [
+            -52.0,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            52.0,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 9382.073261064057,
+        "bounds_mm": [
+          [
+            -52.0,
+            -15.690133642141358,
+            0.0
+          ],
+          [
+            52.0,
+            15.690133642141358,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 9461.249833002139,
+        "bounds_mm": [
+          [
+            -37.0,
+            -15.69013364214136,
+            0.0
+          ],
+          [
+            37.0,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

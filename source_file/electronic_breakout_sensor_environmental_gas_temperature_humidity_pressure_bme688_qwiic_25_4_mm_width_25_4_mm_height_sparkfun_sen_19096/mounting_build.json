@@ -1,0 +1,117 @@
+{
+  "record_sha256": "64c454e0ab6f922d6d69aa56280ddcf9411f972fc9eab225e668b1bc14947507",
+  "generated_at": "2026-11-06T19:35:24+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_gas_temperature_humidity_pressure_bme688_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_19096/3dpr.scad",
+      "bytes": 4347,
+      "sha256": "aa172bf09b50a300503553b3665c976f947a0da42e7896ef31143ce589d4f99c"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_gas_temperature_humidity_pressure_bme688_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_19096/3dpr_short_sides.scad",
+      "bytes": 3032,
+      "sha256": "a2a4b31afd6d72002e8b315e11cdace5dee16f67d2441d7c23afb4d3100cc2c9"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_gas_temperature_humidity_pressure_bme688_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_19096/3dpr_long_side.scad",
+      "bytes": 2866,
+      "sha256": "afd8185b74bba8e5665006eacaf2fbf50c1f97ba9114ba40295299a7bd45d7bb"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_gas_temperature_humidity_pressure_bme688_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_19096/3dpr.stl",
+      "bytes": 1714196,
+      "sha256": "f1c02b533718fac9242aac48a8c79198bdd3532cdae302e2df583b0cbcc0f11e"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_gas_temperature_humidity_pressure_bme688_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_19096/3dpr_short_sides.stl",
+      "bytes": 837351,
+      "sha256": "70fda773f2a8f13198eb8b1fdf2b430f99e1336c610e3709e96be79c7c1e1be1"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_gas_temperature_humidity_pressure_bme688_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_19096/3dpr_long_side.stl",
+      "bytes": 689567,
+      "sha256": "049bb5ca0b6c4835e39c0f9786c9de7d453a9dc97da2c4547b521539f9c8539a"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_gas_temperature_humidity_pressure_bme688_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_19096/mounting_variants.json",
+      "bytes": 4427,
+      "sha256": "7c104229e0a24d202209378b27c7a62e17a3544a31db52de9fb716205c6179c4"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_sensor_environmental_gas_temperature_humidity_pressure_bme688_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_19096\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 9000.40659801927,
+    "bounds_mm": [
+      [
+        -29.5,
+        -29.49013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        29.49013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_sensor_environmental_gas_temperature_humidity_pressure_bme688_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_19096\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 9000.40659801927,
+        "bounds_mm": [
+          [
+            -29.5,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_environmental_gas_temperature_humidity_pressure_bme688_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_19096\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 5215.6995921557,
+        "bounds_mm": [
+          [
+            -15.7,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            15.7,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_environmental_gas_temperature_humidity_pressure_bme688_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_19096\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 4143.953475409575,
+        "bounds_mm": [
+          [
+            -15.700000000000001,
+            -15.690133642141358,
+            0.0
+          ],
+          [
+            29.5,
+            15.690133642141358,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

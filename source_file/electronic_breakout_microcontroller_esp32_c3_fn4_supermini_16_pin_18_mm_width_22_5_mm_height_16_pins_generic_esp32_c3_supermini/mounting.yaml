@@ -1,0 +1,53 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_c3_fn4_supermini_16_pin_18_mm_width_22_5_mm_height_16_pins_generic_esp32_c3_supermini
+status: needs_review
+board_revision: Unknown generic ESP32-C3FN4 SuperMini carrier; no manufacturer or carrier revision identified.
+identity_evidence: The catalogue record identifies a generic ESP32-C3FN4 SuperMini with nominal 18 x 22.5 mm dimensions, but provides no manufacturer, orderable carrier SKU, or revision. The chip identity does not uniquely identify the carrier PCB.
+board_size: null
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: No carrier geometry extracted. Nominal catalogue dimensions and third-party generic product illustrations do not establish the exact PCB outline or mounting-hole pattern. The axis transform cannot be applied until a revision-specific carrier source is identified.
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: gpt-6-luna
+sources: []
+attempts:
+- avenue: Manufacturer/product source search
+  url: https://www.espressif.com/en/products/modules?id=ESP32-C3
+  accessed: '2026-11-06'
+  finding: Espressif documents the ESP32-C3 module/chip family, not a generic SuperMini carrier. No carrier manufacturer or revision was identified for this catalogue item.
+- avenue: Generic SuperMini dimensional/model source
+  url: https://www.xemstudio.com/objects/esp32-c3-supermini/
+  accessed: '2026-11-06'
+  finding: Secondary listing describes an unbranded 18 x 22.52 mm outline and asserts no mounting holes, while explicitly stating that no maker documentation exists and no mounting-hole positions are published. This is not complete carrier evidence for the assigned unit, so it cannot establish no_holes.
+- avenue: Community carrier CAD repository
+  url: https://github.com/microrobotics/ESP32-C3-SMINI
+  accessed: '2026-11-06'
+  finding: Repository identifies its own ESP32-C3 Super Mini V2 and includes V2 circuit and information PDFs, but is not manufacturer-linked to the unbranded catalogue board and provides no evidence that its carrier revision matches this board.
+- avenue: Generic FN4 SuperMini PDF
+  url: https://dl.artronshop.co.th/ESP32-C3%20SuperMini%20datasheet.pdf
+  accessed: '2026-11-06'
+  finding: Reseller-hosted generic FN4 board document is not linked to a named carrier manufacturer or revision. Its diagrams do not establish that this assigned catalogue carrier is the same design or revision.
+- avenue: Manufacturer identity and CAD search
+  url: https://www.nologo.tech/product/esp32/esp32c3/esp32c3supermini/esp32C3SuperMini.html
+  accessed: '2026-11-07'
+  finding: Nologo's official product page describes its own ESP32C3 SuperMini with ESP32C3FN4 and 22.52 x 18 mm dimensions, but the assigned catalogue item is explicitly generic and has no Nologo identity. The page describes an external antenna, so matching chip and outline dimensions do not establish a matching carrier/revision. The linked dimension and schematic images could not be retrieved by the browser; no manufacturer-linked CAD or revision match was found.
+conflicts:
+- 'Carrier identity/revision unresolved: multiple unrelated generic SuperMini sources describe different or unlinked designs. A Nologo product shares the FN4 chip and nominal outline dimensions but is not identified as the assigned generic catalogue carrier; no exact revision match or usable CAD/dimensioned geometry source is established. The assigned catalogue dimensions (18 x 22.5 mm) do not identify a carrier revision. Hole presence/absence and exact outline remain unverified.'
+notes:
+- 'Do not set no_holes: complete evidence for the exact carrier was not found, so absence of holes is unproven.'
+- No promotion, preview, validation, or generation performed because exact carrier identity and geometry are unsupported.
+- fit_status remains generic_holder_not_physical_fit_tested.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T17:40:00+00:00'

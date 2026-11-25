@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLMFVVN');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile mode if small screen device -->
+    
+    <title>SparkFun Environmental Sensor Breakout - BME68x (Qwiic) Hookup Guide - SparkFun Learn</title>
+
+          <link rel="canonical" href="https://learn.sparkfun.com/tutorials/sparkfun-environmental-sensor-breakout---bme68x-qwiic-hookup-guide/all">
+            
+    <link href="/css/bootstrap.min.css?rev=1792686982" rel="stylesheet">
+    <link rel="stylesheet" href="/css/theme.github.css?rev=1792686982" type="text/css" media="screen" />    <link rel="alternate" type="application/atom+xml" title="Education Blog" href="https://learn.sparkfun.com/feeds/blog" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorials" href="https://learn.sparkfun.com/feeds/tutorials" />
+    <link rel="alternate" type="application/atom+xml" title="Education Blog Comments" href="https://learn.sparkfun.com/feeds/blog_comments" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorial Comments" href="https://learn.sparkfun.com/feeds/tutorial_comments" />
+  </head>
+
+  <body id=learn class="layout-default no-type tutorials-view" ontouchstart="">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLMFVVN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <script>;
+    </script>
+    <div class="wrapper" itemscope itemtype="http://schema.org/WebSite">
+      <meta itemprop="url" content="https://learn.sparkfun.com/">
+      <div class=wrapper-inner>
+
+    <header>
+  <div class="support-nav-container container-fluid hidden-xs">
+    <div class="container">
+      <div class="support-nav">
+        <div aria-hidden="true">&nbsp;</div>
+
+        <div>
+          <ul class="professional-links">
+            <li><a href="https://www.sparkfun.com/professional">Professional</a></li>
+            <li><a href="https://www.sparkfun.com/education">EDU</a>            <li><a href="https://www.sparkfun.com/become-a-distributor">Distributor</a>          </ul>
+        </div>
+
+        <div class="cs">
+          <a href="https://www.sparkfun.com/support">Customer Support</a>        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-nav-buttons container-fluid hidden-xs">
+    <div class="container">
+      <div class="tab-bar">
+        <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header-content">
+      <div class="logo-container">
+        <button id="mobile-nav-menu-trigger" class="mobile-menu-button btn-unstyled hidden-sm hidden-md hidden-lg" type="button" aria-label="Open navigation menu">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+
+        <a class="logo" href="https://www.sparkfun.com/">
+          <span class="logo-sfe-primary"><span class="visuallyhidden">SparkFun Electronics - sparkfun.com</span></span>
+        </a>
+      </div>
+
+      <div class="search-block">
+                  <form id="search_form" class="search-block-form" action="https://learn.sparkfun.com/search/results" method="get">
+            <label for="global-search" class="sr-only">search documentation</label>
+            <input name="term" id="global-search" class="form-control" type="text" value="" placeholder="search documentation" autocomplete="off">
+            <button type="submit" class="glyphicon glyphicon-search global-search-icon" aria-label="Search"></button>
+          </form>
+        
+        <a href="https://www.sparkfun.com/" class="hidden-xs">Back to Webstore<span class="icon-header icon-header-undo" aria-hidden="true"></span></a>
+      </div>
+
+        <a class="account-link" href="https://www.sparkfun.com/customer/account">
+          <span class="img-account-silhouette visible-xs-inline-block"><span class="sr-only">My Account</span></span>
+          <span class="hidden-xs">My Account</span>
+        </a>
+
+    </div>
+  </div>
+
+  <div class="header-nav container-fluid hidden-xs">
+    <div class="container">
+      <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    </div>
+  </div>
+  <div id="nav-mobile-menu" class="nav-mobile-menu" aria-labelledby="nav-mobile-menu-heading" aria-role="dialog" aria-modal="true">
+    <h2 id="nav-mobile-menu-heading" class="sr-only">Navigation menu</h2>
+    <ul class="mobile-menu-tabs">
+      <li class="active"><a>Menu</a></li>
+      <li><a href="https://www.sparkfun.com/customer/account">Account</a></li>
+    </ul>
+    <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+  </div>
+</header>
+
+    
+    <div class=content>
+      <div class=container id=airlock>
+
+        
+        <div class=main-title>
+  <ul class="breadcrumb">
+    <li><a href="https://learn.sparkfun.com/">Home</a></li>
+    <li><a href="https://learn.sparkfun.com/tutorials">Tutorials</a></li>
+    <li>SparkFun Environmental Sensor Breakout - BME68x (Qwiic) Hookup Guide</li>
+      </ul>
+
+  <h1>
+    SparkFun Environmental Sensor Breakout - BME68x (Qwiic) Hookup Guide  </h1>
+
+</div>
+
+
+<a id=nav_toggle_pages class="nav_toggle nav-toggle-trigger" href="#"><span>&#8801;</span> Pages</a>
+
+<div id=tutorial class="row">
+
+  <div class="col-sm-8" id="sections">
+
+    <div class="contributors">
+                      Contributors:
+                <span class="contributor-alias"><img src="https://cdn.sparkfun.com/avatar/931a585884e4ef21a40d470f7df5c553?d=retro&s=20&r=pg" /> El Duderino</span>, <span class="contributor-alias"> santaimpersonator</span>          </div>
+
+    <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t1168" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft1168&name=SparkFun+Environmental+Sensor+Breakout+-+BME68x+%28Qwiic%29+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft1168" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=SparkFun+Environmental+Sensor+Breakout+-+BME68x+%28Qwiic%29+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft1168&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft1168&t=SparkFun+Environmental+Sensor+Breakout+-+BME68x+%28Qwiic%29+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft1168&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F1%2F1%2F6%2F8%2FBME680_Thumbnail.jpg&description=SparkFun+Environmental+Sensor+Breakout+-+BME68x+%28Qwiic%29+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+          <div class="section tutorial-page">
+        <h2 id="introduction">Introduction</h2>
+        <div class="alert alert-danger"><b>Important Note:</b> In order to avoid contamination of its gas scanning capabilities, <span style="color:red"><u><b>DO NOT</b></u></span> touch the metallic casing of the BME688 sensor.</div>
+
+<p>The <a href="https://www.sparkfun.com/products/16466">SparkFun Environmental Sensor - BME680 (Qwiic)</a> is a breakout for the 4-in-1 BME680 gas sensor from <a href="https://www.bosch.us/">Bosch</a>. The BME680 combines a gas sensor with temperature, humidity and barometric pressure sensing for a complete environmental sensor in a single package. The gas sensor on the BME680 can detect a wide variety of volatile organic compounds (or VOC for short) to monitor indoor air quality. Combine that with precise temperature, humidity and barometric pressure and the BME680 can work as a completely standalone environmental sensor all in a 1"x1" breakout! The BME680 communicates over either I<sup>2</sup>C or SPI. As you would expect from the name, the BME680's I<sup>2</sup>C pins are broken out to a Qwiic connector so integrating it into the <a href="https://www.sparkfun.com/qwiic">SparkFun Qwiic System</a> is a breeze. Simply plug it into a Qwiic-enabled microcontroller and you're well on your way to making your own weather station.</p>
+
+<div class="row">
+    <div class="col-md-6">
+        
+
+<div >
+<div class="tile product-tile big grid " data-id="product-16466">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-environmental-sensor-breakout-bme680-qwiic.html">
+        <img src="https://cdn.sparkfun.com/r/600-600/assets/parts/1/5/3/2/9/16466-SparkFun_Environmental_Sensor_Breakout_-_BME680__Qwiic_-01a.jpg" alt="SparkFun Environmental Sensor Breakout - BME680 (Qwiic)" height="600">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-environmental-sensor-breakout-bme680-qwiic.html">
+          <span>SparkFun Environmental Sensor Breakout - BME680 (Qwiic)</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      SEN-16466    </span>
+
+          <p class="description" style="display:none">
+        This SparkFun Environmental Sensor is a breakout for the 4-in-1 BME680 gas sensor from Bosch.      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$22.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+        <div class="flex-video-wrap clearfix">
+  <div class="flex-video widescreen img">
+    <iframe src="https://www.youtube.com/embed/Wrcy8OOkosg/?autohide=1&amp;border=0&amp;wmode=opaque&amp;enablejsapi=1" frameborder=0 allowfullscreen width="560" height="315"></iframe>
+  </div>
+</div>
+
+    </div>
+    <div class="col-md-6">
+        
+
+<div >
+<div class="tile product-tile big grid " data-id="product-19096">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-environmental-sensor-bme688-qwiic.html">
+        <img src="https://cdn.sparkfun.com/r/600-600/assets/parts/1/8/6/9/6/19096-SparkFun_Environmental_Sensor_Breakout_-_BME688__Qwiic_-01.jpg" alt="SparkFun Environmental Sensor - BME688 (Qwiic)" height="600">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-environmental-sensor-bme688-qwiic.html">
+          <span>SparkFun Environmental Sensor - BME688 (Qwiic)</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      SEN-19096    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun BME688 Environmental Sensor combines a gas scanning sensor with temperature, humidity, & barometric pressure sen&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$24.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+        <div class="flex-video-wrap clearfix">
+  <div class="flex-video widescreen img">
+    <iframe src="https://www.youtube.com/embed/8C2DNpUbOAo/?autohide=1&amp;border=0&amp;wmode=opaque&amp;enablejsapi=1" frameborder=0 allowfullscreen width="560" height="315"></iframe>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<p>The <a href="https://www.sparkfun.com/products/19096">Qwiic BME688 breakout board</a> is an updated version of the <a href="https://www.sparkfun.com/products/16466">BME680 environmental sensor</a> from Bosch. With the same features of the original BME680, the new BME688 also includes an additional gas scanning functionality to detect the presence of VSCs (i.e. hydrogen sulfide (H<sub>2</sub>S) compounds). The gas scanner operation can be manually customized or trained with the BME AI-Studio tool to detect target samples.</p>
+
+<div class="alert alert-info">
+
+<b>Notes on AI Feature:</b>
+
+<ul>
+    <li>How is the BME688 different from the BME680?
+        <ul>
+            <li>The BME680 does not support AI features.</li>
+        </ul>
+    </li>
+    <li>Can we test the AI software it with the current BME680?
+        <ul>
+            <li>No, this is not possible, as the BME680 does not have the necessary gas scan function.</li>
+        </ul>
+    </li>
+    <li>
+        While the <a href="https://www.sparkfun.com/products/16466">BME688 Qwiic board</a> can be used with the <a href="https://www.bosch-presse.de/pressportal/de/en/bme-ai-studio-software-225349.html">BME AI-Studio</a> and <a href="https://github.com/BoschSensortec/Bosch-BSEC2-Library">BSEC2 Arduino library</a>, for the AI functionality, it is recommended that users purchase the <!--a href="https://www.sparkfun.com/products/19630"-->BME688 Evaluation Board<!--/a--> <i>(Coming Soon)</i> for ease of use.
+        
+        <div class="flex-video-wrap clearfix">
+  <div class="flex-video widescreen img">
+    <iframe src="https://www.youtube.com/embed/xcZKKNrBt2g/?autohide=1&amp;border=0&amp;wmode=opaque&amp;enablejsapi=1" frameborder=0 allowfullscreen width="560" height="315"></iframe>
+  </div>
+</div>
+
+    </li>
+</ul>
+</div>
+
+<h3>Required Materials</h3>
+
+<div class="alert alert-info"><p><b>Note:</b> To get started with the BME688, a RedBoard Qwiic is more than sufficient for the basic sensor functionality covered in this tutorial. However, the more advanced <a href="https://github.com/BoschSensortec/Bosch-BSEC2-Library">BSEC2 Arduino library</a>, with support for the BME688 AI functionality, is only compatible with some of the <strong>ESP32 microcontrollers</strong>, like the <a href="https://www.sparkfun.com/products/15663">ESP32 WROOM</a>.</p>
+
+<p><i>*For more details, check out the <a href="https://github.com/BoschSensortec/Bosch-BSEC2-Library/blob/master/README.md#6-tested-boardcore-list">tested platforms section</a> of the Arduino library and our <!--ahref="" -->Getting started with the BME AI-Studio guide (coming soon)<!--/a-->.</i></p></div>
+
+<p>To follow along with this guide you will need a microcontroller to communicate with the BME68x. Below are a few options that come Qwiic-enabled out of the box:</p>
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid " data-id="product-15795">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-qwiic-pro-micro-usb-c-atmega32u4.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/4/4/0/4/15795-Pro_Micro_C-01.jpg" alt="SparkFun Qwiic Pro Micro - USB-C" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-qwiic-pro-micro-usb-c-atmega32u4.html">
+          <span>SparkFun Qwiic Pro Micro - USB-C</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-15795    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Qwiic Pro Micro adds a reset button, Qwiic connector, USB-C, and castellated pads to the miniaturized Arduino bo&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$23.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-15123">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-redboard-qwiic.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/3/4/9/2/15123-SparkFun_RedBoard_Qwiic-01a.jpg" alt="SparkFun RedBoard Qwiic" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-redboard-qwiic.html">
+          <span>SparkFun RedBoard Qwiic</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-15123    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun RedBoard Qwiic is an Arduino-compatible development board with a built in Qwiic connector, eliminating the need &hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$21.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-15663">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-thing-plus-esp32-wroom-micro-b.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/4/2/4/1/15663-SparkFun_Thing_Plus_-_ESP32_WROOM-01.jpg" alt="SparkFun Thing Plus - ESP32 WROOM (Micro-B)" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-thing-plus-esp32-wroom-micro-b.html">
+          <span>SparkFun Thing Plus - ESP32 WROOM (Micro-B)</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      WRL-15663    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun ESP32 Thing Plus is the next step to get started with Espressif IoT ideations while still enjoying all the ameni&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$24.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-15444">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-redboard-artemis.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/4/0/1/9/15444-SparkFun_RedBoard_Artemis-01.jpg" alt="SparkFun RedBoard Artemis" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-redboard-artemis.html">
+          <span>SparkFun RedBoard Artemis</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-15444    </span>
+
+          <p class="description" style="display:none">
+        The RedBoard Artemis takes the incredibly powerful Artemis module from SparkFun and wraps it up in an easy to use and familia&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$24.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+<p>If your chosen microcontroller is not already Qwiic-enabled, you can add that functionality with one or more of the following items:</p>
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid " data-id="product-15081">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-qwiic-cable-kit.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/3/4/3/1/15081-_01.jpg" alt="SparkFun Qwiic Cable Kit" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-qwiic-cable-kit.html">
+          <span>SparkFun Qwiic Cable Kit</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      KIT-15081    </span>
+
+          <p class="description" style="display:none">
+        To make it even easier to get started, we've assembled this Qwiic Cable Kit with a variety of Qwiic cables from 50mm to 500mm&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$12.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-14352">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-qwiic-shield-for-arduino.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/3/4/3/14352-01.jpg" alt="SparkFun Qwiic Shield for Arduino" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-qwiic-shield-for-arduino.html">
+          <span>SparkFun Qwiic Shield for Arduino</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-14352    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Qwiic Shield is an easy-to-assemble board that provides a simple way to incorporate the Qwiic Connect System wit&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$7.75</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-16789">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-qwiic-shield-for-arduino-nano.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/5/6/9/6/16789-SparkFun_Qwiic_Shield_for_Arduino_Nano-05.jpg" alt="SparkFun Qwiic Shield for Arduino Nano" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-qwiic-shield-for-arduino-nano.html">
+          <span>SparkFun Qwiic Shield for Arduino Nano</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-16789    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Qwiic Shield for Arduino Nano makes it so you can use SparkFun's Qwiic connect ecosystem with development boards&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$5.50</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-17119">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-qwiic-shield-for-teensy.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/6/0/8/7/17119-SparkFun_Qwiic_Shield_for_Teensy-07.jpg" alt="SparkFun Qwiic Shield for Teensy" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-qwiic-shield-for-teensy.html">
+          <span>SparkFun Qwiic Shield for Teensy</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-17119    </span>
+
+          <p class="description" style="display:none">
+        This shield provides an easy way to SparkFun's Qwiic ecosystem with your Teensy 4.0, 3.2, or LC board footprint.      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$4.25</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+<p>You will also want at least one Qwiic cable to connect your sensor to your microcontroller.</p>
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid retired" data-id="product-14426">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/qwiic-cable-50mm.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/2/14426-Qwiic_Cable_-_50mm-01.jpg" alt="Qwiic Cable - 50mm" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/qwiic-cable-50mm.html">
+          <span>Qwiic Cable - 50mm</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14426    </span>
+
+          <p class="description" style="display:none">
+        This is a 50mm long 4-conductor cable with 1mm JST termination. It’s designed to connect Qwiic enabled components together &hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14427">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/qwiic-cable-100mm.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/3/14427-Qwiic_Cable_-_100mm-01.jpg" alt="Qwiic Cable - 100mm" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/qwiic-cable-100mm.html">
+          <span>Qwiic Cable - 100mm</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14427    </span>
+
+          <p class="description" style="display:none">
+        This is a 100mm long 4-conductor cable with 1mm JST termination. It’s designed to connect Qwiic enabled components together&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14428">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/14428">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/4/14428-Qwiic_Cable_-_200mm-01.jpg" alt="Qwiic Cable - 200mm" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/14428">
+          <span>Qwiic Cable - 200mm</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14428    </span>
+
+          <p class="description" style="display:none">
+        This is a 200mm long 4-conductor cable with 1mm JST termination. It’s designed to connect Qwiic enabled components together&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14429">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/14429">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/5/14429-Qwiic_Cable_-_500mm-01.jpg" alt="Qwiic Cable - 500mm" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/14429">
+          <span>Qwiic Cable - 500mm</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14429    </span>
+
+          <p class="description" style="display:none">
+        This is a 500mm long 4-conductor cable with 1mm JST termination. It’s designed to connect Qwiic enabled components together&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+<h3>Suggested Reading</h3>
+
+<p>If you're unfamiliar with serial terminals, jumper pads, or I<sup>2</sup>C be sure to checkout some of these foundational tutorials.</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-15">
+  <a href="https://learn.sparkfun.com/tutorials/installing-an-arduino-library">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/b/e/4/b/2/50f04b99ce395fd95e000001.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Installing an Arduino Library</h3>
+      </a>
+
+      <div class="description">
+      How do I install a custom Arduino library? It&#039;s easy! This tutorial will go over how to install an Arduino library using the Arduino Library Manager. For libraries not linked with the Arduino IDE, we will also go over manually installing an Arduino library.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-16">
+  <a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/6/spiThumb_Updated2.png)"></div>
+      </div>
+    
+    
+    <h3 class="title">Serial Peripheral Interface (SPI)</h3>
+      </a>
+
+      <div class="description">
+      SPI is commonly used to connect microcontrollers to peripherals such as sensors, shift registers, and SD cards.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-62">
+  <a href="https://learn.sparkfun.com/tutorials/logic-levels">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/2/Input_Output_Logic_Level_Tolerances_tutorial_tile.png)"></div>
+      </div>
+    
+    
+    <h3 class="title">Logic Levels</h3>
+      </a>
+
+      <div class="description">
+      Learn the difference between 3.3V and 5V devices and logic levels.     </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-82">
+  <a href="https://learn.sparkfun.com/tutorials/i2c">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/2/I2C-Block-Diagram.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">I2C</h3>
+      </a>
+
+      <div class="description">
+      An introduction to I2C, one of the main embedded communications protocols in use today.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-112">
+  <a href="https://learn.sparkfun.com/tutorials/terminal-basics">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/1/2/terminalThumb.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Serial Terminal Basics</h3>
+      </a>
+
+      <div class="description">
+      This tutorial will show you how to communicate with your serial devices using a variety of terminal emulator applications.     </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-844">
+  <a href="https://learn.sparkfun.com/tutorials/redboard-qwiic-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/4/4/15123-SparkFun_RedBoard_Qwiic-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">RedBoard Qwiic Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      This tutorial covers the basic functionality of the RedBoard Qwiic. This tutorial also covers how to get started blinking an LED and using the Qwiic system.    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+<p><!-- Qwiic Banner -->
+<center></p>
+
+<div>
+    <div style="top:5px;left:5px;background-color:Gray;position:relative">
+        <div style="top:-5px;left:-5px;background-color:#ffffff;position:relative;border:1px solid #cccccc;padding: 7px;">
+            <a href="https://www.sparkfun.com/qwiic"><img src="https://cdn.sparkfun.com/assets/custom_pages/2/7/2/qwiic-logo.png" alt="Qwiic Connect System" title="Qwiic Connect System"></a>
+        </div>
+    </div>
+</div>
+
+<p></center></p>
+
+<p>The Qwiic BME68x utilizes the <a href="https://www.sparkfun.com/qwiic">Qwiic connect system</a>. We recommend familiarizing yourself with the <strong>Logic Levels</strong> and <strong>I<sup>2</sup>C</strong> tutorials (above) before using it. Click on the banner above to learn more about our <a href="https://www.sparkfun.com/categories/399">Qwiic products</a>.</p>
+
+<div class="flex-video-wrap clearfix">
+  <div class="flex-video widescreen img">
+    <iframe src="https://www.youtube.com/embed/x0RDEHqFIF8/?autohide=1&amp;border=0&amp;wmode=opaque&amp;enablejsapi=1" frameborder=0 allowfullscreen width="560" height="315"></iframe>
+  </div>
+</div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="hardware-overview">Hardware Overview</h2>
+        <p>The heart of these breakout boards, Bosch's BME680 Gas Sensor, integrates four sensors (gas, pressure, temperature and humidity) into a tiny package. The BME68x measures just 3mm x 3mm x 0.93 mm and was specifically designed for applications that depend on a small footprint and low power consumption. This makes the BME68x a great choice for remote or mobile environmental sensing applications. We will highlight some of the unique aspects of the BME68x in this section but for a full overview of the sensor package, check out the datasheets:</p>
+
+<ul>
+<li><a href="https://cdn.sparkfun.com/assets/8/a/1/c/f/BME680-Datasheet.pdf">BME680 Datasheet</a></li>
+<li><a href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme688-ds000.pdf">BME688 Datasheet</a></li>
+</ul>
+
+<div class="alert alert-info">
+<p><b>BME688 Note:</b> The BME688 is a drop in replacement for the BME680; with the added gas scanning functionality and support for AI algorithms. The parameters in <span style="background-color: yellow">highlighted in yellow</span>, only apply to the BME688 sensor.</p>
+
+<p><b>How does the gas scanner work?</b></br>
+The gas sensor takes measurements with different sensitivities during one gas scan. In doing so, it can generate a profile <i>(or fingerprint)</i> for different gas mixtures. This can be modified and optimized with BME AI-Studio.</p>
+</div>
+
+<table class="table table-hover table-bordered table-striped" style="white-space:nowrap">
+    <tr>
+        <th>Characteristic</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Operating Voltage</td>
+        <td>
+            <ul>
+                <li>V<sub>DD</sub>: 1.71V to 3.6V (<b>Default on Qwiic System: 3.3V</b>)</li>
+                <li>V<sub>DDIO</sub>: 1.2 to 3.6V</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Operational Modes</td>
+        <td>
+            <b>Sleep</b> (<b>Default</b>) and Forced (<i>low power; single measurement</i>)<br>
+            <span style="background-color: yellow">Parallel (<i>Gas sensor heater operates in parallel to TPH measurement</i>)</span>
+        </td>
+    </tr>
+    <tr>
+        <td>Interface</td>
+        <td>I²C and SPI</td>
+    </tr>
+    <tr>
+        <td>I²C Address</td>
+        <td>
+            BME680: <b>0x77</b> (<b>Default</b>) or 0x76<br>
+            <span style="background-color: yellow">BME688: <b>0x76</b> (<b>Default</b>) or 0x77</span>
+        </td>
+    </tr
+    <tr>
+        <td>Average current consumption</td>
+        <td>
+            2.1 µA at 1 Hz humidity and temperature<br>
+            3.1 µA at 1 Hz pressure and temperature<br>
+            3.7 µA at 1 Hz humidity, pressure and temperature<br>
+            90 µA at ULP mode for p/h/T &amp; air quality<br>
+            0.9 mA at LP mode for p/h/T &amp; air quality<br>
+            <span style="background-color: yellow">3.9 mA in standard gas scan mode</span>
+        </td>
+    </tr
+    <tr>
+        <td>Humidity Parameters</td>
+        <td>
+            Range: 10 to 90 %RH<br>
+            Absolute Accuracy: &plusmn;3 %RH (from 20 - 80 %RH)<br>
+            Resolution: 0.008 %RH
+        </td>
+    </tr>
+    <tr>
+        <td>Pressure Parameters</td>
+        <td>
+            Range: 300 to 1100 hPa (30,000 - 110,000 Pa or approx. 4.35 - 15.95 PSI)<br>
+            Absolute Accuracy: &plusmn;0.6 hPa<br>
+            Resolution: 0.18 Pa
+        </td>
+    </tr>
+    <tr>
+        <td>Temperature Parameters</td>
+        <td>
+            Range: 0&deg;C to 65&deg;C (32&deg;F to 149&deg;F)<br>
+            Absolute Accuracy: &plusmn;(0.5 - 1.0)&deg;C<br>
+            Resolution: 0.01&deg;C
+            </td>
+    </tr>
+    <tr>
+        <td>Gas Sensor Parameters</td>
+        <td>
+            <span style="background-color: yellow">F1 score for H₂S scanning: 0.92</span><br>
+            <span style="background-color: yellow">Standard scan speed: 10.8 s / scan</span><br>
+            Sensor-to-sensor deviation: +/- 15% +/- 15<br>
+            Output data processing:
+            <ul>
+                <li>Index for Air Quality (IAQ)</li>
+                <li>bVOC-&amp; CO₂-equivalents (ppm)</li>
+                <li><span style="background-color: yellow">Gas scan result (%)</span></li>
+                <li>
+                    More listed in the <b>BSEC outputs</b> table:
+                    <ul>
+                        <li><i>Table 14</i> in the <a href="https://cdn.sparkfun.com/assets/8/a/1/c/f/BME680-Datasheet.pdf">BME680 datasheet</a></li>
+                        <li><i>Table 20</i> in the <a href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme688-ds000.pdf">BME688 datasheet</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+<h3>Power</h3>
+
+<p>The BME68x accepts a supply voltage between <strong>1.71 to 3.6V</strong>. Power can be supplied to the board either through one of the Qwiic connectors or the dedicated <strong>3.3V</strong> and <strong>GND</strong> pins broken out on either side of the board.</p>
+
+<div class="row" align="center">
+    <div class="col-md-6">
+        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME680_Power_Input.png"><img alt="BME680 Power Inputs Highlighted" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/1/1/6/8/BME680_Power_Input.png"></a>
+        <br>
+        <i>BME680 (Click to enlarge)</i>
+    </div>
+    <div class="col-md-6">
+        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME688-power.jpg"><img alt="BME688 Power Inputs" src="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME688-power.jpg"></a>
+        <br>
+        <i>BME688 (Click to enlarge)</i>
+    </div>
+</div>
+
+<h3>Qwiic and I<sup>2</sup>C Interface</h3>
+
+<p>The SparkFun Environmental Sensor - BME68x (Qwiic) communicates over I<sup>2</sup>C by default. We have routed the BME68x's I<sup>2</sup>C pins to two Qwiic connectors as well as broken them out to 0.1"-spaced the header pins highlighted below.</p>
+
+<p>
+<div class="row" align="center">
+    <div class="col-md-6">
+        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME680_Qwiic_I2C.jpg"><img alt="BME680 Qwiic and I2C Interface Highlighted" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/1/1/6/8/BME680_Qwiic_I2C.jpg"></a>
+        <br>
+        <i>BME680 (Click to enlarge)</i>
+    </div>
+    <div class="col-md-6">
+        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME688-i2c.jpg"><img alt="BME688 Qwiic and I2C Interface Highlighted" src="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME688-i2c.jpg"></a>
+        <br>
+        <i>BME688 (Click to enlarge)</i>
+    </div>
+</div>
+</p>
+
+<div class="alert alert-info"><b>Note:</b> The default I<sup>2</sup>C address between the BME680 and BME688 Qwiic boards are different:
+<ul>
+    <li>BME680: <b>0x77</b></li>
+    <li>BME688: <b>0x76</b></li>
+</ul>
+</div>
+
+<h3>Serial Peripheral Interface (SPI)</h3>
+
+<p>If you would prefer to communicate with your BME68x via <a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi">SPI</a>, we have broken those pins out as well to standard 0.1"-spade header pins. Communicating over SPI requires more connections than I<sup>2</sup>C but is more versatile and can be faster. It is particularly helpful if you need to use more than two BME68x's in your circuit or if you have other devices using the same I<sup>2</sup>C addresses.</p>
+
+<p>
+<div class="row" align="center">
+    <div class="col-md-6">
+        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME680_SPI.jpg"><img alt="BME680 SPI Pins Highlighted" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/1/1/6/8/BME680_SPI.jpg"></a>
+        <br>
+        <i>BME680 (Click to enlarge)</i>
+    </div>
+    <div class="col-md-6">
+        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME688-spi_split.jpg"><img alt="BME688 SPI Pins Highlighted" src="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME688-spi_split.jpg"></a>
+        <br>
+        <i>BME688 (Click to enlarge)</i>
+    </div>
+</div>
+</p>
+
+<div class="alert alert-warning"><b>BME688 SPI Jumpers:</b> In order to communicate with the BME688 Qwiic board over SPI, users will need to cut the <code>CSB</code> and <code>ADR</code> <i>(leave floating)</i> jumpers. <i>*See the <b>CSB Jumper</b> section, below, for more information.</i></div>
+
+<div class="alert alert-info"><b>SPI Pin Nomenclature:</b> Users may not recognize the <code>COPI</code>/<code>CIPO</code> or <code>SDI</code>/<code>SDO</code> labels for SPI pins. SparkFun has joined with other members of OSHWA in a resolution to move away from using "Master" and "Slave" to describe signals between the controller and the peripheral. Check out <a href="https://www.sparkfun.com/spi_signal_names">this page</a> for more on our reasoning behind this change. You can also see OSHWA's resolution <a href="https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names">here</a>.</p>
+<p>On the BME688 Qwiic board, the <code>CS</code> <i>(chip select)</i> pin is labeled with a <code>CSB</code> silkscreen, as annotated in the <a href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme688-ds000.pdf">BME688 datasheet</a>.</p>
+</div>
+
+<h3>Solder Jumpers</h3>
+
+<p>The SparkFun Environmental Sensor - <strong>BME680</strong> (Qwiic) has three solder jumpers which can be modified to alter the functionality of the sensor. While, the SparkFun Environmental Sensor - <strong>BME688</strong> (Qwiic) has four solder jumpers which can be modified to alter the functionality of the sensor.</p>
+
+<div class="alert alert-info">If you have never worked with solder jumpers or PCB traces before or would like a refresher, take a look at our <a href="https://learn.sparkfun.com/tutorials/how-to-work-with-jumper-pads-and-pcb-traces">How to Work with Jumper Pads and PCB Traces</a> tutorial.</div>
+
+<h4>I<sup>2</sup>C Pull-Up Jumper</h4>
+
+<p>On the BME680 Qwiic board, the SDA/SDI and SCL/SCK pins are pulled to VDDIO (<strong>3.3V</strong>) through a pair of <strong>4.7k&Omega;</strong> (<strong>2.2k&Omega;</strong> on the BME688) resistors. The jumper is normally <strong>closed</strong> so to disable the pull-up resistors, simply sever the traces between the three pads using a hobby knife.</p>
+
+<div class="row" align="center">
+    <div class="col-md-6">
+        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME680_I2C_Jumper.jpg"><img alt="BME680 I2C Jumper Highlighted" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/1/1/6/8/BME680_I2C_Jumper.jpg"></a>
+        <br>
+        <i>BME680 (Click to enlarge)</i>
+    </div>
+    <div class="col-md-6">
+        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME688-jumper_I2C.jpg"><img alt="BME688 I2C Jumper Highlighted" src="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME688-jumper_I2C.jpg"></a>
+        <br>
+        <i>BME688 (Click to enlarge)</i>
+    </div>
+</div>
+
+<h4>Power LED Jumper</h4>
+
+<p>This jumper connects the power LED to <strong>3.3V</strong> via a <strong>1K Ohm</strong> resistor. This jumper is normally <strong>closed</strong> so to disable the power LED, sever the trace between the two pads. This is particularly helpful for reducing the total current draw of your breakout for low-power applications.</p>
+
+<div class="row" align="center">
+    <div class="col-md-6">
+        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME680_Power_LED.png"><img alt="BME680 Power LED Circuit highlighted" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/1/1/6/8/BME680_Power_LED.png"></a>
+        <br>
+        <i>BME680 (Click to enlarge)</i>
+    </div>
+    <div class="col-md-6">
+        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME688-jumper_LED.jpg"><img alt="BME688 Power LED Circuit highlighted" src="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME688-jumper_LED.jpg"></a>
+        <br>
+        <i>BME688 (Click to enlarge)</i>
+    </div>
+</div>
+
+<h4>I<sup>2</sup>C Address Jumper</h4>
+
+<div class="alert alert-info"><b>Note:</b> The default I<sup>2</sup>C address between the BME680 and BME688 Qwiic boards are different. The jumper configuration and adjustment is also different.</div>
+
+<p>This jumper sets the 7-Bit unshifted I<sup>2</sup>C address of the BME680 and is <strong>open</strong> by default. The default address is <strong>0x77</strong> and can be adjusted to <strong>0x76</strong> by closing this jumper.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME680_ADR_Jumper.jpg"><img src="https://cdn.sparkfun.com/r/360-360/assets/learn_tutorials/1/1/6/8/BME680_ADR_Jumper.jpg" alt="Address Jumper Highlighted" /></a> </div>
+<div class="center-block text-center"> <em>BME680 (Click to enlarge)</em> </div></p>
+
+<p>This jumper sets the 7-Bit unshifted I<sup>2</sup>C address of the BME688 and sets the default address to <strong>0x76</strong> and can be adjusted to <strong>0x77</strong> by cutting and soldering the jumper over to the <code>0x77</code> pad.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME688-jumper_ADR.jpg"><img src="https://cdn.sparkfun.com/r/360-360/assets/learn_tutorials/1/1/6/8/BME688-jumper_ADR.jpg" alt="BME688 Address Jumper Highlighted" /></a> </div>
+<div class="center-block text-center"> <em>BME688 (Click to enlarge)</em> </div></p>
+
+<h4>CSB Jumper</h4>
+
+<p>This jumper only applies to the BME688 Qwiic board. The <code>CSB</code> pin is pulled up to V<sub>DDIO</sub> in order to configure the board for I<sup>2</sup>C communication by default. In order to communicate with the sensor over SPI, the <code>CSB</code> jumper must be cut along with the <code>ADR</code> jumper <em>(leave floating)</em>. Once the <code>CSB</code> pin has been pulled low during SPI communication, the sensor will communicate over SPI until there is a power reset.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME688-jumper_CSB.jpg"><img src="https://cdn.sparkfun.com/r/360-360/assets/learn_tutorials/1/1/6/8/BME688-jumper_CSB.jpg" alt="BME688 CSB jumper highlighted" /></a> </div></p>
+
+<h3>Board Dimensions</h3>
+
+<p>This breakout fits the Qwiic standard sizing for breakouts. It is a 1"x1" square with two mounting holes that fit a 4-40 screw.</p>
+
+<div class="row" align="center">
+    <div class="col-md-7">
+        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME680_Dimensions.png"><img alt="Qwiic BME680 board dimensions" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/1/1/6/8/BME680_Dimensions.png"></a>
+        <br>
+        <i>BME680 (Click to enlarge)</i>
+    </div>
+    <div class="col-md-5">
+        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/qwiic_bme688_dimensions.png"><img alt="Qwiic BME688 board dimensions" src="https://cdn.sparkfun.com/r/190-190/assets/learn_tutorials/1/1/6/8/qwiic_bme688_dimensions.png"></a>
+        <br>
+        <i>BME688 (Click to enlarge)</i>
+    </div>
+</div>
+
+<p>Now that we have a thorough understanding of the hardware and features on the Environmental Sensor - BME680 (Qwiic), it's time to hook it up and start taking measurements.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="hardware-assembly">Hardware Assembly</h2>
+        <div class="alert alert-danger"><b>Important Notes:</b>
+
+<ul>
+    <li>In order to avoid contamination of its gas scanning capabilities, <span style="color:red"><u><b>DO NOT</b></u></span> touch the metallic casing of the BME688 sensor.</li>
+    <li>At first sensor usage, minimum 48 hours of "burn in" should be made. Later, at each usage, 30 min. of functioning should passed before sensor data may be considered as valid.
+        <ul>
+            <li>To "burn in" the sensor, users just need to power the sensor for 48 hrs.</li>
+        </ul>
+    </li>
+</ul>
+</div>
+
+<p>Using the Qwiic system, assembling the hardware is simple. All you need to do is connect your Environmental Sensor - BME68x (Qwiic) to your chosen development board with a Qwiic cable or <a href="https://www.sparkfun.com/products/14425">adapter cable</a>. Otherwise, you can use the I<sup>2</sup>C pins broken out if you do not have a Qwiic connector on your development board or if you do not want to use a Qwiic connection. If you are not using a Qwiic-enabled board, make sure your input voltage and logic are either running at <strong>3.3V</strong> or you are shifting the <a href="https://learn.sparkfun.com/tutorials/logic-levels">logic level</a> from whatever logic your controller runs at to <strong>3.3V</strong> for the BME680.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME680_Connected_to_RedBoard.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/1/1/6/8/BME680_Connected_to_RedBoard.jpg" alt="BME680 Connected to a RedBoard Qwiic" /></a> </div></p>
+
+<p>If you would prefer to communicate with the BME680 via SPI, you will need to connect to the SPI pins broken out on this board and route them to the respective pins for SPI communication on your development board (CIPO, COPI, SCK and CS). Also note that this breakout defaults to I<sup>2</sup>C mode so your code will need to toggle the CS pin <strong>LOW</strong> once on power up to enable SPI mode. The BME680 will remain in SPI mode until the next power cycle. The SPI examples further on in this guide do that automatically so it's only necessary to note for writing your own code.</p>
+
+<div class="alert alert-info"><b>Note:</b> On the BME688 Qwiic board, users will need to cut the <code>ADR</code> and <code>CSB</code> jumpers to enable SPI communication. <i>(*See the <b>Hardware Overview</b> section for more information.)</i></div>
+
+<div class="alert alert-info">
+    <b>Note:</b> You may not recognize the COPI/CIPO labels for SPI pins.     SparkFun has joined with other members of OSHWA in a resolution to move away from using "Master" and "Slave" to describe signals between the controller and the peripheral. Check out <a href="https://www.sparkfun.com/spi_signal_names">this page</a> for more on our reasoning behind this change. You can also see OSHWA's resolution <a href="https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names">here</a>.</div>
+
+<p>Soldering to the pins is the best option for a secure connection but you can also create temporary connections to those pins for prototyping using something like these <a href="https://www.sparkfun.com/products/9741">IC Hooks</a>. If you are not familiar with through-hole soldering, take a look at this tutorial:</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile big grid " data-id="tutorial-5">
+  <a href="https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/500-282/assets/learn_tutorials/5/Soldering_Action-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">How to Solder: Through-Hole Soldering</h3>
+    <div class="metaline">September 19, 2013</div>  </a>
+
+      <div class="description">
+      This tutorial covers everything you need to know about through-hole soldering.    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+<p>With everything connected properly, we're ready to move on to uploading a sketch and start monitoring your environment!</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="bme680-arduino-library">BME680 Arduino Library</h2>
+        <div class="alert alert-info">
+<b>Note:</b> This library assumes you are using the latest version of the Arduino IDE on your desktop. If this is your first time using Arduino, please review our tutorial on <a href="https://learn.sparkfun.com/tutorials/installing-arduino-ide">installing the Arduino IDE.</a> If you have not previously installed an Arduino library, please check out our <a href="https://learn.sparkfun.com/tutorials/installing-an-arduino-library">installation guide.</a>
+</div>
+
+<p>For the scope of tutorial, we are going to use the BME680 Arduino Library created by SV-Zanshin. You can download it with the Arduino Library Manager by searching <strong>'BME680'</strong> and selecting the one authored by SV-Zanshin. Alternatively, you can grab the zip of the latest release (v1.0.3 as of this writing) below or you can download the most up to date version of the library from the <a href="https://github.com/SV-Zanshin/BME680">GitHub repository</a>.</p>
+
+<p><div class="center-block text-center"> <a href="https://github.com/SV-Zanshin/BME680/archive/v1.0.3.zip" class="btn btn-default">BME680 Arduino Library (ZIP)</a> </div></p>
+
+<p>Once you have the library installed you can move on to uploading the examples and gathering environmental data.</p>
+
+<div class="alert alert-info"><p><b>Note:</b> Users that are interested in the AI functionality of the <b>BME688</b> sensor can check out the <a href="https://www.bosch-sensortec.com/software-tools/software/bme688-software/">software available from the Bosch website</a>.</p>
+
+<p>While the <a href="https://www.sparkfun.com/products/16466">BME688 Qwiic board</a> can be used with the <a href="https://www.bosch-presse.de/pressportal/de/en/bme-ai-studio-software-225349.html">BME AI-Studio</a> and <a href="https://github.com/BoschSensortec/Bosch-BSEC2-Library">BSEC2 Arduino library</a>, for the AI functionality, it is recommended that users purchase the <!--a href="https://www.sparkfun.com/products/19630"-->BME688 Evaluation Board<!--/a--> <i>(Coming Soon)</i> for ease of use.</p>
+
+<p><div class="flex-video-wrap clearfix">
+  <div class="flex-video widescreen img">
+    <iframe src="https://www.youtube.com/embed/4vdliMRtxBY/?autohide=1&amp;border=0&amp;wmode=opaque&amp;enablejsapi=1" frameborder=0 allowfullscreen width="560" height="315"></iframe>
+  </div>
+</div>
+</p>
+</div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="arduino-examples">Arduino Examples</h2>
+        <p>Now that the library is installed, we can move on to uploading some code. Before we discuss the individual examples, we'll cover some of the setup they perform for the BME68x.</p>
+
+<p>The code configures the BME68x to perform oversampling for the temperature, humidity and pressure sensors and sets an IIR (infinite impulse response) filter for these sensors. This helps smooth out environmental data from any short term outliers. Finally, the setup also configures the temperature and time settings for the hot plate on the gas sensor. If you would like to adjust any of these settings, refer to the <a href="https://cdn.sparkfun.com/assets/8/a/1/c/f/BME680-Datasheet.pdf">BME680 Datasheet</a>/<a href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme688-ds000.pdf">BME688 Datasheet</a> and the <a href="https://github.com/SV-Zanshin/BME680/tree/master/src">library source files</a> for more information.</p>
+
+<h3>I<sup>2</sup>C Demo</h3>
+
+<p>To open this example, head to <strong>File</strong> > <strong>Examples</strong> > <strong>BME680</strong> > <strong>I2CDemo</strong>. Next, open the Tools menu and select your board (in our case, <strong>Arduino Uno</strong>) and the correct Port your board enumerated on.</p>
+
+<p>Upload the code, open the <a href="https://learn.sparkfun.com/tutorials/terminal-basics/arduino-serial-monitor-windows-mac-linux">Arduino Serial Monitor</a> and set your baud rate to <strong>115200</strong>. You probably will see the code print out the successful initialization of the BME680 as well as the settings we discussed above and after that, you should see temperature, humidity, pressure, altitude and raw gas readings every five seconds.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/I2CDemo_Screenshot.png"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/1/1/6/8/I2CDemo_Screenshot.png" alt="Sample screenshot of I2C Demo" /></a> </div></p>
+
+<div class="alert alert-info"><p><b>Note:</b> While the Arduino library automatically checks for the BME68x at both available addresses, users can also <a href="https://github.com/Zanduino/BME680/blob/master/src/Zanshin_BME680.h#L157">specify a spacific address</a> in their code.</p>
+
+<p>Users can change this line of code:
+<pre data-trimmed="true" class="rainbow-show"><button class="btn btn-default btn-sm copy-code" data-clipboard-text="while (!BME680.begin(I2C_STANDARD_MODE)) {  // Start BME680 using I2C, use first device found
+">Copy Code</button><code data-language="c" class="rainbow rainbow-show">while (!BME680.begin(I2C_STANDARD_MODE)) {  // Start BME680 using I2C, use first device found</code></pre>
+
+and add the specific I<sup>2</sup>C address of the sensor:
+<pre data-trimmed="true" class="rainbow-show"><button class="btn btn-default btn-sm copy-code" data-clipboard-text="while (!BME680.begin(I2C_STANDARD_MODE, 0x76)) {  // Start BME680 using I2C, use 0x76 address
+">Copy Code</button><code data-language="c" class="rainbow rainbow-show">while (!BME680.begin(I2C_STANDARD_MODE, 0x76)) {  // Start BME680 using I2C, use 0x76 address</code></pre>
+</p>
+</div>
+
+<h3>SPI Demo</h3>
+
+<p>This example is nearly identical to the I<sup>2</sup>C demo but instead uses SPI mode. One thing to note is, depending on which type of microcontroller you are using, you may need to adjust this line:</p>
+
+<pre><code>language:c
+const uint8_t  SPI_CS_PIN   = 53;
+</code></pre>
+
+<p>Set the CS/SS pin to the appropriate pin on your microcontroller. In our case, the Uno uses D10 for CS so the modified version of that line for an Uno or SparkFun RedBoard Qwiic would be:</p>
+
+<pre><code>language:c
+const uint8_t  SPI_CS_PIN   = 10;
+</code></pre>
+
+<p>With that line adjusted, upload the code and open your serial monitor. You should see a similar stream of data as the screenshot above for the I<sup>2</sup>C example.</p>
+
+<div class="alert alert-info"><b>Tip:</b> If you'd like to use this library with a development board with multiple serial ports like the <a href="https://www.sparkfun.com/products/14812">RedBoard Turbo</a> we show in the Hardware Hookup section, you'll want to add this line: <code>#define Serial SerialUSB</code> prior to your <code>void setup()</code>. This definition can be modified to any serial port on your chosen microcontroller. </div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="troubleshooting">Troubleshooting</h2>
+        <p>In this section we'll cover a few tips and tricks for troubleshooting common questions with the Environmental Sensor Breakout - BME68x.</p>
+
+<h3>Using the BME68x</h3>
+
+<p>At first sensor usage, minimum 48 hours of "burn in" should be made. Later, at each usage, 30 min. of functioning should passed before sensor data may be considered as valid. <em>(&#42;In their video for the BME688 evaluation board, Bosch recommends at least 24 hrs. to stabilize the sensors.)</em></p>
+
+<p>In order to avoid contamination of its gas scanning capabilities, <span style="color:red"><u><b>DO NOT</b></u></span> touch the metallic casing of the BME688 sensor. Unfortunately, at this time, there are no recommendations or instructions for decontaminating the sensor once it has been touched.</p>
+
+<h3>Gas Readings Interpretation</h3>
+
+<p>The library used in this tutorial only prints out the raw resistance values from the gas sensor on the BME680. You can use these values as a rough estimate of air quality where lower resistance values equate to a higher concentration of gases measured (and vice versa). If you want to get true Indoor Air Quality (IAQ) measurements from the BME680, we recommend taking a look at Bosch's <a href="https://github.com/BoschSensortec/BSEC-Arduino-library">BSEC Arduino Library</a> which includes an algorithm to convert the resistance value to an IAQ value. For more information, refer to that library as well as sections 1.2 and 4.2 in the <a href="https://cdn.sparkfun.com/assets/8/a/1/c/f/BME680-Datasheet.pdf">BME680 Datasheet</a>. Calculated IAQ measurements are beyond the scope of this tutorial.</p>
+
+<h4>BME688 AI and Gas Scanning Features</h4>
+
+<p>In order to avoid contamination of its gas scanning capabilities, <span style="color:red"><u><b>DO NOT</b></u></span> touch the metallic casing of the BME688 sensor. Unfortunately, at this time, there are no recommendations or instructions for decontaminating the sensor once it has been touched.</p>
+
+<p>At first sensor usage, minimum 48 hours of "burn in" should be made. Later, at each usage, 30 min. of functioning should passed before sensor data may be considered as valid. <em>(&#42;In their video for the BME688 evaluation board, Bosch recommends at least 24 hrs. to stabilize the sensors.)</em></p>
+
+<p>IAQ (Air quality index), target gas scanner selectivity, VOC, VSC data and other BME688 features may be accessed using the Bosch Sensortec Arduino libraries:</p>
+
+<ul>
+<li><a href="https://github.com/BoschSensortec/Bosch-BME68x-Library">BME68x Arduino Library</a></li>
+<li><a href="https://github.com/BoschSensortec/Bosch-BSEC2-Library">BSEC2 Arduino Library</a></li>
+</ul>
+
+<p>The BME AI-Studio is only available for Win and Mac OS computers and the accompanying Bluetooth app is only available for Android phones. <em>&#42;For more information on the available software, please refer to the <a href="https://www.bosch-sensortec.com/software-tools/software/bme688-software/">Bosch's BME688 software page</a>.</em></p>
+
+<p><em>&#42;For more information on these features, users can also reference the <a href="https://community.bosch-sensortec.com/t5/Knowledge-base/FAQs-BME688/ta-p/24822">FAQ page for the BME688</a> on Bosch's forum.</em></p>
+
+<h3>Incorrect Temperature Data</h3>
+
+<p>You may notice some deviation from the true ambient temperature in your data as residual heat from the hot plate for the gas sensor in the BME68x0 can cause minor fluctuations in the observed temperature. The heating phase starts after temperature, pressure and humidity measurements are complete so there should be no heating <em>during</em> those measurements but subsequent readings may be skewed. The IIR filters can help here but if needed, you can compensate for this by measuring the average deviation and subtracting that from your temperature data.</p>
+
+<h3>Incorrect Altitude Data</h3>
+
+<p>The altitude data is collected by converting the barometric pressure. This is a great tool for approximate altitude readings but things like weather patterns can affect the accuracy of the altitude. The examples use the standard measurement for pressure at sea level (1013.25 hPa) in the calculation so you may wish to adjust that with a corrected value for a more accurate altitude data. Refer to this <a href="https://en.wikipedia.org/wiki/Atmospheric_pressure">Wikipedia page</a> and <a href="https://learn.sparkfun.com/tutorials/mpl3115a2-pressure-sensor-hookup-guide#pressure-vs-altimeter-setting">this section</a> of our MPL3115 Pressure Sensor Hookup Guide for more information.</p>
+
+<h3>Chip Select Definition</h3>
+
+<p>As we covered in the previous section, if you choose to communicate with the BME68x via SPI, make sure you are connecting to the correct pins on your development board (COPI, CIPO, SCK and CS) as well as modifying the Chip Select definition to the appropriate I/O pin used for CS on your controller. If you are not certain which pin is used for CS, refer to documentation for your particular development board.</p>
+
+<div class="alert alert-info"><b>BME688 SPI Jumpers:</b> In order to communicate with the BME688 Qwiic board over SPI, users will need to cut the <code>CSB</code> and <code>ADR</code> <i>(leave floating)</i> jumpers. <i>*See the <b>CSB Jumper</b> section in the <b>Hardware Overview</b> page, for more information.</i></div>
+
+<div class="alert alert-info">
+    <b>Note:</b> You may not recognize the COPI/CIPO labels for SPI pins. SparkFun has joined with other members of OSHWA in a resolution to move away from using "Master" and "Slave" to describe signals between the controller and the peripheral. Check out <a href="https://www.sparkfun.com/spi_signal_names">this page</a> for more on our reasoning behind this change. You can also see OSHWA's resolution <a href="https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names">here</a>.</div>
+
+<h3>Need Assistance?</h3>
+
+<div class="alert alert-info" role="alert">
+
+  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<strong> Need help with something not covered here? </strong>  <br /><br />
+
+If your product is not working as you expected or you need technical assistance or information, head on over to the <a href="https://www.sparkfun.com/technical_assistance">SparkFun Technical Assistance</a> page for some initial troubleshooting. <br /><br />
+
+If you don't find what you need there, the <a href="https://forum.sparkfun.com/index.php">SparkFun Forums</a> are a great place to find and ask for help. If this is your first visit, you'll need to <a href="https://forum.sparkfun.com/ucp.php?mode=register">create a Forum Account</a> to search product forums and post questions. </div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="resources-and-going-further">Resources and Going Further</h2>
+        <p>Now that your BME68x is integrated in your circuit and sending data it's time to start tracking some weather! For more information about these breakout boards and the BME68x, take a look at the links below:</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <H4>Qwiic BME680</H4>
+        
+        <ul>
+            <li><a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/Environmental_Sensor_Breakout_BME680.pdf">Qwiic BME680 Schematic (PDF)</a></li>
+            <li><a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/Environmental_Sensor_Breakout_BME680.zip">Qwiic BME680 Eagle Files (ZIP)</a></li>
+            <li><a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/6/8/BME680_Dimensions.png">Qwiic BME680 Board Dimensions (PNG)</a></li>
+            <li><a href="https://cdn.sparkfun.com/assets/8/a/1/c/f/BME680-Datasheet.pdf">BME680 Datasheet (PDF)</a></li>
+            <li><a href="https://cdn.sparkfun.com/assets/a/3/5/0/4/BME680-Layout_Considerations.pdf">Layout Considerations (PDF)</a></li>
+            <li><a href="https://github.com/sparkfun/Qwiic_Environmental_Sensor_BME680">Qwiic BME680 Hardware GitHub Repository</a></li>
+            <li><a href="https://github.com/SV-Zanshin/BME680">BME680 Arduino Library GitHub Repository</a></li>
+            <li><a href="https://github.com/BoschSensortec/BSEC-Arduino-library">Bosch BSEC Arduino Library GitHub Repository</a></li>
+        </ul>
+            
+    </div>
+    <div class="col-md-6">
+        <H4>Qwiic BME688</H4>
+        
+        <ul>
+            <li><a href="https://cdn.sparkfun.com/assets/1/2/c/0/1/qwiic_bme688_schematic.pdf">Qwiic BME688 Schematic (PDF)</a></li>
+            <li><a href="https://cdn.sparkfun.com/assets/4/f/1/4/5/qwiic_bme688-eagle_files.zip">Qwiic BME688 Eagle Files (ZIP)</a></li>
+            <li><a href="https://cdn.sparkfun.com/assets/5/e/f/4/4/qwiic_bme_dimensions.pdf">Qwiic BME688 Board Dimensions (PDF)</a></li>
+            <li><a href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme688-ds000.pdf">BME688 Datasheet (PDF)</a></li>
+            <li><a href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/application_notes_1/bst-bme688-an001.pdf">BME AI-Studio Manual (PDF)</a></li>
+            <li><a href="https://github.com/sparkfun/Qwiic_Environmental_Sensor_BME688">Qwiic BME688 Hardware GitHub Repository</a></li>
+            
+            <li><a href="https://www.bosch-sensortec.com/software-tools/software/bme688-software/">Bosch Software Page:</a>
+                <ul>
+                    <li>BME AI-Studio (Mac/Windows) <i>(Download from <a href="https://www.bosch-sensortec.com/software-tools/software/bme688-software/">software page</a>)</i></li>
+                    <li><a href="https://github.com/BoschSensortec/Bosch-BME68x-Library">Bosch-BME68x-Library</a> - Bosch BME68x Arduino Library</li>
+                    <li><a href="https://github.com/BoschSensortec/Bosch-BSEC2-Library">Bosch-BSEC2-Library</a> - Bosch Sensortec Environmental Cluster (BSEC) Arduino Library</li>
+                    <li><a href="https://github.com/BoschSensortec/BME68x-Sensor-API">BME68x API</a></li>
+                    <li>BSEC2 API <i>(Download from <a href="https://www.bosch-sensortec.com/software-tools/software/bme688-software/">software page</a>)</i>
+                        <ul>
+                            <li>BSEC2 Integration Guide</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<p>Need some inspiration for your next project? Check out some of these weather sensing related tutorials:</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-626">
+  <a href="https://learn.sparkfun.com/tutorials/arduino-weather-shield-hookup-guide-v12">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/2/6/Arduino_Weather_Shield_2.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Arduino Weather Shield Hookup Guide V12</h3>
+      </a>
+
+      <div class="description">
+      Read humidity, pressure and luminosity quickly and easily. Add wind speed, direction and rain gauge for full weather station capabilities.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-916">
+  <a href="https://learn.sparkfun.com/tutorials/qwiic-tmp117-high-precision-digital-temperature-sensor-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/9/1/6/15805-SparkFun_High_Precision_Temperature_Sensor_TMP117__Qwiic_-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Qwiic TMP117 High Precision Digital Temperature Sensor Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      Add a high precision, digital temperature sensor to your projects using the TMP117 over the I2C!    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-1181">
+  <a href="https://learn.sparkfun.com/tutorials/qwiic-digital-indoor-thermometer">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/1/8/1/Qwiic_Micro_Ambient_Room_Temperature_Sensor_Demo.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Qwiic Digital Indoor Thermometer</h3>
+      </a>
+
+      <div class="description">
+      Qwiic-ly build a digital indoor thermometer to measure the ambient temperature of the room and display it using an OLED on an I2C bus!    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-2617">
+  <a href="https://learn.sparkfun.com/tutorials/loraserial-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/2/6/1/7/SparkFun_LoRaSerial_-_Preview.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">LoRaSerial Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      Simple serial over LoRa!    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>      </div>
+    
+        <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t1168" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft1168&name=SparkFun+Environmental+Sensor+Breakout+-+BME68x+%28Qwiic%29+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft1168" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=SparkFun+Environmental+Sensor+Breakout+-+BME68x+%28Qwiic%29+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft1168&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft1168&t=SparkFun+Environmental+Sensor+Breakout+-+BME68x+%28Qwiic%29+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft1168&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F1%2F1%2F6%2F8%2FBME680_Thumbnail.jpg&description=SparkFun+Environmental+Sensor+Breakout+-+BME68x+%28Qwiic%29+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+  </div>
+
+  <div class="col-sm-4 nav-menu" id="nav-pages">
+    <div id="sidebar_affix">
+      <div id="tutorial-pages" class="list-group">
+        <a class="list-group-item"><b>Sections</b></a>
+                          <a data-pagename="introduction" class="list-group-item" href="#introduction">
+            Introduction          </a>
+                  <a data-pagename="hardware-overview" class="list-group-item" href="#hardware-overview">
+            Hardware Overview          </a>
+                  <a data-pagename="hardware-assembly" class="list-group-item" href="#hardware-assembly">
+            Hardware Assembly          </a>
+                  <a data-pagename="bme680-arduino-library" class="list-group-item" href="#bme680-arduino-library">
+            BME680 Arduino Library          </a>
+                  <a data-pagename="arduino-examples" class="list-group-item" href="#arduino-examples">
+            Arduino Examples          </a>
+                  <a data-pagename="troubleshooting" class="list-group-item" href="#troubleshooting">
+            Troubleshooting          </a>
+                  <a data-pagename="resources-and-going-further" class="list-group-item" href="#resources-and-going-further">
+            Resources and Going Further          </a>
+              </div>
+
+      <div class="list-group">
+        <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/sparkfun-environmental-sensor-breakout---bme68x-qwiic-hookup-guide/discuss">
+          Comments
+          <span class="badge">1</span>
+        </a>
+                  <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/sparkfun-environmental-sensor-breakout---bme68x-qwiic-hookup-guide/introduction">
+            View Paginated
+          </a>
+                <a class="list-group-item" href="#" onclick="window.print(); return false;">
+          Print
+        </a>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>Tags</b></li>
+        <li class="list-group-item"><ul class="tags-list">
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/arduino">Arduino</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/hookup">Hookup</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/qwiic">Qwiic</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/sensors">Sensors</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/weather">Weather</a>  </li>
+</ul>
+</li>
+      </ul>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>License</b></li>
+        <li class="list-group-item">
+          <span class="sfe-icon-cc">
+            <span class="visuallyhidden">Creative Commons</span>
+          </span>
+          <small>tutorials are <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a></small>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+      </div> <!-- /container -->
+    </div> <!-- /content -->
+
+    <footer>
+  <div class="container">
+
+  <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>About SparkFun</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/about-sparkfun">Read Our Story</a></li>
+            <li><a href="https://www.sparkfun.com/press-and-media">Press &amp; Media</a></li>
+            <li><a href="http://www.sparkfuneducation.com" target="_blank">SparkFun Education <span class="glyphicon glyphicon-new-window"></span></a></li>
+            <li><a href="https://www.sparkfun.com/jobs">Job Openings</a></li>
+          </ul>
+
+          <h3>Partner With Us</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/partner">See Our Partners</a></li>
+            <li><a href="https://www.sparkfun.com/services">View Our Services</a></li>
+            <li><a href="https://www.sparkfun.com/become-a-distributor">Become a Distributor/Reseller</a></li>
+            <li><a href="https://www.sparkfun.com/volume-sales">Receive Volume Discounts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/support">Customer Support</a></li>
+            <li><a href="https://www.sparkfun.com/payments">Purchase Order &amp; Payment Terms</a></li>
+            <li><a href="https://www.sparkfun.com/technical-assistance">Technical Assistance</a></li>
+            <li><a href="https://www.sparkfun.com/faq">FAQs</a></li>
+          </ul>
+          <h3>Site Information</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/terms">Terms Of Service</a></li>
+            <li><a href="https://www.sparkfun.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://www.sparkfun.com/compliance">Compliance</a></li>
+            <li><a href="https://www.sparkfun.com/sitemap">Site Map</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Subscribe</h3>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "2224003",
+              formId: "257ad1af-ab9e-4275-8788-cbad81cc229e"
+            });
+          </script>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>View Our Social Channels</h3>
+          <ul class="spew">
+            <li><a href="https://www.youtube.com/sparkfun" target="_blank" class="icon-social-youtube"><span class="sr-only">YouTube</span></a></li>
+            <li><a href="https://www.instagram.com/sparkfun/" target="_blank" class="icon-social-instagram"><span class="sr-only">Instagram</span></a></li>
+            <li><a href="https://www.github.com/sparkfun" target="_blank" class="icon-social-github"><span class="sr-only">GitHub</span></a></li>
+            <li><a href="https://www.facebook.com/SparkFun" target="_blank" class="icon-social-facebook"><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://twitter.com/sparkfun" target="_blank" class="icon-social-twitter"><span class="sr-only">Twitter</span></a></li>
+            <li><a href="https://www.sparkfun.com/feeds" class="icon-social-rss"><span class="sr-only">RSS</span></a></li>
+            <li><a href="https://www.tiktok.com/@sparkfun.electronics?lang=en" target="_blank" class="icon-social-tiktok"><span class="sr-only">TikTok</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- end .row -->
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p class="copyleft">
+          <strong>SparkFun Electronics&nbsp;&reg;</strong>
+          <span class="hidden-xs hidden-sm">/</span>
+          <br class="visible-xs-inline visible-sm-inline"/>
+          6333 Dry Creek Parkway,
+          <br class="visible-xs-inline"/>
+          Niwot, CO 80503
+        </p>
+      </div>
+    </div><!-- end .row -->
+  </div><!-- end .container -->
+</footer>
+
+      </div><!-- end .wrapper-inner -->
+    </div><!-- end .wrapper -->
+
+    <script type="text/javascript">
+      // eslint-disable-next-line no-unused-vars
+      var SFECONFIG = {
+        dnt: false,
+        http_server: 'http://learn.sparkfun.com',
+        https_server: 'https://learn.sparkfun.com',
+        http_static: 'https://cdn.sparkfun.com',
+        learn_server: 'https://learn.sparkfun.com',
+        news_server: 'https://news.sparkfun.com',
+        base_url: '/',
+        url: '/',
+        controller: 'tutorials',
+        action: 'view',
+        auth: false,
+        sparkrev: '1792686982',
+        search_key: 'search-sngw3quge7ojic1tgr4eft5c',
+        search_url: 'https://sparkfun-electronics.ent.us-central1.gcp.cloud.es.io/api/as/v1/engines/sparkfun-01/search'
+      };
+    </script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+      <script src="/js/learn-built.min.js?sparkrev=1792686982"></script>
+    
+    <script>
+      /* global $ */
+      $.sfe();
+      $.shared();
+      $('#learn').learn();
+      $('#learn').sfeutil();
+    </script>
+                            <script src="/js/tutorials-built.min.js?sparkrev=1792686982"></script>
+                              <script>
+    var fbq = null;
+  </script>
+      
+          <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2224003.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+        <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0046/4761.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+      </body>
+</html>

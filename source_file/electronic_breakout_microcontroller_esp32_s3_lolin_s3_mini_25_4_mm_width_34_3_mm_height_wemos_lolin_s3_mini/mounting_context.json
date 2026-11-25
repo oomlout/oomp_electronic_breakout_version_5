@@ -1,0 +1,112 @@
+{
+  "name_readable": "LOLIN S3 Mini v1.0",
+  "manufacturer": "wemos",
+  "part_number": "lolin_s3_mini",
+  "webpage": null,
+  "sources": [
+    {
+      "id": "original_catalogue",
+      "url": null,
+      "title": "Original populate entries in this repository",
+      "local_file": null,
+      "scope": "Nominal dimensions and identity; not manufacturer verification",
+      "accessed": "2026-10-22"
+    },
+    {
+      "id": "chip_datasheet",
+      "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf",
+      "title": "chip_datasheet",
+      "accessed": "2026-10-22",
+      "scope": "GPIO capabilities, electrical limits and strapping; not carrier geometry"
+    },
+    {
+      "id": "board_guide",
+      "url": "https://www.wemos.cc/en/latest/s3/s3_mini.html",
+      "title": "s3_mini manufacturer guide",
+      "accessed": "2026-10-22",
+      "scope": "Board identity, connector pinout and documented functions"
+    },
+    {
+      "id": "mechanical",
+      "url": "https://www.wemos.cc/en/latest/_static/files/dim_s3_mini_v1.0.0.pdf",
+      "title": "Dimension V1.0.0[PDF]",
+      "accessed": "2026-10-22",
+      "scope": "Manufacturer mechanical for the stated revision",
+      "local_file": "reference/dim_s3_mini_v1.0.0.pdf",
+      "sha256": "110f14d19c7f16ef2b0ad5771d56ec8877782129b68fca6be161faf95fe0770c"
+    },
+    {
+      "id": "schematic",
+      "url": "https://www.wemos.cc/en/latest/_static/files/sch_s3_mini_v1.0.0.pdf",
+      "title": "Schematic V1.0.0[PDF]",
+      "accessed": "2026-10-22",
+      "scope": "Manufacturer schematic for the stated revision",
+      "local_file": "reference/sch_s3_mini_v1.0.0.pdf",
+      "sha256": "23e49e9d7904eb2d9480b0707a19c46c8dddfdeed53dd8085e3f620d3edf4270"
+    },
+    {
+      "id": "interface_variant",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/variants/lolin_s3_mini/pins_arduino.h",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Arduino variant pin assignments; not a physical header drawing",
+      "local_file": "reference/interface_defaults/esp32_lolin_s3_mini.h",
+      "sha256": "231213633fb7b4bc96e2635c1db2db78278428be294c9e37acfc9da3ccb59aa1"
+    },
+    {
+      "id": "interface_board_selection",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/boards.txt",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework board names and variant selection; generic selections remain explicitly scoped",
+      "local_file": "reference/interface_defaults/esp32_boards.txt",
+      "sha256": "386f1de3199d537f589f650a8dd691544ec3202d7a02b17f33505956b4f4acc6",
+      "content_scope": "excerpt_of_board_names_and_variant_selections",
+      "source_document_sha256": "11b90d1f4795ec365418635749b685a2f3d8320d0e163d886aa2099e81277b07"
+    },
+    {
+      "id": "interface_runtime_uart",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/cores/esp32/HardwareSerial.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_HardwareSerial.cpp",
+      "sha256": "a555861fb4f28a2a4c1d903a8152d714902fee2510c9eaf3ad5311dbcd779035"
+    },
+    {
+      "id": "interface_runtime_i2c",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/Wire/src/Wire.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_Wire.cpp",
+      "sha256": "0454e5becf7acaa6f7cb466397682d762461f678cbb88644f31f313e653b71bc"
+    },
+    {
+      "id": "interface_runtime_spi",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/SPI/src/SPI.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_SPI.cpp",
+      "sha256": "4caea80d21fa230a528322d9eb900880a0acd9c91cb355bc5cec514ea02ecaed"
+    }
+  ],
+  "dimensions_mm": {
+    "width": 25.4,
+    "height": 34.3,
+    "pcb_thickness": null,
+    "assembled_height": null,
+    "scope": "pcb_outline_excludes_usb_overhang",
+    "source_id": "mechanical",
+    "status": "manufacturer_drawing"
+  },
+  "coordinate_system": {
+    "units": "mm",
+    "origin": "centre_of_pcb_outline",
+    "view": "top_with_usb_at_positive_y",
+    "x_positive": "right",
+    "y_positive": "towards_usb"
+  },
+  "mounting_hole_details": []
+}

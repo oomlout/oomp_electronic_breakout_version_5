@@ -1,0 +1,2604 @@
+bip_39_2_word_array:
+- inform
+- file
+bip_39_2_word_no_space: informfile
+bip_39_2_word_space: inform file
+bip_39_2_word_underscore: inform_file
+bip_39_3_word_array:
+- inform
+- file
+- cereal
+bip_39_3_word_no_space: informfilecereal
+bip_39_3_word_space: inform file cereal
+bip_39_3_word_underscore: inform_file_cereal
+bip_39_full_array:
+- inform
+- file
+- cereal
+- congress
+- weekend
+- uncle
+- wool
+- join
+- critic
+- base
+- load
+- chapter
+bip_39_full_no_space: informfilecerealcongressweekendunclewooljoincriticbaseloadchapter
+bip_39_full_space: inform file cereal congress weekend uncle wool join critic base
+  load chapter
+bip_39_full_underscore: inform_file_cereal_congress_weekend_uncle_wool_join_critic_base_load_chapter
+board_variant: stemma_qt
+breakout_description: stemma_qt
+breakout_pcb_height: 17.78
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+- Default I2C address not established in this import.
+definition_authority: working_oomp_populate_i2c.py
+description: Accurate timekeeping with battery backup; use the current QT carrier
+  rather than silently substituting the older 3013 board.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+directory: parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+geometry_ready: false
+i2c:
+  address_evidence_status: unverified
+  address_selection: unverified
+  clock_stretching: unverified
+  default_address_7bit: null
+  documented_addresses_7bit: []
+  maximum_clock_hz: null
+  source_id: product
+id: electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+id_no_class: electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+id_no_size: electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+id_no_type: electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+id_oobb: electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+kwargs:
+  breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  modes:
+  - 3dpr
+  mounting_hole_details:
+  - diameter_mm: 3.0
+    id: U$9:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 3.0
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  mounting_hole_radius_name: m2_5
+  mounting_hole_radius_names:
+  - m2_5
+  - m2_5
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  overwrite: true
+  part_ids:
+  - electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+  scad_output: 3dpr_long_side
+  type: default_mounting_plate_default
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+manufacturer: adafruit
+manufacturer_part_number: '5188'
+md5: 738ac496178f91d93f53c133c25e0b93
+md5_10: 738ac49617
+md5_10_upper: 738AC49617
+md5_5: 738ac
+md5_5_upper: 738AC
+md5_6: 738ac4
+md5_6_alpha: 4iapw
+md5_6_alpha_upper: 4IAPW
+md5_6_upper: 738AC4
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 3.0
+  id: U$9:pad:P$1
+  package: MOUNTINGHOLE_3.0_PLATEDTHIN
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 6.35
+- diameter_mm: 3.0
+  id: U$17:pad:P$1
+  package: MOUNTINGHOLE_3.0_PLATEDTHIN
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 6.35
+mounting_hole_radius_name: m2_5
+mounting_hole_radius_names:
+- m2_5
+- m2_5
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - 6.35
+- - 10.16
+  - 6.35
+mounting_lift: 3
+mounting_research:
+  board_revision: Adafruit DS3231 Precision RTC STEMMA QT product 5188 carrier; exact
+    file Adafruit DS3231 STEMMA QT.brd from Adafruit PCB repository commit 1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1
+    (2021-08-04). Product 5188 notes a January 2023 silkscreen-only update and interchangeable
+    black/tan connectors; production revision is not independently marked in the CAD.
+  board_size:
+  - 25.4
+  - 17.78
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'EAGLE layer-20 outer outline spans native x=0..25.4 mm and y=0..17.78
+    mm. The bounding-box centre is (12.7, 8.89) mm. Quarter-turn is 0; canonical top-view
+    transform is x_mm=x_native-12.7 and y_mm=y_native-8.89, preserving +x right and
+    +y up. Full drill inspection found ten candidates: U$9:pad:P$1 and U$17:pad:P$1
+    are 3.0 mm plated drills in explicitly named MOUNTINGHOLE_3.0_PLATEDTHIN packages
+    and are the two board mounts. JP1:pad:1..8 are 1.0 mm plated 1X08_ROUND_70 electrical
+    header contacts and are excluded. The exact CAD selection and top-view preview
+    are reviewed against the raw board.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit product 5188 page identifies the DS3231 Precision RTC
+    STEMMA QT carrier and says the January 9, 2023 change was silkscreen only, with
+    older/newer vector-font boards otherwise identical. Its linked guide Downloads
+    page links the EagleCAD repository and separately lists the STEMMA QT fab print.
+    The pinned official repository contains the exact Adafruit DS3231 STEMMA QT.brd
+    file, distinct from the legacy Adafruit DS3231 RTC Breakout.brd. The CAD is the
+    appropriate QT carrier geometry; physical production revision was not verified.
+  mounting_holes:
+  - diameter_mm: 3.0
+    id: U$9:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 3.0
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 6.35
+  record_sha256: 451f68b691e1e90381071680a6cb4554877ea5507f6b1662bb8cab2777aa9f80
+  research_file: source_file/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 260613
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit_DS3231_STEMMA_QT.brd
+    locator: Pinned Adafruit CAD repository commit 1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1;
+      exact filename Adafruit DS3231 STEMMA QT.brd; review board outline and every
+      drill/footprint, including plated hole functions.
+    registered_at: '2026-11-06T19:15:11+00:00'
+    sha256: 01c08bf96b77df0f2d026300c720540c41a7fdcb7ada94f49740bf9476c94a7d
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd
+  - bytes: 102781
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Adafruit product 5188 identity as DS3231 Precision RTC STEMMA QT breakout;
+      confirms current QT carrier is distinct from legacy product 3013 and notes 2023
+      silkscreen update.
+    registered_at: '2026-11-06T19:15:12+00:00'
+    sha256: 6bbbe586b7dc8126021f8e39c24da13edebeafd1a0de4176ae63dbd097356a6e
+    url: https://www.adafruit.com/product/5188
+  - bytes: 72911
+    id: guide
+    kind: manufacturer_guide
+    local_file: reference/guide_downloads.html
+    locator: 'Adafruit DS3231 guide Downloads page: lists separate 3D model, EagleCAD
+      PCB files, and schematic/fab print for STEMMA QT version; PCB link is the official
+      Adafruit repository.'
+    registered_at: '2026-11-06T19:16:05+00:00'
+    sha256: ee9854290a2c8d82134d34524a6d5185d7a468e802e1d5efac11f122349ef71a
+    url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads
+  - bytes: 2096
+    id: repository
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Pinned official repository README; repository includes separate Adafruit
+      DS3231 STEMMA QT .brd alongside legacy DS3231 breakout CAD.
+    registered_at: '2026-11-06T19:16:06+00:00'
+    sha256: 0472b51ef95f1dc9b9d9b56a0f07c321d8dfce0bf90e87c3f59b24b2cabedfff
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/README.md
+  status: verified
+name: Electronic Breakout Timing Rtc Temperature Compensated Ds3231 Stemma Qt Adafruit
+  5188
+name_no_class: Electronic Breakout Timing Rtc Temperature Compensated Ds3231 Stemma
+  Qt Adafruit 5188
+name_no_size: Electronic Breakout Timing Rtc Temperature Compensated Ds3231 Stemma
+  Qt Adafruit 5188
+name_no_type: Electronic Breakout Timing Rtc Temperature Compensated Ds3231 Stemma
+  Qt Adafruit 5188
+name_proper: Electronic Breakout Timing Rtc Temperature Compensated Ds3231 Stemma
+  Qt Adafruit 5188
+name_readable: Adafruit DS3231 RTC, STEMMA QT
+name_space: electronic breakout timing rtc temperature compensated ds3231 stemma qt
+  adafruit 5188
+name_upper: ELECTRONIC BREAKOUT TIMING RTC TEMPERATURE COMPENSATED DS3231 STEMMA QT
+  ADAFRUIT 5188
+notes: []
+oobb_details:
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.0
+    id: U$9:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 3.0
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  mounting_hole_radius_name: m2_5
+  mounting_hole_radius_names:
+  - m2_5
+  - m2_5
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.0
+    id: U$9:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 3.0
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  mounting_hole_radius_name: m2_5
+  mounting_hole_radius_names:
+  - m2_5
+  - m2_5
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.0
+    id: U$9:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 3.0
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  mounting_hole_radius_name: m2_5
+  mounting_hole_radius_names:
+  - m2_5
+  - m2_5
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      board_variant: stemma_qt
+      breakout_description: stemma_qt
+      breakout_pcb_height: 17.78
+      breakout_pcb_width: 25.4
+      catalogue: i2c_breakouts
+      catalogue_status: product_page_reference
+      data_gaps:
+      - Physical connector/pad map and coordinates not imported.
+      - Located mounting holes and complete assembly/connector clearances not imported.
+      - Pull-up values/rails and full electrical limits require schematic review.
+      - Carrier PCB outline dimensions not verified.
+      - Default I2C address not established in this import.
+      definition_authority: working_oomp_populate_i2c.py
+      description: Accurate timekeeping with battery backup; use the current QT carrier
+        rather than silently substituting the older 3013 board.
+      dimensions_mm:
+        height: null
+        scope: pcb_outline_not_established
+        source_id: null
+        status: unverified
+        width: null
+      directory: parts\electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+      geometry_ready: false
+      i2c:
+        address_evidence_status: unverified
+        address_selection: unverified
+        clock_stretching: unverified
+        default_address_7bit: null
+        documented_addresses_7bit: []
+        maximum_clock_hz: null
+        source_id: product
+      interface_scope: documented_board_interfaces_only
+      interfaces:
+      - i2c
+      item_kind: breakout
+      manufacturer: adafruit
+      manufacturer_part_number: '5188'
+      mounting_coordinate_system:
+        origin: pcb_bounding_box_centre
+        units: mm
+        view: top
+        x_positive: right
+        y_positive: up
+      mounting_geometry_ready: true
+      mounting_hole_details:
+      - diameter_mm: 3.0
+        id: U$9:pad:P$1
+        package: MOUNTINGHOLE_3.0_PLATEDTHIN
+        plated: true
+        source_id: mounting_cad
+        x_mm: -10.16
+        y_mm: 6.35
+      - diameter_mm: 3.0
+        id: U$17:pad:P$1
+        package: MOUNTINGHOLE_3.0_PLATEDTHIN
+        plated: true
+        source_id: mounting_cad
+        x_mm: 10.16
+        y_mm: 6.35
+      mounting_hole_radius_name: m2_5
+      mounting_hole_radius_names:
+      - m2_5
+      - m2_5
+      mounting_hole_status: verified
+      mounting_holes:
+      - - -10.16
+        - 6.35
+      - - 10.16
+        - 6.35
+      mounting_lift: 3
+      mounting_research:
+        board_revision: Adafruit DS3231 Precision RTC STEMMA QT product 5188 carrier;
+          exact file Adafruit DS3231 STEMMA QT.brd from Adafruit PCB repository commit
+          1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1 (2021-08-04). Product 5188 notes
+          a January 2023 silkscreen-only update and interchangeable black/tan connectors;
+          production revision is not independently marked in the CAD.
+        board_size:
+        - 25.4
+        - 17.78
+        coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        derivation: 'EAGLE layer-20 outer outline spans native x=0..25.4 mm and y=0..17.78
+          mm. The bounding-box centre is (12.7, 8.89) mm. Quarter-turn is 0; canonical
+          top-view transform is x_mm=x_native-12.7 and y_mm=y_native-8.89, preserving
+          +x right and +y up. Full drill inspection found ten candidates: U$9:pad:P$1
+          and U$17:pad:P$1 are 3.0 mm plated drills in explicitly named MOUNTINGHOLE_3.0_PLATEDTHIN
+          packages and are the two board mounts. JP1:pad:1..8 are 1.0 mm plated 1X08_ROUND_70
+          electrical header contacts and are excluded. The exact CAD selection and
+          top-view preview are reviewed against the raw board.'
+        fit_status: generic_holder_not_physical_fit_tested
+        identity_evidence: Adafruit product 5188 page identifies the DS3231 Precision
+          RTC STEMMA QT carrier and says the January 9, 2023 change was silkscreen
+          only, with older/newer vector-font boards otherwise identical. Its linked
+          guide Downloads page links the EagleCAD repository and separately lists
+          the STEMMA QT fab print. The pinned official repository contains the exact
+          Adafruit DS3231 STEMMA QT.brd file, distinct from the legacy Adafruit DS3231
+          RTC Breakout.brd. The CAD is the appropriate QT carrier geometry; physical
+          production revision was not verified.
+        mounting_holes:
+        - diameter_mm: 3.0
+          id: U$9:pad:P$1
+          package: MOUNTINGHOLE_3.0_PLATEDTHIN
+          plated: true
+          source_id: cad
+          x_mm: -10.16
+          y_mm: 6.35
+        - diameter_mm: 3.0
+          id: U$17:pad:P$1
+          package: MOUNTINGHOLE_3.0_PLATEDTHIN
+          plated: true
+          source_id: cad
+          x_mm: 10.16
+          y_mm: 6.35
+        record_sha256: 451f68b691e1e90381071680a6cb4554877ea5507f6b1662bb8cab2777aa9f80
+        research_file: source_file/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188/mounting.yaml
+        reviewed_by: gpt-6-luna
+        sources:
+        - bytes: 260613
+          id: cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Adafruit_DS3231_STEMMA_QT.brd
+          locator: Pinned Adafruit CAD repository commit 1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1;
+            exact filename Adafruit DS3231 STEMMA QT.brd; review board outline and
+            every drill/footprint, including plated hole functions.
+          registered_at: '2026-11-06T19:15:11+00:00'
+          sha256: 01c08bf96b77df0f2d026300c720540c41a7fdcb7ada94f49740bf9476c94a7d
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd
+        - bytes: 102781
+          id: product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: Adafruit product 5188 identity as DS3231 Precision RTC STEMMA QT
+            breakout; confirms current QT carrier is distinct from legacy product
+            3013 and notes 2023 silkscreen update.
+          registered_at: '2026-11-06T19:15:12+00:00'
+          sha256: 6bbbe586b7dc8126021f8e39c24da13edebeafd1a0de4176ae63dbd097356a6e
+          url: https://www.adafruit.com/product/5188
+        - bytes: 72911
+          id: guide
+          kind: manufacturer_guide
+          local_file: reference/guide_downloads.html
+          locator: 'Adafruit DS3231 guide Downloads page: lists separate 3D model,
+            EagleCAD PCB files, and schematic/fab print for STEMMA QT version; PCB
+            link is the official Adafruit repository.'
+          registered_at: '2026-11-06T19:16:05+00:00'
+          sha256: ee9854290a2c8d82134d34524a6d5185d7a468e802e1d5efac11f122349ef71a
+          url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads
+        - bytes: 2096
+          id: repository
+          kind: manufacturer_repository
+          local_file: mounting_evidence/README.md
+          locator: Pinned official repository README; repository includes separate
+            Adafruit DS3231 STEMMA QT .brd alongside legacy DS3231 breakout CAD.
+          registered_at: '2026-11-06T19:16:06+00:00'
+          sha256: 0472b51ef95f1dc9b9d9b56a0f07c321d8dfce0bf90e87c3f59b24b2cabedfff
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/README.md
+        status: verified
+      name: electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+      name_proper: Electronic Breakout Timing Rtc Temperature Compensated Ds3231 Stemma
+        Qt Adafruit 5188
+      name_readable: Adafruit DS3231 RTC, STEMMA QT
+      name_space: electronic breakout timing rtc temperature compensated ds3231 stemma
+        qt adafruit 5188
+      name_upper: ELECTRONIC BREAKOUT TIMING RTC TEMPERATURE COMPENSATED DS3231 STEMMA
+        QT ADAFRUIT 5188
+      notes: []
+      oobb_details:
+      - breakout_pcb_height: 17.78
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 3.0
+          id: U$9:pad:P$1
+          package: MOUNTINGHOLE_3.0_PLATEDTHIN
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 6.35
+        - diameter_mm: 3.0
+          id: U$17:pad:P$1
+          package: MOUNTINGHOLE_3.0_PLATEDTHIN
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 6.35
+        mounting_hole_radius_name: m2_5
+        mounting_hole_radius_names:
+        - m2_5
+        - m2_5
+        mounting_holes:
+        - - -10.16
+          - 6.35
+        - - 10.16
+          - 6.35
+        mounting_layout: full_wrap
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+      - breakout_pcb_height: 17.78
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 3.0
+          id: U$9:pad:P$1
+          package: MOUNTINGHOLE_3.0_PLATEDTHIN
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 6.35
+        - diameter_mm: 3.0
+          id: U$17:pad:P$1
+          package: MOUNTINGHOLE_3.0_PLATEDTHIN
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 6.35
+        mounting_hole_radius_name: m2_5
+        mounting_hole_radius_names:
+        - m2_5
+        - m2_5
+        mounting_holes:
+        - - -10.16
+          - 6.35
+        - - 10.16
+          - 6.35
+        mounting_layout: short_sides
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_short_sides
+      - breakout_pcb_height: 17.78
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 3.0
+          id: U$9:pad:P$1
+          package: MOUNTINGHOLE_3.0_PLATEDTHIN
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 6.35
+        - diameter_mm: 3.0
+          id: U$17:pad:P$1
+          package: MOUNTINGHOLE_3.0_PLATEDTHIN
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 6.35
+        mounting_hole_radius_name: m2_5
+        mounting_hole_radius_names:
+        - m2_5
+        - m2_5
+        mounting_holes:
+        - - -10.16
+          - 6.35
+        - - 10.16
+          - 6.35
+        mounting_layout: long_side
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_long_side
+      part_number: '5188'
+      part_number_adafruit: '5188'
+      pinout_status: unverified
+      pins: {}
+      product_dimensions_mm:
+        depth: 7.8
+        height: 17.8
+        scope: manufacturer_product_dimensions_not_verified_pcb_outline
+        source_id: product
+        width: 25.4
+      research_date: '2026-10-23'
+      schema_version: 1
+      sources:
+      - id: product
+        kind: manufacturer_product_page
+        retrieved: '2026-10-23'
+        scope: identity, stated interfaces/features and recorded nominal dimensions
+        url: https://www.adafruit.com/product/5188
+      - bytes: 260613
+        id: mounting_cad
+        kind: manufacturer_cad
+        local_file: mounting_evidence/Adafruit_DS3231_STEMMA_QT.brd
+        locator: Pinned Adafruit CAD repository commit 1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1;
+          exact filename Adafruit DS3231 STEMMA QT.brd; review board outline and every
+          drill/footprint, including plated hole functions.
+        registered_at: '2026-11-06T19:15:11+00:00'
+        sha256: 01c08bf96b77df0f2d026300c720540c41a7fdcb7ada94f49740bf9476c94a7d
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd
+      - bytes: 102781
+        id: mounting_product
+        kind: manufacturer_product
+        local_file: website.html
+        locator: Adafruit product 5188 identity as DS3231 Precision RTC STEMMA QT
+          breakout; confirms current QT carrier is distinct from legacy product 3013
+          and notes 2023 silkscreen update.
+        registered_at: '2026-11-06T19:15:12+00:00'
+        sha256: 6bbbe586b7dc8126021f8e39c24da13edebeafd1a0de4176ae63dbd097356a6e
+        url: https://www.adafruit.com/product/5188
+      - bytes: 72911
+        id: mounting_guide
+        kind: manufacturer_guide
+        local_file: reference/guide_downloads.html
+        locator: 'Adafruit DS3231 guide Downloads page: lists separate 3D model, EagleCAD
+          PCB files, and schematic/fab print for STEMMA QT version; PCB link is the
+          official Adafruit repository.'
+        registered_at: '2026-11-06T19:16:05+00:00'
+        sha256: ee9854290a2c8d82134d34524a6d5185d7a468e802e1d5efac11f122349ef71a
+        url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads
+      - bytes: 2096
+        id: mounting_repository
+        kind: manufacturer_repository
+        local_file: mounting_evidence/README.md
+        locator: Pinned official repository README; repository includes separate Adafruit
+          DS3231 STEMMA QT .brd alongside legacy DS3231 breakout CAD.
+        registered_at: '2026-11-06T19:16:06+00:00'
+        sha256: 0472b51ef95f1dc9b9d9b56a0f07c321d8dfce0bf90e87c3f59b24b2cabedfff
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/README.md
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: adafruit
+      taxonomy_15: '5188'
+      taxonomy_2: breakout
+      taxonomy_3: timing
+      taxonomy_4: rtc
+      taxonomy_5: temperature_compensated
+      taxonomy_6: ds3231
+      taxonomy_7: stemma_qt
+      taxonomy_8: ''
+      taxonomy_9: ''
+      taxonomy_schema: breakout_function_v1
+      type_1: timing
+      type_2: rtc
+      type_3: temperature_compensated
+      type_4: ds3231
+      url_chat: ''
+      webpage: https://www.adafruit.com/product/5188
+      webpage_adafruit: https://www.adafruit.com/product/5188
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+part_number: '5188'
+part_number_adafruit: '5188'
+pinout_status: unverified
+pins: {}
+product_dimensions_mm:
+  depth: 7.8
+  height: 17.8
+  scope: manufacturer_product_dimensions_not_verified_pcb_outline
+  source_id: product
+  width: 25.4
+project_name: C:\gh\oomp_electronic_breakout_version_5
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/5188
+- bytes: 260613
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Adafruit_DS3231_STEMMA_QT.brd
+  locator: Pinned Adafruit CAD repository commit 1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1;
+    exact filename Adafruit DS3231 STEMMA QT.brd; review board outline and every drill/footprint,
+    including plated hole functions.
+  registered_at: '2026-11-06T19:15:11+00:00'
+  sha256: 01c08bf96b77df0f2d026300c720540c41a7fdcb7ada94f49740bf9476c94a7d
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd
+- bytes: 102781
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: Adafruit product 5188 identity as DS3231 Precision RTC STEMMA QT breakout;
+    confirms current QT carrier is distinct from legacy product 3013 and notes 2023
+    silkscreen update.
+  registered_at: '2026-11-06T19:15:12+00:00'
+  sha256: 6bbbe586b7dc8126021f8e39c24da13edebeafd1a0de4176ae63dbd097356a6e
+  url: https://www.adafruit.com/product/5188
+- bytes: 72911
+  id: mounting_guide
+  kind: manufacturer_guide
+  local_file: reference/guide_downloads.html
+  locator: 'Adafruit DS3231 guide Downloads page: lists separate 3D model, EagleCAD
+    PCB files, and schematic/fab print for STEMMA QT version; PCB link is the official
+    Adafruit repository.'
+  registered_at: '2026-11-06T19:16:05+00:00'
+  sha256: ee9854290a2c8d82134d34524a6d5185d7a468e802e1d5efac11f122349ef71a
+  url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads
+- bytes: 2096
+  id: mounting_repository
+  kind: manufacturer_repository
+  local_file: mounting_evidence/README.md
+  locator: Pinned official repository README; repository includes separate Adafruit
+    DS3231 STEMMA QT .brd alongside legacy DS3231 breakout CAD.
+  registered_at: '2026-11-06T19:16:06+00:00'
+  sha256: 0472b51ef95f1dc9b9d9b56a0f07c321d8dfce0bf90e87c3f59b24b2cabedfff
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/README.md
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_14_capital: Adafruit
+taxonomy_14_first_letter: a
+taxonomy_14_first_letter_upper: A
+taxonomy_14_length_1: a
+taxonomy_14_length_2: ad
+taxonomy_14_length_3: ada
+taxonomy_14_length_4: adaf
+taxonomy_14_length_5: adafr
+taxonomy_14_upper: ADAFRUIT
+taxonomy_14_upper_length_1: A
+taxonomy_14_upper_length_2: AD
+taxonomy_14_upper_length_3: ADA
+taxonomy_14_upper_length_4: ADAF
+taxonomy_14_upper_length_5: ADAFR
+taxonomy_15: '5188'
+taxonomy_15_capital: '5188'
+taxonomy_15_first_letter: '5'
+taxonomy_15_first_letter_upper: '5'
+taxonomy_15_length_1: '5'
+taxonomy_15_length_2: '51'
+taxonomy_15_length_3: '518'
+taxonomy_15_length_4: '5188'
+taxonomy_15_length_5: '5188'
+taxonomy_15_upper: '5188'
+taxonomy_15_upper_length_1: '5'
+taxonomy_15_upper_length_2: '51'
+taxonomy_15_upper_length_3: '518'
+taxonomy_15_upper_length_4: '5188'
+taxonomy_15_upper_length_5: '5188'
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: timing
+taxonomy_3_capital: Timing
+taxonomy_3_first_letter: t
+taxonomy_3_first_letter_upper: T
+taxonomy_3_length_1: t
+taxonomy_3_length_2: ti
+taxonomy_3_length_3: tim
+taxonomy_3_length_4: timi
+taxonomy_3_length_5: timin
+taxonomy_3_upper: TIMING
+taxonomy_3_upper_length_1: T
+taxonomy_3_upper_length_2: TI
+taxonomy_3_upper_length_3: TIM
+taxonomy_3_upper_length_4: TIMI
+taxonomy_3_upper_length_5: TIMIN
+taxonomy_4: rtc
+taxonomy_4_capital: Rtc
+taxonomy_4_first_letter: r
+taxonomy_4_first_letter_upper: R
+taxonomy_4_length_1: r
+taxonomy_4_length_2: rt
+taxonomy_4_length_3: rtc
+taxonomy_4_length_4: rtc
+taxonomy_4_length_5: rtc
+taxonomy_4_upper: RTC
+taxonomy_4_upper_length_1: R
+taxonomy_4_upper_length_2: RT
+taxonomy_4_upper_length_3: RTC
+taxonomy_4_upper_length_4: RTC
+taxonomy_4_upper_length_5: RTC
+taxonomy_5: temperature_compensated
+taxonomy_5_capital: Temperature Compensated
+taxonomy_5_first_letter: t
+taxonomy_5_first_letter_upper: T
+taxonomy_5_length_1: t
+taxonomy_5_length_2: te
+taxonomy_5_length_3: tem
+taxonomy_5_length_4: temp
+taxonomy_5_length_5: tempe
+taxonomy_5_upper: TEMPERATURE_COMPENSATED
+taxonomy_5_upper_length_1: T
+taxonomy_5_upper_length_2: TE
+taxonomy_5_upper_length_3: TEM
+taxonomy_5_upper_length_4: TEMP
+taxonomy_5_upper_length_5: TEMPE
+taxonomy_6: ds3231
+taxonomy_6_capital: Ds3231
+taxonomy_6_first_letter: d
+taxonomy_6_first_letter_upper: D
+taxonomy_6_length_1: d
+taxonomy_6_length_2: ds
+taxonomy_6_length_3: ds3
+taxonomy_6_length_4: ds32
+taxonomy_6_length_5: ds323
+taxonomy_6_upper: DS3231
+taxonomy_6_upper_length_1: D
+taxonomy_6_upper_length_2: DS
+taxonomy_6_upper_length_3: DS3
+taxonomy_6_upper_length_4: DS32
+taxonomy_6_upper_length_5: DS323
+taxonomy_7: stemma_qt
+taxonomy_7_capital: Stemma Qt
+taxonomy_7_first_letter: s
+taxonomy_7_first_letter_upper: S
+taxonomy_7_length_1: s
+taxonomy_7_length_2: st
+taxonomy_7_length_3: ste
+taxonomy_7_length_4: stem
+taxonomy_7_length_5: stemm
+taxonomy_7_upper: STEMMA_QT
+taxonomy_7_upper_length_1: S
+taxonomy_7_upper_length_2: ST
+taxonomy_7_upper_length_3: STE
+taxonomy_7_upper_length_4: STEM
+taxonomy_7_upper_length_5: STEMM
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+thing:
+  bip_39_2_word_array:
+  - inform
+  - file
+  bip_39_2_word_no_space: informfile
+  bip_39_2_word_space: inform file
+  bip_39_2_word_underscore: inform_file
+  bip_39_3_word_array:
+  - inform
+  - file
+  - cereal
+  bip_39_3_word_no_space: informfilecereal
+  bip_39_3_word_space: inform file cereal
+  bip_39_3_word_underscore: inform_file_cereal
+  bip_39_full_array:
+  - inform
+  - file
+  - cereal
+  - congress
+  - weekend
+  - uncle
+  - wool
+  - join
+  - critic
+  - base
+  - load
+  - chapter
+  bip_39_full_no_space: informfilecerealcongressweekendunclewooljoincriticbaseloadchapter
+  bip_39_full_space: inform file cereal congress weekend uncle wool join critic base
+    load chapter
+  bip_39_full_underscore: inform_file_cereal_congress_weekend_uncle_wool_join_critic_base_load_chapter
+  board_variant: stemma_qt
+  breakout_description: stemma_qt
+  breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  catalogue: i2c_breakouts
+  catalogue_status: product_page_reference
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 3.0
+      pos:
+      - 0.0
+      - 7.5
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 31.4
+      - 44.0
+      - 3
+      type: positive
+      width: 2.1599999999999997
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - - depth: 6
+          h: 0.75
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.75
+          r1: 1.25
+          r2: 1.55
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.25
+          radius: 1.25
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.25
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.25
+          radius: 1.25
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.0
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -1.0
+          r1: 1.55
+          r2: 3.45
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.55
+          radius: 1.55
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.55
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.55
+          radius: 1.55
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.75
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.75
+          r1: 1.25
+          r2: 2.25
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.25
+          radius: 1.25
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.25
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.25
+          radius: 1.25
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - -10.16
+      - 6.35
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id001
+      - -10.16
+      - 6.35
+      - 3.0
+      r: 3.25
+      radius: 3.25
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id001
+      r: 3.25
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id001
+      r: 3.25
+      radius: 3.25
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 0.75
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.75
+          r1: 1.25
+          r2: 1.55
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.25
+          radius: 1.25
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.25
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.25
+          radius: 1.25
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.0
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -1.0
+          r1: 1.55
+          r2: 3.45
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.55
+          radius: 1.55
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.55
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.55
+          radius: 1.55
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.75
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.75
+          r1: 1.25
+          r2: 2.25
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.25
+          radius: 1.25
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.25
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.25
+          radius: 1.25
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - 10.16
+      - 6.35
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id002
+      - 10.16
+      - 6.35
+      - 3.0
+      r: 3.25
+      radius: 3.25
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id002
+      r: 3.25
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id002
+      r: 3.25
+      radius: 3.25
+      shape: cylinder
+      type: positive
+      width: 4
+  components_objects:
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 3.0
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.0
+      id: U$9:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 3.0
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    mounting_hole_radius_name: m2_5
+    mounting_hole_radius_names:
+    - m2_5
+    - m2_5
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+    pos:
+    - 0.0
+    - 7.5
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_plate
+    type: positive
+    width: 2.1599999999999997
+  - depth: 5
+    pos:
+    - -7.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 7.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 0.0
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.0
+      id: U$9:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 3.0
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    mounting_hole_radius_name: m2_5
+    mounting_hole_radius_names:
+    - m2_5
+    - m2_5
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+    pos:
+    - -10.16
+    - 6.35
+    - 0
+    radius_name: m2_5
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.0
+      id: U$9:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 3.0
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    mounting_hole_radius_name: m2_5
+    mounting_hole_radius_names:
+    - m2_5
+    - m2_5
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+    pos:
+    - -10.16
+    - 6.35
+    - 4.5
+    radius: 3.25
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.0
+      id: U$9:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 3.0
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    mounting_hole_radius_name: m2_5
+    mounting_hole_radius_names:
+    - m2_5
+    - m2_5
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+    pos:
+    - 10.16
+    - 6.35
+    - 0
+    radius_name: m2_5
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.0
+      id: U$9:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 3.0
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    mounting_hole_radius_name: m2_5
+    mounting_hole_radius_names:
+    - m2_5
+    - m2_5
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+    pos:
+    - 10.16
+    - 6.35
+    - 4.5
+    radius: 3.25
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_0.0_7.5_0_pos_'electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.0_'id':'u$9:pad:p$1'_'package':'mountinghole_3.0_platedthin'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':3.0_'id':'u$17:pad:p$1'_'package':'mountinghole_3.0_platedthin'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_mounting_hole_details_m2_5_mounting_hole_radius_name_'m2_5'_'m2_5'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_2.1599999999999997_width_3.0_height
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-7.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_7.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_0.0_22.5_-1_pos
+  - oobb_screw_countersunk_shape_negative_type_m2_5_radius_name_6_depth_-10.16_6.35_0_pos_'electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.0_'id':'u$9:pad:p$1'_'package':'mountinghole_3.0_platedthin'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':3.0_'id':'u$17:pad:p$1'_'package':'mountinghole_3.0_platedthin'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_mounting_hole_details_m2_5_mounting_hole_radius_name_'m2_5'_'m2_5'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-10.16_6.35_4.5_pos_'electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.0_'id':'u$9:pad:p$1'_'package':'mountinghole_3.0_platedthin'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':3.0_'id':'u$17:pad:p$1'_'package':'mountinghole_3.0_platedthin'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_mounting_hole_details_m2_5_mounting_hole_radius_name_'m2_5'_'m2_5'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_3.25_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_5_radius_name_6_depth_10.16_6.35_0_pos_'electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.0_'id':'u$9:pad:p$1'_'package':'mountinghole_3.0_platedthin'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':3.0_'id':'u$17:pad:p$1'_'package':'mountinghole_3.0_platedthin'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_mounting_hole_details_m2_5_mounting_hole_radius_name_'m2_5'_'m2_5'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_10.16_6.35_4.5_pos_'electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.0_'id':'u$9:pad:p$1'_'package':'mountinghole_3.0_platedthin'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':3.0_'id':'u$17:pad:p$1'_'package':'mountinghole_3.0_platedthin'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_mounting_hole_details_m2_5_mounting_hole_radius_name_'m2_5'_'m2_5'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_3.25_radius
+  data_gaps:
+  - Physical connector/pad map and coordinates not imported.
+  - Located mounting holes and complete assembly/connector clearances not imported.
+  - Pull-up values/rails and full electrical limits require schematic review.
+  - Carrier PCB outline dimensions not verified.
+  - Default I2C address not established in this import.
+  definition_authority: working_oomp_populate_i2c.py
+  description: Accurate timekeeping with battery backup; use the current QT carrier
+    rather than silently substituting the older 3013 board.
+  description_extra: ''
+  description_main: ''
+  dimensions_mm:
+    height: null
+    scope: pcb_outline_not_established
+    source_id: null
+    status: unverified
+    width: null
+  directory: parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+  geometry_ready: false
+  i2c:
+    address_evidence_status: unverified
+    address_selection: unverified
+    clock_stretching: unverified
+    default_address_7bit: null
+    documented_addresses_7bit: []
+    maximum_clock_hz: null
+    source_id: product
+  id: electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+  id_no_class: electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+  id_no_size: electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+  id_no_type: electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+  interface_scope: documented_board_interfaces_only
+  interfaces:
+  - i2c
+  item_kind: breakout
+  kwargs:
+    breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.0
+      id: U$9:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 3.0
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    mounting_hole_radius_name: m2_5
+    mounting_hole_radius_names:
+    - m2_5
+    - m2_5
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
+    overwrite: true
+    part_ids:
+    - electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+    save_type: none
+    scad_output: 3dpr_long_side
+    type: default_mounting_plate_default
+  link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+  link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+  link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+  manufacturer: adafruit
+  manufacturer_part_number: '5188'
+  md5: 738ac496178f91d93f53c133c25e0b93
+  md5_10: 738ac49617
+  md5_10_upper: 738AC49617
+  md5_5: 738ac
+  md5_5_upper: 738AC
+  md5_6: 738ac4
+  md5_6_alpha: 4iapw
+  md5_6_alpha_upper: 4IAPW
+  md5_6_upper: 738AC4
+  mounting_coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  mounting_geometry_ready: true
+  mounting_hole_details:
+  - diameter_mm: 3.0
+    id: U$9:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 3.0
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  mounting_hole_radius_name: m2_5
+  mounting_hole_radius_names:
+  - m2_5
+  - m2_5
+  mounting_hole_status: verified
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  mounting_lift: 3
+  mounting_research:
+    board_revision: Adafruit DS3231 Precision RTC STEMMA QT product 5188 carrier;
+      exact file Adafruit DS3231 STEMMA QT.brd from Adafruit PCB repository commit
+      1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1 (2021-08-04). Product 5188 notes a
+      January 2023 silkscreen-only update and interchangeable black/tan connectors;
+      production revision is not independently marked in the CAD.
+    board_size:
+    - 25.4
+    - 17.78
+    coordinate_system:
+      origin: pcb_bounding_box_centre
+      units: mm
+      view: top
+      x_positive: right
+      y_positive: up
+    derivation: 'EAGLE layer-20 outer outline spans native x=0..25.4 mm and y=0..17.78
+      mm. The bounding-box centre is (12.7, 8.89) mm. Quarter-turn is 0; canonical
+      top-view transform is x_mm=x_native-12.7 and y_mm=y_native-8.89, preserving
+      +x right and +y up. Full drill inspection found ten candidates: U$9:pad:P$1
+      and U$17:pad:P$1 are 3.0 mm plated drills in explicitly named MOUNTINGHOLE_3.0_PLATEDTHIN
+      packages and are the two board mounts. JP1:pad:1..8 are 1.0 mm plated 1X08_ROUND_70
+      electrical header contacts and are excluded. The exact CAD selection and top-view
+      preview are reviewed against the raw board.'
+    fit_status: generic_holder_not_physical_fit_tested
+    identity_evidence: Adafruit product 5188 page identifies the DS3231 Precision
+      RTC STEMMA QT carrier and says the January 9, 2023 change was silkscreen only,
+      with older/newer vector-font boards otherwise identical. Its linked guide Downloads
+      page links the EagleCAD repository and separately lists the STEMMA QT fab print.
+      The pinned official repository contains the exact Adafruit DS3231 STEMMA QT.brd
+      file, distinct from the legacy Adafruit DS3231 RTC Breakout.brd. The CAD is
+      the appropriate QT carrier geometry; physical production revision was not verified.
+    mounting_holes:
+    - diameter_mm: 3.0
+      id: U$9:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 3.0
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: cad
+      x_mm: 10.16
+      y_mm: 6.35
+    record_sha256: 451f68b691e1e90381071680a6cb4554877ea5507f6b1662bb8cab2777aa9f80
+    research_file: source_file/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188/mounting.yaml
+    reviewed_by: gpt-6-luna
+    sources:
+    - bytes: 260613
+      id: cad
+      kind: manufacturer_cad
+      local_file: mounting_evidence/Adafruit_DS3231_STEMMA_QT.brd
+      locator: Pinned Adafruit CAD repository commit 1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1;
+        exact filename Adafruit DS3231 STEMMA QT.brd; review board outline and every
+        drill/footprint, including plated hole functions.
+      registered_at: '2026-11-06T19:15:11+00:00'
+      sha256: 01c08bf96b77df0f2d026300c720540c41a7fdcb7ada94f49740bf9476c94a7d
+      url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd
+    - bytes: 102781
+      id: product
+      kind: manufacturer_product
+      local_file: website.html
+      locator: Adafruit product 5188 identity as DS3231 Precision RTC STEMMA QT breakout;
+        confirms current QT carrier is distinct from legacy product 3013 and notes
+        2023 silkscreen update.
+      registered_at: '2026-11-06T19:15:12+00:00'
+      sha256: 6bbbe586b7dc8126021f8e39c24da13edebeafd1a0de4176ae63dbd097356a6e
+      url: https://www.adafruit.com/product/5188
+    - bytes: 72911
+      id: guide
+      kind: manufacturer_guide
+      local_file: reference/guide_downloads.html
+      locator: 'Adafruit DS3231 guide Downloads page: lists separate 3D model, EagleCAD
+        PCB files, and schematic/fab print for STEMMA QT version; PCB link is the
+        official Adafruit repository.'
+      registered_at: '2026-11-06T19:16:05+00:00'
+      sha256: ee9854290a2c8d82134d34524a6d5185d7a468e802e1d5efac11f122349ef71a
+      url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads
+    - bytes: 2096
+      id: repository
+      kind: manufacturer_repository
+      local_file: mounting_evidence/README.md
+      locator: Pinned official repository README; repository includes separate Adafruit
+        DS3231 STEMMA QT .brd alongside legacy DS3231 breakout CAD.
+      registered_at: '2026-11-06T19:16:06+00:00'
+      sha256: 0472b51ef95f1dc9b9d9b56a0f07c321d8dfce0bf90e87c3f59b24b2cabedfff
+      url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/README.md
+    status: verified
+  name: Electronic Breakout Timing Rtc Temperature Compensated Ds3231 Stemma Qt Adafruit
+    5188
+  name_no_class: Electronic Breakout Timing Rtc Temperature Compensated Ds3231 Stemma
+    Qt Adafruit 5188
+  name_no_size: Electronic Breakout Timing Rtc Temperature Compensated Ds3231 Stemma
+    Qt Adafruit 5188
+  name_no_type: Electronic Breakout Timing Rtc Temperature Compensated Ds3231 Stemma
+    Qt Adafruit 5188
+  name_proper: Electronic Breakout Timing Rtc Temperature Compensated Ds3231 Stemma
+    Qt Adafruit 5188
+  name_readable: Adafruit DS3231 RTC, STEMMA QT
+  name_short: Default Mounting Plate Default
+  name_space: electronic breakout timing rtc temperature compensated ds3231 stemma
+    qt adafruit 5188
+  name_text: Oobb Part Default Mounting Plate Default
+  name_upper: ELECTRONIC BREAKOUT TIMING RTC TEMPERATURE COMPENSATED DS3231 STEMMA
+    QT ADAFRUIT 5188
+  notes: []
+  oobb_details:
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 3.0
+      id: U$9:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 3.0
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    mounting_hole_radius_name: m2_5
+    mounting_hole_radius_names:
+    - m2_5
+    - m2_5
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 3.0
+      id: U$9:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 3.0
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    mounting_hole_radius_name: m2_5
+    mounting_hole_radius_names:
+    - m2_5
+    - m2_5
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    mounting_layout: short_sides
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_short_sides
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 3.0
+      id: U$9:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 3.0
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_3.0_PLATEDTHIN
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    mounting_hole_radius_name: m2_5
+    mounting_hole_radius_names:
+    - m2_5
+    - m2_5
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_long_side
+  oobb_name: mounting_plate_default
+  oomlout_ai_roboclick_1:
+    actions:
+    - command: text_jinja_template
+      convert_to_pdf: false
+      convert_to_png: false
+      dict_data:
+        board_variant: stemma_qt
+        breakout_description: stemma_qt
+        breakout_pcb_height: 17.78
+        breakout_pcb_width: 25.4
+        catalogue: i2c_breakouts
+        catalogue_status: product_page_reference
+        data_gaps:
+        - Physical connector/pad map and coordinates not imported.
+        - Located mounting holes and complete assembly/connector clearances not imported.
+        - Pull-up values/rails and full electrical limits require schematic review.
+        - Carrier PCB outline dimensions not verified.
+        - Default I2C address not established in this import.
+        definition_authority: working_oomp_populate_i2c.py
+        description: Accurate timekeeping with battery backup; use the current QT
+          carrier rather than silently substituting the older 3013 board.
+        dimensions_mm:
+          height: null
+          scope: pcb_outline_not_established
+          source_id: null
+          status: unverified
+          width: null
+        directory: parts\electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+        geometry_ready: false
+        i2c:
+          address_evidence_status: unverified
+          address_selection: unverified
+          clock_stretching: unverified
+          default_address_7bit: null
+          documented_addresses_7bit: []
+          maximum_clock_hz: null
+          source_id: product
+        interface_scope: documented_board_interfaces_only
+        interfaces:
+        - i2c
+        item_kind: breakout
+        manufacturer: adafruit
+        manufacturer_part_number: '5188'
+        mounting_coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        mounting_geometry_ready: true
+        mounting_hole_details:
+        - diameter_mm: 3.0
+          id: U$9:pad:P$1
+          package: MOUNTINGHOLE_3.0_PLATEDTHIN
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 6.35
+        - diameter_mm: 3.0
+          id: U$17:pad:P$1
+          package: MOUNTINGHOLE_3.0_PLATEDTHIN
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 6.35
+        mounting_hole_radius_name: m2_5
+        mounting_hole_radius_names:
+        - m2_5
+        - m2_5
+        mounting_hole_status: verified
+        mounting_holes:
+        - - -10.16
+          - 6.35
+        - - 10.16
+          - 6.35
+        mounting_lift: 3
+        mounting_research:
+          board_revision: Adafruit DS3231 Precision RTC STEMMA QT product 5188 carrier;
+            exact file Adafruit DS3231 STEMMA QT.brd from Adafruit PCB repository
+            commit 1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1 (2021-08-04). Product
+            5188 notes a January 2023 silkscreen-only update and interchangeable black/tan
+            connectors; production revision is not independently marked in the CAD.
+          board_size:
+          - 25.4
+          - 17.78
+          coordinate_system:
+            origin: pcb_bounding_box_centre
+            units: mm
+            view: top
+            x_positive: right
+            y_positive: up
+          derivation: 'EAGLE layer-20 outer outline spans native x=0..25.4 mm and
+            y=0..17.78 mm. The bounding-box centre is (12.7, 8.89) mm. Quarter-turn
+            is 0; canonical top-view transform is x_mm=x_native-12.7 and y_mm=y_native-8.89,
+            preserving +x right and +y up. Full drill inspection found ten candidates:
+            U$9:pad:P$1 and U$17:pad:P$1 are 3.0 mm plated drills in explicitly named
+            MOUNTINGHOLE_3.0_PLATEDTHIN packages and are the two board mounts. JP1:pad:1..8
+            are 1.0 mm plated 1X08_ROUND_70 electrical header contacts and are excluded.
+            The exact CAD selection and top-view preview are reviewed against the
+            raw board.'
+          fit_status: generic_holder_not_physical_fit_tested
+          identity_evidence: Adafruit product 5188 page identifies the DS3231 Precision
+            RTC STEMMA QT carrier and says the January 9, 2023 change was silkscreen
+            only, with older/newer vector-font boards otherwise identical. Its linked
+            guide Downloads page links the EagleCAD repository and separately lists
+            the STEMMA QT fab print. The pinned official repository contains the exact
+            Adafruit DS3231 STEMMA QT.brd file, distinct from the legacy Adafruit
+            DS3231 RTC Breakout.brd. The CAD is the appropriate QT carrier geometry;
+            physical production revision was not verified.
+          mounting_holes:
+          - diameter_mm: 3.0
+            id: U$9:pad:P$1
+            package: MOUNTINGHOLE_3.0_PLATEDTHIN
+            plated: true
+            source_id: cad
+            x_mm: -10.16
+            y_mm: 6.35
+          - diameter_mm: 3.0
+            id: U$17:pad:P$1
+            package: MOUNTINGHOLE_3.0_PLATEDTHIN
+            plated: true
+            source_id: cad
+            x_mm: 10.16
+            y_mm: 6.35
+          record_sha256: 451f68b691e1e90381071680a6cb4554877ea5507f6b1662bb8cab2777aa9f80
+          research_file: source_file/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188/mounting.yaml
+          reviewed_by: gpt-6-luna
+          sources:
+          - bytes: 260613
+            id: cad
+            kind: manufacturer_cad
+            local_file: mounting_evidence/Adafruit_DS3231_STEMMA_QT.brd
+            locator: Pinned Adafruit CAD repository commit 1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1;
+              exact filename Adafruit DS3231 STEMMA QT.brd; review board outline and
+              every drill/footprint, including plated hole functions.
+            registered_at: '2026-11-06T19:15:11+00:00'
+            sha256: 01c08bf96b77df0f2d026300c720540c41a7fdcb7ada94f49740bf9476c94a7d
+            url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd
+          - bytes: 102781
+            id: product
+            kind: manufacturer_product
+            local_file: website.html
+            locator: Adafruit product 5188 identity as DS3231 Precision RTC STEMMA
+              QT breakout; confirms current QT carrier is distinct from legacy product
+              3013 and notes 2023 silkscreen update.
+            registered_at: '2026-11-06T19:15:12+00:00'
+            sha256: 6bbbe586b7dc8126021f8e39c24da13edebeafd1a0de4176ae63dbd097356a6e
+            url: https://www.adafruit.com/product/5188
+          - bytes: 72911
+            id: guide
+            kind: manufacturer_guide
+            local_file: reference/guide_downloads.html
+            locator: 'Adafruit DS3231 guide Downloads page: lists separate 3D model,
+              EagleCAD PCB files, and schematic/fab print for STEMMA QT version; PCB
+              link is the official Adafruit repository.'
+            registered_at: '2026-11-06T19:16:05+00:00'
+            sha256: ee9854290a2c8d82134d34524a6d5185d7a468e802e1d5efac11f122349ef71a
+            url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads
+          - bytes: 2096
+            id: repository
+            kind: manufacturer_repository
+            local_file: mounting_evidence/README.md
+            locator: Pinned official repository README; repository includes separate
+              Adafruit DS3231 STEMMA QT .brd alongside legacy DS3231 breakout CAD.
+            registered_at: '2026-11-06T19:16:06+00:00'
+            sha256: 0472b51ef95f1dc9b9d9b56a0f07c321d8dfce0bf90e87c3f59b24b2cabedfff
+            url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/README.md
+          status: verified
+        name: electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+        name_proper: Electronic Breakout Timing Rtc Temperature Compensated Ds3231
+          Stemma Qt Adafruit 5188
+        name_readable: Adafruit DS3231 RTC, STEMMA QT
+        name_space: electronic breakout timing rtc temperature compensated ds3231
+          stemma qt adafruit 5188
+        name_upper: ELECTRONIC BREAKOUT TIMING RTC TEMPERATURE COMPENSATED DS3231
+          STEMMA QT ADAFRUIT 5188
+        notes: []
+        oobb_details:
+        - breakout_pcb_height: 17.78
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 3.0
+            id: U$9:pad:P$1
+            package: MOUNTINGHOLE_3.0_PLATEDTHIN
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 6.35
+          - diameter_mm: 3.0
+            id: U$17:pad:P$1
+            package: MOUNTINGHOLE_3.0_PLATEDTHIN
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: 6.35
+          mounting_hole_radius_name: m2_5
+          mounting_hole_radius_names:
+          - m2_5
+          - m2_5
+          mounting_holes:
+          - - -10.16
+            - 6.35
+          - - 10.16
+            - 6.35
+          mounting_layout: full_wrap
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+        - breakout_pcb_height: 17.78
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 3.0
+            id: U$9:pad:P$1
+            package: MOUNTINGHOLE_3.0_PLATEDTHIN
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 6.35
+          - diameter_mm: 3.0
+            id: U$17:pad:P$1
+            package: MOUNTINGHOLE_3.0_PLATEDTHIN
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: 6.35
+          mounting_hole_radius_name: m2_5
+          mounting_hole_radius_names:
+          - m2_5
+          - m2_5
+          mounting_holes:
+          - - -10.16
+            - 6.35
+          - - 10.16
+            - 6.35
+          mounting_layout: short_sides
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_short_sides
+        - breakout_pcb_height: 17.78
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 3.0
+            id: U$9:pad:P$1
+            package: MOUNTINGHOLE_3.0_PLATEDTHIN
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 6.35
+          - diameter_mm: 3.0
+            id: U$17:pad:P$1
+            package: MOUNTINGHOLE_3.0_PLATEDTHIN
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: 6.35
+          mounting_hole_radius_name: m2_5
+          mounting_hole_radius_names:
+          - m2_5
+          - m2_5
+          mounting_holes:
+          - - -10.16
+            - 6.35
+          - - 10.16
+            - 6.35
+          mounting_layout: long_side
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_long_side
+        part_number: '5188'
+        part_number_adafruit: '5188'
+        pinout_status: unverified
+        pins: {}
+        product_dimensions_mm:
+          depth: 7.8
+          height: 17.8
+          scope: manufacturer_product_dimensions_not_verified_pcb_outline
+          source_id: product
+          width: 25.4
+        research_date: '2026-10-23'
+        schema_version: 1
+        sources:
+        - id: product
+          kind: manufacturer_product_page
+          retrieved: '2026-10-23'
+          scope: identity, stated interfaces/features and recorded nominal dimensions
+          url: https://www.adafruit.com/product/5188
+        - bytes: 260613
+          id: mounting_cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Adafruit_DS3231_STEMMA_QT.brd
+          locator: Pinned Adafruit CAD repository commit 1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1;
+            exact filename Adafruit DS3231 STEMMA QT.brd; review board outline and
+            every drill/footprint, including plated hole functions.
+          registered_at: '2026-11-06T19:15:11+00:00'
+          sha256: 01c08bf96b77df0f2d026300c720540c41a7fdcb7ada94f49740bf9476c94a7d
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd
+        - bytes: 102781
+          id: mounting_product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: Adafruit product 5188 identity as DS3231 Precision RTC STEMMA QT
+            breakout; confirms current QT carrier is distinct from legacy product
+            3013 and notes 2023 silkscreen update.
+          registered_at: '2026-11-06T19:15:12+00:00'
+          sha256: 6bbbe586b7dc8126021f8e39c24da13edebeafd1a0de4176ae63dbd097356a6e
+          url: https://www.adafruit.com/product/5188
+        - bytes: 72911
+          id: mounting_guide
+          kind: manufacturer_guide
+          local_file: reference/guide_downloads.html
+          locator: 'Adafruit DS3231 guide Downloads page: lists separate 3D model,
+            EagleCAD PCB files, and schematic/fab print for STEMMA QT version; PCB
+            link is the official Adafruit repository.'
+          registered_at: '2026-11-06T19:16:05+00:00'
+          sha256: ee9854290a2c8d82134d34524a6d5185d7a468e802e1d5efac11f122349ef71a
+          url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads
+        - bytes: 2096
+          id: mounting_repository
+          kind: manufacturer_repository
+          local_file: mounting_evidence/README.md
+          locator: Pinned official repository README; repository includes separate
+            Adafruit DS3231 STEMMA QT .brd alongside legacy DS3231 breakout CAD.
+          registered_at: '2026-11-06T19:16:06+00:00'
+          sha256: 0472b51ef95f1dc9b9d9b56a0f07c321d8dfce0bf90e87c3f59b24b2cabedfff
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/README.md
+        taxonomy_1: electronic
+        taxonomy_10: ''
+        taxonomy_11: ''
+        taxonomy_12: ''
+        taxonomy_13: ''
+        taxonomy_14: adafruit
+        taxonomy_15: '5188'
+        taxonomy_2: breakout
+        taxonomy_3: timing
+        taxonomy_4: rtc
+        taxonomy_5: temperature_compensated
+        taxonomy_6: ds3231
+        taxonomy_7: stemma_qt
+        taxonomy_8: ''
+        taxonomy_9: ''
+        taxonomy_schema: breakout_function_v1
+        type_1: timing
+        type_2: rtc
+        type_3: temperature_compensated
+        type_4: ds3231
+        url_chat: ''
+        webpage: https://www.adafruit.com/product/5188
+        webpage_adafruit: https://www.adafruit.com/product/5188
+      dict_data_files: {}
+      dict_data_files_exists: {}
+      file_output: label_oomp.svg
+      file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+      search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+  oomp_key: oomp_electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+  part_number: '5188'
+  part_number_adafruit: '5188'
+  pinout_status: unverified
+  pins: {}
+  product_dimensions_mm:
+    depth: 7.8
+    height: 17.8
+    scope: manufacturer_product_dimensions_not_verified_pcb_outline
+    source_id: product
+    width: 25.4
+  research_date: '2026-10-23'
+  schema_version: 1
+  short_name: ''
+  size: default_mounting_plate_default
+  sources:
+  - id: product
+    kind: manufacturer_product_page
+    retrieved: '2026-10-23'
+    scope: identity, stated interfaces/features and recorded nominal dimensions
+    url: https://www.adafruit.com/product/5188
+  - bytes: 260613
+    id: mounting_cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit_DS3231_STEMMA_QT.brd
+    locator: Pinned Adafruit CAD repository commit 1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1;
+      exact filename Adafruit DS3231 STEMMA QT.brd; review board outline and every
+      drill/footprint, including plated hole functions.
+    registered_at: '2026-11-06T19:15:11+00:00'
+    sha256: 01c08bf96b77df0f2d026300c720540c41a7fdcb7ada94f49740bf9476c94a7d
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd
+  - bytes: 102781
+    id: mounting_product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Adafruit product 5188 identity as DS3231 Precision RTC STEMMA QT breakout;
+      confirms current QT carrier is distinct from legacy product 3013 and notes 2023
+      silkscreen update.
+    registered_at: '2026-11-06T19:15:12+00:00'
+    sha256: 6bbbe586b7dc8126021f8e39c24da13edebeafd1a0de4176ae63dbd097356a6e
+    url: https://www.adafruit.com/product/5188
+  - bytes: 72911
+    id: mounting_guide
+    kind: manufacturer_guide
+    local_file: reference/guide_downloads.html
+    locator: 'Adafruit DS3231 guide Downloads page: lists separate 3D model, EagleCAD
+      PCB files, and schematic/fab print for STEMMA QT version; PCB link is the official
+      Adafruit repository.'
+    registered_at: '2026-11-06T19:16:05+00:00'
+    sha256: ee9854290a2c8d82134d34524a6d5185d7a468e802e1d5efac11f122349ef71a
+    url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads
+  - bytes: 2096
+    id: mounting_repository
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Pinned official repository README; repository includes separate Adafruit
+      DS3231 STEMMA QT .brd alongside legacy DS3231 breakout CAD.
+    registered_at: '2026-11-06T19:16:06+00:00'
+    sha256: 0472b51ef95f1dc9b9d9b56a0f07c321d8dfce0bf90e87c3f59b24b2cabedfff
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/README.md
+  taxonomy_1: electronic
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_14_capital: Adafruit
+  taxonomy_14_first_letter: a
+  taxonomy_14_first_letter_upper: A
+  taxonomy_14_length_1: a
+  taxonomy_14_length_2: ad
+  taxonomy_14_length_3: ada
+  taxonomy_14_length_4: adaf
+  taxonomy_14_length_5: adafr
+  taxonomy_14_upper: ADAFRUIT
+  taxonomy_14_upper_length_1: A
+  taxonomy_14_upper_length_2: AD
+  taxonomy_14_upper_length_3: ADA
+  taxonomy_14_upper_length_4: ADAF
+  taxonomy_14_upper_length_5: ADAFR
+  taxonomy_15: '5188'
+  taxonomy_15_capital: '5188'
+  taxonomy_15_first_letter: '5'
+  taxonomy_15_first_letter_upper: '5'
+  taxonomy_15_length_1: '5'
+  taxonomy_15_length_2: '51'
+  taxonomy_15_length_3: '518'
+  taxonomy_15_length_4: '5188'
+  taxonomy_15_length_5: '5188'
+  taxonomy_15_upper: '5188'
+  taxonomy_15_upper_length_1: '5'
+  taxonomy_15_upper_length_2: '51'
+  taxonomy_15_upper_length_3: '518'
+  taxonomy_15_upper_length_4: '5188'
+  taxonomy_15_upper_length_5: '5188'
+  taxonomy_1_capital: Electronic
+  taxonomy_1_first_letter: e
+  taxonomy_1_first_letter_upper: E
+  taxonomy_1_length_1: e
+  taxonomy_1_length_2: el
+  taxonomy_1_length_3: ele
+  taxonomy_1_length_4: elec
+  taxonomy_1_length_5: elect
+  taxonomy_1_upper: ELECTRONIC
+  taxonomy_1_upper_length_1: E
+  taxonomy_1_upper_length_2: EL
+  taxonomy_1_upper_length_3: ELE
+  taxonomy_1_upper_length_4: ELEC
+  taxonomy_1_upper_length_5: ELECT
+  taxonomy_2: breakout
+  taxonomy_2_capital: Breakout
+  taxonomy_2_first_letter: b
+  taxonomy_2_first_letter_upper: B
+  taxonomy_2_length_1: b
+  taxonomy_2_length_2: br
+  taxonomy_2_length_3: bre
+  taxonomy_2_length_4: brea
+  taxonomy_2_length_5: break
+  taxonomy_2_upper: BREAKOUT
+  taxonomy_2_upper_length_1: B
+  taxonomy_2_upper_length_2: BR
+  taxonomy_2_upper_length_3: BRE
+  taxonomy_2_upper_length_4: BREA
+  taxonomy_2_upper_length_5: BREAK
+  taxonomy_3: timing
+  taxonomy_3_capital: Timing
+  taxonomy_3_first_letter: t
+  taxonomy_3_first_letter_upper: T
+  taxonomy_3_length_1: t
+  taxonomy_3_length_2: ti
+  taxonomy_3_length_3: tim
+  taxonomy_3_length_4: timi
+  taxonomy_3_length_5: timin
+  taxonomy_3_upper: TIMING
+  taxonomy_3_upper_length_1: T
+  taxonomy_3_upper_length_2: TI
+  taxonomy_3_upper_length_3: TIM
+  taxonomy_3_upper_length_4: TIMI
+  taxonomy_3_upper_length_5: TIMIN
+  taxonomy_4: rtc
+  taxonomy_4_capital: Rtc
+  taxonomy_4_first_letter: r
+  taxonomy_4_first_letter_upper: R
+  taxonomy_4_length_1: r
+  taxonomy_4_length_2: rt
+  taxonomy_4_length_3: rtc
+  taxonomy_4_length_4: rtc
+  taxonomy_4_length_5: rtc
+  taxonomy_4_upper: RTC
+  taxonomy_4_upper_length_1: R
+  taxonomy_4_upper_length_2: RT
+  taxonomy_4_upper_length_3: RTC
+  taxonomy_4_upper_length_4: RTC
+  taxonomy_4_upper_length_5: RTC
+  taxonomy_5: temperature_compensated
+  taxonomy_5_capital: Temperature Compensated
+  taxonomy_5_first_letter: t
+  taxonomy_5_first_letter_upper: T
+  taxonomy_5_length_1: t
+  taxonomy_5_length_2: te
+  taxonomy_5_length_3: tem
+  taxonomy_5_length_4: temp
+  taxonomy_5_length_5: tempe
+  taxonomy_5_upper: TEMPERATURE_COMPENSATED
+  taxonomy_5_upper_length_1: T
+  taxonomy_5_upper_length_2: TE
+  taxonomy_5_upper_length_3: TEM
+  taxonomy_5_upper_length_4: TEMP
+  taxonomy_5_upper_length_5: TEMPE
+  taxonomy_6: ds3231
+  taxonomy_6_capital: Ds3231
+  taxonomy_6_first_letter: d
+  taxonomy_6_first_letter_upper: D
+  taxonomy_6_length_1: d
+  taxonomy_6_length_2: ds
+  taxonomy_6_length_3: ds3
+  taxonomy_6_length_4: ds32
+  taxonomy_6_length_5: ds323
+  taxonomy_6_upper: DS3231
+  taxonomy_6_upper_length_1: D
+  taxonomy_6_upper_length_2: DS
+  taxonomy_6_upper_length_3: DS3
+  taxonomy_6_upper_length_4: DS32
+  taxonomy_6_upper_length_5: DS323
+  taxonomy_7: stemma_qt
+  taxonomy_7_capital: Stemma Qt
+  taxonomy_7_first_letter: s
+  taxonomy_7_first_letter_upper: S
+  taxonomy_7_length_1: s
+  taxonomy_7_length_2: st
+  taxonomy_7_length_3: ste
+  taxonomy_7_length_4: stem
+  taxonomy_7_length_5: stemm
+  taxonomy_7_upper: STEMMA_QT
+  taxonomy_7_upper_length_1: S
+  taxonomy_7_upper_length_2: ST
+  taxonomy_7_upper_length_3: STE
+  taxonomy_7_upper_length_4: STEM
+  taxonomy_7_upper_length_5: STEMM
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_schema: breakout_function_v1
+  type: part
+  type_1: timing
+  type_2: rtc
+  type_3: temperature_compensated
+  type_4: ds3231
+  url_chat: ''
+  webpage: https://www.adafruit.com/product/5188
+  webpage_adafruit: https://www.adafruit.com/product/5188
+type_1: timing
+type_2: rtc
+type_3: temperature_compensated
+type_4: ds3231
+url_chat: ''
+webpage: https://www.adafruit.com/product/5188
+webpage_adafruit: https://www.adafruit.com/product/5188

@@ -1,0 +1,96 @@
+{
+  "name_readable": "DOIT ESP32 DevKit V1 (30 contacts)",
+  "manufacturer": "doit",
+  "part_number": "esp32_devkit_v1_30_pin",
+  "webpage": null,
+  "sources": [
+    {
+      "id": "original_catalogue",
+      "url": null,
+      "title": "Original populate entries in this repository",
+      "local_file": null,
+      "scope": "Nominal dimensions and identity; not manufacturer verification",
+      "accessed": "2026-10-22"
+    },
+    {
+      "id": "chip_datasheet",
+      "url": "https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf",
+      "title": "chip_datasheet",
+      "accessed": "2026-10-22",
+      "scope": "GPIO capabilities, electrical limits and strapping; not carrier geometry"
+    },
+    {
+      "id": "board_guide",
+      "url": "https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/SchematicsforESP32.pdf",
+      "title": "DOIT V0 schematic, manufacturer drawing mirrored by Zephyr reference",
+      "accessed": "2026-10-22",
+      "scope": "DOIT schematic 2x15 signal inventory; not carrier dimensions",
+      "local_file": "reference/doit_schematic.pdf",
+      "sha256": "4f41a0cc695c2eb7344d6c8b970d944286000c05c7b4af48c60b133c811774f5"
+    },
+    {
+      "id": "interface_variant",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/variants/doitESP32devkitV1/pins_arduino.h",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Arduino variant pin assignments; not a physical header drawing",
+      "local_file": "reference/interface_defaults/esp32_doitESP32devkitV1.h",
+      "sha256": "94a7aa8d3ae6f863d150adb67325e3cff158bb62d0f85521b12813b8489e8f08"
+    },
+    {
+      "id": "interface_board_selection",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/boards.txt",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework board names and variant selection; generic selections remain explicitly scoped",
+      "local_file": "reference/interface_defaults/esp32_boards.txt",
+      "sha256": "d0a1ce5b2ed2c4c97f0a2b031dab81c0569d9bb26ec04f82f162f91f0487b3b8",
+      "content_scope": "excerpt_of_board_names_and_variant_selections",
+      "source_document_sha256": "11b90d1f4795ec365418635749b685a2f3d8320d0e163d886aa2099e81277b07"
+    },
+    {
+      "id": "interface_runtime_uart",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/cores/esp32/HardwareSerial.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_HardwareSerial.cpp",
+      "sha256": "a555861fb4f28a2a4c1d903a8152d714902fee2510c9eaf3ad5311dbcd779035"
+    },
+    {
+      "id": "interface_runtime_i2c",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/Wire/src/Wire.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_Wire.cpp",
+      "sha256": "0454e5becf7acaa6f7cb466397682d762461f678cbb88644f31f313e653b71bc"
+    },
+    {
+      "id": "interface_runtime_spi",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/SPI/src/SPI.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_SPI.cpp",
+      "sha256": "4caea80d21fa230a528322d9eb900880a0acd9c91cb355bc5cec514ea02ecaed"
+    }
+  ],
+  "dimensions_mm": {
+    "width": 28.33,
+    "height": 51.45,
+    "pcb_thickness": null,
+    "assembled_height": null,
+    "scope": "nominal_catalogue_outline_not_measured",
+    "source_id": "original_catalogue",
+    "status": "unverified"
+  },
+  "coordinate_system": {
+    "units": "mm",
+    "origin": "centre_of_pcb_outline",
+    "view": "top_with_usb_at_positive_y",
+    "x_positive": "right",
+    "y_positive": "towards_usb"
+  },
+  "mounting_hole_details": []
+}

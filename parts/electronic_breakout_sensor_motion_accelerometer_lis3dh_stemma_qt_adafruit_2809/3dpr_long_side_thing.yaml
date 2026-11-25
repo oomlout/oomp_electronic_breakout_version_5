@@ -1,0 +1,3676 @@
+bip_39_2_word_array:
+- connect
+- anxiety
+bip_39_2_word_no_space: connectanxiety
+bip_39_2_word_space: connect anxiety
+bip_39_2_word_underscore: connect_anxiety
+bip_39_3_word_array:
+- connect
+- anxiety
+- canvas
+bip_39_3_word_no_space: connectanxietycanvas
+bip_39_3_word_space: connect anxiety canvas
+bip_39_3_word_underscore: connect_anxiety_canvas
+bip_39_full_array:
+- connect
+- anxiety
+- canvas
+- bulb
+- only
+- universe
+- leopard
+- question
+- diet
+- member
+- often
+- fringe
+bip_39_full_no_space: connectanxietycanvasbulbonlyuniverseleopardquestiondietmemberoftenfringe
+bip_39_full_space: connect anxiety canvas bulb only universe leopard question diet
+  member often fringe
+bip_39_full_underscore: connect_anxiety_canvas_bulb_only_universe_leopard_question_diet_member_often_fringe
+board_variant: stemma_qt
+breakout_description: stemma_qt
+breakout_pcb_height: 25.4
+breakout_pcb_width: 17.78
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+- Default I2C address not established in this import.
+definition_authority: working_oomp_populate_i2c.py
+description: A widely used low-power three-axis option with selectable +/-2/4/8/16
+  g, I2C/SPI, interrupts and motion/tap features. The 2020 QT revision changed carrier
+  geometry and pinout.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+directory: parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+geometry_ready: false
+i2c:
+  address_evidence_status: unverified
+  address_selection: unverified
+  clock_stretching: unverified
+  default_address_7bit: null
+  documented_addresses_7bit: []
+  maximum_clock_hz: null
+  source_id: product
+id: electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+id_no_class: electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+id_no_size: electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+id_no_type: electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+id_oobb: electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+- spi
+item_kind: breakout
+kwargs:
+  breakout_pcb_height: 25.4
+  breakout_pcb_width: 17.78
+  modes:
+  - 3dpr
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -6.35
+    y_mm: -10.16
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -6.35
+    y_mm: 10.16
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 6.35
+    y_mm: -10.16
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 6.35
+    y_mm: 10.16
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -6.35
+    - -10.16
+  - - -6.35
+    - 10.16
+  - - 6.35
+    - -10.16
+  - - 6.35
+    - 10.16
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  overwrite: true
+  part_ids:
+  - electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+  scad_output: 3dpr_long_side
+  type: default_mounting_plate_default
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+manufacturer: adafruit
+manufacturer_part_number: '2809'
+md5: 2f2140868ef9b1dba0157c3db15a66ae
+md5_10: 2f2140868e
+md5_10_upper: 2F2140868E
+md5_5: 2f214
+md5_5_upper: 2F214
+md5_6: 2f2140
+md5_6_alpha: 1u79c
+md5_6_alpha_upper: 1U79C
+md5_6_upper: 2F2140
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 2.5
+  id: U$1:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -6.35
+  y_mm: -10.16
+- diameter_mm: 2.5
+  id: U$17:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -6.35
+  y_mm: 10.16
+- diameter_mm: 2.5
+  id: U$19:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 6.35
+  y_mm: -10.16
+- diameter_mm: 2.5
+  id: U$21:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 6.35
+  y_mm: 10.16
+mounting_hole_radius_name: m2
+mounting_hole_radius_names:
+- m2
+- m2
+- m2
+- m2
+mounting_hole_status: verified
+mounting_holes:
+- - -6.35
+  - -10.16
+- - -6.35
+  - 10.16
+- - 6.35
+  - -10.16
+- - 6.35
+  - 10.16
+mounting_lift: 3
+mounting_research:
+  board_revision: "Current STEMMA QT carrier design represented by Adafruit LIS3DH.brd\
+    \ at Adafruit-LIS3DH-Breakout-PCB commit f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861;\
+    \ distinct from the repository\u2019s Adafruit LIS3DH Original.brd legacy carrier."
+  board_size:
+  - 17.78
+  - 25.4
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: In the pinned EAGLE board, layer-20 outline bounds are x=0..17.78 mm
+    and y=0..25.4 mm. Bounding-box centre is (8.89, 12.7) mm. Extracted pad coordinates
+    are translated by subtracting that centre; quarter_turn=0, so canonical x=x_native-8.89,
+    y=y_native-12.7. The four selected drills are explicitly placed in package MOUNTINGHOLE_2.5_PLATED,
+    with IDs U$1, U$17, U$19 and U$21. The full drill inspection also showed 1.0 mm
+    plated header pads on JP2/JP3; these are connector pads, not board mounts, and
+    were excluded.
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit product page identifies Product ID 2809 as the LIS3DH
+    Triple-Axis Accelerometer. The pinned Adafruit repository README links product
+    2809 and states that its design uses the STEMMA QT form factor; the repository
+    contains separate Adafruit LIS3DH.brd and Adafruit LIS3DH Original.brd files.
+    This record uses the current Adafruit LIS3DH.brd, and its carrier file is the
+    one inspected and extracted.
+  mounting_holes:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -6.35
+    y_mm: -10.16
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -6.35
+    y_mm: 10.16
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 6.35
+    y_mm: -10.16
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 6.35
+    y_mm: 10.16
+  record_sha256: 240ea1aead0c7aa45010c864cad4da3d569ffdf81fb2e3fb4d689afc27ef9611
+  research_file: source_file/electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 275587
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit LIS3DH.brd
+    locator: Pinned manufacturer EAGLE board file Adafruit LIS3DH.brd at repository
+      commit f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861; current QT carrier board; inspect
+      layer 20 outline and all drill features.
+    registered_at: '2026-11-07T11:47:31+00:00'
+    sha256: 03ae0f643a10cde2a20468fbc716cbca3c4fd3d74e87913ea638f4fb324686e3
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/Adafruit%20LIS3DH.brd
+  - bytes: 103793
+    id: product
+    kind: manufacturer_product
+    local_file: mounting_evidence/product_2809.html
+    locator: Adafruit product page identifies Product ID 2809 as LIS3DH Triple-Axis
+      Accelerometer; current product identity.
+    registered_at: '2026-11-07T11:47:31+00:00'
+    sha256: b056b354fb565769cf70a4b908200cad7dff8ad27984ca648a372d7abaa0e36c
+    url: https://www.adafruit.com/product/2809
+  - bytes: 2139
+    id: repo_readme
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Pinned Adafruit repository README links to Product 2809 and describes
+      custom STEMMA QT form factor; repository explicitly states EagleCAD schematic
+      and layout files.
+    registered_at: '2026-11-07T11:47:47+00:00'
+    sha256: 3630ee20aefe174ce5cd77a21f073ccaec9f504c7eb5042bf8367272187d2eb9
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/README.md
+  status: verified
+name: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Stemma Qt Adafruit 2809
+name_no_class: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Stemma Qt Adafruit
+  2809
+name_no_size: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Stemma Qt Adafruit
+  2809
+name_no_type: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Stemma Qt Adafruit
+  2809
+name_proper: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Stemma Qt Adafruit
+  2809
+name_readable: Adafruit LIS3DH, current QT carrier
+name_space: electronic breakout sensor motion accelerometer lis3dh stemma qt adafruit
+  2809
+name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ACCELEROMETER LIS3DH STEMMA QT ADAFRUIT
+  2809
+notes: []
+oobb_details:
+- breakout_pcb_height: 25.4
+  breakout_pcb_width: 17.78
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -6.35
+    y_mm: -10.16
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -6.35
+    y_mm: 10.16
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 6.35
+    y_mm: -10.16
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 6.35
+    y_mm: 10.16
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -6.35
+    - -10.16
+  - - -6.35
+    - 10.16
+  - - 6.35
+    - -10.16
+  - - 6.35
+    - 10.16
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 25.4
+  breakout_pcb_width: 17.78
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -6.35
+    y_mm: -10.16
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -6.35
+    y_mm: 10.16
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 6.35
+    y_mm: -10.16
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 6.35
+    y_mm: 10.16
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -6.35
+    - -10.16
+  - - -6.35
+    - 10.16
+  - - 6.35
+    - -10.16
+  - - 6.35
+    - 10.16
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 25.4
+  breakout_pcb_width: 17.78
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -6.35
+    y_mm: -10.16
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -6.35
+    y_mm: 10.16
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 6.35
+    y_mm: -10.16
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 6.35
+    y_mm: 10.16
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -6.35
+    - -10.16
+  - - -6.35
+    - 10.16
+  - - 6.35
+    - -10.16
+  - - 6.35
+    - 10.16
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      board_variant: stemma_qt
+      breakout_description: stemma_qt
+      breakout_pcb_height: 25.4
+      breakout_pcb_width: 17.78
+      catalogue: i2c_breakouts
+      catalogue_status: product_page_reference
+      data_gaps:
+      - Physical connector/pad map and coordinates not imported.
+      - Located mounting holes and complete assembly/connector clearances not imported.
+      - Pull-up values/rails and full electrical limits require schematic review.
+      - Carrier PCB outline dimensions not verified.
+      - Default I2C address not established in this import.
+      definition_authority: working_oomp_populate_i2c.py
+      description: A widely used low-power three-axis option with selectable +/-2/4/8/16
+        g, I2C/SPI, interrupts and motion/tap features. The 2020 QT revision changed
+        carrier geometry and pinout.
+      dimensions_mm:
+        height: null
+        scope: pcb_outline_not_established
+        source_id: null
+        status: unverified
+        width: null
+      directory: parts\electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+      geometry_ready: false
+      i2c:
+        address_evidence_status: unverified
+        address_selection: unverified
+        clock_stretching: unverified
+        default_address_7bit: null
+        documented_addresses_7bit: []
+        maximum_clock_hz: null
+        source_id: product
+      interface_scope: documented_board_interfaces_only
+      interfaces:
+      - i2c
+      - spi
+      item_kind: breakout
+      manufacturer: adafruit
+      manufacturer_part_number: '2809'
+      mounting_coordinate_system:
+        origin: pcb_bounding_box_centre
+        units: mm
+        view: top
+        x_positive: right
+        y_positive: up
+      mounting_geometry_ready: true
+      mounting_hole_details:
+      - diameter_mm: 2.5
+        id: U$1:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: -6.35
+        y_mm: -10.16
+      - diameter_mm: 2.5
+        id: U$17:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: -6.35
+        y_mm: 10.16
+      - diameter_mm: 2.5
+        id: U$19:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: 6.35
+        y_mm: -10.16
+      - diameter_mm: 2.5
+        id: U$21:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: 6.35
+        y_mm: 10.16
+      mounting_hole_radius_name: m2
+      mounting_hole_radius_names:
+      - m2
+      - m2
+      - m2
+      - m2
+      mounting_hole_status: verified
+      mounting_holes:
+      - - -6.35
+        - -10.16
+      - - -6.35
+        - 10.16
+      - - 6.35
+        - -10.16
+      - - 6.35
+        - 10.16
+      mounting_lift: 3
+      mounting_research:
+        board_revision: "Current STEMMA QT carrier design represented by Adafruit\
+          \ LIS3DH.brd at Adafruit-LIS3DH-Breakout-PCB commit f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861;\
+          \ distinct from the repository\u2019s Adafruit LIS3DH Original.brd legacy\
+          \ carrier."
+        board_size:
+        - 17.78
+        - 25.4
+        coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        derivation: In the pinned EAGLE board, layer-20 outline bounds are x=0..17.78
+          mm and y=0..25.4 mm. Bounding-box centre is (8.89, 12.7) mm. Extracted pad
+          coordinates are translated by subtracting that centre; quarter_turn=0, so
+          canonical x=x_native-8.89, y=y_native-12.7. The four selected drills are
+          explicitly placed in package MOUNTINGHOLE_2.5_PLATED, with IDs U$1, U$17,
+          U$19 and U$21. The full drill inspection also showed 1.0 mm plated header
+          pads on JP2/JP3; these are connector pads, not board mounts, and were excluded.
+        fit_status: generic_holder_not_physical_fit_tested
+        identity_evidence: Adafruit product page identifies Product ID 2809 as the
+          LIS3DH Triple-Axis Accelerometer. The pinned Adafruit repository README
+          links product 2809 and states that its design uses the STEMMA QT form factor;
+          the repository contains separate Adafruit LIS3DH.brd and Adafruit LIS3DH
+          Original.brd files. This record uses the current Adafruit LIS3DH.brd, and
+          its carrier file is the one inspected and extracted.
+        mounting_holes:
+        - diameter_mm: 2.5
+          id: U$1:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: -6.35
+          y_mm: -10.16
+        - diameter_mm: 2.5
+          id: U$17:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: -6.35
+          y_mm: 10.16
+        - diameter_mm: 2.5
+          id: U$19:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: 6.35
+          y_mm: -10.16
+        - diameter_mm: 2.5
+          id: U$21:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: 6.35
+          y_mm: 10.16
+        record_sha256: 240ea1aead0c7aa45010c864cad4da3d569ffdf81fb2e3fb4d689afc27ef9611
+        research_file: source_file/electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809/mounting.yaml
+        reviewed_by: gpt-6-luna
+        sources:
+        - bytes: 275587
+          id: cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Adafruit LIS3DH.brd
+          locator: Pinned manufacturer EAGLE board file Adafruit LIS3DH.brd at repository
+            commit f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861; current QT carrier board;
+            inspect layer 20 outline and all drill features.
+          registered_at: '2026-11-07T11:47:31+00:00'
+          sha256: 03ae0f643a10cde2a20468fbc716cbca3c4fd3d74e87913ea638f4fb324686e3
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/Adafruit%20LIS3DH.brd
+        - bytes: 103793
+          id: product
+          kind: manufacturer_product
+          local_file: mounting_evidence/product_2809.html
+          locator: Adafruit product page identifies Product ID 2809 as LIS3DH Triple-Axis
+            Accelerometer; current product identity.
+          registered_at: '2026-11-07T11:47:31+00:00'
+          sha256: b056b354fb565769cf70a4b908200cad7dff8ad27984ca648a372d7abaa0e36c
+          url: https://www.adafruit.com/product/2809
+        - bytes: 2139
+          id: repo_readme
+          kind: manufacturer_repository
+          local_file: mounting_evidence/README.md
+          locator: Pinned Adafruit repository README links to Product 2809 and describes
+            custom STEMMA QT form factor; repository explicitly states EagleCAD schematic
+            and layout files.
+          registered_at: '2026-11-07T11:47:47+00:00'
+          sha256: 3630ee20aefe174ce5cd77a21f073ccaec9f504c7eb5042bf8367272187d2eb9
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/README.md
+        status: verified
+      name: electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+      name_proper: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Stemma Qt
+        Adafruit 2809
+      name_readable: Adafruit LIS3DH, current QT carrier
+      name_space: electronic breakout sensor motion accelerometer lis3dh stemma qt
+        adafruit 2809
+      name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ACCELEROMETER LIS3DH STEMMA QT
+        ADAFRUIT 2809
+      notes: []
+      oobb_details:
+      - breakout_pcb_height: 25.4
+        breakout_pcb_width: 17.78
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$1:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -6.35
+          y_mm: -10.16
+        - diameter_mm: 2.5
+          id: U$17:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -6.35
+          y_mm: 10.16
+        - diameter_mm: 2.5
+          id: U$19:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 6.35
+          y_mm: -10.16
+        - diameter_mm: 2.5
+          id: U$21:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 6.35
+          y_mm: 10.16
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -6.35
+          - -10.16
+        - - -6.35
+          - 10.16
+        - - 6.35
+          - -10.16
+        - - 6.35
+          - 10.16
+        mounting_layout: full_wrap
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+      - breakout_pcb_height: 25.4
+        breakout_pcb_width: 17.78
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$1:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -6.35
+          y_mm: -10.16
+        - diameter_mm: 2.5
+          id: U$17:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -6.35
+          y_mm: 10.16
+        - diameter_mm: 2.5
+          id: U$19:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 6.35
+          y_mm: -10.16
+        - diameter_mm: 2.5
+          id: U$21:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 6.35
+          y_mm: 10.16
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -6.35
+          - -10.16
+        - - -6.35
+          - 10.16
+        - - 6.35
+          - -10.16
+        - - 6.35
+          - 10.16
+        mounting_layout: short_sides
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_short_sides
+      - breakout_pcb_height: 25.4
+        breakout_pcb_width: 17.78
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$1:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -6.35
+          y_mm: -10.16
+        - diameter_mm: 2.5
+          id: U$17:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -6.35
+          y_mm: 10.16
+        - diameter_mm: 2.5
+          id: U$19:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 6.35
+          y_mm: -10.16
+        - diameter_mm: 2.5
+          id: U$21:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 6.35
+          y_mm: 10.16
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -6.35
+          - -10.16
+        - - -6.35
+          - 10.16
+        - - 6.35
+          - -10.16
+        - - 6.35
+          - 10.16
+        mounting_layout: long_side
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_long_side
+      part_number: '2809'
+      part_number_adafruit: '2809'
+      pinout_status: unverified
+      pins: {}
+      research_date: '2026-10-23'
+      schema_version: 1
+      sources:
+      - id: product
+        kind: manufacturer_product_page
+        retrieved: '2026-10-23'
+        scope: identity, stated interfaces/features and recorded nominal dimensions
+        url: https://www.adafruit.com/product/2809
+      - bytes: 275587
+        id: mounting_cad
+        kind: manufacturer_cad
+        local_file: mounting_evidence/Adafruit LIS3DH.brd
+        locator: Pinned manufacturer EAGLE board file Adafruit LIS3DH.brd at repository
+          commit f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861; current QT carrier board;
+          inspect layer 20 outline and all drill features.
+        registered_at: '2026-11-07T11:47:31+00:00'
+        sha256: 03ae0f643a10cde2a20468fbc716cbca3c4fd3d74e87913ea638f4fb324686e3
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/Adafruit%20LIS3DH.brd
+      - bytes: 103793
+        id: mounting_product
+        kind: manufacturer_product
+        local_file: mounting_evidence/product_2809.html
+        locator: Adafruit product page identifies Product ID 2809 as LIS3DH Triple-Axis
+          Accelerometer; current product identity.
+        registered_at: '2026-11-07T11:47:31+00:00'
+        sha256: b056b354fb565769cf70a4b908200cad7dff8ad27984ca648a372d7abaa0e36c
+        url: https://www.adafruit.com/product/2809
+      - bytes: 2139
+        id: mounting_repo_readme
+        kind: manufacturer_repository
+        local_file: mounting_evidence/README.md
+        locator: Pinned Adafruit repository README links to Product 2809 and describes
+          custom STEMMA QT form factor; repository explicitly states EagleCAD schematic
+          and layout files.
+        registered_at: '2026-11-07T11:47:47+00:00'
+        sha256: 3630ee20aefe174ce5cd77a21f073ccaec9f504c7eb5042bf8367272187d2eb9
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/README.md
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: adafruit
+      taxonomy_15: '2809'
+      taxonomy_2: breakout
+      taxonomy_3: sensor
+      taxonomy_4: motion
+      taxonomy_5: accelerometer
+      taxonomy_6: lis3dh
+      taxonomy_7: stemma_qt
+      taxonomy_8: ''
+      taxonomy_9: ''
+      taxonomy_schema: breakout_function_v1
+      type_1: sensor
+      type_2: motion
+      type_3: accelerometer
+      type_4: lis3dh
+      url_chat: ''
+      webpage: https://www.adafruit.com/product/2809
+      webpage_adafruit: https://www.adafruit.com/product/2809
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+part_number: '2809'
+part_number_adafruit: '2809'
+pinout_status: unverified
+pins: {}
+project_name: C:\gh\oomp_electronic_breakout_version_5
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/2809
+- bytes: 275587
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Adafruit LIS3DH.brd
+  locator: Pinned manufacturer EAGLE board file Adafruit LIS3DH.brd at repository
+    commit f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861; current QT carrier board; inspect
+    layer 20 outline and all drill features.
+  registered_at: '2026-11-07T11:47:31+00:00'
+  sha256: 03ae0f643a10cde2a20468fbc716cbca3c4fd3d74e87913ea638f4fb324686e3
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/Adafruit%20LIS3DH.brd
+- bytes: 103793
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: mounting_evidence/product_2809.html
+  locator: Adafruit product page identifies Product ID 2809 as LIS3DH Triple-Axis
+    Accelerometer; current product identity.
+  registered_at: '2026-11-07T11:47:31+00:00'
+  sha256: b056b354fb565769cf70a4b908200cad7dff8ad27984ca648a372d7abaa0e36c
+  url: https://www.adafruit.com/product/2809
+- bytes: 2139
+  id: mounting_repo_readme
+  kind: manufacturer_repository
+  local_file: mounting_evidence/README.md
+  locator: Pinned Adafruit repository README links to Product 2809 and describes custom
+    STEMMA QT form factor; repository explicitly states EagleCAD schematic and layout
+    files.
+  registered_at: '2026-11-07T11:47:47+00:00'
+  sha256: 3630ee20aefe174ce5cd77a21f073ccaec9f504c7eb5042bf8367272187d2eb9
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/README.md
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_14_capital: Adafruit
+taxonomy_14_first_letter: a
+taxonomy_14_first_letter_upper: A
+taxonomy_14_length_1: a
+taxonomy_14_length_2: ad
+taxonomy_14_length_3: ada
+taxonomy_14_length_4: adaf
+taxonomy_14_length_5: adafr
+taxonomy_14_upper: ADAFRUIT
+taxonomy_14_upper_length_1: A
+taxonomy_14_upper_length_2: AD
+taxonomy_14_upper_length_3: ADA
+taxonomy_14_upper_length_4: ADAF
+taxonomy_14_upper_length_5: ADAFR
+taxonomy_15: '2809'
+taxonomy_15_capital: '2809'
+taxonomy_15_first_letter: '2'
+taxonomy_15_first_letter_upper: '2'
+taxonomy_15_length_1: '2'
+taxonomy_15_length_2: '28'
+taxonomy_15_length_3: '280'
+taxonomy_15_length_4: '2809'
+taxonomy_15_length_5: '2809'
+taxonomy_15_upper: '2809'
+taxonomy_15_upper_length_1: '2'
+taxonomy_15_upper_length_2: '28'
+taxonomy_15_upper_length_3: '280'
+taxonomy_15_upper_length_4: '2809'
+taxonomy_15_upper_length_5: '2809'
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: sensor
+taxonomy_3_capital: Sensor
+taxonomy_3_first_letter: s
+taxonomy_3_first_letter_upper: S
+taxonomy_3_length_1: s
+taxonomy_3_length_2: se
+taxonomy_3_length_3: sen
+taxonomy_3_length_4: sens
+taxonomy_3_length_5: senso
+taxonomy_3_upper: SENSOR
+taxonomy_3_upper_length_1: S
+taxonomy_3_upper_length_2: SE
+taxonomy_3_upper_length_3: SEN
+taxonomy_3_upper_length_4: SENS
+taxonomy_3_upper_length_5: SENSO
+taxonomy_4: motion
+taxonomy_4_capital: Motion
+taxonomy_4_first_letter: m
+taxonomy_4_first_letter_upper: M
+taxonomy_4_length_1: m
+taxonomy_4_length_2: mo
+taxonomy_4_length_3: mot
+taxonomy_4_length_4: moti
+taxonomy_4_length_5: motio
+taxonomy_4_upper: MOTION
+taxonomy_4_upper_length_1: M
+taxonomy_4_upper_length_2: MO
+taxonomy_4_upper_length_3: MOT
+taxonomy_4_upper_length_4: MOTI
+taxonomy_4_upper_length_5: MOTIO
+taxonomy_5: accelerometer
+taxonomy_5_capital: Accelerometer
+taxonomy_5_first_letter: a
+taxonomy_5_first_letter_upper: A
+taxonomy_5_length_1: a
+taxonomy_5_length_2: ac
+taxonomy_5_length_3: acc
+taxonomy_5_length_4: acce
+taxonomy_5_length_5: accel
+taxonomy_5_upper: ACCELEROMETER
+taxonomy_5_upper_length_1: A
+taxonomy_5_upper_length_2: AC
+taxonomy_5_upper_length_3: ACC
+taxonomy_5_upper_length_4: ACCE
+taxonomy_5_upper_length_5: ACCEL
+taxonomy_6: lis3dh
+taxonomy_6_capital: Lis3Dh
+taxonomy_6_first_letter: l
+taxonomy_6_first_letter_upper: L
+taxonomy_6_length_1: l
+taxonomy_6_length_2: li
+taxonomy_6_length_3: lis
+taxonomy_6_length_4: lis3
+taxonomy_6_length_5: lis3d
+taxonomy_6_upper: LIS3DH
+taxonomy_6_upper_length_1: L
+taxonomy_6_upper_length_2: LI
+taxonomy_6_upper_length_3: LIS
+taxonomy_6_upper_length_4: LIS3
+taxonomy_6_upper_length_5: LIS3D
+taxonomy_7: stemma_qt
+taxonomy_7_capital: Stemma Qt
+taxonomy_7_first_letter: s
+taxonomy_7_first_letter_upper: S
+taxonomy_7_length_1: s
+taxonomy_7_length_2: st
+taxonomy_7_length_3: ste
+taxonomy_7_length_4: stem
+taxonomy_7_length_5: stemm
+taxonomy_7_upper: STEMMA_QT
+taxonomy_7_upper_length_1: S
+taxonomy_7_upper_length_2: ST
+taxonomy_7_upper_length_3: STE
+taxonomy_7_upper_length_4: STEM
+taxonomy_7_upper_length_5: STEMM
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+thing:
+  bip_39_2_word_array:
+  - connect
+  - anxiety
+  bip_39_2_word_no_space: connectanxiety
+  bip_39_2_word_space: connect anxiety
+  bip_39_2_word_underscore: connect_anxiety
+  bip_39_3_word_array:
+  - connect
+  - anxiety
+  - canvas
+  bip_39_3_word_no_space: connectanxietycanvas
+  bip_39_3_word_space: connect anxiety canvas
+  bip_39_3_word_underscore: connect_anxiety_canvas
+  bip_39_full_array:
+  - connect
+  - anxiety
+  - canvas
+  - bulb
+  - only
+  - universe
+  - leopard
+  - question
+  - diet
+  - member
+  - often
+  - fringe
+  bip_39_full_no_space: connectanxietycanvasbulbonlyuniverseleopardquestiondietmemberoftenfringe
+  bip_39_full_space: connect anxiety canvas bulb only universe leopard question diet
+    member often fringe
+  bip_39_full_underscore: connect_anxiety_canvas_bulb_only_universe_leopard_question_diet_member_often_fringe
+  board_variant: stemma_qt
+  breakout_description: stemma_qt
+  breakout_pcb_height: 25.4
+  breakout_pcb_width: 17.78
+  catalogue: i2c_breakouts
+  catalogue_status: product_page_reference
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 2.1599999999999997
+      pos:
+      - 7.5
+      - 0.0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 44.0
+      - 31.4
+      - 3
+      type: positive
+      width: 3.0
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - -6.35
+      - -10.16
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id001
+      - -6.35
+      - -10.16
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id001
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id001
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - -6.35
+      - 10.16
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id002
+      - -6.35
+      - 10.16
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id002
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id002
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - 6.35
+      - -10.16
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id003
+      - 6.35
+      - -10.16
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id003
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id003
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - 6.35
+      - 10.16
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id004
+      - 6.35
+      - 10.16
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id004
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id004
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  components_objects:
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 17.78
+    depth: 3
+    height: 2.1599999999999997
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: 10.16
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: 10.16
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -6.35
+      - -10.16
+    - - -6.35
+      - 10.16
+    - - 6.35
+      - -10.16
+    - - 6.35
+      - 10.16
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+    pos:
+    - 7.5
+    - 0.0
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_plate
+    type: positive
+    width: 3.0
+  - depth: 5
+    pos:
+    - 22.5
+    - -7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 0.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 17.78
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: 10.16
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: 10.16
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -6.35
+      - -10.16
+    - - -6.35
+      - 10.16
+    - - 6.35
+      - -10.16
+    - - 6.35
+      - 10.16
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+    pos:
+    - -6.35
+    - -10.16
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 17.78
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: 10.16
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: 10.16
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -6.35
+      - -10.16
+    - - -6.35
+      - 10.16
+    - - 6.35
+      - -10.16
+    - - 6.35
+      - 10.16
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+    pos:
+    - -6.35
+    - -10.16
+    - 4.5
+    radius: 2.75
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 17.78
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: 10.16
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: 10.16
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -6.35
+      - -10.16
+    - - -6.35
+      - 10.16
+    - - 6.35
+      - -10.16
+    - - 6.35
+      - 10.16
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+    pos:
+    - -6.35
+    - 10.16
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 17.78
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: 10.16
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: 10.16
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -6.35
+      - -10.16
+    - - -6.35
+      - 10.16
+    - - 6.35
+      - -10.16
+    - - 6.35
+      - 10.16
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+    pos:
+    - -6.35
+    - 10.16
+    - 4.5
+    radius: 2.75
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 17.78
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: 10.16
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: 10.16
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -6.35
+      - -10.16
+    - - -6.35
+      - 10.16
+    - - 6.35
+      - -10.16
+    - - 6.35
+      - 10.16
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+    pos:
+    - 6.35
+    - -10.16
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 17.78
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: 10.16
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: 10.16
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -6.35
+      - -10.16
+    - - -6.35
+      - 10.16
+    - - 6.35
+      - -10.16
+    - - 6.35
+      - 10.16
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+    pos:
+    - 6.35
+    - -10.16
+    - 4.5
+    radius: 2.75
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 17.78
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: 10.16
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: 10.16
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -6.35
+      - -10.16
+    - - -6.35
+      - 10.16
+    - - 6.35
+      - -10.16
+    - - 6.35
+      - 10.16
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+    pos:
+    - 6.35
+    - 10.16
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 17.78
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: 10.16
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: 10.16
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -6.35
+      - -10.16
+    - - -6.35
+      - 10.16
+    - - 6.35
+      - -10.16
+    - - 6.35
+      - 10.16
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+    pos:
+    - 6.35
+    - 10.16
+    - 4.5
+    radius: 2.75
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_7.5_0.0_0_pos_'electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_17.78_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':10.16}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':10.16}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-6.35_-10.16_-6.35_10.16_6.35_-10.16_6.35_10.16_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_3.0_width_2.1599999999999997_height
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_-7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_7.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_0.0_-1_pos
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_-6.35_-10.16_0_pos_'electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_17.78_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':10.16}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':10.16}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-6.35_-10.16_-6.35_10.16_6.35_-10.16_6.35_10.16_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-6.35_-10.16_4.5_pos_'electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_17.78_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':10.16}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':10.16}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-6.35_-10.16_-6.35_10.16_6.35_-10.16_6.35_10.16_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_-6.35_10.16_0_pos_'electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_17.78_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':10.16}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':10.16}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-6.35_-10.16_-6.35_10.16_6.35_-10.16_6.35_10.16_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-6.35_10.16_4.5_pos_'electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_17.78_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':10.16}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':10.16}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-6.35_-10.16_-6.35_10.16_6.35_-10.16_6.35_10.16_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_6.35_-10.16_0_pos_'electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_17.78_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':10.16}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':10.16}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-6.35_-10.16_-6.35_10.16_6.35_-10.16_6.35_10.16_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_6.35_-10.16_4.5_pos_'electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_17.78_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':10.16}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':10.16}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-6.35_-10.16_-6.35_10.16_6.35_-10.16_6.35_10.16_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_6.35_10.16_0_pos_'electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_17.78_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':10.16}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':10.16}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-6.35_-10.16_-6.35_10.16_6.35_-10.16_6.35_10.16_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_6.35_10.16_4.5_pos_'electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_17.78_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$1:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$17:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-6.35_'y_mm':10.16}_{'diameter_mm':2.5_'id':'u$19:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':-10.16}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':6.35_'y_mm':10.16}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-6.35_-10.16_-6.35_10.16_6.35_-10.16_6.35_10.16_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_2.75_radius
+  data_gaps:
+  - Physical connector/pad map and coordinates not imported.
+  - Located mounting holes and complete assembly/connector clearances not imported.
+  - Pull-up values/rails and full electrical limits require schematic review.
+  - Carrier PCB outline dimensions not verified.
+  - Default I2C address not established in this import.
+  definition_authority: working_oomp_populate_i2c.py
+  description: A widely used low-power three-axis option with selectable +/-2/4/8/16
+    g, I2C/SPI, interrupts and motion/tap features. The 2020 QT revision changed carrier
+    geometry and pinout.
+  description_extra: ''
+  description_main: ''
+  dimensions_mm:
+    height: null
+    scope: pcb_outline_not_established
+    source_id: null
+    status: unverified
+    width: null
+  directory: parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+  geometry_ready: false
+  i2c:
+    address_evidence_status: unverified
+    address_selection: unverified
+    clock_stretching: unverified
+    default_address_7bit: null
+    documented_addresses_7bit: []
+    maximum_clock_hz: null
+    source_id: product
+  id: electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+  id_no_class: electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+  id_no_size: electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+  id_no_type: electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+  interface_scope: documented_board_interfaces_only
+  interfaces:
+  - i2c
+  - spi
+  item_kind: breakout
+  kwargs:
+    breakout_pcb_height: 25.4
+    breakout_pcb_width: 17.78
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: 10.16
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: 10.16
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -6.35
+      - -10.16
+    - - -6.35
+      - 10.16
+    - - 6.35
+      - -10.16
+    - - 6.35
+      - 10.16
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+    save_type: none
+    scad_output: 3dpr_long_side
+    type: default_mounting_plate_default
+  link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+  link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+  link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+  manufacturer: adafruit
+  manufacturer_part_number: '2809'
+  md5: 2f2140868ef9b1dba0157c3db15a66ae
+  md5_10: 2f2140868e
+  md5_10_upper: 2F2140868E
+  md5_5: 2f214
+  md5_5_upper: 2F214
+  md5_6: 2f2140
+  md5_6_alpha: 1u79c
+  md5_6_alpha_upper: 1U79C
+  md5_6_upper: 2F2140
+  mounting_coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  mounting_geometry_ready: true
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -6.35
+    y_mm: -10.16
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -6.35
+    y_mm: 10.16
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 6.35
+    y_mm: -10.16
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 6.35
+    y_mm: 10.16
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_hole_status: verified
+  mounting_holes:
+  - - -6.35
+    - -10.16
+  - - -6.35
+    - 10.16
+  - - 6.35
+    - -10.16
+  - - 6.35
+    - 10.16
+  mounting_lift: 3
+  mounting_research:
+    board_revision: "Current STEMMA QT carrier design represented by Adafruit LIS3DH.brd\
+      \ at Adafruit-LIS3DH-Breakout-PCB commit f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861;\
+      \ distinct from the repository\u2019s Adafruit LIS3DH Original.brd legacy carrier."
+    board_size:
+    - 17.78
+    - 25.4
+    coordinate_system:
+      origin: pcb_bounding_box_centre
+      units: mm
+      view: top
+      x_positive: right
+      y_positive: up
+    derivation: In the pinned EAGLE board, layer-20 outline bounds are x=0..17.78
+      mm and y=0..25.4 mm. Bounding-box centre is (8.89, 12.7) mm. Extracted pad coordinates
+      are translated by subtracting that centre; quarter_turn=0, so canonical x=x_native-8.89,
+      y=y_native-12.7. The four selected drills are explicitly placed in package MOUNTINGHOLE_2.5_PLATED,
+      with IDs U$1, U$17, U$19 and U$21. The full drill inspection also showed 1.0
+      mm plated header pads on JP2/JP3; these are connector pads, not board mounts,
+      and were excluded.
+    fit_status: generic_holder_not_physical_fit_tested
+    identity_evidence: Adafruit product page identifies Product ID 2809 as the LIS3DH
+      Triple-Axis Accelerometer. The pinned Adafruit repository README links product
+      2809 and states that its design uses the STEMMA QT form factor; the repository
+      contains separate Adafruit LIS3DH.brd and Adafruit LIS3DH Original.brd files.
+      This record uses the current Adafruit LIS3DH.brd, and its carrier file is the
+      one inspected and extracted.
+    mounting_holes:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: -6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: -6.35
+      y_mm: 10.16
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: 6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: 6.35
+      y_mm: 10.16
+    record_sha256: 240ea1aead0c7aa45010c864cad4da3d569ffdf81fb2e3fb4d689afc27ef9611
+    research_file: source_file/electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809/mounting.yaml
+    reviewed_by: gpt-6-luna
+    sources:
+    - bytes: 275587
+      id: cad
+      kind: manufacturer_cad
+      local_file: mounting_evidence/Adafruit LIS3DH.brd
+      locator: Pinned manufacturer EAGLE board file Adafruit LIS3DH.brd at repository
+        commit f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861; current QT carrier board;
+        inspect layer 20 outline and all drill features.
+      registered_at: '2026-11-07T11:47:31+00:00'
+      sha256: 03ae0f643a10cde2a20468fbc716cbca3c4fd3d74e87913ea638f4fb324686e3
+      url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/Adafruit%20LIS3DH.brd
+    - bytes: 103793
+      id: product
+      kind: manufacturer_product
+      local_file: mounting_evidence/product_2809.html
+      locator: Adafruit product page identifies Product ID 2809 as LIS3DH Triple-Axis
+        Accelerometer; current product identity.
+      registered_at: '2026-11-07T11:47:31+00:00'
+      sha256: b056b354fb565769cf70a4b908200cad7dff8ad27984ca648a372d7abaa0e36c
+      url: https://www.adafruit.com/product/2809
+    - bytes: 2139
+      id: repo_readme
+      kind: manufacturer_repository
+      local_file: mounting_evidence/README.md
+      locator: Pinned Adafruit repository README links to Product 2809 and describes
+        custom STEMMA QT form factor; repository explicitly states EagleCAD schematic
+        and layout files.
+      registered_at: '2026-11-07T11:47:47+00:00'
+      sha256: 3630ee20aefe174ce5cd77a21f073ccaec9f504c7eb5042bf8367272187d2eb9
+      url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/README.md
+    status: verified
+  name: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Stemma Qt Adafruit
+    2809
+  name_no_class: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Stemma Qt
+    Adafruit 2809
+  name_no_size: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Stemma Qt Adafruit
+    2809
+  name_no_type: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Stemma Qt Adafruit
+    2809
+  name_proper: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Stemma Qt Adafruit
+    2809
+  name_readable: Adafruit LIS3DH, current QT carrier
+  name_short: Default Mounting Plate Default
+  name_space: electronic breakout sensor motion accelerometer lis3dh stemma qt adafruit
+    2809
+  name_text: Oobb Part Default Mounting Plate Default
+  name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ACCELEROMETER LIS3DH STEMMA QT ADAFRUIT
+    2809
+  notes: []
+  oobb_details:
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 17.78
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: 10.16
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: 10.16
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -6.35
+      - -10.16
+    - - -6.35
+      - 10.16
+    - - 6.35
+      - -10.16
+    - - 6.35
+      - 10.16
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 17.78
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: 10.16
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: 10.16
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -6.35
+      - -10.16
+    - - -6.35
+      - 10.16
+    - - 6.35
+      - -10.16
+    - - 6.35
+      - 10.16
+    mounting_layout: short_sides
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_short_sides
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 17.78
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$1:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$17:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -6.35
+      y_mm: 10.16
+    - diameter_mm: 2.5
+      id: U$19:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: -10.16
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 6.35
+      y_mm: 10.16
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -6.35
+      - -10.16
+    - - -6.35
+      - 10.16
+    - - 6.35
+      - -10.16
+    - - 6.35
+      - 10.16
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_long_side
+  oobb_name: mounting_plate_default
+  oomlout_ai_roboclick_1:
+    actions:
+    - command: text_jinja_template
+      convert_to_pdf: false
+      convert_to_png: false
+      dict_data:
+        board_variant: stemma_qt
+        breakout_description: stemma_qt
+        breakout_pcb_height: 25.4
+        breakout_pcb_width: 17.78
+        catalogue: i2c_breakouts
+        catalogue_status: product_page_reference
+        data_gaps:
+        - Physical connector/pad map and coordinates not imported.
+        - Located mounting holes and complete assembly/connector clearances not imported.
+        - Pull-up values/rails and full electrical limits require schematic review.
+        - Carrier PCB outline dimensions not verified.
+        - Default I2C address not established in this import.
+        definition_authority: working_oomp_populate_i2c.py
+        description: A widely used low-power three-axis option with selectable +/-2/4/8/16
+          g, I2C/SPI, interrupts and motion/tap features. The 2020 QT revision changed
+          carrier geometry and pinout.
+        dimensions_mm:
+          height: null
+          scope: pcb_outline_not_established
+          source_id: null
+          status: unverified
+          width: null
+        directory: parts\electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+        geometry_ready: false
+        i2c:
+          address_evidence_status: unverified
+          address_selection: unverified
+          clock_stretching: unverified
+          default_address_7bit: null
+          documented_addresses_7bit: []
+          maximum_clock_hz: null
+          source_id: product
+        interface_scope: documented_board_interfaces_only
+        interfaces:
+        - i2c
+        - spi
+        item_kind: breakout
+        manufacturer: adafruit
+        manufacturer_part_number: '2809'
+        mounting_coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        mounting_geometry_ready: true
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$1:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -6.35
+          y_mm: -10.16
+        - diameter_mm: 2.5
+          id: U$17:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -6.35
+          y_mm: 10.16
+        - diameter_mm: 2.5
+          id: U$19:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 6.35
+          y_mm: -10.16
+        - diameter_mm: 2.5
+          id: U$21:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 6.35
+          y_mm: 10.16
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_hole_status: verified
+        mounting_holes:
+        - - -6.35
+          - -10.16
+        - - -6.35
+          - 10.16
+        - - 6.35
+          - -10.16
+        - - 6.35
+          - 10.16
+        mounting_lift: 3
+        mounting_research:
+          board_revision: "Current STEMMA QT carrier design represented by Adafruit\
+            \ LIS3DH.brd at Adafruit-LIS3DH-Breakout-PCB commit f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861;\
+            \ distinct from the repository\u2019s Adafruit LIS3DH Original.brd legacy\
+            \ carrier."
+          board_size:
+          - 17.78
+          - 25.4
+          coordinate_system:
+            origin: pcb_bounding_box_centre
+            units: mm
+            view: top
+            x_positive: right
+            y_positive: up
+          derivation: In the pinned EAGLE board, layer-20 outline bounds are x=0..17.78
+            mm and y=0..25.4 mm. Bounding-box centre is (8.89, 12.7) mm. Extracted
+            pad coordinates are translated by subtracting that centre; quarter_turn=0,
+            so canonical x=x_native-8.89, y=y_native-12.7. The four selected drills
+            are explicitly placed in package MOUNTINGHOLE_2.5_PLATED, with IDs U$1,
+            U$17, U$19 and U$21. The full drill inspection also showed 1.0 mm plated
+            header pads on JP2/JP3; these are connector pads, not board mounts, and
+            were excluded.
+          fit_status: generic_holder_not_physical_fit_tested
+          identity_evidence: Adafruit product page identifies Product ID 2809 as the
+            LIS3DH Triple-Axis Accelerometer. The pinned Adafruit repository README
+            links product 2809 and states that its design uses the STEMMA QT form
+            factor; the repository contains separate Adafruit LIS3DH.brd and Adafruit
+            LIS3DH Original.brd files. This record uses the current Adafruit LIS3DH.brd,
+            and its carrier file is the one inspected and extracted.
+          mounting_holes:
+          - diameter_mm: 2.5
+            id: U$1:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: -6.35
+            y_mm: -10.16
+          - diameter_mm: 2.5
+            id: U$17:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: -6.35
+            y_mm: 10.16
+          - diameter_mm: 2.5
+            id: U$19:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: 6.35
+            y_mm: -10.16
+          - diameter_mm: 2.5
+            id: U$21:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: 6.35
+            y_mm: 10.16
+          record_sha256: 240ea1aead0c7aa45010c864cad4da3d569ffdf81fb2e3fb4d689afc27ef9611
+          research_file: source_file/electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809/mounting.yaml
+          reviewed_by: gpt-6-luna
+          sources:
+          - bytes: 275587
+            id: cad
+            kind: manufacturer_cad
+            local_file: mounting_evidence/Adafruit LIS3DH.brd
+            locator: Pinned manufacturer EAGLE board file Adafruit LIS3DH.brd at repository
+              commit f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861; current QT carrier
+              board; inspect layer 20 outline and all drill features.
+            registered_at: '2026-11-07T11:47:31+00:00'
+            sha256: 03ae0f643a10cde2a20468fbc716cbca3c4fd3d74e87913ea638f4fb324686e3
+            url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/Adafruit%20LIS3DH.brd
+          - bytes: 103793
+            id: product
+            kind: manufacturer_product
+            local_file: mounting_evidence/product_2809.html
+            locator: Adafruit product page identifies Product ID 2809 as LIS3DH Triple-Axis
+              Accelerometer; current product identity.
+            registered_at: '2026-11-07T11:47:31+00:00'
+            sha256: b056b354fb565769cf70a4b908200cad7dff8ad27984ca648a372d7abaa0e36c
+            url: https://www.adafruit.com/product/2809
+          - bytes: 2139
+            id: repo_readme
+            kind: manufacturer_repository
+            local_file: mounting_evidence/README.md
+            locator: Pinned Adafruit repository README links to Product 2809 and describes
+              custom STEMMA QT form factor; repository explicitly states EagleCAD
+              schematic and layout files.
+            registered_at: '2026-11-07T11:47:47+00:00'
+            sha256: 3630ee20aefe174ce5cd77a21f073ccaec9f504c7eb5042bf8367272187d2eb9
+            url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/README.md
+          status: verified
+        name: electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+        name_proper: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Stemma
+          Qt Adafruit 2809
+        name_readable: Adafruit LIS3DH, current QT carrier
+        name_space: electronic breakout sensor motion accelerometer lis3dh stemma
+          qt adafruit 2809
+        name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ACCELEROMETER LIS3DH STEMMA
+          QT ADAFRUIT 2809
+        notes: []
+        oobb_details:
+        - breakout_pcb_height: 25.4
+          breakout_pcb_width: 17.78
+          mounting_hole_details:
+          - diameter_mm: 2.5
+            id: U$1:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -6.35
+            y_mm: -10.16
+          - diameter_mm: 2.5
+            id: U$17:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -6.35
+            y_mm: 10.16
+          - diameter_mm: 2.5
+            id: U$19:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 6.35
+            y_mm: -10.16
+          - diameter_mm: 2.5
+            id: U$21:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 6.35
+            y_mm: 10.16
+          mounting_hole_radius_name: m2
+          mounting_hole_radius_names:
+          - m2
+          - m2
+          - m2
+          - m2
+          mounting_holes:
+          - - -6.35
+            - -10.16
+          - - -6.35
+            - 10.16
+          - - 6.35
+            - -10.16
+          - - 6.35
+            - 10.16
+          mounting_layout: full_wrap
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+        - breakout_pcb_height: 25.4
+          breakout_pcb_width: 17.78
+          mounting_hole_details:
+          - diameter_mm: 2.5
+            id: U$1:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -6.35
+            y_mm: -10.16
+          - diameter_mm: 2.5
+            id: U$17:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -6.35
+            y_mm: 10.16
+          - diameter_mm: 2.5
+            id: U$19:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 6.35
+            y_mm: -10.16
+          - diameter_mm: 2.5
+            id: U$21:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 6.35
+            y_mm: 10.16
+          mounting_hole_radius_name: m2
+          mounting_hole_radius_names:
+          - m2
+          - m2
+          - m2
+          - m2
+          mounting_holes:
+          - - -6.35
+            - -10.16
+          - - -6.35
+            - 10.16
+          - - 6.35
+            - -10.16
+          - - 6.35
+            - 10.16
+          mounting_layout: short_sides
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_short_sides
+        - breakout_pcb_height: 25.4
+          breakout_pcb_width: 17.78
+          mounting_hole_details:
+          - diameter_mm: 2.5
+            id: U$1:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -6.35
+            y_mm: -10.16
+          - diameter_mm: 2.5
+            id: U$17:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -6.35
+            y_mm: 10.16
+          - diameter_mm: 2.5
+            id: U$19:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 6.35
+            y_mm: -10.16
+          - diameter_mm: 2.5
+            id: U$21:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 6.35
+            y_mm: 10.16
+          mounting_hole_radius_name: m2
+          mounting_hole_radius_names:
+          - m2
+          - m2
+          - m2
+          - m2
+          mounting_holes:
+          - - -6.35
+            - -10.16
+          - - -6.35
+            - 10.16
+          - - 6.35
+            - -10.16
+          - - 6.35
+            - 10.16
+          mounting_layout: long_side
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_long_side
+        part_number: '2809'
+        part_number_adafruit: '2809'
+        pinout_status: unverified
+        pins: {}
+        research_date: '2026-10-23'
+        schema_version: 1
+        sources:
+        - id: product
+          kind: manufacturer_product_page
+          retrieved: '2026-10-23'
+          scope: identity, stated interfaces/features and recorded nominal dimensions
+          url: https://www.adafruit.com/product/2809
+        - bytes: 275587
+          id: mounting_cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Adafruit LIS3DH.brd
+          locator: Pinned manufacturer EAGLE board file Adafruit LIS3DH.brd at repository
+            commit f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861; current QT carrier board;
+            inspect layer 20 outline and all drill features.
+          registered_at: '2026-11-07T11:47:31+00:00'
+          sha256: 03ae0f643a10cde2a20468fbc716cbca3c4fd3d74e87913ea638f4fb324686e3
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/Adafruit%20LIS3DH.brd
+        - bytes: 103793
+          id: mounting_product
+          kind: manufacturer_product
+          local_file: mounting_evidence/product_2809.html
+          locator: Adafruit product page identifies Product ID 2809 as LIS3DH Triple-Axis
+            Accelerometer; current product identity.
+          registered_at: '2026-11-07T11:47:31+00:00'
+          sha256: b056b354fb565769cf70a4b908200cad7dff8ad27984ca648a372d7abaa0e36c
+          url: https://www.adafruit.com/product/2809
+        - bytes: 2139
+          id: mounting_repo_readme
+          kind: manufacturer_repository
+          local_file: mounting_evidence/README.md
+          locator: Pinned Adafruit repository README links to Product 2809 and describes
+            custom STEMMA QT form factor; repository explicitly states EagleCAD schematic
+            and layout files.
+          registered_at: '2026-11-07T11:47:47+00:00'
+          sha256: 3630ee20aefe174ce5cd77a21f073ccaec9f504c7eb5042bf8367272187d2eb9
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/README.md
+        taxonomy_1: electronic
+        taxonomy_10: ''
+        taxonomy_11: ''
+        taxonomy_12: ''
+        taxonomy_13: ''
+        taxonomy_14: adafruit
+        taxonomy_15: '2809'
+        taxonomy_2: breakout
+        taxonomy_3: sensor
+        taxonomy_4: motion
+        taxonomy_5: accelerometer
+        taxonomy_6: lis3dh
+        taxonomy_7: stemma_qt
+        taxonomy_8: ''
+        taxonomy_9: ''
+        taxonomy_schema: breakout_function_v1
+        type_1: sensor
+        type_2: motion
+        type_3: accelerometer
+        type_4: lis3dh
+        url_chat: ''
+        webpage: https://www.adafruit.com/product/2809
+        webpage_adafruit: https://www.adafruit.com/product/2809
+      dict_data_files: {}
+      dict_data_files_exists: {}
+      file_output: label_oomp.svg
+      file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+      search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+  oomp_key: oomp_electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+  part_number: '2809'
+  part_number_adafruit: '2809'
+  pinout_status: unverified
+  pins: {}
+  research_date: '2026-10-23'
+  schema_version: 1
+  short_name: ''
+  size: default_mounting_plate_default
+  sources:
+  - id: product
+    kind: manufacturer_product_page
+    retrieved: '2026-10-23'
+    scope: identity, stated interfaces/features and recorded nominal dimensions
+    url: https://www.adafruit.com/product/2809
+  - bytes: 275587
+    id: mounting_cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit LIS3DH.brd
+    locator: Pinned manufacturer EAGLE board file Adafruit LIS3DH.brd at repository
+      commit f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861; current QT carrier board; inspect
+      layer 20 outline and all drill features.
+    registered_at: '2026-11-07T11:47:31+00:00'
+    sha256: 03ae0f643a10cde2a20468fbc716cbca3c4fd3d74e87913ea638f4fb324686e3
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/Adafruit%20LIS3DH.brd
+  - bytes: 103793
+    id: mounting_product
+    kind: manufacturer_product
+    local_file: mounting_evidence/product_2809.html
+    locator: Adafruit product page identifies Product ID 2809 as LIS3DH Triple-Axis
+      Accelerometer; current product identity.
+    registered_at: '2026-11-07T11:47:31+00:00'
+    sha256: b056b354fb565769cf70a4b908200cad7dff8ad27984ca648a372d7abaa0e36c
+    url: https://www.adafruit.com/product/2809
+  - bytes: 2139
+    id: mounting_repo_readme
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Pinned Adafruit repository README links to Product 2809 and describes
+      custom STEMMA QT form factor; repository explicitly states EagleCAD schematic
+      and layout files.
+    registered_at: '2026-11-07T11:47:47+00:00'
+    sha256: 3630ee20aefe174ce5cd77a21f073ccaec9f504c7eb5042bf8367272187d2eb9
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-LIS3DH-Breakout-PCB/f5f3e1b33fec19a56b2c14c69bb1b97c1c4f2861/README.md
+  taxonomy_1: electronic
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_14_capital: Adafruit
+  taxonomy_14_first_letter: a
+  taxonomy_14_first_letter_upper: A
+  taxonomy_14_length_1: a
+  taxonomy_14_length_2: ad
+  taxonomy_14_length_3: ada
+  taxonomy_14_length_4: adaf
+  taxonomy_14_length_5: adafr
+  taxonomy_14_upper: ADAFRUIT
+  taxonomy_14_upper_length_1: A
+  taxonomy_14_upper_length_2: AD
+  taxonomy_14_upper_length_3: ADA
+  taxonomy_14_upper_length_4: ADAF
+  taxonomy_14_upper_length_5: ADAFR
+  taxonomy_15: '2809'
+  taxonomy_15_capital: '2809'
+  taxonomy_15_first_letter: '2'
+  taxonomy_15_first_letter_upper: '2'
+  taxonomy_15_length_1: '2'
+  taxonomy_15_length_2: '28'
+  taxonomy_15_length_3: '280'
+  taxonomy_15_length_4: '2809'
+  taxonomy_15_length_5: '2809'
+  taxonomy_15_upper: '2809'
+  taxonomy_15_upper_length_1: '2'
+  taxonomy_15_upper_length_2: '28'
+  taxonomy_15_upper_length_3: '280'
+  taxonomy_15_upper_length_4: '2809'
+  taxonomy_15_upper_length_5: '2809'
+  taxonomy_1_capital: Electronic
+  taxonomy_1_first_letter: e
+  taxonomy_1_first_letter_upper: E
+  taxonomy_1_length_1: e
+  taxonomy_1_length_2: el
+  taxonomy_1_length_3: ele
+  taxonomy_1_length_4: elec
+  taxonomy_1_length_5: elect
+  taxonomy_1_upper: ELECTRONIC
+  taxonomy_1_upper_length_1: E
+  taxonomy_1_upper_length_2: EL
+  taxonomy_1_upper_length_3: ELE
+  taxonomy_1_upper_length_4: ELEC
+  taxonomy_1_upper_length_5: ELECT
+  taxonomy_2: breakout
+  taxonomy_2_capital: Breakout
+  taxonomy_2_first_letter: b
+  taxonomy_2_first_letter_upper: B
+  taxonomy_2_length_1: b
+  taxonomy_2_length_2: br
+  taxonomy_2_length_3: bre
+  taxonomy_2_length_4: brea
+  taxonomy_2_length_5: break
+  taxonomy_2_upper: BREAKOUT
+  taxonomy_2_upper_length_1: B
+  taxonomy_2_upper_length_2: BR
+  taxonomy_2_upper_length_3: BRE
+  taxonomy_2_upper_length_4: BREA
+  taxonomy_2_upper_length_5: BREAK
+  taxonomy_3: sensor
+  taxonomy_3_capital: Sensor
+  taxonomy_3_first_letter: s
+  taxonomy_3_first_letter_upper: S
+  taxonomy_3_length_1: s
+  taxonomy_3_length_2: se
+  taxonomy_3_length_3: sen
+  taxonomy_3_length_4: sens
+  taxonomy_3_length_5: senso
+  taxonomy_3_upper: SENSOR
+  taxonomy_3_upper_length_1: S
+  taxonomy_3_upper_length_2: SE
+  taxonomy_3_upper_length_3: SEN
+  taxonomy_3_upper_length_4: SENS
+  taxonomy_3_upper_length_5: SENSO
+  taxonomy_4: motion
+  taxonomy_4_capital: Motion
+  taxonomy_4_first_letter: m
+  taxonomy_4_first_letter_upper: M
+  taxonomy_4_length_1: m
+  taxonomy_4_length_2: mo
+  taxonomy_4_length_3: mot
+  taxonomy_4_length_4: moti
+  taxonomy_4_length_5: motio
+  taxonomy_4_upper: MOTION
+  taxonomy_4_upper_length_1: M
+  taxonomy_4_upper_length_2: MO
+  taxonomy_4_upper_length_3: MOT
+  taxonomy_4_upper_length_4: MOTI
+  taxonomy_4_upper_length_5: MOTIO
+  taxonomy_5: accelerometer
+  taxonomy_5_capital: Accelerometer
+  taxonomy_5_first_letter: a
+  taxonomy_5_first_letter_upper: A
+  taxonomy_5_length_1: a
+  taxonomy_5_length_2: ac
+  taxonomy_5_length_3: acc
+  taxonomy_5_length_4: acce
+  taxonomy_5_length_5: accel
+  taxonomy_5_upper: ACCELEROMETER
+  taxonomy_5_upper_length_1: A
+  taxonomy_5_upper_length_2: AC
+  taxonomy_5_upper_length_3: ACC
+  taxonomy_5_upper_length_4: ACCE
+  taxonomy_5_upper_length_5: ACCEL
+  taxonomy_6: lis3dh
+  taxonomy_6_capital: Lis3Dh
+  taxonomy_6_first_letter: l
+  taxonomy_6_first_letter_upper: L
+  taxonomy_6_length_1: l
+  taxonomy_6_length_2: li
+  taxonomy_6_length_3: lis
+  taxonomy_6_length_4: lis3
+  taxonomy_6_length_5: lis3d
+  taxonomy_6_upper: LIS3DH
+  taxonomy_6_upper_length_1: L
+  taxonomy_6_upper_length_2: LI
+  taxonomy_6_upper_length_3: LIS
+  taxonomy_6_upper_length_4: LIS3
+  taxonomy_6_upper_length_5: LIS3D
+  taxonomy_7: stemma_qt
+  taxonomy_7_capital: Stemma Qt
+  taxonomy_7_first_letter: s
+  taxonomy_7_first_letter_upper: S
+  taxonomy_7_length_1: s
+  taxonomy_7_length_2: st
+  taxonomy_7_length_3: ste
+  taxonomy_7_length_4: stem
+  taxonomy_7_length_5: stemm
+  taxonomy_7_upper: STEMMA_QT
+  taxonomy_7_upper_length_1: S
+  taxonomy_7_upper_length_2: ST
+  taxonomy_7_upper_length_3: STE
+  taxonomy_7_upper_length_4: STEM
+  taxonomy_7_upper_length_5: STEMM
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_schema: breakout_function_v1
+  type: part
+  type_1: sensor
+  type_2: motion
+  type_3: accelerometer
+  type_4: lis3dh
+  url_chat: ''
+  webpage: https://www.adafruit.com/product/2809
+  webpage_adafruit: https://www.adafruit.com/product/2809
+type_1: sensor
+type_2: motion
+type_3: accelerometer
+type_4: lis3dh
+url_chat: ''
+webpage: https://www.adafruit.com/product/2809
+webpage_adafruit: https://www.adafruit.com/product/2809

@@ -1,0 +1,64 @@
+schema_version: 1
+part_id: electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress
+status: needs_review
+board_revision: null
+identity_evidence: null
+board_size: null
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: null
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: gpt-6-luna
+sources: []
+attempts:
+  - avenue: exact-product and dimension search
+    date: '2026-11-06'
+    details: >-
+      Searched for the exact 18 mm x 14 mm servo tester and purple PCB. Results
+      were unrelated designs or marketplace listings without a verified link to
+      this exact board or a dimensioned mechanical source.
+  - avenue: marketplace listing and seller search
+    date: '2026-11-06'
+    details: >-
+      Queried AliExpress marketplace archive/search pages for servo tester
+      listings. Found generic or differently sized products; no exact listing
+      identity or carrier revision could be established.
+  - avenue: manufacturer CAD and public hardware repository search
+    date: '2026-11-06'
+    details: >-
+      Searched for a manufacturer-linked CAD repository for this product. Search
+      results included unrelated open-source servo tester projects; none could
+      be tied to the assigned AliExpress board.
+  - avenue: fresh exact-dimension, color, and product-name web search
+    date: '2026-11-07'
+    details: >-
+      Repeated searches for an 18 mm x 14 mm purple servo tester PCB and for
+      remote-control servo tester listings. Results included unrelated servo
+      tester projects and marketplace listings, but no result identifies this
+      exact board, links it to a manufacturer, or supplies revision-linked CAD
+      or a dimensioned drawing. Search-result references included a Japanese
+      review of an unidentified AliExpress tester and third-party AliExpress
+      listing archives; neither establishes the assigned board's identity or
+      mechanical geometry.
+conflicts: []
+notes:
+  - >-
+    Precise gap: no exact product URL, manufacturer identity, carrier revision,
+    CAD, or dimensioned drawing is available. The nominal 18 mm x 14 mm in the
+    catalogue ID is not sufficient to establish the PCB outline or hole pattern.
+    Obtain exact product identity and revision-linked mechanical evidence before
+    extracting or confirming holes.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:00:23+00:00'

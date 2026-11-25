@@ -1,0 +1,60 @@
+SparkFun 6DoF IMU Breakout - BMI270 (Qwiic) Hookup Guide
+sparkfun/SparkFun_Qwiic_6DoF_BMI270/
+Hookup Guide
+Hookup Guide
+Introduction
+Introduction
+Table of contents
+Required Materials
+Suggested Reading
+Hardware Overview
+Hardware Assembly
+Software Setup and Programming
+Examples
+Resources
+Support
+Support
+Troubleshooting
+Submit Issues
+Contributing
+Hard Copy
+Table of contents
+Required Materials
+Suggested Reading
+Introduction
+The
+SparkFun 6DoF IMU Breakout - BMI270 (Qwiic)
+is a Qwiic enabled board based on the ultra-low power BMI270 from Bosch. This chip is a highly integrated, low power IMU designed for wearable, smart clothing and AR/VR applications. Not only does the BMI270 comprise a fast and sensitive accelerometer and gyro pair, but it also contains a number of intelligent, on-chip motion-triggered interrupt features.
+Purchase from SparkFun
+The
+SparkFun Micro 6DoF IMU Breakout - BMI270 (Qwiic)
+is the 1x1's mini-me, containing most of it's elder sibling's functionality in a tiny little package.
+Purchase from SparkFun
+Required Materials
+To follow along with this tutorial, you will need the following materials. You may not need everything though depending on what you have. Add it to your cart, read through the guide, and adjust the cart as necessary.
+SparkFun 6DoF IMU Breakout - BMI270 (Qwiic)
+SEN-22397
+SparkFun Micro 6DoF IMU Breakout - BMI270 (Qwiic)
+SEN-22398
+Flexible Qwiic Cable - 100mm
+PRT-17259
+USB micro-B Cable - 6 Foot
+CAB-10215
+SparkFun ESP32 Thing Plus
+DEV-15663
+Suggested Reading
+If you aren’t familiar with the following concepts, we recommend checking out these tutorials before continuing.
+I2C
+Serial Terminal Basics
+The SparkFun 6DoF IMU Breakout - BMI270 (Qwiic) Sensor takes advantage of the
+Qwiic connect system
+. We recommend familiarizing yourself with the
+Logic Levels
+and
+I
+2
+C
+tutorials.  Click on the banner above to learn more about
+Qwiic products
+.
+Back to top

@@ -1,0 +1,3919 @@
+assembly:
+    header_pitch_mm: 2.54
+    header_scope: main_expansion_headers_only
+    headers: with_headers
+bip_39_2_word_array:
+- heart
+- bleak
+bip_39_2_word_no_space: heartbleak
+bip_39_2_word_space: heart bleak
+bip_39_2_word_underscore: heart_bleak
+bip_39_3_word_array:
+- heart
+- bleak
+- survey
+bip_39_3_word_no_space: heartbleaksurvey
+bip_39_3_word_space: heart bleak survey
+bip_39_3_word_underscore: heart_bleak_survey
+bip_39_full_array:
+- heart
+- bleak
+- survey
+- quote
+- shaft
+- play
+- mask
+- moment
+- fury
+- menu
+- intact
+- verb
+bip_39_full_no_space: heartbleaksurveyquoteshaftplaymaskmomentfurymenuintactverb
+bip_39_full_space: heart bleak survey quote shaft play mask moment fury menu intact
+    verb
+bip_39_full_underscore: heart_bleak_survey_quote_shaft_play_mask_moment_fury_menu_intact_verb
+breakout_description: 18_mm_width_23_5_mm_height
+breakout_pcb_height: 23.5
+breakout_pcb_width: 18.0
+chip:
+    family: rp2350
+    oomp_id: electronic_ic_qfn_60_microcontroller_rp2_raspberry_pi_rp2350a
+    part_number: rp2350a
+    silicon_revision: null
+chip_resources:
+    clock_max_mhz: 150
+    cpu_core_count: 2
+    general_purpose_spi_controllers: 2
+    hardware_i2c_controllers: 2
+    hardware_uart_controllers: 2
+    pio_state_machines: 12
+    pwm_channels: 24
+    scope: silicon resources; board routing and firmware may reduce availability
+    source_id: chip_datasheet
+connectors:
+    bottom:
+        contact_count: 5
+        source_id: pinout
+    left:
+        contact_count: 9
+        source_id: pinout
+    right:
+        contact_count: 9
+        source_id: pinout
+    swd:
+        contact_count: 3
+        source_id: pinout
+    underside:
+        contact_count: 10
+        source_id: pinout
+coordinate_system:
+    origin: centre_of_pcb_outline
+    units: mm
+    view: top_with_usb_at_positive_y
+    x_positive: right
+    y_positive: towards_usb
+data_gaps:
+- Assembled height and component keepout envelopes have not been captured.
+- Underside pad centres, PCB thickness and header assembly height are not dimensioned
+    in the captured drawing.
+default_interfaces:
+    i2c:
+        api: Wire
+        basis: framework_defaults
+        framework: arduino-pico
+        notes: []
+        peripheral: i2c0
+        pin_keys:
+            scl:
+            - right_6
+            sda:
+            - right_5
+        protocol: i2c
+        scl_gpio: 5
+        sda_gpio: 4
+        signal_status:
+            scl: mapped
+            sda: mapped
+        source_ids:
+        - interface_variant
+        - interface_board_selection
+        - interface_runtime_i2c
+        status: documented
+        variant: waveshare_rp2350_zero
+        variant_scope: board_variant
+    i2c_secondary:
+        api: Wire1
+        basis: framework_defaults
+        framework: arduino-pico
+        notes: []
+        peripheral: i2c1
+        pin_keys:
+            scl:
+            - left_6
+            sda:
+            - left_7
+        protocol: i2c
+        scl_gpio: 27
+        sda_gpio: 26
+        signal_status:
+            scl: mapped
+            sda: mapped
+        source_ids:
+        - interface_variant
+        - interface_board_selection
+        - interface_runtime_i2c
+        status: documented
+        variant: waveshare_rp2350_zero
+        variant_scope: board_variant
+    spi:
+        api: SPI
+        basis: framework_defaults
+        framework: arduino-pico
+        miso_gpio: 4
+        mosi_gpio: 3
+        notes:
+        - ss is the framework chip-select alias/default, not an automatically asserted
+            CS. Select and drive CS as required by the peripheral and library.
+        peripheral: spi0
+        pin_keys:
+            miso:
+            - right_5
+            mosi:
+            - right_4
+            sck:
+            - right_3
+            ss:
+            - right_6
+        protocol: spi
+        sck_gpio: 2
+        signal_status:
+            miso: mapped
+            mosi: mapped
+            sck: mapped
+            ss: mapped
+        source_ids:
+        - interface_variant
+        - interface_board_selection
+        - interface_runtime_spi
+        ss_gpio: 5
+        status: documented
+        variant: waveshare_rp2350_zero
+        variant_scope: board_variant
+    spi_secondary:
+        api: SPI1
+        basis: framework_defaults
+        framework: arduino-pico
+        miso_gpio: 12
+        mosi_gpio: 15
+        notes:
+        - ss is the framework chip-select alias/default, not an automatically asserted
+            CS. Select and drive CS as required by the peripheral and library.
+        peripheral: spi1
+        pin_keys:
+            miso:
+            - bottom_2
+            mosi:
+            - left_8
+            sck:
+            - left_9
+            ss:
+            - bottom_1
+        protocol: spi
+        sck_gpio: 14
+        signal_status:
+            miso: mapped
+            mosi: mapped
+            sck: mapped
+            ss: mapped
+        source_ids:
+        - interface_variant
+        - interface_board_selection
+        - interface_runtime_spi
+        ss_gpio: 13
+        status: documented
+        variant: waveshare_rp2350_zero
+        variant_scope: board_variant
+    uart:
+        api: Serial1
+        basis: framework_defaults
+        framework: arduino-pico
+        notes:
+        - UART GPIOs are distinct from USB CDC/USB Serial. The meaning of Serial depends
+            on the core and USB build settings.
+        peripheral: uart0
+        pin_keys:
+            rx:
+            - right_2
+            tx:
+            - right_1
+        protocol: uart
+        rx_gpio: 1
+        signal_status:
+            rx: mapped
+            tx: mapped
+        source_ids:
+        - interface_variant
+        - interface_board_selection
+        - interface_runtime_uart
+        status: documented
+        tx_gpio: 0
+        variant: waveshare_rp2350_zero
+        variant_scope: board_variant
+    uart_secondary:
+        api: Serial2
+        basis: framework_defaults
+        framework: arduino-pico
+        notes:
+        - UART GPIOs are distinct from USB CDC/USB Serial. The meaning of Serial depends
+            on the core and USB build settings.
+        peripheral: uart1
+        pin_keys:
+            rx:
+            - bottom_5
+            tx:
+            - right_9
+        protocol: uart
+        rx_gpio: 9
+        signal_status:
+            rx: mapped
+            tx: mapped
+        source_ids:
+        - interface_variant
+        - interface_board_selection
+        - interface_runtime_uart
+        status: documented
+        tx_gpio: 8
+        variant: waveshare_rp2350_zero
+        variant_scope: board_variant
+definition_import:
+    date: '2026-10-22'
+    path: source_file/electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m/definition.yaml
+    project: oobb_electronic_microcontroller_web_based_lab
+    sha256: a7065e3d924aaed906083e475b68f43871fa8a41dc18ec9d2cd36432db50af04
+dimensions_mm:
+    assembled_height: null
+    height: 23.5
+    pcb_thickness: null
+    scope: pcb_outline_excludes_usb_overhang
+    source_id: mechanical
+    width: 18
+directory: parts/electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m
+electrical:
+    gpio_5v_tolerant: false
+    logic_voltage_v: 3.3
+    usb_connector: usb_c
+form_factor: zero
+gpio_summary:
+    analog_candidates:
+    - 26
+    - 27
+    - 28
+    - 29
+    automatic_firmware_enable: false
+    exposed:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    general_io_candidates:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+id: electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m
+id_no_class: electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m
+id_no_size: electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m
+id_no_type: electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m
+interface_defaults_version: 1
+item_kind: breakout
+lab_support:
+    automatic_firmware_enable: false
+    gpio_matrix_routing: false
+    requires_reviewed_board_profile: true
+    status: catalogue_reference_only
+legacy_ids: []
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m
+manufacturer: waveshare
+md5: 6a42f36ad80c4f4ca21c775e7165d679
+md5_10: 6a42f36ad8
+md5_10_upper: 6A42F36AD8
+md5_5: 6a42f
+md5_5_upper: 6A42F
+md5_6: 6a42f3
+md5_6_alpha: 459f7
+md5_6_alpha_upper: 459F7
+md5_6_upper: 6A42F3
+memory:
+    external_flash_bytes: 4194304
+mounting_coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+mounting_geometry_ready: false
+mounting_hole_candidates: []
+mounting_hole_details: []
+mounting_hole_radius_name: m2
+mounting_hole_radius_names: []
+mounting_hole_status: no_holes
+mounting_holes: []
+mounting_lift: 3
+mounting_research:
+    board_revision: Waveshare RP2350-Zero RP2350A board, RP2350-Zero-M pre-soldered-header
+        option; STEP model contains soldered headers but publishes no PCB revision
+        code.
+    board_size:
+    - 18.0
+    - 23.5
+    coordinate_system:
+        origin: pcb_bounding_box_centre
+        units: mm
+        view: top
+        x_positive: right
+        y_positive: up
+    derivation: "Board size is directly labelled 18.00 x 23.50 mm on the official\
+        \ dimensioned top view (mechanical). Coordinate frame: native STEP x increases\
+        \ right and y increases from the non-USB edge toward USB; centre using x_mm=x_native-9.000\
+        \ and y_mm=y_native-11.750, with top view and +Y toward USB. STEP board solid\
+        \ 0 has native bounds approximately x=-0.009..18.009, y=-0.014..23.509 mm\
+        \ due CAD tolerance. Reviewed all 25 cylindrical faces on solid 0: 23 \xC3\
+        \u02DC0.900 mm through-hole header-contact drills in the two side rows and\
+        \ bottom edge array, plus two \xC3\u02DC0.700 mm connector anchor features\
+        \ at native x\xE2\u2030\u02C66.100/11.880, y\xE2\u2030\u02C618.272 mm associated\
+        \ with the USB connector. These are electrical header pads or connector anchors,\
+        \ not board mounting holes. Complete board solid has no remaining discrete\
+        \ mounting-hole candidate. The standard-hole list is explicitly empty."
+    fit_status: generic_holder_not_physical_fit_tested
+    identity_evidence: Waveshare identifies RP2350-Zero-M as RP2350-Zero with pre-soldered
+        header; its official RP2350-Zero wiki links the archived RP2350-Zero.step
+        model. The STEP assembly contains the two header rows; the board body is the
+        same 18 x 23.5 mm carrier shown by the manufacturer drawing. No separate M-specific
+        PCB revision is stated.
+    mounting_holes: []
+    record_sha256: 75bb9d98c83a8cf4a54fd02fd4632aabc6c6a6e08353e6a1bc8d37432bd714df
+    research_file: source_file/electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m/mounting.yaml
+    reviewed_by: gpt-6-luna
+    sources:
+    -   bytes: 3361569
+        id: cad_archive
+        kind: manufacturer_cad_archive
+        local_file: mounting_evidence/RP2350_Zero_step.zip
+        locator: Waveshare RP2350-Zero STEP archive; exact member RP2350-Zero.step,
+            fetched 2026-11-06; 130 solids including PCB and soldered header assembly.
+        registered_at: '2026-11-06T16:37:54+00:00'
+        sha256: 392250d4a9dcb1f9e3c10a684d958419a7be0557424295a7f7f8ed31fb7f74dc
+        url: https://files.waveshare.com/wiki/RP2350-Zero/RP2350_Zero_step.zip
+    -   bytes: 21063899
+        id: cad
+        kind: manufacturer_cad
+        local_file: mounting_evidence/RP2350-Zero.step
+        locator: Exact STEP member RP2350-Zero.step from linked Waveshare archive;
+            PCB body bounds 18.018 x 23.523 mm with 25 cylindrical pad/connector features;
+            no separate board mounting holes.
+        registered_at: '2026-11-06T16:37:54+00:00'
+        sha256: 35e056647c8cc47ff86458baefa52e94cba55adef9d489f9e061be726c42434a
+        url: https://files.waveshare.com/wiki/RP2350-Zero/RP2350_Zero_step.zip
+    -   bytes: 93864
+        id: product
+        kind: manufacturer_product
+        local_file: mounting_evidence/RP2350-Zero-wiki.html
+        locator: Official RP2350-Zero product wiki and its STEP/schematic resource
+            links; supports board identity and mechanical model provenance.
+        registered_at: '2026-11-06T16:37:54+00:00'
+        sha256: 1f26e7b5fa99bf944fd2deae91ec50fe9479cab0e2f15abdd8943ffe0a61f345
+        url: https://www.waveshare.net/wiki/RP2350-Zero
+    -   bytes: 35694
+        id: mechanical
+        kind: manufacturer_drawing
+        local_file: reference/mechanical.jpg
+        locator: Archived hash matches mounting_context.json; dimensioned top view
+            labels PCB 18.00 x 23.50 mm, pin-pad array and outline; no mounting holes
+            depicted.
+        registered_at: '2026-11-06T16:37:54+00:00'
+        sha256: 84a88af49be5d0b212055fa8717b9d939feb44aaffc1bac6829ee33c0edd8108
+        url: https://www.waveshare.net/w/upload/thumb/6/6f/RP2350-Zero-details-size.jpg/800px-RP2350-Zero-details-size.jpg
+    status: no_holes
+name: Electronic Breakout Microcontroller Rp2350A Zero With Headers 18 Mm Width 23
+    5 Mm Height Waveshare Rp2350 Zero M
+name_no_class: Electronic Breakout Microcontroller Rp2350A Zero With Headers 18 Mm
+    Width 23 5 Mm Height Waveshare Rp2350 Zero M
+name_no_size: Electronic Breakout Microcontroller Rp2350A Zero With Headers 18 Mm
+    Width 23 5 Mm Height Waveshare Rp2350 Zero M
+name_no_type: Electronic Breakout Microcontroller Rp2350A Zero With Headers 18 Mm
+    Width 23 5 Mm Height Waveshare Rp2350 Zero M
+name_proper: Electronic Breakout Microcontroller Rp2350A Zero With Headers 18 Mm Width
+    23 5 Mm Height Waveshare Rp2350 Zero M
+name_readable: Waveshare RP2350-ZERO-M
+name_space: electronic breakout microcontroller rp2350a zero with headers 18 mm width
+    23 5 mm height waveshare rp2350 zero m
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2350A ZERO WITH HEADERS 18 MM WIDTH
+    23 5 MM HEIGHT WAVESHARE RP2350 ZERO M
+notes:
+- left/right pins are numbered top-to-bottom; bottom pins left-to-right in the top
+    USB-up view. These are catalogue position numbers, not manufacturer connector
+    numbering.
+- 9 pins per side plus 5 along bottom. Header assembly concerns these 23 perimeter
+    contacts; underside pads remain solder pads.
+onboard_gpio_connections:
+-   function: ws2812_data
+    gpio: 16
+    source_id: pinout
+oobb_details: []
+oomlout_ai_roboclick_1:
+    actions:
+    -   command: text_jinja_template
+        convert_to_pdf: false
+        convert_to_png: false
+        dict_data:
+            assembly:
+                header_pitch_mm: 2.54
+                header_scope: main_expansion_headers_only
+                headers: with_headers
+            breakout_description: 18_mm_width_23_5_mm_height
+            breakout_pcb_height: 23.5
+            breakout_pcb_width: 18.0
+            chip:
+                family: rp2350
+                oomp_id: electronic_ic_qfn_60_microcontroller_rp2_raspberry_pi_rp2350a
+                part_number: rp2350a
+                silicon_revision: null
+            chip_resources:
+                clock_max_mhz: 150
+                cpu_core_count: 2
+                general_purpose_spi_controllers: 2
+                hardware_i2c_controllers: 2
+                hardware_uart_controllers: 2
+                pio_state_machines: 12
+                pwm_channels: 24
+                scope: silicon resources; board routing and firmware may reduce availability
+                source_id: chip_datasheet
+            connectors:
+                bottom:
+                    contact_count: 5
+                    source_id: pinout
+                left:
+                    contact_count: 9
+                    source_id: pinout
+                right:
+                    contact_count: 9
+                    source_id: pinout
+                swd:
+                    contact_count: 3
+                    source_id: pinout
+                underside:
+                    contact_count: 10
+                    source_id: pinout
+            coordinate_system:
+                origin: centre_of_pcb_outline
+                units: mm
+                view: top_with_usb_at_positive_y
+                x_positive: right
+                y_positive: towards_usb
+            data_gaps:
+            - Assembled height and component keepout envelopes have not been captured.
+            - Underside pad centres, PCB thickness and header assembly height are
+                not dimensioned in the captured drawing.
+            default_interfaces:
+                i2c:
+                    api: Wire
+                    basis: framework_defaults
+                    framework: arduino-pico
+                    notes: []
+                    peripheral: i2c0
+                    pin_keys:
+                        scl:
+                        - right_6
+                        sda:
+                        - right_5
+                    protocol: i2c
+                    scl_gpio: 5
+                    sda_gpio: 4
+                    signal_status:
+                        scl: mapped
+                        sda: mapped
+                    source_ids:
+                    - interface_variant
+                    - interface_board_selection
+                    - interface_runtime_i2c
+                    status: documented
+                    variant: waveshare_rp2350_zero
+                    variant_scope: board_variant
+                i2c_secondary:
+                    api: Wire1
+                    basis: framework_defaults
+                    framework: arduino-pico
+                    notes: []
+                    peripheral: i2c1
+                    pin_keys:
+                        scl:
+                        - left_6
+                        sda:
+                        - left_7
+                    protocol: i2c
+                    scl_gpio: 27
+                    sda_gpio: 26
+                    signal_status:
+                        scl: mapped
+                        sda: mapped
+                    source_ids:
+                    - interface_variant
+                    - interface_board_selection
+                    - interface_runtime_i2c
+                    status: documented
+                    variant: waveshare_rp2350_zero
+                    variant_scope: board_variant
+                spi:
+                    api: SPI
+                    basis: framework_defaults
+                    framework: arduino-pico
+                    miso_gpio: 4
+                    mosi_gpio: 3
+                    notes:
+                    - ss is the framework chip-select alias/default, not an automatically
+                        asserted CS. Select and drive CS as required by the peripheral
+                        and library.
+                    peripheral: spi0
+                    pin_keys:
+                        miso:
+                        - right_5
+                        mosi:
+                        - right_4
+                        sck:
+                        - right_3
+                        ss:
+                        - right_6
+                    protocol: spi
+                    sck_gpio: 2
+                    signal_status:
+                        miso: mapped
+                        mosi: mapped
+                        sck: mapped
+                        ss: mapped
+                    source_ids:
+                    - interface_variant
+                    - interface_board_selection
+                    - interface_runtime_spi
+                    ss_gpio: 5
+                    status: documented
+                    variant: waveshare_rp2350_zero
+                    variant_scope: board_variant
+                spi_secondary:
+                    api: SPI1
+                    basis: framework_defaults
+                    framework: arduino-pico
+                    miso_gpio: 12
+                    mosi_gpio: 15
+                    notes:
+                    - ss is the framework chip-select alias/default, not an automatically
+                        asserted CS. Select and drive CS as required by the peripheral
+                        and library.
+                    peripheral: spi1
+                    pin_keys:
+                        miso:
+                        - bottom_2
+                        mosi:
+                        - left_8
+                        sck:
+                        - left_9
+                        ss:
+                        - bottom_1
+                    protocol: spi
+                    sck_gpio: 14
+                    signal_status:
+                        miso: mapped
+                        mosi: mapped
+                        sck: mapped
+                        ss: mapped
+                    source_ids:
+                    - interface_variant
+                    - interface_board_selection
+                    - interface_runtime_spi
+                    ss_gpio: 13
+                    status: documented
+                    variant: waveshare_rp2350_zero
+                    variant_scope: board_variant
+                uart:
+                    api: Serial1
+                    basis: framework_defaults
+                    framework: arduino-pico
+                    notes:
+                    - UART GPIOs are distinct from USB CDC/USB Serial. The meaning
+                        of Serial depends on the core and USB build settings.
+                    peripheral: uart0
+                    pin_keys:
+                        rx:
+                        - right_2
+                        tx:
+                        - right_1
+                    protocol: uart
+                    rx_gpio: 1
+                    signal_status:
+                        rx: mapped
+                        tx: mapped
+                    source_ids:
+                    - interface_variant
+                    - interface_board_selection
+                    - interface_runtime_uart
+                    status: documented
+                    tx_gpio: 0
+                    variant: waveshare_rp2350_zero
+                    variant_scope: board_variant
+                uart_secondary:
+                    api: Serial2
+                    basis: framework_defaults
+                    framework: arduino-pico
+                    notes:
+                    - UART GPIOs are distinct from USB CDC/USB Serial. The meaning
+                        of Serial depends on the core and USB build settings.
+                    peripheral: uart1
+                    pin_keys:
+                        rx:
+                        - bottom_5
+                        tx:
+                        - right_9
+                    protocol: uart
+                    rx_gpio: 9
+                    signal_status:
+                        rx: mapped
+                        tx: mapped
+                    source_ids:
+                    - interface_variant
+                    - interface_board_selection
+                    - interface_runtime_uart
+                    status: documented
+                    tx_gpio: 8
+                    variant: waveshare_rp2350_zero
+                    variant_scope: board_variant
+            definition_import:
+                date: '2026-10-22'
+                path: source_file/electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m/definition.yaml
+                project: oobb_electronic_microcontroller_web_based_lab
+                sha256: a7065e3d924aaed906083e475b68f43871fa8a41dc18ec9d2cd36432db50af04
+            dimensions_mm:
+                assembled_height: null
+                height: 23.5
+                pcb_thickness: null
+                scope: pcb_outline_excludes_usb_overhang
+                source_id: mechanical
+                width: 18
+            directory: parts\electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m
+            electrical:
+                gpio_5v_tolerant: false
+                logic_voltage_v: 3.3
+                usb_connector: usb_c
+            form_factor: zero
+            gpio_summary:
+                analog_candidates:
+                - 26
+                - 27
+                - 28
+                - 29
+                automatic_firmware_enable: false
+                exposed:
+                - 0
+                - 1
+                - 2
+                - 3
+                - 4
+                - 5
+                - 6
+                - 7
+                - 8
+                - 9
+                - 10
+                - 11
+                - 12
+                - 13
+                - 14
+                - 15
+                - 17
+                - 18
+                - 19
+                - 20
+                - 21
+                - 22
+                - 23
+                - 24
+                - 25
+                - 26
+                - 27
+                - 28
+                - 29
+                general_io_candidates:
+                - 0
+                - 1
+                - 2
+                - 3
+                - 4
+                - 5
+                - 6
+                - 7
+                - 8
+                - 9
+                - 10
+                - 11
+                - 12
+                - 13
+                - 14
+                - 15
+                - 17
+                - 18
+                - 19
+                - 20
+                - 21
+                - 22
+                - 23
+                - 24
+                - 25
+                - 26
+                - 27
+                - 28
+                - 29
+            interface_defaults_version: 1
+            item_kind: breakout
+            lab_support:
+                automatic_firmware_enable: false
+                gpio_matrix_routing: false
+                requires_reviewed_board_profile: true
+                status: catalogue_reference_only
+            legacy_ids: []
+            manufacturer: waveshare
+            memory:
+                external_flash_bytes: 4194304
+            mounting_coordinate_system:
+                origin: pcb_bounding_box_centre
+                units: mm
+                view: top
+                x_positive: right
+                y_positive: up
+            mounting_geometry_ready: false
+            mounting_hole_candidates: []
+            mounting_hole_details: []
+            mounting_hole_radius_name: m2
+            mounting_hole_radius_names: []
+            mounting_hole_status: no_holes
+            mounting_holes: []
+            mounting_lift: 3
+            mounting_research:
+                board_revision: Waveshare RP2350-Zero RP2350A board, RP2350-Zero-M
+                    pre-soldered-header option; STEP model contains soldered headers
+                    but publishes no PCB revision code.
+                board_size:
+                - 18.0
+                - 23.5
+                coordinate_system:
+                    origin: pcb_bounding_box_centre
+                    units: mm
+                    view: top
+                    x_positive: right
+                    y_positive: up
+                derivation: "Board size is directly labelled 18.00 x 23.50 mm on the\
+                    \ official dimensioned top view (mechanical). Coordinate frame:\
+                    \ native STEP x increases right and y increases from the non-USB\
+                    \ edge toward USB; centre using x_mm=x_native-9.000 and y_mm=y_native-11.750,\
+                    \ with top view and +Y toward USB. STEP board solid 0 has native\
+                    \ bounds approximately x=-0.009..18.009, y=-0.014..23.509 mm due\
+                    \ CAD tolerance. Reviewed all 25 cylindrical faces on solid 0:\
+                    \ 23 \xC3\u02DC0.900 mm through-hole header-contact drills in\
+                    \ the two side rows and bottom edge array, plus two \xC3\u02DC\
+                    0.700 mm connector anchor features at native x\xE2\u2030\u02C6\
+                    6.100/11.880, y\xE2\u2030\u02C618.272 mm associated with the USB\
+                    \ connector. These are electrical header pads or connector anchors,\
+                    \ not board mounting holes. Complete board solid has no remaining\
+                    \ discrete mounting-hole candidate. The standard-hole list is\
+                    \ explicitly empty."
+                fit_status: generic_holder_not_physical_fit_tested
+                identity_evidence: Waveshare identifies RP2350-Zero-M as RP2350-Zero
+                    with pre-soldered header; its official RP2350-Zero wiki links
+                    the archived RP2350-Zero.step model. The STEP assembly contains
+                    the two header rows; the board body is the same 18 x 23.5 mm carrier
+                    shown by the manufacturer drawing. No separate M-specific PCB
+                    revision is stated.
+                mounting_holes: []
+                record_sha256: 75bb9d98c83a8cf4a54fd02fd4632aabc6c6a6e08353e6a1bc8d37432bd714df
+                research_file: source_file/electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m/mounting.yaml
+                reviewed_by: gpt-6-luna
+                sources:
+                -   bytes: 3361569
+                    id: cad_archive
+                    kind: manufacturer_cad_archive
+                    local_file: mounting_evidence/RP2350_Zero_step.zip
+                    locator: Waveshare RP2350-Zero STEP archive; exact member RP2350-Zero.step,
+                        fetched 2026-11-06; 130 solids including PCB and soldered
+                        header assembly.
+                    registered_at: '2026-11-06T16:37:54+00:00'
+                    sha256: 392250d4a9dcb1f9e3c10a684d958419a7be0557424295a7f7f8ed31fb7f74dc
+                    url: https://files.waveshare.com/wiki/RP2350-Zero/RP2350_Zero_step.zip
+                -   bytes: 21063899
+                    id: cad
+                    kind: manufacturer_cad
+                    local_file: mounting_evidence/RP2350-Zero.step
+                    locator: Exact STEP member RP2350-Zero.step from linked Waveshare
+                        archive; PCB body bounds 18.018 x 23.523 mm with 25 cylindrical
+                        pad/connector features; no separate board mounting holes.
+                    registered_at: '2026-11-06T16:37:54+00:00'
+                    sha256: 35e056647c8cc47ff86458baefa52e94cba55adef9d489f9e061be726c42434a
+                    url: https://files.waveshare.com/wiki/RP2350-Zero/RP2350_Zero_step.zip
+                -   bytes: 93864
+                    id: product
+                    kind: manufacturer_product
+                    local_file: mounting_evidence/RP2350-Zero-wiki.html
+                    locator: Official RP2350-Zero product wiki and its STEP/schematic
+                        resource links; supports board identity and mechanical model
+                        provenance.
+                    registered_at: '2026-11-06T16:37:54+00:00'
+                    sha256: 1f26e7b5fa99bf944fd2deae91ec50fe9479cab0e2f15abdd8943ffe0a61f345
+                    url: https://www.waveshare.net/wiki/RP2350-Zero
+                -   bytes: 35694
+                    id: mechanical
+                    kind: manufacturer_drawing
+                    local_file: reference/mechanical.jpg
+                    locator: Archived hash matches mounting_context.json; dimensioned
+                        top view labels PCB 18.00 x 23.50 mm, pin-pad array and outline;
+                        no mounting holes depicted.
+                    registered_at: '2026-11-06T16:37:54+00:00'
+                    sha256: 84a88af49be5d0b212055fa8717b9d939feb44aaffc1bac6829ee33c0edd8108
+                    url: https://www.waveshare.net/w/upload/thumb/6/6f/RP2350-Zero-details-size.jpg/800px-RP2350-Zero-details-size.jpg
+                status: no_holes
+            name: electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m
+            name_proper: Electronic Breakout Microcontroller Rp2350A Zero With Headers
+                18 Mm Width 23 5 Mm Height Waveshare Rp2350 Zero M
+            name_readable: Waveshare RP2350-ZERO-M
+            name_space: electronic breakout microcontroller rp2350a zero with headers
+                18 mm width 23 5 mm height waveshare rp2350 zero m
+            name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER RP2350A ZERO WITH HEADERS
+                18 MM WIDTH 23 5 MM HEIGHT WAVESHARE RP2350 ZERO M
+            notes:
+            - left/right pins are numbered top-to-bottom; bottom pins left-to-right
+                in the top USB-up view. These are catalogue position numbers, not
+                manufacturer connector numbering.
+            - 9 pins per side plus 5 along bottom. Header assembly concerns these
+                23 perimeter contacts; underside pads remain solder pads.
+            onboard_gpio_connections:
+            -   function: ws2812_data
+                gpio: 16
+                source_id: pinout
+            oobb_details: []
+            part_number: rp2350_zero_m
+            pinout_scope: Listed expansion connectors and debug/test pads. USB socket
+                contacts and component pads are excluded.
+            pinout_status: documented_contact_inventory
+            pins:
+                bottom_1:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '17'
+                    connector: bottom
+                    default_interface_roles:
+                    -   interface: spi_secondary
+                        signal: ss
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM6B
+                    - PIO
+                    - UART0_RX
+                    - I2C0_SCL
+                    - SPI1_CSn
+                    geometry_source_id: mechanical
+                    gpio: 13
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO13
+                    number: '1'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: -5.08
+                    y_mm: -10.16
+                bottom_2:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '16'
+                    connector: bottom
+                    default_interface_roles:
+                    -   interface: spi_secondary
+                        signal: miso
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM6A
+                    - PIO
+                    - UART0_TX
+                    - I2C0_SDA
+                    - SPI1_RX
+                    geometry_source_id: mechanical
+                    gpio: 12
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO12
+                    number: '2'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: -2.54
+                    y_mm: -10.16
+                bottom_3:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '15'
+                    connector: bottom
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM5B
+                    - PIO
+                    - UART1_RTS
+                    - I2C1_SCL
+                    - SPI1_TX
+                    geometry_source_id: mechanical
+                    gpio: 11
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO11
+                    number: '3'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: 0.0
+                    y_mm: -10.16
+                bottom_4:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '14'
+                    connector: bottom
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM5A
+                    - PIO
+                    - UART1_CTS
+                    - I2C1_SDA
+                    - SPI1_SCK
+                    geometry_source_id: mechanical
+                    gpio: 10
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO10
+                    number: '4'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: 2.54
+                    y_mm: -10.16
+                bottom_5:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '13'
+                    connector: bottom
+                    default_interface_roles:
+                    -   interface: uart_secondary
+                        signal: rx
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM4B
+                    - PIO
+                    - UART1_RX
+                    - I2C0_SCL
+                    - SPI1_CSn
+                    geometry_source_id: mechanical
+                    gpio: 9
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO9
+                    number: '5'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: 5.08
+                    y_mm: -10.16
+                left_1:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: false
+                    capabilities: []
+                    chip_pin_number: null
+                    connector: left
+                    default_interface_roles: []
+                    direction: not_applicable
+                    functions:
+                    - 5V
+                    geometry_source_id: mechanical
+                    gpio: null
+                    name: 5V
+                    number: '1'
+                    restrictions: []
+                    side: both
+                    signal_types: []
+                    source_id: pinout
+                    surface: unspecified
+                    type: power
+                    x_mm: -7.62
+                    y_mm: 10.16
+                left_2:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: false
+                    capabilities: []
+                    chip_pin_number: null
+                    connector: left
+                    default_interface_roles: []
+                    direction: not_applicable
+                    functions:
+                    - GND
+                    geometry_source_id: mechanical
+                    gpio: null
+                    name: GND
+                    number: '2'
+                    restrictions: []
+                    side: both
+                    signal_types: []
+                    source_id: pinout
+                    surface: unspecified
+                    type: ground
+                    x_mm: -7.62
+                    y_mm: 7.62
+                left_3:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: false
+                    capabilities: []
+                    chip_pin_number: null
+                    connector: left
+                    default_interface_roles: []
+                    direction: not_applicable
+                    functions:
+                    - 3V3
+                    geometry_source_id: mechanical
+                    gpio: null
+                    name: 3V3
+                    number: '3'
+                    restrictions: []
+                    side: both
+                    signal_types: []
+                    source_id: pinout
+                    surface: unspecified
+                    type: power
+                    x_mm: -7.62
+                    y_mm: 5.08
+                left_4:
+                    adc_channel: 3
+                    adc_unit: 0
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    - analog_input
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '43'
+                    connector: left
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM6B
+                    - PIO
+                    - UART0_RX
+                    - I2C0_SCL
+                    - SPI1_CSn
+                    geometry_source_id: mechanical
+                    gpio: 29
+                    input_only: false
+                    lab_analog_eligible: true
+                    logic_voltage_v: 3.3
+                    name: GPIO29
+                    number: '4'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    - analog
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: -7.62
+                    y_mm: 2.54
+                left_5:
+                    adc_channel: 2
+                    adc_unit: 0
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    - analog_input
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '42'
+                    connector: left
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM6A
+                    - PIO
+                    - UART0_TX
+                    - I2C0_SDA
+                    - SPI1_RX
+                    geometry_source_id: mechanical
+                    gpio: 28
+                    input_only: false
+                    lab_analog_eligible: true
+                    logic_voltage_v: 3.3
+                    name: GPIO28
+                    number: '5'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    - analog
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: -7.62
+                    y_mm: 0.0
+                left_6:
+                    adc_channel: 1
+                    adc_unit: 0
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    - analog_input
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '41'
+                    connector: left
+                    default_interface_roles:
+                    -   interface: i2c_secondary
+                        signal: scl
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM5B
+                    - PIO
+                    - UART1_RTS
+                    - I2C1_SCL
+                    - SPI1_TX
+                    geometry_source_id: mechanical
+                    gpio: 27
+                    input_only: false
+                    lab_analog_eligible: true
+                    logic_voltage_v: 3.3
+                    name: GPIO27
+                    number: '6'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    - analog
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: -7.62
+                    y_mm: -2.54
+                left_7:
+                    adc_channel: 0
+                    adc_unit: 0
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    - analog_input
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '40'
+                    connector: left
+                    default_interface_roles:
+                    -   interface: i2c_secondary
+                        signal: sda
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM5A
+                    - PIO
+                    - UART1_CTS
+                    - I2C1_SDA
+                    - SPI1_SCK
+                    geometry_source_id: mechanical
+                    gpio: 26
+                    input_only: false
+                    lab_analog_eligible: true
+                    logic_voltage_v: 3.3
+                    name: GPIO26
+                    number: '7'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    - analog
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: -7.62
+                    y_mm: -5.08
+                left_8:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '19'
+                    connector: left
+                    default_interface_roles:
+                    -   interface: spi_secondary
+                        signal: mosi
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM7B
+                    - PIO
+                    - UART0_RTS
+                    - I2C1_SCL
+                    - SPI1_TX
+                    geometry_source_id: mechanical
+                    gpio: 15
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO15
+                    number: '8'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: -7.62
+                    y_mm: -7.62
+                left_9:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '18'
+                    connector: left
+                    default_interface_roles:
+                    -   interface: spi_secondary
+                        signal: sck
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM7A
+                    - PIO
+                    - UART0_CTS
+                    - I2C1_SDA
+                    - SPI1_SCK
+                    geometry_source_id: mechanical
+                    gpio: 14
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO14
+                    number: '9'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: -7.62
+                    y_mm: -10.16
+                right_1:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '2'
+                    connector: right
+                    default_interface_roles:
+                    -   interface: uart
+                        signal: tx
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM0A
+                    - PIO
+                    - UART0_TX
+                    - I2C0_SDA
+                    - SPI0_RX
+                    geometry_source_id: mechanical
+                    gpio: 0
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO0
+                    number: '1'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: 7.62
+                    y_mm: 10.16
+                right_2:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '3'
+                    connector: right
+                    default_interface_roles:
+                    -   interface: uart
+                        signal: rx
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM0B
+                    - PIO
+                    - UART0_RX
+                    - I2C0_SCL
+                    - SPI0_CSn
+                    geometry_source_id: mechanical
+                    gpio: 1
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO1
+                    number: '2'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: 7.62
+                    y_mm: 7.62
+                right_3:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '4'
+                    connector: right
+                    default_interface_roles:
+                    -   interface: spi
+                        signal: sck
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM1A
+                    - PIO
+                    - UART0_CTS
+                    - I2C1_SDA
+                    - SPI0_SCK
+                    geometry_source_id: mechanical
+                    gpio: 2
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO2
+                    number: '3'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: 7.62
+                    y_mm: 5.08
+                right_4:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '5'
+                    connector: right
+                    default_interface_roles:
+                    -   interface: spi
+                        signal: mosi
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM1B
+                    - PIO
+                    - UART0_RTS
+                    - I2C1_SCL
+                    - SPI0_TX
+                    geometry_source_id: mechanical
+                    gpio: 3
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO3
+                    number: '4'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: 7.62
+                    y_mm: 2.54
+                right_5:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '7'
+                    connector: right
+                    default_interface_roles:
+                    -   interface: i2c
+                        signal: sda
+                    -   interface: spi
+                        signal: miso
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM2A
+                    - PIO
+                    - UART1_TX
+                    - I2C0_SDA
+                    - SPI0_RX
+                    geometry_source_id: mechanical
+                    gpio: 4
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO4
+                    number: '5'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: 7.62
+                    y_mm: 0.0
+                right_6:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '8'
+                    connector: right
+                    default_interface_roles:
+                    -   interface: i2c
+                        signal: scl
+                    -   interface: spi
+                        signal: ss
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM2B
+                    - PIO
+                    - UART1_RX
+                    - I2C0_SCL
+                    - SPI0_CSn
+                    geometry_source_id: mechanical
+                    gpio: 5
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO5
+                    number: '6'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: 7.62
+                    y_mm: -2.54
+                right_7:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '9'
+                    connector: right
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM3A
+                    - PIO
+                    - UART1_CTS
+                    - I2C1_SDA
+                    - SPI0_SCK
+                    geometry_source_id: mechanical
+                    gpio: 6
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO6
+                    number: '7'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: 7.62
+                    y_mm: -5.08
+                right_8:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '10'
+                    connector: right
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM3B
+                    - PIO
+                    - UART1_RTS
+                    - I2C1_SCL
+                    - SPI0_TX
+                    geometry_source_id: mechanical
+                    gpio: 7
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO7
+                    number: '8'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: 7.62
+                    y_mm: -7.62
+                right_9:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '12'
+                    connector: right
+                    default_interface_roles:
+                    -   interface: uart_secondary
+                        signal: tx
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM4A
+                    - PIO
+                    - UART1_TX
+                    - I2C0_SDA
+                    - SPI1_RX
+                    geometry_source_id: mechanical
+                    gpio: 8
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO8
+                    number: '9'
+                    restrictions: []
+                    side: both
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: 7.62
+                    y_mm: -10.16
+                swd_GND:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: false
+                    capabilities: []
+                    chip_pin_number: null
+                    connector: swd
+                    default_interface_roles: []
+                    direction: not_applicable
+                    functions:
+                    - GND
+                    gpio: null
+                    name: GND
+                    number: GND
+                    restrictions: []
+                    side: bottom
+                    signal_types: []
+                    source_id: pinout
+                    surface: unspecified
+                    type: ground
+                    x_mm: null
+                    y_mm: null
+                swd_SWCLK:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: false
+                    capabilities: []
+                    chip_pin_number: null
+                    connector: swd
+                    default_interface_roles: []
+                    direction: not_applicable
+                    functions:
+                    - SWCLK
+                    gpio: null
+                    name: SWCLK
+                    number: SWCLK
+                    restrictions: []
+                    side: bottom
+                    signal_types: []
+                    source_id: pinout
+                    surface: unspecified
+                    type: debug
+                    x_mm: null
+                    y_mm: null
+                swd_SWDIO:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: false
+                    capabilities: []
+                    chip_pin_number: null
+                    connector: swd
+                    default_interface_roles: []
+                    direction: not_applicable
+                    functions:
+                    - SWDIO
+                    gpio: null
+                    name: SWDIO
+                    number: SWDIO
+                    restrictions: []
+                    side: bottom
+                    signal_types: []
+                    source_id: pinout
+                    surface: unspecified
+                    type: debug
+                    x_mm: null
+                    y_mm: null
+                underside_GND:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: false
+                    capabilities: []
+                    chip_pin_number: null
+                    connector: underside
+                    default_interface_roles: []
+                    direction: not_applicable
+                    functions:
+                    - GND
+                    gpio: null
+                    name: GND
+                    number: GND
+                    restrictions: []
+                    side: bottom
+                    signal_types: []
+                    source_id: pinout
+                    surface: unspecified
+                    type: ground
+                    x_mm: null
+                    y_mm: null
+                underside_GP17:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '28'
+                    connector: underside
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM0B
+                    - PIO
+                    - UART0_RX
+                    - I2C0_SCL
+                    - SPI0_CSn
+                    gpio: 17
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO17
+                    number: GP17
+                    restrictions: []
+                    side: bottom
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: null
+                    y_mm: null
+                underside_GP18:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '29'
+                    connector: underside
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM1A
+                    - PIO
+                    - UART0_CTS
+                    - I2C1_SDA
+                    - SPI0_SCK
+                    gpio: 18
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO18
+                    number: GP18
+                    restrictions: []
+                    side: bottom
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: null
+                    y_mm: null
+                underside_GP19:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '31'
+                    connector: underside
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM1B
+                    - PIO
+                    - UART0_RTS
+                    - I2C1_SCL
+                    - SPI0_TX
+                    gpio: 19
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO19
+                    number: GP19
+                    restrictions: []
+                    side: bottom
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: null
+                    y_mm: null
+                underside_GP20:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '32'
+                    connector: underside
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM2A
+                    - PIO
+                    - UART1_TX
+                    - I2C0_SDA
+                    - SPI0_RX
+                    gpio: 20
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO20
+                    number: GP20
+                    restrictions: []
+                    side: bottom
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: null
+                    y_mm: null
+                underside_GP21:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '33'
+                    connector: underside
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM2B
+                    - PIO
+                    - UART1_RX
+                    - I2C0_SCL
+                    - SPI0_CSn
+                    gpio: 21
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO21
+                    number: GP21
+                    restrictions: []
+                    side: bottom
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: null
+                    y_mm: null
+                underside_GP22:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '34'
+                    connector: underside
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM3A
+                    - PIO
+                    - UART1_CTS
+                    - I2C1_SDA
+                    - SPI0_SCK
+                    gpio: 22
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO22
+                    number: GP22
+                    restrictions: []
+                    side: bottom
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: null
+                    y_mm: null
+                underside_GP23:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '35'
+                    connector: underside
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM3B
+                    - PIO
+                    - UART1_RTS
+                    - I2C1_SCL
+                    - SPI0_TX
+                    gpio: 23
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO23
+                    number: GP23
+                    restrictions: []
+                    side: bottom
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: null
+                    y_mm: null
+                underside_GP24:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '36'
+                    connector: underside
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM4A
+                    - PIO
+                    - UART1_TX
+                    - I2C0_SDA
+                    - SPI1_RX
+                    gpio: 24
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO24
+                    number: GP24
+                    restrictions: []
+                    side: bottom
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: null
+                    y_mm: null
+                underside_GP25:
+                    adc_channel: null
+                    adc_unit: null
+                    aliases: []
+                    available_for_general_io: true
+                    capabilities:
+                    - gpio
+                    - digital_input
+                    - digital_output
+                    - pwm
+                    capability_source_id: chip_datasheet
+                    chip_pin_number: '37'
+                    connector: underside
+                    default_interface_roles: []
+                    direction: bidirectional
+                    function_mapping_source_id: chip_datasheet
+                    functions:
+                    - PWM4B
+                    - PIO
+                    - UART1_RX
+                    - I2C0_SCL
+                    - SPI1_CSn
+                    gpio: 25
+                    input_only: false
+                    lab_analog_eligible: false
+                    logic_voltage_v: 3.3
+                    name: GPIO25
+                    number: GP25
+                    restrictions: []
+                    side: bottom
+                    signal_types:
+                    - digital
+                    source_id: pinout
+                    surface: unspecified
+                    type: gpio
+                    x_mm: null
+                    y_mm: null
+            schema_version: 1
+            sources:
+            -   accessed: '2026-10-20'
+                id: product
+                scope: Board versions and manufacturer resources
+                title: Waveshare RP2350-Zero
+                url: https://www.waveshare.net/wiki/RP2350-Zero
+            -   accessed: '2026-10-20'
+                id: schematic
+                local_file: reference/schematic.pdf
+                scope: Chip, flash and signal connectivity
+                sha256: d21636b23b5ad34a6bbbcda61a27ea5d71e6890e2c3556511db780183aff0b5a
+                title: RP2350-Zero schematic
+                url: https://www.waveshare.net/w/upload/b/b9/RP2350_Zero.pdf
+            -   accessed: '2026-10-20'
+                id: pinout
+                local_file: reference/pinout.jpg
+                scope: Edge and underside GPIO labels
+                sha256: 15aff1aca68650c78ff3d0bda22381845019f79659b1b3a08327e013fad1ee6e
+                title: RP2350-Zero labelled pinout
+                url: https://www.waveshare.net/w/upload/thumb/f/f7/RP2350-Zero-details-7.jpg/800px-RP2350-Zero-details-7.jpg
+            -   accessed: '2026-10-20'
+                id: mechanical
+                local_file: reference/mechanical.jpg
+                scope: PCB dimensions and edge-pin centres
+                sha256: 84a88af49be5d0b212055fa8717b9d939feb44aaffc1bac6829ee33c0edd8108
+                title: RP2350-Zero mechanical dimensions
+                url: https://www.waveshare.net/w/upload/thumb/6/6f/RP2350-Zero-details-size.jpg/800px-RP2350-Zero-details-size.jpg
+            -   accessed: '2026-10-22'
+                id: chip_datasheet
+                scope: GPIO mux, PWM, ADC and electrical characteristics
+                title: chip_datasheet
+                url: https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf
+            -   id: interface_variant
+                local_file: reference/interface_defaults/rp_waveshare_rp2350_zero.h
+                retrieved_date: '2026-10-23'
+                revision: d087696645b98dce8a3df92c0afff40a3745d295
+                scope: Arduino variant pin assignments; not a physical header drawing
+                sha256: c4b2990a43c85421b12afc001c0fc800f9dece49d1d97dc724e9160ff43efd59
+                url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/variants/waveshare_rp2350_zero/pins_arduino.h
+            -   content_scope: excerpt_of_board_names_and_variant_selections
+                id: interface_board_selection
+                local_file: reference/interface_defaults/rp_boards.txt
+                retrieved_date: '2026-10-23'
+                revision: d087696645b98dce8a3df92c0afff40a3745d295
+                scope: Framework board names and variant selection; generic selections
+                    remain explicitly scoped
+                sha256: f05c22ef5288cc728952a68fde3439c9715da3cf7ffa7dffa8f10038f5a4ef67
+                source_document_sha256: 12fb03a0c15a09f5bd61d32ce1a59e1bca721b6e9aa059494b060623fcb7a26f
+                url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/boards.txt
+            -   id: interface_runtime_uart
+                local_file: reference/interface_defaults/rp_SerialUART.cpp
+                retrieved_date: '2026-10-23'
+                revision: d087696645b98dce8a3df92c0afff40a3745d295
+                scope: Framework API construction/default behavior; USB Serial is
+                    separate from UART pin aliases
+                sha256: 52976eb468d3a8776a685eb3cd9f770023c2b7dc3017c78e79ddb7f0e86c163c
+                url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/cores/rp2040/SerialUART.cpp
+            -   id: interface_runtime_i2c
+                local_file: reference/interface_defaults/rp_Wire.cpp
+                retrieved_date: '2026-10-23'
+                revision: d087696645b98dce8a3df92c0afff40a3745d295
+                scope: Framework API construction/default behavior; USB Serial is
+                    separate from UART pin aliases
+                sha256: a27b11701b99a3d7e1936fc47ebb05d639ca318357bba574800b5bbd40c80075
+                url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/libraries/Wire/src/Wire.cpp
+            -   id: interface_runtime_spi
+                local_file: reference/interface_defaults/rp_SPI.cpp
+                retrieved_date: '2026-10-23'
+                revision: d087696645b98dce8a3df92c0afff40a3745d295
+                scope: Framework API construction/default behavior; USB Serial is
+                    separate from UART pin aliases
+                sha256: 523423a2d53d9cb5ce37ee7c3533850fcaea3c43e50a4e55454e4dc3e81e6029
+                url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/libraries/SPI/src/SPI.cpp
+            -   bytes: 3361569
+                id: mounting_cad_archive
+                kind: manufacturer_cad_archive
+                local_file: mounting_evidence/RP2350_Zero_step.zip
+                locator: Waveshare RP2350-Zero STEP archive; exact member RP2350-Zero.step,
+                    fetched 2026-11-06; 130 solids including PCB and soldered header
+                    assembly.
+                registered_at: '2026-11-06T16:37:54+00:00'
+                sha256: 392250d4a9dcb1f9e3c10a684d958419a7be0557424295a7f7f8ed31fb7f74dc
+                url: https://files.waveshare.com/wiki/RP2350-Zero/RP2350_Zero_step.zip
+            -   bytes: 21063899
+                id: mounting_cad
+                kind: manufacturer_cad
+                local_file: mounting_evidence/RP2350-Zero.step
+                locator: Exact STEP member RP2350-Zero.step from linked Waveshare
+                    archive; PCB body bounds 18.018 x 23.523 mm with 25 cylindrical
+                    pad/connector features; no separate board mounting holes.
+                registered_at: '2026-11-06T16:37:54+00:00'
+                sha256: 35e056647c8cc47ff86458baefa52e94cba55adef9d489f9e061be726c42434a
+                url: https://files.waveshare.com/wiki/RP2350-Zero/RP2350_Zero_step.zip
+            -   bytes: 93864
+                id: mounting_product
+                kind: manufacturer_product
+                local_file: mounting_evidence/RP2350-Zero-wiki.html
+                locator: Official RP2350-Zero product wiki and its STEP/schematic
+                    resource links; supports board identity and mechanical model provenance.
+                registered_at: '2026-11-06T16:37:54+00:00'
+                sha256: 1f26e7b5fa99bf944fd2deae91ec50fe9479cab0e2f15abdd8943ffe0a61f345
+                url: https://www.waveshare.net/wiki/RP2350-Zero
+            -   bytes: 35694
+                id: mounting_mechanical
+                kind: manufacturer_drawing
+                local_file: reference/mechanical.jpg
+                locator: Archived hash matches mounting_context.json; dimensioned
+                    top view labels PCB 18.00 x 23.50 mm, pin-pad array and outline;
+                    no mounting holes depicted.
+                registered_at: '2026-11-06T16:37:54+00:00'
+                sha256: 84a88af49be5d0b212055fa8717b9d939feb44aaffc1bac6829ee33c0edd8108
+                url: https://www.waveshare.net/w/upload/thumb/6/6f/RP2350-Zero-details-size.jpg/800px-RP2350-Zero-details-size.jpg
+            svg_details:
+                height: 23.5
+                stylesheet: microcontroller
+                svg_name: microcontroller
+                width: 18
+            taxonomy_1: electronic
+            taxonomy_10: ''
+            taxonomy_11: ''
+            taxonomy_12: ''
+            taxonomy_13: ''
+            taxonomy_14: waveshare
+            taxonomy_15: rp2350_zero_m
+            taxonomy_2: breakout
+            taxonomy_3: microcontroller
+            taxonomy_4: rp2350a
+            taxonomy_5: zero
+            taxonomy_6: ''
+            taxonomy_7: with_headers
+            taxonomy_8: 18_mm_width_23_5_mm_height
+            taxonomy_9: ''
+            type_1: microcontroller
+            type_2: rp2350a
+            type_3: zero
+            url_chat: ''
+        dict_data_files: {}
+        dict_data_files_exists: {}
+        file_output: label_oomp.svg
+        file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+        search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m
+part_number: rp2350_zero_m
+pinout_scope: Listed expansion connectors and debug/test pads. USB socket contacts
+    and component pads are excluded.
+pinout_status: documented_contact_inventory
+pins:
+    bottom_1:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '17'
+        connector: bottom
+        default_interface_roles:
+        -   interface: spi_secondary
+            signal: ss
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM6B
+        - PIO
+        - UART0_RX
+        - I2C0_SCL
+        - SPI1_CSn
+        geometry_source_id: mechanical
+        gpio: 13
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO13
+        number: '1'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: -5.08
+        y_mm: -10.16
+    bottom_2:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '16'
+        connector: bottom
+        default_interface_roles:
+        -   interface: spi_secondary
+            signal: miso
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM6A
+        - PIO
+        - UART0_TX
+        - I2C0_SDA
+        - SPI1_RX
+        geometry_source_id: mechanical
+        gpio: 12
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO12
+        number: '2'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: -2.54
+        y_mm: -10.16
+    bottom_3:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '15'
+        connector: bottom
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM5B
+        - PIO
+        - UART1_RTS
+        - I2C1_SCL
+        - SPI1_TX
+        geometry_source_id: mechanical
+        gpio: 11
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO11
+        number: '3'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: 0.0
+        y_mm: -10.16
+    bottom_4:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '14'
+        connector: bottom
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM5A
+        - PIO
+        - UART1_CTS
+        - I2C1_SDA
+        - SPI1_SCK
+        geometry_source_id: mechanical
+        gpio: 10
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO10
+        number: '4'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: 2.54
+        y_mm: -10.16
+    bottom_5:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '13'
+        connector: bottom
+        default_interface_roles:
+        -   interface: uart_secondary
+            signal: rx
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM4B
+        - PIO
+        - UART1_RX
+        - I2C0_SCL
+        - SPI1_CSn
+        geometry_source_id: mechanical
+        gpio: 9
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO9
+        number: '5'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: 5.08
+        y_mm: -10.16
+    left_1:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: false
+        capabilities: []
+        chip_pin_number: null
+        connector: left
+        default_interface_roles: []
+        direction: not_applicable
+        functions:
+        - 5V
+        geometry_source_id: mechanical
+        gpio: null
+        name: 5V
+        number: '1'
+        restrictions: []
+        side: both
+        signal_types: []
+        source_id: pinout
+        surface: unspecified
+        type: power
+        x_mm: -7.62
+        y_mm: 10.16
+    left_2:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: false
+        capabilities: []
+        chip_pin_number: null
+        connector: left
+        default_interface_roles: []
+        direction: not_applicable
+        functions:
+        - GND
+        geometry_source_id: mechanical
+        gpio: null
+        name: GND
+        number: '2'
+        restrictions: []
+        side: both
+        signal_types: []
+        source_id: pinout
+        surface: unspecified
+        type: ground
+        x_mm: -7.62
+        y_mm: 7.62
+    left_3:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: false
+        capabilities: []
+        chip_pin_number: null
+        connector: left
+        default_interface_roles: []
+        direction: not_applicable
+        functions:
+        - 3V3
+        geometry_source_id: mechanical
+        gpio: null
+        name: 3V3
+        number: '3'
+        restrictions: []
+        side: both
+        signal_types: []
+        source_id: pinout
+        surface: unspecified
+        type: power
+        x_mm: -7.62
+        y_mm: 5.08
+    left_4:
+        adc_channel: 3
+        adc_unit: 0
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        - analog_input
+        capability_source_id: chip_datasheet
+        chip_pin_number: '43'
+        connector: left
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM6B
+        - PIO
+        - UART0_RX
+        - I2C0_SCL
+        - SPI1_CSn
+        geometry_source_id: mechanical
+        gpio: 29
+        input_only: false
+        lab_analog_eligible: true
+        logic_voltage_v: 3.3
+        name: GPIO29
+        number: '4'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        - analog
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: -7.62
+        y_mm: 2.54
+    left_5:
+        adc_channel: 2
+        adc_unit: 0
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        - analog_input
+        capability_source_id: chip_datasheet
+        chip_pin_number: '42'
+        connector: left
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM6A
+        - PIO
+        - UART0_TX
+        - I2C0_SDA
+        - SPI1_RX
+        geometry_source_id: mechanical
+        gpio: 28
+        input_only: false
+        lab_analog_eligible: true
+        logic_voltage_v: 3.3
+        name: GPIO28
+        number: '5'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        - analog
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: -7.62
+        y_mm: 0.0
+    left_6:
+        adc_channel: 1
+        adc_unit: 0
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        - analog_input
+        capability_source_id: chip_datasheet
+        chip_pin_number: '41'
+        connector: left
+        default_interface_roles:
+        -   interface: i2c_secondary
+            signal: scl
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM5B
+        - PIO
+        - UART1_RTS
+        - I2C1_SCL
+        - SPI1_TX
+        geometry_source_id: mechanical
+        gpio: 27
+        input_only: false
+        lab_analog_eligible: true
+        logic_voltage_v: 3.3
+        name: GPIO27
+        number: '6'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        - analog
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: -7.62
+        y_mm: -2.54
+    left_7:
+        adc_channel: 0
+        adc_unit: 0
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        - analog_input
+        capability_source_id: chip_datasheet
+        chip_pin_number: '40'
+        connector: left
+        default_interface_roles:
+        -   interface: i2c_secondary
+            signal: sda
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM5A
+        - PIO
+        - UART1_CTS
+        - I2C1_SDA
+        - SPI1_SCK
+        geometry_source_id: mechanical
+        gpio: 26
+        input_only: false
+        lab_analog_eligible: true
+        logic_voltage_v: 3.3
+        name: GPIO26
+        number: '7'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        - analog
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: -7.62
+        y_mm: -5.08
+    left_8:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '19'
+        connector: left
+        default_interface_roles:
+        -   interface: spi_secondary
+            signal: mosi
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM7B
+        - PIO
+        - UART0_RTS
+        - I2C1_SCL
+        - SPI1_TX
+        geometry_source_id: mechanical
+        gpio: 15
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO15
+        number: '8'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: -7.62
+        y_mm: -7.62
+    left_9:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '18'
+        connector: left
+        default_interface_roles:
+        -   interface: spi_secondary
+            signal: sck
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM7A
+        - PIO
+        - UART0_CTS
+        - I2C1_SDA
+        - SPI1_SCK
+        geometry_source_id: mechanical
+        gpio: 14
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO14
+        number: '9'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: -7.62
+        y_mm: -10.16
+    right_1:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '2'
+        connector: right
+        default_interface_roles:
+        -   interface: uart
+            signal: tx
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM0A
+        - PIO
+        - UART0_TX
+        - I2C0_SDA
+        - SPI0_RX
+        geometry_source_id: mechanical
+        gpio: 0
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO0
+        number: '1'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: 7.62
+        y_mm: 10.16
+    right_2:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '3'
+        connector: right
+        default_interface_roles:
+        -   interface: uart
+            signal: rx
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM0B
+        - PIO
+        - UART0_RX
+        - I2C0_SCL
+        - SPI0_CSn
+        geometry_source_id: mechanical
+        gpio: 1
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO1
+        number: '2'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: 7.62
+        y_mm: 7.62
+    right_3:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '4'
+        connector: right
+        default_interface_roles:
+        -   interface: spi
+            signal: sck
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM1A
+        - PIO
+        - UART0_CTS
+        - I2C1_SDA
+        - SPI0_SCK
+        geometry_source_id: mechanical
+        gpio: 2
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO2
+        number: '3'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: 7.62
+        y_mm: 5.08
+    right_4:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '5'
+        connector: right
+        default_interface_roles:
+        -   interface: spi
+            signal: mosi
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM1B
+        - PIO
+        - UART0_RTS
+        - I2C1_SCL
+        - SPI0_TX
+        geometry_source_id: mechanical
+        gpio: 3
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO3
+        number: '4'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: 7.62
+        y_mm: 2.54
+    right_5:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '7'
+        connector: right
+        default_interface_roles:
+        -   interface: i2c
+            signal: sda
+        -   interface: spi
+            signal: miso
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM2A
+        - PIO
+        - UART1_TX
+        - I2C0_SDA
+        - SPI0_RX
+        geometry_source_id: mechanical
+        gpio: 4
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO4
+        number: '5'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: 7.62
+        y_mm: 0.0
+    right_6:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '8'
+        connector: right
+        default_interface_roles:
+        -   interface: i2c
+            signal: scl
+        -   interface: spi
+            signal: ss
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM2B
+        - PIO
+        - UART1_RX
+        - I2C0_SCL
+        - SPI0_CSn
+        geometry_source_id: mechanical
+        gpio: 5
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO5
+        number: '6'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: 7.62
+        y_mm: -2.54
+    right_7:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '9'
+        connector: right
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM3A
+        - PIO
+        - UART1_CTS
+        - I2C1_SDA
+        - SPI0_SCK
+        geometry_source_id: mechanical
+        gpio: 6
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO6
+        number: '7'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: 7.62
+        y_mm: -5.08
+    right_8:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '10'
+        connector: right
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM3B
+        - PIO
+        - UART1_RTS
+        - I2C1_SCL
+        - SPI0_TX
+        geometry_source_id: mechanical
+        gpio: 7
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO7
+        number: '8'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: 7.62
+        y_mm: -7.62
+    right_9:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '12'
+        connector: right
+        default_interface_roles:
+        -   interface: uart_secondary
+            signal: tx
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM4A
+        - PIO
+        - UART1_TX
+        - I2C0_SDA
+        - SPI1_RX
+        geometry_source_id: mechanical
+        gpio: 8
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO8
+        number: '9'
+        restrictions: []
+        side: both
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: 7.62
+        y_mm: -10.16
+    swd_GND:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: false
+        capabilities: []
+        chip_pin_number: null
+        connector: swd
+        default_interface_roles: []
+        direction: not_applicable
+        functions:
+        - GND
+        gpio: null
+        name: GND
+        number: GND
+        restrictions: []
+        side: bottom
+        signal_types: []
+        source_id: pinout
+        surface: unspecified
+        type: ground
+        x_mm: null
+        y_mm: null
+    swd_SWCLK:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: false
+        capabilities: []
+        chip_pin_number: null
+        connector: swd
+        default_interface_roles: []
+        direction: not_applicable
+        functions:
+        - SWCLK
+        gpio: null
+        name: SWCLK
+        number: SWCLK
+        restrictions: []
+        side: bottom
+        signal_types: []
+        source_id: pinout
+        surface: unspecified
+        type: debug
+        x_mm: null
+        y_mm: null
+    swd_SWDIO:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: false
+        capabilities: []
+        chip_pin_number: null
+        connector: swd
+        default_interface_roles: []
+        direction: not_applicable
+        functions:
+        - SWDIO
+        gpio: null
+        name: SWDIO
+        number: SWDIO
+        restrictions: []
+        side: bottom
+        signal_types: []
+        source_id: pinout
+        surface: unspecified
+        type: debug
+        x_mm: null
+        y_mm: null
+    underside_GND:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: false
+        capabilities: []
+        chip_pin_number: null
+        connector: underside
+        default_interface_roles: []
+        direction: not_applicable
+        functions:
+        - GND
+        gpio: null
+        name: GND
+        number: GND
+        restrictions: []
+        side: bottom
+        signal_types: []
+        source_id: pinout
+        surface: unspecified
+        type: ground
+        x_mm: null
+        y_mm: null
+    underside_GP17:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '28'
+        connector: underside
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM0B
+        - PIO
+        - UART0_RX
+        - I2C0_SCL
+        - SPI0_CSn
+        gpio: 17
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO17
+        number: GP17
+        restrictions: []
+        side: bottom
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: null
+        y_mm: null
+    underside_GP18:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '29'
+        connector: underside
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM1A
+        - PIO
+        - UART0_CTS
+        - I2C1_SDA
+        - SPI0_SCK
+        gpio: 18
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO18
+        number: GP18
+        restrictions: []
+        side: bottom
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: null
+        y_mm: null
+    underside_GP19:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '31'
+        connector: underside
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM1B
+        - PIO
+        - UART0_RTS
+        - I2C1_SCL
+        - SPI0_TX
+        gpio: 19
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO19
+        number: GP19
+        restrictions: []
+        side: bottom
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: null
+        y_mm: null
+    underside_GP20:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '32'
+        connector: underside
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM2A
+        - PIO
+        - UART1_TX
+        - I2C0_SDA
+        - SPI0_RX
+        gpio: 20
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO20
+        number: GP20
+        restrictions: []
+        side: bottom
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: null
+        y_mm: null
+    underside_GP21:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '33'
+        connector: underside
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM2B
+        - PIO
+        - UART1_RX
+        - I2C0_SCL
+        - SPI0_CSn
+        gpio: 21
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO21
+        number: GP21
+        restrictions: []
+        side: bottom
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: null
+        y_mm: null
+    underside_GP22:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '34'
+        connector: underside
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM3A
+        - PIO
+        - UART1_CTS
+        - I2C1_SDA
+        - SPI0_SCK
+        gpio: 22
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO22
+        number: GP22
+        restrictions: []
+        side: bottom
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: null
+        y_mm: null
+    underside_GP23:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '35'
+        connector: underside
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM3B
+        - PIO
+        - UART1_RTS
+        - I2C1_SCL
+        - SPI0_TX
+        gpio: 23
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO23
+        number: GP23
+        restrictions: []
+        side: bottom
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: null
+        y_mm: null
+    underside_GP24:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '36'
+        connector: underside
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM4A
+        - PIO
+        - UART1_TX
+        - I2C0_SDA
+        - SPI1_RX
+        gpio: 24
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO24
+        number: GP24
+        restrictions: []
+        side: bottom
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: null
+        y_mm: null
+    underside_GP25:
+        adc_channel: null
+        adc_unit: null
+        aliases: []
+        available_for_general_io: true
+        capabilities:
+        - gpio
+        - digital_input
+        - digital_output
+        - pwm
+        capability_source_id: chip_datasheet
+        chip_pin_number: '37'
+        connector: underside
+        default_interface_roles: []
+        direction: bidirectional
+        function_mapping_source_id: chip_datasheet
+        functions:
+        - PWM4B
+        - PIO
+        - UART1_RX
+        - I2C0_SCL
+        - SPI1_CSn
+        gpio: 25
+        input_only: false
+        lab_analog_eligible: false
+        logic_voltage_v: 3.3
+        name: GPIO25
+        number: GP25
+        restrictions: []
+        side: bottom
+        signal_types:
+        - digital
+        source_id: pinout
+        surface: unspecified
+        type: gpio
+        x_mm: null
+        y_mm: null
+schema_version: 1
+sources:
+-   accessed: '2026-10-20'
+    id: product
+    scope: Board versions and manufacturer resources
+    title: Waveshare RP2350-Zero
+    url: https://www.waveshare.net/wiki/RP2350-Zero
+-   accessed: '2026-10-20'
+    id: schematic
+    local_file: reference/schematic.pdf
+    scope: Chip, flash and signal connectivity
+    sha256: d21636b23b5ad34a6bbbcda61a27ea5d71e6890e2c3556511db780183aff0b5a
+    title: RP2350-Zero schematic
+    url: https://www.waveshare.net/w/upload/b/b9/RP2350_Zero.pdf
+-   accessed: '2026-10-20'
+    id: pinout
+    local_file: reference/pinout.jpg
+    scope: Edge and underside GPIO labels
+    sha256: 15aff1aca68650c78ff3d0bda22381845019f79659b1b3a08327e013fad1ee6e
+    title: RP2350-Zero labelled pinout
+    url: https://www.waveshare.net/w/upload/thumb/f/f7/RP2350-Zero-details-7.jpg/800px-RP2350-Zero-details-7.jpg
+-   accessed: '2026-10-20'
+    id: mechanical
+    local_file: reference/mechanical.jpg
+    scope: PCB dimensions and edge-pin centres
+    sha256: 84a88af49be5d0b212055fa8717b9d939feb44aaffc1bac6829ee33c0edd8108
+    title: RP2350-Zero mechanical dimensions
+    url: https://www.waveshare.net/w/upload/thumb/6/6f/RP2350-Zero-details-size.jpg/800px-RP2350-Zero-details-size.jpg
+-   accessed: '2026-10-22'
+    id: chip_datasheet
+    scope: GPIO mux, PWM, ADC and electrical characteristics
+    title: chip_datasheet
+    url: https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf
+-   id: interface_variant
+    local_file: reference/interface_defaults/rp_waveshare_rp2350_zero.h
+    retrieved_date: '2026-10-23'
+    revision: d087696645b98dce8a3df92c0afff40a3745d295
+    scope: Arduino variant pin assignments; not a physical header drawing
+    sha256: c4b2990a43c85421b12afc001c0fc800f9dece49d1d97dc724e9160ff43efd59
+    url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/variants/waveshare_rp2350_zero/pins_arduino.h
+-   content_scope: excerpt_of_board_names_and_variant_selections
+    id: interface_board_selection
+    local_file: reference/interface_defaults/rp_boards.txt
+    retrieved_date: '2026-10-23'
+    revision: d087696645b98dce8a3df92c0afff40a3745d295
+    scope: Framework board names and variant selection; generic selections remain
+        explicitly scoped
+    sha256: f05c22ef5288cc728952a68fde3439c9715da3cf7ffa7dffa8f10038f5a4ef67
+    source_document_sha256: 12fb03a0c15a09f5bd61d32ce1a59e1bca721b6e9aa059494b060623fcb7a26f
+    url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/boards.txt
+-   id: interface_runtime_uart
+    local_file: reference/interface_defaults/rp_SerialUART.cpp
+    retrieved_date: '2026-10-23'
+    revision: d087696645b98dce8a3df92c0afff40a3745d295
+    scope: Framework API construction/default behavior; USB Serial is separate from
+        UART pin aliases
+    sha256: 52976eb468d3a8776a685eb3cd9f770023c2b7dc3017c78e79ddb7f0e86c163c
+    url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/cores/rp2040/SerialUART.cpp
+-   id: interface_runtime_i2c
+    local_file: reference/interface_defaults/rp_Wire.cpp
+    retrieved_date: '2026-10-23'
+    revision: d087696645b98dce8a3df92c0afff40a3745d295
+    scope: Framework API construction/default behavior; USB Serial is separate from
+        UART pin aliases
+    sha256: a27b11701b99a3d7e1936fc47ebb05d639ca318357bba574800b5bbd40c80075
+    url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/libraries/Wire/src/Wire.cpp
+-   id: interface_runtime_spi
+    local_file: reference/interface_defaults/rp_SPI.cpp
+    retrieved_date: '2026-10-23'
+    revision: d087696645b98dce8a3df92c0afff40a3745d295
+    scope: Framework API construction/default behavior; USB Serial is separate from
+        UART pin aliases
+    sha256: 523423a2d53d9cb5ce37ee7c3533850fcaea3c43e50a4e55454e4dc3e81e6029
+    url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/libraries/SPI/src/SPI.cpp
+-   bytes: 3361569
+    id: mounting_cad_archive
+    kind: manufacturer_cad_archive
+    local_file: mounting_evidence/RP2350_Zero_step.zip
+    locator: Waveshare RP2350-Zero STEP archive; exact member RP2350-Zero.step, fetched
+        2026-11-06; 130 solids including PCB and soldered header assembly.
+    registered_at: '2026-11-06T16:37:54+00:00'
+    sha256: 392250d4a9dcb1f9e3c10a684d958419a7be0557424295a7f7f8ed31fb7f74dc
+    url: https://files.waveshare.com/wiki/RP2350-Zero/RP2350_Zero_step.zip
+-   bytes: 21063899
+    id: mounting_cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/RP2350-Zero.step
+    locator: Exact STEP member RP2350-Zero.step from linked Waveshare archive; PCB
+        body bounds 18.018 x 23.523 mm with 25 cylindrical pad/connector features;
+        no separate board mounting holes.
+    registered_at: '2026-11-06T16:37:54+00:00'
+    sha256: 35e056647c8cc47ff86458baefa52e94cba55adef9d489f9e061be726c42434a
+    url: https://files.waveshare.com/wiki/RP2350-Zero/RP2350_Zero_step.zip
+-   bytes: 93864
+    id: mounting_product
+    kind: manufacturer_product
+    local_file: mounting_evidence/RP2350-Zero-wiki.html
+    locator: Official RP2350-Zero product wiki and its STEP/schematic resource links;
+        supports board identity and mechanical model provenance.
+    registered_at: '2026-11-06T16:37:54+00:00'
+    sha256: 1f26e7b5fa99bf944fd2deae91ec50fe9479cab0e2f15abdd8943ffe0a61f345
+    url: https://www.waveshare.net/wiki/RP2350-Zero
+-   bytes: 35694
+    id: mounting_mechanical
+    kind: manufacturer_drawing
+    local_file: reference/mechanical.jpg
+    locator: Archived hash matches mounting_context.json; dimensioned top view labels
+        PCB 18.00 x 23.50 mm, pin-pad array and outline; no mounting holes depicted.
+    registered_at: '2026-11-06T16:37:54+00:00'
+    sha256: 84a88af49be5d0b212055fa8717b9d939feb44aaffc1bac6829ee33c0edd8108
+    url: https://www.waveshare.net/w/upload/thumb/6/6f/RP2350-Zero-details-size.jpg/800px-RP2350-Zero-details-size.jpg
+svg_details:
+    height: 23.5
+    stylesheet: microcontroller
+    svg_name: microcontroller
+    width: 18
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: waveshare
+taxonomy_14_capital: Waveshare
+taxonomy_14_first_letter: w
+taxonomy_14_first_letter_upper: W
+taxonomy_14_length_1: w
+taxonomy_14_length_2: wa
+taxonomy_14_length_3: wav
+taxonomy_14_length_4: wave
+taxonomy_14_length_5: waves
+taxonomy_14_upper: WAVESHARE
+taxonomy_14_upper_length_1: W
+taxonomy_14_upper_length_2: WA
+taxonomy_14_upper_length_3: WAV
+taxonomy_14_upper_length_4: WAVE
+taxonomy_14_upper_length_5: WAVES
+taxonomy_15: rp2350_zero_m
+taxonomy_15_capital: Rp2350 Zero M
+taxonomy_15_first_letter: r
+taxonomy_15_first_letter_upper: R
+taxonomy_15_length_1: r
+taxonomy_15_length_2: rp
+taxonomy_15_length_3: rp2
+taxonomy_15_length_4: rp23
+taxonomy_15_length_5: rp235
+taxonomy_15_upper: RP2350_ZERO_M
+taxonomy_15_upper_length_1: R
+taxonomy_15_upper_length_2: RP
+taxonomy_15_upper_length_3: RP2
+taxonomy_15_upper_length_4: RP23
+taxonomy_15_upper_length_5: RP235
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: rp2350a
+taxonomy_4_capital: Rp2350A
+taxonomy_4_first_letter: r
+taxonomy_4_first_letter_upper: R
+taxonomy_4_length_1: r
+taxonomy_4_length_2: rp
+taxonomy_4_length_3: rp2
+taxonomy_4_length_4: rp23
+taxonomy_4_length_5: rp235
+taxonomy_4_upper: RP2350A
+taxonomy_4_upper_length_1: R
+taxonomy_4_upper_length_2: RP
+taxonomy_4_upper_length_3: RP2
+taxonomy_4_upper_length_4: RP23
+taxonomy_4_upper_length_5: RP235
+taxonomy_5: zero
+taxonomy_5_capital: Zero
+taxonomy_5_first_letter: z
+taxonomy_5_first_letter_upper: Z
+taxonomy_5_length_1: z
+taxonomy_5_length_2: ze
+taxonomy_5_length_3: zer
+taxonomy_5_length_4: zero
+taxonomy_5_length_5: zero
+taxonomy_5_upper: ZERO
+taxonomy_5_upper_length_1: Z
+taxonomy_5_upper_length_2: ZE
+taxonomy_5_upper_length_3: ZER
+taxonomy_5_upper_length_4: ZERO
+taxonomy_5_upper_length_5: ZERO
+taxonomy_6: ''
+taxonomy_7: with_headers
+taxonomy_7_capital: With Headers
+taxonomy_7_first_letter: w
+taxonomy_7_first_letter_upper: W
+taxonomy_7_length_1: w
+taxonomy_7_length_2: wi
+taxonomy_7_length_3: wit
+taxonomy_7_length_4: with
+taxonomy_7_length_5: with_
+taxonomy_7_upper: WITH_HEADERS
+taxonomy_7_upper_length_1: W
+taxonomy_7_upper_length_2: WI
+taxonomy_7_upper_length_3: WIT
+taxonomy_7_upper_length_4: WITH
+taxonomy_7_upper_length_5: WITH_
+taxonomy_8: 18_mm_width_23_5_mm_height
+taxonomy_8_capital: 18 mm Width 23.5 mm Height
+taxonomy_8_first_letter: '1'
+taxonomy_8_first_letter_upper: '1'
+taxonomy_8_length_1: '1'
+taxonomy_8_length_2: '18'
+taxonomy_8_length_3: '18_'
+taxonomy_8_length_4: 18_m
+taxonomy_8_length_5: 18_mm
+taxonomy_8_upper: 18_MM_WIDTH_23_5_MM_HEIGHT
+taxonomy_8_upper_length_1: '1'
+taxonomy_8_upper_length_2: '18'
+taxonomy_8_upper_length_3: '18_'
+taxonomy_8_upper_length_4: 18_M
+taxonomy_8_upper_length_5: 18_MM
+taxonomy_9: ''
+type_1: microcontroller
+type_2: rp2350a
+type_3: zero
+url_chat: ''

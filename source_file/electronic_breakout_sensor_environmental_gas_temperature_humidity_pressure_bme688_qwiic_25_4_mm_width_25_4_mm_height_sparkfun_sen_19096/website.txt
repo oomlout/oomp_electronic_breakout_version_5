@@ -1,0 +1,156 @@
+Home
+Sensors
+Environmental Sensors
+Weather
+Important!
+To avoid contaminating its gas-scanning capabilities, DO NOT touch the metallic casing of the BME688 sensor. Please, handle with care.
+SparkFun Environmental Sensor - BME688 (Qwiic)
+SEN-19096
+Skip to the end of the images gallery
+Skip to the beginning of the images gallery
+Share:
+SparkFun Environmental Sensor - BME688 (Qwiic)
+SKU: SEN-19096
+This compact SparkFun breakout board features the Bosch BME688, providing precise environmental data and intelligent VOC/VSC gas scanning.
+$24.95
+In stock
+SKU
+SEN-19096
+Qty
+-
++
+Add to Cart
+In stock
+Stock/Discounts
+Add to Wish List
+Compare
+Important!
+To avoid contaminating its gas-scanning capabilities, DO NOT touch the metallic casing of the BME688 sensor. Please, handle with care.
+Helpful Documentation
+Hookup Guide
+Schematic
+Datasheet (BME688)
+BME AI-Studio Guide
+See all documentation
+Overview
+Recommended Products
+Features & Specs
+Documentation
+Reviews
+Overview
+Product Overview
+The SparkFun BME688 Environmental Sensor is a breakout that combines a gas sensor with temperature, humidity, and barometric pressure sensing in a single package. The BME688's gas sensor can detect a wide variety of volatile organic compounds (VOCs), volatile sulfur compounds (VSCs), and other gases such as carbon monoxide and hydrogen in the part-per-billion (ppb) range. Combine that with precise temperature, humidity, and barometric pressure, and the BME688 can work as a completely standalone environmental sensor all in a 1in. x 1in. breakout!
+Solderless Environmental Tracking
+The BME688 serves as a drop-in replacement for the BME680 and builds on the previous sensor by adding intelligent gas-scanning capabilities. While standard sensors simply detect the presence of gases, this Bosch sensor generates unique profiles for different gas mixtures. Because we routed the default I
+2
+C interface to our solderless Qwiic connectors, integrating this powerhouse sensor into your existing setup is incredibly fast and error-free. If you prefer a traditional breadboard layout or need the versatility of SPI communication, all essential pins are conveniently broken out to standard 0.1-inch spaced headers.
+Key Performance Capabilities
+To ensure your air quality monitoring projects are as precise and efficient as possible, the BME688 Environmental Sensor provides several standout features:
+Intelligent Gas Sensing:
+Scans for VOCs, VSCs (like hydrogen sulfide), and other gases in the part-per-billion range, featuring an H₂S scanning F1 score of 0.92.
+Precision Measurements:
+Delivers highly accurate temperature (±1.0°C), relative humidity (±3%), and barometric pressure (±60Pa) data.
+Low Power Draw:
+Consumes just 0.15 µA in sleep mode and typically only 3.9 mA during a standard 10.8-second gas scan.
+AI Software Support:
+Compatible with the
+BSEC2 Arduino library
+and
+BME AI-Studio
+.
+Whether you are building a smart home climate monitor or a portable air quality tracker, this sensor gives you all the essential environmental data you need without the complicated wiring.
+This product can be automatically detected, configured, and logged by DataLogger all without coding or soldering.
+LEARN MORE
+This product features Qwiic Connectors.
+LEARN MORE
+Recommended Products
+Features & Specs
+Features & Specs
+Uses I
+2
+C interface (Qwiic-enabled)
+I
+2
+C Addresses:
+0x76 (Default)
+or 0x77
+2x Qwiic Connectors
+Operating voltage range
+1.71V - 3.6V
+Typically
+3.3V
+if using the Qwiic cable
+Relative humidity
+Operating range: 0% to 100%
+Absolute Accuracy: ±3%RH
+Resolution: ±0.008%RH
+Temperature
+Operating range: -40°C to +85 °C
+Absolute Accuracy: ±1.0°C
+Resolution: 0.01°C
+Pressure
+Operating range: 300hPa - 1100hPa
+Absolute accuracy: ±60Pa (0°C to 65°C)
+Resolution: 0.18PA, highest oversampling
+Gas
+F1 score for H₂S scanning: 0.92
+Standard scan speed: 10.8 sec/scan
+Sensor-to-sensor deviation: ± 15% ± 15
+Typical current consumption (varies based on mode and active sensor)
+2.1 µA to 18mA
+0.15 µA (sleep mode)
+3.9 mA in standard gas scan mode
+Documentation
+Documentation
+Schematic
+Eagle Files
+Hookup Guide
+Board Dimensions
+Getting Started with the BME AI-Studio
+Datasheet
+(BME688)
+BME AI-Studio Manual
+BME680 Arduino Library
+Bosch Software Page
+:
+BME AI-Studio
+(Mac/Windows)
+BME68x Arduino Library
+BME68x API
+BSEC2 Arduino Library
+BSEC2 API
+Qwiic Connect System
+GitHub Hardware Repo
+WARNING:
+This product may contain chemicals known to the State of California to cause cancer and birth defects or other reproductive harm. See link below for more information.
+www.P65Warnings.ca.gov
+Reviews
+Customer Reviews
+Trustpilot
+Get a Quote for
+I agree to the
+Privacy Policy
+to get a quote for product
+Customer Name
+Customer Email
+Phone Number
+Comment
+Submit
+SparkFun Environmental Sensor - BME688 (Qwiic)
+$24.95
+SEN-19096
+Add to Cart
+$24.95
+retail price.
+Available Discounts
+$23.70
+|
+10+ units
+$22.46
+|
+25+ units
+$21.21
+|
+100+ units
+Looking for even larger quantities?
+Get in touch for Volume Pricing

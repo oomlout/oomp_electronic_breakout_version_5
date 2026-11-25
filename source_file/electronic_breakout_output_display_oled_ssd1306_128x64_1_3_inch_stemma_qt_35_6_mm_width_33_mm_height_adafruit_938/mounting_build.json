@@ -1,0 +1,117 @@
+{
+  "record_sha256": "42d0e0f1259c683d07eeb90121fbfd42e0a0d4701c8133ae6234695efcaa70af",
+  "generated_at": "2026-11-06T19:25:09+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_output_display_oled_ssd1306_128x64_1_3_inch_stemma_qt_35_6_mm_width_33_mm_height_adafruit_938/3dpr.scad",
+      "bytes": 4951,
+      "sha256": "de64ad636f3b96468c446959a27399378df564cb38664fbeda5f5592c5919135"
+    },
+    {
+      "path": "parts/electronic_breakout_output_display_oled_ssd1306_128x64_1_3_inch_stemma_qt_35_6_mm_width_33_mm_height_adafruit_938/3dpr_short_sides.scad",
+      "bytes": 3342,
+      "sha256": "3e1eb0debea6e0a318a0430820577df8fd199808f44385f67587f7f7c39b4603"
+    },
+    {
+      "path": "parts/electronic_breakout_output_display_oled_ssd1306_128x64_1_3_inch_stemma_qt_35_6_mm_width_33_mm_height_adafruit_938/3dpr_long_side.scad",
+      "bytes": 3028,
+      "sha256": "bbd0560dbaf2e1e8c8fc6033c8a0f87513bca12d3748926d7537f0237441225d"
+    },
+    {
+      "path": "parts/electronic_breakout_output_display_oled_ssd1306_128x64_1_3_inch_stemma_qt_35_6_mm_width_33_mm_height_adafruit_938/3dpr.stl",
+      "bytes": 2105782,
+      "sha256": "92a06b463c13e88bc1287bdae76c12208cd24002a5c7c6a0f776ab73e2a38688"
+    },
+    {
+      "path": "parts/electronic_breakout_output_display_oled_ssd1306_128x64_1_3_inch_stemma_qt_35_6_mm_width_33_mm_height_adafruit_938/3dpr_short_sides.stl",
+      "bytes": 1036910,
+      "sha256": "3ee1af36db9b59d30100ea9f7ca959c4e1741274883394577f0a3fe6e46fb4ee"
+    },
+    {
+      "path": "parts/electronic_breakout_output_display_oled_ssd1306_128x64_1_3_inch_stemma_qt_35_6_mm_width_33_mm_height_adafruit_938/3dpr_long_side.stl",
+      "bytes": 791855,
+      "sha256": "580936246f3d934030c8510f738b73d8782a9422a17c8064612f2a6432d48218"
+    },
+    {
+      "path": "parts/electronic_breakout_output_display_oled_ssd1306_128x64_1_3_inch_stemma_qt_35_6_mm_width_33_mm_height_adafruit_938/mounting_variants.json",
+      "bytes": 5340,
+      "sha256": "4cffdb3fd6e98f058224106cbf84317f4954214987b89edf0f929a5228a9fdaa"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_output_display_oled_ssd1306_128x64_1_3_inch_stemma_qt_35_6_mm_width_33_mm_height_adafruit_938\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 14397.21649332218,
+    "bounds_mm": [
+      [
+        -37.0,
+        -36.99013364214136,
+        0.0
+      ],
+      [
+        37.0,
+        36.99013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_output_display_oled_ssd1306_128x64_1_3_inch_stemma_qt_35_6_mm_width_33_mm_height_adafruit_938\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 14397.21649332218,
+        "bounds_mm": [
+          [
+            -37.0,
+            -36.99013364214136,
+            0.0
+          ],
+          [
+            37.0,
+            36.99013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_output_display_oled_ssd1306_128x64_1_3_inch_stemma_qt_35_6_mm_width_33_mm_height_adafruit_938\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 9095.562412037916,
+        "bounds_mm": [
+          [
+            -37.0,
+            -21.99013364214136,
+            0.0
+          ],
+          [
+            37.0,
+            21.99013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_output_display_oled_ssd1306_128x64_1_3_inch_stemma_qt_35_6_mm_width_33_mm_height_adafruit_938\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 7476.11257085739,
+        "bounds_mm": [
+          [
+            -22.0,
+            -21.99013364214136,
+            0.0
+          ],
+          [
+            22.0,
+            36.99013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

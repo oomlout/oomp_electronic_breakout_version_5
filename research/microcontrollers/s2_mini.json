@@ -1,0 +1,60 @@
+{
+    "url": "https://www.wemos.cc/en/latest/s2/s2_mini.html",
+    "accessed": "2026-10-22",
+    "tables": [
+        [
+            [
+                "",
+                ""
+            ]
+        ],
+        [
+            [
+                "Operating Voltage",
+                "3.3V"
+            ],
+            [
+                "Digital I/O Pins",
+                "27"
+            ],
+            [
+                "Clock Speed",
+                "240MHz"
+            ],
+            [
+                "Flash",
+                "4M Bytes"
+            ],
+            [
+                "PSRAM",
+                "2M Bytes"
+            ],
+            [
+                "Size",
+                "34.3*25.4mm"
+            ],
+            [
+                "Weight",
+                "2.4g"
+            ]
+        ]
+    ],
+    "links": [
+        {
+            "title": "Schematic V1.0.0[PDF]",
+            "url": "https://www.wemos.cc/en/latest/_static/files/sch_s2_mini_v1.0.0.pdf"
+        },
+        {
+            "title": "Dimension V1.0.0[PDF]",
+            "url": "https://www.wemos.cc/en/latest/_static/files/dim_s2_mini_v1.0.0.pdf"
+        },
+        {
+            "title": "ESP32-S2 Datasheet",
+            "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf"
+        },
+        {
+            "title": "theme",
+            "url": "https://github.com/readthedocs/sphinx_rtd_theme"
+        }
+    ]
+}

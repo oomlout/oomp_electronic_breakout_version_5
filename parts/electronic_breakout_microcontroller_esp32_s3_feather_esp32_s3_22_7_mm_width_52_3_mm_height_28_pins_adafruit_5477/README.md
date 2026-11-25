@@ -1,3 +1,4532 @@
+<!-- oomp-documentation:start -->
+# Electronic Breakout Microcontroller Esp32 S3 Feather Esp32 S3 22 7 Mm Width 52 3 Mm Height 28 Pins Adafruit 5477
+
+## Summary
+
+OOMP catalogue record for Electronic Breakout Microcontroller Esp32 S3 Feather Esp32 S3 22 7 Mm Width 52 3 Mm Height 28 Pins Adafruit 5477. Use the metadata to identify this variant and the part folder to inspect its available assets.
+
+![Catalogue preview of Electronic Breakout Microcontroller Esp32 S3 Feather Esp32 S3 22 7 Mm Width 52 3 Mm Height 28 Pins Adafruit 5477](3dpr_presentation.png)
+
+Catalogue illustration; consult the source dimensions and datasheet for specification.
+
+## Details
+
+**OOMP folder ID:** `electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477`
+
+[Catalogue](../../README.md) · [Part metadata](working.yaml)
+
+| Field | Value |
+| --- | --- |
+| id | electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477 |
+| md5_6 | 6cb792 |
+| md5_6_alpha | 48ple |
+| oomp_key | oomp_electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477 |
+| taxonomy_1 | electronic |
+| taxonomy_2 | breakout |
+| taxonomy_3 | microcontroller |
+| taxonomy_4 | esp32_s3 |
+| taxonomy_5 | feather_esp32_s3 |
+| taxonomy_6 | 22_7_mm_width_52_3_mm_height_28_pins |
+| taxonomy_14 | adafruit |
+| taxonomy_15 | 5477 |
+
+<details>
+<summary>Full part metadata</summary>
+
+```yaml
+assembly:
+  header_pitch_mm: 2.54
+  headers: without_headers
+bip_39_2_word_array:
+- hole
+- route
+bip_39_2_word_no_space: holeroute
+bip_39_2_word_space: hole route
+bip_39_2_word_underscore: hole_route
+bip_39_3_word_array:
+- hole
+- route
+- pool
+bip_39_3_word_no_space: holeroutepool
+bip_39_3_word_space: hole route pool
+bip_39_3_word_underscore: hole_route_pool
+bip_39_full_array:
+- hole
+- route
+- pool
+- raise
+- ritual
+- when
+- dove
+- ring
+- erode
+- step
+- century
+- pony
+bip_39_full_no_space: holeroutepoolraiseritualwhendoveringerodestepcenturypony
+bip_39_full_space: hole route pool raise ritual when dove ring erode step century
+  pony
+bip_39_full_underscore: hole_route_pool_raise_ritual_when_dove_ring_erode_step_century_pony
+breakout_description: 22_7_mm_width_52_3_mm_height_28_pins
+breakout_pcb_height: 50.8
+breakout_pcb_width: 22.86
+chip:
+  family: esp32_s3
+  identity_scope: catalogue_chip_or_module_label
+  oomp_id: null
+  part_number: esp32_s3
+  silicon_revision: null
+chip_resources:
+  clock_max_mhz: 240
+  cpu_core_count: 2
+  general_purpose_spi_controllers: 2
+  hardware_i2c_controllers: 2
+  hardware_uart_controllers: 3
+  pio_state_machines: 0
+  pwm_channels: 8
+  scope: silicon resources; board routing and firmware may reduce availability
+  source_id: chip_datasheet
+connectors: {}
+coordinate_system:
+  origin: centre_of_pcb_outline
+  units: mm
+  view: top_with_usb_at_positive_y
+  x_positive: right
+  y_positive: towards_usb
+data_gaps:
+- Assembled component keepouts and USB insertion/cable envelopes have not been captured.
+- Public CAD is 8MB/no-PSRAM SKU. PID5477 pad positions, mounting holes and PCB outline
+  require confirmation; related coordinates retained separately.
+- Chip package/module pad numbers are not fully transcribed; null chip_pin_number
+  values must not be replaced with carrier-header numbers.
+default_interfaces:
+  i2c:
+    api: Wire
+    basis: framework_defaults
+    framework: arduino-esp32
+    notes: []
+    peripheral: null
+    pin_keys:
+      scl:
+      - JP3_11
+      - CONN1_4
+      sda:
+      - JP3_12
+      - CONN1_3
+    protocol: i2c
+    scl_gpio: 4
+    sda_gpio: 3
+    signal_status:
+      scl: mapped
+      sda: mapped
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_i2c
+    status: documented
+    variant: adafruit_feather_esp32s3
+    variant_scope: board_variant
+  spi:
+    api: SPI
+    basis: framework_defaults
+    framework: arduino-esp32
+    miso_gpio: 37
+    mosi_gpio: 35
+    notes:
+    - ss is the framework chip-select alias/default, not an automatically asserted
+      CS. Select and drive CS as required by the peripheral and library.
+    peripheral: null
+    pin_keys:
+      miso:
+      - JP1_4
+      mosi:
+      - JP1_5
+      sck:
+      - JP1_6
+      ss: []
+    protocol: spi
+    sck_gpio: 36
+    signal_status:
+      miso: mapped
+      mosi: mapped
+      sck: mapped
+      ss: not_in_pinout
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_spi
+    ss_gpio: 42
+    status: documented
+    variant: adafruit_feather_esp32s3
+    variant_scope: board_variant
+  uart:
+    api: null
+    basis: framework_pin_aliases
+    framework: arduino-esp32
+    notes:
+    - UART GPIOs are distinct from USB CDC/USB Serial. The meaning of Serial depends
+      on the core and USB build settings.
+    - TX/RX are board variant aliases. Pass the GPIOs explicitly to the selected HardwareSerial
+      instance; no-argument pin selection can use SoC UART defaults instead.
+    peripheral: null
+    pin_keys:
+      rx:
+      - JP1_3
+      tx:
+      - JP1_2
+    protocol: uart
+    rx_gpio: 38
+    signal_status:
+      rx: mapped
+      tx: mapped
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_uart
+    status: documented
+    tx_gpio: 39
+    variant: adafruit_feather_esp32s3
+    variant_scope: board_variant
+dimensions_mm:
+  assembled_height: 7.2
+  height: 52.3
+  pcb_thickness: null
+  scope: overall_product_dimensions_including_components
+  source_id: product
+  status: manufacturer_product_not_pcb_outline
+  width: 22.7
+directory: parts/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477
+electrical:
+  gpio_5v_tolerant: false
+  logic_voltage_v: 3.3
+  source_id: chip_datasheet
+  usb_connector: usb_c
+form_factor: feather_esp32_s3
+gpio_summary:
+  analog_candidates:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  automatic_firmware_enable: false
+  exposed:
+  - 0
+  - 3
+  - 4
+  - 5
+  - 6
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 43
+  general_io_candidates:
+  - 0
+  - 3
+  - 4
+  - 5
+  - 6
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 43
+id: electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477
+id_no_class: electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477
+id_no_size: electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477
+id_no_type: electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477
+id_oobb: electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477
+interface_defaults_version: 1
+item_kind: breakout
+kwargs:
+  breakout_pcb_height: 50.8
+  breakout_pcb_width: 22.86
+  modes:
+  - 3dpr
+  mounting_hole_details:
+  - diameter_mm: 2.2
+    id: plain:1
+    package: plain
+    plated: false
+    source_id: mounting_manufacturer_cad
+    x_mm: -9.5885
+    y_mm: -22.86
+  - diameter_mm: 2.2
+    id: plain:2
+    package: plain
+    plated: false
+    source_id: mounting_manufacturer_cad
+    x_mm: 9.525
+    y_mm: -22.86
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_manufacturer_cad
+    x_mm: 8.89
+    y_mm: 22.86
+  - diameter_mm: 2.5
+    id: U$32:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_manufacturer_cad
+    x_mm: -8.89
+    y_mm: 22.86
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -9.5885
+    - -22.86
+  - - 9.525
+    - -22.86
+  - - 8.89
+    - 22.86
+  - - -8.89
+    - 22.86
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  overwrite: true
+  part_ids:
+  - electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477
+  type: default_mounting_plate_default
+lab_support:
+  automatic_firmware_enable: false
+  gpio_matrix_routing: true
+  requires_reviewed_board_profile: true
+  status: catalogue_reference_only
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477
+manufacturer: adafruit
+md5: 6cb792a0589ba9f45075d04c9aac95d3
+md5_10: 6cb792a058
+md5_10_upper: 6CB792A058
+md5_5: 6cb79
+md5_5_upper: 6CB79
+md5_6: 6cb792
+md5_6_alpha: 48ple
+md5_6_alpha_upper: 48PLE
+md5_6_upper: 6CB792
+memory:
+  external_flash_bytes: 4194304
+  psram_bytes: 2097152
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_candidates:
+- diameter_mm: 2.2
+  source_id: cad
+  status: related_8mb_sku_requires_confirmation_for_5477
+  x_mm: -9.5885
+  y_mm: -22.86
+- diameter_mm: 2.2
+  source_id: cad
+  status: related_8mb_sku_requires_confirmation_for_5477
+  x_mm: 9.525
+  y_mm: -22.86
+- diameter_mm: 2.5
+  source_id: cad
+  status: related_8mb_sku_requires_confirmation_for_5477
+  x_mm: 8.89
+  y_mm: 22.86
+- diameter_mm: 2.5
+  source_id: cad
+  status: related_8mb_sku_requires_confirmation_for_5477
+  x_mm: -8.89
+  y_mm: 22.86
+mounting_hole_details:
+- diameter_mm: 2.2
+  id: plain:1
+  package: plain
+  plated: false
+  source_id: mounting_manufacturer_cad
+  x_mm: -9.5885
+  y_mm: -22.86
+- diameter_mm: 2.2
+  id: plain:2
+  package: plain
+  plated: false
+  source_id: mounting_manufacturer_cad
+  x_mm: 9.525
+  y_mm: -22.86
+- diameter_mm: 2.5
+  id: U$31:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_manufacturer_cad
+  x_mm: 8.89
+  y_mm: 22.86
+- diameter_mm: 2.5
+  id: U$32:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_manufacturer_cad
+  x_mm: -8.89
+  y_mm: 22.86
+mounting_hole_radius_name: m2
+mounting_hole_radius_names:
+- m2
+- m2
+- m2
+- m2
+mounting_hole_status: verified
+mounting_holes:
+- - -9.5885
+  - -22.86
+- - 9.525
+  - -22.86
+- - 8.89
+  - 22.86
+- - -8.89
+  - 22.86
+mounting_lift: 3
+mounting_research:
+  board_revision: Adafruit ESP32-S3 Feather carrier represented by Adafruit-Feather-ESP32-S3-PCB
+    board file at commit 2c95ed51a500d929fd6d8f519b895f0c4daeb982; the manufacturer
+    README states this layout is common to products 5323, 5477, and 5885.
+  board_size:
+  - 22.86
+  - 50.8
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'The exact EAGLE XML Layer-20 outline has native bounds X=0..50.80 mm
+    and Y=0..22.86 mm, with the documented 90 degree corner arcs, so the PCB outline
+    is 50.80 x 22.86 mm. Its native bounding-box centre is (25.40, 11.43) mm. The
+    USB-C connector X3 is at native -X; apply quarter_turn=3 (270 degrees CCW), mapping
+    centred coordinates (x,y) to (y,-x), so USB points +Y and board_size is [22.86,
+    50.80] mm. Selected all four board-mount features: plain:1 and plain:2 are 2.2
+    mm plain drilled holes at the end opposite USB; U$31/U$32 are explicitly named
+    MOUNTINGHOLE_2.5_PLATED package pads with 2.5 mm plated drills at the USB end.
+    Excluded the 1.0 mm JP1/JP3 header contact drills and X3 USB-C package mechanical
+    drills/anchors (0.65 mm holes and 0.60 mm pads). The preview shows four holes
+    at their asymmetric extracted positions with top view and USB toward +Y.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit product page identifies SKU 5477 as the 4 MB Flash /
+    2 MB PSRAM Feather. The manufacturer repository README explicitly states its EagleCAD
+    layout is common to product 5477 as well as 5323 and 5885. The pinned board filename
+    says 8MB No PSRAM, but the manufacturer identifies this as shared carrier CAD;
+    its SHA-256 matches the archived file.
+  mounting_holes:
+  - diameter_mm: 2.2
+    id: plain:1
+    package: plain
+    plated: false
+    source_id: manufacturer_cad
+    x_mm: -9.5885
+    y_mm: -22.86
+  - diameter_mm: 2.2
+    id: plain:2
+    package: plain
+    plated: false
+    source_id: manufacturer_cad
+    x_mm: 9.525
+    y_mm: -22.86
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: manufacturer_cad
+    x_mm: 8.89
+    y_mm: 22.86
+  - diameter_mm: 2.5
+    id: U$32:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: manufacturer_cad
+    x_mm: -8.89
+    y_mm: 22.86
+  record_sha256: 8973b1192d95b7d589cf5b22f95d0e733df3493a49a531561da1a72cddd80262
+  research_file: source_file/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 444799
+    id: manufacturer_cad
+    kind: manufacturer_cad
+    local_file: reference/Adafruit ESP32-S3 8MB No PSRAM.brd
+    locator: Pinned commit 2c95ed51a500d929fd6d8f519b895f0c4daeb982; exact EAGLE board
+      file; Layer 20 outline; plain holes and U$31/U$32 mounting packages; shared
+      carrier for 5323, 5477, 5885 per manufacturer README.
+    registered_at: '2026-11-06T18:18:30+00:00'
+    sha256: 5b06b9c6291545a2c9da0993a642e513a75c5901e26836a2ee559077147abcca
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/2c95ed51a500d929fd6d8f519b895f0c4daeb982/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd
+  - bytes: 3767
+    id: manufacturer_repo
+    kind: manufacturer_repository
+    local_file: mounting_evidence/manufacturer_readme.txt
+    locator: Pinned manufacturer README says EagleCAD board layout is common for products
+      5323, 5477, 5885. Retrieved 2026-11-06.
+    registered_at: '2026-11-06T18:18:30+00:00'
+    sha256: 1c564dfcf48aba201f85727bab1f372b5a9722b21546f6d73686e99576b228cb
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/2c95ed51a500d929fd6d8f519b895f0c4daeb982/README.md
+  - bytes: 106316
+    id: product_5477
+    kind: manufacturer_product
+    local_file: mounting_evidence/product_5477.html
+    locator: Official product 5477 identity, 4MB flash/2MB PSRAM, stated overall dimensions
+      22.7 mm x 52.3 mm; retrieved 2026-11-06.
+    registered_at: '2026-11-06T18:18:31+00:00'
+    sha256: 8bbe79b1cbdd8ddecf8915c28309579b33553ca915f672e3714fd7f191ab5809
+    url: https://www.adafruit.com/product/5477
+  status: verified
+name: Electronic Breakout Microcontroller Esp32 S3 Feather Esp32 S3 22 7 Mm Width
+  52 3 Mm Height 28 Pins Adafruit 5477
+name_no_class: Electronic Breakout Microcontroller Esp32 S3 Feather Esp32 S3 22 7
+  Mm Width 52 3 Mm Height 28 Pins Adafruit 5477
+name_no_size: Electronic Breakout Microcontroller Esp32 S3 Feather Esp32 S3 22 7 Mm
+  Width 52 3 Mm Height 28 Pins Adafruit 5477
+name_no_type: Electronic Breakout Microcontroller Esp32 S3 Feather Esp32 S3 22 7 Mm
+  Width 52 3 Mm Height 28 Pins Adafruit 5477
+name_proper: Electronic Breakout Microcontroller Esp32 S3 Feather Esp32 S3 22 7 Mm
+  Width 52 3 Mm Height 28 Pins Adafruit 5477
+name_readable: Adafruit ESP32-S3 Feather 4MB Flash / 2MB PSRAM (5477)
+name_space: electronic breakout microcontroller esp32 s3 feather esp32 s3 22 7 mm
+  width 52 3 mm height 28 pins adafruit 5477
+name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 S3 FEATHER ESP32 S3 22 7 MM
+  WIDTH 52 3 MM HEIGHT 28 PINS ADAFRUIT 5477
+notes: []
+onboard_gpio_connections:
+- function: neopix
+  gpio: 33
+  source_id: cad_schematic
+- function: boot0
+  gpio: 0
+  source_id: cad_schematic
+- function: neopix_pwr
+  gpio: 21
+  source_id: cad_schematic
+- function: i2c_pwr
+  gpio: 7
+  source_id: cad_schematic
+oobb_details:
+- breakout_pcb_height: 50.8
+  breakout_pcb_width: 22.86
+  mounting_hole_details:
+  - diameter_mm: 2.2
+    id: plain:1
+    package: plain
+    plated: false
+    source_id: mounting_manufacturer_cad
+    x_mm: -9.5885
+    y_mm: -22.86
+  - diameter_mm: 2.2
+    id: plain:2
+    package: plain
+    plated: false
+    source_id: mounting_manufacturer_cad
+    x_mm: 9.525
+    y_mm: -22.86
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_manufacturer_cad
+    x_mm: 8.89
+    y_mm: 22.86
+  - diameter_mm: 2.5
+    id: U$32:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_manufacturer_cad
+    x_mm: -8.89
+    y_mm: 22.86
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -9.5885
+    - -22.86
+  - - 9.525
+    - -22.86
+  - - 8.89
+    - 22.86
+  - - -8.89
+    - 22.86
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 50.8
+  breakout_pcb_width: 22.86
+  mounting_hole_details:
+  - diameter_mm: 2.2
+    id: plain:1
+    package: plain
+    plated: false
+    source_id: mounting_manufacturer_cad
+    x_mm: -9.5885
+    y_mm: -22.86
+  - diameter_mm: 2.2
+    id: plain:2
+    package: plain
+    plated: false
+    source_id: mounting_manufacturer_cad
+    x_mm: 9.525
+    y_mm: -22.86
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_manufacturer_cad
+    x_mm: 8.89
+    y_mm: 22.86
+  - diameter_mm: 2.5
+    id: U$32:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_manufacturer_cad
+    x_mm: -8.89
+    y_mm: 22.86
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -9.5885
+    - -22.86
+  - - 9.525
+    - -22.86
+  - - 8.89
+    - 22.86
+  - - -8.89
+    - 22.86
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 50.8
+  breakout_pcb_width: 22.86
+  mounting_hole_details:
+  - diameter_mm: 2.2
+    id: plain:1
+    package: plain
+    plated: false
+    source_id: mounting_manufacturer_cad
+    x_mm: -9.5885
+    y_mm: -22.86
+  - diameter_mm: 2.2
+    id: plain:2
+    package: plain
+    plated: false
+    source_id: mounting_manufacturer_cad
+    x_mm: 9.525
+    y_mm: -22.86
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_manufacturer_cad
+    x_mm: 8.89
+    y_mm: 22.86
+  - diameter_mm: 2.5
+    id: U$32:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_manufacturer_cad
+    x_mm: -8.89
+    y_mm: 22.86
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -9.5885
+    - -22.86
+  - - 9.525
+    - -22.86
+  - - 8.89
+    - 22.86
+  - - -8.89
+    - 22.86
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      assembly:
+        header_pitch_mm: 2.54
+        headers: without_headers
+      breakout_description: 22_7_mm_width_52_3_mm_height_28_pins
+      breakout_pcb_height: 50.8
+      breakout_pcb_width: 22.86
+      chip:
+        family: esp32_s3
+        identity_scope: catalogue_chip_or_module_label
+        oomp_id: null
+        part_number: esp32_s3
+        silicon_revision: null
+      chip_resources:
+        clock_max_mhz: 240
+        cpu_core_count: 2
+        general_purpose_spi_controllers: 2
+        hardware_i2c_controllers: 2
+        hardware_uart_controllers: 3
+        pio_state_machines: 0
+        pwm_channels: 8
+        scope: silicon resources; board routing and firmware may reduce availability
+        source_id: chip_datasheet
+      connectors: {}
+      coordinate_system:
+        origin: centre_of_pcb_outline
+        units: mm
+        view: top_with_usb_at_positive_y
+        x_positive: right
+        y_positive: towards_usb
+      data_gaps:
+      - Assembled component keepouts and USB insertion/cable envelopes have not been
+        captured.
+      - Public CAD is 8MB/no-PSRAM SKU. PID5477 pad positions, mounting holes and
+        PCB outline require confirmation; related coordinates retained separately.
+      - Chip package/module pad numbers are not fully transcribed; null chip_pin_number
+        values must not be replaced with carrier-header numbers.
+      default_interfaces:
+        i2c:
+          api: Wire
+          basis: framework_defaults
+          framework: arduino-esp32
+          notes: []
+          peripheral: null
+          pin_keys:
+            scl:
+            - JP3_11
+            - CONN1_4
+            sda:
+            - JP3_12
+            - CONN1_3
+          protocol: i2c
+          scl_gpio: 4
+          sda_gpio: 3
+          signal_status:
+            scl: mapped
+            sda: mapped
+          source_ids:
+          - interface_variant
+          - interface_board_selection
+          - interface_runtime_i2c
+          status: documented
+          variant: adafruit_feather_esp32s3
+          variant_scope: board_variant
+        spi:
+          api: SPI
+          basis: framework_defaults
+          framework: arduino-esp32
+          miso_gpio: 37
+          mosi_gpio: 35
+          notes:
+          - ss is the framework chip-select alias/default, not an automatically asserted
+            CS. Select and drive CS as required by the peripheral and library.
+          peripheral: null
+          pin_keys:
+            miso:
+            - JP1_4
+            mosi:
+            - JP1_5
+            sck:
+            - JP1_6
+            ss: []
+          protocol: spi
+          sck_gpio: 36
+          signal_status:
+            miso: mapped
+            mosi: mapped
+            sck: mapped
+            ss: not_in_pinout
+          source_ids:
+          - interface_variant
+          - interface_board_selection
+          - interface_runtime_spi
+          ss_gpio: 42
+          status: documented
+          variant: adafruit_feather_esp32s3
+          variant_scope: board_variant
+        uart:
+          api: null
+          basis: framework_pin_aliases
+          framework: arduino-esp32
+          notes:
+          - UART GPIOs are distinct from USB CDC/USB Serial. The meaning of Serial
+            depends on the core and USB build settings.
+          - TX/RX are board variant aliases. Pass the GPIOs explicitly to the selected
+            HardwareSerial instance; no-argument pin selection can use SoC UART defaults
+            instead.
+          peripheral: null
+          pin_keys:
+            rx:
+            - JP1_3
+            tx:
+            - JP1_2
+          protocol: uart
+          rx_gpio: 38
+          signal_status:
+            rx: mapped
+            tx: mapped
+          source_ids:
+          - interface_variant
+          - interface_board_selection
+          - interface_runtime_uart
+          status: documented
+          tx_gpio: 39
+          variant: adafruit_feather_esp32s3
+          variant_scope: board_variant
+      dimensions_mm:
+        assembled_height: 7.2
+        height: 52.3
+        pcb_thickness: null
+        scope: overall_product_dimensions_including_components
+        source_id: product
+        status: manufacturer_product_not_pcb_outline
+        width: 22.7
+      directory: parts\electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477
+      electrical:
+        gpio_5v_tolerant: false
+        logic_voltage_v: 3.3
+        source_id: chip_datasheet
+        usb_connector: usb_c
+      form_factor: feather_esp32_s3
+      gpio_summary:
+        analog_candidates:
+        - 3
+        - 4
+        - 5
+        - 6
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        automatic_firmware_enable: false
+        exposed:
+        - 0
+        - 3
+        - 4
+        - 5
+        - 6
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 43
+        general_io_candidates:
+        - 0
+        - 3
+        - 4
+        - 5
+        - 6
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 43
+      interface_defaults_version: 1
+      item_kind: breakout
+      lab_support:
+        automatic_firmware_enable: false
+        gpio_matrix_routing: true
+        requires_reviewed_board_profile: true
+        status: catalogue_reference_only
+      manufacturer: adafruit
+      memory:
+        external_flash_bytes: 4194304
+        psram_bytes: 2097152
+      mounting_coordinate_system:
+        origin: pcb_bounding_box_centre
+        units: mm
+        view: top
+        x_positive: right
+        y_positive: up
+      mounting_geometry_ready: true
+      mounting_hole_candidates:
+      - diameter_mm: 2.2
+        source_id: cad
+        status: related_8mb_sku_requires_confirmation_for_5477
+        x_mm: -9.5885
+        y_mm: -22.86
+      - diameter_mm: 2.2
+        source_id: cad
+        status: related_8mb_sku_requires_confirmation_for_5477
+        x_mm: 9.525
+        y_mm: -22.86
+      - diameter_mm: 2.5
+        source_id: cad
+        status: related_8mb_sku_requires_confirmation_for_5477
+        x_mm: 8.89
+        y_mm: 22.86
+      - diameter_mm: 2.5
+        source_id: cad
+        status: related_8mb_sku_requires_confirmation_for_5477
+        x_mm: -8.89
+        y_mm: 22.86
+      mounting_hole_details:
+      - diameter_mm: 2.2
+        id: plain:1
+        package: plain
+        plated: false
+        source_id: mounting_manufacturer_cad
+        x_mm: -9.5885
+        y_mm: -22.86
+      - diameter_mm: 2.2
+        id: plain:2
+        package: plain
+        plated: false
+        source_id: mounting_manufacturer_cad
+        x_mm: 9.525
+        y_mm: -22.86
+      - diameter_mm: 2.5
+        id: U$31:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_manufacturer_cad
+        x_mm: 8.89
+        y_mm: 22.86
+      - diameter_mm: 2.5
+        id: U$32:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_manufacturer_cad
+        x_mm: -8.89
+        y_mm: 22.86
+      mounting_hole_radius_name: m2
+      mounting_hole_radius_names:
+      - m2
+      - m2
+      - m2
+      - m2
+      mounting_hole_status: verified
+      mounting_holes:
+      - - -9.5885
+        - -22.86
+      - - 9.525
+        - -22.86
+      - - 8.89
+        - 22.86
+      - - -8.89
+        - 22.86
+      mounting_lift: 3
+      mounting_research:
+        board_revision: Adafruit ESP32-S3 Feather carrier represented by Adafruit-Feather-ESP32-S3-PCB
+          board file at commit 2c95ed51a500d929fd6d8f519b895f0c4daeb982; the manufacturer
+          README states this layout is common to products 5323, 5477, and 5885.
+        board_size:
+        - 22.86
+        - 50.8
+        coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        derivation: 'The exact EAGLE XML Layer-20 outline has native bounds X=0..50.80
+          mm and Y=0..22.86 mm, with the documented 90 degree corner arcs, so the
+          PCB outline is 50.80 x 22.86 mm. Its native bounding-box centre is (25.40,
+          11.43) mm. The USB-C connector X3 is at native -X; apply quarter_turn=3
+          (270 degrees CCW), mapping centred coordinates (x,y) to (y,-x), so USB points
+          +Y and board_size is [22.86, 50.80] mm. Selected all four board-mount features:
+          plain:1 and plain:2 are 2.2 mm plain drilled holes at the end opposite USB;
+          U$31/U$32 are explicitly named MOUNTINGHOLE_2.5_PLATED package pads with
+          2.5 mm plated drills at the USB end. Excluded the 1.0 mm JP1/JP3 header
+          contact drills and X3 USB-C package mechanical drills/anchors (0.65 mm holes
+          and 0.60 mm pads). The preview shows four holes at their asymmetric extracted
+          positions with top view and USB toward +Y.'
+        fit_status: generic_holder_not_physical_fit_tested
+        identity_evidence: Adafruit product page identifies SKU 5477 as the 4 MB Flash
+          / 2 MB PSRAM Feather. The manufacturer repository README explicitly states
+          its EagleCAD layout is common to product 5477 as well as 5323 and 5885.
+          The pinned board filename says 8MB No PSRAM, but the manufacturer identifies
+          this as shared carrier CAD; its SHA-256 matches the archived file.
+        mounting_holes:
+        - diameter_mm: 2.2
+          id: plain:1
+          package: plain
+          plated: false
+          source_id: manufacturer_cad
+          x_mm: -9.5885
+          y_mm: -22.86
+        - diameter_mm: 2.2
+          id: plain:2
+          package: plain
+          plated: false
+          source_id: manufacturer_cad
+          x_mm: 9.525
+          y_mm: -22.86
+        - diameter_mm: 2.5
+          id: U$31:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: manufacturer_cad
+          x_mm: 8.89
+          y_mm: 22.86
+        - diameter_mm: 2.5
+          id: U$32:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: manufacturer_cad
+          x_mm: -8.89
+          y_mm: 22.86
+        record_sha256: 8973b1192d95b7d589cf5b22f95d0e733df3493a49a531561da1a72cddd80262
+        research_file: source_file/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477/mounting.yaml
+        reviewed_by: gpt-6-luna
+        sources:
+        - bytes: 444799
+          id: manufacturer_cad
+          kind: manufacturer_cad
+          local_file: reference/Adafruit ESP32-S3 8MB No PSRAM.brd
+          locator: Pinned commit 2c95ed51a500d929fd6d8f519b895f0c4daeb982; exact EAGLE
+            board file; Layer 20 outline; plain holes and U$31/U$32 mounting packages;
+            shared carrier for 5323, 5477, 5885 per manufacturer README.
+          registered_at: '2026-11-06T18:18:30+00:00'
+          sha256: 5b06b9c6291545a2c9da0993a642e513a75c5901e26836a2ee559077147abcca
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/2c95ed51a500d929fd6d8f519b895f0c4daeb982/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd
+        - bytes: 3767
+          id: manufacturer_repo
+          kind: manufacturer_repository
+          local_file: mounting_evidence/manufacturer_readme.txt
+          locator: Pinned manufacturer README says EagleCAD board layout is common
+            for products 5323, 5477, 5885. Retrieved 2026-11-06.
+          registered_at: '2026-11-06T18:18:30+00:00'
+          sha256: 1c564dfcf48aba201f85727bab1f372b5a9722b21546f6d73686e99576b228cb
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/2c95ed51a500d929fd6d8f519b895f0c4daeb982/README.md
+        - bytes: 106316
+          id: product_5477
+          kind: manufacturer_product
+          local_file: mounting_evidence/product_5477.html
+          locator: Official product 5477 identity, 4MB flash/2MB PSRAM, stated overall
+            dimensions 22.7 mm x 52.3 mm; retrieved 2026-11-06.
+          registered_at: '2026-11-06T18:18:31+00:00'
+          sha256: 8bbe79b1cbdd8ddecf8915c28309579b33553ca915f672e3714fd7f191ab5809
+          url: https://www.adafruit.com/product/5477
+        status: verified
+      name: electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477
+      name_proper: Electronic Breakout Microcontroller Esp32 S3 Feather Esp32 S3 22
+        7 Mm Width 52 3 Mm Height 28 Pins Adafruit 5477
+      name_readable: Adafruit ESP32-S3 Feather 4MB Flash / 2MB PSRAM (5477)
+      name_space: electronic breakout microcontroller esp32 s3 feather esp32 s3 22
+        7 mm width 52 3 mm height 28 pins adafruit 5477
+      name_upper: ELECTRONIC BREAKOUT MICROCONTROLLER ESP32 S3 FEATHER ESP32 S3 22
+        7 MM WIDTH 52 3 MM HEIGHT 28 PINS ADAFRUIT 5477
+      notes: []
+      onboard_gpio_connections:
+      - function: neopix
+        gpio: 33
+        source_id: cad_schematic
+      - function: boot0
+        gpio: 0
+        source_id: cad_schematic
+      - function: neopix_pwr
+        gpio: 21
+        source_id: cad_schematic
+      - function: i2c_pwr
+        gpio: 7
+        source_id: cad_schematic
+      oobb_details:
+      - breakout_pcb_height: 50.8
+        breakout_pcb_width: 22.86
+        mounting_hole_details:
+        - diameter_mm: 2.2
+          id: plain:1
+          package: plain
+          plated: false
+          source_id: mounting_manufacturer_cad
+          x_mm: -9.5885
+          y_mm: -22.86
+        - diameter_mm: 2.2
+          id: plain:2
+          package: plain
+          plated: false
+          source_id: mounting_manufacturer_cad
+          x_mm: 9.525
+          y_mm: -22.86
+        - diameter_mm: 2.5
+          id: U$31:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_manufacturer_cad
+          x_mm: 8.89
+          y_mm: 22.86
+        - diameter_mm: 2.5
+          id: U$32:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_manufacturer_cad
+          x_mm: -8.89
+          y_mm: 22.86
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -9.5885
+          - -22.86
+        - - 9.525
+          - -22.86
+        - - 8.89
+          - 22.86
+        - - -8.89
+          - 22.86
+        mounting_layout: full_wrap
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+      - breakout_pcb_height: 50.8
+        breakout_pcb_width: 22.86
+        mounting_hole_details:
+        - diameter_mm: 2.2
+          id: plain:1
+          package: plain
+          plated: false
+          source_id: mounting_manufacturer_cad
+          x_mm: -9.5885
+          y_mm: -22.86
+        - diameter_mm: 2.2
+          id: plain:2
+          package: plain
+          plated: false
+          source_id: mounting_manufacturer_cad
+          x_mm: 9.525
+          y_mm: -22.86
+        - diameter_mm: 2.5
+          id: U$31:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_manufacturer_cad
+          x_mm: 8.89
+          y_mm: 22.86
+        - diameter_mm: 2.5
+          id: U$32:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_manufacturer_cad
+          x_mm: -8.89
+          y_mm: 22.86
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -9.5885
+          - -22.86
+        - - 9.525
+          - -22.86
+        - - 8.89
+          - 22.86
+        - - -8.89
+          - 22.86
+        mounting_layout: short_sides
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_short_sides
+      - breakout_pcb_height: 50.8
+        breakout_pcb_width: 22.86
+        mounting_hole_details:
+        - diameter_mm: 2.2
+          id: plain:1
+          package: plain
+          plated: false
+          source_id: mounting_manufacturer_cad
+          x_mm: -9.5885
+          y_mm: -22.86
+        - diameter_mm: 2.2
+          id: plain:2
+          package: plain
+          plated: false
+          source_id: mounting_manufacturer_cad
+          x_mm: 9.525
+          y_mm: -22.86
+        - diameter_mm: 2.5
+          id: U$31:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_manufacturer_cad
+          x_mm: 8.89
+          y_mm: 22.86
+        - diameter_mm: 2.5
+          id: U$32:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_manufacturer_cad
+          x_mm: -8.89
+          y_mm: 22.86
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -9.5885
+          - -22.86
+        - - 9.525
+          - -22.86
+        - - 8.89
+          - 22.86
+        - - -8.89
+          - 22.86
+        mounting_layout: long_side
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_long_side
+      part_number: '5477'
+      pinout_scope: Expansion connectors and explicitly listed test pads; USB socket
+        contacts excluded.
+      pinout_status: documented_contact_inventory
+      pins:
+        CONN1_1:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: false
+          capabilities: []
+          chip_pin_number: null
+          connector: CONN1
+          default_interface_roles: []
+          direction: not_applicable
+          drill_mm: null
+          functions:
+          - GND
+          - GND
+          gpio: null
+          name: GND
+          number: '1'
+          pad_kind: surface_pad
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -1.5
+          - 1.362
+          restrictions: []
+          signal_types: []
+          source_id: cad
+          surface: top
+          type: ground
+          x_mm: null
+          y_mm: null
+        CONN1_2:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: false
+          capabilities: []
+          chip_pin_number: null
+          connector: CONN1
+          default_interface_roles: []
+          direction: not_applicable
+          drill_mm: null
+          functions:
+          - VSENSOR
+          - VSENSOR
+          gpio: null
+          name: VSENSOR
+          number: '2'
+          pad_kind: surface_pad
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -0.5
+          - 1.362
+          restrictions: []
+          signal_types: []
+          source_id: cad
+          surface: top
+          type: power
+          x_mm: null
+          y_mm: null
+        CONN1_3:
+          adc_channel: 2
+          adc_unit: 1
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: CONN1
+          default_interface_roles:
+          - interface: i2c
+            signal: sda
+          direction: bidirectional
+          drill_mm: null
+          functions:
+          - SDA
+          gpio: 3
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: SDA
+          number: '3'
+          pad_kind: surface_pad
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 0.5
+          - 1.362
+          restrictions:
+          - Boot strapping pin; external levels affect startup.
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        CONN1_4:
+          adc_channel: 3
+          adc_unit: 1
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: CONN1
+          default_interface_roles:
+          - interface: i2c
+            signal: scl
+          direction: bidirectional
+          drill_mm: null
+          functions:
+          - SCL
+          gpio: 4
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: SCL
+          number: '4'
+          pad_kind: surface_pad
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 1.5
+          - 1.362
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP1_1:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - TXD0
+          gpio: 43
+          input_only: false
+          lab_analog_eligible: false
+          logic_voltage_v: 3.3
+          name: TXD0
+          number: '1'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - -19.05
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP1_10:
+          adc_channel: 5
+          adc_unit: 2
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - A2
+          gpio: 16
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: A2
+          number: '10'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - 3.81
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP1_11:
+          adc_channel: 6
+          adc_unit: 2
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - A1
+          gpio: 17
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: A1
+          number: '11'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - 6.35
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP1_12:
+          adc_channel: 7
+          adc_unit: 2
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - A0
+          gpio: 18
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: A0
+          number: '12'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - 8.89
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP1_13:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: false
+          capabilities: []
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles: []
+          direction: not_applicable
+          drill_mm: 1.0
+          functions:
+          - GND
+          - GND
+          gpio: null
+          name: GND
+          number: '13'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - 11.43
+          restrictions: []
+          signal_types: []
+          source_id: cad
+          surface: top
+          type: ground
+          x_mm: null
+          y_mm: null
+        JP1_14:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: false
+          capabilities: []
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles: []
+          direction: not_applicable
+          drill_mm: 1.0
+          functions:
+          - 3.3V
+          - 3.3V
+          gpio: null
+          name: 3.3V
+          number: '14'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - 13.97
+          restrictions: []
+          signal_types: []
+          source_id: cad
+          surface: top
+          type: power
+          x_mm: null
+          y_mm: null
+        JP1_15:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: false
+          capabilities: []
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles: []
+          direction: not_applicable
+          drill_mm: 1.0
+          functions:
+          - 3.3V
+          - 3.3V
+          gpio: null
+          name: 3.3V
+          number: '15'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - 16.51
+          restrictions: []
+          signal_types: []
+          source_id: cad
+          surface: top
+          type: power
+          x_mm: null
+          y_mm: null
+        JP1_16:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: false
+          capabilities: []
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles: []
+          direction: not_applicable
+          drill_mm: 1.0
+          functions:
+          - RESET
+          - RESET
+          gpio: null
+          name: RESET
+          number: '16'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - 19.05
+          restrictions: []
+          signal_types: []
+          source_id: cad
+          surface: top
+          type: control
+          x_mm: null
+          y_mm: null
+        JP1_2:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles:
+          - interface: uart
+            signal: tx
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - TX
+          gpio: 39
+          input_only: false
+          lab_analog_eligible: false
+          logic_voltage_v: 3.3
+          name: TX
+          number: '2'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - -16.51
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP1_3:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles:
+          - interface: uart
+            signal: rx
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - RX
+          gpio: 38
+          input_only: false
+          lab_analog_eligible: false
+          logic_voltage_v: 3.3
+          name: RX
+          number: '3'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - -13.97
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP1_4:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles:
+          - interface: spi
+            signal: miso
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - MISO
+          gpio: 37
+          input_only: false
+          lab_analog_eligible: false
+          logic_voltage_v: 3.3
+          name: MISO
+          number: '4'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - -11.43
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP1_5:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles:
+          - interface: spi
+            signal: mosi
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - MOSI
+          gpio: 35
+          input_only: false
+          lab_analog_eligible: false
+          logic_voltage_v: 3.3
+          name: MOSI
+          number: '5'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - -8.89
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP1_6:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles:
+          - interface: spi
+            signal: sck
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - SCK
+          gpio: 36
+          input_only: false
+          lab_analog_eligible: false
+          logic_voltage_v: 3.3
+          name: SCK
+          number: '6'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - -6.35
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP1_7:
+          adc_channel: 7
+          adc_unit: 1
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - A5
+          gpio: 8
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: A5
+          number: '7'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - -3.81
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP1_8:
+          adc_channel: 3
+          adc_unit: 2
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - A4
+          gpio: 14
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: A4
+          number: '8'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - -1.27
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP1_9:
+          adc_channel: 4
+          adc_unit: 2
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP1
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - A3
+          gpio: 15
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: A3
+          number: '9'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -10.16
+          - 1.27
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP3_1:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: false
+          capabilities: []
+          chip_pin_number: null
+          connector: JP3
+          default_interface_roles: []
+          direction: not_applicable
+          drill_mm: 1.0
+          functions:
+          - VBAT
+          - VBAT
+          gpio: null
+          name: VBAT
+          number: '1'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 10.16
+          - 8.89
+          restrictions: []
+          signal_types: []
+          source_id: cad
+          surface: top
+          type: power
+          x_mm: null
+          y_mm: null
+        JP3_10:
+          adc_channel: 4
+          adc_unit: 1
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP3
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - D5
+          gpio: 5
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: D5
+          number: '10'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 10.16
+          - -13.97
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP3_11:
+          adc_channel: 3
+          adc_unit: 1
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP3
+          default_interface_roles:
+          - interface: i2c
+            signal: scl
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - SCL
+          gpio: 4
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: SCL
+          number: '11'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 10.16
+          - -16.51
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP3_12:
+          adc_channel: 2
+          adc_unit: 1
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP3
+          default_interface_roles:
+          - interface: i2c
+            signal: sda
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - SDA
+          gpio: 3
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: SDA
+          number: '12'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 10.16
+          - -19.05
+          restrictions:
+          - Boot strapping pin; external levels affect startup.
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP3_2:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: false
+          capabilities: []
+          chip_pin_number: null
+          connector: JP3
+          default_interface_roles: []
+          direction: not_applicable
+          drill_mm: 1.0
+          functions:
+          - EN
+          - EN
+          gpio: null
+          name: EN
+          number: '2'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 10.16
+          - 6.35
+          restrictions: []
+          signal_types: []
+          source_id: cad
+          surface: top
+          type: control
+          x_mm: null
+          y_mm: null
+        JP3_3:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: false
+          capabilities: []
+          chip_pin_number: null
+          connector: JP3
+          default_interface_roles: []
+          direction: not_applicable
+          drill_mm: 1.0
+          functions:
+          - VBUS
+          - VBUS
+          gpio: null
+          name: VBUS
+          number: '3'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 10.16
+          - 3.81
+          restrictions: []
+          signal_types: []
+          source_id: cad
+          surface: top
+          type: power
+          x_mm: null
+          y_mm: null
+        JP3_4:
+          adc_channel: 2
+          adc_unit: 2
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP3
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - D13
+          gpio: 13
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: D13
+          number: '4'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 10.16
+          - 1.27
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP3_5:
+          adc_channel: 1
+          adc_unit: 2
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP3
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - D12
+          gpio: 12
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: D12
+          number: '5'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 10.16
+          - -1.27
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP3_6:
+          adc_channel: 0
+          adc_unit: 2
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP3
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - D11
+          gpio: 11
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: D11
+          number: '6'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 10.16
+          - -3.81
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP3_7:
+          adc_channel: 9
+          adc_unit: 1
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP3
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - D10
+          gpio: 10
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: D10
+          number: '7'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 10.16
+          - -6.35
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP3_8:
+          adc_channel: 8
+          adc_unit: 1
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP3
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - D9
+          gpio: 9
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: D9
+          number: '8'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 10.16
+          - -8.89
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        JP3_9:
+          adc_channel: 5
+          adc_unit: 1
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          - analog_input
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: JP3
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: 1.0
+          functions:
+          - D6
+          gpio: 6
+          input_only: false
+          lab_analog_eligible: true
+          logic_voltage_v: 3.3
+          name: D6
+          number: '9'
+          pad_kind: through_hole
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 10.16
+          - -11.43
+          restrictions: []
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          - analog
+          source_id: cad
+          surface: top
+          type: gpio
+          x_mm: null
+          y_mm: null
+        TP1_P$1:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: true
+          capabilities:
+          - gpio
+          - digital_input
+          - digital_output
+          - pwm
+          capability_source_id: chip_datasheet
+          chip_pin_number: null
+          connector: TP1
+          default_interface_roles: []
+          direction: bidirectional
+          drill_mm: null
+          functions:
+          - BOOT0
+          gpio: 0
+          input_only: false
+          lab_analog_eligible: false
+          logic_voltage_v: 3.3
+          name: BOOT0
+          number: P$1
+          pad_kind: surface_pad
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - -6.0198
+          - 4.953
+          restrictions:
+          - Boot strapping pin; external levels affect startup.
+          - 'Shared onboard net: boot0'
+          routable_peripherals:
+          - uart
+          - spi
+          - i2c
+          - i2s
+          - rmt
+          - pwm
+          signal_types:
+          - digital
+          source_id: cad
+          surface: bottom
+          type: gpio
+          x_mm: null
+          y_mm: null
+        X1_1:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: false
+          capabilities: []
+          chip_pin_number: null
+          connector: X1
+          default_interface_roles: []
+          direction: not_applicable
+          drill_mm: null
+          functions:
+          - GND
+          - GND
+          gpio: null
+          name: GND
+          number: '1'
+          pad_kind: surface_pad
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 4.2375
+          - 15.478
+          restrictions: []
+          signal_types: []
+          source_id: cad
+          surface: top
+          type: ground
+          x_mm: null
+          y_mm: null
+        X1_2:
+          adc_channel: null
+          adc_unit: null
+          aliases: []
+          available_for_general_io: false
+          capabilities: []
+          chip_pin_number: null
+          connector: X1
+          default_interface_roles: []
+          direction: not_applicable
+          drill_mm: null
+          functions:
+          - VBAT
+          - VBAT
+          gpio: null
+          name: VBAT
+          number: '2'
+          pad_kind: surface_pad
+          position_status: related_8mb_sku_requires_confirmation_for_5477
+          reference_position_mm:
+          - 4.2375
+          - 13.478
+          restrictions: []
+          signal_types: []
+          source_id: cad
+          surface: top
+          type: power
+          x_mm: null
+          y_mm: null
+      schema_version: 1
+      sources:
+      - accessed: '2026-10-22'
+        id: original_catalogue
+        local_file: null
+        scope: Nominal dimensions and identity; not manufacturer verification
+        title: Original populate entries in this repository
+        url: null
+      - accessed: '2026-10-22'
+        id: chip_datasheet
+        scope: GPIO capabilities, electrical limits and strapping; not carrier geometry
+        title: chip_datasheet
+        url: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
+      - accessed: '2026-10-22'
+        id: board_guide
+        scope: Board identity, connector pinout and documented functions
+        title: feather_s3 manufacturer guide
+        url: https://learn.adafruit.com/adafruit-esp32-s3-feather/downloads
+      - accessed: '2026-10-22'
+        id: cad
+        local_file: reference/Adafruit ESP32-S3 8MB No PSRAM.brd
+        scope: Manufacturer CAD; see revision and product applicability notes
+        sha256: 5b06b9c6291545a2c9da0993a642e513a75c5901e26836a2ee559077147abcca
+        title: cad
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/main/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd
+      - accessed: '2026-10-22'
+        id: cad_schematic
+        local_file: reference/Adafruit ESP32-S3 8MB No PSRAM.sch
+        scope: Manufacturer CAD; see revision and product applicability notes
+        sha256: b71cdf533f043c30c1b8ab87d476214c6a857b4f92245debe98694e88a69d398
+        title: cad_schematic
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/main/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.sch
+      - accessed: '2026-10-22'
+        id: product
+        scope: Exact SKU, 4 MB flash / 2 MB PSRAM and overall product dimensions
+        title: product
+        url: https://www.adafruit.com/product/5477
+      - id: interface_variant
+        local_file: reference/interface_defaults/esp32_adafruit_feather_esp32s3.h
+        retrieved_date: '2026-10-23'
+        revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+        scope: Arduino variant pin assignments; not a physical header drawing
+        sha256: f1787f96e8855a5b9be7b7bde03f23866a09234cc6fa03a6cc0ce4f0853aa7e3
+        url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/variants/adafruit_feather_esp32s3/pins_arduino.h
+      - content_scope: excerpt_of_board_names_and_variant_selections
+        id: interface_board_selection
+        local_file: reference/interface_defaults/esp32_boards.txt
+        retrieved_date: '2026-10-23'
+        revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+        scope: Framework board names and variant selection; generic selections remain
+          explicitly scoped
+        sha256: af7ce8a6007dbc4a76dbebed31eac2885bfb712a6ef404cb8cdd58fa7d2523e6
+        source_document_sha256: 11b90d1f4795ec365418635749b685a2f3d8320d0e163d886aa2099e81277b07
+        url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/boards.txt
+      - id: interface_runtime_uart
+        local_file: reference/interface_defaults/esp32_HardwareSerial.cpp
+        retrieved_date: '2026-10-23'
+        revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+        scope: Framework API construction/default behavior; USB Serial is separate
+          from UART pin aliases
+        sha256: a555861fb4f28a2a4c1d903a8152d714902fee2510c9eaf3ad5311dbcd779035
+        url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/cores/esp32/HardwareSerial.cpp
+      - id: interface_runtime_i2c
+        local_file: reference/interface_defaults/esp32_Wire.cpp
+        retrieved_date: '2026-10-23'
+        revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+        scope: Framework API construction/default behavior; USB Serial is separate
+          from UART pin aliases
+        sha256: 0454e5becf7acaa6f7cb466397682d762461f678cbb88644f31f313e653b71bc
+        url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/Wire/src/Wire.cpp
+      - id: interface_runtime_spi
+        local_file: reference/interface_defaults/esp32_SPI.cpp
+        retrieved_date: '2026-10-23'
+        revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+        scope: Framework API construction/default behavior; USB Serial is separate
+          from UART pin aliases
+        sha256: 4caea80d21fa230a528322d9eb900880a0acd9c91cb355bc5cec514ea02ecaed
+        url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/SPI/src/SPI.cpp
+      - bytes: 444799
+        id: mounting_manufacturer_cad
+        kind: manufacturer_cad
+        local_file: reference/Adafruit ESP32-S3 8MB No PSRAM.brd
+        locator: Pinned commit 2c95ed51a500d929fd6d8f519b895f0c4daeb982; exact EAGLE
+          board file; Layer 20 outline; plain holes and U$31/U$32 mounting packages;
+          shared carrier for 5323, 5477, 5885 per manufacturer README.
+        registered_at: '2026-11-06T18:18:30+00:00'
+        sha256: 5b06b9c6291545a2c9da0993a642e513a75c5901e26836a2ee559077147abcca
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/2c95ed51a500d929fd6d8f519b895f0c4daeb982/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd
+      - bytes: 3767
+        id: mounting_manufacturer_repo
+        kind: manufacturer_repository
+        local_file: mounting_evidence/manufacturer_readme.txt
+        locator: Pinned manufacturer README says EagleCAD board layout is common for
+          products 5323, 5477, 5885. Retrieved 2026-11-06.
+        registered_at: '2026-11-06T18:18:30+00:00'
+        sha256: 1c564dfcf48aba201f85727bab1f372b5a9722b21546f6d73686e99576b228cb
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/2c95ed51a500d929fd6d8f519b895f0c4daeb982/README.md
+      - bytes: 106316
+        id: mounting_product_5477
+        kind: manufacturer_product
+        local_file: mounting_evidence/product_5477.html
+        locator: Official product 5477 identity, 4MB flash/2MB PSRAM, stated overall
+          dimensions 22.7 mm x 52.3 mm; retrieved 2026-11-06.
+        registered_at: '2026-11-06T18:18:31+00:00'
+        sha256: 8bbe79b1cbdd8ddecf8915c28309579b33553ca915f672e3714fd7f191ab5809
+        url: https://www.adafruit.com/product/5477
+      svg_details:
+        height: 52.3
+        stylesheet: microcontroller
+        svg_name: microcontroller
+        width: 22.7
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: adafruit
+      taxonomy_15: '5477'
+      taxonomy_2: breakout
+      taxonomy_3: microcontroller
+      taxonomy_4: esp32_s3
+      taxonomy_5: feather_esp32_s3
+      taxonomy_6: 22_7_mm_width_52_3_mm_height_28_pins
+      taxonomy_7: ''
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: microcontroller
+      type_2: esp32_s3
+      type_3: feather_esp32_s3
+      url_chat: ''
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477
+part_number: '5477'
+pinout_scope: Expansion connectors and explicitly listed test pads; USB socket contacts
+  excluded.
+pinout_status: documented_contact_inventory
+pins:
+  CONN1_1:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: false
+    capabilities: []
+    chip_pin_number: null
+    connector: CONN1
+    default_interface_roles: []
+    direction: not_applicable
+    drill_mm: null
+    functions:
+    - GND
+    - GND
+    gpio: null
+    name: GND
+    number: '1'
+    pad_kind: surface_pad
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -1.5
+    - 1.362
+    restrictions: []
+    signal_types: []
+    source_id: cad
+    surface: top
+    type: ground
+    x_mm: null
+    y_mm: null
+  CONN1_2:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: false
+    capabilities: []
+    chip_pin_number: null
+    connector: CONN1
+    default_interface_roles: []
+    direction: not_applicable
+    drill_mm: null
+    functions:
+    - VSENSOR
+    - VSENSOR
+    gpio: null
+    name: VSENSOR
+    number: '2'
+    pad_kind: surface_pad
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -0.5
+    - 1.362
+    restrictions: []
+    signal_types: []
+    source_id: cad
+    surface: top
+    type: power
+    x_mm: null
+    y_mm: null
+  CONN1_3:
+    adc_channel: 2
+    adc_unit: 1
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: CONN1
+    default_interface_roles:
+    - interface: i2c
+      signal: sda
+    direction: bidirectional
+    drill_mm: null
+    functions:
+    - SDA
+    gpio: 3
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: SDA
+    number: '3'
+    pad_kind: surface_pad
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 0.5
+    - 1.362
+    restrictions:
+    - Boot strapping pin; external levels affect startup.
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  CONN1_4:
+    adc_channel: 3
+    adc_unit: 1
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: CONN1
+    default_interface_roles:
+    - interface: i2c
+      signal: scl
+    direction: bidirectional
+    drill_mm: null
+    functions:
+    - SCL
+    gpio: 4
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: SCL
+    number: '4'
+    pad_kind: surface_pad
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 1.5
+    - 1.362
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP1_1:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - TXD0
+    gpio: 43
+    input_only: false
+    lab_analog_eligible: false
+    logic_voltage_v: 3.3
+    name: TXD0
+    number: '1'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - -19.05
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP1_10:
+    adc_channel: 5
+    adc_unit: 2
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - A2
+    gpio: 16
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: A2
+    number: '10'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - 3.81
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP1_11:
+    adc_channel: 6
+    adc_unit: 2
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - A1
+    gpio: 17
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: A1
+    number: '11'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - 6.35
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP1_12:
+    adc_channel: 7
+    adc_unit: 2
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - A0
+    gpio: 18
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: A0
+    number: '12'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - 8.89
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP1_13:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: false
+    capabilities: []
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles: []
+    direction: not_applicable
+    drill_mm: 1.0
+    functions:
+    - GND
+    - GND
+    gpio: null
+    name: GND
+    number: '13'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - 11.43
+    restrictions: []
+    signal_types: []
+    source_id: cad
+    surface: top
+    type: ground
+    x_mm: null
+    y_mm: null
+  JP1_14:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: false
+    capabilities: []
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles: []
+    direction: not_applicable
+    drill_mm: 1.0
+    functions:
+    - 3.3V
+    - 3.3V
+    gpio: null
+    name: 3.3V
+    number: '14'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - 13.97
+    restrictions: []
+    signal_types: []
+    source_id: cad
+    surface: top
+    type: power
+    x_mm: null
+    y_mm: null
+  JP1_15:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: false
+    capabilities: []
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles: []
+    direction: not_applicable
+    drill_mm: 1.0
+    functions:
+    - 3.3V
+    - 3.3V
+    gpio: null
+    name: 3.3V
+    number: '15'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - 16.51
+    restrictions: []
+    signal_types: []
+    source_id: cad
+    surface: top
+    type: power
+    x_mm: null
+    y_mm: null
+  JP1_16:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: false
+    capabilities: []
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles: []
+    direction: not_applicable
+    drill_mm: 1.0
+    functions:
+    - RESET
+    - RESET
+    gpio: null
+    name: RESET
+    number: '16'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - 19.05
+    restrictions: []
+    signal_types: []
+    source_id: cad
+    surface: top
+    type: control
+    x_mm: null
+    y_mm: null
+  JP1_2:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles:
+    - interface: uart
+      signal: tx
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - TX
+    gpio: 39
+    input_only: false
+    lab_analog_eligible: false
+    logic_voltage_v: 3.3
+    name: TX
+    number: '2'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - -16.51
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP1_3:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles:
+    - interface: uart
+      signal: rx
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - RX
+    gpio: 38
+    input_only: false
+    lab_analog_eligible: false
+    logic_voltage_v: 3.3
+    name: RX
+    number: '3'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - -13.97
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP1_4:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles:
+    - interface: spi
+      signal: miso
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - MISO
+    gpio: 37
+    input_only: false
+    lab_analog_eligible: false
+    logic_voltage_v: 3.3
+    name: MISO
+    number: '4'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - -11.43
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP1_5:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles:
+    - interface: spi
+      signal: mosi
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - MOSI
+    gpio: 35
+    input_only: false
+    lab_analog_eligible: false
+    logic_voltage_v: 3.3
+    name: MOSI
+    number: '5'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - -8.89
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP1_6:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles:
+    - interface: spi
+      signal: sck
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - SCK
+    gpio: 36
+    input_only: false
+    lab_analog_eligible: false
+    logic_voltage_v: 3.3
+    name: SCK
+    number: '6'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - -6.35
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP1_7:
+    adc_channel: 7
+    adc_unit: 1
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - A5
+    gpio: 8
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: A5
+    number: '7'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - -3.81
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP1_8:
+    adc_channel: 3
+    adc_unit: 2
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - A4
+    gpio: 14
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: A4
+    number: '8'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - -1.27
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP1_9:
+    adc_channel: 4
+    adc_unit: 2
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP1
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - A3
+    gpio: 15
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: A3
+    number: '9'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -10.16
+    - 1.27
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP3_1:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: false
+    capabilities: []
+    chip_pin_number: null
+    connector: JP3
+    default_interface_roles: []
+    direction: not_applicable
+    drill_mm: 1.0
+    functions:
+    - VBAT
+    - VBAT
+    gpio: null
+    name: VBAT
+    number: '1'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 10.16
+    - 8.89
+    restrictions: []
+    signal_types: []
+    source_id: cad
+    surface: top
+    type: power
+    x_mm: null
+    y_mm: null
+  JP3_10:
+    adc_channel: 4
+    adc_unit: 1
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP3
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - D5
+    gpio: 5
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: D5
+    number: '10'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 10.16
+    - -13.97
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP3_11:
+    adc_channel: 3
+    adc_unit: 1
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP3
+    default_interface_roles:
+    - interface: i2c
+      signal: scl
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - SCL
+    gpio: 4
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: SCL
+    number: '11'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 10.16
+    - -16.51
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP3_12:
+    adc_channel: 2
+    adc_unit: 1
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP3
+    default_interface_roles:
+    - interface: i2c
+      signal: sda
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - SDA
+    gpio: 3
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: SDA
+    number: '12'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 10.16
+    - -19.05
+    restrictions:
+    - Boot strapping pin; external levels affect startup.
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP3_2:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: false
+    capabilities: []
+    chip_pin_number: null
+    connector: JP3
+    default_interface_roles: []
+    direction: not_applicable
+    drill_mm: 1.0
+    functions:
+    - EN
+    - EN
+    gpio: null
+    name: EN
+    number: '2'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 10.16
+    - 6.35
+    restrictions: []
+    signal_types: []
+    source_id: cad
+    surface: top
+    type: control
+    x_mm: null
+    y_mm: null
+  JP3_3:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: false
+    capabilities: []
+    chip_pin_number: null
+    connector: JP3
+    default_interface_roles: []
+    direction: not_applicable
+    drill_mm: 1.0
+    functions:
+    - VBUS
+    - VBUS
+    gpio: null
+    name: VBUS
+    number: '3'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 10.16
+    - 3.81
+    restrictions: []
+    signal_types: []
+    source_id: cad
+    surface: top
+    type: power
+    x_mm: null
+    y_mm: null
+  JP3_4:
+    adc_channel: 2
+    adc_unit: 2
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP3
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - D13
+    gpio: 13
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: D13
+    number: '4'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 10.16
+    - 1.27
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP3_5:
+    adc_channel: 1
+    adc_unit: 2
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP3
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - D12
+    gpio: 12
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: D12
+    number: '5'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 10.16
+    - -1.27
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP3_6:
+    adc_channel: 0
+    adc_unit: 2
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP3
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - D11
+    gpio: 11
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: D11
+    number: '6'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 10.16
+    - -3.81
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP3_7:
+    adc_channel: 9
+    adc_unit: 1
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP3
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - D10
+    gpio: 10
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: D10
+    number: '7'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 10.16
+    - -6.35
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP3_8:
+    adc_channel: 8
+    adc_unit: 1
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP3
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - D9
+    gpio: 9
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: D9
+    number: '8'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 10.16
+    - -8.89
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  JP3_9:
+    adc_channel: 5
+    adc_unit: 1
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: JP3
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: 1.0
+    functions:
+    - D6
+    gpio: 6
+    input_only: false
+    lab_analog_eligible: true
+    logic_voltage_v: 3.3
+    name: D6
+    number: '9'
+    pad_kind: through_hole
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 10.16
+    - -11.43
+    restrictions: []
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    - analog
+    source_id: cad
+    surface: top
+    type: gpio
+    x_mm: null
+    y_mm: null
+  TP1_P$1:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: true
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    capability_source_id: chip_datasheet
+    chip_pin_number: null
+    connector: TP1
+    default_interface_roles: []
+    direction: bidirectional
+    drill_mm: null
+    functions:
+    - BOOT0
+    gpio: 0
+    input_only: false
+    lab_analog_eligible: false
+    logic_voltage_v: 3.3
+    name: BOOT0
+    number: P$1
+    pad_kind: surface_pad
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - -6.0198
+    - 4.953
+    restrictions:
+    - Boot strapping pin; external levels affect startup.
+    - 'Shared onboard net: boot0'
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    signal_types:
+    - digital
+    source_id: cad
+    surface: bottom
+    type: gpio
+    x_mm: null
+    y_mm: null
+  X1_1:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: false
+    capabilities: []
+    chip_pin_number: null
+    connector: X1
+    default_interface_roles: []
+    direction: not_applicable
+    drill_mm: null
+    functions:
+    - GND
+    - GND
+    gpio: null
+    name: GND
+    number: '1'
+    pad_kind: surface_pad
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 4.2375
+    - 15.478
+    restrictions: []
+    signal_types: []
+    source_id: cad
+    surface: top
+    type: ground
+    x_mm: null
+    y_mm: null
+  X1_2:
+    adc_channel: null
+    adc_unit: null
+    aliases: []
+    available_for_general_io: false
+    capabilities: []
+    chip_pin_number: null
+    connector: X1
+    default_interface_roles: []
+    direction: not_applicable
+    drill_mm: null
+    functions:
+    - VBAT
+    - VBAT
+    gpio: null
+    name: VBAT
+    number: '2'
+    pad_kind: surface_pad
+    position_status: related_8mb_sku_requires_confirmation_for_5477
+    reference_position_mm:
+    - 4.2375
+    - 13.478
+    restrictions: []
+    signal_types: []
+    source_id: cad
+    surface: top
+    type: power
+    x_mm: null
+    y_mm: null
+project_name: C:\gh\oomp_electronic_breakout_version_5
+schema_version: 1
+sources:
+- accessed: '2026-10-22'
+  id: original_catalogue
+  local_file: null
+  scope: Nominal dimensions and identity; not manufacturer verification
+  title: Original populate entries in this repository
+  url: null
+- accessed: '2026-10-22'
+  id: chip_datasheet
+  scope: GPIO capabilities, electrical limits and strapping; not carrier geometry
+  title: chip_datasheet
+  url: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
+- accessed: '2026-10-22'
+  id: board_guide
+  scope: Board identity, connector pinout and documented functions
+  title: feather_s3 manufacturer guide
+  url: https://learn.adafruit.com/adafruit-esp32-s3-feather/downloads
+- accessed: '2026-10-22'
+  id: cad
+  local_file: reference/Adafruit ESP32-S3 8MB No PSRAM.brd
+  scope: Manufacturer CAD; see revision and product applicability notes
+  sha256: 5b06b9c6291545a2c9da0993a642e513a75c5901e26836a2ee559077147abcca
+  title: cad
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/main/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd
+- accessed: '2026-10-22'
+  id: cad_schematic
+  local_file: reference/Adafruit ESP32-S3 8MB No PSRAM.sch
+  scope: Manufacturer CAD; see revision and product applicability notes
+  sha256: b71cdf533f043c30c1b8ab87d476214c6a857b4f92245debe98694e88a69d398
+  title: cad_schematic
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/main/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.sch
+- accessed: '2026-10-22'
+  id: product
+  scope: Exact SKU, 4 MB flash / 2 MB PSRAM and overall product dimensions
+  title: product
+  url: https://www.adafruit.com/product/5477
+- id: interface_variant
+  local_file: reference/interface_defaults/esp32_adafruit_feather_esp32s3.h
+  retrieved_date: '2026-10-23'
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  scope: Arduino variant pin assignments; not a physical header drawing
+  sha256: f1787f96e8855a5b9be7b7bde03f23866a09234cc6fa03a6cc0ce4f0853aa7e3
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/variants/adafruit_feather_esp32s3/pins_arduino.h
+- content_scope: excerpt_of_board_names_and_variant_selections
+  id: interface_board_selection
+  local_file: reference/interface_defaults/esp32_boards.txt
+  retrieved_date: '2026-10-23'
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  scope: Framework board names and variant selection; generic selections remain explicitly
+    scoped
+  sha256: af7ce8a6007dbc4a76dbebed31eac2885bfb712a6ef404cb8cdd58fa7d2523e6
+  source_document_sha256: 11b90d1f4795ec365418635749b685a2f3d8320d0e163d886aa2099e81277b07
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/boards.txt
+- id: interface_runtime_uart
+  local_file: reference/interface_defaults/esp32_HardwareSerial.cpp
+  retrieved_date: '2026-10-23'
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  scope: Framework API construction/default behavior; USB Serial is separate from
+    UART pin aliases
+  sha256: a555861fb4f28a2a4c1d903a8152d714902fee2510c9eaf3ad5311dbcd779035
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/cores/esp32/HardwareSerial.cpp
+- id: interface_runtime_i2c
+  local_file: reference/interface_defaults/esp32_Wire.cpp
+  retrieved_date: '2026-10-23'
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  scope: Framework API construction/default behavior; USB Serial is separate from
+    UART pin aliases
+  sha256: 0454e5becf7acaa6f7cb466397682d762461f678cbb88644f31f313e653b71bc
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/Wire/src/Wire.cpp
+- id: interface_runtime_spi
+  local_file: reference/interface_defaults/esp32_SPI.cpp
+  retrieved_date: '2026-10-23'
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  scope: Framework API construction/default behavior; USB Serial is separate from
+    UART pin aliases
+  sha256: 4caea80d21fa230a528322d9eb900880a0acd9c91cb355bc5cec514ea02ecaed
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/SPI/src/SPI.cpp
+- bytes: 444799
+  id: mounting_manufacturer_cad
+  kind: manufacturer_cad
+  local_file: reference/Adafruit ESP32-S3 8MB No PSRAM.brd
+  locator: Pinned commit 2c95ed51a500d929fd6d8f519b895f0c4daeb982; exact EAGLE board
+    file; Layer 20 outline; plain holes and U$31/U$32 mounting packages; shared carrier
+    for 5323, 5477, 5885 per manufacturer README.
+  registered_at: '2026-11-06T18:18:30+00:00'
+  sha256: 5b06b9c6291545a2c9da0993a642e513a75c5901e26836a2ee559077147abcca
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/2c95ed51a500d929fd6d8f519b895f0c4daeb982/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd
+- bytes: 3767
+  id: mounting_manufacturer_repo
+  kind: manufacturer_repository
+  local_file: mounting_evidence/manufacturer_readme.txt
+  locator: Pinned manufacturer README says EagleCAD board layout is common for products
+    5323, 5477, 5885. Retrieved 2026-11-06.
+  registered_at: '2026-11-06T18:18:30+00:00'
+  sha256: 1c564dfcf48aba201f85727bab1f372b5a9722b21546f6d73686e99576b228cb
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/2c95ed51a500d929fd6d8f519b895f0c4daeb982/README.md
+- bytes: 106316
+  id: mounting_product_5477
+  kind: manufacturer_product
+  local_file: mounting_evidence/product_5477.html
+  locator: Official product 5477 identity, 4MB flash/2MB PSRAM, stated overall dimensions
+    22.7 mm x 52.3 mm; retrieved 2026-11-06.
+  registered_at: '2026-11-06T18:18:31+00:00'
+  sha256: 8bbe79b1cbdd8ddecf8915c28309579b33553ca915f672e3714fd7f191ab5809
+  url: https://www.adafruit.com/product/5477
+svg_details:
+  height: 52.3
+  stylesheet: microcontroller
+  svg_name: microcontroller
+  width: 22.7
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_14_capital: Adafruit
+taxonomy_14_first_letter: a
+taxonomy_14_first_letter_upper: A
+taxonomy_14_length_1: a
+taxonomy_14_length_2: ad
+taxonomy_14_length_3: ada
+taxonomy_14_length_4: adaf
+taxonomy_14_length_5: adafr
+taxonomy_14_upper: ADAFRUIT
+taxonomy_14_upper_length_1: A
+taxonomy_14_upper_length_2: AD
+taxonomy_14_upper_length_3: ADA
+taxonomy_14_upper_length_4: ADAF
+taxonomy_14_upper_length_5: ADAFR
+taxonomy_15: '5477'
+taxonomy_15_capital: '5477'
+taxonomy_15_first_letter: '5'
+taxonomy_15_first_letter_upper: '5'
+taxonomy_15_length_1: '5'
+taxonomy_15_length_2: '54'
+taxonomy_15_length_3: '547'
+taxonomy_15_length_4: '5477'
+taxonomy_15_length_5: '5477'
+taxonomy_15_upper: '5477'
+taxonomy_15_upper_length_1: '5'
+taxonomy_15_upper_length_2: '54'
+taxonomy_15_upper_length_3: '547'
+taxonomy_15_upper_length_4: '5477'
+taxonomy_15_upper_length_5: '5477'
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: microcontroller
+taxonomy_3_capital: Microcontroller
+taxonomy_3_first_letter: m
+taxonomy_3_first_letter_upper: M
+taxonomy_3_length_1: m
+taxonomy_3_length_2: mi
+taxonomy_3_length_3: mic
+taxonomy_3_length_4: micr
+taxonomy_3_length_5: micro
+taxonomy_3_upper: MICROCONTROLLER
+taxonomy_3_upper_length_1: M
+taxonomy_3_upper_length_2: MI
+taxonomy_3_upper_length_3: MIC
+taxonomy_3_upper_length_4: MICR
+taxonomy_3_upper_length_5: MICRO
+taxonomy_4: esp32_s3
+taxonomy_4_capital: Esp32 S3
+taxonomy_4_first_letter: e
+taxonomy_4_first_letter_upper: E
+taxonomy_4_length_1: e
+taxonomy_4_length_2: es
+taxonomy_4_length_3: esp
+taxonomy_4_length_4: esp3
+taxonomy_4_length_5: esp32
+taxonomy_4_upper: ESP32_S3
+taxonomy_4_upper_length_1: E
+taxonomy_4_upper_length_2: ES
+taxonomy_4_upper_length_3: ESP
+taxonomy_4_upper_length_4: ESP3
+taxonomy_4_upper_length_5: ESP32
+taxonomy_5: feather_esp32_s3
+taxonomy_5_capital: Feather Esp32 S3
+taxonomy_5_first_letter: f
+taxonomy_5_first_letter_upper: F
+taxonomy_5_length_1: f
+taxonomy_5_length_2: fe
+taxonomy_5_length_3: fea
+taxonomy_5_length_4: feat
+taxonomy_5_length_5: feath
+taxonomy_5_upper: FEATHER_ESP32_S3
+taxonomy_5_upper_length_1: F
+taxonomy_5_upper_length_2: FE
+taxonomy_5_upper_length_3: FEA
+taxonomy_5_upper_length_4: FEAT
+taxonomy_5_upper_length_5: FEATH
+taxonomy_6: 22_7_mm_width_52_3_mm_height_28_pins
+taxonomy_6_capital: 22.7 mm Width 52.3 mm Height 28 Pins
+taxonomy_6_first_letter: '2'
+taxonomy_6_first_letter_upper: '2'
+taxonomy_6_length_1: '2'
+taxonomy_6_length_2: '22'
+taxonomy_6_length_3: '22_'
+taxonomy_6_length_4: '22_7'
+taxonomy_6_length_5: '22_7_'
+taxonomy_6_upper: 22_7_MM_WIDTH_52_3_MM_HEIGHT_28_PINS
+taxonomy_6_upper_length_1: '2'
+taxonomy_6_upper_length_2: '22'
+taxonomy_6_upper_length_3: '22_'
+taxonomy_6_upper_length_4: '22_7'
+taxonomy_6_upper_length_5: '22_7_'
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+type_1: microcontroller
+type_2: esp32_s3
+type_3: feather_esp32_s3
+url_chat: ''
+```
+
+</details>
+
+## Parts
+
+[Open the canonical part folder](./) for the files available for this variant. Alternative model formats describe the same record; they are not extra components.
+
+## Assembly
+
+No assembly procedure is inferred from this catalogue record. Use any retained technical notes and the original manufacturer documentation for installation details.
+<!-- oomp-documentation:end -->
+
+<details>
+<summary>Existing technical notes</summary>
+
 <!-- oobb-presentation:start -->
 # Adafruit ESP32 s3 Feather ESP32 s3
 
@@ -35,3 +4564,5 @@ Select a plate and download its STL. Board fixing hardware is not specified in t
 
 [Catalogue record](working.yaml) · [Render sources](presentation/manifest.json)
 <!-- oobb-presentation:end -->
+
+</details>

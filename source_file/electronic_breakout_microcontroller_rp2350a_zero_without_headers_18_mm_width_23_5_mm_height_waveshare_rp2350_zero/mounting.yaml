@@ -1,0 +1,102 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2350a_zero_without_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero
+status: no_holes
+board_revision: Waveshare RP2350-Zero RP2350A base board without headers; manufacturer
+  publishes no PCB revision code.
+identity_evidence: The official Waveshare RP2350-Zero wiki identifies the RP2350A
+  board and links the archived RP2350-Zero.step model. The model board substrate bounds
+  and castellated contact pattern match the manufacturer 18.00 x 23.50 mm dimensioned
+  drawing. The assigned catalogue option is the same substrate without soldered headers;
+  the archived STEP assembly includes header solids, which are excluded from board
+  geometry.
+board_size:
+- 18.0
+- 23.5
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: mechanical
+derivation: 'Board size is directly labelled 18.00 x 23.50 mm on the manufacturer
+  dimensioned top view. Reviewed the complete PCB solid (STEP solid 0): native bounds
+  x=-0.009..18.009 mm, y=-0.014..23.509 mm, thickness z=-0.798..0.000 mm. The outline
+  is 18 x 23.5 mm within STEP tolerance. Axis transform to the canonical centred top
+  view is x_mm=x_native-9.000 and y_mm=y_native-11.750; +Y points toward the USB connector.
+  Inspected all 25 cylindrical faces on the board solid: 23 radius-0.450 mm (Ø0.900
+  mm) features are the castellated electrical contact pads shown along both long edges
+  and bottom edge of the drawing; two radius-0.350 mm (Ø0.700 mm) features at native
+  x≈6.100 and 11.880, y≈18.272 mm belong to the USB connector anchors. None are board
+  mounting holes. Complete board evidence contains no discrete board-mount holes,
+  so the hole pattern is explicitly empty.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad_archive
+  local_file: mounting_evidence/RP2350_Zero_step.zip
+  url: https://files.waveshare.com/wiki/RP2350-Zero/RP2350_Zero_step.zip
+  kind: manufacturer_cad_archive
+  locator: Official Waveshare RP2350-Zero wiki linked STEP archive; reused existing
+    archived bytes after SHA-256 identity check, fetched 2026-11-06.
+  bytes: 3361569
+  sha256: 392250d4a9dcb1f9e3c10a684d958419a7be0557424295a7f7f8ed31fb7f74dc
+  registered_at: '2026-11-06T16:40:55+00:00'
+- id: cad
+  local_file: mounting_evidence/RP2350-Zero.step
+  url: https://files.waveshare.com/wiki/RP2350-Zero/RP2350_Zero_step.zip
+  kind: manufacturer_cad
+  locator: Exact RP2350-Zero.step archive member; PCB body inspected from STEP solid
+    0. Bounds 18.018 x 23.523 mm within CAD tolerance; reviewed all 25 cylindrical
+    faces.
+  bytes: 21063899
+  sha256: 35e056647c8cc47ff86458baefa52e94cba55adef9d489f9e061be726c42434a
+  registered_at: '2026-11-06T16:40:55+00:00'
+- id: product
+  local_file: mounting_evidence/RP2350-Zero-wiki.html
+  url: https://www.waveshare.net/wiki/RP2350-Zero
+  kind: manufacturer_product
+  locator: 'Official Waveshare product wiki: RP2350A RP2350-Zero identity and official
+    CAD resource links.'
+  bytes: 93864
+  sha256: 1f26e7b5fa99bf944fd2deae91ec50fe9479cab0e2f15abdd8943ffe0a61f345
+  registered_at: '2026-11-06T16:40:55+00:00'
+- id: mechanical
+  local_file: reference/mechanical.jpg
+  url: https://www.waveshare.net/w/upload/thumb/6/6f/RP2350-Zero-details-size.jpg/800px-RP2350-Zero-details-size.jpg
+  kind: manufacturer_drawing
+  locator: Archived manufacturer dimension drawing, hash verified against mounting_context.json;
+    top view labels PCB 18.00 x 23.50 mm and shows castellated contacts.
+  bytes: 35694
+  sha256: 84a88af49be5d0b212055fa8717b9d939feb44aaffc1bac6829ee33c0edd8108
+  registered_at: '2026-11-06T16:40:55+00:00'
+attempts:
+- source: Official Waveshare RP2350-Zero wiki and linked STEP archive
+  result: Official product identity and linked CAD verified; STEP bytes reused from
+    archived sibling record after matching known SHA-256 hashes. Full board solid
+    geometry parsed locally.
+- source: Waveshare manufacturer dimension drawing
+  result: Archived mechanical.jpg hash matches mounting_context.json; 18.00 x 23.50
+    mm top view reviewed for contact pattern and USB orientation.
+conflicts: []
+notes:
+- The STEP assembly includes pre-soldered header solids for the RP2350-Zero-M delivery
+  option, but the board substrate is the same RP2350-Zero outline; this assigned catalogue
+  variant is without headers.
+- The 23 castellated contacts are electrical pads; the two smaller cylindrical features
+  are USB connector anchors. They are not board mounts.
+- Component, connector, screw-head and underside clearance are unverified. The standard
+  holder is generated geometry and no physical fit test was performed.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T16:40:55+00:00'
+identity_source_ids:
+- product
+- cad
+- mechanical

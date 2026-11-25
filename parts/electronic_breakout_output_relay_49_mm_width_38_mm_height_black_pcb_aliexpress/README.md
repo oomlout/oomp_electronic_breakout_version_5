@@ -1,3 +1,372 @@
+<!-- oomp-documentation:start -->
+# Electronic Breakout Output Relay 49 Mm Width 38 Mm Height Black Pcb Aliexpress
+
+## Summary
+
+OOMP catalogue record for Electronic Breakout Output Relay 49 Mm Width 38 Mm Height Black Pcb Aliexpress. Use the metadata to identify this variant and the part folder to inspect its available assets.
+
+![Catalogue preview of Electronic Breakout Output Relay 49 Mm Width 38 Mm Height Black Pcb Aliexpress](3dpr_presentation.png)
+
+Catalogue illustration; consult the source dimensions and datasheet for specification.
+
+## Details
+
+**OOMP folder ID:** `electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress`
+
+[Catalogue](../../README.md) · [Part metadata](working.yaml)
+
+| Field | Value |
+| --- | --- |
+| id | electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress |
+| md5_6 | ccaf71 |
+| md5_6_alpha | 7zii9 |
+| oomp_key | oomp_electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress |
+| taxonomy_1 | electronic |
+| taxonomy_2 | breakout |
+| taxonomy_3 | output |
+| taxonomy_4 | relay |
+| taxonomy_5 | 49_mm_width_38_mm_height_black_pcb |
+| taxonomy_14 | aliexpress |
+
+<details>
+<summary>Full part metadata</summary>
+
+```yaml
+bip_39_2_word_array:
+- smile
+- knee
+bip_39_2_word_no_space: smileknee
+bip_39_2_word_space: smile knee
+bip_39_2_word_underscore: smile_knee
+bip_39_3_word_array:
+- smile
+- knee
+- join
+bip_39_3_word_no_space: smilekneejoin
+bip_39_3_word_space: smile knee join
+bip_39_3_word_underscore: smile_knee_join
+bip_39_full_array:
+- smile
+- knee
+- join
+- gloom
+- cream
+- square
+- notable
+- ceiling
+- iron
+- private
+- license
+- cost
+bip_39_full_no_space: smilekneejoingloomcreamsquarenotableceilingironprivatelicensecost
+bip_39_full_space: smile knee join gloom cream square notable ceiling iron private
+  license cost
+bip_39_full_underscore: smile_knee_join_gloom_cream_square_notable_ceiling_iron_private_license_cost
+breakout_description: 49_mm_width_38_mm_height_black_pcb
+breakout_pcb_height: 38
+breakout_pcb_width: 49
+directory: parts/electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress
+id: electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress
+id_no_class: electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress
+id_no_size: electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress
+id_no_type: electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress
+manufacturer: aliexpress
+md5: ccaf71e0b1b32fa6e5a1277655660498
+md5_10: ccaf71e0b1
+md5_10_upper: CCAF71E0B1
+md5_5: ccaf7
+md5_5_upper: CCAF7
+md5_6: ccaf71
+md5_6_alpha: 7zii9
+md5_6_alpha_upper: 7ZII9
+md5_6_upper: CCAF71
+mounting_hole_radius_name: m3
+mounting_holes: &id001
+- - 22.0
+  - 16.5
+- - 22.0
+  - -16.5
+- - -22.0
+  - 16.5
+- - -22.0
+  - -16.5
+name: Electronic Breakout Output Relay 49 Mm Width 38 Mm Height Black Pcb Aliexpress
+name_no_class: Electronic Breakout Output Relay 49 Mm Width 38 Mm Height Black Pcb
+  Aliexpress
+name_no_size: Electronic Breakout Output Relay 49 Mm Width 38 Mm Height Black Pcb
+  Aliexpress
+name_no_type: Electronic Breakout Output Relay 49 Mm Width 38 Mm Height Black Pcb
+  Aliexpress
+name_proper: Electronic Breakout Output Relay 49 Mm Width 38 Mm Height Black Pcb Aliexpress
+name_space: electronic breakout output relay 49 mm width 38 mm height black pcb aliexpress
+name_upper: ELECTRONIC BREAKOUT OUTPUT RELAY 49 MM WIDTH 38 MM HEIGHT BLACK PCB ALIEXPRESS
+oobb_details:
+- breakout_description: 49_mm_width_38_mm_height_black_pcb
+  breakout_pcb_height: 38
+  breakout_pcb_width: 49
+  manufacturer: aliexpress
+  mounting_hole_radius_name: m3
+  mounting_holes: *id001
+  oobb_name: mounting_plate_default
+  part_number_aliexpress: '1005002867727977'
+  taxonomy_1: electronic
+  taxonomy_14: aliexpress
+  taxonomy_2: breakout
+  taxonomy_3: output
+  taxonomy_4: relay
+  taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+  type_1: output
+  type_2: relay
+  webpage_aliexpress: https://www.aliexpress.com/item/1005002867727977.html
+- breakout_description: 49_mm_width_38_mm_height_black_pcb
+  breakout_pcb_height: 38
+  breakout_pcb_width: 49
+  manufacturer: aliexpress
+  mounting_hole_radius_name: m3
+  mounting_holes:
+  - - 22.0
+    - 16.5
+  - - 22.0
+    - -16.5
+  - - -22.0
+    - 16.5
+  - - -22.0
+    - -16.5
+  oobb_name: mounting_plate_oobb
+  part_number_aliexpress: '1005002867727977'
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: aliexpress
+  taxonomy_2: breakout
+  taxonomy_3: output
+  taxonomy_4: relay
+  taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+  type_1: output
+  type_2: relay
+  webpage_aliexpress: https://www.aliexpress.com/item/1005002867727977.html
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      breakout_description: 49_mm_width_38_mm_height_black_pcb
+      breakout_pcb_height: 38
+      breakout_pcb_width: 49
+      directory: parts\electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress
+      manufacturer: aliexpress
+      mounting_hole_radius_name: m3
+      mounting_holes: &id002
+      - - 22.0
+        - 16.5
+      - - 22.0
+        - -16.5
+      - - -22.0
+        - 16.5
+      - - -22.0
+        - -16.5
+      name: electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress
+      name_proper: Electronic Breakout Output Relay 49 Mm Width 38 Mm Height Black
+        Pcb Aliexpress
+      name_space: electronic breakout output relay 49 mm width 38 mm height black
+        pcb aliexpress
+      name_upper: ELECTRONIC BREAKOUT OUTPUT RELAY 49 MM WIDTH 38 MM HEIGHT BLACK
+        PCB ALIEXPRESS
+      oobb_details:
+      - breakout_description: 49_mm_width_38_mm_height_black_pcb
+        breakout_pcb_height: 38
+        breakout_pcb_width: 49
+        manufacturer: aliexpress
+        mounting_hole_radius_name: m3
+        mounting_holes: *id002
+        oobb_name: mounting_plate_default
+        part_number_aliexpress: '1005002867727977'
+        taxonomy_1: electronic
+        taxonomy_14: aliexpress
+        taxonomy_2: breakout
+        taxonomy_3: output
+        taxonomy_4: relay
+        taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+        type_1: output
+        type_2: relay
+        webpage_aliexpress: https://www.aliexpress.com/item/1005002867727977.html
+      - breakout_description: 49_mm_width_38_mm_height_black_pcb
+        breakout_pcb_height: 38
+        breakout_pcb_width: 49
+        manufacturer: aliexpress
+        mounting_hole_radius_name: m3
+        mounting_holes:
+        - - 22.0
+          - 16.5
+        - - 22.0
+          - -16.5
+        - - -22.0
+          - 16.5
+        - - -22.0
+          - -16.5
+        oobb_name: mounting_plate_oobb
+        part_number_aliexpress: '1005002867727977'
+        scad_output: working_oobb
+        taxonomy_1: electronic
+        taxonomy_14: aliexpress
+        taxonomy_2: breakout
+        taxonomy_3: output
+        taxonomy_4: relay
+        taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+        type_1: output
+        type_2: relay
+        webpage_aliexpress: https://www.aliexpress.com/item/1005002867727977.html
+      part_number_aliexpress: '1005002867727977'
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: aliexpress
+      taxonomy_15: ''
+      taxonomy_2: breakout
+      taxonomy_3: output
+      taxonomy_4: relay
+      taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+      taxonomy_6: ''
+      taxonomy_7: ''
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: output
+      type_2: relay
+      url_chat: ''
+      webpage_aliexpress: https://www.aliexpress.com/item/1005002867727977.html
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress
+part_number_aliexpress: '1005002867727977'
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: aliexpress
+taxonomy_14_capital: Aliexpress
+taxonomy_14_first_letter: a
+taxonomy_14_first_letter_upper: A
+taxonomy_14_length_1: a
+taxonomy_14_length_2: al
+taxonomy_14_length_3: ali
+taxonomy_14_length_4: alie
+taxonomy_14_length_5: aliex
+taxonomy_14_upper: ALIEXPRESS
+taxonomy_14_upper_length_1: A
+taxonomy_14_upper_length_2: AL
+taxonomy_14_upper_length_3: ALI
+taxonomy_14_upper_length_4: ALIE
+taxonomy_14_upper_length_5: ALIEX
+taxonomy_15: ''
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: output
+taxonomy_3_capital: Output
+taxonomy_3_first_letter: o
+taxonomy_3_first_letter_upper: O
+taxonomy_3_length_1: o
+taxonomy_3_length_2: ou
+taxonomy_3_length_3: out
+taxonomy_3_length_4: outp
+taxonomy_3_length_5: outpu
+taxonomy_3_upper: OUTPUT
+taxonomy_3_upper_length_1: O
+taxonomy_3_upper_length_2: OU
+taxonomy_3_upper_length_3: OUT
+taxonomy_3_upper_length_4: OUTP
+taxonomy_3_upper_length_5: OUTPU
+taxonomy_4: relay
+taxonomy_4_capital: Relay
+taxonomy_4_first_letter: r
+taxonomy_4_first_letter_upper: R
+taxonomy_4_length_1: r
+taxonomy_4_length_2: re
+taxonomy_4_length_3: rel
+taxonomy_4_length_4: rela
+taxonomy_4_length_5: relay
+taxonomy_4_upper: RELAY
+taxonomy_4_upper_length_1: R
+taxonomy_4_upper_length_2: RE
+taxonomy_4_upper_length_3: REL
+taxonomy_4_upper_length_4: RELA
+taxonomy_4_upper_length_5: RELAY
+taxonomy_5: 49_mm_width_38_mm_height_black_pcb
+taxonomy_5_capital: 49 mm Width 38 mm Height Black Pcb
+taxonomy_5_first_letter: '4'
+taxonomy_5_first_letter_upper: '4'
+taxonomy_5_length_1: '4'
+taxonomy_5_length_2: '49'
+taxonomy_5_length_3: '49_'
+taxonomy_5_length_4: 49_m
+taxonomy_5_length_5: 49_mm
+taxonomy_5_upper: 49_MM_WIDTH_38_MM_HEIGHT_BLACK_PCB
+taxonomy_5_upper_length_1: '4'
+taxonomy_5_upper_length_2: '49'
+taxonomy_5_upper_length_3: '49_'
+taxonomy_5_upper_length_4: 49_M
+taxonomy_5_upper_length_5: 49_MM
+taxonomy_6: ''
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+type_1: output
+type_2: relay
+url_chat: ''
+webpage_aliexpress: https://www.aliexpress.com/item/1005002867727977.html
+```
+
+</details>
+
+## Parts
+
+[Open the canonical part folder](./) for the files available for this variant. Alternative model formats describe the same record; they are not extra components.
+
+## Assembly
+
+No assembly procedure is inferred from this catalogue record. Use any retained technical notes and the original manufacturer documentation for installation details.
+<!-- oomp-documentation:end -->
+
+<details>
+<summary>Existing technical notes</summary>
+
 <!-- oobb-presentation:start -->
 # Aliexpress relay
 
@@ -35,3 +404,5 @@ Select a plate and download its STL. Board fixing hardware is not specified in t
 
 [Catalogue record](working.yaml) · [Render sources](presentation/manifest.json)
 <!-- oobb-presentation:end -->
+
+</details>

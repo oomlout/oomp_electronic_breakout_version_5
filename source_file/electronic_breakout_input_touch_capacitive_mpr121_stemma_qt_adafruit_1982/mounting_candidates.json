@@ -1,0 +1,273 @@
+{
+  "board_size": [
+    33.02,
+    19.177
+  ],
+  "native_centre_mm": [
+    16.51,
+    9.461500000000001
+  ],
+  "quarter_turn": 0,
+  "candidates": [
+    {
+      "id": "JP1:pad:1",
+      "x_mm": -15.24,
+      "y_mm": 8.3185,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X13_ROUND_70"
+    },
+    {
+      "id": "JP1:pad:2",
+      "x_mm": -12.7,
+      "y_mm": 8.3185,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X13_ROUND_70"
+    },
+    {
+      "id": "JP1:pad:3",
+      "x_mm": -10.16,
+      "y_mm": 8.3185,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X13_ROUND_70"
+    },
+    {
+      "id": "JP1:pad:4",
+      "x_mm": -7.62,
+      "y_mm": 8.3185,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X13_ROUND_70"
+    },
+    {
+      "id": "JP1:pad:5",
+      "x_mm": -5.08,
+      "y_mm": 8.3185,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X13_ROUND_70"
+    },
+    {
+      "id": "JP1:pad:6",
+      "x_mm": -2.54,
+      "y_mm": 8.3185,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X13_ROUND_70"
+    },
+    {
+      "id": "JP1:pad:7",
+      "x_mm": 0.0,
+      "y_mm": 8.3185,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X13_ROUND_70"
+    },
+    {
+      "id": "JP1:pad:8",
+      "x_mm": 2.54,
+      "y_mm": 8.3185,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X13_ROUND_70"
+    },
+    {
+      "id": "JP1:pad:9",
+      "x_mm": 5.08,
+      "y_mm": 8.3185,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X13_ROUND_70"
+    },
+    {
+      "id": "JP1:pad:10",
+      "x_mm": 7.62,
+      "y_mm": 8.3185,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X13_ROUND_70"
+    },
+    {
+      "id": "JP1:pad:11",
+      "x_mm": 10.16,
+      "y_mm": 8.3185,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X13_ROUND_70"
+    },
+    {
+      "id": "JP1:pad:12",
+      "x_mm": 12.7,
+      "y_mm": 8.3185,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X13_ROUND_70"
+    },
+    {
+      "id": "JP1:pad:13",
+      "x_mm": 15.24,
+      "y_mm": 8.3185,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X13_ROUND_70"
+    },
+    {
+      "id": "JP2:pad:1",
+      "x_mm": -7.62,
+      "y_mm": -6.9215,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X07_ROUND_70"
+    },
+    {
+      "id": "JP2:pad:2",
+      "x_mm": -5.08,
+      "y_mm": -6.9215,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X07_ROUND_70"
+    },
+    {
+      "id": "JP2:pad:3",
+      "x_mm": -2.54,
+      "y_mm": -6.9215,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X07_ROUND_70"
+    },
+    {
+      "id": "JP2:pad:4",
+      "x_mm": 0.0,
+      "y_mm": -6.9215,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X07_ROUND_70"
+    },
+    {
+      "id": "JP2:pad:5",
+      "x_mm": 2.54,
+      "y_mm": -6.9215,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X07_ROUND_70"
+    },
+    {
+      "id": "JP2:pad:6",
+      "x_mm": 5.08,
+      "y_mm": -6.9215,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X07_ROUND_70"
+    },
+    {
+      "id": "JP2:pad:7",
+      "x_mm": 7.62,
+      "y_mm": -6.9215,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X07_ROUND_70"
+    },
+    {
+      "id": "U$34:pad:P$1",
+      "x_mm": -13.97,
+      "y_mm": -6.9215,
+      "diameter_mm": 2.5,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.5_PLATED"
+    },
+    {
+      "id": "U$35:pad:P$1",
+      "x_mm": 13.97,
+      "y_mm": -6.9215,
+      "diameter_mm": 2.5,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.5_PLATED"
+    }
+  ],
+  "outline_points": [
+    [
+      16.51,
+      -7.0485
+    ],
+    [
+      16.51,
+      9.5885
+    ],
+    [
+      16.51,
+      9.5885
+    ],
+    [
+      -16.51,
+      9.5885
+    ],
+    [
+      -16.51,
+      9.5885
+    ],
+    [
+      -16.51,
+      -7.0485
+    ],
+    [
+      -16.51,
+      -7.0485
+    ],
+    [
+      -13.97,
+      -9.5885
+    ],
+    [
+      -16.51,
+      -7.0485
+    ],
+    [
+      -13.97,
+      -9.5885
+    ],
+    [
+      -13.97,
+      -9.5885
+    ],
+    [
+      13.97,
+      -9.5885
+    ],
+    [
+      13.97,
+      -9.5885
+    ],
+    [
+      16.51,
+      -7.0485
+    ],
+    [
+      16.51,
+      -7.0485
+    ],
+    [
+      13.97,
+      -9.5885
+    ]
+  ],
+  "mounting_holes": [
+    {
+      "id": "U$34:pad:P$1",
+      "x_mm": -13.97,
+      "y_mm": -6.9215,
+      "diameter_mm": 2.5,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.5_PLATED"
+    },
+    {
+      "id": "U$35:pad:P$1",
+      "x_mm": 13.97,
+      "y_mm": -6.9215,
+      "diameter_mm": 2.5,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.5_PLATED"
+    }
+  ]
+}

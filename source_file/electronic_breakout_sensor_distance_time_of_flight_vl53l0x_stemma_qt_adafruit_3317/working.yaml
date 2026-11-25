@@ -1,0 +1,254 @@
+research_schema_version: 1
+part_id: electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+name_readable: Adafruit VL53L0X Distance Sensor
+manufacturer: adafruit
+part_number: '3317'
+manufacturer_part_number: '3317'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: sensor
+  taxonomy_4: distance
+  taxonomy_5: time_of_flight
+  taxonomy_6: vl53l0x
+  taxonomy_7: stemma_qt
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '3317'
+default_website:
+  url: https://www.adafruit.com/product/3317
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:31:32+00:00'
+  updated_at: '2026-10-23T20:31:37+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: Adafruit VL53L0X product 3317 STEMMA QT current carrier
+  status: identified_by_product_page
+  source_ids: [product_page, guide_pinouts, guide_downloads]
+  notes: Current 2020 QT revision has two QT sockets and four mounting holes; older board design differed mechanically and exposed a 2.8V output that current revision removed.
+description: Adds a familiar earlier ToF family and a reference for comparison with generic carriers.
+  Keep its performance and mechanical evidence separate from the VL53L1X.
+interfaces:
+- i2c
+dimensions_mm:
+  width: null
+  height: null
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: conflicting_product_dimension_claims
+  source_ids: [product_page, guide_downloads]
+  notes: Product Details says 21.0 x 18.0 x 2.8 mm, while revision history says current QT standard 0.7 x 1.0 inch (17.78 x 25.4 mm). Dimensions are not normalized as PCB outline until reconciled with current fab print; four mounting holes are explicitly documented.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: four_holes_coordinates_unknown
+connectors:
+  header_group:
+    kind: header
+    description: Current STEMMA QT breakout header signals include VIN, 2v8, GND, SCL, SDA, GPIO and SHDN; former 2.8V output was removed on current mechanical revision (guide revision note vs older pinout content requires caution).
+    contacts: []
+    source_ids: [product_page, guide_pinouts]
+  qt1:
+    kind: cable_connector
+    description: STEMMA QT 4-pin connector
+    contacts: []
+    source_ids: [product_page, guide_pinouts]
+  qt2:
+    kind: cable_connector
+    description: STEMMA QT 4-pin connector
+    contacts: []
+    source_ids: [product_page, guide_pinouts]
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: partial
+  source_ids: [product_page, guide_pinouts]
+pin_names: []
+electrical:
+  board_supply:
+    min_v: 3.0
+    max_v: 5.0
+    nominal_v: [3.3, 5.0]
+    status: documented_board_supply
+    source_ids: [product_page, guide_pinouts]
+    notes: Product/guide say 3–5V input with onboard 2.8V regulator and level shifting; current carrier removed 2.8V output pin.
+  chip_supply:
+    status: datasheet_chip_limits_not_transcribed
+    notes: VL53L0X requires 2.8V core power; carrier regulator supplies it.
+    source_ids: [product_page, chip_datasheet]
+  logic_levels:
+    status: documented_level_shifted
+    notes: ["Product says 3–5V host power/logic compatible with level shifting.", "GPIO is not level shifted and may be only 2.8V logic."]
+    source_ids: [product_page, guide_pinouts]
+  pullups: []
+  extra_signals:
+  - name: GPIO
+    direction: output
+    notes: Data-ready output, not level shifted.
+    source_ids: [guide_pinouts]
+  - name: SHDN
+    direction: input
+    notes: Shutdown/reset input, pulled high by default; needed for readdressing multiple devices in software.
+    source_ids: [guide_pinouts]
+  source_ids: [product_page, guide_pinouts]
+i2c:
+  default_address_7bit: 41
+  documented_addresses_7bit: [41]
+  address_selection: Default 0x29; can be changed only in software while other sensors are held in shutdown.
+  maximum_clock_hz: null
+  clock_stretching: unverified
+  status: documented
+  source_ids: [product_page, guide_pinouts]
+  notes: Product/guide identify I2C; no carrier clock limit stated.
+chip:
+  manufacturer: STMicroelectronics
+  part_number: VL53L0X
+  identity_status: product_page_claim
+  source_ids: [product_page, chip_datasheet]
+datasheets:
+  status: downloaded
+  items:
+  - chip: VL53L0X
+    source_id: chip_datasheet
+    local_file: reference/VL53L0X.pdf
+    url: https://cdn-learn.adafruit.com/assets/assets/000/037/547/original/en.DM00279086.pdf
+    sha256: afb81b343133a1993192b7c779d012a8ee48e79209cdb26951e0bb9f0ed792a7
+    page_count: 40
+    revision: unverified from captured file
+  notes: Official ST datasheet link from Adafruit guide downloads.
+software:
+- name: Adafruit VL53L0X Arduino library
+  framework: Arduino
+  url: https://github.com/adafruit/Adafruit_VL53L0X
+  tested: false
+  source_ids: [guide_downloads]
+- name: Adafruit CircuitPython VL53L0X library
+  framework: CircuitPython
+  url: https://github.com/adafruit/Adafruit_CircuitPython_VL53L0X
+  tested: false
+  source_ids: [product_page]
+extra_resources:
+- name: Adafruit VL53L0X tutorial
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout
+  source_id: guide_pinouts
+- name: VL53L0X carrier CAD and Fritzing resources
+  kind: cad_and_fritzing
+  url: https://github.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB
+  source_id: guide_downloads
+sources:
+- id: product_page
+  kind: website
+  requested_url: https://www.adafruit.com/product/3317
+  url: https://www.adafruit.com/product/3317
+  retrieved_at: '2026-10-23T20:31:33+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 108916
+  sha256: 2cf93309dba47e48e413c421c14360a80924c261f56dff8458b597f7b1166343
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 8789
+    sha256: a8da21f0b26cc90e889feed15d2f37be3f20c6727a9343223b1a5437659fd6be
+  - kind: links
+    local_file: website.links.json
+    bytes: 17050
+    sha256: 9db7cc208fb6da1e62b072de62377b5341c9578728333aff5f95151abb0c6f28
+  title: 'Adafruit VL53L0X Time of Flight Distance Sensor - ~30 to 1000mm : Adafruit Industries, Unique
+    & fun DIY electronics and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_pinouts
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/pinouts
+  url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/pinouts
+  retrieved_at: '2026-10-23T20:31:34+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/pinouts.html
+  bytes: 70929
+  sha256: 18d301a2bd4885389ec9da6095167327ab060697c337265f684aad122cf79c74
+  derivatives:
+  - kind: text
+    local_file: reference/pinouts.txt
+    bytes: 4286
+    sha256: f802c3b44ae6b441d8e3c0499be1f57082899bd11e727ff5d6ff03fb01958f59
+  - kind: links
+    local_file: reference/pinouts.links.json
+    bytes: 18812
+    sha256: f6e9af65d33392abbcdda784221bcfcd7f30ac74d4e5803351eb9230cebdf353
+  title: Pinouts | Adafruit VL53L0X Time of Flight Micro-LIDAR Distance Sensor Breakout | Adafruit Learning
+    System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/downloads
+  url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/downloads
+  retrieved_at: '2026-10-23T20:31:35+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/downloads.html
+  bytes: 71457
+  sha256: 87fb72e023733afd54f73eb52ad153a3b3b8f1130822f414a2fa5fca01014966
+  derivatives:
+  - kind: text
+    local_file: reference/downloads.txt
+    bytes: 2879
+    sha256: 2246733da641f14662f1e608e1e7fecf09cdf7c4016f8f970614efd662268915
+  - kind: links
+    local_file: reference/downloads.links.json
+    bytes: 19469
+    sha256: bae23c9faf8845f85869f49abe3f2445987f684d01cf1ebfde9cdb9d616f8592
+  title: Downloads | Adafruit VL53L0X Time of Flight Micro-LIDAR Distance Sensor Breakout | Adafruit Learning
+    System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn-learn.adafruit.com/assets/assets/000/037/547/original/en.DM00279086.pdf
+  url: https://cdn-learn.adafruit.com/assets/assets/000/037/547/original/en.DM00279086.pdf
+  retrieved_at: '2026-10-23T20:31:37+00:00'
+  content_type: application/unknown
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_downloads
+  local_file: reference/VL53L0X.pdf
+  bytes: 939709
+  sha256: afb81b343133a1993192b7c779d012a8ee48e79209cdb26951e0bb9f0ed792a7
+  derivatives: []
+  pdf_page_count: 40
+conflicts: []
+conflicts:
+- topic: current carrier product dimensions versus QT revision size
+  claims:
+  - claim: Product details list 21.0 x 18.0 x 2.8 mm without clarifying scope.
+    source_id: product_page
+  - claim: Product revision says current QT standard is 0.7 x 1.0 inch.
+    source_id: product_page
+  resolution: Unresolved within the listing; likely one measurement includes different scope or is stale. Current fab print dimensions must be checked before assigning carrier outline.
+  status: unresolved
+data_gaps:
+- Current carrier outline dimensions conflict within product page; fab print is in official guide but not dimensioned/confirmed in this pass. Hole coordinates and diameter remain unknown.
+- Exact contact counts, header order, Qwiic net mapping, and whether a header still includes 2v8 on the current revision need CAD review.
+- Carrier I2C max clock and board pullup values not established.

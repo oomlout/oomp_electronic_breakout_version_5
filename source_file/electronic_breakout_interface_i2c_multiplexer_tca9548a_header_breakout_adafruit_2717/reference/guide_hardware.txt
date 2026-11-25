@@ -1,0 +1,144 @@
+Adafruit TCA9548A 1-to-8 I2C Multiplexer Breakout
+Overview
+Adafruit TCA9548A 1-to-8 I2C Multiplexer Breakout
+I2C addresses collisions? No prob!
+by
+lady ada
+published September 11, 2015, last edited August 20, 2026
+last major update October 19, 2022
+posted in
+Adafruit Products
+Breakout Boards
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly
+Arduino Wiring & Test
+CircuitPython & Python
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+TCA9548A I2C Multiplexer
+$6.95
+Add  to Cart
+View product details
+85
+Beginner
+Product guide
+🙌
+1
+Overview
+Text emphasized with a green exclamation:
+Also see the guide on the Adafruit PCA9548 which is TCA9548A compatible and has Stemma QT ports for I2C.
+Adafruit PCA9548 8-Channel STEMMA QT / Qwiic I2C Multiplexer
+By Liz Clark
+Overview
+View Guide
+You just found the perfect I2C sensor, and you want to wire up two or three or more of them to your Arduino when you realize "Uh oh, this chip has a fixed I2C address, and from what I know about I2C, you cannot have two devices with the same address on the same SDA/SCL pins!" Are you out of luck? You would be, if you didn't have this ultra-cool
+TCA9548A 1-to-8 I2C multiplexer!
+Finally, a way to get up to 8 same-address I2C devices hooked up to one microcontroller - this multiplexer acts as a gatekeeper, shuttling the commands to the selected set of I2C pins with your command.
+Using it is fairly straight-forward: the multiplexer itself is on I2C address 0x70 (but can be adjusted from 0x70 to 0x77) and you simply write a single byte with the desired multiplexed output number to that port, and bam - any future I2C packets will get sent to that port. In theory, you could have 8 of these multiplexers on each of 0x70-0x77 addresses in order to control 64 of the same-I2C-addressed-part.
+Like all Adafruit breakouts, we put this nice chip on a breakout for you so you can use it on a breadboard with capacitors, and pullups and pulldowns to make usage a snap. Some header is required and once soldered in you can plug it into a solderless-breadboard. The chip itself is 1.8V - 5V compliant so you can use it with any logic level.
+Page last edited May 07, 2024
+Pinouts
+Related Guides
+Working with Multiple Same Address I2C Devices
+By
+Carter Nelson
+beginner
+43
+Your browser does not support the video tag. This links to the guide MIDI Laser Harp with Time of Flight Distance Sensors.
+MIDI Laser Harp with Time of Flight Distance Sensors
+By
+Liz Clark
+intermediate
+50
+Improve Brushed DC Motor Performance
+By
+Jan Goolsbey
+intermediate
+30
+Working with I2C Devices
+By
+Carter Nelson
+intermediate
+67
+FTDI Friend
+By
+lady ada
+Product Guide
+49
+Memories of an Arduino
+By
+Bill Earl
+beginner
+96
+Adafruit NeoRGB Stemma
+By
+Liz Clark
+Product Guide
+7
+Remote Control with the Huzzah + Adafruit.io
+By
+Richard Albritton
+intermediate
+74
+Adafruit Powerboost 1000C
+By
+lady ada
+Product Guide
+129
+Adafruit USB Host FeatherWing with MAX3421E
+By
+Liz Clark
+Product Guide
+6
+TIMESQUARE Watch Kit
+By
+lady ada
+beginner
+34
+Adafruit  PCA9685 16-Channel Servo Driver
+By
+Bill Earl
+Product Guide
+169
+Adafruit PCA9548 8-Channel STEMMA QT / Qwiic I2C...
+By
+Liz Clark
+Product Guide
+20
+Adafruit PiOLED - 128x32 Mini OLED for Raspberry Pi
+By
+lady ada
+Product Guide
+83
+Your browser does not support the video tag. This links to the guide Adafruit PCF8574 I2C GPIO Expander.
+Adafruit PCF8574 I2C GPIO Expander
+By
+Kattni Rembor
+Product Guide
+13
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

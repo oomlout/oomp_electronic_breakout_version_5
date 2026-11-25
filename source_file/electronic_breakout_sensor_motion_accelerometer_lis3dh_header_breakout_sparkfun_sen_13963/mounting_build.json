@@ -1,0 +1,117 @@
+{
+  "record_sha256": "f5cf9a944fb8c31b9837666ad54639b696135292650e2cbf71c18c70391479fa",
+  "generated_at": "2026-11-07T12:01:33+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963/3dpr.scad",
+      "bytes": 2927,
+      "sha256": "c7cb1325f1251d0cf9fb2e0297974c90db59d9a781051cdea67b14749048084d"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963/3dpr_short_sides.scad",
+      "bytes": 1974,
+      "sha256": "3a5a3bbe3a76479a5c911b0c911411e25c04d6f0f3b300d402c2f8fddf1b9457"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963/3dpr_long_side.scad",
+      "bytes": 1683,
+      "sha256": "7ac5964530c086eb6fe110de35279e731d46797854cf6e3a77d55df2457cfc3d"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963/3dpr.stl",
+      "bytes": 1271352,
+      "sha256": "352a75bca2e0b7af07ecf33b1e4391e398ebb77ce8539eaa60d96776ae68bc9e"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963/3dpr_short_sides.stl",
+      "bytes": 590114,
+      "sha256": "2880824a6ff27d5e112ad3132b6d3d3039cd2e1ba0745848be2ac93589860874"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963/3dpr_long_side.stl",
+      "bytes": 442638,
+      "sha256": "fee8dd2849e65b4cefa895a55de60b26409ed8fe84076f04b64957b1a4ec23f1"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963/mounting_variants.json",
+      "bytes": 4172,
+      "sha256": "658e155dc48ef350528ae7f7454a890bef634e118dc2ba0f6b81a93566c0969b"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 6513.779263989557,
+    "bounds_mm": [
+      [
+        -29.5,
+        -21.99013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        21.99013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 6513.779263989557,
+        "bounds_mm": [
+          [
+            -29.5,
+            -21.99013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            21.99013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 5114.1015958239,
+        "bounds_mm": [
+          [
+            -29.5,
+            -21.99013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            9.34013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 3623.9583579230252,
+        "bounds_mm": [
+          [
+            -14.5,
+            -21.99013364214136,
+            0.0
+          ],
+          [
+            14.5,
+            21.99013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

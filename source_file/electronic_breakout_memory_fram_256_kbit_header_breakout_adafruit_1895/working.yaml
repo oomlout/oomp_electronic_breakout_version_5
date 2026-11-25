@@ -1,0 +1,327 @@
+research_schema_version: 1
+part_id: electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895
+name_readable: Adafruit I2C FRAM, 256 Kbit / 32 KByte
+manufacturer: adafruit
+part_number: '1895'
+manufacturer_part_number: '1895'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: memory
+  taxonomy_4: fram
+  taxonomy_5: 256_kbit
+  taxonomy_6: ''
+  taxonomy_7: header_breakout
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '1895'
+default_website:
+  url: https://www.adafruit.com/product/1895
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:32:21+00:00'
+  updated_at: '2026-10-23T20:32:25+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: Adafruit I2C FRAM product 1895
+  status: identified_by_product_page
+  source_ids: [product_page, guide_pinouts, guide_downloads]
+  notes: 256Kbit/32KByte I2C FRAM breakout; header-only product, not SPI variants.
+description: Adds persistent logging/configuration storage. Leave the exact fitted memory IC as unverified
+  until checked against the board schematic/BOM; do not derive it solely from capacity.
+interfaces:
+- i2c
+dimensions_mm:
+  width: 15.5
+  height: 20.0
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: product_dimensions_scope_unclear
+  source_ids: [product_page]
+  notes: Product gives 15.5 x 20 x 2 mm dimensions without explicit PCB-only scope; thickness and assembly height left unknown.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: unknown_not_documented
+connectors:
+  header_group:
+    kind: header
+    description: Eight documented signal/power contacts VCC, GND, WP, SCL, SDA, A2, A1, A0. Board is breadboard friendly and supplied with 0.1-inch header stick.
+    contacts: [header_VCC, header_GND, header_WP, header_SCL, header_SDA, header_A2, header_A1, header_A0]
+    source_ids: [product_page, guide_pinouts]
+pins:
+  header_VCC:
+    connector: header_group
+    number: null
+    name: VCC
+    net_name: VCC
+    aliases: []
+    signal_type: power
+    direction: input
+    kind: header
+    x_mm: null
+    y_mm: null
+    source_ids: [guide_pinouts]
+  header_GND:
+    connector: header_group
+    number: null
+    name: GND
+    net_name: GND
+    aliases: []
+    signal_type: ground
+    direction: power_return
+    kind: header
+    x_mm: null
+    y_mm: null
+    source_ids: [guide_pinouts]
+  header_WP:
+    connector: header_group
+    number: null
+    name: WP
+    net_name: WP
+    aliases: []
+    signal_type: control
+    direction: input
+    kind: header
+    x_mm: null
+    y_mm: null
+    source_ids: [guide_pinouts]
+    notes: Write protect; internal pulldown, tie high to prevent writes.
+  header_SCL:
+    connector: header_group
+    number: null
+    name: SCL
+    net_name: SCL
+    aliases: []
+    signal_type: i2c_clock
+    direction: bidirectional
+    kind: header
+    x_mm: null
+    y_mm: null
+    source_ids: [guide_pinouts]
+  header_SDA:
+    connector: header_group
+    number: null
+    name: SDA
+    net_name: SDA
+    aliases: []
+    signal_type: i2c_data
+    direction: bidirectional
+    kind: header
+    x_mm: null
+    y_mm: null
+    source_ids: [guide_pinouts]
+  header_A2:
+    connector: header_group
+    number: null
+    name: A2
+    net_name: A2
+    aliases: []
+    signal_type: address_select
+    direction: input
+    kind: header
+    x_mm: null
+    y_mm: null
+    source_ids: [guide_pinouts]
+  header_A1:
+    connector: header_group
+    number: null
+    name: A1
+    net_name: A1
+    aliases: []
+    signal_type: address_select
+    direction: input
+    kind: header
+    x_mm: null
+    y_mm: null
+    source_ids: [guide_pinouts]
+  header_A0:
+    connector: header_group
+    number: null
+    name: A0
+    net_name: A0
+    aliases: []
+    signal_type: address_select
+    direction: input
+    kind: header
+    x_mm: null
+    y_mm: null
+    source_ids: [guide_pinouts]
+pin_count:
+  header_contacts: 8
+  cable_connector_contacts: 0
+  total_exposed_contacts: 8
+  unique_nets: 8
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: documented_header_pin_inventory
+  source_ids: [guide_pinouts]
+pin_names: [A0, A1, A2, GND, SCL, SDA, VCC, WP]
+electrical:
+  board_supply:
+    min_v: 3.0
+    max_v: 5.0
+    nominal_v: [3.3, 5.0]
+    status: product_and_guide_board_supply
+    source_ids: [product_page, guide_pinouts]
+    notes: Product says 3V/5V power and logic operation; guide describes VCC 3–5V.
+  chip_supply:
+    status: chip_supply_limits_not_transcribed
+    notes: Chip data sheet captured; detailed electrical limits not copied.
+    source_ids: [chip_datasheet]
+  logic_levels:
+    status: documented_3v5_compatible
+    notes: ["Product says chip supports 3V or 5V power and logic.", "WP internal pulldown; VCC high enables write protection."]
+    source_ids: [product_page, guide_pinouts]
+  pullups: []
+  extra_signals:
+  - name: WP
+    direction: input
+    notes: Write-protect input; internal pulldown. Pull to VCC to enable protection.
+    source_ids: [guide_pinouts]
+  - name: A0/A1/A2
+    direction: input
+    notes: Address pins set lower three address bits; default address 0x50.
+    source_ids: [guide_pinouts]
+  source_ids: [product_page, guide_pinouts]
+i2c:
+  default_address_7bit: 80
+  documented_addresses_7bit: [80, 81, 82, 83, 84, 85, 86, 87]
+  address_selection: A2/A1/A0 select low three address bits; default 0x50.
+  maximum_clock_hz: 1000000
+  clock_stretching: unverified
+  status: documented
+  source_ids: [product_page, guide_pinouts]
+  notes: Product says I2C up to 1MHz.
+chip:
+  manufacturer: Fujitsu Semiconductor
+  part_number: MB85RC256V
+  identity_status: product_page_and_datasheet_claim
+  source_ids: [product_page, chip_datasheet]
+datasheets:
+  status: downloaded
+  items:
+  - chip: MB85RC256V
+    source_id: chip_datasheet
+    local_file: reference/MB85RC256V.pdf
+    url: https://cdn-shop.adafruit.com/product-files/1895/MB85RC256V-DS501-00017-3v0-E.pdf
+    sha256: b143340af797cee959c55f35257d64c38245355d365b32baf24e7c5905b7f7d1
+    page_count: 36
+    revision: 3.0
+  notes: Product links the Fujitsu datasheet for fitted FRAM family device; exact carrier marking not independently inspected.
+software:
+- name: Adafruit I2C FRAM Arduino library
+  framework: Arduino
+  url: https://github.com/adafruit/Adafruit_FRAM_I2C
+  tested: false
+  source_ids: [guide_downloads]
+extra_resources:
+- name: Adafruit I2C FRAM guide
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-i2c-fram-breakout
+  source_id: guide_pinouts
+- name: Adafruit FRAM PCB repository
+  kind: cad_repository
+  url: https://github.com/adafruit/Adafruit-I2C-FRAM-Breakout-PCB
+  source_id: guide_downloads
+software: []
+extra_resources: []
+sources:
+- id: product_page
+  kind: website
+  requested_url: https://www.adafruit.com/product/1895
+  url: https://www.adafruit.com/product/1895
+  retrieved_at: '2026-10-23T20:32:22+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 85213
+  sha256: bc2e1295bb960afb61f5bb5f68453bfb6ec34d1404867825f014d36be972ee31
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 5395
+    sha256: 2f1b82e7813dce10598ad1f5b8d07f9f20d76157c84e0d1a3657d1184c2c845f
+  - kind: links
+    local_file: website.links.json
+    bytes: 12704
+    sha256: 503d7b79b2ddeee4f8250744df4be6e7df6276044530acfeb562986f555b38b8
+  title: 'Adafruit I2C Non-Volatile FRAM Breakout - 256Kbit / 32KByte : Adafruit Industries, Unique &
+    fun DIY electronics and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_pinouts
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-i2c-fram-breakout/pinouts
+  url: https://learn.adafruit.com/adafruit-i2c-fram-breakout/pinouts
+  retrieved_at: '2026-10-23T20:32:23+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/pinouts.html
+  bytes: 64804
+  sha256: 128c82a8b100220a6029247f7e2b1f8cf5a590fe25adcafaa6d61e2c3d36b767
+  derivatives:
+  - kind: text
+    local_file: reference/pinouts.txt
+    bytes: 2954
+    sha256: f864bafd44a19ec239a60311d76fcaa97758df36250f30d70375df5c67ff0c26
+  - kind: links
+    local_file: reference/pinouts.links.json
+    bytes: 17089
+    sha256: 5721ec6234795da9185ec9e0a04a767742e67f28162b2828c65d57b66ff34313
+  title: Pinouts | Adafruit I2C FRAM Breakout | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-i2c-fram-breakout/downloads
+  url: https://learn.adafruit.com/adafruit-i2c-fram-breakout/downloads
+  retrieved_at: '2026-10-23T20:32:24+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/downloads.html
+  bytes: 65035
+  sha256: 5723b7871b5a5a4e529e1df5bef33f9a998a0c15cdd7b5946a9241362a3b8198
+  derivatives:
+  - kind: text
+    local_file: reference/downloads.txt
+    bytes: 2187
+    sha256: 0388699221845f495e9b96ac61c535b4a48c0afed2812c70495aaacdb8ea2019
+  - kind: links
+    local_file: reference/downloads.links.json
+    bytes: 17539
+    sha256: cd4986f9f02aca455f5659fba8dfa706cf8d24632d894b69346e9483128bbe05
+  title: Downloads | Adafruit I2C FRAM Breakout | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn-shop.adafruit.com/product-files/1895/MB85RC256V-DS501-00017-3v0-E.pdf
+  url: https://cdn-shop.adafruit.com/product-files/1895/MB85RC256V-DS501-00017-3v0-E.pdf
+  retrieved_at: '2026-10-23T20:32:25+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/MB85RC256V.pdf
+  bytes: 1503530
+  sha256: b143340af797cee959c55f35257d64c38245355d365b32baf24e7c5905b7f7d1
+  derivatives: []
+  pdf_page_count: 36
+conflicts: []
+data_gaps:
+- Exact pin physical order and coordinates, PCB thickness/assembled height and mounting-hole geometry not transcribed; header signals/count are documented.
+- Carrier pullup values and specific resistor/jumper designators need schematic review.
+- Product's dimensions 15.5 x 20 x 2 mm have unclear scope; chip markings not physically checked.

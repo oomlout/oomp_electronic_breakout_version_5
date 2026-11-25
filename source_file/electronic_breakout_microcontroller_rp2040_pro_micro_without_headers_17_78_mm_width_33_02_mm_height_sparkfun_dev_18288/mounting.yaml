@@ -1,0 +1,121 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2040_pro_micro_without_headers_17_78_mm_width_33_02_mm_height_sparkfun_dev_18288
+status: needs_review
+board_revision: DEV-18288 current SparkFun product; exact PCB assembly revision unavailable.
+  The archived manufacturer CAD is commit 6d461a6c0654f616d3c3a9033668a68160f70fcb,
+  whose repository README identifies the initial DEV-17717 release. SparkFun's current
+  product page says the latest revision has slight component layout changes for DFM
+  but does not link its current revision to a CAD file.
+identity_evidence: SparkFun's official product page identifies DEV-18288 and links
+  the official SparkFun_Pro_Micro-RP2040 hardware repository. That repository README
+  identifies DEV-17717 as the initial release; the pinned board file is the latest
+  commit for that file in the repository, but no source links that CAD revision to
+  the current DEV-18288 assembly. The official dimensions image is linked from the
+  current product documentation but is not revision-specific.
+board_size: null
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: null
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: gpt-6-luna
+sources:
+- id: cad_17717
+  local_file: reference/board.brd
+  url: https://raw.githubusercontent.com/sparkfun/SparkFun_Pro_Micro-RP2040/6d461a6c0654f616d3c3a9033668a68160f70fcb/Hardware/SparkFun_ProMicro-RP2040.brd
+  kind: manufacturer_cad
+  locator: Pinned commit 6d461a6c0654f616d3c3a9033668a68160f70fcb; complete EAGLE
+    board, layer 20 outline and all 54 drilled candidates; repository README identifies
+    initial product as DEV-17717.
+  registered_at: '2026-11-06T15:36:24+00:00'
+  bytes: 323932
+  sha256: e33679100b1a6a64c3360ce01fe8a3daa806951bc8a5e32529c87b9d51daee7c
+- id: product_18288
+  local_file: mounting_evidence/sparkfun_product.html
+  url: https://www.sparkfun.com/sparkfun-pro-micro-rp2040.html
+  kind: manufacturer_product
+  locator: Current SparkFun page identifies SKU DEV-18288 and states latest revision
+    is functionally identical with slight component layout changes for DFM; it does
+    not link that revision to the repository CAD revision.
+  registered_at: '2026-11-06T15:36:25+00:00'
+  bytes: 567436
+  sha256: b3e41d540bd65236e573e9403833b42b6cf61b3cd6706f9faaf4ff195bae0be1
+- id: drawing
+  local_file: mounting_evidence/sparkfun_board_dimensions.png
+  url: https://cdn.sparkfun.com/assets/learn_tutorials/1/5/6/0/SparkFun_Pro_Micro_RP2040_Board_Dimensions.png
+  kind: manufacturer_drawing
+  locator: SparkFun Board Dimensions image linked from official DEV-18288 product
+    documentation; 1.30 x 0.70 in outline; shows connector/header drill layout but
+    is not a dimensioned mounting-hole drawing or revision-specific carrier drawing.
+  registered_at: '2026-11-06T15:36:25+00:00'
+  bytes: 24234
+  sha256: 380f02d1205214484e189ba54e1b260df14e2245d17d0968efcae400a13cc50c
+- id: repo_readme
+  local_file: mounting_evidence/repository_README.md
+  url: https://raw.githubusercontent.com/sparkfun/SparkFun_Pro_Micro-RP2040/6d461a6c0654f616d3c3a9033668a68160f70fcb/README.md
+  kind: manufacturer_repository
+  locator: Pinned SparkFun repository README lists DEV-17717 as the initial release;
+    supports identifying the CAD file as initial-release evidence rather than current
+    DEV-18288 carrier evidence.
+  registered_at: '2026-11-06T15:37:54+00:00'
+  bytes: 1560
+  sha256: 9d811a2ce548fcb2ecbd0a7e05320f877b9c8dfa8814edb1e9178ef11dd874a1
+attempts:
+- avenue: pinned manufacturer CAD and full EAGLE drill review
+  date: '2026-11-06'
+  details: Verified the archived board.brd hash against the pinned SparkFun commit
+    6d461a6c0654f616d3c3a9033668a68160f70fcb. The board is 17.78 x 33.02 mm with native
+    centre (8.89, 16.51) mm. The complete 54-drill inspection yielded only castellated/header
+    pads and USB-C connector anchor drills; no board mounting hole was identified
+    in this initial-release CAD. The repository README identifies this hardware as
+    the initial DEV-17717 release, so it cannot alone establish the current DEV-18288
+    geometry.
+- avenue: current manufacturer product page and linked hardware repository
+  date: '2026-11-06'
+  details: The official SparkFun product page identifies DEV-18288 and says the latest
+    revision has slight component layout changes for DFM. Its linked repository identifies
+    DEV-17717 as the initial release; no revision statement links the current product
+    assembly to the archived CAD. Exact current carrier revision remains unestablished.
+- avenue: official board dimensions drawing
+  date: '2026-11-06'
+  details: Reviewed and archived SparkFun's official 1.30 x 0.70 inch board dimensions
+    image linked from the DEV-18288 documentation. It confirms the nominal exterior
+    size but is not dimensioned for mounting holes and has no revision identifier,
+    so it cannot resolve whether the initial-release CAD hole pattern applies to the
+    current carrier.
+- avenue: current product-page Eagle Files link and current repository verification
+  date: '2026-11-07'
+  details: Rechecked SparkFun's current DEV-18288 product page and its official
+    documentation links. The current page links an Eagle Files ZIP at
+    https://cdn.sparkfun.com/assets/3/5/d/0/3/SparkFun_ProMicro-RP2040.zip, but the
+    browser request returned 403 Forbidden, so the CAD contents and revision could
+    not be verified and the denial was not bypassed. The currently linked GitHub
+    repository still labels its hardware as DEV-17717 initial release. SparkFun's
+    current page says the latest revision has slight component layout changes for
+    DFM, without stating that the outline or mounting geometry is unchanged. These
+    sources therefore do not establish that the archived DEV-17717 CAD describes
+    DEV-18288 mounting geometry.
+conflicts: []
+notes:
+- 'Precise review gap: inspect a SparkFun manufacturer CAD file or dimensioned mechanical
+  drawing explicitly tied to the current DEV-18288 carrier revision, or obtain an official
+  statement confirming the DEV-17717 CAD''s outline and mounting geometry are unchanged.
+  The current product page links an Eagle ZIP, but browser access returned 403 and the
+  denial was not bypassed. The current product page and repository do not bridge the
+  revision gap. Until exact current-revision evidence is accessible, the current board''s
+  hole pattern is unknown; do not infer no holes from the earlier board revision, product
+  photos, hookup-guide wording, or the dimensions image. No promotion or holder generation
+  was performed.'
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T00:00:00+00:00'

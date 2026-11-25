@@ -1,0 +1,251 @@
+research_schema_version: 1
+part_id: electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+name_readable: Adafruit MPR121 Touch Breakout, STEMMA QT
+manufacturer: adafruit
+part_number: '1982'
+manufacturer_part_number: '1982'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: input
+  taxonomy_4: touch
+  taxonomy_5: capacitive
+  taxonomy_6: mpr121
+  taxonomy_7: stemma_qt
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '1982'
+default_website:
+  url: https://www.adafruit.com/product/1982
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:23:15+00:00'
+  updated_at: '2026-10-23T20:23:44+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: Adafruit MPR121 product 1982 STEMMA QT breakout
+  status: identified_by_product_page
+  source_ids: [product_page, guide_pinouts, guide_downloads]
+  notes: Product revision says QT added 2021; board size and mounting holes retained from original, while header power/I2C order changed. Older header-only version is shown in guide; listing says connector color and silkscreen differences are functionally identical.
+description: Twelve touch inputs for interfaces, switches and interactive objects. Select the header breakout,
+  not the separate Gator carrier.
+interfaces:
+- i2c
+dimensions_mm:
+  width: null
+  height: null
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: unknown
+  source_ids: [product_page, guide_downloads]
+  notes: Guide states physical size unchanged after QT update but does not state dimensions. A fab print is pictured in Downloads but its dimensions were not transcribed; exact board dimensions remain unverified.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: unverified
+connectors:
+  header_group:
+    kind: header
+    description: Supplied 0.1-inch header section, seven labeled signal/power pins according to current QT pinout (VIN, 3Vo, GND, SCL, SDA, ADDR, INT); original header version order differs.
+    contacts: []
+    source_ids: [product_page, guide_pinouts]
+  QT1:
+    kind: cable_connector
+    description: STEMMA QT / JST SH 4-pin connector
+    contacts: []
+    source_ids: [product_page, guide_pinouts]
+  QT2:
+    kind: cable_connector
+    description: STEMMA QT / JST SH 4-pin connector
+    contacts: []
+    source_ids: [product_page, guide_pinouts]
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: partial
+  source_ids: [product_page, guide_pinouts, guide_downloads]
+  notes: Header signal inventory is known; QT contacts are four per connector by connector standard but exact physical pin numbering/net mapping on this carrier was not established from the static schematic/fab print. Counts are left null pending physical contact interpretation. Touch electrodes are external sense nets but not described as connector inventory.
+pin_names: []
+electrical:
+  board_supply:
+    min_v: 3.0
+    max_v: 5.0
+    nominal_v: [3.3, 5.0]
+    status: documented_board_input_range
+    source_ids: [product_page, guide_pinouts]
+    notes: Product and guide say board may be powered from 3.3–5V; regulator provides 3.3V for the 3V-only sensor.
+  chip_supply:
+    status: 3V_chip
+    notes: MPR121 sensor is described as 3V-only; exact min/max left to datasheet review.
+    source_ids: [product_page, guide_pinouts, chip_datasheet]
+  logic_levels:
+    status: documented_level_shifted
+    notes: ["Carrier includes a 3.3V regulator and I2C level shifting; intended for 3V or 5V host microcontrollers.", "INT is pulled up to 3.3V and is active low."]
+    source_ids: [product_page, guide_pinouts]
+  pullups: []
+  extra_signals:
+  - name: ADDR
+    direction: input
+    notes: Default address strap pulled to ground through 100k; tie to 3Vo for 0x5B, SDA for 0x5C, SCL for 0x5D.
+    source_ids: [guide_pinouts]
+  - name: INT
+    direction: open-drain output
+    notes: Interrupt request, pulled up to 3.3V on carrier and active low. Product says LED is on IRQ line.
+    source_ids: [product_page, guide_pinouts]
+  source_ids: [product_page, guide_pinouts]
+i2c:
+  default_address_7bit: 90
+  documented_addresses_7bit: [90, 91, 92, 93]
+  address_selection: ADDR low default 0x5A; 3Vo=0x5B; SDA=0x5C; SCL=0x5D.
+  maximum_clock_hz: null
+  clock_stretching: unverified
+  status: documented
+  source_ids: [product_page, guide_pinouts]
+  notes: Product identifies I2C-only interface; carrier clock ceiling not stated.
+chip:
+  manufacturer: NXP Semiconductors
+  part_number: MPR121
+  identity_status: product_page_claim
+  source_ids: [product_page, guide_downloads, chip_datasheet]
+datasheets:
+  status: downloaded
+  items:
+  - chip: MPR121
+    source_id: chip_datasheet
+    local_file: reference/MPR121.pdf
+    url: https://cdn-shop.adafruit.com/datasheets/MPR121.pdf
+    sha256: f4416f3ca5c1deef232b212c47af69384369d761f24b6ff0589e1bf6faa86313
+    page_count: 27
+    revision: unverified from captured file
+  notes: Official datasheet link archived from Adafruit Downloads page. Board's fitted chip marking/revision is not evidenced by product title.
+software:
+- name: Adafruit MPR121 Arduino library
+  framework: Arduino
+  url: https://github.com/adafruit/Adafruit_MPR121
+  tested: false
+  source_ids: [product_page]
+- name: Adafruit CircuitPython MPR121
+  framework: CircuitPython
+  url: https://github.com/adafruit/Adafruit_CircuitPython_MPR121
+  tested: false
+  source_ids: [product_page]
+extra_resources:
+- name: Adafruit MPR121 tutorial
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial
+  source_id: guide_pinouts
+- name: STEMMA QT revision schematic and fab print
+  kind: schematic_and_fab_print
+  url: https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/downloads
+  source_id: guide_downloads
+- name: EagleCAD PCB files
+  kind: cad_repository
+  url: https://github.com/adafruit/Adafruit-MPR121-PCB
+  source_id: guide_downloads
+sources:
+- id: product_page
+  kind: website
+  requested_url: https://www.adafruit.com/product/1982
+  url: https://www.adafruit.com/product/1982
+  retrieved_at: '2026-10-23T20:23:34+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 103343
+  sha256: 3d1562c30e7c8b19728f2570e562903305a5c973e534532b8f056ff8a06eed90
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 7487
+    sha256: 535ba9cf711166b07b203a7104dc38352f015502b6097212e707ed31360b993b
+  - kind: links
+    local_file: website.links.json
+    bytes: 16190
+    sha256: 510e0c3314d4c6dc015cc213e2a980fe7615cf15989013d1b69f0e1f4a94b3a5
+  title: 'Adafruit 12-Key Capacitive Touch Sensor Breakout - MPR121 [STEMMA QT] : Adafruit Industries,
+    Unique & fun DIY electronics and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_pinouts
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/pinouts
+  url: https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/pinouts
+  retrieved_at: '2026-10-23T20:23:35+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: reference/pinouts.html
+  bytes: 85112
+  sha256: 6b7545a72c856653b73923108db16c89eeca3c75f0de0587b7d3c733c7c90a05
+  derivatives:
+  - kind: text
+    local_file: reference/pinouts.txt
+    bytes: 5559
+    sha256: eae64de06adde06f6cf6da3ef1f23e281f8b77a8dacfa89b9dc24092db521aaa
+  - kind: links
+    local_file: reference/pinouts.links.json
+    bytes: 20904
+    sha256: 8910d32f483f51a91b30e81beb8c96bf0d1c74717597cd36ce36fb2aa69fa4b7
+  title: Pinouts | Adafruit MPR121 12-Key Capacitive Touch Sensor Breakout Tutorial | Adafruit Learning
+    System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/downloads
+  url: https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/downloads
+  retrieved_at: '2026-10-23T20:23:36+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: reference/downloads.html
+  bytes: 84612
+  sha256: 5849d93f5da3244e4ff3f58e2f97e9fe770fc2f82fba65bbbaf2fe4c38e73ccb
+  derivatives:
+  - kind: text
+    local_file: reference/downloads.txt
+    bytes: 3991
+    sha256: 6c5ea36f5096ca5ad655d246d7de0c9f6c57a14a3ae10ab8ae288967f56394a4
+  - kind: links
+    local_file: reference/downloads.links.json
+    bytes: 21211
+    sha256: 1dac999681c3ace5d698748aa737402f3882f1ee607258774e825d8e88fe0276
+  title: Downloads | Adafruit MPR121 12-Key Capacitive Touch Sensor Breakout Tutorial | Adafruit Learning
+    System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn-shop.adafruit.com/datasheets/MPR121.pdf
+  url: https://cdn-shop.adafruit.com/datasheets/MPR121.pdf
+  retrieved_at: '2026-10-23T20:23:44+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_downloads
+  local_file: reference/MPR121.pdf
+  bytes: 270813
+  sha256: f4416f3ca5c1deef232b212c47af69384369d761f24b6ff0589e1bf6faa86313
+  derivatives: []
+  pdf_page_count: 27
+conflicts: []
+data_gaps:
+- Exact width, height, board thickness, assembled height, and mounting hole coordinates were not independently established; current guide only says dimensions and hole layout were retained from the earlier board.
+- Exact physical connector inventory and contact/net mapping for both QT sockets and header is not resolved from archived static guide imagery; CAD repository revision should be checked against fitted current product revision.
+- Chip marking and fitted MPR121 silicon revision are unverified; datasheet revision not transcribed.
+- Carrier I2C maximum clock rate is not documented in product or pinout page.

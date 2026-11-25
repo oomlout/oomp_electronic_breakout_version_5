@@ -1,0 +1,161 @@
+{
+    "url": "https://docs.m5stack.com/en/core/Stamp-C3U",
+    "accessed": "2026-10-22",
+    "tables": [
+        [
+            [
+                "Specification",
+                "Parameter"
+            ],
+            [
+                "SoC",
+                "ESP32-C3@32-bit RISC-V single-core processor, up to 160MHz"
+            ],
+            [
+                "Flash",
+                "4MB"
+            ],
+            [
+                "SRAM",
+                "400KB"
+            ],
+            [
+                "ROM",
+                "384KB"
+            ],
+            [
+                "RTC SRAM",
+                "8KB"
+            ],
+            [
+                "Wi-Fi",
+                "2.4 GHz Wi-Fi (supports 20/40MHz bandwidth, 802.11 b/g/n, up to 150Mbps)"
+            ],
+            [
+                "Input Voltage",
+                "5V@500mA"
+            ],
+            [
+                "Human Interaction",
+                "Programmable physical button x 1, reset/debug button x 1, programmable RGB LED (SK6812) x 1"
+            ],
+            [
+                "USB Interface",
+                "USB Type-C x1"
+            ],
+            [
+                "Antenna Type",
+                "2.4G 3D antenna"
+            ],
+            [
+                "Module Peripheral Interface Resources",
+                "ADC, GPIO, SPI, UART, I2C, I2S, PWM, RMT, DMA, USB serial, TWAI"
+            ],
+            [
+                "IO Interface x14",
+                "G0, G1, G3, G4, G5, G6, G7, G8, G9, G10, G18, G19, G21, G22"
+            ],
+            [
+                "IO Interface Pitch",
+                "2.54mm"
+            ],
+            [
+                "Mounting Screw Spec",
+                "M2 x 4 countersunk hex key machine screw"
+            ],
+            [
+                "Product Size",
+                "34.0 x 20.0 x 4.6mm"
+            ],
+            [
+                "Product Weight",
+                "4.1g"
+            ],
+            [
+                "Package Size",
+                "138.0 x 93.0 x 7.0mm"
+            ],
+            [
+                "Gross Weight",
+                "22.8g"
+            ]
+        ],
+        [
+            [
+                "ESP32-C3",
+                "G2",
+                "G9"
+            ],
+            [
+                "SK6812",
+                "DI",
+                "/"
+            ],
+            [
+                "Button",
+                "/",
+                "SW"
+            ]
+        ],
+        [
+            [
+                "Model",
+                "Main Control",
+                "IO Count",
+                "Button IO",
+                "USB Download Chip",
+                "USB Interface Function"
+            ],
+            [
+                "Stamp-C3",
+                "ESP32-C3",
+                "13",
+                "G3",
+                "CH9102",
+                "Download / Serial"
+            ],
+            [
+                "Stamp-C3U",
+                "ESP32-C3",
+                "14",
+                "G9",
+                "/",
+                "Download / JTAG / CDC Serial"
+            ]
+        ]
+    ],
+    "links": [
+        {
+            "title": "Stamp-C3U Structure Files",
+            "url": "https://github.com/m5stack/M5_Hardware/tree/master/Products/C122-B_Stamp-C3U/Structures"
+        },
+        {
+            "title": "Stamp-C3U PcbDoc",
+            "url": "https://github.com/m5stack/M5_Hardware/tree/master/Products/C056-B_Stamp-C3/Footprint"
+        },
+        {
+            "title": "ESP32-C3",
+            "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/525/esp32-c3_datasheet_en.pdf"
+        },
+        {
+            "title": "Stamp-C3U RGB LED Example",
+            "url": "https://github.com/m5stack/STAMP-C3/tree/master/idf/RGB_LED_Control"
+        },
+        {
+            "title": "PDF",
+            "url": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/static/pdf/static/en/core/Stamp-C3U.pdf"
+        },
+        {
+            "title": "nanoFramework",
+            "url": "https://github.com/nanoframework/nanoFramework.M5Stack"
+        },
+        {
+            "title": "Hardware Design Files",
+            "url": "https://github.com/m5stack/M5_Hardware"
+        },
+        {
+            "title": "",
+            "url": "https://github.com/m5stack"
+        }
+    ]
+}

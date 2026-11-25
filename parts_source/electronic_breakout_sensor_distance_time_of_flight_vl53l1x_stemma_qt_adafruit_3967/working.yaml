@@ -1,0 +1,406 @@
+board_variant: stemma_qt
+breakout_description: stemma_qt
+breakout_pcb_height: 17.78
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+definition_authority: working_oomp_populate_i2c.py
+description: General distance sensing, with a vendor-specified range up to roughly
+  four metres under suitable conditions.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+geometry_ready: false
+i2c:
+  address_evidence_status: partial_product_page_evidence
+  address_selection: software_with_xshut_for_multiple_devices
+  clock_stretching: unverified
+  default_address_7bit: 41
+  documented_addresses_7bit:
+  - 41
+  maximum_clock_hz: null
+  source_id: product
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+manufacturer: adafruit
+manufacturer_part_number: '3967'
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 2.5
+  id: U$30:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 6.35
+- diameter_mm: 2.5
+  id: U$31:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 6.35
+- diameter_mm: 2.5
+  id: U$33:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: -6.35
+- diameter_mm: 2.5
+  id: U$34:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: -6.35
+mounting_hole_radius_name: m2
+mounting_hole_radius_names:
+- m2
+- m2
+- m2
+- m2
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - 6.35
+- - 10.16
+  - 6.35
+- - -10.16
+  - -6.35
+- - 10.16
+  - -6.35
+mounting_lift: 3
+mounting_research:
+  board_revision: Adafruit VL53L1X STEMMA QT breakout, EAGLE board attribute REV B.
+    The manufacturer repository file was committed 2021-10-26 at e2a85759d3b85907b3c2422f3c140d6bb45390d7.
+  board_size:
+  - 25.4
+  - 17.78
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'Pinned EAGLE 9.6.2 board file at the recorded Adafruit commit. Layer
+    20 wires form the complete outline, including four 2.54 mm-radius corner arcs;
+    native bounds are x=0..25.4 mm and y=0..17.78 mm. Centre is (12.7, 8.89) mm. EAGLE
+    native top-view +X right/+Y up; transform each selected drill by x_mm=x_native-12.7,
+    y_mm=y_native-8.89, with quarter-turn 0 (no axis rotation or mirroring). The four
+    selected package pads have EAGLE drill=2.5 mm and centres (2.54,15.24), (22.86,15.24),
+    (2.54,2.54), (22.86,2.54), yielding centred (±10.16,±6.35) mm. Full drill inspection
+    found ten candidates: these four explicit MOUNTINGHOLE_2.5_PLATED pads and JP2
+    header pads 1-6, each 1.0 mm drill; JP2 are electrical header contacts and are
+    excluded. The selected-hole preview was checked against the CAD candidate list
+    and top-view frame.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit product 3967 is the VL53L1X/VL53L1CX STEMMA QT distance
+    sensor board. The official product page and guide Downloads page identify the
+    EagleCAD files; the official Adafruit-VL53L1X-PCB README names the same product
+    and links product 3967. The pinned board file is named 'Adafruit VL53L1X.brd',
+    has board attribute REV B, and silkscreen labels VL53L1X and VL53L1CX. Its U1
+    value field says VL53L0X, an apparent stale component label; the explicit board
+    filename, manufacturer repository linkage, product identity and silkscreen resolve
+    carrier identity. This electrical label inconsistency does not affect outline
+    or drill geometry.
+  mounting_holes:
+  - diameter_mm: 2.5
+    id: U$30:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$33:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: -6.35
+  record_sha256: ebc8942c7bb3413a8cb050eea14fde9712e404a9dd892a114f645e8788786bcf
+  research_file: source_file/electronic_breakout_sensor_distance_time_of_flight_vl53l1x_stemma_qt_adafruit_3967/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 3162
+    id: repo_readme
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Pinned repository README states PCB files are for Adafruit VL53L1X Time
+      of Flight Distance Sensor and links Adafruit product 3967; repository format
+      is EagleCAD schematic and board layout.
+    registered_at: '2026-11-06T18:50:19+00:00'
+    sha256: 9b70df353bf5b8104d363e1262d1861f8fa6960ab6f28ec45d86570309b84f0d
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L1X-PCB/e2a85759d3b85907b3c2422f3c140d6bb45390d7/README.md
+  - bytes: 105167
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Archived official Adafruit listing for product 3967 identifies VL53L1X/VL53L1CX
+      ToF board with STEMMA QT; verify archived content and hash.
+    registered_at: '2026-11-06T18:50:20+00:00'
+    sha256: 8b1951281a7f31625fb5c7a433f1fece40e47bab5ec61a2be9388277bdb43b80
+    url: https://www.adafruit.com/product/3967
+  - bytes: 262423
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit VL53L1X.brd
+    locator: Pinned Adafruit repository file Adafruit VL53L1X.brd; inspect board metadata,
+      Dimension layer outline, all mechanical/electrical drill candidates, and device
+      function.
+    registered_at: '2026-11-06T18:50:34+00:00'
+    sha256: 592e231f3c91e05bf92ff5940062d8f59d4b8f6984e1db51e58a6d60c5faf6d4
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L1X-PCB/e2a85759d3b85907b3c2422f3c140d6bb45390d7/Adafruit%20VL53L1X.brd
+  status: verified
+name_readable: Adafruit VL53L1X, STEMMA QT
+notes: []
+oobb_details:
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$30:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$33:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$30:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$33:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$30:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$33:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+part_number: '3967'
+part_number_adafruit: '3967'
+pinout_status: unverified
+pins: {}
+product_dimensions_mm:
+  depth: 4.6
+  height: 17.5
+  scope: manufacturer_product_dimensions_not_verified_pcb_outline
+  source_id: product
+  width: 25.5
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/3967
+- bytes: 3162
+  id: mounting_repo_readme
+  kind: manufacturer_repository
+  local_file: mounting_evidence/README.md
+  locator: Pinned repository README states PCB files are for Adafruit VL53L1X Time
+    of Flight Distance Sensor and links Adafruit product 3967; repository format is
+    EagleCAD schematic and board layout.
+  registered_at: '2026-11-06T18:50:19+00:00'
+  sha256: 9b70df353bf5b8104d363e1262d1861f8fa6960ab6f28ec45d86570309b84f0d
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L1X-PCB/e2a85759d3b85907b3c2422f3c140d6bb45390d7/README.md
+- bytes: 105167
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: Archived official Adafruit listing for product 3967 identifies VL53L1X/VL53L1CX
+    ToF board with STEMMA QT; verify archived content and hash.
+  registered_at: '2026-11-06T18:50:20+00:00'
+  sha256: 8b1951281a7f31625fb5c7a433f1fece40e47bab5ec61a2be9388277bdb43b80
+  url: https://www.adafruit.com/product/3967
+- bytes: 262423
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Adafruit VL53L1X.brd
+  locator: Pinned Adafruit repository file Adafruit VL53L1X.brd; inspect board metadata,
+    Dimension layer outline, all mechanical/electrical drill candidates, and device
+    function.
+  registered_at: '2026-11-06T18:50:34+00:00'
+  sha256: 592e231f3c91e05bf92ff5940062d8f59d4b8f6984e1db51e58a6d60c5faf6d4
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L1X-PCB/e2a85759d3b85907b3c2422f3c140d6bb45390d7/Adafruit%20VL53L1X.brd
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_15: '3967'
+taxonomy_2: breakout
+taxonomy_3: sensor
+taxonomy_4: distance
+taxonomy_5: time_of_flight
+taxonomy_6: vl53l1x
+taxonomy_7: stemma_qt
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: sensor
+type_2: distance
+type_3: time_of_flight
+type_4: vl53l1x
+webpage: https://www.adafruit.com/product/3967
+webpage_adafruit: https://www.adafruit.com/product/3967

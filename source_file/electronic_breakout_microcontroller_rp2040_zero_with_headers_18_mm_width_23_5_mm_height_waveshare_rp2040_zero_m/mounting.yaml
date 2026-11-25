@@ -1,0 +1,110 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2040_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2040_zero_m
+status: no_holes
+board_revision: Waveshare RP2040-Zero PCB, manufacturer RP2040_ZERO_ASM STEP dated
+  2022-01-08; no PCB revision number stated. RP2040-Zero-M is the pre-soldered-header
+  sales option on this same outline.
+identity_evidence: Waveshare product source explicitly maps RP2040-Zero-M to RP2040-Zero
+  with pre-soldered header; official RP2040-Zero wiki links the archived RP2040_Zero.stp
+  model. The exact product option changes header assembly only.
+identity_source_ids:
+- product
+- wiki
+- cad
+board_size:
+- 18.0
+- 23.5
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: mechanical
+derivation: 'Manufacturer dimension drawing gives the complete PCB top view and outline
+  dimensions 18.00 mm × 23.50 mm (units mm). Drawing top-left coordinates transform
+  as x_mm = X_drawing - 9.00 and y_mm = 11.75 - Y_drawing (top-down drawing Y), yielding
+  the centered top-view right/up frame; USB-C is at positive Y. Drawing shows all
+  board drills as castellated/header pad features along the edges and no board mounting
+  holes. Cross-check: complete Waveshare STEP assembly RP2040_ZERO_ASM dated 2022-01-08
+  has no vertical-axis through-hole cylinders ≥1.8 mm in the PCB region; its regular
+  Ø0.90 mm cylinders form the edge header-pad pattern matching the drawing. Connector,
+  buttons, and package details are not mounting features.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  local_file: mounting_evidence/product_source_note.txt
+  url: https://www.waveshare.com/RP2040-Zero.htm
+  kind: manufacturer_product
+  locator: 'Indexed official product-page excerpt reviewed 2026-11-06: explicit pre-soldered
+    header option and RP2040-Zero-M mapping; retrieval 403 recorded in the capture
+    note.'
+  registered_at: '2026-11-06T15:54:30+00:00'
+  bytes: 713
+  sha256: b1aaa43ef67eb2e3dfa2106fea51f2b6254490c36d4e8b3d0e2f0e7e6a840496
+- id: wiki
+  local_file: mounting_evidence/wiki_source_note.txt
+  url: https://www.waveshare.com/wiki/RP2040-Zero
+  kind: manufacturer_product
+  locator: 'Indexed official wiki excerpt reviewed 2026-11-06: RP2040-Zero identity
+    and linked STEP resource; retrieval 403 recorded in capture note.'
+  registered_at: '2026-11-06T15:54:30+00:00'
+  bytes: 922
+  sha256: 59ed8fec8e74f51e073b398f91816dbd52018379836a4b36f6d44013bd104881
+- id: cad_package
+  local_file: mounting_evidence/RP2040_Zero_stp.zip
+  url: https://files.waveshare.com/upload/f/f7/RP2040_Zero_stp.zip
+  kind: manufacturer_cad
+  locator: Manufacturer RP2040-Zero STEP archive; contains RP2040_Zero.stp assembly.
+  registered_at: '2026-11-06T15:54:30+00:00'
+  bytes: 1462340
+  sha256: b3f427a30da1c4a2d17fb28470c503189ad5d2c071b1c08b8d66b1d7c1031548
+- id: cad
+  local_file: mounting_evidence/RP2040_Zero_stp/RP2040_Zero.stp
+  url: https://files.waveshare.com/upload/f/f7/RP2040_Zero_stp.zip
+  kind: manufacturer_cad
+  locator: 'RP2040_Zero.stp STEP assembly. STEP FILE_NAME RP2040_ZERO_ASM timestamp
+    2022-01-08. Reviewed all vertical cylindrical faces at the board region: the regular
+    0.90 mm drills correspond to edge header pads shown in the drawing; no ≥1.8 mm
+    through-hole mounting features. Manufacturer assembly model is revision-unspecified.'
+  registered_at: '2026-11-06T15:54:31+00:00'
+  bytes: 9554038
+  sha256: ce8a34fcf9417c91c86141acea7cd3e6a2145f3146e7f9e426cfe5c7e3c14764
+- id: mechanical
+  local_file: reference/mechanical.jpg
+  url: https://www.waveshare.net/w/upload/thumb/2/2e/RP2040-Zero-3.jpg/800px-RP2040-Zero-3.jpg
+  kind: dimensioned_drawing
+  locator: Manufacturer mechanical dimension image, complete top view, unit mm. Confirms
+    18.00 × 23.50 PCB outline, R1 corners and edge pad layout; all through-hole pads
+    are edge connector/header positions, and there are no board mounting holes.
+  registered_at: '2026-11-06T15:54:31+00:00'
+  bytes: 94690
+  sha256: f668799a41e270feff2987fd8ba7650e29d4991bc9a158d94bab816b6e5ea7d0
+attempts:
+- Manufacturer official product page reviewed via indexed result; direct page fetch
+  returned HTTP 403, recorded without bypass.
+- Manufacturer official wiki reviewed via indexed result; direct wiki fetch returned
+  HTTP 403, recorded without bypass.
+- Downloaded and inspected official manufacturer STEP assembly and its full board-region
+  vertical cylindrical features.
+- Reviewed the archived manufacturer mechanical dimension drawing in full top view;
+  its existing SHA-256 matches mounting_context.json.
+conflicts: []
+notes:
+- The no-hole conclusion is scoped to the RP2040-Zero carrier PCB and the documented
+  manufacturer model. The pre-soldered headers on RP2040-Zero-M are connector hardware,
+  not board mounting holes.
+- STEP model is manufacturer hosted but has no stated PCB revision identifier. No
+  conflicting carrier geometry was found.
+- The model preview and generated holder are dimensional references only. Component,
+  connector, screw-head and underside clearance are not physically tested or verified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T15:54:00+00:00'

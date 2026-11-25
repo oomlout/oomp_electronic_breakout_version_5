@@ -1,0 +1,74 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2350a_xiao_without_headers_17_8_mm_width_21_mm_height_seeed_studio_102010550
+status: no_holes
+board_revision: Seeed Studio XIAO RP2350 v1.0 carrier, as supplied in the official XIAO_RP2350_v1.0_SCH&PCB_240626.zip archive; the product page links this exact CAD archive and the v1.0 dimension DXF.
+identity_evidence: The Seeed Studio product page names XIAO RP2350 and links the v1.0 SCH&PCB archive and XIAO RP2350 dimension DXF. The archived project filename is XIAO_RP2350_v1.0 PCB, and its SHA-256 matches the seeded archive evidence. Product order code is 102010550 per this catalogue record.
+board_size:
+- 17.78
+- 20.955
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: drawing
+derivation: 'Seeed Studio official dimension DXF v1.0 uses $INSUNITS=4 (mm). In layer XIAORP2350-EDGE_CUTS_GBR, the complete rounded board perimeter spans raw CAD X=92.3966525931..113.3516525931 mm (20.955 mm) and raw CAD Y=-88.5547691833..-70.7747691833 mm (17.78 mm), corroborated by the DXF dimension entities reading 20.955 and 17.78. The drawing puts the USB connector on the +raw-X edge. To match the seeded top-view convention (USB at +Y), apply a counter-clockwise quarter-turn: x_canonical=-(Y_raw-(-79.6647691833)); y_canonical=X_raw-102.8741525931. This maps raw +X to canonical +Y, swaps the bounding dimensions to width=17.78 and height=20.955, and centres the PCB bounding box. The complete manufacturer KiCad board from the linked v1.0 archive was reviewed for every drill definition: the 0.70/0.85/0.889 mm drills belong to U2 castellated/header and debug contacts; the two 1.5 x 0.6 mm oval drills and two 0.65 mm NPTH drills belong to USB1 shell/connector anchoring. These are electrical/interface/connector features, not board mounting holes. The DXF contains no separate mounting-hole callout or unassigned mechanical bore. Therefore the manufacturer carrier evidence supports an empty board mounting pattern.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  local_file: mounting_evidence/seeed_product.html
+  url: https://wiki.seeedstudio.com/xiao_rp2350_arduino/
+  kind: manufacturer_product
+  locator: Seeed Studio XIAO RP2350 product identity and published dimensions; page links exact v1.0 SCH&PCB archive and v1.0 dimension DXF
+  registered_at: '2026-11-06T16:30:43+00:00'
+  bytes: 79336
+  sha256: 6687c5051e9bdb3bfa71d20c306d900c2b4b7d307c1f7363b5da134b7fd2f125
+- id: archive
+  local_file: reference/design.zip
+  url: https://files.seeedstudio.com/wiki/XIAO-RP2350/res/XIAO_RP2350_v1.0_SCH%26PCB_240626.zip
+  kind: manufacturer_cad
+  locator: Official Seeed archive linked from product page; contains XIAO_RP2350_v1.0 PCB and schematic; local bytes SHA-256 verified against seeded archive
+  registered_at: '2026-11-06T16:30:43+00:00'
+  bytes: 1145969
+  sha256: a4e379f4ff3e31bfea1d53506241a86a171d7f36bbe65b142329ef09bf821d3c
+- id: cad
+  local_file: reference/board.kicad_pcb
+  url: https://files.seeedstudio.com/wiki/XIAO-RP2350/res/XIAO_RP2350_v1.0_SCH%26PCB_240626.zip
+  kind: manufacturer_cad
+  locator: Extracted complete XIAO_RP2350_v1.0 KiCad carrier from official archive; all footprint drill definitions and Edge.Cuts geometry reviewed
+  registered_at: '2026-11-06T16:30:44+00:00'
+  bytes: 3679192
+  sha256: f74481ce0381f8b160e49450b7bb138aa79b1182cfd1c794c790c034279de909
+- id: drawing
+  local_file: mounting_evidence/xiao_rp2350_dimension_v1.0.dxf
+  url: https://files.seeedstudio.com/wiki/XIAO-RP2350/res/XIAO-RP2350-dimension-v1.0.dxf
+  kind: manufacturer_drawing
+  locator: Seeed Studio XIAO RP2350 dimension DXF v1.0; mm units; complete XIAORP2350-EDGE_CUTS_GBR outline and full mask geometry reviewed; dimension entities show 20.955 and 17.78 mm
+  registered_at: '2026-11-06T16:30:44+00:00'
+  bytes: 1418153
+  sha256: bb0d09ed2c670287d9b4f2909ed8511cf62ffd065d203cf6d749c08f94d67418
+attempts:
+- '2026-11-06: Reviewed Seeed Studio official product documentation, which names the XIAO RP2350, publishes 21 x 17.8 mm dimensions, and links the v1.0 carrier archive and dimension DXF.'
+- '2026-11-06: Verified SHA-256 hashes for the pre-existing design ZIP and extracted KiCad board against mounting_context.json. Reviewed complete manufacturer carrier drill definitions: small U2 drills are castellated/header/debug contacts; USB1 drills are connector shell anchors.'
+- '2026-11-06: Downloaded and registered the official v1.0 dimension DXF. Reviewed all EDGE_CUTS entities, complete outline dimensions, mask geometry, and dimension callouts; no additional board mounting bore or mount-hole callout is present.'
+conflicts: []
+notes:
+- Dimensions are for the PCB outline, excluding connector overhang. DXF source orientation is quarter-turned CCW to keep USB at canonical positive Y.
+- No mounting holes are present in this exact v1.0 carrier. Board connector and interface drills are excluded from the mounting pattern.
+- The standard holder is generated geometry only. Component, connector, screw-head, and underside clearance remain unverified; no physical fit test was performed.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T16:33:00+00:00'
+identity_source_ids:
+- product
+- archive
+- cad
+- drawing

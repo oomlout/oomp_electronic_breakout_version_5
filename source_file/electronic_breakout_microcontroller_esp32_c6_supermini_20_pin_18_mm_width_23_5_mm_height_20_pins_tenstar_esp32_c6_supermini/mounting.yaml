@@ -1,0 +1,83 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini
+status: needs_review
+board_revision: Unknown; TENSTAR official store lists an ESP32-C6 SuperMini but identifies
+  no carrier revision.
+identity_evidence: null
+board_size: null
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: null
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources:
+- id: tenstar_store
+  local_file: mounting_evidence/tenstar_official_store.html
+  url: https://tenstar.pro/
+  kind: manufacturer_product
+  locator: Official TENSTAR ROBOT store homepage, ESP32 Boards product listing links
+    “TENSTAR ESP32 Development Board Modules ESP32 S3 ESP32 C3 ESP32 H2 ESP32 C6 SuperMini
+    XIAO…” to /out/11152 and AliExpress item 1005006960134338; no board revision,
+    CAD, or mechanical drawing is specified.
+  registered_at: '2026-11-06T18:33:03+00:00'
+  bytes: 117965
+  sha256: 5b0f19a513a1cfe9095735c2484d6baa55b2d474847b037812e288dcd0e38534
+attempts:
+- avenue: Official manufacturer product source
+  source_id: tenstar_store
+  result: The official TENSTAR store homepage links its ESP32 S3/C3/H2/C6 SuperMini
+    product listing to AliExpress item 1005006960134338. The store page and linked
+    listing do not identify a carrier PCB revision or provide CAD/mechanical dimensions.
+  accessed: '2026-11-06'
+- avenue: Manufacturer-linked hardware repository / exact CAD
+  result: Searched TENSTAR official site and public GitHub results for ESP32-C6 SuperMini
+    schematic, CAD, KiCad, EAGLE, and hardware files; found no manufacturer-linked
+    repository or exact carrier CAD. Similar MakerGO and other generic SuperMini files
+    are different identities and were excluded.
+  accessed: '2026-11-06'
+- avenue: Dimensioned mechanical drawing
+  result: Searched available TENSTAR ESP32-C6 SuperMini manuals and product material.
+    Third-party manual mirrors provide illustrative board images/spec text only, with
+    no dimensioned mechanical view or reliable revision linkage. Photos and nominal
+    catalogue dimensions cannot establish outline or hole geometry.
+  accessed: '2026-11-06'
+- avenue: TENSTAR-branded manual mirrors
+  result: Manuals+ pages associated with AliExpress item 1005006960134338
+    (https://manuals.plus/ae/1005006960134338) and a separate C6 listing
+    (https://manuals.plus/ae/1005007581933511) label the product TENSTAR ESP32-C6
+    SuperMini and report approximately 18 x 26 mm; the series page reports 18 x 26 mm
+    specifically for C6. The first item's manual is linked by the official store's
+    listing, but the pages do not identify a carrier PCB revision or provide CAD.
+    One page describes stamp-hole integration, not mechanical mounting holes. The
+    linked dimension image could not be archived because Manuals+ returned a browser
+    verification challenge to direct retrieval; its drawing details therefore remain
+    uninspected. This secondary material conflicts with the catalogue's nominal
+    18 x 23.5 mm and cannot establish an exact outline or mounting pattern.
+  accessed: '2026-11-07'
+conflicts: []
+notes:
+- Catalogue context gives nominal dimensions 18 x 23.5 mm, but labels them unverified
+  and does not establish an exact carrier revision; not used as promoted geometry.
+- 'Precise gap: need revision-linked manufacturer CAD or a dimensioned mechanical
+  drawing for the exact TENSTAR ESP32-C6 SuperMini carrier. Without it, board outline,
+  mounting-hole presence, candidate drill function, and hole coordinates remain unknown.
+  A TENSTAR-branded third-party manual listing reports 18 x 26 mm rather than the
+  catalogue 18 x 23.5 mm, increasing the unresolved carrier identity/outline conflict;
+  its linked image could not be inspected or archived due to the host browser challenge.'
+- No geometry was inferred from related ESP32 SuperMini variants, product photos,
+  or rectangular symmetry. No mounting preview, validation, promotion, or generated
+  holder is authorized by the evidence state.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T18:33:30+00:00'

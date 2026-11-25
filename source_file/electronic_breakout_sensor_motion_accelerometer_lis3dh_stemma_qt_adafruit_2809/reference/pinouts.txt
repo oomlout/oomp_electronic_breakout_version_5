@@ -1,0 +1,227 @@
+Adafruit LIS3DH Triple-Axis Accelerometer Breakout
+Pinouts
+Adafruit LIS3DH Triple-Axis Accelerometer Breakout
+Triple Axis, Tap & Double Tap, & 3 ADCs!
+by
+lady ada
+published November 16, 2015, last edited August 20, 2026
+posted in
+Sensors
+Adafruit Products
+Breakout Boards
+/
+Accel, Gyro, & Magnetometers
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly
+Arduino
+Python & CircuitPython
+Python Docs
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+Adafruit LIS3DH Triple-Axis Accelerometer (+-2g/4g/8g/16g)
+$4.95
+Add  to Cart
+View product details
+63
+Intermediate
+Product guide
+Pinouts
+The little chip in the middle of the PCB is the actual LIS3DH sensor that does all the motion sensing. We add all the extra components you need to get started, and 'break out' all the other pins you may want to connect to onto the PCB. For more details you can check out the schematics in the Downloads page.
+Power Pins
+The sensor on the breakout requires 3V power. Since many customers have 5V microcontrollers like Arduino, we tossed a 3.3V regulator on the board. Its ultra-low dropout so you can power it from 3.3V-5V just fine.
+Vin
+- this is the power pin. Since the chip uses 3 VDC, we have included a voltage regulator on board that will take 3-5VDC and safely convert it down. To power the board, give it the same power as the logic level of your microcontroller - e.g. for a 5V micro like Arduino, use 5V
+3Vo
+- this is the 3.3V output from the voltage regulator, you can grab up to 100mA from this if you like
+GND
+- common ground for power and logic
+I2C Pins
+SCL
+- I2C clock pin, connect to your microcontrollers I2C clock line. Has a 10K pullup already on it.
+SDA
+- I2C data pin, connect to your microcontrollers I2C data line. Has a 10K pullup already on it.
+To use I2C, keep the
+CS
+pin either disconnected or tied to a high (3-5V) logic level.
+SDO
+- When in I2C mode, this pin can be used for address selection. When connected to
+GND
+or left open, the address is
+0x18
+- it can also be connected to 3.3V to set the address to
+0x19
+. On the STEMMA/QT version of the board, there is a jumper on the bottom you can solder closed to connect SDO to 3.3V.
+STEMMA QT
+- These connectors allow you to connectors to dev boards with STEMMA QT connectors or to other things with
+various associated accessories
+.
+SPI pins:
+All pins going into the breakout have level shifting circuitry to make them 3-5V logic level safe. Use whatever logic level is on
+Vin!
+SCL
+- this is the
+S
+PI
+Cl
+oc
+k
+pin, its an input to the chip
+SDA
+- this is the
+S
+erial
+Da
+ta In /
+M
+icrocontroller
+O
+ut
+S
+ensor
+I
+n pin, for data sent from your processor to the LIS3DH
+SDO
+- this is the
+S
+erial
+D
+ata
+O
+ut /
+M
+icrocontroller
+I
+n
+S
+ensor
+O
+ut pin, for data sent from the LIS3DH to your processor. It's 3.3V logic level out
+CS
+- this is the
+C
+hip
+S
+elect pin, drop it low to start an SPI transaction. Its an input to the chip
+If you want to connect multiple LIS3DH's to one microcontroller, have them share the SDI, SDO and SCK pins. Then assign each one a unique CS pin.
+Other Pins
+INT
+is the interrupt output pin. You can configure the interupt to trigger for various 'reasons' such as motion, tilt, taps, data ready etc. This pin is 3.3V logic output.
+A1 - A3
+- Analog to Digital converter inputs 1-3.
+Other Pins - STEMMA QT Version
+I2
+- is the second interrupt output pin. You can configure the interupt to trigger for various 'reasons' such as motion, tilt, taps, data ready etc. This pin is 3.3V logic output.
+Page last edited March 08, 2024
+Overview
+Assembly
+Related Guides
+LLM Agent Embodiment Kit
+By
+Tim C
+intermediate
+8
+Your browser does not support the video tag. This links to the guide Melting Picture Frame for PyPortal IoT images.
+Melting Picture Frame for PyPortal IoT images
+By
+Ruiz Brothers
+beginner
+0
+Wireless LED Juggling Balls with ESP-NOW
+By
+John Park
+intermediate
+9
+MX MIDI Guitar
+By
+Ruiz Brothers
+intermediate
+57
+Your browser does not support the video tag. This links to the guide RGB LED Matrix Cube with 25,000 LEDs.
+RGB LED Matrix Cube with 25,000 LEDs
+By
+Ruiz Brothers
+advanced
+210
+Your browser does not support the video tag. This links to the guide Animated LED Sand.
+Animated LED Sand
+By
+Ruiz Brothers
+intermediate
+80
+Your browser does not support the video tag. This links to the guide Tiny LED WiFi Companion Cube.
+Tiny LED WiFi Companion Cube
+By
+Charlyn G
+intermediate
+136
+Your browser does not support the video tag. This links to the guide Raspberry Pi LED Matrix Sand Toy.
+Raspberry Pi LED Matrix Sand Toy
+By
+Ruiz Brothers
+beginner
+90
+Your browser does not support the video tag. This links to the guide Adafruit QT Py Activity Timer and Hydration Reminder.
+Adafruit QT Py Activity Timer and Hydration Reminder
+By
+Kattni Rembor
+beginner
+28
+LSM6DSOX, ISM330DHC, & LSM6DSO32 6 DoF IMUs
+By
+Bryan Siepert
+Product Guide
+23
+Adafruit Feather M0 Basic Proto
+By
+lady ada
+intermediate
+63
+Your browser does not support the video tag. This links to the guide Bluetooth Cycling Speed & Cadence Sensor Display with Clue.
+Bluetooth Cycling Speed & Cadence Sensor Display...
+By
+John Park
+beginner
+31
+Adafruit QMC5883P - Triple Axis Magnetometer
+By
+Liz Clark
+Product Guide
+2
+Your browser does not support the video tag. This links to the guide Face Tracking Robot with MEMENTO.
+Face Tracking Robot with MEMENTO
+By
+Brent Rubell
+intermediate
+29
+Your browser does not support the video tag. This links to the guide IoT Motion and Temperature Logger with the Analog Devices ADXL343 + ADT7410 Sensor FeatherWing and Adafruit IO.
+IoT Motion and Temperature Logger with the Analog...
+By
+Brent Rubell
+beginner
+26
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

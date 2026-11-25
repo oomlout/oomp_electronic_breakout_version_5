@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLMFVVN');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile mode if small screen device -->
+    
+    <title>ADXL345 Hookup Guide - SparkFun Learn</title>
+
+          <link rel="canonical" href="https://learn.sparkfun.com/tutorials/adxl345-hookup-guide/all">
+            
+    <link href="/css/bootstrap.min.css?rev=1792686932" rel="stylesheet">
+    <link rel="stylesheet" href="/css/theme.github.css?rev=1792686932" type="text/css" media="screen" />    <link rel="alternate" type="application/atom+xml" title="Education Blog" href="https://learn.sparkfun.com/feeds/blog" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorials" href="https://learn.sparkfun.com/feeds/tutorials" />
+    <link rel="alternate" type="application/atom+xml" title="Education Blog Comments" href="https://learn.sparkfun.com/feeds/blog_comments" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorial Comments" href="https://learn.sparkfun.com/feeds/tutorial_comments" />
+  </head>
+
+  <body id=learn class="layout-default no-type tutorials-view" ontouchstart="">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLMFVVN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <script>;
+    </script>
+    <div class="wrapper" itemscope itemtype="http://schema.org/WebSite">
+      <meta itemprop="url" content="https://learn.sparkfun.com/">
+      <div class=wrapper-inner>
+
+    <header>
+  <div class="support-nav-container container-fluid hidden-xs">
+    <div class="container">
+      <div class="support-nav">
+        <div aria-hidden="true">&nbsp;</div>
+
+        <div>
+          <ul class="professional-links">
+            <li><a href="https://www.sparkfun.com/professional">Professional</a></li>
+            <li><a href="https://www.sparkfun.com/education">EDU</a>            <li><a href="https://www.sparkfun.com/become-a-distributor">Distributor</a>          </ul>
+        </div>
+
+        <div class="cs">
+          <a href="https://www.sparkfun.com/support">Customer Support</a>        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-nav-buttons container-fluid hidden-xs">
+    <div class="container">
+      <div class="tab-bar">
+        <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header-content">
+      <div class="logo-container">
+        <button id="mobile-nav-menu-trigger" class="mobile-menu-button btn-unstyled hidden-sm hidden-md hidden-lg" type="button" aria-label="Open navigation menu">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+
+        <a class="logo" href="https://www.sparkfun.com/">
+          <span class="logo-sfe-primary"><span class="visuallyhidden">SparkFun Electronics - sparkfun.com</span></span>
+        </a>
+      </div>
+
+      <div class="search-block">
+                  <form id="search_form" class="search-block-form" action="https://learn.sparkfun.com/search/results" method="get">
+            <label for="global-search" class="sr-only">search documentation</label>
+            <input name="term" id="global-search" class="form-control" type="text" value="" placeholder="search documentation" autocomplete="off">
+            <button type="submit" class="glyphicon glyphicon-search global-search-icon" aria-label="Search"></button>
+          </form>
+        
+        <a href="https://www.sparkfun.com/" class="hidden-xs">Back to Webstore<span class="icon-header icon-header-undo" aria-hidden="true"></span></a>
+      </div>
+
+        <a class="account-link" href="https://www.sparkfun.com/customer/account">
+          <span class="img-account-silhouette visible-xs-inline-block"><span class="sr-only">My Account</span></span>
+          <span class="hidden-xs">My Account</span>
+        </a>
+
+    </div>
+  </div>
+
+  <div class="header-nav container-fluid hidden-xs">
+    <div class="container">
+      <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    </div>
+  </div>
+  <div id="nav-mobile-menu" class="nav-mobile-menu" aria-labelledby="nav-mobile-menu-heading" aria-role="dialog" aria-modal="true">
+    <h2 id="nav-mobile-menu-heading" class="sr-only">Navigation menu</h2>
+    <ul class="mobile-menu-tabs">
+      <li class="active"><a>Menu</a></li>
+      <li><a href="https://www.sparkfun.com/customer/account">Account</a></li>
+    </ul>
+    <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+  </div>
+</header>
+
+    
+    <div class=content>
+      <div class=container id=airlock>
+
+        
+        <div class=main-title>
+  <ul class="breadcrumb">
+    <li><a href="https://learn.sparkfun.com/">Home</a></li>
+    <li><a href="https://learn.sparkfun.com/tutorials">Tutorials</a></li>
+    <li>ADXL345 Hookup Guide</li>
+      </ul>
+
+  <h1>
+    ADXL345 Hookup Guide  </h1>
+
+</div>
+
+
+<a id=nav_toggle_pages class="nav_toggle nav-toggle-trigger" href="#"><span>&#8801;</span> Pages</a>
+
+<div id=tutorial class="row">
+
+  <div class="col-sm-8" id="sections">
+
+    <div class="contributors">
+                      Contributors:
+                <span class="contributor-alias"><img src="https://cdn.sparkfun.com/avatar/e7085f9b5e2f1df11ad339dd40a4b964?d=retro&s=20&r=pg" /> TheDarkSaint</span>          </div>
+
+    <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t548" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft548&name=ADXL345+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft548" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=ADXL345+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft548&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft548&t=ADXL345+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft548&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F5%2F4%2F8%2FADXL345_Board.jpg&description=ADXL345+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+          <div class="section tutorial-page">
+        <h2 id="introduction-">Introduction </h2>
+        <p>The <a href="https://www.sparkfun.com/products/9836">ADXL345</a> is a small, thin, low power, 3-axis MEMS accelerometer with high resolution (13-bit) measurement at up to +/-16 g. Digital output data is formatted as 16-bit two's complement and is accessible through either an SPI (3- or 4-wire) or I<sup>2</sup>C digital interface.</p>
+
+
+
+<div >
+<div class="tile product-tile big grid " data-id="product-9836">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html">
+        <img src="https://cdn.sparkfun.com/r/600-600/assets/parts/3/9/0/2/09836-_01c.jpg" alt="SparkFun Triple Axis Accelerometer Breakout - ADXL345" height="600">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html">
+          <span>SparkFun Triple Axis Accelerometer Breakout - ADXL345</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      SEN-09836    </span>
+
+          <p class="description" style="display:none">
+        This new version adds two standoff holes as well as an extra decoupling capacitor. The ADXL345 is a small, thin, low power, 3&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$20.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+
+<p>This hookup guide will explore the various functions of the ADXL345 utilizing the SparkFun ADXL345 Arduino Library and example code. First, let's get some background on this small yet powerful accelerometer.</p>
+
+<p>As we step through the Hook Up Guide, you'll find it useful to have the ADXL345 Datasheet on hand.</p>
+
+<p><center><a href="https://www.sparkfun.com/datasheets/Sensors/Accelerometer/ADXL345.pdf" class="btn btn-default">ADXL345 Datasheet</a></center><br></p>
+
+<h3>Required Materials</h3>
+
+<p>The wish list below includes all of the materials that will be utilized in this tutorial:</p>
+
+<script src="/wish_lists/131068.js"></script>
+
+<p>**Note: ** If you plan on using the ADXL345 in I2C mode, you do not need to purchase the logic level converter from the list above.</p>
+
+<h3>Suggested Reading</h3>
+
+<p>If you're not sure if this product is right for your needs, check out the <a href="https://www.sparkfun.com/pages/accel_gyro_guide">Accelerometer, Gyro and IMU Buying Guide</a>. Some additional resources that might be helpful in this process, especially if you are just started out, you can find here:</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-5">
+  <a href="https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/5/Soldering_Action-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">How to Solder: Through-Hole Soldering</h3>
+      </a>
+
+      <div class="description">
+      This tutorial covers everything you need to know about through-hole soldering.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-41">
+  <a href="https://learn.sparkfun.com/tutorials/working-with-wire">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/0/5/0/0/f/5138de3cce395fbb1b000002.JPG)"></div>
+      </div>
+    
+    
+    <h3 class="title">Working with Wire</h3>
+      </a>
+
+      <div class="description">
+      How to strip, crimp, and work with wire.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-63">
+  <a href="https://learn.sparkfun.com/tutorials/accelerometer-basics">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/6/7/e/5/a/516c6b6ece395f0f49000000.jpeg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Accelerometer Basics</h3>
+      </a>
+
+      <div class="description">
+      A quick introduction to accelerometers, how they work, and why they&#039;re used.     </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-82">
+  <a href="https://learn.sparkfun.com/tutorials/i2c">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/2/I2C-Block-Diagram.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">I2C</h3>
+      </a>
+
+      <div class="description">
+      An introduction to I2C, one of the main embedded communications protocols in use today.    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="hardware-overview">Hardware Overview</h2>
+        <h3>Features</h3>
+
+<ul>
+<li>Supply Voltage: 2.0 - 3.6 VDC</li>
+<li>Ultra Low Power: As low as 23 uA in measurement mode, 0.1uA in standby mode at 2.5V</li>
+<li>SPI or I2C Communication</li>
+<li>Single Tap / Double Tap Detection</li>
+<li>Activity / Inactivity Sensing</li>
+<li>Free-Fall Detection</li>
+</ul>
+
+<p>Whoa! What are those last three?! Yes, the ADXL345 has special sensing abilities! The single and double tap sensing detects when a single, or two simultaneous, acceleration events occur. Activity and inactivity sensing detect the presence or lack of motion. Free-fall sensing compares the acceleration on all axes with the threshold value to know if the device is falling. All thresholds levels that trigger the activity, free-fall, and single tap/double tap events are <em>user-set</em> levels. These functions can also be mapped to one of two interrupt output pins. An integrated, patent pending 32-level first in, first out (FIFO) buffer can be used to store data to minimize host processor intervention.</p>
+
+<p>The ADXL345 is well suited to measure the static acceleration of gravity in tilt-sensing applications, as well as dynamic acceleration resulting from motion or shock. Its high resolution (4 mg/LSB) enables measurement of inclination changes less than 1.0°. Furthermore, low power modes enable intelligent motion-based power management with threshold sensing and active acceleration measurement at extremely low power dissipation.</p>
+
+<h3>Applications</h3>
+
+<ul>
+<li>Handsets</li>
+<li>Medical Instrumentation</li>
+<li>Gaming and Pointing Devices</li>
+<li>Industrial Instrumentation</li>
+<li>Personal Navigation Devices</li>
+<li>Hard Disk Drive (HDD) protection</li>
+</ul>
+
+<h3>Pin Functionality</h3>
+
+<p>Below you can reference the ADXL345 breakout board and pin functions.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/ADXL345_Breakout_Hardware.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/ADXL345_Breakout_Hardware.jpg" alt="alt text" /></a> </div></p>
+
+<h3>Breakout Board Pin Function Descriptions</h3>
+
+<table align="center" border="2" cellpadding="1" cellspacing="1" style="width: 550px; height: 400px;">
+    <tbody>
+        <tr>
+            <td style="text-align: center;">
+                <strong>Mnemonic</strong></td>
+            <td style="text-align: center;">
+                <strong>Description</strong></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                GND</td>
+            <td style="text-align: center;">
+                This pin must be connected to ground</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                VCC</td>
+            <td style="text-align: center;">
+                Supply Voltage</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                CS</td>
+            <td style="text-align: center;">
+                Chip Select</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                INT1</td>
+            <td style="text-align: center;">
+                Interrupt 1 Output</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                INT2</td>
+            <td style="text-align: center;">
+                Interrupt 2 Output</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                SDO</td>
+            <td>
+                <p style="text-align: center;">
+                Serial Data Output (SPI 4-Wire) / I2C Address Select</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                SDA / SDI / SDIO</td>
+            <td>
+                <p style="text-align: center;">
+                Serial Data I2C / Serial Data Input (SPI 4-WIRE) / Serial Data Input and Output (SPI 3-Wire)</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                SCL/SCLK</td>
+            <td>
+                <p style="text-align: center;">
+                Serial Communications Clock</p>
+            </td>
+        </tr>
+    </tbody>
+</table>      </div>
+          <div class="section tutorial-page">
+        <h2 id="assembly">Assembly</h2>
+        <p>With the ADXL345, I2C and SPI digital communications are available. In both cases, the ADXL345 operates as a slave device.</p>
+
+<div class="alert alert-warning"><p><b>Note:</b> A potential problem when hooking up the ADXL345 breakout to an Arduino (or compatible board) is, if you are using a breadboard with loosely connected jumper wires, you risk getting bad data. Make sure your connections are solid, and you should be fine. </p></div>
+
+<h3>SPI Communication</h3>
+
+<p>First, we will look at how to connect an Arduino (or compatible board like SparkFun's <a href="https://www.sparkfun.com/products/12757">RedBoard</a>) to the ADXL345 breakout board for SPI communication.</p>
+
+<p>In SPI mode, the CS pin is controlled by the bus master. For SPI, either 3- or 4- wire configuration is possible.</p>
+
+<div class="alert alert-info"><p>Note: When using 3-wire SPI, it is recommended that the SDO pin be pulled up to VDD I/O or pulled down to GND via a 10 k&#937; resistor. Please refer to page 15 of the <a href="https://www.sparkfun.com/datasheets/Sensors/Accelerometer/ADXL345.pdf">ADXL345 Datasheet</a> for additional information.</p></div>
+
+<p>The following is a table describing which pins on the Arduino should be connected to the pins on the accelerometer for SPI 4-wire communication.</p>
+
+<table align="center" border="2" cellpadding="1" cellspacing="1" style="width: 200px; height: 148px;">
+    <tbody>
+        <tr>
+            <td style="text-align: center;">
+                <strong>Arduino Pin</strong></td>
+            <td style="text-align: center;">
+                <strong>ADXL345 Pin</strong></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                GND</td>
+            <td style="text-align: center;">
+                GND</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                3V3</td>
+            <td style="text-align: center;">
+                VCC</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                10</td>
+            <td style="text-align: center;">
+                CS</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                12</td>
+            <td style="text-align: center;">
+                SDO</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                11</td>
+            <td style="text-align: center;">
+                SDA</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                13</td>
+            <td>
+                <p style="text-align: center;">
+                SCL</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><br></p>
+
+<p>Here is a wiring connection diagram to aid you in hooking it up for SPI 4-wire communication.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/adxl345SPIFix.png"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/5/4/8/adxl345SPIFix.png" alt="alt text" /></a> </div></p>
+
+<div class="alert alert-warning"><b>Heads up!</b> If using a 5V Arduino, such as the SparkFun RedBoard or the Arduino Uno, you will need to use a logic level converter to protect the ADXL345's 3/3V tolerant pins (as shown in the diagram above). If using a 3.3V Arduino, such as the <a href="https://www.sparkfun.com/products/10914">Arduino Pro</a> or <a href ="https://www.sparkfun.com/products/11114">Pro Mini 3.3V/8MHz</a>, logic level conversion is not necessary.</div>
+
+<h3>I2C Communication</h3>
+
+<p>Now, let's look at how to connect an Arduino (or compatible board like SparkFun's <a href="https://www.sparkfun.com/products/12757">RedBoard</a>) to the ADXL345 breakout board for I2C communication.</p>
+
+<p>I2C mode is enabled if the CS pin is tied to high. There is no default mode if the CS pin is left unconnected, so it should always be tied high or driven by an external controller.</p>
+
+<div class="alert alert-warning"><p>Note: If other devices are connected to the same I2C bus, the nominal operating voltage level of those other devices cannot exceed VDD I/O by more than 0.3 V. External pull-up resistors are necessary for proper I2C operation. Used in this connection diagram are two 4.7 k&#937; resistors. Please refer to page 18 of the <a href="https://www.sparkfun.com/datasheets/Sensors/Accelerometer/ADXL345.pdf">ADXL345 Datasheet</a> for additional information.</p></div>
+
+<p>The following is a table describing which pins on the Arduino should be connected to the pins on the accelerometer for I2C communication.</p>
+
+<table align="center" border="2" cellpadding="1" cellspacing="1" style="width: 200px; height: 148px;">
+    <tbody>
+        <tr>
+            <td style="text-align: center;">
+                <strong>Arduino Pin</strong></td>
+            <td style="text-align: center;">
+                <strong>ADXL345 Pin</strong></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                GND</td>
+            <td style="text-align: center;">
+                GND</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                3V3</td>
+            <td style="text-align: center;">
+                VCC</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                3V3</td>
+            <td style="text-align: center;">
+                CS</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                GND</td>
+            <td style="text-align: center;">
+                SDO</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                A4</td>
+            <td style="text-align: center;">
+                SDA</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                A5</td>
+            <td>
+                <p style="text-align: center;">
+                SCL</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><br></p>
+
+<p>Here is a wiring connection diagram to aid you in hooking it up for I2C communication.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/ADXL345Fix.png"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/5/4/8/ADXL345Fix.png" alt="alt text" /></a> </div></p>
+
+<p>Not using a SparkFun <a href="https://www.sparkfun.com/products/12757">RedBoard</a> or Arduino Uno? The reference table below shows where Two Wire Interface (TWI) pins are located on different and older Arduino boards.</p>
+
+<table align="center" border="2" cellpadding="1" cellspacing="1" style="width: 425px; height: 148px;">
+    <tbody>
+        <tr>
+            <td style="text-align: center;">
+                <strong>Board</strong></td>
+            <td style="text-align: center;">
+                <strong>I2C / TWI Pins</strong></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                SparkFun Red, Uno, Ethernet</td>
+            <td style="text-align: center;">
+                A4 (SDA), A5 (SCL)</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                Mega2560</td>
+            <td style="text-align: center;">
+                20 (SDA), 21 (SCL)</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                Leonardo</td>
+            <td style="text-align: center;">
+                2 (SDA), 3 (SCL)</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                Due</td>
+            <td style="text-align: center;">
+                20 (SDA), 21 (SCL), SDA1, SCL1</td>
+        </tr>
+    </tbody>
+</table>      </div>
+          <div class="section tutorial-page">
+        <h2 id="sparkfun-adxl345-library">SparkFun ADXL345 Library</h2>
+        <p>The most exciting part of the Hookup Guide is the SparkFun ADXL345 library we've put together for you. Now, you not only have the ability to customize your sensing functions but also switch easily back and forth between I2C and SPI communication.</p>
+
+<p>To get started, you can download the library here along with example code. For the most up-to-date code visit the <a href="https://github.com/sparkfun/SparkFun_ADXL345_Arduino_Library">SparkFun ADXL345 Arduino Library Repo</a>.</p>
+
+<p style="text-align: center;">
+<a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/SparkFun_ADXL345_Arduino_Library.zip" class="btn btn-default">SparkFun ADXL345 Library and Example Code</a>
+</p>
+
+<p>The downloaded file includes:</p>
+
+<ul>
+<li>Library .cpp and .h files</li>
+<li>Arduino Sketch: ADXL345 Calibration Example</li>
+<li>Arduino Sketch: ADXL345 Example</li>
+<li>Arduino Sketch: <a href="https://www.sparkfun.com/news/2185">SparkFun Baby Blynk Monitor Thing</a> Example</li>
+<li>README.md</li>
+<li>keywords.txt</li>
+</ul>
+
+<p>Before we are able to use the example code, we need to place the <code>SparkFun_ADXL345_Library</code> folder into your Arduino Library. If you don't know where that is located, you can usually find it here:</p>
+
+<div class="alert alert-info">
+<b>PC:</b> My Documents > Arduino > Libraries
+<br>
+<b>Mac:</b> (home directory) > Documents > Arduino > libraries
+<br>
+<b>Linux:</b> (home directory) > Sketchbook > Libraries
+</div>
+
+<p>For help installing the library, check out our <a href="https://learn.sparkfun.com/tutorials/installing-an-arduino-library">Installing an Arduino Library tutorial</a>.</p>
+
+<h3>Using the SparkFun ADXL245 Library</h3>
+
+<p>Once you've installed the SparkFun ADXL345 Library, you can open up <code>SparkFun_ADXL345_Example.ino</code> in the Arduino IDE.</p>
+
+<div class="alert alert-info"><p>Make sure you have downloaded and installed the <a href="https://www.arduino.cc/en/Main/Software">Arduino Software IDE</a> so you can open the example code and program your board.</p></div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="example-code">Example Code</h2>
+        <p>Now that you have the example sketch open, let's go through and take a look at all the ways we can customize the ADXL345.</p>
+
+<h3>SPI or I2C?</h3>
+
+<p>The first important selection to make is under the <code>COMMUNICATION SECTION</code>. This is where you will let the library know whether you have setup your hardware for SPI or I2C communication.</p>
+
+<pre><code>language:c
+/*********** COMMUNICATION SELECTION ***********/
+/*    Comment Out The One You Are Not Using    */
+ADXL345 adxl = ADXL345(10);           // USE FOR SPI COMMUNICATION, ADXL345(CS_PIN);
+//ADXL345 adxl = ADXL345();             // USE FOR I2C COMMUNICATION
+</code></pre>
+
+<p>Make sure to comment out <code>//</code> the line of code you are not using. By default, the code has you utilizing SPI communication.</p>
+
+<h3>Setup</h3>
+
+<p>The most complex part of the example code is the <code>void setup()</code> section. This is where you'll be able to configure your settings and sensing feature thresholds.</p>
+
+<pre><code>language:c
+/******************** SETUP ********************/
+/*          Configure ADXL345 Settings         */
+void setup(){
+
+Serial.begin(9600);                 // Start the serial terminal
+Serial.println("SparkFun ADXL345 Accelerometer Hook Up Guide Example");
+Serial.println();
+
+adxl.powerOn();                     // Power on the ADXL345
+
+adxl.setRangeSetting(16);           // Give the range settings
+                                    // Accepted values are 2g, 4g, 8g or 16g
+                                    // Higher Values = Wider Measurement Range
+                                    // Lower Values = Greater Sensitivity
+
+adxl.setSpiBit(0);                  // Configure the device to be in 4 wire SPI mode when set to '0' or 3 wire SPI mode when set to 1
+                                    // Default: Set to 1
+                                    // SPI pins on the ATMega328: 11, 12 and 13 as reference in SPI Library 
+
+adxl.setActivityXYZ(1, 0, 0);       // Set to activate movement detection in the axes "adxl.setActivityXYZ(X, Y, Z);" (1 == ON, 0 == OFF)
+adxl.setActivityThreshold(75);      // 62.5mg per increment   // Set activity   // Inactivity thresholds (0-255)
+
+adxl.setInactivityXYZ(1, 0, 0);     // Set to detect inactivity in all the axes "adxl.setInactivityXYZ(X, Y, Z);" (1 == ON, 0 == OFF)
+adxl.setInactivityThreshold(75);    // 62.5mg per increment   // Set inactivity // Inactivity thresholds (0-255)
+adxl.setTimeInactivity(10);         // How many seconds of no activity is inactive?
+
+adxl.setTapDetectionOnXYZ(0, 0, 1); // Detect taps in the directions turned ON "adxl.setTapDetectionOnX(X, Y, Z);" (1 == ON, 0 == OFF)
+
+// Set values for what is considered a TAP and what is a DOUBLE TAP (0-255)
+adxl.setTapThreshold(50);           // 62.5 mg per increment
+adxl.setTapDuration(15);            // 625 μs per increment
+adxl.setDoubleTapLatency(80);       // 1.25 ms per increment
+adxl.setDoubleTapWindow(200);       // 1.25 ms per increment
+
+// Set values for what is considered FREE FALL (0-255)
+adxl.setFreeFallThreshold(7);       // (5 - 9) recommended - 62.5mg per increment
+adxl.setFreeFallDuration(30);       // (20 - 70) recommended - 5ms per increment
+
+// Setting all interupts to take place on INT1 pin
+//adxl.setImportantInterruptMapping(1, 1, 1, 1, 1);     // Sets "adxl.setEveryInterruptMapping(single tap, double tap, free fall, activity, inactivity);" 
+                                                        // Accepts only 1 or 2 values for pins INT1 and INT2. This chooses the pin on the ADXL345 to use for Interrupts.
+                                                        // This library may have a problem using INT2 pin. Default to INT1 pin.
+
+// Turn on Interrupts for each mode (1 == ON, 0 == OFF)
+adxl.InactivityINT(1);
+adxl.ActivityINT(1);
+adxl.FreeFallINT(1);
+adxl.doubleTapINT(1);
+adxl.singleTapINT(1);
+
+//attachInterrupt(digitalPinToInterrupt(interruptPin), ADXL_ISR, RISING);   // Attach Interrupt
+
+}
+</code></pre>
+
+<p>The comments can help guide you as to what each function does along with recommended ranges to stay within where applicable. More detailed information of the sensing functions and interrupts can be found on the <a href="https://www.sparkfun.com/datasheets/Sensors/Accelerometer/ADXL345.pdf">ADXL345 Datasheet</a>.</p>
+
+<h3>Main Code</h3>
+
+<p>The main example code was kept very simple. It focuses on not only reading the accelerometer values but also checking to see if any interrupts have occurred.</p>
+
+<pre><code>language:c
+/****************** MAIN CODE ******************/
+/*     Accelerometer Readings and Interrupt    */
+void loop(){
+
+// Accelerometer Readings
+int x,y,z;  
+adxl.readAccel(&amp;x, &amp;y, &amp;z);         // Read the accelerometer values and store them in variables declared above x,y,z
+
+// Output Results to Serial
+/* UNCOMMENT TO VIEW X Y Z ACCELEROMETER VALUES */  
+//Serial.print(x);
+//Serial.print(", ");
+//Serial.print(y);
+//Serial.print(", ");
+//Serial.println(z); 
+
+ADXL_ISR();
+// You may also choose to avoid using interrupts and simply run the functions within ADXL_ISR(); 
+//  and place it within the loop instead.  
+// This may come in handy when it doesn't matter when the action occurs. 
+
+}
+</code></pre>
+
+<p>Currently, the sketch will only output free fall detection, inactivity/activity, and single/double tap detection to the Serial Monitor.</p>
+
+<div class="alert alert-info"><p>In order to print the measured accelerometer values to the Serial Monitor, just remember to uncomment the following section to look like this:</p></div>
+
+<pre><code>language:c
+// Output Results to Serial
+/* UNCOMMENT TO VIEW X Y Z ACCELEROMETER VALUES */  
+Serial.print(x);
+Serial.print(", ");
+Serial.print(y);
+Serial.print(", ");
+Serial.println(z); 
+</code></pre>
+
+<h3>Serial Monitor Output</h3>
+
+<p>Let's see it in action! Go to Tools on your Arduino IDE, set your board and port, and upload the <code>SparkFun_ADXL345_Example.ino</code> sketch to your Arduino or compatible board. If you need further assistance in uploading your sketch this might be helpful: <a href="https://learn.sparkfun.com/tutorials/redboard-hookup-guide#uploading-blink">Uploading a Sketch</a>.</p>
+
+<p>The following two Serial Monitor outputs are what you should expect whether you have commented out the accelerometer values from being displayed or not.</p>
+
+<h4>Accelerometer Values Excluded</h4>
+
+<p>This is what your outputs will look like with the sensing features are triggered.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/SerialMon_Ex1.png"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/SerialMon_Ex1.png" alt="alt text" /></a> </div></p>
+
+<h4>Accelerometer Values Included</h4>
+
+<p>This is the data you should see when you have uncommented the X, Y and Z <code>Serial.print()</code> lines of code. Also, keep in mind you will still see when the sensing features are triggered, it just might be harder to catch amongst the data stream.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/SerialMon_Ex2.png"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/SerialMon_Ex2.png" alt="alt text" /></a> </div></p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="calibration">Calibration</h2>
+        <p>The other sketch available to you is the <code>SparkFun_ADXL345_Calibration.ino</code>. This will be useful whenever you have an application that requires your device to be precision calibrated.</p>
+
+<h3>Calibration Method</h3>
+
+<p>An accurate calibration method is to use two points per axis. In our case we have a three-axis design, therefore, we are interested in six points. In the <a href="https://www.sparkfun.com/datasheets/Sensors/Accelerometer/ADXL345.pdf">datasheet</a> and in the example sketch, you'll notice references to the <em>g range</em> with accepted values of <em>2g, 4g, 8g or 16g</em>. 1g is equivalent to the force of gravity acting on a stationary object resting on Earth's surface. Acceleration relative to gravity can be measured in units of gravitational force.</p>
+
+<div class="alert alert-info"><p>A great resource is the Application Note from Analog Devices: <a href="http://www.analog.com/media/en/technical-documentation/application-notes/AN-1057.pdf"><i>Using an Accelerometer for Inclination Sensing</i></a></p></div>
+
+<h3>Calibration Example Sketch</h3>
+
+<p>Here is what the calibration example sketch looks like:</p>
+
+<pre><code>language:c
+#include &lt;SparkFun_ADXL345.h&gt;
+
+/*********** COMMUNICATION SELECTION ***********/
+/*    Comment Out The One You Are Not Using    */
+//ADXL345 adxl = ADXL345(10);           // Use when you want to use Hardware SPI, ADXL345(CS_PIN);
+ADXL345 adxl = ADXL345();             // Use when you need I2C
+
+/****************** VARIABLES ******************/
+/*                                             */
+int AccelMinX = 0;
+int AccelMaxX = 0;
+int AccelMinY = 0;
+int AccelMaxY = 0;
+int AccelMinZ = 0;
+int AccelMaxZ = 0; 
+
+int accX = 0;
+int accY = 0;
+int accZ = 0;
+
+int pitch = 0;
+int roll = 0;
+
+/************** DEFINED VARIABLES **************/
+/*                                             */
+#define offsetX   0       // OFFSET values
+#define offsetY   0
+#define offsetZ   0
+
+#define gainX     1     // GAIN factors
+#define gainY     1
+#define gainZ     1 
+
+/******************** SETUP ********************/
+/*          Configure ADXL345 Settings         */
+void setup()
+{
+Serial.begin(9600);                 // Start the serial terminal
+Serial.println("SparkFun ADXL345 Accelerometer Breakout Calibration");
+Serial.println();
+
+adxl.powerOn();                     // Power on the ADXL345
+
+adxl.setRangeSetting(2);           // Give the range settings
+                                    // Accepted values are 2g, 4g, 8g or 16g
+                                    // Higher Values = Wider Measurement Range
+                                    // Lower Values = Greater Sensitivity
+
+adxl.setSpiBit(0);                // Configure the device to be in 4 wire SPI mode when set to '0' or 3 wire SPI mode when set to 1
+                                    // It is set to 1 by Default.
+                                    // SPI pins on the ATMega328 as reference in SPI Library are 11, 12, and 13
+
+}
+
+/****************** MAIN CODE ******************/
+/*  Accelerometer Readings and Min/Max Values  */
+void loop()
+{
+Serial.println("Send any character to display values.");
+while (!Serial.available()){}       // Waiting for character to be sent to Serial
+Serial.println();
+
+// Get the Accelerometer Readings
+int x,y,z;                          // init variables hold results
+adxl.readAccel(&amp;x, &amp;y, &amp;z);         // Read the accelerometer values and store them in variables declared above x,y,z
+
+if(x &lt; AccelMinX) AccelMinX = x;
+if(x &gt; AccelMaxX) AccelMaxX = x;
+
+if(y &lt; AccelMinY) AccelMinY = y;
+if(y &gt; AccelMaxY) AccelMaxY = y;
+
+if(z &lt; AccelMinZ) AccelMinZ = z;
+if(z &gt; AccelMaxZ) AccelMaxZ = z;
+
+Serial.print("Accel Minimums: "); Serial.print(AccelMinX); Serial.print("  ");Serial.print(AccelMinY); Serial.print("  "); Serial.print(AccelMinZ); Serial.println();
+Serial.print("Accel Maximums: "); Serial.print(AccelMaxX); Serial.print("  ");Serial.print(AccelMaxY); Serial.print("  "); Serial.print(AccelMaxZ); Serial.println();
+Serial.println();
+
+
+/* Note: Must perform offset and gain calculations prior to seeing updated results
+/  Refer to SparkFun ADXL345 Hook Up Guide: https://learn.sparkfun.com/tutorials/adxl345-hookup-guide
+/  offsetAxis = 0.5 * (Acel+1g + Accel-1g)
+/  gainAxis = 0.5 * ((Acel+1g - Accel-1g)/1g) */
+
+// UNCOMMENT SECTION TO VIEW NEW VALUES
+//accX = (x - offsetX)/gainX;         // Calculating New Values for X, Y and Z
+//accY = (y - offsetY)/gainY;
+//accZ = (z - offsetZ)/gainZ;
+
+//Serial.print("New Calibrated Values: "); Serial.print(accX); Serial.print("  "); Serial.print(accY); Serial.print("  "); Serial.print(accZ);
+//Serial.println(); 
+
+while (Serial.available())
+{
+    Serial.read();                    // Clear buffer
+}
+}
+</code></pre>
+
+<p>The main code will read your accelerometer maximums and minimums. With these values we will be able to calculate the offset values and gain factors giving us our new calibrated accelerometer readings. We will talk more about the equations for those calculations in a minute.</p>
+
+<h3>Mounting Accelerometer</h3>
+
+<p>Before taking these measurements, we want to have the accelerometer mounted with the Z axis parallel to the up direction. For example, if our accelerometer is on a table, our ADXL345 breakout board will be oriented like the picture below and the Z data should be constant.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/Adxl345_Hookup_Guide-01.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/5/4/8/Adxl345_Hookup_Guide-01.jpg" alt="alt text" /></a> </div></p>
+
+<p>Make sure it's secure to either your application or a block that has a level flat surface.</p>
+
+<h3>Load Sketch and Take Measurements</h3>
+
+<p>Load the Calibration Sketch to your board. Open the Serial Monitor, and wait for the prompt that says to <code>Send any character to display values</code>. Each time you want to measure a different axis, simply turn the enclosure or block the ADXL345 breakout is mounted on, type a character to the Serial Monitor, and hit return to print out the measurement result. You'll notice an X-Y-Z axis symbol on the breakout board that will help with orienting in each direction.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/Adxl345_Hookup_Guide-05.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/5/4/8/Adxl345_Hookup_Guide-05.jpg" alt="alt text" /></a> </div></p>
+
+<p>When an axis is placed into a +1 g and −1 g field, the measured outputs will look something like this on your Serial Monitor. You'll want to take measurements in each axis direction.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/SerialMon_Cal1.png"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/SerialMon_Cal1.png" alt="alt text" /></a> </div></p>
+
+<h3>Recording Data</h3>
+
+<p>To leave room for offset and gain adjustments, it's probably best to do the calculations by hand. Record your data in a similar table like the one below.</p>
+
+<table align="center" border="2" cellpadding="1" cellspacing="1" style="width: 400px; height: 148px;">
+    <tbody>
+        <tr>
+            <td style="text-align: center;">
+                <strong></strong></td>
+            <td style="text-align: center;">
+                <strong> +1 g </strong></td>
+            <td style="text-align: center;">
+                <strong> -1 g </strong></td>
+            <td style="text-align: center;">
+                <strong>Offset</strong></td>
+            <td style="text-align: center;">
+                <strong>Gain</strong></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <strong>X-Axis</strong></td>
+            <td style="text-align: center;">
+                </td>
+            <td style="text-align: center;">
+                </td>
+            <td style="text-align: center;">
+                </td>
+            <td style="text-align: center;">
+                </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <strong>Y-Axis</strong></td>
+            <td style="text-align: center;">
+                </td>
+            <td style="text-align: center;">
+                </td>
+            <td style="text-align: center;">
+                </td>
+            <td style="text-align: center;">
+                </td>
+        </tr>
+                <tr>
+            <td style="text-align: center;">
+                <strong>Z-Axis</strong></td>
+            <td style="text-align: center;">
+                </td>
+            <td style="text-align: center;">
+                </td>
+            <td style="text-align: center;">
+                </td>
+            <td style="text-align: center;">
+                </td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Calculations</h3>
+
+<p>The offset values and gain factors are calculated with the following equations as stated in the <a href="http://www.analog.com/media/en/technical-documentation/application-notes/AN-1057.pdf">Application Note from Analog Devices</a> (page 8: equations 17 and 18).</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/Offset_Gain_Equations.png"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/Offset_Gain_Equations.png" alt="alt text" /></a> </div></p>
+
+<p>In the <code>DEFINED VARIABLES</code> section of the code is where we will place the new calculated values for offset and gain.</p>
+
+<pre><code>language:c
+/************** DEFINED VARIABLES **************/
+/*                                             */
+#define offsetX     0    // OFFSET values
+#define offsetY     0
+#define offsetZ     0
+
+#define gainX       1     // GAIN factors
+#define gainY       1
+#define gainZ       1
+</code></pre>
+
+<p>Hooray! Now you'll be able to acquire the adjusted values for X, Y and Z.</p>
+
+<div class="alert alert-warning"><p>Note: You'll have to uncomment a section of the following code to see your new calibrated values:</p></div>
+
+<pre><code>language:c
+// UNCOMMENT SECTION TO VIEW NEW VALUES
+accX = (x - offsetX)/gainX;         // Calculating New Values for X, Y and Z
+accY = (y - offsetY)/gainY;
+accZ = (z - offsetZ)/gainZ;
+
+Serial.print("New Calibrated Values: "); Serial.print(accX); Serial.print("  "); Serial.print(accY); Serial.print("  "); Serial.print(accZ);
+Serial.println(); 
+</code></pre>
+
+<p>Now your Serial Monitor output will be calibrated and look something more like this...</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/SerialMon_Cal2.png"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/SerialMon_Cal2.png" alt="alt text" /></a> </div></p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="resources--going-further">Resources and Going Further</h2>
+        <p>The SparkFun Triple Access Accelerometer ADXL345 and the ADXL345 Arduino Library are both open-source, so there are plenty of resources, including:</p>
+
+<ul>
+<li><a href="https://github.com/sparkfun/ADXL345_Breakout">SparkFun ADXL345 GitHub Repository</a></li>
+<li><a href="http://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/ADXL345_Breakout.zip">SparkFun ADXL345 Eagle Files</a></li>
+<li><a href="http://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/ADXL345_Breakout.pdf">SparkFun ADXL345 Schematic</a></li>
+<li><a href="https://github.com/sparkfun/SparkFun_ADXL345_Arduino_Library">SparkFun ADXL345 Arduino Library GitHub Repository</a></li>
+</ul>
+
+<p>For more information on the <strong>ADXL345</strong>, the <a href="https://www.sparkfun.com/datasheets/Sensors/Accelerometer/ADXL345.pdf">datasheet</a> can be referred to.</p>
+
+<h3>ADXL345 Accelerometer Project Inspiration</h3>
+
+<p>Need some inspiration for your next project? Check out some of these related tutorials.</p>
+
+<table class="table table-hover table-striped table-bordered">
+  <tr align="center">
+   <td><a href="http://www.sparkfun.com/tutorials/319"><img src="https://sfecdn.s3.amazonaws.com/tutorialimages/Elevator_TARDIS/sfe_tardis_sm.jpg" alt="Elevator TARDIS Project"></a></td>
+  </tr>
+  <tr align="center">
+    <td><i><a href="https://www.sparkfun.com/tutorials/319">Motion Controlled Elevator TARDIS Tutorial</a></i></td>
+  </tr>
+</table>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-102">
+  <a href="https://learn.sparkfun.com/tutorials/dungeons-and-dragons-dice-gauntlet">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/3/e/2/2/6/51ed8e7bce395f8065000001.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Dungeons and Dragons Dice Gauntlet</h3>
+      </a>
+
+      <div class="description">
+      A playful, geeky tutorial for a leather bracer that uses a LilyPad Arduino, LilyPad accelerometer, and seven segment display to roll virtual 4, 6, 8, 10, 12, 20, and 100 side dice for gaming.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-163">
+  <a href="https://learn.sparkfun.com/tutorials/das-blinken-top-hat">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/c/b/7/2/4/52c0a6e9ce395f78738b4567.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Das Blinken Top Hat</h3>
+      </a>
+
+      <div class="description">
+      A top hat decked out with LED strips makes for a heck of a wedding gift.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-501">
+  <a href="https://learn.sparkfun.com/tutorials/blynk-board-washerdryer-alarm">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/5/0/1/hardware-plugged-battery.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Blynk Board Washer/Dryer Alarm</h3>
+      </a>
+
+      <div class="description">
+      How to configure the Blynk Board and app to notify you when your washer or dryer is done shaking.    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+<p>Or check out some of these blog posts for ideas:</p>
+
+
+<div class="tile-wrap">
+  <div class="tile blog-tile " data-id="news-2067">
+  <a href="https://news.sparkfun.com/2067" title="March 31, 2016: Check out the new Blynk Board and the tutorials that have sprouted up around it.">
+              <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/338-190/assets/home_page_posts/2/0/6/7/photo-6127-center-square.JPG)"></div>
+        <h3 class="title">Enginursday: Blynk Board Laundry Monitor</h3>
+          <div class="metaline">
+        <span class="meta">March 31, 2016</span>
+      </div>
+        <p class="readmore">Read Post</p>
+      </a>
+  </div>
+<div class="tile blog-tile " data-id="news-2115">
+  <a href="https://news.sparkfun.com/2115" title="June 15, 2016: Looking for information in the noise: a contest to crowdsource a better algorithm for accelerometer data.">
+              <div class="thumb" style="background-image:url(https://cdn.sparkfun.com//assets/home_page_posts/2/1/1/5/SpeedBag.gif)"></div>
+        <h3 class="title">Crowdsourcing Algorithms</h3>
+          <div class="metaline">
+        <span class="meta">June 15, 2016</span>
+      </div>
+        <p class="readmore">Read Post</p>
+      </a>
+  </div>
+<div class="tile blog-tile " data-id="news-2185">
+  <a href="https://news.sparkfun.com/2185" title="September 14, 2016: Baby sleep pattern monitor utilizing the SparkFun ESP8266 Thing, Blynk app, and SparkFun ADXL345 Library">
+              <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/338-190/assets/home_page_posts/2/1/8/5/Blynk_Sleep.PNG)"></div>
+        <h3 class="title">Baby Blynk Monitor Thing</h3>
+          <div class="metaline">
+        <span class="meta">September 14, 2016</span>
+      </div>
+        <p class="readmore">Read Post</p>
+      </a>
+  </div>
+<div class="tile blog-tile " data-id="news-2390">
+  <a href="https://news.sparkfun.com/2390" title="May 18, 2017: How a hamster ball and Blynk app can detect not only motion, but perhaps something paranormal?">
+              <div class="thumb" style="background-image:url(https://cdn.sparkfun.com//assets/home_page_posts/2/3/9/0/ComSphereSpinningCOMP.gif)"></div>
+        <h3 class="title">Enginursday: ComSphere</h3>
+          <div class="metaline">
+        <span class="meta">May 18, 2017</span>
+      </div>
+        <p class="readmore">Read Post</p>
+      </a>
+  </div>
+</div>
+
+  <div class="clearfix"></div>      </div>
+    
+        <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t548" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft548&name=ADXL345+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft548" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=ADXL345+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft548&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft548&t=ADXL345+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft548&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F5%2F4%2F8%2FADXL345_Board.jpg&description=ADXL345+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+  </div>
+
+  <div class="col-sm-4 nav-menu" id="nav-pages">
+    <div id="sidebar_affix">
+      <div id="tutorial-pages" class="list-group">
+        <a class="list-group-item"><b>Sections</b></a>
+                          <a data-pagename="introduction-" class="list-group-item" href="#introduction-">
+            Introduction           </a>
+                  <a data-pagename="hardware-overview" class="list-group-item" href="#hardware-overview">
+            Hardware Overview          </a>
+                  <a data-pagename="assembly" class="list-group-item" href="#assembly">
+            Assembly          </a>
+                  <a data-pagename="sparkfun-adxl345-library" class="list-group-item" href="#sparkfun-adxl345-library">
+            SparkFun ADXL345 Library          </a>
+                  <a data-pagename="example-code" class="list-group-item" href="#example-code">
+            Example Code          </a>
+                  <a data-pagename="calibration" class="list-group-item" href="#calibration">
+            Calibration          </a>
+                  <a data-pagename="resources--going-further" class="list-group-item" href="#resources--going-further">
+            Resources and Going Further          </a>
+              </div>
+
+      <div class="list-group">
+        <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/adxl345-hookup-guide/discuss">
+          Comments
+          <span class="badge">13</span>
+        </a>
+                  <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/adxl345-hookup-guide/introduction-">
+            View Paginated
+          </a>
+                <a class="list-group-item" href="#" onclick="window.print(); return false;">
+          Print
+        </a>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>Tags</b></li>
+        <li class="list-group-item"><ul class="tags-list">
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/arduino">Arduino</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/hookup">Hookup</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/motion">Motion</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/programming">Programming</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/sensors">Sensors</a>  </li>
+</ul>
+</li>
+      </ul>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>License</b></li>
+        <li class="list-group-item">
+          <span class="sfe-icon-cc">
+            <span class="visuallyhidden">Creative Commons</span>
+          </span>
+          <small>tutorials are <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a></small>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+      </div> <!-- /container -->
+    </div> <!-- /content -->
+
+    <footer>
+  <div class="container">
+
+  <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>About SparkFun</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/about-sparkfun">Read Our Story</a></li>
+            <li><a href="https://www.sparkfun.com/press-and-media">Press &amp; Media</a></li>
+            <li><a href="http://www.sparkfuneducation.com" target="_blank">SparkFun Education <span class="glyphicon glyphicon-new-window"></span></a></li>
+            <li><a href="https://www.sparkfun.com/jobs">Job Openings</a></li>
+          </ul>
+
+          <h3>Partner With Us</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/partner">See Our Partners</a></li>
+            <li><a href="https://www.sparkfun.com/services">View Our Services</a></li>
+            <li><a href="https://www.sparkfun.com/become-a-distributor">Become a Distributor/Reseller</a></li>
+            <li><a href="https://www.sparkfun.com/volume-sales">Receive Volume Discounts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/support">Customer Support</a></li>
+            <li><a href="https://www.sparkfun.com/payments">Purchase Order &amp; Payment Terms</a></li>
+            <li><a href="https://www.sparkfun.com/technical-assistance">Technical Assistance</a></li>
+            <li><a href="https://www.sparkfun.com/faq">FAQs</a></li>
+          </ul>
+          <h3>Site Information</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/terms">Terms Of Service</a></li>
+            <li><a href="https://www.sparkfun.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://www.sparkfun.com/compliance">Compliance</a></li>
+            <li><a href="https://www.sparkfun.com/sitemap">Site Map</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Subscribe</h3>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "2224003",
+              formId: "257ad1af-ab9e-4275-8788-cbad81cc229e"
+            });
+          </script>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>View Our Social Channels</h3>
+          <ul class="spew">
+            <li><a href="https://www.youtube.com/sparkfun" target="_blank" class="icon-social-youtube"><span class="sr-only">YouTube</span></a></li>
+            <li><a href="https://www.instagram.com/sparkfun/" target="_blank" class="icon-social-instagram"><span class="sr-only">Instagram</span></a></li>
+            <li><a href="https://www.github.com/sparkfun" target="_blank" class="icon-social-github"><span class="sr-only">GitHub</span></a></li>
+            <li><a href="https://www.facebook.com/SparkFun" target="_blank" class="icon-social-facebook"><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://twitter.com/sparkfun" target="_blank" class="icon-social-twitter"><span class="sr-only">Twitter</span></a></li>
+            <li><a href="https://www.sparkfun.com/feeds" class="icon-social-rss"><span class="sr-only">RSS</span></a></li>
+            <li><a href="https://www.tiktok.com/@sparkfun.electronics?lang=en" target="_blank" class="icon-social-tiktok"><span class="sr-only">TikTok</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- end .row -->
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p class="copyleft">
+          <strong>SparkFun Electronics&nbsp;&reg;</strong>
+          <span class="hidden-xs hidden-sm">/</span>
+          <br class="visible-xs-inline visible-sm-inline"/>
+          6333 Dry Creek Parkway,
+          <br class="visible-xs-inline"/>
+          Niwot, CO 80503
+        </p>
+      </div>
+    </div><!-- end .row -->
+  </div><!-- end .container -->
+</footer>
+
+      </div><!-- end .wrapper-inner -->
+    </div><!-- end .wrapper -->
+
+    <script type="text/javascript">
+      // eslint-disable-next-line no-unused-vars
+      var SFECONFIG = {
+        dnt: false,
+        http_server: 'http://learn.sparkfun.com',
+        https_server: 'https://learn.sparkfun.com',
+        http_static: 'https://cdn.sparkfun.com',
+        learn_server: 'https://learn.sparkfun.com',
+        news_server: 'https://news.sparkfun.com',
+        base_url: '/',
+        url: '/',
+        controller: 'tutorials',
+        action: 'view',
+        auth: false,
+        sparkrev: '1792686932',
+        search_key: 'search-sngw3quge7ojic1tgr4eft5c',
+        search_url: 'https://sparkfun-electronics.ent.us-central1.gcp.cloud.es.io/api/as/v1/engines/sparkfun-01/search'
+      };
+    </script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+      <script src="/js/learn-built.min.js?sparkrev=1792686932"></script>
+    
+    <script>
+      /* global $ */
+      $.sfe();
+      $.shared();
+      $('#learn').learn();
+      $('#learn').sfeutil();
+    </script>
+                            <script src="/js/tutorials-built.min.js?sparkrev=1792686932"></script>
+                              <script>
+    var fbq = null;
+  </script>
+      
+          <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2224003.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+        <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0046/4761.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+      </body>
+</html>

@@ -1,0 +1,533 @@
+schema_version: 1
+item_kind: chip
+name_readable: Espressif ESP32-C3 AZ (4 MB)
+manufacturer: espressif
+part_number: esp32_c3_az
+taxonomy_1: electronic
+taxonomy_2: ic
+taxonomy_3: qfn_32
+taxonomy_4: microcontroller
+taxonomy_5: esp32
+taxonomy_6: ''
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: espressif
+taxonomy_15: esp32_c3_az
+dimensions_mm:
+  width: 5
+  height: 5
+  assembled_height: null
+  scope: nominal_package_body
+  source_id: datasheet
+coordinate_system:
+  units: mm
+  origin: package_body_centre
+  view: manufacturer_top_view
+mounting_holes: []
+mounting_hole_details: []
+mounting_hole_status: not_applicable
+pins:
+  package_1:
+    connector: package
+    number: '1'
+    name: LNA_IN
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '1'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_2:
+    connector: package
+    number: '2'
+    name: VDD3P3
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '2'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_3:
+    connector: package
+    number: '3'
+    name: VDD3P3
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '3'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_4:
+    connector: package
+    number: '4'
+    name: GPIO0
+    gpio: 0
+    adc_channel: 0
+    chip_pin_number: '4'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+  package_5:
+    connector: package
+    number: '5'
+    name: GPIO1
+    gpio: 1
+    adc_channel: 1
+    chip_pin_number: '5'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+  package_6:
+    connector: package
+    number: '6'
+    name: GPIO2
+    gpio: 2
+    adc_channel: 2
+    chip_pin_number: '6'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+  package_7:
+    connector: package
+    number: '7'
+    name: CHIP_EN
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '7'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_8:
+    connector: package
+    number: '8'
+    name: GPIO3
+    gpio: 3
+    adc_channel: 3
+    chip_pin_number: '8'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+  package_9:
+    connector: package
+    number: '9'
+    name: GPIO4
+    gpio: 4
+    adc_channel: 4
+    chip_pin_number: '9'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+  package_10:
+    connector: package
+    number: '10'
+    name: GPIO5
+    gpio: 5
+    adc_channel: 0
+    chip_pin_number: '10'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+  package_11:
+    connector: package
+    number: '11'
+    name: VDD3P3_RTC
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '11'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_12:
+    connector: package
+    number: '12'
+    name: GPIO6
+    gpio: 6
+    adc_channel: null
+    chip_pin_number: '12'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_13:
+    connector: package
+    number: '13'
+    name: GPIO7
+    gpio: 7
+    adc_channel: null
+    chip_pin_number: '13'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_14:
+    connector: package
+    number: '14'
+    name: GPIO8
+    gpio: 8
+    adc_channel: null
+    chip_pin_number: '14'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_15:
+    connector: package
+    number: '15'
+    name: GPIO9
+    gpio: 9
+    adc_channel: null
+    chip_pin_number: '15'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_16:
+    connector: package
+    number: '16'
+    name: GPIO10
+    gpio: 10
+    adc_channel: null
+    chip_pin_number: '16'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_17:
+    connector: package
+    number: '17'
+    name: VDD3P3_CPU
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '17'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_18:
+    connector: package
+    number: '18'
+    name: GPIO11
+    gpio: 11
+    adc_channel: null
+    chip_pin_number: '18'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+    notes: Reserved for in-package flash/supply; not available for carrier GPIO use.
+  package_19:
+    connector: package
+    number: '19'
+    name: GPIO12
+    gpio: 12
+    adc_channel: null
+    chip_pin_number: '19'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+    notes: Reserved for in-package flash/supply; not available for carrier GPIO use.
+  package_20:
+    connector: package
+    number: '20'
+    name: GPIO13
+    gpio: 13
+    adc_channel: null
+    chip_pin_number: '20'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+    notes: Reserved for in-package flash/supply; not available for carrier GPIO use.
+  package_21:
+    connector: package
+    number: '21'
+    name: GPIO14
+    gpio: 14
+    adc_channel: null
+    chip_pin_number: '21'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+    notes: Reserved for in-package flash/supply; not available for carrier GPIO use.
+  package_22:
+    connector: package
+    number: '22'
+    name: GPIO15
+    gpio: 15
+    adc_channel: null
+    chip_pin_number: '22'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+    notes: Reserved for in-package flash/supply; not available for carrier GPIO use.
+  package_23:
+    connector: package
+    number: '23'
+    name: GPIO16
+    gpio: 16
+    adc_channel: null
+    chip_pin_number: '23'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+    notes: Reserved for in-package flash/supply; not available for carrier GPIO use.
+  package_24:
+    connector: package
+    number: '24'
+    name: GPIO17
+    gpio: 17
+    adc_channel: null
+    chip_pin_number: '24'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+    notes: Reserved for in-package flash/supply; not available for carrier GPIO use.
+  package_25:
+    connector: package
+    number: '25'
+    name: GPIO18
+    gpio: 18
+    adc_channel: null
+    chip_pin_number: '25'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_26:
+    connector: package
+    number: '26'
+    name: GPIO19
+    gpio: 19
+    adc_channel: null
+    chip_pin_number: '26'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_27:
+    connector: package
+    number: '27'
+    name: GPIO20
+    gpio: 20
+    adc_channel: null
+    chip_pin_number: '27'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_28:
+    connector: package
+    number: '28'
+    name: GPIO21
+    gpio: 21
+    adc_channel: null
+    chip_pin_number: '28'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_29:
+    connector: package
+    number: '29'
+    name: XTAL_N
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '29'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_30:
+    connector: package
+    number: '30'
+    name: XTAL_P
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '30'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_31:
+    connector: package
+    number: '31'
+    name: VDDA
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '31'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_32:
+    connector: package
+    number: '32'
+    name: VDDA
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '32'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_33:
+    connector: package
+    number: '33'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '33'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+connectors: {}
+sources:
+- id: datasheet
+  url: https://documentation.espressif.com/esp32-c3_datasheet_en.html
+  title: Espressif ESP32-C3 series datasheet
+  accessed: '2026-10-22'
+  scope: QFN32 pinout, package outline, ADC units, memory and LEDC resources; flash pads remain reserved.
+notes: []
+data_gaps:
+- Package height, pad coordinates and land pattern are not transcribed; refer to manufacturer drawings.
+- AZ identifies observed silicon from esptool; official ordering uses additional flash/package suffixes.
+package:
+  name: QFN-32
+  perimeter_pin_count: 32
+  exposed_pad: GND
+  lead_pitch_mm: null
+  land_pattern: null
+capabilities:
+  gpio_count: 22
+  adc_external_channels: 6
+  adc_resolution_bits: 12
+  sram_bytes: 409600
+  in_package_flash_bytes: 4194304
+  cpu_core_count: 1
+  clock_max_mhz: 160
+  architectures:
+  - risc_v
+family: esp32_c3
+pinout_scope: All perimeter pins plus exposed ground. Flash-related GPIO11-17 remain reserved.

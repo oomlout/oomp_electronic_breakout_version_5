@@ -1,0 +1,129 @@
+schema_version: 1
+part_id: electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665
+status: verified
+board_revision: Adafruit SHT45 STEMMA QT breakout, product 5665; carrier CAD file
+  Adafruit SHT45.brd at Adafruit-SHT40-PCB commit 40fe2b3aca1aaa3b2185d3d138e77d5b043a56e1.
+  The fab drawing labels SHT45 Stemma QT rev A; production hardware revision was not
+  independently verified.
+identity_evidence: Adafruit product page identifies product 5665 as the SHT45 STEMMA
+  QT/Qwiic sensor. Adafruit guide links its EagleCAD PCB repository; the pinned repository
+  README names SHT45 and links product 5665, and the exact CAD filename is Adafruit
+  SHT45.brd. Official guide PDF page 26 has the SHT45 fab print with title block SHT45
+  Stemma QT rev A. CAD bytes SHA-256 eef8b6e16c1a6af780e679e4c011232093fe37cfa4250502ed3527b02008122c.
+board_size:
+- 25.4
+- 17.78
+mounting_holes:
+- id: U$1:pad:P$1
+  x_mm: -10.16
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$17:pad:P$1
+  x_mm: 10.16
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$19:pad:P$1
+  x_mm: -10.16
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$21:pad:P$1
+  x_mm: 10.16
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: The EAGLE plain layer-20 outer outline spans native x=0..25.4 mm and y=0..17.78
+  mm (25.4 x 17.78 mm bounding box, including rounded corners). Native bounding-box
+  centre is (12.7, 8.89) mm. Quarter-turn is 0; transform to canonical centred top
+  view is x_mm=x_native-12.7, y_mm=y_native-8.89, preserving +x right and +y up. Full
+  drill inspection contains nine candidates. Four U$1/U$17/U$19/U$21 pad:P$1 drills
+  are 2.5 mm plated pads in MOUNTINGHOLE_2.5_PLATED packages and are selected as board
+  mounts. Remaining five candidates JP2:pad:1..5 are 1.0 mm plated 1X05_ROUND_70 header
+  contacts at the board edge; excluded as electrical header holes. Official fab drawing
+  page 26 confirms the four corner P$1 mounting holes and SHT45 carrier identity.
+  Reviewed top-view preview against CAD; all coordinates and diameters match.
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad
+  local_file: mounting_evidence/Adafruit_SHT45.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-SHT40-PCB/40fe2b3aca1aaa3b2185d3d138e77d5b043a56e1/Adafruit%20SHT45.brd
+  kind: manufacturer_cad
+  locator: Adafruit official EagleCAD carrier board, exact filename Adafruit SHT45.brd;
+    layer 20 board outline and all drill/package coordinates, repository commit 40fe2b3aca1aaa3b2185d3d138e77d5b043a56e1
+  registered_at: '2026-11-06T18:40:35+00:00'
+  bytes: 800034
+  sha256: eef8b6e16c1a6af780e679e4c011232093fe37cfa4250502ed3527b02008122c
+- id: product
+  local_file: website.html
+  url: https://www.adafruit.com/product/5665
+  kind: manufacturer_product
+  locator: Product ID 5665 and named SHT45 STEMMA QT board identity
+  registered_at: '2026-11-06T18:40:35+00:00'
+  bytes: 95770
+  sha256: a02363110f818468983b31404172b85491e9a39060a2dbf5e762f857b5cec4b7
+- id: repository
+  local_file: mounting_evidence/README.md
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-SHT40-PCB/40fe2b3aca1aaa3b2185d3d138e77d5b043a56e1/README.md
+  kind: manufacturer_repository
+  locator: Repository identifies this as Adafruit SHT40/SHT41/SHT45 PCB repo; README
+    links SHT45 product 5665; corresponding exact board filename Adafruit SHT45.brd
+  registered_at: '2026-11-06T18:41:18+00:00'
+  bytes: 3348
+  sha256: 6cfc5d9ef78c678ea39cfa427f2833f27d2e3ee15e76d980055f87bbd17cb189
+- id: fab
+  local_file: mounting_evidence/adafruit-sht40-temperature-humidity-sensor.pdf
+  url: https://cdn-learn.adafruit.com/downloads/pdf/adafruit-sht40-temperature-humidity-sensor.pdf
+  kind: manufacturer_drawing
+  locator: 'PDF page 26: Schematic and Fab Print for SHT45, title block SHT45 Stemma
+    QT rev A; secondary check of the carrier drawing and mounting drills'
+  registered_at: '2026-11-06T18:42:11+00:00'
+  bytes: 4307338
+  sha256: 478ab2993c35a0884da6b6800e6f8ce6155a19bf5c1091fea0710accbabdbc6f
+attempts: []
+conflicts: []
+notes:
+- CAD and fab drawing identify the board design as SHT45 Stemma QT rev A; exact physical
+  production revision not independently checked.
+- Standard holder is generated geometry only. Physical fit, component/connector clearance,
+  screw-head clearance, and underside clearance remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T18:43:00+00:00'
+extraction:
+  selected_ids:
+  - U$1:pad:P$1
+  - U$17:pad:P$1
+  - U$19:pad:P$1
+  - U$21:pad:P$1
+  quarter_turn: 0
+  native_centre_mm:
+  - 12.7
+  - 8.89
+identity_source_ids:
+- product
+- repository
+- cad
+- fab

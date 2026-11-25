@@ -1,0 +1,115 @@
+schema_version: 1
+part_id: electronic_breakout_output_display_oled_ssd1306_128x64_1_3_inch_stemma_qt_35_6_mm_width_33_mm_height_adafruit_938
+status: verified
+board_revision: Adafruit product 938 1.3-inch 128x64 OLED STEMMA QT carrier, Nov 20 2019 QT redesign; the exact QT Eagle board is pinned at repository commit 02c953af3a9c7c53d0c33faaa98a8aa1bffca5be. The product page reports a Feb 9 2024 silkscreen refresh; no board geometry change is stated there.
+identity_evidence: Adafruit product 938 revision history identifies the Nov 20 2019 QT redesign and says the board dimensions and mounting layout changed then; the official Adafruit-1.3inch-128x64-Mono-OLED-PCB repository README describes the 1.3-inch I2C/SPI OLED and includes the distinct exact file Adafruit 1.3in 128x64 OLED STEMMA QT.brd alongside a file explicitly named Original. Use the QT board file for this product revision.
+board_size:
+- 35.56
+- 33.02
+mounting_holes:
+- id: U$1:pad:P$1
+  x_mm: -15.24
+  y_mm: 13.97
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad_qt_2020
+- id: U$17:pad:P$1
+  x_mm: 15.24
+  y_mm: 13.97
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad_qt_2020
+- id: U$19:pad:P$1
+  x_mm: -15.24
+  y_mm: -13.97
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad_qt_2020
+- id: U$21:pad:P$1
+  x_mm: 15.24
+  y_mm: -13.97
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad_qt_2020
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad_qt_2020
+derivation: 'Extracted the unmodified layer 20 outline from the pinned Eagle CAD (native mm). Outline extrema are
+  x=0..35.56 and y=0..33.02, giving a 35.56 x 33.02 mm bounding box centred at (17.78, 16.51) mm. No rotation or reflection:
+  top-view x_mm = native_x_mm - 17.78; y_mm = native_y_mm - 16.51; quarter_turn=0. Full drill review found 14 candidates.
+  U$1/U$17/U$19/U$21 are each package MOUNTINGHOLE_2.5_PLATED with 2.5 mm PCB drills; these are the only board mounting
+  features. U1 has two 0.4 mm OLED module retention holes and JP2 has eight 1.0 mm electrical header drills; all are
+  excluded. The four selected holes centre at native (2.54,30.48), (33.02,30.48), (2.54,2.54), (33.02,2.54) mm.
+  The spacing is 30.48 x 27.94 mm, matching the product page rounded 30.5 x 28 mm.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad_qt_2020
+  local_file: mounting_evidence/Adafruit_1.3in_128x64_OLED_STEMMA_QT.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-1.3inch-128x64-Mono-OLED-PCB/02c953af3a9c7c53d0c33faaa98a8aa1bffca5be/Adafruit%201.3in%20128x64%20OLED%20STEMMA%20QT.brd
+  kind: manufacturer_cad
+  locator: Pinned Adafruit Eagle board at commit 02c953af3a9c7c53d0c33faaa98a8aa1bffca5be;
+    file is exact STEMMA QT carrier. Review dimension 20 outline, four U$ mounting
+    packages and remaining drills. Acquired 2026-11-06 UTC.
+  registered_at: '2026-11-06T19:23:14+00:00'
+  bytes: 286717
+  sha256: 72d99dc9f01c49627118bfe6c99eacb47e53f53da4530d2bff626d753e065722
+- id: product_938
+  local_file: website.html
+  url: https://www.adafruit.com/product/938
+  kind: manufacturer_product
+  locator: Captured official product page; revision history identifies Nov 20, 2019
+    QT redesign and says board mounting layout changed. Acquired 2026-10-23 UTC; validates
+    identity of STEMMA QT CAD against product 938.
+  registered_at: '2026-11-06T19:23:14+00:00'
+  bytes: 121418
+  sha256: 950ba25a2ecd0f89217ae80fe4dfd0e055ea2dd25a4229c02935abb7832d9b6e
+- id: repository
+  local_file: mounting_evidence/README.md
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-1.3inch-128x64-Mono-OLED-PCB/02c953af3a9c7c53d0c33faaa98a8aa1bffca5be/README.md
+  kind: manufacturer_repository
+  locator: Pinned official Adafruit repository README identifies this as the 1.3-inch
+    128x64 I2C/SPI OLED breakout and links purchase to Adafruit; repository contains
+    the exact QT carrier Eagle board alongside clearly named Original board. Commit
+    02c953af3a9c7c53d0c33faaa98a8aa1bffca5be. Acquired 2026-11-06 UTC.
+  registered_at: '2026-11-06T19:23:57+00:00'
+  bytes: 2498
+  sha256: 292d88095429d65063594fe66065113752c30ee8d6f2d12ac3e5e493bbcaff52
+attempts:
+- Reviewed the official Adafruit product 938 page and revision history, including the 2019 QT redesign and the 2024 silkscreen refresh note.
+- Reviewed the pinned official Adafruit repository README and exact STEMMA QT board file, distinct from Adafruit_1.3_128x64_OLED_Original.brd.
+- Reviewed the complete layer 20 outline, all 14 drilled candidates, element package names and pad/hole primitives in Eagle XML.
+conflicts: []
+notes:
+- Product page's 30.5 x 28 mm mounting-hole spacing is rounded; CAD gives exact centre spacing 30.48 x 27.94 mm. No mechanical conflict remains.
+- Selected diameters are PCB drills, not screw sizes. The standard holder is generated geometry only; component, connector, screw-head and underside clearance and physical fit remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T19:23:57+00:00'
+extraction:
+  selected_ids:
+  - U$1:pad:P$1
+  - U$17:pad:P$1
+  - U$19:pad:P$1
+  - U$21:pad:P$1
+  quarter_turn: 0
+  native_centre_mm:
+  - 17.78
+  - 16.51
+identity_source_ids:
+- product_938
+- repository
+- cad_qt_2020

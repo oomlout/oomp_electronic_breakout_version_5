@@ -1,0 +1,186 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2350a_pico_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2
+status: needs_review
+board_revision: Raspberry Pi Pico 2, non-wireless, without headers; official manufacturer
+  design resource RP-009061-CA-2 (STEP model rpi_pico2.step). Datasheet Release 5,
+  build 2026-07-03. The manufacturer's 3D model board solid has a 21 x 51 mm XY outline;
+  its simplified Z thickness is 0.91 mm, while the datasheet specifies nominal 1 mm.
+  Mounting geometry is unaffected by this Z discrepancy.
+identity_evidence: Raspberry Pi Pico series documentation identifies Raspberry Pi
+  Pico 2 as the non-wireless, no-header variant and links its STEP file and datasheet.
+  The official product datasheet is titled Raspberry Pi Pico 2; the official RP-009061-CA
+  package contains rpi_pico2.step. This is the assigned carrier, not Pico 2 W or the
+  headered variant.
+board_size:
+- 21.0
+- 51.0
+mounting_holes:
+- id: H1
+  x_mm: -5.7
+  y_mm: -23.5
+  diameter_mm: 2.1
+  source_id: step
+- id: H2
+  x_mm: -5.7
+  y_mm: 23.5
+  diameter_mm: 2.1
+  source_id: step
+- id: H3
+  x_mm: 5.7
+  y_mm: -23.5
+  diameter_mm: 2.1
+  source_id: step
+- id: H4
+  x_mm: 5.7
+  y_mm: 23.5
+  diameter_mm: 2.1
+  source_id: step
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: step
+derivation: 'Reviewed Raspberry Pi Pico 2 datasheet Release 5, section 3, Figure 3
+  (page 7), and the complete official rpi_pico2.step model. Figure 3 identifies a
+  21 x 51 mm PCB and four ÃƒËœ2.1 mm drilled mounting holes. In the STEP model, the
+  PCB outline solid is X=[-10.5,10.5], Y=[-25.5,25.5] mm, so its bounding-box centre
+  is (0,0). The four radius 1.05 mm cylindrical drills are exactly at native XY coordinates
+  (-5.7,-23.5), (-5.7,23.5), (5.7,-23.5), and (5.7,23.5) mm; other through-hole cylinders
+  belong to the pin rows/connectors and are not mounting holes. The model X axis points
+  right in top view and +Y points toward USB, matching the canonical frame without
+  rotation or reflection: x_canonical=X_step-0; y_canonical=Y_step-0. Drill diameter=2*1.05=2.10
+  mm. Board size comes from the drawing and STEP PCB outline; the STEP simplified
+  body Z thickness (0.91 mm) differs from nominal datasheet thickness (1 mm), with
+  no impact on XY mounting coordinates.'
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: gpt-6-luna
+sources:
+- id: datasheet
+  local_file: mounting_evidence/pico2_datasheet.pdf
+  url: https://datasheets.raspberrypi.com/pico/pico-2-datasheet.pdf
+  kind: manufacturer_drawing
+  locator: 'Release 5 (build date 2026-07-03), section 3 mechanical specification,
+    Figure 3, page 7: 51 x 21 mm PCB; 4 x 2.1 mm drilled mounting holes.'
+  registered_at: '2026-11-06T16:24:24+00:00'
+  bytes: 3016817
+  sha256: cbcfaf881018c686495a2e53c7bd281e7e0a8217d79447d73eda7c8f74b7f675
+- id: step
+  local_file: mounting_evidence/rpi_pico2.step
+  url: https://pip.raspberrypi.com/documents/RP-009061-CA
+  kind: manufacturer_cad
+  locator: Official manufacturer STEP model rpi_pico2.step within RP-009061-CA-2-Pico
+    2 - 3D STEP.zip. Reviewed STEP PCB outline and all 4 radius 1.05 mm cylindrical
+    mounting drills; native model XY coordinates centred on 21 x 51 mm PCB.
+  registered_at: '2026-11-06T16:24:24+00:00'
+  bytes: 12391657
+  sha256: d49ada10d893cfcb07cb4abced0a0a0cadca4c4150f153d874268ca06171a24f
+- id: drawing_render
+  local_file: reference/mechanical.png
+  url: https://datasheets.raspberrypi.com/pico/pico-2-datasheet.pdf
+  kind: manufacturer_drawing
+  locator: Existing archived rendering of Figure 3 from the datasheet; SHA256 rechecked
+    against mounting_context.json.
+  registered_at: '2026-11-06T16:24:24+00:00'
+  bytes: 131489
+  sha256: 6960c061fc0c98d77ee3a1868bb21245504c41cdccece934726dd11e92498aa1
+- id: cad_bundle
+  local_file: mounting_evidence/pico2_step_bundle.zip
+  url: https://pip.raspberrypi.com/documents/RP-009061-CA
+  kind: manufacturer_cad
+  locator: Official CAD ZIP RP-009061-CA-2-Pico 2 - 3D STEP; archive contains LICENSE.txt
+    and rpi_pico2.step.
+  registered_at: '2026-11-06T16:26:23+00:00'
+  bytes: 2215615
+  sha256: 74974c52ee695a1d2c638d8288c798b42236c60d7de7af5345b9a5017f993f82
+- id: latest_product_page
+  local_file: mounting_evidence/pip_product_page.html
+  url: https://pip.raspberrypi.com/categories/1005-raspberry-pi-pico-2
+  kind: manufacturer_product
+  locator: Current Raspberry Pi Product Information Portal Pico 2 page; lists official
+    Pico 2 STEP updated 6 Oct 2025 and datasheet updated 15 Jul 2026; product identity
+    SC1631/SC1632
+  registered_at: '2026-11-07T15:28:23+00:00'
+  bytes: 44352
+  sha256: 4ba119b40400e0d0bc8774edb1fc82956551dbe3959d66d9217c3b94b19bc5bc
+- id: latest_datasheet
+  local_file: mounting_evidence/pico2_datasheet.pdf
+  url: https://pip-assets.raspberrypi.com/categories/1005-raspberry-pi-pico-2/documents/RP-008299-DS-3-pico-2-datasheet.pdf
+  kind: manufacturer_drawing
+  locator: Current official portal-linked asset RP-008299-DS-3; Release 5, build 03/07/2026,
+    build d4e0f1799616; section 3 Figure 3 page 7 gives 21x51 mm PCB and four drilled
+    mounting holes Ø2.1 ±0.05 mm
+  registered_at: '2026-11-07T15:28:23+00:00'
+  bytes: 3016817
+  sha256: cbcfaf881018c686495a2e53c7bd281e7e0a8217d79447d73eda7c8f74b7f675
+- id: latest_cad_bundle
+  local_file: mounting_evidence/pico2_step_bundle.zip
+  url: https://pip-assets.raspberrypi.com/categories/1005-raspberry-pi-pico-2/documents/RP-009061-CA-2-Pico%202%20-%203D%20STEP.zip
+  kind: manufacturer_cad
+  locator: Current official portal-linked Pico 2 3D STEP package, portal updated 6
+    Oct 2025; downloaded bytes and SHA256 match the previously archived RP-009061-CA-2
+    bundle; contains LICENSE.txt and rpi_pico2.step
+  registered_at: '2026-11-07T15:28:23+00:00'
+  bytes: 2215615
+  sha256: 74974c52ee695a1d2c638d8288c798b42236c60d7de7af5345b9a5017f993f82
+attempts:
+- '2026-11-06: reviewed official Raspberry Pi Pico series documentation in browser;
+  direct requests download of raspberrypi.com product documentation returned HTTP
+  403, so no attempt was made to bypass that denial. Official datasheet and CAD resource
+  downloaded successfully from manufacturer hosts.'
+- '2026-11-06: inspected full official STEP model; confirmed four mounting drills
+  each ÃƒËœ2.10 mm. Standard-holder policy rejects this drill size because the smallest
+  supported M2 screw requires at least 2.20 mm drill (0.20 mm diametral clearance).'
+- '2026-11-06: mounting_research.py preview stopped at shared standard_holder screw
+  selection with Drill too small for supported M2/M2.5/M3 screws; needs custom holder;
+  the standard preview, validation, promotion, and generation were therefore not run.'
+- '2026-11-07: rechecked the current Raspberry Pi Product Information Portal entry
+  and its linked datasheet and STEP ZIP. The current datasheet is Release 5, build
+  d4e0f1799616 (03/07/2026); the portal lists it as updated 15 Jul 2026. The portal
+  lists the Pico 2 STEP package as updated 6 Oct 2025. Both currently linked assets
+  were fetched with a 30 second timeout and byte-for-byte match the archived PDF
+  and ZIP hashes. Section 3 Figure 3 still specifies 4 x 2.1 +/- 0.05 mm mounting
+  holes; the current geometry therefore remains below standard-holder minimum.'
+conflicts:
+- Mechanical geometry is resolved, but the standard holder cannot support ÃƒËœ2.10
+  mm mounting drills (manufacturer tolerance Ã‚Â±0.05 mm; maximum 2.15 mm) under the
+  shared supported-screw policy (M2 requires at least 2.20 mm drill). Even the
+  maximum specified diameter is 0.05 mm below holder clearance. Requires custom
+  holder review; do not promote or generate a standard holder.
+notes:
+- 'Evidence acquisition date for mounting_evidence/pico2_datasheet.pdf, mounting_evidence/pico2_step_bundle.zip
+  and its extracted rpi_pico2.step: 2026-11-06 UTC, downloaded with requests timeout
+  from the registered official URLs.'
+- Existing reference/mechanical.png was not reacquired; SHA256 6960c061fc0c98d77ee3a1868bb21245504c41cdccece934726dd11e92498aa1
+  matches seeded mounting_context.json; it was visually reviewed as Figure 3 from
+  the registered datasheet.
+- STEP was parsed as full B-rep geometry and all four ÃƒËœ2.1 mm drills reviewed.
+  No hardware fit test was performed; component, connector, screw-head and underside
+  clearance remain unverified.
+- Review booleans remain false because helper preview could not be produced for this
+  unsupported 2.10 mm drill size; saved as needs_review for custom-holder review.
+- Current portal page was acquired 2026-11-07 UTC with requests and a 30 second
+  timeout, and is archived at mounting_evidence/pip_product_page.html. The current
+  official datasheet and STEP package were fetched the same day and resolve to the
+  same SHA256 hashes as the previously reviewed files. The drawing tolerance gives
+  a maximum hole diameter of 2.15 mm, still 0.05 mm below the 2.20 mm minimum for
+  the supported M2 holder clearance. Status remains needs_review; no standard
+  preview, validation, promotion or generation was attempted because the shared
+  holder rejects the drill.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:28:23+00:00'
+identity_source_ids:
+- datasheet
+- step
+- cad_bundle
+- drawing_render
+- latest_product_page
+- latest_datasheet
+- latest_cad_bundle

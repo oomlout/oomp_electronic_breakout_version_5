@@ -1,0 +1,126 @@
+schema_version: 1
+part_id: electronic_breakout_sensor_environmental_temperature_tmp117_qwiic_sparkfun_sen_15805
+status: verified
+board_revision: SparkFun High Precision Temperature Sensor TMP117 (Qwiic), SEN-15805; design file Sparkfun_TMP117_Qwiic.brd
+  at SparkFun repository commit aa763eaee71d9245e5c31daa6883f6f5c6186f16 (2019-11-15). Product-linked board dimensions
+  drawing matches 1.00 x 1.00 in carrier.
+identity_evidence: SparkFun product page identifies SKU SEN-15805 and links the Eagle files, board dimensions, and
+  GitHub Hardware Repo. The linked manufacturer repository README describes the product as TMP117 (Qwiic) and says
+  Hardware contains Eagle board/schematic design files. The selected pinned Hardware/Sparkfun_TMP117_Qwiic.brd is
+  that design file.
+board_size:
+- 25.4
+- 25.4
+mounting_holes:
+- id: JP8
+  x_mm: 10.16
+  y_mm: 10.16
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+- id: JP9
+  x_mm: -10.16
+  y_mm: 10.16
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+- id: JP2
+  x_mm: -10.16
+  y_mm: -10.16
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+- id: JP3
+  x_mm: 10.16
+  y_mm: -10.16
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: drawing
+derivation: The manufacturer-linked dimension drawing states 1.00 in x 1.00 in PCB outline and shows four mounting-hole
+  centres 0.10 in from the adjacent edges (0.90 in from the opposite edges). Convert 1.00 in * 25.4 = 25.4 mm; half-width/height
+  = 12.7 mm. Centre positions are X,Y = (0.10 or 0.90) in * 25.4, giving canonical x = X - 12.7 and y = Y - 12.7,
+  hence each coordinate is +/-10.16 mm. Top-view orientation follows the drawing (header edge at bottom) and native
+  EAGLE +Y points up; no rotation or reflection is required. Hole diameters are not dimensioned on the drawing;
+  they are taken from the pinned native CAD, where JP2, JP3, JP8 and JP9 each place a 3.302 mm non-plated hole in
+  the named STAND-OFF package. The helper inspector cannot parse this CAD because it rejects two unrelated layer-20
+  text labels; geometry is therefore recorded from the linked dimension drawing and corroborated against the complete
+  raw board XML.
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  local_file: website.html
+  url: https://www.sparkfun.com/sparkfun-high-precision-temperature-sensor-tmp117-qwiic.html
+  kind: manufacturer_product
+  locator: SparkFun product page lines 891-903 establish product SKU SEN-15805; documentation links list Eagle files,
+    board dimensions, and exact GitHub hardware repository
+  registered_at: '2026-11-06T19:42:20+00:00'
+  bytes: 575824
+  sha256: d97867ea0c8a4bc451cc7b94ba93962c01e3278983dbfead99a24c1a7d10994d
+- id: cad
+  local_file: mounting_evidence/Sparkfun_TMP117_Qwiic.brd
+  url: https://raw.githubusercontent.com/sparkfun/SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic/aa763eaee71d9245e5c31daa6883f6f5c6186f16/Hardware/Sparkfun_TMP117_Qwiic.brd
+  kind: manufacturer_cad
+  locator: Exact pinned SparkFun hardware repo revision; native EAGLE board, plain layer 20 outline, four JP2/JP3/JP8/JP9
+    STAND-OFF package holes at 3.302 mm drill; full XML manually reviewed because helper flags unrelated layer-20
+    text
+  registered_at: '2026-11-06T19:42:20+00:00'
+  bytes: 298605
+  sha256: 9196c5492020bb2594d0c5d9a7b672514d58f515563dcc4f2a4b9c7ab03ebce3
+- id: drawing
+  local_file: mounting_evidence/board_dimensions.png
+  url: https://cdn.sparkfun.com/assets/f/6/5/8/8/SparkFun_High_Precision_TMP117_Temperature_Sensor_Dimensions.png
+  kind: manufacturer_drawing
+  locator: 'Official linked dimension drawing: PCB 1.00 x 1.00 in; four corner hole centres 0.10 in from each pair
+    of adjacent edges; verify all callouts visually'
+  registered_at: '2026-11-06T19:42:20+00:00'
+  bytes: 14952
+  sha256: 0f88d87c84289fbaf68464dfb4c52ceafe39cc42cf4920e09daff8d6163c7790
+- id: repo_readme
+  local_file: mounting_evidence/Sparkfun_TMP117_Qwiic_Hardware_README.md
+  url: https://raw.githubusercontent.com/sparkfun/SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic/aa763eaee71d9245e5c31daa6883f6f5c6186f16/Hardware/README.md
+  kind: manufacturer_repository
+  locator: README identifies files as SparkFun Eagle CAD board/schematic design files
+  registered_at: '2026-11-06T19:42:21+00:00'
+  bytes: 314
+  sha256: cf1fde63d78af798dc14032a7020088812f268303ca63f43019a267d1e8d28e9
+attempts:
+- '2026-11-06: Reviewed SparkFun product page and direct documentation links; official Eagle-file download endpoint
+  returned HTTP 403 in web retrieval, so used the product-linked public GitHub hardware repository.'
+- '2026-11-06: Downloaded pinned manufacturer board and README at aa763eaee71d9245e5c31daa6883f6f5c6186f16; helper
+  inspect-eagle reported unsupported layer-20 text. Reviewed full XML directly and used the official dimension drawing
+  for extraction geometry.'
+conflicts: []
+notes:
+- Acquired pinned manufacturer CAD, Hardware README and linked dimension drawing on 2026-11-06; registration stores
+  file hashes and URLs.
+- 'Reviewed every drill candidate: JP2, JP3, JP8 and JP9 are the four STAND-OFF mechanical holes. J1 pads 1-4 and
+  J4 pad 1 are 1.016 mm 0.1-inch electrical header contacts, not mounting holes; 20 signal vias are 0.381 mm and
+  are electrical vias. There are no unplaced board-level holes.'
+- 'Reviewed mounting_preview.png against the exact drawing and CAD hole selection: centred 25.4 mm square, four
+  symmetric 3.302 mm holes, correct top-view axes and 4-hole count. Preview represents a bounding box, not the physical
+  board outline.'
+- Component, connector, screw-head and underside clearance remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T19:42:21+00:00'
+identity_source_ids:
+- product
+- repo_readme
+- cad

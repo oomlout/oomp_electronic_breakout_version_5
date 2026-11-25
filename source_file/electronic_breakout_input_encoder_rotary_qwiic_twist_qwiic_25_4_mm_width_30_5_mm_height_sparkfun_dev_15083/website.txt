@@ -1,0 +1,160 @@
+Home
+Components
+Encoders
+SparkFun Qwiic Twist - RGB Rotary Encoder Breakout
+DEV-15083
+Skip to the end of the images gallery
+Skip to the beginning of the images gallery
+Share:
+SparkFun Qwiic Twist - RGB Rotary Encoder Breakout
+SKU: DEV-15083
+Easily add a tactile, LED-illuminated dial to your project with the Qwiic Twist RGB rotary encoder breakout.
+$25.50
+In stock
+SKU
+DEV-15083
+Qty
+-
++
+Add to Cart
+In stock
+Stock/Discounts
+Add to Wish List
+Compare
+Helpful Documentation
+Hookup Guide
+Schematic
+Datasheet (PEL12T Encoder)
+Register Map
+See all documentation
+Overview
+Recommended Products
+Features & Specs
+Documentation
+Reviews
+Overview
+Product Overview
+The SparkFun Qwiic Twist is a digital RGB rotary encoder breakout that adds a simple volume knob or menu selector to your next project without the typical hassle of rotary encoders. This board takes care of all the various interrupts, switches, PWM'ing of LEDs, and presents all those features over an easy-to-use I
+2
+C interface thanks to our
+Qwiic Connect System
+! The Qwiic Twist was designed to get rid of the large mass of wires that are needed to implement an RGB encoder on a breadboard. This lets you stop messing around with interrupt debugging and get back to your project!
+While at its core the Qwiic Twist is a basic rotary encoder breakout, it also adds a built-in momentary button and an RGB LED for custom lighting indications.
+Stop Debugging, Start Building
+Adding a physical dial shouldn't mean sacrificing microcontroller pins or fighting interrupt timing. This breakout handles the math for you. As you turn the 6mm shaft, the indent encoder provides an audible and tactile "click." It detects clockwise and counter-clockwise movements that track 24 steps per full rotation and transmits that data clearly over I
+2
+C.
+Need to select a menu item? Just press down on the shaft to activate the built-in button so you can select options on a GUI menu or element or activate pre-programmed executables. Since the Qwiic Twist uses a 6mm shaft, it works great with our
+Clear Plastic Knob
+or
+any other knob
+that can fit over a 6mm pole. Keep in mind that if you use an opaque or translucent knob, you may lose some (or all) of the RGB LED's color quality.
+Custom Colors and Expansion
+Because the SparkFun Qwiic Twist is equipped with dual Qwiic connectors, you can plug this board directly into your system without any soldering. And it includes several features that allow it to fit perfectly into your custom interface:
+16 Million Colors:
+The integrated red, green, and blue LEDs are PWM-controlled via software on the breakout, which lets you mix custom colors for unique visual feedback.
+Scalable Addressing:
+The default 0x3F I
+2
+C address is software configurable. You can daisy-chain up to 111 Qwiic Twists on a single bus to build expansive custom control panels. We also added a solder jumper on the back of the board to physically swap the address to 0x3E.
+Flexible Hardware:
+While Qwiic connectors make it plug-and-play, we also break out standard 0.1-inch spaced pins for those who prefer a more traditional setup.
+The SparkFun Qwiic Twist provides you with an interactive and illuminated dial that simplifies your coding while still keeping your hardware layout clean and professional-looking. With comprehensive Arduino library and Python package support to handle the heavy lifting, the Qwiic Twist is the absolute easiest way to add rotary control to your interface!
+This is a carousel. Use Next and Previous buttons to navigate, or jump to a slide with the slide dots.
+Add to Cart
+Clear Plastic Knob
+$1.10
+As low as
+$0.99
+In stock
+Compare
+Add to Wish List
+This product can be automatically detected, configured, and logged by DataLogger all without coding or soldering.
+LEARN MORE
+This product features Qwiic Connectors.
+LEARN MORE
+Documentation includes available MicroPython libraries.
+SEE LIBRARIES
+Recommended Products
+Features & Specs
+Features & Specs
+24 ticks per 360° rotation
+Clockwise and counterclockwise directions are detected
+Software-configurable I
+2
+C address - up to 111 devices on a single bus
+*
+Built-in momentary button
+RGB LED controlled via PWM, allowing for up to 16M colors
+Up to 400kHz I
+2
+C communication
+Jumpers for address selection, interrupt pull-up disable, and I
+2
+C pull-up disable
+I
+2
+C Addresses:
+0x3F
+(Jumper Open, Default)
+0x3E
+(Jumper Closed)
+Software Configurable
+Board Dimensions: 1in. x 1.2in. (25.4mm x 30.5mm)
+Height: 0.984in. (25mm)
+Voltage: 3.3V
+Current:
+Approximately 2.8mA LEDs off
+Approximately 40.6mA with LEDs on 100%
+2x Qwiic Connectors
+*
+A multiplexer/Mux is required to communicate with multiple Rotary Encoder sensors on a single bus. If you need to use more than one Rotary Encoder, consider using the
+Qwiic Mux Breakout
+.
+Documentation
+Documentation
+Schematic
+Eagle Files
+Dimensional Drawing
+Hookup Guide
+Datasheet
+(PEL12T Encoder)
+Register Map
+Qwiic Info Page
+Libraries:
+Arduino
+Python / MicroPython / CircuitPython
+GitHub Hardware Repo
+WARNING:
+This product may contain chemicals known to the State of California to cause cancer and birth defects or other reproductive harm. See link below for more information.
+www.P65Warnings.ca.gov
+Reviews
+Customer Reviews
+Trustpilot
+Get a Quote for
+I agree to the
+Privacy Policy
+to get a quote for product
+Customer Name
+Customer Email
+Phone Number
+Comment
+Submit
+SparkFun Qwiic Twist - RGB Rotary Encoder Breakout
+$25.50
+DEV-15083
+Add to Cart
+$25.5
+retail price.
+Available Discounts
+$24.23
+|
+10+ units
+$22.95
+|
+25+ units
+$21.68
+|
+100+ units
+Looking for even larger quantities?
+Get in touch for Volume Pricing

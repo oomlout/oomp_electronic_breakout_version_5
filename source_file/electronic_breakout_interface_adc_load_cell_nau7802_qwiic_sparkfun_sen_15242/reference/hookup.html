@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLMFVVN');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile mode if small screen device -->
+    
+    <title>Qwiic Scale Hookup Guide - SparkFun Learn</title>
+
+          <link rel="canonical" href="https://learn.sparkfun.com/tutorials/qwiic-scale-hookup-guide/all">
+            
+    <link href="/css/bootstrap.min.css?rev=1792687599" rel="stylesheet">
+    <link rel="stylesheet" href="/css/theme.github.css?rev=1792687599" type="text/css" media="screen" />    <link rel="alternate" type="application/atom+xml" title="Education Blog" href="https://learn.sparkfun.com/feeds/blog" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorials" href="https://learn.sparkfun.com/feeds/tutorials" />
+    <link rel="alternate" type="application/atom+xml" title="Education Blog Comments" href="https://learn.sparkfun.com/feeds/blog_comments" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorial Comments" href="https://learn.sparkfun.com/feeds/tutorial_comments" />
+  </head>
+
+  <body id=learn class="layout-default no-type tutorials-view" ontouchstart="">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLMFVVN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <script>;
+    </script>
+    <div class="wrapper" itemscope itemtype="http://schema.org/WebSite">
+      <meta itemprop="url" content="https://learn.sparkfun.com/">
+      <div class=wrapper-inner>
+
+    <header>
+  <div class="support-nav-container container-fluid hidden-xs">
+    <div class="container">
+      <div class="support-nav">
+        <div aria-hidden="true">&nbsp;</div>
+
+        <div>
+          <ul class="professional-links">
+            <li><a href="https://www.sparkfun.com/professional">Professional</a></li>
+            <li><a href="https://www.sparkfun.com/education">EDU</a>            <li><a href="https://www.sparkfun.com/become-a-distributor">Distributor</a>          </ul>
+        </div>
+
+        <div class="cs">
+          <a href="https://www.sparkfun.com/support">Customer Support</a>        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-nav-buttons container-fluid hidden-xs">
+    <div class="container">
+      <div class="tab-bar">
+        <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header-content">
+      <div class="logo-container">
+        <button id="mobile-nav-menu-trigger" class="mobile-menu-button btn-unstyled hidden-sm hidden-md hidden-lg" type="button" aria-label="Open navigation menu">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+
+        <a class="logo" href="https://www.sparkfun.com/">
+          <span class="logo-sfe-primary"><span class="visuallyhidden">SparkFun Electronics - sparkfun.com</span></span>
+        </a>
+      </div>
+
+      <div class="search-block">
+                  <form id="search_form" class="search-block-form" action="https://learn.sparkfun.com/search/results" method="get">
+            <label for="global-search" class="sr-only">search documentation</label>
+            <input name="term" id="global-search" class="form-control" type="text" value="" placeholder="search documentation" autocomplete="off">
+            <button type="submit" class="glyphicon glyphicon-search global-search-icon" aria-label="Search"></button>
+          </form>
+        
+        <a href="https://www.sparkfun.com/" class="hidden-xs">Back to Webstore<span class="icon-header icon-header-undo" aria-hidden="true"></span></a>
+      </div>
+
+        <a class="account-link" href="https://www.sparkfun.com/customer/account">
+          <span class="img-account-silhouette visible-xs-inline-block"><span class="sr-only">My Account</span></span>
+          <span class="hidden-xs">My Account</span>
+        </a>
+
+    </div>
+  </div>
+
+  <div class="header-nav container-fluid hidden-xs">
+    <div class="container">
+      <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    </div>
+  </div>
+  <div id="nav-mobile-menu" class="nav-mobile-menu" aria-labelledby="nav-mobile-menu-heading" aria-role="dialog" aria-modal="true">
+    <h2 id="nav-mobile-menu-heading" class="sr-only">Navigation menu</h2>
+    <ul class="mobile-menu-tabs">
+      <li class="active"><a>Menu</a></li>
+      <li><a href="https://www.sparkfun.com/customer/account">Account</a></li>
+    </ul>
+    <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+  </div>
+</header>
+
+    
+    <div class=content>
+      <div class=container id=airlock>
+
+        
+        <div class=main-title>
+  <ul class="breadcrumb">
+    <li><a href="https://learn.sparkfun.com/">Home</a></li>
+    <li><a href="https://learn.sparkfun.com/tutorials">Tutorials</a></li>
+    <li>Qwiic Scale Hookup Guide</li>
+      </ul>
+
+  <h1>
+    Qwiic Scale Hookup Guide  </h1>
+
+</div>
+
+
+<a id=nav_toggle_pages class="nav_toggle nav-toggle-trigger" href="#"><span>&#8801;</span> Pages</a>
+
+<div id=tutorial class="row">
+
+  <div class="col-sm-8" id="sections">
+
+    <div class="contributors">
+                      Contributors:
+                <span class="contributor-alias"><img src="https://cdn.sparkfun.com/avatar/1ff6ad39b8c242a14296a76845e116cd?d=retro&s=20&r=pg" /> Nate</span>          </div>
+
+    <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t880" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft880&name=Qwiic+Scale+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft880" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=Qwiic+Scale+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft880&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft880&t=Qwiic+Scale+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft880&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F8%2F8%2F0%2FSparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-10.jpg&description=Qwiic+Scale+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+          <div class="section tutorial-page">
+        <h2 id="introduction">Introduction</h2>
+        <p>There are a variety of exciting projects around the measurement of the weight of an object. Whether it measuring if a chicken has left the coup, the <a href="http://makezine.com/projects/bees-sensors-monitor-hive-health">bees have left</a> at dawn, or automating the filling of liquids; being able to digitally interface to a scale is key. The <a href="https://www.sparkfun.com/products/15242">Qwiic Scale</a> is an incredibly easy way to read scales and their inner bits, <a href="https://learn.sparkfun.com/tutorials/getting-started-with-load-cells">load cells</a>.</p>
+
+
+
+<div >
+<div class="tile product-tile big grid " data-id="product-15242">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html">
+        <img src="https://cdn.sparkfun.com/r/600-600/assets/parts/1/3/7/0/0/15242-SparkFun_Qwiic_Scale_-_NAU7802-01.jpg" alt="SparkFun Qwiic Scale - NAU7802" height="600">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html">
+          <span>SparkFun Qwiic Scale - NAU7802</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      SEN-15242    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Qwiic Scale - NAU7802 is a small breakout board for the NAU7802 that allows you to easily read load cells to mea&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$5.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+
+<div class="flex-video-wrap clearfix">
+  <div class="flex-video widescreen img">
+    <iframe src="https://www.youtube.com/embed/6-bod9ndOtY/?autohide=1&amp;border=0&amp;wmode=opaque&amp;enablejsapi=1" frameborder=0 allowfullscreen width="560" height="315"></iframe>
+  </div>
+</div>
+
+
+<p>We’ve designed the Qwiic Scale so that little or no soldering is required. We’ve even written an Arduino library so that to get the weight of an object it’s as easy as:</p>
+
+<pre><code>language:c
+float weight = myScale.getWeight(); 
+</code></pre>
+
+<h3>Required Materials</h3>
+
+<p>If you’re just getting started we recommend obtaining a digital scale and hacking into it. This is because it can be tricky to correctly mechanically attach a load cell.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-03.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-03.jpg" alt="Bathroom scale with insides exposed" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>This low-cost scale already has the load cell properly mounted. Ready to be modified to an I2C addressable one.</em> </div></p>
+
+<p>Alternatively, if you have a unique application, or if this is not your first rodeo measuring weight, checkout the <a href="https://www.sparkfun.com/categories/143">load cells we carry</a> in a variety of shapes and capacities to create your own solution.</p>
+
+<p>We're going to assume you’re just beginning with scales; we recommend you pick out a scale that has roughly the capacity of weight you want to measure. For example, a bathroom scale is best at measuring ~20lbs up to ~300lbs. If you’re trying to measure a few ounces then don’t use a bathroom scale, get a kitchen food scale instead.</p>
+
+<p>Additionally, you’ll need an item of known weight. This will be used to calibrate your DIY scale. Depending on the accuracy needed for your project, you can use any object (can of soda <a href="http://chemistry.elmhurst.edu/vchembook/121Adensitycoke.html">394 or 355.1g</a>, dumbell, bag of flour, etc) as long as you know the weight or have an additional scale from which you can get a known weight.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-04.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-04.jpg" alt="Various items around the house with a known weight" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>10 pound plate, 4lbs flour, Diet coke, 100g calibration weight</em> </div></p>
+
+<h4>Suggested Reading</h4>
+
+<p>If you’re unfamiliar with load cells, jumper pads, or I<sup>2</sup>C be sure to checkout some of these foundational tutorials.</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-35">
+  <a href="https://learn.sparkfun.com/tutorials/analog-to-digital-conversion">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/d/d/5/c/4/5114013ece395f527e000000.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Analog to Digital Conversion</h3>
+      </a>
+
+      <div class="description">
+      The world is analog. Use analog to digital conversion to help digital devices interpret the world.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-82">
+  <a href="https://learn.sparkfun.com/tutorials/i2c">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/2/I2C-Block-Diagram.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">I2C</h3>
+      </a>
+
+      <div class="description">
+      An introduction to I2C, one of the main embedded communications protocols in use today.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-382">
+  <a href="https://learn.sparkfun.com/tutorials/getting-started-with-load-cells">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/3/8/2/13329-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Getting Started with Load Cells</h3>
+      </a>
+
+      <div class="description">
+      A tutorial defining what a load cell is and how to use one.     </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-664">
+  <a href="https://learn.sparkfun.com/tutorials/how-to-work-with-jumper-pads-and-pcb-traces">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">How to Work with Jumper Pads and PCB Traces</h3>
+      </a>
+
+      <div class="description">
+      Handling PCB jumper pads and traces is an essential skill. Learn how to cut a PCB trace, add a solder jumper between pads to reroute connections, and repair a trace with the green wire method if a trace is damaged.
+    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+<p>If you aren't familiar with the Qwiic system, we recommend reading <a href="https://www.sparkfun.com/qwiic">here for an overview</a>.</p>
+
+<table class="table table-bordered">
+  <tr align="center">
+   <td><center><a href="https://www.sparkfun.com/qwiic"><img src="https://cdn.sparkfun.com/assets/custom_pages/2/7/2/qwiic-logo.png" alt="Qwiic Connect System" title="Qwiic Connect System"></a></center></td>
+  </tr>
+  <tr align="center">
+    <td><i><a href="https://www.sparkfun.com/qwiic">Qwiic Connect System</a></i></td>
+  </tr>
+</table>      </div>
+          <div class="section tutorial-page">
+        <h2 id="hardware-overview">Hardware Overview</h2>
+        <p>The Qwiic Scale is designed with the <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/NAU7802_Data_Sheet_V1.7.pdf">NAU7802 IC</a>. This 24-bit analog-to-digital-converter is extremely precise and is designed to read the very small changes in voltage that a load cell or scale produce. SparkFun has carried a similar product, the <a href="https://www.sparkfun.com/products/13879">HX711</a>, for years. The NAU7802 shines in that it has all the great features of the HX711 but uses a true I<sup>2</sup>C interface allowing the Qwiic Scale to be daisy chained with other sensors and devices on the bus.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802.jpg" alt="Qwiic Scale board" /></a> </div></p>
+
+<h3>I<sup>2</sup>C Connections</h3>
+
+<p>As we mentioned earlier, two Qwiic connectors allow for easy daisy-chaining but if you prefer to wire in your own I<sup>2</sup>C connection the pins are available broken out at the edge of the board.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_-_I2C_Pins.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_-_I2C_Pins.jpg" alt="I2C pins and Qwiic connectors highlighted" /></a> </div></p>
+
+<h3>Spring Terminal</h3>
+
+<p>A spring terminal is provided to make connecting to a scale possible without soldering. This terminal is operated by depressing the arm and inserting a wire. We found a ball-point pen or a small flat head screwdriver were handy to press one arm down at a time. The terminal can handle 20AWG to 26AWG size wire which is found on nearly all load cells.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_-_Spring_Termina.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_-_Spring_Termina.jpg" alt="Spring terminal highlighted" /></a> </div></p>
+
+<p>There are four silkscreen indicators next to the terminal showing which color wires should be inserted where. These are the ‘standard’ load cell wire colors but may vary slightly between manufacturers. If you’re in doubt, use your best guess and don’t worry - you can’t harm your load cell by wiring it backward!</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-06.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-06.jpg" alt="Arm in the correct position" /></a> </div></p>
+
+<p>If the arm returns to level with terminal after inserting the wire then the spring is correctly pinching the wire. If the arm still looks pressed, slightly remove the wire until the terminal pinches on the wire, not the insulation.</p>
+
+<h3>PTH Pins</h3>
+
+<p>Additionally, we’ve broken out the ADC and shielding to PTH holes for advanced users. These are helpful if you have a more complex load cell that has shielding around the wires (not required but helps reduce EMI).</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_-_Bottom_Pins.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_-_Bottom_Pins.jpg" alt="Rear PTH pins for advanced users" /></a> </div></p>
+
+<p>Pin Definitions:</p>
+
+<ul>
+<li><strong>Red/E+</strong> - Positive voltage of load cell energizing the wheatstone bridge. Most often connected to the red wire of a load cell.</li>
+<li><strong>Black/E-</strong> - Negative voltage of the load cell, most often connected to the black wire of a load cell.</li>
+<li><strong>White/A-</strong> - Negative branch of the wheatstone bridge, most often connected to the white wire of a load cell.</li>
+<li><strong>Green/A+</strong> - Positive branch of the wheatstone bridge, most often connected to the green wire of a load cell.</li>
+<li><strong>Yellow/Shield</strong> - Shield pin for more complex load cells that has shielding around the wire. Sometimes instead of a yellow wire there is a larger black wire, foil, or loose wires to shield the signal wires to lessen EMI. This is not required but helps reduce EMI.</li>
+<li><strong>B-</strong> - Called VIN2N in the datasheet. Optional 2nd ADC channel, negative input. This would connect to a 2nd load cell, sharing the E+/E- connections above.</li>
+<li><strong>B+</strong> - Called VIN2P in the datasheet. Optional 2nd ADC channel, positive input. This would connect to a 2nd load cell, sharing the E+/E- connections above.</li>
+</ul>
+
+<p>The NAU7802 is optimized to work with differential pairs meaning load cells and wheatstone bridge type devices. However, it is possible to hook up a regular analog signal between <strong>VIN1P</strong> with <strong>VIN1N</strong> connected to ground.</p>
+
+<p>From the datasheet:</p>
+
+<blockquote>
+  <p>This device is optimized to accept differential input signals, but can also measure single-ended signals. When measuring single-ended signals with respect to ground, connect the negative input (VIN1N or VIN2N) to ground and connect the input signal to the positive input (VIN1P or VIN2P). Note that when this device is configured this way, only half of the converter full-scale range is used, since only positive digital output codes are produced.</p>
+</blockquote>
+
+<h3>Channel 2</h3>
+
+<p>The NAU7802 has a 2nd, optional ADC channel that has a much lower input capacitance (5pF vs 14pF) but is otherwise identical to the 1st channel. By default, this channel has a 330pF capacitor across its inputs. This helps reduce noise on channel one. If you’d like to use the 2nd channel, we recommend removing the capacitor by cutting the <strong>CAP</strong> jumper. Not sure how to cut a trace? Read <a href="https://learn.sparkfun.com/tutorials/how-to-work-with-jumper-pads-and-pcb-traces">here for more information</a>!</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_-_2nd_Channel.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_-_2nd_Channel.jpg" alt="2nd channel holes and CAP jumper" /></a> </div></p>
+
+<h3>Interrupts / Data Ready</h3>
+
+<p>By default, the NAU7802 has an interrupt output pin that goes low when a conversion is complete and new data is available to be read. This interrupt can also be configured to go high when new data is available.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_-_Interrupt_Pin.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_-_Interrupt_Pin.jpg" alt="INT pin highlighted" /></a> </div></p>
+
+<p>For most applications the interrupt pin is not needed. New data is available at 10, 20, 40, 80, and 320Hz so we can poll the device at regular intervals rather than checking the interrupt pin but it's available for more advanced applications (such as extremely low power projects where the main controller is put to sleep between readings).</p>
+
+<h3>AVDD Pin</h3>
+
+<p>The NAU7802 has a built-in voltage regulator and will output 4.5V to 2.4V used to bias the load cell. By default, we set AVDD to <strong>3.3V</strong> but lowering the bias voltage can be useful for power saving. The <strong>AVDD</strong> pin is available in case the user wishes to access this voltage as a reference; the <strong>AVDD</strong> <em>should not</em> be used as a current source. Note that the regulator can only regulate down; you cannot power the board with 3.3V and ask the regulator to output 4.5V.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_-_AVDD_pin.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_-_AVDD_pin.jpg" alt="AVDD pins highlighted" /></a> </div></p>
+
+<h3>I<sup>2</sup>C Jumper</h3>
+
+<p>Cutting the <strong>I<sup>2</sup>C</strong> jumper will remove the 2.2k&ohm; resistors from the I<sup>2</sup>C bus. In general, you shouldn’t need to mess with this jumper. But if you have many devices on your I<sup>2</sup>C bus, you may want to remove these resistors by cutting the two small traces between the solder pads. Not sure how to cut a jumper? <a href="https://learn.sparkfun.com/tutorials/how-to-work-w-jumper-pads-and-pcb-traces/cutting-a-trace-between-jumper-pads">Read here!</a></p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_-_I2C_Pullup_Jumper.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_-_I2C_Pullup_Jumper.jpg" alt="I2C jumper highlighted" /></a> </div></p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="hardware-assembly">Hardware Assembly</h2>
+        <p>Below we disassemble a small kitchen scale with a common load cell to demonstrate how to attach the Qwiic Scale. Modifying a bathroom scale (for larger maximum weight) with four individual point load cells is possible but requires the routing of many more wires. We recommend a scale with a bar type load cell (most kitchen scales have this) for your first Qwiic Scale project.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-01.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-01.jpg" alt="A common 5kg max kitchen scale" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>A common 5kg max kitchen scale</em> </div></p>
+
+<p>Remove any sticker and cover to get access to two screws that secure the bar load cell to the floating platform.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-02.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-02.jpg" alt="" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>Remove two screws to open the scale</em> </div></p>
+
+<p>This will release the platform from the base. Note the four wires connecting the load cell to the front area of electronics.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-03.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-03.jpg" alt="Open scale" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>This load cell has a blue wire instead of a green wire</em> </div></p>
+
+<p>Most load cells have four wires colored red, black, white, and green. If your load cell doesn’t, that’s ok! Checkout our troubleshooting section for how to suss out the correct connection.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/Qwiic_Scale_-_Load_Cell.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/Qwiic_Scale_-_Load_Cell.jpg" alt="Load cell with stranded wire" /></a> </div></p>
+
+<p>Are you hacking into a bathroom scale? These often use four individual cells that need to be combined into one complete load cell. We created the <a href="https://www.sparkfun.com/products/13878">Load Cell Combinator</a> to make this a lot easier. Once you have your combinator in place, you should have the four wires (Red, Black, White, Green) coming out of the combinator ready to connect to Qwiic Scale.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com//assets/parts/1/1/5/0/9/HX711_and_Combinator_board_hook_up_guide-09.jpg"><img src="https://cdn.sparkfun.com//assets/parts/1/1/5/0/9/HX711_and_Combinator_board_hook_up_guide-09.jpg" alt="Bathroom scale with four cells shown connected to combinator board" /></a> </div></p>
+
+<p>If you are hacking into a kitchen scale or load cell with wires that are <a href="https://learn.sparkfun.com/tutorials/working-with-wire#how-to-strip-a-wire">not stripped</a>, use a pair of <a href="https://www.sparkfun.com/products/12630">wire strippers</a> to remove about ¼” of insulation.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-07.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-07.jpg" alt="Frayed stranded wire" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>Frayed stranded wire</em> </div></p>
+
+<p>Most load cells have stranded wire as opposed to solid core. Stranded wire helps reduce breaking wires when bent back and forth. The down side to stranded wire is that it tends to go everywhere when you try to insert it into a hole such as the spring terminal on Qwiic Scale. Before trying to insert the wire give the end a few twists with your fingers to get all the wires bent back together.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-08.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-08.jpg" alt="Twisted stranded wire" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>Twisted stranded wire</em> </div></p>
+
+<p>For extra points, after you’ve twisted the end of the wire hit it with a dab of molten solder - this will lock the wires into place. This is called 'tinning' and helps a lot when working with stranded wire but is not required.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-09.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-09.jpg" alt="Tinned twisted stranded wire" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>Twisted stranded wire tinned with solder</em> </div></p>
+
+<p>Now insert the first red wire into the spring terminal. If the arm returns to level with terminal, then the terminal is correctly pinching the wire. Give the wire a very light tug - it should hold in place.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-06.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-06.jpg" alt="Arm in the correct position" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>Arm in the correct position</em> </div></p>
+
+<p>If the arm is slightly depressed that means the wire has been inserted too deep and the terminal is pinching on the insulation around the wire. Press on the arm again and pull the wire slightly out until you hit the soft spot where the terminal pinches on wire, not the insulation.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-05.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-05.jpg" alt="Arm not in the correct position" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>Arm not in the correct position</em> </div></p>
+
+<p>Insert all four wires according to the color of wire and the silkscreen indicator on the Qwiic Scale PCB. Now attach Qwiic Scale to your RedBoard using a <a href="https://www.sparkfun.com/products/14427">Qwiic cable</a> or other microcontroller with a <a href="https://www.sparkfun.com/products/14425">Qwiic Breadboard Cable</a>. You're ready to start coding!</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-10.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-10.jpg" alt="Four arms in correct position with four wires connected to RedBoard" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>Four arms in correct position with four wires connected to BlackBoard</em> </div></p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="qwiic-scale-arduino-library-and-overview">Qwiic Scale Arduino Library and Overview</h2>
+        <div class="alert alert-info">
+<b>Note:</b> This example assumes you are using the latest version of the Arduino IDE on your desktop. If this is your first time using Arduino, please review our tutorial on <a href="https://learn.sparkfun.com/tutorials/installing-arduino-ide">installing the Arduino IDE.</a> If you have not previously installed an Arduino library, please check out our <a href="https://learn.sparkfun.com/tutorials/installing-an-arduino-library/using-the-arduino-library-manager">installation guide.</a>
+</div>
+
+<p>The <a href="https://github.com/sparkfun/SparkFun_Qwiic_Scale_NAU7802_Arduino_Library">SparkFun Qwiic Scale NAU7802 Arduino Library</a> is a fully featured library for reading weights as well as configuring the IC. We recommend you install the library via the Arduino IDE by using the library manager and search for <strong>SparkFun Scale</strong>. Or you can download and manually install a zip of the library by clicking on the link below. For those who want to view the code, check out the <a href="https://github.com/sparkfun/SparkFun_Qwiic_Scale_NAU7802_Arduino_Library">GitHub repo</a>.</p>
+
+<p><div class="center-block text-center"> <a href="https://github.com/sparkfun/SparkFun_Qwiic_Scale_NAU7802_Arduino_Library/archive/master.zip" class="btn btn-default">SparkFun Qwiic Scale NAU7802 Arduino Library (ZIP)</a> </div></p>
+
+<p>Once you have the library installed we recommend you start with <em>Example1</em> and advance through the examples as you go. You do not need to read or absorb all the following functions, they are demonstrated and described in the examples. But if you're really advanced and just want the available functions, here they are:</p>
+
+<ul>
+<li><strong><code>bool begin(TwoWire &amp;wirePort = Wire)</code></strong> - Check communication and initialize sensor. Returns true if sensor is successfully started. Optionally, you can pass in a different Wire port.</li>
+<li><strong><code>bool isConnected()</code></strong> - Returns true if device acknowledges a call to its I2C address.</li>
+<li><strong><code>bool available()</code></strong> - Returns true if Cycle Ready bit is set (conversion is complete).</li>
+<li><strong><code>int32_t getReading()</code></strong> - Returns 24-bit reading. Assumes CR Cycle Ready bit (ADC conversion complete) has been checked by <code>.available()</code>.</li>
+<li><strong><code>int32_t getAverage(uint8_t samplesToTake)</code></strong> - Return the average of a given number of readings.</li>
+<li><strong><code>void calculateZeroOffset(uint8_t averageAmount = 8)</code></strong> - Also called taring. Call this with nothing on the scale.</li>
+<li><strong><code>void setZeroOffset(int32_t newZeroOffset)</code></strong> - Sets the internal variable. Useful for users who are loading values from NVM.</li>
+<li><strong><code>int32_t getZeroOffset()</code></strong> - Ask library for the zero offset value. Useful for storing value into NVM.</li>
+<li><strong><code>void calculateCalibrationFactor(float weightOnScale, uint8_t averageAmount = 8)</code></strong> -  Call this with the value of the thing on the scale. Sets the calibration factor based on the weight on scale and zero offset.</li>
+<li><strong><code>void setCalibrationFactor(float calFactor)</code></strong> - Pass a known calibration factor into library. Helpful when loading settings from NVM.</li>
+<li><strong><code>float getCalibrationFactor()</code></strong> - Ask library for the calibration factor. Useful for storing value into NVM.</li>
+<li><strong><code>float getWeight(bool allowNegativeWeights = false)</code></strong> - Once you've set zero offset and cal factor, you can ask the library to do the calculations for you. By default, negative weights will be returned as 0.</li>
+<li><strong><code>bool setGain(uint8_t gainValue)</code></strong> - Set the gain by calling <code>myScale.setGain(NAU7802_GAIN_16)</code>. x1, 2, 4, 8, 16, 32, 64, 128 are available.</li>
+<li><strong><code>bool setLDO(uint8_t ldoValue)</code></strong> - Set the onboard Low-Drop-Out voltage regulator to a given value by calling <code>myScale.setLDO(NAU7802_LDO_3V6)</code>. 2.4, 2.7, 3.0, 3.3, 3.6, 3.9, 4.2, 4.5V are available.</li>
+<li><strong><code>bool setSampleRate(uint8_t rate)</code></strong> - Set the readings per second by calling <code>myScale.setSampleRate(NAU7802_SPS_80)</code>. 10, 20, 40, 80, and 320 samples per second is available.</li>
+<li><strong><code>bool setChannel(uint8_t channelNumber)</code></strong> - Select between 1 and 2</li>
+<li><strong><code>bool calibrateAFE()</code></strong> - Calibrate the analog front end of the IC. This function is unrelated to setting the zero offset and calibration factor and should rarely be used. It is recommended that the AFE be re-calibrated any time the gain, SPS, or channel number is changed. Returns true if CAL_ERR bit is 0 (no error).</li>
+<li><strong><code>bool reset()</code></strong> - Resets all registers to Power On Defaults</li>
+<li><strong><code>bool powerUp()</code></strong> - Power up digital and analog sections of scale, ~2mA</li>
+<li><strong><code>bool powerDown()</code></strong> - Puts scale into low-power 200nA mode</li>
+<li><strong><code>bool setIntPolarityHigh()</code></strong> - Set Int pin to be high when data is ready (default)</li>
+<li><strong><code>bool setIntPolarityLow()</code></strong> - Set Int pin to be low when data is ready</li>
+<li><strong><code>uint8_t getRevisionCode()</code></strong> - Get the revision code of this IC. Always 0x0F.</li>
+</ul>
+
+<p>Here are the lower level functions to manipulate registers:</p>
+
+<ul>
+<li><strong><code>bool setBit(uint8_t bitNumber, uint8_t registerAddress)</code></strong> - Mask &amp; set a given bit within a register</li>
+<li><strong><code>bool clearBit(uint8_t bitNumber, uint8_t registerAddress)</code></strong> - Mask &amp; clear a given bit within a register</li>
+<li><strong><code>bool getBit(uint8_t bitNumber, uint8_t registerAddress)</code></strong> - Return a given bit within a register</li>
+<li><strong><code>uint8_t getRegister(uint8_t registerAddress)</code></strong> - Get contents of a register</li>
+<li><strong><code>bool setRegister(uint8_t registerAddress, uint8_t value)</code></strong> - Send a given value to be written to given address. Return true if successful.</li>
+</ul>      </div>
+          <div class="section tutorial-page">
+        <h2 id="examples">Examples</h2>
+        <p>The following examples highlighted from the library will show the readings on a <a href="https://learn.sparkfun.com/tutorials/terminal-basics">serial monitor</a>.</p>
+
+<h3>Example 1: Basic Readings</h3>
+
+<p><em>Example 1</em> will show you basic output from the NAU7802. This is helpful for getting the basic hardware setup. If you've got everything wired up correctly than the value should change by thousands or hundreds of thousands as you press on your scale.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun-Qwiic_Scale_Example1.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun-Qwiic_Scale_Example1.jpg" alt="Output ADC values to serial port" /></a> </div></p>
+
+<h3>Example 2: Complete Scale</h3>
+
+<p><em>Example 2</em> is where it starts to get interesting. This example will show you how to characterize your scale. You’ll need a scale fully setup and calibrated with a a known weight (like a dumbbell or can of soda). If you have not calibrated the scale, you'll need to send a <kbd>c</kbd> in the serial terminal and follow the prompts to calibrate the scale. After calibration and reuploading the code to your Arduino, you should see an output similar to the reading below.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun-Qwiic_Scale_Example2.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun-Qwiic_Scale_Example2.jpg" alt="Displaying weight in terminal window" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>Example output after calibration</em> </div></p>
+
+<h3>Advanced Examples</h3>
+
+<p>We included additional examples in the library demonstrating how to change the gain, sample rate, as well as how to shut the IC down for low-power projects. For platforms that have multiple Wire ports (i.e. Teensy, not Uno), we also offer an AdvancedI2C example showing how to point the library to use Wire1.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="how-to-characterize-your-scale">How to Characterize Your Scale</h2>
+        <p>You should have your scale hooked up, but there's one more step before we get measuring. It's time to teach your scale how much one thing weighs so it can tell how much everything else weighs!</p>
+
+<p>Load cells have a linear response meaning their value changes in proportion to the force or weight applied to it. Remember the <code>y = mx + b</code> stuff you learned in school? It’s ok if you didn’t! The characterization of a scale looks like this:</p>
+
+<ul>
+<li>Hookup the scale and get the <em>Example1_BasicReadings.ino</em> outputting a good, changing value.</li>
+<li>Load <em>Example2_CompleteScale.ino</em></li>
+<li>Take everything off your scale and press ‘c’ to get a ‘zero’ reading</li>
+<li>Place a <a href="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-04.jpg">known weight</a> (can of soda, weight lifting plate, etc) on your scale and enter its value. For example, if you placed a 150 gram weight on your scale, enter 150.0.</li>
+</ul>
+
+<p>That’s it. You can remove the known weight and weigh anything else you have lying around. But what’s really going on?</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun-Weight_vs_LoadCell_Reading_Explanation.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun-Weight_vs_LoadCell_Reading_Explanation.jpg" alt="A graph showing the relationship between weight and the load cell reading" /></a> </div></p>
+
+<p>Instead of <code>y = mx + b</code> imagine <code>weight = calibrationFactor * reading + zeroOffset</code>.</p>
+
+<p>The SparkFun library for the NAU7802 takes digital readings. These readings will vary from 10,000 to over 1 million. These values are unitless - the IC doesn’t know if there’s grams or lbs or stones on your scale, all it knows is the change in value. So when you remove all weight from your scale, there’s still a non-zero value being measured. We call this the zero offset (also known as the <code>+b</code> portion of the <code>y = mx + b</code>) and it’s set when you call the <code>calculateZeroOffset()</code> function. When you place a known weight on the scale and call the <code>calculateCalibrationFactor(150.0)</code> function the library will do the following math (and set the <code>m</code> portion of <code>y=mx+b</code>).</p>
+
+<p>Let's say you measured <code>213417</code> with nothing on the scale. Once you added 150grams the scale measured <code>265412</code>. From these numbers we can calculate the slope of the line:</p>
+
+<pre><code>language:latex
+Zero offset = 213417
+Calibration factor = (265412 - 213417) / 150 = 346.6333
+</code></pre>
+
+<p>We now know that for every change of 346 in the digital reading we are seeing a change of 1 gram. NEAT.</p>
+
+<p>Now, whatever we put on the scale we can get its weight by extrapolating between the zero offset and the known weight. For example, if we put an unknown thing on the scale and get a reading of 244094 we know:</p>
+
+<pre><code>language:latex
+244094 - 213417 = 30677
+
+30677 / 346.633 = 88.4999
+</code></pre>
+
+<p>88.5 grams! Again, these values are unitless but as long as you know that the known weight was in grams, then the ‘weight’ is output in grams.</p>
+
+<div class="alert alert-info" role="alert">
+  <strong>Note: </strong> The library holds the zero offset and calibration factor in volatile memory. We recommend you get these values using the <code>getZeroOffset()</code> and <code>getCalibrationFactor()</code> functions. Once obtained, store these values in EEPROM or other NVM. This will allow you to create a scale that can power up, load the values from NVM and immediately begin measuring weight. When power cycling your system you’ll want to reload them with the <code>setZeroOffset(213417)</code> and <code>setCalibrationFactor(346.6333)</code> functions. This is demonstrated in Example2.
+</div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="faq-and-troubleshooting">FAQ and Troubleshooting</h2>
+        <h3>The Full Scale Example Never Changes from Zero.</h3>
+
+<p>Are you seeing something like this? Where the readings are changing but the weight doesn't?</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/Decreasing_Scale_Value_-_No_Weight.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/Decreasing_Scale_Value_-_No_Weight.jpg" alt="Reading changing but weight is not" /></a> </div></p>
+
+<p>If you see the readings are <strong>decreasing</strong> when you press on the scale, then the A+/A- wires are probably backwards. Because the readings go down with more weight, the displayed weight will never go above zero. Try reversing the white and green wires.</p>
+
+<h3>The Values Decreasing When I Push Down on the Load Cell! Help!</h3>
+
+<p>A+/A- wires are probably backwards. Try reversing the white and green wires.</p>
+
+<h3>Example1 Displays Constant Values ~1000 / ~8,000,000 / ~ 16,000,000 / The Scale Doesn’t Work</h3>
+
+<p>More than likely you have a wire that is not making contact. Be sure to insert the stripped wire into the spring terminal but not too far. If the terminal is ‘pinching’ on the insulation rather than the wire then it will not make an electrical connection. Press down on the arm and pull the wire out a few millimeters.</p>
+
+<h3>Can I Measure 0.001 Grams?</h3>
+
+<p>Probably not. Really high precision scales don't use load cells for a variety of reasons. Check out 'weight scale elements' which are basically a balance scale that uses an electromagnet and a PID loop.</p>
+
+<p>We were able to reliably and accurately measure a change of 5 grams on a 10kg max load cell, or 0.05%. So on a 200kg load cell that’s 100 grams. On a smaller 100g max load cell you may be able to reliably measure down to 50 milligrams.</p>
+
+<p>Here are some things to consider as you get into finer accuracy measurements:</p>
+
+<ul>
+<li>Temperature variations in the load cell will change the zero offset and known weight values. You’ll need to recharacterize your scale if the temperature swings more than a couple degrees Celsius.</li>
+<li>For milli and micro gram readings, professional scales will often have a air cover reducing the effects of small currents in the environment.</li>
+<li>Vibrations from HVAC equipment, trains, etc can affect readings.</li>
+</ul>
+
+<h3>The Wire Colors on My Load Cell Don’t Match Anything Here!</h3>
+
+<p>Never fear. Disconnect the wires from Qwiic Scale and use a <a href="https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/all#measuring-resistance">multimeter to measure the resistance</a> between each wire. Take notes as you go. Start with one wire and find the lowest resistance to two others. You now know this wire falls in between the other two in the wheatstone bridge shown below.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/SparkFun-Wheatstone-Bridge-Circuit.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/8/0/SparkFun-Wheatstone-Bridge-Circuit.jpg" alt="Image of a wheatstone bridge" /></a> </div></p>
+
+<p>Once you have the pairs of wires identified (possible VCC/GND pair and A+/A- pair) then attach those pairs to Qwiic Scale. If the readings go down when you press on the scale, then you’ve got A+/A- reversed. If the scale doesn’t work at all then swap the pairs so that your assumed VCC/GND move into A+/A- and vice versa.</p>
+
+<h3>My 1000kg Load Cell is Acting Oddly.</h3>
+
+<p>By default, the library sets the gain to the maximum of 128 because most of our users are measuring smaller load cells. If you’re measuring very large weights, you may need to reduce the gain by using the following command:</p>
+
+<pre><code>language:c
+myScale.setGain(NAU7802_GAIN_16);
+</code></pre>
+
+<p>Gains of <code>1</code>, <code>2</code>, <code>4</code>, <code>8</code>, <code>16</code>, <code>32</code>, <code>64</code>, and <code>128</code> are available.</p>
+
+<h3>How Much Does a Can of Soda Weigh?</h3>
+
+<p>I’m glad you asked because it’s fascinating that it changes between regular (394g) and diet (355.1g). Read all about it from the Virtual Chembook:</p>
+
+<p><div class="center-block text-center"> <a href="http://chemistry.elmhurst.edu/vchembook/121Adensitycoke.html" class="btn btn-default">Vitual Chembook: Which is more dense - COKE or DIET COKE?</a></div></p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="resources-and-going-further">Resources and Going Further</h2>
+        <p>We hope you’ve enjoyed learning about Qwiic Scale and Load Cells in general. For more information, check out the resources below:</p>
+
+<ul>
+<li><a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/Qwiic_Scale.pdf">Schematic</a></li>
+<li><a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/Qwiic_Scale.zip">Eagle Files</a></li>
+<li><a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/8/0/NAU7802_Data_Sheet_V1.7.pdf">NAU7802 Datasheet</a></li>
+<li>Repo for the latest files:
+
+<ul>
+<li><a href="https://github.com/sparkfun/SparkFun_Qwiic_Scale_NAU7802_Arduino_Library">Arduino Library</a></li>
+<li><a href="https://github.com/sparkfun/Qwiic_Scale">Product Repo</a></li>
+</ul></li>
+<li><a href="https://youtu.be/6-bod9ndOtY">SFE Product Showcase</a></li>
+</ul>
+
+<p>Be sure to checkout the hookup guides for other Qwiic devices to see how easy it is to measure and control the world!</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-789">
+  <a href="https://learn.sparkfun.com/tutorials/avr-based-serial-enabled-lcds-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/7/8/9/TutorialThumbnail.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">AVR-Based Serial Enabled LCDs Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      The AVR-based Qwiic Serial Enabled LCDs are a simple and cost effective solution to include in your project. These screens are based on the HD44780 controller, and include ATmega328P with an Arduino compatible bootloader. They accept control commands via Serial, SPI and I2C (via PTH headers or Qwiic connector). In this tutorial, we will show examples of a simple setup and go through each communication option.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-1178">
+  <a href="https://learn.sparkfun.com/tutorials/working-with-qwiic-on-a-jetson-nano-through-jupyter-notebooks">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/1/7/8/oled_capture.PNG)"></div>
+      </div>
+    
+    
+    <h3 class="title">Working with Qwiic on a Jetson Nano through Jupyter Notebooks</h3>
+      </a>
+
+      <div class="description">
+      We created a few Jupyter Notebooks to make using our Qwiic boards with your Jetson Nano even easier!    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-1527">
+  <a href="https://learn.sparkfun.com/tutorials/rp2040-thing-plus-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/5/2/7/demo_double_oled_small.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">RP2040 Thing Plus Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      Want to take a stab at advancing your programming skills? Check out the Thing Plus - RP2040, with the first microcontroller from the Raspberry Pi Foundation. This guide will get you started working with the RP2040 and programming in MicroPython and C/C++.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-3639">
+  <a href="https://learn.sparkfun.com/tutorials/calibrating-your-odometry-sensor">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com//assets/learn_tutorials/3/6/3/9/SEN-24904-Action-GIF-1.gif)"></div>
+      </div>
+    
+    
+    <h3 class="title">Calibrating Your Odometry Sensor</h3>
+      </a>
+
+      <div class="description">
+      In this tutorial, we will cover how to calibrate your Qwiic Optical Tracking Odometry Sensor (or &quot;OTOS&quot;) with Arduino and Python Examples.    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>      </div>
+    
+        <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t880" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft880&name=Qwiic+Scale+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft880" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=Qwiic+Scale+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft880&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft880&t=Qwiic+Scale+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft880&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F8%2F8%2F0%2FSparkFun_Qwiic_Scale_-_NAU7802_Hookup_Guide-10.jpg&description=Qwiic+Scale+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+  </div>
+
+  <div class="col-sm-4 nav-menu" id="nav-pages">
+    <div id="sidebar_affix">
+      <div id="tutorial-pages" class="list-group">
+        <a class="list-group-item"><b>Sections</b></a>
+                          <a data-pagename="introduction" class="list-group-item" href="#introduction">
+            Introduction          </a>
+                  <a data-pagename="hardware-overview" class="list-group-item" href="#hardware-overview">
+            Hardware Overview          </a>
+                  <a data-pagename="hardware-assembly" class="list-group-item" href="#hardware-assembly">
+            Hardware Assembly          </a>
+                  <a data-pagename="qwiic-scale-arduino-library-and-overview" class="list-group-item" href="#qwiic-scale-arduino-library-and-overview">
+            Qwiic Scale Arduino Library and Overview          </a>
+                  <a data-pagename="examples" class="list-group-item" href="#examples">
+            Examples          </a>
+                  <a data-pagename="how-to-characterize-your-scale" class="list-group-item" href="#how-to-characterize-your-scale">
+            How to Characterize Your Scale          </a>
+                  <a data-pagename="faq-and-troubleshooting" class="list-group-item" href="#faq-and-troubleshooting">
+            FAQ and Troubleshooting          </a>
+                  <a data-pagename="resources-and-going-further" class="list-group-item" href="#resources-and-going-further">
+            Resources and Going Further          </a>
+              </div>
+
+      <div class="list-group">
+        <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/qwiic-scale-hookup-guide/discuss">
+          Comments
+          <span class="badge">6</span>
+        </a>
+                  <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/qwiic-scale-hookup-guide/introduction">
+            View Paginated
+          </a>
+                <a class="list-group-item" href="#" onclick="window.print(); return false;">
+          Print
+        </a>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>Tags</b></li>
+        <li class="list-group-item"><ul class="tags-list">
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/arduino">Arduino</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/hookup">Hookup</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/qwiic">Qwiic</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/sensors">Sensors</a>  </li>
+</ul>
+</li>
+      </ul>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>License</b></li>
+        <li class="list-group-item">
+          <span class="sfe-icon-cc">
+            <span class="visuallyhidden">Creative Commons</span>
+          </span>
+          <small>tutorials are <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a></small>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+      </div> <!-- /container -->
+    </div> <!-- /content -->
+
+    <footer>
+  <div class="container">
+
+  <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>About SparkFun</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/about-sparkfun">Read Our Story</a></li>
+            <li><a href="https://www.sparkfun.com/press-and-media">Press &amp; Media</a></li>
+            <li><a href="http://www.sparkfuneducation.com" target="_blank">SparkFun Education <span class="glyphicon glyphicon-new-window"></span></a></li>
+            <li><a href="https://www.sparkfun.com/jobs">Job Openings</a></li>
+          </ul>
+
+          <h3>Partner With Us</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/partner">See Our Partners</a></li>
+            <li><a href="https://www.sparkfun.com/services">View Our Services</a></li>
+            <li><a href="https://www.sparkfun.com/become-a-distributor">Become a Distributor/Reseller</a></li>
+            <li><a href="https://www.sparkfun.com/volume-sales">Receive Volume Discounts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/support">Customer Support</a></li>
+            <li><a href="https://www.sparkfun.com/payments">Purchase Order &amp; Payment Terms</a></li>
+            <li><a href="https://www.sparkfun.com/technical-assistance">Technical Assistance</a></li>
+            <li><a href="https://www.sparkfun.com/faq">FAQs</a></li>
+          </ul>
+          <h3>Site Information</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/terms">Terms Of Service</a></li>
+            <li><a href="https://www.sparkfun.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://www.sparkfun.com/compliance">Compliance</a></li>
+            <li><a href="https://www.sparkfun.com/sitemap">Site Map</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Subscribe</h3>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "2224003",
+              formId: "257ad1af-ab9e-4275-8788-cbad81cc229e"
+            });
+          </script>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>View Our Social Channels</h3>
+          <ul class="spew">
+            <li><a href="https://www.youtube.com/sparkfun" target="_blank" class="icon-social-youtube"><span class="sr-only">YouTube</span></a></li>
+            <li><a href="https://www.instagram.com/sparkfun/" target="_blank" class="icon-social-instagram"><span class="sr-only">Instagram</span></a></li>
+            <li><a href="https://www.github.com/sparkfun" target="_blank" class="icon-social-github"><span class="sr-only">GitHub</span></a></li>
+            <li><a href="https://www.facebook.com/SparkFun" target="_blank" class="icon-social-facebook"><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://twitter.com/sparkfun" target="_blank" class="icon-social-twitter"><span class="sr-only">Twitter</span></a></li>
+            <li><a href="https://www.sparkfun.com/feeds" class="icon-social-rss"><span class="sr-only">RSS</span></a></li>
+            <li><a href="https://www.tiktok.com/@sparkfun.electronics?lang=en" target="_blank" class="icon-social-tiktok"><span class="sr-only">TikTok</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- end .row -->
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p class="copyleft">
+          <strong>SparkFun Electronics&nbsp;&reg;</strong>
+          <span class="hidden-xs hidden-sm">/</span>
+          <br class="visible-xs-inline visible-sm-inline"/>
+          6333 Dry Creek Parkway,
+          <br class="visible-xs-inline"/>
+          Niwot, CO 80503
+        </p>
+      </div>
+    </div><!-- end .row -->
+  </div><!-- end .container -->
+</footer>
+
+      </div><!-- end .wrapper-inner -->
+    </div><!-- end .wrapper -->
+
+    <script type="text/javascript">
+      // eslint-disable-next-line no-unused-vars
+      var SFECONFIG = {
+        dnt: false,
+        http_server: 'http://learn.sparkfun.com',
+        https_server: 'https://learn.sparkfun.com',
+        http_static: 'https://cdn.sparkfun.com',
+        learn_server: 'https://learn.sparkfun.com',
+        news_server: 'https://news.sparkfun.com',
+        base_url: '/',
+        url: '/',
+        controller: 'tutorials',
+        action: 'view',
+        auth: false,
+        sparkrev: '1792687599',
+        search_key: 'search-sngw3quge7ojic1tgr4eft5c',
+        search_url: 'https://sparkfun-electronics.ent.us-central1.gcp.cloud.es.io/api/as/v1/engines/sparkfun-01/search'
+      };
+    </script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+      <script src="/js/learn-built.min.js?sparkrev=1792687599"></script>
+    
+    <script>
+      /* global $ */
+      $.sfe();
+      $.shared();
+      $('#learn').learn();
+      $('#learn').sfeutil();
+    </script>
+                            <script src="/js/tutorials-built.min.js?sparkrev=1792687599"></script>
+                              <script>
+    var fbq = null;
+  </script>
+      
+          <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2224003.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+        <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0046/4761.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+      </body>
+</html>

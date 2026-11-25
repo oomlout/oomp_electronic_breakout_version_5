@@ -1,0 +1,218 @@
+research_schema_version: 1
+part_id: electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+name_readable: SparkFun ADXL345, traditional carrier
+manufacturer: sparkfun
+part_number: sen_09836
+manufacturer_part_number: SEN-09836
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: sensor
+  taxonomy_4: motion
+  taxonomy_5: accelerometer
+  taxonomy_6: adxl345
+  taxonomy_7: header_breakout
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: sparkfun
+  taxonomy_15: sen_09836
+default_website:
+  url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:36:30+00:00'
+  updated_at: '2026-10-23T20:36:36+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: SparkFun ADXL345 Breakout SEN-09836 current standoff-hole variant
+  status: product_page_claim
+  source_ids: [product_page, hookup_guide, schematic]
+  notes: Product says newer version added two standoff holes and an extra decoupling capacitor. Traditional 8-pin PTH interface; do not conflate with SparkFun Qwiic/Micro carriers.
+description: The familiar non-Qwiic header carrier, with I2C/SPI and two standoff holes. The product specifies
+  a 2.0-3.6 V supply; do not inherit the Adafruit carrier's regulator/level-shifting claims. Vendor SKU
+  is SEN-09836.
+interfaces:
+- i2c
+- spi
+dimensions_mm:
+  width: null
+  height: null
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: unknown
+  source_ids: [product_page, schematic]
+  notes: No carrier outline dimensions found in reviewed listing/guide; schematic archived but physical drawing/CAD not reviewed.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: two_standoff_holes_coordinates_unknown
+connectors:
+  header_group:
+    kind: header
+    description: "Eight 0.1-inch PTH signal contacts described by hookup guide: GND, VCC, CS, INT1, INT2, SDO, SDA/SDI/SDIO, SCL/SCLK."
+    contacts: [pin_GND, pin_VCC, pin_CS, pin_INT1, pin_INT2, pin_SDO, pin_SDA, pin_SCL]
+    source_ids: [product_page, hookup_guide]
+pins:
+  pin_GND: {connector: header_group, number: null, name: GND, net_name: GND, aliases: [], signal_type: ground, direction: power_return, kind: header, x_mm: null, y_mm: null, source_ids: [hookup_guide]}
+  pin_VCC: {connector: header_group, number: null, name: VCC, net_name: VCC, aliases: [], signal_type: power, direction: input, kind: header, x_mm: null, y_mm: null, source_ids: [hookup_guide]}
+  pin_CS: {connector: header_group, number: null, name: CS, net_name: CS, aliases: [], signal_type: chip_select, direction: input, kind: header, x_mm: null, y_mm: null, source_ids: [hookup_guide]}
+  pin_INT1: {connector: header_group, number: null, name: INT1, net_name: INT1, aliases: [], signal_type: interrupt, direction: output, kind: header, x_mm: null, y_mm: null, source_ids: [hookup_guide]}
+  pin_INT2: {connector: header_group, number: null, name: INT2, net_name: INT2, aliases: [], signal_type: interrupt, direction: output, kind: header, x_mm: null, y_mm: null, source_ids: [hookup_guide]}
+  pin_SDO: {connector: header_group, number: null, name: SDO, net_name: SDO, aliases: [], signal_type: address_select, direction: input, kind: header, x_mm: null, y_mm: null, source_ids: [hookup_guide]}
+  pin_SDA: {connector: header_group, number: null, name: SDA, net_name: SDA, aliases: [SDI, SDIO], signal_type: i2c_data, direction: bidirectional, kind: header, x_mm: null, y_mm: null, source_ids: [hookup_guide]}
+  pin_SCL: {connector: header_group, number: null, name: SCL, net_name: SCL, aliases: [SCLK], signal_type: i2c_clock, direction: bidirectional, kind: header, x_mm: null, y_mm: null, source_ids: [hookup_guide]}
+pin_count:
+  header_contacts: 8
+  cable_connector_contacts: 0
+  total_exposed_contacts: 8
+  unique_nets: 8
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: documented_header_contact_names
+  source_ids: [product_page, hookup_guide]
+pin_names: [CS, GND, INT1, INT2, SCL, SDA, SDO, VCC]
+electrical:
+  board_supply:
+    min_v: 2.0
+    max_v: 3.6
+    nominal_v: [3.3]
+    status: documented_sensor_breakout_supply
+    source_ids: [product_page, hookup_guide]
+    notes: Listing says 2.0–3.6VDC supply; no carrier regulator/level shifting is claimed.
+  logic_levels:
+    status: 3v_logic_required
+    notes: ["ADXL345 carrier supply/logic range is 2.0–3.6V; do not treat it as a 5V-tolerant carrier."]
+    source_ids: [product_page, hookup_guide]
+  pullups: []
+  extra_signals:
+  - name: INT1/INT2
+    direction: output
+    notes: Interrupt outputs, map supported sensing functions.
+    source_ids: [hookup_guide]
+  source_ids: [product_page, hookup_guide]
+i2c:
+  default_address_7bit: null
+  documented_addresses_7bit: [29, 83]
+  address_selection: SDO selects ADXL345 I2C address; schematic default strap was not resolved in this pass.
+  maximum_clock_hz: null
+  clock_stretching: unverified
+  status: documented_address_options_default_unknown
+  source_ids: [hookup_guide, chip_datasheet, schematic]
+chip:
+  manufacturer: Analog Devices
+  part_number: ADXL345
+  identity_status: product_page_claim
+  source_ids: [product_page, chip_datasheet]
+datasheets:
+  status: downloaded
+  items:
+  - chip: ADXL345
+    source_id: chip_datasheet
+    local_file: reference/ADXL345.pdf
+    url: https://cdn.sparkfun.com/assets/9/1/8/9/9/ADXL345.pdf
+    sha256: 2c0d2a0e00ec8cdfbab5fa801859af1f5c4cf8b30c3738e262cf9a0a3bcdec74
+    page_count: 24
+    revision: unverified from captured file
+  notes: SparkFun-linked manufacturer datasheet.
+software:
+- name: SparkFun ADXL345 Breakout example/software repository
+  framework: Arduino
+  url: https://github.com/sparkfun/ADXL345_Breakout
+  tested: false
+  source_ids: [product_page]
+extra_resources:
+- name: SparkFun ADXL345 hookup guide
+  kind: guide
+  url: https://learn.sparkfun.com/tutorials/adxl345-hookup-guide
+  source_id: hookup_guide
+- name: SparkFun ADXL345 schematic
+  kind: schematic
+  url: https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/ADXL345_Breakout.pdf
+  source_id: schematic
+sources:
+- id: product_page
+  kind: website
+  requested_url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+  url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+  retrieved_at: '2026-10-23T20:36:32+00:00'
+  content_type: text/html; charset=UTF-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 563391
+  sha256: d53074ac5c28707935bff4bc1b5b59d7bb6d516b552e76f8d4275b4c7f4b6707
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 3013
+    sha256: 8e7275bb824aff08a5db48587a9e274f3e8266cb890565119fb09d122e2f7d0a
+  - kind: links
+    local_file: website.links.json
+    bytes: 57884
+    sha256: e85d5bb883ca0944d8e31dff0111bca18d3b0252b467ecc712533b81cfb6a32f
+  title: SparkFun Triple Axis Accelerometer Breakout - ADXL345 - SparkFun Electronics
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: hookup_guide
+  kind: guide
+  requested_url: https://learn.sparkfun.com/tutorials/adxl345-hookup-guide
+  url: https://learn.sparkfun.com/tutorials/adxl345-hookup-guide
+  retrieved_at: '2026-10-23T20:36:34+00:00'
+  content_type: text/html;charset=UTF-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/hookup.html
+  bytes: 66079
+  sha256: 3f6f61a5c11b6c3c80c90f5a4ebe0700e55e901e79193748d2558c004a2f0615
+  derivatives:
+  - kind: text
+    local_file: reference/hookup.txt
+    bytes: 24197
+    sha256: f636bf8019eadb1504564b89c1349d29aad281061949152360dea93207db9e1f
+  - kind: links
+    local_file: reference/hookup.links.json
+    bytes: 15159
+    sha256: 96ec1bb94839fc8bc4a7902ba63a48fa72975e329929392aa59c28c803beb35f
+  title: ADXL345 Hookup Guide - SparkFun Learn
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn.sparkfun.com/assets/9/1/8/9/9/ADXL345.pdf
+  url: https://cdn.sparkfun.com/assets/9/1/8/9/9/ADXL345.pdf
+  retrieved_at: '2026-10-23T20:36:35+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/ADXL345.pdf
+  bytes: 493394
+  sha256: 2c0d2a0e00ec8cdfbab5fa801859af1f5c4cf8b30c3738e262cf9a0a3bcdec74
+  derivatives: []
+  pdf_page_count: 24
+- id: schematic
+  kind: schematic
+  requested_url: https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/ADXL345_Breakout.pdf
+  url: https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/ADXL345_Breakout.pdf
+  retrieved_at: '2026-10-23T20:36:36+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/schematic.pdf
+  bytes: 39671
+  sha256: 87d81175ba85d09c0ca5c586a0992ce09d22979b1a89cb698ae1f0aae78d7e2c
+  derivatives: []
+conflicts: []
+data_gaps:
+- Carrier outline dimensions, thickness, assembled height, standoff hole locations/diameter and pin positions not established.
+- I2C default address depends on SDO strap; exact current schematic strap state not reviewed.
+- Carrier pullups and maximum I2C clock are not established.

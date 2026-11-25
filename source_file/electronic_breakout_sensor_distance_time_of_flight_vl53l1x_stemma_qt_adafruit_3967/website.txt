@@ -1,0 +1,316 @@
+Due to high demand, USPS orders are shipping on a slight delay.
+Add the code
+BeGood15
+to your cart for 15% off our
+Halloween Guide Guide
+through Sunday 10/25! 👽🚲🌕
+Skip Navigation
+Shop
+Learn
+Blog
+Forums
+IO
+LIVE!
+AdaBox
+Sign In
+Shopping cart,
+0
+items.
+toggle menu
+Search
+Shopping cart,
+0
+items.
+Sign In
+|
+Create Account
+New Products
+Featured Products
+Gift Ideas
+Circuit Playground
+Feather
+Raspberry Pi
+Arduino
+LEDs
+All Categories
+Support
+Shipping & Returns
+About Us
+Products
+Products navigation
+Shop Categories
+view all
+categories
+Arduino
+CircuitPython
+Circuit Playground
+Feather
+STEMMA / STEMMA QT
+LCDs & Displays
+Raspberry Pi
+RP2040 / Pico
+Accessories
+Batteries
+Books
+Breakout Boards
+Cables
+Components & Parts
+Development Boards
+E-Ink / ThinkInk
+Gift Certificates
+Kits & Projects
+LEDs
+Mechanical Keyboards
+Neopixels
+Power
+Prototyping
+Robotics & CNC
+Sensors
+Tools
+Wearables
+Wireless
+Clearance Sale
+New Products
+view all
+New Products
+Adafruit Metro ESP32-P4 Hydra - with 16 MB PSRAM
+$34.95
+Adafruit RV-8803 High Accuracy Real Time Clock Breakout Board
+$10.95
+Adafruit CP2105 Friend - USB to Dual UART Serial Converters
+$6.95
+Adafruit TMF8806 Time of Flight Distance Sensor - 10mm to 5m
+$12.50
+Featured Products
+view all
+Featured Products
+Adafruit BMP581 I2C or SPI Temperature and Pressure Sensor
+$9.95
+Adafruit STSPIN220 Stepper Motor Driver Breakout Board
+$6.50
+Adafruit TPS61169 Constant Current Boost Converter for LEDs
+$4.50
+Adafruit Sparkle Motion Stick + Enclosure Kit
+$19.95
+Gift Ideas
+What's New
+Search
+Sensors
+/
+Proximity
+/
+Light & LIDAR
+/
+Adafruit VL53L1X Time of Flight Distance Sensor - ~30 to 4000mm
+Adafruit VL53L1X Time of Flight Distance Sensor - ~30 to 4000mm - STEMMA QT / Qwiic
+Product ID:
+3967
+$14.95
+Product Images and Video
+Play video: New Products 10/6/21 feat. Adafruit VL53L1X Time of Flight Distance Sensor- ~30 to 4000mm-STEMMA QT!
+Qty
+Discount
+1-9
+$14.95
+10-99
+$13.46
+100+
+$11.96
+In stock
+Add to Cart
+Also include
+1
+x
+STEMMA QT / Qwiic JST SH 4-pin to Premium Male Headers Cable
+($
+0.95
+)
+Also include
+1
+x
+STEMMA QT / Qwiic JST SH 4-pin Cable - 100mm Long
+($
+0.95
+)
+Qty
+Discount
+1-9
+$14.95
+10-99
+$13.46
+100+
+$11.96
+In stock
+Add to Wishlist
+Description
+The
+Adafruit VL53L1X Time of Flight Distance Sensor
+(also known as VL53L1CX) is a
+Time of Flight
+distance sensor that has a massive 4 meter range and LIDAR-like precision. The sensor contains a very tiny invisible laser source and a matching sensor. The VL53L1X can detect the "time of flight", or how long the light has taken to bounce back to the sensor.
+Since it uses a very narrow light source, it is good for determining the distance of only the surface directly in front of it. Unlike sonars that bounce ultrasonic waves, the 'cone' of sensing is very narrow. Unlike IR distance sensors that try to measure the amount of light bounced, the VL53L1X is much more precise and doesn't have linearity problems or 'double imaging' where you can't tell if an object is very far or very close.
+This is the 'next generation' of the
+VL53L0X ToF sensor
+and can handle about
+~30 to 4000mm
+of range distance, with up to 50Hz update rate. If you need an even smaller/closer range, check out the
+VL6180X
+which can measure 5mm to 200mm and also contains a light sensor.
+The sensor is small and easy to use in any robotics or interactive project. Since it needs 2.8V power and logic we put the little fellow on a breakout board with a regulator and level shifting. You can use it with any 3-5V power or logic microcontroller with no worries. Works great with the
+3.3V logic level of a Feather or Raspberry Pi, or the 5V level of a Metro 328 or Arduino Uno
+, this breakout is ready to work with most common microcontrollers or SBCs. and since it speaks I2C, you can easily connect it up with two data wires plus power and ground.
+As if that weren't enough, we've also added
+SparkFun qwiic
+compatible
+STEMMA QT
+connectors for the I2C bus
+so you don't even need to solder.
+Just wire up to your favorite micro with a plug-and-play cable to get ToF data ASAP. For a no-solder experience,
+just wire up to your favorite micro, like the STM32F405 Feather
+using a
+STEMMA QT adapter cable.
+The Stemma QT connectors also mean the VL53L1X can be used with our
+various associated accessories.
+QT Cable is not included, but we have a variety in the shop
+Communicating to the sensor is done over I2C with an API written by ST, so it's not too hard to port it to your favorite microcontroller.
+We've got Arduino and CircuitPython/Python code so you can use this sensor with an Arduino Uno, Feather M4, Raspberry Pi or anything in between!
+Play video: New Products 10/6/21 feat. Adafruit VL53L1X Time of Flight Distance Sensor- ~30 to 4000mm-STEMMA QT!
+Play video: What is Stemma QT? #adafruit #stemma
+Technical Details
+Revision History:
+As of October 2022
+- this sensor breakout may come with black or tan STEMMA QT connectors - they work the same!
+VL53L1CX specifications:
+Emitter: 940 nm invisible laser (Class1)
+SPAD (single photon avalanche diode) receiving array with integrated lens
+FlightSense™ ranging sensor for fast and accurate long distance ranging
+Up to 400 cm distance measurement
+Up to 50 Hz ranging frequency
+Typical full field-of-view (FoV): 27 °
+Programmable region-of-interest (ROI) size on the receiving array, allowing the sensor FoV to be reduced
+Programmable ROI position on the receiving array, providing multizone operation control from the host
+Can be hidden behind many cover window materials
+I²C interface (up to 400 kHz)
+Shutdown and interrupt pins
+Default I2C address 0x29 (can be changed in software by using shutdown pin to disable other sensors on the same bus)
+Product Dimensions: 25.5mm x 17.5mm x 4.6mm / 1.0" x 0.7" x 0.2"
+Product Weight: 1.8g / 0.1oz
+Learn
+Primary Guide:                 Adafruit VL53L1X Time of Flight Distance Sensor
+Time of flight, up to 4 meters!
+PropMaker Jack O'Lantern
+Build a Jack O'Lantern prop for halloween
+Haunted Air Blaster
+Make your Halloween haunts a blast with this DIY air cannon!
+Motion Sensor Bat
+Motion Active Bat
+See All Guides
+May We Also Suggest…
+Adafruit VL6180X Time of Flight Distance Ranging Sensor (VL6180) - STEMMA QT - STEMMA QT
+Adafruit VL53L0X Time of Flight Distance Sensor - ~30 to 1000mm
+Garmin LIDAR-Lite Optical Distance LED Sensor - V4 - V4
+HC-SR04 Ultrasonic Sonar Distance Sensor + 2 x 10K resistors
+Adafruit VCNL4040 Proximity and Lux Sensor - STEMMA QT / Qwiic
+Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic
+Maxbotix Ultrasonic Rangefinder - LV-EZ4 - LV-EZ4 - LV-EZ4
+Ultrasonic Distance Sensor with I2C Interface - RCWL-1601
+Adafruit VL53L4CX Time of Flight Distance Sensor - ~1 to 6000mm - STEMMA QT / Qwiic - STEMMA QT / Qwiic
+Adafruit TMF8806 Time of Flight Distance Sensor - 10mm to 5m - STEMMA QT / Qwiic - STEMMA QT / Qwiic
+Adafruit TMF8801 Time of Flight Distance Sensor - 20mm to 2.5m - STEMMA QT / Qwiic - STEMMA QT / Qwiic
+Distributors
+BerryBase
+Germany
+Pimoroni
+United Kingdom
+kjdelectronics
+United States
+VCTEC KOREA
+South Korea
+Málna PC Magyarország
+Hungary
+Kamami
+Poland
+Electrokit Sweden AB
+Sweden
+Mouser Electronics
+United States
+Makersify
+United Kingdom
+The Pi Hut
+United Kingdom
+Core Electronics
+Australia
+ROBU.IN
+India
+BOTLAND B. DERKACZ SP.K.
+Germany
+BOTLAND B. DERKACZ SP.K.
+Czech Republic
+BOTLAND B. DERKACZ SP.K.
+Poland
+NTREX, Inc.- Devicemart
+South Korea
+ABRA Electronics
+Canada
+Paradisetronic.com
+Germany
+Letmeknow
+France
+DigiKey Electronics
+United States
+See our
+Distributors page
+for a complete list of distributors.
+Adafruit VL53L1X Time of Flight Distance Sensor - ~30 to 4000mm - STEMMA QT / Qwiic
+Product ID:
+3967
+$14.95
+In stock
+Add to Cart
+Also include
+1
+x
+STEMMA QT / Qwiic JST SH 4-pin to Premium Male Headers Cable
+($
+0.95
+)
+Also include
+1
+x
+STEMMA QT / Qwiic JST SH 4-pin Cable - 100mm Long
+($
+0.95
+)
+Qty
+Discount
+1-9
+$14.95
+10-99
+$13.46
+100+
+$11.96
+Add to Wishlist
+Description
+Technical Details
+Contact Us
+Tech Support Forums
+FAQs
+Shipping & Returns
+Freebies
+Terms of Service
+Privacy & Legal
+Website Accessibility
+About Us
+Press
+Educators
+Distributors
+Jobs
+Gift Cards
+“ A strong spirit transcends rules”
+Prince
+A Minority and Woman-owned Business Enterprise (M/WBE)
+×
+Create New Wishlist
+Name
+Description
+Create Wishlist

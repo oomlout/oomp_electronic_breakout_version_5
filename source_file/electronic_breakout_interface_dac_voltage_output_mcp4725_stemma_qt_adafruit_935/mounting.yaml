@@ -1,0 +1,127 @@
+schema_version: 1
+part_id: electronic_breakout_interface_dac_voltage_output_mcp4725_stemma_qt_adafruit_935
+status: verified
+board_revision: Adafruit MCP4725 STEMMA QT carrier design in the official Adafruit-MCP4725-PCB repository,
+  exact file Adafruit MCP4725 QT.brd at commit 0c89d205fcd7d0a1269a4f57c5cdfa0ce09e54dd (commit dated
+  2022-02-09). Product 935 currently identifies the STEMMA QT / Qwiic variant. No separate silkscreen
+  revision established.
+identity_evidence: The official Adafruit product page identifies product 935 as the MCP4725 breakout with
+  STEMMA QT / Qwiic. The official Adafruit-MCP4725-PCB repository README links the design to product 935,
+  and the pinned commit adds QT board files; the exact Adafruit MCP4725 QT.brd file is used for the QT
+  carrier geometry.
+board_size:
+- 25.4
+- 17.78
+mounting_holes:
+- id: U$20:pad:P$1
+  x_mm: -10.16
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$21:pad:P$1
+  x_mm: 10.16
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$25:pad:P$1
+  x_mm: -10.16
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$27:pad:P$1
+  x_mm: 10.16
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: 'Complete EAGLE layer-20 outline has native bounds x=[0,25.4] mm and y=[0,17.78] mm; curved
+  corner segments terminate at the bounding extents. Therefore board_size=[25.4,17.78] mm and native bounding-box
+  centre=(12.7,8.89) mm. Transform EAGLE native coordinates to canonical top view with x_mm=x_native-12.7
+  and y_mm=y_native-8.89; no mirror or quarter turn is applied (quarter_turn=0). Full drill review lists
+  12 candidates: six JP1 pads are 1.0 mm 1x06 header drills; two X1 pads are 1.0 mm terminal-block connection
+  drills; these eight are excluded. The remaining four drills are the pads of U$20/U$21/U$25/U$27, all
+  explicitly in package MOUNTINGHOLE_2.5_PLATED (value MOUNTINGHOLE2.5), each with 2.5 mm PCB drill and
+  3.2 mm annular diameter; these are the board mounting holes.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad
+  local_file: mounting_evidence/Adafruit_MCP4725_QT.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-MCP4725-PCB/0c89d205fcd7d0a1269a4f57c5cdfa0ce09e54dd/Adafruit%20MCP4725%20QT.brd
+  kind: manufacturer_cad
+  locator: Adafruit MCP4725 QT.brd at pinned repository commit 0c89d205fcd7d0a1269a4f57c5cdfa0ce09e54dd;
+    full EAGLE XML board, plain Dimension outline, four U$20/U$21/U$25/U$27 named plated mounting-hole
+    packages; other drilled features are JP1 and X1 pads.
+  registered_at: '2026-11-06T19:00:07+00:00'
+  bytes: 258874
+  sha256: 01a40afc7aa2036c314f13f97608803270cc6a1aa06d7f1975aa6fd632bf4205
+- id: product
+  local_file: mounting_evidence/product_935.html
+  url: https://www.adafruit.com/product/935
+  kind: manufacturer_product
+  locator: Official product 935 page identity, MCP4725 DAC and STEMMA QT / Qwiic product variant.
+  registered_at: '2026-11-06T19:00:08+00:00'
+  bytes: 95938
+  sha256: 4d7f3d22c96f4cb85a99acc85efbe68017a225276d25e06a4b2f964c7851a27f
+- id: repo_readme
+  local_file: mounting_evidence/README.md
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-MCP4725-PCB/0c89d205fcd7d0a1269a4f57c5cdfa0ce09e54dd/README.md
+  kind: manufacturer_repository
+  locator: Pinned official Adafruit repository README identifies MCP4725 DAC breakout and links it to
+    Adafruit product 935; paired with the QT-specific board file in the same pinned repository tree.
+  registered_at: '2026-11-06T19:00:51+00:00'
+  bytes: 1722
+  sha256: beafee545c275b3687d5ba9d995017c10bf293f38f7a67b33081b6311dd8dc49
+attempts:
+- source: Official Adafruit product 935 page, fetched 2026-11-06
+  result: Confirms MCP4725 board identity and current STEMMA QT / Qwiic variant.
+- source: Official Adafruit-MCP4725-PCB repository README and pinned commit 0c89d205fcd7d0a1269a4f57c5cdfa0ce09e54dd
+  result: README links repository design to product 935; commit dated 2022-02-09 adds QT board files.
+    Downloaded and hash-registered exact QT EAGLE board file.
+- source: Complete exact EAGLE XML outline and drill candidate review
+  result: Reviewed layer-20 outline and all 12 drilled candidates; selected four explicitly named mounting-hole
+    packages, excluding header and terminal-block connection pads.
+conflicts: []
+notes:
+- 'Evidence files were acquired on 2026-11-06: official product page HTML, official repository README,
+  and exact QT .brd from the pinned Adafruit commit. Their original URLs and SHA-256 hashes are recorded
+  under sources.'
+- The selected 2.5 mm values are plated PCB drill diameters; the package annular pad diameter is 3.2 mm.
+- The preview and standard holder use board bounding-box dimensions and hole geometry. Component, connector,
+  screw-head and underside clearance, and physical fit remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T19:02:00+00:00'
+extraction:
+  selected_ids:
+  - U$20:pad:P$1
+  - U$21:pad:P$1
+  - U$25:pad:P$1
+  - U$27:pad:P$1
+  quarter_turn: 0
+  native_centre_mm:
+  - 12.7
+  - 8.89
+identity_source_ids:
+- product
+- repo_readme
+- cad

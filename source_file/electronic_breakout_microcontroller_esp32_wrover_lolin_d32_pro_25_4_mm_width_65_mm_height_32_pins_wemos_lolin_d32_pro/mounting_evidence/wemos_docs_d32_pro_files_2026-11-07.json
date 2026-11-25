@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/wemos/docs",
+  "commit": "746363aa782bc51cc91eea300820f33d974253aa",
+  "tree_url": "https://api.github.com/repos/wemos/docs/git/trees/746363aa782bc51cc91eea300820f33d974253aa?recursive=1",
+  "retrieved_date": "2026-11-07",
+  "recursive_tree_truncated": false,
+  "matching_paths": [
+    "docs/en/_static/boards/d32_pro_v2.0.0_1_16x16.jpg",
+    "docs/en/_static/boards/d32_pro_v2.0.0_2_16x16.jpg",
+    "docs/en/_static/boards/d32_pro_v2.0.0_3_16x9.jpg",
+    "docs/en/_static/files/certification/EMC_d32_pro.pdf",
+    "docs/en/_static/files/certification/RoHS_d32_pro.pdf",
+    "docs/en/_static/files/certification/doc_d32_pro.pdf",
+    "docs/en/_static/files/dim_d32_pro_v2.0.0.pdf",
+    "docs/en/_static/files/sch_d32_pro_v2.0.0.pdf",
+    "docs/en/d32/d32_pro.rst"
+  ],
+  "mechanical_source_check": {
+    "supported_extensions": [
+      ".brd",
+      ".sch",
+      ".kicad_pcb",
+      ".kicad_mod",
+      ".step",
+      ".stp",
+      ".dxf"
+    ],
+    "matching_cad_paths": [],
+    "result": "No D32 Pro CAD/mechanical model among official documentation repository paths matching d32_pro. Official assets are v2.0.0 dimension and schematic PDFs, photos and certificates."
+  }
+}

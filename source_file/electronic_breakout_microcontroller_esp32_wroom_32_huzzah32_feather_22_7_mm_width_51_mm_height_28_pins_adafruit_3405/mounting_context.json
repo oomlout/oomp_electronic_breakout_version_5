@@ -1,0 +1,137 @@
+{
+  "name_readable": "Adafruit HUZZAH32 ESP32 Feather (3405)",
+  "manufacturer": "adafruit",
+  "part_number": "3405",
+  "webpage": null,
+  "sources": [
+    {
+      "id": "original_catalogue",
+      "url": null,
+      "title": "Original populate entries in this repository",
+      "local_file": null,
+      "scope": "Nominal dimensions and identity; not manufacturer verification",
+      "accessed": "2026-10-22"
+    },
+    {
+      "id": "chip_datasheet",
+      "url": "https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf",
+      "title": "chip_datasheet",
+      "accessed": "2026-10-22",
+      "scope": "GPIO capabilities, electrical limits and strapping; not carrier geometry"
+    },
+    {
+      "id": "board_guide",
+      "url": "https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/downloads",
+      "title": "huzzah32 manufacturer guide",
+      "accessed": "2026-10-22",
+      "scope": "Board identity, connector pinout and documented functions"
+    },
+    {
+      "id": "cad",
+      "url": "https://raw.githubusercontent.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/master/Adafruit%20HUZZAH32%20ESP32%20Feather.brd",
+      "title": "cad",
+      "accessed": "2026-10-22",
+      "scope": "Manufacturer CAD; see revision and product applicability notes",
+      "local_file": "reference/Adafruit HUZZAH32 ESP32 Feather.brd",
+      "sha256": "992bffd6f20cd5fb8087a5008e6154a038db17f7a3e3fe9dad4bcff48adc0200"
+    },
+    {
+      "id": "cad_schematic",
+      "url": "https://raw.githubusercontent.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/master/Adafruit%20HUZZAH32%20ESP32%20Feather.sch",
+      "title": "cad_schematic",
+      "accessed": "2026-10-22",
+      "scope": "Manufacturer CAD; see revision and product applicability notes",
+      "local_file": "reference/Adafruit HUZZAH32 ESP32 Feather.sch",
+      "sha256": "c94cbaf666b6cde286453c09c5263a185b167b1a747a9e404b9103fc0cacc414"
+    },
+    {
+      "id": "interface_variant",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/variants/feather_esp32/pins_arduino.h",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Arduino variant pin assignments; not a physical header drawing",
+      "local_file": "reference/interface_defaults/esp32_feather_esp32.h",
+      "sha256": "5576c06dd1db487975397f04f55a46934721895560d6746e56293d8e25b8ac38"
+    },
+    {
+      "id": "interface_board_selection",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/boards.txt",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework board names and variant selection; generic selections remain explicitly scoped",
+      "local_file": "reference/interface_defaults/esp32_boards.txt",
+      "sha256": "83c157be1da3e0387959418decc61ef7084ed88c15c43a75ba7b9a44e71c5f75",
+      "content_scope": "excerpt_of_board_names_and_variant_selections",
+      "source_document_sha256": "11b90d1f4795ec365418635749b685a2f3d8320d0e163d886aa2099e81277b07"
+    },
+    {
+      "id": "interface_runtime_uart",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/cores/esp32/HardwareSerial.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_HardwareSerial.cpp",
+      "sha256": "a555861fb4f28a2a4c1d903a8152d714902fee2510c9eaf3ad5311dbcd779035"
+    },
+    {
+      "id": "interface_runtime_i2c",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/Wire/src/Wire.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_Wire.cpp",
+      "sha256": "0454e5becf7acaa6f7cb466397682d762461f678cbb88644f31f313e653b71bc"
+    },
+    {
+      "id": "interface_runtime_spi",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/SPI/src/SPI.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_SPI.cpp",
+      "sha256": "4caea80d21fa230a528322d9eb900880a0acd9c91cb355bc5cec514ea02ecaed"
+    }
+  ],
+  "dimensions_mm": {
+    "width": 22.86,
+    "height": 50.8,
+    "pcb_thickness": null,
+    "assembled_height": null,
+    "scope": "pcb_outline_excludes_usb_overhang",
+    "source_id": "cad",
+    "status": "manufacturer_cad"
+  },
+  "coordinate_system": {
+    "units": "mm",
+    "origin": "centre_of_pcb_outline",
+    "view": "top_with_usb_at_positive_y",
+    "x_positive": "right",
+    "y_positive": "towards_usb"
+  },
+  "mounting_hole_details": [
+    {
+      "x_mm": -9.5885,
+      "y_mm": -22.86,
+      "diameter_mm": 2.2,
+      "source_id": "cad"
+    },
+    {
+      "x_mm": 9.525,
+      "y_mm": -22.86,
+      "diameter_mm": 2.2,
+      "source_id": "cad"
+    },
+    {
+      "x_mm": 8.89,
+      "y_mm": 22.86,
+      "diameter_mm": 2.5,
+      "source_id": "cad"
+    },
+    {
+      "x_mm": -8.89,
+      "y_mm": 22.86,
+      "diameter_mm": 2.5,
+      "source_id": "cad"
+    }
+  ]
+}

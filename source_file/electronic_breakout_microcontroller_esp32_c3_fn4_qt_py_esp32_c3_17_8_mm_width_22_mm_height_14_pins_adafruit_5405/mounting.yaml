@@ -1,0 +1,87 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_c3_fn4_qt_py_esp32_c3_17_8_mm_width_22_mm_height_14_pins_adafruit_5405
+status: no_holes
+board_revision: Adafruit QT Py ESP32-C3 product 5405; carrier geometry represented
+  by the Adafruit-QT-Py-ESP32-C3-PCB board file at its only file commit 54bfbfa0a782edada3492682e2610269f18b1a11
+  (2022-03-14). Adafruit notes regulator substitutions from 2022-07-07; no alternate
+  carrier geometry is identified by the product source.
+identity_evidence: Adafruit product page identifies product ID 5405 as QT Py ESP32-C3
+  WiFi Dev Board with STEMMA QT. The manufacturer-linked Eagle repository README identifies
+  its board CAD as the PCB files for that same product and links product 5405. The
+  exact board file has one commit, 54bfbfa0a782edada3492682e2610269f18b1a11, and archived
+  file bytes match the commit-pinned raw URL SHA-256.
+board_size:
+- 17.78
+- 20.701
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: 'The exact EAGLE XML board uses mm. Parsed the complete layer-20 outline:
+  native bounds give 17.780 x 20.701 mm; native bounding-box centre is (8.890, 10.3505)
+  mm. Retain quarter-turn 0: centred top-view coordinates are x = X_native - 8.890,
+  y = Y_native - 10.3505, with +x right and +y toward the USB edge. Inspected all
+  34 drilled candidates with package and feature identity. X6:hole:1/2 (0.65 mm) and
+  X6:pad:M1-M4 (0.60 mm plated) are USB-C receptacle mechanical anchors; JP1/JP3 pad
+  1-7 and 1C-7C (1.00 mm plated) are castellated electrical contacts. None are PCB
+  mounting holes. No other drilled candidates exist in the complete board file, so
+  the mounting pattern is empty.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad
+  local_file: reference/Adafruit QT Py ESP32-C3.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/54bfbfa0a782edada3492682e2610269f18b1a11/Adafruit%20QT%20Py%20ESP32-C3.brd
+  kind: manufacturer_cad
+  locator: Adafruit manufacturer repository; only CAD file commit 54bfbfa0a782edada3492682e2610269f18b1a11,
+    exact filename Adafruit QT Py ESP32-C3.brd; full board outline and all EAGLE drill
+    candidates, XML EAGLE. Archived bytes SHA-256 verified equal to pinned raw URL.
+  registered_at: '2026-11-06T17:40:35+00:00'
+  bytes: 652776
+  sha256: 629effaf43d2b46e0b0d41e3e65eecc33b8e5d75da1336589cde89e68426bbe9
+- id: product
+  local_file: mounting_evidence/adafruit_product_5405.html
+  url: https://www.adafruit.com/product/5405
+  kind: manufacturer_product
+  locator: Product ID 5405, QT Py ESP32-C3 WiFi Dev Board with STEMMA QT, product
+    dimensions 22.0 Ãƒâ€” 17.8 mm and revision history. Retrieved 2026-11-06; supports
+    product/CAD identity.
+  registered_at: '2026-11-06T17:40:36+00:00'
+  bytes: 100820
+  sha256: 0a93a53d86111d1eee2ec34f869d5f8785dfe4c8cbd2518b3004cd3e010f0822
+attempts:
+- Reviewed Adafruit product 5405 page and official QT Py ESP32-C3 guide for product
+  identity, dimensions, and revision history (retrieved 2026-11-06).
+- Reviewed Adafruit manufacturer-linked Eagle PCB repository README and complete board
+  file at its only board-file commit; archived bytes verified against commit-pinned
+  raw URL SHA-256.
+conflicts: []
+notes:
+- Adafruit product page lists overall product dimensions 22.0 x 17.8 mm; EAGLE layer-20
+  PCB outline is 17.780 x 20.701 mm. The 22 mm product dimension includes the USB
+  connector overhang, so holder board_size uses the actual CAD board outline.
+- Reviewed every drilled candidate in the exact board CAD; connector anchors and castellated
+  contacts were excluded from mounting_holes.
+- Standard holder is generated geometry only; component, connector, screw-head and
+  underside clearance are unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T17:41:16+00:00'
+extraction:
+  selected_ids: []
+  quarter_turn: 0
+  native_centre_mm:
+  - 8.89
+  - 10.3505
+identity_source_ids:
+- product
+- cad

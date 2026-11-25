@@ -1,0 +1,93 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_c6_wroom_1_n8_devkitc_1_30_pin_25_4_mm_width_58_15_mm_height_30_pins_espressif_esp32_c6_devkitc_1_n8
+status: no_holes
+board_revision: Espressif ESP32-C6-DevKitC-1-N8 carrier, PCB layout and dimensions drawing Rev 1.2. The official guide documents later electrical schematic revisions by production batch; the reviewed Rev 1.2 mechanical outline/layout identifies the N8 carrier geometry.
+identity_evidence: Espressif’s official ESP32-C6-DevKitC-1 v1.2 guide identifies the N8 variant as using ESP32-C6-WROOM-1 with 8 MB SPI flash and links the v1.2 PCB layout, dimensions drawing and DXF. The official PCB layout title block reads ESP32-C6-DevKitC-1, Rev 1.2, dated 2023-01-11; the matching dimensions PDF and DXF filenames also identify v1.2.
+board_size:
+- 25.4
+- 51.8
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: mechanical
+derivation: 'The complete official top-view dimensions sheet labels the carrier PCB outline 25.40 mm wide and 51.80 mm high. Taking the lower-left PCB outline bound as (0, 0), the centred top-view frame is x = X - 12.70 mm and y = Y - 25.90 mm; +X points right, +Y points toward the antenna end, and the USB connectors are at negative Y. No rotation, reflection or axis swap is applied. The complete dimensions sheet and all five pages of the exact Rev 1.2 PCB layout were reviewed. The 32 side-pad drills are header contacts; the two J5 drills are current-measurement jumper pads; the large oblong drills along the USB end are USB connector retaining/through-hole features; the many small drills are vias or component pads. None is a board mounting hole. No designated mounting-hole pattern or drill callout appears in the complete carrier evidence. The seeded mounting_context.json says USB is at positive Y; the official dimension drawing and complete PCB layout place USB at the lower end, so the canonical +Y-up top-view frame puts USB at negative Y.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  local_file: mounting_evidence/product.html
+  url: https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html
+  kind: manufacturer_product
+  locator: 'Official Espressif guide: ESP32-C6-DevKitC-1 v1.2 exact product identity;
+    ordering table identifies ESP32-C6-DevKitC-1-N8 with WROOM-1 and 8 MB; links PCB
+    layout and dimensions source; acquired 2026-11-06'
+  registered_at: '2026-11-06T18:24:09+00:00'
+  bytes: 41772
+  sha256: ff650e3d8830e610e170d7bfb4c6abcf44b2bbb12101e86176b5c4c43b923c0c
+- id: pcb_layout
+  local_file: mounting_evidence/pcb-layout-v1.2.pdf
+  url: https://dl.espressif.com/dl/schematics/esp32-c6-devkitc-1-pcb-layout_v1.2.pdf
+  kind: manufacturer_cad
+  locator: Complete 5-page official PCB layout, title block ESP32-C6-DevKitC-1 Rev
+    1.2 dated 2023-01-11; reviewed all layers/pages, both board sides, header/J5 drills,
+    USB connector anchors and all visible drill candidates; no board mounting holes;
+    acquired 2026-11-06
+  registered_at: '2026-11-06T18:24:09+00:00'
+  bytes: 1451081
+  sha256: de37074086fb6d80111fc27bb63c2732015ee59d12074a9952d9c7c84f956266
+- id: dimensions_dxf
+  local_file: mounting_evidence/dimensions-source-v1.2.dxf
+  url: https://dl.espressif.com/dl/schematics/esp32-c6-devkitc-1-dimensions_v1.2.dxf
+  kind: manufacturer_cad
+  locator: Official Espressif v1.2 source drawing linked from product guide; exact
+    dimension/outline source file; acquired 2026-11-06
+  registered_at: '2026-11-06T18:24:10+00:00'
+  bytes: 3983012
+  sha256: 8bfd7e5ed84bf3e4a1fc56498595cb1d5ffdc48c7cd8e8ff5544588fd14e9a63
+- id: mechanical
+  local_file: reference/esp32-c6-devkitc-1-dimensions_v1.2.pdf
+  url: https://dl.espressif.com/dl/schematics/esp32-c6-devkitc-1-dimensions_v1.2.pdf
+  kind: manufacturer_drawing
+  locator: Official one-page v1.2 dimension drawing linked from Espressif guide; full
+    sheet reviewed, 25.40 x 51.80 mm PCB outline, no board mounting pattern; archived
+    SHA-256 verified against mounting_context.json; acquired 2026-11-06
+  registered_at: '2026-11-06T18:24:10+00:00'
+  bytes: 1085902
+  sha256: 44f8b92af56b5cdac607f356a244d6297ed054713dbd4d69c5a48848b1d75cac
+- id: schematic
+  local_file: reference/esp32-c6-devkitc-1-schematics_v1.2.pdf
+  url: https://dl.espressif.com/dl/schematics/esp32-c6-devkitc-1-schematics_v1.2.pdf
+  kind: manufacturer_schematic
+  locator: Official Espressif schematic v1.2, cross-checks header/J5/USB connector
+    designators and board revision identity; archived SHA-256 verified against mounting_context.json;
+    acquired 2026-11-06
+  registered_at: '2026-11-06T18:24:11+00:00'
+  bytes: 515944
+  sha256: 4718c322c698db80bafe09c66cfe08e3c9ed3a09d5aaafa5748a15794d24902d
+attempts:
+- '2026-11-06: reviewed the official Espressif ESP32-C6-DevKitC-1 guide; confirmed exact N8 variant, carrier revision and linked mechanical/PCB layout documents.'
+- '2026-11-06: verified archived dimension drawing and schematic SHA-256 values against mounting_context.json; hashes match. Rendered the complete dimensions sheet and confirmed the 25.40 x 51.80 mm PCB outline.'
+- '2026-11-06: downloaded and reviewed all five pages of the official Rev 1.2 PCB layout. Reviewed both copper sides, assembly/outline views, all header and J5 pads, USB connector retaining anchors and visible drill candidates. No designated board mounting holes are present.'
+conflicts: []
+notes:
+- Official Espressif files are served from static URLs rather than a commit-pinned source repository. Product identity is established by the official guide; the PCB layout title block and matching drawing filenames establish Rev 1.2.
+- The seeded mounting_context.json says USB is at positive Y, inconsistent with the official top-view drawings. The mounting coordinate frame follows the drawing: +Y points toward the antenna end and USB is at negative Y.
+- No holder is generated for this confirmed no-hole carrier. Component, connector, screw-head and underside clearance remain unverified; no physical fit test was performed.
+fit_status: generic_holder_not_physical_fit_tested
+identity_source_ids:
+- product
+- pcb_layout
+- dimensions_dxf
+- mechanical
+- schematic
+updated_at: '2026-11-06T18:24:11+00:00'

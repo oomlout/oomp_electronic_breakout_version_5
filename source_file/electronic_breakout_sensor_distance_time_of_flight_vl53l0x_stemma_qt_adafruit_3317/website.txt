@@ -1,0 +1,305 @@
+Due to high demand, USPS orders are shipping on a slight delay.
+Add the code
+BeGood15
+to your cart for 15% off our
+Halloween Guide Guide
+through Sunday 10/25! 👽🚲🌕
+Skip Navigation
+Shop
+Learn
+Blog
+Forums
+IO
+LIVE!
+AdaBox
+Sign In
+Shopping cart,
+0
+items.
+toggle menu
+Search
+Shopping cart,
+0
+items.
+Sign In
+|
+Create Account
+New Products
+Featured Products
+Gift Ideas
+Circuit Playground
+Feather
+Raspberry Pi
+Arduino
+LEDs
+All Categories
+Support
+Shipping & Returns
+About Us
+Products
+Products navigation
+Shop Categories
+view all
+categories
+Arduino
+CircuitPython
+Circuit Playground
+Feather
+STEMMA / STEMMA QT
+LCDs & Displays
+Raspberry Pi
+RP2040 / Pico
+Accessories
+Batteries
+Books
+Breakout Boards
+Cables
+Components & Parts
+Development Boards
+E-Ink / ThinkInk
+Gift Certificates
+Kits & Projects
+LEDs
+Mechanical Keyboards
+Neopixels
+Power
+Prototyping
+Robotics & CNC
+Sensors
+Tools
+Wearables
+Wireless
+Clearance Sale
+New Products
+view all
+New Products
+Adafruit Metro ESP32-P4 Hydra - with 16 MB PSRAM
+$34.95
+Adafruit RV-8803 High Accuracy Real Time Clock Breakout Board
+$10.95
+Adafruit CP2105 Friend - USB to Dual UART Serial Converters
+$6.95
+Adafruit TMF8806 Time of Flight Distance Sensor - 10mm to 5m
+$12.50
+Featured Products
+view all
+Featured Products
+Adafruit BMP581 I2C or SPI Temperature and Pressure Sensor
+$9.95
+Adafruit STSPIN220 Stepper Motor Driver Breakout Board
+$6.50
+Adafruit TPS61169 Constant Current Boost Converter for LEDs
+$4.50
+Adafruit Sparkle Motion Stick + Enclosure Kit
+$19.95
+Gift Ideas
+What's New
+Search
+Sensors
+/
+Proximity
+/
+Light & LIDAR
+/
+Adafruit VL53L0X Time of Flight Distance Sensor - ~30 to 1000mm
+Adafruit VL53L0X Time of Flight Distance Sensor - ~30 to 1000mm
+Product ID:
+3317
+$14.95
+Product Images and Video
+Play video: New Products 11/23/2016
+Play video: New Products 7/22/20 featuring Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic!
+Play video: JP’s Product Pick of the Week  9/15/20 VL53L0X Distance Sensor @adafruit @johnedgarpark
+Qty
+Discount
+1-9
+$14.95
+10-99
+$13.46
+100+
+$11.96
+In stock
+Add to Cart
+Also include
+1
+x
+STEMMA QT / Qwiic JST SH 4-pin Cable - 100mm Long
+($
+0.95
+)
+Also include
+1
+x
+STEMMA QT / Qwiic JST SH 4-pin to Premium Male Headers Cable
+($
+0.95
+)
+Qty
+Discount
+1-9
+$14.95
+10-99
+$13.46
+100+
+$11.96
+In stock
+Add to Wishlist
+Description
+The
+VL53L0X
+is a
+Time of Flight
+distance sensor like no other you've used! The sensor contains a very tiny invisible laser source, and a matching sensor. The VL53L0X can detect the "time of flight", or how long the light has taken to bounce back to the sensor. Since it uses a narrow light source, it is good for determining distance of the surface directly in front of it. Unlike sonars that bounce ultrasonic waves, the 'cone' of sensing is narrower, 35 degrees . Unlike IR distance sensors that try to measure the amount of light bounced, the VL53L0x is much more precise and doesn't have linearity problems or 'double imaging' where you can't tell if an object is very far or very close.
+This is the 'big sister' of the
+VL6180X ToF sensor
+, and can handle about 50mm to 1200mm of range distance. If you need a smaller/closer range, check out the VL6180X which can measure 5mm to 200mm and also contains a light sensor.
+The sensor is small and easy to use in any robotics or interactive project. Since it needs 2.8V power and logic we put the little fellow on a breakout board with a regulator and level shifting. You can use it with any 3-5V power or logic microcontroller with no worries. Works great with the
+3.3V logic level of a Feather or Raspberry Pi, or the 5v level of a Metro 328 or Arduino Uno
+, this breakout is ready to work with most common microcontrollers or SBCs. and since it speaks I2C, you can easily connect it up with two data wires plus power and ground.
+As if that weren't enough, we've also added
+SparkFun qwiic
+compatible
+STEMMA QT
+connectors for the I2C bus
+so you don't even need to solder.
+Just wire up to your favorite micro with a plug-and-play cable to get 6-DoF data ASAP. For a no-solder experience,
+just wire up to your favorite micro, like the STM32F405 Feather
+using a
+STEMMA QT adapter cable.
+The Stemma QT connectors also mean the VL53L0X can be used with our
+various associated accessories.
+QT Cable is not included, but we have a variety in the shop
+Communicating to the sensor is done over I2C with an API written by ST, so its not too hard to port it to your favorite microcontroller. We've written a wrapper library for Arduino so you can use it with any of your Arduino-compatible boards.
+Check out our tutorial for code, schematics, diagrams and more!
+It's easy to use the VL53L0X sensor with Python and CircuitPython, and the
+Adafruit CircuitPython VL53L0X
+module.  This module allows you to easily write Python code that reads the range from the sensor.
+You can use this sensor with any CircuitPython microcontroller board or with a computer that has GPIO and Python
+thanks to Adafruit_Blinka, our CircuitPython-for-Python compatibility library
+.
+Play video: What is Stemma QT? #adafruit #stemma
+Play video: JP’s Product Pick of the Week  9/15/20 VL53L0X Distance Sensor @adafruit @johnedgarpark
+Play video: New Products 11/23/2016
+Play video: New Products 7/22/20 featuring Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic!
+Technical Details
+Schematics, Fritzing object, diagrams, interface code and more in the tutorial!
+Revision History:
+As of October 2022
+- this sensor breakout may come with black or tan STEMMA QT connectors - they work the same!
+As of July 21, 2020 - We've updated this sensor to our 0.7" x 1.0" STEMMA QT standard for sensors. There are now four mounting holes and two STEMMA QT connectors for plug-and-play connectivity! The schematic is the same, only the mechanical shape has changed, we also removed the 2.8V output pin.
+Sensing capabilities:
+The sensor can measure approximately 30mm to 1.2 meter in default mode.
+In 'long range' mode you can detect as far as 1.5 to 2 meters on a nice white reflective surface.
+Depending on ambient lighting and distance, you'll get 3 to 12% ranging accuracy - better lighting and shiny surfaces will give you best results. Some experimentation will be necessary since if the object absorbs the laser light you won't get good readings.
+Product Dimensions: 21.0mm x 18.0mm x 2.8mm / 0.8" x 0.7" x 0.1"
+Product Weight: 1.3g / 0.0oz
+Accuracy
+Default Range
+Long Range
+Max Range
+Learn
+Proximity Based Lighting
+Have lights react when something gets close. Useful or spooky? You decide.
+Distance Measurement with Ultrasound
+Using MakeCode on the Circuit Playground Express to measure distance with an HC-SR04 ultrasound sensor.
+STEMMA Lego base plates
+Lego STEMMA connectors!
+See All Guides
+May We Also Suggest…
+IR distance sensor includes cable (10cm-80cm) - GP2Y0A21YK0F - GP2Y0A21YK0F
+IR distance sensor includes cable (20cm-150cm) - GP2Y0A02YK - GP2Y0A02YK
+Maxbotix Ultrasonic Rangefinder - LV-EZ0 - LV-EZ0 - LV-EZ0
+Maxbotix Ultrasonic Rangefinder - LV-EZ4 - LV-EZ4 - LV-EZ4
+PIR (motion) sensor
+Hall effect sensor - US5881LUA - US5881LUA
+Adafruit VL6180X Time of Flight Distance Ranging Sensor (VL6180) - STEMMA QT - STEMMA QT
+Adafruit BH1750 Light Sensor - STEMMA QT / Qwiic
+Adafruit TMF8801 Time of Flight Distance Sensor - 20mm to 2.5m - STEMMA QT / Qwiic - STEMMA QT / Qwiic
+Adafruit TMF8806 Time of Flight Distance Sensor - 10mm to 5m - STEMMA QT / Qwiic - STEMMA QT / Qwiic
+Adafruit VCNL4200 Long Distance IR Proximity and Light Sensor - STEMMA QT / Qwiic - STEMMA QT / Qwiic
+Mini PIR Sensor with Time and Sensitivity Control - BS612
+Distributors
+Opencircuit
+Netherlands
+INIKI Electronics Co., LTD
+Taiwan
+NTREX, Inc.- Devicemart
+South Korea
+BerryBase
+Germany
+Pimoroni
+United Kingdom
+Mouser Electronics
+United States
+BricoGeek
+Spain
+Electrokit Sweden AB
+Sweden
+The Pi Hut
+United Kingdom
+Makersify
+United Kingdom
+Core Electronics
+Australia
+Letmeknow
+France
+Kiwi Electronics
+Netherlands
+DigiKey Electronics
+United States
+See our
+Distributors page
+for a complete list of distributors.
+Adafruit VL53L0X Time of Flight Distance Sensor - ~30 to 1000mm
+Product ID:
+3317
+$14.95
+In stock
+Add to Cart
+Also include
+1
+x
+STEMMA QT / Qwiic JST SH 4-pin Cable - 100mm Long
+($
+0.95
+)
+Also include
+1
+x
+STEMMA QT / Qwiic JST SH 4-pin to Premium Male Headers Cable
+($
+0.95
+)
+Qty
+Discount
+1-9
+$14.95
+10-99
+$13.46
+100+
+$11.96
+Add to Wishlist
+Description
+Technical Details
+Contact Us
+Tech Support Forums
+FAQs
+Shipping & Returns
+Freebies
+Terms of Service
+Privacy & Legal
+Website Accessibility
+About Us
+Press
+Educators
+Distributors
+Jobs
+Gift Cards
+“ There are three things to remember when teaching: know your stuff; know whom you are stuffing; and then stuff them elegantly”
+Lola May
+A Minority and Woman-owned Business Enterprise (M/WBE)
+×
+Create New Wishlist
+Name
+Description
+Create Wishlist

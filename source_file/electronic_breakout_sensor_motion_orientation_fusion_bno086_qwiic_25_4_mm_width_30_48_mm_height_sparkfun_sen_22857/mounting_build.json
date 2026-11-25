@@ -1,0 +1,117 @@
+{
+  "record_sha256": "2a1e9e4c6d120ed61f0435f95de63cc88f13a6700c6f1b84b64b195ce31a5b79",
+  "generated_at": "2026-11-06T19:39:25+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857/3dpr.scad",
+      "bytes": 3527,
+      "sha256": "188d792ed80dfab3560b67c3e12a16dbde6c66bf9ea8370589054ec7c0c2503c"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857/3dpr_short_sides.scad",
+      "bytes": 1918,
+      "sha256": "ac2c71cbd2ad6923f6bf04a3cc9d8d3f1ab2c2ff38273fd7c2fc5a03def5ac2f"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857/3dpr_long_side.scad",
+      "bytes": 1898,
+      "sha256": "aea657d3d5875af97e5333ca710ef5b350740d5bf67097842be681e8e101dc01"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857/3dpr.stl",
+      "bytes": 1660557,
+      "sha256": "c7f2d70fba0b734af64ad25ec3257cd21ce06b7d141599109ad5d90e454867ac"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857/3dpr_short_sides.stl",
+      "bytes": 586541,
+      "sha256": "b24dbfa5b260cfdf39ca8349f66315f97bfcb77889a0d4f6ba673da3f01cb23b"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857/3dpr_long_side.stl",
+      "bytes": 540027,
+      "sha256": "c17822989c9afe64861ea00815710fa908b9a03e7fe372eac8fae06c628d55be"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857/mounting_variants.json",
+      "bytes": 4819,
+      "sha256": "c66cfcbd23eb543610257420002f19fa4921ea9c4b0f01f106e86fc0c89b82a6"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 11304.805677108166,
+    "bounds_mm": [
+      [
+        -29.5,
+        -36.99013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        36.99013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 11304.805677108166,
+        "bounds_mm": [
+          [
+            -29.5,
+            -36.99013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            36.99013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 6537.585464685289,
+        "bounds_mm": [
+          [
+            -15.7,
+            -36.99013364214136,
+            0.0
+          ],
+          [
+            15.7,
+            36.99013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 5631.655951218818,
+        "bounds_mm": [
+          [
+            -15.700000000000001,
+            -21.99013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            21.99013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

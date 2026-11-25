@@ -1,0 +1,1767 @@
+<!doctype html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" data-theme="system">
+<head>
+  <meta charset="utf-8">
+  <link rel="mask-icon" href="/assets/adafruit_favicon-fa25640e.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon-5362a6c7.ico" />
+
+    <title>Overview | Adafruit SCD-4x - True CO2 Temperature and Humidity Sensors | Adafruit Learning System</title>
+
+    
+
+<link rel="canonical" href="https://learn.adafruit.com/adafruit-scd-40-and-scd-41/overview" />
+
+<meta name="guide-title" content="Adafruit SCD-4x - True CO2 Temperature and Humidity Sensors">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@adafruit">
+<meta name="twitter:title" content="Adafruit SCD-4x - True CO2 Temperature and Humidity Sensors">
+<meta name="twitter:description" content="CO2 sensing over I2C in a tiny package!">
+<meta name="twitter:image:src" content="https://cdn-learn.adafruit.com/guides/images/000/003/395/medium800/SDC40_top_angle.jpg">
+<meta name="twitter:domain" content="https://learn.adafruit.com">
+
+<meta property="og:site_name" content="Adafruit Learning System" />
+<meta property="og:title" content="Adafruit SCD-4x - True CO2 Temperature and Humidity Sensors" />
+<meta property="og:description" content="The SCD-40 and SCD-41 are photoacoustic &#39;true&#39; CO2 sensors that will tell you the CO2 PPM (parts-per-million) composition of ambient air. They really are measuring the CO2 concentration! Perfect fo..." />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://cdn-learn.adafruit.com/guides/images/000/003/395/medium800/SDC40_top_angle.jpg" />
+<meta property="og:url" content="https://learn.adafruit.com/adafruit-scd-40-and-scd-41/overview" />
+
+<script type="application/ld+json" nonce="surnK+Fz2DS2oPu0bEdRkg==">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Adafruit SCD-4x - True CO2 Temperature and Humidity Sensors",
+    "description": "The SCD-40 and SCD-41 are photoacoustic &#39;true&#39; CO2 sensors that will tell you the CO2 PPM (parts-per-million) composition of ambient air. They really are measuring the CO2 concentration! Perfect fo...",
+    "image": "https://cdn-learn.adafruit.com/guides/images/000/003/395/medium800/SDC40_top_angle.jpg",
+    "url": "https://learn.adafruit.com/adafruit-scd-40-and-scd-41/overview",
+    "publisher": "Adafruit",
+    "datePublished": "2021-08-26T18:13:33-04:00",
+    "author": {
+      "@type": "Person",
+      "name": "Kattni Rembor"
+    }
+  }
+</script>
+
+
+  
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="HJ1PYMev2VzJqIoV5xmNm_huXO1dUu4IoM6nuW1aWGbk2pLAYXIUJV6Hovmsd0Z9QDakfP5xHYmFowUdDaz0-A" />
+  <meta name="shop-uri" content="https://www.adafruit.com">
+  <link rel="alternate" type="application/atom+xml" title="ATOM" href="/feed" />
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.rss" />
+  <link rel="stylesheet" href="/assets/application-8813e530.css" data-turbo-track="reload" media="screen" />
+  <link rel="preload" href="https://cdn-shop.adafruit.com/fonts/proximanova/proximanova-light-webfont.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn-shop.adafruit.com/fonts/proximanova/proximanova-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn-shop.adafruit.com/fonts/proximanova/proximanova-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin>
+  <script nonce="surnK+Fz2DS2oPu0bEdRkg==">
+  var dataLayer = [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+
+
+
+  <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <script type="application/ld+json" nonce="surnK+Fz2DS2oPu0bEdRkg==">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://learn.adafruit.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://learn.adafruit.com/search?q={search_term}",
+        "query-input": "required name=search_term"
+      }
+    }
+  </script>
+    <script src="/assets/application-801e063c.js" data-turbo-track="reload" type="module" nonce="surnK+Fz2DS2oPu0bEdRkg=="></script>
+</head>
+
+<body class="application pages show production" data-rails-env="production">
+  
+  <div id="outer-wrapper">
+    <div id="inner-wrapper">
+      
+      <nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a data-turbo="false" href="#main-content-container">Skip to main content</a></li>
+      <li><a data-turbo="false" href="#article-body">Skip to article content</a></li>
+
+  </ul>
+</nav>
+
+
+        <div id="messaging-wrapper" class="messages-container" data-load="https://www.adafruit.com/api/multi_message.php"></div>
+
+
+      <header id="adafruit-header" aria-label="Adafruit header">
+  <div id="small-header">
+  <div class="first-row">
+      <nav aria-label="Adafruit applications menu">
+    <ul class="application-links">
+      <li><a aria-label="Adafruit Shop" href="https://www.adafruit.com">Shop</a></li>
+      <li class="selected"><a aria-label="Adafruit Learning System" href="https://learn.adafruit.com">Learn</a></li>
+      <li><a aria-label="Adafruit Blog" href="https://blog.adafruit.com">Blog</a></li>
+      <li><a aria-label="Adafruit Forums and Support" href="https://forums.adafruit.com">Forums</a></li>
+      <li><a aria-label="Adafruit IO, the internet of things" href="https://io.adafruit.com">IO</a></li>
+      <li><a aria-label="Adafruit Youtube Videos" href="https://www.youtube.com/adafruit/live">LIVE!</a></li>
+
+        <li><a aria-label="Adafruit product box subscription" href="https://www.adabox.com">AdaBox</a></li>
+    </ul>
+  </nav>
+
+  </div>
+
+  <div class="second-row">
+    <div class="row-content">
+      <div id="mobile-header-logo">
+        <a href="https://learn.adafruit.com">
+        <img id="small-logo" height="50" width="50" alt="Adafruit Logo" src="/logos/adafruit_logo_small.png?3343756081246158728" />
+</a>      </div>
+
+      <button id="mobile-menu-button" class="c-hamburger c-hamburger--htx">
+        <span>toggle menu</span>
+      </button>
+
+      <div id="mobile-search-wrapper">
+        <form action="https://learn.adafruit.com/search" method="get">
+          <label for="mobile-search" style="display:none;">Search</label>
+
+          <input id="mobile-search" type="text" name="q" autocomplete="off"
+            data-app-id="W9DMM4OTH0"
+            data-app-key="28a76a2b87be38db12283ebda329425a"
+            data-app-index="learn_guides_production"
+            data-app-uri="https://learn.adafruit.com" />
+
+          <button type="submit" aria-label="Submit search"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+      <a id="mobile-header-cart" href="https://www.adafruit.com/shopping_cart">
+        <span class="small-cart-count" aria-live="polite">0</span>
+        <i class="fa fa-shopping-cart"></i>
+</a>    </div>
+  </div>
+
+  <nav id="small-header-nav">
+    <div id="small-menu">
+      <ul>
+          <li class="account-info">
+            <a href="/users/sign_in">Sign In</a> | <a href="https://accounts.adafruit.com/">Create Account</a>
+          </li>
+        <li><a href="https://adafruit-playground.com">Playground</a></li>
+          <li><a href="/guides/latest">New Guides</a></li>
+          <li><a href="/groups">Series</a></li>
+          <li><a href="https://www.adafruit.com/wishlists">Wishlists</a></li>
+          <li>
+            <a class="random-guide-link" aria-label="View a Random Guide" href="https://learn.adafruit.com/guides/random">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+  <g>
+    <path fill="currentColor" d="M478.578,244.475H278.047c-3.81,0-7.42,0.78-10.829,1.961l56.305-56.305c6.306-6.306,9.759-14.706,9.759-23.64
+      c0-8.935-3.454-17.335-9.759-23.64L190.282,9.609c-12.589-12.611-34.692-12.611-47.281,0L9.759,142.85
+      C3.454,149.156,0,157.556,0,166.491s3.454,17.335,9.759,23.64l133.242,133.242c6.306,6.306,14.683,9.759,23.64,9.759
+      c8.957,0,17.335-3.454,23.64-9.759l56.305-56.305c-1.181,3.409-1.961,7.019-1.961,10.829v200.531
+      c0,18.427,14.995,33.422,33.422,33.422h200.531c18.427,0,33.422-14.995,33.422-33.422V277.897
+      C512,259.47,497.005,244.475,478.578,244.475z M182.394,271.368c-4.345,4.345-10.049,6.506-15.753,6.506
+      s-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,248.552,191.106,262.679,182.394,271.368z M182.394,182.244c-4.345,4.345-10.049,6.506-15.753,6.506
+      c-5.704,0-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,159.428,191.106,173.554,182.394,182.244z M182.394,93.119c-4.345,4.345-10.049,6.506-15.753,6.506
+      c-5.704,0-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,70.303,191.106,84.429,182.394,93.119z M311.469,467.287c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281c12.277,0,22.281,9.982,22.281,22.281C333.75,457.305,323.746,467.287,311.469,467.287z
+       M311.469,333.6c-12.277,0-22.281-9.982-22.281-22.281c0-12.299,10.004-22.281,22.281-22.281c12.277,0,22.281,9.982,22.281,22.281
+      C333.75,323.618,323.746,333.6,311.469,333.6z M378.313,400.444c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281C400.594,390.462,390.59,400.444,378.313,400.444z
+       M445.156,467.287c-12.277,0-22.281-9.982-22.281-22.281c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281
+      C467.438,457.305,457.433,467.287,445.156,467.287z M445.156,333.6c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281C467.438,323.618,457.433,333.6,445.156,333.6z"/>
+  </g>
+</g>
+</svg>
+</a>
+          </li>
+      </ul>
+    </div>
+
+    <div id="mobile-search-results"></div>
+  </nav>
+</div>
+
+
+  <div id="large-header">
+    <nav class="first-row" aria-label="Adafruit main site">
+      <div class="row-content">
+          <nav aria-label="Adafruit applications menu">
+    <ul class="application-links">
+      <li><a aria-label="Adafruit Shop" href="https://www.adafruit.com">Shop</a></li>
+      <li class="selected"><a aria-label="Adafruit Learning System" href="https://learn.adafruit.com">Learn</a></li>
+      <li><a aria-label="Adafruit Blog" href="https://blog.adafruit.com">Blog</a></li>
+      <li><a aria-label="Adafruit Forums and Support" href="https://forums.adafruit.com">Forums</a></li>
+      <li><a aria-label="Adafruit IO, the internet of things" href="https://io.adafruit.com">IO</a></li>
+      <li><a aria-label="Adafruit Youtube Videos" href="https://www.youtube.com/adafruit/live">LIVE!</a></li>
+
+        <li><a aria-label="Adafruit product box subscription" href="https://www.adabox.com">AdaBox</a></li>
+    </ul>
+  </nav>
+
+
+        <div id="account">
+            <span class="sign-out"><a href="/users/sign_in">Sign In</a></span>
+          <div class="cart">
+            <a aria-label="Shopping Cart, 0 items" aria-live="polite" href="https://www.adafruit.com/shopping_cart">
+              <i class="fa fa-shopping-cart"></i> 0
+</a>          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="second-row" aria-label="Adafruit Learn application">
+      <div class="row-content">
+        <div class="left-content">
+          <div id="logo">
+            <a title="Adafruit Learning System" href="https://learn.adafruit.com">
+              <img alt="Adafruit Logo" src="/logos/logo_2x.png?3343756081246158728" />
+</a>          </div>
+          <ul class="main-nav-links">
+            <li class="dropdown with-overlay">
+              <button class="dropdown-label nav-link" aria-haspopup="true">Explore & Learn</button>
+              <div class="dropdown-container">
+                <div class="dropdown-content" tabindex="-1">
+                    <div class="flyout">
+      <div class="three-panels">
+        <div class="first-column">
+          <div class="content-header">
+            <span class="title">Learn Categories</span>
+          </div>
+          <div class="categories">
+            <ul>
+                <li>
+                  <a href="https://learn.adafruit.com/category/3d-printing">3D Printing</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/adabox">AdaBox</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/adafruit-products">Adafruit Products</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/arduino">Arduino Compatibles</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/breakout-boards">Breakout Boards</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/circuit-playground">Circuit Playground</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/circuitpython">CircuitPython</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/clue">CLUE</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/community-support">Community Support</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/components">Components</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/crickit">Crickit</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/customer-projects">Customer &amp; Partner Projects</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/development-boards">Development Boards</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/educators">Educators</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/el">EL Wire/Tape/Panel</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/feather">Feather</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/gaming-1">Gaming</a>
+                </li>
+            </ul>
+            <ul>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/hacks">Hacks</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/internet-of-things-iot">Internet of Things - IOT</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/lcds-and-displays">LCDs &amp; Displays</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/leds">LEDs</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/machine-learning">Machine Learning</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/makecode">MakeCode</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/maker-business">Maker Business</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/micro-bit">micro:bit</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/microcontrollers">Microcontrollers</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/programming">Programming</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/raspberry-pi">Raspberry Pi</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/robotics">Robotics &amp; CNC</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/sensors">Sensors</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/stemma">STEMMA</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/tools">Tools</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/trellis">Trellis</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/wearables">Wearables</a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="middle-column">
+        </div>
+
+        <div class="last-column hide-md">
+          <section class="image-content-card">
+  <img loading="lazy" aria-hidden="true" alt="Explore, Groups to get your gears turning" src="https://learn.adafruit.com/assets/headlines/stemma-690676c3.jpg" />
+
+  <div class="text">
+    <div class="main">
+      <span>Explore</span>
+    </div>
+
+    <div class="tagline">
+      <span>Groups to get your gears turning</span>
+    </div>
+  </div>
+
+  <div class="button">
+    <a title="Groups to get your gears turning, Explore" href="https://learn.adafruit.com/explore">Explore Groups</a>
+  </div>
+</section>
+
+      </div>
+    </div>
+  </div>
+
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-link">
+              <a class="new-guides-link" href="https://learn.adafruit.com/guides/latest">New Guides</a>
+            </li>
+            <li class="nav-link">
+              <a href="https://adafruit-playground.com">Playground</a>
+            </li>
+            <li class="nav-link">
+              <a class="random-guide-link" aria-label="View a Random Guide" href="https://learn.adafruit.com/guides/random">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+  <g>
+    <path fill="currentColor" d="M478.578,244.475H278.047c-3.81,0-7.42,0.78-10.829,1.961l56.305-56.305c6.306-6.306,9.759-14.706,9.759-23.64
+      c0-8.935-3.454-17.335-9.759-23.64L190.282,9.609c-12.589-12.611-34.692-12.611-47.281,0L9.759,142.85
+      C3.454,149.156,0,157.556,0,166.491s3.454,17.335,9.759,23.64l133.242,133.242c6.306,6.306,14.683,9.759,23.64,9.759
+      c8.957,0,17.335-3.454,23.64-9.759l56.305-56.305c-1.181,3.409-1.961,7.019-1.961,10.829v200.531
+      c0,18.427,14.995,33.422,33.422,33.422h200.531c18.427,0,33.422-14.995,33.422-33.422V277.897
+      C512,259.47,497.005,244.475,478.578,244.475z M182.394,271.368c-4.345,4.345-10.049,6.506-15.753,6.506
+      s-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,248.552,191.106,262.679,182.394,271.368z M182.394,182.244c-4.345,4.345-10.049,6.506-15.753,6.506
+      c-5.704,0-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,159.428,191.106,173.554,182.394,182.244z M182.394,93.119c-4.345,4.345-10.049,6.506-15.753,6.506
+      c-5.704,0-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,70.303,191.106,84.429,182.394,93.119z M311.469,467.287c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281c12.277,0,22.281,9.982,22.281,22.281C333.75,457.305,323.746,467.287,311.469,467.287z
+       M311.469,333.6c-12.277,0-22.281-9.982-22.281-22.281c0-12.299,10.004-22.281,22.281-22.281c12.277,0,22.281,9.982,22.281,22.281
+      C333.75,323.618,323.746,333.6,311.469,333.6z M378.313,400.444c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281C400.594,390.462,390.59,400.444,378.313,400.444z
+       M445.156,467.287c-12.277,0-22.281-9.982-22.281-22.281c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281
+      C467.438,457.305,457.433,467.287,445.156,467.287z M445.156,333.6c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281C467.438,323.618,457.433,333.6,445.156,333.6z"/>
+  </g>
+</g>
+</svg>
+</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="right-content">
+            <div class="search-wrapper">
+              <div id="search-info" data-page=""
+                data-app-id="W9DMM4OTH0"
+                data-app-key="28a76a2b87be38db12283ebda329425a"
+                data-app-index="learn_guides_production"
+                data-app-uri="https://learn.adafruit.com"></div>
+              <div id="search"></div>
+              <i class="fa fa-search"></i>
+            </div>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</header>
+
+      <turbo-frame id="flash"></turbo-frame>
+      <main id="main-content">
+        <div id="main-content-container" tabindex="-1">
+
+            <div class="toolbar-primary ">
+    <div class="content">
+      <div class="left-content">
+        <div class="breadcrumbs" aria-label="Breadcrumbs">
+          <a href="https://learn.adafruit.com/"><i class='fa fa-home' role='img' title="Learn home"></i></a>
+
+            <i class="fa fa-chevron-right separator"></i>
+            <a href="/adafruit-scd-40-and-scd-41">Adafruit SCD-4x - True CO2 Temperature and Humidity Sensors</a> <i class="fa fa-chevron-right separator"></i> Overview
+        </div>
+      </div>
+
+      <div class="right-content">
+        
+      </div>
+    </div>
+  </div>
+
+
+          
+
+
+
+<article id="content-wrapper" lang="en" class="" data-page-id="22785" data-guide-id="3395">
+
+  
+
+  <header aria-label="Guide information" class="title-header">
+  <h1 class="title">Adafruit SCD-4x - True CO2 Temperature and Humidity Sensors</h1>
+  <p>CO2 sensing over I2C in a tiny package!</p>
+  <div class="details">
+      <img alt="Image for user kattni" class="user-image" src="https://secure.gravatar.com/avatar/2fc524e5d0f54ef7ff849461a49225ef?s=100" />
+
+      <div class="metadata">
+          <div class="byline">
+    by
+    <a aria-label="Guide author" data-turbo="false" href="/u/kattni">Kattni Rembor</a>
+
+  </div>
+
+        <div class="updated">
+            published August 26, 2021, last edited August 19, 2026<br>
+    last major update August 19, 2026
+
+        </div>
+        <div class="small">
+          posted in <a href="/category/adafruit-products">Adafruit Products</a>
+  <a href="/category/sensors">Sensors</a>/
+<a href="/category/temperature">Temperature &amp; Humidity</a>
+<a href="/category/circuitpython">CircuitPython</a>
+<a href="/category/breakout-boards">Breakout Boards</a>
+  <a href="/category/programming">Programming</a>/
+<a href="/category/python">Python</a>
+
+        </div>
+      </div>
+  </div>
+
+  <div class="buttons">
+
+    <span id="guide-favorite" class="button">
+  <span data-controller="modals">
+    <a data-action="click-&gt;modals#show" class="bg-btn-secondary" aria-label="Select to Save this guide." href="/guides/3395/favorites">
+      <i class="fa fa-bookmark-o"></i> Save
+</a>    <div class="dialog-container modal"
+     id="favorites-modal"
+     data-modals-target="modal"
+     aria-labelledby="dialog-title"
+     aria-hidden="true">
+  <div class="dialog-overlay" data-a11y-dialog-hide></div>
+  <div class="dialog-content dialog-small">
+    <div class="dialog-header">
+      <div>
+      <h5 class="dialog-title">New Favorite</h5>
+      </div>
+      <a href="#" class="dialog-close" data-a11y-dialog-hide="favorites-modal" aria-label="Close this dialog window">&times;</a>
+    </div>
+    <div class="dialog-body">
+        <p>Please <a href="/users/sign_in">sign in</a> to include this guide in your list of favorites.</p>
+        <p>You will be redirected back to this guide once you <a href="/users/sign_in">sign in</a>, and can then save this guide as one of your favorites.</p>
+    </div>
+    <div class="dialog-footer">
+      <a href="#" class="dialog-close" data-a11y-dialog-hide="favorites-modal" aria-label="Close this dialog window">Close</a>
+    </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+
+  </span>
+</span>
+
+
+    <span class="button">
+  <a class="bg-btn-secondary remote-modal" data-remote="true" data-method="get" href="/guides/3395/user_page_associations/new">
+    <i class="fa fa-link"></i> Link Note
+</a></span>
+
+
+
+      <a class="bg-btn-secondary button" href="https://cdn-learn.adafruit.com/downloads/pdf/adafruit-scd-40-and-scd-41.pdf">
+          <i class="fa fa-download"></i> Download
+</a>
+  </div>
+</header>
+
+
+  <div class="left-sidebar-layout" role="region" aria-label="Page content">
+    <div class="sidebar">
+  <nav aria-label="Guide navigation">
+      <div class="data-group">
+        <ul class="nested-page-list" aria-label="Guide pages">
+           <li class='parent' data-controller="collapse">
+
+        <a class="published active" aria-current="page" href="/adafruit-scd-40-and-scd-41/overview">Overview</a>
+
+
+</li>
+ <li class='parent' data-controller="collapse">
+
+        <a class="published " href="/adafruit-scd-40-and-scd-41/pinouts">Pinouts</a>
+
+
+</li>
+ <li class='parent' data-controller="collapse">
+
+        <a class="published " href="/adafruit-scd-40-and-scd-41/python-circuitpython">Python &amp; CircuitPython</a>
+
+
+        <ul class="page-child nav">
+          	<li class='published'>
+
+		  <a href="https://circuitpython.readthedocs.io/projects/scd4x/en/latest/" target="blank" class="published">Python Docs <i class="fa fa-external-link"></i></a>
+
+</li>
+
+        </ul>
+</li>
+ <li class='parent' data-controller="collapse">
+
+        <a class="published " href="/adafruit-scd-40-and-scd-41/arduino">Arduino</a>
+
+
+</li>
+ <li class='parent' data-controller="collapse">
+
+        <a class="published " href="/adafruit-scd-40-and-scd-41/wippersnapper">WipperSnapper</a>
+
+
+</li>
+ <li class='parent' data-controller="collapse">
+
+        <a class="published " href="/adafruit-scd-40-and-scd-41/downloads">Downloads</a>
+
+
+</li>
+
+        </ul>
+
+        <div class="single-page-spacer"></div>
+        <ul class="nested-page-list" aria-label="Guide resources">
+          <li>
+              <a href="/adafruit-scd-40-and-scd-41?view=all">Single page</a>
+          </li>
+          <li>
+                <div id="feedback_page_22785">
+      <a data-turbo-stream="true" class="feedback-link" title="Feedback? Corrections?" rel="nofollow" href="/feedback/new?page_id=22785">
+            Feedback?  Corrections?
+</a>    </div>
+
+          </li>
+          <li>
+            <a href="/adafruit-scd-40-and-scd-41.md?view=all">Text View</a>
+          </li>
+        </ul>
+      </div>
+
+    
+
+      <section class="list-with-header">
+        <div class="list-header">
+          Guide Products
+          <span class="view-all">
+            <a class="featured-products-link" href="/adafruit-scd-40-and-scd-41/featured_products">view all</a>
+          </span>
+        </div>
+
+        <ul class="small-product-list">
+            
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_5187" id="product_analytics_5187" value="{
+  &quot;item_list_id&quot;: 3395,
+  &quot;item_list_name&quot;: &quot;adafruit-scd-40-and-scd-41&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 5187,
+    &quot;item_name&quot;: &quot;Adafruit SCD-40 - True CO2, Temperature and Humidity Sensor&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" />
+
+    <div class="product-image">
+        <img class='image-preview product-asset' src='https://cdn-shop.adafruit.com/640x480/5187-08.jpg' loading='lazy' alt='Angled shot of Adafruit SCD-40 - NDIR CO2 Temperature and Humidity Sensor.' />
+
+    </div>
+
+    <div class="product-details">
+        <span class="primary-badge">Primary</span>
+
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/5187">Adafruit SCD-40 - True CO2, Temperature and Humidity Sensor</a>
+      </div>
+
+        <div class="product-price">$44.95</div>
+
+      <a id="5187-product" class="product-buy btn-primary " data-pid="5187" data-qty="1" data-name="Adafruit SCD-40 - True CO2, Temperature and Humidity Sensor" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/5187">Add  to Cart</a>
+    </div>
+  </li>
+
+            
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_5190" id="product_analytics_5190" value="{
+  &quot;item_list_id&quot;: 3395,
+  &quot;item_list_name&quot;: &quot;adafruit-scd-40-and-scd-41&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 5190,
+    &quot;item_name&quot;: &quot;Adafruit SCD-41 - True CO2 Temperature and Humidity Sensor&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" />
+
+    <div class="product-image">
+        <img class='image-preview product-asset' src='https://cdn-shop.adafruit.com/640x480/5190-06.jpg' loading='lazy' alt='Angled shot of Adafruit SCD-41 - NDIR CO2 Temperature and Humidity Sensor.' />
+
+    </div>
+
+    <div class="product-details">
+        <span class="primary-badge">Primary</span>
+
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/5190">Adafruit SCD-41 - True CO2 Temperature and Humidity Sensor</a>
+      </div>
+
+        <div class="product-price">$49.95</div>
+
+      <a id="5190-product" class="product-buy btn-primary " data-pid="5190" data-qty="1" data-name="Adafruit SCD-41 - True CO2 Temperature and Humidity Sensor" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/5190">Add  to Cart</a>
+    </div>
+  </li>
+
+            
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_6512" id="product_analytics_6512" value="{
+  &quot;item_list_id&quot;: 3395,
+  &quot;item_list_name&quot;: &quot;adafruit-scd-40-and-scd-41&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 6512,
+    &quot;item_name&quot;: &quot;Adafruit SCD-43 - True CO2 Temperature and Humidity Sensor&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" />
+
+    <div class="product-image">
+        <img class='image-preview product-asset' src='https://cdn-shop.adafruit.com/640x480/6512-00.jpg' loading='lazy' alt='Angled Shot of the Adafruit SCD-43 - True CO2 Temperature and Humidity Sensor.' />
+
+    </div>
+
+    <div class="product-details">
+        <span class="primary-badge">Primary</span>
+
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/6512">Adafruit SCD-43 - True CO2 Temperature and Humidity Sensor</a>
+      </div>
+
+        <div class="product-price">$49.95</div>
+
+      <a id="6512-product" class="product-buy btn-primary " data-pid="6512" data-qty="1" data-name="Adafruit SCD-43 - True CO2 Temperature and Humidity Sensor" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/6512">Add  to Cart</a>
+    </div>
+  </li>
+
+
+          <li>
+            <a class="full-size" href="/adafruit-scd-40-and-scd-41/featured_products">
+              View product details
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+</a>          </li>
+        </ul>
+      </section>
+
+  </nav>
+</div>
+
+
+    <div class="right-content" id="article-body" tabindex="-1">
+
+      <div class="badges headline-badges">
+      <div class="badge favorites-count " title="Saves" aria-label="This many users have saved this guide">
+        38
+      </div>
+
+      <div class="badge updated" aria-label="This guide has been updated recently">
+        Updated
+      </div>
+
+    <div class="badge skill-level" title="Skill Level" aria-label="Guide skill level">
+      Beginner
+    </div>
+
+    <div class="badge skill-level" title="Guide Type" aria-label="Guide type">
+      Product guide
+    </div>
+
+  <turbo-frame id="display_reactions">
+    <span class="reactions">
+      <form action="/guides/3395/reactions/toggle_reaction" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="4fAx0BQn5MotraBdhNHRa0DNyFiGDrlIFNBXB3Cy8HSexvNqhbjWJDuVawHWVVhk78jPru3GO2OH8DucksdXYg" />
+            <span class="reaction">
+              <span class="emoji">😍</span>
+              <span class="count">2</span>
+            </span>
+</form>    </span>
+</turbo-frame>
+</div>
+
+
+        <h2>
+          <span id="overview">Overview</span>
+        </h2>
+
+        <div class="page-content">
+            <div class="" role="region" aria-label="Page content">
+        <figure class="element image-element">
+    <a href="/assets/145643">
+        <img class="145643-asset"
+             srcset="https://cdn-learn.adafruit.com/assets/assets/000/145/643/small360/adafruit_products_6512-04.jpg?1786993828 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/145/643/medium640/adafruit_products_6512-04.jpg?1786993828 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/145/643/medium800/adafruit_products_6512-04.jpg?1786993828 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/145/643/large1024/adafruit_products_6512-04.jpg?1786993828 1024w"
+              sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px"
+             src="https://cdn-learn.adafruit.com/assets/assets/000/145/643/medium800/adafruit_products_6512-04.jpg?1786993828"
+             loading="lazy"
+             alt="" />
+</a>  </figure>
+
+      <div class="text-element">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        <p>Take a deep breath in...now slowly breathe out. Mmm isn't it wonderful? All that air around us, which we bring into our lungs, extracts oxygen from and then breathes out carbon dioxide. CO2 is essential for life on this planet we call Earth - we and plants take turns using and emitting CO2 in an elegant symbiosis. But it's important to keep that CO2 balanced - you don't want too much around, not good for humans and not good for our planet.</p>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+        <figure class="element image-element">
+    <a href="/assets/104000">
+        <img class="104000-asset"
+             srcset="https://cdn-learn.adafruit.com/assets/assets/000/104/000/small360/adafruit_products_SDC41_top.jpg?1629484349 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/104/000/medium640/adafruit_products_SDC41_top.jpg?1629484349 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/104/000/medium800/adafruit_products_SDC41_top.jpg?1629484349 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/104/000/large1024/adafruit_products_SDC41_top.jpg?1629484349 1024w"
+              sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px"
+             src="https://cdn-learn.adafruit.com/assets/assets/000/104/000/medium800/adafruit_products_SDC41_top.jpg?1629484349"
+             loading="lazy"
+             alt="" />
+</a>  </figure>
+
+      <div class="text-element">
+  
+  
+        <p>The SCD-40, SCD-41 and SCD-43 are photoacoustic 'true' CO2 sensors that will tell you the CO2 PPM (parts-per-million) composition of ambient air.&nbsp;<a href="https://www.adafruit.com/product/3709">Unlike the SGP30, this sensor isn't approximating it from VOC gas concentration</a>&nbsp;-<strong> they really are measuring the CO2 concentration</strong>! That means they're bigger and more expensive, but they are the real thing. Perfect for environmental sensing, scientific experiments, air quality and ventilation studies, and more.</p>
+      
+
+</div>
+
+        <figure class="element image-element">
+    <a href="/assets/104002">
+        <img class="104002-asset"
+             srcset="https://cdn-learn.adafruit.com/assets/assets/000/104/002/small360/adafruit_products_SDC40_top_header.jpg?1629484517 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/104/002/medium640/adafruit_products_SDC40_top_header.jpg?1629484517 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/104/002/medium800/adafruit_products_SDC40_top_header.jpg?1629484517 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/104/002/large1024/adafruit_products_SDC40_top_header.jpg?1629484517 1024w"
+              sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px"
+             src="https://cdn-learn.adafruit.com/assets/assets/000/104/002/medium800/adafruit_products_SDC40_top_header.jpg?1629484517"
+             loading="lazy"
+             alt="" />
+</a>  </figure>
+
+      <div class="text-element">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        <p><a href="https://www.adafruit.com/product/4867">Compared to the illustrious SCD-30</a>, this sensor uses a different measurement technique, which allows it to be much smaller. The overall data quality should be very similar, however. Like the SCD-30, this sensor has data read over I2C, so it works very nicely with just about any microcontroller or microcomputer. There's both Arduino and Python/CircuitPython code so you can get started in a jiffy.</p>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+        <figure class="element image-element">
+    <a href="/assets/104003">
+        <img class="104003-asset"
+             srcset="https://cdn-learn.adafruit.com/assets/assets/000/104/003/small360/adafruit_products_SDC41_top_angle.jpg?1629484528 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/104/003/medium640/adafruit_products_SDC41_top_angle.jpg?1629484528 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/104/003/medium800/adafruit_products_SDC41_top_angle.jpg?1629484528 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/104/003/large1024/adafruit_products_SDC41_top_angle.jpg?1629484528 1024w"
+              sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px"
+             src="https://cdn-learn.adafruit.com/assets/assets/000/104/003/medium800/adafruit_products_SDC41_top_angle.jpg?1629484528"
+             loading="lazy"
+             alt="" />
+</a>  </figure>
+
+      <div class="text-element">
+  
+  
+  
+  
+  
+  
+        <p>There are three variants of this sensor - the SCD-40, SCD-41 and SCD-43</p>
+<ul>
+<li>The <strong>SCD-40</strong> is lower cost and is perfect for indoor/outdoor air quality and CO2 measurements. It has a range of<strong> 400~2000 ppm</strong> with an accuracy of ±(50 ppm + 5% of reading)</li>
+<li>The <strong>SCD-41</strong> is an older scientific sensor version, and while it can definitely be used for air quality, it's wide range means it's best used for industrial or scientific CO2 measurements where the ppm can get very high. It has a range of <strong>400~5000 ppm</strong> with an accuracy of ±(<strong>40 ppm + 5%</strong> of reading)</li>
+<li>The <strong>SCD-43</strong> is the latest version. Like the SCD-41, it can be used for air quality, it's wide range means it's best used for industrial or scientific CO2 measurements where the ppm can get very high. It has a range of <strong>400~5000 ppm</strong> with an improved accuracy of ±(<strong>30 ppm + 3%</strong> of reading)</li>
+</ul>
+      
+
+
+
+
+
+</div>
+
+        <figure class="element image-element">
+    <a href="/assets/104005">
+        <img class="104005-asset"
+             srcset="https://cdn-learn.adafruit.com/assets/assets/000/104/005/small360/adafruit_products_SDC41_STEMMA_side.jpg?1629484551 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/104/005/medium640/adafruit_products_SDC41_STEMMA_side.jpg?1629484551 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/104/005/medium800/adafruit_products_SDC41_STEMMA_side.jpg?1629484551 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/104/005/large1024/adafruit_products_SDC41_STEMMA_side.jpg?1629484551 1024w"
+              sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px"
+             src="https://cdn-learn.adafruit.com/assets/assets/000/104/005/medium800/adafruit_products_SDC41_STEMMA_side.jpg?1629484551"
+             loading="lazy"
+             alt="" />
+</a>  </figure>
+
+      <div class="text-element">
+  
+        <p>Nice sensor, right? So we made it easy for you to get right into your next project. The sensor is soldered onto a custom-made PCB in the <a title="STEMMA QT form factor" href="https://www.adafruit.com/?q=stemma%20qt%20sensor"><strong>STEMMA QT</strong>&nbsp;form factor</a>, making them easy to interface with. The&nbsp;<a href="https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt">STEMMA QT connectors</a>&nbsp;on either side are compatible with the&nbsp;<a href="https://www.sparkfun.com/qwiic">SparkFun Qwiic</a>&nbsp;I2C connectors. This allows you to make solderless connections between your development board and the SCD-4x or to chain it with a wide range of other sensors and accessories using a&nbsp;<a href="https://www.adafruit.com/?q=stemma%20qt%20cable"><strong>compatible cable</strong></a>.</p>
+      
+</div>
+
+        <figure class="element image-element">
+    <a href="/assets/145642">
+        <img class="145642-asset"
+             srcset="https://cdn-learn.adafruit.com/assets/assets/000/145/642/small360/adafruit_products_6512-02.jpg?1786993802 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/145/642/medium640/adafruit_products_6512-02.jpg?1786993802 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/145/642/medium800/adafruit_products_6512-02.jpg?1786993802 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/145/642/large1024/adafruit_products_6512-02.jpg?1786993802 1024w"
+              sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px"
+             src="https://cdn-learn.adafruit.com/assets/assets/000/145/642/medium800/adafruit_products_6512-02.jpg?1786993802"
+             loading="lazy"
+             alt="" />
+</a>  </figure>
+
+      <div class="text-element">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        <p>This sensor can run from 3.3 to 5V, but it's more important for it to have a quiet power supply with low ripple, than any particular voltage. For that reason, we've added a 3.3V regulator and level shifters: when connecting to a 5V microcontroller like an Arduino UNO the 5V supply is often shared with other electronic components that add noise. The onboard regulator will keep the voltage nice and quiet. For advanced hackers, they can cut/solder the backtraces to change whether the regulator is enabled and what I2C logic level is desired.</p>
+      
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+  </div>
+
+
+          <div class="page-last-updated">
+  <p>Page last edited August 19, 2026</p>
+</div>
+
+        </div>
+
+        <div class="page-navigation">
+            <a class="next-page btn-primary large" aria-label="Next page" href="/adafruit-scd-40-and-scd-41/pinouts">
+              Pinouts&nbsp;<i class="fa fa-chevron-right"></i>
+</a>        </div>
+    </div>
+  </div>
+</article>
+
+    <div class="related-guides-wrapper">
+  <section class="content-card-group-preview">
+  <div class="group-preview-headline">
+    <div class="title">
+      Related Guides
+    </div>
+
+    
+  </div>
+
+  <a class="scroll-back"><i class="fa fa-angle-left"></i></a>
+  <div class="content-card-group-container">
+    <div class="content-card-group">
+      <!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/iot-canary">
+      <div class="image-container">
+          <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline tabindex="-1" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/662/medium640thumb/hero-loop-b.gif?1663594449" aria-hidden="true">
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/662/medium640mp4/hero-loop-b.mp4?1663594449"></source>
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/662/medium640webm/hero-loop-b.webm?1663594449" type="video/webm; codecs=vp8,vorbis"></source>
+      Your browser does not support the video tag. This links to the guide No-Code IoT CO2 &quot;Canary In a Coalmine&quot;.
+  </video>
+<img loading="lazy" alt="A 3D-printed bird mounted on a rotating disc attached to a wall, with a white cable extending from the bottom." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/662/medium640thumb/hero-loop-b.gif?1663594449" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/iot-canary">No-Code IoT CO2 &quot;Canary In a Coalmine&quot;</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/pixil3d">
+        <span class="name">Ruiz Brothers</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 36 times" aria-label="This guide has been saved 36 times">
+    <span>36</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/no-code-indoor-grow-monitor">
+      <div class="image-container">
+        <img loading="lazy" alt="A potted plant with dark green and purple leaves sits on a black background. Mounted above the plant is a white 3D-printed sensor device. In front of the pot, a smartphone displays a dashboard with circular gauges showing environmental metrics." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/345/medium640/hero-phone-plant-wide.jpg?1759276631" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/no-code-indoor-grow-monitor">No-Code Indoor Grow Monitor with PPFD and VPD...</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/brubell">
+        <span class="name">Brent Rubell</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 10 times" aria-label="This guide has been saved 10 times">
+    <span>10</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/disconnected-co2-data-logger">
+      <div class="image-container">
+        <img loading="lazy" alt="A square electronic device with a central CO2 sensor and four screws on the front panel, set against a bright yellow background." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/447/medium640/edited_P1310786.jpg?1635171726" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/disconnected-co2-data-logger">Disconnected CO2 Data Logger</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/BlitzCityDIY">
+        <span class="name">Liz Clark</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 37 times" aria-label="This guide has been saved 37 times">
+    <span>37</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/aqi-case">
+      <div class="image-container">
+        <img loading="lazy" alt="A small Monitor Air Quality device with a color screen and LED indicators is strapped to a wrist outdoors. The screen shows various colored icons." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/779/medium640/hero-falcon.jpg?1679940671" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/aqi-case">Air Quality Monitor and Case</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/pixil3d">
+        <span class="name">Ruiz Brothers</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 53 times" aria-label="This guide has been saved 53 times">
+    <span>53</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/diy-trinkey-no-solder-air-quality-monitor">
+      <div class="image-container">
+        <img loading="lazy" alt="An air quality sensor module with a metal casing is connected to a laptop via a Trinkey via colorful wires. Visible pins include VIN, GND, SCL, and SDA." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/493/medium640/thumb.jpg?1640116912" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/diy-trinkey-no-solder-air-quality-monitor">DIY Trinkey No-Soldering USB Air Quality Monitor</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/caternuson">
+        <span class="name">Carter Nelson</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 45 times" aria-label="This guide has been saved 45 times">
+    <span>45</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/using-piezo-buzzers-with-wippersnapper">
+      <div class="image-container">
+        <img loading="lazy" alt="Image where the top section shows an Adafruit Feather ESP32 V2 connected to a piezo buzzer on a half-sized breadboard and the bottom half shows a WipperSnapper device page displaying the buzzer&#39;s state." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/721/medium640/ksnip_20230104-161956.png?1672867375" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/using-piezo-buzzers-with-wippersnapper">Using Piezo Buzzers with WipperSnapper</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/eherrada">
+        <span class="name">Eva Herrada</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 5 times" aria-label="This guide has been saved 5 times">
+    <span>5</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/raspberry-pi-iot-dashboard-with-azure-and-circuitpython">
+      <div class="image-container">
+        <img loading="lazy" alt="A monitor displays temperature, humidity, and pressure data for two rooms. Below, three sensor setups and a Raspberry Pi are arranged on stands." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/645/medium640/edited_P1380700.jpg?1660851529" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/raspberry-pi-iot-dashboard-with-azure-and-circuitpython">Raspberry Pi Azure IoT Hub Dashboard with CircuitPython</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/BlitzCityDIY">
+        <span class="name">Liz Clark</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      intermediate
+    </div>
+
+  <div class="badge favorites " title="Saved 40 times" aria-label="This guide has been saved 40 times">
+    <span>40</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/adafruit-chainable-ds18b20-extender-breakout">
+      <div class="image-container">
+        <img loading="lazy" alt="A small Chainable DS18B20 Extender Breakout board featuring a green terminal block and two JST connectors. Labeled &quot;STEMMA&quot; and &quot;DS18B20&quot; for sensor integration." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/010/medium640/5971-03.jpg?1717420301" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/adafruit-chainable-ds18b20-extender-breakout">Adafruit Chainable DS18B20 Extender Breakout</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/BlitzCityDIY">
+        <span class="name">Liz Clark</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge product-guide" aria-label="Product guide">
+      Product Guide
+    </div>
+
+  <div class="badge favorites " title="Saved 2 times" aria-label="This guide has been saved 2 times">
+    <span>2</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/ble-darksaber-propmaker">
+      <div class="image-container">
+        <img loading="lazy" alt="A black 3D printed Darksaber sword with a detailed hilt is mounted on a triangular stand. The blade has a sleek, reflective surface." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/227/medium640/hero-hilt-stand.jpg?1610721252" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/ble-darksaber-propmaker">DIY Darksaber Build - 3D Print with PropMaker...</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/pixil3d">
+        <span class="name">Ruiz Brothers</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      advanced
+    </div>
+
+  <div class="badge favorites " title="Saved 147 times" aria-label="This guide has been saved 147 times">
+    <span>147</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/portable-macrodata-refinement-terminal">
+      <div class="image-container">
+          <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline tabindex="-1" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/205/medium640thumb/playing.gif?1741116555" aria-hidden="true">
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/205/medium640mp4/playing.mp4?1741116555"></source>
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/205/medium640webm/playing.webm?1741116555" type="video/webm; codecs=vp8,vorbis"></source>
+      Your browser does not support the video tag. This links to the guide Severance Portable Macrodata Refinement Terminal.
+  </video>
+<img loading="lazy" alt="A person playing the macrodata refinement program with the trackball mouse.. The monochrome green and white screen has many groups of numbers and labeled bins on the last line below them." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/205/medium640thumb/playing.gif?1741116555" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/portable-macrodata-refinement-terminal">Severance Portable Macrodata Refinement Terminal</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/BlitzCityDIY">
+        <span class="name">Liz Clark</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      intermediate
+    </div>
+
+  <div class="badge favorites " title="Saved 34 times" aria-label="This guide has been saved 34 times">
+    <span>34</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/adafruit-metro-mini">
+      <div class="image-container">
+        <img loading="lazy" alt="A black Feather 32u4 microcontroller board with a micro USB port, pin headers, and white labeled pins for easy prototyping and connectivity." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/001/734/medium640/2590-01.jpg?1502682497" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/adafruit-metro-mini">Adafruit Metro Mini</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/adafruit2">
+        <span class="name">lady ada</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge product-guide" aria-label="Product guide">
+      Product Guide
+    </div>
+
+  <div class="badge favorites " title="Saved 18 times" aria-label="This guide has been saved 18 times">
+    <span>18</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/adafruit-i2c-to-8-channel-solenoid-driver">
+      <div class="image-container">
+        <img loading="lazy" alt="I2C to 8 Channel Solenoid Driver board with green terminal blocks for connections, featuring a central microcontroller, 2 STEMMA QT I2C connectors and multiple pin headers." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/234/medium640/6318-00.jpg?1744640604" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/adafruit-i2c-to-8-channel-solenoid-driver">Adafruit I2C to 8 Channel Solenoid Driver</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/BlitzCityDIY">
+        <span class="name">Liz Clark</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge product-guide" aria-label="Product guide">
+      Product Guide
+    </div>
+
+  <div class="badge favorites " title="Saved 9 times" aria-label="This guide has been saved 9 times">
+    <span>9</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/getting-started-with-the-nrf8001-bluefruit-le-breakout">
+      <div class="image-container">
+        <img loading="lazy" alt="Blue square circuit board labeled &quot;nRF8001 Bluetooth LE&quot; in white with various electronic components and connection pins on a black background." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/000/530/medium640/1697_LRG.jpg?1534970425" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/getting-started-with-the-nrf8001-bluefruit-le-breakout">Getting Started with the nRF8001 Bluefruit LE Breakout</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/ktownsend">
+        <span class="name">Kevin Townsend</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 39 times" aria-label="This guide has been saved 39 times">
+    <span>39</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/spinning-disc-step-sequencer">
+      <div class="image-container">
+          <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline tabindex="-1" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/351/medium640thumb/disc_seq.gif?1547060866" aria-hidden="true">
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/351/medium640mp4/disc_seq.mp4?1547060866"></source>
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/351/medium640webm/disc_seq.webm?1547060866" type="video/webm; codecs=vp8,vorbis"></source>
+      Your browser does not support the video tag. This links to the guide Spinning Disc Step Sequencer.
+  </video>
+<img loading="lazy" alt="A rotating disc step sequencer is connected to a breadboard and a Feather microcontroller plus Crickit motor board with various wires. The setup includes a speaker for audio output." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/351/medium640thumb/disc_seq.gif?1547060866" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/spinning-disc-step-sequencer">Spinning Disc Step Sequencer</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/johnpark">
+        <span class="name">John Park</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      intermediate
+    </div>
+
+  <div class="badge favorites " title="Saved 54 times" aria-label="This guide has been saved 54 times">
+    <span>54</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/adafruit-i2s-stereo-decoder-uda1334a">
+      <div class="image-container">
+        <img loading="lazy" alt="Blue circuit board featuring a UDA1334 I2S DAC with various components, including capacitors, resistors, and a headphone jack. Labels indicate connections for SCLK, MUTE, PLL, and other pins." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/001/837/medium640/thm.jpg?1511289127" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/adafruit-i2s-stereo-decoder-uda1334a">Adafruit I2S Stereo Decoder - UDA1334A</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/adafruit2">
+        <span class="name">lady ada</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge product-guide" aria-label="Product guide">
+      Product Guide
+    </div>
+
+  <div class="badge favorites " title="Saved 33 times" aria-label="This guide has been saved 33 times">
+    <span>33</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+  <a class="scroll-forward"><i class="fa fa-angle-right"></i></a>
+</section>
+
+</div>
+
+
+
+
+<div class="dialog-container modal"
+     id="create-wishlist-modal"
+     data-modals-target="modal"
+     aria-labelledby="dialog-title"
+     aria-hidden="true">
+  <div class="dialog-overlay" data-a11y-dialog-hide></div>
+  <div class="dialog-content">
+    <div class="dialog-header">
+      <h5 class="dialog-title">Create Wishlist</h5>
+      <a href="#" class="dialog-close" data-a11y-dialog-hide="create-wishlist-modal" aria-label="Close this dialog window">&times;</a>
+    </div>
+    <form>
+      <div class="dialog-body">
+        <div class="form-group">
+          <label for="wishlist_title">Title</label>
+          <input type="text" name="wishlist_title" id="wishlist_title" />
+        </div>
+
+        <div class="form-group">
+          <label for="wishlist_description">Description</label>
+          <textarea name="wishlist_description" id="wishlist_description">
+</textarea>
+        </div>
+      </div>
+      <div class="dialog-footer">
+        <input type="submit" name="commit" value="Create Wishlist" class="btn-primary" id="create-wishlist" data-disable-with="Create Wishlist" />
+        <a href="#" class="dialog-close" data-a11y-dialog-hide="create-wishlist-modal" aria-label="Close this dialog window">Close</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+        </div>
+
+        <div id="search-container">
+  <div class="toolbar-primary">
+    <div class="content">
+      <div class="left-content">
+        <div class="breadcrumbs">
+          <a href="https://learn.adafruit.com" aria-label="Home page"><i class='fa fa-home'></i></a>
+          <i class="fa fa-chevron-right separator"></i> Search <i class="fa fa-chevron-right separator"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-header">
+    <div class="header-intro">
+      <h1 class="title">Search</h1>
+    </div>
+
+    <div class="header-main-content-wrapper">
+      <div class="header-main-content">
+        <div id="search-refinements" class="breakdown">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-content left-sidebar-layout">
+    <div>
+      <div class="facets-wrapper">
+        <h5 class="search-refinement-header">Categories</h5>
+        <div id="search-categories"></div>
+      </div>
+    </div>
+
+    <div>
+      <div id="search-results" class="search-content-card-group"></div>
+
+      <div id="search-pagination" class="pagination"></div>
+    </div>
+  </div>
+</div>
+
+
+        <div id='main-content-overlay'></div>
+      </main>
+        <footer id="adafruit-footer">
+    <div class="footer-container">
+      <div>
+        <ul>
+          <li>
+            <a href="https://www.adafruit.com/contact_us">Contact Us</a>
+          </li>
+          <li>
+            <a href="https://forums.adafruit.com/">Tech Support Forums</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/faq">FAQs</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/shippinginfo">Shipping &amp; Returns</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/free">Freebies</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/terms_of_service">Terms of Service</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/privacy">Privacy &amp; Legal</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/accessibility">Website Accessibility</a>
+          </li>
+          <li>
+            <a href="/llms.txt">LLMs.txt</a>
+          </li>
+        </ul>
+        <button type="button" class="theme-toggle "
+  data-controller="theme" data-action="theme#cycle"
+  aria-label="Change color theme (current: system)">
+  <i class="fa fa-circle-half-stroke" aria-hidden="true" data-theme-target="icon"></i>
+    <span data-theme-target="label">Theme: System</span>
+</button>
+
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="https://www.adafruit.com/about">About Us</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/press">Press</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/educators">Educators</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/distributors">Distributors</a>
+          </li>
+          <li>
+            <a href="https://jobs.adafruit.com">Jobs</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/category/14">Gift Cards</a>
+          </li>
+        </ul>
+      </div>
+      <aside>
+        <div class="quote">"Anything not saved will be lost"</div>
+        <div class="quote-attribution"><a href="https://en.wikipedia.org/wiki/Everything_Not_Saved_Will_Be_Lost_%E2%80%93_Part_1#Album_artwork_and_title">Nintendo Wii 'Quit Screen'</a></div>
+      </aside>
+    </div>
+    <div class="footer-container bottom">
+      <a title="About Adafruit" id="footer-logo" href="https://learn.adafruit.com">
+        <img alt="Adafruit Logo" src="/logos/adafruit_logo_small.png?3343756081246158728" />
+</a>
+      <div class="social-links">
+        <a href="https://www.instagram.com/adafruit/" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+        <a href="https://twitter.com/adafruit/" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+        <a class="mastodon-logo" href="https://fosstodon.org/@adafruit" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Mastodon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216.4144 232.00976"><path class="logo" d="M211.80734 139.0875c-3.18125 16.36625-28.4925 34.2775-57.5625 37.74875-15.15875 1.80875-30.08375 3.47125-45.99875 2.74125-26.0275-1.1925-46.565-6.2125-46.565-6.2125 0 2.53375.15625 4.94625.46875 7.2025 3.38375 25.68625 25.47 27.225 46.39125 27.9425 21.11625.7225 39.91875-5.20625 39.91875-5.20625l.8675 19.09s-14.77 7.93125-41.08125 9.39c-14.50875.7975-32.52375-.365-53.50625-5.91875C9.23234 213.82 1.40609 165.31125.20859 116.09125c-.365-14.61375-.14-28.39375-.14-39.91875 0-50.33 32.97625-65.0825 32.97625-65.0825C49.67234 3.45375 78.20359.2425 107.86484 0h.72875c29.66125.2425 58.21125 3.45375 74.8375 11.09 0 0 32.975 14.7525 32.975 65.0825 0 0 .41375 37.13375-4.59875 62.915" fill="currentColor"/><path d="M177.50984 80.077v60.94125h-24.14375v-59.15c0-12.46875-5.24625-18.7975-15.74-18.7975-11.6025 0-17.4175 7.5075-17.4175 22.3525v32.37625H96.20734V85.42325c0-14.845-5.81625-22.3525-17.41875-22.3525-10.49375 0-15.74 6.32875-15.74 18.7975v59.15H38.90484V80.077c0-12.455 3.17125-22.3525 9.54125-29.675 6.56875-7.3225 15.17125-11.07625 25.85-11.07625 12.355 0 21.71125 4.74875 27.8975 14.2475l6.01375 10.08125 6.015-10.08125c6.185-9.49875 15.54125-14.2475 27.8975-14.2475 10.6775 0 19.28 3.75375 25.85 11.07625 6.36875 7.3225 9.54 17.22 9.54 29.675" fill="#000"/></svg></a>
+
+        <a href="https://www.facebook.com/adafruitindustries" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+        <a href="https://www.youtube.com/adafruit" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on YouTube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+
+        <a href="https://github.com/adafruit" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Github"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+        <a class="tiktok-logo" aria-label="Adafruit on TikTok" href="https://www.tiktok.com/@adafruit"  target="_blank" rel="noopener noreferrer"><svg viewBox="3 2 20 22" xmlns="http://www.w3.org/2000/svg"><path class="logo" d="M19.8059 7.50695C18.7771 7.50695 17.8278 7.16612 17.0655 6.59113C16.1912 5.93198 15.5631 4.9651 15.3412 3.85069C15.2863 3.57534 15.2567 3.29119 15.2539 3H12.3149V11.0308L12.3114 15.4297C12.3114 16.6057 11.5455 17.6029 10.4839 17.9536C10.1758 18.0553 9.8431 18.1036 9.49663 18.0846C9.05438 18.0603 8.63995 17.9268 8.27975 17.7113C7.51322 17.2529 6.99351 16.4212 6.97942 15.4698C6.95724 13.9829 8.15933 12.7706 9.64522 12.7706C9.93852 12.7706 10.2202 12.8185 10.4839 12.9054V10.7104V9.92134C10.2058 9.88015 9.92268 9.85867 9.63641 9.85867C8.01004 9.85867 6.48894 10.5347 5.40164 11.7526C4.57982 12.6731 4.08687 13.8473 4.01082 15.0786C3.91117 16.6962 4.50306 18.2339 5.65093 19.3683C5.81959 19.5349 5.9967 19.6895 6.1819 19.8321C7.16604 20.5894 8.36919 21 9.63641 21C9.92268 21 10.2058 20.9789 10.4839 20.9377C11.6677 20.7623 12.7599 20.2204 13.6219 19.3683C14.681 18.3215 15.2662 16.9318 15.2726 15.4526L15.2574 8.88369C15.7627 9.27347 16.3152 9.596 16.9081 9.84635C17.8303 10.2354 18.8081 10.4326 19.8144 10.4322V8.29814V7.50625C19.8151 7.50695 19.8066 7.50695 19.8059 7.50695Z" fill="currentColor"/></svg></a>
+
+        <a class="tumblr-logo" aria-label="Adafruit on Tumblr" href="https://adafruit.tumblr.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+
+        <a class="threads-logo" href="https://www.threads.net/@adafruit" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Threads"><span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8c29.2 14.1 50.6 35.2 61.8 61.4c15.7 36.5 17.2 95.8-30.3 143.2c-36.2 36.2-80.3 52.5-142.6 53h-.3c-70.2-.5-124.1-24.1-160.4-70.2c-32.3-41-48.9-98.1-49.5-169.6V256v-.2C17 184.3 33.6 127.2 65.9 86.2C102.2 40.1 156.2 16.5 226.4 16h.3c70.3 .5 124.9 24 162.3 69.9c18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4c-29.2-35.8-73-54.2-130.5-54.6c-57 .5-100.1 18.8-128.2 54.4C72.1 146.1 58.5 194.3 58 256c.5 61.7 14.1 109.9 40.3 143.3c28 35.6 71.2 53.9 128.2 54.4c51.4-.4 85.4-12.6 113.7-40.9c32.3-32.2 31.7-71.8 21.4-95.9c-6.1-14.2-17.1-26-31.9-34.9c-3.7 26.9-11.8 48.3-24.7 64.8c-17.1 21.8-41.4 33.6-72.7 35.3c-23.6 1.3-46.3-4.4-63.9-16c-20.8-13.8-33-34.8-34.3-59.3c-2.5-48.3 35.7-83 95.2-86.4c21.1-1.2 40.9-.3 59.2 2.8c-2.4-14.8-7.3-26.6-14.6-35.2c-10-11.7-25.6-17.7-46.2-17.8H227c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1h.8c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3c25.6-1.4 54.6-11.4 59.5-73.2c-13.2-2.9-27.8-4.4-43.4-4.4c-4.8 0-9.6 .1-14.4 .4c-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z"/></svg></span></a>
+
+        <a class="discord-logo" aria-label="Adafruit on Discord" href="https://adafru.it/discord" target="_blank" rel="noopener noreferrer"><svg style="height: 1em; margin-bottom: -0.15em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"><path fill="currentColor" d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg></a>
+
+        <a class="bluesky-logo" aria-label="Adafruit on Bluesky" href="https://bsky.app/profile/adafruit.com" target="_blank" rel="noopener noreferrer"><svg style="height: 1em; margin-bottom: -0.15em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"/></svg>
+</a>
+      </div>
+      <div class="footer-messaging">
+        <a href="https://www.adafruit.com/about">A Minority and Woman-owned Business Enterprise (M/WBE)</a>
+      </div>
+    </div>
+  </footer>
+
+    </div>
+  </div>
+
+  <div id="remote-modal-wrapper"></div>
+</body>
+</html>

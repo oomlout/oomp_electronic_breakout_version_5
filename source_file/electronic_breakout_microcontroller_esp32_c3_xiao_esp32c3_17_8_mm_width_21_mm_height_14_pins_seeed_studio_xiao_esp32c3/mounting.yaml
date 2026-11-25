@@ -1,0 +1,115 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3
+status: no_holes
+board_revision: XIAO ESP32-C3 carrier PCB Rev v1.3; manufacturer KiCad archive XIAO_ESP32C3_v1.3_KiCad_260116.zip,
+  board member XIAO ESP32C3_v1.3.kicad_pcb (schematic title block Rev v1.3).
+identity_evidence: The Seeed Studio product guide names Seeed Studio XIAO ESP32C3
+  and links its PCB design files. The page 6 manufacturer package/PCB drawing identifies
+  XIAO ESP32C3, Seeed SKU 113991054. The official versioned KiCad archive contains
+  XIAO ESP32C3_v1.3.kicad_pcb; its bytes match the archived reference/board.kicad_pcb
+  SHA-256. The associated manufacturer schematic title block and revision history
+  identify the carrier as Rev v1.3.
+board_size:
+- 17.8
+- 21.0
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: drawing
+derivation: 'Drawing page 6 labels the XIAO ESP32C3 board outline 17.8 mm wide by
+  21.0 mm tall, dimensions in mm; these nominal manufacturer dimensions define the
+  output bounding box. The archived v1.3 KiCad board outline independently measures
+  20.955 mm along native X and 17.78 mm along native Y (x max-min and y max-min from
+  the complete Edge.Cuts contour). KiCad native X is rotated into canonical top view
+  by 90 degrees CCW: (x_c,y_c)=(-(y-y_cad_center), x-x_cad_center); this maps the
+  USB-C connector at positive native X to positive canonical Y (towards top), swaps
+  the extents, and keeps canonical X right/Y up. The manufacturer drawing rounds these
+  extents to 17.8 x 21.0 mm. Reviewed every through-drill candidate in the full CAD:
+  J1/J2 are electrical castellated/header pads, USB0 drills are connector shield anchors,
+  and BOOT0/RST0 drills are button-footprint actuation/retention features; none are
+  board mounting holes. No other drilled pads or board mounting-hole features are
+  present. Thus the mounting pattern is explicitly empty.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  local_file: mounting_evidence/XIAO_ESP32C3_Getting_Started.html
+  url: https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
+  kind: manufacturer_product
+  locator: Getting Started identity/specifications and Hardware Design Resources;
+    confirms XIAO ESP32C3 product, 21 x 17.8 mm, and links the versioned KiCad project
+    and dimension resources
+  registered_at: '2026-11-06T17:37:16+00:00'
+  bytes: 124883
+  sha256: 019b8559ad164be7790c4cb07c1938dc3224dca6b3e72f593d202dd6f44b999a
+- id: drawing
+  local_file: mounting_evidence/Seeed-Studio-XIAO-Series-Package-and-PCB-Design.pdf
+  url: https://www.seeedstudio.com/blog/wp-content/uploads/2022/08/Seeed-Studio-XIAO-Series-Package-and-PCB-Design.pdf
+  kind: manufacturer_drawing
+  locator: 'Page 6: Seeed Studio XIAO ESP32C3, Seeed SKU 113991054, recommended PCB
+    land pattern; dimensions in mm, board outline 17.8 x 21.0'
+  registered_at: '2026-11-06T17:37:17+00:00'
+  bytes: 629257
+  sha256: 25e9dc961719df965c81c3424111b70d127c8e8255147fad16634c8e8cdd4267
+- id: cad
+  local_file: reference/board.kicad_pcb
+  url: https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_KiCad_260116.zip
+  kind: manufacturer_cad
+  locator: Archive member XIAO ESP32C3_v1.3.kicad_pcb from XIAO_ESP32C3_v1.3_KiCad_260116.zip;
+    verified byte-identical to the previously archived local board.kicad_pcb; complete
+    Edge.Cuts and all pad/drill definitions reviewed for mounting features
+  registered_at: '2026-11-06T17:37:18+00:00'
+  bytes: 697553
+  sha256: a761393935ff261a58fee3e3d7ecfb65152eaba8620de64ff7758fb0c043d1db
+- id: schematic
+  local_file: reference/XIAO_ESP32C3_v1.3_SCH_260116.pdf
+  url: https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_SCH_260116.pdf
+  kind: manufacturer_schematic
+  locator: Title block and revision history identify XIAO ESP32-C3, Rev v1.3; corroborates
+    carrier board revision
+  registered_at: '2026-11-06T17:37:18+00:00'
+  bytes: 424362
+  sha256: 60d7d447d0d37b0c3ff6c50d372a45d50f750070b8b9d68ca7b906df43365081
+attempts:
+- source_id: product
+  result: Official Seeed product page establishes exact product identity, published
+    dimensions, and links official CAD/dimension resources.
+- source_id: drawing
+  result: Reviewed the dimensioned manufacturer drawing on page 6 for SKU 113991054
+    and 17.8 x 21.0 mm board outline.
+- source_id: cad
+  result: Reviewed complete manufacturer v1.3 KiCad carrier design and every drill
+    candidate; all drills belong to connector/header/button features, with no mounting
+    holes.
+- source_id: cad
+  result: Compared downloaded versioned archive member with pre-existing archived
+    CAD; byte-identical and SHA-256 matched the mounting context.
+conflicts: []
+notes:
+- Official DXF resource XIAO-ESP32C3-DXF.zip was downloaded and inspected; top.dxf
+  and bottom.dxf contain top/bottom artwork without board outline/dimension layer,
+  so not used for geometry.
+- Manufacturer package drawing is dated 2022 and gives nominal rounded outline dimensions;
+  the v1.3 carrier revision changed components per manufacturer schematic history.
+  Full v1.3 CAD confirms the outline extents and empty mounting pattern.
+- All acquisition/downloads recorded on 2026-11-06. Registered files preserve their
+  hashes; see source records.
+- The standard holder is generated geometry only. Component, connector, screw-head
+  and underside clearance remain unverified; no physical fit test was performed.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T17:39:00+00:00'
+identity_source_ids:
+- product
+- drawing
+- cad
+- schematic

@@ -1,0 +1,126 @@
+schema_version: 1
+part_id: electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242
+status: verified
+board_revision: SparkFun Qwiic Scale carrier SEN-15242; exact Hardware/Qwiic_Scale.brd
+  from official SparkFun Qwiic_Scale repository pinned at ab136d756a781f9ff104c225318d1604af385aac
+  (2019-04-11 repository snapshot; EAGLE XML 9.3.0). No separate PCB spin label is
+  present in the CAD.
+identity_evidence: SparkFun product page identifies SKU SEN-15242 as Qwiic Scale NAU7802.
+  The pinned official Qwiic_Scale repository README names SparkFun Qwiic Scale (SEN-15242),
+  calls the repository its hardware repo, and states Hardware/ contains Eagle design
+  files; the selected filename is Hardware/Qwiic_Scale.brd.
+board_size:
+- 25.4
+- 35.56
+mounting_holes:
+- id: JP31:hole:1
+  x_mm: -10.16
+  y_mm: -15.24
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+- id: JP41:hole:1
+  x_mm: -10.16
+  y_mm: 15.24
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+- id: JP91:hole:1
+  x_mm: 10.16
+  y_mm: -15.24
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+- id: JP101:hole:1
+  x_mm: 10.16
+  y_mm: 15.24
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: 'Exact pinned EAGLE XML CAD uses native mm. Layer-20 outline consists
+  of four straight segments with bounds x=0..25.4 and y=0..35.56, giving board size
+  25.4 x 35.56 mm and native bounding-box centre (12.7,17.78). No reflection or rotation
+  (quarter_turn=0); canonical top-view transform is x_mm=x_native_mm-12.7 and y_mm=y_native_mm-17.78.
+  Reviewed all 25 drilled candidates. Selected only the four explicit non-plated holes
+  in package STAND-OFF (JP31, JP41, JP91, JP101), each 3.302 mm PCB drill. Excluded
+  21 plated pad drills: J3/J5/JP1/JP2 header contacts and J7 spring-terminal connector
+  anchors. CAD hole coordinates were transformed by the stated translation.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad
+  local_file: mounting_evidence/Qwiic_Scale.brd
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Scale/ab136d756a781f9ff104c225318d1604af385aac/Hardware/Qwiic_Scale.brd
+  kind: manufacturer_cad
+  locator: SparkFun Qwiic_Scale repository, commit ab136d756a781f9ff104c225318d1604af385aac;
+    exact Hardware/Qwiic_Scale.brd EAGLE XML; review layer 20 outline and all holes/drills;
+    README identifies repo as Qwiic Scale SEN-15242.
+  registered_at: '2026-11-06T19:30:16+00:00'
+  bytes: 366046
+  sha256: 5d42c75b75fe770cdee436ae9db418a850a37b304bc65e12195ecabf3f494533
+- id: product
+  local_file: website.html
+  url: https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html
+  kind: manufacturer_product
+  locator: SparkFun product listing identifies SKU SEN-15242 as Qwiic Scale NAU7802;
+    the linked dedicated hardware repository is the carrier CAD source.
+  registered_at: '2026-11-06T19:30:17+00:00'
+  bytes: 575731
+  sha256: c44a7fa24cc2fbf7bfedd00f0711b75b84ca1335f761e3c728ea9ce0c7aaac4b
+- id: repository
+  local_file: mounting_evidence/README.md
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Scale/ab136d756a781f9ff104c225318d1604af385aac/README.md
+  kind: manufacturer_repository
+  locator: Pinned official repository README states SparkFun Qwiic Scale SEN-15242,
+    calls this the hardware repo, and identifies Hardware/ as Eagle design files.
+  registered_at: '2026-11-06T19:31:05+00:00'
+  bytes: 2038
+  sha256: d191613b03d5a3dd5df926731fdc423f5802e607caea84eba5092a542900292d
+attempts:
+- Reviewed SparkFun product page and pinned official hardware repository README to
+  establish exact SEN-15242 identity and CAD link.
+- Downloaded and reviewed the complete pinned Hardware/Qwiic_Scale.brd EAGLE XML,
+  layer-20 outline, every drilled candidate, element names and STAND-OFF package definition.
+conflicts: []
+notes:
+- No separately named PCB spin is identified in the pinned official CAD; geometry
+  is reported for the exact archived official repository board file.
+- Four selected holes are unplated 3.302 mm PCB drills. Other drilled features are
+  connector/header pads or spring-terminal anchors and are excluded.
+- EAGLE CAD and repository README were acquired with requests on 2026-11-06; URLs,
+  commit pin, registration timestamps and SHA-256 hashes are recorded in sources.
+- Standard holder is generated geometry only. Component, connector, screw-head and
+  underside clearances, plus physical fit, remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T19:32:00+00:00'
+extraction:
+  selected_ids:
+  - JP31:hole:1
+  - JP41:hole:1
+  - JP91:hole:1
+  - JP101:hole:1
+  quarter_turn: 0
+  native_centre_mm:
+  - 12.7
+  - 17.78
+identity_source_ids:
+- product
+- repository
+- cad

@@ -1,0 +1,117 @@
+{
+  "record_sha256": "d41c228a5e1cee31ad40e40b3b25615960b13793e564a117dcb083119c2bb00d",
+  "generated_at": "2026-11-07T11:46:03+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895/3dpr.scad",
+      "bytes": 2939,
+      "sha256": "430be1d2e605314fec1c87540ed0f70566d0300fa7dd88e279402f683cc5b004"
+    },
+    {
+      "path": "parts/electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895/3dpr_short_sides.scad",
+      "bytes": 2047,
+      "sha256": "891f5d9cf533ef402520f4a0c25950bcee0e8559cea22842f79a36b59edd8f30"
+    },
+    {
+      "path": "parts/electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895/3dpr_long_side.scad",
+      "bytes": 1695,
+      "sha256": "e14894be3f0e3faf17021599de9b36c329d06937ec11a53fe4936df6e2592eaf"
+    },
+    {
+      "path": "parts/electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895/3dpr.stl",
+      "bytes": 1267590,
+      "sha256": "5daeab04a0ba0c95b76f63f5edb88c0177a11dad1b08025a14b32c0ee8003e0d"
+    },
+    {
+      "path": "parts/electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895/3dpr_short_sides.stl",
+      "bytes": 587242,
+      "sha256": "51da2dc1196a264e75ac3cd7b4468d5dee76ba32e04e73f1d0462fe5c731d3be"
+    },
+    {
+      "path": "parts/electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895/3dpr_long_side.stl",
+      "bytes": 439255,
+      "sha256": "b5812833eff24e44353b32f3348bf152ec82690ac9e978f72358bdfc5d4eeb10"
+    },
+    {
+      "path": "parts/electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895/mounting_variants.json",
+      "bytes": 4189,
+      "sha256": "a5defc7343704a57bc92e38135fa253aaa9261168953a20652adea87a15dab1e"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 6479.614991185349,
+    "bounds_mm": [
+      [
+        -29.5,
+        -21.99013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        21.99013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 6479.614991185349,
+        "bounds_mm": [
+          [
+            -29.5,
+            -21.99013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            21.99013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 5304.727323019691,
+        "bounds_mm": [
+          [
+            -29.5,
+            -21.99013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            10.610133642141362,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 3589.7940851188146,
+        "bounds_mm": [
+          [
+            -14.5,
+            -21.99013364214136,
+            0.0
+          ],
+          [
+            14.5,
+            21.99013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

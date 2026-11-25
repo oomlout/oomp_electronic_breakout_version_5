@@ -1,0 +1,399 @@
+board_variant: qwiic
+breakout_description: qwiic
+breakout_pcb_height: 30.48
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Manufacturer nominal outline is not a traced CAD perimeter.
+definition_authority: working_oomp_populate_i2c.py
+description: A dial, push-button and RGB indicator accessible over I2C. Its tall assembly
+  is useful to document separately from flat sensor boards. This leaf names the assembled
+  product rather than inventing an unverified controller IC.
+dimensions_mm:
+  height: 30.5
+  scope: nominal_pcb_outline
+  source_id: product
+  status: manufacturer_nominal
+  width: 25.4
+geometry_ready: false
+i2c:
+  address_evidence_status: partial_product_page_evidence
+  address_selection: solder_jumper_or_software
+  clock_stretching: unverified
+  default_address_7bit: 63
+  documented_addresses_7bit:
+  - 62
+  - 63
+  maximum_clock_hz: null
+  source_id: product
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+manufacturer: sparkfun
+manufacturer_part_number: DEV-15083
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 3.302
+  id: JP3:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: -12.7
+- diameter_mm: 3.302
+  id: JP4:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 12.7
+- diameter_mm: 3.302
+  id: JP11:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: -12.7
+- diameter_mm: 3.302
+  id: JP13:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 12.7
+mounting_hole_radius_name: m3
+mounting_hole_radius_names:
+- m3
+- m3
+- m3
+- m3
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - -12.7
+- - -10.16
+  - 12.7
+- - 10.16
+  - -12.7
+- - 10.16
+  - 12.7
+mounting_lift: 3
+mounting_research:
+  board_revision: SparkFun Qwiic Twist (DEV-15083) EAGLE hardware as published at
+    official SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182;
+    exact file Hardware/Qwiic Twist.brd. No separate silkscreen revision established.
+  board_size:
+  - 25.4
+  - 30.48
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'Complete EAGLE layer-20 outline bounds are native x=[0,30.48] mm and
+    y=[0,25.4] mm, so board_size native=[30.48,25.4] mm and native bounding-box centre=(15.24,12.7)
+    mm. A CCW quarter-turn (quarter_turn=1) maps the native landscape bounds to canonical
+    product orientation 25.4 x 30.48 mm, matching the manufacturer nominal 25.4 x
+    30.5 mm. For every feature, first centre native coordinates: xc=x_native-15.24,
+    yc=y_native-12.7; then apply x_mm=-yc, y_mm=xc. Full drill review found 26 candidates:
+    JP3, JP4, JP11 and JP13 are non-plated 3.302 mm drills in the explicitly described
+    STAND-OFF mechanical footprint and are selected. The remaining 22 candidates are
+    J3 four-pin header pads, J5/J10 single-pin header pads, J7 six ISP test-point
+    header pads, and SW1 rotary encoder electrical/switch pads (including its two
+    plated mechanical anchor pads M1/M2); these are not board mounting holes.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: SparkFun product page identifies SKU DEV-15083, gives board dimensions
+    25.4 x 30.5 mm, and links the hardware repository. The pinned official repository
+    README names SparkFun Qwiic Twist (DEV-15083), states Hardware contains the .brd/.sch,
+    and the archived CAD is Hardware/Qwiic Twist.brd from that same commit.
+  mounting_holes:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 12.7
+  - diameter_mm: 3.302
+    id: JP11:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: 10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP13:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 12.7
+  record_sha256: dc195b9d1e0425625ae5b45c4b34383c3c5d22ef2c47459dfabbe2c820147505
+  research_file: source_file/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 333290
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Qwiic_Twist.brd
+    locator: SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182,
+      Hardware/Qwiic Twist.brd; inspect complete board outline, layer 20 and all drills.
+    registered_at: '2026-11-06T19:45:44+00:00'
+    sha256: dfed45e9931decad58f1f23342074318c8881930a878545e39d298638c7c0551
+    url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/Hardware/Qwiic%20Twist.brd
+  - bytes: 2875
+    id: repo_identity
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Pinned SparkFun repository README identifies product as Qwiic Twist (DEV-15083)
+      and says Hardware contains .brd/.sch.
+    registered_at: '2026-11-06T19:45:45+00:00'
+    sha256: 81dd64ab75439bae04ab82b4dd3f856d5830b5fbea96b65ea853f8b1a4d5723a
+    url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/README.md
+  - bytes: 588759
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: SparkFun product page identifies SKU DEV-15083, gives board dimensions
+      25.4 x 30.5 mm, and links Eagle files and GitHub Hardware Repo.
+    registered_at: '2026-11-06T19:45:46+00:00'
+    sha256: b91408ada81ae69c31e8678ce88d103460c8936dea1602d90fa799212a283cb0
+    url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+  status: verified
+name_readable: SparkFun Qwiic Twist RGB Rotary Encoder
+notes:
+- Software-configurable addressing is supported; only 0x3F/0x3E hardware choices are
+  enumerated here.
+- Product-page statements about multiple encoders and multiplexers are inconsistent;
+  verify the register-map/firmware behavior before multi-device use.
+- Manufacturer specifies 25 mm assembly height.
+oobb_details:
+- breakout_pcb_height: 30.48
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 12.7
+  - diameter_mm: 3.302
+    id: JP11:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP13:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 12.7
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - -12.7
+  - - -10.16
+    - 12.7
+  - - 10.16
+    - -12.7
+  - - 10.16
+    - 12.7
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 30.48
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 12.7
+  - diameter_mm: 3.302
+    id: JP11:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP13:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 12.7
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - -12.7
+  - - -10.16
+    - 12.7
+  - - 10.16
+    - -12.7
+  - - 10.16
+    - 12.7
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 30.48
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 12.7
+  - diameter_mm: 3.302
+    id: JP11:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP13:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 12.7
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - -12.7
+  - - -10.16
+    - 12.7
+  - - 10.16
+    - -12.7
+  - - 10.16
+    - 12.7
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+part_number: dev_15083
+part_number_sparkfun: DEV-15083
+pinout_status: unverified
+pins: {}
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+- bytes: 333290
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Qwiic_Twist.brd
+  locator: SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182, Hardware/Qwiic
+    Twist.brd; inspect complete board outline, layer 20 and all drills.
+  registered_at: '2026-11-06T19:45:44+00:00'
+  sha256: dfed45e9931decad58f1f23342074318c8881930a878545e39d298638c7c0551
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/Hardware/Qwiic%20Twist.brd
+- bytes: 2875
+  id: mounting_repo_identity
+  kind: manufacturer_repository
+  local_file: mounting_evidence/README.md
+  locator: Pinned SparkFun repository README identifies product as Qwiic Twist (DEV-15083)
+    and says Hardware contains .brd/.sch.
+  registered_at: '2026-11-06T19:45:45+00:00'
+  sha256: 81dd64ab75439bae04ab82b4dd3f856d5830b5fbea96b65ea853f8b1a4d5723a
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/README.md
+- bytes: 588759
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: SparkFun product page identifies SKU DEV-15083, gives board dimensions
+    25.4 x 30.5 mm, and links Eagle files and GitHub Hardware Repo.
+  registered_at: '2026-11-06T19:45:46+00:00'
+  sha256: b91408ada81ae69c31e8678ce88d103460c8936dea1602d90fa799212a283cb0
+  url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: sparkfun
+taxonomy_15: dev_15083
+taxonomy_2: breakout
+taxonomy_3: input
+taxonomy_4: encoder
+taxonomy_5: rotary
+taxonomy_6: qwiic_twist
+taxonomy_7: qwiic
+taxonomy_8: 25_4_mm_width_30_5_mm_height
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: input
+type_2: encoder
+type_3: rotary
+type_4: qwiic_twist
+webpage: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+webpage_sparkfun: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html

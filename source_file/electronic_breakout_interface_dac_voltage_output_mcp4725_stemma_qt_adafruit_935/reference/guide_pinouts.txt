@@ -1,0 +1,177 @@
+MCP4725 12-Bit DAC Tutorial
+Pinouts
+MCP4725 12-Bit DAC Tutorial
+Add an analog output to your microcontroller
+by
+lady ada
+published September 05, 2012, last edited September 30, 2026
+last major update February 09, 2022
+posted in
+Adafruit Products
+Microcontrollers
+Breakout Boards
+/
+Amplifiers/Sound
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Arduino Wiring
+Arduino Code
+Python & CircuitPython
+Python Docs
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+MCP4725 Breakout Board - 12-Bit DAC with I2C Interface
+$4.95
+Add  to Cart
+View product details
+35
+Beginner
+Product guide
+Pinouts
+The default I2C address is
+0x62
+.
+Power Pins
+The sensor on the breakout requires between a 2.7V and 5.5V, and can be easily used with most microcontrollers from an Arduino to a Feather or something else.
+VIN
+- this is the power pin.  To power the board, give it the same power as the logic level of your microcontroller - e.g. for a 5V micro like Arduino, use 5V
+GND
+- common ground for power and logic
+I2C Logic Pins
+SCL
+- I2C clock pin, connect to your microcontroller's I2C clock line. This pin is level shifted so you can use 3-5V logic, and there's a
+10K pullup
+on this pin.
+SDA
+-I2C data pin, connect to your microcontroller's I2C data line. This pin is level shifted so you can use 3-5V logic, and there's a 1
+0K pullup
+on this pin.
+STEMMA QT
+-
+These connectors allow you to connect to development boards with
+STEMMA QT
+connectors, or to other things, with
+various associated accessories
+.
+Other Pins
+A0 pin / ADDR jumper
+- Tie A0 high, or close the jumper on the back to change the I2C address to
+0x63
+, so you can connect two MCP4725 breakouts on the same I2C bus.
+VOUT
+- This is the output pin for the I2C signal.
+Optional terminal block
+- There is an optional 3.5mm terminal block spot on the board that breaks out
+VOUT
+and
+GND
+. You can solder a terminal block on if you like. The terminal block does not come with the board, but they are common and you can
+purchase one from the Adafruit shop
+.
+Page last edited March 08, 2024
+Overview
+Arduino Wiring
+Related Guides
+Your browser does not support the video tag. This links to the guide CircuitPython MIDI to CV Skull.
+CircuitPython MIDI to CV Skull
+By
+Liz Clark
+beginner
+27
+Adafruit SPI Flash SD Card
+By
+Kattni Rembor
+Product Guide
+11
+Adafruit Pixel Shifter
+By
+Liz Clark
+Product Guide
+5
+Adafruit PyPortal Titano
+By
+Kattni Rembor
+Product Guide
+43
+Adafruit Proto Shield for Arduino
+By
+lady ada
+Product Guide
+49
+Your browser does not support the video tag. This links to the guide Audio Prank Gift Box.
+Audio Prank Gift Box
+By
+Becky Stern
+beginner
+24
+Adafruit Terminal PiCowbell for Pico
+By
+Liz Clark
+Product Guide
+2
+Madison's NeoClock - A PIC + KiCAD + NeoPixel adventure
+By
+David Littell
+beginner
+28
+LPC824 NeoPixel IR Distance Sensor
+By
+Kevin Townsend
+beginner
+15
+Adafruit PyBadge and PyBadge LC
+By
+Kattni Rembor
+Product Guide
+34
+Your browser does not support the video tag. This links to the guide Butterfly Bench with Edge Lit Acrylic.
+Butterfly Bench with Edge Lit Acrylic
+By
+Erin St Blaine
+intermediate
+6
+Network Interface Failover using FONA
+By
+Adam Kohring
+beginner
+28
+Audio Synthesis with CircuitPython synthio
+By
+John Park
+beginner
+49
+Adafruit Sparkle Motion
+By
+Erin St Blaine
+Product Guide
+19
+Storage humidity and temperature monitor
+By
+Dave Astels
+beginner
+19
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

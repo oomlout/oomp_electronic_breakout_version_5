@@ -60,6 +60,11 @@ def run(**kwargs):
         import working_action
         working_action.main(**kwargs)    
 
+    # Refresh documentation after the existing asset pipeline.
+    if kwargs.get("run_documentation", True):
+        import action_documentation
+        action_documentation.main()
+
 
 
 

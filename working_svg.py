@@ -4,10 +4,162 @@ import yaml
 import os
 import svg_help
 import svg_styles
+import json
+import re
+import textwrap
+import xml.etree.ElementTree as ET
+import working_svg_microcontroller_styles
+from working_svg_coordinate import get_coordinate_diagram
+
+# Register in process so the normal svg_help / per-part stylesheet path uses
+# the same named sheet as the standalone catalogue exporter.
+svg_styles.STYLESHEETS["microcontroller"] = working_svg_microcontroller_styles.get_stylesheet()
+
+
+def get_microcontroller(thing, **kwargs):
+    """Draw only documented pad/hole centres; show unlocated pins separately.
+
+    Geometry uses the existing opsvg Y-up millimetre pipeline and named styles.
+    Component packages and connector envelopes are not invented for decoration.
+    """
+    board = kwargs.get("board", thing)
+    thing["styles"] = svg_styles.merge(
+        svg_styles.get_stylesheet(kwargs.get("stylesheet", "microcontroller")),
+        kwargs.get("part_styles", {}),
+    )
+    width = board["dimensions_mm"]["width"]
+    height = board["dimensions_mm"]["height"]
+    title_lines = textwrap.wrap(board["name_readable"], width=55)
+    # Explicit canvas bounds include externally anchored labels. The generic
+    # pipeline's text estimate is intentionally not used as a clipping box.
+    longest_label = 0
+    unlocated_count = 0
+    for pin in board["pins"].values():
+        longest_label = max(longest_label, len(pin["name"]) + 6)
+        if pin["x_mm"] is None:
+            unlocated_count += 1
+    left = -max(50, width / 2 + longest_label * 0.9 + 8)
+    right = max(50, width / 2 + longest_label * 0.9 + 8)
+    if unlocated_count:
+        right = max(right, width / 2 + 28 + longest_label * 1.1 + 24)
+    top = height / 2 + 13 + (len(title_lines) - 1) * 3
+    bottom = min(-height / 2 - 20, height / 2 - unlocated_count * 2.8 - 13)
+    opsvg.se(thing, shape="rect", size=[right - left, top - bottom, 0], pos=[(right + left) / 2, (top + bottom) / 2, 0], color="#ffffff", stroke="none", stroke_width=0)
+    opsvg.se(thing, shape="rect", style="board", size=[width, height, 0], pos=[0, 0, 0])
+    for index, line in enumerate(title_lines):
+        opsvg.se(thing, shape="text", style="label.title", text=line, pos=[0, height / 2 + 8 + (len(title_lines) - index - 1) * 3, 0])
+    view = board["coordinate_system"].get("view") or ""
+    orientation = "+Y towards USB" if "usb" in view and "no_usb" not in view else "orientation not established"
+    scope = "nominal envelope" if board["dimensions_mm"].get("status") == "unverified" else "envelope"
+    opsvg.se(thing, shape="text", style="label.detail", text=f"{width:g} x {height:g} mm {scope} | top view | {orientation}", pos=[0, height / 2 + 4, 0])
+    for hole in board["mounting_hole_details"]:
+        opsvg.se(thing, shape="circle", style="hole", r=hole["diameter_mm"] / 2, pos=[hole["x_mm"], hole["y_mm"], 0], css_class="mounting-hole")
+    labels = set()
+    unlocated = []
+    for key, pin in board["pins"].items():
+        if pin["x_mm"] is None:
+            unlocated.append((key, pin))
+            continue
+        style = "pad"
+        if pin["type"] == "ground":
+            style = "pad.ground"
+        elif pin["type"] == "power":
+            style = "pad.power"
+        elif "analog_input" in pin["capabilities"]:
+            style = "pad.analog"
+        if pin.get("gpio") is not None and not pin.get("available_for_general_io"):
+            style = "pad.reserved"
+        token = re.sub(r"[^a-zA-Z0-9_-]", "_", key)
+        radius = min(0.85, max(0.35, pin.get("drill_mm") or 0.65))
+        opsvg.se(thing, shape="circle", style=style, r=radius, pos=[pin["x_mm"], pin["y_mm"], 0], css_class="pin-target pin-id-" + token)
+        # Castellations and drilled pads can share a net and a row. Keep one
+        # label for that row while retaining every physical pad as a target.
+        side = -1 if pin["x_mm"] < 0 else 1
+        label_key = (pin["name"], side, round(pin["y_mm"], 1))
+        if pin["connector"] == "bottom":
+            text = "GP" + str(pin["gpio"]) if pin.get("gpio") is not None else pin["name"]
+            opsvg.se(thing, shape="text", style="label", text=text, halign="left", rot=[0, 0, -60], pos=[pin["x_mm"], -height / 2 - 2.2, 0])
+            continue
+        connector = board.get("connectors", {}).get(pin["connector"], {})
+        footprint = connector.get("cad_footprint", "").upper()
+        if footprint:
+            label_connector = "1X" in footprint or "HALF-HOLE" in footprint
+        else:
+            label_connector = not pin["connector"].startswith("TP")
+        if label_connector and label_key not in labels and abs(pin["x_mm"]) >= width * 0.28:
+            labels.add(label_key)
+            text = pin["name"]
+            if pin.get("gpio") is not None and str(pin["gpio"]) not in text:
+                text += "/GP" + str(pin["gpio"])
+            opsvg.se(thing, shape="text", style="label", text=text, halign="right" if side < 0 else "left", pos=[side * (width / 2 + 2), pin["y_mm"], 0])
+    if unlocated:
+        # Separate textual inventory. These rows are never drawn as pads and
+        # are never offered as spatial SVG hit targets.
+        x = width / 2 + 28
+        opsvg.se(thing, shape="text", style="label.detail", text="UNLOCATED CONTACTS / NOT TO SCALE", halign="left", pos=[x, height / 2 + 2, 0])
+        for index, (key, pin) in enumerate(unlocated):
+            text = pin["connector"] + ":" + str(pin["number"]) + " " + pin["name"]
+            if pin.get("gpio") is not None:
+                text += " / GP" + str(pin["gpio"])
+            opsvg.se(thing, shape="text", style="label.detail", text=text, halign="left", pos=[x, height / 2 - 2 - index * 2.8, 0])
+    footer_y = min(-height / 2 - 12, height / 2 - len(unlocated) * 2.8 - 5)
+    status = board["dimensions_mm"].get("status", "imported manufacturer evidence")
+    opsvg.se(thing, shape="text", style="label.detail", text="Outline: " + status.replace("_", " ") + " | holes: " + board["mounting_hole_status"].replace("_", " "), pos=[0, footer_y, 0])
+    if not board["pins"]:
+        opsvg.se(thing, shape="text", style="label.board", text="PINOUT UNVERIFIED", pos=[0, -4, 0])
+
+
+def microcontroller_svg(**kwargs):
+    """Return an accessible SVG with physical-pad identifiers and metadata."""
+    board = kwargs["board"]
+    thing = {"svg_components": []}
+    get_microcontroller(thing, board=board, part_styles=kwargs.get("part_styles", {}), stylesheet=kwargs.get("stylesheet", "microcontroller"))
+    xml = opsvg.opsvg_get_svg(thing["svg_components"], padding=4)
+    namespace = "http://www.w3.org/2000/svg"
+    ET.register_namespace("", namespace)
+    root = ET.fromstring(xml)
+    root.set("role", "img")
+    root.set("aria-label", board["name_readable"] + " pinout and mechanical reference")
+    title = ET.SubElement(root, "{" + namespace + "}title")
+    title.text = board["name_readable"]
+    metadata = ET.SubElement(root, "{" + namespace + "}metadata")
+    metadata.text = json.dumps({
+        "coordinate_system": board["coordinate_system"],
+        "dimensions_mm": board["dimensions_mm"],
+        "data_gaps": board["data_gaps"],
+        "sources": board["sources"],
+    }, ensure_ascii=False)
+    by_token = {}
+    for key, pin in board["pins"].items():
+        by_token["pin-id-" + re.sub(r"[^a-zA-Z0-9_-]", "_", key)] = (key, pin)
+    for element in list(root):
+        classes = element.get("class", "").split()
+        for token in classes:
+            if token not in by_token:
+                continue
+            key, pin = by_token[token]
+            element.set("id", "pin-" + token[7:])
+            element.set("data-pin", key)
+            element.set("data-pin-type", pin["type"])
+            element.set("data-capabilities", " ".join(pin["capabilities"]))
+            element.set("data-signal-types", " ".join(pin["signal_types"]))
+            element.set("data-x-mm", str(pin["x_mm"]))
+            element.set("data-y-mm", str(pin["y_mm"]))
+            element.set("data-source-id", pin["source_id"])
+            element.set("aria-label", key + ": " + pin["name"])
+            if pin.get("gpio") is not None:
+                element.set("data-gpio", str(pin["gpio"]))
+                element.set("data-available-for-general-io", str(pin["available_for_general_io"]).lower())
+            if pin.get("adc_channel") is not None:
+                element.set("data-adc-channel", str(pin["adc_channel"]))
+                element.set("data-adc-unit", str(pin["adc_unit"]))
+            tooltip = ET.SubElement(element, "{" + namespace + "}title")
+            tooltip.text = key + ": " + pin["name"] + " | " + ", ".join(pin["functions"] + pin["restrictions"])
+    return ET.tostring(root, encoding="unicode") + "\n"
 
 
 def main(**kwargs):
-    make_svg(**kwargs)
+    return make_svg(**kwargs)
 
 def make_svg(**kwargs):
     typ = svg_help.get_typ(**kwargs)
@@ -16,21 +168,20 @@ def make_svg(**kwargs):
     filt = ""
     build_variables = svg_help.get_build_variables(typ, filter=filt)
     if True:
-        kwargs["filter"] = build_variables["filter"]
-        kwargs["save_type"] = build_variables["save_type"]
-        kwargs["navigation"] = build_variables["navigation"]
-        kwargs["overwrite"] = build_variables["overwrite"]
+        for key in ("filter", "save_type", "navigation", "overwrite"):
+            kwargs.setdefault(key, build_variables[key])
         kwargs["oomp_mode"] = oomp_mode
     parts = get_parts(kwargs, oomp_mode)
 
     kwargs["parts"] = parts
 
-    svg_help.make_parts(**kwargs)
+    results = svg_help.make_parts(**kwargs)
 
     if kwargs["navigation"]:
         oobb_style = False
         sort = svg_help.get_navigation_sort(oobb_style=oobb_style)
         svg_help.generate_navigation(sort=sort)
+    return results
 
 
 def get_parts(kwargs, oomp_mode):
@@ -41,7 +192,12 @@ def get_parts(kwargs, oomp_mode):
     if not os.path.isdir(parts_directory):
         return parts
 
-    for folder in os.listdir(parts_directory):
+    selected = kwargs.get("part_ids")
+    selected = None if selected is None else ({selected} if isinstance(selected, str) else set(selected))
+    found = set()
+    for folder in sorted(os.listdir(parts_directory)):
+        if selected is not None and folder not in selected:
+            continue
         folder_path = os.path.join(parts_directory, folder)
         if not os.path.isdir(folder_path):
             continue
@@ -56,48 +212,13 @@ def get_parts(kwargs, oomp_mode):
         if not isinstance(loaded_part, dict):
             continue
 
-        svg_details_raw = loaded_part.get("svg_details")
-        # Accept either a single dict or a list of dicts.
-        if isinstance(svg_details_raw, list):
-            # Use the first entry to derive kwargs / oobb_name; the full list
-            # is kept intact in part["svg_details"] for make_svg_generic.
-            svg_details = svg_details_raw[0] if svg_details_raw else {}
-        elif isinstance(svg_details_raw, dict):
-            svg_details = svg_details_raw
-        else:
-            continue  # no recognisable svg_details — skip
-
-        part = loaded_part
-
-        part_kwargs = copy.deepcopy(kwargs)
-        part_kwargs.update(copy.deepcopy(loaded_part.get("kwargs", {})))
-        _SD_META = {"svg_name", "filename_extra", "width", "height", "depth", "styles",
-                    "extra", "radius_name"}
-        svg_details_safe = {k: v for k, v in svg_details.items()
-                            if k not in _SD_META or (k in ("width", "height", "depth") and isinstance(v, (int, float)))}
-        part_kwargs.update(copy.deepcopy(svg_details_safe))
-
-        # stylesheet name override from yaml: svg_details.stylesheet: "jazzy"
-        if "stylesheet" in svg_details:
-            part_kwargs["stylesheet"] = svg_details["stylesheet"]
-
-        # per-part style overrides from yaml: svg_details.styles: {plate: {color: "#FF0000"}}
-        yaml_styles = svg_details.get("styles", {})
-        if isinstance(yaml_styles, dict) and yaml_styles:
-            existing = part_kwargs.get("part_styles", {})
-            part_kwargs["part_styles"] = svg_styles.merge(
-                svg_styles.get_stylesheet(part_kwargs.get("stylesheet", "default")),
-                {**existing, **yaml_styles}
-            ) if not existing else {**existing, **yaml_styles}
-
-        part["kwargs"] = part_kwargs
-        part["oobb_name"] = part.get("oobb_name", svg_details.get("svg_name", "default"))
-
-        if oomp_mode == "oobb":
-            part["kwargs"]["oomp_size"] = part["oobb_name"]
-
-        parts.append(part)
-
+        for part in svg_help.expand_svg_jobs(loaded_part, kwargs):
+            if oomp_mode == "oobb":
+                part["kwargs"]["oomp_size"] = part["oobb_name"]
+            parts.append(part)
+            found.add(folder)
+    if selected is not None and selected - found:
+        raise ValueError("No matching SVG jobs for: " + ", ".join(sorted(selected - found)))
     return parts
 
 

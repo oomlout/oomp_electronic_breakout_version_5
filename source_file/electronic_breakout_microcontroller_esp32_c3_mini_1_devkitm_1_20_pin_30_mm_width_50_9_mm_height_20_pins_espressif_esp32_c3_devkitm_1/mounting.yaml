@@ -1,0 +1,73 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_c3_mini_1_devkitm_1_20_pin_30_mm_width_50_9_mm_height_20_pins_espressif_esp32_c3_devkitm_1
+status: no_holes
+board_revision: Espressif ESP32-C3-DevKitM-1 carrier Rev 1.0, identified by the title block on the manufacturer PCB layout dated 2020-09-16; official user guide links this matching V1_20200915AA drawing set.
+identity_evidence: Espressif's official ESP32-C3-DevKitM-1 guide links the PCB layout, dimension PDF, and dimension DXF; the PCB layout title block identifies ESP32-C3-DevKitM-1 Rev 1.0. The guide lists this carrier as ESP32-C3-MINI-1 based and says there are no previous versions available. The full-page manufacturer dimension drawing and six-page board layout agree on the 25.40 x 38.91 mm carrier and USB connector at the drawing's lower end.
+identity_source_ids:
+- product
+- dimensions
+- pcb_layout
+- dimensions_dxf
+board_size:
+- 25.4
+- 38.91
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: dimensions
+derivation: 'The official complete top-view dimension drawing labels the PCB outline 25.40 mm wide and 38.91 mm high. Source drawing orientation is retained: x increases to the right and y increases upward, with origin translated from the drawing’s lower-left PCB bound to its centre (12.70 mm, 19.455 mm); no rotation, reflection or axis swap. Thus the antenna/module end is +Y and the Micro-USB connector is -Y. The seeded catalogue context labels USB at +Y, but that feature-direction note conflicts with the top-view manufacturer drawing; the mechanical record follows the drawing orientation. This resolved direction discrepancy does not affect the empty mounting pattern or board dimensions. Reviewed every page and layer of the official six-page Rev 1.0 PCB layout together with the full dimension sheet. The 30 plated through-hole pads are the two 15-contact header rows; drilled/metallic features at the USB edge are connector contacts and retention anchors; small circular drills in the module area belong to the module land/via pattern. None is a board mounting hole. The complete dimension drawing and full layout show no designated board mounting holes.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  local_file: mounting_evidence/esp32-c3-devkitm-1_user_guide.html
+  url: https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c3/esp32-c3-devkitm-1/user_guide.html
+  kind: manufacturer_product
+  locator: Official ESP32-C3-DevKitM-1 guide identifies the carrier; related documents link the exact V1_20200915AA PCB layout and dimension PDF; hardware revision section says no previous versions available.
+  registered_at: '2026-11-06T17:23:27+00:00'
+  bytes: 35855
+  sha256: e3df417e66340afb0b8d52f162eec4e0c9c2352247d9dd4d216d840008515646
+- id: dimensions
+  local_file: mounting_evidence/DIMENSION_ESP32-C3-DEVKITM-1_V1_20200915AA.pdf
+  url: https://dl.espressif.com/dl/schematics/DIMENSION_ESP32-C3-DEVKITM-1_V1_20200915AA.pdf
+  kind: manufacturer_drawing
+  locator: Complete official dimension drawing, title ESP32-C3-DevKitM-1, dimensions 25.40 × 38.91 mm; drawing shows full carrier and labeled header pads; no designated mounting pattern.
+  registered_at: '2026-11-06T17:23:28+00:00'
+  bytes: 214433
+  sha256: 284d7b4060098e252feafac8a412902b7c51d116b5df49111f4489fc84c92d92
+- id: pcb_layout
+  local_file: mounting_evidence/PCB_ESP32-C3-DEVKITM-1_V1_20200915AA.pdf
+  url: https://dl.espressif.com/dl/schematics/PCB_ESP32-C3-DEVKITM-1_V1_20200915AA.pdf
+  kind: manufacturer_drawing
+  locator: Official six-page ESP32-C3-DevKitM-1 PCB layout, title block Rev 1.0 dated 2020-09-16; reviewed all pages/layers and all drilled features.
+  registered_at: '2026-11-06T17:23:28+00:00'
+  bytes: 1201154
+  sha256: cdaaa9257a5b98e897954cf980f089c23b57af69363101f1d8df10ffc52d4d43
+- id: dimensions_dxf
+  local_file: mounting_evidence/DIMENSION_ESP32-C3-DEVKITM-1_V1_20200915AA.dxf
+  url: https://dl.espressif.com/dl/schematics/DIMENSION_ESP32-C3-DEVKITM-1_V1_20200915AA.dxf
+  kind: manufacturer_cad
+  locator: Official linked dimension source DXF for title ESP32-C3-DevKitM-1; source geometry corroborates the dimension drawing; not used for automatic extraction.
+  registered_at: '2026-11-06T17:23:28+00:00'
+  bytes: 685102
+  sha256: eddd901305ce78b661658f726059ed0655ea51fc65281f750d5b40ad592ab312
+attempts:
+- '2026-11-06: fetched and reviewed the official ESP32-C3-DevKitM-1 product guide; confirmed its Related Documents links to the exact V1_20200915AA dimension PDF, dimension DXF, and PCB layout.'
+- '2026-11-06: verified the existing archived dimension PDF SHA-256 against mounting_context.json, then downloaded the same official PDF; the fresh bytes have the same SHA-256. Rendered and reviewed the complete dimension sheet.'
+- '2026-11-06: downloaded and reviewed all six pages of the official PCB layout; title block identifies Rev 1.0 dated 2020-09-16. Reviewed top/bottom copper, drill depiction, silkscreen and assembly views to classify all drilled features.'
+conflicts: []
+notes:
+- Manufacturer files are at Espressif static URLs rather than commit-pinned repository revisions; exact board identity and revision are established by the official guide links and the PCB layout title block. The dimension PDF is byte-identical to the previously archived file (SHA-256 284d7b4060098e252feafac8a412902b7c51d116b5df49111f4489fc84c92d92).
+- The standard holder is not generated for this confirmed no-hole carrier. Component, connector, screw-head and underside clearance remain unverified; no physical fit test was performed.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T17:24:30+00:00'

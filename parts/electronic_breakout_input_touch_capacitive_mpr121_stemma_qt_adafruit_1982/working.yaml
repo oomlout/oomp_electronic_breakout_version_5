@@ -1,0 +1,858 @@
+bip_39_2_word_array:
+- sheriff
+- oblige
+bip_39_2_word_no_space: sheriffoblige
+bip_39_2_word_space: sheriff oblige
+bip_39_2_word_underscore: sheriff_oblige
+bip_39_3_word_array:
+- sheriff
+- oblige
+- text
+bip_39_3_word_no_space: sheriffobligetext
+bip_39_3_word_space: sheriff oblige text
+bip_39_3_word_underscore: sheriff_oblige_text
+bip_39_full_array:
+- sheriff
+- oblige
+- text
+- pride
+- merry
+- tag
+- void
+- bonus
+- sign
+- setup
+- radar
+- live
+bip_39_full_no_space: sheriffobligetextpridemerrytagvoidbonussignsetupradarlive
+bip_39_full_space: sheriff oblige text pride merry tag void bonus sign setup radar
+  live
+bip_39_full_underscore: sheriff_oblige_text_pride_merry_tag_void_bonus_sign_setup_radar_live
+board_variant: stemma_qt
+breakout_description: stemma_qt
+breakout_pcb_height: 19.177
+breakout_pcb_width: 33.02
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+definition_authority: working_oomp_populate_i2c.py
+description: Twelve touch inputs for interfaces, switches and interactive objects.
+  Select the header breakout, not the separate Gator carrier.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+directory: parts/electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+geometry_ready: false
+i2c:
+  address_evidence_status: partial_product_page_evidence
+  address_selection: addr_pin
+  clock_stretching: unverified
+  default_address_7bit: 90
+  documented_addresses_7bit:
+  - 90
+  - 91
+  - 92
+  - 93
+  maximum_clock_hz: null
+  source_id: product
+id: electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+id_no_class: electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+id_no_size: electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+id_no_type: electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+id_oobb: electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+kwargs:
+  breakout_pcb_height: 19.177
+  breakout_pcb_width: 33.02
+  modes:
+  - 3dpr
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -13.97
+    y_mm: -6.9215
+  - diameter_mm: 2.5
+    id: U$35:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 13.97
+    y_mm: -6.9215
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  mounting_holes:
+  - - -13.97
+    - -6.9215
+  - - 13.97
+    - -6.9215
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  overwrite: true
+  part_ids:
+  - electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+  type: default_mounting_plate_default
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+manufacturer: adafruit
+manufacturer_part_number: '1982'
+md5: c593077ed548bbba7d60cbc85892c2c1
+md5_10: c593077ed5
+md5_10_upper: C593077ED5
+md5_5: c5930
+md5_5_upper: C5930
+md5_6: c59307
+md5_6_alpha: 7pix3
+md5_6_alpha_upper: 7PIX3
+md5_6_upper: C59307
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 2.5
+  id: U$34:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -13.97
+  y_mm: -6.9215
+- diameter_mm: 2.5
+  id: U$35:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 13.97
+  y_mm: -6.9215
+mounting_hole_radius_name: m2
+mounting_hole_radius_names:
+- m2
+- m2
+mounting_hole_status: verified
+mounting_holes:
+- - -13.97
+  - -6.9215
+- - 13.97
+  - -6.9215
+mounting_lift: 3
+mounting_research:
+  board_revision: Adafruit MPR121Q QT STEMMA QT carrier, product 1982, STEMMA QT revision
+    introduced 2021-01-21; pinned Eagle board source added to Adafruit-MPR121-PCB
+    on 2021-01-26. Product page says size and two mounting-hole locations did not
+    change in the revision.
+  board_size:
+  - 33.02
+  - 19.177
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'Extracted the unmodified layer 20 outline from the pinned Eagle CAD
+    (native mm). Outline extrema are x=0..33.02 and y=-0.127..19.05, hence bounding
+    box 33.02 x 19.177 mm and centre (16.51, 9.4615) mm. No rotation/reflection: canonical
+    top view x_mm = native_x_mm - 16.51; y_mm = native_y_mm - 9.4615; quarter_turn=0.
+    Hole centres in native CAD were transformed by that translation. Full drill review
+    found 22 drilled candidates: JP1 and JP2 are through-hole header contact rows
+    (20 x 1.0 mm drill), and U$34/U$35 are the only two footprints explicitly named
+    MOUNTINGHOLE_2.5_PLATED (2 x 2.5 mm drill), selected as mounting holes.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit product 1982 page identifies the MPR121 STEMMA QT board
+    and dates the QT revision. The official pinned Adafruit-MPR121-PCB README links
+    this repository to product 1982 and identifies EagleCAD board files; the repository
+    contains the exact file Adafruit MPR121Q QT.brd, distinct from Adafruit MPR121Q
+    QT Gator Breakout.brd (product 4830).
+  mounting_holes:
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -13.97
+    y_mm: -6.9215
+  - diameter_mm: 2.5
+    id: U$35:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 13.97
+    y_mm: -6.9215
+  record_sha256: da025d9d7b0a2eba184e84bc3d66c93af02220d735999e91420ca2b2e9ac8c63
+  research_file: source_file/electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 103343
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: 'Product 1982 identity and revision history: Jan 21 2021 STEMMA QT update;
+      board physical size and two mounting hole locations unchanged.'
+    registered_at: '2026-11-06T19:19:50+00:00'
+    sha256: 3d1562c30e7c8b19728f2570e562903305a5c973e534532b8f056ff8a06eed90
+    url: https://www.adafruit.com/product/1982
+  - bytes: 2792
+    id: repository
+    kind: manufacturer_repository
+    local_file: mounting_evidence/Adafruit-MPR121-PCB-README.md
+    locator: Pinned official Adafruit repo README links repository to product 1982
+      and identifies PCB format as EagleCAD; distinguish product 4830 QT Gator.
+    registered_at: '2026-11-06T19:19:51+00:00'
+    sha256: d6613ca4f9e76f4fffd728dabc127a75cce41603530053dce4e9e1b9fbc98278
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-MPR121-PCB/d1e18d5ea07d596006c414746e8c1ac4c8230e1f/README.md
+  - bytes: 273146
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit MPR121Q QT.brd
+    locator: Pinned official Eagle board file specifically Adafruit MPR121Q QT.brd
+      for STEMMA QT product 1982. Inspect Dimension layer and all drills; commit history
+      adds this file 2021-01-26, after product page STEMMA QT revision date 2021-01-21.
+    registered_at: '2026-11-06T19:20:21+00:00'
+    sha256: e75b285fefa6d5598eafa155771f5674764fb269482d9f3071dd61d4bbf072cd
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-MPR121-PCB/d1e18d5ea07d596006c414746e8c1ac4c8230e1f/Adafruit%20MPR121Q%20QT.brd
+  status: verified
+name: Electronic Breakout Input Touch Capacitive Mpr121 Stemma Qt Adafruit 1982
+name_no_class: Electronic Breakout Input Touch Capacitive Mpr121 Stemma Qt Adafruit
+  1982
+name_no_size: Electronic Breakout Input Touch Capacitive Mpr121 Stemma Qt Adafruit
+  1982
+name_no_type: Electronic Breakout Input Touch Capacitive Mpr121 Stemma Qt Adafruit
+  1982
+name_proper: Electronic Breakout Input Touch Capacitive Mpr121 Stemma Qt Adafruit
+  1982
+name_readable: Adafruit MPR121 Touch Breakout, STEMMA QT
+name_space: electronic breakout input touch capacitive mpr121 stemma qt adafruit 1982
+name_upper: ELECTRONIC BREAKOUT INPUT TOUCH CAPACITIVE MPR121 STEMMA QT ADAFRUIT 1982
+notes: []
+oobb_details:
+- breakout_pcb_height: 19.177
+  breakout_pcb_width: 33.02
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -13.97
+    y_mm: -6.9215
+  - diameter_mm: 2.5
+    id: U$35:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 13.97
+    y_mm: -6.9215
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  mounting_holes:
+  - - -13.97
+    - -6.9215
+  - - 13.97
+    - -6.9215
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 19.177
+  breakout_pcb_width: 33.02
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -13.97
+    y_mm: -6.9215
+  - diameter_mm: 2.5
+    id: U$35:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 13.97
+    y_mm: -6.9215
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  mounting_holes:
+  - - -13.97
+    - -6.9215
+  - - 13.97
+    - -6.9215
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 19.177
+  breakout_pcb_width: 33.02
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -13.97
+    y_mm: -6.9215
+  - diameter_mm: 2.5
+    id: U$35:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 13.97
+    y_mm: -6.9215
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  mounting_holes:
+  - - -13.97
+    - -6.9215
+  - - 13.97
+    - -6.9215
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      board_variant: stemma_qt
+      breakout_description: stemma_qt
+      breakout_pcb_height: 19.177
+      breakout_pcb_width: 33.02
+      catalogue: i2c_breakouts
+      catalogue_status: product_page_reference
+      data_gaps:
+      - Physical connector/pad map and coordinates not imported.
+      - Located mounting holes and complete assembly/connector clearances not imported.
+      - Pull-up values/rails and full electrical limits require schematic review.
+      - Carrier PCB outline dimensions not verified.
+      definition_authority: working_oomp_populate_i2c.py
+      description: Twelve touch inputs for interfaces, switches and interactive objects.
+        Select the header breakout, not the separate Gator carrier.
+      dimensions_mm:
+        height: null
+        scope: pcb_outline_not_established
+        source_id: null
+        status: unverified
+        width: null
+      directory: parts\electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+      geometry_ready: false
+      i2c:
+        address_evidence_status: partial_product_page_evidence
+        address_selection: addr_pin
+        clock_stretching: unverified
+        default_address_7bit: 90
+        documented_addresses_7bit:
+        - 90
+        - 91
+        - 92
+        - 93
+        maximum_clock_hz: null
+        source_id: product
+      interface_scope: documented_board_interfaces_only
+      interfaces:
+      - i2c
+      item_kind: breakout
+      manufacturer: adafruit
+      manufacturer_part_number: '1982'
+      mounting_coordinate_system:
+        origin: pcb_bounding_box_centre
+        units: mm
+        view: top
+        x_positive: right
+        y_positive: up
+      mounting_geometry_ready: true
+      mounting_hole_details:
+      - diameter_mm: 2.5
+        id: U$34:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: -13.97
+        y_mm: -6.9215
+      - diameter_mm: 2.5
+        id: U$35:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: 13.97
+        y_mm: -6.9215
+      mounting_hole_radius_name: m2
+      mounting_hole_radius_names:
+      - m2
+      - m2
+      mounting_hole_status: verified
+      mounting_holes:
+      - - -13.97
+        - -6.9215
+      - - 13.97
+        - -6.9215
+      mounting_lift: 3
+      mounting_research:
+        board_revision: Adafruit MPR121Q QT STEMMA QT carrier, product 1982, STEMMA
+          QT revision introduced 2021-01-21; pinned Eagle board source added to Adafruit-MPR121-PCB
+          on 2021-01-26. Product page says size and two mounting-hole locations did
+          not change in the revision.
+        board_size:
+        - 33.02
+        - 19.177
+        coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        derivation: 'Extracted the unmodified layer 20 outline from the pinned Eagle
+          CAD (native mm). Outline extrema are x=0..33.02 and y=-0.127..19.05, hence
+          bounding box 33.02 x 19.177 mm and centre (16.51, 9.4615) mm. No rotation/reflection:
+          canonical top view x_mm = native_x_mm - 16.51; y_mm = native_y_mm - 9.4615;
+          quarter_turn=0. Hole centres in native CAD were transformed by that translation.
+          Full drill review found 22 drilled candidates: JP1 and JP2 are through-hole
+          header contact rows (20 x 1.0 mm drill), and U$34/U$35 are the only two
+          footprints explicitly named MOUNTINGHOLE_2.5_PLATED (2 x 2.5 mm drill),
+          selected as mounting holes.'
+        fit_status: generic_holder_not_physical_fit_tested
+        identity_evidence: Adafruit product 1982 page identifies the MPR121 STEMMA
+          QT board and dates the QT revision. The official pinned Adafruit-MPR121-PCB
+          README links this repository to product 1982 and identifies EagleCAD board
+          files; the repository contains the exact file Adafruit MPR121Q QT.brd, distinct
+          from Adafruit MPR121Q QT Gator Breakout.brd (product 4830).
+        mounting_holes:
+        - diameter_mm: 2.5
+          id: U$34:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: -13.97
+          y_mm: -6.9215
+        - diameter_mm: 2.5
+          id: U$35:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: 13.97
+          y_mm: -6.9215
+        record_sha256: da025d9d7b0a2eba184e84bc3d66c93af02220d735999e91420ca2b2e9ac8c63
+        research_file: source_file/electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982/mounting.yaml
+        reviewed_by: gpt-6-luna
+        sources:
+        - bytes: 103343
+          id: product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: 'Product 1982 identity and revision history: Jan 21 2021 STEMMA
+            QT update; board physical size and two mounting hole locations unchanged.'
+          registered_at: '2026-11-06T19:19:50+00:00'
+          sha256: 3d1562c30e7c8b19728f2570e562903305a5c973e534532b8f056ff8a06eed90
+          url: https://www.adafruit.com/product/1982
+        - bytes: 2792
+          id: repository
+          kind: manufacturer_repository
+          local_file: mounting_evidence/Adafruit-MPR121-PCB-README.md
+          locator: Pinned official Adafruit repo README links repository to product
+            1982 and identifies PCB format as EagleCAD; distinguish product 4830 QT
+            Gator.
+          registered_at: '2026-11-06T19:19:51+00:00'
+          sha256: d6613ca4f9e76f4fffd728dabc127a75cce41603530053dce4e9e1b9fbc98278
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-MPR121-PCB/d1e18d5ea07d596006c414746e8c1ac4c8230e1f/README.md
+        - bytes: 273146
+          id: cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Adafruit MPR121Q QT.brd
+          locator: Pinned official Eagle board file specifically Adafruit MPR121Q
+            QT.brd for STEMMA QT product 1982. Inspect Dimension layer and all drills;
+            commit history adds this file 2021-01-26, after product page STEMMA QT
+            revision date 2021-01-21.
+          registered_at: '2026-11-06T19:20:21+00:00'
+          sha256: e75b285fefa6d5598eafa155771f5674764fb269482d9f3071dd61d4bbf072cd
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-MPR121-PCB/d1e18d5ea07d596006c414746e8c1ac4c8230e1f/Adafruit%20MPR121Q%20QT.brd
+        status: verified
+      name: electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+      name_proper: Electronic Breakout Input Touch Capacitive Mpr121 Stemma Qt Adafruit
+        1982
+      name_readable: Adafruit MPR121 Touch Breakout, STEMMA QT
+      name_space: electronic breakout input touch capacitive mpr121 stemma qt adafruit
+        1982
+      name_upper: ELECTRONIC BREAKOUT INPUT TOUCH CAPACITIVE MPR121 STEMMA QT ADAFRUIT
+        1982
+      notes: []
+      oobb_details:
+      - breakout_pcb_height: 19.177
+        breakout_pcb_width: 33.02
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$34:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -13.97
+          y_mm: -6.9215
+        - diameter_mm: 2.5
+          id: U$35:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 13.97
+          y_mm: -6.9215
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        mounting_holes:
+        - - -13.97
+          - -6.9215
+        - - 13.97
+          - -6.9215
+        mounting_layout: full_wrap
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+      - breakout_pcb_height: 19.177
+        breakout_pcb_width: 33.02
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$34:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -13.97
+          y_mm: -6.9215
+        - diameter_mm: 2.5
+          id: U$35:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 13.97
+          y_mm: -6.9215
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        mounting_holes:
+        - - -13.97
+          - -6.9215
+        - - 13.97
+          - -6.9215
+        mounting_layout: short_sides
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_short_sides
+      - breakout_pcb_height: 19.177
+        breakout_pcb_width: 33.02
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$34:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -13.97
+          y_mm: -6.9215
+        - diameter_mm: 2.5
+          id: U$35:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 13.97
+          y_mm: -6.9215
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        mounting_holes:
+        - - -13.97
+          - -6.9215
+        - - 13.97
+          - -6.9215
+        mounting_layout: long_side
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_long_side
+      part_number: '1982'
+      part_number_adafruit: '1982'
+      pinout_status: unverified
+      pins: {}
+      research_date: '2026-10-23'
+      schema_version: 1
+      sources:
+      - id: product
+        kind: manufacturer_product_page
+        retrieved: '2026-10-23'
+        scope: identity, stated interfaces/features and recorded nominal dimensions
+        url: https://www.adafruit.com/product/1982
+      - bytes: 103343
+        id: mounting_product
+        kind: manufacturer_product
+        local_file: website.html
+        locator: 'Product 1982 identity and revision history: Jan 21 2021 STEMMA QT
+          update; board physical size and two mounting hole locations unchanged.'
+        registered_at: '2026-11-06T19:19:50+00:00'
+        sha256: 3d1562c30e7c8b19728f2570e562903305a5c973e534532b8f056ff8a06eed90
+        url: https://www.adafruit.com/product/1982
+      - bytes: 2792
+        id: mounting_repository
+        kind: manufacturer_repository
+        local_file: mounting_evidence/Adafruit-MPR121-PCB-README.md
+        locator: Pinned official Adafruit repo README links repository to product
+          1982 and identifies PCB format as EagleCAD; distinguish product 4830 QT
+          Gator.
+        registered_at: '2026-11-06T19:19:51+00:00'
+        sha256: d6613ca4f9e76f4fffd728dabc127a75cce41603530053dce4e9e1b9fbc98278
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-MPR121-PCB/d1e18d5ea07d596006c414746e8c1ac4c8230e1f/README.md
+      - bytes: 273146
+        id: mounting_cad
+        kind: manufacturer_cad
+        local_file: mounting_evidence/Adafruit MPR121Q QT.brd
+        locator: Pinned official Eagle board file specifically Adafruit MPR121Q QT.brd
+          for STEMMA QT product 1982. Inspect Dimension layer and all drills; commit
+          history adds this file 2021-01-26, after product page STEMMA QT revision
+          date 2021-01-21.
+        registered_at: '2026-11-06T19:20:21+00:00'
+        sha256: e75b285fefa6d5598eafa155771f5674764fb269482d9f3071dd61d4bbf072cd
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-MPR121-PCB/d1e18d5ea07d596006c414746e8c1ac4c8230e1f/Adafruit%20MPR121Q%20QT.brd
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: adafruit
+      taxonomy_15: '1982'
+      taxonomy_2: breakout
+      taxonomy_3: input
+      taxonomy_4: touch
+      taxonomy_5: capacitive
+      taxonomy_6: mpr121
+      taxonomy_7: stemma_qt
+      taxonomy_8: ''
+      taxonomy_9: ''
+      taxonomy_schema: breakout_function_v1
+      type_1: input
+      type_2: touch
+      type_3: capacitive
+      type_4: mpr121
+      url_chat: ''
+      webpage: https://www.adafruit.com/product/1982
+      webpage_adafruit: https://www.adafruit.com/product/1982
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+part_number: '1982'
+part_number_adafruit: '1982'
+pinout_status: unverified
+pins: {}
+project_name: C:\gh\oomp_electronic_breakout_version_5
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/1982
+- bytes: 103343
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: 'Product 1982 identity and revision history: Jan 21 2021 STEMMA QT update;
+    board physical size and two mounting hole locations unchanged.'
+  registered_at: '2026-11-06T19:19:50+00:00'
+  sha256: 3d1562c30e7c8b19728f2570e562903305a5c973e534532b8f056ff8a06eed90
+  url: https://www.adafruit.com/product/1982
+- bytes: 2792
+  id: mounting_repository
+  kind: manufacturer_repository
+  local_file: mounting_evidence/Adafruit-MPR121-PCB-README.md
+  locator: Pinned official Adafruit repo README links repository to product 1982 and
+    identifies PCB format as EagleCAD; distinguish product 4830 QT Gator.
+  registered_at: '2026-11-06T19:19:51+00:00'
+  sha256: d6613ca4f9e76f4fffd728dabc127a75cce41603530053dce4e9e1b9fbc98278
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-MPR121-PCB/d1e18d5ea07d596006c414746e8c1ac4c8230e1f/README.md
+- bytes: 273146
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Adafruit MPR121Q QT.brd
+  locator: Pinned official Eagle board file specifically Adafruit MPR121Q QT.brd for
+    STEMMA QT product 1982. Inspect Dimension layer and all drills; commit history
+    adds this file 2021-01-26, after product page STEMMA QT revision date 2021-01-21.
+  registered_at: '2026-11-06T19:20:21+00:00'
+  sha256: e75b285fefa6d5598eafa155771f5674764fb269482d9f3071dd61d4bbf072cd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-MPR121-PCB/d1e18d5ea07d596006c414746e8c1ac4c8230e1f/Adafruit%20MPR121Q%20QT.brd
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_14_capital: Adafruit
+taxonomy_14_first_letter: a
+taxonomy_14_first_letter_upper: A
+taxonomy_14_length_1: a
+taxonomy_14_length_2: ad
+taxonomy_14_length_3: ada
+taxonomy_14_length_4: adaf
+taxonomy_14_length_5: adafr
+taxonomy_14_upper: ADAFRUIT
+taxonomy_14_upper_length_1: A
+taxonomy_14_upper_length_2: AD
+taxonomy_14_upper_length_3: ADA
+taxonomy_14_upper_length_4: ADAF
+taxonomy_14_upper_length_5: ADAFR
+taxonomy_15: '1982'
+taxonomy_15_capital: '1982'
+taxonomy_15_first_letter: '1'
+taxonomy_15_first_letter_upper: '1'
+taxonomy_15_length_1: '1'
+taxonomy_15_length_2: '19'
+taxonomy_15_length_3: '198'
+taxonomy_15_length_4: '1982'
+taxonomy_15_length_5: '1982'
+taxonomy_15_upper: '1982'
+taxonomy_15_upper_length_1: '1'
+taxonomy_15_upper_length_2: '19'
+taxonomy_15_upper_length_3: '198'
+taxonomy_15_upper_length_4: '1982'
+taxonomy_15_upper_length_5: '1982'
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: input
+taxonomy_3_capital: Input
+taxonomy_3_first_letter: i
+taxonomy_3_first_letter_upper: I
+taxonomy_3_length_1: i
+taxonomy_3_length_2: in
+taxonomy_3_length_3: inp
+taxonomy_3_length_4: inpu
+taxonomy_3_length_5: input
+taxonomy_3_upper: INPUT
+taxonomy_3_upper_length_1: I
+taxonomy_3_upper_length_2: IN
+taxonomy_3_upper_length_3: INP
+taxonomy_3_upper_length_4: INPU
+taxonomy_3_upper_length_5: INPUT
+taxonomy_4: touch
+taxonomy_4_capital: Touch
+taxonomy_4_first_letter: t
+taxonomy_4_first_letter_upper: T
+taxonomy_4_length_1: t
+taxonomy_4_length_2: to
+taxonomy_4_length_3: tou
+taxonomy_4_length_4: touc
+taxonomy_4_length_5: touch
+taxonomy_4_upper: TOUCH
+taxonomy_4_upper_length_1: T
+taxonomy_4_upper_length_2: TO
+taxonomy_4_upper_length_3: TOU
+taxonomy_4_upper_length_4: TOUC
+taxonomy_4_upper_length_5: TOUCH
+taxonomy_5: capacitive
+taxonomy_5_capital: Capacitive
+taxonomy_5_first_letter: c
+taxonomy_5_first_letter_upper: C
+taxonomy_5_length_1: c
+taxonomy_5_length_2: ca
+taxonomy_5_length_3: cap
+taxonomy_5_length_4: capa
+taxonomy_5_length_5: capac
+taxonomy_5_upper: CAPACITIVE
+taxonomy_5_upper_length_1: C
+taxonomy_5_upper_length_2: CA
+taxonomy_5_upper_length_3: CAP
+taxonomy_5_upper_length_4: CAPA
+taxonomy_5_upper_length_5: CAPAC
+taxonomy_6: mpr121
+taxonomy_6_capital: Mpr121
+taxonomy_6_first_letter: m
+taxonomy_6_first_letter_upper: M
+taxonomy_6_length_1: m
+taxonomy_6_length_2: mp
+taxonomy_6_length_3: mpr
+taxonomy_6_length_4: mpr1
+taxonomy_6_length_5: mpr12
+taxonomy_6_upper: MPR121
+taxonomy_6_upper_length_1: M
+taxonomy_6_upper_length_2: MP
+taxonomy_6_upper_length_3: MPR
+taxonomy_6_upper_length_4: MPR1
+taxonomy_6_upper_length_5: MPR12
+taxonomy_7: stemma_qt
+taxonomy_7_capital: Stemma Qt
+taxonomy_7_first_letter: s
+taxonomy_7_first_letter_upper: S
+taxonomy_7_length_1: s
+taxonomy_7_length_2: st
+taxonomy_7_length_3: ste
+taxonomy_7_length_4: stem
+taxonomy_7_length_5: stemm
+taxonomy_7_upper: STEMMA_QT
+taxonomy_7_upper_length_1: S
+taxonomy_7_upper_length_2: ST
+taxonomy_7_upper_length_3: STE
+taxonomy_7_upper_length_4: STEM
+taxonomy_7_upper_length_5: STEMM
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: input
+type_2: touch
+type_3: capacitive
+type_4: mpr121
+url_chat: ''
+webpage: https://www.adafruit.com/product/1982
+webpage_adafruit: https://www.adafruit.com/product/1982

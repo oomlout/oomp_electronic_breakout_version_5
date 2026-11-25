@@ -1,0 +1,75 @@
+board_variant: analog_xyz_header_breakout
+breakout_description: analog_xyz_header_breakout
+breakout_pcb_height: null
+breakout_pcb_width: null
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+definition_authority: working_oomp_populate_i2c.py
+description: Three analog XYZ outputs, +/-3 g. Add only as an explicit analog extension;
+  it is not an I2C device. The carrier includes a 3.3 V regulator and header pads.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+geometry_ready: false
+i2c: null
+interface_scope: documented_board_interfaces_only
+interfaces:
+- analog
+item_kind: breakout
+manufacturer: adafruit
+manufacturer_part_number: '163'
+mounting_hole_details: []
+mounting_hole_status: unverified
+mounting_holes: []
+name_readable: Adafruit ADXL335
+notes:
+- 'Analog-only exception: three XYZ voltage outputs and no I2C interface.'
+oobb_details: []
+part_number: '163'
+part_number_adafruit: '163'
+pinout_status: unverified
+pins: {}
+product_dimensions_mm:
+  depth: 3.14
+  height: 19
+  scope: manufacturer_product_dimensions_not_verified_pcb_outline
+  source_id: product
+  width: 19
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/163
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_15: '163'
+taxonomy_2: breakout
+taxonomy_3: sensor
+taxonomy_4: motion
+taxonomy_5: accelerometer
+taxonomy_6: adxl335
+taxonomy_7: analog_xyz_header_breakout
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: sensor
+type_2: motion
+type_3: accelerometer
+type_4: adxl335
+webpage: https://www.adafruit.com/product/163
+webpage_adafruit: https://www.adafruit.com/product/163

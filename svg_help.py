@@ -74,6 +74,7 @@ def prepare_base_for_print(thing, pos, **kwargs):
 def make_parts(**kwargs):
     parts          = kwargs.get("parts", [])
     filter         = kwargs.get("filter", "")
+    results = []
 
     #make the parts
     if True:
@@ -82,12 +83,63 @@ def make_parts(**kwargs):
             extra = part["kwargs"].get("extra", "")
             if filter in oobb_name or filter in extra:
                 print(f"making {part['oobb_name']}")
-                make_svg_generic(part)
+                results.append(make_svg_generic(part))
             else:
                 print(f"skipping {part['oobb_name']}")
+    return results
+
+
+def expand_svg_jobs(part, overrides=None):
+    """One job per svg_details entry; retain the complete source configuration."""
+    overrides = overrides or {}
+    details = part.get("svg_details", [])
+    details = [details] if isinstance(details, dict) else details
+    if not isinstance(details, list):
+        return []
+    jobs = []
+    for detail in details:
+        if not isinstance(detail, dict):
+            raise ValueError("Each svg_details entry must be a mapping")
+        if overrides.get("drawing") and detail.get("svg_name") != overrides["drawing"]:
+            continue
+        job = copy.deepcopy(part)
+        params = copy.deepcopy(part.get("kwargs", {}))
+        for key, value in detail.items():
+            if key in ("svg_name", "styles"):
+                continue
+            if key in ("width", "height", "depth") and not isinstance(value, (int, float)):
+                continue
+            params[key] = copy.deepcopy(value)
+        styles = _ss.merge(params.get("part_styles", {}), detail.get("styles", {}))
+        styles = _ss.merge(styles, overrides.get("part_styles", {}))
+        params.update(copy.deepcopy(overrides))
+        params["part_styles"] = styles
+        job["kwargs"] = params
+        job["_svg_detail"] = copy.deepcopy(detail)
+        job["oobb_name"] = detail.get("svg_name", part.get("oobb_name", "default"))
+        jobs.append(job)
+    return jobs
 
 
 def make_svg_generic(part):
+
+    if isinstance(part.get("svg_details"), list) and "_svg_detail" not in part:
+        return [make_svg_generic(job) for job in expand_svg_jobs(part)]
+    detail = part.get("_svg_detail", part.get("svg_details", {}))
+    if detail.get("svg_name") == "coordinate_diagram":
+        from working_svg_coordinate import get_coordinate_diagram, write_drawing
+        params = copy.deepcopy(part.get("kwargs", {}))
+        # Direct single-entry callers get the same style resolution as the loader.
+        if "_svg_detail" not in part:
+            params = expand_svg_jobs(part)[0]["kwargs"]
+        thing = copy.deepcopy(part)
+        get_coordinate_diagram(thing, **params)
+        if params.get("save_type", "all") == "all":
+            thing["drawing_files"] = write_drawing(
+                thing, os.path.join("parts", id_from_part(part)),
+                stem=params.get("svg_output", "working_coordinate_diagram"),
+                pdf=params.get("export_pdf", True), overwrite=params.get("overwrite", True))
+        return thing
 
     # fetching variables
     oobb_name    = part.get("oobb_name", "default")
@@ -104,7 +156,7 @@ def make_svg_generic(part):
     thing.update(part)
 
     import working_svg
-    svg_name = part.get("svg_details", {}).get("svg_name", oobb_name)
+    svg_name = detail.get("svg_name", oobb_name)
     try:
         func = getattr(working_svg, f"get_{svg_name}")
     except AttributeError:
@@ -159,8 +211,20 @@ def make_svg_generic(part):
         os.makedirs(folder)
 
     # svg
-    svg_path = os.path.join(folder, "working_svg.svg")
-    opsvg.opsvg_make_object(svg_path, thing["svg_components"], overwrite=overwrite)
+    svg_path = os.path.join(folder, kwargs.get("svg_output", "working_svg") + ".svg")
+    if svg_name == "microcontroller" and "pins" in part:
+        # Keep browser pad metadata in the normal make-all output as well as
+        # the standalone catalogue handoff.
+        if overwrite or not os.path.isfile(svg_path):
+            svg = working_svg.microcontroller_svg(
+                board=part,
+                stylesheet=kwargs.get("stylesheet", "microcontroller"),
+                part_styles=kwargs.get("part_styles", {}),
+            )
+            with open(svg_path, "w", encoding="utf-8") as stream:
+                stream.write(svg)
+    else:
+        opsvg.opsvg_make_object(svg_path, thing["svg_components"], overwrite=overwrite)
 
     # a4 presentation sheet
     svg_a4.make_a4_sheet(svg_path, folder, part, thing)
@@ -175,13 +239,8 @@ def make_svg_generic(part):
         part_new["project_name"] = os.getcwd()
         part_new["id_svg"] = thing.get("id", oomp_id)
         # svg_details lets get_parts() reload this part from disk.
-        svg_details = {}
-        svg_details["svg_name"] = part.get("svg_details", {}).get("svg_name", oobb_name)
-        for k in ["width", "height", "depth", "extra", "radius_name"]:
-            v = kwargs.get(k, "")
-            if v != "" and v != 0:
-                svg_details[k] = v
-        part_new["svg_details"] = svg_details
+        part_new.setdefault("svg_details", {"svg_name": svg_name})
+        part_new.pop("_svg_detail", None)
         part_new.pop("thing", "")
         yaml.dump(part_new, file, allow_unicode=True)
 
@@ -194,6 +253,7 @@ def make_svg_generic(part):
         part_new["kwargs"] = kwargs_new
         part_new["project_name"] = os.getcwd()
         part_new["id_svg"] = thing.get("id", oomp_id)
+        part_new.pop("_svg_detail", None)
         part_new["thing"] = _serialisable(thing)
         yaml.dump(part_new, file, allow_unicode=True)
 

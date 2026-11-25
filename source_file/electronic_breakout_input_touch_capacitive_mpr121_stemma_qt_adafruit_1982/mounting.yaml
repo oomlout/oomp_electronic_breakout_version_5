@@ -1,0 +1,107 @@
+schema_version: 1
+part_id: electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+status: verified
+board_revision: Adafruit MPR121Q QT STEMMA QT carrier, product 1982, STEMMA QT revision introduced 2021-01-21; pinned
+  Eagle board source added to Adafruit-MPR121-PCB on 2021-01-26. Product page says size and two mounting-hole locations
+  did not change in the revision.
+identity_evidence: Adafruit product 1982 page identifies the MPR121 STEMMA QT board and dates the QT revision. The
+  official pinned Adafruit-MPR121-PCB README links this repository to product 1982 and identifies EagleCAD board
+  files; the repository contains the exact file Adafruit MPR121Q QT.brd, distinct from Adafruit MPR121Q QT Gator
+  Breakout.brd (product 4830).
+board_size:
+- 33.02
+- 19.177
+mounting_holes:
+- id: U$34:pad:P$1
+  x_mm: -13.97
+  y_mm: -6.9215
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$35:pad:P$1
+  x_mm: 13.97
+  y_mm: -6.9215
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: 'Extracted the unmodified layer 20 outline from the pinned Eagle CAD (native mm). Outline extrema are
+  x=0..33.02 and y=-0.127..19.05, hence bounding box 33.02 x 19.177 mm and centre (16.51, 9.4615) mm. No rotation/reflection:
+  canonical top view x_mm = native_x_mm - 16.51; y_mm = native_y_mm - 9.4615; quarter_turn=0. Hole centres in native
+  CAD were transformed by that translation. Full drill review found 22 drilled candidates: JP1 and JP2 are through-hole
+  header contact rows (20 x 1.0 mm drill), and U$34/U$35 are the only two footprints explicitly named MOUNTINGHOLE_2.5_PLATED
+  (2 x 2.5 mm drill), selected as mounting holes.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  local_file: website.html
+  url: https://www.adafruit.com/product/1982
+  kind: manufacturer_product
+  locator: 'Product 1982 identity and revision history: Jan 21 2021 STEMMA QT update; board physical size and two
+    mounting hole locations unchanged.'
+  registered_at: '2026-11-06T19:19:50+00:00'
+  bytes: 103343
+  sha256: 3d1562c30e7c8b19728f2570e562903305a5c973e534532b8f056ff8a06eed90
+- id: repository
+  local_file: mounting_evidence/Adafruit-MPR121-PCB-README.md
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-MPR121-PCB/d1e18d5ea07d596006c414746e8c1ac4c8230e1f/README.md
+  kind: manufacturer_repository
+  locator: Pinned official Adafruit repo README links repository to product 1982 and identifies PCB format as EagleCAD;
+    distinguish product 4830 QT Gator.
+  registered_at: '2026-11-06T19:19:51+00:00'
+  bytes: 2792
+  sha256: d6613ca4f9e76f4fffd728dabc127a75cce41603530053dce4e9e1b9fbc98278
+- id: cad
+  local_file: mounting_evidence/Adafruit MPR121Q QT.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-MPR121-PCB/d1e18d5ea07d596006c414746e8c1ac4c8230e1f/Adafruit%20MPR121Q%20QT.brd
+  kind: manufacturer_cad
+  locator: Pinned official Eagle board file specifically Adafruit MPR121Q QT.brd for STEMMA QT product 1982. Inspect
+    Dimension layer and all drills; commit history adds this file 2021-01-26, after product page STEMMA QT revision
+    date 2021-01-21.
+  registered_at: '2026-11-06T19:20:21+00:00'
+  bytes: 273146
+  sha256: e75b285fefa6d5598eafa155771f5674764fb269482d9f3071dd61d4bbf072cd
+attempts:
+- Reviewed Adafruit product 1982 page and its revision history.
+- Reviewed official Adafruit-MPR121-PCB pinned repository README, commit history, and exact Adafruit MPR121Q QT.brd.
+- Reviewed complete layer 20 outline, all drilled candidates and selected footprint/package definitions in Eagle
+  XML.
+conflicts: []
+notes:
+- The product page states that the 2021-01-21 STEMMA QT revision changed the power/I2C breakout pinout while physical
+  size and two mounting-hole locations stayed the same. The pinned 2021 CAD revision is the direct geometry source.
+- The selected holes are plated PCB drills, not screw diameters. Header through-holes are electrical contacts and
+  excluded.
+- CAD files and README fetched 2026-11-06 using requests with 30 s timeout. Exact source URLs, pinned revision and
+  acquisition date are recorded in mounting_evidence/NOTES.txt and source registrations.
+- The standard holder is generated geometry only. Component, connector, screw-head and underside clearances, and
+  physical fit remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T19:21:00+00:00'
+extraction:
+  selected_ids:
+  - U$34:pad:P$1
+  - U$35:pad:P$1
+  quarter_turn: 0
+  native_centre_mm:
+  - 16.51
+  - 9.461500000000001
+identity_source_ids:
+- product
+- repository
+- cad

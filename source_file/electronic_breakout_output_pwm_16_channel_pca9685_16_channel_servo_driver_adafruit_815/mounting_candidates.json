@@ -1,0 +1,685 @@
+{
+  "board_size": [
+    62.23,
+    25.4
+  ],
+  "native_centre_mm": [
+    29.21,
+    6.222999999999998
+  ],
+  "quarter_turn": 0,
+  "candidates": [
+    {
+      "id": "J1:pad:1",
+      "x_mm": -1.8,
+      "y_mm": 8.89,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "TERMBLOCK_1X2-3.5MM"
+    },
+    {
+      "id": "J1:pad:2",
+      "x_mm": 1.7,
+      "y_mm": 8.89,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "TERMBLOCK_1X2-3.5MM"
+    },
+    {
+      "id": "U$47:pad:P$1",
+      "x_mm": -27.94,
+      "y_mm": 9.525,
+      "diameter_mm": 2.5,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.5_PLATED"
+    },
+    {
+      "id": "U$48:pad:P$1",
+      "x_mm": -27.94,
+      "y_mm": -9.525,
+      "diameter_mm": 2.5,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.5_PLATED"
+    },
+    {
+      "id": "U$49:pad:P$1",
+      "x_mm": 27.94,
+      "y_mm": 9.525,
+      "diameter_mm": 2.5,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.5_PLATED"
+    },
+    {
+      "id": "U$50:pad:P$1",
+      "x_mm": 27.94,
+      "y_mm": -9.525,
+      "diameter_mm": 2.5,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.5_PLATED"
+    },
+    {
+      "id": "C2:pad:-",
+      "x_mm": -21.082,
+      "y_mm": 8.509,
+      "diameter_mm": 0.8128,
+      "plated": true,
+      "package": "E3,5-8"
+    },
+    {
+      "id": "C2:pad:+",
+      "x_mm": -17.526,
+      "y_mm": 8.509,
+      "diameter_mm": 0.8128,
+      "plated": true,
+      "package": "E3,5-8"
+    },
+    {
+      "id": "JP3:pad:1",
+      "x_mm": -29.21,
+      "y_mm": -6.223,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X06-CLEANBIG"
+    },
+    {
+      "id": "JP3:pad:2",
+      "x_mm": -29.21,
+      "y_mm": -3.683,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X06-CLEANBIG"
+    },
+    {
+      "id": "JP3:pad:3",
+      "x_mm": -29.21,
+      "y_mm": -1.143,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X06-CLEANBIG"
+    },
+    {
+      "id": "JP3:pad:4",
+      "x_mm": -29.21,
+      "y_mm": 1.397,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X06-CLEANBIG"
+    },
+    {
+      "id": "JP3:pad:5",
+      "x_mm": -29.21,
+      "y_mm": 3.937,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X06-CLEANBIG"
+    },
+    {
+      "id": "JP3:pad:6",
+      "x_mm": -29.21,
+      "y_mm": 6.477,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X06-CLEANBIG"
+    },
+    {
+      "id": "JP4:pad:1",
+      "x_mm": 29.21,
+      "y_mm": -6.223,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X06-CLEANBIG"
+    },
+    {
+      "id": "JP4:pad:2",
+      "x_mm": 29.21,
+      "y_mm": -3.683,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X06-CLEANBIG"
+    },
+    {
+      "id": "JP4:pad:3",
+      "x_mm": 29.21,
+      "y_mm": -1.143,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X06-CLEANBIG"
+    },
+    {
+      "id": "JP4:pad:4",
+      "x_mm": 29.21,
+      "y_mm": 1.397,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X06-CLEANBIG"
+    },
+    {
+      "id": "JP4:pad:5",
+      "x_mm": 29.21,
+      "y_mm": 3.937,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X06-CLEANBIG"
+    },
+    {
+      "id": "JP4:pad:6",
+      "x_mm": 29.21,
+      "y_mm": 6.477,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X06-CLEANBIG"
+    },
+    {
+      "id": "JP1:pad:1",
+      "x_mm": -3.81,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP1:pad:2",
+      "x_mm": -3.81,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP1:pad:4",
+      "x_mm": -6.35,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP1:pad:5",
+      "x_mm": -6.35,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP1:pad:7",
+      "x_mm": -8.89,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP1:pad:8",
+      "x_mm": -8.89,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP1:pad:10",
+      "x_mm": -11.43,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP1:pad:11",
+      "x_mm": -11.43,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP1:pad:3",
+      "x_mm": -3.81,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP1:pad:6",
+      "x_mm": -6.35,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP1:pad:9",
+      "x_mm": -8.89,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP1:pad:12",
+      "x_mm": -11.43,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP2:pad:1",
+      "x_mm": -16.51,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP2:pad:2",
+      "x_mm": -16.51,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP2:pad:4",
+      "x_mm": -19.05,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP2:pad:5",
+      "x_mm": -19.05,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP2:pad:7",
+      "x_mm": -21.59,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP2:pad:8",
+      "x_mm": -21.59,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP2:pad:10",
+      "x_mm": -24.13,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP2:pad:11",
+      "x_mm": -24.13,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP2:pad:3",
+      "x_mm": -16.51,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP2:pad:6",
+      "x_mm": -19.05,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP2:pad:9",
+      "x_mm": -21.59,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP2:pad:12",
+      "x_mm": -24.13,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP5:pad:1",
+      "x_mm": 24.13,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP5:pad:2",
+      "x_mm": 24.13,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP5:pad:4",
+      "x_mm": 21.59,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP5:pad:5",
+      "x_mm": 21.59,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP5:pad:7",
+      "x_mm": 19.05,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP5:pad:8",
+      "x_mm": 19.05,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP5:pad:10",
+      "x_mm": 16.51,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP5:pad:11",
+      "x_mm": 16.51,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP5:pad:3",
+      "x_mm": 24.13,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP5:pad:6",
+      "x_mm": 21.59,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP5:pad:9",
+      "x_mm": 19.05,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP5:pad:12",
+      "x_mm": 16.51,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP6:pad:1",
+      "x_mm": 11.43,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP6:pad:2",
+      "x_mm": 11.43,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP6:pad:4",
+      "x_mm": 8.89,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP6:pad:5",
+      "x_mm": 8.89,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP6:pad:7",
+      "x_mm": 6.35,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP6:pad:8",
+      "x_mm": 6.35,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP6:pad:10",
+      "x_mm": 3.81,
+      "y_mm": -6.223,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP6:pad:11",
+      "x_mm": 3.81,
+      "y_mm": -8.763,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP6:pad:3",
+      "x_mm": 11.43,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP6:pad:6",
+      "x_mm": 8.89,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP6:pad:9",
+      "x_mm": 6.35,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    },
+    {
+      "id": "JP6:pad:12",
+      "x_mm": 3.81,
+      "y_mm": -11.303,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "3X04"
+    }
+  ],
+  "outline_points": [
+    [
+      -27.94,
+      -12.7
+    ],
+    [
+      -31.115,
+      -9.525
+    ],
+    [
+      -31.115,
+      -9.525
+    ],
+    [
+      -27.94,
+      -12.7
+    ],
+    [
+      -31.115,
+      -9.525
+    ],
+    [
+      -31.115,
+      9.525
+    ],
+    [
+      -31.115,
+      9.525
+    ],
+    [
+      -27.94,
+      12.7
+    ],
+    [
+      -27.94,
+      12.7
+    ],
+    [
+      -31.115,
+      9.525
+    ],
+    [
+      -27.94,
+      12.7
+    ],
+    [
+      27.94,
+      12.7
+    ],
+    [
+      27.94,
+      12.7
+    ],
+    [
+      31.115,
+      9.525
+    ],
+    [
+      31.115,
+      9.525
+    ],
+    [
+      27.94,
+      12.7
+    ],
+    [
+      31.115,
+      9.525
+    ],
+    [
+      31.115,
+      -9.525
+    ],
+    [
+      31.115,
+      -9.525
+    ],
+    [
+      27.94,
+      -12.7
+    ],
+    [
+      27.94,
+      -12.7
+    ],
+    [
+      27.94,
+      -12.7
+    ],
+    [
+      -27.94,
+      -12.7
+    ]
+  ],
+  "mounting_holes": [
+    {
+      "id": "U$47:pad:P$1",
+      "x_mm": -27.94,
+      "y_mm": 9.525,
+      "diameter_mm": 2.5,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.5_PLATED"
+    },
+    {
+      "id": "U$48:pad:P$1",
+      "x_mm": -27.94,
+      "y_mm": -9.525,
+      "diameter_mm": 2.5,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.5_PLATED"
+    },
+    {
+      "id": "U$49:pad:P$1",
+      "x_mm": 27.94,
+      "y_mm": 9.525,
+      "diameter_mm": 2.5,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.5_PLATED"
+    },
+    {
+      "id": "U$50:pad:P$1",
+      "x_mm": 27.94,
+      "y_mm": -9.525,
+      "diameter_mm": 2.5,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.5_PLATED"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2350a_pico_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_with_headers
+status: needs_review
+board_revision: Raspberry Pi Pico 2 with headers (SC1632); exact headered carrier
+  model RP-009062-CA-2 (STEP). Raspberry Pi does not identify a separate PCB revision
+  in these sources.
+identity_evidence: Raspberry Pi Product Information Portal identifies Pico 2 with
+  headers as SC1632 and lists the exact Pico 2 H STEP model RP-009062-CA-2. Raspberry
+  Pi Pico-series documentation describes Pico 2 and Pico 2 with headers as the same
+  board layout with presoldered headers as the physical difference. The STEP model
+  includes the presoldered headers and exact matching Pico 2 carrier outline.
+board_size:
+- 21
+- 51
+mounting_holes:
+- id: H1
+  x_mm: -5.7
+  y_mm: -23.5
+  diameter_mm: 2.1
+  source_id: mechanical_datasheet
+- id: H2
+  x_mm: -5.7
+  y_mm: 23.5
+  diameter_mm: 2.1
+  source_id: mechanical_datasheet
+- id: H3
+  x_mm: 5.7
+  y_mm: -23.5
+  diameter_mm: 2.1
+  source_id: mechanical_datasheet
+- id: H4
+  x_mm: 5.7
+  y_mm: 23.5
+  diameter_mm: 2.1
+  source_id: mechanical_datasheet
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: mechanical_datasheet
+derivation: Figure 3, printed page 7, gives the 21 x 51 mm PCB, four drilled D2.1
+  mm mounting holes, 5.7 mm lateral centre offsets and 2 mm end-edge offsets. Set
+  the origin at the PCB bounding-box centre; top view with USB at +Y, X right and
+  Y up. Thus x = ±5.7 mm and y = ±(51/2 - 2) = ±23.5 mm. The complete manufacturer
+  STEP board solid has bounds x=±10.5 mm, y=±25.5 mm; its four cylindrical through-drills
+  have radius 1.05 mm and centres exactly (±5.7, ±23.5) mm. Header drills and USB/other
+  connector features are excluded.
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: mechanical_datasheet
+  local_file: mounting_evidence/pico_2_datasheet.pdf
+  url: https://datasheets.raspberrypi.com/pico/pico-2-datasheet.pdf
+  kind: manufacturer_drawing
+  locator: 'Current Raspberry Pi Pico 2 Datasheet, created 2026-07-03; printed page
+    7, section 3, Figure 3 and accompanying text: 51×21 mm PCB, four 2.1 mm drilled
+    mounting holes. Complete carrier drawing includes through-hole GPIO rows and board
+    outline.'
+  registered_at: '2026-11-06T16:18:33+00:00'
+  bytes: 3016817
+  sha256: cbcfaf881018c686495a2e53c7bd281e7e0a8217d79447d73eda7c8f74b7f675
+- id: product
+  local_file: mounting_evidence/pico_2_with_headers_product.html
+  url: https://pip.raspberrypi.com/categories/1264-raspberry-pi-pico-2-h
+  kind: manufacturer_product
+  locator: Raspberry Pi Product Information Portal page identifies Raspberry Pi Pico
+    2 with headers and part SC1632; page lists separate Pico 2 H 3D STEP and product
+    brief.
+  registered_at: '2026-11-06T16:18:34+00:00'
+  bytes: 40155
+  sha256: 4cd7f114e97b237ed1147472942f065978f1adbb40b59c0776c9492c9b451d9e
+- id: archived_figure
+  local_file: reference/mechanical.png
+  url: https://datasheets.raspberrypi.com/pico/pico-2-datasheet.pdf
+  kind: manufacturer_drawing
+  locator: Previously archived rendering of printed page 7, Figure 3; SHA256 verified
+    against mounting_context.json. Independently reviewed complete page; top view
+    with board outline and every visible hole candidate.
+  registered_at: '2026-11-06T16:18:34+00:00'
+  bytes: 131489
+  sha256: 6960c061fc0c98d77ee3a1868bb21245504c41cdccece934726dd11e92498aa1
+- id: carrier_step
+  local_file: mounting_evidence/rpi_pico2h.step
+  url: https://pip-assets.raspberrypi.com/categories/1264-raspberry-pi-pico-2-with-headers/documents/RP-009062-CA-2-Pico%202%20H%20-%203D%20STEP.zip
+  kind: manufacturer_cad
+  locator: Exact Raspberry Pi Pico 2 H STEP model RP-009062-CA-2 listed for the with-headers
+    SC1632 product; inspected board solid bounding box and all cylindrical through-features.
+    Four radius 1.05 mm holes at x=±5.7,y=±23.5 mm; complete model is an assembly
+    with USB connector and presoldered headers.
+  registered_at: '2026-11-06T16:20:22+00:00'
+  bytes: 12821674
+  sha256: e1d6614bd8e5bb94aae2eef9452be244da56d48f4f1c363e71f19eff1fe69d4f
+- id: carrier_step_archive
+  local_file: mounting_evidence/RP-009062-CA-2-Pico-2-H-3D-STEP.zip
+  url: https://pip-assets.raspberrypi.com/categories/1264-raspberry-pi-pico-2-with-headers/documents/RP-009062-CA-2-Pico%202%20H%20-%203D%20STEP.zip
+  kind: manufacturer_cad
+  locator: Raspberry Pi Product Information Portal downloadable Pico 2 H 3D STEP document
+    RP-009062-CA-2; ZIP contains rpi_pico2h.step and LICENSE.txt.
+  registered_at: '2026-11-06T16:20:22+00:00'
+  bytes: 2290425
+  sha256: 024de65032d37f0ef55e0f11611ae67f85fd0cb5a3f79d2841440a7740f967e7
+attempts:
+- source: Raspberry Pi Pico 2 datasheet, printed page 7, Figure 3; registered archive
+    and current PDF
+  result: Reviewed complete manufacturer mechanical drawing and dimension labels.
+- source: Current Raspberry Pi Pico 2 Datasheet (official PDF, dated 2026-07-03;
+    rechecked 2026-11-07), printed page 7, section 3 and Figure 3
+  result: Rechecked current RP2350 Pico 2 mechanical specification; it explicitly states
+    four 2.1 mm (± 0.05 mm) drilled mounting holes. No changed hole size or separate
+    headered-PCB revision is identified. This agrees with the archived RP-009062-CA-2
+    Pico 2 H STEP carrier model and the existing four-hole coordinates.
+- source: Raspberry Pi Product Information Portal, SC1632 and document RP-009062-CA-2
+  result: Downloaded and inspected exact Pico 2 H STEP assembly; confirmed outline
+    and all board cylindrical through-features.
+- source: tools/mounting_research.py preview
+  result: Standard holder preview rejected 2.1 mm drills because the smallest supported
+    screw is M2 with 0.2 mm diametral clearance (minimum 2.2 mm drill). Geometry is
+    confirmed; custom holder policy is unresolved.
+conflicts: []
+notes:
+- The drawing and complete CAD show four board mounting drills. The 1.0 mm GPIO through-holes
+  and smaller pads/test/connector features were not selected as mounts.
+- 'Exact hole geometry is supported, but this workflow’s standard screw-holder policy
+  cannot use 2.1 mm drills: its M2 option requires at least 2.2 mm drill diameter.
+  Rechecked against the current official RP2350 Pico 2 datasheet: the tolerance range
+  is 2.05–2.15 mm, still below the 2.2 mm minimum. The exact Pico 2 H carrier STEP
+  agrees; no exact-revision size change resolves the clearance. Needs coordinator/
+  custom-holder decision; do not promote incomplete standard-holder evidence.'
+- Standard holder geometry is not a physical fit test; connector, component, screw-head
+  and underside clearances remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T16:20:22+00:00'
+identity_source_ids:
+- product
+- carrier_step
+- carrier_step_archive

@@ -1,0 +1,325 @@
+{
+    "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c3/esp32-c3-devkitm-1/user_guide.html",
+    "accessed": "2026-10-22",
+    "tables": [
+        [
+            [
+                "Key Component",
+                "Description"
+            ],
+            [
+                "ESP32-C3-MINI-1 or ESP32-C3-MINI-1U",
+                "ESP32-C3-MINI-1 and ESP32-C3-MINI-1U are general-purpose Wi-Fi and Bluetooth Low Energy combo modules. ESP32-C3-MINI-1 comes with an on-board PCB antenna, whereas ESP32-C3-MINI-1U comes with an external antenna connector. They both have a flash of 4 MB, integrated inside the chip\u2019s package."
+            ],
+            [
+                "5 V to 3.3 V LDO",
+                "Power regulator that converts a 5 V supply into a 3.3 V output."
+            ],
+            [
+                "5 V Power On LED",
+                "Turns on when the USB power is connected to the board."
+            ],
+            [
+                "Pin Headers",
+                "All available GPIO pins (except for the SPI bus for flash) are broken out to the pin headers on the board. For details, please see Header Block ."
+            ],
+            [
+                "Boot Button",
+                "Download button. Holding down Boot and then pressing Reset initiates Firmware Download mode for downloading firmware through the serial port."
+            ],
+            [
+                "Micro-USB Port",
+                "USB interface. Power supply for the board as well as the communication interface between a computer and the ESP32-C3 series of chips."
+            ],
+            [
+                "Reset Button",
+                "Press this button to restart the system."
+            ],
+            [
+                "USB-to-UART Bridge",
+                "Single USB-UART bridge chip provides transfer rates up to 3 Mbps."
+            ],
+            [
+                "RGB LED",
+                "Addressable RGB LED, driven by GPIO8."
+            ]
+        ],
+        [
+            [
+                "Part Number",
+                "On-board Module",
+                "Flash",
+                "PSRAM",
+                "Antenna"
+            ],
+            [
+                "ESP32-C3-DevKitM-1-N4X",
+                "ESP32-C3-MINI-1",
+                "4 MB",
+                "\u2014",
+                "PCB on-board antenna"
+            ],
+            [
+                "ESP32-C3-DevKitM-1 (EOL)",
+                "ESP32-C3-MINI-1",
+                "4 MB",
+                "\u2014",
+                "PCB on-board antenna"
+            ]
+        ],
+        [
+            [
+                "No.",
+                "Name",
+                "Type [ 1 ]",
+                "Function"
+            ],
+            [
+                "1",
+                "GND",
+                "G",
+                "Ground"
+            ],
+            [
+                "2",
+                "3V3",
+                "P",
+                "3.3 V power supply"
+            ],
+            [
+                "3",
+                "3V3",
+                "P",
+                "3.3 V power supply"
+            ],
+            [
+                "4",
+                "IO2",
+                "I/O/T",
+                "GPIO2 [ 2 ] , ADC1_CH2, FSPIQ"
+            ],
+            [
+                "5",
+                "IO3",
+                "I/O/T",
+                "GPIO3, ADC1_CH3"
+            ],
+            [
+                "6",
+                "GND",
+                "G",
+                "Ground"
+            ],
+            [
+                "7",
+                "RST",
+                "I",
+                "CHIP_PU"
+            ],
+            [
+                "8",
+                "GND",
+                "G",
+                "Ground"
+            ],
+            [
+                "9",
+                "IO0",
+                "I/O/T",
+                "GPIO0, ADC1_CH0, XTAL_32K_P"
+            ],
+            [
+                "10",
+                "IO1",
+                "I/O/T",
+                "GPIO1, ADC1_CH1, XTAL_32K_N"
+            ],
+            [
+                "11",
+                "IO10",
+                "I/O/T",
+                "GPIO10, FSPICS0"
+            ],
+            [
+                "12",
+                "GND",
+                "G",
+                "Ground"
+            ],
+            [
+                "13",
+                "5V",
+                "P",
+                "5 V power supply"
+            ],
+            [
+                "14",
+                "5V",
+                "P",
+                "5 V power supply"
+            ],
+            [
+                "15",
+                "GND",
+                "G",
+                "Ground"
+            ]
+        ],
+        [
+            [
+                "No.",
+                "Name",
+                "Type [ 1 ]",
+                "Function"
+            ],
+            [
+                "1",
+                "GND",
+                "G",
+                "Ground"
+            ],
+            [
+                "2",
+                "TX",
+                "I/O/T",
+                "GPIO21, U0TXD"
+            ],
+            [
+                "3",
+                "RX",
+                "I/O/T",
+                "GPIO20, U0RXD"
+            ],
+            [
+                "4",
+                "GND",
+                "G",
+                "Ground"
+            ],
+            [
+                "5",
+                "IO9",
+                "I/O/T",
+                "GPIO9 [ 2 ]"
+            ],
+            [
+                "6",
+                "IO8",
+                "I/O/T",
+                "GPIO8 [ 2 ] , RGB LED"
+            ],
+            [
+                "7",
+                "GND",
+                "G",
+                "Ground"
+            ],
+            [
+                "8",
+                "IO7",
+                "I/O/T",
+                "GPIO7, FSPID, MTDO"
+            ],
+            [
+                "9",
+                "IO6",
+                "I/O/T",
+                "GPIO6, FSPICLK, MTCK"
+            ],
+            [
+                "10",
+                "IO5",
+                "I/O/T",
+                "GPIO5, ADC2_CH0, FSPIWP, MTDI"
+            ],
+            [
+                "11",
+                "IO4",
+                "I/O/T",
+                "GPIO4, ADC1_CH4, FSPIHD, MTMS"
+            ],
+            [
+                "12",
+                "GND",
+                "G",
+                "Ground"
+            ],
+            [
+                "13",
+                "IO18",
+                "I/O/T",
+                "GPIO18, USB_D-"
+            ],
+            [
+                "14",
+                "IO19",
+                "I/O/T",
+                "GPIO19, USB_D+"
+            ],
+            [
+                "15",
+                "GND",
+                "G",
+                "Ground"
+            ]
+        ]
+    ],
+    "links": [
+        {
+            "title": "Download PDF",
+            "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c3/esp-dev-kits-en-master-esp32c3.pdf"
+        },
+        {
+            "title": "ESP32-C3-MINI-1 or ESP32-C3-MINI-1U",
+            "url": "https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf"
+        },
+        {
+            "title": "Espressif Product Ordering Information",
+            "url": "https://www.espressif.com/sites/default/files/documentation/espressif_products_ordering_information_en.pdf"
+        },
+        {
+            "title": "ESP32-C3-DevKitM-1 Schematic",
+            "url": "https://dl.espressif.com/dl/schematics/SCH_ESP32-C3-DEVKITM-1_V1_20200915A.pdf"
+        },
+        {
+            "title": "ESP32-C3 Datasheet",
+            "url": "https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf"
+        },
+        {
+            "title": "ESP32-C3 Datasheet",
+            "url": "https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf"
+        },
+        {
+            "title": "ESP32-C3-MINI-1 & ESP32-C3-MINI-1U Datasheet",
+            "url": "https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf"
+        },
+        {
+            "title": "ESP32-C3-DevKitM-1 Schematic",
+            "url": "https://dl.espressif.com/dl/schematics/SCH_ESP32-C3-DEVKITM-1_V1_20200915A.pdf"
+        },
+        {
+            "title": "ESP32-C3-DevKitM-1 PCB Layout",
+            "url": "https://dl.espressif.com/dl/schematics/PCB_ESP32-C3-DEVKITM-1_V1_20200915AA.pdf"
+        },
+        {
+            "title": "ESP32-C3-DevKitM-1 Dimensions",
+            "url": "https://dl.espressif.com/dl/schematics/DIMENSION_ESP32-C3-DEVKITM-1_V1_20200915AA.pdf"
+        },
+        {
+            "title": "ESP32-C3-DevKitM-1 Dimensions source file",
+            "url": "https://dl.espressif.com/dl/schematics/DIMENSION_ESP32-C3-DEVKITM-1_V1_20200915AA.dxf"
+        },
+        {
+            "title": "Edit on GitHub",
+            "url": "https://github.com/espressif/esp-dev-kits/blob/ae2a376/docs/en/esp32-c3-devkitm-1/user_guide.rst"
+        },
+        {
+            "title": "theme",
+            "url": "https://github.com/espressif/sphinx_idf_theme"
+        },
+        {
+            "title": "Read the Docs Sphinx Theme",
+            "url": "https://github.com/readthedocs/sphinx_rtd_theme"
+        }
+    ]
+}

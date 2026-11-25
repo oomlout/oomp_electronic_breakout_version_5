@@ -1,0 +1,2 @@
+Downloaded 2026-11-06 from the official Adafruit-MCP23017-PCB repository at commit f73186f1b593f7a5a3e710d9ced889005b580c38. The repository README identifies these EagleCAD board files as the Adafruit MCP23017 I2C GPIO Expander Breakout - STEMMA QT / QWIIC and links product 5346.
+Source: https://raw.githubusercontent.com/adafruit/Adafruit-MCP23017-PCB/f73186f1b593f7a5a3e710d9ced889005b580c38/Adafruit%20MCP23017%20GPIO%20Expander.brd

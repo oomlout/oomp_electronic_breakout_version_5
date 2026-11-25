@@ -1,0 +1,129 @@
+{
+  "name_readable": "M5Stack Stamp-C3U",
+  "manufacturer": "m5stack",
+  "part_number": "stamp_c3u",
+  "webpage": null,
+  "sources": [
+    {
+      "id": "original_catalogue",
+      "url": null,
+      "title": "Original populate entries in this repository",
+      "local_file": null,
+      "scope": "Nominal dimensions and identity; not manufacturer verification",
+      "accessed": "2026-10-22"
+    },
+    {
+      "id": "chip_datasheet",
+      "url": "https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf",
+      "title": "chip_datasheet",
+      "accessed": "2026-10-22",
+      "scope": "GPIO capabilities, electrical limits and strapping; not carrier geometry"
+    },
+    {
+      "id": "board_guide",
+      "url": "https://docs.m5stack.com/en/core/Stamp-C3U",
+      "title": "stamp_c3u manufacturer guide",
+      "accessed": "2026-10-22",
+      "scope": "Board identity, connector pinout and documented functions"
+    },
+    {
+      "id": "pinmap",
+      "url": "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/525/C122-B_PinMap_01.jpg",
+      "title": "pinmap",
+      "accessed": "2026-10-22",
+      "scope": "Manufacturer Stamp-C3U pinmap",
+      "local_file": "reference/pinmap.jpg",
+      "sha256": "16e91b56e6bc62729ace2f4d9856f2a90f19de004ce15a96b050c596037e1f96"
+    },
+    {
+      "id": "mechanical",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/stamp_c3u/stamp_c3%26c3u_size_01.webp",
+      "title": "mechanical",
+      "accessed": "2026-10-22",
+      "scope": "Manufacturer Stamp-C3U mechanical",
+      "local_file": "reference/dimensions.webp",
+      "sha256": "63b4d2b16fa855c2aaddfd5b828096d4de1f3a03b366b16cccb9d7bf0fa4ccf4"
+    },
+    {
+      "id": "schematic",
+      "url": "https://static-cdn.m5stack.com/resource/docs/products/core/stamp_c3u/stamp_c3u_sch_01.webp",
+      "title": "schematic",
+      "accessed": "2026-10-22",
+      "scope": "Manufacturer Stamp-C3U schematic",
+      "local_file": "reference/schematic.webp",
+      "sha256": "eafaa3fac84eb1b3d7575a74e0e222e3b4d255255e1460c27ed9f8baf8a11957"
+    },
+    {
+      "id": "interface_variant",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/variants/esp32c3/pins_arduino.h",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Arduino variant pin assignments; not a physical header drawing",
+      "local_file": "reference/interface_defaults/esp32_esp32c3.h",
+      "sha256": "ac8fa453d3cac0582430c53156f09241fdd4ce516e11d03f7c39bf1bab018785"
+    },
+    {
+      "id": "interface_board_selection",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/boards.txt",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework board names and variant selection; generic selections remain explicitly scoped",
+      "local_file": "reference/interface_defaults/esp32_boards.txt",
+      "sha256": "ee8dff33096a208589dd864d01acbabd8853ba5dfb5588cb9a22f96791584f23",
+      "content_scope": "excerpt_of_board_names_and_variant_selections",
+      "source_document_sha256": "11b90d1f4795ec365418635749b685a2f3d8320d0e163d886aa2099e81277b07"
+    },
+    {
+      "id": "interface_runtime_uart",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/cores/esp32/HardwareSerial.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_HardwareSerial.cpp",
+      "sha256": "a555861fb4f28a2a4c1d903a8152d714902fee2510c9eaf3ad5311dbcd779035"
+    },
+    {
+      "id": "interface_runtime_i2c",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/Wire/src/Wire.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_Wire.cpp",
+      "sha256": "0454e5becf7acaa6f7cb466397682d762461f678cbb88644f31f313e653b71bc"
+    },
+    {
+      "id": "interface_runtime_spi",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/SPI/src/SPI.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_SPI.cpp",
+      "sha256": "4caea80d21fa230a528322d9eb900880a0acd9c91cb355bc5cec514ea02ecaed"
+    }
+  ],
+  "dimensions_mm": {
+    "width": 20,
+    "height": 34,
+    "pcb_thickness": 1,
+    "assembled_height": 4.6,
+    "scope": "dimensioned_board_and_assembled_thickness",
+    "source_id": "mechanical",
+    "status": "manufacturer_drawing"
+  },
+  "coordinate_system": {
+    "units": "mm",
+    "origin": "centre_of_pcb_outline",
+    "view": "top_with_usb_at_positive_y",
+    "x_positive": "right",
+    "y_positive": "towards_usb"
+  },
+  "mounting_hole_details": [
+    {
+      "x_mm": 0,
+      "y_mm": -2,
+      "diameter_mm": 2.1,
+      "source_id": "mechanical",
+      "derivation": "Centred X; hole 19 mm from USB-end edge, 34 mm board; rotate drawing to USB-up."
+    }
+  ]
+}

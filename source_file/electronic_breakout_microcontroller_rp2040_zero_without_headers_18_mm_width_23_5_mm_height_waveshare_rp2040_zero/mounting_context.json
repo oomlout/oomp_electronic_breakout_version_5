@@ -1,0 +1,112 @@
+{
+  "name_readable": "Waveshare RP2040-ZERO",
+  "manufacturer": "waveshare",
+  "part_number": "rp2040_zero",
+  "webpage": null,
+  "sources": [
+    {
+      "id": "product",
+      "url": "https://www.waveshare.net/wiki/RP2040-Zero",
+      "title": "Waveshare RP2040-Zero",
+      "accessed": "2026-10-20",
+      "scope": "Board versions and manufacturer resources"
+    },
+    {
+      "id": "schematic",
+      "url": "https://www.waveshare.net/w/upload/4/4c/RP2040_Zero.pdf",
+      "title": "RP2040-Zero schematic",
+      "accessed": "2026-10-20",
+      "scope": "Chip, flash and signal connectivity",
+      "local_file": "reference/schematic.pdf",
+      "sha256": "bab8e6fecb8b1da565392a7510eaa8921529c4121f43a0505f708a06f1c1362e"
+    },
+    {
+      "id": "pinout",
+      "url": "https://www.waveshare.net/w/upload/thumb/c/c7/RP2040-Zero-2.jpg/800px-RP2040-Zero-2.jpg",
+      "title": "RP2040-Zero labelled pinout",
+      "accessed": "2026-10-20",
+      "scope": "Edge and underside GPIO labels",
+      "local_file": "reference/pinout.jpg",
+      "sha256": "db81657563511e137bd5a572ad73c7376d30da8410f06c86ceaa7cfc9a4dcd4b"
+    },
+    {
+      "id": "mechanical",
+      "url": "https://www.waveshare.net/w/upload/thumb/2/2e/RP2040-Zero-3.jpg/800px-RP2040-Zero-3.jpg",
+      "title": "RP2040-Zero mechanical dimensions",
+      "accessed": "2026-10-20",
+      "scope": "PCB dimensions and edge-pin centres",
+      "local_file": "reference/mechanical.jpg",
+      "sha256": "f668799a41e270feff2987fd8ba7650e29d4991bc9a158d94bab816b6e5ea7d0"
+    },
+    {
+      "id": "chip_datasheet",
+      "url": "https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf",
+      "title": "chip_datasheet",
+      "accessed": "2026-10-22",
+      "scope": "GPIO mux, PWM, ADC and electrical characteristics"
+    },
+    {
+      "id": "interface_variant",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/variants/waveshare_rp2040_zero/pins_arduino.h",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Arduino variant pin assignments; not a physical header drawing",
+      "local_file": "reference/interface_defaults/rp_waveshare_rp2040_zero.h",
+      "sha256": "2437a1225b185f479e664f38600513e72ce34ca125b4c7c69acee206b2255965"
+    },
+    {
+      "id": "interface_board_selection",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/boards.txt",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework board names and variant selection; generic selections remain explicitly scoped",
+      "local_file": "reference/interface_defaults/rp_boards.txt",
+      "sha256": "490db26092177a8f004fae9c37849310cbb839c90f1820a2bb30c3345d5615b3",
+      "content_scope": "excerpt_of_board_names_and_variant_selections",
+      "source_document_sha256": "12fb03a0c15a09f5bd61d32ce1a59e1bca721b6e9aa059494b060623fcb7a26f"
+    },
+    {
+      "id": "interface_runtime_uart",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/cores/rp2040/SerialUART.cpp",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/rp_SerialUART.cpp",
+      "sha256": "52976eb468d3a8776a685eb3cd9f770023c2b7dc3017c78e79ddb7f0e86c163c"
+    },
+    {
+      "id": "interface_runtime_i2c",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/libraries/Wire/src/Wire.cpp",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/rp_Wire.cpp",
+      "sha256": "a27b11701b99a3d7e1936fc47ebb05d639ca318357bba574800b5bbd40c80075"
+    },
+    {
+      "id": "interface_runtime_spi",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/libraries/SPI/src/SPI.cpp",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/rp_SPI.cpp",
+      "sha256": "523423a2d53d9cb5ce37ee7c3533850fcaea3c43e50a4e55454e4dc3e81e6029"
+    }
+  ],
+  "dimensions_mm": {
+    "width": 18,
+    "height": 23.5,
+    "assembled_height": null,
+    "scope": "pcb_outline_excludes_usb_overhang",
+    "pcb_thickness": null,
+    "source_id": "mechanical"
+  },
+  "coordinate_system": {
+    "units": "mm",
+    "origin": "centre_of_pcb_outline",
+    "view": "top_with_usb_at_positive_y",
+    "x_positive": "right",
+    "y_positive": "towards_usb"
+  },
+  "mounting_hole_details": []
+}

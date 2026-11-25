@@ -1,0 +1,141 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2040_pico_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico
+status: needs_review
+board_revision: Raspberry Pi Pico, first-generation non-wireless board without presoldered
+  headers; Rev3 mechanical outline as explicitly named in datasheet Figure 3. Outline
+  is 21 x 51 mm and excludes the overhanging micro-USB connector.
+identity_evidence: Raspberry Pi official Pico-series documentation identifies Raspberry
+  Pi Pico as the RP2040, non-wireless, no-header first-generation variant. The registered
+  official Raspberry Pi Pico datasheet is titled for Pico; its page 6 Figure 3 explicitly
+  states it is the Raspberry Pi Pico Rev3 board. Pico H is the headered variant and
+  not the assigned carrier.
+board_size:
+- 21.0
+- 51.0
+mounting_holes:
+- id: H1
+  x_mm: -5.7
+  y_mm: -23.1
+  diameter_mm: 2.1
+  source_id: drawing
+- id: H2
+  x_mm: 5.7
+  y_mm: -23.1
+  diameter_mm: 2.1
+  source_id: drawing
+- id: H3
+  x_mm: -5.7
+  y_mm: 23.5
+  diameter_mm: 2.1
+  source_id: drawing
+- id: H4
+  x_mm: 5.7
+  y_mm: 23.5
+  diameter_mm: 2.1
+  source_id: drawing
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: drawing
+derivation: 'Datasheet page 6, Figure 3: PCB bounding box is 21 x 51 mm. Top view
+  is oriented with the micro-USB connector at positive Y; the outline centre is (0,0),
+  X positive right and Y positive toward the connector. The drawing gives mounting-hole
+  columns at X = +/-5.7 mm (also 4.8 mm in from the left edge: -10.5 + 4.8 = -5.7;
+  opposite column is +5.7). Upper row is 2.0 mm below the top edge: Y = 51/2 - 2.0
+  = +23.5 mm. Lower row is 2.4 mm above the bottom edge: Y = -51/2 + 2.4 = -23.1 mm.
+  Figure 3 states four drilled mounting holes Ø2.1 mm. The 48.26 mm dimension is the
+  span of the long-edge header rows, not a mounting-hole-row spacing. The Ø1 mm pin
+  holes and SWD castellated pads are electrical interfaces and are excluded; the four
+  explicitly dimensioned Ø2.1 mm holes are identified as mechanical fixing holes.'
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: gpt-6-luna
+sources:
+- id: drawing
+  local_file: reference/mechanical.png
+  url: https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf
+  kind: manufacturer_mechanical_drawing
+  locator: Raspberry Pi Pico Datasheet, page 6 printed, Figure 3; titled dimensions
+    of Raspberry Pi Pico Rev3. Rendered archived crop hash matches mounting_context.json.
+    PCB 21 x 51 mm, 4x Ø2.1 mm holes; top hole row 2 mm below top edge, bottom hole
+    row 2.4 mm above lower edge; see exact drawing.
+  registered_at: '2026-11-06T15:32:33+00:00'
+  bytes: 133780
+  sha256: f0729092b3f28ee0fc488652c290022fb5a263d39405669496e90d1a14b6b855
+- id: datasheet
+  local_file: mounting_evidence/pico_datasheet.pdf
+  url: https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf
+  kind: manufacturer_datasheet
+  locator: Official Raspberry Pi Pico Datasheet, downloaded 2026-11-06 from redirected
+    Raspberry Pi PIP asset RP-008307-DS-2-pico-datasheet.pdf; page 6 printed has mechanical
+    specification, 51 x 21 mm outline, 4x 2.1 mm drilled mounting holes, Figure 3
+    explicitly identifies Pico Rev3.
+  registered_at: '2026-11-06T15:32:33+00:00'
+  bytes: 18176869
+  sha256: 757ff485227493b9fcc0c2c96c4dea9de020e1d8b2b11e2aa4f9ee8b25aa89eb
+- id: current_portal
+  local_file: mounting_evidence/pip_product.html
+  url: https://pip.raspberrypi.com/categories/610
+  kind: manufacturer_product
+  locator: Raspberry Pi Product Information Portal, Raspberry Pi Pico entry; page
+    lists pico-datasheet updated 15 Jul 2026 and links RP-008307-DS-2-pico-datasheet.pdf.
+    Verified 2026-11-07.
+  registered_at: '2026-11-07T15:14:11+00:00'
+  bytes: 46557
+  sha256: 59d83862485fb72b0106f0c85d71df75f19a790c8f44f55bb9a982c9c65b17d9
+attempts:
+- Reviewed official Raspberry Pi Pico-series documentation on 2026-11-06 to establish
+  the non-wireless, no-presoldered-header RP2040 variant; browser-accessible page
+  identifies Pico separately from Pico H and Pico W/WH. Direct local requests to the
+  manufacturer HTML returned HTTP 403, so no bypass was attempted.
+- Verified existing archived manufacturer mechanical drawing reference/mechanical.png
+  against mounting_context.json SHA-256 f0729092b3f28ee0fc488652c290022fb5a263d39405669496e90d1a14b6b855
+  and visually reviewed the entire page.
+- Downloaded and reviewed official Raspberry Pi Pico Datasheet on 2026-11-06 (served
+  as RP-008307-DS-2-pico-datasheet.pdf); page 6 printed confirms 51 x 21 mm PCB, four
+  Ø2.1 mm mechanical holes and explicitly labels Figure 3 Pico Rev3. Rasterized the
+  page for visual confirmation.
+- Rechecked the live Raspberry Pi Product Information Portal on 2026-11-07. Its Pico
+  entry lists the datasheet updated 2026-07-15 and links RP-008307-DS-2-pico-datasheet.pdf.
+  Downloaded that exact current portal asset; its SHA-256 is identical to the already
+  registered datasheet (757ff485227493b9fcc0c2c96c4dea9de020e1d8b2b11e2aa4f9ee8b25aa89eb).
+  The latest official datasheet still specifies four 2.1 mm drilled mounting holes
+  (±0.05 mm) and labels the drawing Pico Rev3, so it does not resolve the standard
+  holder's 2.2 mm minimum clearance drill requirement. No geometry or helper policy changed.
+- Ran the required mounting_research.py preview with the dimensioned 4 x Ø2.1 mm pattern.
+  The helper stopped before creating mounting_preview.png because its standard holder
+  policy requires at least 0.2 mm diametral screw clearance; the smallest supported
+  M2 screw requires a 2.2 mm drill, larger than this board's 2.1 mm holes. Custom
+  holder or altered clearance needs coordinator review; did not change the geometry
+  or shared helper. This also prevents standard validation/promotion/generation.
+conflicts: []
+notes:
+- 'Official product identity source: https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html,
+  accessed 2026-11-06; title/variant details verified in browser. Direct local HTML
+  acquisition returned HTTP 403; the official datasheet supplies the registered local
+  identity and geometry evidence.'
+- 'The top and bottom mounting rows are asymmetric relative to the PCB bounding-box
+  centre: +23.5 mm and -23.1 mm, following the drawing callouts of 2.0 mm and 2.4
+  mm from the respective board edges.'
+- Standard holder dimensions are generated geometry only. Physical fit, components,
+  connector access, screw-head clearance and underside clearance are unverified.
+- Current Raspberry Pi Product Information Portal evidence checked 2026-11-07 links
+  the latest listed Pico datasheet (updated 2026-07-15); the downloaded DS-2 asset exactly
+  matches the archived datasheet hash and retains the four Ø2.1 mm holes. No later official
+  revision found here resolves the holder fit constraint.
+- Geometry is manufacturer-dimensioned and verified, but standard holder generation
+  is unsupported by current screw policy (Ø2.1 mm drills < Ø2.2 mm minimum M2 clearance
+  hole). Await custom holder policy/review. No generated preview or holder exists;
+  no physical fit test was performed.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:14:11+00:00'
+identity_source_ids:
+- datasheet

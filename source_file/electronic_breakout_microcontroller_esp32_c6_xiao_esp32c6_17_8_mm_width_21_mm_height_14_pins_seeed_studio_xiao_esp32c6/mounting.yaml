@@ -1,0 +1,127 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_c6_xiao_esp32c6_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c6
+status: needs_review
+board_revision: Seeed Studio XIAO ESP32-C6 carrier PCB v1.0, identified by official
+  archive filename XIAO_ESP32_C6_v1.0_SCH&PCB_260114.zip and matching v1.0 schematic.
+identity_evidence: The official Seeed product guide names the XIAO ESP32C6 and links
+  the PCB design resources. The archived board.kicad_pcb bytes match the registered
+  member of the manufacturer-linked v1.0 archive; the associated official schematic
+  is explicitly XIAO ESP32-C6 v1.0. This establishes product and carrier revision,
+  but the KiCad geometry cannot be promoted by the current mounting helper.
+board_size: null
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: null
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources:
+- id: product
+  local_file: mounting_evidence/seeed_product_page.html
+  url: https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/
+  kind: manufacturer_product
+  locator: Official product identity and nominal 21 x 17.8 mm dimensions; links PCB
+    files, schematic, and 3D model, but supplies no dimensioned mechanical drawing
+    or mounting-hole table.
+  registered_at: '2026-11-06T18:35:11+00:00'
+  bytes: 152789
+  sha256: 1707ea0c1b08692a5d3b5dc3b678396dc7c2538c5b127316ab041eda4d8a7ba1
+- id: cad
+  local_file: reference/board.kicad_pcb
+  url: https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH%26PCB_260114.zip
+  kind: manufacturer_cad
+  locator: KiCad PCB in official v1.0 archive; hash verified against seeded archive
+    member. Contains carrier outline and drill features, but is an unsupported format
+    for current extraction; do not infer mounts from unreviewed drill candidates.
+  registered_at: '2026-11-06T18:35:11+00:00'
+  bytes: 2756545
+  sha256: 44da2bb3ffb76ae0443ef384af0c338d7ac616c4bdfb2c58258ee7ad47c95027
+- id: schematic
+  local_file: reference/XIAO_ESP32_C6_v1.0_SCH_260114.pdf
+  url: https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH_260114.pdf
+  kind: manufacturer_schematic
+  locator: Official manufacturer schematic confirms XIAO ESP32-C6 v1.0 carrier identity,
+    not mechanical geometry.
+  registered_at: '2026-11-06T18:35:45+00:00'
+  bytes: 614070
+  sha256: 510f3f917bcded1201ca5c63374409183457c1ef83a836988517d6802180dad7
+- id: product_resources
+  local_file: mounting_evidence/seeed_resources_data.js
+  url: https://www.seeedstudio.com/xiao-series-page/_next/static/chunks/2j8c1-aiheclh.js
+  kind: manufacturer_product
+  locator: 'Current official Seeed XIAO resource catalogue data, ESP32-C6 product
+    entry: Hardware lists datasheet, v1.0 schematic, v1.0 KiCad ZIP, pinout; Mechanical
+    lists a 3D model preview URL but no dimension DXF/drawing.'
+  registered_at: '2026-11-07T16:15:01+00:00'
+  bytes: 95153
+  sha256: 1730c97d78183e153e5b00736354acad2e06667b3d03ebca45a8703dc46c4e18
+- id: step_model
+  local_file: mounting_evidence/XIAO-ESP32C6-v2.step
+  url: https://files.seeedstudio.com/wiki/XIAO_3d_step/Seeed-Studio-XIAO-ESP32C6-v2.step
+  kind: manufacturer_cad
+  locator: Seeed-hosted STEP preview model linked in official resource catalogue for
+    XIAO ESP32-C6. STEP model file declares name XIAO ESP32C6 v2 and timestamp 2025-02-17;
+    not dimensioned, no explicit link to v1.0 carrier PCB revision, and format has
+    no supported replay/extraction path in mounting helper.
+  registered_at: '2026-11-07T16:15:01+00:00'
+  bytes: 2998388
+  sha256: 71ef042e3ef3412e7c53740fabb7b9ce52af9e59f19c026dedbd0d7ba31086f7
+attempts:
+- avenue: Manufacturer-linked carrier CAD
+  source_id: cad
+  result: Verified the official Seeed v1.0 KiCad archive identity and matched the
+    local PCB member SHA-256. The checklist directs KiCad boards to a dimensioned
+    mechanical drawing or needs_review; the helper accepts EAGLE or dimensioned drawings
+    only. No supported exact geometry input is available from this source.
+  accessed: '2026-11-06'
+- avenue: Official dimensioned mechanical drawing
+  source_id: product
+  result: Reviewed the official product guide and its hardware resources. It states
+    nominal 21 x 17.8 mm dimensions and links schematic/KiCad files, but provides
+    no dimensioned mechanical drawing, hole coordinates, or mounting-hole table. The
+    linked general XIAO package drawing found in related product research does not
+    establish ESP32-C6-specific hole geometry or carrier revision.
+  accessed: '2026-11-06'
+- avenue: Manufacturer mechanical model
+  source_id: step_model
+  result: Rechecked Seeed's current official XIAO resource catalogue. The C6 entry
+    offers a Seeed-hosted STEP preview model, named XIAO ESP32C6 v2 and timestamped
+    2025-02-17; it does not provide a C6 DXF or dimensioned drawing and does not
+    explicitly identify the model as the v1.0 carrier PCB. STEP is unsupported by
+    the mounting helper, so it cannot supply replayable geometry or close the
+    hole-selection gap.
+  accessed: '2026-11-07'
+conflicts: []
+notes:
+- >-
+  Precise gap after recheck on 2026-11-07: exact v1.0 carrier identity is established,
+  but the current official Seeed resource catalogue offers no C6 dimensioned drawing
+  or DXF; it links only a non-dimensioned STEP preview whose v2 filename does not
+  establish a link to the v1.0 PCB. The official KiCad board contains candidate
+  drill geometry that requires a supported, replayable KiCad review method to
+  determine each drill's function and transform. Board outline, mounting-hole
+  presence, hole locations, and drill diameters remain unresolved here.
+- Official product page currently lists nominal overall dimensions 21 x 17.8 mm. These
+  are not used as promoted geometry or evidence of mounting-hole presence.
+- The official STEP asset was archived and hash-registered, but not used to infer
+  dimensions or mounting features. Its available 3D model geometry is not a dimensioned
+  mechanical specification and cannot be replayed by the current helper.
+- No mounting preview, validation, promotion, or generated holder was produced. No
+  hardware fit was tested.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T16:15:01+00:00'
+identity_source_ids:
+- product
+- cad
+- schematic

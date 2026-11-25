@@ -1,0 +1,123 @@
+schema_version: 1
+part_id: electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346
+status: verified
+board_revision: Adafruit product 5346 carrier; manufacturer EagleCAD repository initial
+  design commit f73186f1b593f7a5a3e710d9ced889005b580c38 (2022-01-10). Product page
+  notes a 2023 silkscreen-only update; both silkscreen variants are mechanically identical.
+identity_evidence: Adafruit product page identifies product ID 5346, MCP23017 I2C
+  GPIO Expander Breakout - STEMMA QT / Qwiic. The official Adafruit-MCP23017-PCB README
+  names the same carrier, links product 5346, and provides the Eagle board file used
+  here.
+board_size:
+- 43.18
+- 17.78
+mounting_holes:
+- id: U$1:pad:P$1
+  x_mm: -19.05
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$17:pad:P$1
+  x_mm: 19.05
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$19:pad:P$1
+  x_mm: -19.05
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$21:pad:P$1
+  x_mm: 19.05
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: 'Extracted from the exact manufacturer Eagle .brd file at the pinned Adafruit
+  repository commit f73186f1b593f7a5a3e710d9ced889005b580c38. Dimension-layer outline
+  bounds are x=0..43.18 mm and y=0..17.78 mm, giving board_size [43.18,17.78] and
+  native centre [21.59,8.89]. The extractor transforms each native hole position to
+  top-view centred coordinates by (x,y)=(x_native-21.59, y_native-8.89), quarter_turn=0
+  (no rotation or reflection). Selected only the four package features named MOUNTINGHOLE_2.5_PLATED:
+  U$1, U$17, U$19, U$21, each drill 2.5 mm. Full drill inventory has 46 drilled features:
+  remaining 42 are plated JP1, JP2, JP5, JP6, JP7 and JP8 header pads (one 5-position
+  and five? header rows represented by packages); not mounting features. Preview image
+  checked: top view, centred frame, symmetric four-corner locations and diameters
+  agree with exact extraction. Product page dimension 43.0 x 18.0 mm is nominal rounding;
+  exact outline comes from CAD.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad
+  local_file: mounting_evidence/Adafruit_MCP23017_GPIO_Expander.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-MCP23017-PCB/f73186f1b593f7a5a3e710d9ced889005b580c38/Adafruit%20MCP23017%20GPIO%20Expander.brd
+  kind: manufacturer_cad
+  locator: Exact Adafruit Eagle board file at pinned repository commit f73186f1b593f7a5a3e710d9ced889005b580c38;
+    inspect dimension layer 20 and all drill features.
+  registered_at: '2026-11-06T19:03:05+00:00'
+  bytes: 282694
+  sha256: f9a6331254fd36dfc499e143c33ba0d3ec2940aff86b7c56213042c7645a36a7
+- id: product
+  local_file: website.html
+  url: https://www.adafruit.com/product/5346
+  kind: manufacturer_product
+  locator: Product ID 5346; technical details list silkscreen revision update as mechanically
+    identical.
+  registered_at: '2026-11-06T19:03:06+00:00'
+  bytes: 96729
+  sha256: 1e90d47066ec98c5a777a8e8af5b5705fec17e613671c145ce45f81ab7496723
+- id: cad_identity
+  local_file: mounting_evidence/README.md
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-MCP23017-PCB/f73186f1b593f7a5a3e710d9ced889005b580c38/README.md
+  kind: manufacturer_repository
+  locator: Repository README explicitly names MCP23017 STEMMA QT / QWIIC and links
+    product 5346; same repository contains the registered Eagle board file.
+  registered_at: '2026-11-06T19:03:20+00:00'
+  bytes: 2460
+  sha256: ab9be33b7f74b10a0a9fc26b62c9eb2e1224b587daf97adc4ed2af3140a81a00
+attempts: []
+conflicts: []
+notes:
+- Manufacturer CAD contains a rectangular dimension outline; selected holes are expressly
+  named mounting-hole packages, not inferred from symmetry. All non-selected drilled
+  features are header pads.
+- The product page nominal dimensions (43.0 x 18.0 mm) differ slightly from exact
+  CAD outline (43.18 x 17.78 mm); no mechanical conflict because they are consistent
+  with nominal rounding.
+- Standard holder is generated geometry only. Component, connector, screw-head and
+  underside clearance are unverified; no physical fit test was performed.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T19:03:20+00:00'
+extraction:
+  selected_ids:
+  - U$1:pad:P$1
+  - U$17:pad:P$1
+  - U$19:pad:P$1
+  - U$21:pad:P$1
+  quarter_turn: 0
+  native_centre_mm:
+  - 21.59
+  - 8.890000000000004
+identity_source_ids:
+- product
+- cad_identity

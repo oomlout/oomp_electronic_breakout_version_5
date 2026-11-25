@@ -1,0 +1,2103 @@
+schema_version: 1
+item_kind: breakout
+name_readable: Seeed Studio XIAO RP2350
+manufacturer: seeed_studio
+part_number: '102010550'
+taxonomy_1: electronic
+taxonomy_2: breakout
+taxonomy_3: microcontroller
+taxonomy_4: rp2350a
+taxonomy_5: xiao
+taxonomy_6: ''
+taxonomy_7: without_headers
+taxonomy_8: 17_8_mm_width_21_mm_height
+taxonomy_9: ''
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: seeed_studio
+taxonomy_15: '102010550'
+dimensions_mm:
+  width: 17.78
+  height: 20.955
+  assembled_height: null
+  scope: pcb_outline_excludes_usb_overhang
+  pcb_thickness: 1.6
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: centre_of_pcb_outline
+  view: top_with_usb_at_positive_y
+  x_positive: right
+  y_positive: towards_usb
+mounting_holes: []
+mounting_hole_details: []
+mounting_hole_status: none_shown_in_captured_manufacturer_sources
+pins:
+  U2_1:
+    connector: U2
+    number: '1'
+    name: GPIO26/D0/ADC0
+    gpio: 26
+    adc_channel: 0
+    chip_pin_number: '40'
+    x_mm: -7.62
+    y_mm: 7.5565
+    source_id: cad
+    net_name: /04 RP2350/GPIO26{slash}D0{slash}ADC0
+    primary_drill_mm: 0.85
+    side: both
+    physical_contacts:
+    - x_mm: -8.89
+      y_mm: 7.5565
+      kind: thru_hole
+      side: both
+      drill_mm: 0.7
+      source_id: cad
+    - x_mm: -8.278
+      y_mm: 7.5565
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    - x_mm: -8.278
+      y_mm: 7.5565
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    - x_mm: -7.62
+      y_mm: 7.5565
+      kind: thru_hole
+      side: both
+      drill_mm: 0.85
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+    functions:
+    - PWM5A
+    - PIO
+    - UART1_CTS
+    - I2C1_SDA
+    - SPI1_SCK
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO26{slash}D0{slash}ADC0
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: 0
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  U2_2:
+    connector: U2
+    number: '2'
+    name: GPIO27/D1/ADC1
+    gpio: 27
+    adc_channel: 1
+    chip_pin_number: '41'
+    x_mm: -7.62
+    y_mm: 5.0165
+    source_id: cad
+    net_name: /04 RP2350/GPIO27{slash}D1{slash}ADC1
+    primary_drill_mm: 0.85
+    side: both
+    physical_contacts:
+    - x_mm: -8.89
+      y_mm: 5.0165
+      kind: thru_hole
+      side: both
+      drill_mm: 0.7
+      source_id: cad
+    - x_mm: -8.337
+      y_mm: 5.0165
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    - x_mm: -8.337
+      y_mm: 5.0165
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    - x_mm: -7.62
+      y_mm: 5.0165
+      kind: thru_hole
+      side: both
+      drill_mm: 0.85
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+    functions:
+    - PWM5B
+    - PIO
+    - UART1_RTS
+    - I2C1_SCL
+    - SPI1_TX
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO27{slash}D1{slash}ADC1
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: 0
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  U2_3:
+    connector: U2
+    number: '3'
+    name: GPIO28/D2/ADC2
+    gpio: 28
+    adc_channel: 2
+    chip_pin_number: '42'
+    x_mm: -7.62
+    y_mm: 2.4765
+    source_id: cad
+    net_name: /04 RP2350/GPIO28{slash}D2{slash}ADC2
+    primary_drill_mm: 0.85
+    side: both
+    physical_contacts:
+    - x_mm: -8.89
+      y_mm: 2.4765
+      kind: thru_hole
+      side: both
+      drill_mm: 0.7
+      source_id: cad
+    - x_mm: -8.278
+      y_mm: 2.4765
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    - x_mm: -8.278
+      y_mm: 2.4765
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    - x_mm: -7.62
+      y_mm: 2.4765
+      kind: thru_hole
+      side: both
+      drill_mm: 0.85
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+    functions:
+    - PWM6A
+    - PIO
+    - UART0_TX
+    - I2C0_SDA
+    - SPI1_RX
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO28{slash}D2{slash}ADC2
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: 0
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  U2_4:
+    connector: U2
+    number: '4'
+    name: GPIO5/D3/SPI0_CS
+    gpio: 5
+    adc_channel: null
+    chip_pin_number: '8'
+    x_mm: -7.62
+    y_mm: -0.0635
+    source_id: cad
+    net_name: /04 RP2350/GPIO5{slash}D3{slash}SPI0_CS
+    primary_drill_mm: 0.85
+    side: both
+    physical_contacts:
+    - x_mm: -8.89
+      y_mm: -0.0635
+      kind: thru_hole
+      side: both
+      drill_mm: 0.7
+      source_id: cad
+    - x_mm: -8.278
+      y_mm: -0.0635
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    - x_mm: -8.278
+      y_mm: -0.0635
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    - x_mm: -7.62
+      y_mm: -0.0635
+      kind: thru_hole
+      side: both
+      drill_mm: 0.85
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM2B
+    - PIO
+    - UART1_RX
+    - I2C0_SCL
+    - SPI0_CSn
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO5{slash}D3{slash}SPI0_CS
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi
+      signal: ss
+  U2_5:
+    connector: U2
+    number: '5'
+    name: GPIO6/D4/SDA1
+    gpio: 6
+    adc_channel: null
+    chip_pin_number: '9'
+    x_mm: -7.62
+    y_mm: -2.6035
+    source_id: cad
+    net_name: /04 RP2350/GPIO6{slash}D4{slash}SDA1
+    primary_drill_mm: 0.85
+    side: both
+    physical_contacts:
+    - x_mm: -8.89
+      y_mm: -2.6035
+      kind: thru_hole
+      side: both
+      drill_mm: 0.7
+      source_id: cad
+    - x_mm: -8.278
+      y_mm: -2.6035
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    - x_mm: -8.278
+      y_mm: -2.6035
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    - x_mm: -7.62
+      y_mm: -2.6035
+      kind: thru_hole
+      side: both
+      drill_mm: 0.85
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM3A
+    - PIO
+    - UART1_CTS
+    - I2C1_SDA
+    - SPI0_SCK
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO6{slash}D4{slash}SDA1
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: i2c_secondary
+      signal: sda
+  U2_6:
+    connector: U2
+    number: '6'
+    name: GPIO7/D5/SCL1
+    gpio: 7
+    adc_channel: null
+    chip_pin_number: '10'
+    x_mm: -7.62
+    y_mm: -5.1435
+    source_id: cad
+    net_name: /04 RP2350/GPIO7{slash}D5{slash}SCL1
+    primary_drill_mm: 0.85
+    side: both
+    physical_contacts:
+    - x_mm: -8.89
+      y_mm: -5.1435
+      kind: thru_hole
+      side: both
+      drill_mm: 0.7
+      source_id: cad
+    - x_mm: -8.337
+      y_mm: -5.1435
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    - x_mm: -8.337
+      y_mm: -5.1435
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    - x_mm: -7.62
+      y_mm: -5.1435
+      kind: thru_hole
+      side: both
+      drill_mm: 0.85
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM3B
+    - PIO
+    - UART1_RTS
+    - I2C1_SCL
+    - SPI0_TX
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO7{slash}D5{slash}SCL1
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: i2c_secondary
+      signal: scl
+  U2_7:
+    connector: U2
+    number: '7'
+    name: GPIO0/D6/TX0
+    gpio: 0
+    adc_channel: null
+    chip_pin_number: '2'
+    x_mm: -7.62
+    y_mm: -7.6835
+    source_id: cad
+    net_name: /04 RP2350/GPIO0{slash}D6{slash}TX0
+    primary_drill_mm: 0.85
+    side: both
+    physical_contacts:
+    - x_mm: -8.89
+      y_mm: -7.6835
+      kind: thru_hole
+      side: both
+      drill_mm: 0.7
+      source_id: cad
+    - x_mm: -8.278
+      y_mm: -7.6835
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    - x_mm: -8.278
+      y_mm: -7.6835
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    - x_mm: -7.62
+      y_mm: -7.6835
+      kind: thru_hole
+      side: both
+      drill_mm: 0.85
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM0A
+    - PIO
+    - UART0_TX
+    - I2C0_SDA
+    - SPI0_RX
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO0{slash}D6{slash}TX0
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: uart
+      signal: tx
+  U2_8:
+    connector: U2
+    number: '8'
+    name: GPIO1/D7/RX0
+    gpio: 1
+    adc_channel: null
+    chip_pin_number: '3'
+    x_mm: 7.62
+    y_mm: -7.6835
+    source_id: cad
+    net_name: /04 RP2350/GPIO1{slash}D7{slash}RX0
+    primary_drill_mm: 0.889
+    side: both
+    physical_contacts:
+    - x_mm: 7.62
+      y_mm: -7.6835
+      kind: thru_hole
+      side: both
+      drill_mm: 0.889
+      source_id: cad
+    - x_mm: 8.278
+      y_mm: -7.6835
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    - x_mm: 8.278
+      y_mm: -7.6835
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    - x_mm: 8.89
+      y_mm: -7.6835
+      kind: thru_hole
+      side: both
+      drill_mm: 0.7
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM0B
+    - PIO
+    - UART0_RX
+    - I2C0_SCL
+    - SPI0_CSn
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO1{slash}D7{slash}RX0
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: uart
+      signal: rx
+  U2_9:
+    connector: U2
+    number: '9'
+    name: GPIO2/D8/SPI0_SCK
+    gpio: 2
+    adc_channel: null
+    chip_pin_number: '4'
+    x_mm: 7.62
+    y_mm: -5.1435
+    source_id: cad
+    net_name: /04 RP2350/GPIO2{slash}D8{slash}SPI0_SCK
+    primary_drill_mm: 0.85
+    side: both
+    physical_contacts:
+    - x_mm: 7.62
+      y_mm: -5.1435
+      kind: thru_hole
+      side: both
+      drill_mm: 0.85
+      source_id: cad
+    - x_mm: 8.337
+      y_mm: -5.1435
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    - x_mm: 8.337
+      y_mm: -5.1435
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    - x_mm: 8.89
+      y_mm: -5.1435
+      kind: thru_hole
+      side: both
+      drill_mm: 0.7
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM1A
+    - PIO
+    - UART0_CTS
+    - I2C1_SDA
+    - SPI0_SCK
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO2{slash}D8{slash}SPI0_SCK
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi
+      signal: sck
+  U2_10:
+    connector: U2
+    number: '10'
+    name: GPIO4/D9/SPI0_MISO
+    gpio: 4
+    adc_channel: null
+    chip_pin_number: '7'
+    x_mm: 7.62
+    y_mm: -2.6035
+    source_id: cad
+    net_name: /04 RP2350/GPIO4{slash}D9{slash}SPI0_MISO
+    primary_drill_mm: 0.85
+    side: both
+    physical_contacts:
+    - x_mm: 7.62
+      y_mm: -2.6035
+      kind: thru_hole
+      side: both
+      drill_mm: 0.85
+      source_id: cad
+    - x_mm: 8.278
+      y_mm: -2.6035
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    - x_mm: 8.278
+      y_mm: -2.6035
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    - x_mm: 8.89
+      y_mm: -2.6035
+      kind: thru_hole
+      side: both
+      drill_mm: 0.7
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM2A
+    - PIO
+    - UART1_TX
+    - I2C0_SDA
+    - SPI0_RX
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO4{slash}D9{slash}SPI0_MISO
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi
+      signal: miso
+  U2_11:
+    connector: U2
+    number: '11'
+    name: GPIO3/D10/SPI0_MOSI
+    gpio: 3
+    adc_channel: null
+    chip_pin_number: '5'
+    x_mm: 7.62
+    y_mm: -0.0635
+    source_id: cad
+    net_name: /04 RP2350/GPIO3{slash}D10{slash}SPI0_MOSI
+    primary_drill_mm: 0.85
+    side: both
+    physical_contacts:
+    - x_mm: 7.62
+      y_mm: -0.0635
+      kind: thru_hole
+      side: both
+      drill_mm: 0.85
+      source_id: cad
+    - x_mm: 8.278
+      y_mm: -0.0635
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    - x_mm: 8.278
+      y_mm: -0.0635
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    - x_mm: 8.89
+      y_mm: -0.0635
+      kind: thru_hole
+      side: both
+      drill_mm: 0.7
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM1B
+    - PIO
+    - UART0_RTS
+    - I2C1_SCL
+    - SPI0_TX
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO3{slash}D10{slash}SPI0_MOSI
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi
+      signal: mosi
+  U2_12:
+    connector: U2
+    number: '12'
+    name: +3V3
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 7.62
+    y_mm: 2.4765
+    source_id: cad
+    net_name: +3V3
+    primary_drill_mm: 0.85
+    side: both
+    physical_contacts:
+    - x_mm: 7.62
+      y_mm: 2.4765
+      kind: thru_hole
+      side: both
+      drill_mm: 0.85
+      source_id: cad
+    - x_mm: 8.278
+      y_mm: 2.4765
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    - x_mm: 8.278
+      y_mm: 2.4765
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    - x_mm: 8.89
+      y_mm: 2.4765
+      kind: thru_hole
+      side: both
+      drill_mm: 0.7
+      source_id: cad
+    capabilities: []
+    functions:
+    - +3V3
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  U2_13:
+    connector: U2
+    number: '13'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 7.62
+    y_mm: 5.0165
+    source_id: cad
+    net_name: GND
+    primary_drill_mm: 0.85
+    side: both
+    physical_contacts:
+    - x_mm: 7.62
+      y_mm: 5.0165
+      kind: thru_hole
+      side: both
+      drill_mm: 0.85
+      source_id: cad
+    - x_mm: 8.337
+      y_mm: 5.0165
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    - x_mm: 8.337
+      y_mm: 5.0165
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    - x_mm: 8.89
+      y_mm: 5.0165
+      kind: thru_hole
+      side: both
+      drill_mm: 0.7
+      source_id: cad
+    capabilities: []
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  U2_14:
+    connector: U2
+    number: '14'
+    name: VBUS
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 7.62
+    y_mm: 7.5565
+    source_id: cad
+    net_name: VBUS
+    primary_drill_mm: 0.85
+    side: both
+    physical_contacts:
+    - x_mm: 7.62
+      y_mm: 7.5565
+      kind: thru_hole
+      side: both
+      drill_mm: 0.85
+      source_id: cad
+    - x_mm: 8.278
+      y_mm: 7.5565
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    - x_mm: 8.278
+      y_mm: 7.5565
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    - x_mm: 8.89
+      y_mm: 7.5565
+      kind: thru_hole
+      side: both
+      drill_mm: 0.7
+      source_id: cad
+    capabilities: []
+    functions:
+    - VBUS
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  TP9_1:
+    connector: TP9
+    number: '1'
+    name: VBAT
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: -1.001
+    y_mm: -5.0362
+    source_id: cad
+    net_name: VBAT
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: -1.001
+      y_mm: -5.0362
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - VBAT
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  TP4_1:
+    connector: TP4
+    number: '1'
+    name: RUN
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '26'
+    x_mm: -1.2734
+    y_mm: 6.042
+    source_id: cad
+    net_name: /04 RP2350/RUN
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: -1.2734
+      y_mm: 6.042
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - RUN
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: control
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  TP6_1:
+    connector: TP6
+    number: '1'
+    name: SWDIO
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '25'
+    x_mm: -1.2734
+    y_mm: 8.582
+    source_id: cad
+    net_name: /04 RP2350/SWDIO
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: -1.2734
+      y_mm: 8.582
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - SWDIO
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: debug
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  TP8_1:
+    connector: TP8
+    number: '1'
+    name: GPIO12/D16/SPI1_MISO
+    gpio: 12
+    adc_channel: null
+    chip_pin_number: '16'
+    x_mm: -5.151
+    y_mm: -1.3295
+    source_id: cad
+    net_name: /04 RP2350/GPIO12{slash}D16{slash}SPI1_MISO
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: -5.151
+      y_mm: -1.3295
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM6A
+    - PIO
+    - UART0_TX
+    - I2C0_SDA
+    - SPI1_RX
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO12{slash}D16{slash}SPI1_MISO
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi_secondary
+      signal: miso
+  TP11_1:
+    connector: TP11
+    number: '1'
+    name: GPIO10/D17/SPI1_SCK
+    gpio: 10
+    adc_channel: null
+    chip_pin_number: '14'
+    x_mm: -5.151
+    y_mm: 1.2105
+    source_id: cad
+    net_name: /04 RP2350/GPIO10{slash}D17{slash}SPI1_SCK
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: -5.151
+      y_mm: 1.2105
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM5A
+    - PIO
+    - UART1_CTS
+    - I2C1_SDA
+    - SPI1_SCK
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO10{slash}D17{slash}SPI1_SCK
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi_secondary
+      signal: sck
+  TP1_1:
+    connector: TP1
+    number: '1'
+    name: +3V3
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 1.2666
+    y_mm: 3.502
+    source_id: cad
+    net_name: +3V3
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: 1.2666
+      y_mm: 3.502
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - +3V3
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  TP7_1:
+    connector: TP7
+    number: '1'
+    name: GPIO11/D15/SPI1_MOSI
+    gpio: 11
+    adc_channel: null
+    chip_pin_number: '15'
+    x_mm: -5.151
+    y_mm: -3.8695
+    source_id: cad
+    net_name: /04 RP2350/GPIO11{slash}D15{slash}SPI1_MOSI
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: -5.151
+      y_mm: -3.8695
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM5B
+    - PIO
+    - UART1_RTS
+    - I2C1_SCL
+    - SPI1_TX
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO11{slash}D15{slash}SPI1_MOSI
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi_secondary
+      signal: mosi
+  TP13_1:
+    connector: TP13
+    number: '1'
+    name: GPIO16/D14/SDA0
+    gpio: 16
+    adc_channel: null
+    chip_pin_number: '27'
+    x_mm: 5.009
+    y_mm: -3.8695
+    source_id: cad
+    net_name: /04 RP2350/GPIO16{slash}D14{slash}SDA0
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: 5.009
+      y_mm: -3.8695
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM0A
+    - PIO
+    - UART0_TX
+    - I2C0_SDA
+    - SPI0_RX
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO16{slash}D14{slash}SDA0
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: i2c
+      signal: sda
+  TP2_1:
+    connector: TP2
+    number: '1'
+    name: QSPI_SS
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: -1.2734
+    y_mm: 3.502
+    source_id: cad
+    net_name: /04 RP2350/QSPI_SS
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: -1.2734
+      y_mm: 3.502
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - QSPI_SS
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: control
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  TP12_1:
+    connector: TP12
+    number: '1'
+    name: GPIO9/D18/SPI1_CS
+    gpio: 9
+    adc_channel: null
+    chip_pin_number: '13'
+    x_mm: -5.151
+    y_mm: 3.7505
+    source_id: cad
+    net_name: /04 RP2350/GPIO9{slash}D18{slash}SPI1_CS
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: -5.151
+      y_mm: 3.7505
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM4B
+    - PIO
+    - UART1_RX
+    - I2C0_SCL
+    - SPI1_CSn
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO9{slash}D18{slash}SPI1_CS
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi_secondary
+      signal: ss
+  TP5_1:
+    connector: TP5
+    number: '1'
+    name: SWDCLK
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '24'
+    x_mm: 1.2666
+    y_mm: 8.582
+    source_id: cad
+    net_name: /04 RP2350/SWDCLK
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: 1.2666
+      y_mm: 8.582
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - SWDCLK
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: control
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  TP16_1:
+    connector: TP16
+    number: '1'
+    name: GPIO21/D11/RX1
+    gpio: 21
+    adc_channel: null
+    chip_pin_number: '33'
+    x_mm: 5.009
+    y_mm: 3.7505
+    source_id: cad
+    net_name: /04 RP2350/GPIO21{slash}D11{slash}RX1
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: 5.009
+      y_mm: 3.7505
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM2B
+    - PIO
+    - UART1_RX
+    - I2C0_SCL
+    - SPI0_CSn
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO21{slash}D11{slash}RX1
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: uart_secondary
+      signal: rx
+  TP14_1:
+    connector: TP14
+    number: '1'
+    name: GPIO17/D13/SCL0
+    gpio: 17
+    adc_channel: null
+    chip_pin_number: '28'
+    x_mm: 5.009
+    y_mm: -1.3295
+    source_id: cad
+    net_name: /04 RP2350/GPIO17{slash}D13{slash}SCL0
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: 5.009
+      y_mm: -1.3295
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM0B
+    - PIO
+    - UART0_RX
+    - I2C0_SCL
+    - SPI0_CSn
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO17{slash}D13{slash}SCL0
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: i2c
+      signal: scl
+  TP15_1:
+    connector: TP15
+    number: '1'
+    name: GPIO20/D12/TX1
+    gpio: 20
+    adc_channel: null
+    chip_pin_number: '32'
+    x_mm: 5.009
+    y_mm: 1.2105
+    source_id: cad
+    net_name: /04 RP2350/GPIO20{slash}D12{slash}TX1
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: 5.009
+      y_mm: 1.2105
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM2A
+    - PIO
+    - UART1_TX
+    - I2C0_SDA
+    - SPI0_RX
+    restrictions: []
+    aliases:
+    - /04 RP2350/GPIO20{slash}D12{slash}TX1
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: uart_secondary
+      signal: tx
+  TP3_1:
+    connector: TP3
+    number: '1'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 1.2666
+    y_mm: 6.042
+    source_id: cad
+    net_name: GND
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: 1.2666
+      y_mm: 6.042
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  TP10_1:
+    connector: TP10
+    number: '1'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 0.999
+    y_mm: -5.0362
+    source_id: cad
+    net_name: GND
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: 0.999
+      y_mm: -5.0362
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+connectors:
+  U2:
+    cad_reference: U2
+    cad_footprint: Module:MOUDLE14P-XIAO-HALF-HOLE
+    source_id: cad
+    contact_count: 14
+  TP9:
+    cad_reference: TP9
+    cad_footprint: Misc:TP-80X40MIL
+    source_id: cad
+    contact_count: 1
+  TP4:
+    cad_reference: TP4
+    cad_footprint: Misc:TP-D45MIL
+    source_id: cad
+    contact_count: 1
+  TP6:
+    cad_reference: TP6
+    cad_footprint: Misc:TP-D45MIL
+    source_id: cad
+    contact_count: 1
+  TP8:
+    cad_reference: TP8
+    cad_footprint: Misc:TP-1.6MM-ROUND
+    source_id: cad
+    contact_count: 1
+  TP11:
+    cad_reference: TP11
+    cad_footprint: Misc:TP-1.6MM-ROUND
+    source_id: cad
+    contact_count: 1
+  TP1:
+    cad_reference: TP1
+    cad_footprint: Misc:TP-D45MIL
+    source_id: cad
+    contact_count: 1
+  TP7:
+    cad_reference: TP7
+    cad_footprint: Misc:TP-1.6MM-ROUND
+    source_id: cad
+    contact_count: 1
+  TP13:
+    cad_reference: TP13
+    cad_footprint: Misc:TP-1.6MM-ROUND
+    source_id: cad
+    contact_count: 1
+  TP2:
+    cad_reference: TP2
+    cad_footprint: Misc:TP-D45MIL
+    source_id: cad
+    contact_count: 1
+  TP12:
+    cad_reference: TP12
+    cad_footprint: Misc:TP-1.6MM-ROUND
+    source_id: cad
+    contact_count: 1
+  TP5:
+    cad_reference: TP5
+    cad_footprint: Misc:TP-D45MIL
+    source_id: cad
+    contact_count: 1
+  TP16:
+    cad_reference: TP16
+    cad_footprint: Misc:TP-1.6MM-ROUND
+    source_id: cad
+    contact_count: 1
+  TP14:
+    cad_reference: TP14
+    cad_footprint: Misc:TP-1.6MM-ROUND
+    source_id: cad
+    contact_count: 1
+  TP15:
+    cad_reference: TP15
+    cad_footprint: Misc:TP-1.6MM-ROUND
+    source_id: cad
+    contact_count: 1
+  TP3:
+    cad_reference: TP3
+    cad_footprint: Misc:TP-D45MIL
+    source_id: cad
+    contact_count: 1
+  TP10:
+    cad_reference: TP10
+    cad_footprint: Misc:TP-80X40MIL
+    source_id: cad
+    contact_count: 1
+sources:
+- id: cad
+  url: https://files.seeedstudio.com/wiki/XIAO-RP2350/res/XIAO_RP2350_v1.0_SCH&PCB_240626.zip
+  title: Seeed Studio XIAO RP2350 KiCad board
+  accessed: '2026-10-20'
+  scope: PCB outline, pad locations and nets; RP2040 v1.3 / RP2350 v1.0
+  local_file: reference/board.kicad_pcb
+  sha256: f74481ce0381f8b160e49450b7bb138aa79b1182cfd1c794c790c034279de909
+- id: archive
+  url: https://files.seeedstudio.com/wiki/XIAO-RP2350/res/XIAO_RP2350_v1.0_SCH&PCB_240626.zip
+  title: Seeed Studio XIAO RP2350 original schematic and PCB archive
+  accessed: '2026-10-20'
+  scope: Original complete manufacturer design including hierarchical schematics
+  local_file: reference/design.zip
+  sha256: a4e379f4ff3e31bfea1d53506241a86a171d7f36bbe65b142329ef09bf821d3c
+- id: product
+  url: https://wiki.seeedstudio.com/xiao_rp2350_arduino/
+  title: Seeed Studio XIAO RP2350 getting started
+  accessed: '2026-10-20'
+  scope: Chip, flash, published pin aliases and board features
+- id: chip_datasheet
+  url: https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf
+  title: chip_datasheet
+  accessed: '2026-10-22'
+  scope: GPIO mux, PWM, ADC and electrical characteristics
+- id: interface_variant
+  url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/variants/seeed_xiao_rp2350/pins_arduino.h
+  revision: d087696645b98dce8a3df92c0afff40a3745d295
+  retrieved_date: '2026-10-23'
+  scope: Arduino variant pin assignments; not a physical header drawing
+  local_file: reference/interface_defaults/rp_seeed_xiao_rp2350.h
+  sha256: a6d7e1e4e6b476546817eb6d81b4ce78b6188b8eb8d76c4b7f36c6c66aca50da
+- id: interface_board_selection
+  url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/boards.txt
+  revision: d087696645b98dce8a3df92c0afff40a3745d295
+  retrieved_date: '2026-10-23'
+  scope: Framework board names and variant selection; generic selections remain explicitly scoped
+  local_file: reference/interface_defaults/rp_boards.txt
+  sha256: a800a5c1ffc6e7e4714000c82cccf291f3a4983f0b457c2a84b5e7923c451001
+  content_scope: excerpt_of_board_names_and_variant_selections
+  source_document_sha256: 12fb03a0c15a09f5bd61d32ce1a59e1bca721b6e9aa059494b060623fcb7a26f
+- id: interface_runtime_uart
+  url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/cores/rp2040/SerialUART.cpp
+  revision: d087696645b98dce8a3df92c0afff40a3745d295
+  retrieved_date: '2026-10-23'
+  scope: Framework API construction/default behavior; USB Serial is separate from UART pin aliases
+  local_file: reference/interface_defaults/rp_SerialUART.cpp
+  sha256: 52976eb468d3a8776a685eb3cd9f770023c2b7dc3017c78e79ddb7f0e86c163c
+- id: interface_runtime_i2c
+  url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/libraries/Wire/src/Wire.cpp
+  revision: d087696645b98dce8a3df92c0afff40a3745d295
+  retrieved_date: '2026-10-23'
+  scope: Framework API construction/default behavior; USB Serial is separate from UART pin aliases
+  local_file: reference/interface_defaults/rp_Wire.cpp
+  sha256: a27b11701b99a3d7e1936fc47ebb05d639ca318357bba574800b5bbd40c80075
+- id: interface_runtime_spi
+  url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/libraries/SPI/src/SPI.cpp
+  revision: d087696645b98dce8a3df92c0afff40a3745d295
+  retrieved_date: '2026-10-23'
+  scope: Framework API construction/default behavior; USB Serial is separate from UART pin aliases
+  local_file: reference/interface_defaults/rp_SPI.cpp
+  sha256: 523423a2d53d9cb5ce37ee7c3533850fcaea3c43e50a4e55454e4dc3e81e6029
+notes:
+- Pin numbers and net names follow manufacturer CAD; firmware aliases such as D3 are not GPIO numbers.
+  Connector pad coordinates are solder-pad centres, not mating-contact positions.
+- Physical contacts sharing a KiCad pad number are grouped under physical_contacts. Extra castellated
+  Eagle pad numbers remain separate entries.
+- Nominal XIAO outline is approximately 21 x 17.8 mm. Exact width/height here follow the supplied PCB
+  revision; rounded corners and connector overhang are not bounding-box clearance models.
+- Connector locator holes and PCB slots are not classified as screw mounting holes.
+- D3 is GPIO5 and has no ADC channel; ADC GPIO29 is used internally for battery measurement.
+data_gaps:
+- Assembled height and component keepout envelopes have not been captured.
+form_factor: xiao
+chip:
+  part_number: rp2350a
+  oomp_id: electronic_ic_qfn_60_microcontroller_rp2_raspberry_pi_rp2350a
+  silicon_revision: null
+  family: rp2350
+assembly:
+  headers: without_headers
+  header_scope: main_expansion_headers_only
+  header_pitch_mm: 2.54
+memory:
+  external_flash_bytes: 2097152
+electrical:
+  logic_voltage_v: 3.3
+  usb_connector: usb_c
+  gpio_5v_tolerant: false
+breakout_pcb_width: 17.78
+breakout_pcb_height: 20.955
+breakout_description: 17_8_mm_width_21_mm_height
+pinout_scope: Listed expansion connectors and debug/test pads. USB socket contacts and component pads
+  are excluded.
+onboard_gpio_connections:
+- gpio: 0
+  net_name: /04 RP2350/GPIO0{slash}D6{slash}TX0
+  source_id: cad
+- gpio: 1
+  net_name: /04 RP2350/GPIO1{slash}D7{slash}RX0
+  source_id: cad
+- gpio: 2
+  net_name: /04 RP2350/GPIO2{slash}D8{slash}SPI0_SCK
+  source_id: cad
+- gpio: 3
+  net_name: /04 RP2350/GPIO3{slash}D10{slash}SPI0_MOSI
+  source_id: cad
+- gpio: 4
+  net_name: /04 RP2350/GPIO4{slash}D9{slash}SPI0_MISO
+  source_id: cad
+- gpio: 5
+  net_name: /04 RP2350/GPIO5{slash}D3{slash}SPI0_CS
+  source_id: cad
+- gpio: 6
+  net_name: /04 RP2350/GPIO6{slash}D4{slash}SDA1
+  source_id: cad
+- gpio: 7
+  net_name: /04 RP2350/GPIO7{slash}D5{slash}SCL1
+  source_id: cad
+- gpio: 8
+  net_name: unconnected-(U4-GPIO8-Pad12)
+  source_id: cad
+- gpio: 9
+  net_name: /04 RP2350/GPIO9{slash}D18{slash}SPI1_CS
+  source_id: cad
+- gpio: 10
+  net_name: /04 RP2350/GPIO10{slash}D17{slash}SPI1_SCK
+  source_id: cad
+- gpio: 11
+  net_name: /04 RP2350/GPIO11{slash}D15{slash}SPI1_MOSI
+  source_id: cad
+- gpio: 12
+  net_name: /04 RP2350/GPIO12{slash}D16{slash}SPI1_MISO
+  source_id: cad
+- gpio: 13
+  net_name: unconnected-(U4-GPIO13-Pad17)
+  source_id: cad
+- gpio: 14
+  net_name: unconnected-(U4-GPIO14-Pad18)
+  source_id: cad
+- gpio: 15
+  net_name: unconnected-(U4-GPIO15-Pad19)
+  source_id: cad
+- gpio: 16
+  net_name: /04 RP2350/GPIO16{slash}D14{slash}SDA0
+  source_id: cad
+- gpio: 17
+  net_name: /04 RP2350/GPIO17{slash}D13{slash}SCL0
+  source_id: cad
+- gpio: 18
+  net_name: unconnected-(U4-GPIO18-Pad29)
+  source_id: cad
+- gpio: 19
+  net_name: GPIO19{slash}D22{slash}BAT_ADC_EN
+  source_id: cad
+- gpio: 20
+  net_name: /04 RP2350/GPIO20{slash}D12{slash}TX1
+  source_id: cad
+- gpio: 21
+  net_name: /04 RP2350/GPIO21{slash}D11{slash}RX1
+  source_id: cad
+- gpio: 22
+  net_name: /04 RP2350/GPIO22{slash}D20{slash}NEOPIX
+  source_id: cad
+- gpio: 23
+  net_name: /04 RP2350/GPIO23{slash}D21{slash}NEO_PWR
+  source_id: cad
+- gpio: 24
+  net_name: unconnected-(U4-GPIO24-Pad36)
+  source_id: cad
+- gpio: 25
+  net_name: /04 RP2350/GPIO25{slash}D19{slash}LED_Y
+  source_id: cad
+- gpio: 26
+  net_name: /04 RP2350/GPIO26{slash}D0{slash}ADC0
+  source_id: cad
+- gpio: 27
+  net_name: /04 RP2350/GPIO27{slash}D1{slash}ADC1
+  source_id: cad
+- gpio: 28
+  net_name: /04 RP2350/GPIO28{slash}D2{slash}ADC2
+  source_id: cad
+- gpio: 29
+  net_name: GPIO29_ADC3
+  source_id: cad
+definition_import:
+  project: oobb_electronic_microcontroller_web_based_lab
+  path: source_file/electronic_breakout_microcontroller_rp2350a_xiao_without_headers_17_8_mm_width_21_mm_height_seeed_studio_102010550/definition.yaml
+  date: '2026-10-22'
+  sha256: bed8b17bd056ba18fd7b03fa5988dade7bf218c2c2f01d94a42b43be9e059d22
+type_1: microcontroller
+type_2: rp2350a
+type_3: xiao
+mounting_hole_candidates: []
+legacy_ids:
+- electronic_breakout_microcontroller_rp2350a_xiao_17_8_mm_width_21_mm_height_14_pin_seeed_studio_102010550
+chip_resources:
+  cpu_core_count: 2
+  clock_max_mhz: 150
+  pwm_channels: 24
+  hardware_i2c_controllers: 2
+  general_purpose_spi_controllers: 2
+  hardware_uart_controllers: 2
+  pio_state_machines: 12
+  scope: silicon resources; board routing and firmware may reduce availability
+  source_id: chip_datasheet
+lab_support:
+  status: catalogue_reference_only
+  automatic_firmware_enable: false
+  requires_reviewed_board_profile: true
+  gpio_matrix_routing: false
+pinout_status: documented_contact_inventory
+svg_details:
+  svg_name: microcontroller
+  stylesheet: microcontroller
+  width: 17.78
+  height: 20.955
+gpio_summary:
+  exposed:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 9
+  - 10
+  - 11
+  - 12
+  - 16
+  - 17
+  - 20
+  - 21
+  - 26
+  - 27
+  - 28
+  general_io_candidates:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 9
+  - 10
+  - 11
+  - 12
+  - 16
+  - 17
+  - 20
+  - 21
+  - 26
+  - 27
+  - 28
+  analog_candidates:
+  - 26
+  - 27
+  - 28
+  automatic_firmware_enable: false
+default_interfaces:
+  uart:
+    protocol: uart
+    status: documented
+    basis: framework_defaults
+    framework: arduino-pico
+    variant: seeed_xiao_rp2350
+    variant_scope: board_variant
+    api: Serial1
+    peripheral: uart0
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_uart
+    tx_gpio: 0
+    rx_gpio: 1
+    pin_keys:
+      tx:
+      - U2_7
+      rx:
+      - U2_8
+    signal_status:
+      tx: mapped
+      rx: mapped
+    notes:
+    - UART GPIOs are distinct from USB CDC/USB Serial. The meaning of Serial depends on the core and USB
+      build settings.
+  i2c:
+    protocol: i2c
+    status: documented
+    basis: framework_defaults
+    framework: arduino-pico
+    variant: seeed_xiao_rp2350
+    variant_scope: board_variant
+    api: Wire
+    peripheral: i2c0
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_i2c
+    sda_gpio: 16
+    scl_gpio: 17
+    pin_keys:
+      sda:
+      - TP13_1
+      scl:
+      - TP14_1
+    signal_status:
+      sda: mapped
+      scl: mapped
+    notes: []
+  spi:
+    protocol: spi
+    status: documented
+    basis: framework_defaults
+    framework: arduino-pico
+    variant: seeed_xiao_rp2350
+    variant_scope: board_variant
+    api: SPI
+    peripheral: spi0
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_spi
+    sck_gpio: 2
+    mosi_gpio: 3
+    miso_gpio: 4
+    ss_gpio: 5
+    pin_keys:
+      sck:
+      - U2_9
+      mosi:
+      - U2_11
+      miso:
+      - U2_10
+      ss:
+      - U2_4
+    signal_status:
+      sck: mapped
+      mosi: mapped
+      miso: mapped
+      ss: mapped
+    notes:
+    - ss is the framework chip-select alias/default, not an automatically asserted CS. Select and drive
+      CS as required by the peripheral and library.
+  uart_secondary:
+    protocol: uart
+    status: documented
+    basis: framework_defaults
+    framework: arduino-pico
+    variant: seeed_xiao_rp2350
+    variant_scope: board_variant
+    api: Serial2
+    peripheral: uart1
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_uart
+    tx_gpio: 20
+    rx_gpio: 21
+    pin_keys:
+      tx:
+      - TP15_1
+      rx:
+      - TP16_1
+    signal_status:
+      tx: mapped
+      rx: mapped
+    notes:
+    - UART GPIOs are distinct from USB CDC/USB Serial. The meaning of Serial depends on the core and USB
+      build settings.
+  i2c_secondary:
+    protocol: i2c
+    status: documented
+    basis: framework_defaults
+    framework: arduino-pico
+    variant: seeed_xiao_rp2350
+    variant_scope: board_variant
+    api: Wire1
+    peripheral: i2c1
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_i2c
+    sda_gpio: 6
+    scl_gpio: 7
+    pin_keys:
+      sda:
+      - U2_5
+      scl:
+      - U2_6
+    signal_status:
+      sda: mapped
+      scl: mapped
+    notes: []
+  spi_secondary:
+    protocol: spi
+    status: documented
+    basis: framework_defaults
+    framework: arduino-pico
+    variant: seeed_xiao_rp2350
+    variant_scope: board_variant
+    api: SPI1
+    peripheral: spi1
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_spi
+    sck_gpio: 10
+    mosi_gpio: 11
+    miso_gpio: 12
+    ss_gpio: 9
+    pin_keys:
+      sck:
+      - TP11_1
+      mosi:
+      - TP7_1
+      miso:
+      - TP8_1
+      ss:
+      - TP12_1
+    signal_status:
+      sck: mapped
+      mosi: mapped
+      miso: mapped
+      ss: mapped
+    notes:
+    - ss is the framework chip-select alias/default, not an automatically asserted CS. Select and drive
+      CS as required by the peripheral and library.
+interface_defaults_version: 1
+oobb_details:
+- breakout_pcb_width: 17.78
+  breakout_pcb_height: 20.955
+  mounting_holes: []
+  mounting_hole_radius_name: m2
+  oobb_name: mounting_plate_default
+- breakout_pcb_width: 17.78
+  breakout_pcb_height: 20.955
+  mounting_holes: []
+  mounting_hole_radius_name: m2
+  oobb_name: mounting_plate_oobb
+  scad_output: working_oobb

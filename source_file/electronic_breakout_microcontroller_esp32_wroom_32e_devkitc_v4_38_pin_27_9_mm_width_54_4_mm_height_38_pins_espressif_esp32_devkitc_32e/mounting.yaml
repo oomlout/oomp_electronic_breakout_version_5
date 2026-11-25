@@ -1,0 +1,92 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_wroom_32e_devkitc_v4_38_pin_27_9_mm_width_54_4_mm_height_38_pins_espressif_esp32_devkitc_32e
+status: no_holes
+board_revision: Espressif ESP32-DevKitC V4, ESP32-DevKitC-32E variant with ESP32-WROOM-32E;
+  carrier revision explicitly identified as V4 by manufacturer.
+identity_evidence: Espressif’s ESP32-DevKitC V4 user guide names the V4 carrier and
+  its ordering table maps ESP32-DevKitC-32E to ESP32-WROOM-32E. The archived V4 dimension
+  drawing and six-page V4 PCB layout are both linked by that manufacturer guide.
+board_size:
+- 27.94
+- 48.26
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: dimensions
+derivation: The official ESP32-DevKitC V4 dimension drawing states the bare carrier
+  PCB outline is 27.94 mm wide × 48.26 mm high. Dimensions are recorded as width,
+  height in mm. The drawing is top view with the RF antenna/module end at the top
+  and Micro-USB connector at the bottom; canonical x points right and y points up,
+  so the drawing maps directly to the centred top-view frame with origin at (13.97,
+  24.13) mm from its lower-left PCB bound, with no axis swap, rotation, or reflection.
+  Reviewed the complete manufacturer dimension sheet and all six pages of the manufacturer
+  V4 PCB layout, including the drill depiction. The 38 large through holes are the
+  two 19-pin I/O header rows, the four oblong USB receptacle shell anchors are connector
+  retention features, the adjacent small drills are USB connector contacts, and the
+  other small plated drills are circuit vias/components. None is a board mounting
+  hole; the complete carrier drawing and layout show no designated board mounting
+  pattern.
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: dimensions
+  local_file: reference/esp32_devkitc_v4_dimensions.pdf
+  url: https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_dimensions.pdf
+  kind: manufacturer_drawing
+  locator: Official ESP32-DevKitC V4 dimension drawing, full page reviewed; carrier
+    outline 27.94 × 48.26 mm; reviewed header drills and USB connector features, no
+    designated board mounting holes.
+  registered_at: '2026-11-06T16:48:09+00:00'
+  bytes: 901070
+  sha256: 93769872f5640475a25e6c367230b407606771e4bbee0aba56903263b17d8d30
+- id: guide
+  local_file: mounting_evidence/esp32_devkitc_v4_user_guide.html
+  url: https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html
+  kind: manufacturer_product
+  locator: ESP32-DevKitC V4 overview and ordering information table identifying ESP32-DevKitC-32E
+    with ESP32-WROOM-32E.
+  registered_at: '2026-11-06T16:48:10+00:00'
+  bytes: 37917
+  sha256: aa679945195168ac61ab9f6d6e4a81b5dec32f1359446ba8046d6c456360776e
+- id: layout
+  local_file: mounting_evidence/esp32_devkitc_v4_pcb_layout.pdf
+  url: https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_pcb_layout.pdf
+  kind: manufacturer_drawing
+  locator: 'Official complete six-page V4 PCB layout including copper, mask, silkscreen
+    and drill layers. Reviewed all pages: 38 edge header drills and USB connector
+    anchors/signal drills; no board mounting pattern.'
+  registered_at: '2026-11-06T16:48:10+00:00'
+  bytes: 745906
+  sha256: ae7473227cb26713534e70f311ad33b6c7b0a3a250bc2d99d31328456a7c967c
+attempts:
+- '2026-10-22 archived Espressif V4 dimension PDF: verified SHA-256 against mounting_context.json
+  and reviewed the complete top-view drawing.'
+- 2026-11-06 fetched Espressif’s official ESP32-DevKitC V4 user guide and six-page
+  PCB layout; reviewed the V4 / ESP32-DevKitC-32E identity table and the complete
+  board/drill pages. The V4 dimension PDF hash matches the archived bytes.
+conflicts: []
+notes:
+- Confirmed empty board mounting pattern from complete manufacturer dimension and
+  PCB layout evidence. Header through holes, USB connector shell anchors/contact drills
+  and vias were reviewed by function and excluded.
+- Manufacturer source files are served at static URLs and do not expose a commit identifier.
+  Exact V4 identity is established by Espressif’s linked V4 documentation and the
+  files are archived with SHA-256 hashes.
+- Component, connector, screw-head and underside clearance remain unverified. The
+  standard-holder status is generic geometry only; no physical fit test was performed.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T16:48:10+00:00'
+identity_source_ids:
+- guide
+- dimensions
+- layout

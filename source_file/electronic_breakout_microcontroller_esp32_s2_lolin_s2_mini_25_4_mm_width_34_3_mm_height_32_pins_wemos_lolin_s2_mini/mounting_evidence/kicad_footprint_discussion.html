@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html class="gl-system ui-neutral with-top-bar with-header page-with-panels with-gl-container-queries  user-logged-out" lang="en">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<title>Added Wemos S2 mini footprint (!2904) · Merge requests · KiCad / KiCad Libraries / KiCad Footprints · GitLab</title>
+<link crossorigin="" href="https://snowplowprd.trx.gitlab.net" rel="preconnect">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-9892dc17af892e03de41625c0ee325117a3b8ee4ba6005f3a3eac68510030aed.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-Italic-f96f17332d67b21ada2dfba5f0c0e1d5801eab99330472057bf18edd93d4ccf7.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-29c2152dac8739499dd0fe5cd37a486ebcc7d4798c9b6d3aeab65b3172375b05.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-Italic-af36701a2188df32a9dcea12e0424c380019698d4f76da9ad8ea2fd59432cf83.woff2" rel="preload">
+
+<script nonce="QTpFCCgDsCOVeY45Nlgu6A==">
+//<![CDATA[
+window.gon={};gon.math_rendering_limits_enabled=true;gon.features={"allowIframesInMarkdown":false,"markdownPlaceholders":false,"glqlLoadOnClick":false,"showMergeRequestStatusDraft":false,"mrPipelinesGraphql":true,"mergeButtonShimmer":true,"mergeRequestReportsWidgetGroup":false,"todoForComment":false,"mergeWidgetStopPolling":true,"improvedReviewEmail":true,"mergeRequestWidgetMergeSource":false,"mergeTrainsSkipTrain":true,"duoCodeReviewDeepFlow":false,"noteAgentSessionBar":true,"agentPresenceConsolidation":false};gon.rapid_diffs_page_enabled=true;gon.abilities={"resolveVulnerabilityWithAi":false};
+//]]>
+</script>
+
+<script nonce="QTpFCCgDsCOVeY45Nlgu6A==">
+//<![CDATA[
+const root = document.documentElement;
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  root.classList.add('gl-dark');
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+  if (e.matches) {
+    root.classList.add('gl-dark');
+  } else {
+    root.classList.remove('gl-dark');
+  }
+});
+
+//]]>
+</script>
+<script nonce="QTpFCCgDsCOVeY45Nlgu6A==">
+//<![CDATA[
+var gl = window.gl || {};
+gl.startup_calls = {"/kicad/libraries/kicad-footprints/-/merge_requests/2904.json?serializer=sidebar_extras":{}};
+gl.startup_graphql_calls = null;
+
+if (gl.startup_calls && window.fetch) {
+  Object.keys(gl.startup_calls).forEach(apiCall => {
+   gl.startup_calls[apiCall] = {
+      fetchCall: fetch(apiCall, {
+        // Emulate XHR for Rails AJAX request checks
+        headers: {
+          'X-Requested-With': 'XMLHttpRequest'
+        },
+        // fetch won’t send cookies in older browsers, unless you set the credentials init option.
+        // We set to `same-origin` which is default value in modern browsers.
+        // See https://github.com/whatwg/fetch/pull/585 for more information.
+        credentials: 'same-origin'
+      })
+    };
+  });
+}
+if (gl.startup_graphql_calls && window.fetch) {
+  const headers = {"X-CSRF-Token":"oAHM-dvD9mGyoIEsmSbriLgmFvI439NB0C491otz5pEA4XbZM9ClQC0Xl6mglkfKYa2lttQcE7yzRn7oV8s69Q","x-gitlab-feature-category":"code_review_workflow"};
+  const url = `https://gitlab.com/api/graphql`
+
+  const opts = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      ...headers,
+    }
+  };
+
+  gl.startup_graphql_calls = gl.startup_graphql_calls.map(call => ({
+    ...call,
+    fetchCall: fetch(url, {
+      ...opts,
+      credentials: 'same-origin',
+      body: JSON.stringify(call)
+    })
+  }))
+}
+
+
+//]]>
+</script>
+
+
+
+<meta content="light dark" name="color-scheme">
+<link rel="stylesheet" href="/assets/application-f47f6afc04b0b2bc2e9f327d07db33f9e9bfdeddb962275160b42931ae0225a5.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/application_dark-4f63baa5f2124cee07dd000f2f2c6b1c230c5c2cb8e6ccd3badec46532fb6b5f.css" media="(prefers-color-scheme: dark)" />
+<link rel="stylesheet" href="/assets/page_bundles/merge_request-87fda1bb8e6c9cca6582e15799cfc6b90635352b705635fd3e84a3f36c16194c.css" /><link rel="stylesheet" href="/assets/page_bundles/issuable-7a8ba61bb73b849156edb985ab27e20016610629a5c411d1c53b53cd241f36e7.css" /><link rel="stylesheet" href="/assets/page_bundles/notes_shared-a3178ba4c56d7448e82377c4b5cb5b4e6b536505f7ef9977efc391b6b54c7b00.css" /><link rel="stylesheet" href="/assets/page_bundles/design_management-2a78e1525476a407e9c3eabb4b8a8a0ff3b59b68e08890b419bf006265d77b80.css" /><link rel="stylesheet" href="/assets/page_bundles/merge_requests-b196e1b5eb91dc117d848992f0698ff0c1f30b73e89a062c459e73895a396c66.css" /><link rel="stylesheet" href="/assets/page_bundles/pipelines-bf81a398231227b122311d7789dd277fb16757499b12acb3c7e588e7790b727d.css" /><link rel="stylesheet" href="/assets/page_bundles/reports-5e4ff8f7d913eefc5b153399631403500d6558de6b05ee3bbe4f930073dc7981.css" /><link rel="stylesheet" href="/assets/page_bundles/ci_status-a006c60710290cfcd08d0078175fd4a707bd5222916575db6bd236cbd8a8bbe8.css" /><link rel="stylesheet" href="/assets/page_bundles/labels-a9abfe41adc697487112997f45bc17cd12fd21743e6c7a8cc639c81ef5212581.css" /><link rel="stylesheet" href="/assets/page_bundles/rapid_diffs-bddbad62a74e71f0411586ef0185fa4970cee4aaaa21545e9dd711add6bfb71b.css" /><link rel="stylesheet" href="/assets/page_bundles/merge_request_rapid_diffs-c3b41b760bd8ea19b35c61e861a8efc154c3d2a3208a12aaf640a64c0132452a.css" /><link rel="stylesheet" href="/assets/page_bundles/commit_description-9e7efe20f0cef17d0606edabfad0418e9eb224aaeaa2dae32c817060fa60abcc.css" /><link rel="stylesheet" href="/assets/page_bundles/issuable_list-7a33f8b5a79c609e4bac7e1fa1c5553962adf726cd700fbead1f9e974c41e7c9.css" /><link rel="stylesheet" href="/assets/page_bundles/issues_list-1d9cdbbaf9469f9073c410dc7a7f2543b02071773aa332daf63803eaaec87e62.css" /><link rel="stylesheet" href="/assets/page_bundles/issues_show-ec954ae4932e0bfe7383adee3c75f53c5985c6edea62c7ae4370cb1f6e85a91a.css" /><link rel="stylesheet" href="/assets/page_bundles/work_items-608cb20c0ef1be3b7cf391701d69d9cfea9a3c10422e141892b36284d439b0f3.css" />
+<link rel="stylesheet" href="/assets/tailwind-21a7fedc21976840599e4d6ea54ce2ca9e4b94656016512d259e58939d2bcb8f.css" />
+
+
+<link rel="stylesheet" href="/assets/fonts-deb7ad1d55ca77c0172d8538d53442af63604ff490c74acc2859db295c125bdb.css" />
+<link rel="stylesheet" href="/assets/highlight/themes/white-2512b051af2aba63354e3a6e6b8a574e666261ddbe54bd95982cd545577c0f9b.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/highlight/themes/dark-2cd9f35b637538c7bbc5f728be89f8c7974eb1ad73216406c15852cf2581206c.css" media="(prefers-color-scheme: dark)" />
+
+<script src="/assets/webpack/runtime.cd42a13a.bundle.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/framework.5d3636fa.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/tracker.663eadd4.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script nonce="QTpFCCgDsCOVeY45Nlgu6A==">
+//<![CDATA[
+window.snowplowOptions = {"namespace":"gl","hostname":"snowplowprd.trx.gitlab.net","cookieDomain":".gitlab.com","appId":"gitlab","formTracking":true,"linkClickTracking":true};
+gl = window.gl || {};
+gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-1-8","data":{"environment":"production","source":"gitlab-rails","client_type":"api","correlation_id":"a565f8967bfbeb15-MAN","extra":{},"user_id":null,"global_user_id":null,"user_type":null,"is_gitlab_team_member":null,"namespace_id":6593439,"ultimate_parent_namespace_id":6593371,"project_id":21601606,"feature_enabled_by_namespace_ids":null,"realm":"saas","deployment_type":".com","context_generated_at":"2026-11-06T17:55:46.985Z","organization_id":1}};
+gl.snowplowPseudonymizedPageUrl = "https://gitlab.com/namespace6593439/project21601606/-/merge_requests/2904?tab=pipelines";
+gl.maskedDefaultReferrerUrl = null;
+gl.ga4MeasurementId = 'G-ENFH3X7M5Y';
+gl.duoEvents = ["ai_question_category","block_slack_duo_mention","perform_completion_worker","receive_slack_duo_mention","process_gitlab_duo_question","agent_platform_session_created","agent_platform_session_dropped","agent_platform_session_finished","agent_platform_session_input_required","agent_platform_session_resumed","agent_platform_session_started","agent_platform_session_stopped","ai_response_time","approve_merge_request_duo_code_review","approve_tool_duo_chat","assign_duo_suggested_reviewer","attach_file_duo_agentic_chat","cancel_session_from_session_pill","cleanup_stuck_agent_platform_session","click_ai_catalog_button_duo_rail","click_analyze_with_duo_on_analytics_dashboard","click_dap_trial_or_paid_empty_state_agent","click_dap_trial_or_paid_empty_state_explore_agents_link","click_dap_trial_or_paid_empty_state_prompt","click_delete_ai_catalog_item_button","click_disable_ai_catalog_item_button","click_duo_agentic_identity_verification_empty_state_verify_account","click_duo_agentic_not_available_empty_state_buy_credits","click_duo_agentic_not_available_empty_state_learn_more","click_duo_agentic_not_available_empty_state_learn_more_credits","click_duo_agentic_not_available_empty_state_start_trial","click_duo_agentic_subscription_expired_learn_more","click_duo_agentic_subscription_expired_upgrade","click_duo_agentic_trial_expired_learn_more","click_duo_agentic_trial_expired_upgrade","click_duo_quick_action","click_duplicate_ai_catalog_item_button","click_element_in_duo_chat","click_enable_ai_catalog_item_button","click_purchase_seats_button_group_duo_pro_home_page","click_through_flow_widget","click_through_session_pill","click_work_item_workplan_implement","close_vulnerability_resolution_merge_request","code_suggestion_accepted_in_ide","code_suggestion_rejected_in_ide","code_suggestion_shown_in_ide","code_suggestions_connection_details_rate_limit_exceeded","code_suggestions_direct_access_rate_limit_exceeded","code_suggestions_rate_limit_exceeded","complete_duo_chat_response","create_ai_catalog_item","create_ai_catalog_item_consumer","create_ai_self_hosted_model","create_duo_suggested_reviewers","create_vulnerability_resolution_merge_request","default_answer","delete_ai_catalog_item","delete_ai_catalog_item_consumer","delete_ai_self_hosted_model","deny_tool_duo_chat","dismiss_sast_vulnerability_false_positive_analysis","dismiss_secret_detection_vulnerability_false_positive_analysis","duo_workflow_workload_completed","enable_duo_code_review_by_default_marked_pending","encounter_duo_code_review_error_during_review","error_answer","excluded_files_from_duo_code_review","execute_llm_method","explain_code","explain_vulnerability","filter_ai_fp","find_no_issues_duo_code_review_after_review","find_nothing_to_review_duo_code_review_on_mr","finish_duo_workflow_execution","finish_mcp_tool_call","finish_vulnerability_bulk_duo_workflow","fix_code","fix_pipeline_suggestion_applied","fix_pipeline_suggestion_posted","generate_merge_commit_message","generate_resolve_dependency_bump_pipeline","i_quickactions_q","include_repository_xray_data_into_code_generation_prompt","ingest_ai_audit_events_batch","maximize_duo_chat_panel","mention_gitlabduo_in_mr_comment","merge_vulnerability_resolution_merge_request","minimize_duo_chat_panel","navigate_retry_alternative_duo_agentic_chat","post_comment_duo_code_review_on_diff","process_gitlab_duo_slash_command","publish_duo_code_review_comments","react_thumbs_down_on_duo_code_review_comment","react_thumbs_up_on_duo_code_review_comment","recommend_tool_duo_chat","refactor_code","reject_file_attachment_duo_agentic_chat","report_agent_platform_token_usage","report_duo_chat_token_usage","reported_sast_vulnerability_false_positive_analysis","reported_secret_detection_vulnerability_false_positive_analysis","request_ask_help","request_duo_chat_response","request_duo_vulnerability_resolution","request_review_duo_code_review_on_mr_by_author","request_review_duo_code_review_on_mr_by_non_author","resize_duo_chat_panel","resolve_feature_discovery_search","restore_ai_catalog_item","retry_duo_workflow_execution","retry_failed_duo_agentic_chat","retry_message_duo_agentic_chat","retry_succeeded_duo_agentic_chat","select_duo_agentic_chat_predefined_prompt","start_duo_workflow_execution","start_mcp_tool_call","start_vulnerability_bulk_duo_workflow","submit_dap_trial_or_paid_empty_state_message","submit_file_attachments_duo_agentic_chat","submit_gitlab_duo_question","submit_slash_command_duo_agentic_chat","summarize_new_merge_request","summarize_review","tokens_per_embedding","tokens_per_user_request_prompt","tokens_per_user_request_response","tool_failed_duo_chat","tool_succeeded_duo_chat","trigger_ai_catalog_item","trigger_resolve_dependency_bump_workflow","trigger_sast_vulnerability_fp_detection_workflow","trigger_sast_vulnerability_resolution_workflow","trigger_secret_detection_vulnerability_fp_detection_workflow","trigger_slack_duo","troubleshoot_job","update_ai_catalog_item","update_ai_catalog_item_consumer","update_ai_self_hosted_model","update_model_selection_feature","update_self_hosted_ai_feature_to_vendored_model","view_ai_catalog_item","view_ai_catalog_item_index","view_ai_catalog_project_catalog","view_ai_catalog_project_managed","view_dap_trial_or_paid_empty_state","view_duo_agentic_identity_verification_empty_state","view_duo_agentic_not_available_empty_state","view_duo_agentic_subscription_expired_empty_state","view_duo_agentic_trial_expired_empty_state","write_tests"];
+gl.onlySendDuoEvents = false;
+
+
+//]]>
+</script>
+
+
+<script src="/assets/webpack/main_shared.fcb7bf65.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/sentry.2e41c13d.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+
+<script src="/assets/webpack/vue3_runtime.36f31df9.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/gitlab_ui.93dfc539.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/99831.88ff12b0.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/8832.575f2c1a.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/33480.6df4a556.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/82442.7820bd9e.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/20409.08bc5ac0.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/6368.b30463b3.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/27641.51d4a43c.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/68509.96a710f8.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/31513.0edc8b57.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/super_sidebar.vue3.802ba7a6.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/92353.93a78a7a.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/main.vue3.6b8fafa6.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/prosemirror.cd5107cd.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/56386.43becb4a.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/26027.c7edd6be.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/81452.565b0d6e.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/80575.396e45f6.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/47072.928f5f58.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/99528.499249bd.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/85373.cf6dcad4.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/73773.619b9eb1.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/5642.1f8e0a72.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/34078.53e7dada.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/62507.bfc37bd6.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/8752.fb84c89c.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/60326.d3c186c4.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/89722.71d80ba8.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/48976.6a832fee.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/19749.c76398ad.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/76797.64c10cb7.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/99627.9861b317.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/83869.c38de554.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/80211.5e0b062d.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/87889.40db8a4e.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/92433.b2a1cd75.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/38720.d90822d5.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/13644.28418d81.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/36221.1cf8999c.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/55904.be03b03d.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/63695.05c73df8.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/62630.c9e56e8c.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/30933.3b3360e7.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/67350.1696cff2.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/55546.8923428a.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+<script src="/assets/webpack/pages.projects.merge_requests.show.26c7d0cb.chunk.js" defer="defer" nonce="QTpFCCgDsCOVeY45Nlgu6A=="></script>
+
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="Added Wemos S2 mini footprint (!2904) · Merge requests · KiCad / KiCad Libraries / KiCad Footprints · GitLab" property="og:title">
+<meta content="I added a symbol for the WeMOS S2 mini  &quot;Datasheet&quot;: https://www.wemos.cc/en/latest/s2/s2_mini.html I didn&#39;t add..." property="og:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/21601606/icon_modedit_128.png?v=1793971645" property="og:image">
+<meta content="64" property="og:image:width">
+<meta content="64" property="og:image:height">
+<meta content="https://gitlab.com/kicad/libraries/kicad-footprints/-/merge_requests/2904/pipelines" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="Added Wemos S2 mini footprint (!2904) · Merge requests · KiCad / KiCad Libraries / KiCad Footprints · GitLab" property="twitter:title">
+<meta content="I added a symbol for the WeMOS S2 mini  &quot;Datasheet&quot;: https://www.wemos.cc/en/latest/s2/s2_mini.html I didn&#39;t add..." property="twitter:description">
+<meta content="https://gitlab.com/uploads/-/system/project/avatar/21601606/icon_modedit_128.png?v=1793971645" property="twitter:image">
+<meta property="twitter:label1" content="Author"><meta property="twitter:data1" content="Mikkel Jeppesen"><meta property="twitter:label2" content="Assignee"><meta property="twitter:data2" content="apo">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="GILiFhhNdIU9j-CKpdcokcZWG2KwyRs-5zSKhA6cRoG4Ylg28F4npKI49g-cZ4TTH92oJlwK28OEXMm60iSa5Q" />
+<meta name="csp-nonce" content="QTpFCCgDsCOVeY45Nlgu6A==" />
+<meta name="action-cable-url" content="/-/cable" />
+<link crossorigin="use-credentials" href="/-/manifest.json" rel="manifest">
+<link rel="icon" type="image/png" href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" id="favicon" data-original-href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png" />
+<link crossorigin="use-credentials" href="/search/opensearch.xml" rel="search" title="Search GitLab" type="application/opensearchdescription+xml">
+
+
+
+
+<meta content="I added a symbol for the WeMOS S2 mini  &quot;Datasheet&quot;: https://www.wemos.cc/en/latest/s2/s2_mini.html I didn&#39;t add..." name="description">
+<meta content="#F1F0F6" media="(prefers-color-scheme: light)" name="theme-color">
+<meta content="#232128" media="(prefers-color-scheme: dark)" name="theme-color">
+</head>
+
+<body class="tab-width-8 gl-browser-generic gl-platform-other" data-1p-ignore="" data-group="libraries" data-group-full-path="kicad/libraries" data-namespace-id="6593439" data-page="projects:merge_requests:show" data-page-type-id="2904" data-project="kicad-footprints" data-project-full-path="kicad/libraries/kicad-footprints" data-project-id="21601606">
+<div id="js-tooltips-container"></div>
+<script nonce="QTpFCCgDsCOVeY45Nlgu6A==">
+//<![CDATA[
+gl = window.gl || {};
+gl.GfmAutoComplete = gl.GfmAutoComplete || {};
+gl.GfmAutoComplete.dataSources = {"epics":"/kicad/libraries/kicad-footprints/-/autocomplete_sources/epics","iterations":"/kicad/libraries/kicad-footprints/-/autocomplete_sources/iterations","vulnerabilities":"/kicad/libraries/kicad-footprints/-/autocomplete_sources/vulnerabilities","members":"/kicad/libraries/kicad-footprints/-/autocomplete_sources/members?type=MergeRequest\u0026type_id=2904","issues":"/kicad/libraries/kicad-footprints/-/autocomplete_sources/issues","mergeRequests":"/kicad/libraries/kicad-footprints/-/autocomplete_sources/merge_requests","labels":"/kicad/libraries/kicad-footprints/-/autocomplete_sources/labels?type=MergeRequest\u0026type_id=2904","milestones":"/kicad/libraries/kicad-footprints/-/autocomplete_sources/milestones","commands":"/kicad/libraries/kicad-footprints/-/autocomplete_sources/commands?type=MergeRequest\u0026type_id=2904","snippets":"/kicad/libraries/kicad-footprints/-/autocomplete_sources/snippets","contacts":"/kicad/libraries/kicad-footprints/-/autocomplete_sources/contacts?type=MergeRequest\u0026type_id=2904","wikis":"/kicad/libraries/kicad-footprints/-/autocomplete_sources/wikis"};
+
+
+//]]>
+</script>
+<script nonce="QTpFCCgDsCOVeY45Nlgu6A==">
+//<![CDATA[
+gl = window.gl || {};
+gl.client = {"isGeneric":true,"isOther":true};
+
+
+//]]>
+</script>
+
+
+<header class="super-topbar js-super-topbar"></header>
+<div class="layout-page js-page-layout page-gutter  page-with-super-sidebar">
+<script nonce="QTpFCCgDsCOVeY45Nlgu6A==">
+//<![CDATA[
+const outer = document.createElement('div');
+outer.style.visibility = 'hidden';
+outer.style.overflow = 'scroll';
+document.body.appendChild(outer);
+const inner = document.createElement('div');
+outer.appendChild(inner);
+const scrollbarWidth = outer.offsetWidth - inner.offsetWidth;
+outer.parentNode.removeChild(outer);
+document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+
+//]]>
+</script><aside class="js-super-sidebar super-sidebar super-sidebar-loading" data-command-palette="{&quot;project_files_url&quot;:&quot;/kicad/libraries/kicad-footprints/-/files/master?format=json&quot;,&quot;project_blob_url&quot;:&quot;/kicad/libraries/kicad-footprints/-/blob/master&quot;}" data-is-saas="true" data-sidebar="{&quot;whats_new_most_recent_release_items_count&quot;:6,&quot;whats_new_version_digest&quot;:&quot;553beed538e6504062d16e13f2a3cd449b8a58d17c36c1bde1f043bd3c205606&quot;,&quot;whats_new_read_articles&quot;:[],&quot;is_logged_in&quot;:false,&quot;compare_plans_url&quot;:&quot;https://about.gitlab.com/pricing&quot;,&quot;current_menu_items&quot;:[{&quot;id&quot;:&quot;project_overview&quot;,&quot;title&quot;:&quot;KiCad Footprints&quot;,&quot;avatar&quot;:&quot;/uploads/-/system/project/avatar/21601606/icon_modedit_128.png?v=1793971645&quot;,&quot;entity_id&quot;:21601606,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints&quot;,&quot;link_classes&quot;:&quot;shortcuts-project&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;manage_menu&quot;,&quot;title&quot;:&quot;Manage&quot;,&quot;icon&quot;:&quot;users&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/activity&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;activity&quot;,&quot;title&quot;:&quot;Activity&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/activity&quot;,&quot;link_classes&quot;:&quot;shortcuts-project-activity&quot;,&quot;description&quot;:&quot;Track what your team is working on and stay informed of changes&quot;,&quot;library_icon&quot;:&quot;history&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;members&quot;,&quot;title&quot;:&quot;Members&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/project_members&quot;,&quot;description&quot;:&quot;Control who has access to your project and what they can do&quot;,&quot;library_icon&quot;:&quot;users&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;labels&quot;,&quot;title&quot;:&quot;Labels&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/labels&quot;,&quot;description&quot;:&quot;Organize and categorize work across your project with consistent labels&quot;,&quot;library_icon&quot;:&quot;labels&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;plan_menu&quot;,&quot;title&quot;:&quot;Plan&quot;,&quot;icon&quot;:&quot;planning&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/work_items&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;project_issue_list&quot;,&quot;title&quot;:&quot;Work items&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/work_items&quot;,&quot;link_classes&quot;:&quot;shortcuts-issues has-sub-items&quot;,&quot;pill_count_field&quot;:&quot;openWorkItemsCount&quot;,&quot;pill_count_dynamic&quot;:false,&quot;description&quot;:&quot;Plan, track, and manage work in one place&quot;,&quot;library_icon&quot;:&quot;work-items&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;boards&quot;,&quot;title&quot;:&quot;Issue boards&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/boards&quot;,&quot;link_classes&quot;:&quot;shortcuts-issue-boards&quot;,&quot;description&quot;:&quot;Visualize and manage work with kanban-style boards&quot;,&quot;library_icon&quot;:&quot;work-item-issue-board&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;milestones&quot;,&quot;title&quot;:&quot;Milestones&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/milestones&quot;,&quot;description&quot;:&quot;Plan releases and group work into time-based phases&quot;,&quot;library_icon&quot;:&quot;milestone&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;iterations&quot;,&quot;title&quot;:&quot;Iterations&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/cadences&quot;,&quot;description&quot;:&quot;Group issues into time-boxed cycles to plan and track sprints&quot;,&quot;tier&quot;:&quot;premium&quot;,&quot;library_icon&quot;:&quot;iteration&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;project_wiki&quot;,&quot;title&quot;:&quot;Wiki&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/wikis&quot;,&quot;link_classes&quot;:&quot;shortcuts-wiki&quot;,&quot;description&quot;:&quot;Create and manage documentation&quot;,&quot;library_icon&quot;:&quot;book&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;requirements&quot;,&quot;title&quot;:&quot;Requirements&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/requirements_management/requirements&quot;,&quot;description&quot;:&quot;Set criteria to check your products against&quot;,&quot;tier&quot;:&quot;ultimate&quot;,&quot;library_icon&quot;:&quot;work-item-requirement&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;code_menu&quot;,&quot;title&quot;:&quot;Code&quot;,&quot;icon&quot;:&quot;code&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests&quot;,&quot;is_active&quot;:true,&quot;items&quot;:[{&quot;id&quot;:&quot;project_merge_request_list&quot;,&quot;title&quot;:&quot;Merge requests&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests&quot;,&quot;link_classes&quot;:&quot;shortcuts-merge_requests&quot;,&quot;pill_count_field&quot;:&quot;openMergeRequestsCount&quot;,&quot;pill_count_dynamic&quot;:false,&quot;description&quot;:&quot;Collaborate on code changes with built-in review tools&quot;,&quot;library_icon&quot;:&quot;merge-request&quot;,&quot;is_active&quot;:true},{&quot;id&quot;:&quot;files&quot;,&quot;title&quot;:&quot;Repository&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/tree/master&quot;,&quot;link_classes&quot;:&quot;shortcuts-tree&quot;,&quot;description&quot;:&quot;Browse and manage repository files and code&quot;,&quot;library_icon&quot;:&quot;repository&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;branches&quot;,&quot;title&quot;:&quot;Branches&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/branches&quot;,&quot;description&quot;:&quot;Manage project branches and branch protection&quot;,&quot;library_icon&quot;:&quot;branch&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;commits&quot;,&quot;title&quot;:&quot;Commits&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/commits/master?ref_type=heads&quot;,&quot;link_classes&quot;:&quot;shortcuts-commits&quot;,&quot;description&quot;:&quot;View commit history and changes&quot;,&quot;library_icon&quot;:&quot;commit&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;tags&quot;,&quot;title&quot;:&quot;Tags&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/tags&quot;,&quot;description&quot;:&quot;Create and manage release tags&quot;,&quot;library_icon&quot;:&quot;tag&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;graphs&quot;,&quot;title&quot;:&quot;Repository graph&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/network/master?ref_type=heads&quot;,&quot;link_classes&quot;:&quot;shortcuts-network&quot;,&quot;description&quot;:&quot;Visualize repository commit history and branches&quot;,&quot;library_icon&quot;:&quot;repository-graph&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;compare&quot;,&quot;title&quot;:&quot;Compare revisions&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/compare?from=master\u0026to=master&quot;,&quot;description&quot;:&quot;Compare changes between revisions&quot;,&quot;library_icon&quot;:&quot;comparison&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;project_snippets&quot;,&quot;title&quot;:&quot;Snippets&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/snippets&quot;,&quot;link_classes&quot;:&quot;shortcuts-snippets&quot;,&quot;description&quot;:&quot;Store and share code snippets&quot;,&quot;library_icon&quot;:&quot;snippet&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;file_locks&quot;,&quot;title&quot;:&quot;Locked files&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/path_locks&quot;,&quot;description&quot;:&quot;Manage file locks to prevent conflicting changes&quot;,&quot;tier&quot;:&quot;premium&quot;,&quot;library_icon&quot;:&quot;doc-locked&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;build_menu&quot;,&quot;title&quot;:&quot;Build&quot;,&quot;icon&quot;:&quot;rocket&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/pipelines&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;pipelines&quot;,&quot;title&quot;:&quot;Pipelines&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/pipelines&quot;,&quot;link_classes&quot;:&quot;shortcuts-pipelines&quot;,&quot;description&quot;:&quot;Automate your build and deployment process&quot;,&quot;library_icon&quot;:&quot;pipeline&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;jobs&quot;,&quot;title&quot;:&quot;Jobs&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/jobs&quot;,&quot;link_classes&quot;:&quot;shortcuts-builds&quot;,&quot;description&quot;:&quot;Monitor individual build tasks and their results&quot;,&quot;library_icon&quot;:&quot;job&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;pipeline_schedules&quot;,&quot;title&quot;:&quot;Pipeline schedules&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/pipeline_schedules&quot;,&quot;link_classes&quot;:&quot;shortcuts-builds&quot;,&quot;description&quot;:&quot;Run your automation on a recurring schedule&quot;,&quot;library_icon&quot;:&quot;pipeline-schedule&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;test_cases&quot;,&quot;title&quot;:&quot;Test cases&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/quality/test_cases&quot;,&quot;link_classes&quot;:&quot;shortcuts-test-cases&quot;,&quot;description&quot;:&quot;Define and manage test cases for your project&quot;,&quot;tier&quot;:&quot;ultimate&quot;,&quot;library_icon&quot;:&quot;work-item-test-case&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;artifacts&quot;,&quot;title&quot;:&quot;Artifacts&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/artifacts&quot;,&quot;link_classes&quot;:&quot;shortcuts-builds&quot;,&quot;description&quot;:&quot;Access build outputs and compiled binaries&quot;,&quot;library_icon&quot;:&quot;doc-compressed&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;deploy_menu&quot;,&quot;title&quot;:&quot;Deploy&quot;,&quot;icon&quot;:&quot;deployments&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/releases&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;releases&quot;,&quot;title&quot;:&quot;Releases&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/releases&quot;,&quot;link_classes&quot;:&quot;shortcuts-deployments-releases&quot;,&quot;description&quot;:&quot;Create and manage project releases&quot;,&quot;library_icon&quot;:&quot;release&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;packages_registry&quot;,&quot;title&quot;:&quot;Package registry&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/packages&quot;,&quot;link_classes&quot;:&quot;shortcuts-container-registry&quot;,&quot;description&quot;:&quot;Publish and share packages across your organization&quot;,&quot;library_icon&quot;:&quot;package&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;container_registry&quot;,&quot;title&quot;:&quot;Container registry&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/container_registry&quot;,&quot;description&quot;:&quot;Store and deploy container images&quot;,&quot;library_icon&quot;:&quot;container-image&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;model_registry&quot;,&quot;title&quot;:&quot;Model registry&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/ml/models&quot;,&quot;description&quot;:&quot;Store and manage machine learning models&quot;,&quot;library_icon&quot;:&quot;model-registry&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;operations_menu&quot;,&quot;title&quot;:&quot;Operate&quot;,&quot;icon&quot;:&quot;cloud-pod&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/environments&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;environments&quot;,&quot;title&quot;:&quot;Environments&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/environments&quot;,&quot;link_classes&quot;:&quot;shortcuts-environments&quot;,&quot;description&quot;:&quot;Manage your staging and production deployments&quot;,&quot;library_icon&quot;:&quot;environment&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;infrastructure_registry&quot;,&quot;title&quot;:&quot;Terraform modules&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/terraform_module_registry&quot;,&quot;description&quot;:&quot;Share and reuse infrastructure code&quot;,&quot;library_icon&quot;:&quot;infrastructure-registry&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;monitor_menu&quot;,&quot;title&quot;:&quot;Monitor&quot;,&quot;icon&quot;:&quot;monitor&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/incidents&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;incidents&quot;,&quot;title&quot;:&quot;Incidents&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/incidents&quot;,&quot;description&quot;:&quot;Manage incident response and resolution&quot;,&quot;library_icon&quot;:&quot;work-item-incident&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;service_desk&quot;,&quot;title&quot;:&quot;Service Desk&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/issues/service_desk&quot;,&quot;description&quot;:&quot;Collect customer feedback and support requests via email&quot;,&quot;library_icon&quot;:&quot;service-desk&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false},{&quot;id&quot;:&quot;analyze_menu&quot;,&quot;title&quot;:&quot;Analyze&quot;,&quot;icon&quot;:&quot;chart&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/value_stream_analytics&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[{&quot;id&quot;:&quot;cycle_analytics&quot;,&quot;title&quot;:&quot;Value stream analytics&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/value_stream_analytics&quot;,&quot;link_classes&quot;:&quot;shortcuts-project-cycle-analytics&quot;,&quot;description&quot;:&quot;Analyze value stream and cycle time&quot;,&quot;library_icon&quot;:&quot;value-stream-analytics&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;contributors&quot;,&quot;title&quot;:&quot;Contributor analytics&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/graphs/master?ref_type=heads&quot;,&quot;description&quot;:&quot;Track and view member contributions and activity&quot;,&quot;library_icon&quot;:&quot;contributor-analytics&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;ci_cd_analytics&quot;,&quot;title&quot;:&quot;CI/CD analytics&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/pipelines/charts&quot;,&quot;description&quot;:&quot;Analyze CI/CD pipeline metrics and performance&quot;,&quot;library_icon&quot;:&quot;cicd-analytics&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;repository_analytics&quot;,&quot;title&quot;:&quot;Repository analytics&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/graphs/master/charts&quot;,&quot;link_classes&quot;:&quot;shortcuts-repository-charts&quot;,&quot;description&quot;:&quot;Analyze repository coverage, statistics, and metrics&quot;,&quot;library_icon&quot;:&quot;repository-analytics&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;code_review&quot;,&quot;title&quot;:&quot;Code review analytics&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/analytics/code_reviews&quot;,&quot;description&quot;:&quot;Measure code review efficiency and merge request throughput&quot;,&quot;tier&quot;:&quot;premium&quot;,&quot;library_icon&quot;:&quot;code-review-analytics&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;issues&quot;,&quot;title&quot;:&quot;Issue analytics&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/analytics/issues_analytics&quot;,&quot;description&quot;:&quot;Track issue metrics, trends, and throughput&quot;,&quot;tier&quot;:&quot;premium&quot;,&quot;library_icon&quot;:&quot;work-item-issue-analytics&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;insights&quot;,&quot;title&quot;:&quot;Insights&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/insights/&quot;,&quot;link_classes&quot;:&quot;shortcuts-project-insights&quot;,&quot;description&quot;:&quot;View insights and build custom charts and reports&quot;,&quot;tier&quot;:&quot;ultimate&quot;,&quot;library_icon&quot;:&quot;bulb&quot;,&quot;is_active&quot;:false},{&quot;id&quot;:&quot;model_experiments&quot;,&quot;title&quot;:&quot;Model experiments&quot;,&quot;link&quot;:&quot;/kicad/libraries/kicad-footprints/-/ml/experiments&quot;,&quot;description&quot;:&quot;Track and manage machine learning experiments&quot;,&quot;library_icon&quot;:&quot;machine-learning&quot;,&quot;is_active&quot;:false}],&quot;separated&quot;:false}],&quot;current_context_header&quot;:&quot;Project&quot;,&quot;support_path&quot;:&quot;https://support.gitlab.com&quot;,&quot;display_whats_new&quot;:true,&quot;show_version_check&quot;:null,&quot;search&quot;:{&quot;search_context&quot;:{&quot;group&quot;:{&quot;id&quot;:6593439,&quot;name&quot;:&quot;KiCad Libraries&quot;,&quot;full_name&quot;:&quot;KiCad / KiCad Libraries&quot;},&quot;group_metadata&quot;:{&quot;issues_path&quot;:&quot;/groups/kicad/libraries/-/issues&quot;,&quot;mr_path&quot;:&quot;/groups/kicad/libraries/-/merge_requests&quot;},&quot;project&quot;:{&quot;id&quot;:21601606,&quot;name&quot;:&quot;KiCad Footprints&quot;},&quot;project_metadata&quot;:{&quot;mr_path&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests&quot;,&quot;issues_path&quot;:&quot;/kicad/libraries/kicad-footprints/-/issues&quot;},&quot;code_search&quot;:false,&quot;scope&quot;:&quot;merge_requests&quot;,&quot;for_snippets&quot;:null}},&quot;panel_type&quot;:&quot;project&quot;,&quot;shortcut_links&quot;:[{&quot;title&quot;:&quot;Snippets&quot;,&quot;href&quot;:&quot;/explore/snippets&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-snippets&quot;},{&quot;title&quot;:&quot;Groups&quot;,&quot;href&quot;:&quot;/explore/groups&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-groups&quot;},{&quot;title&quot;:&quot;Projects&quot;,&quot;href&quot;:&quot;/explore/projects&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-projects&quot;}],&quot;has_terms&quot;:true,&quot;allow_signup&quot;:&quot;true&quot;,&quot;pinned_items&quot;:[&quot;project_overview&quot;,&quot;members&quot;,&quot;project_issue_list&quot;,&quot;branches&quot;,&quot;project_merge_request_list&quot;,&quot;pipelines&quot;],&quot;trial_registration_path&quot;:&quot;/-/trial_registrations/new&quot;}"></aside>
+
+<div class="broadcast-wrapper gl-rounded-lg gl-overflow-hidden">
+
+
+
+</div>
+<div class="panels-container gl-flex gl-gap-3">
+<div class="content-panels gl-flex-1 gl-w-full gl-flex gl-gap-0 gl-relative js-content-panels gl-@container/content-panels">
+<div class="paneled-view static-panel js-static-panel js-paneled-view content-wrapper">
+<div class="panel-header gl-@container/panel">
+<div class="panel-header-inner js-panel-header-inner">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"KiCad","item":"https://gitlab.com/kicad"},{"@type":"ListItem","position":2,"name":"KiCad Libraries","item":"https://gitlab.com/kicad/libraries"},{"@type":"ListItem","position":3,"name":"KiCad Footprints","item":"https://gitlab.com/kicad/libraries/kicad-footprints"},{"@type":"ListItem","position":4,"name":"Merge requests","item":"https://gitlab.com/kicad/libraries/kicad-footprints/-/merge_requests"},{"@type":"ListItem","position":5,"name":"!2904","item":"https://gitlab.com/kicad/libraries/kicad-footprints/-/merge_requests/2904/pipelines"}]}
+
+
+</script>
+<div data-testid="breadcrumb-links" id="js-vue-page-breadcrumbs-wrapper">
+<div data-breadcrumbs-json="[{&quot;text&quot;:&quot;KiCad&quot;,&quot;href&quot;:&quot;/kicad&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/group/avatar/6593371/kicadlogo.png?v=1701879414&quot;},{&quot;text&quot;:&quot;KiCad Libraries&quot;,&quot;href&quot;:&quot;/kicad/libraries&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/group/avatar/6593439/500px-Books-aj.svg_aj_ashton_01f.svg.png?v=1705700270&quot;},{&quot;text&quot;:&quot;KiCad Footprints&quot;,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints&quot;,&quot;avatarPath&quot;:&quot;/uploads/-/system/project/avatar/21601606/icon_modedit_128.png?v=1793971645&quot;},{&quot;text&quot;:&quot;Merge requests&quot;,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests&quot;,&quot;avatarPath&quot;:null},{&quot;text&quot;:&quot;!2904&quot;,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/pipelines&quot;,&quot;avatarPath&quot;:null}]" id="js-vue-page-breadcrumbs"></div>
+<div id="js-injected-page-breadcrumbs"></div>
+</div>
+<div id="js-page-breadcrumbs-extra"></div>
+
+
+
+<div class="panel-header-inner-actions">
+
+
+<div class="panel-header-inner-actions-portal-target js-panel-actions-portal-target"></div>
+</div>
+</div>
+</div>
+<div class="panel-content">
+<div class="panel-content-inner js-static-panel-inner">
+<div class="alert-wrapper alert-wrapper-top-space gl-flex gl-flex-col gl-gap-3 container-fluid container-limited">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="container-fluid container-limited project-highlight-puc">
+<main class="content gl-@container/panel" id="content-body" itemscope itemtype="http://schema.org/SoftwareSourceCode">
+<div id="js-drawer-container"></div>
+<div class="flash-container flash-container-page sticky" data-testid="flash-container">
+<div id="js-global-alerts"></div>
+</div>
+
+
+
+
+
+
+
+
+<div class="merge-request" data-lock-version="2" data-mr-action="pipelines" data-project-path="kicad/libraries/kicad-footprints" data-url="/kicad/libraries/kicad-footprints/-/merge_requests/2904.json">
+<div class="detail-page-header gl-flex gl-pt-3 gl-gap-3 gl-flex-wrap gl-mb-3 @sm/panel:gl-flex-nowrap @sm/panel:gl-mb-0 is-merge-request">
+<h1 class="title gl-heading-1 gl-self-center gl-mb-0 gl-flex-1 gl-wrap-anywhere" data-testid="title-content">
+Added Wemos S2 mini footprint
+</h1>
+<div class="gl-flex gl-flex-row gl-gap-3 gl-w-full js-issuable-actions @sm/panel:gl-w-auto">
+
+<div class="!gl-hidden" id="js-rapid-diffs-toggle">
+<div class="js-rapid-diffs-toggle-mount"></div>
+</div>
+<div data-is-fork="true" data-reviewing-docs-path="/help/user/project/merge_requests/merge_request_troubleshooting.md#check-out-merge-requests-locally-through-the-head-ref" data-source-branch="wemos_s2_mini" data-source-project-default-url="https://gitlab.com/Duckle29/kicad-footprints.git" data-source-project-full-path="Duckle29/kicad-footprints" data-source-project-path="kicad-footprints" id="js-check-out-modal"></div>
+<div class="js-mr-title-actions" data-can-update="false" data-code-dropdown="{&quot;web_ide_path&quot;:null,&quot;gitpod_path&quot;:null,&quot;patches_path&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904.patch&quot;,&quot;plain_diff_path&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904.diff&quot;,&quot;workspace_path&quot;:&quot;/-/remote_development/workspaces/new?project=Duckle29%2Fkicad-footprints\u0026gitRef=wemos_s2_mini&quot;,&quot;workspace_event_label&quot;:&quot;merge_requests:show&quot;}" data-edit-path="/kicad/libraries/kicad-footprints/-/merge_requests/2904/edit" data-id="179112860" data-iid="2904" data-is-signed-in="false" data-project-path="kicad/libraries/kicad-footprints" data-report-abuse-path="/-/abuse_reports/add_category"></div>
+<button class="gl-button btn btn-md btn-default btn-icon gl-h-fit gutter-toggle js-sidebar-toggle @lg/panel:!gl-hidden" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="chevron-double-lg-left-icon"><use href="/assets/icons-c33971e20f30a791de3ca935bad7098d65eac64b537ff98fed28c2589f917fd9.svg#chevron-double-lg-left"></use></svg>
+<span class="gl-button-text">
+<span class="gl-sr-only">Expand sidebar</span>
+
+</span>
+
+</button></div>
+</div>
+
+<div data-can-summarize="false" data-diffs-path="https://gitlab.com/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs" data-new-comment-template-paths="[{&quot;text&quot;:&quot;Your comment templates&quot;,&quot;href&quot;:&quot;/-/profile/comment_templates&quot;}]" id="js-review-drawer"></div>
+<div data-data="{&quot;iid&quot;:2904,&quot;canResolveDiscussion&quot;:&quot;&quot;,&quot;defaultBranchName&quot;:&quot;master&quot;,&quot;projectPath&quot;:&quot;kicad/libraries/kicad-footprints&quot;,&quot;sourceProjectPath&quot;:&quot;Duckle29/kicad-footprints&quot;,&quot;title&quot;:&quot;Added Wemos S2 mini footprint&quot;,&quot;isFluidLayout&quot;:&quot;&quot;,&quot;blocksMerge&quot;:&quot;true&quot;,&quot;imported&quot;:&quot;false&quot;,&quot;isDraft&quot;:&quot;false&quot;,&quot;tabs&quot;:[[&quot;show&quot;,&quot;Overview&quot;,&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904&quot;,14],[&quot;commits&quot;,&quot;Commits&quot;,&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/commits&quot;,6],[&quot;pipelines&quot;,&quot;Pipelines&quot;,&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/pipelines&quot;,8],[&quot;reports&quot;,&quot;Reports&quot;,&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/reports&quot;,&quot;-&quot;],[&quot;diffs&quot;,&quot;Changes&quot;,&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs&quot;,&quot;1&quot;]]}" id="js-merge-sticky-header"></div>
+<div class="merge-request-details issuable-details" data-id="21601606">
+<div class="merge-request-sticky-header-wrapper js-merge-request-sticky-header-wrapper">
+<div class="merge-request-sticky-header gl-border-b">
+<div class="detail-page-description gl-pt-2 gl-pb-4 gl-flex gl-items-baseline gl-text-subtle gl-relative gl-whitespace-nowrap gl-flex-wrap is-merge-request @md/panel:gl-flex-nowrap">
+<div class="js-mr-header" data-hidden="false" data-iid="2904" data-imported="false" data-is-draft="false" data-project-path="kicad/libraries/kicad-footprints" data-state="opened"></div>
+<a class="gl-my-0 gl-ml-1 gl-mr-2 gl-hidden gl-overflow-hidden gl-text-ellipsis gl-whitespace-nowrap gl-font-bold gl-text-default merge-request-sticky-title gl-flex-shrink-0" aria-hidden="true" href="#top">Added Wemos S2 mini footprint</a>
+<div class="merge-request-author-container"><a class="author-link gl-text-link gl-font-bold gl-mr-2 js-user-link" data-user-id="6906805" data-username="Duckle29" data-name="Mikkel Jeppesen" data-testid="author-link" href="/Duckle29"><span class="author">Mikkel Jeppesen</span></a>requested to merge </div><div class="js-stack-dropdown" data-default-branch="master"></div><a title="Duckle29/kicad-footprints:wemos_s2_mini" class="ref-container gl-inline-block gl-truncate gl-ml-2 gl-flex-[0_999_auto] !gl-min-w-[6ch]" href="/Duckle29/kicad-footprints/-/tree/wemos_s2_mini"><span class="gl-align-middle -gl-mr-2 has-tooltip" title="The source project is a fork"><svg class="s12 gl-ml-1 has-tooltip" data-testid="fork-icon"><use href="/assets/icons-c33971e20f30a791de3ca935bad7098d65eac64b537ff98fed28c2589f917fd9.svg#fork"></use></svg></span> Duckle29/kicad-footprints:wemos_s2_mini</a> <button class="gl-button btn btn-icon btn-sm btn-default btn-default-tertiary gl-inline-block gl-mx-1 js-source-branch-copy" title="Copy branch name &lt;kbd class=&#39;flat gl-ml-2&#39; aria-hidden=true&gt;b&lt;/kbd&gt;" aria-keyshortcuts="b" aria-label="Copy branch name" aria-live="polite" data-toggle="tooltip" data-placement="bottom" data-container="body" data-html="true" data-clipboard-text="wemos_s2_mini" type="button"><svg class="s16 gl-icon gl-button-icon " data-testid="copy-to-clipboard-icon"><use href="/assets/icons-c33971e20f30a791de3ca935bad7098d65eac64b537ff98fed28c2589f917fd9.svg#copy-to-clipboard"></use></svg>
+
+</button> into <a title="master" class="ref-container gl-inline-block gl-truncate gl-flex-initial gl-mx-2" href="/kicad/libraries/kicad-footprints/-/tree/master">master</a>   <time class="js-timeago gl-inline-block" title="Sep 25, 2022 5:40pm" datetime="2022-09-25T17:40:03Z" tabindex="0" aria-label="Sep 25, 2022 5:40pm" data-toggle="tooltip" data-placement="top" data-container="body">Sep 25, 2022</time>
+</div>
+
+<div class="merge-request-tabs-container gl-flex gl-justify-between gl-relative gl-gap-2 is-merge-request js-tabs-affix">
+<ul class="merge-request-tabs nav-tabs nav nav-links gl-flex gl-flex-nowrap gl-m-0 gl-p-0 gl-border-0 gl-w-full">
+<li class="notes-tab" data-testid="notes-tab">
+<a data-action="show" data-target="#notes" data-toggle="tabvue" href="/kicad/libraries/kicad-footprints/-/merge_requests/2904">Overview
+<span class="gl-badge badge badge-pill badge-neutral"><span class="gl-badge-content"><span class="js-discussions-count">14</span>
+</span></span></a>
+</li>
+<li class="commits-tab" data-testid="commits-tab">
+<a data-action="commits" data-target="#commits" data-toggle="tabvue" href="/kicad/libraries/kicad-footprints/-/merge_requests/2904/commits">Commits
+<span class="gl-badge badge badge-pill badge-neutral"><span class="gl-badge-content"><span class="js-commits-count">6</span>
+</span></span></a>
+</li>
+<li class="pipelines-tab active">
+<a data-action="pipelines" data-target="#pipelines" data-toggle="tabvue" aria-current="page" href="/kicad/libraries/kicad-footprints/-/merge_requests/2904/pipelines">Pipelines
+<span class="gl-badge badge badge-pill badge-neutral"><span class="gl-badge-content"><span class="js-pipelines-mr-count">8</span>
+</span></span></a>
+</li>
+<li class="reports-tab">
+<a data-action="reports" data-target="#reports" data-toggle="tabvue" href="/kicad/libraries/kicad-footprints/-/merge_requests/2904/reports">Reports
+<span class="gl-badge badge badge-pill badge-neutral"><span class="gl-badge-content"><span class="js-reports-tab-count">-</span>
+</span></span></a>
+</li>
+
+<li class="diffs-tab js-diffs-tab" data-testid="diffs-tab" id="diffs-tab">
+<a data-action="diffs" data-target="#diffs" data-toggle="tabvue" href="/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs">Changes
+<span class="gl-badge badge badge-pill badge-neutral"><span class="gl-badge-content"><span class="js-changes-tab-count" data-gid="gid://gitlab/MergeRequest/179112860" data-preparing="false">1</span>
+</span></span></a>
+</li>
+</ul>
+<div class="merge-request-tabs-actions gl-flex gl-flex-wrap gl-items-center gl-gap-3">
+<div data-blocks-merge="true" data-can-resolve-discussion="" id="js-vue-discussion-counter"></div>
+<div id="js-submit-review-button"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-content" id="diff-notes-app">
+<div id="js-diff-file-finder">
+<div id="js-code-navigation"></div>
+</div>
+<div class="tab-pane notes voting_notes" id="notes" style="">
+<script nonce="QTpFCCgDsCOVeY45Nlgu6A==">
+//<![CDATA[
+window.gl = window.gl || {};
+window.gl.mrWidgetData = {"id":179112860,"iid":2904,"source_project_full_path":"Duckle29/kicad-footprints","target_project_full_path":"kicad/libraries/kicad-footprints","can_create_pipeline_in_target_project":false,"email_patches_path":"/kicad/libraries/kicad-footprints/-/merge_requests/2904.patch","plain_diff_path":"/kicad/libraries/kicad-footprints/-/merge_requests/2904.diff","merge_request_basic_path":"/kicad/libraries/kicad-footprints/-/merge_requests/2904.json?serializer=basic","merge_request_widget_path":"/kicad/libraries/kicad-footprints/-/merge_requests/2904/widget.json","merge_request_cached_widget_path":"/kicad/libraries/kicad-footprints/-/merge_requests/2904/cached_widget.json","commit_change_content_path":"/kicad/libraries/kicad-footprints/-/merge_requests/2904/commit_change_content","conflicts_docs_path":"/help/user/project/merge_requests/conflicts.md","reviewing_and_managing_merge_requests_docs_path":"/help/user/project/merge_requests/merge_request_troubleshooting.md#check-out-merge-requests-locally-through-the-head-ref","merge_request_pipelines_docs_path":"/help/ci/pipelines/merge_request_pipelines.md","ci_environments_status_path":"/kicad/libraries/kicad-footprints/-/merge_requests/2904/ci_environments_status","user_callouts_path":"/-/users/callouts","migrate_jenkins_feature_id":"migrate_from_jenkins_banner","is_dismissed_jenkins_migration":true,"new_project_pipeline_path":"/kicad/libraries/kicad-footprints/-/pipelines/new","source_project_default_url":"https://gitlab.com/Duckle29/kicad-footprints.git","issues_links":{"assign_to_closing":"/kicad/libraries/kicad-footprints/-/merge_requests/2904/assign_related_issues","assign_to_closing_count":0,"closing":"","closing_count":0,"mentioned_but_not_closing":"","mentioned_count":0},"security_reports_docs_path":"/help/user/application_security/detect/security_scanning_results.md#merge-request-reports","enabled_reports":{"sast":false,"container_scanning":false,"dast":false,"dependency_scanning":false,"license_scanning":false,"coverage_fuzzing":false,"secret_detection":false,"api_fuzzing":false},"show_gitpod_button":true,"gitpod_url":"https://gitpod.io/#https://gitlab.com/kicad/libraries/kicad-footprints/-/merge_requests/2904","gitpod_enabled":false,"merge_request_path":"/kicad/libraries/kicad-footprints/-/merge_requests/2904","require_password_to_approve":false,"merge_request_approvers_available":true,"multiple_approval_rules_available":true,"risk_classification_available":false,"metrics_reports_path":"/kicad/libraries/kicad-footprints/-/merge_requests/2904/metrics_reports.json","pipeline_id":2052687626,"pipeline_iid":3115,"can_read_vulnerabilities":false,"can_read_vulnerability_feedback":false,"create_vulnerability_feedback_issue_path":null,"create_vulnerability_feedback_merge_request_path":null,"create_vulnerability_feedback_dismissal_path":null,"discover_project_security_path":null,"has_approvals_available":true,"api_approval_settings_path":"/api/v4/projects/21601606/merge_requests/2904/approval_settings","merge_immediately_docs_path":"/help/ci/pipelines/merge_trains.md#skip-the-merge-train-and-merge-immediately","saml_approval_path":null,"require_saml_auth_to_approve":false}
+
+window.gl.mrWidgetData.pipeline_etag = '/api/graphql:pipelines/sha/ea6222143380dfac3f9b27a5586d41bbdce4a350';
+window.gl.mrWidgetData.squash_before_merge_help_path = '/help/user/project/merge_requests/squash_and_merge.md';
+window.gl.mrWidgetData.ci_troubleshooting_docs_path = '/help/ci/debugging.md';
+window.gl.mrWidgetData.mr_troubleshooting_docs_path = '/help/user/project/merge_requests/merge_request_troubleshooting.md';
+window.gl.mrWidgetData.pipeline_must_succeed_docs_path = '/help/user/project/merge_requests/auto_merge.md#require-a-successful-pipeline-for-merge';
+window.gl.mrWidgetData.code_coverage_check_help_page_path = '/help/ci/testing/code_coverage/coverage_reporting.md#add-a-coverage-check-approval-rule';
+window.gl.mrWidgetData.security_configuration_path = '/kicad/libraries/kicad-footprints/-/security/configuration';
+window.gl.mrWidgetData.license_compliance_docs_path = '/help/user/compliance/license_scanning_of_cyclonedx_files/_index.md';
+window.gl.mrWidgetData.eligible_approvers_docs_path = '/help/user/project/merge_requests/approvals/rules.md#eligible-approvers';
+window.gl.mrWidgetData.approvals_help_path = '/help/user/project/merge_requests/approvals/_index.md';
+window.gl.mrWidgetData.codequality_help_path = '/help/ci/testing/code_quality.md#pipeline-details-view';
+window.gl.mrWidgetData.reportsTabPath = '/kicad/libraries/kicad-footprints/-/merge_requests/2904/reports';
+window.gl.mrWidgetData.can_view_false_positive = 'true';
+window.gl.mrWidgetData.user_preferences_gitpod_path = '/-/profile/preferences#user_gitpod_enabled';
+window.gl.mrWidgetData.user_profile_enable_gitpod_path = '/-/user_settings/profile?user%5Bgitpod_enabled%5D=true';
+window.gl.mrWidgetData.saml_approval_path = window.gl.mrWidgetData.saml_approval_path;
+
+
+//]]>
+</script>
+<div class="merge-request-overview">
+<section>
+<div class="issuable-discussion js-vue-notes-event">
+<div class="detail-page-description gl-pb-0">
+<div>
+<div class="description !gl-mt-4 " data-testid="description-content">
+<div class="md">
+<p data-sourcepos="1:1-1:42" dir="auto">I added a symbol for the <strong data-sourcepos="1:26-1:42">WeMOS S2 mini</strong></p>&#x000A;<hr data-sourcepos="3:1-3:3">&#x000A;<p data-sourcepos="5:1-5:65" dir="auto"><strong data-sourcepos="5:1-5:15">"Datasheet"</strong>: <a data-sourcepos="5:18-5:63" href="https://www.wemos.cc/en/latest/s2/s2_mini.html" rel="nofollow noreferrer noopener" target="_blank">https://www.wemos.cc/en/latest/s2/s2_mini.html</a></p>&#x000A;<p data-sourcepos="7:1-11:185" dir="auto">I didn't add the mounting holes, as they aren't properly specified by lolin&#x000A;While there's also no proper dimensions for the pin locations, the board is&#x000A;designed to be compatible with the <a href="https://gitlab.com/kicad/libraries/kicad-footprints/-/merge_requests/726" title="Added WeMos D1 Mini module" class="gfm gfm-merge_request" data-original="D1 mini light" data-link="true" data-original-href="https://gitlab.com/kicad/libraries/kicad-footprints/-/merge_requests/726" data-link-reference="true" data-merge-request="73411033" data-project="21601606" data-project-path="kicad/libraries/kicad-footprints" data-iid="726" data-container="body" data-placement="top" data-reference-type="merge_request">D1 mini light</a>&#x000A;Because of this I added two new rows of pads (adjusted the pad shapes too)&#x000A;This is also the reason for the <strong data-sourcepos="11:33-11:49">pin numbering</strong>. --&gt; see <a href="https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_requests/3600#note_2767231208" title="Added WeMOS S2 mini" class="gfm gfm-merge_request" data-original="numbering" data-link="true" data-original-href="https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_requests/3600#note_2767231208" data-link-reference="true" data-merge-request="179111016" data-project="21545491" data-project-path="kicad/libraries/kicad-symbols" data-iid="3600" data-container="body" data-placement="top" data-reference-type="merge_request">numbering</a> here (EDITED by librarian)</p>&#x000A;<p data-sourcepos="13:1-13:85" dir="auto"><strong data-sourcepos="13:1-13:13">Symbol MR</strong>: <a href="https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_requests/3600" title="Added WeMOS S2 mini" class="gfm gfm-merge_request" data-original="https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_requests/3600" data-link="false" data-link-reference="true" data-merge-request="179111016" data-project="21545491" data-project-path="kicad/libraries/kicad-symbols" data-iid="3600" data-container="body" data-placement="top" data-reference-type="merge_request">kicad-symbols!3600</a></p>&#x000A;<ol data-sourcepos="15:1-15:4" start="5" dir="auto">&#x000A;<li data-sourcepos="15:1-15:80">Check the output of the automated check scripts - fix any errors as required.</li>&#x000A;</ol>&#x000A;<ul data-sourcepos="16:3-16:75" dir="auto">&#x000A;<li data-sourcepos="16:3-16:75">Give a reason behind any intentional library convention rule violation.</li>&#x000A;</ul>&#x000A;<p data-sourcepos="18:1-18:74" dir="auto">Checking the footprint locally, klc checker throws errors about 3D models.</p>&#x000A;<p data-sourcepos="20:1-23:162" dir="auto">As with the D1 mini, I used existing models for pin headers and sockets.<br data-sourcepos="20:73-20:75">&#x000A;I also re-used the old D1 mini 3D model, as it has a similar outline,&#x000A;though would agree that it should be removed / changed to a better model for the S2<br data-sourcepos="22:84-22:86">&#x000A;Reason for including both headers and sockets is that for 3D modeling purposes, it's the worst case scenario when designing enclosures or similar using the board.</p>&#x000A;<p data-sourcepos="25:1-25:176" dir="auto">Depending on maintainer preferences I'll either remove it or make a model once I have boards in hand (or get lolin to generate a step file, as it seems to be designed in kicad)</p>&#x000A;<p data-sourcepos="27:1-28:61" dir="auto"><a class="no-attachment-icon gfm" href="/-/project/21601606/uploads/fcd7f15e3ae62fce46486b76264138bd/image.png" target="_blank" rel="noopener noreferrer" data-canonical-src="/uploads/fcd7f15e3ae62fce46486b76264138bd/image.png" data-link="true"><img data-sourcepos="27:1-27:61" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image" decoding="async" class="lazy gfm" data-src="/-/project/21601606/uploads/fcd7f15e3ae62fce46486b76264138bd/image.png" data-canonical-src="/uploads/fcd7f15e3ae62fce46486b76264138bd/image.png"></a>&#x000A;<a class="no-attachment-icon gfm" href="/-/project/21601606/uploads/632fa7dc73f3647a651b6e8180519727/image.png" target="_blank" rel="noopener noreferrer" data-canonical-src="/uploads/632fa7dc73f3647a651b6e8180519727/image.png" data-link="true"><img data-sourcepos="28:1-28:61" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image" decoding="async" class="lazy gfm" data-src="/-/project/21601606/uploads/632fa7dc73f3647a651b6e8180519727/image.png" data-canonical-src="/uploads/632fa7dc73f3647a651b6e8180519727/image.png"></a></p>
+</div>
+<textarea class="hidden js-task-list-field" data-value="I added a symbol for the **WeMOS S2 mini**
+
+---
+
+**&quot;Datasheet&quot;**: https://www.wemos.cc/en/latest/s2/s2_mini.html  
+
+I didn&#39;t add the mounting holes, as they aren&#39;t properly specified by lolin
+While there&#39;s also no proper dimensions for the pin locations, the board is 
+designed to be compatible with the [D1 mini light](https://gitlab.com/kicad/libraries/kicad-footprints/-/merge_requests/726)
+Because of this I added two new rows of pads (adjusted the pad shapes too)
+This is also the reason for the **pin numbering**. --&gt; see [numbering](https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_requests/3600#note_2767231208) here (EDITED by librarian)
+
+**Symbol MR**: https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_requests/3600
+
+5. Check the output of the automated check scripts - fix any errors as required.
+  - Give a reason behind any intentional library convention rule violation.
+
+Checking the footprint locally, klc checker throws errors about 3D models.
+
+As with the D1 mini, I used existing models for pin headers and sockets.  
+I also re-used the old D1 mini 3D model, as it has a similar outline,
+though would agree that it should be removed / changed to a better model for the S2  
+Reason for including both headers and sockets is that for 3D modeling purposes, it&#39;s the worst case scenario when designing enclosures or similar using the board.
+
+Depending on maintainer preferences I&#39;ll either remove it or make a model once I have boards in hand (or get lolin to generate a step file, as it seems to be designed in kicad)
+
+![image](/uploads/fcd7f15e3ae62fce46486b76264138bd/image.png)
+![image](/uploads/632fa7dc73f3647a651b6e8180519727/image.png)"></textarea>
+</div>
+<div class="edited-text gl-mt-4 gl-text-subtle gl-text-sm">Edited <time class="js-timeago time_ago" title="Sep 22, 2025 2:31am" datetime="2025-09-22T02:31:28Z" tabindex="0" aria-label="Sep 22, 2025 2:31am" data-toggle="tooltip" data-placement="bottom" data-container="body">Sep 22, 2025</time> by <a class="author-link gl-text-link hover:gl-underline gl-text-subtle js-user-link" data-user-id="23259350" data-username="sergiobenrocha2" data-name="Sergio Rocha" data-testid="author-link" href="/sergiobenrocha2"><span class="">Sergio Rocha</span></a></div>
+</div>
+
+</div>
+<div class="emoji-block emoji-list-container js-noteable-awards">
+<div class="gl-flex gl-flex-wrap gl-justify-between gl-pt-3">
+<div data-can-award-emoji="false" data-path="/api/v4/projects/21601606/merge_requests/2904/award_emoji" data-show-default-award-emojis="true" id="js-vue-awards-block"></div>
+
+</div>
+
+</div>
+
+<div class="js-verification-alert" data-identity-verification-path="/-/identity_verification" data-identity-verification-required="false"></div>
+<h2 class="gl-sr-only" id="merge-request-widgets-heading">
+Merge request reports
+</h2>
+<div aria-labelledby="merge-request-widgets-heading" class="mr-widget" id="js-vue-mr-widget" role="region"></div>
+
+<div data-archived="false" data-current-user-data="null" data-endpoint-metadata="/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs_metadata.json?diff_head=true&amp;view=inline&amp;w=1" data-help-page-path="/help/user/project/merge_requests/reviews/suggestions.md" data-is-locked="" data-new-comment-template-paths="[{&quot;text&quot;:&quot;Your comment templates&quot;,&quot;href&quot;:&quot;/-/profile/comment_templates&quot;}]" data-noteable-data="{&quot;id&quot;:179112860,&quot;iid&quot;:2904,&quot;description&quot;:&quot;I added a symbol for the **WeMOS S2 mini**\n\n---\n\n**\&quot;Datasheet\&quot;**: https://www.wemos.cc/en/latest/s2/s2_mini.html  \n\nI didn&#39;t add the mounting holes, as they aren&#39;t properly specified by lolin\nWhile there&#39;s also no proper dimensions for the pin locations, the board is \ndesigned to be compatible with the [D1 mini light](https://gitlab.com/kicad/libraries/kicad-footprints/-/merge_requests/726)\nBecause of this I added two new rows of pads (adjusted the pad shapes too)\nThis is also the reason for the **pin numbering**. --\u003e see [numbering](https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_requests/3600#note_2767231208) here (EDITED by librarian)\n\n**Symbol MR**: https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_requests/3600\n\n5. Check the output of the automated check scripts - fix any errors as required.\n  - Give a reason behind any intentional library convention rule violation.\n\nChecking the footprint locally, klc checker throws errors about 3D models.\n\nAs with the D1 mini, I used existing models for pin headers and sockets.  \nI also re-used the old D1 mini 3D model, as it has a similar outline,\nthough would agree that it should be removed / changed to a better model for the S2  \nReason for including both headers and sockets is that for 3D modeling purposes, it&#39;s the worst case scenario when designing enclosures or similar using the board.\n\nDepending on maintainer preferences I&#39;ll either remove it or make a model once I have boards in hand (or get lolin to generate a step file, as it seems to be designed in kicad)\n\n![image](/uploads/fcd7f15e3ae62fce46486b76264138bd/image.png)\n![image](/uploads/632fa7dc73f3647a651b6e8180519727/image.png)&quot;,&quot;title&quot;:&quot;Added Wemos S2 mini footprint&quot;,&quot;merge_params&quot;:{&quot;force_remove_source_branch&quot;:&quot;1&quot;},&quot;state&quot;:&quot;opened&quot;,&quot;source_branch&quot;:&quot;wemos_s2_mini&quot;,&quot;target_branch&quot;:&quot;master&quot;,&quot;source_branch_path&quot;:&quot;/Duckle29/kicad-footprints/-/tree/wemos_s2_mini&quot;,&quot;target_branch_path&quot;:&quot;/kicad/libraries/kicad-footprints/-/tree/master&quot;,&quot;diff_head_sha&quot;:&quot;ea6222143380dfac3f9b27a5586d41bbdce4a350&quot;,&quot;create_note_path&quot;:&quot;/kicad/libraries/kicad-footprints/notes?target_id=179112860\u0026target_type=merge_request&quot;,&quot;preview_note_path&quot;:&quot;/kicad/libraries/kicad-footprints/-/preview_markdown?target_id=2904\u0026target_type=MergeRequest&quot;,&quot;can_receive_suggestion&quot;:true,&quot;create_issue_to_resolve_discussions_path&quot;:null,&quot;current_user&quot;:{&quot;can_create_note&quot;:false,&quot;can_update&quot;:false,&quot;can_create_confidential_note&quot;:false},&quot;is_project_archived&quot;:false,&quot;project_id&quot;:21601606,&quot;require_password_to_approve&quot;:false,&quot;can_resolve_discussions_with_ai&quot;:false}" data-noteable-type="MergeRequest" data-notes-data="{&quot;noteableType&quot;:&quot;merge_request&quot;,&quot;noteableId&quot;:179112860,&quot;projectId&quot;:21601606,&quot;groupId&quot;:null,&quot;discussionsPath&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/discussions.json&quot;,&quot;registerPath&quot;:&quot;/users/sign_up?redirect_to_referer=yes&quot;,&quot;newSessionPath&quot;:&quot;/users/sign_in?redirect_to_referer=yes&quot;,&quot;markdownDocsPath&quot;:&quot;/help/user/markdown.md&quot;,&quot;quickActionsDocsPath&quot;:&quot;/help/user/project/quick_actions.md&quot;,&quot;closePath&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904?merge_request%5Bstate_event%5D=close&quot;,&quot;reopenPath&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904?merge_request%5Bstate_event%5D=reopen&quot;,&quot;notesPath&quot;:&quot;/kicad/libraries/kicad-footprints/noteable/merge_request/179112860/notes&quot;,&quot;prerenderedNotesCount&quot;:10,&quot;lastFetchedAt&quot;:1793987746000000,&quot;notesFilter&quot;:null,&quot;draftsPath&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/drafts&quot;,&quot;draftsPublishPath&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/drafts/publish&quot;,&quot;draftsDiscardPath&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/drafts/discard&quot;}" data-notes-filters="{&quot;Show all activity&quot;:0,&quot;Show comments only&quot;:1,&quot;Show history only&quot;:2}" data-report-abuse-path="/-/abuse_reports/add_category" data-target-type="merge_request" id="js-vue-mr-discussions"></div>
+
+</div>
+</section>
+<aside aria-label="merge_request" aria-live="polite" class="right-sidebar js-right-sidebar right-sidebar-expanded right-sidebar-merge-requests right-sidebar-collapsed" data-always-show-toggle data-auto-collapse data-issuable-type="merge_request" data-testid="issuable-sidebar">
+<div class="issuable-sidebar is-merge-request">
+<div class="issuable-sidebar-header @md/panel:gl-flex @lg/panel:!gl-hidden gl-justify-end">
+<button class="gl-button btn btn-md btn-default gutter-toggle gl-float-right js-sidebar-toggle has-tooltip !gl-border-0" type="button" aria-label="Toggle sidebar" title="Collapse sidebar" data-container="body" data-placement="left" data-boundary="viewport" type="button"><span class="gl-button-text">
+<span class="js-sidebar-toggle-container gl-button-text" data-is-expanded="true"><svg class="s16 js-sidebar-expand hidden" data-testid="chevron-double-lg-left-icon"><use href="/assets/icons-c33971e20f30a791de3ca935bad7098d65eac64b537ff98fed28c2589f917fd9.svg#chevron-double-lg-left"></use></svg><svg class="s16 js-sidebar-collapse " data-testid="chevron-double-lg-right-icon"><use href="/assets/icons-c33971e20f30a791de3ca935bad7098d65eac64b537ff98fed28c2589f917fd9.svg#chevron-double-lg-right"></use></svg></span>
+
+</span>
+
+</button></div>
+<form class="issuable-context-form inline-update js-issuable-update !gl-pr-2" action="/kicad/libraries/kicad-footprints/-/merge_requests/2904.json" accept-charset="UTF-8" data-remote="true" method="post"><div class="block assignee gl-mt-3" data-testid="assignee-block-container">
+<div class="js-sidebar-assignees-root" data-field="merge_request" data-max-assignees="200">
+<div class="title hide-collapsed gl-flex gl-justify-between gl-items-center !gl-mb-0">
+<span class="gl-font-bold">Assignee</span>
+<span class="gl-spinner-container" role="status"><span aria-hidden class="gl-spinner gl-spinner-sm gl-spinner-dark !gl-align-text-bottom"></span><span class="gl-sr-only !gl-absolute">Loading</span>
+</span>
+</div>
+</div>
+
+</div>
+<div class="block reviewer" data-testid="reviewers-block-container">
+<div class="js-sidebar-reviewers-root" data-field="merge_request">
+<div class="title hide-collapsed gl-flex gl-justify-between gl-items-center !gl-mb-0">
+<span class="gl-font-bold">Reviewers</span>
+<span class="gl-spinner-container" role="status"><span aria-hidden class="gl-spinner gl-spinner-sm gl-spinner-dark !gl-align-text-bottom"></span><span class="gl-sr-only !gl-absolute">Loading</span>
+</span>
+</div>
+</div>
+<div class="selectbox hide-collapsed">
+<div class="js-reviewers-inputs"></div>
+<div class="dropdown "><button class="dropdown-menu-toggle js-reviewer-search js-author-search js-multiselect js-save-user-data" type="button" data-current-user="true" data-iid="2904" data-issuable-type="merge_request" data-project-id="21601606" data-author-id="6906805" data-field-name="merge_request[reviewer_ids][]" data-issue-update="/kicad/libraries/kicad-footprints/-/merge_requests/2904.json" data-ability-name="merge_request" data-null-user="true" data-display="static" data-multi-select="true" data-dropdown-title="Select reviewers" data-dropdown-header="Reviewers" data-suggested-reviewers-help-path="/help/user/project/merge_requests/reviews/_index.md#request-a-review" data-suggested-reviewers-header="Suggestion(s)" data-all-members-header="All project members" data-show-suggested="true" data-max-select="200" data-toggle="dropdown"><span class="dropdown-toggle-text ">Select reviewers</span><svg class="s16 dropdown-menu-toggle-icon" data-testid="chevron-down-icon"><use href="/assets/icons-c33971e20f30a791de3ca935bad7098d65eac64b537ff98fed28c2589f917fd9.svg#chevron-down"></use></svg></button><div class="dropdown-menu dropdown-select dropdown-menu-user dropdown-menu-selectable dropdown-menu-author"><div class="dropdown-title gl-flex"><span class="gl-ml-auto">Request review from</span><button class="dropdown-title-button dropdown-menu-close gl-ml-auto" aria-label="Close" type="button"><svg class="s16 dropdown-menu-close-icon" data-testid="close-icon"><use href="/assets/icons-c33971e20f30a791de3ca935bad7098d65eac64b537ff98fed28c2589f917fd9.svg#close"></use></svg></button></div><div class="dropdown-input"><input type="search" data-testid="dropdown-input-field" class="dropdown-input-field" placeholder="Search users" autocomplete="off" /><svg class="s16 dropdown-input-search" data-testid="search-icon"><use href="/assets/icons-c33971e20f30a791de3ca935bad7098d65eac64b537ff98fed28c2589f917fd9.svg#search"></use></svg><svg class="s16 dropdown-input-clear js-dropdown-input-clear" data-testid="close-icon"><use href="/assets/icons-c33971e20f30a791de3ca935bad7098d65eac64b537ff98fed28c2589f917fd9.svg#close"></use></svg></div><div data-testid="dropdown-list-content" class="dropdown-content "></div><div class="dropdown-loading"><div class="gl-spinner-container gl-mt-7" role="status"><span aria-hidden class="gl-spinner gl-spinner-md gl-spinner-dark !gl-align-text-bottom"></span><span class="gl-sr-only !gl-absolute">Loading</span>
+</div></div></div></div>
+
+</div>
+
+</div>
+<div class="js-sidebar-labels-widget-root" data-allow-label-create="" data-allow-scoped-labels="true" data-can-edit="" data-iid="2904" data-issuable-type="merge_request" data-labels-fetch-path="/kicad/libraries/kicad-footprints/-/labels.json?include_ancestor_groups=true" data-labels-manage-path="/kicad/libraries/kicad-footprints/-/labels" data-project-issues-path="/kicad/libraries/kicad-footprints/-/merge_requests" data-project-path="kicad/libraries/kicad-footprints" data-selected-labels="[{&quot;id&quot;:19069755,&quot;title&quot;:&quot;Abandoned&quot;,&quot;color&quot;:&quot;#db6c30&quot;,&quot;description&quot;:null,&quot;text_color&quot;:&quot;#FFFFFF&quot;,&quot;created_at&quot;:&quot;2021-03-11T21:35:20.953Z&quot;,&quot;updated_at&quot;:&quot;2021-03-11T21:35:20.953Z&quot;,&quot;group_id&quot;:6593439,&quot;project_id&quot;:null,&quot;template&quot;:false},{&quot;id&quot;:19069783,&quot;title&quot;:&quot;Addition&quot;,&quot;color&quot;:&quot;#98e88d&quot;,&quot;description&quot;:&quot;A new part is being added.&quot;,&quot;text_color&quot;:&quot;#1F1E24&quot;,&quot;created_at&quot;:&quot;2021-03-11T21:35:57.875Z&quot;,&quot;updated_at&quot;:&quot;2024-03-14T17:15:51.429Z&quot;,&quot;group_id&quot;:6593439,&quot;project_id&quot;:null,&quot;template&quot;:false},{&quot;id&quot;:16570210,&quot;title&quot;:&quot;Pending reviewer&quot;,&quot;color&quot;:&quot;#c5def5&quot;,&quot;description&quot;:null,&quot;text_color&quot;:&quot;#1F1E24&quot;,&quot;created_at&quot;:&quot;2020-10-06T13:08:27.928Z&quot;,&quot;updated_at&quot;:&quot;2020-10-06T13:08:27.928Z&quot;,&quot;group_id&quot;:null,&quot;project_id&quot;:21601606,&quot;template&quot;:false}]"></div>
+<div class="block milestone" data-testid="sidebar-milestones">
+<div class="js-sidebar-milestone-widget-root" data-can-edit="" data-iid="2904" data-project-path="kicad/libraries/kicad-footprints"></div>
+</div>
+<div class="block related-work-items" data-testid="related-work-items-container">
+<div class="js-sidebar-related-work-items-root"></div>
+</div>
+
+<div class="js-sidebar-time-tracking-root block">
+<!-- / Fallback while content is loading -->
+<div class="title hide-collapsed gl-flex gl-justify-between gl-items-center !gl-mb-0">
+<span class="gl-font-bold">Time tracking</span>
+<span class="gl-spinner-container" role="status"><span aria-hidden class="gl-spinner gl-spinner-sm gl-spinner-dark !gl-align-text-bottom"></span><span class="gl-sr-only !gl-absolute">Loading</span>
+</span>
+</div>
+</div>
+<div class="js-sidebar-participants-widget-root"></div>
+</form><script class="js-sidebar-options" type="application/json">{"endpoint":"/kicad/libraries/kicad-footprints/-/merge_requests/2904.json?serializer=sidebar_extras","toggleSubscriptionEndpoint":"/kicad/libraries/kicad-footprints/-/merge_requests/2904/toggle_subscription","moveIssueEndpoint":"/kicad/libraries/kicad-footprints/-/issues/2904/move","projectsAutocompleteEndpoint":"/-/autocomplete/projects?project_id=21601606","editable":"","currentUser":null,"rootPath":"/","fullPath":"kicad/libraries/kicad-footprints","iid":2904,"id":179112860,"severity":null,"timeTrackingLimitToHours":true,"canCreateTimelogs":null,"createNoteEmail":null,"issuableType":"merge_request","directlyInviteMembers":"false","weightOptions":["None","Any",0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],"weightNoneValue":"None","multipleApprovalRulesAvailable":true,"aiSuggestedReviewersAvailable":false}</script>
+
+</div>
+</aside>
+
+</div>
+
+</div>
+<div class="tab-pane commits" id="commits" style="">
+
+</div>
+<div class="tab-pane pipelines" id="pipelines" style="display: block">
+<div data-endpoint="/kicad/libraries/kicad-footprints/-/merge_requests/2904/pipelines" data-graphql-path="/api/graphql" data-new-pipeline-path="/kicad/libraries/kicad-footprints/-/pipelines/new" data-project-full-path="kicad/libraries/kicad-footprints" data-project-id="21601606" id="commit-pipeline-table-view"></div>
+
+
+</div>
+<div class="tab-pane" id="reports" style="">
+<div data-base-path="/kicad/libraries/kicad-footprints/-/merge_requests/2904/reports" data-iid="2904" data-project-path="kicad/libraries/kicad-footprints" id="js-reports-tab"></div>
+
+</div>
+
+<div class="tab-pane diffs" id="diffs" style="">
+<article aria-label="Changes view" class="rd-app" data-app-data="{&quot;diffs_stream_url&quot;:null,&quot;reload_stream_url&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs_stream&quot;,&quot;diffs_stats_endpoint&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs_stats&quot;,&quot;diff_files_endpoint&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diff_files_metadata&quot;,&quot;should_sort_metadata_files&quot;:true,&quot;show_whitespace&quot;:false,&quot;diff_view_type&quot;:&quot;inline&quot;,&quot;diff_file_endpoint&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diff_file&quot;,&quot;update_user_endpoint&quot;:&quot;/api/v4/user/preferences&quot;,&quot;linked_file_data&quot;:null,&quot;lazy&quot;:true,&quot;initial_file&quot;:null,&quot;file_by_file_mode&quot;:false,&quot;mr_path&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904&quot;,&quot;project_path&quot;:&quot;kicad/libraries/kicad-footprints&quot;,&quot;project_name&quot;:&quot;KiCad / KiCad Libraries / KiCad Footprints&quot;,&quot;source_branch&quot;:&quot;wemos_s2_mini&quot;,&quot;iid&quot;:2904,&quot;code_review_enabled&quot;:false,&quot;user_permissions&quot;:{&quot;can_create_note&quot;:false,&quot;can_resolve_discussions_with_ai&quot;:false},&quot;discussions_endpoint&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/discussions&quot;,&quot;noteable_type&quot;:&quot;MergeRequest&quot;,&quot;preview_markdown_endpoint&quot;:&quot;/kicad/libraries/kicad-footprints/-/preview_markdown?target_id=2904\u0026target_type=MergeRequest&quot;,&quot;register_path&quot;:&quot;/users/sign_up?redirect_to_referer=yes&quot;,&quot;sign_in_path&quot;:&quot;/users/sign_in?redirect_to_referer=yes&quot;,&quot;report_abuse_path&quot;:&quot;/-/abuse_reports/add_category&quot;,&quot;markdown_docs_path&quot;:&quot;/help/user/markdown.md&quot;,&quot;suggestions_help_path&quot;:&quot;/help/user/project/merge_requests/reviews/suggestions.md&quot;,&quot;default_suggestion_commit_message&quot;:&quot;Apply %{suggestions_count} suggestion(s) to %{files_count} file(s)\n\n%{co_authored_by}&quot;,&quot;suggestion_commit_message_values&quot;:{&quot;branch_name&quot;:&quot;wemos_s2_mini&quot;,&quot;project_name&quot;:&quot;KiCad Footprints&quot;,&quot;project_path&quot;:&quot;kicad-footprints&quot;,&quot;user_full_name&quot;:null,&quot;username&quot;:null},&quot;new_comment_template_paths&quot;:[{&quot;text&quot;:&quot;Your comment templates&quot;,&quot;href&quot;:&quot;/-/profile/comment_templates&quot;}],&quot;versions&quot;:{&quot;source_versions&quot;:[{&quot;id&quot;:1500051377,&quot;version_index&quot;:8,&quot;is_merge_head&quot;:false,&quot;latest&quot;:true,&quot;short_commit_sha&quot;:&quot;ea622214&quot;,&quot;commits_count&quot;:6,&quot;created_at&quot;:&quot;2025-09-22T00:43:54.758Z&quot;,&quot;head_sha&quot;:&quot;ea6222143380dfac3f9b27a5586d41bbdce4a350&quot;,&quot;base_sha&quot;:&quot;6981e56cd4fa443c2623befbb3cb0e58839e8e04&quot;,&quot;start_sha&quot;:&quot;6981e56cd4fa443c2623befbb3cb0e58839e8e04&quot;,&quot;selected&quot;:true,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=1500051377&quot;},{&quot;id&quot;:1500049182,&quot;version_index&quot;:7,&quot;is_merge_head&quot;:false,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;12442f65&quot;,&quot;commits_count&quot;:5,&quot;created_at&quot;:&quot;2025-09-22T00:36:37.125Z&quot;,&quot;head_sha&quot;:&quot;12442f6514a39ca7f216bb4ab011a0a7bf3709bf&quot;,&quot;base_sha&quot;:&quot;6981e56cd4fa443c2623befbb3cb0e58839e8e04&quot;,&quot;start_sha&quot;:&quot;6981e56cd4fa443c2623befbb3cb0e58839e8e04&quot;,&quot;selected&quot;:false,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=1500049182&quot;},{&quot;id&quot;:1500047294,&quot;version_index&quot;:6,&quot;is_merge_head&quot;:false,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;f8c1769e&quot;,&quot;commits_count&quot;:5,&quot;created_at&quot;:&quot;2025-09-22T00:30:08.568Z&quot;,&quot;head_sha&quot;:&quot;f8c1769e0ec678720fedca71a4c75c94e740e802&quot;,&quot;base_sha&quot;:&quot;6981e56cd4fa443c2623befbb3cb0e58839e8e04&quot;,&quot;start_sha&quot;:&quot;6981e56cd4fa443c2623befbb3cb0e58839e8e04&quot;,&quot;selected&quot;:false,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=1500047294&quot;},{&quot;id&quot;:1500044425,&quot;version_index&quot;:5,&quot;is_merge_head&quot;:false,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;2b60da2d&quot;,&quot;commits_count&quot;:4,&quot;created_at&quot;:&quot;2025-09-22T00:19:18.015Z&quot;,&quot;head_sha&quot;:&quot;2b60da2d7a55fbdbab5f634d280de4a0c8d9e8d2&quot;,&quot;base_sha&quot;:&quot;6981e56cd4fa443c2623befbb3cb0e58839e8e04&quot;,&quot;start_sha&quot;:&quot;6981e56cd4fa443c2623befbb3cb0e58839e8e04&quot;,&quot;selected&quot;:false,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=1500044425&quot;},{&quot;id&quot;:1500039924,&quot;version_index&quot;:4,&quot;is_merge_head&quot;:false,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;46c09265&quot;,&quot;commits_count&quot;:3,&quot;created_at&quot;:&quot;2025-09-21T23:59:19.926Z&quot;,&quot;head_sha&quot;:&quot;46c092658f92349d5693e00a5c4f6b428a2dc1b7&quot;,&quot;base_sha&quot;:&quot;6981e56cd4fa443c2623befbb3cb0e58839e8e04&quot;,&quot;start_sha&quot;:&quot;6981e56cd4fa443c2623befbb3cb0e58839e8e04&quot;,&quot;selected&quot;:false,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=1500039924&quot;},{&quot;id&quot;:492972498,&quot;version_index&quot;:3,&quot;is_merge_head&quot;:false,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;97d87b94&quot;,&quot;commits_count&quot;:3,&quot;created_at&quot;:&quot;2022-09-25T19:42:57.456Z&quot;,&quot;head_sha&quot;:&quot;97d87b9404f9e08bf6f664f38f876e930801b6d5&quot;,&quot;base_sha&quot;:&quot;f46a75f16d99b7d30aee15a44b506e172cd0c44d&quot;,&quot;start_sha&quot;:&quot;739836bdfac4c3ca755f0e08c78bcab861c045c7&quot;,&quot;selected&quot;:false,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=492972498&quot;},{&quot;id&quot;:492971502,&quot;version_index&quot;:2,&quot;is_merge_head&quot;:false,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;e16870eb&quot;,&quot;commits_count&quot;:2,&quot;created_at&quot;:&quot;2022-09-25T19:34:54.860Z&quot;,&quot;head_sha&quot;:&quot;e16870eb13eb97633b3ab2df7a4380ff53148211&quot;,&quot;base_sha&quot;:&quot;f46a75f16d99b7d30aee15a44b506e172cd0c44d&quot;,&quot;start_sha&quot;:&quot;739836bdfac4c3ca755f0e08c78bcab861c045c7&quot;,&quot;selected&quot;:false,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=492971502&quot;},{&quot;id&quot;:492958297,&quot;version_index&quot;:1,&quot;is_merge_head&quot;:false,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;6ed54bd2&quot;,&quot;commits_count&quot;:1,&quot;created_at&quot;:&quot;2022-09-25T17:40:03.350Z&quot;,&quot;head_sha&quot;:&quot;6ed54bd2e1f8cd29f6bda06c9ebb5919291cce9b&quot;,&quot;base_sha&quot;:&quot;f46a75f16d99b7d30aee15a44b506e172cd0c44d&quot;,&quot;start_sha&quot;:&quot;739836bdfac4c3ca755f0e08c78bcab861c045c7&quot;,&quot;selected&quot;:false,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=492958297&quot;}],&quot;target_versions&quot;:[{&quot;id&quot;:2161967032,&quot;version_index&quot;:null,&quot;is_merge_head&quot;:true,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;09c65282&quot;,&quot;commits_count&quot;:7,&quot;created_at&quot;:&quot;2026-11-02T17:08:53.868Z&quot;,&quot;start_sha&quot;:&quot;a0dcd398e7ea4b00cdeb91efc35f09cceaa9097d&quot;,&quot;head_sha&quot;:&quot;09c6528220a069f03166d5af38527245d43b016c&quot;,&quot;selected&quot;:true,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs&quot;,&quot;branch&quot;:&quot;master&quot;,&quot;is_head&quot;:true,&quot;is_base&quot;:false},{&quot;id&quot;:1500049182,&quot;version_index&quot;:7,&quot;is_merge_head&quot;:false,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;12442f65&quot;,&quot;commits_count&quot;:5,&quot;created_at&quot;:&quot;2025-09-22T00:36:37.125Z&quot;,&quot;start_sha&quot;:&quot;12442f6514a39ca7f216bb4ab011a0a7bf3709bf&quot;,&quot;selected&quot;:false,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=1500051377\u0026start_sha=12442f6514a39ca7f216bb4ab011a0a7bf3709bf&quot;},{&quot;id&quot;:1500047294,&quot;version_index&quot;:6,&quot;is_merge_head&quot;:false,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;f8c1769e&quot;,&quot;commits_count&quot;:5,&quot;created_at&quot;:&quot;2025-09-22T00:30:08.568Z&quot;,&quot;start_sha&quot;:&quot;f8c1769e0ec678720fedca71a4c75c94e740e802&quot;,&quot;selected&quot;:false,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=1500051377\u0026start_sha=f8c1769e0ec678720fedca71a4c75c94e740e802&quot;},{&quot;id&quot;:1500044425,&quot;version_index&quot;:5,&quot;is_merge_head&quot;:false,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;2b60da2d&quot;,&quot;commits_count&quot;:4,&quot;created_at&quot;:&quot;2025-09-22T00:19:18.015Z&quot;,&quot;start_sha&quot;:&quot;2b60da2d7a55fbdbab5f634d280de4a0c8d9e8d2&quot;,&quot;selected&quot;:false,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=1500051377\u0026start_sha=2b60da2d7a55fbdbab5f634d280de4a0c8d9e8d2&quot;},{&quot;id&quot;:1500039924,&quot;version_index&quot;:4,&quot;is_merge_head&quot;:false,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;46c09265&quot;,&quot;commits_count&quot;:3,&quot;created_at&quot;:&quot;2025-09-21T23:59:19.926Z&quot;,&quot;start_sha&quot;:&quot;46c092658f92349d5693e00a5c4f6b428a2dc1b7&quot;,&quot;selected&quot;:false,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=1500051377\u0026start_sha=46c092658f92349d5693e00a5c4f6b428a2dc1b7&quot;},{&quot;id&quot;:492972498,&quot;version_index&quot;:3,&quot;is_merge_head&quot;:false,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;97d87b94&quot;,&quot;commits_count&quot;:3,&quot;created_at&quot;:&quot;2022-09-25T19:42:57.456Z&quot;,&quot;start_sha&quot;:&quot;97d87b9404f9e08bf6f664f38f876e930801b6d5&quot;,&quot;selected&quot;:false,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=1500051377\u0026start_sha=97d87b9404f9e08bf6f664f38f876e930801b6d5&quot;},{&quot;id&quot;:492971502,&quot;version_index&quot;:2,&quot;is_merge_head&quot;:false,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;e16870eb&quot;,&quot;commits_count&quot;:2,&quot;created_at&quot;:&quot;2022-09-25T19:34:54.860Z&quot;,&quot;start_sha&quot;:&quot;e16870eb13eb97633b3ab2df7a4380ff53148211&quot;,&quot;selected&quot;:false,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=1500051377\u0026start_sha=e16870eb13eb97633b3ab2df7a4380ff53148211&quot;},{&quot;id&quot;:492958297,&quot;version_index&quot;:1,&quot;is_merge_head&quot;:false,&quot;latest&quot;:false,&quot;short_commit_sha&quot;:&quot;6ed54bd2&quot;,&quot;commits_count&quot;:1,&quot;created_at&quot;:&quot;2022-09-25T17:40:03.350Z&quot;,&quot;start_sha&quot;:&quot;6ed54bd2e1f8cd29f6bda06c9ebb5919291cce9b&quot;,&quot;selected&quot;:false,&quot;href&quot;:&quot;/kicad/libraries/kicad-footprints/-/merge_requests/2904/diffs?diff_id=1500051377\u0026start_sha=6ed54bd2e1f8cd29f6bda06c9ebb5919291cce9b&quot;}],&quot;context_commits&quot;:null},&quot;coverage_endpoint&quot;:null,&quot;codequality_endpoint&quot;:null,&quot;sast_report_available&quot;:false,&quot;is_fork&quot;:&quot;true&quot;,&quot;source_project_path&quot;:&quot;kicad-footprints&quot;,&quot;source_project_default_url&quot;:&quot;https://gitlab.com/Duckle29/kicad-footprints.git&quot;,&quot;reviewing_docs_path&quot;:&quot;/help/user/project/merge_requests/merge_request_troubleshooting.md#check-out-merge-requests-locally-through-the-head-ref&quot;}" data-rapid-diffs>
+<header aria-label="View controls" class="rd-app-header">
+<div class="rd-app-file-browser-toggle">
+<div data-file-browser-toggle></div>
+</div>
+<div data-after-browser-toggle></div>
+<div class="rd-app-settings">
+<div data-view-settings></div>
+</div>
+</header>
+<div class="rd-app-body">
+<div class="rd-app-sidebar" data-file-browser style="">
+<div class="rd-app-sidebar-loading" data-testid="rd-file-browser-loading">
+<div class="gl-spinner-container" role="status"><span aria-hidden class="gl-spinner gl-spinner-sm gl-spinner-dark !gl-align-text-bottom"></span><span class="gl-sr-only !gl-absolute">Loading</span>
+</div>
+</div>
+</div>
+<section aria-label="Diff files" class="rd-app-content">
+<div class="rd-app-diffs-list">
+<div data-commit-widget></div>
+
+<div class="rd-app-content-header" data-hidden-files-warning></div>
+<div class="rd-app-diffs-list-loading-overlay" data-diffs-overlay></div>
+<div class="flash-container" data-diffs-list-alert></div>
+<div data-diffs-list>
+</div>
+<div data-file-by-file-navigation></div>
+<div class="rd-app-diffs-loading" data-list-loading hidden>
+<div class="gl-spinner-container" role="status"><span aria-hidden class="gl-spinner gl-spinner-lg gl-spinner-dark !gl-align-text-bottom"></span><span class="gl-sr-only !gl-absolute">Loading</span>
+</div>
+</div>
+
+</div>
+</section>
+</div>
+</article>
+
+
+</div>
+</div>
+<div class="mr-loading-status">
+<div class="loading hide">
+<div class="gl-spinner-container" role="status"><span aria-hidden class="gl-spinner gl-spinner-lg gl-spinner-dark !gl-align-text-bottom"></span><span class="gl-sr-only !gl-absolute">Loading</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="js-reviewer-drawer-portal"></div>
+
+<script nonce="QTpFCCgDsCOVeY45Nlgu6A==">
+//<![CDATA[
+// Append static, server-generated data not included in merge request entity (EE-Only)
+// Object.assign would be useful here, but it blows up Phantom.js in tests
+window.gl.mrWidgetData.is_geo_secondary_node = 'false' === 'true';
+window.gl.mrWidgetData.geo_secondary_help_path = '/help/administration/geo/replication/configuration.md';
+window.gl.mrWidgetData.sast_help_path = '/help/user/application_security/sast/_index.md';
+window.gl.mrWidgetData.secret_detection_help_path = '/help/user/application_security/secret_detection/_index.md';
+window.gl.mrWidgetData.container_scanning_help_path = '/help/user/application_security/container_scanning/_index.md';
+window.gl.mrWidgetData.dast_help_path = '/help/user/application_security/dast/_index.md';
+window.gl.mrWidgetData.dependency_scanning_help_path = '/help/user/application_security/dependency_scanning/_index.md';
+window.gl.mrWidgetData.api_fuzzing_help_path = '/help/user/application_security/api_fuzzing/_index.md';
+window.gl.mrWidgetData.coverage_fuzzing_help_path = '/help/user/application_security/coverage_fuzzing/_index.md';
+window.gl.mrWidgetData.license_scanning_comparison_path = '/kicad/libraries/kicad-footprints/-/merge_requests/2904/license_scanning_reports'
+window.gl.mrWidgetData.license_scanning_comparison_collapsed_path = '/kicad/libraries/kicad-footprints/-/merge_requests/2904/license_scanning_reports_collapsed'
+window.gl.mrWidgetData.aiCommitMessageEnabled = false
+window.gl.mrWidgetData.dismissal_descriptions = '{\"acceptable_risk\":\"The vulnerability is known, and has not been remediated or mitigated, but is considered to be an acceptable business risk.\",\"false_positive\":\"An error in reporting in which a test result incorrectly indicates the presence of a vulnerability in a system when the vulnerability is not present.\",\"mitigating_control\":\"A management, operational, or technical control (that is, safeguard or countermeasure) employed by an organization that provides equivalent or comparable protection for an information system.\",\"used_in_tests\":\"The finding is not a vulnerability because it is part of a test or is test data.\",\"not_applicable\":\"The vulnerability is known, and has not been remediated or mitigated, but is considered to be in a part of the application that will not be updated.\"}';
+window.gl.mrWidgetData.customize_jira_issue_enabled = '';
+window.gl.mrWidgetData.commit_path_template = '/kicad/libraries/kicad-footprints/-/commit/$COMMIT_SHA';
+window.gl.mrWidgetData.merge_trains_path = '/kicad/libraries/kicad-footprints/-/merge_trains';
+window.gl.mrWidgetData.validity_checks_enabled = 'false';
+
+
+
+//]]>
+</script><script nonce="QTpFCCgDsCOVeY45Nlgu6A==">
+//<![CDATA[
+window.gl.mrWidgetData.path_locks_path = '/kicad/libraries/kicad-footprints/path_locks'
+
+
+
+//]]>
+</script><script nonce="QTpFCCgDsCOVeY45Nlgu6A==">
+//<![CDATA[
+window.gl.mrWidgetData.hasPolicies = false
+
+
+//]]>
+</script>
+
+
+
+</main>
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+<div class="paneled-view-portal" id="contextual-panel-portal"></div>
+</div>
+</div>
+
+
+</div>
+
+
+<script nonce="QTpFCCgDsCOVeY45Nlgu6A==">
+//<![CDATA[
+if ('loading' in HTMLImageElement.prototype) {
+  document.querySelectorAll('img.lazy').forEach(img => {
+    img.loading = 'lazy';
+    let imgUrl = img.dataset.src;
+    // Only adding width + height for avatars for now
+    // Keep this logic in sync with appendWidthToAvatarUrl in
+    // app/assets/javascripts/vue_shared/components/user_avatar/utils.js
+    if (imgUrl.indexOf('/avatar/') > -1 && !imgUrl.includes('width=')) {
+      const targetWidth = img.getAttribute('width') || img.width;
+      imgUrl += imgUrl.includes('?') ? `&width=${targetWidth}` : `?width=${targetWidth}`;
+    }
+    img.src = imgUrl;
+    img.removeAttribute('data-src');
+    img.classList.remove('lazy');
+    img.classList.add('js-lazy-loaded');
+    img.dataset.testid = 'js-lazy-loaded-content';
+  });
+}
+
+//]]>
+</script>
+<script nonce="QTpFCCgDsCOVeY45Nlgu6A==">
+//<![CDATA[
+gl = window.gl || {};
+gl.experiments = {};
+
+
+//]]>
+</script>
+
+</body>
+</html>
+

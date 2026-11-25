@@ -1,0 +1,117 @@
+{
+  "record_sha256": "006508cbda33d27006211b713108192e3f2c89de5e94e4a96a325ee59ddaac56",
+  "generated_at": "2026-11-06T19:08:45+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717/3dpr.scad",
+      "bytes": 3229,
+      "sha256": "ad9f0e52daaedd2cee44bf31a5a6acc26574ca9c98b54b70d3d6e5d844a85613"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717/3dpr_short_sides.scad",
+      "bytes": 1910,
+      "sha256": "d965628b5915f076af3cfe65cce6a1408af94d0dec50aff67ecf6356989bf7b8"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717/3dpr_long_side.scad",
+      "bytes": 1804,
+      "sha256": "16818abf6d1a2aa34aa94ebd978adcdbc816b30bef7b70e6347dd664409524e4"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717/3dpr.stl",
+      "bytes": 1464693,
+      "sha256": "a1f84ea39a7282e4df2808cc79bc3f4c78cae327eb5d4e538aa69706e4d4e45c"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717/3dpr_short_sides.stl",
+      "bytes": 590570,
+      "sha256": "573d04d53f9dc6dedebb025ae44996d20888fdca26ae8b1bf3e54e24bfcb3771"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717/3dpr_long_side.stl",
+      "bytes": 443874,
+      "sha256": "eb743c37d4edc5e2588af028d96fbd591eff82914ba562ca0f3a46ff15761359"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717/mounting_variants.json",
+      "bytes": 4461,
+      "sha256": "406833085d2a101b606c3eb1a247d8a7f763622c05bec3a31bd9c16dae5ee0bf"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 8875.12819774465,
+    "bounds_mm": [
+      [
+        -29.5,
+        -29.49013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        29.49013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 8875.12819774465,
+        "bounds_mm": [
+          [
+            -29.5,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 4665.763267434245,
+        "bounds_mm": [
+          [
+            -14.5,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            14.5,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 4576.266112911538,
+        "bounds_mm": [
+          [
+            -14.5,
+            -18.23013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            18.23013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

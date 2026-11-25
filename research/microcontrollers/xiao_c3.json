@@ -1,0 +1,277 @@
+{
+    "url": "https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/",
+    "accessed": "2026-10-22",
+    "tables": [
+        [
+            [
+                "Parameter",
+                "Description"
+            ],
+            [
+                "Processor",
+                "ESP32-C3 SoC RISC-V single-core 32-bit chip processor with a four-stage pipeline that operates at up to 160 MHz"
+            ],
+            [
+                "Wireless",
+                "Complete 2.4GHz Wi-Fi subsystem Bluetooth Low Energy 5.0/ Bluetooth Mesh"
+            ],
+            [
+                "On-chip Memory",
+                "400KB SRAM & 4MB Flash"
+            ],
+            [
+                "Interface",
+                "1x UART 1x IIC 1x SPI 11x GPIO(PWM) 4x ADC 1x Reset button 1x Boot button"
+            ],
+            [
+                "Dimensions",
+                "21 x 17.8mm"
+            ],
+            [
+                "Power(Typ.)",
+                "Max 3.3V Output Current: 500mA Test Condition: BAT Pin Input @ 3.8V Source Capability: 3A Charging current: 380mA(Fast) / 40mA(Trickle) Input voltage (VIN): 5V Input voltage (BAT): 3.7V"
+            ],
+            [
+                "Deep Sleep Power Consumption",
+                "Deep Sleep Mode: 44 \u03bcA"
+            ],
+            [
+                "Wi-Fi Enabled Power Consumption",
+                "Active Mode: 75 mA Modem-sleep Mode: 25 mA Light-sleep Mode: 4 mA"
+            ],
+            [
+                "BLE Enabled Power Consumption",
+                "Modem-sleep Mode: 27 mA Light-sleep Mode: 10 mA"
+            ],
+            [
+                "Working Temperature",
+                "-40\u00b0C ~ 85\u00b0C"
+            ]
+        ],
+        [
+            [
+                "XIAO Pin",
+                "Function",
+                "Chip Pin",
+                "Alternate Functions",
+                "Description"
+            ],
+            [
+                "5V",
+                "VBUS",
+                "",
+                "",
+                "Power Input/Output"
+            ],
+            [
+                "GND",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "3V3",
+                "3V3_OUT",
+                "",
+                "",
+                "Power Output"
+            ],
+            [
+                "D0",
+                "Analog",
+                "GPIO2",
+                "ADC1_CH2,",
+                "GPIO, ADC"
+            ],
+            [
+                "D1",
+                "Analog",
+                "GPIO3",
+                "ADC1_CH3",
+                "GPIO, ADC"
+            ],
+            [
+                "D2",
+                "Analog",
+                "GPIO4",
+                "ADC1_CH4, FSPIHD, MTMS",
+                "GPIO, ADC"
+            ],
+            [
+                "D3",
+                "Analog",
+                "GPIO5",
+                "ADC2_CH0, FSPIWP, MTDI",
+                "GPIO, ADC"
+            ],
+            [
+                "D4",
+                "SDA",
+                "GPIO6",
+                "FSPICLK, MTCK",
+                "GPIO, I2C Data"
+            ],
+            [
+                "D5",
+                "SCL",
+                "GPIO7",
+                "FSPID, MTDO",
+                "GPIO, I2C Clock"
+            ],
+            [
+                "D6",
+                "TX",
+                "GPIO21",
+                "U0TXD",
+                "GPIO, UART Transmit"
+            ],
+            [
+                "D7",
+                "RX",
+                "GPIO20",
+                "U0RXD",
+                "GPIO, UART Receive"
+            ],
+            [
+                "D8",
+                "SCK",
+                "GPIO8",
+                "",
+                "GPIO, SPI Clock"
+            ],
+            [
+                "D9",
+                "MISO",
+                "GPIO9",
+                "",
+                "GPIO, SPI Data"
+            ],
+            [
+                "D10",
+                "MOSI",
+                "GPIO10",
+                "FSPICS0",
+                "GPIO, SPI Data"
+            ],
+            [
+                "MTDO",
+                "",
+                "GPIO7",
+                "",
+                "JTAG"
+            ],
+            [
+                "MTDI",
+                "",
+                "GPIO5",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "MTCK",
+                "",
+                "GPIO6",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "MTMS",
+                "",
+                "GPIO4",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "Reset",
+                "",
+                "CHIP_EN",
+                "",
+                "EN"
+            ],
+            [
+                "Boot",
+                "",
+                "GPIO9",
+                "",
+                "Enter Boot Mode"
+            ],
+            [
+                "U.FL-R-SMT1",
+                "",
+                "LNA_IN",
+                "",
+                "UFL antenna"
+            ],
+            [
+                "Light",
+                "",
+                "VCC_3V3",
+                "",
+                "CHG-LED"
+            ]
+        ]
+    ],
+    "links": [
+        {
+            "title": "Have Suggestions?",
+            "url": "https://github.com/Seeed-Studio/wiki-documents/discussions/69"
+        },
+        {
+            "title": "Direct to Assignments",
+            "url": "https://github.com/orgs/Seeed-Studio/projects/6"
+        },
+        {
+            "title": "",
+            "url": "https://github.com/Seeed-Studio/wiki-documents"
+        },
+        {
+            "title": "XIAO ESP32C3 MicroPython Repo",
+            "url": "https://github.com/IcingTomato/micropython_xiao_esp32c3"
+        },
+        {
+            "title": "Espressif ESP32-C3 Datasheet",
+            "url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/esp32-c3_datasheet.pdf"
+        },
+        {
+            "title": "XIAO ESP32-C3 Schematic",
+            "url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_SCH_260116.pdf"
+        },
+        {
+            "title": "XIAO ESP32-C3 KiCad Project",
+            "url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_KiCad_260116.zip"
+        },
+        {
+            "title": "XIAO Series KiCad Footprints",
+            "url": "https://files.seeedstudio.com/wiki/XIAO-KiCad-Library/New_XIAO_Series_Footprints.zip"
+        },
+        {
+            "title": "XIAO Series KiCad SCH Symbols",
+            "url": "https://files.seeedstudio.com/wiki/XIAO-KiCad-Library/XIAO_Series_SCH_Symbols.zip"
+        },
+        {
+            "title": "XIAO ESP32-C3 Dimension in DXF",
+            "url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-DXF.zip"
+        },
+        {
+            "title": "XIAO ESP32-C3 Bottom Pad Data",
+            "url": "https://files.seeedstudio.com/wiki/Seeed-Studio-XIAO-ESP32/XIAO_ESP32C3_v1.2_Dimensioning.zip"
+        },
+        {
+            "title": "XIAO ESP32-C3 MicroPython Library",
+            "url": "https://github.com/IcingTomato/micropython_xiao_esp32c3"
+        },
+        {
+            "title": "Report of XIAO ESP32-C3 Low Power Consumption",
+            "url": "https://files.seeedstudio.com/wiki/Seeed-Studio-XIAO-ESP32/Low_Power_Consumption.pdf"
+        },
+        {
+            "title": "",
+            "url": "https://github.com/Seeed-Studio/wiki-documents/discussions/69"
+        },
+        {
+            "title": "Edit this page",
+            "url": "https://github.com/Seeed-Studio/wiki-documents/blob/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_Getting_Started.md"
+        }
+    ]
+}

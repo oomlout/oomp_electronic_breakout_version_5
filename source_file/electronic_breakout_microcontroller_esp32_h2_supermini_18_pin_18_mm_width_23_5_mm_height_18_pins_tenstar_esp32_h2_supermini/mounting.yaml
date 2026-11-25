@@ -1,0 +1,98 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_h2_supermini_18_pin_18_mm_width_23_5_mm_height_18_pins_tenstar_esp32_h2_supermini
+status: needs_review
+board_revision: Unknown; the TENSTAR official store identifies an ESP32-H2 SuperMini
+  product family but does not specify the carrier PCB revision.
+identity_evidence: The official TENSTAR website identifies the seller/manufacturer
+  and includes an ESP32-H2 SuperMini option in a multi-variant product card. A TENSTAR-labelled
+  mirrored manual names the ESP32-H2 SuperMini, but neither source identifies the exact
+  carrier PCB revision or links it to revision-matched mechanical geometry.
+board_size: null
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: null
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources:
+- id: tenstar_store
+  local_file: mounting_evidence/tenstar_official_store.html
+  url: https://tenstar.pro/
+  kind: manufacturer_product
+  locator: Archived TENSTAR official website homepage. Establishes the manufacturer
+    self-identification and broad ESP32 SuperMini product range; it does not name
+    the exact H2 carrier revision or publish matching CAD/mechanical dimensions. Reused
+    from sibling board archive acquired 2026-11-06; SHA-256 checked against original.
+  registered_at: '2026-11-06T18:38:07+00:00'
+  bytes: 117965
+  sha256: 5b0f19a513a1cfe9095735c2484d6baa55b2d474847b037812e288dcd0e38534
+- id: tenstar_store_current
+  local_file: mounting_evidence/tenstar_official_store_2026-11-07.html
+  url: https://tenstar.pro/
+  kind: manufacturer_product
+  locator: Current TENSTAR official homepage product card 11152; image alt identifies
+    ESP32 S3, ESP32 C3, ESP32 H2 and ESP32 C6 SuperMini choices and the card links
+    to AliExpress item 1005006960134338. Product-family identity only; no carrier
+    revision, dimensions, CAD or mechanical drawing.
+  registered_at: '2026-11-07T16:19:47+00:00'
+  bytes: 117883
+  sha256: cd20245f544c4840f7ac9c2478e11cfaa58e686bf0c3f5fa10550ee2296a10e2
+attempts:
+- avenue: Official manufacturer product source
+  source_id: tenstar_store
+  result: The official TENSTAR website is branded as its official site and presents
+    a broad ESP32 boards range, but does not identify the exact H2 carrier PCB revision
+    or provide mechanical files.
+  gap: Product identity is only established at model-family level; no revision link
+    to mechanical geometry.
+  accessed: '2026-11-06'
+- avenue: Current official manufacturer product source recheck
+  source_id: tenstar_store_current
+  result: The current TENSTAR homepage's product card alt text names ESP32 S3, ESP32
+    C3, ESP32 H2 and ESP32 C6 SuperMini options and links to AliExpress item 1005006960134338.
+    The linked offer is multi-variant and does not identify a specific H2 carrier revision
+    or publish mechanical files.
+  gap: The named product family does not establish which carrier layout/revision is
+    supplied or connect it to a complete mechanical design.
+  accessed: '2026-11-07'
+- avenue: Manufacturer-linked hardware repository / exact CAD
+  result: Searched TENSTAR official-site material and public search results for an
+    ESP32-H2 SuperMini schematic, PCB CAD, KiCad, EAGLE, and hardware repository.
+    No manufacturer-linked revision-pinned carrier CAD was found. A Zektopic GitHub
+    result is a community KiCad library project, not established as TENSTAR-authored
+    or revision-matched carrier CAD.
+  gap: No exact carrier board outline or complete drill layout from manufacturer CAD.
+  accessed: '2026-11-06'
+- avenue: Dimensioned mechanical drawing
+  result: Reviewed the TENSTAR-labelled ESP32-H2 manual mirror at https://manuals.plus/ae/1005007592618047.
+    It reports nominal overall dimensions of 23.6 x 18 mm and includes product imagery/technical
+    diagrams, but no revision-linked dimensioned mechanical view locating mounting
+    drills or documenting the complete carrier outline. Repository catalogue dimensions
+    are nominal and unverified.
+  gap: Overall dimensions and illustrative images do not establish board mounting-hole
+    presence, candidate feature function, coordinates, or exact revision.
+  accessed: '2026-11-06'
+conflicts: []
+notes:
+- 'Precise review gap: obtain exact TENSTAR ESP32-H2 SuperMini carrier revision evidence
+  and its complete manufacturer CAD or dimensioned mechanical drawing. The current
+  TENSTAR homepage and multi-variant offer confirm only a product-family option; the
+  TENSTAR-labelled manual mirror reports nominal overall dimensions but no hole layout.
+  Until exact carrier identity and complete mechanical geometry are linked, the 18 x
+  23.5 mm catalogue outline remains unverified and no-hole status cannot be confirmed.'
+- No hole geometry was inferred from a related SuperMini variant, a photograph, component
+  dimensions, or rectangular symmetry. No mounting preview, validation, promotion,
+  or holder generation was performed because the complete carrier geometry is unsupported.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T16:19:47+00:00'

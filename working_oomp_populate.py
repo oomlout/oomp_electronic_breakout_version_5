@@ -113,6 +113,12 @@ def get_options(**kwargs):
         apply_mounting(extras)
     from mounting_variants import apply_variants
     apply_variants(extras)
+    if kwargs.get("coordinate_diagrams", False):
+        from working_oomp_populate_coordinate import apply_coordinate_drawings
+        selected = kwargs.get("part_ids")
+        selected = {selected} if isinstance(selected, str) else set(selected or [])
+        drawing_options = [e for e in extras if not selected or build_oomp_id(e) in selected]
+        apply_coordinate_drawings(drawing_options, stylesheet=kwargs.get("coordinate_stylesheet", "coordinate"))
     return extras
 
 

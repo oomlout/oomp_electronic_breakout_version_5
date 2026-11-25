@@ -1,0 +1,147 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_h
+status: needs_review
+board_revision: Raspberry Pi Pico H, non-wireless RP2040, SC0917; Raspberry Pi Pico
+  Rev3 carrier layout (official Rev3 R3a design archive), with pre-soldered GPIO headers
+  and keyed three-pin SWD connector. Mechanical drawing is the shared Pico Rev3 outline.
+identity_evidence: Raspberry Pi datasheet Appendix A lists Raspberry Pi Pico H as
+  SC0917 and its Figure 3 gives the Pico Rev3 51×21 mm carrier mechanical drawing.
+  Raspberry Pi documentation states Pico and Pico H share the same non-wireless board
+  layout; H is the headered variant. Raspberry Pi’s own product portal publishes the
+  matching RPi-Pico-R3-PUBLIC-20200119.zip (containing RPI-PICO-R3a-PUBLIC.brd) and
+  Pico-R3 STEP archive. The STEP and design archive filenames, official portal listing,
+  and datasheet revision agree.
+board_size:
+- 21.0
+- 51.0
+mounting_holes:
+- id: H1
+  x_mm: -5.7
+  y_mm: 24.13
+  diameter_mm: 2.1
+  plated: null
+  source_id: datasheet
+- id: H2
+  x_mm: 5.7
+  y_mm: 24.13
+  diameter_mm: 2.1
+  plated: null
+  source_id: datasheet
+- id: H3
+  x_mm: -5.7
+  y_mm: -24.13
+  diameter_mm: 2.1
+  plated: null
+  source_id: datasheet
+- id: H4
+  x_mm: 5.7
+  y_mm: -24.13
+  diameter_mm: 2.1
+  plated: null
+  source_id: datasheet
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: datasheet
+derivation: 'Raspberry Pi Pico Datasheet, PDF p.7 printed p.6, Figure 3, is a dimensioned
+  top view captioned for the Raspberry Pi Pico Rev3 board. It labels the PCB outline
+  21 mm × 51 mm, four Ø2.1 mm drilled mounting holes, horizontal hole-centre spacing
+  11.4 mm (thus x = ±11.4/2 = ±5.7 mm about the board centre), and vertical row-centre
+  spacing 48.26 mm. Both horizontal rows share the same x locations. USB overhang
+  is outside the PCB outline. Axis transform: drawing origin at the PCB top-left corner
+  with U positive right and V positive down; canonical top-view centred coordinates
+  use x = U − 21/2 and y = 51/2 − V. The symmetric rows are each (51 − 48.26)/2 =
+  1.37 mm from the ends. For the USB/top row, V=1.37 mm, giving y=25.5−1.37=+24.13
+  mm; the bottom row V=49.63 mm, giving y=25.5−49.63=−24.13 mm. The left/right hole
+  x values are U=4.8 and 16.2 mm, so x=4.8−10.5=−5.7 mm and x=16.2−10.5=+5.7 mm. All
+  measurements are direct drawing dimensions or arithmetic from them; no scale measurement
+  was used.'
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources:
+- id: datasheet
+  local_file: mounting_evidence/pico_datasheet.pdf
+  url: https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf
+  kind: manufacturer_drawing
+  locator: 'PDF page 7, section 2 and Figure 3 captioned Raspberry Pi Pico Rev3: 51×21
+    mm PCB, 4×Ø2.1 mm (±0.05 mm) drilled mounting holes, drawing dimensions and full board illustration;
+    page 25 Appendix A identifies Pico H order code SC0917'
+  registered_at: '2026-11-06T15:27:53+00:00'
+  bytes: 18176869
+  sha256: 757ff485227493b9fcc0c2c96c4dea9de020e1d8b2b11e2aa4f9ee8b25aa89eb
+- id: r3_cad
+  local_file: mounting_evidence/pico_r3_design.zip
+  url: https://pip-assets.raspberrypi.com/categories/610-raspberry-pi-pico/documents/RP-008379-DS-1-RPi-Pico-R3-PUBLIC-20200119.zip
+  kind: manufacturer_cad
+  locator: Raspberry Pi official Product Information Portal Rev3 design ZIP; contains
+    RPI-PICO-R3a-PUBLIC.brd; archive checked and exact carrier identity matches datasheet
+    Rev3
+  registered_at: '2026-11-06T15:27:53+00:00'
+  bytes: 651151
+  sha256: 90d120b7664bb1b7a458c50ab65ed087e28116e849f627793dc1ecf1585d415a
+- id: r3_step
+  local_file: mounting_evidence/pico_r3_step.zip
+  url: https://pip-assets.raspberrypi.com/categories/610-raspberry-pi-pico/documents/RP-008311-DS-1-Pico-R3-step.zip
+  kind: manufacturer_cad
+  locator: Raspberry Pi official Product Information Portal Pico-R3 STEP CAD ZIP;
+    contains Pico-R3.step; cross-reference for exact board revision and geometry
+  registered_at: '2026-11-06T15:27:54+00:00'
+  bytes: 266009
+  sha256: 4008e557bd80d75119872d10460d9f30f2e0faf210606d058bbe78cd6598c931
+- id: archived_drawing
+  local_file: reference/mechanical.png
+  url: https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf
+  kind: manufacturer_drawing
+  locator: Archived rendered datasheet page 6 Figure 3, verified SHA-256 against mounting_context.json;
+    corroborating image only, PDF is primary geometry source
+  registered_at: '2026-11-06T15:27:54+00:00'
+  bytes: 133780
+  sha256: f0729092b3f28ee0fc488652c290022fb5a263d39405669496e90d1a14b6b855
+attempts:
+- '2026-11-06: Reviewed Raspberry Pi official Pico H documentation (headered non-wireless
+  Pico variant with shared carrier layout) and official Product Information Portal
+  Pico R3 design/STEP archives.'
+- '2026-11-06: Downloaded and inspected the official Pico datasheet PDF, including
+  Appendix A order code SC0917 and complete page 7 mechanical drawing; verified the
+  archived page image hash against mounting_context.json.'
+- '2026-11-06: Reviewed all visible drilled candidates in Figure 3: four explicitly
+  called out Ø2.1 mm mounting holes selected; Ø1 mm GPIO through-hole/castellated
+  pins, debug connector features, and other component pads are excluded.'
+- '2026-11-06: Ran required mounting preview; standard_holder rejected all Ø2.1 mm
+  drills because the smallest supported M2 screw requires 2.2 mm drill for 0.2 mm
+  diametral clearance. Preview image was not produced. Geometry is sourced, but standard-holder
+  promotion is blocked pending custom-holder/design-policy review.'
+- '2026-11-07: Rechecked the official Raspberry Pi Pico datasheet at the registered
+  manufacturer URL and its archived PDF page 7 text. It specifies 4×Ø2.1 mm (±0.05 mm)
+  drilled mounting holes. The maximum specified drill is therefore 2.15 mm, still
+  below the helper''s 2.2 mm minimum; this does not resolve the holder-policy block.'
+conflicts: []
+notes:
+- The seed mounting_context.json carried y=±23.5 mm for hole centres; this does not
+  match the official Figure 3 dimension of 48.26 mm between rows. The dimensioned
+  source yields y=±24.13 mm, used here. The discrepancy is resolved in favour of the
+  directly dimensioned official figure.
+- The standard holder is generated geometry only. Component, presoldered header, connector,
+  screw-head, and underside clearance remain unverified; no physical fit test was
+  performed.
+- Helper policy requires at least a 2.2 mm PCB drill for M2 (2.0 mm nominal screw
+  plus 0.2 mm diametral clearance); the official Pico datasheet specifies four
+  Ø2.1 mm (±0.05 mm) drills, whose maximum specified diameter is 2.15 mm. Do not
+  enlarge holes or select a different screw by guess. Custom holder
+  or an explicit project screw policy is required before the standard-holder workflow
+  can proceed. No helper preview, promotion, or generation was completed.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T15:31:00+00:00'
+identity_source_ids:
+- datasheet
+- r3_cad
+- r3_step

@@ -1,0 +1,89 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32
+status: needs_review
+board_revision: Unresolved. The catalogue entry is a generic ESP32 D1 R32 software-alias identity and does not identify a specific carrier manufacturer or revision. WEMOS D1 R32/ESPDuino-32 products are similar names, not proven identities for this generic entry.
+identity_evidence: null
+board_size: null
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: null
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources: []
+attempts:
+  - avenue: Official WEMOS product documentation
+    date: '2026-11-06'
+    details: >-
+      Reviewed the official WEMOS documentation site. It has no D1 R32 product page
+      or linked mechanical drawing/CAD establishing the carrier revision represented
+      by this generic catalogue entry. This does not establish that the board is a
+      WEMOS product.
+  - avenue: Manufacturer-linked hardware and CAD repository search
+    date: '2026-11-06'
+    details: >-
+      Reviewed the Espressif Arduino-ESP32 pinned d1_uno32 variant and boards.txt
+      already archived for this catalogue entry. They establish software aliases and
+      the WEMOS D1 R32 board selection only; they contain no carrier geometry and do
+      not link the generic catalogue entry to a manufacturer CAD revision. No
+      revision-pinned manufacturer board CAD was located.
+  - avenue: Exact D1 R32/ESPDuino-32 mechanical-source search
+    date: '2026-11-06'
+    details: >-
+      Searched for exact D1 R32 and ESPDuino-32 manufacturer CAD and dimensioned
+      drawings. Results were third-party schematics, unofficial models, listing
+      pages, and generic manuals; none establishes this entry's carrier identity
+      and an exact mechanical revision. A forum result notes a purported D1 R32
+      Fritzing part has mounting-hole marks only in silkscreen, which cannot confirm
+      drilled holes. Exact carrier identity and complete mechanical evidence remain
+      unavailable.
+  - avenue: Catalogue outline dimensions
+    date: '2026-11-06'
+    details: >-
+      The 53.34 x 68.58 mm dimensions are nominal catalogue values only, explicitly
+      marked unverified in mounting_context.json. They cannot establish exact board
+      outline or hole geometry and were not used for a holder.
+  - avenue: Recheck of WEMOS product documentation and exact-board CAD links
+    date: '2026-11-07'
+    details: >-
+      Rechecked the official WEMOS documentation at https://www.wemos.cc/en/latest/
+      and its linked D32 index at https://www.wemos.cc/en/latest/d32/index.html.
+      The current board index lists D32 and D32 Pro, and neither page identifies a
+      D1 R32 carrier or exposes an exact D1 R32 mechanical file. The RIOT-OS
+      Wemos D1 R32/ESPDuino-32 documentation links a third-party mirrored ETT
+      schematic (https://gitlab.com/gschorcht/RIOT.wiki-Images/raw/master/esp32/Wemos-D1-R32_Schematic.pdf);
+      its title block identifies an ETT schematic, but it is not a PCB layout,
+      dimensioned mechanical drawing, or revision-controlled CAD. This does not
+      establish that the generic catalogue record is that board.
+  - avenue: D1 R32 dimensioned-drawing candidate and identity check
+    date: '2026-11-07'
+    details: >-
+      Reviewed the ADIY D1 R32 datasheet at
+      https://rajguruelectronics.com/Product/33071/250925180036.pdf. It describes
+      an ADIY-branded D1 R32 product with a USB-C connector and ESP-WROVER-32
+      module (with pads that can accept WROOM), states PCB size 68.5 x 53.34 mm,
+      and includes a dimensioned footprint drawing with mounting/edge marks. It is
+      a product-specific drawing, but this catalogue item is explicitly generic,
+      is based on ESP32-WROOM-32 software aliases, and carries no ADIY, USB-C,
+      WROVER, or carrier-revision identity. Matching nominal outline dimensions
+      alone cannot link this drawing to the catalogue carrier. The drawing was
+      therefore not used to infer this board's mounting geometry. Exact carrier
+      identity and a revision-controlled mechanical source for it remain unknown.
+conflicts: []
+notes:
+  - Exact carrier identity, outline, and mounting-hole pattern remain unknown. Do not promote or generate from software aliases, nominal dimensions, similar board names, or unofficial illustrations.
+  - Reassessment found an ADIY-specific dimensioned D1 R32 drawing, but no evidence links that product/revision to this generic catalogue record; the official WEMOS documentation review likewise yielded no exact D1 R32 CAD or mechanical drawing. Keep needs_review until the carrier identity and matching mechanical source are established.
+  - Component, connector, screw-head and underside clearance remain unverified; no physical fit test was performed.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:47:30+00:00'

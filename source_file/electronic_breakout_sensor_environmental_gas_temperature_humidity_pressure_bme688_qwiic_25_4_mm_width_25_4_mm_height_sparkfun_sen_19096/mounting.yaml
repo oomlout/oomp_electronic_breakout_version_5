@@ -1,0 +1,110 @@
+schema_version: 1
+part_id: electronic_breakout_sensor_environmental_gas_temperature_humidity_pressure_bme688_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_19096
+status: verified
+board_revision: SEN-19096 initial release; SparkFun Qwiic_Environmental_Sensor_BME688 repository snapshot at commit 5edfc65e8dcb8d7a70e3810bbef42226bbbdb9cc.
+identity_source_ids:
+- product
+- repo_readme
+identity_evidence: The archived official SparkFun SEN-19096 product page links the Qwiic_Environmental_Sensor_BME688 hardware repository. Its README names SparkFun Environmental Sensor - BME688 (Qwiic), SEN-19096, lists SEN-19096 as the initial release, and identifies /Hardware as Eagle design files. The pinned Hardware/Qwiic_BME688.brd is the exact carrier CAD used here.
+board_size:
+- 25.4
+- 25.4
+mounting_holes:
+- id: JP3:hole:1
+  x_mm: -10.16
+  y_mm: 10.16
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+- id: JP4:hole:1
+  x_mm: 10.16
+  y_mm: 10.16
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+- id: JP7:hole:1
+  x_mm: 10.16
+  y_mm: -10.16
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+- id: JP8:hole:1
+  x_mm: -10.16
+  y_mm: -10.16
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: EAGLE layer-20 board outline bounds are native x=0..25.4 and y=0..25.4 mm, giving 25.4 x 25.4 mm. Native CAD origin is at the lower-left board corner (0,0); canonical top-view centre is (12.7,12.7) mm. Transform each hole by x_mm=x_native-12.7, y_mm=y_native-12.7, with quarter-turn 0 (no rotation, reflection or axis swap). The four STAND-OFF footprint drills are at native coordinates (2.54,22.86), (22.86,22.86), (22.86,2.54), (2.54,2.54) mm, yielding centred (-10.16,10.16), (10.16,10.16), (10.16,-10.16), (-10.16,-10.16) mm and 3.302 mm drill diameter each. The official drawing independently labels the board 1.00 x 1.00 in (25.4 x 25.4 mm), hole-centre spacing 0.80 in (20.32 mm), and 0.10 in (2.54 mm) from each edge to the hole centres. The complete CAD drill scan also found six J3 1x06 plated header pads (1.016 mm drills); these are electrical connector pads, not mounting holes, and were excluded. EAGLE board-level hole is outside the PCB outline at (0,0) and is not a carrier hole.
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  local_file: website.html
+  url: https://www.sparkfun.com/sparkfun-environmental-sensor-bme688-qwiic.html
+  kind: manufacturer_product
+  locator: 'Archived official product page: product number SEN-19096 and linked GitHub
+    repository, Eagle files, board dimensions; archive retrieval date 2026-10-23'
+  registered_at: '2026-11-06T19:34:11+00:00'
+  bytes: 579708
+  sha256: 277cf08afe64ad754c7ec6d86b95e79b336b2512f30cd7cfa5048ace0f16d37d
+- id: repo_readme
+  local_file: mounting_evidence/README.md
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Environmental_Sensor_BME688/5edfc65e8dcb8d7a70e3810bbef42226bbbdb9cc/README.md
+  kind: manufacturer_repository
+  locator: Pinned official repository readme identifies product SEN-19096 and initial
+    release; documents 1in x 1in breakout
+  registered_at: '2026-11-06T19:34:11+00:00'
+  bytes: 3849
+  sha256: 905eeb88dee03580fa4e834ef9f244c0aadbe3e31e62a5ccb323a7f23129a5cb
+- id: cad
+  local_file: mounting_evidence/Qwiic_BME688.brd
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Environmental_Sensor_BME688/5edfc65e8dcb8d7a70e3810bbef42226bbbdb9cc/Hardware/Qwiic_BME688.brd
+  kind: manufacturer_cad
+  locator: Pinned native EAGLE CAD for initial release SEN-19096; inspect complete
+    board outline, layer 20, all drilled features and named STAND-OFF / header footprints
+  registered_at: '2026-11-06T19:34:12+00:00'
+  bytes: 222301
+  sha256: 8f5196a243ad6c590f0e4d54f57291dffc17bdd6212f98bc0b4fa26d7394da42
+- id: dimensions
+  local_file: mounting_evidence/qwiic_bme_dimensions.pdf
+  url: https://cdn.sparkfun.com/assets/5/e/f/4/4/qwiic_bme_dimensions.pdf
+  kind: manufacturer_drawing
+  locator: Official linked board dimensions drawing; corroborates board dimensions
+    and mounting hole callouts
+  registered_at: '2026-11-06T19:34:12+00:00'
+  bytes: 117886
+  sha256: a8b45d3b659b657ad930024dae7423a24c594b4e6a2492fd184178008c241e54
+attempts: []
+conflicts: []
+notes:
+- Reviewed the full native carrier CAD and official dimension drawing. The four selected holes are explicitly named STAND-OFF; all other drilled candidates are the J3 header pads. No unresolved mechanical conflicts identified.
+- Standard holder output is generated geometry only. Component, connector, screw-head and underside clearance remain unverified; no physical fit test was performed.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T19:34:21+00:00'
+extraction:
+  selected_ids:
+  - JP3:hole:1
+  - JP4:hole:1
+  - JP7:hole:1
+  - JP8:hole:1
+  quarter_turn: 0
+  native_centre_mm:
+  - 12.7
+  - 12.7

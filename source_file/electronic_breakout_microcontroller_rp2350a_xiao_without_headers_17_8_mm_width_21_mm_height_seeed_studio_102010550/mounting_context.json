@@ -1,0 +1,103 @@
+{
+  "name_readable": "Seeed Studio XIAO RP2350",
+  "manufacturer": "seeed_studio",
+  "part_number": "102010550",
+  "webpage": null,
+  "sources": [
+    {
+      "id": "cad",
+      "url": "https://files.seeedstudio.com/wiki/XIAO-RP2350/res/XIAO_RP2350_v1.0_SCH&PCB_240626.zip",
+      "title": "Seeed Studio XIAO RP2350 KiCad board",
+      "accessed": "2026-10-20",
+      "scope": "PCB outline, pad locations and nets; RP2040 v1.3 / RP2350 v1.0",
+      "local_file": "reference/board.kicad_pcb",
+      "sha256": "f74481ce0381f8b160e49450b7bb138aa79b1182cfd1c794c790c034279de909"
+    },
+    {
+      "id": "archive",
+      "url": "https://files.seeedstudio.com/wiki/XIAO-RP2350/res/XIAO_RP2350_v1.0_SCH&PCB_240626.zip",
+      "title": "Seeed Studio XIAO RP2350 original schematic and PCB archive",
+      "accessed": "2026-10-20",
+      "scope": "Original complete manufacturer design including hierarchical schematics",
+      "local_file": "reference/design.zip",
+      "sha256": "a4e379f4ff3e31bfea1d53506241a86a171d7f36bbe65b142329ef09bf821d3c"
+    },
+    {
+      "id": "product",
+      "url": "https://wiki.seeedstudio.com/xiao_rp2350_arduino/",
+      "title": "Seeed Studio XIAO RP2350 getting started",
+      "accessed": "2026-10-20",
+      "scope": "Chip, flash, published pin aliases and board features"
+    },
+    {
+      "id": "chip_datasheet",
+      "url": "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf",
+      "title": "chip_datasheet",
+      "accessed": "2026-10-22",
+      "scope": "GPIO mux, PWM, ADC and electrical characteristics"
+    },
+    {
+      "id": "interface_variant",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/variants/seeed_xiao_rp2350/pins_arduino.h",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Arduino variant pin assignments; not a physical header drawing",
+      "local_file": "reference/interface_defaults/rp_seeed_xiao_rp2350.h",
+      "sha256": "a6d7e1e4e6b476546817eb6d81b4ce78b6188b8eb8d76c4b7f36c6c66aca50da"
+    },
+    {
+      "id": "interface_board_selection",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/boards.txt",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework board names and variant selection; generic selections remain explicitly scoped",
+      "local_file": "reference/interface_defaults/rp_boards.txt",
+      "sha256": "a800a5c1ffc6e7e4714000c82cccf291f3a4983f0b457c2a84b5e7923c451001",
+      "content_scope": "excerpt_of_board_names_and_variant_selections",
+      "source_document_sha256": "12fb03a0c15a09f5bd61d32ce1a59e1bca721b6e9aa059494b060623fcb7a26f"
+    },
+    {
+      "id": "interface_runtime_uart",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/cores/rp2040/SerialUART.cpp",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/rp_SerialUART.cpp",
+      "sha256": "52976eb468d3a8776a685eb3cd9f770023c2b7dc3017c78e79ddb7f0e86c163c"
+    },
+    {
+      "id": "interface_runtime_i2c",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/libraries/Wire/src/Wire.cpp",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/rp_Wire.cpp",
+      "sha256": "a27b11701b99a3d7e1936fc47ebb05d639ca318357bba574800b5bbd40c80075"
+    },
+    {
+      "id": "interface_runtime_spi",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/libraries/SPI/src/SPI.cpp",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/rp_SPI.cpp",
+      "sha256": "523423a2d53d9cb5ce37ee7c3533850fcaea3c43e50a4e55454e4dc3e81e6029"
+    }
+  ],
+  "dimensions_mm": {
+    "width": 17.78,
+    "height": 20.955,
+    "assembled_height": null,
+    "scope": "pcb_outline_excludes_usb_overhang",
+    "pcb_thickness": 1.6,
+    "source_id": "cad"
+  },
+  "coordinate_system": {
+    "units": "mm",
+    "origin": "centre_of_pcb_outline",
+    "view": "top_with_usb_at_positive_y",
+    "x_positive": "right",
+    "y_positive": "towards_usb"
+  },
+  "mounting_hole_details": []
+}

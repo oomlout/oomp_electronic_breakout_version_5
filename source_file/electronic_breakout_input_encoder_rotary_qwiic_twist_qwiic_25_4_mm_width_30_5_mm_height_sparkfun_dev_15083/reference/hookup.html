@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLMFVVN');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile mode if small screen device -->
+    
+    <title>Qwiic Twist Hookup Guide - SparkFun Learn</title>
+
+          <link rel="canonical" href="https://learn.sparkfun.com/tutorials/qwiic-twist-hookup-guide/all">
+            
+    <link href="/css/bootstrap.min.css?rev=1792686982" rel="stylesheet">
+    <link rel="stylesheet" href="/css/theme.github.css?rev=1792686982" type="text/css" media="screen" />    <link rel="alternate" type="application/atom+xml" title="Education Blog" href="https://learn.sparkfun.com/feeds/blog" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorials" href="https://learn.sparkfun.com/feeds/tutorials" />
+    <link rel="alternate" type="application/atom+xml" title="Education Blog Comments" href="https://learn.sparkfun.com/feeds/blog_comments" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorial Comments" href="https://learn.sparkfun.com/feeds/tutorial_comments" />
+  </head>
+
+  <body id=learn class="layout-default no-type tutorials-view" ontouchstart="">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLMFVVN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <script>;
+    </script>
+    <div class="wrapper" itemscope itemtype="http://schema.org/WebSite">
+      <meta itemprop="url" content="https://learn.sparkfun.com/">
+      <div class=wrapper-inner>
+
+    <header>
+  <div class="support-nav-container container-fluid hidden-xs">
+    <div class="container">
+      <div class="support-nav">
+        <div aria-hidden="true">&nbsp;</div>
+
+        <div>
+          <ul class="professional-links">
+            <li><a href="https://www.sparkfun.com/professional">Professional</a></li>
+            <li><a href="https://www.sparkfun.com/education">EDU</a>            <li><a href="https://www.sparkfun.com/become-a-distributor">Distributor</a>          </ul>
+        </div>
+
+        <div class="cs">
+          <a href="https://www.sparkfun.com/support">Customer Support</a>        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-nav-buttons container-fluid hidden-xs">
+    <div class="container">
+      <div class="tab-bar">
+        <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header-content">
+      <div class="logo-container">
+        <button id="mobile-nav-menu-trigger" class="mobile-menu-button btn-unstyled hidden-sm hidden-md hidden-lg" type="button" aria-label="Open navigation menu">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+
+        <a class="logo" href="https://www.sparkfun.com/">
+          <span class="logo-sfe-primary"><span class="visuallyhidden">SparkFun Electronics - sparkfun.com</span></span>
+        </a>
+      </div>
+
+      <div class="search-block">
+                  <form id="search_form" class="search-block-form" action="https://learn.sparkfun.com/search/results" method="get">
+            <label for="global-search" class="sr-only">search documentation</label>
+            <input name="term" id="global-search" class="form-control" type="text" value="" placeholder="search documentation" autocomplete="off">
+            <button type="submit" class="glyphicon glyphicon-search global-search-icon" aria-label="Search"></button>
+          </form>
+        
+        <a href="https://www.sparkfun.com/" class="hidden-xs">Back to Webstore<span class="icon-header icon-header-undo" aria-hidden="true"></span></a>
+      </div>
+
+        <a class="account-link" href="https://www.sparkfun.com/customer/account">
+          <span class="img-account-silhouette visible-xs-inline-block"><span class="sr-only">My Account</span></span>
+          <span class="hidden-xs">My Account</span>
+        </a>
+
+    </div>
+  </div>
+
+  <div class="header-nav container-fluid hidden-xs">
+    <div class="container">
+      <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    </div>
+  </div>
+  <div id="nav-mobile-menu" class="nav-mobile-menu" aria-labelledby="nav-mobile-menu-heading" aria-role="dialog" aria-modal="true">
+    <h2 id="nav-mobile-menu-heading" class="sr-only">Navigation menu</h2>
+    <ul class="mobile-menu-tabs">
+      <li class="active"><a>Menu</a></li>
+      <li><a href="https://www.sparkfun.com/customer/account">Account</a></li>
+    </ul>
+    <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+  </div>
+</header>
+
+    
+    <div class=content>
+      <div class=container id=airlock>
+
+        
+        <div class=main-title>
+  <ul class="breadcrumb">
+    <li><a href="https://learn.sparkfun.com/">Home</a></li>
+    <li><a href="https://learn.sparkfun.com/tutorials">Tutorials</a></li>
+    <li>Qwiic Twist Hookup Guide</li>
+      </ul>
+
+  <h1>
+    Qwiic Twist Hookup Guide  </h1>
+
+</div>
+
+
+<a id=nav_toggle_pages class="nav_toggle nav-toggle-trigger" href="#"><span>&#8801;</span> Pages</a>
+
+<div id=tutorial class="row">
+
+  <div class="col-sm-8" id="sections">
+
+    <div class="contributors">
+                      Contributors:
+                <span class="contributor-alias"><img src="https://cdn.sparkfun.com/avatar/1ff6ad39b8c242a14296a76845e116cd?d=retro&s=20&r=pg" /> Nate</span>          </div>
+
+    <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t846" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft846&name=Qwiic+Twist+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft846" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=Qwiic+Twist+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft846&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft846&t=Qwiic+Twist+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft846&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fassets%2Flearn_tutorials%2F8%2F4%2F6%2FQwiic_Twist-Color-Connect.gif&description=Qwiic+Twist+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+          <div class="section tutorial-page">
+        <h2 id="introduction">Introduction</h2>
+        <p>Sometimes you just need a volume knob. The <a href="https://www.sparkfun.com/products/15083">Qwiic Twist</a> is a digital RGB encoder, also known as a continuously rotating knob that is read and controlled over I<sup>2</sup>C.</p>
+
+
+
+<div >
+<div class="tile product-tile big grid " data-id="product-15083">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html">
+        <img src="https://cdn.sparkfun.com/r/600-600/assets/parts/1/3/4/3/3/15083-SparkFun_Qwiic_Twist_-_RGB_Rotary_Encoder_Breakout-01.jpg" alt="SparkFun Qwiic Twist - RGB Rotary Encoder Breakout" height="600">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html">
+          <span>SparkFun Qwiic Twist - RGB Rotary Encoder Breakout</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-15083    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Qwiic Twist is a digital RGB rotary encoder breakout that is also able to connect to our Qwiic Connect System.      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$25.50</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+
+<div class="flex-video-wrap clearfix">
+  <div class="flex-video widescreen img">
+    <iframe src="https://www.youtube.com/embed/FWk2tp59r54/?autohide=1&amp;border=0&amp;wmode=opaque&amp;enablejsapi=1" frameborder=0 allowfullscreen width="560" height="315"></iframe>
+  </div>
+</div>
+
+
+<p>What does that mean? Send the command <code>twist.getCount()</code> and you’ll get the number of steps the user has twisted the knob. For example, 312 or -23 depending on the direction and amount the user and turned the knob. The Twist takes care of all the various interrupts, switches, PWM'ing of LEDs and presents all those features over an easy-to-use I<sup>2</sup>C interface. The Qwiic Twist was designed to get rid of the large mass of wires that are needed to implement an RGB encoder in a breadboard. Now you can get encoder position with something as twist.getCount(); and your microcontroller can keep focused on other more important tasks.</p>
+
+<p>The Qwiic Twist has an indent type encoder which gives the user a great 'clicky' feel as they turn. The Qwiic Twist also has an RGB LED and a built-in button. We’ve written an Arduino library to make controlling these features as easy as:</p>
+
+<pre><code>language:c
+twist.setColor(255, 0, 0); //Red
+if(twist.isPressed() == true) Serial.println(“Pressed!”);
+</code></pre>
+
+<p>And finally, the I<sup>2</sup>C address of Qwiic Twist is software configurable which means you can hookup over 100 Twists on a single I<sup>2</sup>C bus!</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic_Twist_Hookup_Guide-01.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/4/6/Qwiic_Twist_Hookup_Guide-01.jpg" alt="Four SparkFun Qwiic Twists connected" /></a> </div></p>
+
+<h3>Required Materials</h3>
+
+<p>To follow along with this hookup guide, you will need one of the following Qwiic shields with an Arduino. You may not need everything though depending on what you have. Add it to your cart, read through the guide, and adjust the cart as necessary.</p>
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid " data-id="product-13975">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-redboard-programmed-with-arduino.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/1/7/2/2/13975-01.jpg" alt="SparkFun RedBoard - Programmed with Arduino" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-redboard-programmed-with-arduino.html">
+          <span>SparkFun RedBoard - Programmed with Arduino</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-13975    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun RedBoard combines the simplicity of the UNO's Optiboot bootloader, the stability of the FTDI, and the shield com&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$22.50</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid " data-id="product-14352">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-qwiic-shield-for-arduino.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/3/4/3/14352-01.jpg" alt="SparkFun Qwiic Shield for Arduino" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-qwiic-shield-for-arduino.html">
+          <span>SparkFun Qwiic Shield for Arduino</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-14352    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Qwiic Shield is an easy-to-assemble board that provides a simple way to incorporate the Qwiic Connect System wit&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$7.75</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+<div class="alert alert-info" role="alert">
+  <strong>Note:</strong> Originally, a BlackBoard was used in the tutorial. If you are looking to reduce the cost and avoid soldering headers to the Qwiic shield, try taking a look at the RedBoard Qwiic. It is essentially a RedBoard with Qwiic connector. <br />
+  <br />
+  
+
+<div >
+<div class="tile product-tile  grid " data-id="product-15123">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-redboard-qwiic.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/3/4/9/2/15123-SparkFun_RedBoard_Qwiic-01a.jpg" alt="SparkFun RedBoard Qwiic" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-redboard-qwiic.html">
+          <span>SparkFun RedBoard Qwiic</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-15123    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun RedBoard Qwiic is an Arduino-compatible development board with a built in Qwiic connector, eliminating the need &hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$21.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+  <div class="clearfix"></div>
+</div>
+
+<p>You will also need a Qwiic cable to connect the shield to your Twist, choose a length that suits your needs. The Qwiic to breadboard cable is good if you want to easily plug the Qwiic Twist into a 3.3V platform such as <a href="https://www.sparkfun.com/categories/267">Teensy</a>.</p>
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid retired" data-id="product-14425">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/qwiic-cable-breadboard-jumper-4-pin.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/1/14425-Qwiic_Cable_-_Breadboard_Jumper__4-pin_-01.jpg" alt="Qwiic Cable - Breadboard Jumper (4-pin)" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/qwiic-cable-breadboard-jumper-4-pin.html">
+          <span>Qwiic Cable - Breadboard Jumper (4-pin)</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14425    </span>
+
+          <p class="description" style="display:none">
+        This is a jumper adapter cable that comes pre-terminated with a female Qwiic JST connector on one end and a breadboard hookup&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14426">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/qwiic-cable-50mm.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/2/14426-Qwiic_Cable_-_50mm-01.jpg" alt="Qwiic Cable - 50mm" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/qwiic-cable-50mm.html">
+          <span>Qwiic Cable - 50mm</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14426    </span>
+
+          <p class="description" style="display:none">
+        This is a 50mm long 4-conductor cable with 1mm JST termination. It’s designed to connect Qwiic enabled components together &hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14427">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/qwiic-cable-100mm.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/3/14427-Qwiic_Cable_-_100mm-01.jpg" alt="Qwiic Cable - 100mm" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/qwiic-cable-100mm.html">
+          <span>Qwiic Cable - 100mm</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14427    </span>
+
+          <p class="description" style="display:none">
+        This is a 100mm long 4-conductor cable with 1mm JST termination. It’s designed to connect Qwiic enabled components together&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14428">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/14428">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/4/14428-Qwiic_Cable_-_200mm-01.jpg" alt="Qwiic Cable - 200mm" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/14428">
+          <span>Qwiic Cable - 200mm</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14428    </span>
+
+          <p class="description" style="display:none">
+        This is a 200mm long 4-conductor cable with 1mm JST termination. It’s designed to connect Qwiic enabled components together&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14429">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/14429">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/5/14429-Qwiic_Cable_-_500mm-01.jpg" alt="Qwiic Cable - 500mm" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/14429">
+          <span>Qwiic Cable - 500mm</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14429    </span>
+
+          <p class="description" style="display:none">
+        This is a 500mm long 4-conductor cable with 1mm JST termination. It’s designed to connect Qwiic enabled components together&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+<h3>Tools</h3>
+
+<p>The Qwiic Twist is designed to be easily connected to a <a href="https://www.sparkfun.com/qwiic">Qwiic bus</a> without soldering. But if you choose to connect to the I<sup>2</sup>C pins directly you may need a soldering iron, solder, and <a href="https://www.sparkfun.com/categories/49">general soldering accessories</a>.</p>
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid " data-id="product-9325">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/solder-lead-free-100-gram-spool.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/2/8/7/3/09325_9161-Solder_Lead_Free_-_100-gram_Spool-01.jpg" alt="Solder Lead Free - 100-gram Spool" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/solder-lead-free-100-gram-spool.html">
+          <span>Solder Lead Free - 100-gram Spool</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      TOL-09325    </span>
+
+          <p class="description" style="display:none">
+        This is your basic spool of lead free solder with a water soluble resin core. 0.031" gauge and 100 grams. This is a good spoo&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$24.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14228">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/14228">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/1/7/3/14228-01.jpg" alt="Weller WLC100 Soldering Station" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/14228">
+          <span>Weller WLC100 Soldering Station</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      TOL-14228    </span>
+
+          <p class="description" style="display:none">
+        The WLC100 from Weller is a versatile 5 watt to 40 watt soldering station that is perfect for hobbyists, DIYers and students.&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+<h3>Suggested Reading</h3>
+
+<p>If you aren't familiar with the Qwiic system, we recommend reading <a href="https://www.sparkfun.com/qwiic">here for an overview</a>.</p>
+
+<table class="table table-bordered">
+  <tr align="center">
+   <td><center><a href="https://www.sparkfun.com/qwiic"><img src="https://cdn.sparkfun.com/assets/custom_pages/2/7/2/qwiic-logo.png" alt="Qwiic Connect System" title="Qwiic Connect System"></a></center></td>
+  </tr>
+  <tr align="center">
+    <td><i><a href="https://www.sparkfun.com/qwiic">Qwiic Connect System</a></i></td>
+  </tr>
+</table>
+
+<p>We also recommend checking out these tutorials before continuing.</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-82">
+  <a href="https://learn.sparkfun.com/tutorials/i2c">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/2/I2C-Block-Diagram.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">I2C</h3>
+      </a>
+
+      <div class="description">
+      An introduction to I2C, one of the main embedded communications protocols in use today.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-684">
+  <a href="https://learn.sparkfun.com/tutorials/qwiic-shield-for-arduino--photon-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/8/4/Qwic_Shield_Hookup_Guide-05.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Qwiic Shield for Arduino &amp; Photon Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      Get started with our Qwiic ecosystem with the Qwiic shield for Arduino or Photon.    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+<p>Additionally, we’ve got a great video on how the inner workings of encoders work and why they’re important.</p>
+
+<div class="flex-video-wrap clearfix">
+  <div class="flex-video widescreen img">
+    <iframe src="https://www.youtube.com/embed/oLBYHbLO8W0/?autohide=1&amp;border=0&amp;wmode=opaque&amp;enablejsapi=1" frameborder=0 allowfullscreen width="560" height="315"></iframe>
+  </div>
+</div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="hardware-overview">Hardware Overview</h2>
+        <p>The RGB encoder is a 24 indent encoder. You’ll <em>feel</em> 24 clicks when turning one 360 degree rotation.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/SparkFun-Qwiic-Twist.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/SparkFun-Qwiic-Twist.jpg" alt="The RGB encoder on the Qwiic Twist" /></a> </div></p>
+
+<p>The encoder works best with the <a href="https://www.sparkfun.com/products/10597">Clear Plastic Knob</a> but is compatible with any knob with a 6mm knurled hole. The encoder output is filtered through a series of resistors, capacitors, and error checked in software to be sure the accurate number of ticks is being output.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic_Twist_PurpleKnob.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic_Twist_PurpleKnob.jpg" alt="Qwiic Twist with Clear Knob lit up purple" /></a> </div></p>
+
+<p>The encoder has an RGB LED built into it. To get the full light effect we recommend a clear knob but depending on your setup you may also be able to get a ‘backlit’ effect with an opaque knob. The RGB LEDs are pulse-width-modulated and controlled via software (and backed by non-volatile memory) so you can tell the Qwiic Twist to go to any color you want and it will be that color now and even after the Twist is power cycled (it remembers the last color setting).</p>
+
+<p>The encoder has a built-in momentary button. This is useful for selecting menu items and getting general feedback from the user.</p>
+
+<h3>Qwiic I<sup>2</sup>C Pins</h3>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic_Twist_Hookup_Guide-02.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/4/6/Qwiic_Twist_Hookup_Guide-02.jpg" alt="Qwiic Twist connected to a BlackBoard" /></a> </div></p>
+
+<p>The Qwiic Twist is best used with the Qwiic system. Simply plug a <a href="https://www.sparkfun.com/products/14426">Qwiic Cable</a> into the Twist and start talking to it.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/SparkFun-Qwiic-Twist-I2C.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/SparkFun-Qwiic-Twist-I2C.jpg" alt="I2C pins on the Qwiic Twist highlighted" /></a> </div></p>
+
+<p>Alternatively you can solder to the I<sup>2</sup>C pins on the board.</p>
+
+<div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><b> Heads Up! </b>The Qwiic Twist is designed to operate at <b>3.3V</b> so please don’t drive it at <b>5V</b>. Your I<sup>2</sup>C pins, however, can be <b>5V</b> logic.</div>
+
+<h3>RST and INT</h3>
+
+<p>The reset pin is an active low input. When pulled low Qwiic Twist will be held in reset.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic-Twist-ADR-INT-2.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic-Twist-ADR-INT-2.jpg" alt="RST and INT pins on the digital RGB encoder highlighted" /></a> </div></p>
+
+<p>The INT pin is active low and is open drain output. The interrupt pin will go low when any of the follow events happen:</p>
+
+<ul>
+<li>The user presses the button is pressed or released.</li>
+<li>The user has turned the knob and no movement has been detected for a certain amount of time. 
+This amount of time is called the <em>turnInterruptTimeout</em> and is 250ms by default. This means that once the user has stopped turning the knob for 250ms the interrupt will fire. This is helpful when the user is doing lots of knob changes. The Qwiic Twist won't fire the interrupt until the user has stopped fidgeting. The turnInterruptTimeout is software configurable from 1ms to 65000ms (65 seconds).</li>
+</ul>
+
+<p>The INT pin is open drain and is pulled up through a 10k resistor but if you want to connect multiple Twists and share the interrupt pins among many Twists then you can optionally cut the jumper to remove the 10k pull up on each Twist board.</p>
+
+<h3>Jumpers</h3>
+
+<p>The ADR jumper is normally open and controls the I<sup>2</sup>C address of the device. By default the Qwiic Twist 7-bit unshifted address is <code>0x3F</code>. If the jumper is closed with solder, the address will become <code>0x3E</code>.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic-Twist-Jumpers.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic-Twist-Jumpers.jpg" alt="Address jumper of the Qwiic Twist" /></a> </div></p>
+
+<p>The Twist is unique in that it can have any address assigned to it between 0x08 and 0x77. This means over 100 Twists can be connected on a single bus!</p>
+
+<p><strong>Note:</strong> If the ADR jumper is closed then Qwiic Twist will resort to address <code>0x3E</code> regardless of what address may have been configured via software commands. This is a safety mechanism in case the Twist gets set to an unknown address.</p>
+
+<p>The INT jumper is a normally closed jumper; there is a small trace connecting the two pads. This jumper connects the INT pin on the ATtiny84 through a 10k resistor to <strong>3.3V</strong>. Cutting the small trace disconnects the 10k resistor from the INT pin on the ATtiny84.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic-Twist-Jumpers-INTHighlightedFixed.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic-Twist-Jumpers-INTHighlightedFixed.jpg" alt="Qwiic INT jumper closed with trace" /></a> </div></p>
+
+<p>The INT pin on Qwiic Twist is <em>open drain</em>, meaning the pin will actively go low when an interrupt occurs but will then float when there is no interrupt. This <em>open drain</em> type of setup is handy if you have multiple devices sharing a single interrupt line. For advanced applications (such as many many Twists all sharing the same INT pin) you may want to <a href="https://learn.sparkfun.com/tutorials/how-to-work-with-jumper-pads-and-pcb-traces">cut this jumper</a> on each Twist to remove the 10k pull ups. <strong>For general use you can leave this jumper unmodified.</strong></p>
+
+<p>The Qwiic Twist has built-in 2.2k pull-up resistors on the SDA and SCL lines. These are needed for normal I<sup>2</sup>C communication. The I<sup>2</sup>C jumper has two small traces connecting the pull-ups to 3.3V. <strong>For general use you can leave this jumper unmodified.</strong> If you have many (over 7) devices on the I<sup>2</sup>C bus, each with their own pull up resistors, then you may want to <a href="https://learn.sparkfun.com/tutorials/how-to-work-with-jumper-pads-and-pcb-traces">cut the I<sup>2</sup>C jumpers</a> to disconnect the 2.2k resistors on each Qwiic board.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="qwiic-twist-arduino-library">Qwiic Twist Arduino Library</h2>
+        <div class="alert alert-info">
+<b>Note:</b> This example assumes you are using the latest version of the Arduino IDE on your desktop. If this is your first time using Arduino, please review our tutorial on <a href="https://learn.sparkfun.com/tutorials/installing-arduino-ide">installing the Arduino IDE.</a> If you have not previously installed an Arduino library, please check out our <a href="https://learn.sparkfun.com/tutorials/installing-an-arduino-library">installation guide.</a>
+</div>
+
+<p>We’ve written an easy to use Arduino library that covers the gamut of features on the Qwiic Twist. The easiest way to install the library is by searching <strong>SparkFun Twist</strong> within the Arduino library manager. We’ve even got a tutorial on <a href="https://learn.sparkfun.com/tutorials/installing-an-arduino-library/all">installing an Arduino library</a> if you need it. You can also manually install the <a href="https://github.com/sparkfun/SparkFun_Qwiic_Twist_Arduino_Library">Qwiic Twist library</a> by downloading a zip:</p>
+
+<p><div class="center-block text-center"> <a href="https://github.com/sparkfun/SparkFun_Qwiic_Twist_Arduino_Library/archive/master.zip" class="btn btn-default">Download the SparkFun Qwiic Twist Library (ZIP)</a> </div></p>
+
+<ul>
+<li><strong>Example 1</strong> - Basic reading of the encoder value</li>
+<li><strong>Example 2</strong> - Set the Knob Color</li>
+<li><strong>Example 3</strong> - Displaying Crazy Colors on Knob</li>
+<li><strong>Example 4</strong> - Connect Colors: Change knob color from blue to red based on position</li>
+<li><strong>Example 5</strong> - Reading Time Stamps</li>
+<li><strong>Example 6</strong> - Display encoder difference since last reading</li>
+<li><strong>Example 7</strong> - Set the encoder count value</li>
+<li><strong>Example 8</strong> - Enabling and reading interrupts</li>
+<li><strong>Example 7</strong> - Set the encoder count value</li>
+<li><strong>Example 9</strong> - Change the I<sup>2</sup>C address</li>
+<li><strong>Example 10</strong> - Advanced Wire settings</li>
+</ul>
+
+<p>Below are the various functions that can be called from the library. Most of these functions are demonstrated in the examples so we recommend you go through each example first.</p>
+
+<ul>
+<li><strong><code>boolean begin(TwoWire &amp;wirePort, uint8_t deviceAddress);</code></strong></li>
+<li><strong><code>int16_t getCount();</code></strong> -- Returns the number of indents the user has turned the knob</li>
+<li><strong><code>boolean setCount(int16_t amount);</code></strong> -- Set the number of indents to a given amount</li>
+<li><strong><code>int16_t getDiff(boolean clearValue = true);</code></strong> -- Returns the number of ticks since last check. Clears the difference once read.</li>
+<li><strong><code>boolean isMoved();</code></strong> -- Returns true if knob has been twisted</li>
+<li><strong><code>boolean isPressed();</code></strong> -- Return true if button is currently pressed.</li>
+<li><strong><code>boolean isClicked();</code></strong> -- Returns true if a click event has occurred. Event flag is then reset.</li>
+<li><strong><code>uint16_t timeSinceLastMovement(boolean clearValue = true);</code></strong> -- Returns the number of milliseconds since the last encoder movement. Clears value once read.</li>
+<li><strong><code>uint16_t timeSinceLastPress(boolean clearValue = true);</code></strong> -- Returns the number of milliseconds since the last button event (press and release). Clears value once read.</li>
+</ul>
+
+<p><strong>Color</strong> functions set the brightness of each LED.</p>
+
+<ul>
+<li><strong><code>boolean setColor(uint8_t red, uint8_t green, uint8_t blue);</code></strong> -- Sets the color of the encoder LEDs, 0-255</li>
+<li><strong><code>boolean setRed(uint8_t);</code></strong> -- Set the red LED, 0-255</li>
+<li><strong><code>boolean setGreen(uint8_t);</code></strong> -- Set the green LED, 0-255</li>
+<li><strong><code>boolean setBlue(uint8_t);</code></strong> -- Set the blue LED, 0-255</li>
+<li><strong><code>uint8_t getRed();</code></strong> -- Get current value</li>
+<li><strong><code>uint8_t getGreen();</code></strong> -- Get current value</li>
+<li><strong><code>uint8_t getBlue();</code></strong> -- Get current value</li>
+</ul>
+
+<p><strong>Connect</strong> functions set the relation between each color and the twisting of the knob. These functions connect the LED so it changes [amount] with each encoder tick without the master intervening. Negative numbers are allowed (so LED gets brighter the more you turn the encoder down).</p>
+
+<ul>
+<li><strong><code>boolean connectColor(int16_t red, int16_t green, int16_t blue);</code></strong> -- Connect all colors in one command</li>
+<li><strong><code>boolean connectRed(int16_t);</code></strong> -- Connect individual colors</li>
+<li><strong><code>boolean connectGreen(int16_t);</code></strong> -- Connect individual colors</li>
+<li><strong><code>boolean connectBlue(int16_t);</code></strong> -- Connect individual colors</li>
+<li><strong><code>int16_t getRedConnect();</code></strong> -- Get the connect value for each color</li>
+<li><strong><code>int16_t getGreenConnect();</code></strong></li>
+<li><strong><code>int16_t getBlueConnect();</code></strong></li>
+</ul>
+
+<p><strong>General</strong> functions get and set various aspects of the Twist.</p>
+
+<ul>
+<li><strong><code>uint16_t getIntTimeout();</code></strong> -- Get number of milliseconds that must elapse between end of knob turning and interrupt firing</li>
+<li><strong><code>boolean setIntTimeout(uint16_t timeout);</code></strong> -- Set number of milliseconds that elapse between end of knob turning and interrupt firing</li>
+<li><strong><code>void clearInterrupts();</code></strong> -- Clears the moved and button interrupts as well as the pressed and clicked event bits</li>
+<li><strong><code>boolean isConnected();</code></strong> -- Returns true if sensor is detected</li>
+<li><strong><code>uint16_t getVersion();</code></strong> -- Returns a two byte firmware version</li>
+<li><strong><code>void changeAddress(uint8_t newAddress);</code></strong> -- Change the I<sup>2</sup>C address to newAddress</li>
+</ul>      </div>
+          <div class="section tutorial-page">
+        <h2 id="register-map">Register Map</h2>
+        <p>If you’d like to use a platform other than Arduino you can easily control Qwiic Twist by accessing the following set of registers:</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic_Twist_Register_Map_-_Endianness_Fixed_.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/8/4/6/Qwiic_Twist_Register_Map_-_Endianness_Fixed_.jpg" alt="The Qwiic Twist set of registers" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>You can also download the <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic_Twist_Register_Map_-_Fixed_Endianness.pdf">PDF</a>.</em> </div></p>
+
+<p>The Qwiic Twist behaves as a normal I<sup>2</sup>C peripheral. First write the address of the register you would like to read or write, then follow that I<sup>2</sup>C command with a Read to read the given register or a Write and a data byte to write to a register. The register address pointer is auto-incrementing so you can read and write multiple registers at a time.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="connecting-colors">Connecting Colors</h2>
+        <p>One of the more advanced (but really handy) features of Qwiic Twist is the ability to connect the color control to the knob movement. What this means is that you can have the red LED brightness increase or decrease as the user turns the knob without sending commands to the Qwiic Twist. This greatly increases the responsiveness of the knob illumination and dramatically reduces I<sup>2</sup>C traffic.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic_Twist-Color-Connect.gif"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic_Twist-Color-Connect.gif" alt="Qwiic Twist changing color by just twisting" /></a> </div></p>
+
+<p>In the above photo we have connected blue to increase brightness by 10 for every tick increment, and connected red to -10 per tick. The color changes automatically without the need for intervention from the I<sup>2</sup>C master. The color connect values are stored in the Qwiic Twist and will be loaded after each power-on.</p>
+
+<p>See <strong><a href="https://github.com/sparkfun/SparkFun_Qwiic_Twist_Arduino_Library/blob/master/examples/Example4_ConnectColors/Example4_ConnectColors.ino">Example4</a></strong> of the SparkFun library for a full demonstration.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="resources-and-going-further">Resources and Going Further</h2>
+        <p>Looking for more information? Check out the links provided here:</p>
+
+<ul>
+<li><a href="https://cdn.sparkfun.com/assets/2/f/2/c/c/Qwiic_Twist.pdf">Schematic (PDF)</a></li>
+<li><a href="https://cdn.sparkfun.com/assets/d/f/5/1/2/SparkFun_Qwiic_Twist.zip">Eagle (ZIP)</a></li>
+<li><a href="https://cdn.sparkfun.com/r/600-600/assets/5/3/d/5/6/RegisterMap.jpg">Qwiic Twist Register Map</a></li>
+<li>GitHub Repo
+
+<ul>
+<li><a href="https://github.com/sparkfun/SparkFun_Qwiic_Twist_Arduino_Library">SparkFun Qwiic Twist Arduino Library</a> - for easy interfacing to the Qwiic Twist including a litany of examples. This is most easily installed by searching the Arduino Library Manager for ‘SparkFun Twist’.</li>
+<li><a href="https://github.com/sparkfun/Qwiic_Twist_Py">SparkFun Qwiic Twist Python Package</a> - for interfacing with the Qwiic Twist on a Raspberry Pi or Jetson Nano. This is most easily installed with the <a href="https://qwiic-twist-py.readthedocs.io/en/latest/?#id3">instructions here</a>.</li>
+<li><a href="https://github.com/sparkfun/Qwiic_Twist">Hardware repo</a> - For Qwiic Twist that includes the firmware for the ATtiny84</li>
+</ul></li>
+<li><a href="https://www.youtube.com/watch?v=FWk2tp59r54">SFE Product Showcase</a></li>
+</ul>
+
+<p>We hope you have a lot of fun with your Qwiic Twist! Check out these other Qwiic products:</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-1103">
+  <a href="https://learn.sparkfun.com/tutorials/programming-the-sparkfun-edge-with-arduino">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/1/0/3/ArduinoEdge.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Programming the SparkFun Edge with Arduino</h3>
+      </a>
+
+      <div class="description">
+      Running low-power machine learning examples on the SparkFun Edge can now be done using the familiar Arduino IDE. In this follow-up to the initial Edge tutorial, we&#039;ll look at how to get three examples up and running without the need to learn an entirely new SDK.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-1296">
+  <a href="https://learn.sparkfun.com/tutorials/sparkfun-qwiic-shield-for-teensy-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/2/9/6/17119-SparkFun_Qwiic_Shield_for_Teensy-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">SparkFun Qwiic Shield for Teensy Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      A short guide for assembling and using the SparkFun Qwiic Shield for Teensy and Qwiic Shield for Teensy Extended.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-2005">
+  <a href="https://learn.sparkfun.com/tutorials/sparkfun-gps-rtk-dead-reckoning-zed-f9k-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/2/0/0/5/18719-SparkFun_GNSS-RTK_Dead_Reckoning_Breakout_-_ZED-F9K__Qwiic_-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">SparkFun GPS-RTK Dead Reckoning ZED-F9K Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      The u-blox ZED-F9K is a powerful GPS-RTK unit that uses a fusion of IMU, wheel ticks, a vehicle dynamics model, correction data, and GNSS measurements to provide highly accurate and continuous position for navigation in the difficult conditions. We will quickly get you set up using the Qwiic ecosystem through Arduino so that you can start reading the output!    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-2753">
+  <a href="https://learn.sparkfun.com/tutorials/measuring-height-with-atmospheric-pressure">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/2/7/5/3/micropressure.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Measuring Height with Atmospheric Pressure</h3>
+      </a>
+
+      <div class="description">
+      Measure height using atmospheric pressure with your Qwiic MicroPressure breakout board!    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+<p>Or check out this blog post for ideas.</p>
+
+
+<div class="tile-wrap">
+  <div class="tile blog-tile " data-id="news-3344">
+  <a href="https://news.sparkfun.com/3344" title="August 5, 2020: Marcus demonstrates how the Qwiic System makes it super easy to build a novelty sound maker with a capacitive touch interface.">
+              <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/338-190/assets/home_page_posts/3/3/4/4/topsideCompleted.JPG)"></div>
+        <h3 class="title">How I Built a Cap Touch Sound Board with the Qwiic System</h3>
+          <div class="metaline">
+        <span class="meta">August 5, 2020</span>
+      </div>
+        <p class="readmore">Read Post</p>
+      </a>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+<div class="clearfix"></div>      </div>
+    
+        <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t846" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft846&name=Qwiic+Twist+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft846" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=Qwiic+Twist+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft846&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft846&t=Qwiic+Twist+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft846&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fassets%2Flearn_tutorials%2F8%2F4%2F6%2FQwiic_Twist-Color-Connect.gif&description=Qwiic+Twist+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+  </div>
+
+  <div class="col-sm-4 nav-menu" id="nav-pages">
+    <div id="sidebar_affix">
+      <div id="tutorial-pages" class="list-group">
+        <a class="list-group-item"><b>Sections</b></a>
+                          <a data-pagename="introduction" class="list-group-item" href="#introduction">
+            Introduction          </a>
+                  <a data-pagename="hardware-overview" class="list-group-item" href="#hardware-overview">
+            Hardware Overview          </a>
+                  <a data-pagename="qwiic-twist-arduino-library" class="list-group-item" href="#qwiic-twist-arduino-library">
+            Qwiic Twist Arduino Library          </a>
+                  <a data-pagename="register-map" class="list-group-item" href="#register-map">
+            Register Map          </a>
+                  <a data-pagename="connecting-colors" class="list-group-item" href="#connecting-colors">
+            Connecting Colors          </a>
+                  <a data-pagename="resources-and-going-further" class="list-group-item" href="#resources-and-going-further">
+            Resources and Going Further          </a>
+              </div>
+
+      <div class="list-group">
+        <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/qwiic-twist-hookup-guide/discuss">
+          Comments
+          <span class="badge">5</span>
+        </a>
+                  <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/qwiic-twist-hookup-guide/introduction">
+            View Paginated
+          </a>
+                <a class="list-group-item" href="#" onclick="window.print(); return false;">
+          Print
+        </a>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>Tags</b></li>
+        <li class="list-group-item"><ul class="tags-list">
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/arduino">Arduino</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/attiny">ATtiny</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/hookup">Hookup</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/leds">LEDs</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/light">Light</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/qwiic">Qwiic</a>  </li>
+</ul>
+</li>
+      </ul>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>License</b></li>
+        <li class="list-group-item">
+          <span class="sfe-icon-cc">
+            <span class="visuallyhidden">Creative Commons</span>
+          </span>
+          <small>tutorials are <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a></small>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+      </div> <!-- /container -->
+    </div> <!-- /content -->
+
+    <footer>
+  <div class="container">
+
+  <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>About SparkFun</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/about-sparkfun">Read Our Story</a></li>
+            <li><a href="https://www.sparkfun.com/press-and-media">Press &amp; Media</a></li>
+            <li><a href="http://www.sparkfuneducation.com" target="_blank">SparkFun Education <span class="glyphicon glyphicon-new-window"></span></a></li>
+            <li><a href="https://www.sparkfun.com/jobs">Job Openings</a></li>
+          </ul>
+
+          <h3>Partner With Us</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/partner">See Our Partners</a></li>
+            <li><a href="https://www.sparkfun.com/services">View Our Services</a></li>
+            <li><a href="https://www.sparkfun.com/become-a-distributor">Become a Distributor/Reseller</a></li>
+            <li><a href="https://www.sparkfun.com/volume-sales">Receive Volume Discounts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/support">Customer Support</a></li>
+            <li><a href="https://www.sparkfun.com/payments">Purchase Order &amp; Payment Terms</a></li>
+            <li><a href="https://www.sparkfun.com/technical-assistance">Technical Assistance</a></li>
+            <li><a href="https://www.sparkfun.com/faq">FAQs</a></li>
+          </ul>
+          <h3>Site Information</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/terms">Terms Of Service</a></li>
+            <li><a href="https://www.sparkfun.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://www.sparkfun.com/compliance">Compliance</a></li>
+            <li><a href="https://www.sparkfun.com/sitemap">Site Map</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Subscribe</h3>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "2224003",
+              formId: "257ad1af-ab9e-4275-8788-cbad81cc229e"
+            });
+          </script>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>View Our Social Channels</h3>
+          <ul class="spew">
+            <li><a href="https://www.youtube.com/sparkfun" target="_blank" class="icon-social-youtube"><span class="sr-only">YouTube</span></a></li>
+            <li><a href="https://www.instagram.com/sparkfun/" target="_blank" class="icon-social-instagram"><span class="sr-only">Instagram</span></a></li>
+            <li><a href="https://www.github.com/sparkfun" target="_blank" class="icon-social-github"><span class="sr-only">GitHub</span></a></li>
+            <li><a href="https://www.facebook.com/SparkFun" target="_blank" class="icon-social-facebook"><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://twitter.com/sparkfun" target="_blank" class="icon-social-twitter"><span class="sr-only">Twitter</span></a></li>
+            <li><a href="https://www.sparkfun.com/feeds" class="icon-social-rss"><span class="sr-only">RSS</span></a></li>
+            <li><a href="https://www.tiktok.com/@sparkfun.electronics?lang=en" target="_blank" class="icon-social-tiktok"><span class="sr-only">TikTok</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- end .row -->
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p class="copyleft">
+          <strong>SparkFun Electronics&nbsp;&reg;</strong>
+          <span class="hidden-xs hidden-sm">/</span>
+          <br class="visible-xs-inline visible-sm-inline"/>
+          6333 Dry Creek Parkway,
+          <br class="visible-xs-inline"/>
+          Niwot, CO 80503
+        </p>
+      </div>
+    </div><!-- end .row -->
+  </div><!-- end .container -->
+</footer>
+
+      </div><!-- end .wrapper-inner -->
+    </div><!-- end .wrapper -->
+
+    <script type="text/javascript">
+      // eslint-disable-next-line no-unused-vars
+      var SFECONFIG = {
+        dnt: false,
+        http_server: 'http://learn.sparkfun.com',
+        https_server: 'https://learn.sparkfun.com',
+        http_static: 'https://cdn.sparkfun.com',
+        learn_server: 'https://learn.sparkfun.com',
+        news_server: 'https://news.sparkfun.com',
+        base_url: '/',
+        url: '/',
+        controller: 'tutorials',
+        action: 'view',
+        auth: false,
+        sparkrev: '1792686982',
+        search_key: 'search-sngw3quge7ojic1tgr4eft5c',
+        search_url: 'https://sparkfun-electronics.ent.us-central1.gcp.cloud.es.io/api/as/v1/engines/sparkfun-01/search'
+      };
+    </script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+      <script src="/js/learn-built.min.js?sparkrev=1792686982"></script>
+    
+    <script>
+      /* global $ */
+      $.sfe();
+      $.shared();
+      $('#learn').learn();
+      $('#learn').sfeutil();
+    </script>
+                            <script src="/js/tutorials-built.min.js?sparkrev=1792686982"></script>
+                              <script>
+    var fbq = null;
+  </script>
+      
+          <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2224003.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+        <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0046/4761.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+      </body>
+</html>

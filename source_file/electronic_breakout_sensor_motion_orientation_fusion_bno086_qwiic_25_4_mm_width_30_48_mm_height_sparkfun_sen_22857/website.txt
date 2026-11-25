@@ -1,0 +1,170 @@
+Home
+Sensors
+Movement
+IMU
+SparkFun VR IMU Breakout - BNO086 (Qwiic)
+SEN-22857
+Skip to the end of the images gallery
+Skip to the beginning of the images gallery
+Share:
+SparkFun VR IMU Breakout - BNO086 (Qwiic)
+SKU: SEN-22857
+An incredibly precise 9DoF orientation sensor featuring 14-bit accelerometer fusion, Interactive Calibration, and flexible I
+2
+C, SPI, or UART communication options.
+$34.95
+In stock
+SKU
+SEN-22857
+Qty
+-
++
+Add to Cart
+In stock
+Stock/Discounts
+Add to Wish List
+Compare
+Helpful Documentation
+Hookup Guide
+Schematic
+Datasheet (BNO086)
+Sensor Calibration Procedure
+See all documentation
+Overview
+Recommended Products
+Features & Specs
+Documentation
+Reviews
+Overview
+Product Overview
+The SparkFun VR IMU Breakout provides an incredibly accurate orientation sensor, opening the door to virtual reality development without requiring you to drop hundreds, or even thousands, of dollars just to gain access to the underlying hardware. At its heart lies CEVA
+®
+’s BNO086, a combination triple-axis accelerometer, gyroscope, and magnetometer System in Package (SiP) driven by a built-in 32-bit ARM
+©
+Cortex™ M0+ processor.
+This Inertial Measurement Unit (IMU) processes all the raw sensor data on the chip itself, providing you with combined, drift-corrected, and meaningful orientation information immediately after activation.
+Accurate Rotation Vectors:
+Produces accurate rotation vector headings with a static rotation error of two degrees or less, making it perfectly suited for VR headsets and complex motion tracking.
+Enhanced Upgrades:
+As a direct drop-in replacement for the EOL BNO080, this upgraded chip features 14-bit accelerometer fusion, reduced idle state power consumption, and Interactive Calibration.
+Built-in Activity Tracking:
+Features built-in algorithms for step counting and activity classification (such as detecting when the user is riding a bike).
+Connectivity Options
+This IMU breakout board is equipped with two I
+2
+C Qwiic connectors, making interfacing with the tiny QFN package incredibly easy. As part of
+SparkFun’s Qwiic connect system
+, you won’t have to solder to get your sensor up and running. However, we have still broken out the standard 0.1-inch-spaced pins if you prefer to prototype on a breadboard.
+Because of the capabilities this sensor is capable of, it comes with a complex interface that provides multiple ways to communicate:
+Default I
+2
+C:
+Connects effortlessly via the Qwiic system. You can use the on-board solder jumpers to switch between two different I
+2
+C addresses (0x4B default, or 0x4A).
+Alternative Protocols:
+If I
+2
+C is not your preferred communication method, the sensor can easily be configured to communicate over SPI or UART.
+To help you get started as quickly as possible, we have written an extensive I
+2
+C-based library that easily outputs the rotation vector, acceleration, gyro, and magnetometer readings you need. Whether you are building custom VR hardware or deploying a robotic navigation system, the SparkFun VR IMU Breakout provides the precise motion data your project demands.
+This product features Qwiic Connectors.
+LEARN MORE
+Recommended Products
+Features & Specs
+Features & Specs
+Operating Voltage
+2.4V - 3.6V
+Typically
+3.3V
+via Qwiic cable
+I
+2
+C (Default): Up to 400kHz
+SPI: Up to 3MHz
+UART: 3Mbps
+Rotation Vector
+Dynamic Error: 3.5°
+Static Error: 2.0°
+Gaming Rotation Vector
+Dynamic Error: 2.5°
+Static Error: 1.5°
+Dynamic Heading Drift: 0.5° / min
+Geomagnetic Rotation Vector
+Dynamic Rotation Error: 4.5°
+Static Rotation Error: 3.0°
+Gravity Angle Error: 1.5°
+Linear Acceleration Accuracy: 0.35m/s
+2
+Accelerometer Accuracy: 0.3m/s
+2
+Gyroscope Accuracy: 3.1° / sec
+Magnetometer Accuracy: 1.4µT
+2x Qwiic Connection Ports
+I
+2
+C Address: 0x4B (default), 0x4A
+I
+2
+C Pull-Up Resistors (2.2kΩ)
+Power LED
+Jumpers
+Power LED
+I
+2
+C Pull-up Resistors
+Address Select
+Protocol Selection 0
+Protocol Selection 1
+Board Dimensions: 1.0in. x 1.2in. (25.4mm x 30.48mm)
+Weight: 3g
+Documentation
+Documentation
+Schematic
+Eagle Files
+Board Dimensions
+Hookup Guide
+BNO086
+Datasheet
+Migration Guide
+Tare Function Usage Guide
+Sensor Hub Transport Protocol
+Sensor Calibration Procedure
+Fritzing Part
+Qwiic Info Page
+Arduino Library
+GitHub Hardware Repo
+WARNING:
+This product may contain chemicals known to the State of California to cause cancer and birth defects or other reproductive harm. See link below for more information.
+www.P65Warnings.ca.gov
+Reviews
+Customer Reviews
+Trustpilot
+Get a Quote for
+I agree to the
+Privacy Policy
+to get a quote for product
+Customer Name
+Customer Email
+Phone Number
+Comment
+Submit
+SparkFun VR IMU Breakout - BNO086 (Qwiic)
+$34.95
+SEN-22857
+Add to Cart
+$34.95
+retail price.
+Available Discounts
+$33.20
+|
+10+ units
+$31.46
+|
+25+ units
+$29.71
+|
+100+ units
+Looking for even larger quantities?
+Get in touch for Volume Pricing

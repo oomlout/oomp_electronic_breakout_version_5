@@ -1,0 +1,117 @@
+{
+  "record_sha256": "76266b6b4ce6da8572d8fef78a9118d2abbe1b2cbd865d32b1917ab2cc158652",
+  "generated_at": "2026-11-06T18:48:36+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_sensor_optical_ambient_light_veml6030_qwiic_sparkfun_sen_15436/3dpr.scad",
+      "bytes": 4367,
+      "sha256": "eff6e6e6fa1cdd4490c1d7916f98d78fb898604c4146717ac6adb00db77bd135"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_optical_ambient_light_veml6030_qwiic_sparkfun_sen_15436/3dpr_short_sides.scad",
+      "bytes": 3052,
+      "sha256": "4b92cdffcf896a434c345ac063e99e8392974591229a11bc25d2c055f5274640"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_optical_ambient_light_veml6030_qwiic_sparkfun_sen_15436/3dpr_long_side.scad",
+      "bytes": 2886,
+      "sha256": "a20fefe457d8152e1b3dcbf69705c9c43c518893e56d9e829b8f1d8fd6eb55f5"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_optical_ambient_light_veml6030_qwiic_sparkfun_sen_15436/3dpr.stl",
+      "bytes": 1712043,
+      "sha256": "1a18b2b91b79a8ba3fa26b5b7440582fbc385643183888cf58a240306647d267"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_optical_ambient_light_veml6030_qwiic_sparkfun_sen_15436/3dpr_short_sides.stl",
+      "bytes": 834247,
+      "sha256": "6d13a1b0c83452fcc225d4d5652c860b5e4043090d587dbf630a53c52883d398"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_optical_ambient_light_veml6030_qwiic_sparkfun_sen_15436/3dpr_long_side.stl",
+      "bytes": 687930,
+      "sha256": "1fe8c27b98c81652c885f34f3e2ae952c87ac8b780ba448ec4052e1c4ae61bcf"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_optical_ambient_light_veml6030_qwiic_sparkfun_sen_15436/mounting_variants.json",
+      "bytes": 4427,
+      "sha256": "7c104229e0a24d202209378b27c7a62e17a3544a31db52de9fb716205c6179c4"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_sensor_optical_ambient_light_veml6030_qwiic_sparkfun_sen_15436\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 8982.66776769547,
+    "bounds_mm": [
+      [
+        -29.5,
+        -29.49013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        29.49013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_sensor_optical_ambient_light_veml6030_qwiic_sparkfun_sen_15436\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 8982.66776769547,
+        "bounds_mm": [
+          [
+            -29.5,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_optical_ambient_light_veml6030_qwiic_sparkfun_sen_15436\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 5197.960761831898,
+        "bounds_mm": [
+          [
+            -15.7,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            15.7,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_optical_ambient_light_veml6030_qwiic_sparkfun_sen_15436\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 4126.214645085774,
+        "bounds_mm": [
+          [
+            -15.700000000000001,
+            -15.690133642141358,
+            0.0
+          ],
+          [
+            29.5,
+            15.690133642141358,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

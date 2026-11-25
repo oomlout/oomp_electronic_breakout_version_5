@@ -1,0 +1,176 @@
+Adafruit INA219 Current Sensor Breakout
+Overview
+Adafruit INA219 Current Sensor Breakout
+Measure high side voltage and DC current draw over I2C
+by
+lady ada
+and
+Kattni Rembor
+published October 26, 2012, last edited August 19, 2026
+last major update September 21, 2023
+posted in
+Adafruit Products
+Arduino Compatibles
+Breakout Boards
+/
+Batteries/Power
+STEMMA
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly
+Wiring
+Arduino Code
+Library Reference
+Arduino Library Docs
+Python & CircuitPython
+Python Docs
+WipperSnapper
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Primary
+INA219  High Side DC Current Sensor Breakout - 26V ±3.2A Max
+$9.95
+Add  to Cart
+Your browser does not support the video tag.
+Primary
+Adafruit INA219 FeatherWing
+$7.95
+Add  to Cart
+View product details
+78
+Beginner
+Product guide
+Overview
+The INA219B breakout board and the INA219 FeatherWing will solve all your power-monitoring problems. Instead of struggling with two multimeters, you can use this breakout to measure both the high side voltage and DC current draw over I2C with 1% precision.
+As if that weren't enough, we've now also added
+SparkFun qwiic
+compatible
+STEMMA QT
+connectors for the I2C bus
+so you don't even need to solder the I2C and power lines.
+Just wire up to your favorite micro using a
+STEMMA QT adapter cable.
+The Stemma QT connectors also mean the INA219 can be used with our
+various associated accessories.
+QT Cable is not included, but we have a variety in the shop
+.
+Why the High Side?
+Most current-measuring devices such as our current panel meter are only good for
+low side
+measuring. That means that unless you want to get a battery involved, you have to stick the measurement resistor between the target ground and true ground.
+Since the voltage drop across the resistor is proportional to the current draw, this means that the ground reference will change with varying current.  Having a shifting ground reference can cause problems for many circuits.
+The
+INA219B
+chip is much smarter - it can handle high side current measuring, up to +26VDC, even though it is powered with 3 or 5V. It will also report back that high side voltage, which is great for tracking battery life or solar panels.
+How does it work?
+A precision amplifier measures the voltage across the 0.1 ohm, 1% sense resistor.
+Since the amplifier maximum input difference is ±320mV this means it can measure up to ±3.2 Amps. With the internal 12 bit ADC, the resolution at ±3.2A range is 0.8mA. With the internal gain set at the minimum of div8, the max current is ±400mA and the resolution is 0.1mA. Advanced hackers can remove the 0.1 ohm current sense resistor and replace it with their own to change the range (say a 0.01 ohm to measure up 32 Amps with a resolution of 8mA)
+Text emphasized with a red exclamation:
+Note that when switching inductive loads, the instantaneous voltage levels may greatly exceed steady-state levels due to inductive kickback.  Chip damage can occur if you do not take precautions to protect against inductive spikes.
+Text emphasized with a blue exclamation:
+There are two versions of this board - the STEMMA QT version shown above, and the original header-only version shown below. The code works the same on both!
+Page last edited July 10, 2024
+Pinouts
+Related Guides
+Make your own PCB with Eagle, OSH Park, and Adafruit!
+By
+Bryan Siepert
+intermediate
+74
+Your browser does not support the video tag. This links to the guide USB C Power Delivery Monitor.
+USB C Power Delivery Monitor
+By
+John Park
+intermediate
+24
+Introducing Adafruit Feather
+By
+lady ada
+beginner
+250
+Adafruit ADS122C04 24-Bit ADC
+By
+Liz Clark
+Product Guide
+1
+Your browser does not support the video tag. This links to the guide Adafruit STEMMA Speaker.
+Adafruit STEMMA Speaker
+By
+Kattni Rembor
+Product Guide
+41
+Adafruit 3.5" 480x320 TFT FeatherWing
+By
+lady ada
+Product Guide
+51
+Adafruit MEMENTO Camera Board
+By
+Liz Clark
+Product Guide
+67
+USB, DC & Solar Lipoly Charger
+By
+lady ada
+intermediate
+246
+Adafruit PCA9546 4-Channel STEMMA QT Multiplexer
+By
+Liz Clark
+Product Guide
+11
+Adafruit PiCowbell CAN Bus for Pico
+By
+Liz Clark
+Product Guide
+8
+Adafruit NeoRGB Stemma
+By
+Liz Clark
+Product Guide
+7
+Your browser does not support the video tag. This links to the guide Adafruit LTR-329 and LTR-303 Light Sensors.
+Adafruit LTR-329 and LTR-303 Light Sensors
+By
+Kattni Rembor
+Product Guide
+9
+Adafruit 1.27" and 1.5" Color OLED Breakout Board
+By
+Bill Earl
+Product Guide
+40
+Adafruit MCP4728 I2C Quad DAC
+By
+Bryan Siepert
+Product Guide
+13
+CircuitPython Display Support Using displayio
+By
+Carter Nelson
+beginner
+204
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

@@ -1,0 +1,3806 @@
+bip_39_2_word_array:
+- tourist
+- make
+bip_39_2_word_no_space: touristmake
+bip_39_2_word_space: tourist make
+bip_39_2_word_underscore: tourist_make
+bip_39_3_word_array:
+- tourist
+- make
+- warm
+bip_39_3_word_no_space: touristmakewarm
+bip_39_3_word_space: tourist make warm
+bip_39_3_word_underscore: tourist_make_warm
+bip_39_full_array:
+- tourist
+- make
+- warm
+- empty
+- napkin
+- crime
+- reduce
+- drum
+- view
+- plate
+- spoon
+- square
+bip_39_full_no_space: touristmakewarmemptynapkincrimereducedrumviewplatespoonsquare
+bip_39_full_space: tourist make warm empty napkin crime reduce drum view plate spoon
+  square
+bip_39_full_underscore: tourist_make_warm_empty_napkin_crime_reduce_drum_view_plate_spoon_square
+board_variant: qwiic
+breakout_description: qwiic
+breakout_pcb_height: 30.48
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Manufacturer nominal outline is not a traced CAD perimeter.
+definition_authority: working_oomp_populate_i2c.py
+description: A dial, push-button and RGB indicator accessible over I2C. Its tall assembly
+  is useful to document separately from flat sensor boards. This leaf names the assembled
+  product rather than inventing an unverified controller IC.
+dimensions_mm:
+  height: 30.5
+  scope: nominal_pcb_outline
+  source_id: product
+  status: manufacturer_nominal
+  width: 25.4
+directory: parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+geometry_ready: false
+i2c:
+  address_evidence_status: partial_product_page_evidence
+  address_selection: solder_jumper_or_software
+  clock_stretching: unverified
+  default_address_7bit: 63
+  documented_addresses_7bit:
+  - 62
+  - 63
+  maximum_clock_hz: null
+  source_id: product
+id: electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+id_no_class: electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+id_no_size: electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+id_no_type: electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+id_oobb: electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+kwargs:
+  breakout_pcb_height: 30.48
+  breakout_pcb_width: 25.4
+  modes:
+  - 3dpr
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 12.7
+  - diameter_mm: 3.302
+    id: JP11:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP13:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 12.7
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - -12.7
+  - - -10.16
+    - 12.7
+  - - 10.16
+    - -12.7
+  - - 10.16
+    - 12.7
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  overwrite: true
+  part_ids:
+  - electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+  scad_output: 3dpr_long_side
+  type: default_mounting_plate_default
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+manufacturer: sparkfun
+manufacturer_part_number: DEV-15083
+md5: e5f0d3dca4992e672d021cf3f4c74a69
+md5_10: e5f0d3dca4
+md5_10_upper: E5F0D3DCA4
+md5_5: e5f0d
+md5_5_upper: E5F0D
+md5_6: e5f0d3
+md5_6_alpha: 8yzmb
+md5_6_alpha_upper: 8YZMB
+md5_6_upper: E5F0D3
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 3.302
+  id: JP3:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: -12.7
+- diameter_mm: 3.302
+  id: JP4:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 12.7
+- diameter_mm: 3.302
+  id: JP11:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: -12.7
+- diameter_mm: 3.302
+  id: JP13:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 12.7
+mounting_hole_radius_name: m3
+mounting_hole_radius_names:
+- m3
+- m3
+- m3
+- m3
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - -12.7
+- - -10.16
+  - 12.7
+- - 10.16
+  - -12.7
+- - 10.16
+  - 12.7
+mounting_lift: 3
+mounting_research:
+  board_revision: SparkFun Qwiic Twist (DEV-15083) EAGLE hardware as published at
+    official SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182;
+    exact file Hardware/Qwiic Twist.brd. No separate silkscreen revision established.
+  board_size:
+  - 25.4
+  - 30.48
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'Complete EAGLE layer-20 outline bounds are native x=[0,30.48] mm and
+    y=[0,25.4] mm, so board_size native=[30.48,25.4] mm and native bounding-box centre=(15.24,12.7)
+    mm. A CCW quarter-turn (quarter_turn=1) maps the native landscape bounds to canonical
+    product orientation 25.4 x 30.48 mm, matching the manufacturer nominal 25.4 x
+    30.5 mm. For every feature, first centre native coordinates: xc=x_native-15.24,
+    yc=y_native-12.7; then apply x_mm=-yc, y_mm=xc. Full drill review found 26 candidates:
+    JP3, JP4, JP11 and JP13 are non-plated 3.302 mm drills in the explicitly described
+    STAND-OFF mechanical footprint and are selected. The remaining 22 candidates are
+    J3 four-pin header pads, J5/J10 single-pin header pads, J7 six ISP test-point
+    header pads, and SW1 rotary encoder electrical/switch pads (including its two
+    plated mechanical anchor pads M1/M2); these are not board mounting holes.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: SparkFun product page identifies SKU DEV-15083, gives board dimensions
+    25.4 x 30.5 mm, and links the hardware repository. The pinned official repository
+    README names SparkFun Qwiic Twist (DEV-15083), states Hardware contains the .brd/.sch,
+    and the archived CAD is Hardware/Qwiic Twist.brd from that same commit.
+  mounting_holes:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 12.7
+  - diameter_mm: 3.302
+    id: JP11:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: 10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP13:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 12.7
+  record_sha256: dc195b9d1e0425625ae5b45c4b34383c3c5d22ef2c47459dfabbe2c820147505
+  research_file: source_file/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 333290
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Qwiic_Twist.brd
+    locator: SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182,
+      Hardware/Qwiic Twist.brd; inspect complete board outline, layer 20 and all drills.
+    registered_at: '2026-11-06T19:45:44+00:00'
+    sha256: dfed45e9931decad58f1f23342074318c8881930a878545e39d298638c7c0551
+    url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/Hardware/Qwiic%20Twist.brd
+  - bytes: 2875
+    id: repo_identity
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Pinned SparkFun repository README identifies product as Qwiic Twist (DEV-15083)
+      and says Hardware contains .brd/.sch.
+    registered_at: '2026-11-06T19:45:45+00:00'
+    sha256: 81dd64ab75439bae04ab82b4dd3f856d5830b5fbea96b65ea853f8b1a4d5723a
+    url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/README.md
+  - bytes: 588759
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: SparkFun product page identifies SKU DEV-15083, gives board dimensions
+      25.4 x 30.5 mm, and links Eagle files and GitHub Hardware Repo.
+    registered_at: '2026-11-06T19:45:46+00:00'
+    sha256: b91408ada81ae69c31e8678ce88d103460c8936dea1602d90fa799212a283cb0
+    url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+  status: verified
+name: Electronic Breakout Input Encoder Rotary Qwiic Twist Qwiic 25 4 Mm Width 30
+  5 Mm Height Sparkfun Dev 15083
+name_no_class: Electronic Breakout Input Encoder Rotary Qwiic Twist Qwiic 25 4 Mm
+  Width 30 5 Mm Height Sparkfun Dev 15083
+name_no_size: Electronic Breakout Input Encoder Rotary Qwiic Twist Qwiic 25 4 Mm Width
+  30 5 Mm Height Sparkfun Dev 15083
+name_no_type: Electronic Breakout Input Encoder Rotary Qwiic Twist Qwiic 25 4 Mm Width
+  30 5 Mm Height Sparkfun Dev 15083
+name_proper: Electronic Breakout Input Encoder Rotary Qwiic Twist Qwiic 25 4 Mm Width
+  30 5 Mm Height Sparkfun Dev 15083
+name_readable: SparkFun Qwiic Twist RGB Rotary Encoder
+name_space: electronic breakout input encoder rotary qwiic twist qwiic 25 4 mm width
+  30 5 mm height sparkfun dev 15083
+name_upper: ELECTRONIC BREAKOUT INPUT ENCODER ROTARY QWIIC TWIST QWIIC 25 4 MM WIDTH
+  30 5 MM HEIGHT SPARKFUN DEV 15083
+notes:
+- Software-configurable addressing is supported; only 0x3F/0x3E hardware choices are
+  enumerated here.
+- Product-page statements about multiple encoders and multiplexers are inconsistent;
+  verify the register-map/firmware behavior before multi-device use.
+- Manufacturer specifies 25 mm assembly height.
+oobb_details:
+- breakout_pcb_height: 30.48
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 12.7
+  - diameter_mm: 3.302
+    id: JP11:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP13:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 12.7
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - -12.7
+  - - -10.16
+    - 12.7
+  - - 10.16
+    - -12.7
+  - - 10.16
+    - 12.7
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 30.48
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 12.7
+  - diameter_mm: 3.302
+    id: JP11:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP13:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 12.7
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - -12.7
+  - - -10.16
+    - 12.7
+  - - 10.16
+    - -12.7
+  - - 10.16
+    - 12.7
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 30.48
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 12.7
+  - diameter_mm: 3.302
+    id: JP11:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP13:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 12.7
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - -12.7
+  - - -10.16
+    - 12.7
+  - - 10.16
+    - -12.7
+  - - 10.16
+    - 12.7
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      board_variant: qwiic
+      breakout_description: qwiic
+      breakout_pcb_height: 30.48
+      breakout_pcb_width: 25.4
+      catalogue: i2c_breakouts
+      catalogue_status: product_page_reference
+      data_gaps:
+      - Physical connector/pad map and coordinates not imported.
+      - Located mounting holes and complete assembly/connector clearances not imported.
+      - Pull-up values/rails and full electrical limits require schematic review.
+      - Manufacturer nominal outline is not a traced CAD perimeter.
+      definition_authority: working_oomp_populate_i2c.py
+      description: A dial, push-button and RGB indicator accessible over I2C. Its
+        tall assembly is useful to document separately from flat sensor boards. This
+        leaf names the assembled product rather than inventing an unverified controller
+        IC.
+      dimensions_mm:
+        height: 30.5
+        scope: nominal_pcb_outline
+        source_id: product
+        status: manufacturer_nominal
+        width: 25.4
+      directory: parts\electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+      geometry_ready: false
+      i2c:
+        address_evidence_status: partial_product_page_evidence
+        address_selection: solder_jumper_or_software
+        clock_stretching: unverified
+        default_address_7bit: 63
+        documented_addresses_7bit:
+        - 62
+        - 63
+        maximum_clock_hz: null
+        source_id: product
+      interface_scope: documented_board_interfaces_only
+      interfaces:
+      - i2c
+      item_kind: breakout
+      manufacturer: sparkfun
+      manufacturer_part_number: DEV-15083
+      mounting_coordinate_system:
+        origin: pcb_bounding_box_centre
+        units: mm
+        view: top
+        x_positive: right
+        y_positive: up
+      mounting_geometry_ready: true
+      mounting_hole_details:
+      - diameter_mm: 3.302
+        id: JP3:hole:1
+        package: STAND-OFF
+        plated: false
+        source_id: mounting_cad
+        x_mm: -10.16
+        y_mm: -12.7
+      - diameter_mm: 3.302
+        id: JP4:hole:1
+        package: STAND-OFF
+        plated: false
+        source_id: mounting_cad
+        x_mm: -10.16
+        y_mm: 12.7
+      - diameter_mm: 3.302
+        id: JP11:hole:1
+        package: STAND-OFF
+        plated: false
+        source_id: mounting_cad
+        x_mm: 10.16
+        y_mm: -12.7
+      - diameter_mm: 3.302
+        id: JP13:hole:1
+        package: STAND-OFF
+        plated: false
+        source_id: mounting_cad
+        x_mm: 10.16
+        y_mm: 12.7
+      mounting_hole_radius_name: m3
+      mounting_hole_radius_names:
+      - m3
+      - m3
+      - m3
+      - m3
+      mounting_hole_status: verified
+      mounting_holes:
+      - - -10.16
+        - -12.7
+      - - -10.16
+        - 12.7
+      - - 10.16
+        - -12.7
+      - - 10.16
+        - 12.7
+      mounting_lift: 3
+      mounting_research:
+        board_revision: SparkFun Qwiic Twist (DEV-15083) EAGLE hardware as published
+          at official SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182;
+          exact file Hardware/Qwiic Twist.brd. No separate silkscreen revision established.
+        board_size:
+        - 25.4
+        - 30.48
+        coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        derivation: 'Complete EAGLE layer-20 outline bounds are native x=[0,30.48]
+          mm and y=[0,25.4] mm, so board_size native=[30.48,25.4] mm and native bounding-box
+          centre=(15.24,12.7) mm. A CCW quarter-turn (quarter_turn=1) maps the native
+          landscape bounds to canonical product orientation 25.4 x 30.48 mm, matching
+          the manufacturer nominal 25.4 x 30.5 mm. For every feature, first centre
+          native coordinates: xc=x_native-15.24, yc=y_native-12.7; then apply x_mm=-yc,
+          y_mm=xc. Full drill review found 26 candidates: JP3, JP4, JP11 and JP13
+          are non-plated 3.302 mm drills in the explicitly described STAND-OFF mechanical
+          footprint and are selected. The remaining 22 candidates are J3 four-pin
+          header pads, J5/J10 single-pin header pads, J7 six ISP test-point header
+          pads, and SW1 rotary encoder electrical/switch pads (including its two plated
+          mechanical anchor pads M1/M2); these are not board mounting holes.'
+        fit_status: generic_holder_not_physical_fit_tested
+        identity_evidence: SparkFun product page identifies SKU DEV-15083, gives board
+          dimensions 25.4 x 30.5 mm, and links the hardware repository. The pinned
+          official repository README names SparkFun Qwiic Twist (DEV-15083), states
+          Hardware contains the .brd/.sch, and the archived CAD is Hardware/Qwiic
+          Twist.brd from that same commit.
+        mounting_holes:
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: cad
+          x_mm: -10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP4:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: cad
+          x_mm: -10.16
+          y_mm: 12.7
+        - diameter_mm: 3.302
+          id: JP11:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: cad
+          x_mm: 10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP13:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: cad
+          x_mm: 10.16
+          y_mm: 12.7
+        record_sha256: dc195b9d1e0425625ae5b45c4b34383c3c5d22ef2c47459dfabbe2c820147505
+        research_file: source_file/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083/mounting.yaml
+        reviewed_by: gpt-6-luna
+        sources:
+        - bytes: 333290
+          id: cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Qwiic_Twist.brd
+          locator: SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182,
+            Hardware/Qwiic Twist.brd; inspect complete board outline, layer 20 and
+            all drills.
+          registered_at: '2026-11-06T19:45:44+00:00'
+          sha256: dfed45e9931decad58f1f23342074318c8881930a878545e39d298638c7c0551
+          url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/Hardware/Qwiic%20Twist.brd
+        - bytes: 2875
+          id: repo_identity
+          kind: manufacturer_repository
+          local_file: mounting_evidence/README.md
+          locator: Pinned SparkFun repository README identifies product as Qwiic Twist
+            (DEV-15083) and says Hardware contains .brd/.sch.
+          registered_at: '2026-11-06T19:45:45+00:00'
+          sha256: 81dd64ab75439bae04ab82b4dd3f856d5830b5fbea96b65ea853f8b1a4d5723a
+          url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/README.md
+        - bytes: 588759
+          id: product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: SparkFun product page identifies SKU DEV-15083, gives board dimensions
+            25.4 x 30.5 mm, and links Eagle files and GitHub Hardware Repo.
+          registered_at: '2026-11-06T19:45:46+00:00'
+          sha256: b91408ada81ae69c31e8678ce88d103460c8936dea1602d90fa799212a283cb0
+          url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+        status: verified
+      name: electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+      name_proper: Electronic Breakout Input Encoder Rotary Qwiic Twist Qwiic 25 4
+        Mm Width 30 5 Mm Height Sparkfun Dev 15083
+      name_readable: SparkFun Qwiic Twist RGB Rotary Encoder
+      name_space: electronic breakout input encoder rotary qwiic twist qwiic 25 4
+        mm width 30 5 mm height sparkfun dev 15083
+      name_upper: ELECTRONIC BREAKOUT INPUT ENCODER ROTARY QWIIC TWIST QWIIC 25 4
+        MM WIDTH 30 5 MM HEIGHT SPARKFUN DEV 15083
+      notes:
+      - Software-configurable addressing is supported; only 0x3F/0x3E hardware choices
+        are enumerated here.
+      - Product-page statements about multiple encoders and multiplexers are inconsistent;
+        verify the register-map/firmware behavior before multi-device use.
+      - Manufacturer specifies 25 mm assembly height.
+      oobb_details:
+      - breakout_pcb_height: 30.48
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP4:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 12.7
+        - diameter_mm: 3.302
+          id: JP11:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP13:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 12.7
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        - m3
+        - m3
+        mounting_holes:
+        - - -10.16
+          - -12.7
+        - - -10.16
+          - 12.7
+        - - 10.16
+          - -12.7
+        - - 10.16
+          - 12.7
+        mounting_layout: full_wrap
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+      - breakout_pcb_height: 30.48
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP4:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 12.7
+        - diameter_mm: 3.302
+          id: JP11:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP13:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 12.7
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        - m3
+        - m3
+        mounting_holes:
+        - - -10.16
+          - -12.7
+        - - -10.16
+          - 12.7
+        - - 10.16
+          - -12.7
+        - - 10.16
+          - 12.7
+        mounting_layout: short_sides
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_short_sides
+      - breakout_pcb_height: 30.48
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP4:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 12.7
+        - diameter_mm: 3.302
+          id: JP11:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP13:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 12.7
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        - m3
+        - m3
+        mounting_holes:
+        - - -10.16
+          - -12.7
+        - - -10.16
+          - 12.7
+        - - 10.16
+          - -12.7
+        - - 10.16
+          - 12.7
+        mounting_layout: long_side
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_long_side
+      part_number: dev_15083
+      part_number_sparkfun: DEV-15083
+      pinout_status: unverified
+      pins: {}
+      research_date: '2026-10-23'
+      schema_version: 1
+      sources:
+      - id: product
+        kind: manufacturer_product_page
+        retrieved: '2026-10-23'
+        scope: identity, stated interfaces/features and recorded nominal dimensions
+        url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+      - bytes: 333290
+        id: mounting_cad
+        kind: manufacturer_cad
+        local_file: mounting_evidence/Qwiic_Twist.brd
+        locator: SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182,
+          Hardware/Qwiic Twist.brd; inspect complete board outline, layer 20 and all
+          drills.
+        registered_at: '2026-11-06T19:45:44+00:00'
+        sha256: dfed45e9931decad58f1f23342074318c8881930a878545e39d298638c7c0551
+        url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/Hardware/Qwiic%20Twist.brd
+      - bytes: 2875
+        id: mounting_repo_identity
+        kind: manufacturer_repository
+        local_file: mounting_evidence/README.md
+        locator: Pinned SparkFun repository README identifies product as Qwiic Twist
+          (DEV-15083) and says Hardware contains .brd/.sch.
+        registered_at: '2026-11-06T19:45:45+00:00'
+        sha256: 81dd64ab75439bae04ab82b4dd3f856d5830b5fbea96b65ea853f8b1a4d5723a
+        url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/README.md
+      - bytes: 588759
+        id: mounting_product
+        kind: manufacturer_product
+        local_file: website.html
+        locator: SparkFun product page identifies SKU DEV-15083, gives board dimensions
+          25.4 x 30.5 mm, and links Eagle files and GitHub Hardware Repo.
+        registered_at: '2026-11-06T19:45:46+00:00'
+        sha256: b91408ada81ae69c31e8678ce88d103460c8936dea1602d90fa799212a283cb0
+        url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: sparkfun
+      taxonomy_15: dev_15083
+      taxonomy_2: breakout
+      taxonomy_3: input
+      taxonomy_4: encoder
+      taxonomy_5: rotary
+      taxonomy_6: qwiic_twist
+      taxonomy_7: qwiic
+      taxonomy_8: 25_4_mm_width_30_5_mm_height
+      taxonomy_9: ''
+      taxonomy_schema: breakout_function_v1
+      type_1: input
+      type_2: encoder
+      type_3: rotary
+      type_4: qwiic_twist
+      url_chat: ''
+      webpage: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+      webpage_sparkfun: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+part_number: dev_15083
+part_number_sparkfun: DEV-15083
+pinout_status: unverified
+pins: {}
+project_name: C:\gh\oomp_electronic_breakout_version_5
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+- bytes: 333290
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Qwiic_Twist.brd
+  locator: SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182, Hardware/Qwiic
+    Twist.brd; inspect complete board outline, layer 20 and all drills.
+  registered_at: '2026-11-06T19:45:44+00:00'
+  sha256: dfed45e9931decad58f1f23342074318c8881930a878545e39d298638c7c0551
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/Hardware/Qwiic%20Twist.brd
+- bytes: 2875
+  id: mounting_repo_identity
+  kind: manufacturer_repository
+  local_file: mounting_evidence/README.md
+  locator: Pinned SparkFun repository README identifies product as Qwiic Twist (DEV-15083)
+    and says Hardware contains .brd/.sch.
+  registered_at: '2026-11-06T19:45:45+00:00'
+  sha256: 81dd64ab75439bae04ab82b4dd3f856d5830b5fbea96b65ea853f8b1a4d5723a
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/README.md
+- bytes: 588759
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: SparkFun product page identifies SKU DEV-15083, gives board dimensions
+    25.4 x 30.5 mm, and links Eagle files and GitHub Hardware Repo.
+  registered_at: '2026-11-06T19:45:46+00:00'
+  sha256: b91408ada81ae69c31e8678ce88d103460c8936dea1602d90fa799212a283cb0
+  url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: sparkfun
+taxonomy_14_capital: Sparkfun
+taxonomy_14_first_letter: s
+taxonomy_14_first_letter_upper: S
+taxonomy_14_length_1: s
+taxonomy_14_length_2: sp
+taxonomy_14_length_3: spa
+taxonomy_14_length_4: spar
+taxonomy_14_length_5: spark
+taxonomy_14_upper: SPARKFUN
+taxonomy_14_upper_length_1: S
+taxonomy_14_upper_length_2: SP
+taxonomy_14_upper_length_3: SPA
+taxonomy_14_upper_length_4: SPAR
+taxonomy_14_upper_length_5: SPARK
+taxonomy_15: dev_15083
+taxonomy_15_capital: Dev 15083
+taxonomy_15_first_letter: d
+taxonomy_15_first_letter_upper: D
+taxonomy_15_length_1: d
+taxonomy_15_length_2: de
+taxonomy_15_length_3: dev
+taxonomy_15_length_4: dev_
+taxonomy_15_length_5: dev_1
+taxonomy_15_upper: DEV_15083
+taxonomy_15_upper_length_1: D
+taxonomy_15_upper_length_2: DE
+taxonomy_15_upper_length_3: DEV
+taxonomy_15_upper_length_4: DEV_
+taxonomy_15_upper_length_5: DEV_1
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: input
+taxonomy_3_capital: Input
+taxonomy_3_first_letter: i
+taxonomy_3_first_letter_upper: I
+taxonomy_3_length_1: i
+taxonomy_3_length_2: in
+taxonomy_3_length_3: inp
+taxonomy_3_length_4: inpu
+taxonomy_3_length_5: input
+taxonomy_3_upper: INPUT
+taxonomy_3_upper_length_1: I
+taxonomy_3_upper_length_2: IN
+taxonomy_3_upper_length_3: INP
+taxonomy_3_upper_length_4: INPU
+taxonomy_3_upper_length_5: INPUT
+taxonomy_4: encoder
+taxonomy_4_capital: Encoder
+taxonomy_4_first_letter: e
+taxonomy_4_first_letter_upper: E
+taxonomy_4_length_1: e
+taxonomy_4_length_2: en
+taxonomy_4_length_3: enc
+taxonomy_4_length_4: enco
+taxonomy_4_length_5: encod
+taxonomy_4_upper: ENCODER
+taxonomy_4_upper_length_1: E
+taxonomy_4_upper_length_2: EN
+taxonomy_4_upper_length_3: ENC
+taxonomy_4_upper_length_4: ENCO
+taxonomy_4_upper_length_5: ENCOD
+taxonomy_5: rotary
+taxonomy_5_capital: Rotary
+taxonomy_5_first_letter: r
+taxonomy_5_first_letter_upper: R
+taxonomy_5_length_1: r
+taxonomy_5_length_2: ro
+taxonomy_5_length_3: rot
+taxonomy_5_length_4: rota
+taxonomy_5_length_5: rotar
+taxonomy_5_upper: ROTARY
+taxonomy_5_upper_length_1: R
+taxonomy_5_upper_length_2: RO
+taxonomy_5_upper_length_3: ROT
+taxonomy_5_upper_length_4: ROTA
+taxonomy_5_upper_length_5: ROTAR
+taxonomy_6: qwiic_twist
+taxonomy_6_capital: Qwiic Twist
+taxonomy_6_first_letter: q
+taxonomy_6_first_letter_upper: Q
+taxonomy_6_length_1: q
+taxonomy_6_length_2: qw
+taxonomy_6_length_3: qwi
+taxonomy_6_length_4: qwii
+taxonomy_6_length_5: qwiic
+taxonomy_6_upper: QWIIC_TWIST
+taxonomy_6_upper_length_1: Q
+taxonomy_6_upper_length_2: QW
+taxonomy_6_upper_length_3: QWI
+taxonomy_6_upper_length_4: QWII
+taxonomy_6_upper_length_5: QWIIC
+taxonomy_7: qwiic
+taxonomy_7_capital: Qwiic
+taxonomy_7_first_letter: q
+taxonomy_7_first_letter_upper: Q
+taxonomy_7_length_1: q
+taxonomy_7_length_2: qw
+taxonomy_7_length_3: qwi
+taxonomy_7_length_4: qwii
+taxonomy_7_length_5: qwiic
+taxonomy_7_upper: QWIIC
+taxonomy_7_upper_length_1: Q
+taxonomy_7_upper_length_2: QW
+taxonomy_7_upper_length_3: QWI
+taxonomy_7_upper_length_4: QWII
+taxonomy_7_upper_length_5: QWIIC
+taxonomy_8: 25_4_mm_width_30_5_mm_height
+taxonomy_8_capital: 25.4 mm Width 30 5 mm Height
+taxonomy_8_first_letter: '2'
+taxonomy_8_first_letter_upper: '2'
+taxonomy_8_length_1: '2'
+taxonomy_8_length_2: '25'
+taxonomy_8_length_3: '25_'
+taxonomy_8_length_4: '25_4'
+taxonomy_8_length_5: '25_4_'
+taxonomy_8_upper: 25_4_MM_WIDTH_30_5_MM_HEIGHT
+taxonomy_8_upper_length_1: '2'
+taxonomy_8_upper_length_2: '25'
+taxonomy_8_upper_length_3: '25_'
+taxonomy_8_upper_length_4: '25_4'
+taxonomy_8_upper_length_5: '25_4_'
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+thing:
+  bip_39_2_word_array:
+  - tourist
+  - make
+  bip_39_2_word_no_space: touristmake
+  bip_39_2_word_space: tourist make
+  bip_39_2_word_underscore: tourist_make
+  bip_39_3_word_array:
+  - tourist
+  - make
+  - warm
+  bip_39_3_word_no_space: touristmakewarm
+  bip_39_3_word_space: tourist make warm
+  bip_39_3_word_underscore: tourist_make_warm
+  bip_39_full_array:
+  - tourist
+  - make
+  - warm
+  - empty
+  - napkin
+  - crime
+  - reduce
+  - drum
+  - view
+  - plate
+  - spoon
+  - square
+  bip_39_full_no_space: touristmakewarmemptynapkincrimereducedrumviewplatespoonsquare
+  bip_39_full_space: tourist make warm empty napkin crime reduce drum view plate spoon
+    square
+  bip_39_full_underscore: tourist_make_warm_empty_napkin_crime_reduce_drum_view_plate_spoon_square
+  board_variant: qwiic
+  breakout_description: qwiic
+  breakout_pcb_height: 30.48
+  breakout_pcb_width: 25.4
+  catalogue: i2c_breakouts
+  catalogue_status: product_page_reference
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 3.0
+      pos:
+      - 6.9
+      - 0.0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 45.2
+      - 44.0
+      - 3
+      type: positive
+      width: 3.08
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - - depth: 6
+          h: 1.7
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.4
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.9
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -1.9
+          r1: 1.8
+          r2: 3.6
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.7
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.9
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - -10.16
+      - -12.7
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 5
+      inclusion: laser
+      pos: &id001
+      - -10.16
+      - -12.7
+      - 3.0
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 5
+      inclusion: 3dpr
+      pos: *id001
+      r: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 5
+      inclusion: 'true'
+      pos: *id001
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 1.7
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.4
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.9
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -1.9
+          r1: 1.8
+          r2: 3.6
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.7
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.9
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - -10.16
+      - 12.7
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 5
+      inclusion: laser
+      pos: &id002
+      - -10.16
+      - 12.7
+      - 3.0
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 5
+      inclusion: 3dpr
+      pos: *id002
+      r: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 5
+      inclusion: 'true'
+      pos: *id002
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 1.7
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.4
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.9
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -1.9
+          r1: 1.8
+          r2: 3.6
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.7
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.9
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - 10.16
+      - -12.7
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 5
+      inclusion: laser
+      pos: &id003
+      - 10.16
+      - -12.7
+      - 3.0
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 5
+      inclusion: 3dpr
+      pos: *id003
+      r: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 5
+      inclusion: 'true'
+      pos: *id003
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 1.7
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.4
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.9
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -1.9
+          r1: 1.8
+          r2: 3.6
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.7
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.9
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - 10.16
+      - 12.7
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 5
+      inclusion: laser
+      pos: &id004
+      - 10.16
+      - 12.7
+      - 3.0
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 5
+      inclusion: 3dpr
+      pos: *id004
+      r: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 5
+      inclusion: 'true'
+      pos: *id004
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+  components_objects:
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 3.0
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    - diameter_mm: 3.302
+      id: JP11:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP13:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    - - 10.16
+      - -12.7
+    - - 10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+    pos:
+    - 6.9
+    - 0.0
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_plate
+    type: positive
+    width: 3.08
+  - depth: 5
+    pos:
+    - 22.5
+    - -15.0
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 0.0
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 15.0
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - -7.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 7.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 5
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    - diameter_mm: 3.302
+      id: JP11:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP13:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    - - 10.16
+      - -12.7
+    - - 10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+    pos:
+    - -10.16
+    - -12.7
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 5
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    - diameter_mm: 3.302
+      id: JP11:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP13:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    - - 10.16
+      - -12.7
+    - - 10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+    pos:
+    - -10.16
+    - -12.7
+    - 4.5
+    radius: 3.75
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 5
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    - diameter_mm: 3.302
+      id: JP11:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP13:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    - - 10.16
+      - -12.7
+    - - 10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+    pos:
+    - -10.16
+    - 12.7
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 5
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    - diameter_mm: 3.302
+      id: JP11:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP13:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    - - 10.16
+      - -12.7
+    - - 10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+    pos:
+    - -10.16
+    - 12.7
+    - 4.5
+    radius: 3.75
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 5
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    - diameter_mm: 3.302
+      id: JP11:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP13:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    - - 10.16
+      - -12.7
+    - - 10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+    pos:
+    - 10.16
+    - -12.7
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 5
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    - diameter_mm: 3.302
+      id: JP11:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP13:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    - - 10.16
+      - -12.7
+    - - 10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+    pos:
+    - 10.16
+    - -12.7
+    - 4.5
+    radius: 3.75
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 5
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    - diameter_mm: 3.302
+      id: JP11:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP13:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    - - 10.16
+      - -12.7
+    - - 10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+    pos:
+    - 10.16
+    - 12.7
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 5
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    - diameter_mm: 3.302
+      id: JP11:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP13:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    - - 10.16
+      - -12.7
+    - - 10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+    pos:
+    - 10.16
+    - 12.7
+    - 4.5
+    radius: 3.75
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_6.9_0.0_0_pos_'electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_30.48_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':12.7}_{'diameter_mm':3.302_'id':'jp11:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp13:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':12.7}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_'m3'_mounting_hole_radius_names_-10.16_-12.7_-10.16_12.7_10.16_-12.7_10.16_12.7_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_3.08_width_3.0_height
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_-15.0_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_0.0_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_15.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_-7.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_7.5_-1_pos
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_6_depth_-10.16_-12.7_0_pos_'electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_30.48_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':12.7}_{'diameter_mm':3.302_'id':'jp11:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp13:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':12.7}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_'m3'_mounting_hole_radius_names_-10.16_-12.7_-10.16_12.7_10.16_-12.7_10.16_12.7_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_5_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-10.16_-12.7_4.5_pos_'electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_30.48_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':12.7}_{'diameter_mm':3.302_'id':'jp11:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp13:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':12.7}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_'m3'_mounting_hole_radius_names_-10.16_-12.7_-10.16_12.7_10.16_-12.7_10.16_12.7_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_5_height_3.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_6_depth_-10.16_12.7_0_pos_'electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_30.48_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':12.7}_{'diameter_mm':3.302_'id':'jp11:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp13:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':12.7}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_'m3'_mounting_hole_radius_names_-10.16_-12.7_-10.16_12.7_10.16_-12.7_10.16_12.7_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_5_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-10.16_12.7_4.5_pos_'electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_30.48_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':12.7}_{'diameter_mm':3.302_'id':'jp11:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp13:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':12.7}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_'m3'_mounting_hole_radius_names_-10.16_-12.7_-10.16_12.7_10.16_-12.7_10.16_12.7_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_5_height_3.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_6_depth_10.16_-12.7_0_pos_'electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_30.48_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':12.7}_{'diameter_mm':3.302_'id':'jp11:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp13:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':12.7}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_'m3'_mounting_hole_radius_names_-10.16_-12.7_-10.16_12.7_10.16_-12.7_10.16_12.7_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_5_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_10.16_-12.7_4.5_pos_'electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_30.48_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':12.7}_{'diameter_mm':3.302_'id':'jp11:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp13:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':12.7}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_'m3'_mounting_hole_radius_names_-10.16_-12.7_-10.16_12.7_10.16_-12.7_10.16_12.7_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_5_height_3.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_6_depth_10.16_12.7_0_pos_'electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_30.48_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':12.7}_{'diameter_mm':3.302_'id':'jp11:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp13:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':12.7}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_'m3'_mounting_hole_radius_names_-10.16_-12.7_-10.16_12.7_10.16_-12.7_10.16_12.7_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_5_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_10.16_12.7_4.5_pos_'electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_30.48_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':12.7}_{'diameter_mm':3.302_'id':'jp11:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp13:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':12.7}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_'m3'_'m3'_mounting_hole_radius_names_-10.16_-12.7_-10.16_12.7_10.16_-12.7_10.16_12.7_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_5_height_3.75_radius
+  data_gaps:
+  - Physical connector/pad map and coordinates not imported.
+  - Located mounting holes and complete assembly/connector clearances not imported.
+  - Pull-up values/rails and full electrical limits require schematic review.
+  - Manufacturer nominal outline is not a traced CAD perimeter.
+  definition_authority: working_oomp_populate_i2c.py
+  description: A dial, push-button and RGB indicator accessible over I2C. Its tall
+    assembly is useful to document separately from flat sensor boards. This leaf names
+    the assembled product rather than inventing an unverified controller IC.
+  description_extra: ''
+  description_main: ''
+  dimensions_mm:
+    height: 30.5
+    scope: nominal_pcb_outline
+    source_id: product
+    status: manufacturer_nominal
+    width: 25.4
+  directory: parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+  geometry_ready: false
+  i2c:
+    address_evidence_status: partial_product_page_evidence
+    address_selection: solder_jumper_or_software
+    clock_stretching: unverified
+    default_address_7bit: 63
+    documented_addresses_7bit:
+    - 62
+    - 63
+    maximum_clock_hz: null
+    source_id: product
+  id: electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+  id_no_class: electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+  id_no_size: electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+  id_no_type: electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+  interface_scope: documented_board_interfaces_only
+  interfaces:
+  - i2c
+  item_kind: breakout
+  kwargs:
+    breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    - diameter_mm: 3.302
+      id: JP11:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP13:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    - - 10.16
+      - -12.7
+    - - 10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
+    overwrite: true
+    part_ids:
+    - electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+    save_type: none
+    scad_output: 3dpr_long_side
+    type: default_mounting_plate_default
+  link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+  link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+  link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+  manufacturer: sparkfun
+  manufacturer_part_number: DEV-15083
+  md5: e5f0d3dca4992e672d021cf3f4c74a69
+  md5_10: e5f0d3dca4
+  md5_10_upper: E5F0D3DCA4
+  md5_5: e5f0d
+  md5_5_upper: E5F0D
+  md5_6: e5f0d3
+  md5_6_alpha: 8yzmb
+  md5_6_alpha_upper: 8YZMB
+  md5_6_upper: E5F0D3
+  mounting_coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  mounting_geometry_ready: true
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 12.7
+  - diameter_mm: 3.302
+    id: JP11:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP13:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 12.7
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  - m3
+  mounting_hole_status: verified
+  mounting_holes:
+  - - -10.16
+    - -12.7
+  - - -10.16
+    - 12.7
+  - - 10.16
+    - -12.7
+  - - 10.16
+    - 12.7
+  mounting_lift: 3
+  mounting_research:
+    board_revision: SparkFun Qwiic Twist (DEV-15083) EAGLE hardware as published at
+      official SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182;
+      exact file Hardware/Qwiic Twist.brd. No separate silkscreen revision established.
+    board_size:
+    - 25.4
+    - 30.48
+    coordinate_system:
+      origin: pcb_bounding_box_centre
+      units: mm
+      view: top
+      x_positive: right
+      y_positive: up
+    derivation: 'Complete EAGLE layer-20 outline bounds are native x=[0,30.48] mm
+      and y=[0,25.4] mm, so board_size native=[30.48,25.4] mm and native bounding-box
+      centre=(15.24,12.7) mm. A CCW quarter-turn (quarter_turn=1) maps the native
+      landscape bounds to canonical product orientation 25.4 x 30.48 mm, matching
+      the manufacturer nominal 25.4 x 30.5 mm. For every feature, first centre native
+      coordinates: xc=x_native-15.24, yc=y_native-12.7; then apply x_mm=-yc, y_mm=xc.
+      Full drill review found 26 candidates: JP3, JP4, JP11 and JP13 are non-plated
+      3.302 mm drills in the explicitly described STAND-OFF mechanical footprint and
+      are selected. The remaining 22 candidates are J3 four-pin header pads, J5/J10
+      single-pin header pads, J7 six ISP test-point header pads, and SW1 rotary encoder
+      electrical/switch pads (including its two plated mechanical anchor pads M1/M2);
+      these are not board mounting holes.'
+    fit_status: generic_holder_not_physical_fit_tested
+    identity_evidence: SparkFun product page identifies SKU DEV-15083, gives board
+      dimensions 25.4 x 30.5 mm, and links the hardware repository. The pinned official
+      repository README names SparkFun Qwiic Twist (DEV-15083), states Hardware contains
+      the .brd/.sch, and the archived CAD is Hardware/Qwiic Twist.brd from that same
+      commit.
+    mounting_holes:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: cad
+      x_mm: -10.16
+      y_mm: 12.7
+    - diameter_mm: 3.302
+      id: JP11:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: cad
+      x_mm: 10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP13:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: cad
+      x_mm: 10.16
+      y_mm: 12.7
+    record_sha256: dc195b9d1e0425625ae5b45c4b34383c3c5d22ef2c47459dfabbe2c820147505
+    research_file: source_file/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083/mounting.yaml
+    reviewed_by: gpt-6-luna
+    sources:
+    - bytes: 333290
+      id: cad
+      kind: manufacturer_cad
+      local_file: mounting_evidence/Qwiic_Twist.brd
+      locator: SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182,
+        Hardware/Qwiic Twist.brd; inspect complete board outline, layer 20 and all
+        drills.
+      registered_at: '2026-11-06T19:45:44+00:00'
+      sha256: dfed45e9931decad58f1f23342074318c8881930a878545e39d298638c7c0551
+      url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/Hardware/Qwiic%20Twist.brd
+    - bytes: 2875
+      id: repo_identity
+      kind: manufacturer_repository
+      local_file: mounting_evidence/README.md
+      locator: Pinned SparkFun repository README identifies product as Qwiic Twist
+        (DEV-15083) and says Hardware contains .brd/.sch.
+      registered_at: '2026-11-06T19:45:45+00:00'
+      sha256: 81dd64ab75439bae04ab82b4dd3f856d5830b5fbea96b65ea853f8b1a4d5723a
+      url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/README.md
+    - bytes: 588759
+      id: product
+      kind: manufacturer_product
+      local_file: website.html
+      locator: SparkFun product page identifies SKU DEV-15083, gives board dimensions
+        25.4 x 30.5 mm, and links Eagle files and GitHub Hardware Repo.
+      registered_at: '2026-11-06T19:45:46+00:00'
+      sha256: b91408ada81ae69c31e8678ce88d103460c8936dea1602d90fa799212a283cb0
+      url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+    status: verified
+  name: Electronic Breakout Input Encoder Rotary Qwiic Twist Qwiic 25 4 Mm Width 30
+    5 Mm Height Sparkfun Dev 15083
+  name_no_class: Electronic Breakout Input Encoder Rotary Qwiic Twist Qwiic 25 4 Mm
+    Width 30 5 Mm Height Sparkfun Dev 15083
+  name_no_size: Electronic Breakout Input Encoder Rotary Qwiic Twist Qwiic 25 4 Mm
+    Width 30 5 Mm Height Sparkfun Dev 15083
+  name_no_type: Electronic Breakout Input Encoder Rotary Qwiic Twist Qwiic 25 4 Mm
+    Width 30 5 Mm Height Sparkfun Dev 15083
+  name_proper: Electronic Breakout Input Encoder Rotary Qwiic Twist Qwiic 25 4 Mm
+    Width 30 5 Mm Height Sparkfun Dev 15083
+  name_readable: SparkFun Qwiic Twist RGB Rotary Encoder
+  name_short: Default Mounting Plate Default
+  name_space: electronic breakout input encoder rotary qwiic twist qwiic 25 4 mm width
+    30 5 mm height sparkfun dev 15083
+  name_text: Oobb Part Default Mounting Plate Default
+  name_upper: ELECTRONIC BREAKOUT INPUT ENCODER ROTARY QWIIC TWIST QWIIC 25 4 MM WIDTH
+    30 5 MM HEIGHT SPARKFUN DEV 15083
+  notes:
+  - Software-configurable addressing is supported; only 0x3F/0x3E hardware choices
+    are enumerated here.
+  - Product-page statements about multiple encoders and multiplexers are inconsistent;
+    verify the register-map/firmware behavior before multi-device use.
+  - Manufacturer specifies 25 mm assembly height.
+  oobb_details:
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    - diameter_mm: 3.302
+      id: JP11:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP13:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    - - 10.16
+      - -12.7
+    - - 10.16
+      - 12.7
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    - diameter_mm: 3.302
+      id: JP11:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP13:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    - - 10.16
+      - -12.7
+    - - 10.16
+      - 12.7
+    mounting_layout: short_sides
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_short_sides
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    - diameter_mm: 3.302
+      id: JP11:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP13:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    - - 10.16
+      - -12.7
+    - - 10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_long_side
+  oobb_name: mounting_plate_default
+  oomlout_ai_roboclick_1:
+    actions:
+    - command: text_jinja_template
+      convert_to_pdf: false
+      convert_to_png: false
+      dict_data:
+        board_variant: qwiic
+        breakout_description: qwiic
+        breakout_pcb_height: 30.48
+        breakout_pcb_width: 25.4
+        catalogue: i2c_breakouts
+        catalogue_status: product_page_reference
+        data_gaps:
+        - Physical connector/pad map and coordinates not imported.
+        - Located mounting holes and complete assembly/connector clearances not imported.
+        - Pull-up values/rails and full electrical limits require schematic review.
+        - Manufacturer nominal outline is not a traced CAD perimeter.
+        definition_authority: working_oomp_populate_i2c.py
+        description: A dial, push-button and RGB indicator accessible over I2C. Its
+          tall assembly is useful to document separately from flat sensor boards.
+          This leaf names the assembled product rather than inventing an unverified
+          controller IC.
+        dimensions_mm:
+          height: 30.5
+          scope: nominal_pcb_outline
+          source_id: product
+          status: manufacturer_nominal
+          width: 25.4
+        directory: parts\electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+        geometry_ready: false
+        i2c:
+          address_evidence_status: partial_product_page_evidence
+          address_selection: solder_jumper_or_software
+          clock_stretching: unverified
+          default_address_7bit: 63
+          documented_addresses_7bit:
+          - 62
+          - 63
+          maximum_clock_hz: null
+          source_id: product
+        interface_scope: documented_board_interfaces_only
+        interfaces:
+        - i2c
+        item_kind: breakout
+        manufacturer: sparkfun
+        manufacturer_part_number: DEV-15083
+        mounting_coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        mounting_geometry_ready: true
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP4:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 12.7
+        - diameter_mm: 3.302
+          id: JP11:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP13:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 12.7
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        - m3
+        - m3
+        mounting_hole_status: verified
+        mounting_holes:
+        - - -10.16
+          - -12.7
+        - - -10.16
+          - 12.7
+        - - 10.16
+          - -12.7
+        - - 10.16
+          - 12.7
+        mounting_lift: 3
+        mounting_research:
+          board_revision: SparkFun Qwiic Twist (DEV-15083) EAGLE hardware as published
+            at official SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182;
+            exact file Hardware/Qwiic Twist.brd. No separate silkscreen revision established.
+          board_size:
+          - 25.4
+          - 30.48
+          coordinate_system:
+            origin: pcb_bounding_box_centre
+            units: mm
+            view: top
+            x_positive: right
+            y_positive: up
+          derivation: 'Complete EAGLE layer-20 outline bounds are native x=[0,30.48]
+            mm and y=[0,25.4] mm, so board_size native=[30.48,25.4] mm and native
+            bounding-box centre=(15.24,12.7) mm. A CCW quarter-turn (quarter_turn=1)
+            maps the native landscape bounds to canonical product orientation 25.4
+            x 30.48 mm, matching the manufacturer nominal 25.4 x 30.5 mm. For every
+            feature, first centre native coordinates: xc=x_native-15.24, yc=y_native-12.7;
+            then apply x_mm=-yc, y_mm=xc. Full drill review found 26 candidates: JP3,
+            JP4, JP11 and JP13 are non-plated 3.302 mm drills in the explicitly described
+            STAND-OFF mechanical footprint and are selected. The remaining 22 candidates
+            are J3 four-pin header pads, J5/J10 single-pin header pads, J7 six ISP
+            test-point header pads, and SW1 rotary encoder electrical/switch pads
+            (including its two plated mechanical anchor pads M1/M2); these are not
+            board mounting holes.'
+          fit_status: generic_holder_not_physical_fit_tested
+          identity_evidence: SparkFun product page identifies SKU DEV-15083, gives
+            board dimensions 25.4 x 30.5 mm, and links the hardware repository. The
+            pinned official repository README names SparkFun Qwiic Twist (DEV-15083),
+            states Hardware contains the .brd/.sch, and the archived CAD is Hardware/Qwiic
+            Twist.brd from that same commit.
+          mounting_holes:
+          - diameter_mm: 3.302
+            id: JP3:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: cad
+            x_mm: -10.16
+            y_mm: -12.7
+          - diameter_mm: 3.302
+            id: JP4:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: cad
+            x_mm: -10.16
+            y_mm: 12.7
+          - diameter_mm: 3.302
+            id: JP11:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: cad
+            x_mm: 10.16
+            y_mm: -12.7
+          - diameter_mm: 3.302
+            id: JP13:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: cad
+            x_mm: 10.16
+            y_mm: 12.7
+          record_sha256: dc195b9d1e0425625ae5b45c4b34383c3c5d22ef2c47459dfabbe2c820147505
+          research_file: source_file/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083/mounting.yaml
+          reviewed_by: gpt-6-luna
+          sources:
+          - bytes: 333290
+            id: cad
+            kind: manufacturer_cad
+            local_file: mounting_evidence/Qwiic_Twist.brd
+            locator: SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182,
+              Hardware/Qwiic Twist.brd; inspect complete board outline, layer 20 and
+              all drills.
+            registered_at: '2026-11-06T19:45:44+00:00'
+            sha256: dfed45e9931decad58f1f23342074318c8881930a878545e39d298638c7c0551
+            url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/Hardware/Qwiic%20Twist.brd
+          - bytes: 2875
+            id: repo_identity
+            kind: manufacturer_repository
+            local_file: mounting_evidence/README.md
+            locator: Pinned SparkFun repository README identifies product as Qwiic
+              Twist (DEV-15083) and says Hardware contains .brd/.sch.
+            registered_at: '2026-11-06T19:45:45+00:00'
+            sha256: 81dd64ab75439bae04ab82b4dd3f856d5830b5fbea96b65ea853f8b1a4d5723a
+            url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/README.md
+          - bytes: 588759
+            id: product
+            kind: manufacturer_product
+            local_file: website.html
+            locator: SparkFun product page identifies SKU DEV-15083, gives board dimensions
+              25.4 x 30.5 mm, and links Eagle files and GitHub Hardware Repo.
+            registered_at: '2026-11-06T19:45:46+00:00'
+            sha256: b91408ada81ae69c31e8678ce88d103460c8936dea1602d90fa799212a283cb0
+            url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+          status: verified
+        name: electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+        name_proper: Electronic Breakout Input Encoder Rotary Qwiic Twist Qwiic 25
+          4 Mm Width 30 5 Mm Height Sparkfun Dev 15083
+        name_readable: SparkFun Qwiic Twist RGB Rotary Encoder
+        name_space: electronic breakout input encoder rotary qwiic twist qwiic 25
+          4 mm width 30 5 mm height sparkfun dev 15083
+        name_upper: ELECTRONIC BREAKOUT INPUT ENCODER ROTARY QWIIC TWIST QWIIC 25
+          4 MM WIDTH 30 5 MM HEIGHT SPARKFUN DEV 15083
+        notes:
+        - Software-configurable addressing is supported; only 0x3F/0x3E hardware choices
+          are enumerated here.
+        - Product-page statements about multiple encoders and multiplexers are inconsistent;
+          verify the register-map/firmware behavior before multi-device use.
+        - Manufacturer specifies 25 mm assembly height.
+        oobb_details:
+        - breakout_pcb_height: 30.48
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 3.302
+            id: JP3:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: -12.7
+          - diameter_mm: 3.302
+            id: JP4:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 12.7
+          - diameter_mm: 3.302
+            id: JP11:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: -12.7
+          - diameter_mm: 3.302
+            id: JP13:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: 12.7
+          mounting_hole_radius_name: m3
+          mounting_hole_radius_names:
+          - m3
+          - m3
+          - m3
+          - m3
+          mounting_holes:
+          - - -10.16
+            - -12.7
+          - - -10.16
+            - 12.7
+          - - 10.16
+            - -12.7
+          - - 10.16
+            - 12.7
+          mounting_layout: full_wrap
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+        - breakout_pcb_height: 30.48
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 3.302
+            id: JP3:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: -12.7
+          - diameter_mm: 3.302
+            id: JP4:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 12.7
+          - diameter_mm: 3.302
+            id: JP11:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: -12.7
+          - diameter_mm: 3.302
+            id: JP13:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: 12.7
+          mounting_hole_radius_name: m3
+          mounting_hole_radius_names:
+          - m3
+          - m3
+          - m3
+          - m3
+          mounting_holes:
+          - - -10.16
+            - -12.7
+          - - -10.16
+            - 12.7
+          - - 10.16
+            - -12.7
+          - - 10.16
+            - 12.7
+          mounting_layout: short_sides
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_short_sides
+        - breakout_pcb_height: 30.48
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 3.302
+            id: JP3:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: -12.7
+          - diameter_mm: 3.302
+            id: JP4:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 12.7
+          - diameter_mm: 3.302
+            id: JP11:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: -12.7
+          - diameter_mm: 3.302
+            id: JP13:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: 12.7
+          mounting_hole_radius_name: m3
+          mounting_hole_radius_names:
+          - m3
+          - m3
+          - m3
+          - m3
+          mounting_holes:
+          - - -10.16
+            - -12.7
+          - - -10.16
+            - 12.7
+          - - 10.16
+            - -12.7
+          - - 10.16
+            - 12.7
+          mounting_layout: long_side
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_long_side
+        part_number: dev_15083
+        part_number_sparkfun: DEV-15083
+        pinout_status: unverified
+        pins: {}
+        research_date: '2026-10-23'
+        schema_version: 1
+        sources:
+        - id: product
+          kind: manufacturer_product_page
+          retrieved: '2026-10-23'
+          scope: identity, stated interfaces/features and recorded nominal dimensions
+          url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+        - bytes: 333290
+          id: mounting_cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Qwiic_Twist.brd
+          locator: SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182,
+            Hardware/Qwiic Twist.brd; inspect complete board outline, layer 20 and
+            all drills.
+          registered_at: '2026-11-06T19:45:44+00:00'
+          sha256: dfed45e9931decad58f1f23342074318c8881930a878545e39d298638c7c0551
+          url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/Hardware/Qwiic%20Twist.brd
+        - bytes: 2875
+          id: mounting_repo_identity
+          kind: manufacturer_repository
+          local_file: mounting_evidence/README.md
+          locator: Pinned SparkFun repository README identifies product as Qwiic Twist
+            (DEV-15083) and says Hardware contains .brd/.sch.
+          registered_at: '2026-11-06T19:45:45+00:00'
+          sha256: 81dd64ab75439bae04ab82b4dd3f856d5830b5fbea96b65ea853f8b1a4d5723a
+          url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/README.md
+        - bytes: 588759
+          id: mounting_product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: SparkFun product page identifies SKU DEV-15083, gives board dimensions
+            25.4 x 30.5 mm, and links Eagle files and GitHub Hardware Repo.
+          registered_at: '2026-11-06T19:45:46+00:00'
+          sha256: b91408ada81ae69c31e8678ce88d103460c8936dea1602d90fa799212a283cb0
+          url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+        taxonomy_1: electronic
+        taxonomy_10: ''
+        taxonomy_11: ''
+        taxonomy_12: ''
+        taxonomy_13: ''
+        taxonomy_14: sparkfun
+        taxonomy_15: dev_15083
+        taxonomy_2: breakout
+        taxonomy_3: input
+        taxonomy_4: encoder
+        taxonomy_5: rotary
+        taxonomy_6: qwiic_twist
+        taxonomy_7: qwiic
+        taxonomy_8: 25_4_mm_width_30_5_mm_height
+        taxonomy_9: ''
+        taxonomy_schema: breakout_function_v1
+        type_1: input
+        type_2: encoder
+        type_3: rotary
+        type_4: qwiic_twist
+        url_chat: ''
+        webpage: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+        webpage_sparkfun: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+      dict_data_files: {}
+      dict_data_files_exists: {}
+      file_output: label_oomp.svg
+      file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+      search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+  oomp_key: oomp_electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+  part_number: dev_15083
+  part_number_sparkfun: DEV-15083
+  pinout_status: unverified
+  pins: {}
+  research_date: '2026-10-23'
+  schema_version: 1
+  short_name: ''
+  size: default_mounting_plate_default
+  sources:
+  - id: product
+    kind: manufacturer_product_page
+    retrieved: '2026-10-23'
+    scope: identity, stated interfaces/features and recorded nominal dimensions
+    url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+  - bytes: 333290
+    id: mounting_cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Qwiic_Twist.brd
+    locator: SparkFun Qwiic_Twist commit f9bbde3fad9b549a7cbdb31b192a003f8ffae182,
+      Hardware/Qwiic Twist.brd; inspect complete board outline, layer 20 and all drills.
+    registered_at: '2026-11-06T19:45:44+00:00'
+    sha256: dfed45e9931decad58f1f23342074318c8881930a878545e39d298638c7c0551
+    url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/Hardware/Qwiic%20Twist.brd
+  - bytes: 2875
+    id: mounting_repo_identity
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Pinned SparkFun repository README identifies product as Qwiic Twist (DEV-15083)
+      and says Hardware contains .brd/.sch.
+    registered_at: '2026-11-06T19:45:45+00:00'
+    sha256: 81dd64ab75439bae04ab82b4dd3f856d5830b5fbea96b65ea853f8b1a4d5723a
+    url: https://raw.githubusercontent.com/sparkfun/Qwiic_Twist/f9bbde3fad9b549a7cbdb31b192a003f8ffae182/README.md
+  - bytes: 588759
+    id: mounting_product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: SparkFun product page identifies SKU DEV-15083, gives board dimensions
+      25.4 x 30.5 mm, and links Eagle files and GitHub Hardware Repo.
+    registered_at: '2026-11-06T19:45:46+00:00'
+    sha256: b91408ada81ae69c31e8678ce88d103460c8936dea1602d90fa799212a283cb0
+    url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+  taxonomy_1: electronic
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: sparkfun
+  taxonomy_14_capital: Sparkfun
+  taxonomy_14_first_letter: s
+  taxonomy_14_first_letter_upper: S
+  taxonomy_14_length_1: s
+  taxonomy_14_length_2: sp
+  taxonomy_14_length_3: spa
+  taxonomy_14_length_4: spar
+  taxonomy_14_length_5: spark
+  taxonomy_14_upper: SPARKFUN
+  taxonomy_14_upper_length_1: S
+  taxonomy_14_upper_length_2: SP
+  taxonomy_14_upper_length_3: SPA
+  taxonomy_14_upper_length_4: SPAR
+  taxonomy_14_upper_length_5: SPARK
+  taxonomy_15: dev_15083
+  taxonomy_15_capital: Dev 15083
+  taxonomy_15_first_letter: d
+  taxonomy_15_first_letter_upper: D
+  taxonomy_15_length_1: d
+  taxonomy_15_length_2: de
+  taxonomy_15_length_3: dev
+  taxonomy_15_length_4: dev_
+  taxonomy_15_length_5: dev_1
+  taxonomy_15_upper: DEV_15083
+  taxonomy_15_upper_length_1: D
+  taxonomy_15_upper_length_2: DE
+  taxonomy_15_upper_length_3: DEV
+  taxonomy_15_upper_length_4: DEV_
+  taxonomy_15_upper_length_5: DEV_1
+  taxonomy_1_capital: Electronic
+  taxonomy_1_first_letter: e
+  taxonomy_1_first_letter_upper: E
+  taxonomy_1_length_1: e
+  taxonomy_1_length_2: el
+  taxonomy_1_length_3: ele
+  taxonomy_1_length_4: elec
+  taxonomy_1_length_5: elect
+  taxonomy_1_upper: ELECTRONIC
+  taxonomy_1_upper_length_1: E
+  taxonomy_1_upper_length_2: EL
+  taxonomy_1_upper_length_3: ELE
+  taxonomy_1_upper_length_4: ELEC
+  taxonomy_1_upper_length_5: ELECT
+  taxonomy_2: breakout
+  taxonomy_2_capital: Breakout
+  taxonomy_2_first_letter: b
+  taxonomy_2_first_letter_upper: B
+  taxonomy_2_length_1: b
+  taxonomy_2_length_2: br
+  taxonomy_2_length_3: bre
+  taxonomy_2_length_4: brea
+  taxonomy_2_length_5: break
+  taxonomy_2_upper: BREAKOUT
+  taxonomy_2_upper_length_1: B
+  taxonomy_2_upper_length_2: BR
+  taxonomy_2_upper_length_3: BRE
+  taxonomy_2_upper_length_4: BREA
+  taxonomy_2_upper_length_5: BREAK
+  taxonomy_3: input
+  taxonomy_3_capital: Input
+  taxonomy_3_first_letter: i
+  taxonomy_3_first_letter_upper: I
+  taxonomy_3_length_1: i
+  taxonomy_3_length_2: in
+  taxonomy_3_length_3: inp
+  taxonomy_3_length_4: inpu
+  taxonomy_3_length_5: input
+  taxonomy_3_upper: INPUT
+  taxonomy_3_upper_length_1: I
+  taxonomy_3_upper_length_2: IN
+  taxonomy_3_upper_length_3: INP
+  taxonomy_3_upper_length_4: INPU
+  taxonomy_3_upper_length_5: INPUT
+  taxonomy_4: encoder
+  taxonomy_4_capital: Encoder
+  taxonomy_4_first_letter: e
+  taxonomy_4_first_letter_upper: E
+  taxonomy_4_length_1: e
+  taxonomy_4_length_2: en
+  taxonomy_4_length_3: enc
+  taxonomy_4_length_4: enco
+  taxonomy_4_length_5: encod
+  taxonomy_4_upper: ENCODER
+  taxonomy_4_upper_length_1: E
+  taxonomy_4_upper_length_2: EN
+  taxonomy_4_upper_length_3: ENC
+  taxonomy_4_upper_length_4: ENCO
+  taxonomy_4_upper_length_5: ENCOD
+  taxonomy_5: rotary
+  taxonomy_5_capital: Rotary
+  taxonomy_5_first_letter: r
+  taxonomy_5_first_letter_upper: R
+  taxonomy_5_length_1: r
+  taxonomy_5_length_2: ro
+  taxonomy_5_length_3: rot
+  taxonomy_5_length_4: rota
+  taxonomy_5_length_5: rotar
+  taxonomy_5_upper: ROTARY
+  taxonomy_5_upper_length_1: R
+  taxonomy_5_upper_length_2: RO
+  taxonomy_5_upper_length_3: ROT
+  taxonomy_5_upper_length_4: ROTA
+  taxonomy_5_upper_length_5: ROTAR
+  taxonomy_6: qwiic_twist
+  taxonomy_6_capital: Qwiic Twist
+  taxonomy_6_first_letter: q
+  taxonomy_6_first_letter_upper: Q
+  taxonomy_6_length_1: q
+  taxonomy_6_length_2: qw
+  taxonomy_6_length_3: qwi
+  taxonomy_6_length_4: qwii
+  taxonomy_6_length_5: qwiic
+  taxonomy_6_upper: QWIIC_TWIST
+  taxonomy_6_upper_length_1: Q
+  taxonomy_6_upper_length_2: QW
+  taxonomy_6_upper_length_3: QWI
+  taxonomy_6_upper_length_4: QWII
+  taxonomy_6_upper_length_5: QWIIC
+  taxonomy_7: qwiic
+  taxonomy_7_capital: Qwiic
+  taxonomy_7_first_letter: q
+  taxonomy_7_first_letter_upper: Q
+  taxonomy_7_length_1: q
+  taxonomy_7_length_2: qw
+  taxonomy_7_length_3: qwi
+  taxonomy_7_length_4: qwii
+  taxonomy_7_length_5: qwiic
+  taxonomy_7_upper: QWIIC
+  taxonomy_7_upper_length_1: Q
+  taxonomy_7_upper_length_2: QW
+  taxonomy_7_upper_length_3: QWI
+  taxonomy_7_upper_length_4: QWII
+  taxonomy_7_upper_length_5: QWIIC
+  taxonomy_8: 25_4_mm_width_30_5_mm_height
+  taxonomy_8_capital: 25.4 mm Width 30 5 mm Height
+  taxonomy_8_first_letter: '2'
+  taxonomy_8_first_letter_upper: '2'
+  taxonomy_8_length_1: '2'
+  taxonomy_8_length_2: '25'
+  taxonomy_8_length_3: '25_'
+  taxonomy_8_length_4: '25_4'
+  taxonomy_8_length_5: '25_4_'
+  taxonomy_8_upper: 25_4_MM_WIDTH_30_5_MM_HEIGHT
+  taxonomy_8_upper_length_1: '2'
+  taxonomy_8_upper_length_2: '25'
+  taxonomy_8_upper_length_3: '25_'
+  taxonomy_8_upper_length_4: '25_4'
+  taxonomy_8_upper_length_5: '25_4_'
+  taxonomy_9: ''
+  taxonomy_schema: breakout_function_v1
+  type: part
+  type_1: input
+  type_2: encoder
+  type_3: rotary
+  type_4: qwiic_twist
+  url_chat: ''
+  webpage: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+  webpage_sparkfun: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+type_1: input
+type_2: encoder
+type_3: rotary
+type_4: qwiic_twist
+url_chat: ''
+webpage: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+webpage_sparkfun: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html

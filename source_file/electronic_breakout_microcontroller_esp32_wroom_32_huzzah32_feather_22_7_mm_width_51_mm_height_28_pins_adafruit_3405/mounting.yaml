@@ -1,0 +1,129 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405
+status: needs_review
+board_revision: Adafruit HUZZAH32 ESP32 Feather PCB Rev C, as identified by the REV=C
+  board attribute in the exact manufacturer EAGLE file at pinned repository commit
+  e23514c6f9e124a60f9d1de6567c791561b43e73.
+identity_evidence: Adafruit product page identifies product 3405 as the HUZZAH32 ESP32
+  Feather. The official guide links its EagleCAD files to the Adafruit HUZZAH32 PCB
+  repository, whose pinned README identifies the same product. The exact .brd filename
+  is Adafruit HUZZAH32 ESP32 Feather.brd and its board attribute is REV=C. Its SHA-256
+  matches the bytes served at the pinned commit URL.
+board_size:
+- 22.86
+- 50.8
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: 'Partial review only: the plain layer-20 EAGLE outline has native bounds
+  x=0..50.8 mm, y=0..22.86 mm. To express the CAD view with USB at +Y, the candidate
+  transform is CCW quarter-turn 3 after centring: (x,y) -> (y-11.43, 25.4-x). Do not
+  treat tentative manually parsed drills as an accepted pattern; helper extraction
+  is blocked.'
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources:
+- id: cad
+  local_file: reference/Adafruit HUZZAH32 ESP32 Feather.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/e23514c6f9e124a60f9d1de6567c791561b43e73/Adafruit%20HUZZAH32%20ESP32%20Feather.brd
+  kind: manufacturer_cad
+  locator: Pinned manufacturer EAGLE board XML at commit e23514c6f9e124a60f9d1de6567c791561b43e73;
+    board attribute REV=C; plain layer-20 outline spans x=0..50.8 and y=0..22.86 mm;
+    all board hole candidates reviewed; helper rejects due to layer-20 graphics in
+    a footprint
+  registered_at: '2026-11-06T17:16:38+00:00'
+  bytes: 774658
+  sha256: 992bffd6f20cd5fb8087a5008e6154a038db17f7a3e3fe9dad4bcff48adc0200
+- id: product
+  local_file: mounting_evidence/adafruit_product_3405.html
+  url: https://www.adafruit.com/product/3405
+  kind: manufacturer_product
+  locator: Adafruit product page identifies HUZZAH32 ESP32 Feather product 3405
+  registered_at: '2026-11-06T17:16:39+00:00'
+  bytes: 103000
+  sha256: ce687f7085936072166f2a3d7ccef403bb66d5646f6c78c8af1bdbe1f2583761
+- id: guide
+  local_file: mounting_evidence/adafruit_huzzah32_guide_downloads.html
+  url: https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/downloads
+  kind: manufacturer_product
+  locator: Official product guide; Downloads section links EagleCAD PCB files to the
+    HUZZAH32 manufacturer repository
+  registered_at: '2026-11-06T17:16:39+00:00'
+  bytes: 79372
+  sha256: 4a5ff89f54b135fa00d26321ca3150486a0175afe2313f9e0672892090f59445
+- id: repo_readme
+  local_file: mounting_evidence/manufacturer_repo_readme.md
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/e23514c6f9e124a60f9d1de6567c791561b43e73/README.md
+  kind: manufacturer_repository
+  locator: Pinned repository README says this repository contains PCB files for Adafruit
+    HUZZAH32 ESP32 Feather and points to product page
+  registered_at: '2026-11-06T17:16:40+00:00'
+  bytes: 2137
+  sha256: 44d9da7fec73fac98a371fa475756bd3ce8ef54fe76bde3a2bbecb1f7fb301b7
+- id: fabprint
+  local_file: mounting_evidence/feather_fabprint.png
+  url: https://cdn-learn.adafruit.com/assets/assets/000/041/629/large1024/feather_fabprint.png?1494449394
+  kind: manufacturer_drawing
+  locator: Official Adafruit guide schematic and fabrication print section; viewed
+    whole drawing, dimensional callouts in inches and four hole symbols visible, but
+    no clear drill diameter callout for each pattern
+  registered_at: '2026-11-06T17:16:41+00:00'
+  bytes: 21115
+  sha256: 5bddce5639fc169254683885e1d0a78daa5a7368dc1f630128c738b39f230887
+attempts:
+- source: Manufacturer PCB repository, pinned CAD at e23514c6f9e124a60f9d1de6567c791561b43e73
+  result: Exact CAD identity and Rev C verified; archived file SHA-256 equals pinned
+    raw CAD bytes. mounting_research.py inspect-eagle --all-drills and eagle with
+    explicit four candidates both stop with “Footprint contains layer-20 geometry;
+    verify board outline manually”. No helper extraction result is available, so no
+    promotion.
+- source: Official Adafruit fabrication print in the HUZZAH32 guide, downloaded 2026-11-06
+  result: Viewed complete drawing. It shows four hole features and inch dimensions,
+    but callouts do not unambiguously give the drill sizes and all four center coordinates
+    needed for a defensible drawing-based record.
+- source: Official Adafruit product page 3405 and product guide downloads page
+  result: Confirms product identity and that the EagleCAD repository is the guide-linked
+    board source; no separate fully dimensioned mechanical drawing found in these
+    pages.
+- source: Current official manufacturer repository HEAD checked 2026-11-07
+  result: The current master HEAD is still e23514c6f9e124a60f9d1de6567c791561b43e73;
+    its raw board file is 774658 bytes with SHA-256
+    992bffd6f20cd5fb8087a5008e6154a038db17f7a3e3fe9dad4bcff48adc0200, exactly
+    matching the archived, pinned Rev C CAD. There is no newer official CAD revision
+    to resolve the parser blocker. Re-running inspect-eagle --all-drills still stops
+    with "Footprint contains layer-20 geometry; verify board outline manually".
+    The available Adafruit fab print remains insufficient for a drawing-only record;
+    although it gives board and feature locations, it does not unambiguously dimension
+    the drill diameters of all four candidates. The precise gap is that no supported
+    extraction or fully dimensioned mechanical source establishes the four hole
+    diameters and locations; no geometry was promoted from manual candidates.
+conflicts: []
+notes:
+- Manual review of all drilled geometry in the archived EAGLE XML found two plain
+  holes (2.2 mm drills at native x=48.26 mm, y=1.8415 and 20.955 mm) and two plated
+  mounting pads (2.5 mm drills at native x=2.54 mm, y=2.54 and 20.32 mm). Candidate
+  IDs are plain:1, plain:2, U$31:pad:P$1 and U$32:pad:P$1. Candidate transformed coordinates
+  would be (-9.5885,-22.86), (9.525,-22.86), (-8.89,22.86), and (8.89,22.86) mm under
+  q3, respectively. These remain unaccepted because the mandated helper refuses the
+  source; do not promote from this note.
+- New manufacturer webpage, repository README and fab-print evidence files were acquired
+  on 2026-11-06 and registered with their original URLs and hashes. The older archived
+  CAD itself was verified against the pinned source hash.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T17:16:41+00:00'
+identity_source_ids:
+- product
+- guide
+- repo_readme
+- cad

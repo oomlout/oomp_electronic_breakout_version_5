@@ -1,0 +1,117 @@
+{
+  "record_sha256": "4a99e9a53aa4e312407537945be07d8c32f508cada187f166d399d5e42323815",
+  "generated_at": "2026-11-06T19:43:39+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_tmp117_qwiic_sparkfun_sen_15805/3dpr.scad",
+      "bytes": 4347,
+      "sha256": "3eecb456c8cfe50cbded47363896a3c41e756622c1daa6e07b1251059d3a05b8"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_tmp117_qwiic_sparkfun_sen_15805/3dpr_short_sides.scad",
+      "bytes": 3032,
+      "sha256": "c2453473ca1dad27894c8cc5a03d05e277086e333a4032c421b11f31ed2c1810"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_tmp117_qwiic_sparkfun_sen_15805/3dpr_long_side.scad",
+      "bytes": 2866,
+      "sha256": "94c4ed063d3678e7b54e9f91dbbc1ca9b4a4e3621ab77c419baa5cd28eb1f6e5"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_tmp117_qwiic_sparkfun_sen_15805/3dpr.stl",
+      "bytes": 1714196,
+      "sha256": "7684c2955706e859a5cc7585c7d394de386915c7ff080aa5ceb192085732a6cf"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_tmp117_qwiic_sparkfun_sen_15805/3dpr_short_sides.stl",
+      "bytes": 837351,
+      "sha256": "c6db5704e2edbb1089f78a0869141cf25440fd168fafce4b2a53d57acb51cd21"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_tmp117_qwiic_sparkfun_sen_15805/3dpr_long_side.stl",
+      "bytes": 689567,
+      "sha256": "c11f62de6737c389e7b44523e647dc95dfa8395b893b43a78be5c11a8f883cb4"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_tmp117_qwiic_sparkfun_sen_15805/mounting_variants.json",
+      "bytes": 4427,
+      "sha256": "7c104229e0a24d202209378b27c7a62e17a3544a31db52de9fb716205c6179c4"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_sensor_environmental_temperature_tmp117_qwiic_sparkfun_sen_15805\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 9000.40659801927,
+    "bounds_mm": [
+      [
+        -29.5,
+        -29.49013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        29.49013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_sensor_environmental_temperature_tmp117_qwiic_sparkfun_sen_15805\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 9000.40659801927,
+        "bounds_mm": [
+          [
+            -29.5,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_environmental_temperature_tmp117_qwiic_sparkfun_sen_15805\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 5215.699592155698,
+        "bounds_mm": [
+          [
+            -15.7,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            15.7,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_environmental_temperature_tmp117_qwiic_sparkfun_sen_15805\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 4143.953475409575,
+        "bounds_mm": [
+          [
+            -15.700000000000001,
+            -15.690133642141358,
+            0.0
+          ],
+          [
+            29.5,
+            15.690133642141358,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

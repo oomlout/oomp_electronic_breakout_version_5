@@ -1,0 +1,117 @@
+{
+  "record_sha256": "dc195b9d1e0425625ae5b45c4b34383c3c5d22ef2c47459dfabbe2c820147505",
+  "generated_at": "2026-11-06T19:47:11+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083/3dpr.scad",
+      "bytes": 4633,
+      "sha256": "ea3cf71c81582707119042b8ab246f2f4ab8441aa364537a3ea9cf5d2bb9aaf5"
+    },
+    {
+      "path": "parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083/3dpr_short_sides.scad",
+      "bytes": 3024,
+      "sha256": "0f89acc901633052fc320bf6815cc9b1e02417b358d73a25134f1b2a31c268f1"
+    },
+    {
+      "path": "parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083/3dpr_long_side.scad",
+      "bytes": 3004,
+      "sha256": "e1b165383ff9e8895ef4461534294564dd52e90021a298e604db753627824940"
+    },
+    {
+      "path": "parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083/3dpr.stl",
+      "bytes": 1907962,
+      "sha256": "c0c454af1bf468387d51596c833a889928a24538ca9088783e580b6c10adefeb"
+    },
+    {
+      "path": "parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083/3dpr_short_sides.stl",
+      "bytes": 835554,
+      "sha256": "468462c5bc82fbe4b2aeb63fd23fd7f139928f61046b837aefbd68d6c8aed45d"
+    },
+    {
+      "path": "parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083/3dpr_long_side.stl",
+      "bytes": 785937,
+      "sha256": "a269ab8bc98a23c32c7e19893f62fe3619211bf0c299964f56afbb2010206549"
+    },
+    {
+      "path": "parts/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083/mounting_variants.json",
+      "bytes": 4819,
+      "sha256": "c66cfcbd23eb543610257420002f19fa4921ea9c4b0f01f106e86fc0c89b82a6"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 11395.919804578576,
+    "bounds_mm": [
+      [
+        -29.5,
+        -36.99013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        36.99013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 11395.919804578576,
+        "bounds_mm": [
+          [
+            -29.5,
+            -36.99013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            36.99013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 6628.699592155699,
+        "bounds_mm": [
+          [
+            -15.7,
+            -36.99013364214136,
+            0.0
+          ],
+          [
+            15.7,
+            36.99013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 5722.7700786892265,
+        "bounds_mm": [
+          [
+            -15.700000000000001,
+            -21.99013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            21.99013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

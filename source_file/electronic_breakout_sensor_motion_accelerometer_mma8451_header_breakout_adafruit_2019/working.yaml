@@ -1,0 +1,245 @@
+research_schema_version: 1
+part_id: electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019
+name_readable: Adafruit MMA8451
+manufacturer: adafruit
+part_number: '2019'
+manufacturer_part_number: '2019'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: sensor
+  taxonomy_4: motion
+  taxonomy_5: accelerometer
+  taxonomy_6: mma8451
+  taxonomy_7: header_breakout
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '2019'
+default_website:
+  url: https://www.adafruit.com/product/2019
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:34:13+00:00'
+  updated_at: '2026-10-23T20:34:18+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: Adafruit MMA8451 product 2019 header breakout
+  status: identified_by_product_page
+  source_ids: [product_page, guide_pinouts, guide_downloads]
+  notes: Header-only carrier with 8-pin 0.1-inch header; product and guide distinguish MMA8451 from related MMA8452/8453 family.
+description: A traditional header-based I2C board with 14-bit conversion and selectable +/-2/4/8 g. The
+  carrier includes a regulator and level shifting. Record its repeated-start requirement and selectable
+  0x1C/0x1D addresses.
+interfaces:
+- i2c
+dimensions_mm:
+  width: 21.0
+  height: 18.0
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: product_dimensions_scope_unclear
+  source_ids: [product_page]
+  notes: Product gives 21 x 18 x 2 mm, not explicitly scoped to bare PCB outline.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: two_holes_25mm_diameter_coordinates_unknown
+connectors:
+  header_group:
+    kind: header
+    description: "Eight 0.1-inch header contacts: Vin, 3Vo, GND, SCL, SDA, A, I1, I2."
+    contacts: [header_Vin, header_3Vo, header_GND, header_SCL, header_SDA, header_A, header_I1, header_I2]
+    source_ids: [product_page, guide_pinouts]
+pins:
+  header_Vin: {connector: header_group, number: null, name: Vin, net_name: VIN, aliases: [], signal_type: power, direction: input, kind: header, x_mm: null, y_mm: null, source_ids: [guide_pinouts]}
+  header_3Vo: {connector: header_group, number: null, name: 3Vo, net_name: 3.3V, aliases: [], signal_type: power, direction: output, kind: header, x_mm: null, y_mm: null, source_ids: [guide_pinouts]}
+  header_GND: {connector: header_group, number: null, name: GND, net_name: GND, aliases: [], signal_type: ground, direction: power_return, kind: header, x_mm: null, y_mm: null, source_ids: [guide_pinouts]}
+  header_SCL: {connector: header_group, number: null, name: SCL, net_name: SCL, aliases: [], signal_type: i2c_clock, direction: bidirectional, kind: header, x_mm: null, y_mm: null, source_ids: [guide_pinouts]}
+  header_SDA: {connector: header_group, number: null, name: SDA, net_name: SDA, aliases: [], signal_type: i2c_data, direction: bidirectional, kind: header, x_mm: null, y_mm: null, source_ids: [guide_pinouts]}
+  header_A: {connector: header_group, number: null, name: A, net_name: SA0, aliases: [ADDR], signal_type: address_select, direction: input, kind: header, x_mm: null, y_mm: null, source_ids: [guide_pinouts]}
+  header_I1: {connector: header_group, number: null, name: I1, net_name: INT1, aliases: [], signal_type: interrupt, direction: output, kind: header, x_mm: null, y_mm: null, source_ids: [guide_pinouts]}
+  header_I2: {connector: header_group, number: null, name: I2, net_name: INT2, aliases: [], signal_type: interrupt, direction: output, kind: header, x_mm: null, y_mm: null, source_ids: [guide_pinouts]}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: documented_header_pin_inventory
+  source_ids: [product_page, guide_pinouts]
+  notes: Physical contact names/count documented, but pin numbers and XY positions are not transcribed.
+pin_names: [3Vo, A, GND, I1, I2, SCL, SDA, Vin]
+electrical:
+  board_supply:
+    min_v: 3.0
+    max_v: 5.0
+    nominal_v: [3.3, 5.0]
+    status: documented_board_supply
+    source_ids: [product_page, guide_pinouts]
+    notes: Board regulator accepts 3–5V and outputs 3.3V, up to 100mA.
+  chip_supply:
+    status: 3V_chip
+    notes: Sensor described as a 3V chip; exact chip range not transcribed.
+    source_ids: [guide_pinouts, chip_datasheet]
+  logic_levels:
+    status: documented_level_shifted
+    notes: ["Carrier adds regulator and level shifting for 3V/5V hosts.", "I2C controller requires repeated-start support."]
+    source_ids: [product_page, guide_pinouts]
+  pullups:
+  - signals: [A]
+    resistance_ohms: 10000
+    rail: 3.3V
+    designator: null
+    disconnect_method: unknown
+    source_ids: [guide_pinouts]
+  extra_signals:
+  - name: I1/I2
+    direction: output
+    notes: Interrupt outputs for data-ready or motion events.
+    source_ids: [guide_pinouts]
+  source_ids: [product_page, guide_pinouts]
+i2c:
+  default_address_7bit: 29
+  documented_addresses_7bit: [28, 29]
+  address_selection: A/SA0 default pulled to 3.3V through 10k gives 0x1D; connect to GND for 0x1C.
+  maximum_clock_hz: null
+  clock_stretching: unverified
+  status: documented
+  source_ids: [product_page, guide_pinouts]
+  notes: Repeated-start I2C support required; max bus rate not asserted.
+chip:
+  manufacturer: NXP Semiconductors (formerly Freescale)
+  part_number: MMA8451
+  identity_status: product_page_and_datasheet_claim
+  source_ids: [product_page, chip_datasheet]
+datasheets:
+  status: downloaded
+  items:
+  - chip: MMA8451Q
+    source_id: chip_datasheet
+    local_file: reference/MMA8451.pdf
+    url: https://www.adafruit.com/datasheets/MMA8451Q-1.pdf
+    sha256: 55ccf4471b9a693e6ed388faec74cc93dccbe2a4882db863974612cbba4d8fed
+    page_count: 52
+    revision: unverified from captured file
+  notes: Official product tutorial-linked datasheet.
+software:
+- name: Adafruit MMA8451 Arduino library
+  framework: Arduino
+  url: https://github.com/adafruit/Adafruit_MMA8451_Library
+  tested: false
+  source_ids: [guide_downloads]
+- name: Adafruit CircuitPython MMA8451 library
+  framework: CircuitPython
+  url: https://github.com/adafruit/Adafruit_CircuitPython_MMA8451
+  tested: false
+  source_ids: [guide_pinouts]
+extra_resources:
+- name: Adafruit MMA8451 tutorial
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-mma8451-accelerometer-breakout
+  source_id: guide_pinouts
+- name: Adafruit MMA8451 PCB repository
+  kind: cad_repository
+  url: https://github.com/adafruit/Adafruit-MMA8451-Breakout-PCB
+  source_id: guide_downloads
+sources:
+- id: product_page
+  kind: website
+  requested_url: https://www.adafruit.com/product/2019
+  url: https://www.adafruit.com/product/2019
+  retrieved_at: '2026-10-23T20:34:14+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 83832
+  sha256: f3a69787cc314ecbdca56b703bdd7664940d2515cc227afcc15cef5e0b380150
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 5760
+    sha256: 4f8994cee38e1256cb763d81353c8432a6a02eb3a3516893b2357b25f4c08731
+  - kind: links
+    local_file: website.links.json
+    bytes: 12785
+    sha256: bb481b161ecdecff49b46ff13f886fc004be66dc87f73f2c91d003a36fa2b137
+  title: 'Adafruit Triple-Axis Accelerometer - ±2/4/8g @ 14-bit - MMA8451 : Adafruit Industries, Unique
+    & fun DIY electronics and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_pinouts
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-mma8451-accelerometer-breakout/pinouts
+  url: https://learn.adafruit.com/adafruit-mma8451-accelerometer-breakout/pinouts
+  retrieved_at: '2026-10-23T20:34:15+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/pinouts.html
+  bytes: 67280
+  sha256: 26969249303afe2b560a92998d05328cbb03ded069e903d65671a1125e918092
+  derivatives:
+  - kind: text
+    local_file: reference/pinouts.txt
+    bytes: 3923
+    sha256: f68f20d1cb21011bcb0e9caee59c10824da439add4ae18573365734947f7fc82
+  - kind: links
+    local_file: reference/pinouts.links.json
+    bytes: 18007
+    sha256: 585017ea6477824af64cf60b1bab66cc0ca849fd4b8140ee1e22cdf9c298d933
+  title: Pinouts | Adafruit MMA8451 Accelerometer Breakout | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-mma8451-accelerometer-breakout/downloads
+  url: https://learn.adafruit.com/adafruit-mma8451-accelerometer-breakout/downloads
+  retrieved_at: '2026-10-23T20:34:16+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/downloads.html
+  bytes: 66384
+  sha256: 483ba265f16f5a95b6408b2389f51c0ecdf3ec4b345d76e152839e9960ab4615
+  derivatives:
+  - kind: text
+    local_file: reference/downloads.txt
+    bytes: 2454
+    sha256: 4a4ea968985681df08013d4aa08e6dd9e456f825332d669da1475722d0260d68
+  - kind: links
+    local_file: reference/downloads.links.json
+    bytes: 18232
+    sha256: 24496d0cb7ee60570938a296a50ba9a0f3aa4e950f890489c411c00ed49fcdfb
+  title: Downloads | Adafruit MMA8451 Accelerometer Breakout | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://www.adafruit.com/datasheets/MMA8451Q-1.pdf
+  url: https://cdn-shop.adafruit.com/datasheets/MMA8451Q-1.pdf
+  retrieved_at: '2026-10-23T20:34:18+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_downloads
+  local_file: reference/MMA8451.pdf
+  bytes: 1196271
+  sha256: 55ccf4471b9a693e6ed388faec74cc93dccbe2a4882db863974612cbba4d8fed
+  derivatives: []
+  pdf_page_count: 52
+conflicts: []
+data_gaps:
+- Product gives carrier dimensions and two 2.5mm holes, but exact hole centers/spacing, outline orientation and PCB thickness not transcribed from fab print.
+- Physical header labels/count documented; exact pad numbering and coordinates remain unresolved.
+- Carrier I2C maximum clock and pullup resistors on SDA/SCL not established.

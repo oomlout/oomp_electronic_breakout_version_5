@@ -1,0 +1,257 @@
+research_schema_version: 1
+part_id: electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187
+name_readable: Adafruit SCD-40 CO2 Sensor, STEMMA QT
+manufacturer: adafruit
+part_number: '5187'
+manufacturer_part_number: '5187'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: sensor
+  taxonomy_4: environmental
+  taxonomy_5: carbon_dioxide
+  taxonomy_6: scd40
+  taxonomy_7: stemma_qt
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '5187'
+default_website:
+  url: https://www.adafruit.com/product/5187
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:25:38+00:00'
+  updated_at: '2026-10-23T20:25:53+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: Adafruit SCD-40 product 5187 STEMMA QT carrier
+  status: identified_by_product_page
+  source_ids: [product_page, guide_pinouts]
+  notes: Product revision history says silkscreen refreshed April 2023; black/tan QT connector colors are functionally equivalent. Product identifies SCD-40, distinct from SCD-41/SCD-43 variants.
+description: Direct photoacoustic CO2 measurement, plus temperature and humidity. This complements the
+  gas-response BME688 rather than representing the same measurement.
+interfaces:
+- i2c
+dimensions_mm:
+  width: 25.5
+  height: 22.8
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: product_dimensions_scope_unclear
+  source_ids: [product_page]
+  notes: Product page says product dimensions 25.5 x 22.8 x 7.7 mm; it does not explicitly label these as PCB-only measurements.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: unknown_not_documented
+connectors:
+  header_group:
+    kind: header
+    description: Guide identifies VIN, 3Vo, GND, SCL and SDA signals; exact physical header contact inventory not established from archived pinout text.
+    contacts: []
+    source_ids: [guide_pinouts]
+  QT1:
+    kind: cable_connector
+    description: STEMMA QT / JST SH 4-pin connector
+    contacts: []
+    source_ids: [product_page, guide_pinouts]
+  QT2:
+    kind: cable_connector
+    description: STEMMA QT / JST SH 4-pin connector
+    contacts: []
+    source_ids: [product_page, guide_pinouts]
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: partial
+  source_ids: [product_page, guide_pinouts]
+pin_names: []
+electrical:
+  board_supply:
+    min_v: 3.0
+    max_v: 5.0
+    nominal_v: [3.3, 5.0]
+    status: documented_board_supply
+    source_ids: [product_page, guide_pinouts]
+    notes: Product and pinouts say 3–5 V DC operation, low-ripple supply preferred; onboard regulator/level shifting can be customized by solder jumpers.
+  chip_supply:
+    status: sensor_supply_details_not_transcribed
+    notes: Sensor supports board-configurable regulator bypass; use datasheet for chip limits and peak current.
+    source_ids: [chip_datasheet, guide_pinouts]
+  logic_levels:
+    status: documented_default_3v3_and_level_shifted
+    notes: ["Default I2C logic-level jumper is 3.3V; product says usable with 3.3V/5V systems.", "I2C logic can be customized using rear solder jumpers."]
+    source_ids: [product_page, guide_pinouts]
+  pullups:
+  - signals: [SCL, SDA]
+    resistance_ohms: 10000
+    rail: default I2C logic rail
+    designator: null
+    disconnect_method: solder jumper configuration
+    source_ids: [guide_pinouts]
+  extra_signals:
+  - name: 3Vo
+    direction: output
+    notes: Onboard regulator output, stated capacity at least 100mA.
+    source_ids: [guide_pinouts]
+  source_ids: [product_page, guide_pinouts]
+i2c:
+  default_address_7bit: 98
+  documented_addresses_7bit: [98]
+  address_selection: Fixed/default address 0x62 per product and guide.
+  maximum_clock_hz: null
+  clock_stretching: unverified
+  status: documented
+  source_ids: [product_page, guide_pinouts]
+chip:
+  manufacturer: Sensirion
+  part_number: SCD40
+  identity_status: product_page_claim
+  source_ids: [product_page, chip_datasheet]
+datasheets:
+  status: downloaded
+  items:
+  - chip: SCD4x family; product variant SCD-40
+    source_id: chip_datasheet
+    local_file: reference/SCD4x.pdf
+    url: https://cdn-shop.adafruit.com/product-files/5187/P6512+CD_DS_SCD4x_Datasheet_D1.pdf
+    sha256: 9bbb142d27ba1b92f6701d88a3994c99b1b6a79f2036d022076f74cadc1a3f86
+    page_count: 30
+    revision: D1
+  notes: The archived official family datasheet specifies SCD4x family; product number claims fitted SCD-40 variant.
+software:
+- name: Adafruit CircuitPython SCD4x library
+  framework: CircuitPython
+  url: https://circuitpython.readthedocs.io/projects/scd4x/en/latest/
+  tested: false
+  source_ids: [guide_overview]
+extra_resources:
+- name: Adafruit SCD-4x guide
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-scd-40-and-scd-41
+  source_id: guide_overview
+sources:
+- id: product_page
+  kind: website
+  requested_url: https://www.adafruit.com/product/5187
+  url: https://www.adafruit.com/product/5187
+  retrieved_at: '2026-10-23T20:25:39+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 104914
+  sha256: c09dc00504a876f2ee3e95f3062b12a309e37d5efa304009c239ae2bfb34e0db
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 8790
+    sha256: 5e0a037cba99d9d7aa9bcb878d2192d2aafb10d3d79ffc6fbfe94ba7b8088277
+  - kind: links
+    local_file: website.links.json
+    bytes: 15704
+    sha256: d45c22fa60d99ccba2eedea4d5405354eb3d5abe35b046f04848e7a2b77b71af
+  title: 'Adafruit SCD-40 - True CO2, Temperature and Humidity Sensor [STEMMA QT / Qwiic] : Adafruit Industries,
+    Unique & fun DIY electronics and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_overview
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-scd-40-and-scd-41
+  url: https://learn.adafruit.com/adafruit-scd-40-and-scd-41
+  retrieved_at: '2026-10-23T20:25:41+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide.html
+  bytes: 77012
+  sha256: 5358563cd24744d2e0839c78468a276938f0ff63cc2aefa8fc076f62bd52ddb8
+  derivatives:
+  - kind: text
+    local_file: reference/guide.txt
+    bytes: 5750
+    sha256: 8a0e6b1a8b0de56db02e925a17a9b6102d517fda5bf9223ea008688f46eb36af
+  - kind: links
+    local_file: reference/guide.links.json
+    bytes: 18904
+    sha256: a22195fc8b1029ee69dbaee70af8cc3418d27b281d4c91f5d33c354db5936bf4
+  title: Overview | Adafruit SCD-4x - True CO2 Temperature and Humidity Sensors | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn-shop.adafruit.com/product-files/5187/P6512+CD_DS_SCD4x_Datasheet_D1.pdf
+  url: https://cdn-shop.adafruit.com/product-files/5187/P6512+CD_DS_SCD4x_Datasheet_D1.pdf
+  retrieved_at: '2026-10-23T20:25:43+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/SCD4x.pdf
+  bytes: 1302393
+  sha256: 9bbb142d27ba1b92f6701d88a3994c99b1b6a79f2036d022076f74cadc1a3f86
+  derivatives: []
+  pdf_page_count: 30
+- id: guide_pinouts
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-scd-40-and-scd-41/pinouts
+  url: https://learn.adafruit.com/adafruit-scd-40-and-scd-41/pinouts
+  retrieved_at: '2026-10-23T20:25:52+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_overview
+  local_file: reference/pinouts.html
+  bytes: 77740
+  sha256: 3494217fc5372dbf38b56c19b1fe65b09789103ce5803468c630490ebe2bc177
+  derivatives:
+  - kind: text
+    local_file: reference/pinouts.txt
+    bytes: 5625
+    sha256: 92ddbaa35286f9bbfc736c9f7c89ebbcf202c352e195e298c2d4ddc5fcd331c8
+  - kind: links
+    local_file: reference/pinouts.links.json
+    bytes: 19073
+    sha256: 33a5487946161a923b21faaaafd1d81622aac2eecad311d96118f5892055a497
+  title: Pinouts | Adafruit SCD-4x - True CO2 Temperature and Humidity Sensors | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-scd-40-and-scd-41/downloads
+  url: https://learn.adafruit.com/adafruit-scd-40-and-scd-41/downloads
+  retrieved_at: '2026-10-23T20:25:53+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_overview
+  local_file: reference/downloads.html
+  bytes: 70878
+  sha256: eaa394336f5ce9c7c3567d71ad10b79f22957417f2389f1a63e152486203a935
+  derivatives:
+  - kind: text
+    local_file: reference/downloads.txt
+    bytes: 2811
+    sha256: 2802353909f7a8134e3da6cafe1d611c3567e4b9fca7ccd5510d4823aeabd0be
+  - kind: links
+    local_file: reference/downloads.links.json
+    bytes: 18860
+    sha256: c3eaa7a493f89ff0b124e27d1a86d0a761dc2826a19eed2f8d2d59a68d4430db
+  title: Downloads | Adafruit SCD-4x - True CO2 Temperature and Humidity Sensors | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+conflicts: []
+data_gaps:
+- Exact carrier outline/thickness and mounting hole geometry are not confirmed; listing's product dimensions do not clarify whether sensor enclosure is included.
+- Physical header contact count and pin ordering, connector net mapping, and current CAD revision not checked; two QT sockets are present.
+- Carrier I2C maximum clock and fitter device markings/revision have not been independently established; datasheet establishes family only.

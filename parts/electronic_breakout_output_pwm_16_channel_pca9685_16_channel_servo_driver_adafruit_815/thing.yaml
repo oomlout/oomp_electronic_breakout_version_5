@@ -1,0 +1,5092 @@
+bip_39_2_word_array:
+- exclude
+- science
+bip_39_2_word_no_space: excludescience
+bip_39_2_word_space: exclude science
+bip_39_2_word_underscore: exclude_science
+bip_39_3_word_array:
+- exclude
+- science
+- accuse
+bip_39_3_word_no_space: excludescienceaccuse
+bip_39_3_word_space: exclude science accuse
+bip_39_3_word_underscore: exclude_science_accuse
+bip_39_full_array:
+- exclude
+- science
+- accuse
+- mean
+- blood
+- stage
+- seminar
+- much
+- twist
+- liberty
+- supreme
+- wise
+bip_39_full_no_space: excludescienceaccusemeanbloodstageseminarmuchtwistlibertysupremewise
+bip_39_full_space: exclude science accuse mean blood stage seminar much twist liberty
+  supreme wise
+bip_39_full_underscore: exclude_science_accuse_mean_blood_stage_seminar_much_twist_liberty_supreme_wise
+board_variant: 16_channel_servo_driver
+breakout_description: 16_channel_servo_driver
+breakout_pcb_height: 25.4
+breakout_pcb_width: 62.23
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+- Default I2C address not established in this import.
+definition_authority: working_oomp_populate_i2c.py
+description: Adds 16 channels of 12-bit PWM for servo signals and LED control. Separate
+  load power is part of the board definition.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+directory: parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+geometry_ready: false
+i2c:
+  address_evidence_status: unverified
+  address_selection: unverified
+  clock_stretching: unverified
+  default_address_7bit: null
+  documented_addresses_7bit: []
+  maximum_clock_hz: null
+  source_id: product
+id: electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+id_no_class: electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+id_no_size: electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+id_no_type: electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+id_oobb: electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+kwargs:
+  breakout_pcb_height: 25.4
+  breakout_pcb_width: 62.23
+  modes:
+  - 3dpr
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$47:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -27.94
+    y_mm: 9.525
+  - diameter_mm: 2.5
+    id: U$48:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -27.94
+    y_mm: -9.525
+  - diameter_mm: 2.5
+    id: U$49:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 27.94
+    y_mm: 9.525
+  - diameter_mm: 2.5
+    id: U$50:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 27.94
+    y_mm: -9.525
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -27.94
+    - 9.525
+  - - -27.94
+    - -9.525
+  - - 27.94
+    - 9.525
+  - - 27.94
+    - -9.525
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  overwrite: true
+  part_ids:
+  - electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+  type: default_mounting_plate_default
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+manufacturer: adafruit
+manufacturer_part_number: '815'
+md5: 4ef81c06c4e17fa870e488eb901f67fe
+md5_10: 4ef81c06c4
+md5_10_upper: 4EF81C06C4
+md5_5: 4ef81
+md5_5_upper: 4EF81
+md5_6: 4ef81c
+md5_6_alpha: 32xb0
+md5_6_alpha_upper: 32XB0
+md5_6_upper: 4EF81C
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 2.5
+  id: U$47:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -27.94
+  y_mm: 9.525
+- diameter_mm: 2.5
+  id: U$48:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -27.94
+  y_mm: -9.525
+- diameter_mm: 2.5
+  id: U$49:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 27.94
+  y_mm: 9.525
+- diameter_mm: 2.5
+  id: U$50:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 27.94
+  y_mm: -9.525
+mounting_hole_radius_name: m2
+mounting_hole_radius_names:
+- m2
+- m2
+- m2
+- m2
+mounting_hole_status: verified
+mounting_holes:
+- - -27.94
+  - 9.525
+- - -27.94
+  - -9.525
+- - 27.94
+  - 9.525
+- - 27.94
+  - -9.525
+mounting_lift: 3
+mounting_research:
+  board_revision: Adafruit PCA9685 16-channel PWM/Servo Driver product 815; exact
+    manufacturer EAGLE carrier file Adafruit PCA9685 rev C.brd from pinned repository
+    commit 32578c83a5ba2946249b80b1aa1fb18ae4e61e7d. The official product page records
+    the 2015 polarity-protection transistor update and 2022 silkscreen variants; it
+    says the silkscreen variants are otherwise identical. The board file is the repository
+    design linked from the official product guide.
+  board_size:
+  - 62.23
+  - 25.4
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'Complete EAGLE layer-20 outline in Adafruit PCA9685 rev C.brd has native
+    bounds x=[-1.905,60.325] mm and y=[-6.477,18.923] mm, including the four 3.175
+    mm corner arcs. Thus board_size=[62.23,25.40] mm and native bounding-box centre=(29.210,6.223)
+    mm. Canonical top-view transform is x_mm=x_native-29.210 and y_mm=y_native-6.223;
+    no mirror or quarter-turn is applied (quarter_turn=0), so native +x is right and
+    +y is up. The full drill review reports 68 candidates: U$47 through U$50 each
+    belong to the explicit MOUNTINGHOLE_2.5_PLATED package/value MOUNTINGHOLE2.5 and
+    have 2.5 mm PCB drills; these four are the mounting holes. The other 64 drills
+    are pads in terminal-block, capacitor, jumper/address-select, and servo-output
+    header packages and are excluded. The official guide independently states the
+    mounting holes are 2.5 mm diameter. The pinned alternate EAGLE 9.6.2 file in the
+    same repository was checked: its outline origin differs, but its centred board
+    dimensions and four mounting-hole coordinates match rev C. The product page lists
+    62.5 x 25.4 mm nominal dimensions; exact layer-20 CAD bounds (62.23 x 25.40 mm)
+    are used for generated geometry.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit product page identifies product 815 as the PCA9685 16-channel
+    PWM/Servo driver. Its official Downloads guide links the Adafruit-16-Channel-PWM-Servo-Driver-PCB
+    repository. The pinned manufacturer README says the repository contains the 16-channel
+    PWM servo driver EAGLE files and links product 815. The exact file Adafruit PCA9685
+    rev C.brd is therefore the manufacturer carrier design for this product; the official
+    product page documents subsequent 2015 component and 2022 silkscreen updates,
+    with the latter explicitly mechanically identical between silkscreen variants.
+  mounting_holes:
+  - diameter_mm: 2.5
+    id: U$47:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -27.94
+    y_mm: 9.525
+  - diameter_mm: 2.5
+    id: U$48:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -27.94
+    y_mm: -9.525
+  - diameter_mm: 2.5
+    id: U$49:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 27.94
+    y_mm: 9.525
+  - diameter_mm: 2.5
+    id: U$50:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 27.94
+    y_mm: -9.525
+  record_sha256: b43df1afc883fc42facef5c375afc98869916c30b3a865824e9945075cd998c6
+  research_file: source_file/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 185629
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit_PCA9685_rev_C.brd
+    locator: "Adafruit PCA9685 rev C.brd at pinned commit 32578c83a5ba2946249b80b1aa1fb18ae4e61e7d;\
+      \ EAGLE board layer 20 plain outline and four explicit MOUNTINGHOLE_2.5_PLATED\
+      \ devices U$47\u2013U$50; all-drills review separates 64 connector/header/jumper/component\
+      \ pad drills."
+    registered_at: '2026-11-06T19:11:59+00:00'
+    sha256: 803e6388dd025d2ef9312a7fbe731b7fd5edbd495ca3e93b6ade830a58212da0
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd
+  - bytes: 3383
+    id: repo
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Pinned manufacturer repository README identifies the 16-channel PWM servo
+      driver PCB Eagle files and links product 815.
+    registered_at: '2026-11-06T19:11:59+00:00'
+    sha256: 3ec2a90b809dbec410275d1d2e6484f7c826aa68c3be50ce7c1ff8838736c908
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/README.md
+  - bytes: 101664
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Archived official product 815 page; identity and revision history, including
+      2022 silkscreen variants stated mechanically identical and 2015 polarity-protection
+      revision.
+    registered_at: '2026-11-06T19:12:00+00:00'
+    sha256: 4fdad7d3cefe46d8aba3bc119978d29dce035d4c2024013d4aaefe31c5137a93
+    url: https://www.adafruit.com/product/815
+  - bytes: 76693
+    id: guide
+    kind: manufacturer_guide
+    local_file: reference/guide_downloads.html
+    locator: Official downloads page links the EagleCAD PCB repository and states
+      mounting holes are 2.5 mm diameter.
+    registered_at: '2026-11-06T19:12:00+00:00'
+    sha256: 4b7c02920d62c7ef98f6cc85ae4ee0720972da853a6175b6fc6ba74fdaa16087
+    url: https://learn.adafruit.com/16-channel-pwm-servo-driver/downloads
+  status: verified
+name: Electronic Breakout Output Pwm 16 Channel Pca9685 16 Channel Servo Driver Adafruit
+  815
+name_no_class: Electronic Breakout Output Pwm 16 Channel Pca9685 16 Channel Servo
+  Driver Adafruit 815
+name_no_size: Electronic Breakout Output Pwm 16 Channel Pca9685 16 Channel Servo Driver
+  Adafruit 815
+name_no_type: Electronic Breakout Output Pwm 16 Channel Pca9685 16 Channel Servo Driver
+  Adafruit 815
+name_proper: Electronic Breakout Output Pwm 16 Channel Pca9685 16 Channel Servo Driver
+  Adafruit 815
+name_readable: Adafruit PCA9685 PWM/Servo Driver
+name_space: electronic breakout output pwm 16 channel pca9685 16 channel servo driver
+  adafruit 815
+name_upper: ELECTRONIC BREAKOUT OUTPUT PWM 16 CHANNEL PCA9685 16 CHANNEL SERVO DRIVER
+  ADAFRUIT 815
+notes:
+- Servo/load supply and logic supply are separate; PWM outputs do not directly supply
+  motor power.
+- Product dimensions conflict in inch/mm conversion; PCB dimensions remain unverified
+  pending CAD.
+oobb_details:
+- breakout_pcb_height: 25.4
+  breakout_pcb_width: 62.23
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$47:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -27.94
+    y_mm: 9.525
+  - diameter_mm: 2.5
+    id: U$48:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -27.94
+    y_mm: -9.525
+  - diameter_mm: 2.5
+    id: U$49:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 27.94
+    y_mm: 9.525
+  - diameter_mm: 2.5
+    id: U$50:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 27.94
+    y_mm: -9.525
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -27.94
+    - 9.525
+  - - -27.94
+    - -9.525
+  - - 27.94
+    - 9.525
+  - - 27.94
+    - -9.525
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 25.4
+  breakout_pcb_width: 62.23
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$47:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -27.94
+    y_mm: 9.525
+  - diameter_mm: 2.5
+    id: U$48:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -27.94
+    y_mm: -9.525
+  - diameter_mm: 2.5
+    id: U$49:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 27.94
+    y_mm: 9.525
+  - diameter_mm: 2.5
+    id: U$50:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 27.94
+    y_mm: -9.525
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -27.94
+    - 9.525
+  - - -27.94
+    - -9.525
+  - - 27.94
+    - 9.525
+  - - 27.94
+    - -9.525
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 25.4
+  breakout_pcb_width: 62.23
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$47:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -27.94
+    y_mm: 9.525
+  - diameter_mm: 2.5
+    id: U$48:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -27.94
+    y_mm: -9.525
+  - diameter_mm: 2.5
+    id: U$49:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 27.94
+    y_mm: 9.525
+  - diameter_mm: 2.5
+    id: U$50:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 27.94
+    y_mm: -9.525
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -27.94
+    - 9.525
+  - - -27.94
+    - -9.525
+  - - 27.94
+    - 9.525
+  - - 27.94
+    - -9.525
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      board_variant: 16_channel_servo_driver
+      breakout_description: 16_channel_servo_driver
+      breakout_pcb_height: 25.4
+      breakout_pcb_width: 62.23
+      catalogue: i2c_breakouts
+      catalogue_status: product_page_reference
+      data_gaps:
+      - Physical connector/pad map and coordinates not imported.
+      - Located mounting holes and complete assembly/connector clearances not imported.
+      - Pull-up values/rails and full electrical limits require schematic review.
+      - Carrier PCB outline dimensions not verified.
+      - Default I2C address not established in this import.
+      definition_authority: working_oomp_populate_i2c.py
+      description: Adds 16 channels of 12-bit PWM for servo signals and LED control.
+        Separate load power is part of the board definition.
+      dimensions_mm:
+        height: null
+        scope: pcb_outline_not_established
+        source_id: null
+        status: unverified
+        width: null
+      directory: parts\electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+      geometry_ready: false
+      i2c:
+        address_evidence_status: unverified
+        address_selection: unverified
+        clock_stretching: unverified
+        default_address_7bit: null
+        documented_addresses_7bit: []
+        maximum_clock_hz: null
+        source_id: product
+      interface_scope: documented_board_interfaces_only
+      interfaces:
+      - i2c
+      item_kind: breakout
+      manufacturer: adafruit
+      manufacturer_part_number: '815'
+      mounting_coordinate_system:
+        origin: pcb_bounding_box_centre
+        units: mm
+        view: top
+        x_positive: right
+        y_positive: up
+      mounting_geometry_ready: true
+      mounting_hole_details:
+      - diameter_mm: 2.5
+        id: U$47:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: -27.94
+        y_mm: 9.525
+      - diameter_mm: 2.5
+        id: U$48:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: -27.94
+        y_mm: -9.525
+      - diameter_mm: 2.5
+        id: U$49:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: 27.94
+        y_mm: 9.525
+      - diameter_mm: 2.5
+        id: U$50:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: 27.94
+        y_mm: -9.525
+      mounting_hole_radius_name: m2
+      mounting_hole_radius_names:
+      - m2
+      - m2
+      - m2
+      - m2
+      mounting_hole_status: verified
+      mounting_holes:
+      - - -27.94
+        - 9.525
+      - - -27.94
+        - -9.525
+      - - 27.94
+        - 9.525
+      - - 27.94
+        - -9.525
+      mounting_lift: 3
+      mounting_research:
+        board_revision: Adafruit PCA9685 16-channel PWM/Servo Driver product 815;
+          exact manufacturer EAGLE carrier file Adafruit PCA9685 rev C.brd from pinned
+          repository commit 32578c83a5ba2946249b80b1aa1fb18ae4e61e7d. The official
+          product page records the 2015 polarity-protection transistor update and
+          2022 silkscreen variants; it says the silkscreen variants are otherwise
+          identical. The board file is the repository design linked from the official
+          product guide.
+        board_size:
+        - 62.23
+        - 25.4
+        coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        derivation: 'Complete EAGLE layer-20 outline in Adafruit PCA9685 rev C.brd
+          has native bounds x=[-1.905,60.325] mm and y=[-6.477,18.923] mm, including
+          the four 3.175 mm corner arcs. Thus board_size=[62.23,25.40] mm and native
+          bounding-box centre=(29.210,6.223) mm. Canonical top-view transform is x_mm=x_native-29.210
+          and y_mm=y_native-6.223; no mirror or quarter-turn is applied (quarter_turn=0),
+          so native +x is right and +y is up. The full drill review reports 68 candidates:
+          U$47 through U$50 each belong to the explicit MOUNTINGHOLE_2.5_PLATED package/value
+          MOUNTINGHOLE2.5 and have 2.5 mm PCB drills; these four are the mounting
+          holes. The other 64 drills are pads in terminal-block, capacitor, jumper/address-select,
+          and servo-output header packages and are excluded. The official guide independently
+          states the mounting holes are 2.5 mm diameter. The pinned alternate EAGLE
+          9.6.2 file in the same repository was checked: its outline origin differs,
+          but its centred board dimensions and four mounting-hole coordinates match
+          rev C. The product page lists 62.5 x 25.4 mm nominal dimensions; exact layer-20
+          CAD bounds (62.23 x 25.40 mm) are used for generated geometry.'
+        fit_status: generic_holder_not_physical_fit_tested
+        identity_evidence: Adafruit product page identifies product 815 as the PCA9685
+          16-channel PWM/Servo driver. Its official Downloads guide links the Adafruit-16-Channel-PWM-Servo-Driver-PCB
+          repository. The pinned manufacturer README says the repository contains
+          the 16-channel PWM servo driver EAGLE files and links product 815. The exact
+          file Adafruit PCA9685 rev C.brd is therefore the manufacturer carrier design
+          for this product; the official product page documents subsequent 2015 component
+          and 2022 silkscreen updates, with the latter explicitly mechanically identical
+          between silkscreen variants.
+        mounting_holes:
+        - diameter_mm: 2.5
+          id: U$47:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: -27.94
+          y_mm: 9.525
+        - diameter_mm: 2.5
+          id: U$48:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: -27.94
+          y_mm: -9.525
+        - diameter_mm: 2.5
+          id: U$49:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: 27.94
+          y_mm: 9.525
+        - diameter_mm: 2.5
+          id: U$50:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: 27.94
+          y_mm: -9.525
+        record_sha256: b43df1afc883fc42facef5c375afc98869916c30b3a865824e9945075cd998c6
+        research_file: source_file/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815/mounting.yaml
+        reviewed_by: gpt-6-luna
+        sources:
+        - bytes: 185629
+          id: cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Adafruit_PCA9685_rev_C.brd
+          locator: "Adafruit PCA9685 rev C.brd at pinned commit 32578c83a5ba2946249b80b1aa1fb18ae4e61e7d;\
+            \ EAGLE board layer 20 plain outline and four explicit MOUNTINGHOLE_2.5_PLATED\
+            \ devices U$47\u2013U$50; all-drills review separates 64 connector/header/jumper/component\
+            \ pad drills."
+          registered_at: '2026-11-06T19:11:59+00:00'
+          sha256: 803e6388dd025d2ef9312a7fbe731b7fd5edbd495ca3e93b6ade830a58212da0
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd
+        - bytes: 3383
+          id: repo
+          kind: manufacturer_repository
+          local_file: mounting_evidence/README.md
+          locator: Pinned manufacturer repository README identifies the 16-channel
+            PWM servo driver PCB Eagle files and links product 815.
+          registered_at: '2026-11-06T19:11:59+00:00'
+          sha256: 3ec2a90b809dbec410275d1d2e6484f7c826aa68c3be50ce7c1ff8838736c908
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/README.md
+        - bytes: 101664
+          id: product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: Archived official product 815 page; identity and revision history,
+            including 2022 silkscreen variants stated mechanically identical and 2015
+            polarity-protection revision.
+          registered_at: '2026-11-06T19:12:00+00:00'
+          sha256: 4fdad7d3cefe46d8aba3bc119978d29dce035d4c2024013d4aaefe31c5137a93
+          url: https://www.adafruit.com/product/815
+        - bytes: 76693
+          id: guide
+          kind: manufacturer_guide
+          local_file: reference/guide_downloads.html
+          locator: Official downloads page links the EagleCAD PCB repository and states
+            mounting holes are 2.5 mm diameter.
+          registered_at: '2026-11-06T19:12:00+00:00'
+          sha256: 4b7c02920d62c7ef98f6cc85ae4ee0720972da853a6175b6fc6ba74fdaa16087
+          url: https://learn.adafruit.com/16-channel-pwm-servo-driver/downloads
+        status: verified
+      name: electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+      name_proper: Electronic Breakout Output Pwm 16 Channel Pca9685 16 Channel Servo
+        Driver Adafruit 815
+      name_readable: Adafruit PCA9685 PWM/Servo Driver
+      name_space: electronic breakout output pwm 16 channel pca9685 16 channel servo
+        driver adafruit 815
+      name_upper: ELECTRONIC BREAKOUT OUTPUT PWM 16 CHANNEL PCA9685 16 CHANNEL SERVO
+        DRIVER ADAFRUIT 815
+      notes:
+      - Servo/load supply and logic supply are separate; PWM outputs do not directly
+        supply motor power.
+      - Product dimensions conflict in inch/mm conversion; PCB dimensions remain unverified
+        pending CAD.
+      oobb_details:
+      - breakout_pcb_height: 25.4
+        breakout_pcb_width: 62.23
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$47:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -27.94
+          y_mm: 9.525
+        - diameter_mm: 2.5
+          id: U$48:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -27.94
+          y_mm: -9.525
+        - diameter_mm: 2.5
+          id: U$49:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 27.94
+          y_mm: 9.525
+        - diameter_mm: 2.5
+          id: U$50:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 27.94
+          y_mm: -9.525
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -27.94
+          - 9.525
+        - - -27.94
+          - -9.525
+        - - 27.94
+          - 9.525
+        - - 27.94
+          - -9.525
+        mounting_layout: full_wrap
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+      - breakout_pcb_height: 25.4
+        breakout_pcb_width: 62.23
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$47:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -27.94
+          y_mm: 9.525
+        - diameter_mm: 2.5
+          id: U$48:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -27.94
+          y_mm: -9.525
+        - diameter_mm: 2.5
+          id: U$49:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 27.94
+          y_mm: 9.525
+        - diameter_mm: 2.5
+          id: U$50:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 27.94
+          y_mm: -9.525
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -27.94
+          - 9.525
+        - - -27.94
+          - -9.525
+        - - 27.94
+          - 9.525
+        - - 27.94
+          - -9.525
+        mounting_layout: short_sides
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_short_sides
+      - breakout_pcb_height: 25.4
+        breakout_pcb_width: 62.23
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$47:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -27.94
+          y_mm: 9.525
+        - diameter_mm: 2.5
+          id: U$48:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -27.94
+          y_mm: -9.525
+        - diameter_mm: 2.5
+          id: U$49:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 27.94
+          y_mm: 9.525
+        - diameter_mm: 2.5
+          id: U$50:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 27.94
+          y_mm: -9.525
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -27.94
+          - 9.525
+        - - -27.94
+          - -9.525
+        - - 27.94
+          - 9.525
+        - - 27.94
+          - -9.525
+        mounting_layout: long_side
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_long_side
+      part_number: '815'
+      part_number_adafruit: '815'
+      pinout_status: unverified
+      pins: {}
+      research_date: '2026-10-23'
+      schema_version: 1
+      sources:
+      - id: product
+        kind: manufacturer_product_page
+        retrieved: '2026-10-23'
+        scope: identity, stated interfaces/features and recorded nominal dimensions
+        url: https://www.adafruit.com/product/815
+      - bytes: 185629
+        id: mounting_cad
+        kind: manufacturer_cad
+        local_file: mounting_evidence/Adafruit_PCA9685_rev_C.brd
+        locator: "Adafruit PCA9685 rev C.brd at pinned commit 32578c83a5ba2946249b80b1aa1fb18ae4e61e7d;\
+          \ EAGLE board layer 20 plain outline and four explicit MOUNTINGHOLE_2.5_PLATED\
+          \ devices U$47\u2013U$50; all-drills review separates 64 connector/header/jumper/component\
+          \ pad drills."
+        registered_at: '2026-11-06T19:11:59+00:00'
+        sha256: 803e6388dd025d2ef9312a7fbe731b7fd5edbd495ca3e93b6ade830a58212da0
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd
+      - bytes: 3383
+        id: mounting_repo
+        kind: manufacturer_repository
+        local_file: mounting_evidence/README.md
+        locator: Pinned manufacturer repository README identifies the 16-channel PWM
+          servo driver PCB Eagle files and links product 815.
+        registered_at: '2026-11-06T19:11:59+00:00'
+        sha256: 3ec2a90b809dbec410275d1d2e6484f7c826aa68c3be50ce7c1ff8838736c908
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/README.md
+      - bytes: 101664
+        id: mounting_product
+        kind: manufacturer_product
+        local_file: website.html
+        locator: Archived official product 815 page; identity and revision history,
+          including 2022 silkscreen variants stated mechanically identical and 2015
+          polarity-protection revision.
+        registered_at: '2026-11-06T19:12:00+00:00'
+        sha256: 4fdad7d3cefe46d8aba3bc119978d29dce035d4c2024013d4aaefe31c5137a93
+        url: https://www.adafruit.com/product/815
+      - bytes: 76693
+        id: mounting_guide
+        kind: manufacturer_guide
+        local_file: reference/guide_downloads.html
+        locator: Official downloads page links the EagleCAD PCB repository and states
+          mounting holes are 2.5 mm diameter.
+        registered_at: '2026-11-06T19:12:00+00:00'
+        sha256: 4b7c02920d62c7ef98f6cc85ae4ee0720972da853a6175b6fc6ba74fdaa16087
+        url: https://learn.adafruit.com/16-channel-pwm-servo-driver/downloads
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: adafruit
+      taxonomy_15: '815'
+      taxonomy_2: breakout
+      taxonomy_3: output
+      taxonomy_4: pwm
+      taxonomy_5: 16_channel
+      taxonomy_6: pca9685
+      taxonomy_7: 16_channel_servo_driver
+      taxonomy_8: ''
+      taxonomy_9: ''
+      taxonomy_schema: breakout_function_v1
+      type_1: output
+      type_2: pwm
+      type_3: 16_channel
+      type_4: pca9685
+      url_chat: ''
+      webpage: https://www.adafruit.com/product/815
+      webpage_adafruit: https://www.adafruit.com/product/815
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+part_number: '815'
+part_number_adafruit: '815'
+pinout_status: unverified
+pins: {}
+project_name: C:\gh\oomp_electronic_breakout_version_5
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/815
+- bytes: 185629
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Adafruit_PCA9685_rev_C.brd
+  locator: "Adafruit PCA9685 rev C.brd at pinned commit 32578c83a5ba2946249b80b1aa1fb18ae4e61e7d;\
+    \ EAGLE board layer 20 plain outline and four explicit MOUNTINGHOLE_2.5_PLATED\
+    \ devices U$47\u2013U$50; all-drills review separates 64 connector/header/jumper/component\
+    \ pad drills."
+  registered_at: '2026-11-06T19:11:59+00:00'
+  sha256: 803e6388dd025d2ef9312a7fbe731b7fd5edbd495ca3e93b6ade830a58212da0
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd
+- bytes: 3383
+  id: mounting_repo
+  kind: manufacturer_repository
+  local_file: mounting_evidence/README.md
+  locator: Pinned manufacturer repository README identifies the 16-channel PWM servo
+    driver PCB Eagle files and links product 815.
+  registered_at: '2026-11-06T19:11:59+00:00'
+  sha256: 3ec2a90b809dbec410275d1d2e6484f7c826aa68c3be50ce7c1ff8838736c908
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/README.md
+- bytes: 101664
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: Archived official product 815 page; identity and revision history, including
+    2022 silkscreen variants stated mechanically identical and 2015 polarity-protection
+    revision.
+  registered_at: '2026-11-06T19:12:00+00:00'
+  sha256: 4fdad7d3cefe46d8aba3bc119978d29dce035d4c2024013d4aaefe31c5137a93
+  url: https://www.adafruit.com/product/815
+- bytes: 76693
+  id: mounting_guide
+  kind: manufacturer_guide
+  local_file: reference/guide_downloads.html
+  locator: Official downloads page links the EagleCAD PCB repository and states mounting
+    holes are 2.5 mm diameter.
+  registered_at: '2026-11-06T19:12:00+00:00'
+  sha256: 4b7c02920d62c7ef98f6cc85ae4ee0720972da853a6175b6fc6ba74fdaa16087
+  url: https://learn.adafruit.com/16-channel-pwm-servo-driver/downloads
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_14_capital: Adafruit
+taxonomy_14_first_letter: a
+taxonomy_14_first_letter_upper: A
+taxonomy_14_length_1: a
+taxonomy_14_length_2: ad
+taxonomy_14_length_3: ada
+taxonomy_14_length_4: adaf
+taxonomy_14_length_5: adafr
+taxonomy_14_upper: ADAFRUIT
+taxonomy_14_upper_length_1: A
+taxonomy_14_upper_length_2: AD
+taxonomy_14_upper_length_3: ADA
+taxonomy_14_upper_length_4: ADAF
+taxonomy_14_upper_length_5: ADAFR
+taxonomy_15: '815'
+taxonomy_15_capital: '815'
+taxonomy_15_first_letter: '8'
+taxonomy_15_first_letter_upper: '8'
+taxonomy_15_length_1: '8'
+taxonomy_15_length_2: '81'
+taxonomy_15_length_3: '815'
+taxonomy_15_length_4: '815'
+taxonomy_15_length_5: '815'
+taxonomy_15_upper: '815'
+taxonomy_15_upper_length_1: '8'
+taxonomy_15_upper_length_2: '81'
+taxonomy_15_upper_length_3: '815'
+taxonomy_15_upper_length_4: '815'
+taxonomy_15_upper_length_5: '815'
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: output
+taxonomy_3_capital: Output
+taxonomy_3_first_letter: o
+taxonomy_3_first_letter_upper: O
+taxonomy_3_length_1: o
+taxonomy_3_length_2: ou
+taxonomy_3_length_3: out
+taxonomy_3_length_4: outp
+taxonomy_3_length_5: outpu
+taxonomy_3_upper: OUTPUT
+taxonomy_3_upper_length_1: O
+taxonomy_3_upper_length_2: OU
+taxonomy_3_upper_length_3: OUT
+taxonomy_3_upper_length_4: OUTP
+taxonomy_3_upper_length_5: OUTPU
+taxonomy_4: pwm
+taxonomy_4_capital: Pwm
+taxonomy_4_first_letter: p
+taxonomy_4_first_letter_upper: P
+taxonomy_4_length_1: p
+taxonomy_4_length_2: pw
+taxonomy_4_length_3: pwm
+taxonomy_4_length_4: pwm
+taxonomy_4_length_5: pwm
+taxonomy_4_upper: PWM
+taxonomy_4_upper_length_1: P
+taxonomy_4_upper_length_2: PW
+taxonomy_4_upper_length_3: PWM
+taxonomy_4_upper_length_4: PWM
+taxonomy_4_upper_length_5: PWM
+taxonomy_5: 16_channel
+taxonomy_5_capital: 16 Channel
+taxonomy_5_first_letter: '1'
+taxonomy_5_first_letter_upper: '1'
+taxonomy_5_length_1: '1'
+taxonomy_5_length_2: '16'
+taxonomy_5_length_3: '16_'
+taxonomy_5_length_4: 16_c
+taxonomy_5_length_5: 16_ch
+taxonomy_5_upper: 16_CHANNEL
+taxonomy_5_upper_length_1: '1'
+taxonomy_5_upper_length_2: '16'
+taxonomy_5_upper_length_3: '16_'
+taxonomy_5_upper_length_4: 16_C
+taxonomy_5_upper_length_5: 16_CH
+taxonomy_6: pca9685
+taxonomy_6_capital: Pca9685
+taxonomy_6_first_letter: p
+taxonomy_6_first_letter_upper: P
+taxonomy_6_length_1: p
+taxonomy_6_length_2: pc
+taxonomy_6_length_3: pca
+taxonomy_6_length_4: pca9
+taxonomy_6_length_5: pca96
+taxonomy_6_upper: PCA9685
+taxonomy_6_upper_length_1: P
+taxonomy_6_upper_length_2: PC
+taxonomy_6_upper_length_3: PCA
+taxonomy_6_upper_length_4: PCA9
+taxonomy_6_upper_length_5: PCA96
+taxonomy_7: 16_channel_servo_driver
+taxonomy_7_capital: 16 Channel Servo Driver
+taxonomy_7_first_letter: '1'
+taxonomy_7_first_letter_upper: '1'
+taxonomy_7_length_1: '1'
+taxonomy_7_length_2: '16'
+taxonomy_7_length_3: '16_'
+taxonomy_7_length_4: 16_c
+taxonomy_7_length_5: 16_ch
+taxonomy_7_upper: 16_CHANNEL_SERVO_DRIVER
+taxonomy_7_upper_length_1: '1'
+taxonomy_7_upper_length_2: '16'
+taxonomy_7_upper_length_3: '16_'
+taxonomy_7_upper_length_4: 16_C
+taxonomy_7_upper_length_5: 16_CH
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+thing:
+  bip_39_2_word_array:
+  - exclude
+  - science
+  bip_39_2_word_no_space: excludescience
+  bip_39_2_word_space: exclude science
+  bip_39_2_word_underscore: exclude_science
+  bip_39_3_word_array:
+  - exclude
+  - science
+  - accuse
+  bip_39_3_word_no_space: excludescienceaccuse
+  bip_39_3_word_space: exclude science accuse
+  bip_39_3_word_underscore: exclude_science_accuse
+  bip_39_full_array:
+  - exclude
+  - science
+  - accuse
+  - mean
+  - blood
+  - stage
+  - seminar
+  - much
+  - twist
+  - liberty
+  - supreme
+  - wise
+  bip_39_full_no_space: excludescienceaccusemeanbloodstageseminarmuchtwistlibertysupremewise
+  bip_39_full_space: exclude science accuse mean blood stage seminar much twist liberty
+    supreme wise
+  bip_39_full_underscore: exclude_science_accuse_mean_blood_stage_seminar_much_twist_liberty_supreme_wise
+  board_variant: 16_channel_servo_driver
+  breakout_description: 16_channel_servo_driver
+  breakout_pcb_height: 25.4
+  breakout_pcb_width: 62.23
+  catalogue: i2c_breakouts
+  catalogue_status: product_page_reference
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 4.0
+      pos:
+      - 0.0
+      - 0.0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 104.0
+      - 59.0
+      - 3
+      type: positive
+      width: 7.0
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -45.0
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -45.0
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -45.0
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -45.0
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -45.0
+      - -7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -45.0
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -45.0
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -45.0
+      - 7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -45.0
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -45.0
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -45.0
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -45.0
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -30.0
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -30.0
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -30.0
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -30.0
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -30.0
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -30.0
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -15.0
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -15.0
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -15.0
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -15.0
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -15.0
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -15.0
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 0.0
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 0.0
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 0.0
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 15.0
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 15.0
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 15.0
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 15.0
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 15.0
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 15.0
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 30.0
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 30.0
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 30.0
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 30.0
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 30.0
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 30.0
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 45.0
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 45.0
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 45.0
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 45.0
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 45.0
+      - -7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 45.0
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 45.0
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 45.0
+      - 7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 45.0
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 45.0
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 45.0
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 45.0
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -45.0
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -45.0
+      - -15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -45.0
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -45.0
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -45.0
+      - 0.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -45.0
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -45.0
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -45.0
+      - 15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -45.0
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -37.5
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -37.5
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -37.5
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -37.5
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -37.5
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -37.5
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -7.5
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -7.5
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -7.5
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 37.5
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 37.5
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 37.5
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 37.5
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 37.5
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 37.5
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 45.0
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 45.0
+      - -15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 45.0
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 45.0
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 45.0
+      - 0.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 45.0
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 45.0
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 45.0
+      - 15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 45.0
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+      pos:
+      - -27.94
+      - 9.525
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id001
+      - -27.94
+      - 9.525
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 7
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id001
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 7
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id001
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 7
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+      pos:
+      - -27.94
+      - -9.525
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id002
+      - -27.94
+      - -9.525
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 7
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id002
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 7
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id002
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 7
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+      pos:
+      - 27.94
+      - 9.525
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id003
+      - 27.94
+      - 9.525
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 7
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id003
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 7
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id003
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 7
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 7
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 7
+      pos:
+      - 27.94
+      - -9.525
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id004
+      - 27.94
+      - -9.525
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 7
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id004
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 7
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id004
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 7
+  components_objects:
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 62.23
+    depth: 3
+    height: 4.0
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$47:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$48:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: -9.525
+    - diameter_mm: 2.5
+      id: U$49:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$50:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: -9.525
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -27.94
+      - 9.525
+    - - -27.94
+      - -9.525
+    - - 27.94
+      - 9.525
+    - - 27.94
+      - -9.525
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+    pos:
+    - 0.0
+    - 0.0
+    - 0
+    save_type: none
+    shape: oobb_plate
+    type: positive
+    width: 7.0
+  - depth: 5
+    pos:
+    - -45.0
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -45.0
+    - -7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -45.0
+    - 7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -45.0
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -30.0
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -30.0
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -15.0
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -15.0
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 0.0
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 0.0
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 15.0
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 15.0
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 30.0
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 30.0
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 45.0
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 45.0
+    - -7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 45.0
+    - 7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 45.0
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -45.0
+    - -15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -45.0
+    - 0.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -45.0
+    - 15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -37.5
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -37.5
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -7.5
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -7.5
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 7.5
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 7.5
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 37.5
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 37.5
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 45.0
+    - -15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 45.0
+    - 0.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 45.0
+    - 15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 62.23
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$47:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$48:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: -9.525
+    - diameter_mm: 2.5
+      id: U$49:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$50:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: -9.525
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -27.94
+      - 9.525
+    - - -27.94
+      - -9.525
+    - - 27.94
+      - 9.525
+    - - 27.94
+      - -9.525
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+    pos:
+    - -27.94
+    - 9.525
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 7
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 62.23
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$47:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$48:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: -9.525
+    - diameter_mm: 2.5
+      id: U$49:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$50:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: -9.525
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -27.94
+      - 9.525
+    - - -27.94
+      - -9.525
+    - - 27.94
+      - 9.525
+    - - 27.94
+      - -9.525
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+    pos:
+    - -27.94
+    - 9.525
+    - 4.5
+    radius: 2.75
+    save_type: none
+    shape: oobb_cylinder
+    type: positive
+    width: 7
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 62.23
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$47:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$48:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: -9.525
+    - diameter_mm: 2.5
+      id: U$49:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$50:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: -9.525
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -27.94
+      - 9.525
+    - - -27.94
+      - -9.525
+    - - 27.94
+      - 9.525
+    - - 27.94
+      - -9.525
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+    pos:
+    - -27.94
+    - -9.525
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 7
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 62.23
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$47:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$48:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: -9.525
+    - diameter_mm: 2.5
+      id: U$49:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$50:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: -9.525
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -27.94
+      - 9.525
+    - - -27.94
+      - -9.525
+    - - 27.94
+      - 9.525
+    - - 27.94
+      - -9.525
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+    pos:
+    - -27.94
+    - -9.525
+    - 4.5
+    radius: 2.75
+    save_type: none
+    shape: oobb_cylinder
+    type: positive
+    width: 7
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 62.23
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$47:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$48:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: -9.525
+    - diameter_mm: 2.5
+      id: U$49:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$50:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: -9.525
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -27.94
+      - 9.525
+    - - -27.94
+      - -9.525
+    - - 27.94
+      - 9.525
+    - - 27.94
+      - -9.525
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+    pos:
+    - 27.94
+    - 9.525
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 7
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 62.23
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$47:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$48:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: -9.525
+    - diameter_mm: 2.5
+      id: U$49:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$50:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: -9.525
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -27.94
+      - 9.525
+    - - -27.94
+      - -9.525
+    - - 27.94
+      - 9.525
+    - - 27.94
+      - -9.525
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+    pos:
+    - 27.94
+    - 9.525
+    - 4.5
+    radius: 2.75
+    save_type: none
+    shape: oobb_cylinder
+    type: positive
+    width: 7
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 62.23
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$47:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$48:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: -9.525
+    - diameter_mm: 2.5
+      id: U$49:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$50:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: -9.525
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -27.94
+      - 9.525
+    - - -27.94
+      - -9.525
+    - - 27.94
+      - 9.525
+    - - 27.94
+      - -9.525
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+    pos:
+    - 27.94
+    - -9.525
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 7
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 62.23
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$47:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$48:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: -9.525
+    - diameter_mm: 2.5
+      id: U$49:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$50:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: -9.525
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -27.94
+      - 9.525
+    - - -27.94
+      - -9.525
+    - - 27.94
+      - 9.525
+    - - 27.94
+      - -9.525
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+    pos:
+    - 27.94
+    - -9.525
+    - 4.5
+    radius: 2.75
+    save_type: none
+    shape: oobb_cylinder
+    type: positive
+    width: 7
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_'electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_62.23_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$47:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$48:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':-9.525}_{'diameter_mm':2.5_'id':'u$49:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$50:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':-9.525}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-27.94_9.525_-27.94_-9.525_27.94_9.525_27.94_-9.525_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_7.0_width_4.0_height
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-45.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-45.0_-7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-45.0_7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-45.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-30.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-30.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-15.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-15.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_0.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_0.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_15.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_15.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_30.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_30.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_45.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_45.0_-7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_45.0_7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_45.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-45.0_-15.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-45.0_0.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-45.0_15.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-37.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-37.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-22.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-22.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-7.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-7.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_7.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_7.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_37.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_37.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_45.0_-15.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_45.0_0.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_45.0_15.0_-1_pos
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_-27.94_9.525_0_pos_'electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_62.23_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$47:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$48:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':-9.525}_{'diameter_mm':2.5_'id':'u$49:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$50:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':-9.525}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-27.94_9.525_-27.94_-9.525_27.94_9.525_27.94_-9.525_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_7_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-27.94_9.525_4.5_pos_'electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_62.23_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$47:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$48:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':-9.525}_{'diameter_mm':2.5_'id':'u$49:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$50:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':-9.525}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-27.94_9.525_-27.94_-9.525_27.94_9.525_27.94_-9.525_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_7_width_4_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_-27.94_-9.525_0_pos_'electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_62.23_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$47:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$48:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':-9.525}_{'diameter_mm':2.5_'id':'u$49:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$50:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':-9.525}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-27.94_9.525_-27.94_-9.525_27.94_9.525_27.94_-9.525_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_7_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-27.94_-9.525_4.5_pos_'electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_62.23_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$47:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$48:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':-9.525}_{'diameter_mm':2.5_'id':'u$49:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$50:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':-9.525}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-27.94_9.525_-27.94_-9.525_27.94_9.525_27.94_-9.525_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_7_width_4_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_27.94_9.525_0_pos_'electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_62.23_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$47:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$48:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':-9.525}_{'diameter_mm':2.5_'id':'u$49:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$50:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':-9.525}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-27.94_9.525_-27.94_-9.525_27.94_9.525_27.94_-9.525_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_7_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_27.94_9.525_4.5_pos_'electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_62.23_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$47:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$48:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':-9.525}_{'diameter_mm':2.5_'id':'u$49:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$50:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':-9.525}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-27.94_9.525_-27.94_-9.525_27.94_9.525_27.94_-9.525_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_7_width_4_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_27.94_-9.525_0_pos_'electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_62.23_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$47:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$48:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':-9.525}_{'diameter_mm':2.5_'id':'u$49:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$50:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':-9.525}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-27.94_9.525_-27.94_-9.525_27.94_9.525_27.94_-9.525_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_7_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_27.94_-9.525_4.5_pos_'electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_25.4_breakout_pcb_height_62.23_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$47:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$48:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-27.94_'y_mm':-9.525}_{'diameter_mm':2.5_'id':'u$49:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':9.525}_{'diameter_mm':2.5_'id':'u$50:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':27.94_'y_mm':-9.525}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-27.94_9.525_-27.94_-9.525_27.94_9.525_27.94_-9.525_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_7_width_4_height_2.75_radius
+  data_gaps:
+  - Physical connector/pad map and coordinates not imported.
+  - Located mounting holes and complete assembly/connector clearances not imported.
+  - Pull-up values/rails and full electrical limits require schematic review.
+  - Carrier PCB outline dimensions not verified.
+  - Default I2C address not established in this import.
+  definition_authority: working_oomp_populate_i2c.py
+  description: Adds 16 channels of 12-bit PWM for servo signals and LED control. Separate
+    load power is part of the board definition.
+  description_extra: ''
+  description_main: ''
+  dimensions_mm:
+    height: null
+    scope: pcb_outline_not_established
+    source_id: null
+    status: unverified
+    width: null
+  directory: parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+  geometry_ready: false
+  i2c:
+    address_evidence_status: unverified
+    address_selection: unverified
+    clock_stretching: unverified
+    default_address_7bit: null
+    documented_addresses_7bit: []
+    maximum_clock_hz: null
+    source_id: product
+  id: electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+  id_no_class: electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+  id_no_size: electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+  id_no_type: electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+  interface_scope: documented_board_interfaces_only
+  interfaces:
+  - i2c
+  item_kind: breakout
+  kwargs:
+    breakout_pcb_height: 25.4
+    breakout_pcb_width: 62.23
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$47:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$48:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: -9.525
+    - diameter_mm: 2.5
+      id: U$49:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$50:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: -9.525
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -27.94
+      - 9.525
+    - - -27.94
+      - -9.525
+    - - 27.94
+      - 9.525
+    - - 27.94
+      - -9.525
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
+    overwrite: true
+    part_ids:
+    - electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+    save_type: none
+    type: default_mounting_plate_default
+  link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+  link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+  link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+  manufacturer: adafruit
+  manufacturer_part_number: '815'
+  md5: 4ef81c06c4e17fa870e488eb901f67fe
+  md5_10: 4ef81c06c4
+  md5_10_upper: 4EF81C06C4
+  md5_5: 4ef81
+  md5_5_upper: 4EF81
+  md5_6: 4ef81c
+  md5_6_alpha: 32xb0
+  md5_6_alpha_upper: 32XB0
+  md5_6_upper: 4EF81C
+  mounting_coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  mounting_geometry_ready: true
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$47:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -27.94
+    y_mm: 9.525
+  - diameter_mm: 2.5
+    id: U$48:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -27.94
+    y_mm: -9.525
+  - diameter_mm: 2.5
+    id: U$49:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 27.94
+    y_mm: 9.525
+  - diameter_mm: 2.5
+    id: U$50:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 27.94
+    y_mm: -9.525
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_hole_status: verified
+  mounting_holes:
+  - - -27.94
+    - 9.525
+  - - -27.94
+    - -9.525
+  - - 27.94
+    - 9.525
+  - - 27.94
+    - -9.525
+  mounting_lift: 3
+  mounting_research:
+    board_revision: Adafruit PCA9685 16-channel PWM/Servo Driver product 815; exact
+      manufacturer EAGLE carrier file Adafruit PCA9685 rev C.brd from pinned repository
+      commit 32578c83a5ba2946249b80b1aa1fb18ae4e61e7d. The official product page records
+      the 2015 polarity-protection transistor update and 2022 silkscreen variants;
+      it says the silkscreen variants are otherwise identical. The board file is the
+      repository design linked from the official product guide.
+    board_size:
+    - 62.23
+    - 25.4
+    coordinate_system:
+      origin: pcb_bounding_box_centre
+      units: mm
+      view: top
+      x_positive: right
+      y_positive: up
+    derivation: 'Complete EAGLE layer-20 outline in Adafruit PCA9685 rev C.brd has
+      native bounds x=[-1.905,60.325] mm and y=[-6.477,18.923] mm, including the four
+      3.175 mm corner arcs. Thus board_size=[62.23,25.40] mm and native bounding-box
+      centre=(29.210,6.223) mm. Canonical top-view transform is x_mm=x_native-29.210
+      and y_mm=y_native-6.223; no mirror or quarter-turn is applied (quarter_turn=0),
+      so native +x is right and +y is up. The full drill review reports 68 candidates:
+      U$47 through U$50 each belong to the explicit MOUNTINGHOLE_2.5_PLATED package/value
+      MOUNTINGHOLE2.5 and have 2.5 mm PCB drills; these four are the mounting holes.
+      The other 64 drills are pads in terminal-block, capacitor, jumper/address-select,
+      and servo-output header packages and are excluded. The official guide independently
+      states the mounting holes are 2.5 mm diameter. The pinned alternate EAGLE 9.6.2
+      file in the same repository was checked: its outline origin differs, but its
+      centred board dimensions and four mounting-hole coordinates match rev C. The
+      product page lists 62.5 x 25.4 mm nominal dimensions; exact layer-20 CAD bounds
+      (62.23 x 25.40 mm) are used for generated geometry.'
+    fit_status: generic_holder_not_physical_fit_tested
+    identity_evidence: Adafruit product page identifies product 815 as the PCA9685
+      16-channel PWM/Servo driver. Its official Downloads guide links the Adafruit-16-Channel-PWM-Servo-Driver-PCB
+      repository. The pinned manufacturer README says the repository contains the
+      16-channel PWM servo driver EAGLE files and links product 815. The exact file
+      Adafruit PCA9685 rev C.brd is therefore the manufacturer carrier design for
+      this product; the official product page documents subsequent 2015 component
+      and 2022 silkscreen updates, with the latter explicitly mechanically identical
+      between silkscreen variants.
+    mounting_holes:
+    - diameter_mm: 2.5
+      id: U$47:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: -27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$48:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: -27.94
+      y_mm: -9.525
+    - diameter_mm: 2.5
+      id: U$49:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: 27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$50:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: 27.94
+      y_mm: -9.525
+    record_sha256: b43df1afc883fc42facef5c375afc98869916c30b3a865824e9945075cd998c6
+    research_file: source_file/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815/mounting.yaml
+    reviewed_by: gpt-6-luna
+    sources:
+    - bytes: 185629
+      id: cad
+      kind: manufacturer_cad
+      local_file: mounting_evidence/Adafruit_PCA9685_rev_C.brd
+      locator: "Adafruit PCA9685 rev C.brd at pinned commit 32578c83a5ba2946249b80b1aa1fb18ae4e61e7d;\
+        \ EAGLE board layer 20 plain outline and four explicit MOUNTINGHOLE_2.5_PLATED\
+        \ devices U$47\u2013U$50; all-drills review separates 64 connector/header/jumper/component\
+        \ pad drills."
+      registered_at: '2026-11-06T19:11:59+00:00'
+      sha256: 803e6388dd025d2ef9312a7fbe731b7fd5edbd495ca3e93b6ade830a58212da0
+      url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd
+    - bytes: 3383
+      id: repo
+      kind: manufacturer_repository
+      local_file: mounting_evidence/README.md
+      locator: Pinned manufacturer repository README identifies the 16-channel PWM
+        servo driver PCB Eagle files and links product 815.
+      registered_at: '2026-11-06T19:11:59+00:00'
+      sha256: 3ec2a90b809dbec410275d1d2e6484f7c826aa68c3be50ce7c1ff8838736c908
+      url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/README.md
+    - bytes: 101664
+      id: product
+      kind: manufacturer_product
+      local_file: website.html
+      locator: Archived official product 815 page; identity and revision history,
+        including 2022 silkscreen variants stated mechanically identical and 2015
+        polarity-protection revision.
+      registered_at: '2026-11-06T19:12:00+00:00'
+      sha256: 4fdad7d3cefe46d8aba3bc119978d29dce035d4c2024013d4aaefe31c5137a93
+      url: https://www.adafruit.com/product/815
+    - bytes: 76693
+      id: guide
+      kind: manufacturer_guide
+      local_file: reference/guide_downloads.html
+      locator: Official downloads page links the EagleCAD PCB repository and states
+        mounting holes are 2.5 mm diameter.
+      registered_at: '2026-11-06T19:12:00+00:00'
+      sha256: 4b7c02920d62c7ef98f6cc85ae4ee0720972da853a6175b6fc6ba74fdaa16087
+      url: https://learn.adafruit.com/16-channel-pwm-servo-driver/downloads
+    status: verified
+  name: Electronic Breakout Output Pwm 16 Channel Pca9685 16 Channel Servo Driver
+    Adafruit 815
+  name_no_class: Electronic Breakout Output Pwm 16 Channel Pca9685 16 Channel Servo
+    Driver Adafruit 815
+  name_no_size: Electronic Breakout Output Pwm 16 Channel Pca9685 16 Channel Servo
+    Driver Adafruit 815
+  name_no_type: Electronic Breakout Output Pwm 16 Channel Pca9685 16 Channel Servo
+    Driver Adafruit 815
+  name_proper: Electronic Breakout Output Pwm 16 Channel Pca9685 16 Channel Servo
+    Driver Adafruit 815
+  name_readable: Adafruit PCA9685 PWM/Servo Driver
+  name_short: Default Mounting Plate Default
+  name_space: electronic breakout output pwm 16 channel pca9685 16 channel servo driver
+    adafruit 815
+  name_text: Oobb Part Default Mounting Plate Default
+  name_upper: ELECTRONIC BREAKOUT OUTPUT PWM 16 CHANNEL PCA9685 16 CHANNEL SERVO DRIVER
+    ADAFRUIT 815
+  notes:
+  - Servo/load supply and logic supply are separate; PWM outputs do not directly supply
+    motor power.
+  - Product dimensions conflict in inch/mm conversion; PCB dimensions remain unverified
+    pending CAD.
+  oobb_details:
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 62.23
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$47:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$48:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: -9.525
+    - diameter_mm: 2.5
+      id: U$49:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$50:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: -9.525
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -27.94
+      - 9.525
+    - - -27.94
+      - -9.525
+    - - 27.94
+      - 9.525
+    - - 27.94
+      - -9.525
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 62.23
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$47:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$48:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: -9.525
+    - diameter_mm: 2.5
+      id: U$49:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$50:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: -9.525
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -27.94
+      - 9.525
+    - - -27.94
+      - -9.525
+    - - 27.94
+      - 9.525
+    - - 27.94
+      - -9.525
+    mounting_layout: short_sides
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_short_sides
+  - breakout_pcb_height: 25.4
+    breakout_pcb_width: 62.23
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$47:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$48:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -27.94
+      y_mm: -9.525
+    - diameter_mm: 2.5
+      id: U$49:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: 9.525
+    - diameter_mm: 2.5
+      id: U$50:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 27.94
+      y_mm: -9.525
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -27.94
+      - 9.525
+    - - -27.94
+      - -9.525
+    - - 27.94
+      - 9.525
+    - - 27.94
+      - -9.525
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_long_side
+  oobb_name: mounting_plate_default
+  oomlout_ai_roboclick_1:
+    actions:
+    - command: text_jinja_template
+      convert_to_pdf: false
+      convert_to_png: false
+      dict_data:
+        board_variant: 16_channel_servo_driver
+        breakout_description: 16_channel_servo_driver
+        breakout_pcb_height: 25.4
+        breakout_pcb_width: 62.23
+        catalogue: i2c_breakouts
+        catalogue_status: product_page_reference
+        data_gaps:
+        - Physical connector/pad map and coordinates not imported.
+        - Located mounting holes and complete assembly/connector clearances not imported.
+        - Pull-up values/rails and full electrical limits require schematic review.
+        - Carrier PCB outline dimensions not verified.
+        - Default I2C address not established in this import.
+        definition_authority: working_oomp_populate_i2c.py
+        description: Adds 16 channels of 12-bit PWM for servo signals and LED control.
+          Separate load power is part of the board definition.
+        dimensions_mm:
+          height: null
+          scope: pcb_outline_not_established
+          source_id: null
+          status: unverified
+          width: null
+        directory: parts\electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+        geometry_ready: false
+        i2c:
+          address_evidence_status: unverified
+          address_selection: unverified
+          clock_stretching: unverified
+          default_address_7bit: null
+          documented_addresses_7bit: []
+          maximum_clock_hz: null
+          source_id: product
+        interface_scope: documented_board_interfaces_only
+        interfaces:
+        - i2c
+        item_kind: breakout
+        manufacturer: adafruit
+        manufacturer_part_number: '815'
+        mounting_coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        mounting_geometry_ready: true
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$47:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -27.94
+          y_mm: 9.525
+        - diameter_mm: 2.5
+          id: U$48:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -27.94
+          y_mm: -9.525
+        - diameter_mm: 2.5
+          id: U$49:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 27.94
+          y_mm: 9.525
+        - diameter_mm: 2.5
+          id: U$50:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 27.94
+          y_mm: -9.525
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_hole_status: verified
+        mounting_holes:
+        - - -27.94
+          - 9.525
+        - - -27.94
+          - -9.525
+        - - 27.94
+          - 9.525
+        - - 27.94
+          - -9.525
+        mounting_lift: 3
+        mounting_research:
+          board_revision: Adafruit PCA9685 16-channel PWM/Servo Driver product 815;
+            exact manufacturer EAGLE carrier file Adafruit PCA9685 rev C.brd from
+            pinned repository commit 32578c83a5ba2946249b80b1aa1fb18ae4e61e7d. The
+            official product page records the 2015 polarity-protection transistor
+            update and 2022 silkscreen variants; it says the silkscreen variants are
+            otherwise identical. The board file is the repository design linked from
+            the official product guide.
+          board_size:
+          - 62.23
+          - 25.4
+          coordinate_system:
+            origin: pcb_bounding_box_centre
+            units: mm
+            view: top
+            x_positive: right
+            y_positive: up
+          derivation: 'Complete EAGLE layer-20 outline in Adafruit PCA9685 rev C.brd
+            has native bounds x=[-1.905,60.325] mm and y=[-6.477,18.923] mm, including
+            the four 3.175 mm corner arcs. Thus board_size=[62.23,25.40] mm and native
+            bounding-box centre=(29.210,6.223) mm. Canonical top-view transform is
+            x_mm=x_native-29.210 and y_mm=y_native-6.223; no mirror or quarter-turn
+            is applied (quarter_turn=0), so native +x is right and +y is up. The full
+            drill review reports 68 candidates: U$47 through U$50 each belong to the
+            explicit MOUNTINGHOLE_2.5_PLATED package/value MOUNTINGHOLE2.5 and have
+            2.5 mm PCB drills; these four are the mounting holes. The other 64 drills
+            are pads in terminal-block, capacitor, jumper/address-select, and servo-output
+            header packages and are excluded. The official guide independently states
+            the mounting holes are 2.5 mm diameter. The pinned alternate EAGLE 9.6.2
+            file in the same repository was checked: its outline origin differs, but
+            its centred board dimensions and four mounting-hole coordinates match
+            rev C. The product page lists 62.5 x 25.4 mm nominal dimensions; exact
+            layer-20 CAD bounds (62.23 x 25.40 mm) are used for generated geometry.'
+          fit_status: generic_holder_not_physical_fit_tested
+          identity_evidence: Adafruit product page identifies product 815 as the PCA9685
+            16-channel PWM/Servo driver. Its official Downloads guide links the Adafruit-16-Channel-PWM-Servo-Driver-PCB
+            repository. The pinned manufacturer README says the repository contains
+            the 16-channel PWM servo driver EAGLE files and links product 815. The
+            exact file Adafruit PCA9685 rev C.brd is therefore the manufacturer carrier
+            design for this product; the official product page documents subsequent
+            2015 component and 2022 silkscreen updates, with the latter explicitly
+            mechanically identical between silkscreen variants.
+          mounting_holes:
+          - diameter_mm: 2.5
+            id: U$47:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: -27.94
+            y_mm: 9.525
+          - diameter_mm: 2.5
+            id: U$48:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: -27.94
+            y_mm: -9.525
+          - diameter_mm: 2.5
+            id: U$49:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: 27.94
+            y_mm: 9.525
+          - diameter_mm: 2.5
+            id: U$50:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: 27.94
+            y_mm: -9.525
+          record_sha256: b43df1afc883fc42facef5c375afc98869916c30b3a865824e9945075cd998c6
+          research_file: source_file/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815/mounting.yaml
+          reviewed_by: gpt-6-luna
+          sources:
+          - bytes: 185629
+            id: cad
+            kind: manufacturer_cad
+            local_file: mounting_evidence/Adafruit_PCA9685_rev_C.brd
+            locator: "Adafruit PCA9685 rev C.brd at pinned commit 32578c83a5ba2946249b80b1aa1fb18ae4e61e7d;\
+              \ EAGLE board layer 20 plain outline and four explicit MOUNTINGHOLE_2.5_PLATED\
+              \ devices U$47\u2013U$50; all-drills review separates 64 connector/header/jumper/component\
+              \ pad drills."
+            registered_at: '2026-11-06T19:11:59+00:00'
+            sha256: 803e6388dd025d2ef9312a7fbe731b7fd5edbd495ca3e93b6ade830a58212da0
+            url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd
+          - bytes: 3383
+            id: repo
+            kind: manufacturer_repository
+            local_file: mounting_evidence/README.md
+            locator: Pinned manufacturer repository README identifies the 16-channel
+              PWM servo driver PCB Eagle files and links product 815.
+            registered_at: '2026-11-06T19:11:59+00:00'
+            sha256: 3ec2a90b809dbec410275d1d2e6484f7c826aa68c3be50ce7c1ff8838736c908
+            url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/README.md
+          - bytes: 101664
+            id: product
+            kind: manufacturer_product
+            local_file: website.html
+            locator: Archived official product 815 page; identity and revision history,
+              including 2022 silkscreen variants stated mechanically identical and
+              2015 polarity-protection revision.
+            registered_at: '2026-11-06T19:12:00+00:00'
+            sha256: 4fdad7d3cefe46d8aba3bc119978d29dce035d4c2024013d4aaefe31c5137a93
+            url: https://www.adafruit.com/product/815
+          - bytes: 76693
+            id: guide
+            kind: manufacturer_guide
+            local_file: reference/guide_downloads.html
+            locator: Official downloads page links the EagleCAD PCB repository and
+              states mounting holes are 2.5 mm diameter.
+            registered_at: '2026-11-06T19:12:00+00:00'
+            sha256: 4b7c02920d62c7ef98f6cc85ae4ee0720972da853a6175b6fc6ba74fdaa16087
+            url: https://learn.adafruit.com/16-channel-pwm-servo-driver/downloads
+          status: verified
+        name: electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+        name_proper: Electronic Breakout Output Pwm 16 Channel Pca9685 16 Channel
+          Servo Driver Adafruit 815
+        name_readable: Adafruit PCA9685 PWM/Servo Driver
+        name_space: electronic breakout output pwm 16 channel pca9685 16 channel servo
+          driver adafruit 815
+        name_upper: ELECTRONIC BREAKOUT OUTPUT PWM 16 CHANNEL PCA9685 16 CHANNEL SERVO
+          DRIVER ADAFRUIT 815
+        notes:
+        - Servo/load supply and logic supply are separate; PWM outputs do not directly
+          supply motor power.
+        - Product dimensions conflict in inch/mm conversion; PCB dimensions remain
+          unverified pending CAD.
+        oobb_details:
+        - breakout_pcb_height: 25.4
+          breakout_pcb_width: 62.23
+          mounting_hole_details:
+          - diameter_mm: 2.5
+            id: U$47:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -27.94
+            y_mm: 9.525
+          - diameter_mm: 2.5
+            id: U$48:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -27.94
+            y_mm: -9.525
+          - diameter_mm: 2.5
+            id: U$49:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 27.94
+            y_mm: 9.525
+          - diameter_mm: 2.5
+            id: U$50:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 27.94
+            y_mm: -9.525
+          mounting_hole_radius_name: m2
+          mounting_hole_radius_names:
+          - m2
+          - m2
+          - m2
+          - m2
+          mounting_holes:
+          - - -27.94
+            - 9.525
+          - - -27.94
+            - -9.525
+          - - 27.94
+            - 9.525
+          - - 27.94
+            - -9.525
+          mounting_layout: full_wrap
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+        - breakout_pcb_height: 25.4
+          breakout_pcb_width: 62.23
+          mounting_hole_details:
+          - diameter_mm: 2.5
+            id: U$47:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -27.94
+            y_mm: 9.525
+          - diameter_mm: 2.5
+            id: U$48:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -27.94
+            y_mm: -9.525
+          - diameter_mm: 2.5
+            id: U$49:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 27.94
+            y_mm: 9.525
+          - diameter_mm: 2.5
+            id: U$50:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 27.94
+            y_mm: -9.525
+          mounting_hole_radius_name: m2
+          mounting_hole_radius_names:
+          - m2
+          - m2
+          - m2
+          - m2
+          mounting_holes:
+          - - -27.94
+            - 9.525
+          - - -27.94
+            - -9.525
+          - - 27.94
+            - 9.525
+          - - 27.94
+            - -9.525
+          mounting_layout: short_sides
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_short_sides
+        - breakout_pcb_height: 25.4
+          breakout_pcb_width: 62.23
+          mounting_hole_details:
+          - diameter_mm: 2.5
+            id: U$47:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -27.94
+            y_mm: 9.525
+          - diameter_mm: 2.5
+            id: U$48:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -27.94
+            y_mm: -9.525
+          - diameter_mm: 2.5
+            id: U$49:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 27.94
+            y_mm: 9.525
+          - diameter_mm: 2.5
+            id: U$50:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 27.94
+            y_mm: -9.525
+          mounting_hole_radius_name: m2
+          mounting_hole_radius_names:
+          - m2
+          - m2
+          - m2
+          - m2
+          mounting_holes:
+          - - -27.94
+            - 9.525
+          - - -27.94
+            - -9.525
+          - - 27.94
+            - 9.525
+          - - 27.94
+            - -9.525
+          mounting_layout: long_side
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_long_side
+        part_number: '815'
+        part_number_adafruit: '815'
+        pinout_status: unverified
+        pins: {}
+        research_date: '2026-10-23'
+        schema_version: 1
+        sources:
+        - id: product
+          kind: manufacturer_product_page
+          retrieved: '2026-10-23'
+          scope: identity, stated interfaces/features and recorded nominal dimensions
+          url: https://www.adafruit.com/product/815
+        - bytes: 185629
+          id: mounting_cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Adafruit_PCA9685_rev_C.brd
+          locator: "Adafruit PCA9685 rev C.brd at pinned commit 32578c83a5ba2946249b80b1aa1fb18ae4e61e7d;\
+            \ EAGLE board layer 20 plain outline and four explicit MOUNTINGHOLE_2.5_PLATED\
+            \ devices U$47\u2013U$50; all-drills review separates 64 connector/header/jumper/component\
+            \ pad drills."
+          registered_at: '2026-11-06T19:11:59+00:00'
+          sha256: 803e6388dd025d2ef9312a7fbe731b7fd5edbd495ca3e93b6ade830a58212da0
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd
+        - bytes: 3383
+          id: mounting_repo
+          kind: manufacturer_repository
+          local_file: mounting_evidence/README.md
+          locator: Pinned manufacturer repository README identifies the 16-channel
+            PWM servo driver PCB Eagle files and links product 815.
+          registered_at: '2026-11-06T19:11:59+00:00'
+          sha256: 3ec2a90b809dbec410275d1d2e6484f7c826aa68c3be50ce7c1ff8838736c908
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/README.md
+        - bytes: 101664
+          id: mounting_product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: Archived official product 815 page; identity and revision history,
+            including 2022 silkscreen variants stated mechanically identical and 2015
+            polarity-protection revision.
+          registered_at: '2026-11-06T19:12:00+00:00'
+          sha256: 4fdad7d3cefe46d8aba3bc119978d29dce035d4c2024013d4aaefe31c5137a93
+          url: https://www.adafruit.com/product/815
+        - bytes: 76693
+          id: mounting_guide
+          kind: manufacturer_guide
+          local_file: reference/guide_downloads.html
+          locator: Official downloads page links the EagleCAD PCB repository and states
+            mounting holes are 2.5 mm diameter.
+          registered_at: '2026-11-06T19:12:00+00:00'
+          sha256: 4b7c02920d62c7ef98f6cc85ae4ee0720972da853a6175b6fc6ba74fdaa16087
+          url: https://learn.adafruit.com/16-channel-pwm-servo-driver/downloads
+        taxonomy_1: electronic
+        taxonomy_10: ''
+        taxonomy_11: ''
+        taxonomy_12: ''
+        taxonomy_13: ''
+        taxonomy_14: adafruit
+        taxonomy_15: '815'
+        taxonomy_2: breakout
+        taxonomy_3: output
+        taxonomy_4: pwm
+        taxonomy_5: 16_channel
+        taxonomy_6: pca9685
+        taxonomy_7: 16_channel_servo_driver
+        taxonomy_8: ''
+        taxonomy_9: ''
+        taxonomy_schema: breakout_function_v1
+        type_1: output
+        type_2: pwm
+        type_3: 16_channel
+        type_4: pca9685
+        url_chat: ''
+        webpage: https://www.adafruit.com/product/815
+        webpage_adafruit: https://www.adafruit.com/product/815
+      dict_data_files: {}
+      dict_data_files_exists: {}
+      file_output: label_oomp.svg
+      file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+      search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+  oomp_key: oomp_electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+  part_number: '815'
+  part_number_adafruit: '815'
+  pinout_status: unverified
+  pins: {}
+  research_date: '2026-10-23'
+  schema_version: 1
+  short_name: ''
+  size: default_mounting_plate_default
+  sources:
+  - id: product
+    kind: manufacturer_product_page
+    retrieved: '2026-10-23'
+    scope: identity, stated interfaces/features and recorded nominal dimensions
+    url: https://www.adafruit.com/product/815
+  - bytes: 185629
+    id: mounting_cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit_PCA9685_rev_C.brd
+    locator: "Adafruit PCA9685 rev C.brd at pinned commit 32578c83a5ba2946249b80b1aa1fb18ae4e61e7d;\
+      \ EAGLE board layer 20 plain outline and four explicit MOUNTINGHOLE_2.5_PLATED\
+      \ devices U$47\u2013U$50; all-drills review separates 64 connector/header/jumper/component\
+      \ pad drills."
+    registered_at: '2026-11-06T19:11:59+00:00'
+    sha256: 803e6388dd025d2ef9312a7fbe731b7fd5edbd495ca3e93b6ade830a58212da0
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd
+  - bytes: 3383
+    id: mounting_repo
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Pinned manufacturer repository README identifies the 16-channel PWM servo
+      driver PCB Eagle files and links product 815.
+    registered_at: '2026-11-06T19:11:59+00:00'
+    sha256: 3ec2a90b809dbec410275d1d2e6484f7c826aa68c3be50ce7c1ff8838736c908
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/README.md
+  - bytes: 101664
+    id: mounting_product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Archived official product 815 page; identity and revision history, including
+      2022 silkscreen variants stated mechanically identical and 2015 polarity-protection
+      revision.
+    registered_at: '2026-11-06T19:12:00+00:00'
+    sha256: 4fdad7d3cefe46d8aba3bc119978d29dce035d4c2024013d4aaefe31c5137a93
+    url: https://www.adafruit.com/product/815
+  - bytes: 76693
+    id: mounting_guide
+    kind: manufacturer_guide
+    local_file: reference/guide_downloads.html
+    locator: Official downloads page links the EagleCAD PCB repository and states
+      mounting holes are 2.5 mm diameter.
+    registered_at: '2026-11-06T19:12:00+00:00'
+    sha256: 4b7c02920d62c7ef98f6cc85ae4ee0720972da853a6175b6fc6ba74fdaa16087
+    url: https://learn.adafruit.com/16-channel-pwm-servo-driver/downloads
+  taxonomy_1: electronic
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_14_capital: Adafruit
+  taxonomy_14_first_letter: a
+  taxonomy_14_first_letter_upper: A
+  taxonomy_14_length_1: a
+  taxonomy_14_length_2: ad
+  taxonomy_14_length_3: ada
+  taxonomy_14_length_4: adaf
+  taxonomy_14_length_5: adafr
+  taxonomy_14_upper: ADAFRUIT
+  taxonomy_14_upper_length_1: A
+  taxonomy_14_upper_length_2: AD
+  taxonomy_14_upper_length_3: ADA
+  taxonomy_14_upper_length_4: ADAF
+  taxonomy_14_upper_length_5: ADAFR
+  taxonomy_15: '815'
+  taxonomy_15_capital: '815'
+  taxonomy_15_first_letter: '8'
+  taxonomy_15_first_letter_upper: '8'
+  taxonomy_15_length_1: '8'
+  taxonomy_15_length_2: '81'
+  taxonomy_15_length_3: '815'
+  taxonomy_15_length_4: '815'
+  taxonomy_15_length_5: '815'
+  taxonomy_15_upper: '815'
+  taxonomy_15_upper_length_1: '8'
+  taxonomy_15_upper_length_2: '81'
+  taxonomy_15_upper_length_3: '815'
+  taxonomy_15_upper_length_4: '815'
+  taxonomy_15_upper_length_5: '815'
+  taxonomy_1_capital: Electronic
+  taxonomy_1_first_letter: e
+  taxonomy_1_first_letter_upper: E
+  taxonomy_1_length_1: e
+  taxonomy_1_length_2: el
+  taxonomy_1_length_3: ele
+  taxonomy_1_length_4: elec
+  taxonomy_1_length_5: elect
+  taxonomy_1_upper: ELECTRONIC
+  taxonomy_1_upper_length_1: E
+  taxonomy_1_upper_length_2: EL
+  taxonomy_1_upper_length_3: ELE
+  taxonomy_1_upper_length_4: ELEC
+  taxonomy_1_upper_length_5: ELECT
+  taxonomy_2: breakout
+  taxonomy_2_capital: Breakout
+  taxonomy_2_first_letter: b
+  taxonomy_2_first_letter_upper: B
+  taxonomy_2_length_1: b
+  taxonomy_2_length_2: br
+  taxonomy_2_length_3: bre
+  taxonomy_2_length_4: brea
+  taxonomy_2_length_5: break
+  taxonomy_2_upper: BREAKOUT
+  taxonomy_2_upper_length_1: B
+  taxonomy_2_upper_length_2: BR
+  taxonomy_2_upper_length_3: BRE
+  taxonomy_2_upper_length_4: BREA
+  taxonomy_2_upper_length_5: BREAK
+  taxonomy_3: output
+  taxonomy_3_capital: Output
+  taxonomy_3_first_letter: o
+  taxonomy_3_first_letter_upper: O
+  taxonomy_3_length_1: o
+  taxonomy_3_length_2: ou
+  taxonomy_3_length_3: out
+  taxonomy_3_length_4: outp
+  taxonomy_3_length_5: outpu
+  taxonomy_3_upper: OUTPUT
+  taxonomy_3_upper_length_1: O
+  taxonomy_3_upper_length_2: OU
+  taxonomy_3_upper_length_3: OUT
+  taxonomy_3_upper_length_4: OUTP
+  taxonomy_3_upper_length_5: OUTPU
+  taxonomy_4: pwm
+  taxonomy_4_capital: Pwm
+  taxonomy_4_first_letter: p
+  taxonomy_4_first_letter_upper: P
+  taxonomy_4_length_1: p
+  taxonomy_4_length_2: pw
+  taxonomy_4_length_3: pwm
+  taxonomy_4_length_4: pwm
+  taxonomy_4_length_5: pwm
+  taxonomy_4_upper: PWM
+  taxonomy_4_upper_length_1: P
+  taxonomy_4_upper_length_2: PW
+  taxonomy_4_upper_length_3: PWM
+  taxonomy_4_upper_length_4: PWM
+  taxonomy_4_upper_length_5: PWM
+  taxonomy_5: 16_channel
+  taxonomy_5_capital: 16 Channel
+  taxonomy_5_first_letter: '1'
+  taxonomy_5_first_letter_upper: '1'
+  taxonomy_5_length_1: '1'
+  taxonomy_5_length_2: '16'
+  taxonomy_5_length_3: '16_'
+  taxonomy_5_length_4: 16_c
+  taxonomy_5_length_5: 16_ch
+  taxonomy_5_upper: 16_CHANNEL
+  taxonomy_5_upper_length_1: '1'
+  taxonomy_5_upper_length_2: '16'
+  taxonomy_5_upper_length_3: '16_'
+  taxonomy_5_upper_length_4: 16_C
+  taxonomy_5_upper_length_5: 16_CH
+  taxonomy_6: pca9685
+  taxonomy_6_capital: Pca9685
+  taxonomy_6_first_letter: p
+  taxonomy_6_first_letter_upper: P
+  taxonomy_6_length_1: p
+  taxonomy_6_length_2: pc
+  taxonomy_6_length_3: pca
+  taxonomy_6_length_4: pca9
+  taxonomy_6_length_5: pca96
+  taxonomy_6_upper: PCA9685
+  taxonomy_6_upper_length_1: P
+  taxonomy_6_upper_length_2: PC
+  taxonomy_6_upper_length_3: PCA
+  taxonomy_6_upper_length_4: PCA9
+  taxonomy_6_upper_length_5: PCA96
+  taxonomy_7: 16_channel_servo_driver
+  taxonomy_7_capital: 16 Channel Servo Driver
+  taxonomy_7_first_letter: '1'
+  taxonomy_7_first_letter_upper: '1'
+  taxonomy_7_length_1: '1'
+  taxonomy_7_length_2: '16'
+  taxonomy_7_length_3: '16_'
+  taxonomy_7_length_4: 16_c
+  taxonomy_7_length_5: 16_ch
+  taxonomy_7_upper: 16_CHANNEL_SERVO_DRIVER
+  taxonomy_7_upper_length_1: '1'
+  taxonomy_7_upper_length_2: '16'
+  taxonomy_7_upper_length_3: '16_'
+  taxonomy_7_upper_length_4: 16_C
+  taxonomy_7_upper_length_5: 16_CH
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_schema: breakout_function_v1
+  type: part
+  type_1: output
+  type_2: pwm
+  type_3: 16_channel
+  type_4: pca9685
+  url_chat: ''
+  webpage: https://www.adafruit.com/product/815
+  webpage_adafruit: https://www.adafruit.com/product/815
+type_1: output
+type_2: pwm
+type_3: 16_channel
+type_4: pca9685
+url_chat: ''
+webpage: https://www.adafruit.com/product/815
+webpage_adafruit: https://www.adafruit.com/product/815

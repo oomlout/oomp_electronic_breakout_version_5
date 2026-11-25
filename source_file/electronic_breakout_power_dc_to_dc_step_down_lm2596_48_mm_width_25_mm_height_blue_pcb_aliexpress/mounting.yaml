@@ -1,0 +1,62 @@
+schema_version: 1
+part_id: electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress
+status: needs_review
+board_revision: null
+identity_evidence: null
+board_size: null
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: null
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources: []
+attempts:
+- avenue: Exact AliExpress product ID 1005010001439374
+  source: https://www.aliexpress.com/item/1005010001439374.html
+  result: Product identity resolves to a generic adjustable LM2596 converter listing;
+    no official carrier revision, native PCB CAD, or dimensioned mechanical drawing
+    was located.
+  gap: Listing does not establish that a particular 48 x 25 mm blue PCB revision is
+    the board represented by this catalogue entry or provide mounting geometry.
+- avenue: Public CAD and hardware repository search
+  source: https://github.com/bkeevil/LM2596_5.0BuckPCB
+  result: Found an LM2596 EAGLE design, but it is a separately authored fixed-output
+    5.0V board and does not establish identity with the AliExpress module.
+  gap: Repository CAD is not the catalogue carrier; using it would substitute a similar
+    design.
+- avenue: Broader web search for 48 x 25 mm LM2596 module mechanical drawings/CAD
+  source: https://www.google.com/search?q=LM2596+48mm+25mm+module+mechanical+drawing+CAD
+  result: Results were family-level module photos, third-party dimensional claims,
+    chip datasheets, or unrelated carrier designs; no verified CAD/drawing for this
+    carrier revision.
+  gap: Need exact product-linked carrier evidence before selecting mounting holes
+    or confirming a no-hole pattern.
+- avenue: Exact AliExpress listing metadata and source-page access check (2026-11-07)
+  source: https://www.aliexpress.com/item/1005010001439374.html; https://pl.pricearchive.org/aliexpress.com/item/1005010001439374
+  result: AliExpress product page could not be opened by the source viewer. Indexed
+    Pricearchive metadata for the exact item ID confirms only a generic adjustable
+    LM2596 DC-DC module listing; it provides no carrier revision or dimensioned geometry.
+  gap: The item ID still does not link this catalogue entry to a specific 48 x 25
+    mm blue PCB revision, native CAD, or a dimensioned drawing. Board outline and
+    mounting-hole pattern remain unverified.
+conflicts: []
+notes:
+- The inherited catalogue metadata lists a nominal 48 x 25 mm outline and legacy mounting
+  coordinates, but provides no source for either. They are not treated as mechanical
+  evidence.
+- No geometry was extracted or promoted. All review flags remain false pending exact
+  carrier identity and complete mechanical evidence.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:04:26+00:00'

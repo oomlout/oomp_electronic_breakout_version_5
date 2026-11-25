@@ -1,0 +1,2692 @@
+bip_39_2_word_array:
+- level
+- robot
+bip_39_2_word_no_space: levelrobot
+bip_39_2_word_space: level robot
+bip_39_2_word_underscore: level_robot
+bip_39_3_word_array:
+- level
+- robot
+- portion
+bip_39_3_word_no_space: levelrobotportion
+bip_39_3_word_space: level robot portion
+bip_39_3_word_underscore: level_robot_portion
+bip_39_full_array:
+- level
+- robot
+- portion
+- flush
+- fit
+- arrow
+- erode
+- print
+- erode
+- junior
+- famous
+- cancel
+bip_39_full_no_space: levelrobotportionflushfitarrowerodeprinterodejuniorfamouscancel
+bip_39_full_space: level robot portion flush fit arrow erode print erode junior famous
+  cancel
+bip_39_full_underscore: level_robot_portion_flush_fit_arrow_erode_print_erode_junior_famous_cancel
+board_variant: qwiic
+breakout_description: qwiic
+breakout_pcb_height: 30.48
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Manufacturer nominal outline is not a traced CAD perimeter.
+definition_authority: working_oomp_populate_i2c.py
+description: Adds onboard sensor fusion and orientation outputs beyond a raw six-axis
+  IMU. Supports I2C, SPI and UART; host compatibility still needs checking before
+  enabling a lab profile.
+dimensions_mm:
+  height: 30.48
+  scope: nominal_pcb_outline
+  source_id: product
+  status: manufacturer_nominal
+  width: 25.4
+directory: parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+geometry_ready: false
+i2c:
+  address_evidence_status: partial_product_page_evidence
+  address_selection: address_select_jumper
+  clock_stretching: unverified
+  default_address_7bit: 75
+  documented_addresses_7bit:
+  - 74
+  - 75
+  maximum_clock_hz: null
+  source_id: product
+id: electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+id_no_class: electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+id_no_size: electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+id_no_type: electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+id_oobb: electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+- spi
+- uart
+item_kind: breakout
+kwargs:
+  breakout_pcb_height: 30.48
+  breakout_pcb_width: 25.4
+  modes:
+  - 3dpr
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 12.7
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - -12.7
+  - - -10.16
+    - 12.7
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  overwrite: true
+  part_ids:
+  - electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+  scad_output: 3dpr_long_side
+  type: default_mounting_plate_default
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+manufacturer: sparkfun
+manufacturer_part_number: SEN-22857
+md5: 80b766a12ce57c195325564c8f254a90
+md5_10: 80b766a12c
+md5_10_upper: 80B766A12C
+md5_5: 80b76
+md5_5_upper: 80B76
+md5_6: 80b766
+md5_6_alpha: 50sx2
+md5_6_alpha_upper: 50SX2
+md5_6_upper: 80B766
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 3.302
+  id: JP3:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: -12.7
+- diameter_mm: 3.302
+  id: JP4:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 12.7
+mounting_hole_radius_name: m3
+mounting_hole_radius_names:
+- m3
+- m3
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - -12.7
+- - -10.16
+  - 12.7
+mounting_lift: 3
+mounting_research:
+  board_revision: SparkFun VR IMU Breakout - BNO086 (Qwiic), SEN-22857 initial release
+    v1.0; exact carrier design file from SparkFun repository commit fc8ed693a5193c8faec3098f29d206dea171958e.
+  board_size:
+  - 25.4
+  - 30.48
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: EAGLE layer 20 Dimension lines give native bounds x=0..30.48 mm and
+    y=0..25.4 mm, centre (15.24,12.7) mm. Centring subtracts this centre. Explicit
+    CCW quarter-turn 1 maps centred native coordinates (x,y) to (-y,x), swapping extents
+    to 25.4 x 30.48 mm. Thus JP3 at native (2.54,22.86) maps from (-12.70,10.16) to
+    (-10.16,-12.70) mm; JP4 at (27.94,22.86) maps from (12.70,10.16) to (-10.16,12.70)
+    mm. The guide states 25.4 x 30.48 mm and two holes on one side, consistent with
+    this orientation.
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: SparkFun product page identifies the BNO086 Qwiic breakout as
+    SEN-22857. The commit-pinned official repository README identifies SEN-22857 as
+    initial release v1.0 and says Hardware contains EAGLE design files. The selected
+    SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd is that repository hardware design;
+    the hardware overview independently states the outline and two mounting holes
+    on one side.
+  mounting_holes:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 12.7
+  record_sha256: 2a1e9e4c6d120ed61f0435f95de63cc88f13a6700c6f1b84b64b195ce31a5b79
+  research_file: source_file/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 424298
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+    locator: SparkFun hardware repository commit fc8ed693a5193c8faec3098f29d206dea171958e;
+      exact SEN-22857 initial v1.0 board design file, EAGLE layers 20 Dimension and
+      all drilled candidates
+    registered_at: '2026-11-06T19:37:29+00:00'
+    sha256: cb5e165424218a7223aaf036eec194ec1d27f2969a2d06520b417f170d81a13e
+    url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/Hardware/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+  - bytes: 1787
+    id: repo_identity
+    kind: manufacturer_repository
+    local_file: mounting_evidence/SparkFun_repository_README.md
+    locator: Pinned repository README names SparkFun VR IMU Breakout BNO086 Qwiic
+      SEN-22857 and states Product Versions initial release v1.0; identifies Hardware
+      EAGLE design files
+    registered_at: '2026-11-06T19:37:30+00:00'
+    sha256: 1a03a987ce1bab3abc8a1fe966a34ed1c384352c6e0e50a72f33e8bba1694ed3
+    url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/README.md
+  - bytes: 574091
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: SparkFun product page identifies SparkFun VR IMU Breakout - BNO086 (Qwiic),
+      SEN-22857
+    registered_at: '2026-11-06T19:37:30+00:00'
+    sha256: 9a835fd9da5f26a019732b8fa0bd3681a7de0673c8279c8cbc91ba20657ec196
+    url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+  - bytes: 87129
+    id: dimensions
+    kind: manufacturer_guide
+    local_file: reference/hardware_overview.html
+    locator: Hardware Overview > Board Dimensions states 1.0 x 1.2 in (25.4 x 30.48
+      mm) and 2 mounting holes on one side; identity and dimensions. Official page,
+      accessed 2026-11-06.
+    registered_at: '2026-11-06T19:37:31+00:00'
+    sha256: d0dc41ec98db197dac91577699384ec5d1fe97677234760223e641d1e48af566
+    url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/hardware_overview/
+  status: verified
+name: Electronic Breakout Sensor Motion Orientation Fusion Bno086 Qwiic 25 4 Mm Width
+  30 48 Mm Height Sparkfun Sen 22857
+name_no_class: Electronic Breakout Sensor Motion Orientation Fusion Bno086 Qwiic 25
+  4 Mm Width 30 48 Mm Height Sparkfun Sen 22857
+name_no_size: Electronic Breakout Sensor Motion Orientation Fusion Bno086 Qwiic 25
+  4 Mm Width 30 48 Mm Height Sparkfun Sen 22857
+name_no_type: Electronic Breakout Sensor Motion Orientation Fusion Bno086 Qwiic 25
+  4 Mm Width 30 48 Mm Height Sparkfun Sen 22857
+name_proper: Electronic Breakout Sensor Motion Orientation Fusion Bno086 Qwiic 25
+  4 Mm Width 30 48 Mm Height Sparkfun Sen 22857
+name_readable: SparkFun BNO086 VR IMU, Qwiic
+name_space: electronic breakout sensor motion orientation fusion bno086 qwiic 25 4
+  mm width 30 48 mm height sparkfun sen 22857
+name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ORIENTATION FUSION BNO086 QWIIC 25 4
+  MM WIDTH 30 48 MM HEIGHT SPARKFUN SEN 22857
+notes:
+- UART is also supported. I2C is the default board interface.
+- Review host driver/clock-stretching compatibility before enabling a firmware profile.
+oobb_details:
+- breakout_pcb_height: 30.48
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 12.7
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - -12.7
+  - - -10.16
+    - 12.7
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 30.48
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 12.7
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - -12.7
+  - - -10.16
+    - 12.7
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 30.48
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 12.7
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - -12.7
+  - - -10.16
+    - 12.7
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      board_variant: qwiic
+      breakout_description: qwiic
+      breakout_pcb_height: 30.48
+      breakout_pcb_width: 25.4
+      catalogue: i2c_breakouts
+      catalogue_status: product_page_reference
+      data_gaps:
+      - Physical connector/pad map and coordinates not imported.
+      - Located mounting holes and complete assembly/connector clearances not imported.
+      - Pull-up values/rails and full electrical limits require schematic review.
+      - Manufacturer nominal outline is not a traced CAD perimeter.
+      definition_authority: working_oomp_populate_i2c.py
+      description: Adds onboard sensor fusion and orientation outputs beyond a raw
+        six-axis IMU. Supports I2C, SPI and UART; host compatibility still needs checking
+        before enabling a lab profile.
+      dimensions_mm:
+        height: 30.48
+        scope: nominal_pcb_outline
+        source_id: product
+        status: manufacturer_nominal
+        width: 25.4
+      directory: parts\electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+      geometry_ready: false
+      i2c:
+        address_evidence_status: partial_product_page_evidence
+        address_selection: address_select_jumper
+        clock_stretching: unverified
+        default_address_7bit: 75
+        documented_addresses_7bit:
+        - 74
+        - 75
+        maximum_clock_hz: null
+        source_id: product
+      interface_scope: documented_board_interfaces_only
+      interfaces:
+      - i2c
+      - spi
+      - uart
+      item_kind: breakout
+      manufacturer: sparkfun
+      manufacturer_part_number: SEN-22857
+      mounting_coordinate_system:
+        origin: pcb_bounding_box_centre
+        units: mm
+        view: top
+        x_positive: right
+        y_positive: up
+      mounting_geometry_ready: true
+      mounting_hole_details:
+      - diameter_mm: 3.302
+        id: JP3:hole:1
+        package: STAND-OFF
+        plated: false
+        source_id: mounting_cad
+        x_mm: -10.16
+        y_mm: -12.7
+      - diameter_mm: 3.302
+        id: JP4:hole:1
+        package: STAND-OFF
+        plated: false
+        source_id: mounting_cad
+        x_mm: -10.16
+        y_mm: 12.7
+      mounting_hole_radius_name: m3
+      mounting_hole_radius_names:
+      - m3
+      - m3
+      mounting_hole_status: verified
+      mounting_holes:
+      - - -10.16
+        - -12.7
+      - - -10.16
+        - 12.7
+      mounting_lift: 3
+      mounting_research:
+        board_revision: SparkFun VR IMU Breakout - BNO086 (Qwiic), SEN-22857 initial
+          release v1.0; exact carrier design file from SparkFun repository commit
+          fc8ed693a5193c8faec3098f29d206dea171958e.
+        board_size:
+        - 25.4
+        - 30.48
+        coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        derivation: EAGLE layer 20 Dimension lines give native bounds x=0..30.48 mm
+          and y=0..25.4 mm, centre (15.24,12.7) mm. Centring subtracts this centre.
+          Explicit CCW quarter-turn 1 maps centred native coordinates (x,y) to (-y,x),
+          swapping extents to 25.4 x 30.48 mm. Thus JP3 at native (2.54,22.86) maps
+          from (-12.70,10.16) to (-10.16,-12.70) mm; JP4 at (27.94,22.86) maps from
+          (12.70,10.16) to (-10.16,12.70) mm. The guide states 25.4 x 30.48 mm and
+          two holes on one side, consistent with this orientation.
+        fit_status: generic_holder_not_physical_fit_tested
+        identity_evidence: SparkFun product page identifies the BNO086 Qwiic breakout
+          as SEN-22857. The commit-pinned official repository README identifies SEN-22857
+          as initial release v1.0 and says Hardware contains EAGLE design files. The
+          selected SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd is that repository hardware
+          design; the hardware overview independently states the outline and two mounting
+          holes on one side.
+        mounting_holes:
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: cad
+          x_mm: -10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP4:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: cad
+          x_mm: -10.16
+          y_mm: 12.7
+        record_sha256: 2a1e9e4c6d120ed61f0435f95de63cc88f13a6700c6f1b84b64b195ce31a5b79
+        research_file: source_file/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857/mounting.yaml
+        reviewed_by: gpt-6-luna
+        sources:
+        - bytes: 424298
+          id: cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+          locator: SparkFun hardware repository commit fc8ed693a5193c8faec3098f29d206dea171958e;
+            exact SEN-22857 initial v1.0 board design file, EAGLE layers 20 Dimension
+            and all drilled candidates
+          registered_at: '2026-11-06T19:37:29+00:00'
+          sha256: cb5e165424218a7223aaf036eec194ec1d27f2969a2d06520b417f170d81a13e
+          url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/Hardware/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+        - bytes: 1787
+          id: repo_identity
+          kind: manufacturer_repository
+          local_file: mounting_evidence/SparkFun_repository_README.md
+          locator: Pinned repository README names SparkFun VR IMU Breakout BNO086
+            Qwiic SEN-22857 and states Product Versions initial release v1.0; identifies
+            Hardware EAGLE design files
+          registered_at: '2026-11-06T19:37:30+00:00'
+          sha256: 1a03a987ce1bab3abc8a1fe966a34ed1c384352c6e0e50a72f33e8bba1694ed3
+          url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/README.md
+        - bytes: 574091
+          id: product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: SparkFun product page identifies SparkFun VR IMU Breakout - BNO086
+            (Qwiic), SEN-22857
+          registered_at: '2026-11-06T19:37:30+00:00'
+          sha256: 9a835fd9da5f26a019732b8fa0bd3681a7de0673c8279c8cbc91ba20657ec196
+          url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+        - bytes: 87129
+          id: dimensions
+          kind: manufacturer_guide
+          local_file: reference/hardware_overview.html
+          locator: Hardware Overview > Board Dimensions states 1.0 x 1.2 in (25.4
+            x 30.48 mm) and 2 mounting holes on one side; identity and dimensions.
+            Official page, accessed 2026-11-06.
+          registered_at: '2026-11-06T19:37:31+00:00'
+          sha256: d0dc41ec98db197dac91577699384ec5d1fe97677234760223e641d1e48af566
+          url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/hardware_overview/
+        status: verified
+      name: electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+      name_proper: Electronic Breakout Sensor Motion Orientation Fusion Bno086 Qwiic
+        25 4 Mm Width 30 48 Mm Height Sparkfun Sen 22857
+      name_readable: SparkFun BNO086 VR IMU, Qwiic
+      name_space: electronic breakout sensor motion orientation fusion bno086 qwiic
+        25 4 mm width 30 48 mm height sparkfun sen 22857
+      name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ORIENTATION FUSION BNO086 QWIIC
+        25 4 MM WIDTH 30 48 MM HEIGHT SPARKFUN SEN 22857
+      notes:
+      - UART is also supported. I2C is the default board interface.
+      - Review host driver/clock-stretching compatibility before enabling a firmware
+        profile.
+      oobb_details:
+      - breakout_pcb_height: 30.48
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP4:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 12.7
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        mounting_holes:
+        - - -10.16
+          - -12.7
+        - - -10.16
+          - 12.7
+        mounting_layout: full_wrap
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+      - breakout_pcb_height: 30.48
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP4:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 12.7
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        mounting_holes:
+        - - -10.16
+          - -12.7
+        - - -10.16
+          - 12.7
+        mounting_layout: short_sides
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_short_sides
+      - breakout_pcb_height: 30.48
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP4:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 12.7
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        mounting_holes:
+        - - -10.16
+          - -12.7
+        - - -10.16
+          - 12.7
+        mounting_layout: long_side
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_long_side
+      part_number: sen_22857
+      part_number_sparkfun: SEN-22857
+      pinout_status: unverified
+      pins: {}
+      research_date: '2026-10-23'
+      schema_version: 1
+      sources:
+      - id: product
+        kind: manufacturer_product_page
+        retrieved: '2026-10-23'
+        scope: identity, stated interfaces/features and recorded nominal dimensions
+        url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+      - bytes: 424298
+        id: mounting_cad
+        kind: manufacturer_cad
+        local_file: mounting_evidence/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+        locator: SparkFun hardware repository commit fc8ed693a5193c8faec3098f29d206dea171958e;
+          exact SEN-22857 initial v1.0 board design file, EAGLE layers 20 Dimension
+          and all drilled candidates
+        registered_at: '2026-11-06T19:37:29+00:00'
+        sha256: cb5e165424218a7223aaf036eec194ec1d27f2969a2d06520b417f170d81a13e
+        url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/Hardware/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+      - bytes: 1787
+        id: mounting_repo_identity
+        kind: manufacturer_repository
+        local_file: mounting_evidence/SparkFun_repository_README.md
+        locator: Pinned repository README names SparkFun VR IMU Breakout BNO086 Qwiic
+          SEN-22857 and states Product Versions initial release v1.0; identifies Hardware
+          EAGLE design files
+        registered_at: '2026-11-06T19:37:30+00:00'
+        sha256: 1a03a987ce1bab3abc8a1fe966a34ed1c384352c6e0e50a72f33e8bba1694ed3
+        url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/README.md
+      - bytes: 574091
+        id: mounting_product
+        kind: manufacturer_product
+        local_file: website.html
+        locator: SparkFun product page identifies SparkFun VR IMU Breakout - BNO086
+          (Qwiic), SEN-22857
+        registered_at: '2026-11-06T19:37:30+00:00'
+        sha256: 9a835fd9da5f26a019732b8fa0bd3681a7de0673c8279c8cbc91ba20657ec196
+        url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+      - bytes: 87129
+        id: mounting_dimensions
+        kind: manufacturer_guide
+        local_file: reference/hardware_overview.html
+        locator: Hardware Overview > Board Dimensions states 1.0 x 1.2 in (25.4 x
+          30.48 mm) and 2 mounting holes on one side; identity and dimensions. Official
+          page, accessed 2026-11-06.
+        registered_at: '2026-11-06T19:37:31+00:00'
+        sha256: d0dc41ec98db197dac91577699384ec5d1fe97677234760223e641d1e48af566
+        url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/hardware_overview/
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: sparkfun
+      taxonomy_15: sen_22857
+      taxonomy_2: breakout
+      taxonomy_3: sensor
+      taxonomy_4: motion
+      taxonomy_5: orientation_fusion
+      taxonomy_6: bno086
+      taxonomy_7: qwiic
+      taxonomy_8: 25_4_mm_width_30_48_mm_height
+      taxonomy_9: ''
+      taxonomy_schema: breakout_function_v1
+      type_1: sensor
+      type_2: motion
+      type_3: orientation_fusion
+      type_4: bno086
+      url_chat: ''
+      webpage: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+      webpage_sparkfun: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+part_number: sen_22857
+part_number_sparkfun: SEN-22857
+pinout_status: unverified
+pins: {}
+project_name: C:\gh\oomp_electronic_breakout_version_5
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+- bytes: 424298
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+  locator: SparkFun hardware repository commit fc8ed693a5193c8faec3098f29d206dea171958e;
+    exact SEN-22857 initial v1.0 board design file, EAGLE layers 20 Dimension and
+    all drilled candidates
+  registered_at: '2026-11-06T19:37:29+00:00'
+  sha256: cb5e165424218a7223aaf036eec194ec1d27f2969a2d06520b417f170d81a13e
+  url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/Hardware/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+- bytes: 1787
+  id: mounting_repo_identity
+  kind: manufacturer_repository
+  local_file: mounting_evidence/SparkFun_repository_README.md
+  locator: Pinned repository README names SparkFun VR IMU Breakout BNO086 Qwiic SEN-22857
+    and states Product Versions initial release v1.0; identifies Hardware EAGLE design
+    files
+  registered_at: '2026-11-06T19:37:30+00:00'
+  sha256: 1a03a987ce1bab3abc8a1fe966a34ed1c384352c6e0e50a72f33e8bba1694ed3
+  url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/README.md
+- bytes: 574091
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: SparkFun product page identifies SparkFun VR IMU Breakout - BNO086 (Qwiic),
+    SEN-22857
+  registered_at: '2026-11-06T19:37:30+00:00'
+  sha256: 9a835fd9da5f26a019732b8fa0bd3681a7de0673c8279c8cbc91ba20657ec196
+  url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+- bytes: 87129
+  id: mounting_dimensions
+  kind: manufacturer_guide
+  local_file: reference/hardware_overview.html
+  locator: Hardware Overview > Board Dimensions states 1.0 x 1.2 in (25.4 x 30.48
+    mm) and 2 mounting holes on one side; identity and dimensions. Official page,
+    accessed 2026-11-06.
+  registered_at: '2026-11-06T19:37:31+00:00'
+  sha256: d0dc41ec98db197dac91577699384ec5d1fe97677234760223e641d1e48af566
+  url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/hardware_overview/
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: sparkfun
+taxonomy_14_capital: Sparkfun
+taxonomy_14_first_letter: s
+taxonomy_14_first_letter_upper: S
+taxonomy_14_length_1: s
+taxonomy_14_length_2: sp
+taxonomy_14_length_3: spa
+taxonomy_14_length_4: spar
+taxonomy_14_length_5: spark
+taxonomy_14_upper: SPARKFUN
+taxonomy_14_upper_length_1: S
+taxonomy_14_upper_length_2: SP
+taxonomy_14_upper_length_3: SPA
+taxonomy_14_upper_length_4: SPAR
+taxonomy_14_upper_length_5: SPARK
+taxonomy_15: sen_22857
+taxonomy_15_capital: Sen 22857
+taxonomy_15_first_letter: s
+taxonomy_15_first_letter_upper: S
+taxonomy_15_length_1: s
+taxonomy_15_length_2: se
+taxonomy_15_length_3: sen
+taxonomy_15_length_4: sen_
+taxonomy_15_length_5: sen_2
+taxonomy_15_upper: SEN_22857
+taxonomy_15_upper_length_1: S
+taxonomy_15_upper_length_2: SE
+taxonomy_15_upper_length_3: SEN
+taxonomy_15_upper_length_4: SEN_
+taxonomy_15_upper_length_5: SEN_2
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: sensor
+taxonomy_3_capital: Sensor
+taxonomy_3_first_letter: s
+taxonomy_3_first_letter_upper: S
+taxonomy_3_length_1: s
+taxonomy_3_length_2: se
+taxonomy_3_length_3: sen
+taxonomy_3_length_4: sens
+taxonomy_3_length_5: senso
+taxonomy_3_upper: SENSOR
+taxonomy_3_upper_length_1: S
+taxonomy_3_upper_length_2: SE
+taxonomy_3_upper_length_3: SEN
+taxonomy_3_upper_length_4: SENS
+taxonomy_3_upper_length_5: SENSO
+taxonomy_4: motion
+taxonomy_4_capital: Motion
+taxonomy_4_first_letter: m
+taxonomy_4_first_letter_upper: M
+taxonomy_4_length_1: m
+taxonomy_4_length_2: mo
+taxonomy_4_length_3: mot
+taxonomy_4_length_4: moti
+taxonomy_4_length_5: motio
+taxonomy_4_upper: MOTION
+taxonomy_4_upper_length_1: M
+taxonomy_4_upper_length_2: MO
+taxonomy_4_upper_length_3: MOT
+taxonomy_4_upper_length_4: MOTI
+taxonomy_4_upper_length_5: MOTIO
+taxonomy_5: orientation_fusion
+taxonomy_5_capital: Orientation Fusion
+taxonomy_5_first_letter: o
+taxonomy_5_first_letter_upper: O
+taxonomy_5_length_1: o
+taxonomy_5_length_2: or
+taxonomy_5_length_3: ori
+taxonomy_5_length_4: orie
+taxonomy_5_length_5: orien
+taxonomy_5_upper: ORIENTATION_FUSION
+taxonomy_5_upper_length_1: O
+taxonomy_5_upper_length_2: OR
+taxonomy_5_upper_length_3: ORI
+taxonomy_5_upper_length_4: ORIE
+taxonomy_5_upper_length_5: ORIEN
+taxonomy_6: bno086
+taxonomy_6_capital: Bno086
+taxonomy_6_first_letter: b
+taxonomy_6_first_letter_upper: B
+taxonomy_6_length_1: b
+taxonomy_6_length_2: bn
+taxonomy_6_length_3: bno
+taxonomy_6_length_4: bno0
+taxonomy_6_length_5: bno08
+taxonomy_6_upper: BNO086
+taxonomy_6_upper_length_1: B
+taxonomy_6_upper_length_2: BN
+taxonomy_6_upper_length_3: BNO
+taxonomy_6_upper_length_4: BNO0
+taxonomy_6_upper_length_5: BNO08
+taxonomy_7: qwiic
+taxonomy_7_capital: Qwiic
+taxonomy_7_first_letter: q
+taxonomy_7_first_letter_upper: Q
+taxonomy_7_length_1: q
+taxonomy_7_length_2: qw
+taxonomy_7_length_3: qwi
+taxonomy_7_length_4: qwii
+taxonomy_7_length_5: qwiic
+taxonomy_7_upper: QWIIC
+taxonomy_7_upper_length_1: Q
+taxonomy_7_upper_length_2: QW
+taxonomy_7_upper_length_3: QWI
+taxonomy_7_upper_length_4: QWII
+taxonomy_7_upper_length_5: QWIIC
+taxonomy_8: 25_4_mm_width_30_48_mm_height
+taxonomy_8_capital: 25.4 mm Width 30 48 mm Height
+taxonomy_8_first_letter: '2'
+taxonomy_8_first_letter_upper: '2'
+taxonomy_8_length_1: '2'
+taxonomy_8_length_2: '25'
+taxonomy_8_length_3: '25_'
+taxonomy_8_length_4: '25_4'
+taxonomy_8_length_5: '25_4_'
+taxonomy_8_upper: 25_4_MM_WIDTH_30_48_MM_HEIGHT
+taxonomy_8_upper_length_1: '2'
+taxonomy_8_upper_length_2: '25'
+taxonomy_8_upper_length_3: '25_'
+taxonomy_8_upper_length_4: '25_4'
+taxonomy_8_upper_length_5: '25_4_'
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+thing:
+  bip_39_2_word_array:
+  - level
+  - robot
+  bip_39_2_word_no_space: levelrobot
+  bip_39_2_word_space: level robot
+  bip_39_2_word_underscore: level_robot
+  bip_39_3_word_array:
+  - level
+  - robot
+  - portion
+  bip_39_3_word_no_space: levelrobotportion
+  bip_39_3_word_space: level robot portion
+  bip_39_3_word_underscore: level_robot_portion
+  bip_39_full_array:
+  - level
+  - robot
+  - portion
+  - flush
+  - fit
+  - arrow
+  - erode
+  - print
+  - erode
+  - junior
+  - famous
+  - cancel
+  bip_39_full_no_space: levelrobotportionflushfitarrowerodeprinterodejuniorfamouscancel
+  bip_39_full_space: level robot portion flush fit arrow erode print erode junior
+    famous cancel
+  bip_39_full_underscore: level_robot_portion_flush_fit_arrow_erode_print_erode_junior_famous_cancel
+  board_variant: qwiic
+  breakout_description: qwiic
+  breakout_pcb_height: 30.48
+  breakout_pcb_width: 25.4
+  catalogue: i2c_breakouts
+  catalogue_status: product_page_reference
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 3.0
+      pos:
+      - 6.9
+      - 0.0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 45.2
+      - 44.0
+      - 3
+      type: positive
+      width: 3.08
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - - depth: 6
+          h: 1.7
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.4
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.9
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -1.9
+          r1: 1.8
+          r2: 3.6
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.7
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.9
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - -10.16
+      - -12.7
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 5
+      inclusion: laser
+      pos: &id001
+      - -10.16
+      - -12.7
+      - 3.0
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 5
+      inclusion: 3dpr
+      pos: *id001
+      r: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 5
+      inclusion: 'true'
+      pos: *id001
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 1.7
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.4
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.9
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -1.9
+          r1: 1.8
+          r2: 3.6
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.7
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.9
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 5
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 5
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - -10.16
+      - 12.7
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 5
+      inclusion: laser
+      pos: &id002
+      - -10.16
+      - 12.7
+      - 3.0
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 5
+      inclusion: 3dpr
+      pos: *id002
+      r: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 5
+      inclusion: 'true'
+      pos: *id002
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+  components_objects:
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 3.0
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+    pos:
+    - 6.9
+    - 0.0
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_plate
+    type: positive
+    width: 3.08
+  - depth: 5
+    pos:
+    - 22.5
+    - -15.0
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 0.0
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 15.0
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - -7.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 7.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 5
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+    pos:
+    - -10.16
+    - -12.7
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 5
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+    pos:
+    - -10.16
+    - -12.7
+    - 4.5
+    radius: 3.75
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 5
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+    pos:
+    - -10.16
+    - 12.7
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 5
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+    pos:
+    - -10.16
+    - 12.7
+    - 4.5
+    radius: 3.75
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_6.9_0.0_0_pos_'electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_30.48_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':12.7}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_mounting_hole_radius_names_-10.16_-12.7_-10.16_12.7_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_3.08_width_3.0_height
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_-15.0_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_0.0_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_15.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_-7.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_7.5_-1_pos
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_6_depth_-10.16_-12.7_0_pos_'electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_30.48_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':12.7}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_mounting_hole_radius_names_-10.16_-12.7_-10.16_12.7_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_5_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-10.16_-12.7_4.5_pos_'electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_30.48_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':12.7}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_mounting_hole_radius_names_-10.16_-12.7_-10.16_12.7_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_5_height_3.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_6_depth_-10.16_12.7_0_pos_'electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_30.48_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':12.7}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_mounting_hole_radius_names_-10.16_-12.7_-10.16_12.7_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_5_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-10.16_12.7_4.5_pos_'electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_30.48_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-12.7}_{'diameter_mm':3.302_'id':'jp4:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':12.7}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_mounting_hole_radius_names_-10.16_-12.7_-10.16_12.7_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_5_height_3.75_radius
+  data_gaps:
+  - Physical connector/pad map and coordinates not imported.
+  - Located mounting holes and complete assembly/connector clearances not imported.
+  - Pull-up values/rails and full electrical limits require schematic review.
+  - Manufacturer nominal outline is not a traced CAD perimeter.
+  definition_authority: working_oomp_populate_i2c.py
+  description: Adds onboard sensor fusion and orientation outputs beyond a raw six-axis
+    IMU. Supports I2C, SPI and UART; host compatibility still needs checking before
+    enabling a lab profile.
+  description_extra: ''
+  description_main: ''
+  dimensions_mm:
+    height: 30.48
+    scope: nominal_pcb_outline
+    source_id: product
+    status: manufacturer_nominal
+    width: 25.4
+  directory: parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+  geometry_ready: false
+  i2c:
+    address_evidence_status: partial_product_page_evidence
+    address_selection: address_select_jumper
+    clock_stretching: unverified
+    default_address_7bit: 75
+    documented_addresses_7bit:
+    - 74
+    - 75
+    maximum_clock_hz: null
+    source_id: product
+  id: electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+  id_no_class: electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+  id_no_size: electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+  id_no_type: electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+  interface_scope: documented_board_interfaces_only
+  interfaces:
+  - i2c
+  - spi
+  - uart
+  item_kind: breakout
+  kwargs:
+    breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+    save_type: none
+    scad_output: 3dpr_long_side
+    type: default_mounting_plate_default
+  link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+  link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+  link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+  manufacturer: sparkfun
+  manufacturer_part_number: SEN-22857
+  md5: 80b766a12ce57c195325564c8f254a90
+  md5_10: 80b766a12c
+  md5_10_upper: 80B766A12C
+  md5_5: 80b76
+  md5_5_upper: 80B76
+  md5_6: 80b766
+  md5_6_alpha: 50sx2
+  md5_6_alpha_upper: 50SX2
+  md5_6_upper: 80B766
+  mounting_coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  mounting_geometry_ready: true
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -12.7
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 12.7
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_hole_status: verified
+  mounting_holes:
+  - - -10.16
+    - -12.7
+  - - -10.16
+    - 12.7
+  mounting_lift: 3
+  mounting_research:
+    board_revision: SparkFun VR IMU Breakout - BNO086 (Qwiic), SEN-22857 initial release
+      v1.0; exact carrier design file from SparkFun repository commit fc8ed693a5193c8faec3098f29d206dea171958e.
+    board_size:
+    - 25.4
+    - 30.48
+    coordinate_system:
+      origin: pcb_bounding_box_centre
+      units: mm
+      view: top
+      x_positive: right
+      y_positive: up
+    derivation: EAGLE layer 20 Dimension lines give native bounds x=0..30.48 mm and
+      y=0..25.4 mm, centre (15.24,12.7) mm. Centring subtracts this centre. Explicit
+      CCW quarter-turn 1 maps centred native coordinates (x,y) to (-y,x), swapping
+      extents to 25.4 x 30.48 mm. Thus JP3 at native (2.54,22.86) maps from (-12.70,10.16)
+      to (-10.16,-12.70) mm; JP4 at (27.94,22.86) maps from (12.70,10.16) to (-10.16,12.70)
+      mm. The guide states 25.4 x 30.48 mm and two holes on one side, consistent with
+      this orientation.
+    fit_status: generic_holder_not_physical_fit_tested
+    identity_evidence: SparkFun product page identifies the BNO086 Qwiic breakout
+      as SEN-22857. The commit-pinned official repository README identifies SEN-22857
+      as initial release v1.0 and says Hardware contains EAGLE design files. The selected
+      SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd is that repository hardware design;
+      the hardware overview independently states the outline and two mounting holes
+      on one side.
+    mounting_holes:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: cad
+      x_mm: -10.16
+      y_mm: 12.7
+    record_sha256: 2a1e9e4c6d120ed61f0435f95de63cc88f13a6700c6f1b84b64b195ce31a5b79
+    research_file: source_file/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857/mounting.yaml
+    reviewed_by: gpt-6-luna
+    sources:
+    - bytes: 424298
+      id: cad
+      kind: manufacturer_cad
+      local_file: mounting_evidence/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+      locator: SparkFun hardware repository commit fc8ed693a5193c8faec3098f29d206dea171958e;
+        exact SEN-22857 initial v1.0 board design file, EAGLE layers 20 Dimension
+        and all drilled candidates
+      registered_at: '2026-11-06T19:37:29+00:00'
+      sha256: cb5e165424218a7223aaf036eec194ec1d27f2969a2d06520b417f170d81a13e
+      url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/Hardware/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+    - bytes: 1787
+      id: repo_identity
+      kind: manufacturer_repository
+      local_file: mounting_evidence/SparkFun_repository_README.md
+      locator: Pinned repository README names SparkFun VR IMU Breakout BNO086 Qwiic
+        SEN-22857 and states Product Versions initial release v1.0; identifies Hardware
+        EAGLE design files
+      registered_at: '2026-11-06T19:37:30+00:00'
+      sha256: 1a03a987ce1bab3abc8a1fe966a34ed1c384352c6e0e50a72f33e8bba1694ed3
+      url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/README.md
+    - bytes: 574091
+      id: product
+      kind: manufacturer_product
+      local_file: website.html
+      locator: SparkFun product page identifies SparkFun VR IMU Breakout - BNO086
+        (Qwiic), SEN-22857
+      registered_at: '2026-11-06T19:37:30+00:00'
+      sha256: 9a835fd9da5f26a019732b8fa0bd3681a7de0673c8279c8cbc91ba20657ec196
+      url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+    - bytes: 87129
+      id: dimensions
+      kind: manufacturer_guide
+      local_file: reference/hardware_overview.html
+      locator: Hardware Overview > Board Dimensions states 1.0 x 1.2 in (25.4 x 30.48
+        mm) and 2 mounting holes on one side; identity and dimensions. Official page,
+        accessed 2026-11-06.
+      registered_at: '2026-11-06T19:37:31+00:00'
+      sha256: d0dc41ec98db197dac91577699384ec5d1fe97677234760223e641d1e48af566
+      url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/hardware_overview/
+    status: verified
+  name: Electronic Breakout Sensor Motion Orientation Fusion Bno086 Qwiic 25 4 Mm
+    Width 30 48 Mm Height Sparkfun Sen 22857
+  name_no_class: Electronic Breakout Sensor Motion Orientation Fusion Bno086 Qwiic
+    25 4 Mm Width 30 48 Mm Height Sparkfun Sen 22857
+  name_no_size: Electronic Breakout Sensor Motion Orientation Fusion Bno086 Qwiic
+    25 4 Mm Width 30 48 Mm Height Sparkfun Sen 22857
+  name_no_type: Electronic Breakout Sensor Motion Orientation Fusion Bno086 Qwiic
+    25 4 Mm Width 30 48 Mm Height Sparkfun Sen 22857
+  name_proper: Electronic Breakout Sensor Motion Orientation Fusion Bno086 Qwiic 25
+    4 Mm Width 30 48 Mm Height Sparkfun Sen 22857
+  name_readable: SparkFun BNO086 VR IMU, Qwiic
+  name_short: Default Mounting Plate Default
+  name_space: electronic breakout sensor motion orientation fusion bno086 qwiic 25
+    4 mm width 30 48 mm height sparkfun sen 22857
+  name_text: Oobb Part Default Mounting Plate Default
+  name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ORIENTATION FUSION BNO086 QWIIC 25
+    4 MM WIDTH 30 48 MM HEIGHT SPARKFUN SEN 22857
+  notes:
+  - UART is also supported. I2C is the default board interface.
+  - Review host driver/clock-stretching compatibility before enabling a firmware profile.
+  oobb_details:
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    mounting_layout: short_sides
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_short_sides
+  - breakout_pcb_height: 30.48
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -12.7
+    - diameter_mm: 3.302
+      id: JP4:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 12.7
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -10.16
+      - -12.7
+    - - -10.16
+      - 12.7
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_long_side
+  oobb_name: mounting_plate_default
+  oomlout_ai_roboclick_1:
+    actions:
+    - command: text_jinja_template
+      convert_to_pdf: false
+      convert_to_png: false
+      dict_data:
+        board_variant: qwiic
+        breakout_description: qwiic
+        breakout_pcb_height: 30.48
+        breakout_pcb_width: 25.4
+        catalogue: i2c_breakouts
+        catalogue_status: product_page_reference
+        data_gaps:
+        - Physical connector/pad map and coordinates not imported.
+        - Located mounting holes and complete assembly/connector clearances not imported.
+        - Pull-up values/rails and full electrical limits require schematic review.
+        - Manufacturer nominal outline is not a traced CAD perimeter.
+        definition_authority: working_oomp_populate_i2c.py
+        description: Adds onboard sensor fusion and orientation outputs beyond a raw
+          six-axis IMU. Supports I2C, SPI and UART; host compatibility still needs
+          checking before enabling a lab profile.
+        dimensions_mm:
+          height: 30.48
+          scope: nominal_pcb_outline
+          source_id: product
+          status: manufacturer_nominal
+          width: 25.4
+        directory: parts\electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+        geometry_ready: false
+        i2c:
+          address_evidence_status: partial_product_page_evidence
+          address_selection: address_select_jumper
+          clock_stretching: unverified
+          default_address_7bit: 75
+          documented_addresses_7bit:
+          - 74
+          - 75
+          maximum_clock_hz: null
+          source_id: product
+        interface_scope: documented_board_interfaces_only
+        interfaces:
+        - i2c
+        - spi
+        - uart
+        item_kind: breakout
+        manufacturer: sparkfun
+        manufacturer_part_number: SEN-22857
+        mounting_coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        mounting_geometry_ready: true
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -12.7
+        - diameter_mm: 3.302
+          id: JP4:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 12.7
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        mounting_hole_status: verified
+        mounting_holes:
+        - - -10.16
+          - -12.7
+        - - -10.16
+          - 12.7
+        mounting_lift: 3
+        mounting_research:
+          board_revision: SparkFun VR IMU Breakout - BNO086 (Qwiic), SEN-22857 initial
+            release v1.0; exact carrier design file from SparkFun repository commit
+            fc8ed693a5193c8faec3098f29d206dea171958e.
+          board_size:
+          - 25.4
+          - 30.48
+          coordinate_system:
+            origin: pcb_bounding_box_centre
+            units: mm
+            view: top
+            x_positive: right
+            y_positive: up
+          derivation: EAGLE layer 20 Dimension lines give native bounds x=0..30.48
+            mm and y=0..25.4 mm, centre (15.24,12.7) mm. Centring subtracts this centre.
+            Explicit CCW quarter-turn 1 maps centred native coordinates (x,y) to (-y,x),
+            swapping extents to 25.4 x 30.48 mm. Thus JP3 at native (2.54,22.86) maps
+            from (-12.70,10.16) to (-10.16,-12.70) mm; JP4 at (27.94,22.86) maps from
+            (12.70,10.16) to (-10.16,12.70) mm. The guide states 25.4 x 30.48 mm and
+            two holes on one side, consistent with this orientation.
+          fit_status: generic_holder_not_physical_fit_tested
+          identity_evidence: SparkFun product page identifies the BNO086 Qwiic breakout
+            as SEN-22857. The commit-pinned official repository README identifies
+            SEN-22857 as initial release v1.0 and says Hardware contains EAGLE design
+            files. The selected SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd is that
+            repository hardware design; the hardware overview independently states
+            the outline and two mounting holes on one side.
+          mounting_holes:
+          - diameter_mm: 3.302
+            id: JP3:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: cad
+            x_mm: -10.16
+            y_mm: -12.7
+          - diameter_mm: 3.302
+            id: JP4:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: cad
+            x_mm: -10.16
+            y_mm: 12.7
+          record_sha256: 2a1e9e4c6d120ed61f0435f95de63cc88f13a6700c6f1b84b64b195ce31a5b79
+          research_file: source_file/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857/mounting.yaml
+          reviewed_by: gpt-6-luna
+          sources:
+          - bytes: 424298
+            id: cad
+            kind: manufacturer_cad
+            local_file: mounting_evidence/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+            locator: SparkFun hardware repository commit fc8ed693a5193c8faec3098f29d206dea171958e;
+              exact SEN-22857 initial v1.0 board design file, EAGLE layers 20 Dimension
+              and all drilled candidates
+            registered_at: '2026-11-06T19:37:29+00:00'
+            sha256: cb5e165424218a7223aaf036eec194ec1d27f2969a2d06520b417f170d81a13e
+            url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/Hardware/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+          - bytes: 1787
+            id: repo_identity
+            kind: manufacturer_repository
+            local_file: mounting_evidence/SparkFun_repository_README.md
+            locator: Pinned repository README names SparkFun VR IMU Breakout BNO086
+              Qwiic SEN-22857 and states Product Versions initial release v1.0; identifies
+              Hardware EAGLE design files
+            registered_at: '2026-11-06T19:37:30+00:00'
+            sha256: 1a03a987ce1bab3abc8a1fe966a34ed1c384352c6e0e50a72f33e8bba1694ed3
+            url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/README.md
+          - bytes: 574091
+            id: product
+            kind: manufacturer_product
+            local_file: website.html
+            locator: SparkFun product page identifies SparkFun VR IMU Breakout - BNO086
+              (Qwiic), SEN-22857
+            registered_at: '2026-11-06T19:37:30+00:00'
+            sha256: 9a835fd9da5f26a019732b8fa0bd3681a7de0673c8279c8cbc91ba20657ec196
+            url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+          - bytes: 87129
+            id: dimensions
+            kind: manufacturer_guide
+            local_file: reference/hardware_overview.html
+            locator: Hardware Overview > Board Dimensions states 1.0 x 1.2 in (25.4
+              x 30.48 mm) and 2 mounting holes on one side; identity and dimensions.
+              Official page, accessed 2026-11-06.
+            registered_at: '2026-11-06T19:37:31+00:00'
+            sha256: d0dc41ec98db197dac91577699384ec5d1fe97677234760223e641d1e48af566
+            url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/hardware_overview/
+          status: verified
+        name: electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+        name_proper: Electronic Breakout Sensor Motion Orientation Fusion Bno086 Qwiic
+          25 4 Mm Width 30 48 Mm Height Sparkfun Sen 22857
+        name_readable: SparkFun BNO086 VR IMU, Qwiic
+        name_space: electronic breakout sensor motion orientation fusion bno086 qwiic
+          25 4 mm width 30 48 mm height sparkfun sen 22857
+        name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ORIENTATION FUSION BNO086 QWIIC
+          25 4 MM WIDTH 30 48 MM HEIGHT SPARKFUN SEN 22857
+        notes:
+        - UART is also supported. I2C is the default board interface.
+        - Review host driver/clock-stretching compatibility before enabling a firmware
+          profile.
+        oobb_details:
+        - breakout_pcb_height: 30.48
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 3.302
+            id: JP3:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: -12.7
+          - diameter_mm: 3.302
+            id: JP4:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 12.7
+          mounting_hole_radius_name: m3
+          mounting_hole_radius_names:
+          - m3
+          - m3
+          mounting_holes:
+          - - -10.16
+            - -12.7
+          - - -10.16
+            - 12.7
+          mounting_layout: full_wrap
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+        - breakout_pcb_height: 30.48
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 3.302
+            id: JP3:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: -12.7
+          - diameter_mm: 3.302
+            id: JP4:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 12.7
+          mounting_hole_radius_name: m3
+          mounting_hole_radius_names:
+          - m3
+          - m3
+          mounting_holes:
+          - - -10.16
+            - -12.7
+          - - -10.16
+            - 12.7
+          mounting_layout: short_sides
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_short_sides
+        - breakout_pcb_height: 30.48
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 3.302
+            id: JP3:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: -12.7
+          - diameter_mm: 3.302
+            id: JP4:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 12.7
+          mounting_hole_radius_name: m3
+          mounting_hole_radius_names:
+          - m3
+          - m3
+          mounting_holes:
+          - - -10.16
+            - -12.7
+          - - -10.16
+            - 12.7
+          mounting_layout: long_side
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_long_side
+        part_number: sen_22857
+        part_number_sparkfun: SEN-22857
+        pinout_status: unverified
+        pins: {}
+        research_date: '2026-10-23'
+        schema_version: 1
+        sources:
+        - id: product
+          kind: manufacturer_product_page
+          retrieved: '2026-10-23'
+          scope: identity, stated interfaces/features and recorded nominal dimensions
+          url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+        - bytes: 424298
+          id: mounting_cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+          locator: SparkFun hardware repository commit fc8ed693a5193c8faec3098f29d206dea171958e;
+            exact SEN-22857 initial v1.0 board design file, EAGLE layers 20 Dimension
+            and all drilled candidates
+          registered_at: '2026-11-06T19:37:29+00:00'
+          sha256: cb5e165424218a7223aaf036eec194ec1d27f2969a2d06520b417f170d81a13e
+          url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/Hardware/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+        - bytes: 1787
+          id: mounting_repo_identity
+          kind: manufacturer_repository
+          local_file: mounting_evidence/SparkFun_repository_README.md
+          locator: Pinned repository README names SparkFun VR IMU Breakout BNO086
+            Qwiic SEN-22857 and states Product Versions initial release v1.0; identifies
+            Hardware EAGLE design files
+          registered_at: '2026-11-06T19:37:30+00:00'
+          sha256: 1a03a987ce1bab3abc8a1fe966a34ed1c384352c6e0e50a72f33e8bba1694ed3
+          url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/README.md
+        - bytes: 574091
+          id: mounting_product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: SparkFun product page identifies SparkFun VR IMU Breakout - BNO086
+            (Qwiic), SEN-22857
+          registered_at: '2026-11-06T19:37:30+00:00'
+          sha256: 9a835fd9da5f26a019732b8fa0bd3681a7de0673c8279c8cbc91ba20657ec196
+          url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+        - bytes: 87129
+          id: mounting_dimensions
+          kind: manufacturer_guide
+          local_file: reference/hardware_overview.html
+          locator: Hardware Overview > Board Dimensions states 1.0 x 1.2 in (25.4
+            x 30.48 mm) and 2 mounting holes on one side; identity and dimensions.
+            Official page, accessed 2026-11-06.
+          registered_at: '2026-11-06T19:37:31+00:00'
+          sha256: d0dc41ec98db197dac91577699384ec5d1fe97677234760223e641d1e48af566
+          url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/hardware_overview/
+        taxonomy_1: electronic
+        taxonomy_10: ''
+        taxonomy_11: ''
+        taxonomy_12: ''
+        taxonomy_13: ''
+        taxonomy_14: sparkfun
+        taxonomy_15: sen_22857
+        taxonomy_2: breakout
+        taxonomy_3: sensor
+        taxonomy_4: motion
+        taxonomy_5: orientation_fusion
+        taxonomy_6: bno086
+        taxonomy_7: qwiic
+        taxonomy_8: 25_4_mm_width_30_48_mm_height
+        taxonomy_9: ''
+        taxonomy_schema: breakout_function_v1
+        type_1: sensor
+        type_2: motion
+        type_3: orientation_fusion
+        type_4: bno086
+        url_chat: ''
+        webpage: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+        webpage_sparkfun: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+      dict_data_files: {}
+      dict_data_files_exists: {}
+      file_output: label_oomp.svg
+      file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+      search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+  oomp_key: oomp_electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+  part_number: sen_22857
+  part_number_sparkfun: SEN-22857
+  pinout_status: unverified
+  pins: {}
+  research_date: '2026-10-23'
+  schema_version: 1
+  short_name: ''
+  size: default_mounting_plate_default
+  sources:
+  - id: product
+    kind: manufacturer_product_page
+    retrieved: '2026-10-23'
+    scope: identity, stated interfaces/features and recorded nominal dimensions
+    url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+  - bytes: 424298
+    id: mounting_cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+    locator: SparkFun hardware repository commit fc8ed693a5193c8faec3098f29d206dea171958e;
+      exact SEN-22857 initial v1.0 board design file, EAGLE layers 20 Dimension and
+      all drilled candidates
+    registered_at: '2026-11-06T19:37:29+00:00'
+    sha256: cb5e165424218a7223aaf036eec194ec1d27f2969a2d06520b417f170d81a13e
+    url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/Hardware/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd
+  - bytes: 1787
+    id: mounting_repo_identity
+    kind: manufacturer_repository
+    local_file: mounting_evidence/SparkFun_repository_README.md
+    locator: Pinned repository README names SparkFun VR IMU Breakout BNO086 Qwiic
+      SEN-22857 and states Product Versions initial release v1.0; identifies Hardware
+      EAGLE design files
+    registered_at: '2026-11-06T19:37:30+00:00'
+    sha256: 1a03a987ce1bab3abc8a1fe966a34ed1c384352c6e0e50a72f33e8bba1694ed3
+    url: https://raw.githubusercontent.com/sparkfun/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/fc8ed693a5193c8faec3098f29d206dea171958e/README.md
+  - bytes: 574091
+    id: mounting_product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: SparkFun product page identifies SparkFun VR IMU Breakout - BNO086 (Qwiic),
+      SEN-22857
+    registered_at: '2026-11-06T19:37:30+00:00'
+    sha256: 9a835fd9da5f26a019732b8fa0bd3681a7de0673c8279c8cbc91ba20657ec196
+    url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+  - bytes: 87129
+    id: mounting_dimensions
+    kind: manufacturer_guide
+    local_file: reference/hardware_overview.html
+    locator: Hardware Overview > Board Dimensions states 1.0 x 1.2 in (25.4 x 30.48
+      mm) and 2 mounting holes on one side; identity and dimensions. Official page,
+      accessed 2026-11-06.
+    registered_at: '2026-11-06T19:37:31+00:00'
+    sha256: d0dc41ec98db197dac91577699384ec5d1fe97677234760223e641d1e48af566
+    url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/hardware_overview/
+  taxonomy_1: electronic
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: sparkfun
+  taxonomy_14_capital: Sparkfun
+  taxonomy_14_first_letter: s
+  taxonomy_14_first_letter_upper: S
+  taxonomy_14_length_1: s
+  taxonomy_14_length_2: sp
+  taxonomy_14_length_3: spa
+  taxonomy_14_length_4: spar
+  taxonomy_14_length_5: spark
+  taxonomy_14_upper: SPARKFUN
+  taxonomy_14_upper_length_1: S
+  taxonomy_14_upper_length_2: SP
+  taxonomy_14_upper_length_3: SPA
+  taxonomy_14_upper_length_4: SPAR
+  taxonomy_14_upper_length_5: SPARK
+  taxonomy_15: sen_22857
+  taxonomy_15_capital: Sen 22857
+  taxonomy_15_first_letter: s
+  taxonomy_15_first_letter_upper: S
+  taxonomy_15_length_1: s
+  taxonomy_15_length_2: se
+  taxonomy_15_length_3: sen
+  taxonomy_15_length_4: sen_
+  taxonomy_15_length_5: sen_2
+  taxonomy_15_upper: SEN_22857
+  taxonomy_15_upper_length_1: S
+  taxonomy_15_upper_length_2: SE
+  taxonomy_15_upper_length_3: SEN
+  taxonomy_15_upper_length_4: SEN_
+  taxonomy_15_upper_length_5: SEN_2
+  taxonomy_1_capital: Electronic
+  taxonomy_1_first_letter: e
+  taxonomy_1_first_letter_upper: E
+  taxonomy_1_length_1: e
+  taxonomy_1_length_2: el
+  taxonomy_1_length_3: ele
+  taxonomy_1_length_4: elec
+  taxonomy_1_length_5: elect
+  taxonomy_1_upper: ELECTRONIC
+  taxonomy_1_upper_length_1: E
+  taxonomy_1_upper_length_2: EL
+  taxonomy_1_upper_length_3: ELE
+  taxonomy_1_upper_length_4: ELEC
+  taxonomy_1_upper_length_5: ELECT
+  taxonomy_2: breakout
+  taxonomy_2_capital: Breakout
+  taxonomy_2_first_letter: b
+  taxonomy_2_first_letter_upper: B
+  taxonomy_2_length_1: b
+  taxonomy_2_length_2: br
+  taxonomy_2_length_3: bre
+  taxonomy_2_length_4: brea
+  taxonomy_2_length_5: break
+  taxonomy_2_upper: BREAKOUT
+  taxonomy_2_upper_length_1: B
+  taxonomy_2_upper_length_2: BR
+  taxonomy_2_upper_length_3: BRE
+  taxonomy_2_upper_length_4: BREA
+  taxonomy_2_upper_length_5: BREAK
+  taxonomy_3: sensor
+  taxonomy_3_capital: Sensor
+  taxonomy_3_first_letter: s
+  taxonomy_3_first_letter_upper: S
+  taxonomy_3_length_1: s
+  taxonomy_3_length_2: se
+  taxonomy_3_length_3: sen
+  taxonomy_3_length_4: sens
+  taxonomy_3_length_5: senso
+  taxonomy_3_upper: SENSOR
+  taxonomy_3_upper_length_1: S
+  taxonomy_3_upper_length_2: SE
+  taxonomy_3_upper_length_3: SEN
+  taxonomy_3_upper_length_4: SENS
+  taxonomy_3_upper_length_5: SENSO
+  taxonomy_4: motion
+  taxonomy_4_capital: Motion
+  taxonomy_4_first_letter: m
+  taxonomy_4_first_letter_upper: M
+  taxonomy_4_length_1: m
+  taxonomy_4_length_2: mo
+  taxonomy_4_length_3: mot
+  taxonomy_4_length_4: moti
+  taxonomy_4_length_5: motio
+  taxonomy_4_upper: MOTION
+  taxonomy_4_upper_length_1: M
+  taxonomy_4_upper_length_2: MO
+  taxonomy_4_upper_length_3: MOT
+  taxonomy_4_upper_length_4: MOTI
+  taxonomy_4_upper_length_5: MOTIO
+  taxonomy_5: orientation_fusion
+  taxonomy_5_capital: Orientation Fusion
+  taxonomy_5_first_letter: o
+  taxonomy_5_first_letter_upper: O
+  taxonomy_5_length_1: o
+  taxonomy_5_length_2: or
+  taxonomy_5_length_3: ori
+  taxonomy_5_length_4: orie
+  taxonomy_5_length_5: orien
+  taxonomy_5_upper: ORIENTATION_FUSION
+  taxonomy_5_upper_length_1: O
+  taxonomy_5_upper_length_2: OR
+  taxonomy_5_upper_length_3: ORI
+  taxonomy_5_upper_length_4: ORIE
+  taxonomy_5_upper_length_5: ORIEN
+  taxonomy_6: bno086
+  taxonomy_6_capital: Bno086
+  taxonomy_6_first_letter: b
+  taxonomy_6_first_letter_upper: B
+  taxonomy_6_length_1: b
+  taxonomy_6_length_2: bn
+  taxonomy_6_length_3: bno
+  taxonomy_6_length_4: bno0
+  taxonomy_6_length_5: bno08
+  taxonomy_6_upper: BNO086
+  taxonomy_6_upper_length_1: B
+  taxonomy_6_upper_length_2: BN
+  taxonomy_6_upper_length_3: BNO
+  taxonomy_6_upper_length_4: BNO0
+  taxonomy_6_upper_length_5: BNO08
+  taxonomy_7: qwiic
+  taxonomy_7_capital: Qwiic
+  taxonomy_7_first_letter: q
+  taxonomy_7_first_letter_upper: Q
+  taxonomy_7_length_1: q
+  taxonomy_7_length_2: qw
+  taxonomy_7_length_3: qwi
+  taxonomy_7_length_4: qwii
+  taxonomy_7_length_5: qwiic
+  taxonomy_7_upper: QWIIC
+  taxonomy_7_upper_length_1: Q
+  taxonomy_7_upper_length_2: QW
+  taxonomy_7_upper_length_3: QWI
+  taxonomy_7_upper_length_4: QWII
+  taxonomy_7_upper_length_5: QWIIC
+  taxonomy_8: 25_4_mm_width_30_48_mm_height
+  taxonomy_8_capital: 25.4 mm Width 30 48 mm Height
+  taxonomy_8_first_letter: '2'
+  taxonomy_8_first_letter_upper: '2'
+  taxonomy_8_length_1: '2'
+  taxonomy_8_length_2: '25'
+  taxonomy_8_length_3: '25_'
+  taxonomy_8_length_4: '25_4'
+  taxonomy_8_length_5: '25_4_'
+  taxonomy_8_upper: 25_4_MM_WIDTH_30_48_MM_HEIGHT
+  taxonomy_8_upper_length_1: '2'
+  taxonomy_8_upper_length_2: '25'
+  taxonomy_8_upper_length_3: '25_'
+  taxonomy_8_upper_length_4: '25_4'
+  taxonomy_8_upper_length_5: '25_4_'
+  taxonomy_9: ''
+  taxonomy_schema: breakout_function_v1
+  type: part
+  type_1: sensor
+  type_2: motion
+  type_3: orientation_fusion
+  type_4: bno086
+  url_chat: ''
+  webpage: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+  webpage_sparkfun: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+type_1: sensor
+type_2: motion
+type_3: orientation_fusion
+type_4: bno086
+url_chat: ''
+webpage: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+webpage_sparkfun: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html

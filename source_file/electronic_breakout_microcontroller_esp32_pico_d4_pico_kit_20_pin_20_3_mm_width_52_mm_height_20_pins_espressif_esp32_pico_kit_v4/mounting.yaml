@@ -1,0 +1,126 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4
+status: needs_review
+board_revision: ESP32-PICO-KIT V4 (CP2102 USB-UART bridge); V4.1 is separately identified
+  by its CP2102N bridge.
+identity_evidence: 'The official ESP32-PICO-KIT V4/V4.1 guide identifies this carrier
+  and states the revision distinction: V4 uses CP2102, V4.1 uses CP2102N. The archived
+  manufacturer V4 schematic title and date identify the V4 schematic. The current
+  official rear dimensional figure is explicitly labeled V4.1, so it is not treated
+  as V4 CAD.'
+board_size:
+- 20.3
+- 52.0
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: null
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources:
+- id: manufacturer_guide
+  local_file: mounting_evidence/guide.html
+  url: https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-pico-kit/user_guide.html
+  kind: manufacturer_product
+  locator: Official ESP32-PICO-KIT V4/V4.1 guide; board identity, V4 vs V4.1 bridge
+    distinction, and shared 52 x 20.3 mm dimensions; does not provide drill coordinates
+  registered_at: '2026-11-06T17:10:33+00:00'
+  bytes: 39211
+  sha256: bf773ba4aacb00f6c4e9afc06ce1f18b3263d1382a28cdb84b34c1abbb88bc30
+- id: dimension_image
+  local_file: mounting_evidence/esp32-pico-kit-v4.1-dimensions-back.jpg
+  url: https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/_images/esp32-pico-kit-v4.1-dimensions-back.jpg
+  kind: manufacturer_drawing
+  locator: Official manufacturer dimension figure, rear view, labeled 52 mm x 20.3
+    mm; image depicts V4.1, no mounting-hole callouts or drill dimensions
+  registered_at: '2026-11-06T17:10:33+00:00'
+  bytes: 52280
+  sha256: cc4b26120c3cc2f83772c8aa9f1b4a7f7ae022d699239aa4aebac10c61f35ef7
+- id: schematic_v4
+  local_file: reference/esp32-pico-kit-v4_schematic.pdf
+  url: https://dl.espressif.com/dl/schematics/esp32-pico-kit-v4_schematic.pdf
+  kind: manufacturer_schematic
+  locator: Archived PDF hash verified against mounting_context.json; one-page ESP32-PICO-KIT
+    schematic, title ESP32-PICO-KIT, dated 2017-10-16; electrical schematic only,
+    no carrier outline/drill coordinates
+  registered_at: '2026-11-06T17:10:34+00:00'
+  bytes: 1497331
+  sha256: 85b1cf2b4bb234074f9b1cd74860a49e9672042a752e02cf104177e87c8ccfb8
+- id: manufacturer_download_page
+  local_file: mounting_evidence/technical_documents.html
+  url: https://www.espressif.com/en/support/download/documents/development-board/1000
+  kind: manufacturer_product
+  locator: Official technical documents download page; entry “ESP32-PICO-KIT V4.1
+    Reference Design”, r1.0 dated 2018-05-15, advertises schematic, PCB layout, gerber
+    and BOM and links esp32-pico-kit_v4.1_20180314_en.zip
+  registered_at: '2026-11-06T17:11:40+00:00'
+  bytes: 331772
+  sha256: 38add5ed40ba5572dffd352fd64014f4a9fa30f729e04eef8274041e9a176071
+attempts:
+- date: '2026-11-06'
+  source: Espressif official V4.1 Reference Design download listed from official technical
+    documents page; linked esp32-pico-kit_v4.1_20180314_en.zip
+  result: 'Unsuccessful: GET followed to documentation.espressif.com and returned
+    a 15,063-byte text/html documentation shell, not a ZIP or CAD. Invalid response
+    discarded; no alternate/mirror URL used. Exact V4 CAD remains unavailable.'
+- date: '2026-11-06'
+  source: Espressif official ESP32-PICO-KIT V4/V4.1 user guide and its V4.1 rear dimension
+    figure
+  result: Confirms product revision split and board dimensions 52 x 20.3 mm. The figure
+    is explicitly V4.1 and has no dimensioned mounting-hole coordinates; the guide
+    does not establish V4 drill pattern.
+- date: '2026-11-06'
+  source: Archived Espressif ESP32-PICO-KIT V4 schematic (existing file reused after
+    hash and content check)
+  result: Identity matches title and dated sheet; SHA-256 matches existing mounting_context.json.
+    One-page electrical schematic contains no board outline or drill geometry.
+- date: '2026-11-06'
+  source: Espressif official GitHub repository search for ESP32-PICO-KIT reference-design
+    CAD
+  result: No exact carrier CAD source found in official repositories surfaced; no
+    third-party or family-derived geometry used.
+- date: '2026-11-07'
+  source: Rechecked the Related Documents link in the archived/current official V4/V4.1
+    guide against Espressif's technical-document listing and followed its linked archive
+  result: The guide's “ESP32-PICO-KIT Reference Design” link resolves to
+    esp32-pico-kit_v4.1_20180314_en.zip; the official technical-document listing names
+    it “ESP32-PICO-KIT V4.1 Reference Design” (r1.0, 2018-05-15). Following the URL
+    again did not yield usable archive/CAD content. This is V4.1 material, not exact
+    V4 evidence. The guide separately links the V4 schematic, which contains no
+    carrier outline or mounting-hole coordinates. Exact V4 mechanical geometry remains
+    unavailable.
+conflicts:
+- 'Mechanical geometry unresolved: exact V4 carrier CAD or dimensioned V4 mounting-hole
+  drawing is unavailable. The linked manufacturer archive is served as HTML, while
+  the available rear dimension figure is V4.1 and contains no hole coordinates. Do
+  not infer the V4 drill pattern or no-hole status.'
+notes:
+- Official guide and dimension figure were acquired 2026-11-06 and archived under
+  mounting_evidence/. The guide page covers V4/V4.1; its rear figure depicts V4.1.
+- Source-context schematic was already archived; its recorded SHA-256 85b1cf2b4bb234074f9b1cd74860a49e9672042a752e02cf104177e87c8ccfb8
+  was verified, and its page content was inspected.
+- Official guide supports board_size [20.3, 52.0] mm. Mounting pattern and drill diameters
+  remain unknown. Status needs_review; no promotion, validation, preview, or holder
+  generation is appropriate without exact mechanical evidence.
+- The official download listing was acquired and archived 2026-11-06 to identify the
+  unavailable V4.1 reference-design link; listing metadata is not itself the CAD.
+- The official guide's generic Reference Design link was rechecked 2026-11-07; its
+  target archive filename and Espressif's listing explicitly identify V4.1. The V4
+  schematic remains electrical-only. Do not substitute V4.1 mechanics for V4.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T17:12:00+00:00'
+identity_source_ids:
+- manufacturer_guide
+- schematic_v4
+- manufacturer_download_page

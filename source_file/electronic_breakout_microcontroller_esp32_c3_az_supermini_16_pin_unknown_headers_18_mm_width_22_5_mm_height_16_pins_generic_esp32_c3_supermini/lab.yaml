@@ -1,0 +1,38 @@
+key: esp32c3
+subtitle: SuperMini 16 pin / native USB
+color: '#353f61'
+usb: native_usb
+default_gpio: 4
+default_adc: 0
+default_i2c:
+  sda: 6
+  scl: 7
+runtime:
+  page: https://micropython.org/download/ESP32_GENERIC_C3/
+  filename: ESP32_GENERIC_C3-20260824-v1.29.0.bin
+  url: https://micropython.org/resources/firmware/ESP32_GENERIC_C3-20260824-v1.29.0.bin
+  format: esp32_bin
+  chip: esp32c3
+  offset: 0
+notes:
+- Nominal outline comes from the supplied OOMP catalogue; pad centres, PCB thickness
+  and hole measurements remain null.
+- User identifies the attached board as mini; SuperMini carrier revision and LED polarity
+  have not been visually confirmed.
+- The catalogue calls its chip FN4; esptool identifies this attached unit as C3 AZ
+  revision v1.1. Chip taxonomy reflects the attached AZ.
+- GPIO2/8/9 are reserved strapping/onboard controls. GPIO12-17 flash and GPIO18/19
+  USB are not offered.
+- Only exposed GPIO0-10/20/21 exist in this profile. ADC controls use ADC1 GPIO0/1/3/4;
+  GPIO5 ADC2 is omitted.
+reserved_gpio:
+- 2
+- 8
+- 9
+acceptance:
+  servo_pin: 4
+  led_pin: 5
+  digital_pin: 6
+  adc_pin: 0
+disabled_adc_gpio:
+- 5

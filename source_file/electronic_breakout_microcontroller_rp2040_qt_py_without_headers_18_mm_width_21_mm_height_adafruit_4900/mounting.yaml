@@ -1,0 +1,92 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_adafruit_4900
+status: no_holes
+board_revision: Manufacturer EAGLE carrier file at Adafruit-QT-Py-RP2040-PCB commit
+  619b543b7f2c7f0dbd7fd5cbe14f768b8b75cced (board-file commit 2021-04-20; sole board-file
+  commit in this repository)
+identity_evidence: Official Adafruit product page identifies Product ID 4900 as Adafruit
+  QT Py RP2040. The pinned manufacturer repository README describes the QT Py RP2040
+  PCB files and links product 4900; its exact board filename is Adafruit QT Py RP2040.brd.
+  The archived EAGLE file SHA-256 matches the bytes at the pinned board-file URL.
+board_size:
+- 17.78
+- 20.701
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: 'EAGLE layer-20 outline bounds are native x=0..17.78 mm and y=0..20.701
+  mm, yielding board_size=[17.78,20.701]. Native-to-canonical top-view transform is
+  x_mm=x_native-8.89 and y_mm=y_native-10.3505 (no mirror, no rotation; quarter_turn=0),
+  so +x is right and +y is up on the top view. Reviewed all 34 drill candidates: JP1
+  and JP3 drills belong to the castellated electrical-pad footprints; X2:hole:1/2
+  are USB-C connector shell anchors and X2:M1..M4 are connector shell pads. None is
+  a board mounting feature. No designated mounting holes selected; explicit empty
+  extraction from the complete pinned carrier CAD.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad
+  local_file: reference/board.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-QT-Py-RP2040-PCB/619b543b7f2c7f0dbd7fd5cbe14f768b8b75cced/Adafruit%20QT%20Py%20RP2040.brd
+  kind: manufacturer_cad
+  locator: Pinned manufacturer EAGLE carrier file at commit 619b543b7f2c7f0dbd7fd5cbe14f768b8b75cced;
+    complete board outline and all drills; inspect every JP1/JP3 castellated signal
+    pad and X2 USB-C anchor feature
+  registered_at: '2026-11-06T15:39:44+00:00'
+  bytes: 586259
+  sha256: 37043a6cc669c9ba29413a4c00e33724d1de67b6b3cc9f2759a8b3d5101437e2
+- id: product
+  local_file: mounting_evidence/product_4900.html
+  url: https://www.adafruit.com/product/4900
+  kind: manufacturer_product
+  locator: Official Adafruit product page title and Product ID 4900
+  registered_at: '2026-11-06T15:39:45+00:00'
+  bytes: 116021
+  sha256: c80f41490443d5341b00e31105f237a0abf8b380211bd64235d9e2fb827cc212
+- id: repository
+  local_file: mounting_evidence/repository_readme.md
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-QT-Py-RP2040-PCB/619b543b7f2c7f0dbd7fd5cbe14f768b8b75cced/README.md
+  kind: manufacturer_repository
+  locator: Pinned manufacturer repository README; identifies repo as QT Py RP2040
+    PCB and links product 4900
+  registered_at: '2026-11-06T15:39:45+00:00'
+  bytes: 6594
+  sha256: 669997de48f1d3f074f8a4c6b03fed1b816880a496bceb42e267b485d9b492ff
+attempts:
+- Verified existing reference/board.brd SHA-256 against commit-pinned manufacturer
+  raw CAD; bytes match exactly.
+- Reviewed pinned manufacturer repository README and official Adafruit product 4900
+  page to establish CAD/product identity.
+- Ran full EAGLE drill inspection over all 34 candidates and the >=1.8 mm mounting-hole
+  inspection; reviewed JP1/JP3 as signal castellations and X2 as USB connector mechanical
+  features.
+conflicts: []
+notes:
+- 'No mounting holes: this carrier has no intended PCB mounting holes in the complete
+  reviewed EAGLE file. Castellated pads and USB connector anchors remain part of the
+  electrical/connector interface and were excluded.'
+- Standard holder generation is intentionally omitted for confirmed no-hole geometry.
+  Component, connector, screw-head, underside clearance and physical fit remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T15:39:54+00:00'
+extraction:
+  selected_ids: []
+  quarter_turn: 0
+  native_centre_mm:
+  - 8.89
+  - 10.3505
+identity_source_ids:
+- product
+- repository
+- cad

@@ -1,0 +1,401 @@
+board_variant: stemma_qt
+breakout_description: stemma_qt
+breakout_pcb_height: 17.78
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+- Default I2C address not established in this import.
+definition_authority: working_oomp_populate_i2c.py
+description: A related ADXL345-style three-axis I2C/SPI option, with selectable +/-2/4/8/16
+  g and motion interrupts. Keep it as a distinct chip family even where libraries
+  support both.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+geometry_ready: false
+i2c:
+  address_evidence_status: unverified
+  address_selection: unverified
+  clock_stretching: unverified
+  default_address_7bit: null
+  documented_addresses_7bit: []
+  maximum_clock_hz: null
+  source_id: product
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+- spi
+item_kind: breakout
+manufacturer: adafruit
+manufacturer_part_number: '4097'
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 2.5
+  id: U$1:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 6.35
+- diameter_mm: 2.5
+  id: U$17:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 6.35
+- diameter_mm: 2.5
+  id: U$19:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: -6.35
+- diameter_mm: 2.5
+  id: U$21:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: -6.35
+mounting_hole_radius_name: m2
+mounting_hole_radius_names:
+- m2
+- m2
+- m2
+- m2
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - 6.35
+- - 10.16
+  - 6.35
+- - -10.16
+  - -6.35
+- - 10.16
+  - -6.35
+mounting_lift: 3
+mounting_research:
+  board_revision: Adafruit product 4097 STEMMA QT carrier; exact Adafruit_ADXL343_PCB
+    EAGLE file “Adafruit ADXL343 STEMMA QT.brd” at commit 13dce5a5963041d7d7f60492da459e00a96f4344
+    (2022-03-22). Product history identifies the STEMMA QT physical-shape change in
+    March 2022; May 2023 silkscreen/connector-color variants are documented as mechanically
+    identical.
+  board_size:
+  - 25.4
+  - 17.78
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'EAGLE layer-20 outline runs from x=0 to 25.4 mm and y=0 to 17.78 mm,
+    including the four 2.54 mm corner arcs; bounding-box centre is (12.7, 8.89) mm.
+    Selected plated package drills are at raw CAD positions (2.54,15.24), (22.86,15.24),
+    (2.54,2.54), (22.86,2.54) mm. Subtract centre: x=2.54−12.7=−10.16 or 22.86−12.7=10.16
+    mm; y=15.24−8.89=6.35 or 2.54−8.89=−6.35 mm. Each selected pad drill is 2.5 mm.
+    Keep native orientation (quarter-turn 0), giving the required top-view centred
+    right/up coordinates.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit product 4097 page names the ADXL343 STEMMA QT/Qwiic
+    board and its mounting holes. Adafruit’s ADXL343 learning-guide downloads page
+    links product 4097 to the Adafruit_ADXL343_PCB manufacturer repository and lists
+    a distinct STEMMA QT schematic/fab print. At pinned commit 13dce5a5963041d7d7f60492da459e00a96f4344,
+    the official repository tree contains the exact file “Adafruit ADXL343 STEMMA
+    QT.brd”; this board file’s title/package/outline is the carrier matching the product
+    revision. Product revision history says the March 2022 change introduced the STEMMA
+    QT physical shape and the May 2023 variants differ only in silkscreen and connector
+    color.
+  mounting_holes:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: -6.35
+  record_sha256: fcb1df9c9165971f67cef4edcd5fb6de4b8b7715e756aa516563d037ad7fe8fa
+  research_file: source_file/electronic_breakout_sensor_motion_accelerometer_adxl343_stemma_qt_adafruit_4097/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 269129
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit ADXL343 STEMMA QT.brd
+    locator: Adafruit manufacturer EAGLE board file; the repository commit tree contains
+      this exact STEMMA QT filename; inspect layer 20 outline and drill features for
+      carrier geometry.
+    registered_at: '2026-11-07T11:54:10+00:00'
+    sha256: 0fce811e81158ae6c9f459d94b686b647fe6a567f816b1072f3bb5b1a266ed80
+    url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL343_PCB/13dce5a5963041d7d7f60492da459e00a96f4344/Adafruit%20ADXL343%20STEMMA%20QT.brd
+  - bytes: 100279
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Adafruit product 4097 page identifies the ADXL343 STEMMA QT / Qwiic board
+      and states four 2.5 mm mounting holes; revision history identifies updates.
+    registered_at: '2026-11-07T11:54:10+00:00'
+    sha256: f85f3b7804ab9768e6d8e126056672f468bb3ca326f8b49a5ab2ab70a4388dbc
+    url: https://www.adafruit.com/product/4097
+  - bytes: 73376
+    id: guide
+    kind: manufacturer_guide
+    local_file: reference/downloads.html
+    locator: Adafruit learning guide links the ADXL343 product and latest EAGLE design
+      files at Adafruit_ADXL343_PCB; identifies STEMMA QT schematic and fab print
+      as a distinct current version.
+    registered_at: '2026-11-07T11:54:30+00:00'
+    sha256: a77ea41782aa73b235462f05af067d2ecc6753863f9ec0ee185a58a47c4c15d1
+    url: https://learn.adafruit.com/adxl343-breakout-learning-guide/downloads
+  status: verified
+name_readable: Adafruit ADXL343, STEMMA QT
+notes: []
+oobb_details:
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+part_number: '4097'
+part_number_adafruit: '4097'
+pinout_status: unverified
+pins: {}
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/4097
+- bytes: 269129
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Adafruit ADXL343 STEMMA QT.brd
+  locator: Adafruit manufacturer EAGLE board file; the repository commit tree contains
+    this exact STEMMA QT filename; inspect layer 20 outline and drill features for
+    carrier geometry.
+  registered_at: '2026-11-07T11:54:10+00:00'
+  sha256: 0fce811e81158ae6c9f459d94b686b647fe6a567f816b1072f3bb5b1a266ed80
+  url: https://raw.githubusercontent.com/adafruit/Adafruit_ADXL343_PCB/13dce5a5963041d7d7f60492da459e00a96f4344/Adafruit%20ADXL343%20STEMMA%20QT.brd
+- bytes: 100279
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: Adafruit product 4097 page identifies the ADXL343 STEMMA QT / Qwiic board
+    and states four 2.5 mm mounting holes; revision history identifies updates.
+  registered_at: '2026-11-07T11:54:10+00:00'
+  sha256: f85f3b7804ab9768e6d8e126056672f468bb3ca326f8b49a5ab2ab70a4388dbc
+  url: https://www.adafruit.com/product/4097
+- bytes: 73376
+  id: mounting_guide
+  kind: manufacturer_guide
+  local_file: reference/downloads.html
+  locator: Adafruit learning guide links the ADXL343 product and latest EAGLE design
+    files at Adafruit_ADXL343_PCB; identifies STEMMA QT schematic and fab print as
+    a distinct current version.
+  registered_at: '2026-11-07T11:54:30+00:00'
+  sha256: a77ea41782aa73b235462f05af067d2ecc6753863f9ec0ee185a58a47c4c15d1
+  url: https://learn.adafruit.com/adxl343-breakout-learning-guide/downloads
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_15: '4097'
+taxonomy_2: breakout
+taxonomy_3: sensor
+taxonomy_4: motion
+taxonomy_5: accelerometer
+taxonomy_6: adxl343
+taxonomy_7: stemma_qt
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: sensor
+type_2: motion
+type_3: accelerometer
+type_4: adxl343
+webpage: https://www.adafruit.com/product/4097
+webpage_adafruit: https://www.adafruit.com/product/4097

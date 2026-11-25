@@ -1,0 +1,289 @@
+{
+  "board_size": [
+    25.4,
+    30.48
+  ],
+  "native_centre_mm": [
+    15.24,
+    12.7
+  ],
+  "quarter_turn": 1,
+  "candidates": [
+    {
+      "id": "JP3:hole:1",
+      "x_mm": -10.16,
+      "y_mm": -12.7,
+      "diameter_mm": 3.302,
+      "plated": false,
+      "package": "STAND-OFF"
+    },
+    {
+      "id": "JP4:hole:1",
+      "x_mm": -10.16,
+      "y_mm": 12.7,
+      "diameter_mm": 3.302,
+      "plated": false,
+      "package": "STAND-OFF"
+    },
+    {
+      "id": "J3:pad:1",
+      "x_mm": 11.43,
+      "y_mm": -6.35,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X04_NO_SILK"
+    },
+    {
+      "id": "J3:pad:2",
+      "x_mm": 11.43,
+      "y_mm": -3.81,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X04_NO_SILK"
+    },
+    {
+      "id": "J3:pad:3",
+      "x_mm": 11.43,
+      "y_mm": -1.27,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X04_NO_SILK"
+    },
+    {
+      "id": "J3:pad:4",
+      "x_mm": 11.43,
+      "y_mm": 1.27,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X04_NO_SILK"
+    },
+    {
+      "id": "J5:pad:1",
+      "x_mm": 11.43,
+      "y_mm": 3.81,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X01_NO_SILK"
+    },
+    {
+      "id": "J10:pad:1",
+      "x_mm": 11.43,
+      "y_mm": 6.35,
+      "diameter_mm": 1.016,
+      "plated": true,
+      "package": "1X01_NO_SILK"
+    },
+    {
+      "id": "J7:pad:1",
+      "x_mm": -11.43,
+      "y_mm": -9.525,
+      "diameter_mm": 0.508,
+      "plated": true,
+      "package": "2X3_TEST_POINTS"
+    },
+    {
+      "id": "J7:pad:2",
+      "x_mm": -11.43,
+      "y_mm": -6.985,
+      "diameter_mm": 0.508,
+      "plated": true,
+      "package": "2X3_TEST_POINTS"
+    },
+    {
+      "id": "J7:pad:3",
+      "x_mm": -8.89,
+      "y_mm": -9.525,
+      "diameter_mm": 0.508,
+      "plated": true,
+      "package": "2X3_TEST_POINTS"
+    },
+    {
+      "id": "J7:pad:4",
+      "x_mm": -8.89,
+      "y_mm": -6.985,
+      "diameter_mm": 0.508,
+      "plated": true,
+      "package": "2X3_TEST_POINTS"
+    },
+    {
+      "id": "J7:pad:5",
+      "x_mm": -6.35,
+      "y_mm": -9.525,
+      "diameter_mm": 0.508,
+      "plated": true,
+      "package": "2X3_TEST_POINTS"
+    },
+    {
+      "id": "J7:pad:6",
+      "x_mm": -6.35,
+      "y_mm": -6.985,
+      "diameter_mm": 0.508,
+      "plated": true,
+      "package": "2X3_TEST_POINTS"
+    },
+    {
+      "id": "JP11:hole:1",
+      "x_mm": 10.16,
+      "y_mm": -12.7,
+      "diameter_mm": 3.302,
+      "plated": false,
+      "package": "STAND-OFF"
+    },
+    {
+      "id": "JP13:hole:1",
+      "x_mm": 10.16,
+      "y_mm": 12.7,
+      "diameter_mm": 3.302,
+      "plated": false,
+      "package": "STAND-OFF"
+    },
+    {
+      "id": "SW1:pad:A",
+      "x_mm": 2.5,
+      "y_mm": -7.5,
+      "diameter_mm": 1.1,
+      "plated": true,
+      "package": "ENCODER_LED_3_KIT"
+    },
+    {
+      "id": "SW1:pad:C",
+      "x_mm": -0.0,
+      "y_mm": -7.5,
+      "diameter_mm": 1.1,
+      "plated": true,
+      "package": "ENCODER_LED_3_KIT"
+    },
+    {
+      "id": "SW1:pad:B",
+      "x_mm": -2.5,
+      "y_mm": -7.5,
+      "diameter_mm": 1.1,
+      "plated": true,
+      "package": "ENCODER_LED_3_KIT"
+    },
+    {
+      "id": "SW1:pad:3",
+      "x_mm": 0.0,
+      "y_mm": 7.0,
+      "diameter_mm": 1.1,
+      "plated": true,
+      "package": "ENCODER_LED_3_KIT"
+    },
+    {
+      "id": "SW1:pad:2",
+      "x_mm": 2.0,
+      "y_mm": 7.0,
+      "diameter_mm": 1.1,
+      "plated": true,
+      "package": "ENCODER_LED_3_KIT"
+    },
+    {
+      "id": "SW1:pad:M1",
+      "x_mm": 5.55,
+      "y_mm": -0.0,
+      "diameter_mm": 2.1,
+      "plated": true,
+      "package": "ENCODER_LED_3_KIT"
+    },
+    {
+      "id": "SW1:pad:M2",
+      "x_mm": -5.55,
+      "y_mm": 0.0,
+      "diameter_mm": 2.1,
+      "plated": true,
+      "package": "ENCODER_LED_3_KIT"
+    },
+    {
+      "id": "SW1:pad:4",
+      "x_mm": -2.0,
+      "y_mm": 7.0,
+      "diameter_mm": 1.1,
+      "plated": true,
+      "package": "ENCODER_LED_3_KIT"
+    },
+    {
+      "id": "SW1:pad:1",
+      "x_mm": 4.0,
+      "y_mm": 7.0,
+      "diameter_mm": 1.1,
+      "plated": true,
+      "package": "ENCODER_LED_3_KIT"
+    },
+    {
+      "id": "SW1:pad:5",
+      "x_mm": -4.0,
+      "y_mm": 7.0,
+      "diameter_mm": 1.1,
+      "plated": true,
+      "package": "ENCODER_LED_3_KIT"
+    }
+  ],
+  "outline_points": [
+    [
+      12.7,
+      -15.24
+    ],
+    [
+      -12.7,
+      -15.24
+    ],
+    [
+      -12.7,
+      -15.24
+    ],
+    [
+      -12.7,
+      15.24
+    ],
+    [
+      -12.7,
+      15.24
+    ],
+    [
+      12.7,
+      15.24
+    ],
+    [
+      12.7,
+      15.24
+    ],
+    [
+      12.7,
+      -15.24
+    ]
+  ],
+  "mounting_holes": [
+    {
+      "id": "JP3:hole:1",
+      "x_mm": -10.16,
+      "y_mm": -12.7,
+      "diameter_mm": 3.302,
+      "plated": false,
+      "package": "STAND-OFF"
+    },
+    {
+      "id": "JP4:hole:1",
+      "x_mm": -10.16,
+      "y_mm": 12.7,
+      "diameter_mm": 3.302,
+      "plated": false,
+      "package": "STAND-OFF"
+    },
+    {
+      "id": "JP11:hole:1",
+      "x_mm": 10.16,
+      "y_mm": -12.7,
+      "diameter_mm": 3.302,
+      "plated": false,
+      "package": "STAND-OFF"
+    },
+    {
+      "id": "JP13:hole:1",
+      "x_mm": 10.16,
+      "y_mm": 12.7,
+      "diameter_mm": 3.302,
+      "plated": false,
+      "package": "STAND-OFF"
+    }
+  ]
+}

@@ -1,0 +1,1494 @@
+type_1: microcontroller
+type_2: esp32_wroom_32
+type_3: lolin_d32
+breakout_description: 25_4_mm_width_57_mm_height_20_pins
+manufacturer: wemos
+part_number: lolin_d32
+breakout_pcb_width: 25.4
+breakout_pcb_height: 57
+schema_version: 1
+item_kind: breakout
+name_readable: LOLIN D32 v1.0
+taxonomy_1: electronic
+taxonomy_2: breakout
+taxonomy_3: microcontroller
+taxonomy_4: esp32_wroom_32
+taxonomy_5: lolin_d32
+taxonomy_6: 25_4_mm_width_57_mm_height_20_pins
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: wemos
+taxonomy_15: lolin_d32
+form_factor: lolin_d32
+chip:
+  family: esp32
+  part_number: esp32_wroom_32
+  identity_scope: catalogue_chip_or_module_label
+  oomp_id: null
+  silicon_revision: null
+dimensions_mm:
+  width: 25.4
+  height: 57
+  pcb_thickness: null
+  assembled_height: null
+  scope: pcb_outline_excludes_usb_overhang
+  source_id: mechanical
+  status: manufacturer_drawing
+coordinate_system:
+  units: mm
+  origin: centre_of_pcb_outline
+  view: top_with_usb_at_positive_y
+  x_positive: right
+  y_positive: towards_usb
+assembly:
+  headers: unspecified
+  header_pitch_mm: 2.54
+electrical:
+  logic_voltage_v: 3.3
+  gpio_5v_tolerant: false
+  usb_connector: micro_usb_b
+  source_id: chip_datasheet
+memory:
+  external_flash_bytes: 4194304
+  psram_bytes: null
+mounting_holes: []
+mounting_hole_details: []
+mounting_hole_candidates:
+- x_mm: -10.7
+  y_mm: null
+  diameter_mm: 2.1
+  source_id: mechanical
+  status: x_and_diameter_only_y_not_dimensioned
+- x_mm: 10.7
+  y_mm: null
+  diameter_mm: 2.1
+  source_id: mechanical
+  status: x_and_diameter_only_y_not_dimensioned
+mounting_hole_status: partially_dimensioned_in_manufacturer_drawing
+pins:
+  JP1_1:
+    connector: JP1
+    number: '1'
+    name: 3V3
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - 3V3
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    capabilities: []
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  JP1_2:
+    connector: JP1
+    number: '2'
+    name: RESET
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - RESET
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: control
+    direction: not_applicable
+    capabilities: []
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  JP1_3:
+    connector: JP1
+    number: '3'
+    name: IO36
+    gpio: 36
+    adc_channel: 0
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - Input only; no internal pull-up or pull-down.
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: input
+    capabilities:
+    - gpio
+    - digital_input
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 1
+    logic_voltage_v: 3.3
+    input_only: true
+    routable_peripherals:
+    - gpio_matrix_inputs_only
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_4:
+    connector: JP1
+    number: '4'
+    name: IO39
+    gpio: 39
+    adc_channel: 3
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - Input only; no internal pull-up or pull-down.
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: input
+    capabilities:
+    - gpio
+    - digital_input
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 1
+    logic_voltage_v: 3.3
+    input_only: true
+    routable_peripherals:
+    - gpio_matrix_inputs_only
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_5:
+    connector: JP1
+    number: '5'
+    name: IO34
+    gpio: 34
+    adc_channel: 6
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - Input only; no internal pull-up or pull-down.
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: input
+    capabilities:
+    - gpio
+    - digital_input
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 1
+    logic_voltage_v: 3.3
+    input_only: true
+    routable_peripherals:
+    - gpio_matrix_inputs_only
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_6:
+    connector: JP1
+    number: '6'
+    name: IO32
+    gpio: 32
+    adc_channel: 4
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 1
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_7:
+    connector: JP1
+    number: '7'
+    name: IO33
+    gpio: 33
+    adc_channel: 5
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 1
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_8:
+    connector: JP1
+    number: '8'
+    name: IO25
+    gpio: 25
+    adc_channel: 8
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - DAC1
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_output
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_9:
+    connector: JP1
+    number: '9'
+    name: IO26
+    gpio: 26
+    adc_channel: 9
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - DAC2
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_output
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_10:
+    connector: JP1
+    number: '10'
+    name: IO27
+    gpio: 27
+    adc_channel: 7
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_11:
+    connector: JP1
+    number: '11'
+    name: IO14
+    gpio: 14
+    adc_channel: 6
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_12:
+    connector: JP1
+    number: '12'
+    name: IO12
+    gpio: 12
+    adc_channel: 5
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    - Boot strapping pin; external levels affect startup.
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_13:
+    connector: JP1
+    number: '13'
+    name: IO13
+    gpio: 13
+    adc_channel: 4
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_14:
+    connector: JP1
+    number: '14'
+    name: EN
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - EN
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: control
+    direction: not_applicable
+    capabilities: []
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  JP1_15:
+    connector: JP1
+    number: '15'
+    name: VBUS
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - VBUS
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    capabilities: []
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  JP1_16:
+    connector: JP1
+    number: '16'
+    name: VBAT
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - VBAT
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    capabilities: []
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  JP2_1:
+    connector: JP2
+    number: '1'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    capabilities: []
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  JP2_2:
+    connector: JP2
+    number: '2'
+    name: IO23
+    gpio: 23
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    signal_types:
+    - digital
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi
+      signal: mosi
+  JP2_3:
+    connector: JP2
+    number: '3'
+    name: IO22
+    gpio: 22
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    signal_types:
+    - digital
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: i2c
+      signal: scl
+  JP2_4:
+    connector: JP2
+    number: '4'
+    name: IO1
+    gpio: 1
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    signal_types:
+    - digital
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: uart
+      signal: tx
+  JP2_5:
+    connector: JP2
+    number: '5'
+    name: IO3
+    gpio: 3
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    signal_types:
+    - digital
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: uart
+      signal: rx
+  JP2_6:
+    connector: JP2
+    number: '6'
+    name: IO21
+    gpio: 21
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    signal_types:
+    - digital
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: i2c
+      signal: sda
+  JP2_7:
+    connector: JP2
+    number: '7'
+    name: IO19
+    gpio: 19
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    signal_types:
+    - digital
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi
+      signal: miso
+  JP2_8:
+    connector: JP2
+    number: '8'
+    name: IO18
+    gpio: 18
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    signal_types:
+    - digital
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi
+      signal: sck
+  JP2_9:
+    connector: JP2
+    number: '9'
+    name: IO5
+    gpio: 5
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - Boot strapping pin; external levels affect startup.
+    - 'Shared onboard net: led'
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    signal_types:
+    - digital
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi
+      signal: ss
+  JP2_10:
+    connector: JP2
+    number: '10'
+    name: IO17
+    gpio: 17
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    signal_types:
+    - digital
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP2_11:
+    connector: JP2
+    number: '11'
+    name: IO16
+    gpio: 16
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    signal_types:
+    - digital
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP2_12:
+    connector: JP2
+    number: '12'
+    name: IO4
+    gpio: 4
+    adc_channel: 0
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP2_13:
+    connector: JP2
+    number: '13'
+    name: IO0
+    gpio: 0
+    adc_channel: 1
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    - Boot strapping pin; external levels affect startup.
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP2_14:
+    connector: JP2
+    number: '14'
+    name: IO2
+    gpio: 2
+    adc_channel: 2
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    - Boot strapping pin; external levels affect startup.
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP2_15:
+    connector: JP2
+    number: '15'
+    name: IO15
+    gpio: 15
+    adc_channel: 3
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    - Boot strapping pin; external levels affect startup.
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP2_16:
+    connector: JP2
+    number: '16'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    capabilities: []
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+connectors:
+  JP1:
+    contact_count: 16
+    pitch_mm: 2.54
+    source_id: schematic
+    coordinate_status: not_transcribed
+  JP2:
+    contact_count: 16
+    pitch_mm: 2.54
+    source_id: schematic
+    coordinate_status: not_transcribed
+onboard_gpio_connections:
+- gpio: 5
+  function: led
+  source_id: board_guide
+sources:
+- id: original_catalogue
+  url: null
+  title: Original populate entries in this repository
+  local_file: null
+  scope: Nominal dimensions and identity; not manufacturer verification
+  accessed: '2026-10-22'
+- id: chip_datasheet
+  url: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+  title: chip_datasheet
+  accessed: '2026-10-22'
+  scope: GPIO capabilities, electrical limits and strapping; not carrier geometry
+- id: board_guide
+  url: https://www.wemos.cc/en/latest/d32/d32.html
+  title: d32 manufacturer guide
+  accessed: '2026-10-22'
+  scope: Board identity, connector pinout and documented functions
+- id: mechanical
+  url: https://www.wemos.cc/en/latest/_static/files/dim_d32_v1.0.0.pdf
+  title: Dimension V1.0.0[PDF]
+  accessed: '2026-10-22'
+  scope: Manufacturer mechanical for the stated revision
+  local_file: reference/dim_d32_v1.0.0.pdf
+  sha256: c73e4be12df49e8a34a0fc2ab62d95ebdca93f750006bd9a96df2c7c3ba635c2
+- id: schematic
+  url: https://www.wemos.cc/en/latest/_static/files/sch_d32_v1.0.0.pdf
+  title: Schematic V1.0.0[PDF]
+  accessed: '2026-10-22'
+  scope: Manufacturer schematic for the stated revision
+  local_file: reference/sch_d32_v1.0.0.pdf
+  sha256: 6af98efaf9733ed7a56df28f79afbb2ef1147244f271a3e2523881f7ebb5f9b1
+- id: interface_variant
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/variants/d32/pins_arduino.h
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  retrieved_date: '2026-10-23'
+  scope: Arduino variant pin assignments; not a physical header drawing
+  local_file: reference/interface_defaults/esp32_d32.h
+  sha256: fd3cba4b2c807d994e2442d4c5de2ffb5ad91dc08480aaa4fffbb937d65e70fa
+- id: interface_variant_base
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/variants/d32/d32_core.h
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  retrieved_date: '2026-10-23'
+  scope: Included common LOLIN D32 pin aliases
+  local_file: reference/interface_defaults/esp32_d32_core.h
+  sha256: d9368f23ba1261325be718ca52f261485ff83aade175efd4780f8adf2f81f600
+- id: interface_board_selection
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/boards.txt
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  retrieved_date: '2026-10-23'
+  scope: Framework board names and variant selection; generic selections remain explicitly scoped
+  local_file: reference/interface_defaults/esp32_boards.txt
+  sha256: f659bfbdbf27e4fb9e35862cc7a145ef12832b6d20783786120d9651e17feade
+  content_scope: excerpt_of_board_names_and_variant_selections
+  source_document_sha256: 11b90d1f4795ec365418635749b685a2f3d8320d0e163d886aa2099e81277b07
+- id: interface_runtime_uart
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/cores/esp32/HardwareSerial.cpp
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  retrieved_date: '2026-10-23'
+  scope: Framework API construction/default behavior; USB Serial is separate from UART pin aliases
+  local_file: reference/interface_defaults/esp32_HardwareSerial.cpp
+  sha256: a555861fb4f28a2a4c1d903a8152d714902fee2510c9eaf3ad5311dbcd779035
+- id: interface_runtime_i2c
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/Wire/src/Wire.cpp
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  retrieved_date: '2026-10-23'
+  scope: Framework API construction/default behavior; USB Serial is separate from UART pin aliases
+  local_file: reference/interface_defaults/esp32_Wire.cpp
+  sha256: 0454e5becf7acaa6f7cb466397682d762461f678cbb88644f31f313e653b71bc
+- id: interface_runtime_spi
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/SPI/src/SPI.cpp
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  retrieved_date: '2026-10-23'
+  scope: Framework API construction/default behavior; USB Serial is separate from UART pin aliases
+  local_file: reference/interface_defaults/esp32_SPI.cpp
+  sha256: 4caea80d21fa230a528322d9eb900880a0acd9c91cb355bc5cec514ea02ecaed
+notes: []
+data_gaps:
+- Assembled component keepouts and USB insertion/cable envelopes have not been captured.
+- Mounting-hole X centres and diameters are dimensioned; Y centres are not. Partial holes are not passed
+  to SCAD or drawn as located holes.
+- Header numbers and signals are transcribed from schematic; absolute pad centres remain null pending
+  CAD or a dimensioned pin drawing.
+- Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced
+  with carrier-header numbers.
+pinout_scope: Expansion connectors and explicitly listed test pads; USB socket contacts excluded.
+chip_resources:
+  cpu_core_count: 2
+  clock_max_mhz: 240
+  pwm_channels: 16
+  hardware_i2c_controllers: 2
+  general_purpose_spi_controllers: null
+  hardware_uart_controllers: 3
+  pio_state_machines: 0
+  scope: silicon resources; board routing and firmware may reduce availability
+  source_id: chip_datasheet
+lab_support:
+  status: catalogue_reference_only
+  automatic_firmware_enable: false
+  requires_reviewed_board_profile: true
+  gpio_matrix_routing: true
+pinout_status: documented_contact_inventory
+svg_details:
+  svg_name: microcontroller
+  stylesheet: microcontroller
+  width: 25.4
+  height: 57
+gpio_summary:
+  exposed:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 21
+  - 22
+  - 23
+  - 25
+  - 26
+  - 27
+  - 32
+  - 33
+  - 34
+  - 36
+  - 39
+  general_io_candidates:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 21
+  - 22
+  - 23
+  - 25
+  - 26
+  - 27
+  - 32
+  - 33
+  - 34
+  - 36
+  - 39
+  analog_candidates:
+  - 0
+  - 2
+  - 4
+  - 12
+  - 13
+  - 14
+  - 15
+  - 25
+  - 26
+  - 27
+  - 32
+  - 33
+  - 34
+  - 36
+  - 39
+  automatic_firmware_enable: false
+default_interfaces:
+  uart:
+    protocol: uart
+    status: documented
+    basis: framework_pin_aliases
+    framework: arduino-esp32
+    variant: d32
+    variant_scope: board_variant
+    api: null
+    peripheral: null
+    source_ids:
+    - interface_variant
+    - interface_variant_base
+    - interface_board_selection
+    - interface_runtime_uart
+    tx_gpio: 1
+    rx_gpio: 3
+    pin_keys:
+      tx:
+      - JP2_4
+      rx:
+      - JP2_5
+    signal_status:
+      tx: mapped
+      rx: mapped
+    notes:
+    - UART GPIOs are distinct from USB CDC/USB Serial. The meaning of Serial depends on the core and USB
+      build settings.
+    - TX/RX are board variant aliases. Pass the GPIOs explicitly to the selected HardwareSerial instance;
+      no-argument pin selection can use SoC UART defaults instead.
+  i2c:
+    protocol: i2c
+    status: documented
+    basis: framework_defaults
+    framework: arduino-esp32
+    variant: d32
+    variant_scope: board_variant
+    api: Wire
+    peripheral: null
+    source_ids:
+    - interface_variant
+    - interface_variant_base
+    - interface_board_selection
+    - interface_runtime_i2c
+    sda_gpio: 21
+    scl_gpio: 22
+    pin_keys:
+      sda:
+      - JP2_6
+      scl:
+      - JP2_3
+    signal_status:
+      sda: mapped
+      scl: mapped
+    notes: []
+  spi:
+    protocol: spi
+    status: documented
+    basis: framework_defaults
+    framework: arduino-esp32
+    variant: d32
+    variant_scope: board_variant
+    api: SPI
+    peripheral: null
+    source_ids:
+    - interface_variant
+    - interface_variant_base
+    - interface_board_selection
+    - interface_runtime_spi
+    sck_gpio: 18
+    mosi_gpio: 23
+    miso_gpio: 19
+    ss_gpio: 5
+    pin_keys:
+      sck:
+      - JP2_8
+      mosi:
+      - JP2_2
+      miso:
+      - JP2_7
+      ss:
+      - JP2_9
+    signal_status:
+      sck: mapped
+      mosi: mapped
+      miso: mapped
+      ss: mapped
+    notes:
+    - ss is the framework chip-select alias/default, not an automatically asserted CS. Select and drive
+      CS as required by the peripheral and library.
+interface_defaults_version: 1
+oobb_details:
+- breakout_pcb_width: 25.4
+  breakout_pcb_height: 57
+  mounting_holes: []
+  mounting_hole_radius_name: m2
+  oobb_name: mounting_plate_default
+- breakout_pcb_width: 25.4
+  breakout_pcb_height: 57
+  mounting_holes: []
+  mounting_hole_radius_name: m2
+  oobb_name: mounting_plate_oobb
+  scad_output: working_oobb

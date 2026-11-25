@@ -1,0 +1,173 @@
+Adafruit VL53L0X Time of Flight Micro-LIDAR Distance Sensor Breakout
+Pinouts
+Adafruit VL53L0X Time of Flight Micro-LIDAR Distance Sensor Breakout
+Use the power of photons for good!
+by
+lady ada
+published November 23, 2016, last edited August 20, 2026
+last major update March 04, 2024
+posted in
+Adafruit Products
+Sensors
+/
+Proximity
+Breakout Boards
+/
+Accel, Gyro, & Magnetometers
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly
+Arduino Code
+Python & CircuitPython
+Python Docs
+WipperSnapper
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Your browser does not support the video tag.
+Featured
+Adafruit VL53L0X Time of Flight Distance Sensor - ~30 to 1000mm
+$14.95
+Add  to Cart
+View product details
+70
+Intermediate
+Product guide
+😍
+1
+Pinouts
+The VL53L0X is a I2C sensor. That means it uses the two I2C data/clock wires available on most microcontrollers, and can share those pins with other sensors as long as they don't have an address collision.
+For future reference, the default I2C address is
+0x29
+. You
+can
+change it, but only in software. That means you have to wire the SHUTDOWN pin and hold all but one sensor in reset while you reconfigure one sensor at a time
+Power Pins:
+Vin
+- this is the power pin. Since the chip uses 2.8 VDC, we have included a voltage regulator on board that will take 3-5VDC and safely convert it down. To power the board, give it the same power as the logic level of your microcontroller - e.g. for a 5V micro like Arduino, use 5V
+2v8
+- this is the 2.8V output from the voltage regulator, you can grab up to 100mA from this if you like
+GND
+- common ground for power and logic
+I2C Logic pins:
+SCL
+- I2C clock pin, connect to your microcontrollers I2C clock line.
+SDA
+- I2C data pin, connect to your microcontrollers I2C data line.
+STEMMA QT
+-
+These connectors allow you to connectors to dev boards with
+STEMMA QT
+connectors or to other things with
+various associated accessories
+.
+Control Pins:
+GPIO
+- this is a pin that is used by the sensor to indicate that data is ready. It's useful for when doing continuous sensing. Note there is no level shifting on this pin, you may not be able to read the 2.8V-logic-level voltage on a 5V microcontroller (we could on an arduino UNO but no promises). Our library doesn't make use of this pin but for advanced users, it's there!
+SHDN
+- the shutdown pin for the sensor. By default it's pulled high. There's a level-shifting diode so you can use 3-5V logic on this pin. When the pin is pulled low, the sensor goes into shutdown mode.
+Page last edited March 08, 2024
+Overview
+Assembly
+Related Guides
+STEMMA Lego base plates
+By
+Ruiz Brothers
+beginner
+45
+Your browser does not support the video tag. This links to the guide Proximity Based Lighting.
+Proximity Based Lighting
+By
+Dave Astels
+intermediate
+37
+Use an art canvas to diffuse an RGB matrix
+By
+Chris Daly
+intermediate
+30
+Distance Measurement with Ultrasound
+By
+Kevin Walters
+beginner
+40
+Adafruit AW9523 GPIO Expander and LED Driver
+By
+Kattni Rembor
+Product Guide
+28
+LSM303 Accelerometer + Compass Breakout
+By
+Bill Earl
+Product Guide
+41
+Adafruit TMAG5273 3D Hall Effect Magnetometer Breakout
+By
+Liz Clark
+Product Guide
+1
+Adafruit PCA9546 4-Channel STEMMA QT Multiplexer
+By
+Liz Clark
+Product Guide
+11
+Adafruit HUZZAH32 – ESP32 Breakout Board
+By
+Kattni Rembor
+Product Guide
+25
+Adafruit PyRuler
+By
+Kattni Rembor
+Product Guide
+26
+Getting Started with the nRF8001 Bluefruit LE Breakout
+By
+Kevin Townsend
+beginner
+39
+Adafruit 2.13" Monochrome E-Ink Bonnet for Raspberry Pi
+By
+Kattni Rembor
+Product Guide
+14
+Your browser does not support the video tag. This links to the guide Tree with Animated Eyes and Motion Sensor.
+Tree with Animated Eyes and Motion Sensor
+By
+Erin St Blaine
+intermediate
+34
+Your browser does not support the video tag. This links to the guide Adafruit QT Py Activity Timer and Hydration Reminder.
+Adafruit QT Py Activity Timer and Hydration Reminder
+By
+Kattni Rembor
+beginner
+28
+Introducing ItsyBitsy M0 Express
+By
+lady ada
+Product Guide
+39
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

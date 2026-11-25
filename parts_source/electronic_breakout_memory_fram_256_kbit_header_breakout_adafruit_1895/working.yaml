@@ -1,0 +1,287 @@
+board_variant: header_breakout
+breakout_description: header_breakout
+breakout_pcb_height: 15.24
+breakout_pcb_width: 20.32
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+- Default I2C address not established in this import.
+definition_authority: working_oomp_populate_i2c.py
+description: Adds persistent logging/configuration storage. Leave the exact fitted
+  memory IC as unverified until checked against the board schematic/BOM; do not derive
+  it solely from capacity.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+geometry_ready: false
+i2c:
+  address_evidence_status: unverified
+  address_selection: unverified
+  clock_stretching: unverified
+  default_address_7bit: null
+  documented_addresses_7bit: []
+  maximum_clock_hz: null
+  source_id: product
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+manufacturer: adafruit
+manufacturer_part_number: '1895'
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 2.5
+  id: U$5:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -7.62
+  y_mm: 5.08
+- diameter_mm: 2.5
+  id: U$6:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 7.62
+  y_mm: 5.08
+mounting_hole_radius_name: m2
+mounting_hole_radius_names:
+- m2
+- m2
+mounting_hole_status: verified
+mounting_holes:
+- - -7.62
+  - 5.08
+- - 7.62
+  - 5.08
+mounting_lift: 3
+mounting_research:
+  board_revision: Adafruit I2C FRAM product 1895, EAGLE carrier at adafruit/Adafruit-FRAM-Breakout-PCB
+    commit f7d4afa22ddd562f52c557e2e8f003611515b4f4. The product page says the November
+    18, 2022 PCB update changed silkscreen only; old and new versions are otherwise
+    identical.
+  board_size:
+  - 20.32
+  - 15.24
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: EAGLE layer-20 outline bounds are native x=0..20.32 mm and y=0..15.24
+    mm. Native centre is (10.16, 7.62) mm. With no quarter-turn, canonical top-view
+    coordinates are x=x_native-10.16 and y=y_native-7.62. The two selected named MOUNTINGHOLE_2.5_PLATED
+    package drills have native centres (2.54, 12.70) and (17.78, 12.70) mm, yielding
+    (-7.62, 5.08) and (7.62, 5.08) mm; drill diameter is 2.5 mm.
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit product 1895 page identifies the I2C FRAM breakout and
+    links its guide, which links the official Adafruit-FRAM-Breakout-PCB repository.
+    The repository commit f7d4afa22ddd562f52c557e2e8f003611515b4f4 contains the exact
+    Adafruit I2C FRAM.brd file; downloaded pinned bytes match the archived EAGLE file
+    SHA-256. Product revision history says the 2022 change was silkscreen-only and
+    versions are otherwise identical.
+  mounting_holes:
+  - diameter_mm: 2.5
+    id: U$5:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -7.62
+    y_mm: 5.08
+  - diameter_mm: 2.5
+    id: U$6:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 7.62
+    y_mm: 5.08
+  record_sha256: d41c228a5e1cee31ad40e40b3b25615960b13793e564a117dcb083119c2bb00d
+  research_file: source_file/electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 85213
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: 'Adafruit product 1895, dimensions 15.5 x 20 mm and revision history:
+      Nov 18 2022 PCB update changes silkscreen only, old/new versions mechanically
+      identical'
+    registered_at: '2026-11-07T11:45:08+00:00'
+    sha256: bc2e1295bb960afb61f5bb5f68453bfb6ec34d1404867825f014d36be972ee31
+    url: https://www.adafruit.com/product/1895
+  - bytes: 116081
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit_I2C_FRAM.brd
+    locator: Exact repository filename at commit f7d4afa22ddd562f52c557e2e8f003611515b4f4.
+      Download verified 2026-11-07 and byte SHA256 matches archived mounting_evidence/Adafruit_I2C_FRAM.brd.
+      EAGLE XML board outline and named U$5/U$6 MOUNTINGHOLE_2.5_PLATED pads.
+    registered_at: '2026-11-07T11:45:16+00:00'
+    sha256: 5b1f3d761b525adf69dad0457708bbc4a2f44c9484cddc3eb237a37bafeb067b
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-FRAM-Breakout-PCB/f7d4afa22ddd562f52c557e2e8f003611515b4f4/Adafruit%20I2C%20FRAM.brd
+  status: verified
+name_readable: Adafruit I2C FRAM, 256 Kbit / 32 KByte
+notes: []
+oobb_details:
+- breakout_pcb_height: 15.24
+  breakout_pcb_width: 20.32
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$5:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -7.62
+    y_mm: 5.08
+  - diameter_mm: 2.5
+    id: U$6:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 7.62
+    y_mm: 5.08
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  mounting_holes:
+  - - -7.62
+    - 5.08
+  - - 7.62
+    - 5.08
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 15.24
+  breakout_pcb_width: 20.32
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$5:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -7.62
+    y_mm: 5.08
+  - diameter_mm: 2.5
+    id: U$6:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 7.62
+    y_mm: 5.08
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  mounting_holes:
+  - - -7.62
+    - 5.08
+  - - 7.62
+    - 5.08
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 15.24
+  breakout_pcb_width: 20.32
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$5:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -7.62
+    y_mm: 5.08
+  - diameter_mm: 2.5
+    id: U$6:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 7.62
+    y_mm: 5.08
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  mounting_holes:
+  - - -7.62
+    - 5.08
+  - - 7.62
+    - 5.08
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+part_number: '1895'
+part_number_adafruit: '1895'
+pinout_status: unverified
+pins: {}
+product_dimensions_mm:
+  depth: 2
+  height: 20
+  scope: manufacturer_product_dimensions_not_verified_pcb_outline
+  source_id: product
+  width: 15.5
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/1895
+- bytes: 85213
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: 'Adafruit product 1895, dimensions 15.5 x 20 mm and revision history: Nov
+    18 2022 PCB update changes silkscreen only, old/new versions mechanically identical'
+  registered_at: '2026-11-07T11:45:08+00:00'
+  sha256: bc2e1295bb960afb61f5bb5f68453bfb6ec34d1404867825f014d36be972ee31
+  url: https://www.adafruit.com/product/1895
+- bytes: 116081
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Adafruit_I2C_FRAM.brd
+  locator: Exact repository filename at commit f7d4afa22ddd562f52c557e2e8f003611515b4f4.
+    Download verified 2026-11-07 and byte SHA256 matches archived mounting_evidence/Adafruit_I2C_FRAM.brd.
+    EAGLE XML board outline and named U$5/U$6 MOUNTINGHOLE_2.5_PLATED pads.
+  registered_at: '2026-11-07T11:45:16+00:00'
+  sha256: 5b1f3d761b525adf69dad0457708bbc4a2f44c9484cddc3eb237a37bafeb067b
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-FRAM-Breakout-PCB/f7d4afa22ddd562f52c557e2e8f003611515b4f4/Adafruit%20I2C%20FRAM.brd
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_15: '1895'
+taxonomy_2: breakout
+taxonomy_3: memory
+taxonomy_4: fram
+taxonomy_5: 256_kbit
+taxonomy_6: ''
+taxonomy_7: header_breakout
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: memory
+type_2: fram
+type_3: 256_kbit
+type_4: ''
+webpage: https://www.adafruit.com/product/1895
+webpage_adafruit: https://www.adafruit.com/product/1895

@@ -1,0 +1,24 @@
+{
+  "name_readable": "SparkFun BMI270 6DoF IMU, Qwiic",
+  "manufacturer": "sparkfun",
+  "part_number": "sen_22397",
+  "webpage": "https://www.sparkfun.com/sparkfun-6dof-imu-breakout-bmi270-qwiic.html",
+  "sources": [
+    {
+      "id": "product",
+      "url": "https://www.sparkfun.com/sparkfun-6dof-imu-breakout-bmi270-qwiic.html",
+      "retrieved": "2026-10-23",
+      "kind": "manufacturer_product_page",
+      "scope": "identity, stated interfaces/features and recorded nominal dimensions"
+    }
+  ],
+  "dimensions_mm": {
+    "width": 25.4,
+    "height": 25.4,
+    "status": "manufacturer_nominal",
+    "scope": "nominal_pcb_outline",
+    "source_id": "product"
+  },
+  "coordinate_system": null,
+  "mounting_hole_details": []
+}

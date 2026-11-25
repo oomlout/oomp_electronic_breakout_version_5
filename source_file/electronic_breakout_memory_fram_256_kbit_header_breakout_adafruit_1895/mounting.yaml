@@ -1,0 +1,101 @@
+schema_version: 1
+part_id: electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895
+status: verified
+board_revision: Adafruit I2C FRAM product 1895, EAGLE carrier at adafruit/Adafruit-FRAM-Breakout-PCB
+  commit f7d4afa22ddd562f52c557e2e8f003611515b4f4. The product page says the November
+  18, 2022 PCB update changed silkscreen only; old and new versions are otherwise
+  identical.
+identity_evidence: Adafruit product 1895 page identifies the I2C FRAM breakout and
+  links its guide, which links the official Adafruit-FRAM-Breakout-PCB repository.
+  The repository commit f7d4afa22ddd562f52c557e2e8f003611515b4f4 contains the exact
+  Adafruit I2C FRAM.brd file; downloaded pinned bytes match the archived EAGLE file
+  SHA-256. Product revision history says the 2022 change was silkscreen-only and versions
+  are otherwise identical.
+board_size:
+- 20.32
+- 15.24
+mounting_holes:
+- id: U$5:pad:P$1
+  x_mm: -7.62
+  y_mm: 5.08
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$6:pad:P$1
+  x_mm: 7.62
+  y_mm: 5.08
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: EAGLE layer-20 outline bounds are native x=0..20.32 mm and y=0..15.24
+  mm. Native centre is (10.16, 7.62) mm. With no quarter-turn, canonical top-view
+  coordinates are x=x_native-10.16 and y=y_native-7.62. The two selected named MOUNTINGHOLE_2.5_PLATED
+  package drills have native centres (2.54, 12.70) and (17.78, 12.70) mm, yielding
+  (-7.62, 5.08) and (7.62, 5.08) mm; drill diameter is 2.5 mm.
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  local_file: website.html
+  url: https://www.adafruit.com/product/1895
+  kind: manufacturer_product
+  locator: 'Adafruit product 1895, dimensions 15.5 x 20 mm and revision history: Nov
+    18 2022 PCB update changes silkscreen only, old/new versions mechanically identical'
+  registered_at: '2026-11-07T11:45:08+00:00'
+  bytes: 85213
+  sha256: bc2e1295bb960afb61f5bb5f68453bfb6ec34d1404867825f014d36be972ee31
+- id: cad
+  local_file: mounting_evidence/Adafruit_I2C_FRAM.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-FRAM-Breakout-PCB/f7d4afa22ddd562f52c557e2e8f003611515b4f4/Adafruit%20I2C%20FRAM.brd
+  kind: manufacturer_cad
+  locator: Exact repository filename at commit f7d4afa22ddd562f52c557e2e8f003611515b4f4.
+    Download verified 2026-11-07 and byte SHA256 matches archived mounting_evidence/Adafruit_I2C_FRAM.brd.
+    EAGLE XML board outline and named U$5/U$6 MOUNTINGHOLE_2.5_PLATED pads.
+  registered_at: '2026-11-07T11:45:16+00:00'
+  bytes: 116081
+  sha256: 5b1f3d761b525adf69dad0457708bbc4a2f44c9484cddc3eb237a37bafeb067b
+attempts: []
+conflicts: []
+notes:
+- The pinned manufacturer CAD URL was requested and verified on 2026-11-07; its SHA-256
+  is identical to the pre-existing archived Adafruit_I2C_FRAM.brd. Product page archive
+  was retrieved 2026-10-23 and registered for this review on 2026-11-07.
+- 'Complete 10-drill review: eight 1.0 mm JP1 header pads in package 1X08_ROUND_70,
+  and two 2.5 mm drills in packages explicitly named MOUNTINGHOLE_2.5_PLATED (U$5,
+  U$6). The header pads are electrical contacts; only U$5 and U$6 are mounting features.'
+- The product page lists 15.5 x 20 mm nominal dimensions. Extracted EAGLE PCB layer-20
+  bounding dimensions 20.32 x 15.24 mm are used for the PCB geometry; the product
+  dimensions are rounded and do not supersede CAD.
+- 'The preview was visually checked: top view, centred axes, 20.32 x 15.24 mm bounding
+  box, two horizontal upper-side mounting drills at x=±7.62 mm and y=5.08 mm, each
+  2.5 mm diameter. Preview is a bounding box, not the traced outline.'
+- Generic holder generation does not verify component, header, screw-head, underside
+  clearance, tolerances or physical fit.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T11:45:16+00:00'
+extraction:
+  selected_ids:
+  - U$5:pad:P$1
+  - U$6:pad:P$1
+  quarter_turn: 0
+  native_centre_mm:
+  - 10.16
+  - 7.62
+identity_source_ids:
+- product
+- cad

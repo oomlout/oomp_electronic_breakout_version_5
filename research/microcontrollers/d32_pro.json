@@ -1,0 +1,88 @@
+{
+    "url": "https://www.wemos.cc/en/latest/d32/d32_pro.html",
+    "accessed": "2026-10-22",
+    "tables": [
+        [
+            [
+                "",
+                ""
+            ]
+        ],
+        [
+            [
+                "Operating Voltage",
+                "3.3V"
+            ],
+            [
+                "Supported Battery",
+                "Lipo 3.7V"
+            ],
+            [
+                "Battery Connector",
+                "PH-2 2.0mm"
+            ],
+            [
+                "Digital I/O Pins",
+                "22"
+            ],
+            [
+                "Analog Input Pins",
+                "6 (VP, VN, 32, 33, 34, 35)"
+            ],
+            [
+                "Analog Output Pins",
+                "2 (25, 26)"
+            ],
+            [
+                "LED_BUILTIN",
+                "GPIO5"
+            ],
+            [
+                "Clock Speed(Max)",
+                "240MHz"
+            ],
+            [
+                "Flash",
+                "16M/4M Bytes"
+            ],
+            [
+                "PSRAM",
+                "4M Bytes"
+            ],
+            [
+                "Size",
+                "65*25.4mm"
+            ],
+            [
+                "Weight",
+                "7.5g"
+            ]
+        ]
+    ],
+    "links": [
+        {
+            "title": "Schematic V2.0.0[PDF]",
+            "url": "https://www.wemos.cc/en/latest/_static/files/sch_d32_pro_v2.0.0.pdf"
+        },
+        {
+            "title": "Dimension V2.0.0[PDF]",
+            "url": "https://www.wemos.cc/en/latest/_static/files/dim_d32_pro_v2.0.0.pdf"
+        },
+        {
+            "title": "",
+            "url": "https://www.wemos.cc/en/latest/_static/files/certification/EMC_d32_pro.pdf"
+        },
+        {
+            "title": "",
+            "url": "https://www.wemos.cc/en/latest/_static/files/certification/doc_d32_pro.pdf"
+        },
+        {
+            "title": "",
+            "url": "https://www.wemos.cc/en/latest/_static/files/certification/RoHS_d32_pro.pdf"
+        },
+        {
+            "title": "theme",
+            "url": "https://github.com/readthedocs/sphinx_rtd_theme"
+        }
+    ]
+}

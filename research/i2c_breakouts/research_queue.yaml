@@ -1,0 +1,143 @@
+schema_version: 1
+scope: 28 catalogue I2C peripherals; excludes analog ADXL335 and AliExpress
+parts:
+- part_id: electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440
+  name: SparkFun BME280 Atmospheric Sensor, Qwiic
+  status: complete_with_gaps
+  default_website: https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html
+  research_file: source_file/electronic_breakout_sensor_environmental_temperature_humidity_pressure_bme280_qwiic_sparkfun_sen_15440/working.yaml
+- part_id: electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665
+  name: Adafruit SHT45, STEMMA QT
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/5665
+  research_file: source_file/electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665/working.yaml
+- part_id: electronic_breakout_sensor_motion_imu_6_axis_bmi270_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_22397
+  name: SparkFun BMI270 6DoF IMU, Qwiic
+  status: complete_with_gaps
+  default_website: https://www.sparkfun.com/sparkfun-6dof-imu-breakout-bmi270-qwiic.html
+  research_file: source_file/electronic_breakout_sensor_motion_imu_6_axis_bmi270_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_22397/working.yaml
+- part_id: electronic_breakout_sensor_optical_ambient_light_veml6030_qwiic_sparkfun_sen_15436
+  name: SparkFun VEML6030 Ambient Light Sensor, Qwiic
+  status: complete_with_gaps
+  default_website: https://www.sparkfun.com/sparkfun-ambient-light-sensor-veml6030-qwiic.html
+  research_file: source_file/electronic_breakout_sensor_optical_ambient_light_veml6030_qwiic_sparkfun_sen_15436/working.yaml
+- part_id: electronic_breakout_sensor_distance_time_of_flight_vl53l1x_stemma_qt_adafruit_3967
+  name: Adafruit VL53L1X, STEMMA QT
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/3967
+  research_file: source_file/electronic_breakout_sensor_distance_time_of_flight_vl53l1x_stemma_qt_adafruit_3967/working.yaml
+- part_id: electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+  name: Adafruit INA219, STEMMA QT
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/904
+  research_file: source_file/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904/working.yaml
+- part_id: electronic_breakout_interface_adc_general_purpose_ads1115_stemma_qt_adafruit_1085
+  name: Adafruit ADS1115, STEMMA QT
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/1085
+  research_file: source_file/electronic_breakout_interface_adc_general_purpose_ads1115_stemma_qt_adafruit_1085/working.yaml
+- part_id: electronic_breakout_interface_dac_voltage_output_mcp4725_stemma_qt_adafruit_935
+  name: Adafruit MCP4725, STEMMA QT
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/935
+  research_file: source_file/electronic_breakout_interface_dac_voltage_output_mcp4725_stemma_qt_adafruit_935/working.yaml
+- part_id: electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346
+  name: Adafruit MCP23017 GPIO Expander, STEMMA QT
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/5346
+  research_file: source_file/electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346/working.yaml
+- part_id: electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717
+  name: Adafruit TCA9548A I2C Multiplexer
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/2717
+  research_file: source_file/electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717/working.yaml
+- part_id: electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+  name: Adafruit PCA9685 PWM/Servo Driver
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/815
+  research_file: source_file/electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815/working.yaml
+- part_id: electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+  name: Adafruit DS3231 RTC, STEMMA QT
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/5188
+  research_file: source_file/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188/working.yaml
+- part_id: electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982
+  name: Adafruit MPR121 Touch Breakout, STEMMA QT
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/1982
+  research_file: source_file/electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982/working.yaml
+- part_id: electronic_breakout_output_display_oled_ssd1306_128x64_1_3_inch_stemma_qt_35_6_mm_width_33_mm_height_adafruit_938
+  name: Adafruit 1.3-inch 128x64 SSD1306 OLED, STEMMA QT
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/938
+  research_file: source_file/electronic_breakout_output_display_oled_ssd1306_128x64_1_3_inch_stemma_qt_35_6_mm_width_33_mm_height_adafruit_938/working.yaml
+- part_id: electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187
+  name: Adafruit SCD-40 CO2 Sensor, STEMMA QT
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/5187
+  research_file: source_file/electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187/working.yaml
+- part_id: electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242
+  name: SparkFun Qwiic Scale, NAU7802
+  status: complete_with_gaps
+  default_website: https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html
+  research_file: source_file/electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242/working.yaml
+- part_id: electronic_breakout_sensor_environmental_gas_temperature_humidity_pressure_bme688_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_19096
+  name: SparkFun BME688 Environmental Sensor, Qwiic
+  status: complete_with_gaps
+  default_website: https://www.sparkfun.com/sparkfun-environmental-sensor-bme688-qwiic.html
+  research_file: source_file/electronic_breakout_sensor_environmental_gas_temperature_humidity_pressure_bme688_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_19096/working.yaml
+- part_id: electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+  name: SparkFun BNO086 VR IMU, Qwiic
+  status: complete_with_gaps
+  default_website: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+  research_file: source_file/electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857/working.yaml
+- part_id: electronic_breakout_sensor_environmental_temperature_tmp117_qwiic_sparkfun_sen_15805
+  name: SparkFun TMP117 Precision Temperature Sensor, Qwiic
+  status: complete_with_gaps
+  default_website: https://www.sparkfun.com/sparkfun-high-precision-temperature-sensor-tmp117-qwiic.html
+  research_file: source_file/electronic_breakout_sensor_environmental_temperature_tmp117_qwiic_sparkfun_sen_15805/working.yaml
+- part_id: electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+  name: SparkFun Qwiic Twist RGB Rotary Encoder
+  status: complete_with_gaps
+  default_website: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+  research_file: source_file/electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083/working.yaml
+- part_id: electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+  name: Adafruit VL53L0X Distance Sensor
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/3317
+  research_file: source_file/electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317/working.yaml
+- part_id: electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895
+  name: Adafruit I2C FRAM, 256 Kbit / 32 KByte
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/1895
+  research_file: source_file/electronic_breakout_memory_fram_256_kbit_header_breakout_adafruit_1895/working.yaml
+- part_id: electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231
+  name: Adafruit ADXL345, STEMMA QT
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/1231
+  research_file: source_file/electronic_breakout_sensor_motion_accelerometer_adxl345_stemma_qt_adafruit_1231/working.yaml
+- part_id: electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809
+  name: Adafruit LIS3DH, current QT carrier
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/2809
+  research_file: source_file/electronic_breakout_sensor_motion_accelerometer_lis3dh_stemma_qt_adafruit_2809/working.yaml
+- part_id: electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019
+  name: Adafruit MMA8451
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/2019
+  research_file: source_file/electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019/working.yaml
+- part_id: electronic_breakout_sensor_motion_accelerometer_adxl343_stemma_qt_adafruit_4097
+  name: Adafruit ADXL343, STEMMA QT
+  status: complete_with_gaps
+  default_website: https://www.adafruit.com/product/4097
+  research_file: source_file/electronic_breakout_sensor_motion_accelerometer_adxl343_stemma_qt_adafruit_4097/working.yaml
+- part_id: electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+  name: SparkFun ADXL345, traditional carrier
+  status: complete_with_gaps
+  default_website: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+  research_file: source_file/electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836/working.yaml
+- part_id: electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+  name: SparkFun LIS3DH, traditional carrier
+  status: complete_with_gaps
+  default_website: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-lis3dh.html
+  research_file: source_file/electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963/working.yaml

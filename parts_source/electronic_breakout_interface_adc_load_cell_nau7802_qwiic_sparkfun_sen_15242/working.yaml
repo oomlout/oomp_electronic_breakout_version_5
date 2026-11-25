@@ -1,0 +1,395 @@
+board_variant: qwiic
+breakout_description: qwiic
+breakout_pcb_height: 35.56
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+definition_authority: working_oomp_populate_i2c.py
+description: A 24-bit load-cell amplifier/converter for weighing and force projects.
+  The external load cell remains a separate component.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+geometry_ready: false
+i2c:
+  address_evidence_status: partial_product_page_evidence
+  address_selection: fixed_hardware
+  clock_stretching: unverified
+  default_address_7bit: 42
+  documented_addresses_7bit:
+  - 42
+  maximum_clock_hz: null
+  source_id: product
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+manufacturer: sparkfun
+manufacturer_part_number: SEN-15242
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 3.302
+  id: JP31:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: -15.24
+- diameter_mm: 3.302
+  id: JP41:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 15.24
+- diameter_mm: 3.302
+  id: JP91:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: -15.24
+- diameter_mm: 3.302
+  id: JP101:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 15.24
+mounting_hole_radius_name: m3
+mounting_hole_radius_names:
+- m3
+- m3
+- m3
+- m3
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - -15.24
+- - -10.16
+  - 15.24
+- - 10.16
+  - -15.24
+- - 10.16
+  - 15.24
+mounting_lift: 3
+mounting_research:
+  board_revision: SparkFun Qwiic Scale carrier SEN-15242; exact Hardware/Qwiic_Scale.brd
+    from official SparkFun Qwiic_Scale repository pinned at ab136d756a781f9ff104c225318d1604af385aac
+    (2019-04-11 repository snapshot; EAGLE XML 9.3.0). No separate PCB spin label
+    is present in the CAD.
+  board_size:
+  - 25.4
+  - 35.56
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'Exact pinned EAGLE XML CAD uses native mm. Layer-20 outline consists
+    of four straight segments with bounds x=0..25.4 and y=0..35.56, giving board size
+    25.4 x 35.56 mm and native bounding-box centre (12.7,17.78). No reflection or
+    rotation (quarter_turn=0); canonical top-view transform is x_mm=x_native_mm-12.7
+    and y_mm=y_native_mm-17.78. Reviewed all 25 drilled candidates. Selected only
+    the four explicit non-plated holes in package STAND-OFF (JP31, JP41, JP91, JP101),
+    each 3.302 mm PCB drill. Excluded 21 plated pad drills: J3/J5/JP1/JP2 header contacts
+    and J7 spring-terminal connector anchors. CAD hole coordinates were transformed
+    by the stated translation.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: SparkFun product page identifies SKU SEN-15242 as Qwiic Scale
+    NAU7802. The pinned official Qwiic_Scale repository README names SparkFun Qwiic
+    Scale (SEN-15242), calls the repository its hardware repo, and states Hardware/
+    contains Eagle design files; the selected filename is Hardware/Qwiic_Scale.brd.
+  mounting_holes:
+  - diameter_mm: 3.302
+    id: JP31:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: -10.16
+    y_mm: -15.24
+  - diameter_mm: 3.302
+    id: JP41:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 15.24
+  - diameter_mm: 3.302
+    id: JP91:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: 10.16
+    y_mm: -15.24
+  - diameter_mm: 3.302
+    id: JP101:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 15.24
+  record_sha256: 37200e8f9047d4caaa882195cdc964d1c9cdb5b651e5a7bf1ac4921013365d37
+  research_file: source_file/electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 366046
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Qwiic_Scale.brd
+    locator: SparkFun Qwiic_Scale repository, commit ab136d756a781f9ff104c225318d1604af385aac;
+      exact Hardware/Qwiic_Scale.brd EAGLE XML; review layer 20 outline and all holes/drills;
+      README identifies repo as Qwiic Scale SEN-15242.
+    registered_at: '2026-11-06T19:30:16+00:00'
+    sha256: 5d42c75b75fe770cdee436ae9db418a850a37b304bc65e12195ecabf3f494533
+    url: https://raw.githubusercontent.com/sparkfun/Qwiic_Scale/ab136d756a781f9ff104c225318d1604af385aac/Hardware/Qwiic_Scale.brd
+  - bytes: 575731
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: SparkFun product listing identifies SKU SEN-15242 as Qwiic Scale NAU7802;
+      the linked dedicated hardware repository is the carrier CAD source.
+    registered_at: '2026-11-06T19:30:17+00:00'
+    sha256: c44a7fa24cc2fbf7bfedd00f0711b75b84ca1335f761e3c728ea9ce0c7aaac4b
+    url: https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html
+  - bytes: 2038
+    id: repository
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Pinned official repository README states SparkFun Qwiic Scale SEN-15242,
+      calls this the hardware repo, and identifies Hardware/ as Eagle design files.
+    registered_at: '2026-11-06T19:31:05+00:00'
+    sha256: d191613b03d5a3dd5df926731fdc423f5802e607caea84eba5092a542900292d
+    url: https://raw.githubusercontent.com/sparkfun/Qwiic_Scale/ab136d756a781f9ff104c225318d1604af385aac/README.md
+  status: verified
+name_readable: SparkFun Qwiic Scale, NAU7802
+notes:
+- NAU7802 has a hardware-fixed 0x2A address; multiple boards need separated bus branches.
+- Uses an external load cell, not included in this board record.
+oobb_details:
+- breakout_pcb_height: 35.56
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP31:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -15.24
+  - diameter_mm: 3.302
+    id: JP41:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 15.24
+  - diameter_mm: 3.302
+    id: JP91:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -15.24
+  - diameter_mm: 3.302
+    id: JP101:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 15.24
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - -15.24
+  - - -10.16
+    - 15.24
+  - - 10.16
+    - -15.24
+  - - 10.16
+    - 15.24
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 35.56
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP31:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -15.24
+  - diameter_mm: 3.302
+    id: JP41:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 15.24
+  - diameter_mm: 3.302
+    id: JP91:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -15.24
+  - diameter_mm: 3.302
+    id: JP101:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 15.24
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - -15.24
+  - - -10.16
+    - 15.24
+  - - 10.16
+    - -15.24
+  - - 10.16
+    - 15.24
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 35.56
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP31:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -15.24
+  - diameter_mm: 3.302
+    id: JP41:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 15.24
+  - diameter_mm: 3.302
+    id: JP91:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -15.24
+  - diameter_mm: 3.302
+    id: JP101:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 15.24
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - -15.24
+  - - -10.16
+    - 15.24
+  - - 10.16
+    - -15.24
+  - - 10.16
+    - 15.24
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+part_number: sen_15242
+part_number_sparkfun: SEN-15242
+pinout_status: unverified
+pins: {}
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html
+- bytes: 366046
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Qwiic_Scale.brd
+  locator: SparkFun Qwiic_Scale repository, commit ab136d756a781f9ff104c225318d1604af385aac;
+    exact Hardware/Qwiic_Scale.brd EAGLE XML; review layer 20 outline and all holes/drills;
+    README identifies repo as Qwiic Scale SEN-15242.
+  registered_at: '2026-11-06T19:30:16+00:00'
+  sha256: 5d42c75b75fe770cdee436ae9db418a850a37b304bc65e12195ecabf3f494533
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Scale/ab136d756a781f9ff104c225318d1604af385aac/Hardware/Qwiic_Scale.brd
+- bytes: 575731
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: SparkFun product listing identifies SKU SEN-15242 as Qwiic Scale NAU7802;
+    the linked dedicated hardware repository is the carrier CAD source.
+  registered_at: '2026-11-06T19:30:17+00:00'
+  sha256: c44a7fa24cc2fbf7bfedd00f0711b75b84ca1335f761e3c728ea9ce0c7aaac4b
+  url: https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html
+- bytes: 2038
+  id: mounting_repository
+  kind: manufacturer_repository
+  local_file: mounting_evidence/README.md
+  locator: Pinned official repository README states SparkFun Qwiic Scale SEN-15242,
+    calls this the hardware repo, and identifies Hardware/ as Eagle design files.
+  registered_at: '2026-11-06T19:31:05+00:00'
+  sha256: d191613b03d5a3dd5df926731fdc423f5802e607caea84eba5092a542900292d
+  url: https://raw.githubusercontent.com/sparkfun/Qwiic_Scale/ab136d756a781f9ff104c225318d1604af385aac/README.md
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: sparkfun
+taxonomy_15: sen_15242
+taxonomy_2: breakout
+taxonomy_3: interface
+taxonomy_4: adc
+taxonomy_5: load_cell
+taxonomy_6: nau7802
+taxonomy_7: qwiic
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: interface
+type_2: adc
+type_3: load_cell
+type_4: nau7802
+webpage: https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html
+webpage_sparkfun: https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html

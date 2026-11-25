@@ -1,0 +1,1113 @@
+{
+    "catalogue_schema": "oomp_microcontroller_reference_1",
+    "research_date": "2026-10-22",
+    "interface_defaults_version": 1,
+    "interface_research_date": "2026-10-23",
+    "coordinate_system": "PCB centre, mm, top view, +Y towards USB unless explicitly stated",
+    "board_count": 48,
+    "chip_count": 6,
+    "boards": [
+        {
+            "id": "electronic_breakout_microcontroller_rp2040_feather_without_headers_22_86_mm_width_50_8_mm_height_adafruit_4884",
+            "name": "Adafruit Feather RP2040",
+            "family": "rp2040",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2040_feather_without_headers_22_86_mm_width_50_8_mm_height_adafruit_4884/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2040_feather_without_headers_22_86_mm_width_50_8_mm_height_adafruit_4884/working_svg.svg",
+            "contact_records": 47,
+            "located_contact_records": 47,
+            "exposed_gpio_count": 22,
+            "located_mounting_holes": 4,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "i2c_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_wh",
+            "name": "Raspberry Pi Pico WH",
+            "family": "rp2040",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_wh/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_wh/working_svg.svg",
+            "contact_records": 43,
+            "located_contact_records": 40,
+            "exposed_gpio_count": 26,
+            "located_mounting_holes": 4,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured.",
+                "SWD contact coordinates are not transcribed. Use the drawing for its board-specific position."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart_secondary": "documented",
+                "i2c_secondary": "documented",
+                "spi_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico_w",
+            "name": "Raspberry Pi Pico W",
+            "family": "rp2040",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico_w/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico_w/working_svg.svg",
+            "contact_records": 43,
+            "located_contact_records": 40,
+            "exposed_gpio_count": 26,
+            "located_mounting_holes": 4,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured.",
+                "SWD contact coordinates are not transcribed. Use the drawing for its board-specific position."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart_secondary": "documented",
+                "i2c_secondary": "documented",
+                "spi_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_h",
+            "name": "Raspberry Pi Pico H",
+            "family": "rp2040",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_h/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_h/working_svg.svg",
+            "contact_records": 43,
+            "located_contact_records": 40,
+            "exposed_gpio_count": 26,
+            "located_mounting_holes": 4,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured.",
+                "SWD contact coordinates are not transcribed. Use the drawing for its board-specific position."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart_secondary": "documented",
+                "i2c_secondary": "documented",
+                "spi_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2040_pico_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico",
+            "name": "Raspberry Pi Pico",
+            "family": "rp2040",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2040_pico_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2040_pico_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico/working_svg.svg",
+            "contact_records": 43,
+            "located_contact_records": 40,
+            "exposed_gpio_count": 26,
+            "located_mounting_holes": 4,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured.",
+                "SWD contact coordinates are not transcribed. Use the drawing for its board-specific position."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart_secondary": "documented",
+                "i2c_secondary": "documented",
+                "spi_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2040_pro_micro_without_headers_17_78_mm_width_33_02_mm_height_sparkfun_dev_18288",
+            "name": "SparkFun Pro Micro RP2040",
+            "family": "rp2040",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2040_pro_micro_without_headers_17_78_mm_width_33_02_mm_height_sparkfun_dev_18288/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2040_pro_micro_without_headers_17_78_mm_width_33_02_mm_height_sparkfun_dev_18288/working_svg.svg",
+            "contact_records": 59,
+            "located_contact_records": 59,
+            "exposed_gpio_count": 20,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_adafruit_4900",
+            "name": "Adafruit QT Py RP2040",
+            "family": "rp2040",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_adafruit_4900/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_adafruit_4900/working_svg.svg",
+            "contact_records": 34,
+            "located_contact_records": 34,
+            "exposed_gpio_count": 14,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured."
+            ],
+            "default_interface_status": {
+                "uart_secondary": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart": "documented",
+                "i2c_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2040_xiao_without_headers_17_8_mm_width_21_mm_height_seeed_studio_102010428",
+            "name": "Seeed Studio XIAO RP2040",
+            "family": "rp2040",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2040_xiao_without_headers_17_8_mm_width_21_mm_height_seeed_studio_102010428/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2040_xiao_without_headers_17_8_mm_width_21_mm_height_seeed_studio_102010428/working_svg.svg",
+            "contact_records": 32,
+            "located_contact_records": 32,
+            "exposed_gpio_count": 11,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2040_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2040_zero_m",
+            "name": "Waveshare RP2040-ZERO-M",
+            "family": "rp2040",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2040_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2040_zero_m/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2040_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2040_zero_m/working_svg.svg",
+            "contact_records": 33,
+            "located_contact_records": 23,
+            "exposed_gpio_count": 29,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured.",
+                "Underside pad centres, PCB thickness and header assembly height are not dimensioned in the captured drawing."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart_secondary": "documented",
+                "i2c_secondary": "documented",
+                "spi_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2040_zero_without_headers_18_mm_width_23_5_mm_height_waveshare_rp2040_zero",
+            "name": "Waveshare RP2040-ZERO",
+            "family": "rp2040",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2040_zero_without_headers_18_mm_width_23_5_mm_height_waveshare_rp2040_zero/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2040_zero_without_headers_18_mm_width_23_5_mm_height_waveshare_rp2040_zero/working_svg.svg",
+            "contact_records": 33,
+            "located_contact_records": 23,
+            "exposed_gpio_count": 29,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured.",
+                "Underside pad centres, PCB thickness and header assembly height are not dimensioned in the captured drawing."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart_secondary": "documented",
+                "i2c_secondary": "documented",
+                "spi_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_hstx_adafruit_6000",
+            "name": "Adafruit Feather RP2350 HSTX",
+            "family": "rp2350",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_hstx_adafruit_6000/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_hstx_adafruit_6000/working_svg.svg",
+            "contact_records": 62,
+            "located_contact_records": 62,
+            "exposed_gpio_count": 29,
+            "located_mounting_holes": 4,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_w_with_headers",
+            "name": "Raspberry Pi Pico 2 W With Headers",
+            "family": "rp2350",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_w_with_headers/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_w_with_headers/working_svg.svg",
+            "contact_records": 43,
+            "located_contact_records": 40,
+            "exposed_gpio_count": 26,
+            "located_mounting_holes": 4,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured.",
+                "SWD contact coordinates are not transcribed. Use the drawing for its board-specific position."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart_secondary": "documented",
+                "i2c_secondary": "documented",
+                "spi_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_w",
+            "name": "Raspberry Pi Pico 2 W",
+            "family": "rp2350",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_w/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_w/working_svg.svg",
+            "contact_records": 43,
+            "located_contact_records": 40,
+            "exposed_gpio_count": 26,
+            "located_mounting_holes": 4,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured.",
+                "SWD contact coordinates are not transcribed. Use the drawing for its board-specific position."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart_secondary": "documented",
+                "i2c_secondary": "documented",
+                "spi_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2350a_pico_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_with_headers",
+            "name": "Raspberry Pi Pico 2 With Headers",
+            "family": "rp2350",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2350a_pico_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_with_headers/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2350a_pico_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_with_headers/working_svg.svg",
+            "contact_records": 43,
+            "located_contact_records": 40,
+            "exposed_gpio_count": 26,
+            "located_mounting_holes": 4,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured.",
+                "SWD contact coordinates are not transcribed. Use the drawing for its board-specific position."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart_secondary": "documented",
+                "i2c_secondary": "documented",
+                "spi_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2350a_pico_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2",
+            "name": "Raspberry Pi Pico 2",
+            "family": "rp2350",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2350a_pico_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2350a_pico_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2/working_svg.svg",
+            "contact_records": 43,
+            "located_contact_records": 40,
+            "exposed_gpio_count": 26,
+            "located_mounting_holes": 4,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured.",
+                "SWD contact coordinates are not transcribed. Use the drawing for its board-specific position."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart_secondary": "documented",
+                "i2c_secondary": "documented",
+                "spi_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2350a_xiao_without_headers_17_8_mm_width_21_mm_height_seeed_studio_102010550",
+            "name": "Seeed Studio XIAO RP2350",
+            "family": "rp2350",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2350a_xiao_without_headers_17_8_mm_width_21_mm_height_seeed_studio_102010550/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2350a_xiao_without_headers_17_8_mm_width_21_mm_height_seeed_studio_102010550/working_svg.svg",
+            "contact_records": 30,
+            "located_contact_records": 30,
+            "exposed_gpio_count": 19,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart_secondary": "documented",
+                "i2c_secondary": "documented",
+                "spi_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m",
+            "name": "Waveshare RP2350-ZERO-M",
+            "family": "rp2350",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m/working_svg.svg",
+            "contact_records": 36,
+            "located_contact_records": 23,
+            "exposed_gpio_count": 29,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured.",
+                "Underside pad centres, PCB thickness and header assembly height are not dimensioned in the captured drawing."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart_secondary": "documented",
+                "i2c_secondary": "documented",
+                "spi_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_rp2350a_zero_without_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero",
+            "name": "Waveshare RP2350-ZERO",
+            "family": "rp2350",
+            "definition": "source_file/electronic_breakout_microcontroller_rp2350a_zero_without_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_rp2350a_zero_without_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero/working_svg.svg",
+            "contact_records": 36,
+            "located_contact_records": 23,
+            "exposed_gpio_count": 29,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled height and component keepout envelopes have not been captured.",
+                "Underside pad centres, PCB thickness and header assembly height are not dimensioned in the captured drawing."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "uart_secondary": "documented",
+                "i2c_secondary": "documented",
+                "spi_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_wroom_32_devkit_v1_30_pin_28_33_mm_width_51_45_mm_height_30_pins_doit_esp32_devkit_v1_30_pin",
+            "name": "DOIT ESP32 DevKit V1 (30 contacts)",
+            "family": "esp32",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_wroom_32_devkit_v1_30_pin_28_33_mm_width_51_45_mm_height_30_pins_doit_esp32_devkit_v1_30_pin/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_wroom_32_devkit_v1_30_pin_28_33_mm_width_51_45_mm_height_30_pins_doit_esp32_devkit_v1_30_pin/working_svg.svg",
+            "contact_records": 30,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 25,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "2x15 header inventory is documented; clone PCB dimensions, row spacing, numbering/orientation and mounting holes require confirmation.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_wroom_32e_devkitc_v4_38_pin_27_9_mm_width_54_4_mm_height_38_pins_espressif_esp32_devkitc_32e",
+            "name": "Espressif ESP32 DevKitC-32E V4",
+            "family": "esp32",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_wroom_32e_devkitc_v4_38_pin_27_9_mm_width_54_4_mm_height_38_pins_espressif_esp32_devkitc_32e/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_wroom_32e_devkitc_v4_38_pin_27_9_mm_width_54_4_mm_height_38_pins_espressif_esp32_devkitc_32e/working_svg.svg",
+            "contact_records": 38,
+            "located_contact_records": 38,
+            "exposed_gpio_count": 32,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s",
+            "name": "Generic NodeMCU-32S (Ai-Thinker reference pinout)",
+            "family": "esp32",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s/working_svg.svg",
+            "contact_records": 38,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 32,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Manufacturer V1 reference has different nominal dimensions from the generic entry. Its pinout is a reference requiring carrier match; dimensions and coordinates remain unverified.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_wroom_32_lolin_d32_25_4_mm_width_57_mm_height_20_pins_wemos_lolin_d32",
+            "name": "LOLIN D32 v1.0",
+            "family": "esp32",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_wroom_32_lolin_d32_25_4_mm_width_57_mm_height_20_pins_wemos_lolin_d32/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_wroom_32_lolin_d32_25_4_mm_width_57_mm_height_20_pins_wemos_lolin_d32/working_svg.svg",
+            "contact_records": 32,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 25,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 2,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Mounting-hole X centres and diameters are dimensioned; Y centres are not. Partial holes are not passed to SCAD or drawn as located holes.",
+                "Header numbers and signals are transcribed from schematic; absolute pad centres remain null pending CAD or a dimensioned pin drawing.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro",
+            "name": "LOLIN D32 Pro v2.0",
+            "family": "esp32",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro/working_svg.svg",
+            "contact_records": 46,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 23,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 2,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Mounting-hole X centres and diameters are dimensioned; Y centres are not. Partial holes are not passed to SCAD or drawn as located holes.",
+                "Header numbers and signals are transcribed from schematic; absolute pad centres remain null pending CAD or a dimensioned pin drawing.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam",
+            "name": "Ai-Thinker ESP32-CAM (V1.6 schematic reference)",
+            "family": "esp32",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_s_esp32_cam_16_pin_27_mm_width_40_5_mm_height_16_pins_ai_thinker_esp32_cam/working_svg.svg",
+            "contact_records": 16,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 10,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Ai-Thinker legacy URLs redirect to its home page. Archived V1.6 schematic is the pin reference; exact clone revision, pad coordinates and outline still need confirmation.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4",
+            "name": "Espressif ESP32-PICO-KIT v4 (40 PCB contacts)",
+            "family": "esp32",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_pico_d4_pico_kit_20_pin_20_3_mm_width_52_mm_height_20_pins_espressif_esp32_pico_kit_v4/working_svg.svg",
+            "contact_records": 40,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 28,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "PICO-KIT carrier outline and row centres require mechanical transcription; existing dimensions remain nominal.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405",
+            "name": "Adafruit HUZZAH32 ESP32 Feather (3405)",
+            "family": "esp32",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_wroom_32_huzzah32_feather_22_7_mm_width_51_mm_height_28_pins_adafruit_3405/working_svg.svg",
+            "contact_records": 30,
+            "located_contact_records": 30,
+            "exposed_gpio_count": 20,
+            "located_mounting_holes": 4,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32",
+            "name": "Generic ESP32 D1 R32 (SDK aliases)",
+            "family": "esp32",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_wroom_32_d1_r32_53_34_mm_width_68_58_mm_height_generic_esp32_d1_r32/working_svg.svg",
+            "contact_records": 28,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 22,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "UNO outline does not establish electrical shield compatibility. Power/ICSP headers, mounting holes and physical contact order are not verified; pins are SDK aliases only.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_c3_az_supermini_16_pin_unknown_headers_18_mm_width_22_5_mm_height_16_pins_generic_esp32_c3_supermini",
+            "name": "ESP32-C3 SuperMini (16 pin) (observed AZ silicon; carrier unverified)",
+            "family": "esp32_c3",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_c3_az_supermini_16_pin_unknown_headers_18_mm_width_22_5_mm_height_16_pins_generic_esp32_c3_supermini/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_c3_az_supermini_16_pin_unknown_headers_18_mm_width_22_5_mm_height_16_pins_generic_esp32_c3_supermini/working_svg.svg",
+            "contact_records": 16,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 13,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Nominal outline comes from the supplied OOMP catalogue; pad centres, PCB thickness and hole measurements remain null.",
+                "User identifies the attached board as mini; SuperMini carrier revision and LED polarity have not been visually confirmed.",
+                "The catalogue calls its chip FN4; esptool identifies this attached unit as C3 AZ revision v1.1. Chip taxonomy reflects the attached AZ.",
+                "GPIO2/8/9 are reserved strapping/onboard controls. GPIO12-17 flash and GPIO18/19 USB are not offered.",
+                "Only exposed GPIO0-10/20/21 exist in this profile. ADC controls use ADC1 GPIO0/1/3/4; GPIO5 ADC2 is omitted."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_c3_mini_1_devkitm_1_20_pin_30_mm_width_50_9_mm_height_20_pins_espressif_esp32_c3_devkitm_1",
+            "name": "Espressif ESP32-C3 DevKitM-1 (30 contacts)",
+            "family": "esp32_c3",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_c3_mini_1_devkitm_1_20_pin_30_mm_width_50_9_mm_height_20_pins_espressif_esp32_c3_devkitm_1/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_c3_mini_1_devkitm_1_20_pin_30_mm_width_50_9_mm_height_20_pins_espressif_esp32_c3_devkitm_1/working_svg.svg",
+            "contact_records": 30,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 15,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "C3 header absolute Y offset not dimensioned in the captured drawing; pad centres remain null.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_c3_wroom_02_devkitc_02_30_pin_38_9_mm_width_25_4_mm_height_30_pins_espressif_esp32_c3_devkitc_02",
+            "name": "Espressif ESP32-C3 DevKitC-02",
+            "family": "esp32_c3",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_c3_wroom_02_devkitc_02_30_pin_38_9_mm_width_25_4_mm_height_30_pins_espressif_esp32_c3_devkitc_02/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_c3_wroom_02_devkitc_02_30_pin_38_9_mm_width_25_4_mm_height_30_pins_espressif_esp32_c3_devkitc_02/working_svg.svg",
+            "contact_records": 30,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 15,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "C3 header absolute Y offset not dimensioned in the captured drawing; pad centres remain null.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_c3_fn4_supermini_16_pin_18_mm_width_22_5_mm_height_16_pins_generic_esp32_c3_supermini",
+            "name": "Generic ESP32-C3 SuperMini (carrier revision unknown)",
+            "family": "esp32_c3",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_c3_fn4_supermini_16_pin_18_mm_width_22_5_mm_height_16_pins_generic_esp32_c3_supermini/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_c3_fn4_supermini_16_pin_18_mm_width_22_5_mm_height_16_pins_generic_esp32_c3_supermini/working_svg.svg",
+            "contact_records": 16,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 13,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Generic SuperMini revision and FN4 silicon suffix not verified. Pin numbers are silkscreen names, not an invented physical order; pad coordinates remain null.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3",
+            "name": "Seeed Studio XIAO ESP32-C3",
+            "family": "esp32_c3",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_c3_xiao_esp32c3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c3/working_svg.svg",
+            "contact_records": 34,
+            "located_contact_records": 34,
+            "exposed_gpio_count": 11,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Only source-confirmed pad centres are positioned; no shared-XIAO outline pin-position inference is applied.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_c3_fn4_qt_py_esp32_c3_17_8_mm_width_22_mm_height_14_pins_adafruit_5405",
+            "name": "Adafruit QT Py ESP32-C3 (5405)",
+            "family": "esp32_c3",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_c3_fn4_qt_py_esp32_c3_17_8_mm_width_22_mm_height_14_pins_adafruit_5405/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_c3_fn4_qt_py_esp32_c3_17_8_mm_width_22_mm_height_14_pins_adafruit_5405/working_svg.svg",
+            "contact_records": 32,
+            "located_contact_records": 32,
+            "exposed_gpio_count": 11,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_c3fh4_lolin_c3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_c3_mini",
+            "name": "LOLIN C3 Mini v2.1",
+            "family": "esp32_c3",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_c3fh4_lolin_c3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_c3_mini/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_c3fh4_lolin_c3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_c3_mini/working_svg.svg",
+            "contact_records": 16,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 12,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 2,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Mounting-hole X centres and diameters are dimensioned; Y centres are not. Partial holes are not passed to SCAD or drawn as located holes.",
+                "Header numbers and signals are transcribed from schematic; absolute pad centres remain null pending CAD or a dimensioned pin drawing.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_c3_m5stamp_c3u_20_mm_width_34_mm_height_m5stack_stamp_c3u",
+            "name": "M5Stack Stamp-C3U",
+            "family": "esp32_c3",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_c3_m5stamp_c3u_20_mm_width_34_mm_height_m5stack_stamp_c3u/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_c3_m5stamp_c3u_20_mm_width_34_mm_height_m5stack_stamp_c3u/working_svg.svg",
+            "contact_records": 22,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 14,
+            "located_mounting_holes": 1,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Pad X centres are not dimensioned; positions remain null. Row names refer to the USB-down manufacturer illustration, not the normalized coordinate view.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_s2_wroom_devkitc_1_44_pin_25_4_mm_width_62_74_mm_height_44_pins_espressif_esp32_s2_devkitc_1",
+            "name": "Espressif ESP32-S2 DevKitC-1 (module variant unresolved)",
+            "family": "esp32_s2",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_s2_wroom_devkitc_1_44_pin_25_4_mm_width_62_74_mm_height_44_pins_espressif_esp32_s2_devkitc_1/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_s2_wroom_devkitc_1_44_pin_25_4_mm_width_62_74_mm_height_44_pins_espressif_esp32_s2_devkitc_1/working_svg.svg",
+            "contact_records": 44,
+            "located_contact_records": 44,
+            "exposed_gpio_count": 36,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_s2_lolin_s2_mini_25_4_mm_width_34_3_mm_height_32_pins_wemos_lolin_s2_mini",
+            "name": "LOLIN S2 Mini",
+            "family": "esp32_s2",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_s2_lolin_s2_mini_25_4_mm_width_34_3_mm_height_32_pins_wemos_lolin_s2_mini/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_s2_lolin_s2_mini_25_4_mm_width_34_3_mm_height_32_pins_wemos_lolin_s2_mini/working_svg.svg",
+            "contact_records": 32,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 27,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 2,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Mounting-hole X centres and diameters are dimensioned; Y centres are not. Partial holes are not passed to SCAD or drawn as located holes.",
+                "Header numbers and signals are transcribed from schematic; absolute pad centres remain null pending CAD or a dimensioned pin drawing.",
+                "Current product text names FN4R2 with PSRAM; captured V1 schematic names S2FH4. PSRAM size is left unknown for this unsuffixed catalogue board.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_s3_wroom_1_n8r8_devkitc_1_44_pin_25_4_mm_width_62_74_mm_height_44_pins_espressif_esp32_s3_devkitc_1_n8r8",
+            "name": "Espressif ESP32-S3 DevKitC-1 N8R8 v1.1",
+            "family": "esp32_s3",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_s3_wroom_1_n8r8_devkitc_1_44_pin_25_4_mm_width_62_74_mm_height_44_pins_espressif_esp32_s3_devkitc_1_n8r8/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_s3_wroom_1_n8r8_devkitc_1_44_pin_25_4_mm_width_62_74_mm_height_44_pins_espressif_esp32_s3_devkitc_1_n8r8/working_svg.svg",
+            "contact_records": 44,
+            "located_contact_records": 44,
+            "exposed_gpio_count": 36,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_s3_supermini_18_pin_18_mm_width_23_5_mm_height_18_pins_tenstar_esp32_s3_supermini",
+            "name": "Tenstar ESP32-S3 SuperMini (pinout unverified)",
+            "family": "esp32_s3",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_s3_supermini_18_pin_18_mm_width_23_5_mm_height_18_pins_tenstar_esp32_s3_supermini/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_s3_supermini_18_pin_18_mm_width_23_5_mm_height_18_pins_tenstar_esp32_s3_supermini/working_svg.svg",
+            "contact_records": 0,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 0,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "No revision-specific primary Tenstar header drawing was established. Header GPIO assignments, pad centres and hole locations remain unknown; related SuperMini variants are not substituted."
+            ],
+            "default_interface_status": {
+                "uart": "unverified",
+                "i2c": "unverified",
+                "spi": "unverified"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_s3_xiao_esp32s3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32s3",
+            "name": "Seeed Studio XIAO ESP32-S3 (base board)",
+            "family": "esp32_s3",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_s3_xiao_esp32s3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32s3/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_s3_xiao_esp32s3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32s3/working_svg.svg",
+            "contact_records": 16,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 13,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Manufacturer base-S3 archive currently contains a Sense v1.5 PCB. It is not used as the base board's exact geometry.",
+                "Only source-confirmed pad centres are positioned; no shared-XIAO outline pin-position inference is applied.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_s3_qt_py_esp32_s3_17_8_mm_width_21_7_mm_height_14_pins_adafruit_qt_py_esp32_s3",
+            "name": "Adafruit QT Py ESP32-S3 (memory SKU unresolved)",
+            "family": "esp32_s3",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_s3_qt_py_esp32_s3_17_8_mm_width_21_7_mm_height_14_pins_adafruit_qt_py_esp32_s3/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_s3_qt_py_esp32_s3_17_8_mm_width_21_7_mm_height_14_pins_adafruit_qt_py_esp32_s3/working_svg.svg",
+            "contact_records": 32,
+            "located_contact_records": 32,
+            "exposed_gpio_count": 13,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Catalogue lacks a numeric QT Py S3 SKU; flash/PSRAM configuration must be selected before flashing.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented",
+                "i2c_secondary": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini",
+            "name": "LOLIN S3 Mini v1.0",
+            "family": "esp32_s3",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini/working_svg.svg",
+            "contact_records": 32,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 27,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 2,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Mounting-hole X centres and diameters are dimensioned; Y centres are not. Partial holes are not passed to SCAD or drawn as located holes.",
+                "Header numbers and signals are transcribed from schematic; absolute pad centres remain null pending CAD or a dimensioned pin drawing.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477",
+            "name": "Adafruit ESP32-S3 Feather 4MB Flash / 2MB PSRAM (5477)",
+            "family": "esp32_s3",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477/working_svg.svg",
+            "contact_records": 35,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 22,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 4,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Public CAD is 8MB/no-PSRAM SKU. PID5477 pad positions, mounting holes and PCB outline require confirmation; related coordinates retained separately.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_c6_wroom_1_n8_devkitc_1_30_pin_25_4_mm_width_58_15_mm_height_30_pins_espressif_esp32_c6_devkitc_1_n8",
+            "name": "Espressif ESP32-C6 DevKitC-1 N8 (32 contacts)",
+            "family": "esp32_c6",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_c6_wroom_1_n8_devkitc_1_30_pin_25_4_mm_width_58_15_mm_height_30_pins_espressif_esp32_c6_devkitc_1_n8/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_c6_wroom_1_n8_devkitc_1_30_pin_25_4_mm_width_58_15_mm_height_30_pins_espressif_esp32_c6_devkitc_1_n8/working_svg.svg",
+            "contact_records": 32,
+            "located_contact_records": 32,
+            "exposed_gpio_count": 23,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_c6_mini_1_n4_devkitm_1_30_pin_25_4_mm_width_53_65_mm_height_30_pins_espressif_esp32_c6_devkitm_1_n4",
+            "name": "Espressif ESP32-C6 DevKitM-1 N4",
+            "family": "esp32_c6",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_c6_mini_1_n4_devkitm_1_30_pin_25_4_mm_width_53_65_mm_height_30_pins_espressif_esp32_c6_devkitm_1_n4/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_c6_mini_1_n4_devkitm_1_30_pin_25_4_mm_width_53_65_mm_height_30_pins_espressif_esp32_c6_devkitm_1_n4/working_svg.svg",
+            "contact_records": 30,
+            "located_contact_records": 30,
+            "exposed_gpio_count": 22,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini",
+            "name": "Tenstar ESP32-C6 SuperMini (pinout unverified)",
+            "family": "esp32_c6",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_c6_supermini_20_pin_18_mm_width_23_5_mm_height_20_pins_tenstar_esp32_c6_supermini/working_svg.svg",
+            "contact_records": 0,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 0,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "No revision-specific primary Tenstar header drawing was established. Header GPIO assignments, pad centres and hole locations remain unknown; related SuperMini variants are not substituted."
+            ],
+            "default_interface_status": {
+                "uart": "unverified",
+                "i2c": "unverified",
+                "spi": "unverified"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_c6_xiao_esp32c6_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c6",
+            "name": "Seeed Studio XIAO ESP32-C6",
+            "family": "esp32_c6",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_c6_xiao_esp32c6_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c6/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_c6_xiao_esp32c6_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32c6/working_svg.svg",
+            "contact_records": 24,
+            "located_contact_records": 24,
+            "exposed_gpio_count": 16,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "Only source-confirmed pad centres are positioned; no shared-XIAO outline pin-position inference is applied.",
+                "Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced with carrier-header numbers."
+            ],
+            "default_interface_status": {
+                "uart": "documented",
+                "i2c": "documented",
+                "spi": "documented"
+            }
+        },
+        {
+            "id": "electronic_breakout_microcontroller_esp32_h2_supermini_18_pin_18_mm_width_23_5_mm_height_18_pins_tenstar_esp32_h2_supermini",
+            "name": "Tenstar ESP32-H2 SuperMini (pinout unverified)",
+            "family": "esp32_h2",
+            "definition": "source_file/electronic_breakout_microcontroller_esp32_h2_supermini_18_pin_18_mm_width_23_5_mm_height_18_pins_tenstar_esp32_h2_supermini/definition.yaml",
+            "svg": "source_file/electronic_breakout_microcontroller_esp32_h2_supermini_18_pin_18_mm_width_23_5_mm_height_18_pins_tenstar_esp32_h2_supermini/working_svg.svg",
+            "contact_records": 0,
+            "located_contact_records": 0,
+            "exposed_gpio_count": 0,
+            "located_mounting_holes": 0,
+            "partial_or_related_holes": 0,
+            "data_gaps": [
+                "Assembled component keepouts and USB insertion/cable envelopes have not been captured.",
+                "No revision-specific primary Tenstar header drawing was established. Header GPIO assignments, pad centres and hole locations remain unknown; related SuperMini variants are not substituted."
+            ],
+            "default_interface_status": {
+                "uart": "unverified",
+                "i2c": "unverified",
+                "spi": "unverified"
+            }
+        }
+    ],
+    "chips": [
+        "electronic_ic_qfn_56_microcontroller_rp2_raspberry_pi_rp2040",
+        "electronic_ic_qfn_60_microcontroller_rp2_raspberry_pi_rp2350a",
+        "electronic_ic_qfn_60_microcontroller_rp2_raspberry_pi_rp2354a",
+        "electronic_ic_qfn_80_microcontroller_rp2_raspberry_pi_rp2350b",
+        "electronic_ic_qfn_80_microcontroller_rp2_raspberry_pi_rp2354b",
+        "electronic_ic_qfn_32_microcontroller_esp32_espressif_esp32_c3_az"
+    ],
+    "legacy_id_aliases": {
+        "electronic_breakout_microcontroller_rp2040_feather_22_86_mm_width_50_8_mm_height_28_pin_adafruit_4884": "electronic_breakout_microcontroller_rp2040_feather_without_headers_22_86_mm_width_50_8_mm_height_adafruit_4884",
+        "electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_wh": "electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_wh",
+        "electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_w": "electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico_w",
+        "electronic_breakout_microcontroller_rp2040_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_h": "electronic_breakout_microcontroller_rp2040_pico_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_h",
+        "electronic_breakout_microcontroller_rp2040_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico": "electronic_breakout_microcontroller_rp2040_pico_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico",
+        "electronic_breakout_microcontroller_rp2040_pro_micro_17_78_mm_width_33_02_mm_height_24_pin_sparkfun_dev_18288": "electronic_breakout_microcontroller_rp2040_pro_micro_without_headers_17_78_mm_width_33_02_mm_height_sparkfun_dev_18288",
+        "electronic_breakout_microcontroller_rp2040_qt_py_18_mm_width_21_mm_height_14_pin_adafruit_4900": "electronic_breakout_microcontroller_rp2040_qt_py_without_headers_18_mm_width_21_mm_height_adafruit_4900",
+        "electronic_breakout_microcontroller_rp2040_xiao_17_8_mm_width_21_mm_height_14_pin_seeed_studio_102010428": "electronic_breakout_microcontroller_rp2040_xiao_without_headers_17_8_mm_width_21_mm_height_seeed_studio_102010428",
+        "electronic_breakout_microcontroller_rp2040_zero_18_mm_width_23_5_mm_height_20_pin_waveshare_rp2040_zero_m": "electronic_breakout_microcontroller_rp2040_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2040_zero_m",
+        "electronic_breakout_microcontroller_rp2040_zero_18_mm_width_23_5_mm_height_20_pin_waveshare_rp2040_zero": "electronic_breakout_microcontroller_rp2040_zero_without_headers_18_mm_width_23_5_mm_height_waveshare_rp2040_zero",
+        "electronic_breakout_microcontroller_rp2350a_feather_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000": "electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_hstx_adafruit_6000",
+        "electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_w_with_headers": "electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_w_with_headers",
+        "electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_w": "electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_w",
+        "electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2_with_headers": "electronic_breakout_microcontroller_rp2350a_pico_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_with_headers",
+        "electronic_breakout_microcontroller_rp2350a_pico_21_mm_width_51_mm_height_40_pin_raspberry_pi_pico_2": "electronic_breakout_microcontroller_rp2350a_pico_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2",
+        "electronic_breakout_microcontroller_rp2350a_xiao_17_8_mm_width_21_mm_height_14_pin_seeed_studio_102010550": "electronic_breakout_microcontroller_rp2350a_xiao_without_headers_17_8_mm_width_21_mm_height_seeed_studio_102010550",
+        "electronic_breakout_microcontroller_rp2350a_zero_18_mm_width_23_5_mm_height_20_pin_waveshare_rp2350_zero": "electronic_breakout_microcontroller_rp2350a_zero_without_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero"
+    }
+}

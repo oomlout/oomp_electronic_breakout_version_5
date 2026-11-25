@@ -1,0 +1,190 @@
+Adafruit SCD-4x - True CO2 Temperature and Humidity Sensors
+Overview
+Adafruit SCD-4x - True CO2 Temperature and Humidity Sensors
+CO2 sensing over I2C in a tiny package!
+by
+Kattni Rembor
+published August 26, 2021, last edited August 19, 2026
+last major update August 19, 2026
+posted in
+Adafruit Products
+Sensors
+/
+Temperature & Humidity
+CircuitPython
+Breakout Boards
+Programming
+/
+Python
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Python & CircuitPython
+Python Docs
+Arduino
+WipperSnapper
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Primary
+Adafruit SCD-40 - True CO2, Temperature and Humidity Sensor
+$44.95
+Add  to Cart
+Primary
+Adafruit SCD-41 - True CO2 Temperature and Humidity Sensor
+$49.95
+Add  to Cart
+Primary
+Adafruit SCD-43 - True CO2 Temperature and Humidity Sensor
+$49.95
+Add  to Cart
+View product details
+38
+Updated
+Beginner
+Product guide
+😍
+2
+Overview
+Take a deep breath in...now slowly breathe out. Mmm isn't it wonderful? All that air around us, which we bring into our lungs, extracts oxygen from and then breathes out carbon dioxide. CO2 is essential for life on this planet we call Earth - we and plants take turns using and emitting CO2 in an elegant symbiosis. But it's important to keep that CO2 balanced - you don't want too much around, not good for humans and not good for our planet.
+The SCD-40, SCD-41 and SCD-43 are photoacoustic 'true' CO2 sensors that will tell you the CO2 PPM (parts-per-million) composition of ambient air.
+Unlike the SGP30, this sensor isn't approximating it from VOC gas concentration
+-
+they really are measuring the CO2 concentration
+! That means they're bigger and more expensive, but they are the real thing. Perfect for environmental sensing, scientific experiments, air quality and ventilation studies, and more.
+Compared to the illustrious SCD-30
+, this sensor uses a different measurement technique, which allows it to be much smaller. The overall data quality should be very similar, however. Like the SCD-30, this sensor has data read over I2C, so it works very nicely with just about any microcontroller or microcomputer. There's both Arduino and Python/CircuitPython code so you can get started in a jiffy.
+There are three variants of this sensor - the SCD-40, SCD-41 and SCD-43
+The
+SCD-40
+is lower cost and is perfect for indoor/outdoor air quality and CO2 measurements. It has a range of
+400~2000 ppm
+with an accuracy of ±(50 ppm + 5% of reading)
+The
+SCD-41
+is an older scientific sensor version, and while it can definitely be used for air quality, it's wide range means it's best used for industrial or scientific CO2 measurements where the ppm can get very high. It has a range of
+400~5000 ppm
+with an accuracy of ±(
+40 ppm + 5%
+of reading)
+The
+SCD-43
+is the latest version. Like the SCD-41, it can be used for air quality, it's wide range means it's best used for industrial or scientific CO2 measurements where the ppm can get very high. It has a range of
+400~5000 ppm
+with an improved accuracy of ±(
+30 ppm + 3%
+of reading)
+Nice sensor, right? So we made it easy for you to get right into your next project. The sensor is soldered onto a custom-made PCB in the
+STEMMA QT
+form factor
+, making them easy to interface with. The
+STEMMA QT connectors
+on either side are compatible with the
+SparkFun Qwiic
+I2C connectors. This allows you to make solderless connections between your development board and the SCD-4x or to chain it with a wide range of other sensors and accessories using a
+compatible cable
+.
+This sensor can run from 3.3 to 5V, but it's more important for it to have a quiet power supply with low ripple, than any particular voltage. For that reason, we've added a 3.3V regulator and level shifters: when connecting to a 5V microcontroller like an Arduino UNO the 5V supply is often shared with other electronic components that add noise. The onboard regulator will keep the voltage nice and quiet. For advanced hackers, they can cut/solder the backtraces to change whether the regulator is enabled and what I2C logic level is desired.
+Page last edited August 19, 2026
+Pinouts
+Related Guides
+Your browser does not support the video tag. This links to the guide No-Code IoT CO2 "Canary In a Coalmine".
+No-Code IoT CO2 "Canary In a Coalmine"
+By
+Ruiz Brothers
+beginner
+36
+No-Code Indoor Grow Monitor with PPFD and VPD...
+By
+Brent Rubell
+beginner
+10
+Disconnected CO2 Data Logger
+By
+Liz Clark
+beginner
+37
+Air Quality Monitor and Case
+By
+Ruiz Brothers
+beginner
+53
+DIY Trinkey No-Soldering USB Air Quality Monitor
+By
+Carter Nelson
+beginner
+45
+Using Piezo Buzzers with WipperSnapper
+By
+Eva Herrada
+beginner
+5
+Raspberry Pi Azure IoT Hub Dashboard with CircuitPython
+By
+Liz Clark
+intermediate
+40
+Adafruit Chainable DS18B20 Extender Breakout
+By
+Liz Clark
+Product Guide
+2
+DIY Darksaber Build - 3D Print with PropMaker...
+By
+Ruiz Brothers
+advanced
+147
+Your browser does not support the video tag. This links to the guide Severance Portable Macrodata Refinement Terminal.
+Severance Portable Macrodata Refinement Terminal
+By
+Liz Clark
+intermediate
+34
+Adafruit Metro Mini
+By
+lady ada
+Product Guide
+18
+Adafruit I2C to 8 Channel Solenoid Driver
+By
+Liz Clark
+Product Guide
+9
+Getting Started with the nRF8001 Bluefruit LE Breakout
+By
+Kevin Townsend
+beginner
+39
+Your browser does not support the video tag. This links to the guide Spinning Disc Step Sequencer.
+Spinning Disc Step Sequencer
+By
+John Park
+intermediate
+54
+Adafruit I2S Stereo Decoder - UDA1334A
+By
+lady ada
+Product Guide
+33
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

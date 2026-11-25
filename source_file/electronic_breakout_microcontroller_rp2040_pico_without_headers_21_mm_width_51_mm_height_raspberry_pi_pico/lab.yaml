@@ -1,0 +1,22 @@
+key: pico
+subtitle: The original workbench
+color: '#167257'
+usb: micro_b
+default_gpio: 0
+default_adc: 26
+default_i2c:
+  sda: 0
+  scl: 1
+runtime:
+  page: https://micropython.org/download/RPI_PICO/
+  filename: RPI_PICO-20260824-v1.29.0.uf2
+  url: https://micropython.org/resources/firmware/RPI_PICO-20260824-v1.29.0.uf2
+notes:
+- 26 exposed GPIO pins. GP26–28 have ADC inputs.
+- Internal GP23–25 and GP29 are excluded from bench controls.
+- BOOTSEL is beside the micro USB connector.
+acceptance:
+  servo_pin: 2
+  led_pin: 4
+  digital_pin: 6
+  adc_pin: 26

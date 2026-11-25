@@ -1,0 +1,345 @@
+research_schema_version: 1
+part_id: electronic_breakout_sensor_distance_time_of_flight_vl53l1x_stemma_qt_adafruit_3967
+name_readable: Adafruit VL53L1X, STEMMA QT
+manufacturer: adafruit
+part_number: '3967'
+manufacturer_part_number: '3967'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: sensor
+  taxonomy_4: distance
+  taxonomy_5: time_of_flight
+  taxonomy_6: vl53l1x
+  taxonomy_7: stemma_qt
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '3967'
+default_website:
+  url: https://www.adafruit.com/product/3967
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:14:57+00:00'
+  updated_at: '2026-10-23T20:15:30+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: Adafruit VL53L1X STEMMA QT breakout, product 3967
+  status: identified_by_product_page
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: Product notes connector color has varied (black/tan) since October 2022,
+    same function.
+description: General distance sensing, with a vendor-specified range up to roughly
+  four metres under suitable conditions.
+interfaces:
+- i2c
+dimensions_mm:
+  width: null
+  height: null
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: unknown
+  source_ids:
+  - product_page
+  notes: Product Dimensions are stated as 25.5 x 17.5 x 4.6 mm with no orientation/scope
+    detail, so kept separate.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: unknown_not_documented
+connectors:
+  header_group:
+    kind: header
+    description: Six-pin 0.1in header is pictured; guide names VIN, GND, SCL, SDA,
+      GPIO, XSHUT.
+    contacts: []
+    source_ids:
+    - product_page
+    - guide_pinouts
+  QT1:
+    kind: cable_connector
+    description: STEMMA QT / Qwiic connector
+    contacts: []
+    source_ids:
+    - product_page
+  QT2:
+    kind: cable_connector
+    description: STEMMA QT / Qwiic connector
+    contacts: []
+    source_ids:
+    - product_page
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: unknown
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: Guide names six header signals, but the pin table is not yet entered; two
+    QT connectors exist but their physical contacts are not enumerated.
+pin_names: []
+electrical:
+  board_supply:
+    min_v: null
+    max_v: null
+    nominal_v:
+    - 3
+    - 5
+    status: documented_supported_nominals
+    source_ids:
+    - product_page
+    - guide_pinouts
+    notes: Product/guide states carrier can be used with 3-5V power/logic microcontrollers;
+      chip itself requires 2.8V.
+  chip_supply:
+    status: unknown_not_transcribed
+    notes: Chip limits not transcribed from datasheet.
+    source_ids:
+    - chip_datasheet
+  logic_levels:
+    status: documented_with_signal_exception
+    notes:
+    - VIN should match controller logic level.
+    - SCL/SDA include 10k pull-ups.
+    - GPIO is 2.8V logic output (readable by 3.3V and most 5V controllers).
+    - XSHUT is active low and level shifted for 3V/5V logic.
+    source_ids:
+    - guide_pinouts
+  pullups:
+  - signals:
+    - SCL
+    - SDA
+    resistance_ohms: 10000
+    rail: null
+    designator: null
+    disconnect_method: null
+    source_ids:
+    - guide_pinouts
+  extra_signals:
+  - name: GPIO
+    direction: output
+    notes: Interrupt output, 2.8V logic level.
+    source_ids:
+    - guide_pinouts
+  - name: XSHUT
+    direction: input
+    notes: Active-low shutdown, level shifted.
+    source_ids:
+    - guide_pinouts
+  source_ids:
+  - product_page
+  - guide_pinouts
+i2c:
+  default_address_7bit: 41
+  documented_addresses_7bit:
+  - 41
+  address_selection: Address may be changed in software; use XSHUT to disable other
+    sensors on same bus.
+  maximum_clock_hz: 400000
+  chip_maximum_clock_hz: 400000
+  clock_stretching: unknown
+  status: documented
+  source_ids:
+  - product_page
+  notes: Product listing states I2C up to 400 kHz and default 0x29.
+chip:
+  manufacturer: STMicroelectronics
+  part_number: VL53L1CX / VL53L1X
+  identity_status: product_page_claim
+  source_ids:
+  - product_page
+  - chip_datasheet
+  notes: Listing names both VL53L1X and VL53L1CX; exact fitted part marking is unverified.
+datasheets:
+  status: downloaded
+  items:
+  - chip: ST VL53L1X
+    source_id: chip_datasheet
+    local_file: reference/chip_datasheet.pdf
+    url: https://cdn-learn.adafruit.com/assets/assets/000/105/859/original/vl53l1x.pdf?1634930163
+    sha256: a6a31b307f79e987986832ae590fadc7e070c55ad7b1d5c4dfa5ecad4f33c3f6
+    page_count: 35
+    revision: null
+  notes:
+  - 35-page PDF validated by helper; revision not transcribed from pages.
+software:
+- name: Adafruit VL53L1X Arduino Library
+  framework: Arduino
+  official_url: https://github.com/adafruit/Adafruit_VL53L1X
+  tested: false
+  source_ids:
+  - guide_hardware
+  notes: Product page says Arduino and CircuitPython/Python code exists; this entry
+    covers the guide linked Arduino wrapper.
+- name: Adafruit VL53L1X CircuitPython driver
+  framework: CircuitPython
+  official_url: https://github.com/adafruit/Adafruit_CircuitPython_VL53L1X
+  tested: false
+  source_ids:
+  - guide_hardware
+  notes: No integration test performed.
+extra_resources:
+- name: Adafruit VL53L1X guide
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-vl53l1x
+  local_file: reference/guide_hardware.html
+  source_id: guide_hardware
+- name: Pinouts
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-vl53l1x/pinouts
+  local_file: reference/guide_pinouts.html
+  source_id: guide_pinouts
+- name: Downloads
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-vl53l1x/downloads
+  local_file: reference/guide_downloads.html
+  source_id: guide_downloads
+- name: Exact carrier PCB files repository
+  kind: hardware_repository
+  url: https://github.com/adafruit/Adafruit-VL53L1X-PCB
+  source_id: guide_downloads
+sources:
+- id: product_page
+  kind: product_page
+  requested_url: https://www.adafruit.com/product/3967
+  url: https://www.adafruit.com/product/3967
+  retrieved_at: '2026-10-23T20:14:58+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 105167
+  sha256: 8b1951281a7f31625fb5c7a433f1fece40e47bab5ec61a2be9388277bdb43b80
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 8234
+    sha256: 2be86be5dc9d284b756b5402b6f020a55a5df3a64499f9b5fc00b4ca3bd21e3b
+  - kind: links
+    local_file: website.links.json
+    bytes: 15988
+    sha256: b5593eed2e6b3ab00ef48d3d3ba8d32e44ee9fd164fa3eed52ea821c0e91ef94
+  title: 'Adafruit VL53L1X Time of Flight Distance Sensor - ~30 to 4000mm [STEMMA
+    QT / Qwiic] : Adafruit Industries, Unique & fun DIY electronics and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_hardware
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-vl53l1x
+  url: https://learn.adafruit.com/adafruit-vl53l1x
+  retrieved_at: '2026-10-23T20:15:00+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_hardware.html
+  bytes: 77436
+  sha256: fe9babb902af022b47802eac73372a85d321d1a88f03850e93f15bb9334f57fa
+  derivatives:
+  - kind: text
+    local_file: reference/guide_hardware.txt
+    bytes: 5394
+    sha256: e7fdd709ec7a8170fb52843fd3f338794c5292f2babf7498b426fc2e6842c617
+  - kind: links
+    local_file: reference/guide_hardware.links.json
+    bytes: 18726
+    sha256: c98a4822561d10f0622365e6083477c7d4b1318f5569c569edcfce1f532860c7
+  title: Overview | Adafruit VL53L1X Time of Flight Distance Sensor | Adafruit Learning
+    System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_pinouts
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-vl53l1x/pinouts
+  url: https://learn.adafruit.com/adafruit-vl53l1x/pinouts
+  retrieved_at: '2026-10-23T20:15:06+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_pinouts.html
+  bytes: 70863
+  sha256: a0c1d4e57555b45360a1edaa8f2d7f543df67e35f3207501c22b3868f7de7831
+  derivatives:
+  - kind: text
+    local_file: reference/guide_pinouts.txt
+    bytes: 3758
+    sha256: 52c5f78ae657d4e236a7f73727bd6f47f3ee259e256417f2d277ccb7ea77fc7a
+  - kind: links
+    local_file: reference/guide_pinouts.links.json
+    bytes: 17918
+    sha256: 705c1fd3071b8b5587bc695f921f34a0b5165a0d7dc4513b638badf78ccfc9d8
+  title: Pinouts | Adafruit VL53L1X Time of Flight Distance Sensor | Adafruit Learning
+    System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-vl53l1x/downloads
+  url: https://learn.adafruit.com/adafruit-vl53l1x/downloads
+  retrieved_at: '2026-10-23T20:15:12+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_downloads.html
+  bytes: 70356
+  sha256: 8eed765b1d14c11173ed3e2988e01f7311c8732a42a3f07ff413235c8efeb0ea
+  derivatives:
+  - kind: text
+    local_file: reference/guide_downloads.txt
+    bytes: 2634
+    sha256: ccb4cffc940e2622ba7f42c7853ae827bcc92a1622f9d3ec5ac7c027398433cb
+  - kind: links
+    local_file: reference/guide_downloads.links.json
+    bytes: 18269
+    sha256: 3b65a97c257a30643d72dde09c0b8df8291bc67a83db1d78995e8bae0e6a4b03
+  title: Downloads | Adafruit VL53L1X Time of Flight Distance Sensor | Adafruit Learning
+    System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn-learn.adafruit.com/assets/assets/000/105/859/original/vl53l1x.pdf?1634930163
+  url: https://cdn-learn.adafruit.com/assets/assets/000/105/859/original/vl53l1x.pdf?1634930163
+  retrieved_at: '2026-10-23T20:15:19+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_downloads
+  local_file: reference/chip_datasheet.pdf
+  bytes: 1130897
+  sha256: a6a31b307f79e987986832ae590fadc7e070c55ad7b1d5c4dfa5ecad4f33c3f6
+  derivatives: []
+  pdf_page_count: 35
+conflicts: []
+data_gaps:
+- Carrier PCB outline, thickness, mounting-hole geometry and assembly envelope are
+  unknown; product dimensions have unspecified scope and orientation.
+- Exact numbered pinout and QT connector physical contacts/counts need CAD or connector-specific
+  layout review.
+- Datasheet revision and electrical operating limits have not been transcribed.
+- Product calls device VL53L1X/VL53L1CX; installed chip marking is unverified.
+- Pinout data has names and signal functions in the guide, but the structured physical
+  contact inventory/count remains incomplete.
+product_dimensions_mm:
+  dimensions:
+  - 25.5
+  - 17.5
+  - 4.6
+  units: mm
+  scope: manufacturer_product_dimensions_unspecified_orientation
+  status: documented
+  source_ids:
+  - product_page

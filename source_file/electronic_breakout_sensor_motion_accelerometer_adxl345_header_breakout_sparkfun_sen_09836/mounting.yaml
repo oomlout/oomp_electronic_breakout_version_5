@@ -1,0 +1,114 @@
+schema_version: 1
+part_id: electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+status: verified
+board_revision: SparkFun ADXL345 Breakout SEN-09836, two-standoff-hole variant represented
+  by Hardware/ADXL345_Breakout.brd at repository commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+  SparkFun product listing calls this the newer version but gives no formal revision
+  number.
+identity_evidence: The SparkFun product listing identifies SKU SEN-09836 and says
+  its newer version adds two standoff holes and an extra decoupling capacitor. The
+  SparkFun ADXL345_Breakout repository README identifies the board as SEN-09836 and
+  states Hardware contains the EAGLE design files. The pinned Hardware/ADXL345_Breakout.brd
+  at commit 8e83a624bcaea0a3071885c58634b56fbefa346d has exactly two named STAND-OFF
+  plain drills, matching the product variant description. No formal PCB revision label
+  is supplied.
+board_size:
+- 20.32
+- 15.24
+mounting_holes:
+- id: JP2:hole:1
+  x_mm: -7.62
+  y_mm: 5.08
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+- id: JP3:hole:1
+  x_mm: 7.62
+  y_mm: 5.08
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: EAGLE layer-20 bounds; explicit package/plain drills; centred then rotated
+  CCW.
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  local_file: website.html
+  url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+  kind: manufacturer_product
+  locator: 'Archived manufacturer listing: SKU SEN-09836 and description states new
+    version adds two standoff holes plus an extra decoupling capacitor; archived page
+    identity checked against current SparkFun repo README.'
+  registered_at: '2026-11-07T11:57:30+00:00'
+  bytes: 563391
+  sha256: d53074ac5c28707935bff4bc1b5b59d7bb6d516b552e76f8d4275b4c7f4b6707
+- id: cad
+  local_file: mounting_evidence/Hardware_ADXL345_Breakout.brd
+  url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/Hardware/ADXL345_Breakout.brd
+  kind: manufacturer_cad
+  locator: SparkFun ADXL345_Breakout repository pinned commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+    Hardware/ADXL345_Breakout.brd. Repo README identifies repository board as SEN-09836.
+    Inspect board outline, hole features and all drills.
+  registered_at: '2026-11-07T11:57:30+00:00'
+  bytes: 121142
+  sha256: c24922728d0d5e47a2ae2fc88ac5c1f9433176839e0dfac97392f58ebb3ae5ba
+- id: repo_readme
+  local_file: mounting_evidence/README.md
+  url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/README.md
+  kind: manufacturer_repository
+  locator: README.md in SparkFun ADXL345_Breakout repository pinned commit; explicitly
+    labels ADXL345 Breakout Board (SEN-09836) and documents Hardware directory contains
+    EAGLE design files.
+  registered_at: '2026-11-07T11:57:31+00:00'
+  bytes: 1049
+  sha256: 5de18a7cf7eaef8abe2787aea1a0a37c2785e92550198165a7dbc3b345af6377
+attempts:
+- Checked SparkFun product listing for SEN-09836 and its description of the newer
+  two-standoff-hole version.
+- Checked SparkFun ADXL345_Breakout README and pinned repository tree; downloaded
+  the commit-pinned Hardware/ADXL345_Breakout.brd and inspected its XML EAGLE geometry
+  and every drill candidate.
+conflicts: []
+notes:
+- 'The product listing does not provide a numeric PCB revision. Geometry is scoped
+  to the exact manufacturer repository CAD file and commit identified above, matching
+  the listingâ€™s described two-standoff-hole variant. Evidence URLs: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html;
+  https://github.com/sparkfun/ADXL345_Breakout/tree/8e83a624bcaea0a3071885c58634b56fbefa346d.
+  Newly acquired pinned EAGLE and repository README bytes on 2026-11-07 UTC.'
+- Layer 20 is a closed rectangular outline from (0,0) to (20.32,15.24) mm. The two
+  selected drills are explicitly named STAND-OFF in unpopulated EAGLE elements JP2
+  and JP3. The eight remaining drilled candidates are JP1 header pads and are not
+  board mounting holes.
+- CAD coordinates are native millimetres. The outline centre is (10.16,7.62) mm; centred
+  top-view coordinates are x=xcad-10.16, y=ycad-7.62, with no quarter-turn. No physical
+  fit test or underside clearance review is claimed.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T11:57:41+00:00'
+extraction:
+  selected_ids:
+  - JP2:hole:1
+  - JP3:hole:1
+  quarter_turn: 0
+  native_centre_mm:
+  - 10.16
+  - 7.62
+identity_source_ids:
+- product
+- repo_readme
+- cad

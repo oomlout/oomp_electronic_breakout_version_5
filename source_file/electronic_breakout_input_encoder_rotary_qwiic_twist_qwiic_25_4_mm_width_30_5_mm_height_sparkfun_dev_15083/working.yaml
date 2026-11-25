@@ -1,0 +1,236 @@
+research_schema_version: 1
+part_id: electronic_breakout_input_encoder_rotary_qwiic_twist_qwiic_25_4_mm_width_30_5_mm_height_sparkfun_dev_15083
+name_readable: SparkFun Qwiic Twist RGB Rotary Encoder
+manufacturer: sparkfun
+part_number: dev_15083
+manufacturer_part_number: DEV-15083
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: input
+  taxonomy_4: encoder
+  taxonomy_5: rotary
+  taxonomy_6: qwiic_twist
+  taxonomy_7: qwiic
+  taxonomy_8: 25_4_mm_width_30_5_mm_height
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: sparkfun
+  taxonomy_15: dev_15083
+default_website:
+  url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:30:37+00:00'
+  updated_at: '2026-10-23T20:30:43+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: SparkFun Qwiic Twist DEV-15083
+  status: identified_by_product_page
+  source_ids: [product_page, schematic]
+  notes: Product SKU DEV-15083 with dual Qwiic connectors and RGB rotary encoder. Schematic captured but not fully transcribed to identify fitted control IC.
+description: A dial, push-button and RGB indicator accessible over I2C. Its tall assembly is useful to
+  document separately from flat sensor boards. This leaf names the assembled product rather than inventing
+  an unverified controller IC.
+interfaces:
+- i2c
+dimensions_mm:
+  width: null
+  height: null
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: unknown
+  source_ids: [product_page, schematic]
+  notes: Exact carrier dimensions and mounting holes not transcribed from archived product resources.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: unknown_not_documented
+connectors:
+  qwiic_1:
+    kind: cable_connector
+    description: Qwiic 4-pin connector
+    contacts: []
+    source_ids: [product_page]
+  qwiic_2:
+    kind: cable_connector
+    description: Qwiic 4-pin connector
+    contacts: []
+    source_ids: [product_page]
+  header_group:
+    kind: header
+    description: 0.1-inch-pitch header breakouts; exact contact labels and count not transcribed.
+    contacts: []
+    source_ids: [product_page, schematic]
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: partial
+  source_ids: [product_page, hookup_guide]
+pin_names: []
+electrical:
+  board_supply:
+    min_v: null
+    max_v: null
+    nominal_v: [3.3]
+    status: qwiic_nominal_only
+    source_ids: [product_page]
+    notes: Qwiic interface used; exact board supply range not transcribed in this pass.
+  logic_levels:
+    status: i2c_qwiic_documented
+    notes: ["I2C carries encoder counts, pushbutton and software-controlled RGB LED features."]
+    source_ids: [product_page, hookup_guide]
+  pullups:
+  - signals: [SCL, SDA]
+    resistance_ohms: null
+    rail: Qwiic supply
+    designator: null
+    disconnect_method: unknown
+    source_ids: [schematic]
+  extra_signals:
+  - name: encoder
+    direction: input
+    notes: Integrated encoder outputs 24 detents/steps per revolution; handled by onboard circuitry and presented over I2C.
+    source_ids: [product_page]
+  - name: pushbutton
+    direction: input
+    notes: Momentary press of shaft.
+    source_ids: [product_page]
+  - name: RGB LED
+    direction: output
+    notes: Onboard RGB LED driven via software over I2C.
+    source_ids: [product_page]
+  source_ids: [product_page, hookup_guide, schematic]
+i2c:
+  default_address_7bit: 63
+  documented_addresses_7bit: [62, 63]
+  address_selection: Product says default 0x3F is software configurable and physical solder jumper can switch to 0x3E.
+  maximum_clock_hz: null
+  clock_stretching: unverified
+  status: documented
+  source_ids: [product_page]
+  notes: Product separately mentions up to 111 devices on a bus using software-configurable address, but detailed address range not transcribed.
+chip:
+  manufacturer: null
+  part_number: null
+  identity_status: controller_not_identified
+  source_ids: [schematic]
+datasheets:
+  status: not_found
+  items: []
+  notes: Product provides a datasheet for the PEL12T mechanical encoder, not the onboard I2C control IC; archived below as an extra resource rather than mislabeled as chip datasheet.
+software:
+- name: SparkFun Qwiic Twist Arduino library
+  framework: Arduino
+  url: https://github.com/sparkfun/SparkFun_Qwiic_Twist_Arduino_Library
+  tested: false
+  source_ids: [product_page]
+extra_resources:
+- name: Qwiic Twist hookup guide
+  kind: guide
+  url: https://learn.sparkfun.com/tutorials/qwiic-twist-hookup-guide
+  source_id: hookup_guide
+- name: PEL12T mechanical encoder datasheet
+  kind: component_datasheet
+  url: https://cdn.sparkfun.com/assets/5/e/e/9/b/PEL12T.pdf
+  source_id: encoder_datasheet
+- name: Qwiic Twist register map
+  kind: register_map
+  url: https://cdn.sparkfun.com/assets/learn_tutorials/8/4/6/Qwiic_Twist_Register_Map_-_Fixed_Endianness.pdf
+  source_id: product_page
+- name: Qwiic Twist schematic
+  kind: schematic
+  url: https://cdn.sparkfun.com/assets/1/8/1/7/6/Qwiic_Twist_Schematic.pdf
+  source_id: schematic
+sources:
+- id: product_page
+  kind: website
+  requested_url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+  url: https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html
+  retrieved_at: '2026-10-23T20:30:39+00:00'
+  content_type: text/html; charset=UTF-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 588759
+  sha256: b91408ada81ae69c31e8678ce88d103460c8936dea1602d90fa799212a283cb0
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 5583
+    sha256: 824096a2b4f071e409249f68c6b4ee05420f9e3be10f13bfdb1bb2e4f4923968
+  - kind: links
+    local_file: website.links.json
+    bytes: 58772
+    sha256: 2e8b8dde9a3c442fb5d91730b8eef68ee25398700597ea4958713b7445f19bed
+  title: SparkFun Qwiic Twist - RGB Rotary Encoder Breakout - SparkFun Electronics
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: hookup_guide
+  kind: guide
+  requested_url: https://learn.sparkfun.com/tutorials/qwiic-twist-hookup-guide
+  url: https://learn.sparkfun.com/tutorials/qwiic-twist-hookup-guide
+  retrieved_at: '2026-10-23T20:30:40+00:00'
+  content_type: text/html;charset=UTF-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/hookup.html
+  bytes: 60573
+  sha256: e27b130caa0fd047c0a104c7d0886660f8c2ec1e91e3950a4cbd4af01cf5da96
+  derivatives:
+  - kind: text
+    local_file: reference/hookup.txt
+    bytes: 17628
+    sha256: c3d41622e35e7621a45e0343df8d211a45da3d130b82d8c04fda39d841ab597b
+  - kind: links
+    local_file: reference/hookup.links.json
+    bytes: 16879
+    sha256: 91d6a68781f6eaebead00ade7cec5615711aafc123c0ead334907643a12b5152
+  title: Qwiic Twist Hookup Guide - SparkFun Learn
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: encoder_datasheet
+  kind: component_datasheet
+  requested_url: https://cdn.sparkfun.com/assets/5/e/e/9/b/PEL12T.pdf
+  url: https://cdn.sparkfun.com/assets/5/e/e/9/b/PEL12T.pdf
+  retrieved_at: '2026-10-23T20:30:42+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/PEL12T.pdf
+  bytes: 395053
+  sha256: f70428d0f9948b240bbf342dbcbcebfc5ccca9f1ab6db268eead82fe042b4321
+  derivatives: []
+  pdf_page_count: 3
+- id: schematic
+  kind: schematic
+  requested_url: https://cdn.sparkfun.com/assets/1/8/1/7/6/Qwiic_Twist_Schematic.pdf
+  url: https://cdn.sparkfun.com/assets/1/8/1/7/6/Qwiic_Twist_Schematic.pdf
+  retrieved_at: '2026-10-23T20:30:43+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/schematic.pdf
+  bytes: 102209
+  sha256: 664ef3e1000e7471661fad9effc52e62a23f059e7e1fe8e15dab2b8cf9fb37c0
+  derivatives: []
+conflicts: []
+data_gaps:
+- Carrier dimensions, thickness, assembled height and hole geometry not established.
+- Physical header pin inventory and Qwiic contact/net map not transcribed; schematic archived but controller/reference designators need review.
+- Onboard I2C control IC and its datasheet are unidentified; captured PEL12T document is the mechanical encoder datasheet, not a chip datasheet.
+- Exact board supply range, pullup resistor values, and carrier I2C maximum clock not established.

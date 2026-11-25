@@ -1,0 +1,255 @@
+research_schema_version: 1
+part_id: electronic_breakout_sensor_motion_accelerometer_adxl343_stemma_qt_adafruit_4097
+name_readable: Adafruit ADXL343, STEMMA QT
+manufacturer: adafruit
+part_number: '4097'
+manufacturer_part_number: '4097'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: sensor
+  taxonomy_4: motion
+  taxonomy_5: accelerometer
+  taxonomy_6: adxl343
+  taxonomy_7: stemma_qt
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '4097'
+default_website:
+  url: https://www.adafruit.com/product/4097
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:35:28+00:00'
+  updated_at: '2026-10-23T20:35:33+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: Adafruit ADXL343 product 4097 STEMMA QT carrier
+  status: identified_by_product_page
+  source_ids: [product_page, guide_pinout, guide_downloads]
+  notes: STEMMA QT board revision introduced March 2022; the physical shape changed while functionality/schematic remained same; 2023 silkscreen/connector color update is cosmetic.
+description: A related ADXL345-style three-axis I2C/SPI option, with selectable +/-2/4/8/16 g and motion
+  interrupts. Keep it as a distinct chip family even where libraries support both.
+interfaces:
+- i2c
+- spi
+dimensions_mm:
+  width: null
+  height: null
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: unknown
+  source_ids: [product_page, guide_downloads]
+  notes: Current STEMMA QT fab print is in guide resources but dimensions were not transcribed; product states four 2.5mm mounting holes.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: four_holes_25mm_diameter_coordinates_unknown
+connectors:
+  header_group:
+    kind: header
+    description: Standard 0.1-inch header breaks out signals for I2C/SPI and interrupts; exact physical pin count/order not transcribed.
+    contacts: []
+    source_ids: [product_page, guide_pinout]
+  qt1:
+    kind: cable_connector
+    description: STEMMA QT 4-pin connector
+    contacts: []
+    source_ids: [product_page, guide_pinout]
+  qt2:
+    kind: cable_connector
+    description: STEMMA QT 4-pin connector
+    contacts: []
+    source_ids: [product_page, guide_pinout]
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: partial
+  source_ids: [product_page, guide_pinout]
+pin_names: []
+electrical:
+  board_supply:
+    min_v: 3.3
+    max_v: 5.0
+    nominal_v: [3.3, 5.0]
+    status: documented_board_supply
+    source_ids: [product_page, guide_pinout]
+    notes: Guide says 3.3V and 5V system compatibility; onboard regulator provides 3.3V. SCL/SDA are 5V safe while other pins such as INT need manual level shifting on 5V systems.
+  chip_supply:
+    min_v: 2.0
+    max_v: 3.6
+    status: documented_chip_input_range
+    source_ids: [product_page, chip_datasheet]
+  logic_levels:
+    status: documented_pin_specific_level_safety
+    notes: ["SCL/SDA 5V safe; CS and other pins such as INT require manual level shifting on 5V systems.", "CS high selects I2C; low selects SPI, but SPI use is not actively supported by guide/library."]
+    source_ids: [product_page, guide_pinout]
+  pullups:
+  - signals: [SCL, SDA]
+    resistance_ohms: null
+    rail: VIN logic rail
+    designator: null
+    disconnect_method: unknown
+    source_ids: [guide_pinout]
+  extra_signals:
+  - name: SDO
+    direction: input
+    notes: I2C address selector; default pulled low for 0x53, high selects 0x1D after reset.
+    source_ids: [guide_pinout]
+  - name: CS
+    direction: input
+    notes: Logic high boots into I2C; low selects SPI mode.
+    source_ids: [guide_pinout]
+  - name: INT1/INT2
+    direction: output
+    notes: Two interrupt output pins; require level shifting on 5V hosts.
+    source_ids: [guide_pinout]
+  source_ids: [product_page, guide_pinout]
+i2c:
+  default_address_7bit: 83
+  documented_addresses_7bit: [29, 83]
+  address_selection: SDO low default 0x53; high 0x1D after reset.
+  maximum_clock_hz: null
+  clock_stretching: unverified
+  status: documented
+  source_ids: [product_page, guide_pinout]
+chip:
+  manufacturer: Analog Devices
+  part_number: ADXL343
+  identity_status: product_page_and_datasheet_claim
+  source_ids: [product_page, chip_datasheet]
+datasheets:
+  status: downloaded
+  items:
+  - chip: ADXL343
+    source_id: chip_datasheet
+    local_file: reference/ADXL343.pdf
+    url: https://cdn-learn.adafruit.com/assets/assets/000/070/556/original/adxl343.pdf?1549287964
+    sha256: 1faa3f94aebebe932c4d0b314f536317e442712cd379266297fa28a545b6472c
+    page_count: 36
+    revision: unverified from captured file
+  notes: Official Analog Devices datasheet linked by Adafruit guide.
+software:
+- name: Adafruit ADXL343 Arduino library
+  framework: Arduino
+  url: https://github.com/adafruit/Adafruit_ADXL343
+  tested: false
+  source_ids: [guide_downloads]
+- name: Adafruit CircuitPython ADXL34x library
+  framework: CircuitPython
+  url: https://github.com/adafruit/Adafruit_CircuitPython_ADXL34x
+  tested: false
+  source_ids: [guide_downloads]
+extra_resources:
+- name: ADXL343 learning guide
+  kind: guide
+  url: https://learn.adafruit.com/adxl343-breakout-learning-guide
+  source_id: guide_pinout
+- name: Adafruit ADXL343 PCB repository
+  kind: cad_repository
+  url: https://github.com/adafruit/Adafruit_ADXL343_PCB
+  source_id: guide_downloads
+sources:
+- id: product_page
+  kind: website
+  requested_url: https://www.adafruit.com/product/4097
+  url: https://www.adafruit.com/product/4097
+  retrieved_at: '2026-10-23T20:35:29+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 100279
+  sha256: f85f3b7804ab9768e6d8e126056672f468bb3ca326f8b49a5ab2ab70a4388dbc
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 8513
+    sha256: cc4b83ba53e735b18a23625d433af50a88d8fd77cb90bc64fe11e92ce3c3840b
+  - kind: links
+    local_file: website.links.json
+    bytes: 16196
+    sha256: 53aa615389b37a8a76db8e3b7cfd02148015f10d5097039d4bb4b5596a42075b
+  title: 'ADXL343 - Triple-Axis Accelerometer (+-2g/4g/8g/16g) w/ I2C/SPI [STEMMA QT / Qwiic] : Adafruit
+    Industries, Unique & fun DIY electronics and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_pinout
+  kind: guide
+  requested_url: https://learn.adafruit.com/adxl343-breakout-learning-guide/pinout
+  url: https://learn.adafruit.com/adxl343-breakout-learning-guide/pinout
+  retrieved_at: '2026-10-23T20:35:31+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/pinout.html
+  bytes: 72982
+  sha256: 478adb2f2f2ec76b261088d15bc94fe7d9d4c476d0832c2a224903b44cd55b78
+  derivatives:
+  - kind: text
+    local_file: reference/pinout.txt
+    bytes: 5398
+    sha256: 8509a2de6c6c38b3e1d375af3ff0e246227748f387b93ef44aa425a976b7619d
+  - kind: links
+    local_file: reference/pinout.links.json
+    bytes: 18617
+    sha256: e9a57d4d8eb81a44a5da0b61e7b6e61769f79b8bc40103c5cfaf2fedbb9c583d
+  title: Pinout | Analog Devices ADXL343 Breakout Learning Guide | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/adxl343-breakout-learning-guide/downloads
+  url: https://learn.adafruit.com/adxl343-breakout-learning-guide/downloads
+  retrieved_at: '2026-10-23T20:35:31+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/downloads.html
+  bytes: 73376
+  sha256: a77ea41782aa73b235462f05af067d2ecc6753863f9ec0ee185a58a47c4c15d1
+  derivatives:
+  - kind: text
+    local_file: reference/downloads.txt
+    bytes: 3573
+    sha256: f98850f036d8093a6ae78360bf769346bdde2fe1ee48a3eb19a9b5afd5d79ed8
+  - kind: links
+    local_file: reference/downloads.links.json
+    bytes: 20201
+    sha256: ce6ef635a9b8548a52807c844487d6213501e4ee02b14e5909c6de56dec30a90
+  title: Downloads | Analog Devices ADXL343 Breakout Learning Guide | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn-learn.adafruit.com/assets/assets/000/070/556/original/adxl343.pdf?1549287964
+  url: https://cdn-learn.adafruit.com/assets/assets/000/070/556/original/adxl343.pdf?1549287964
+  retrieved_at: '2026-10-23T20:35:33+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_downloads
+  local_file: reference/ADXL343.pdf
+  bytes: 608257
+  sha256: 1faa3f94aebebe932c4d0b314f536317e442712cd379266297fa28a545b6472c
+  derivatives: []
+  pdf_page_count: 36
+conflicts: []
+data_gaps:
+- The guide pinout explains several functions but this pass did not map every physical header contact to its silkscreen position; full physical pinout remains incomplete.
+- Current QT carrier outline, thickness, assembled height and four hole centers were not transcribed from the fabrication print.
+- Header physical contact count, full label/net map and QT contact numbering remain unresolved.
+- Board pullup resistance and carrier I2C maximum clock not established.

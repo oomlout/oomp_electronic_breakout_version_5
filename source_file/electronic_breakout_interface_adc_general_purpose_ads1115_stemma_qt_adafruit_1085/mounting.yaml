@@ -1,0 +1,126 @@
+schema_version: 1
+part_id: electronic_breakout_interface_adc_general_purpose_ads1115_stemma_qt_adafruit_1085
+status: verified
+board_revision: Adafruit ADS1115 ADC STEMMA QT carrier layout added to the official ADS1X15-Breakout-Board-PCBs repository on 2022-06-29; exact archived file Adafruit ADS1115 ADC STEMMA QT.brd at commit ceecefb983878a3df33a4dc5e04968b0f2cd6f03. Product listing identifies product 1085 as the ADS1115 STEMMA QT variant. No separate silkscreen revision was established.
+identity_evidence: The Adafruit product page identifies product 1085 as the ADS1115 STEMMA QT breakout; the official guide Downloads page links the Adafruit ADS1X15-Breakout-Board-PCBs repository; its pinned June 29, 2022 commit adds the specifically named Adafruit ADS1115 ADC STEMMA QT.brd file. The pinned repository README says these EAGLE layouts cover ADS1015 and ADS1115. Product page states four mounting holes, matching the four named mounting-hole packages in the CAD.
+board_size:
+- 25.4
+- 17.78
+mounting_holes:
+- id: U$25:pad:P$1
+  x_mm: -10.16
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$27:pad:P$1
+  x_mm: 10.16
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$29:pad:P$1
+  x_mm: -10.16
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$30:pad:P$1
+  x_mm: 10.16
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: >-
+  Complete EAGLE layer-20 outline has native bounds x=[0,25.4] mm and y=[0,17.78]
+  mm, including four 2.54 mm corner arcs. Thus board_size=[25.4,17.78] mm and
+  native bounding-box centre=(12.7,8.89) mm. Transform native EAGLE coordinates
+  to the canonical top view by x_mm=x_native-12.7 and y_mm=y_native-8.89; no
+  quarter-turn or mirror is applied (quarter_turn=0). The full drill review found
+  16 candidates: JP1/JP2 are 1.0 mm 1x06 header pads and are excluded; the four
+  2.5 mm drills belong to U$25/U$27/U$29/U$30, each package explicitly named
+  MOUNTINGHOLE_2.5_PLATED with value MOUNTINGHOLE2.5, and are the four board
+  mounting holes. Two fiducials are separate board features and have no drills.
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+identity_source_ids:
+- product
+- guide
+- cad
+- repo_readme
+sources:
+- id: product
+  local_file: website.html
+  url: https://www.adafruit.com/product/1085
+  kind: manufacturer_product
+  locator: Product ID 1085; ADS1115 STEMMA QT variant and listing states four mounting
+    holes.
+  registered_at: '2026-11-06T18:57:40+00:00'
+  bytes: 100658
+  sha256: cef4138d8b2e3cdb588a870a179acbb5dae9433f81b5eeb92bc91e63ee0790c6
+- id: guide
+  local_file: reference/guide_downloads.html
+  url: https://learn.adafruit.com/adafruit-4-channel-adc-breakouts/downloads
+  kind: manufacturer_guide
+  locator: Downloads section links EagleCAD PCB Files on GitHub and separates STEMMA
+    QT schematic/fab print from original.
+  registered_at: '2026-11-06T18:57:41+00:00'
+  bytes: 78884
+  sha256: 79f0e29df17d31cfaba65a482906211eae84910e240e823ca952be0daf218cbe
+- id: cad
+  local_file: mounting_evidence/Adafruit ADS1115 ADC STEMMA QT.brd
+  url: https://raw.githubusercontent.com/adafruit/ADS1X15-Breakout-Board-PCBs/ceecefb983878a3df33a4dc5e04968b0f2cd6f03/Adafruit%20ADS1115%20ADC%20STEMMA%20QT.brd
+  kind: manufacturer_cad
+  locator: 'Pinned official Adafruit ADS1X15-Breakout-Board-PCBs commit ceecefb983878a3df33a4dc5e04968b0f2cd6f03
+    (2022-06-29, message: adding stemma eagle files); exact file Adafruit ADS1115
+    ADC STEMMA QT.brd; inspect layer 20 outline and all drills.'
+  registered_at: '2026-11-06T18:57:41+00:00'
+  bytes: 265553
+  sha256: bdbfce2bca2b78ef24887f2fa0efb9d6b124c98c7596133bd8e6dd1a309705f2
+- id: repo_readme
+  local_file: mounting_evidence/README.md
+  url: https://raw.githubusercontent.com/adafruit/ADS1X15-Breakout-Board-PCBs/ceecefb983878a3df33a4dc5e04968b0f2cd6f03/README.md
+  kind: manufacturer_repository
+  locator: Pinned Adafruit repository README says EagleCAD schematic/board layout
+    and design is for ADS1015 and ADS1115; product page link purchase.
+  registered_at: '2026-11-06T18:57:42+00:00'
+  bytes: 392
+  sha256: 584b31cbd6d79065c13496abbd2131f755d8467f3b96faf83d817b6a9674271f
+attempts:
+- source: Adafruit product listing product 1085 and official 4-Channel ADC guide Downloads page
+  result: Confirmed ADS1115 STEMMA QT product identity, stated four mounting holes, and manufacturer link to the EAGLE repository.
+- source: Adafruit ADS1X15-Breakout-Board-PCBs pinned commit ceecefb983878a3df33a4dc5e04968b0f2cd6f03
+  result: Downloaded and hash-registered the exact STEMMA QT EAGLE board file and repository README; reviewed full outline and all 16 drill candidates.
+conflicts: []
+notes:
+- Four selected drills are plated PCB drills of 2.5 mm; their package annular diameter is 3.2 mm. Hole selection follows package identity and product statement, not diameter alone.
+- Preview and generated standard holder represent board outline bounds and hole geometry only. Component, connector, screw-head, underside clearance and physical fit remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T18:57:57+00:00'
+extraction:
+  selected_ids:
+  - U$25:pad:P$1
+  - U$27:pad:P$1
+  - U$29:pad:P$1
+  - U$30:pad:P$1
+  quarter_turn: 0
+  native_centre_mm:
+  - 12.7
+  - 8.89

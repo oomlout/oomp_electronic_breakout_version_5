@@ -1,0 +1,117 @@
+{
+  "record_sha256": "cb8de8f39d02255fdefe969dedcac028e6d5928b04e0fd135e66f1adc44e74cc",
+  "generated_at": "2026-11-06T19:28:32+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187/3dpr.scad",
+      "bytes": 4359,
+      "sha256": "60e5b3eccbfaa93d9659534fa2456d649b1db2241ffa4f5f42ebd59d1aeb768f"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187/3dpr_short_sides.scad",
+      "bytes": 3040,
+      "sha256": "b53e0434245cf00fae0c6d3151652f87fc2cc837eec6cee180dc54d699e52a98"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187/3dpr_long_side.scad",
+      "bytes": 2878,
+      "sha256": "d7598ffc515f82a5a1c164438e6dfd0d002e54e64b9a244a03d7d9f356d1ab76"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187/3dpr.stl",
+      "bytes": 1709712,
+      "sha256": "d6bc6e50f04e0ed25c6ff948b987084ee9c1f9db70e9675106e749060c4ac57b"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187/3dpr_short_sides.stl",
+      "bytes": 834155,
+      "sha256": "996dae321122bbb672f8af686e7878be6e96d03dc35ddd488d844da60dd52d1e"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187/3dpr_long_side.stl",
+      "bytes": 686736,
+      "sha256": "406fe3b20790995da6daacc2182784b6796090a9f61705b26072bac02e2666a5"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187/mounting_variants.json",
+      "bytes": 4428,
+      "sha256": "c04c36223986b69c95fa040a19c0dc1098d78275d8727d2891859f87b1f98bdb"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 8982.66776769547,
+    "bounds_mm": [
+      [
+        -29.5,
+        -29.49013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        29.49013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 8982.66776769547,
+        "bounds_mm": [
+          [
+            -29.5,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 4771.526892970508,
+        "bounds_mm": [
+          [
+            -29.5,
+            -14.490133642141359,
+            0.0
+          ],
+          [
+            29.5,
+            14.490133642141359,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 4013.9915795164693,
+        "bounds_mm": [
+          [
+            -15.7,
+            -14.490133642141359,
+            0.0
+          ],
+          [
+            15.7,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

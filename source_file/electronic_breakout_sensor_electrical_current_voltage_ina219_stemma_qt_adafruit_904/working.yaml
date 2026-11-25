@@ -1,0 +1,356 @@
+research_schema_version: 1
+part_id: electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+name_readable: Adafruit INA219, STEMMA QT
+manufacturer: adafruit
+part_number: '904'
+manufacturer_part_number: '904'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: sensor
+  taxonomy_4: electrical
+  taxonomy_5: current_voltage
+  taxonomy_6: ina219
+  taxonomy_7: stemma_qt
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '904'
+default_website:
+  url: https://www.adafruit.com/product/904
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:15:55+00:00'
+  updated_at: '2026-10-23T20:16:45+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: Adafruit INA219 current sensor breakout, STEMMA QT, product 904; with pre-soldered
+    terminal block revision since 2024-05-31
+  status: revision_history_documented_but_shipped_revision_unverified
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: Listing says current design can use INA219A or INA219B and SOT-23 or SOIC
+    depending supply availability. Listing says terminal block was added 2024-05-31
+    and STEMMA QT mechanical update 2021-01-29.
+description: Current and bus-voltage measurement for battery, solar and power-use
+  experiments.
+interfaces:
+- i2c
+dimensions_mm:
+  width: null
+  height: null
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: unknown
+  source_ids:
+  - product_page
+  notes: Product Dimensions 25.6 x 20.4 x 4.7 mm lack stated orientation and scope,
+    retained separately.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: product page states four mounting holes, locations/diameters
+  unknown
+connectors:
+  header_group:
+    kind: header
+    description: Six-pin header supplied; exact pin labels include power, I2C and
+      current sense terminals per guide.
+    contacts: []
+    source_ids:
+    - product_page
+    - guide_pinouts
+  QT1:
+    kind: cable_connector
+    description: STEMMA QT connector
+    contacts: []
+    source_ids:
+    - product_page
+  QT2:
+    kind: cable_connector
+    description: STEMMA QT connector
+    contacts: []
+    source_ids:
+    - product_page
+  load_terminal:
+    kind: cable_connector
+    description: 3.5 mm terminal plug for target supply/load; since 2024 pre-soldered
+      terminal block also noted.
+    contacts: []
+    source_ids:
+    - product_page
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: unknown
+  source_ids:
+  - product_page
+  - guide_pinouts
+pin_names: []
+electrical:
+  board_supply:
+    min_v: 3
+    max_v: 5.5
+    nominal_v:
+    - 3.3
+    - 5.0
+    status: documented
+    source_ids:
+    - product_page
+    - guide_pinouts
+    notes: Board supply VIN should match logic; pinout guide states sensor requires
+      2.7–5.5V; product says power sensor with 3–5VDC. Target bus voltage up to +26V
+      is separately measured/high-side path.
+  chip_supply:
+    status: datasheet_limits_not_transcribed
+    notes: Chip limits need page review.
+    source_ids:
+    - chip_datasheet
+  logic_levels:
+    status: documented
+    notes:
+    - Board VIN should match controller logic voltage.
+    - Chip/core supply range given in guide is 2.7–5.5V.
+    source_ids:
+    - guide_pinouts
+  pullups:
+  - signals:
+    - SCL
+    - SDA
+    resistance_ohms: 10000
+    rail: null
+    designator: null
+    disconnect_method: null
+    source_ids:
+    - guide_pinouts
+  extra_signals:
+  - name: VIN+
+    direction: input
+    notes: High-side supply input or load ground for low-side measurement.
+    source_ids:
+    - guide_pinouts
+  - name: VIN-
+    direction: input
+    notes: Load input for high-side measurement or board ground for low-side measurement.
+    source_ids:
+    - guide_pinouts
+  source_ids:
+  - product_page
+  - guide_pinouts
+i2c:
+  default_address_7bit: 64
+  documented_addresses_7bit:
+  - 64
+  - 65
+  - 68
+  - 69
+  address_selection: A0/A1 solder jumpers bridge address pins to VIN; A0 yields 0x41,
+    A1 0x44, both 0x45.
+  maximum_clock_hz: null
+  chip_maximum_clock_hz: null
+  clock_stretching: unknown
+  status: documented_address
+  source_ids:
+  - product_page
+  - guide_pinouts
+chip:
+  manufacturer: Texas Instruments
+  part_number: INA219A or INA219B
+  identity_status: listing says either variant may be fitted
+  source_ids:
+  - product_page
+  - chip_datasheet
+  notes: Package may be SOT-23 or SOIC. A/B total error claims differ; no installed
+    marking verified.
+datasheets:
+  status: downloaded
+  items:
+  - chip: Texas Instruments INA219
+    source_id: chip_datasheet
+    local_file: reference/chip_datasheet.pdf
+    url: https://cdn-shop.adafruit.com/datasheets/ina219.pdf
+    sha256: ed126476a08de721329c771999adde430bc71bf7adadbbfa4bd0a5a3638a02fc
+    page_count: 40
+    revision: null
+  notes:
+  - 40-page PDF validated; revision not transcribed.
+software:
+- name: Adafruit INA219 Arduino library
+  framework: Arduino
+  official_url: https://github.com/adafruit/Adafruit_INA219
+  tested: false
+  source_ids:
+  - guide_downloads
+- name: Adafruit CircuitPython INA219 driver
+  framework: CircuitPython
+  official_url: https://github.com/adafruit/Adafruit_CircuitPython_INA219
+  tested: false
+  source_ids:
+  - guide_hardware
+extra_resources:
+- name: Adafruit INA219 pinouts guide
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/pinouts
+  local_file: reference/guide_pinouts.html
+  source_id: guide_pinouts
+- name: Adafruit INA219 downloads guide
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/downloads
+  local_file: reference/guide_downloads.html
+  source_id: guide_downloads
+- name: Adafruit INA219 carrier PCB repository
+  kind: hardware_repository
+  url: https://github.com/adafruit/Adafruit-INA219-Current-Sensor-PCB
+  source_id: guide_downloads
+sources:
+- id: product_page
+  kind: product_page
+  requested_url: https://www.adafruit.com/product/904
+  url: https://www.adafruit.com/product/904
+  retrieved_at: '2026-10-23T20:15:57+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 103110
+  sha256: ea561ba76669f58d7331f70cb05bb64e9ea4e7bfe9d7d476d7e384ac3074e3d3
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 9575
+    sha256: d3f48e681eaf1844510384d537579cbf6293031167b71e719db5274b93759c45
+  - kind: links
+    local_file: website.links.json
+    bytes: 17133
+    sha256: 9fa77ba2ab84384290db00ef9de0a7c80914b1ab210e2cc3b2e80dcb0a135664
+  title: 'INA219 High Side DC Current Sensor Breakout - 26V ±3.2A Max [STEMMA QT]
+    : Adafruit Industries, Unique & fun DIY electronics and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_hardware
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout
+  url: https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout
+  retrieved_at: '2026-10-23T20:15:58+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_hardware.html
+  bytes: 76292
+  sha256: b43e58666a969216a4b7cc6f5f34063e9f609c2c3b0d3a644ed502bf2dd4b0b3
+  derivatives:
+  - kind: text
+    local_file: reference/guide_hardware.txt
+    bytes: 4876
+    sha256: ba1716680f00c5f3b2c1a0f500329e2b7e9be5e6e7a08b7fc328d3ab046b147a
+  - kind: links
+    local_file: reference/guide_hardware.links.json
+    bytes: 19124
+    sha256: 6c1270770b93c2f6daca1bfc2b247f4af93a528fe680fec39b87369f7730b03d
+  title: Overview | Adafruit INA219 Current Sensor Breakout | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_pinouts
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/pinouts
+  url: https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/pinouts
+  retrieved_at: '2026-10-23T20:15:59+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_pinouts.html
+  bytes: 72829
+  sha256: 89b661cf358986e53924d37f47715e27348791533877f291661fa2006baabda7
+  derivatives:
+  - kind: text
+    local_file: reference/guide_pinouts.txt
+    bytes: 3812
+    sha256: 642a3909b9e73d85083619364a0283fefcd28334283de72a93c86b88e85dc41e
+  - kind: links
+    local_file: reference/guide_pinouts.links.json
+    bytes: 19076
+    sha256: 58cc025e4c493a8bd7e2a50ab8ecb0ea89fe4849d39b22d59c0fba9bf9010713
+  title: Pinouts | Adafruit INA219 Current Sensor Breakout | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/downloads
+  url: https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/downloads
+  retrieved_at: '2026-10-23T20:16:00+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_downloads.html
+  bytes: 75730
+  sha256: 830f0607a0ef925b13d06881c862158bf0fa0a5cc7c63a2738c7a336af9f9432
+  derivatives:
+  - kind: text
+    local_file: reference/guide_downloads.txt
+    bytes: 2810
+    sha256: 4bfda680c26d6c57c8d5ae8777a559a8e79ee11482518ce17bc7d094bdea5d08
+  - kind: links
+    local_file: reference/guide_downloads.links.json
+    bytes: 19827
+    sha256: 71376b6d0e707cf3d40795f4d4167fbe46060b15eec897b1f5ac1bcda605f415
+  title: Downloads | Adafruit INA219 Current Sensor Breakout | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://www.adafruit.com/datasheets/ina219.pdf
+  url: https://cdn-shop.adafruit.com/datasheets/ina219.pdf
+  retrieved_at: '2026-10-23T20:16:19+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_downloads
+  local_file: reference/chip_datasheet.pdf
+  bytes: 1036447
+  sha256: ed126476a08de721329c771999adde430bc71bf7adadbbfa4bd0a5a3638a02fc
+  derivatives: []
+  pdf_page_count: 40
+conflicts:
+- topic: fitted INA219 variant and package
+  claims:
+  - claim: May use INA219A or INA219B in SOT-23 or SOIC depending market availability.
+    source_ids:
+    - product_page
+  - claim: Chip datasheet covers INA219; current physical unit marking was not inspected.
+    source_ids:
+    - chip_datasheet
+  resolution: No single fitted revision established from product title; preserve supported
+    variant set.
+  status: unresolved
+data_gaps:
+- Exact carrier dimensions, thickness, hole geometry and connector count need exact
+  current STEMMA QT CAD and board revision review.
+- Pinout names are documented but full physical contact inventory and numbered connector
+  mapping are not structured; terminal block connector version varies by shipment.
+- Fitted INA219 A/B revision/package requires physical marking or lot-specific evidence;
+  product title alone is not proof.
+- Datasheet revision and chip limits not transcribed; I2C maximum clock and pull-up
+  rail/disconnect behavior remain unknown.
+product_dimensions_mm:
+  dimensions:
+  - 25.6
+  - 20.4
+  - 4.7
+  units: mm
+  scope: manufacturer_product_dimensions_unspecified_orientation
+  status: documented
+  source_ids:
+  - product_page

@@ -196,8 +196,89 @@ oobb_details:
     - 10.16
   - - 10.16
     - -10.16
+  mounting_layout: full_wrap
   mounting_lift: 3
   oobb_name: mounting_plate_default
+- breakout_pcb_height: 25.4
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: H4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H1:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -10.16
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - 10.16
+    - 10.16
+  - - -10.16
+    - 10.16
+  - - 10.16
+    - -10.16
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 25.4
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: H4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H1:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -10.16
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - 10.16
+    - 10.16
+  - - -10.16
+    - 10.16
+  - - 10.16
+    - -10.16
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
 part_number: sen_15440
 part_number_sparkfun: SEN-15440
 pinout_status: unverified
@@ -233,6 +314,11 @@ sources:
     nine drill candidates inspected.
   sha256: 4b34fb80307cfd8d4008901a69409346b4d8c301a6afd522ce289ca682187e7c
   url: https://raw.githubusercontent.com/sparkfun/Qwiic_Atmospheric_Sensor_Breakout_BME280/69d2067e2999ea92fe713dfb745f2955c7e2953a/Hardware/Qwiic_Atmospheric_Sensor.brd
+svg_details:
+- export_pdf: true
+  stylesheet: coordinate
+  svg_name: coordinate_diagram
+  svg_output: working_coordinate_diagram
 taxonomy_1: electronic
 taxonomy_10: ''
 taxonomy_11: ''

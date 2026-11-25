@@ -1,0 +1,254 @@
+research_schema_version: 1
+part_id: electronic_breakout_sensor_motion_imu_6_axis_bmi270_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_22397
+name_readable: SparkFun BMI270 6DoF IMU, Qwiic
+manufacturer: sparkfun
+part_number: sen_22397
+manufacturer_part_number: SEN-22397
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: sensor
+  taxonomy_4: motion
+  taxonomy_5: imu_6_axis
+  taxonomy_6: bmi270
+  taxonomy_7: qwiic
+  taxonomy_8: 25_4_mm_width_25_4_mm_height
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: sparkfun
+  taxonomy_15: sen_22397
+default_website:
+  url: https://www.sparkfun.com/sparkfun-6dof-imu-breakout-bmi270-qwiic.html
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:13:36+00:00'
+  updated_at: '2026-10-23T20:14:00+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: SparkFun 6DoF IMU Breakout - BMI270 (Qwiic), SEN-22397
+  status: product_variant_identified
+  source_ids:
+  - product_page
+  - guide_hardware
+  notes: Standard 1in x 1in SEN-22397, not the separate micro SEN-22398 named in guide
+    materials.
+description: A modern accelerometer/gyroscope board for motion, orientation experiments
+  and robotics.
+interfaces:
+- i2c
+dimensions_mm:
+  width: 25.4
+  height: 25.4
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: nominal_outline_dimensions_from_product_description
+  source_ids:
+  - product_page
+  notes: Product overview calls this a standard-sized 1in x 1in breakout; outline
+    not archived for coordinate-level verification.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: unknown_not_documented
+connectors:
+  header_group:
+    kind: header
+    description: 0.1in pin headers along board sides, all IO broken out; count/labels
+      not verified in captured text.
+    contacts: []
+    source_ids:
+    - product_page
+  Qwiic1:
+    kind: cable_connector
+    description: Horizontal Qwiic connector
+    contacts: []
+    source_ids:
+    - product_page
+  Qwiic2:
+    kind: cable_connector
+    description: Horizontal Qwiic connector
+    contacts: []
+    source_ids:
+    - product_page
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: unknown
+  source_ids:
+  - product_page
+  - guide_hardware
+pin_names: []
+electrical:
+  board_supply:
+    min_v: null
+    max_v: null
+    nominal_v:
+    - 1.8
+    - 3.3
+    status: documented_nominal_operation
+    source_ids:
+    - product_page
+    notes: Product specifications state 1.8V and 3.3V operation; exact carrier input/regulated
+      output scope needs schematic review.
+  chip_supply:
+    status: unknown_not_transcribed
+    notes: Chip-specific limits not transcribed from datasheet.
+    source_ids:
+    - chip_datasheet
+  logic_levels:
+    status: unknown
+    notes:
+    - Logic-level restrictions need schematic/guide inspection; do not infer 5V tolerance.
+    source_ids:
+    - product_page
+    - guide_hardware
+  pullups:
+  - signals:
+    - SDA
+    - SCL
+    resistance_ohms: null
+    rail: null
+    designator: null
+    disconnect_method: on-board solder jumper allows pull-up removal
+    source_ids:
+    - product_page
+  extra_signals: []
+  source_ids:
+  - product_page
+i2c:
+  default_address_7bit: 104
+  documented_addresses_7bit:
+  - 104
+  - 105
+  address_selection: On-board solder jumper selects address; exact jumper mapping
+    needs guide page review.
+  maximum_clock_hz: null
+  chip_maximum_clock_hz: null
+  clock_stretching: unknown
+  status: documented_addresses
+  source_ids:
+  - product_page
+  notes: 400 kHz product spec is for AUX sensor interface, not established as I2C
+    bus limit.
+chip:
+  manufacturer: Bosch
+  part_number: BMI270
+  identity_status: product_page_claim
+  source_ids:
+  - product_page
+  - chip_datasheet
+  notes: Fitted marking/revision not verified.
+datasheets:
+  status: downloaded
+  items:
+  - chip: Bosch BMI270
+    source_id: chip_datasheet
+    local_file: reference/chip_datasheet.pdf
+    url: https://cdn.sparkfun.com/assets/5/c/0/0/d/bst-bmi270-ds000.pdf
+    sha256: 51818aed4619bccc882eb9630ea62ad92adc44ada4156ecf7d8c330fdab0cf01
+    page_count: 150
+    revision: null
+  notes:
+  - PDF signature and 150-page page tree validated; title and revision still need
+    page-level review.
+software:
+- name: SparkFun BMI270 Arduino Library
+  framework: Arduino
+  official_url: https://github.com/sparkfun/SparkFun_BMI270_Arduino_Library
+  tested: false
+  source_ids:
+  - product_page
+  - guide_hardware
+  notes: Product page links Arduino library; hardware integration not tested.
+extra_resources:
+- name: SparkFun BMI270 Hookup Guide
+  kind: guide
+  url: https://docs.sparkfun.com/SparkFun_Qwiic_6DoF_BMI270/
+  local_file: reference/guide_hardware.html
+  source_id: guide_hardware
+sources:
+- id: product_page
+  kind: product_page
+  requested_url: https://www.sparkfun.com/sparkfun-6dof-imu-breakout-bmi270-qwiic.html
+  url: https://www.sparkfun.com/sparkfun-6dof-imu-breakout-bmi270-qwiic.html
+  retrieved_at: '2026-10-23T20:13:38+00:00'
+  content_type: text/html; charset=UTF-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 567375
+  sha256: 8a15afebdedb2b868c7489815c3ff33f87a61b448bcc98a1b6cda17c5478c8e4
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 3327
+    sha256: ef7cd68f4b53f2d1509356a92e9e997f24c936b8afd1b5af91544c4d4d3fed96
+  - kind: links
+    local_file: website.links.json
+    bytes: 56389
+    sha256: e9b88d5863c779273168e086823c4ef4b834f67fc56ed174e944c89ac9cca94d
+  title: SparkFun 6DoF IMU Breakout - BMI270 (Qwiic) - SparkFun Electronics
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_hardware
+  kind: guide
+  requested_url: https://docs.sparkfun.com/SparkFun_Qwiic_6DoF_BMI270
+  url: https://docs.sparkfun.com/SparkFun_Qwiic_6DoF_BMI270/
+  retrieved_at: '2026-10-23T20:13:40+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_hardware.html
+  bytes: 57181
+  sha256: 96e4e4b7d32be1616f3d54c36d9b20674e2858ce305912dc3355c88b7c8c08e6
+  derivatives:
+  - kind: text
+    local_file: reference/guide_hardware.txt
+    bytes: 1909
+    sha256: 13a15539d14d7013419a109b0cb2749ca9f38dfbd729333731dcab14a43edfcb
+  - kind: links
+    local_file: reference/guide_hardware.links.json
+    bytes: 5814
+    sha256: fbfcf8e4a97fa36002263afab18be2af5113772bbed9ec3f778adba1c90192ee
+  title: Introduction - SparkFun 6DoF IMU Breakout - BMI270 (Qwiic) Hookup Guide
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn.sparkfun.com/assets/5/c/0/0/d/bst-bmi270-ds000.pdf
+  url: https://cdn.sparkfun.com/assets/5/c/0/0/d/bst-bmi270-ds000.pdf
+  retrieved_at: '2026-10-23T20:13:43+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/chip_datasheet.pdf
+  bytes: 2716888
+  sha256: 51818aed4619bccc882eb9630ea62ad92adc44ada4156ecf7d8c330fdab0cf01
+  derivatives: []
+  pdf_page_count: 150
+conflicts: []
+data_gaps:
+- Exact pinout labels and numbered header contacts, plus Qwiic physical contacts,
+  need guide hardware overview or matching carrier CAD review.
+- Matching SEN-22397 CAD, schematic, and board outline links are available on the
+  product page but were not archived/inspected in this pass; mounting-hole geometry
+  and contact counts remain unknown.
+- Chip datasheet revision, pinout, electrical limits and I2C-specific speed were not
+  transcribed from PDF pages.
+- Guide hardware overview, jumper mapping, software instructions and specific sensor
+  datasheet details were not archived.
+- No fitted chip marking was inspected.

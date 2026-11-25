@@ -1,0 +1,136 @@
+schema_version: 1
+part_id: electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+status: verified
+board_revision: 'Adafruit product 3317 STEMMA QT carrier, revised July 21, 2020 to the 0.7 x 1.0 inch
+  STEMMA QT standard. Exact mechanical file: Adafruit VL530X STEMMA QT.brd at official Adafruit PCB repository
+  commit 1ef873512150740edc9798f90028facfa35fd81f.'
+identity_evidence: Adafruit product page identifies product ID 3317 and states the July 21, 2020 transition
+  to the 0.7 x 1.0 inch STEMMA QT carrier with four mounting holes and two STEMMA QT connectors. The official
+  repository README links product 3317 and identifies the repository as its EagleCAD board/layout source;
+  its exact QT variant file is registered as cad. The official guide links to this repository and its
+  QT design files.
+board_size:
+- 25.4
+- 17.78
+mounting_holes:
+- id: U$30:pad:P$1
+  x_mm: -10.16
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$31:pad:P$1
+  x_mm: 10.16
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$33:pad:P$1
+  x_mm: -10.16
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$34:pad:P$1
+  x_mm: 10.16
+  y_mm: -6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: 'Exact manufacturer EAGLE board file Adafruit VL530X STEMMA QT.brd at pinned commit 1ef873512150740edc9798f90028facfa35fd81f.
+  Layer-20 dimension outline bounds are x=0..25.4 mm and y=0..17.78 mm, so the native centre is (12.7,
+  8.89) mm. For top view with quarter_turn=0, transform each native drill (X,Y) to centred coordinates
+  (x,y)=(X-12.7,Y-8.89), with no reflection or rotation. Selected all four named MOUNTINGHOLE_2.5_PLATED
+  pads U$30, U$31, U$33 and U$34; each PCB drill is 2.5 mm. The complete drilled-feature inventory has
+  10 candidates: the other six, JP2 pads 1 through 6 in package 1X06_ROUND_70, are the soldered header
+  and are not board mounting holes. The Adafruit product revision history also independently specifies
+  four mounting holes. Preview checked against the extraction: centred rectangular extent and all four
+  corner locations, diameters and count agree. Product page separately lists 21.0 x 18.0 mm under Product
+  Dimensions, which conflicts with its more specific July 2020 0.7 x 1.0 inch carrier revision and the
+  exact QT CAD outline; use the exact carrier CAD bounds for the PCB outline.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  local_file: website.html
+  url: https://www.adafruit.com/product/3317
+  kind: manufacturer_product
+  locator: Product ID 3317 and revision history states updated July 21, 2020 to 0.7 x 1.0 inch STEMMA
+    QT standard, with four mounting holes and two STEMMA QT connectors; dimensions are nominal product
+    dimensions.
+  registered_at: '2026-11-06T19:48:46+00:00'
+  bytes: 108916
+  sha256: 2cf93309dba47e48e413c421c14360a80924c261f56dff8458b597f7b1166343
+- id: cad
+  local_file: mounting_evidence/Adafruit_VL530X_STEMMA_QT.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/Adafruit%20VL530X%20STEMMA%20QT.brd
+  kind: manufacturer_cad
+  locator: Exact QT variant filename at pinned official Adafruit PCB repository commit 1ef873512150740edc9798f90028facfa35fd81f;
+    EAGLE board, inspect outline and all drills and compare four candidate mounting features.
+  registered_at: '2026-11-06T19:48:47+00:00'
+  bytes: 258962
+  sha256: 5953c86428a7e8e0c8e5cadc6cf0de3d312d2fe9cfa3c05005c4e0170cdc69b9
+- id: guide
+  local_file: reference/downloads.html
+  url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/downloads
+  kind: manufacturer_document
+  locator: 'Adafruit product guide identifies product 3317, links EagleCAD PCB files on GitHub, distinguishes
+    STEMMA QT and original schematic/fabrication prints, and states M2.5 or #2-56 screws are used to mount.'
+  registered_at: '2026-11-06T19:49:11+00:00'
+  bytes: 71457
+  sha256: 87fb72e023733afd54f73eb52ad153a3b3b8f1130822f414a2fa5fca01014966
+- id: repo
+  local_file: mounting_evidence/README.md
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/README.md
+  kind: manufacturer_repository
+  locator: Official Adafruit repository README identifies this repository as the PCB files for Adafruit
+    VL53L0X ToF Distance Sensor and describes EagleCAD board and schematic.
+  registered_at: '2026-11-06T19:49:12+00:00'
+  bytes: 2539
+  sha256: 15904ea1ad3d9caf7ccbba11996f223b3ff5f45cbbc17517a7a36117d9d56acd
+attempts: []
+conflicts: []
+notes:
+- 'Acquisition/archive dates: official product page snapshot was already archived and is dated 2026-10-23
+  in mounting_context.json; the pinned EAGLE CAD and repository README were downloaded and content-checked
+  on 2026-11-06. The registered guide page was already archived locally and its original capture date
+  is not recorded.'
+- The product page lists 21.0 x 18.0 mm as Product Dimensions, while its specific July 21, 2020 STEMMA
+  QT revision is 0.7 x 1.0 inch and exact carrier CAD outline is 25.4 x 17.78 mm. The exact pinned QT
+  EAGLE outline controls this PCB geometry; the generic dimensions were not used.
+- 'Official product guide says to use M2.5 or #2-56 screws. The standard holder is generated geometry
+  only; component, connector, screw-head and underside clearance are unverified, and no physical fit test
+  was performed.'
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T19:51:00+00:00'
+extraction:
+  selected_ids:
+  - U$30:pad:P$1
+  - U$31:pad:P$1
+  - U$33:pad:P$1
+  - U$34:pad:P$1
+  quarter_turn: 0
+  native_centre_mm:
+  - 12.7
+  - 8.89
+identity_source_ids:
+- product
+- repo
+- guide

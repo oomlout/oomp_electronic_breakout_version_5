@@ -1,0 +1,334 @@
+research_schema_version: 1
+part_id: electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717
+name_readable: Adafruit TCA9548A I2C Multiplexer
+manufacturer: adafruit
+part_number: '2717'
+manufacturer_part_number: '2717'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: interface
+  taxonomy_4: i2c
+  taxonomy_5: multiplexer
+  taxonomy_6: tca9548a
+  taxonomy_7: header_breakout
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '2717'
+default_website:
+  url: https://www.adafruit.com/product/2717
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:19:18+00:00'
+  updated_at: '2026-10-23T20:19:45+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: Adafruit TCA9548A 1-to-8 I2C multiplexer breakout, product 2717
+  status: identified_by_product_page
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: Traditional header breakout, not a STEMMA QT variant; page images show two
+    16-pin header sticks included.
+description: Enables separate bus branches for devices that share an address. This
+  is an active multiplexer, distinct from a passive connector hub.
+interfaces:
+- i2c
+dimensions_mm:
+  width: null
+  height: null
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: unknown
+  source_ids:
+  - product_page
+  notes: Product dimensions 30.6 x 17.6 x 2.7 mm have unspecified orientation/scope.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: unknown_not_documented
+connectors:
+  header_group:
+    kind: header
+    description: Two 16-pin header sticks supplied. Control-side and eight downstream
+      I2C channels described in guide; exact per-contact numbered inventory needs
+      CAD.
+    contacts: []
+    source_ids:
+    - product_page
+    - guide_pinouts
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: 0
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: unknown
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: No cable connector evidenced for this header-only product; physical header
+    socket/pad inventory was not enumerated.
+pin_names: []
+electrical:
+  board_supply:
+    min_v: 3
+    max_v: 5
+    nominal_v:
+    - 3.3
+    - 5.0
+    status: documented_range
+    source_ids:
+    - guide_pinouts
+    notes: Guide states TCA9548A breakout uses 3-5VDC supply. Downstream bus lines
+      can be pulled up to 5V while VIN is 3.3V (guide statement).
+  chip_supply:
+    status: not_transcribed
+    notes: Chip limits not transcribed from PDF.
+    source_ids:
+    - chip_datasheet
+  logic_levels:
+    status: documented
+    notes:
+    - Upstream control SCL/SDA connect to host.
+    - Downstream SDx/SCx have no installed pull-ups according to guide; add if needed.
+    - Guide describes downstream lines as 5V compliant.
+    source_ids:
+    - guide_pinouts
+  pullups:
+  - signals:
+    - upstream SCL
+    - upstream SDA
+    resistance_ohms: null
+    rail: null
+    designator: null
+    disconnect_method: null
+    source_ids:
+    - guide_pinouts
+    notes: Pullup state/value not explicitly recorded.
+  - signals:
+    - SD0/SC0 through SD7/SC7
+    resistance_ohms: null
+    rail: null
+    designator: null
+    disconnect_method: null
+    source_ids:
+    - guide_pinouts
+    notes: No pullups installed on downstream buses.
+  extra_signals:
+  - name: RST
+    direction: input
+    notes: Pulled high by default; connect to GND to reset mux chip.
+    source_ids:
+    - guide_pinouts
+  - name: A0/A1/A2
+    direction: input
+    notes: Address selection; default low.
+    source_ids:
+    - guide_pinouts
+  - name: SD0/SC0 … SD7/SC7
+    direction: bidirectional
+    notes: Eight separately multiplexed I2C bus pairs.
+    source_ids:
+    - guide_pinouts
+  source_ids:
+  - guide_pinouts
+i2c:
+  default_address_7bit: 112
+  documented_addresses_7bit:
+  - 112
+  - 113
+  - 114
+  - 115
+  - 116
+  - 117
+  - 118
+  - 119
+  address_selection: A0/A1/A2 default low; connect each to VIN to add binary address
+    bits +1/+2/+4. RST pulled high by default; ground to reset.
+  maximum_clock_hz: null
+  chip_maximum_clock_hz: 400000
+  clock_stretching: unknown
+  status: documented_address
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: Chip maximum not verified from datasheet page; left unset.
+chip:
+  manufacturer: Texas Instruments
+  part_number: TCA9548A
+  identity_status: product_page_claim
+  source_ids:
+  - product_page
+  - chip_datasheet
+datasheets:
+  status: downloaded
+  items:
+  - chip: Texas Instruments TCA9548A
+    source_id: chip_datasheet
+    local_file: reference/chip_datasheet.pdf
+    url: https://cdn-shop.adafruit.com/datasheets/tca9548a.pdf
+    sha256: 965bd5b4e978a659b5c3934a7fa4a57256f392e68c09f17eb4be2e2bad3b6bf7
+    page_count: 34
+    revision: null
+  notes:
+  - 34-page PDF validated; revision not transcribed.
+software:
+- name: Adafruit TCA9548A usage guide/example
+  framework: Arduino/Python
+  official_url: https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout
+  tested: false
+  source_ids:
+  - guide_hardware
+  notes: Guide provides wiring and code examples; no firmware integration test performed.
+extra_resources:
+- name: TCA9548A guide pinouts
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout/pinouts
+  local_file: reference/guide_pinouts.html
+  source_id: guide_pinouts
+- name: TCA9548A downloads
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout/downloads
+  local_file: reference/guide_downloads.html
+  source_id: guide_downloads
+sources:
+- id: product_page
+  kind: product_page
+  requested_url: https://www.adafruit.com/product/2717
+  url: https://www.adafruit.com/product/2717
+  retrieved_at: '2026-10-23T20:19:19+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 92264
+  sha256: 577f72b01393c89c3778d177d50813ab02d46cbbf2f172beed1bb10b9ef0b10f
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 6283
+    sha256: 099a9a67626c3690e9f66228eda2f8a1f3088c2dee150f24e423019571ae2265
+  - kind: links
+    local_file: website.links.json
+    bytes: 15391
+    sha256: cd4ed8603ae2efcd8c83635debd19e56377ce5af5b3090b3827c80ffedd6c847
+  title: 'TCA9548A I2C Multiplexer : Adafruit Industries, Unique & fun DIY electronics
+    and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_hardware
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout/overview
+  url: https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout/overview
+  retrieved_at: '2026-10-23T20:19:20+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_hardware.html
+  bytes: 70376
+  sha256: bda1ad01517447c69acbdcfb1d484976994bc8cff996644346f2dfd8f467c7b0
+  derivatives:
+  - kind: text
+    local_file: reference/guide_hardware.txt
+    bytes: 3699
+    sha256: c9512ae0abb5debad0a80492e96f27b91d3211044c4fd329fb12c289e4a157a2
+  - kind: links
+    local_file: reference/guide_hardware.links.json
+    bytes: 17649
+    sha256: 696e7df58e90b6a6826ad9f8c6fba1f491d144b5a83914716b7b72a4163f729c
+  title: Overview | Adafruit TCA9548A 1-to-8 I2C Multiplexer Breakout | Adafruit Learning
+    System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout/downloads
+  url: https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout/downloads
+  retrieved_at: '2026-10-23T20:19:21+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_downloads.html
+  bytes: 65936
+  sha256: 37f22d1e1fde870847b02250e191f7ba59f6c56b061e4b017ecaa91e6478b471
+  derivatives:
+  - kind: text
+    local_file: reference/guide_downloads.txt
+    bytes: 2319
+    sha256: 5be60f7e5a00d8489f9c154d6c2ad2e3e7b6d6c0a6fef606084cb42ade877986
+  - kind: links
+    local_file: reference/guide_downloads.links.json
+    bytes: 17934
+    sha256: a9d2fd3bf53fb4f16f4a467cd7afe0d02bd62ce7e1a1631b6dff979d937a7410
+  title: Downloads | Adafruit TCA9548A 1-to-8 I2C Multiplexer Breakout | Adafruit
+    Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_pinouts
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout/pinouts
+  url: https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout/pinouts
+  retrieved_at: '2026-10-23T20:19:22+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_pinouts.html
+  bytes: 70185
+  sha256: a357dd78986fef1c155122c65216de3dce95386515952a180dec4280846821ff
+  derivatives:
+  - kind: text
+    local_file: reference/guide_pinouts.txt
+    bytes: 4515
+    sha256: a2982d17c9e6f3b41707768a89aaecb97f50c4779c28d2d35d3e7bab3aec4b34
+  - kind: links
+    local_file: reference/guide_pinouts.links.json
+    bytes: 17828
+    sha256: 461f9a44bff98349678730afc7691b1bbbc2b99cd823f7bdfe93445fff52c77e
+  title: Pinouts | Adafruit TCA9548A 1-to-8 I2C Multiplexer Breakout | Adafruit Learning
+    System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://www.adafruit.com/datasheets/tca9548a.pdf
+  url: https://cdn-shop.adafruit.com/datasheets/tca9548a.pdf
+  retrieved_at: '2026-10-23T20:19:31+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_downloads
+  local_file: reference/chip_datasheet.pdf
+  bytes: 1213373
+  sha256: 965bd5b4e978a659b5c3934a7fa4a57256f392e68c09f17eb4be2e2bad3b6bf7
+  derivatives: []
+  pdf_page_count: 34
+conflicts: []
+data_gaps:
+- Exact board outline dimensions/orientation, thickness, mounting holes and CAD geometry
+  remain unknown.
+- Pinout labels are documented but structured physical header contacts and counts
+  are incomplete.
+- Datasheet revision, voltage limits and I2C speed not transcribed.
+- Board pull-up resistor values/rail are unknown; downstream buses explicitly lack
+  pullups.
+product_dimensions_mm:
+  dimensions:
+  - 30.6
+  - 17.6
+  - 2.7
+  units: mm
+  scope: manufacturer_product_dimensions_unspecified_orientation
+  status: documented
+  source_ids:
+  - product_page

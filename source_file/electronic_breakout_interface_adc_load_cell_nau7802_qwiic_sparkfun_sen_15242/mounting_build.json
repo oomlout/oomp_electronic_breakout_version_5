@@ -1,0 +1,117 @@
+{
+  "record_sha256": "37200e8f9047d4caaa882195cdc964d1c9cdb5b651e5a7bf1ac4921013365d37",
+  "generated_at": "2026-11-06T19:31:54+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242/3dpr.scad",
+      "bytes": 4641,
+      "sha256": "8efedde55dc7feea72d1ec447cd1ec07fb079e7307c56d1961560f3ecce9fe6a"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242/3dpr_short_sides.scad",
+      "bytes": 3032,
+      "sha256": "0d74f3f293177eb2e8e9815e71af81f704cc4177d68ca4747d10a7c63da1619d"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242/3dpr_long_side.scad",
+      "bytes": 3012,
+      "sha256": "74a184d27236889b58f8eb24926225d733fae3d2f00b266e7e0d37bde20f0e59"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242/3dpr.stl",
+      "bytes": 1909634,
+      "sha256": "3b6faa4257af2c7de803f6abf1a176f6de6e3e27dbda85d98b02a0afa41f105d"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242/3dpr_short_sides.stl",
+      "bytes": 837011,
+      "sha256": "777d179f0590ac8dd2ceeeba6ae5bf63b6094789e66595cc18b0bfb2bda6e6f6"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242/3dpr_long_side.stl",
+      "bytes": 787874,
+      "sha256": "8c999a874b4e215e8e08fba2874def904a25847eba181694d3c9ff1116f3c612"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242/mounting_variants.json",
+      "bytes": 4819,
+      "sha256": "4fc5845190f23fc93865d96cc634d07d43f958f14d20f3df6f2996e935dac999"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 11395.919804578574,
+    "bounds_mm": [
+      [
+        -29.5,
+        -36.99013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        36.99013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 11395.919804578574,
+        "bounds_mm": [
+          [
+            -29.5,
+            -36.99013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            36.99013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 6628.6995921557,
+        "bounds_mm": [
+          [
+            -15.7,
+            -36.99013364214136,
+            0.0
+          ],
+          [
+            15.7,
+            36.99013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 5722.7700786892265,
+        "bounds_mm": [
+          [
+            -15.700000000000001,
+            -21.99013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            21.99013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

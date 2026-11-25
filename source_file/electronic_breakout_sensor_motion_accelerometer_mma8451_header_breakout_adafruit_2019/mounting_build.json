@@ -1,0 +1,117 @@
+{
+  "record_sha256": "cba08c724a3a1747ac4dc94381ab70bc4ca72c614be0d94757cf4b518ae27aae",
+  "generated_at": "2026-11-07T11:52:25+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019/3dpr.scad",
+      "bytes": 3233,
+      "sha256": "6b6ec6deb68c07aedd778eaa438aa0db1751a15783c5031e1bc4f2d16fc4102d"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019/3dpr_short_sides.scad",
+      "bytes": 1914,
+      "sha256": "92adbcba48f5a8f7424fffd9fb93290e280e0b75f6c451e4d0bd562f46709294"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019/3dpr_long_side.scad",
+      "bytes": 1748,
+      "sha256": "1dbee95114b8666d9d69972178e9e094aa54c3ce5924742394fd19b09d98f1dd"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019/3dpr.stl",
+      "bytes": 1461443,
+      "sha256": "98aa7815311115608b43d01cd58f81fa8745a77d5087c640dee50c18d9312eb6"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019/3dpr_short_sides.stl",
+      "bytes": 585981,
+      "sha256": "8232f33f925fddde8079853182b89a93026387d509ce01316db97fc172b4232b"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019/3dpr_long_side.stl",
+      "bytes": 438642,
+      "sha256": "963ad2e1cf380ddb2e30938ad226319c27a03e448a5837c927c07386c8c99af5"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019/mounting_variants.json",
+      "bytes": 4431,
+      "sha256": "4a90631ce78a37ea5717cc36eb6d1c22be7e386a37eb6297e882ca135942e04d"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 8875.12819774465,
+    "bounds_mm": [
+      [
+        -29.5,
+        -29.49013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        29.49013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 8875.12819774465,
+        "bounds_mm": [
+          [
+            -29.5,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 4663.987323019689,
+        "bounds_mm": [
+          [
+            -29.5,
+            -14.490133642141359,
+            0.0
+          ],
+          [
+            29.5,
+            14.490133642141359,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 3589.7940851188146,
+        "bounds_mm": [
+          [
+            -14.5,
+            -14.490133642141359,
+            0.0
+          ],
+          [
+            14.5,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

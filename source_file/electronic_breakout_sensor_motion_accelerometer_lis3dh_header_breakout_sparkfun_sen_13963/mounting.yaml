@@ -1,0 +1,100 @@
+schema_version: 1
+part_id: electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+status: verified
+board_revision: SparkFun SEN-13963 hardware v1.0 (repository tag V_H1.0_L1.0.0); board
+  file bytes match the tagged file (SHA-256 dbb8693c545a98e21b53b401b2a105d8f26fa58efb095179618de399185d22a5).
+identity_evidence: The official SEN-13963 product page identifies the SKU and links
+  SparkFun GitHub hardware files. The linked SparkFun repository README maps its LIS3DH
+  Breakout to SEN-13963 and names hardware tag V_H1.0_L1.0.0. The registered EAGLE
+  file SparkFun_LIS3DH-Breakout.brd is byte-identical to that tagged board file.
+board_size:
+- 22.86
+- 12.7
+mounting_holes:
+- id: JP3:hole:1
+  x_mm: -8.89
+  y_mm: 0.0
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+- id: JP4:hole:1
+  x_mm: 8.89
+  y_mm: 0.0
+  diameter_mm: 3.302
+  plated: false
+  package: STAND-OFF
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: 'EAGLE layer-20 outline has four straight edges from (0,0) to (22.86,12.7)
+  mm, so board_size=[22.86,12.7]. Native board centre is (11.43,6.35) mm; centred
+  top-view coordinates are x_native-11.43, y_native-6.35, with no rotation (quarter_turn=0).
+  Selected JP3:hole:1 and JP4:hole:1 from package STAND-OFF are explicit non-plated
+  drills, diameter 3.302 mm, at native x=2.54 and 20.32 mm and y=6.35 mm, yielding
+  (-8.89,0) and (8.89,0) mm. The full drill inspection found 14 candidates: these
+  two named stand-off holes and twelve 1.016 mm plated J1/J2 header pads, which are
+  electrical contacts and excluded.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad
+  local_file: mounting_evidence/SparkFun_LIS3DH-Breakout.brd
+  url: https://raw.githubusercontent.com/sparkfun/LIS3DH_Breakout/a57ba3b3d98e85724a43635a34a181869db26e82/Hardware/SparkFun_LIS3DH-Breakout.brd
+  kind: manufacturer_cad
+  locator: SparkFun EAGLE board file for LIS3DH breakout; version history identifies
+    V_H1.0_L1.0.0; inspect layer 20 outline and all mounting candidates
+  registered_at: '2026-11-07T12:00:25+00:00'
+  bytes: 68374
+  sha256: dbb8693c545a98e21b53b401b2a105d8f26fa58efb095179618de399185d22a5
+- id: repo_readme
+  local_file: mounting_evidence/README.md
+  url: https://raw.githubusercontent.com/sparkfun/LIS3DH_Breakout/a57ba3b3d98e85724a43635a34a181869db26e82/README.md
+  kind: manufacturer_repository
+  locator: SparkFun product repository README maps repository to Triple Axis Accelerometer
+    Breakout - LIS3DH (SEN-13963), hardware repository
+  registered_at: '2026-11-07T12:00:25+00:00'
+  bytes: 1914
+  sha256: 417b7da7838a1104b74ae3d0e956d756fd00a9292ac922ef15460496dc4a1095
+- id: product
+  local_file: website.html
+  url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-lis3dh.html
+  kind: manufacturer_product
+  locator: Official product page identifies SKU SEN-13963 and links Eagle Files and
+    SparkFun GitHub hardware repository
+  registered_at: '2026-11-07T12:00:59+00:00'
+  bytes: 567960
+  sha256: 70d59dc2ce88ae8133de5122b2a049da7b9a7400efe0360518c3b8e1fe0b4323
+attempts: []
+conflicts: []
+notes:
+- CAD and repository README acquired 2026-11-07; sources are pinned to commit a57ba3b3d98e85724a43635a34a181869db26e82,
+  which is the commit targeted by the SparkFun hardware-v1.0 tag. Preview visually
+  checked against the extracted bounds, symmetric named stand-off placement and 3.302
+  mm drill sizes. Bounding-box preview does not represent component clearance or physical
+  fit.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T12:02:00+00:00'
+extraction:
+  selected_ids:
+  - JP3:hole:1
+  - JP4:hole:1
+  quarter_turn: 0
+  native_centre_mm:
+  - 11.43
+  - 6.35
+identity_source_ids:
+- product
+- repo_readme
+- cad

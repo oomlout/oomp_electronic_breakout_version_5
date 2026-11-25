@@ -1,0 +1,336 @@
+research_schema_version: 1
+part_id: electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346
+name_readable: Adafruit MCP23017 GPIO Expander, STEMMA QT
+manufacturer: adafruit
+part_number: '5346'
+manufacturer_part_number: '5346'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: interface
+  taxonomy_4: gpio_expander
+  taxonomy_5: 16_bit
+  taxonomy_6: mcp23017
+  taxonomy_7: stemma_qt
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '5346'
+default_website:
+  url: https://www.adafruit.com/product/5346
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:18:31+00:00'
+  updated_at: '2026-10-23T20:19:15+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: Adafruit MCP23017 I2C GPIO Expander STEMMA QT carrier, product 5346
+  status: identified_by_product_page
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: June 21, 2023 silkscreen update; current form has two STEMMA QT connectors.
+description: Adds 16 digital inputs/outputs, with interrupts and selectable addresses.
+interfaces:
+- i2c
+dimensions_mm:
+  width: null
+  height: null
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: unknown
+  source_ids:
+  - product_page
+  notes: Product dimensions 43 x 18 x 5 mm unspecified orientation/scope; kept distinct.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: guide image indicates corner holes; exact count/position not
+  extracted
+connectors:
+  header_group:
+    kind: header
+    description: Two sticks of header supplied; GPIO and address/reset/power labels
+      appear in guide, exact physical contact mapping needs CAD.
+    contacts: []
+    source_ids:
+    - product_page
+    - guide_pinouts
+  QT1:
+    kind: cable_connector
+    description: STEMMA QT connector
+    contacts: []
+    source_ids:
+    - product_page
+  QT2:
+    kind: cable_connector
+    description: STEMMA QT connector
+    contacts: []
+    source_ids:
+    - product_page
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: unknown
+  source_ids:
+  - product_page
+  - guide_pinouts
+pin_names: []
+electrical:
+  board_supply:
+    min_v: null
+    max_v: null
+    nominal_v:
+    - 3
+    - 5
+    status: documented_nominal
+    source_ids:
+    - product_page
+    - guide_pinouts
+    notes: Listing/guide says 3V or 5V power and logic.
+  chip_supply:
+    status: not_transcribed
+    notes: Chip limits not transcribed from datasheet.
+    source_ids:
+    - chip_datasheet
+  logic_levels:
+    status: documented
+    notes:
+    - SCL/SDA level shifted for 3–5V logic, each has 10K pullup.
+    - 16 GPIO each can drive up to 25mA; input optional pull-up.
+    source_ids:
+    - guide_pinouts
+  pullups:
+  - signals:
+    - SCL
+    - SDA
+    resistance_ohms: 10000
+    rail: null
+    designator: null
+    disconnect_method: null
+    source_ids:
+    - guide_pinouts
+  extra_signals:
+  - name: IA/INTA
+    direction: output
+    notes: Configurable interrupt output for PORTA; active-high, active-low or open-drain.
+    source_ids:
+    - guide_pinouts
+  - name: IB/INTB
+    direction: output
+    notes: Configurable interrupt output for PORTB.
+    source_ids:
+    - guide_pinouts
+  - name: RST
+    direction: input
+    notes: Connect to ground to reset.
+    source_ids:
+    - guide_pinouts
+  - name: A0-A7/B0-B7
+    direction: bidirectional
+    notes: 16 digital GPIO; A7 and B7 should only be used as outputs.
+    source_ids:
+    - guide_pinouts
+  source_ids:
+  - guide_pinouts
+i2c:
+  default_address_7bit: 32
+  documented_addresses_7bit:
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  address_selection: Three address pins D0/D1/D2 or +1/+2/+4 solder jumpers; connect
+    pins to VIN/close jumpers.
+  maximum_clock_hz: null
+  chip_maximum_clock_hz: 1700000
+  clock_stretching: unknown
+  status: documented
+  source_ids:
+  - guide_pinouts
+  notes: 1.7MHz chip max not transcribed; do not assert as carrier maximum.
+chip:
+  manufacturer: Microchip
+  part_number: MCP23017
+  identity_status: product_page_claim
+  source_ids:
+  - product_page
+  - chip_datasheet
+datasheets:
+  status: downloaded
+  items:
+  - chip: Microchip MCP23017
+    source_id: chip_datasheet
+    local_file: reference/chip_datasheet.pdf
+    url: https://cdn-shop.adafruit.com/datasheets/mcp23017.pdf
+    sha256: da9b6082298056ef32b19cebc863df947bab3b286b434924b5a2f4fd5d1eff20
+    page_count: 48
+    revision: null
+  notes:
+  - 48-page PDF validated, revision not transcribed.
+software:
+- name: Adafruit MCP23017 Arduino library
+  framework: Arduino
+  official_url: https://github.com/adafruit/Adafruit-MCP23017-Arduino-Library
+  tested: false
+  source_ids:
+  - guide_hardware
+- name: Adafruit MCP230xx CircuitPython driver
+  framework: CircuitPython
+  official_url: https://github.com/adafruit/Adafruit_CircuitPython_MCP230xx
+  tested: false
+  source_ids:
+  - guide_hardware
+extra_resources:
+- name: MCP23017 guide pinouts
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-mcp23017-i2c-gpio-expander/pinouts
+  local_file: reference/guide_pinouts.html
+  source_id: guide_pinouts
+- name: MCP23017 guide downloads
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-mcp23017-i2c-gpio-expander/downloads
+  local_file: reference/guide_downloads.html
+  source_id: guide_downloads
+sources:
+- id: product_page
+  kind: product_page
+  requested_url: https://www.adafruit.com/product/5346
+  url: https://www.adafruit.com/product/5346
+  retrieved_at: '2026-10-23T20:18:32+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 96729
+  sha256: 1e90d47066ec98c5a777a8e8af5b5705fec17e613671c145ce45f81ab7496723
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 7250
+    sha256: e1a1e3d8255df3fc8954e551fd7d630d14d9edd75ebc3412a875f476f8fcd252
+  - kind: links
+    local_file: website.links.json
+    bytes: 16279
+    sha256: 7f3985af5f824677c8ef603f52621075b2f5199858873acdc2eec6a65aac4962
+  title: 'Adafruit MCP23017 I2C GPIO Expander Breakout [STEMMA QT / Qwiic] : Adafruit
+    Industries, Unique & fun DIY electronics and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_hardware
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-mcp23017-i2c-gpio-expander
+  url: https://learn.adafruit.com/adafruit-mcp23017-i2c-gpio-expander
+  retrieved_at: '2026-10-23T20:18:33+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_hardware.html
+  bytes: 69048
+  sha256: 808361f26ed2f81b1d73535082efb4d834e3d88d579102169da4c72ee303562c
+  derivatives:
+  - kind: text
+    local_file: reference/guide_hardware.txt
+    bytes: 3847
+    sha256: 0992cff28d68a1e1df8d45f24089e1d004614dee37324fb1db5b2971cfb42261
+  - kind: links
+    local_file: reference/guide_hardware.links.json
+    bytes: 18513
+    sha256: 6256c4fb76db847d12ff3d4631555dd8407681a37fa72aca8989c23037f6ae3f
+  title: Overview | Adafruit MCP23017 I2C GPIO Expander | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_pinouts
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-mcp23017-i2c-gpio-expander/pinouts
+  url: https://learn.adafruit.com/adafruit-mcp23017-i2c-gpio-expander/pinouts
+  retrieved_at: '2026-10-23T20:18:42+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_pinouts.html
+  bytes: 85403
+  sha256: eb5d8a6732453c1328634084b4874118fec4d2edbc5fbbaa34beaf3c6acb8e34
+  derivatives:
+  - kind: text
+    local_file: reference/guide_pinouts.txt
+    bytes: 6197
+    sha256: 98bf38c4b83e75518f1e3dc587ae87373dfdfd12c7314c47990f9570514f01e9
+  - kind: links
+    local_file: reference/guide_pinouts.links.json
+    bytes: 19925
+    sha256: 927f402b097ecb1bdada02308422dbb7cb77d5140d8774c49034b931ecca6a62
+  title: Pinouts | Adafruit MCP23017 I2C GPIO Expander | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-mcp23017-i2c-gpio-expander/downloads
+  url: https://learn.adafruit.com/adafruit-mcp23017-i2c-gpio-expander/downloads
+  retrieved_at: '2026-10-23T20:18:43+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_downloads.html
+  bytes: 65548
+  sha256: 78ffaeaadab082dcadaee8cdc47af22f85d3a874b18283efc812075b130fa38f
+  derivatives:
+  - kind: text
+    local_file: reference/guide_downloads.txt
+    bytes: 2285
+    sha256: d22497f86211809471a90ba3e9c391253344e98f89db0f832b4491313e7d14c5
+  - kind: links
+    local_file: reference/guide_downloads.links.json
+    bytes: 18174
+    sha256: c5b6bdb485543d4d0d11f7a085c616a84a46885ef57ec9ce15acb0831c6ad9e3
+  title: Downloads | Adafruit MCP23017 I2C GPIO Expander | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn-shop.adafruit.com/datasheets/mcp23017.pdf
+  url: https://cdn-shop.adafruit.com/datasheets/mcp23017.pdf
+  retrieved_at: '2026-10-23T20:18:49+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_downloads
+  local_file: reference/chip_datasheet.pdf
+  bytes: 937906
+  sha256: da9b6082298056ef32b19cebc863df947bab3b286b434924b5a2f4fd5d1eff20
+  derivatives: []
+  pdf_page_count: 48
+conflicts: []
+data_gaps:
+- Exact PCB outline orientation, thickness and mounting-hole geometry need carrier
+  CAD review.
+- Full numbered header/QT pin inventory and physical contact count remain unknown.
+- MCP23017 datasheet electrical limits and revision not transcribed; no fitted chip
+  marking inspected.
+- Carrier maximum I2C bus clock not established.
+product_dimensions_mm:
+  dimensions:
+  - 43
+  - 18
+  - 5
+  units: mm
+  scope: manufacturer_product_dimensions_unspecified_orientation
+  status: documented
+  source_ids:
+  - product_page

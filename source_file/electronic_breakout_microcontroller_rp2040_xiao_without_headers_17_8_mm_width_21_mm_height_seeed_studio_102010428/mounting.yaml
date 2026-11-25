@@ -1,0 +1,149 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2040_xiao_without_headers_17_8_mm_width_21_mm_height_seeed_studio_102010428
+status: no_holes
+board_revision: Seeed Studio XIAO RP2040, SKU 102010428; current manufacturer-linked
+  Eagle project is v1.22. Cross-checked against the archived Seeed KiCad v1.3 project
+  dated 2026-03-04; both agree on the mechanical outline and component-drill roles.
+identity_evidence: The official Seeed XIAO RP2040 product page distinguishes the standard
+  RP2040 from the RP2040 Plus and publishes the 21 x 17.8 mm dimensions. Seeed SKU
+  102010428 is explicit on drawing page 3. The official Wiki links the v1.22 Eagle
+  project, whose board file identifies XIAO RP2040 v1.22; the archived manufacturer
+  KiCad project names XIAO RP2040 v1.3. Both complete CAD files describe this carrier
+  and agree on the board outline.
+board_size:
+- 17.78
+- 21.1016
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: cad
+derivation: 'Drawing fallback: Seeed manufacturer PDF page 3 identifies SKU 102010428
+  and gives nominal board dimensions 17.8 mm wide x 21 mm high, with the USB connector
+  at the top. The current official Eagle v1.22 board layer 20 gives the complete outline
+  bounds x=[-10.1016, 11] mm, y=[-8.89, 8.89] mm, hence native dimensions 21.1016
+  x 17.78 mm. Center native CAD origin at (0.4492, 0) mm and rotate CCW 90 degrees:
+  (x_top,y_top)=(-(y_native-0), x_native-0.4492); this yields canonical width=17.78
+  mm, height=21.1016 mm, top view with USB at +Y. The PDF rounds these to 17.8 x 21
+  mm. Full Eagle board has no board-level plain holes. Reviewed every drilled package
+  feature: J2/J4 are 14-pin half-hole connector/header pads; USB1 has connector retention/shell
+  anchors; RESET and BOOT have switch retention holes; J1 holes are shielding-cover
+  retention anchors. These component/connector features are not board mounting holes.
+  The complete v1.3 KiCad board archive is byte-verified against its extracted board
+  and agrees on dimensions and feature roles. Eagle helper extraction was attempted
+  but rejects the J1 footprint because it includes layer-20 geometry; dimensions and
+  all candidates were therefore reviewed from the registered exact CAD plus the manufacturer
+  dimension drawing.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad_v1_22
+  local_file: mounting_evidence/seeed-v1.22-cad.zip
+  url: https://files.seeedstudio.com/wiki/XIAO-RP2040/res/XIAO_RP2040_v1.22_SCH%26PCB.zip
+  kind: manufacturer_cad
+  locator: Official Seeed Wiki Open-Source Materials link; ZIP member Seeed Studio
+    XIAO RP2040 v1.22.brd, complete design layer 20 Dimension and all hole/board objects
+  registered_at: '2026-11-06T15:45:29+00:00'
+  bytes: 116838
+  sha256: 99e7a276289315c34081080a52ad3dfbbbb7b4f2479807944d9532c6fea49824
+- id: drawing
+  local_file: mounting_evidence/seeed_xiao_series.pdf
+  url: https://www.seeedstudio.com/blog/wp-content/uploads/2022/08/Seeed-Studio-XIAO-Series-Package-and-PCB-Design.pdf
+  kind: manufacturer_drawing
+  locator: 'Page 3: Seeed Studio XIAO RP2040, SKU 102010428; recommended board/land
+    pattern drawing with 17.8 mm width and 21 mm height'
+  registered_at: '2026-11-06T15:45:29+00:00'
+  bytes: 629257
+  sha256: 25e9dc961719df965c81c3424111b70d127c8e8255147fad16634c8e8cdd4267
+- id: product
+  local_file: mounting_evidence/product.html
+  url: https://wiki.seeedstudio.com/XIAO-RP2040/
+  kind: manufacturer_product
+  locator: 'Official product page: XIAO RP2040 SKU, dimensions, RP2040 vs RP2040 Plus
+    identity and project resource links'
+  registered_at: '2026-11-06T15:45:30+00:00'
+  bytes: 107255
+  sha256: 08bc3920d07ea878d3d5c6684d2591c5fd24d56148079de79030f29cfcea020a
+- id: dxf
+  local_file: mounting_evidence/xiao-rp2040-dxf.zip
+  url: https://files.seeedstudio.com/wiki/XIAO-RP2040/res/XIAO-RP2040-DXF.zip
+  kind: manufacturer_cad
+  locator: Official dimension DXF package, top.dxf and bottom.dxf full layer content;
+    layers identify XIAO RP2040 v1.22; board dimensional reference and copper-pad
+    context
+  registered_at: '2026-11-06T15:45:30+00:00'
+  bytes: 703529
+  sha256: e8f685ac332c8e9cbcb73623026a684bed80b46964995d7837cba6414e630306
+- id: cad
+  local_file: mounting_evidence/cad-v1.22/Seeed Studio XIAO RP2040 v1.22.brd
+  url: https://files.seeedstudio.com/wiki/XIAO-RP2040/res/XIAO_RP2040_v1.22_SCH%26PCB.zip
+  kind: manufacturer_cad
+  locator: ZIP member Seeed Studio XIAO RP2040 v1.22.brd; complete board outline,
+    layer 20 and full plain/component drill selection
+  registered_at: '2026-11-06T15:47:46+00:00'
+  bytes: 424419
+  sha256: b1334a00decebf82da78533b43b182102fafd587054b8cd3fada968be1cb801e
+- id: cad_archive_v1_3
+  local_file: reference/design.zip
+  url: https://files.seeedstudio.com/wiki/XIAO-RP2040/res/XIAO_RP2040_v1.3_SCH%26PCB_20260304.zip
+  kind: manufacturer_cad
+  locator: Archived manufacturer package; complete 202003370_XIAO_RP2040_v1.3_SCH&PCB_20260304
+    KiCad project; original archive verified against extracted board bytes
+  registered_at: '2026-11-06T15:48:19+00:00'
+  bytes: 481339
+  sha256: 6eb256d2cad58e4193c180c7262006771a08686c3bda1ab3424d1595578c3d26
+- id: kicad_v1_3
+  local_file: reference/board.kicad_pcb
+  url: https://files.seeedstudio.com/wiki/XIAO-RP2040/res/XIAO_RP2040_v1.3_SCH%26PCB_20260304.zip
+  kind: manufacturer_cad
+  locator: Archived ZIP member Seeed Studio XIAO RP2040 v1.3; full board with all
+    layer and pad definitions; member bytes match extracted local board and archived
+    ZIP
+  registered_at: '2026-11-06T15:48:19+00:00'
+  bytes: 1526919
+  sha256: a3628ace0ce85e2b83dc7a24f91538e5015bd9ad18abc9b47ae347ab10d44ba9
+attempts:
+- Official Seeed product page and current official Wiki-linked v1.22 Eagle CAD reviewed;
+  CAD was downloaded and its complete board outline and every drilled plain/package
+  feature were inspected.
+- Official Seeed XIAO RP2040 dimension DXF package reviewed; top.dxf and bottom.dxf
+  layers are tagged v1.22 and show the board copper/pad layout.
+- Official Seeed XIAO Series Package and PCB Design PDF, page 3, reviewed for SKU-specific
+  drawing, board size, top view and connector pad layout.
+- Archived official v1.3 KiCad project and board.kicad_pcb were hash-checked; extracted
+  board bytes match the archive and the mechanical outline agrees with current v1.22
+  CAD.
+- mounting_research.py inspect-eagle/eagle reports “Footprint contains layer-20 geometry;
+  verify board outline manually” for the shield-cover package; used the reviewed drawing
+  fallback and full raw CAD review rather than bypassing the extractor.
+conflicts: []
+notes:
+- 'Official files downloaded 2026-11-06 UTC: product page https://wiki.seeedstudio.com/XIAO-RP2040/;
+  Eagle archive https://files.seeedstudio.com/wiki/XIAO-RP2040/res/XIAO_RP2040_v1.22_SCH%26PCB.zip;
+  dimension DXF https://files.seeedstudio.com/wiki/XIAO-RP2040/res/XIAO-RP2040-DXF.zip;
+  dimension PDF https://www.seeedstudio.com/blog/wp-content/uploads/2022/08/Seeed-Studio-XIAO-Series-Package-and-PCB-Design.pdf.'
+- 'The v1.22 current Wiki-linked CAD and archived v1.3 project have different revision
+  labels but no unresolved mechanical difference: dimensions and component-drill functions
+  agree. Product-level nominal size is 17.8 x 21 mm; exact registered CAD outline
+  extents are 17.78 x 21.1016 mm.'
+- No screw holder is appropriate for this carrier. The standard holder is generated
+  geometry only; component, connector, screw-head and underside clearance are not
+  physically verified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T15:48:19+00:00'
+identity_source_ids:
+- product
+- drawing
+- cad
+- cad_v1_22
+- cad_archive_v1_3
+- kicad_v1_3

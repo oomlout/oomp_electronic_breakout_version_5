@@ -1,0 +1,170 @@
+Adafruit MMA8451 Accelerometer Breakout
+Pinouts
+Adafruit MMA8451 Accelerometer Breakout
+Tilt, move, measure
+by
+lady ada
+published July 30, 2014, last edited August 20, 2026
+posted in
+Sensors
+Adafruit Products
+Breakout Boards
+/
+Accel, Gyro, & Magnetometers
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly
+Arduino Code
+Python & CircuitPython
+Python Docs
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+Adafruit Triple-Axis Accelerometer - ±2/4/8g @ 14-bit - MMA8451
+$7.95
+Add  to Cart
+View product details
+13
+Intermediate
+Product guide
+Pinouts
+The little chip in the middle of the PCB is the actual MMA8451 sensor 
+that does all the motion sensing. We add all the extra
+ components you need to get started, and 'break out' all the other pins 
+you may want to connect to onto the PCB.  For more details you can check
+ out the schematics in the Downloads page.
+Power Pins
+The
+ sensor on the breakout requires 3V power. Since many customers have 5V 
+microcontrollers like Arduino, we tossed a 3.3V regulator on the board. 
+Its ultra-low dropout so you can power it from 3.3V-5V just fine.
+Vin
+- this is the power pin. Since the chip uses 3 VDC, we have 
+included a voltage regulator on board that will take 3-5VDC and safely 
+convert it down. To power the board, give it the same power as the logic
+ level of your microcontroller - e.g. for a 5V micro like Arduino, use 
+5V
+3Vo
+- this is the 3.3V output from the voltage regulator, you can grab up to 100mA from this if you like
+GND
+- common ground for power and logic
+I2C Pins
+SCL
+- I2C clock pin, connect to your microcontrollers I2C clock line.
+SDA
+- I2C data pin, connect to your microcontrollers I2C data line.
+INT and ADDR Pins
+A
+is the I2C
+A
+ddress select pin. By default this is pulled up to 3.3V with a 10K resistor, for an I2C address of 0x1D. You can also connect it to the GND pin for an address of 0x1C
+I1
+and
+I2
+are the Interrupt #1 and #2 signal pins. These pins are for more advanced usage, where you want to be alerted by the chip say when data is ready to read, or if it detects a large motion. We don't have direct support in the example Arduino library for these pins, so please check the datasheet for the I2C commands
+Page last edited March 08, 2024
+Overview
+Assembly
+Related Guides
+Make It Shake, Rattle, and Roll: Accelerometer Use
+By
+Anne Barela
+beginner
+43
+Your browser does not support the video tag. This links to the guide Circuit Playground Express Head-Tilt Ears.
+Circuit Playground Express Head-Tilt Ears
+By
+Dave Astels
+beginner
+40
+Feather TFT STEMMA Case
+By
+Ruiz Brothers
+beginner
+49
+Send Raspberry Pi Data to COSM
+By
+Mikey Sklar
+intermediate
+15
+Adafruit SPI FRAM Breakout - 2 or 4 Mbit
+By
+Kattni Rembor
+Product Guide
+3
+Your browser does not support the video tag. This links to the guide Bluetooth Cycling Speed & Cadence Sensor Display with Clue.
+Bluetooth Cycling Speed & Cadence Sensor Display...
+By
+John Park
+beginner
+31
+Adafruit INA260 Current + Voltage + Power Sensor...
+By
+Bryan Siepert
+Product Guide
+32
+Adafruit TSL2591 High Dynamic Range Digital Light...
+By
+lady ada
+Product Guide
+42
+AR1100 Resistive Touch Screen Controller Guide
+By
+lady ada
+intermediate
+19
+Adafruit Ethernet FeatherWing
+By
+lady ada
+Product Guide
+30
+Adafruit AW9523 GPIO Expander and LED Driver
+By
+Kattni Rembor
+Product Guide
+28
+Your browser does not support the video tag. This links to the guide Goose Game M4SK Controller.
+Goose Game M4SK Controller
+By
+John Park
+beginner
+6
+reef-pi Guide 3: Temperature Controller
+By
+Ranjib Dey
+intermediate
+28
+Adafruit CH334F Mini USB Hub Breakouts
+By
+Liz Clark
+Product Guide
+6
+Booster Cable
+By
+Bill Earl
+beginner
+18
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

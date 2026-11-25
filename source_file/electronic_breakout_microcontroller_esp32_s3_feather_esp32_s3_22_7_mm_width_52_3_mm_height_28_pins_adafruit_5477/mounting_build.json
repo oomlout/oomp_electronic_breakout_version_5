@@ -1,0 +1,117 @@
+{
+  "record_sha256": "8973b1192d95b7d589cf5b22f95d0e733df3493a49a531561da1a72cddd80262",
+  "generated_at": "2026-11-06T18:20:45+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477/3dpr.scad",
+      "bytes": 4949,
+      "sha256": "6e70a121146d04ad5bf78b4b36ce97996b85e0bc0bbeb14dfe0cb93fd16add63"
+    },
+    {
+      "path": "parts/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477/3dpr_short_sides.scad",
+      "bytes": 3042,
+      "sha256": "faeda18e0c42798be25640058443108db8f6e5bb5983c01bb7e5b136a4161a73"
+    },
+    {
+      "path": "parts/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477/3dpr_long_side.scad",
+      "bytes": 3172,
+      "sha256": "70cb3212dde01e21d6da630ccfbedfaf0af82a7bfafbb9344a2a7002f36c9ac5"
+    },
+    {
+      "path": "parts/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477/3dpr.stl",
+      "bytes": 2102170,
+      "sha256": "336c2590f0abccc8ef01a4492ecc6d50f720fe399cfd5eaaa34865920496cd6b"
+    },
+    {
+      "path": "parts/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477/3dpr_short_sides.stl",
+      "bytes": 835446,
+      "sha256": "f5daafe3f6d6b67cf224fda422ce314b8c2de7e39986f9344ec691e7876ad628"
+    },
+    {
+      "path": "parts/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477/3dpr_long_side.stl",
+      "bytes": 885741,
+      "sha256": "1fddd15aba161886f8127c7c3fc185aefa5b0506190e7484effce2fc5cc17ff6"
+    },
+    {
+      "path": "parts/electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477/mounting_variants.json",
+      "bytes": 5208,
+      "sha256": "74984ac5eb629889bed611905b6ce6931a8cc782fe1da48356e8b358462e7b73"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 13723.104465529459,
+    "bounds_mm": [
+      [
+        -29.5,
+        -44.49013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        44.49013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 13723.104465529459,
+        "bounds_mm": [
+          [
+            -29.5,
+            -44.49013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            44.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 7332.713122100446,
+        "bounds_mm": [
+          [
+            -14.5,
+            -44.49013364214136,
+            0.0
+          ],
+          [
+            14.5,
+            44.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 7346.369174137041,
+        "bounds_mm": [
+          [
+            -14.5,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

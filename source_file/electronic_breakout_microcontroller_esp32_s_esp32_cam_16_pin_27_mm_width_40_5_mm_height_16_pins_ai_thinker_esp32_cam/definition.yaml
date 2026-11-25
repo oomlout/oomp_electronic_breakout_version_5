@@ -1,0 +1,912 @@
+type_1: microcontroller
+type_2: esp32_s
+type_3: esp32_cam_16_pin
+breakout_description: 27_mm_width_40_5_mm_height_16_pins
+manufacturer: ai_thinker
+part_number: esp32_cam
+breakout_pcb_width: 27
+breakout_pcb_height: 40.5
+schema_version: 1
+item_kind: breakout
+name_readable: Ai-Thinker ESP32-CAM (V1.6 schematic reference)
+taxonomy_1: electronic
+taxonomy_2: breakout
+taxonomy_3: microcontroller
+taxonomy_4: esp32_s
+taxonomy_5: esp32_cam_16_pin
+taxonomy_6: 27_mm_width_40_5_mm_height_16_pins
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: ai_thinker
+taxonomy_15: esp32_cam
+form_factor: esp32_cam_16_pin
+chip:
+  family: esp32
+  part_number: esp32_s
+  identity_scope: catalogue_chip_or_module_label
+  oomp_id: null
+  silicon_revision: null
+dimensions_mm:
+  width: 27
+  height: 40.5
+  pcb_thickness: null
+  assembled_height: null
+  scope: nominal_catalogue_outline_not_measured
+  source_id: original_catalogue
+  status: unverified
+coordinate_system:
+  units: mm
+  origin: centre_of_pcb_outline
+  view: top_no_usb_socket_orientation_requires_board_drawing
+  x_positive: right
+  y_positive: towards_usb
+assembly:
+  headers: unspecified
+  header_pitch_mm: null
+electrical:
+  logic_voltage_v: 3.3
+  gpio_5v_tolerant: false
+  usb_connector: null
+  source_id: chip_datasheet
+memory:
+  external_flash_bytes: null
+  psram_bytes: null
+mounting_holes: []
+mounting_hole_details: []
+mounting_hole_candidates: []
+mounting_hole_status: not_verified
+pins:
+  P1_1:
+    connector: P1
+    number: '1'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    capabilities: []
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  P1_2:
+    connector: P1
+    number: '2'
+    name: GPIO1
+    gpio: 1
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    signal_types:
+    - digital
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: uart
+      signal: tx
+  P1_3:
+    connector: P1
+    number: '3'
+    name: GPIO3
+    gpio: 3
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    signal_types:
+    - digital
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: uart
+      signal: rx
+  P1_4:
+    connector: P1
+    number: '4'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    capabilities: []
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  P1_5:
+    connector: P1
+    number: '5'
+    name: GPIO0
+    gpio: 0
+    adc_channel: 1
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    - Boot strapping pin; external levels affect startup.
+    - 'Shared onboard net: camera_xclk'
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  P1_6:
+    connector: P1
+    number: '6'
+    name: GPIO16
+    gpio: 16
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - Connected to PSRAM chip select on V1.6; not free GPIO.
+    - 'Shared onboard net: psram_chip_select_do_not_drive'
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    signal_types:
+    - digital
+    available_for_general_io: false
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  P1_7:
+    connector: P1
+    number: '7'
+    name: VCC_SELECTED
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - VCC_SELECTED
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    capabilities: []
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  P1_8:
+    connector: P1
+    number: '8'
+    name: 3V3
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - 3V3
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    capabilities: []
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  P2_1:
+    connector: P2
+    number: '1'
+    name: GPIO4
+    gpio: 4
+    adc_channel: 0
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    - 'Shared onboard net: camera_led'
+    - 'Shared onboard net: micro_sd_slot'
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  P2_2:
+    connector: P2
+    number: '2'
+    name: GPIO2
+    gpio: 2
+    adc_channel: 2
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    - Boot strapping pin; external levels affect startup.
+    - 'Shared onboard net: micro_sd_slot'
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  P2_3:
+    connector: P2
+    number: '3'
+    name: GPIO14
+    gpio: 14
+    adc_channel: 6
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    - 'Shared onboard net: micro_sd_slot'
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  P2_4:
+    connector: P2
+    number: '4'
+    name: GPIO15
+    gpio: 15
+    adc_channel: 3
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    - Boot strapping pin; external levels affect startup.
+    - 'Shared onboard net: micro_sd_slot'
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  P2_5:
+    connector: P2
+    number: '5'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    capabilities: []
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  P2_6:
+    connector: P2
+    number: '6'
+    name: GPIO13
+    gpio: 13
+    adc_channel: 4
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    - 'Shared onboard net: micro_sd_slot'
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  P2_7:
+    connector: P2
+    number: '7'
+    name: GPIO12
+    gpio: 12
+    adc_channel: 5
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions: []
+    restrictions:
+    - ADC2 conflicts with Wi-Fi on classic ESP32.
+    - Boot strapping pin; external levels affect startup.
+    - 'Shared onboard net: micro_sd_slot'
+    aliases: []
+    surface: unspecified
+    type: gpio
+    direction: bidirectional
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    signal_types:
+    - digital
+    - analog
+    available_for_general_io: true
+    adc_unit: 2
+    logic_voltage_v: 3.3
+    input_only: false
+    routable_peripherals:
+    - uart
+    - spi
+    - i2c
+    - i2s
+    - rmt
+    - pwm
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  P2_8:
+    connector: P2
+    number: '8'
+    name: 5V
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: schematic
+    functions:
+    - 5V
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    capabilities: []
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+connectors:
+  P1:
+    contact_count: 8
+    pitch_mm: 2.54
+    source_id: schematic
+    coordinate_status: not_transcribed
+  P2:
+    contact_count: 8
+    pitch_mm: 2.54
+    source_id: schematic
+    coordinate_status: not_transcribed
+onboard_gpio_connections:
+- gpio: 32
+  function: camera_pwdn
+  source_id: board_guide
+- gpio: 0
+  function: camera_xclk
+  source_id: board_guide
+- gpio: 26
+  function: camera_siod
+  source_id: board_guide
+- gpio: 27
+  function: camera_sioc
+  source_id: board_guide
+- gpio: 35
+  function: camera_y9
+  source_id: board_guide
+- gpio: 34
+  function: camera_y8
+  source_id: board_guide
+- gpio: 39
+  function: camera_y7
+  source_id: board_guide
+- gpio: 36
+  function: camera_y6
+  source_id: board_guide
+- gpio: 21
+  function: camera_y5
+  source_id: board_guide
+- gpio: 19
+  function: camera_y4
+  source_id: board_guide
+- gpio: 18
+  function: camera_y3
+  source_id: board_guide
+- gpio: 5
+  function: camera_y2
+  source_id: board_guide
+- gpio: 25
+  function: camera_vsync
+  source_id: board_guide
+- gpio: 23
+  function: camera_href
+  source_id: board_guide
+- gpio: 22
+  function: camera_pclk
+  source_id: board_guide
+- gpio: 4
+  function: camera_led
+  source_id: board_guide
+- gpio: 2
+  function: micro_sd_slot
+  source_id: schematic
+- gpio: 4
+  function: micro_sd_slot
+  source_id: schematic
+- gpio: 12
+  function: micro_sd_slot
+  source_id: schematic
+- gpio: 13
+  function: micro_sd_slot
+  source_id: schematic
+- gpio: 14
+  function: micro_sd_slot
+  source_id: schematic
+- gpio: 15
+  function: micro_sd_slot
+  source_id: schematic
+- gpio: 16
+  function: psram_chip_select_do_not_drive
+  source_id: schematic
+sources:
+- id: original_catalogue
+  url: null
+  title: Original populate entries in this repository
+  local_file: null
+  scope: Nominal dimensions and identity; not manufacturer verification
+  accessed: '2026-10-22'
+- id: chip_datasheet
+  url: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+  title: chip_datasheet
+  accessed: '2026-10-22'
+  scope: GPIO capabilities, electrical limits and strapping; not carrier geometry
+- id: board_guide
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/master/libraries/ESP32/examples/Camera/CameraWebServer/camera_pins.h
+  title: board_guide
+  accessed: '2026-10-22'
+  scope: Primary Espressif AI_THINKER camera assignments, not expansion-header geometry
+  local_file: reference/camera_pins.h
+  sha256: 71de6987ee84a6d119596f3b52c8aead1b4a8e48cf4a7c3e1f39cc050ecf2754
+- id: schematic
+  url: https://raw.githubusercontent.com/SeeedDocument/forum_doc/master/reg/ESP32_CAM_V1.6.pdf
+  title: schematic
+  accessed: '2026-10-22'
+  scope: Original ESP32_CAM V1.6 schematic archived by Seeed; 2x8 headers, SD and PSRAM wiring
+  local_file: reference/esp32_cam_schematic.pdf
+  sha256: ae6785fa28346b27e260802e519e05aacf54674f21fd1b106156003f95b682d9
+- id: interface_variant
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/variants/esp32/pins_arduino.h
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  retrieved_date: '2026-10-23'
+  scope: Arduino variant pin assignments; not a physical header drawing
+  local_file: reference/interface_defaults/esp32_esp32.h
+  sha256: 133dd74f0d5edb9cd047e2578216d638fb80eba5738bd890aaf8d14374cbc261
+- id: interface_board_selection
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/boards.txt
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  retrieved_date: '2026-10-23'
+  scope: Framework board names and variant selection; generic selections remain explicitly scoped
+  local_file: reference/interface_defaults/esp32_boards.txt
+  sha256: 860ecb9aaacee8b3b9179b074faf380e72fdf15332efed0ed872eba678b93575
+  content_scope: excerpt_of_board_names_and_variant_selections
+  source_document_sha256: 11b90d1f4795ec365418635749b685a2f3d8320d0e163d886aa2099e81277b07
+- id: interface_runtime_uart
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/cores/esp32/HardwareSerial.cpp
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  retrieved_date: '2026-10-23'
+  scope: Framework API construction/default behavior; USB Serial is separate from UART pin aliases
+  local_file: reference/interface_defaults/esp32_HardwareSerial.cpp
+  sha256: a555861fb4f28a2a4c1d903a8152d714902fee2510c9eaf3ad5311dbcd779035
+- id: interface_runtime_i2c
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/Wire/src/Wire.cpp
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  retrieved_date: '2026-10-23'
+  scope: Framework API construction/default behavior; USB Serial is separate from UART pin aliases
+  local_file: reference/interface_defaults/esp32_Wire.cpp
+  sha256: 0454e5becf7acaa6f7cb466397682d762461f678cbb88644f31f313e653b71bc
+- id: interface_runtime_spi
+  url: https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/SPI/src/SPI.cpp
+  revision: 6b41cf6f6f272538ee91746f26c5068e2ca692e4
+  retrieved_date: '2026-10-23'
+  scope: Framework API construction/default behavior; USB Serial is separate from UART pin aliases
+  local_file: reference/interface_defaults/esp32_SPI.cpp
+  sha256: 4caea80d21fa230a528322d9eb900880a0acd9c91cb355bc5cec514ea02ecaed
+notes: []
+data_gaps:
+- Assembled component keepouts and USB insertion/cable envelopes have not been captured.
+- Ai-Thinker legacy URLs redirect to its home page. Archived V1.6 schematic is the pin reference; exact
+  clone revision, pad coordinates and outline still need confirmation.
+- Chip package/module pad numbers are not fully transcribed; null chip_pin_number values must not be replaced
+  with carrier-header numbers.
+pinout_scope: Expansion connectors and explicitly listed test pads; USB socket contacts excluded.
+chip_resources:
+  cpu_core_count: 2
+  clock_max_mhz: 240
+  pwm_channels: 16
+  hardware_i2c_controllers: 2
+  general_purpose_spi_controllers: null
+  hardware_uart_controllers: 3
+  pio_state_machines: 0
+  scope: silicon resources; board routing and firmware may reduce availability
+  source_id: chip_datasheet
+lab_support:
+  status: catalogue_reference_only
+  automatic_firmware_enable: false
+  requires_reviewed_board_profile: true
+  gpio_matrix_routing: true
+pinout_status: documented_contact_inventory
+svg_details:
+  svg_name: microcontroller
+  stylesheet: microcontroller
+  width: 27
+  height: 40.5
+gpio_summary:
+  exposed:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  general_io_candidates:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 12
+  - 13
+  - 14
+  - 15
+  analog_candidates:
+  - 0
+  - 2
+  - 4
+  - 12
+  - 13
+  - 14
+  - 15
+  automatic_firmware_enable: false
+default_interfaces:
+  uart:
+    protocol: uart
+    status: documented
+    basis: framework_pin_aliases
+    framework: arduino-esp32
+    variant: esp32
+    variant_scope: generic_target_selection
+    api: null
+    peripheral: null
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_uart
+    tx_gpio: 1
+    rx_gpio: 3
+    pin_keys:
+      tx:
+      - P1_2
+      rx:
+      - P1_3
+    signal_status:
+      tx: mapped
+      rx: mapped
+    notes:
+    - Defaults apply when selecting this generic Arduino target; they do not establish a carrier-specific
+      hardware convention.
+    - UART GPIOs are distinct from USB CDC/USB Serial. The meaning of Serial depends on the core and USB
+      build settings.
+    - TX/RX are board variant aliases. Pass the GPIOs explicitly to the selected HardwareSerial instance;
+      no-argument pin selection can use SoC UART defaults instead.
+  i2c:
+    protocol: i2c
+    status: documented
+    basis: framework_defaults
+    framework: arduino-esp32
+    variant: esp32
+    variant_scope: generic_target_selection
+    api: Wire
+    peripheral: null
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_i2c
+    sda_gpio: 21
+    scl_gpio: 22
+    pin_keys:
+      sda: []
+      scl: []
+    signal_status:
+      sda: not_in_pinout
+      scl: not_in_pinout
+    notes:
+    - Defaults apply when selecting this generic Arduino target; they do not establish a carrier-specific
+      hardware convention.
+    - These generic defaults are not broken out on the ESP32-CAM headers; camera/SD routing requires an
+      explicit application-specific choice.
+  spi:
+    protocol: spi
+    status: documented
+    basis: framework_defaults
+    framework: arduino-esp32
+    variant: esp32
+    variant_scope: generic_target_selection
+    api: SPI
+    peripheral: null
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_spi
+    sck_gpio: 18
+    mosi_gpio: 23
+    miso_gpio: 19
+    ss_gpio: 5
+    pin_keys:
+      sck: []
+      mosi: []
+      miso: []
+      ss: []
+    signal_status:
+      sck: not_in_pinout
+      mosi: not_in_pinout
+      miso: not_in_pinout
+      ss: not_in_pinout
+    notes:
+    - Defaults apply when selecting this generic Arduino target; they do not establish a carrier-specific
+      hardware convention.
+    - ss is the framework chip-select alias/default, not an automatically asserted CS. Select and drive
+      CS as required by the peripheral and library.
+    - These generic defaults are not broken out on the ESP32-CAM headers; camera/SD routing requires an
+      explicit application-specific choice.
+interface_defaults_version: 1
+oobb_details:
+- breakout_pcb_width: 27
+  breakout_pcb_height: 40.5
+  mounting_holes: []
+  mounting_hole_radius_name: m2
+  oobb_name: mounting_plate_default
+- breakout_pcb_width: 27
+  breakout_pcb_height: 40.5
+  mounting_holes: []
+  mounting_hole_radius_name: m2
+  oobb_name: mounting_plate_oobb
+  scad_output: working_oobb

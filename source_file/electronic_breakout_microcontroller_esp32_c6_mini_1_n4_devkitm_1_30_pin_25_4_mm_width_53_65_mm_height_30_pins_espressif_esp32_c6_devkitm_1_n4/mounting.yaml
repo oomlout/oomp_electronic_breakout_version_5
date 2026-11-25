@@ -1,0 +1,73 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_c6_mini_1_n4_devkitm_1_30_pin_25_4_mm_width_53_65_mm_height_30_pins_espressif_esp32_c6_devkitm_1_n4
+status: no_holes
+board_revision: Espressif ESP32-C6-DevKitM-1 Rev 1.0 carrier; ordering variant ESP32-C6-DevKitM-1-N4 with ESP32-C6-MINI-1, 4 MB flash. PCB layout title block #38294 is dated 2022-10-13 and states Rev 1.0; no alternate carrier outline is indicated by the manufacturer guide.
+identity_evidence: Espressif's ESP32-C6-DevKitM-1 user guide identifies the exact N4 orderable variant and links its PCB Layout and Dimensions drawings. The linked PCB Layout title block names ESP32-C6-DevKitM-1 Rev 1.0 (#38294); the archived dimensions drawing is the matching DevKitM-1 carrier outline.
+board_size:
+- 25.4
+- 48.26
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: mechanical
+derivation: 'Use the manufacturer dimension drawing directly: 25.400 mm wide x 48.260 mm high (Unit:mm), PCB outline excluding module antenna overhang and connector protrusion. The drawing is a top view with USB connectors at the bottom. Canonical coordinates are centred on the PCB bounding box: x = X_drawing - 12.700 mm; y = 24.130 mm - Y_drawing, so +x points right and +y points up/away from USB. Reviewed the complete five-page Rev 1.0 PCB Layout drawing across copper, silkscreen/assembly and composite sheets. Candidate drills are J1/J3 electrical header holes, J5 current-measurement header pads, and the USB/UART connector retention anchors identified by their locations and silkscreen; none is a PCB mounting hole. The carrier drawings show no dedicated board-mount pattern, so mounting_holes is explicitly empty.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: mechanical
+  local_file: reference/esp32-c6-devkitm-1-dimensions.pdf
+  url: https://dl.espressif.com/dl/schematics/esp32-c6-devkitm-1-dimensions.pdf
+  kind: manufacturer_drawing
+  locator: 'One-page complete carrier dimensions drawing, full outline and feature
+    placement (Unit:mm). PCB outline 25.400 x 48.260; top view, antenna overhang excluded.
+    Review all depicted drills: side header and J5 electrical pads plus USB/UART connector
+    retention anchors only; no dedicated board mounting holes.'
+  registered_at: '2026-11-06T18:29:25+00:00'
+  bytes: 1082002
+  sha256: b8c37ee9de83c565efb33c4b23a2b4106939fe8c278b4b6769b2c73dc6e816b0
+- id: pcb_layout
+  local_file: mounting_evidence/esp32-c6-devkitm-1-pcb-layout.pdf
+  url: https://dl.espressif.com/dl/schematics/esp32-c6-devkitm-1-pcb-layout.pdf
+  kind: manufacturer_cad_drawing
+  locator: 'Five-page Espressif PCB Layout drawing, title block #38294, ESP32-C6-DevKitM-1
+    Rev 1.0, dated 2022-10-13. Pages 1-5 show full copper, silkscreen/assembly and
+    composite. Review all drill candidates; visible round pads are J1/J3 header holes,
+    J5 test-header pads and USB/UART receptacle retention anchors. No dedicated board
+    mounting holes.'
+  registered_at: '2026-11-06T18:29:32+00:00'
+  bytes: 1591689
+  sha256: 7882a364a008c486a6f42d159aac1f42c1c8cddf9ac260783c1710346b7ac4fe
+- id: product
+  local_file: mounting_evidence/esp32-c6-devkitm-1-user-guide.html
+  url: https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitm-1/user_guide.html
+  kind: manufacturer_product
+  locator: 'ESP32-C6-DevKitM-1 guide: ordering table names exact ESP32-C6-DevKitM-1-N4
+    with ESP32-C6-MINI-1, 4 MB; related documents link to the board PCB Layout and
+    Dimensions; component descriptions identify both USB Type-C connector functions.'
+  registered_at: '2026-11-06T18:29:38+00:00'
+  bytes: 39037
+  sha256: 80dbd439e0b798ae7dffdf368830031fb9ac0490618914f27fd5e7b2544273c9
+attempts:
+- Reviewed Espressif's official ESP32-C6-DevKitM-1 guide and exact N4 ordering row; confirmed the guide links the carrier PCB Layout and Dimensions drawings.
+- Retrieved and reviewed all five pages of the linked Espressif PCB Layout drawing; title block identifies ESP32-C6-DevKitM-1 Rev 1.0, drawing #38294, dated 2022-10-13. Reviewed both copper layers, silkscreen/assembly and composite views to classify candidate drills.
+- Verified the existing archived dimensions PDF SHA-256 against mounting_context.json, rendered and reviewed its complete single page, and registered it with its official Espressif URL.
+conflicts: []
+notes:
+- The official dimensions drawing specifies the PCB outline as 25.400 x 48.260 mm; the catalogue's 53.65 mm height includes the module antenna overhang and is not the carrier outline.
+- No dedicated mounting holes appear in the complete reviewed carrier drawing. Connector retention drills, electrical header holes and J5 test-header pads are excluded from the mounting pattern.
+- Standard holder status is generated geometry only; component, connector, screw-head and underside clearance are unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T18:29:38+00:00'
+identity_source_ids:
+- product
+- pcb_layout

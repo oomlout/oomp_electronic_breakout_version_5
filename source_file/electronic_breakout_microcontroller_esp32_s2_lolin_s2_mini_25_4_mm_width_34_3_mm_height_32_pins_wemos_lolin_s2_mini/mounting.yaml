@@ -1,0 +1,79 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_s2_lolin_s2_mini_25_4_mm_width_34_3_mm_height_32_pins_wemos_lolin_s2_mini
+status: needs_review
+board_revision: WEMOS LOLIN S2 mini V1.0.0 carrier, matching the manufacturer's linked dimension and schematic PDFs; hole coordinates remain incomplete because the drawing does not dimension the vertical hole offset.
+identity_source_ids:
+- wemos_product
+- wemos_dimension
+- wemos_schematic
+identity_evidence: The WEMOS S2 mini product page links its Dimension V1.0.0 and Schematic V1.0.0 PDFs and lists a 25.4 x 34.3 mm board. The archived manufacturer drawing and schematic hashes match mounting_context.json, and the full dimension page was reviewed. The drawing shows two 2.0 mm drills, but does not specify their vertical coordinate.
+board_size:
+- 25.4
+- 34.3
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: wemos_dimension
+derivation: Manufacturer Dimension V1.0.0 drawing gives PCB outline 25.4 x 34.3 mm; two 2.0 mm drills; 20.4 mm center-to-center horizontal spacing; and 2.5 mm from the left edge to the left drill center. The dimensioned values imply centred x coordinates -10.2 mm and +10.2 mm. The drawing provides no vertical dimension locating the hole row relative to the PCB bounding box. Do not infer y coordinates from the illustration's scale or symmetry; geometry is incomplete and not promotable.
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources:
+- id: wemos_product
+  local_file: mounting_evidence/s2_mini_product.html
+  url: https://docs.wemos.cc/en/latest/s2/s2_mini.html
+  kind: manufacturer_product
+  locator: WEMOS product identity S2 mini; published specs 34.3 x 25.4 mm; links the
+    V1.0.0 schematic and dimension PDF.
+  registered_at: '2026-11-06T17:55:08+00:00'
+  bytes: 9950
+  sha256: e1602e6fae4d78579f66fc4d76027fccd2f52c24db6778c6d5f21d0ca0183ffc
+- id: wemos_dimension
+  local_file: reference/dim_s2_mini_v1.0.0.pdf
+  url: https://docs.wemos.cc/en/latest/_static/files/dim_s2_mini_v1.0.0.pdf
+  kind: dimensioned_drawing
+  locator: 'Complete one-page WEMOS Dimension V1.0.0 drawing: outline 25.4 x 34.3
+    mm; two 2.0 mm drill circles; 20.4 mm center spacing and 2.5 mm left edge offset;
+    vertical hole offset is not dimensioned.'
+  registered_at: '2026-11-06T17:55:08+00:00'
+  bytes: 5128
+  sha256: 4283a05be3aecf32159c4aaee09fc74d3a5f8a7f64aa67d8270de68e8437b4aa
+- id: wemos_schematic
+  local_file: reference/sch_s2_mini_v1.0.0.pdf
+  url: https://docs.wemos.cc/en/latest/_static/files/sch_s2_mini_v1.0.0.pdf
+  kind: manufacturer_schematic
+  locator: WEMOS S2 mini V1.0.0 schematic; supports exact product/revision identification,
+    electrical net context only, no mounting geometry.
+  registered_at: '2026-11-06T17:55:09+00:00'
+  bytes: 85313
+  sha256: c0fd02597603c4b70494377083b33df3438706a6980c4b681f8be38a618e20d8
+- id: kicad_holes_gap
+  local_file: mounting_evidence/kicad_footprint_discussion.html
+  url: https://gitlab.com/kicad/libraries/kicad-footprints/-/merge_requests/2904/pipelines
+  kind: third_party_mechanical_discussion
+  locator: 'KiCad Footprints merge request !2904 discussion (2022-09-25): contributor
+    says they omitted mounting holes because LOLIN had not properly specified them;
+    corroborates documentation gap, not geometric authority.'
+  registered_at: '2026-11-06T17:55:47+00:00'
+  bytes: 102172
+  sha256: ddf02c3959ef2017d5daff115be357a7ed6007e958f2d353de218a8cf84ae0e9
+attempts:
+- '2026-11-06: Reviewed the complete WEMOS S2 mini Dimension V1.0.0 page linked from the official product page. It documents outline and horizontal drill geometry but leaves vertical drill placement unspecified.'
+- '2026-11-06: Checked the official WEMOS GitHub account repository listing and the official docs repository structure for a published S2 mini PCB layout/CAD source; no carrier board CAD was found. The docs repository contains the product page and linked PDFs.'
+- '2026-11-06: Reviewed KiCad Footprints merge request !2904 discussion. Its contributor states the mounting holes were omitted because LOLIN had not properly specified them; this corroborates the gap and is not used as geometric authority.'
+- '2026-11-07: Rechecked the current official S2 mini product page and its linked Dimension V1.0.0 PDF. The PDF download is byte-identical to archived wemos_dimension (SHA-256 4283a05be3aecf32159c4aaee09fc74d3a5f8a7f64aa67d8270de68e8437b4aa); full-page visual review confirms there is still no vertical hole-centre dimension. Checked the current recursive wemos/docs master tree: it contains this drawing, the schematic and board photos, but no PCB CAD or fabrication files. The vertical y coordinates therefore remain unknown.'
+conflicts:
+- 'Unresolved geometry gap: manufacturer drawing omits the vertical coordinate of both mounting-hole centres. The CAD source avenues checked did not provide exact hole positions. Do not guess or measure pixels.'
+notes:
+- 'Partial manufacturer geometry only: known outline 25.4 x 34.3 mm; two 2.0 mm drills; horizontal centre spacing 20.4 mm; left edge-to-centre offset 2.5 mm. y coordinates remain unknown.'
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:57:52+00:00'

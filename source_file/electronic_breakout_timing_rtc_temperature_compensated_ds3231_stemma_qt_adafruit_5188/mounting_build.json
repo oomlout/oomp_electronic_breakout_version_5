@@ -1,0 +1,117 @@
+{
+  "record_sha256": "451f68b691e1e90381071680a6cb4554877ea5507f6b1662bb8cab2777aa9f80",
+  "generated_at": "2026-11-06T19:18:00+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188/3dpr.scad",
+      "bytes": 3239,
+      "sha256": "efe1128f70bae39a898dee30240ac8c63a8b42117ee3b6a0729e7bd2541f0688"
+    },
+    {
+      "path": "parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188/3dpr_short_sides.scad",
+      "bytes": 1920,
+      "sha256": "56f11df9198efe939206feb9727fe5b27f2242c17dabab37dbd95d6778bfa032"
+    },
+    {
+      "path": "parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188/3dpr_long_side.scad",
+      "bytes": 1758,
+      "sha256": "9d50969a760000147e19397b4f2b525eb57d6f9487126882dbef7bbbfe67ec24"
+    },
+    {
+      "path": "parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188/3dpr.stl",
+      "bytes": 1460025,
+      "sha256": "ce964d957aff1e319a8ea3699f7854b0e796321dee65b34aa135eb5eb9214493"
+    },
+    {
+      "path": "parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188/3dpr_short_sides.stl",
+      "bytes": 584586,
+      "sha256": "ca6ef284d4c671fdea8f153d8c14313a004720ed3a5c6d63048635f87f05b92d"
+    },
+    {
+      "path": "parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188/3dpr_long_side.stl",
+      "bytes": 437231,
+      "sha256": "9c2c31dead7b549c6784dbb8970997e09aaf6ab59f16a1b7bc45b73cf40c7985"
+    },
+    {
+      "path": "parts/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188/mounting_variants.json",
+      "bytes": 4428,
+      "sha256": "08751a50989a0904fa602ae60ab494725675495517c48f9d6ad86b06a0ec5420"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 8900.42305538696,
+    "bounds_mm": [
+      [
+        -29.5,
+        -29.49013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        29.49013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 8900.42305538696,
+        "bounds_mm": [
+          [
+            -29.5,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 4689.282180661999,
+        "bounds_mm": [
+          [
+            -29.5,
+            -14.490133642141359,
+            0.0
+          ],
+          [
+            29.5,
+            14.490133642141359,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 3931.7468672079594,
+        "bounds_mm": [
+          [
+            -15.7,
+            -14.490133642141359,
+            0.0
+          ],
+          [
+            15.7,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

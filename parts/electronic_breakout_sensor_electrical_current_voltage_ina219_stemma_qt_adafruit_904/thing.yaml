@@ -1,0 +1,4609 @@
+bip_39_2_word_array:
+- include
+- radio
+bip_39_2_word_no_space: includeradio
+bip_39_2_word_space: include radio
+bip_39_2_word_underscore: include_radio
+bip_39_3_word_array:
+- include
+- radio
+- become
+bip_39_3_word_no_space: includeradiobecome
+bip_39_3_word_space: include radio become
+bip_39_3_word_underscore: include_radio_become
+bip_39_full_array:
+- include
+- radio
+- become
+- clog
+- humble
+- regret
+- easily
+- high
+- series
+- delay
+- stool
+- jump
+bip_39_full_no_space: includeradiobecomecloghumbleregreteasilyhighseriesdelaystooljump
+bip_39_full_space: include radio become clog humble regret easily high series delay
+  stool jump
+bip_39_full_underscore: include_radio_become_clog_humble_regret_easily_high_series_delay_stool_jump
+board_variant: stemma_qt
+breakout_description: stemma_qt
+breakout_pcb_height: 20.32
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+- Default I2C address not established in this import.
+definition_authority: working_oomp_populate_i2c.py
+description: Current and bus-voltage measurement for battery, solar and power-use
+  experiments.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+directory: parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+geometry_ready: false
+i2c:
+  address_evidence_status: partial_product_page_evidence
+  address_selection: solder_jumpers
+  clock_stretching: unverified
+  default_address_7bit: null
+  documented_addresses_7bit:
+  - 64
+  - 65
+  - 68
+  - 69
+  maximum_clock_hz: null
+  source_id: product
+id: electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+id_no_class: electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+id_no_size: electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+id_no_type: electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+id_oobb: electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+kwargs:
+  breakout_pcb_height: 20.32
+  breakout_pcb_width: 25.4
+  modes:
+  - 3dpr
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$20:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$25:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -7.62
+  - diameter_mm: 2.5
+    id: U$27:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -7.62
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 7.62
+  - - 10.16
+    - 7.62
+  - - -10.16
+    - -7.62
+  - - 10.16
+    - -7.62
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  overwrite: true
+  part_ids:
+  - electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+  type: default_mounting_plate_default
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+manufacturer: adafruit
+manufacturer_part_number: '904'
+md5: 7276184f95c6ef6951635cc4073f59bc
+md5_10: 7276184f95
+md5_10_upper: 7276184F95
+md5_5: '72761'
+md5_5_upper: '72761'
+md5_6: '727618'
+md5_6_alpha: 4gs2g
+md5_6_alpha_upper: 4GS2G
+md5_6_upper: '727618'
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 2.5
+  id: U$20:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 7.62
+- diameter_mm: 2.5
+  id: U$21:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 7.62
+- diameter_mm: 2.5
+  id: U$25:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: -7.62
+- diameter_mm: 2.5
+  id: U$27:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: -7.62
+mounting_hole_radius_name: m2
+mounting_hole_radius_names:
+- m2
+- m2
+- m2
+- m2
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - 7.62
+- - 10.16
+  - 7.62
+- - -10.16
+  - -7.62
+- - 10.16
+  - -7.62
+mounting_lift: 3
+mounting_research:
+  board_revision: Adafruit INA219 STEMMA QT carrier PCB, board file added 2021-08-31
+    (pinned EAGLE CAD commit 79101aee6a906cb73e03a1a171339960f7350576); product history
+    identifies the STEMMA QT mechanical update as 2021-01-29. Product listing notes
+    a pre-soldered terminal-block assembly option since 2024-05-31; this does not
+    change the PCB outline/hole geometry established by the carrier CAD.
+  board_size:
+  - 25.4
+  - 20.32
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: "EAGLE XML layer-20 plain wires define a closed rounded outline with\
+    \ bounding limits x=0..25.4 mm and y=0..20.32 mm. Native origin is lower-left;\
+    \ top-view canonical coordinates use x_mm=x_native-12.7 and y_mm=y_native-10.16,\
+    \ with no quarter-turn (0). Thus each selected mounting pad at native (2.54 or\
+    \ 22.86, 2.54 or 17.78) becomes x=\xB110.16 mm, y=\xB17.62 mm. Hole diameter is\
+    \ the CAD drill 2.5 mm. Preview intentionally shows the bounding box, not the\
+    \ rounded physical outline."
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: "Adafruit product 904 is titled INA219 STEMMA QT and its revision\
+    \ history identifies the four-hole/two-QT mechanical revision. Adafruit repository\
+    \ adafruit/Adafruit-INA219-Current-Sensor-PCB describes the product 904 hardware;\
+    \ commit 79101aee6a906cb73e03a1a171339960f7350576 is explicitly \u201CAdd STEMMA\
+    \ QT board files\u201D and contains Adafruit INA219 STEMMA QT.brd."
+  mounting_holes:
+  - diameter_mm: 2.5
+    id: U$20:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$25:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: -7.62
+  - diameter_mm: 2.5
+    id: U$27:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: -7.62
+  record_sha256: 18e75ed199eee50d6dcdd36085d8063e9254dfcdf59fe510e616b4e7e9265492
+  research_file: source_file/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 250983
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit INA219 STEMMA QT.brd
+    locator: Adafruit INA219 STEMMA QT.brd at commit 79101aee6a906cb73e03a1a171339960f7350576;
+      inspect complete XML board outline, dimension text, package names and all drill
+      candidates
+    registered_at: '2026-11-06T18:54:06+00:00'
+    sha256: 2a114d101bf924a550649b8eadee45d16584debab93e88410f6f2ab86a05fb45
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/79101aee6a906cb73e03a1a171339960f7350576/Adafruit%20INA219%20STEMMA%20QT.brd
+  - bytes: 5469
+    id: commit
+    kind: manufacturer_repository
+    local_file: mounting_evidence/commit.json
+    locator: Official repository commit dated 2021-08-31; message Add STEMMA QT board
+      files; pins exact board revision and CAD path
+    registered_at: '2026-11-06T18:54:30+00:00'
+    sha256: 0652c2369214bfcdf7a3487438070dc9e6d65a47d25d4d184fca0e121ac17626
+    url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB/commits/79101aee6a906cb73e03a1a171339960f7350576
+  - bytes: 7244
+    id: repository
+    kind: manufacturer_repository
+    local_file: mounting_evidence/repository.json
+    locator: Official Adafruit repository description maps hardware to product 904;
+      repository contains STEMMA QT EAGLE board design
+    registered_at: '2026-11-06T18:54:31+00:00'
+    sha256: ae72c01fbd0533fdab3bbdea7f95b43ae9a2c9cf5adefb26d921b681ff15333f
+    url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB
+  - bytes: 103110
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Product 904 title identifies INA219 STEMMA QT; revision history says
+      January 29 2021 mechanical update introduced four mounting holes and two QT
+      connectors
+    registered_at: '2026-11-06T18:54:32+00:00'
+    sha256: ea561ba76669f58d7331f70cb05bb64e9ea4e7bfe9d7d476d7e384ac3074e3d3
+    url: https://www.adafruit.com/product/904
+  status: verified
+name: Electronic Breakout Sensor Electrical Current Voltage Ina219 Stemma Qt Adafruit
+  904
+name_no_class: Electronic Breakout Sensor Electrical Current Voltage Ina219 Stemma
+  Qt Adafruit 904
+name_no_size: Electronic Breakout Sensor Electrical Current Voltage Ina219 Stemma
+  Qt Adafruit 904
+name_no_type: Electronic Breakout Sensor Electrical Current Voltage Ina219 Stemma
+  Qt Adafruit 904
+name_proper: Electronic Breakout Sensor Electrical Current Voltage Ina219 Stemma Qt
+  Adafruit 904
+name_readable: Adafruit INA219, STEMMA QT
+name_space: electronic breakout sensor electrical current voltage ina219 stemma qt
+  adafruit 904
+name_upper: ELECTRONIC BREAKOUT SENSOR ELECTRICAL CURRENT VOLTAGE INA219 STEMMA QT
+  ADAFRUIT 904
+notes:
+- Product revisions may fit INA219A or INA219B in SOT-23 or SOIC packages; do not
+  assert a single fitted grade.
+- The current board has a pre-soldered terminal block; board nominal shunt is 0.1
+  ohm.
+oobb_details:
+- breakout_pcb_height: 20.32
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$20:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$25:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -7.62
+  - diameter_mm: 2.5
+    id: U$27:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -7.62
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 7.62
+  - - 10.16
+    - 7.62
+  - - -10.16
+    - -7.62
+  - - 10.16
+    - -7.62
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 20.32
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$20:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$25:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -7.62
+  - diameter_mm: 2.5
+    id: U$27:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -7.62
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 7.62
+  - - 10.16
+    - 7.62
+  - - -10.16
+    - -7.62
+  - - 10.16
+    - -7.62
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 20.32
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$20:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$25:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -7.62
+  - diameter_mm: 2.5
+    id: U$27:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -7.62
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 7.62
+  - - 10.16
+    - 7.62
+  - - -10.16
+    - -7.62
+  - - 10.16
+    - -7.62
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      board_variant: stemma_qt
+      breakout_description: stemma_qt
+      breakout_pcb_height: 20.32
+      breakout_pcb_width: 25.4
+      catalogue: i2c_breakouts
+      catalogue_status: product_page_reference
+      data_gaps:
+      - Physical connector/pad map and coordinates not imported.
+      - Located mounting holes and complete assembly/connector clearances not imported.
+      - Pull-up values/rails and full electrical limits require schematic review.
+      - Carrier PCB outline dimensions not verified.
+      - Default I2C address not established in this import.
+      definition_authority: working_oomp_populate_i2c.py
+      description: Current and bus-voltage measurement for battery, solar and power-use
+        experiments.
+      dimensions_mm:
+        height: null
+        scope: pcb_outline_not_established
+        source_id: null
+        status: unverified
+        width: null
+      directory: parts\electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+      geometry_ready: false
+      i2c:
+        address_evidence_status: partial_product_page_evidence
+        address_selection: solder_jumpers
+        clock_stretching: unverified
+        default_address_7bit: null
+        documented_addresses_7bit:
+        - 64
+        - 65
+        - 68
+        - 69
+        maximum_clock_hz: null
+        source_id: product
+      interface_scope: documented_board_interfaces_only
+      interfaces:
+      - i2c
+      item_kind: breakout
+      manufacturer: adafruit
+      manufacturer_part_number: '904'
+      mounting_coordinate_system:
+        origin: pcb_bounding_box_centre
+        units: mm
+        view: top
+        x_positive: right
+        y_positive: up
+      mounting_geometry_ready: true
+      mounting_hole_details:
+      - diameter_mm: 2.5
+        id: U$20:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: -10.16
+        y_mm: 7.62
+      - diameter_mm: 2.5
+        id: U$21:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: 10.16
+        y_mm: 7.62
+      - diameter_mm: 2.5
+        id: U$25:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: -10.16
+        y_mm: -7.62
+      - diameter_mm: 2.5
+        id: U$27:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: 10.16
+        y_mm: -7.62
+      mounting_hole_radius_name: m2
+      mounting_hole_radius_names:
+      - m2
+      - m2
+      - m2
+      - m2
+      mounting_hole_status: verified
+      mounting_holes:
+      - - -10.16
+        - 7.62
+      - - 10.16
+        - 7.62
+      - - -10.16
+        - -7.62
+      - - 10.16
+        - -7.62
+      mounting_lift: 3
+      mounting_research:
+        board_revision: Adafruit INA219 STEMMA QT carrier PCB, board file added 2021-08-31
+          (pinned EAGLE CAD commit 79101aee6a906cb73e03a1a171339960f7350576); product
+          history identifies the STEMMA QT mechanical update as 2021-01-29. Product
+          listing notes a pre-soldered terminal-block assembly option since 2024-05-31;
+          this does not change the PCB outline/hole geometry established by the carrier
+          CAD.
+        board_size:
+        - 25.4
+        - 20.32
+        coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        derivation: "EAGLE XML layer-20 plain wires define a closed rounded outline\
+          \ with bounding limits x=0..25.4 mm and y=0..20.32 mm. Native origin is\
+          \ lower-left; top-view canonical coordinates use x_mm=x_native-12.7 and\
+          \ y_mm=y_native-10.16, with no quarter-turn (0). Thus each selected mounting\
+          \ pad at native (2.54 or 22.86, 2.54 or 17.78) becomes x=\xB110.16 mm, y=\xB1\
+          7.62 mm. Hole diameter is the CAD drill 2.5 mm. Preview intentionally shows\
+          \ the bounding box, not the rounded physical outline."
+        fit_status: generic_holder_not_physical_fit_tested
+        identity_evidence: "Adafruit product 904 is titled INA219 STEMMA QT and its\
+          \ revision history identifies the four-hole/two-QT mechanical revision.\
+          \ Adafruit repository adafruit/Adafruit-INA219-Current-Sensor-PCB describes\
+          \ the product 904 hardware; commit 79101aee6a906cb73e03a1a171339960f7350576\
+          \ is explicitly \u201CAdd STEMMA QT board files\u201D and contains Adafruit\
+          \ INA219 STEMMA QT.brd."
+        mounting_holes:
+        - diameter_mm: 2.5
+          id: U$20:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: -10.16
+          y_mm: 7.62
+        - diameter_mm: 2.5
+          id: U$21:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: 10.16
+          y_mm: 7.62
+        - diameter_mm: 2.5
+          id: U$25:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: -10.16
+          y_mm: -7.62
+        - diameter_mm: 2.5
+          id: U$27:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: 10.16
+          y_mm: -7.62
+        record_sha256: 18e75ed199eee50d6dcdd36085d8063e9254dfcdf59fe510e616b4e7e9265492
+        research_file: source_file/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904/mounting.yaml
+        reviewed_by: gpt-6-luna
+        sources:
+        - bytes: 250983
+          id: cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Adafruit INA219 STEMMA QT.brd
+          locator: Adafruit INA219 STEMMA QT.brd at commit 79101aee6a906cb73e03a1a171339960f7350576;
+            inspect complete XML board outline, dimension text, package names and
+            all drill candidates
+          registered_at: '2026-11-06T18:54:06+00:00'
+          sha256: 2a114d101bf924a550649b8eadee45d16584debab93e88410f6f2ab86a05fb45
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/79101aee6a906cb73e03a1a171339960f7350576/Adafruit%20INA219%20STEMMA%20QT.brd
+        - bytes: 5469
+          id: commit
+          kind: manufacturer_repository
+          local_file: mounting_evidence/commit.json
+          locator: Official repository commit dated 2021-08-31; message Add STEMMA
+            QT board files; pins exact board revision and CAD path
+          registered_at: '2026-11-06T18:54:30+00:00'
+          sha256: 0652c2369214bfcdf7a3487438070dc9e6d65a47d25d4d184fca0e121ac17626
+          url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB/commits/79101aee6a906cb73e03a1a171339960f7350576
+        - bytes: 7244
+          id: repository
+          kind: manufacturer_repository
+          local_file: mounting_evidence/repository.json
+          locator: Official Adafruit repository description maps hardware to product
+            904; repository contains STEMMA QT EAGLE board design
+          registered_at: '2026-11-06T18:54:31+00:00'
+          sha256: ae72c01fbd0533fdab3bbdea7f95b43ae9a2c9cf5adefb26d921b681ff15333f
+          url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB
+        - bytes: 103110
+          id: product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: Product 904 title identifies INA219 STEMMA QT; revision history
+            says January 29 2021 mechanical update introduced four mounting holes
+            and two QT connectors
+          registered_at: '2026-11-06T18:54:32+00:00'
+          sha256: ea561ba76669f58d7331f70cb05bb64e9ea4e7bfe9d7d476d7e384ac3074e3d3
+          url: https://www.adafruit.com/product/904
+        status: verified
+      name: electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+      name_proper: Electronic Breakout Sensor Electrical Current Voltage Ina219 Stemma
+        Qt Adafruit 904
+      name_readable: Adafruit INA219, STEMMA QT
+      name_space: electronic breakout sensor electrical current voltage ina219 stemma
+        qt adafruit 904
+      name_upper: ELECTRONIC BREAKOUT SENSOR ELECTRICAL CURRENT VOLTAGE INA219 STEMMA
+        QT ADAFRUIT 904
+      notes:
+      - Product revisions may fit INA219A or INA219B in SOT-23 or SOIC packages; do
+        not assert a single fitted grade.
+      - The current board has a pre-soldered terminal block; board nominal shunt is
+        0.1 ohm.
+      oobb_details:
+      - breakout_pcb_height: 20.32
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$20:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 7.62
+        - diameter_mm: 2.5
+          id: U$21:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 7.62
+        - diameter_mm: 2.5
+          id: U$25:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -7.62
+        - diameter_mm: 2.5
+          id: U$27:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: -7.62
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -10.16
+          - 7.62
+        - - 10.16
+          - 7.62
+        - - -10.16
+          - -7.62
+        - - 10.16
+          - -7.62
+        mounting_layout: full_wrap
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+      - breakout_pcb_height: 20.32
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$20:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 7.62
+        - diameter_mm: 2.5
+          id: U$21:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 7.62
+        - diameter_mm: 2.5
+          id: U$25:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -7.62
+        - diameter_mm: 2.5
+          id: U$27:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: -7.62
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -10.16
+          - 7.62
+        - - 10.16
+          - 7.62
+        - - -10.16
+          - -7.62
+        - - 10.16
+          - -7.62
+        mounting_layout: short_sides
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_short_sides
+      - breakout_pcb_height: 20.32
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$20:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 7.62
+        - diameter_mm: 2.5
+          id: U$21:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 7.62
+        - diameter_mm: 2.5
+          id: U$25:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -7.62
+        - diameter_mm: 2.5
+          id: U$27:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: -7.62
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -10.16
+          - 7.62
+        - - 10.16
+          - 7.62
+        - - -10.16
+          - -7.62
+        - - 10.16
+          - -7.62
+        mounting_layout: long_side
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_long_side
+      part_number: '904'
+      part_number_adafruit: '904'
+      pinout_status: unverified
+      pins: {}
+      product_dimensions_mm:
+        depth: 4.7
+        height: 20.4
+        scope: manufacturer_product_dimensions_not_verified_pcb_outline
+        source_id: product
+        width: 25.6
+      research_date: '2026-10-23'
+      schema_version: 1
+      sources:
+      - id: product
+        kind: manufacturer_product_page
+        retrieved: '2026-10-23'
+        scope: identity, stated interfaces/features and recorded nominal dimensions
+        url: https://www.adafruit.com/product/904
+      - bytes: 250983
+        id: mounting_cad
+        kind: manufacturer_cad
+        local_file: mounting_evidence/Adafruit INA219 STEMMA QT.brd
+        locator: Adafruit INA219 STEMMA QT.brd at commit 79101aee6a906cb73e03a1a171339960f7350576;
+          inspect complete XML board outline, dimension text, package names and all
+          drill candidates
+        registered_at: '2026-11-06T18:54:06+00:00'
+        sha256: 2a114d101bf924a550649b8eadee45d16584debab93e88410f6f2ab86a05fb45
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/79101aee6a906cb73e03a1a171339960f7350576/Adafruit%20INA219%20STEMMA%20QT.brd
+      - bytes: 5469
+        id: mounting_commit
+        kind: manufacturer_repository
+        local_file: mounting_evidence/commit.json
+        locator: Official repository commit dated 2021-08-31; message Add STEMMA QT
+          board files; pins exact board revision and CAD path
+        registered_at: '2026-11-06T18:54:30+00:00'
+        sha256: 0652c2369214bfcdf7a3487438070dc9e6d65a47d25d4d184fca0e121ac17626
+        url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB/commits/79101aee6a906cb73e03a1a171339960f7350576
+      - bytes: 7244
+        id: mounting_repository
+        kind: manufacturer_repository
+        local_file: mounting_evidence/repository.json
+        locator: Official Adafruit repository description maps hardware to product
+          904; repository contains STEMMA QT EAGLE board design
+        registered_at: '2026-11-06T18:54:31+00:00'
+        sha256: ae72c01fbd0533fdab3bbdea7f95b43ae9a2c9cf5adefb26d921b681ff15333f
+        url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB
+      - bytes: 103110
+        id: mounting_product
+        kind: manufacturer_product
+        local_file: website.html
+        locator: Product 904 title identifies INA219 STEMMA QT; revision history says
+          January 29 2021 mechanical update introduced four mounting holes and two
+          QT connectors
+        registered_at: '2026-11-06T18:54:32+00:00'
+        sha256: ea561ba76669f58d7331f70cb05bb64e9ea4e7bfe9d7d476d7e384ac3074e3d3
+        url: https://www.adafruit.com/product/904
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: adafruit
+      taxonomy_15: '904'
+      taxonomy_2: breakout
+      taxonomy_3: sensor
+      taxonomy_4: electrical
+      taxonomy_5: current_voltage
+      taxonomy_6: ina219
+      taxonomy_7: stemma_qt
+      taxonomy_8: ''
+      taxonomy_9: ''
+      taxonomy_schema: breakout_function_v1
+      type_1: sensor
+      type_2: electrical
+      type_3: current_voltage
+      type_4: ina219
+      url_chat: ''
+      webpage: https://www.adafruit.com/product/904
+      webpage_adafruit: https://www.adafruit.com/product/904
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+part_number: '904'
+part_number_adafruit: '904'
+pinout_status: unverified
+pins: {}
+product_dimensions_mm:
+  depth: 4.7
+  height: 20.4
+  scope: manufacturer_product_dimensions_not_verified_pcb_outline
+  source_id: product
+  width: 25.6
+project_name: C:\gh\oomp_electronic_breakout_version_5
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/904
+- bytes: 250983
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Adafruit INA219 STEMMA QT.brd
+  locator: Adafruit INA219 STEMMA QT.brd at commit 79101aee6a906cb73e03a1a171339960f7350576;
+    inspect complete XML board outline, dimension text, package names and all drill
+    candidates
+  registered_at: '2026-11-06T18:54:06+00:00'
+  sha256: 2a114d101bf924a550649b8eadee45d16584debab93e88410f6f2ab86a05fb45
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/79101aee6a906cb73e03a1a171339960f7350576/Adafruit%20INA219%20STEMMA%20QT.brd
+- bytes: 5469
+  id: mounting_commit
+  kind: manufacturer_repository
+  local_file: mounting_evidence/commit.json
+  locator: Official repository commit dated 2021-08-31; message Add STEMMA QT board
+    files; pins exact board revision and CAD path
+  registered_at: '2026-11-06T18:54:30+00:00'
+  sha256: 0652c2369214bfcdf7a3487438070dc9e6d65a47d25d4d184fca0e121ac17626
+  url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB/commits/79101aee6a906cb73e03a1a171339960f7350576
+- bytes: 7244
+  id: mounting_repository
+  kind: manufacturer_repository
+  local_file: mounting_evidence/repository.json
+  locator: Official Adafruit repository description maps hardware to product 904;
+    repository contains STEMMA QT EAGLE board design
+  registered_at: '2026-11-06T18:54:31+00:00'
+  sha256: ae72c01fbd0533fdab3bbdea7f95b43ae9a2c9cf5adefb26d921b681ff15333f
+  url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB
+- bytes: 103110
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: Product 904 title identifies INA219 STEMMA QT; revision history says January
+    29 2021 mechanical update introduced four mounting holes and two QT connectors
+  registered_at: '2026-11-06T18:54:32+00:00'
+  sha256: ea561ba76669f58d7331f70cb05bb64e9ea4e7bfe9d7d476d7e384ac3074e3d3
+  url: https://www.adafruit.com/product/904
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_14_capital: Adafruit
+taxonomy_14_first_letter: a
+taxonomy_14_first_letter_upper: A
+taxonomy_14_length_1: a
+taxonomy_14_length_2: ad
+taxonomy_14_length_3: ada
+taxonomy_14_length_4: adaf
+taxonomy_14_length_5: adafr
+taxonomy_14_upper: ADAFRUIT
+taxonomy_14_upper_length_1: A
+taxonomy_14_upper_length_2: AD
+taxonomy_14_upper_length_3: ADA
+taxonomy_14_upper_length_4: ADAF
+taxonomy_14_upper_length_5: ADAFR
+taxonomy_15: '904'
+taxonomy_15_capital: '904'
+taxonomy_15_first_letter: '9'
+taxonomy_15_first_letter_upper: '9'
+taxonomy_15_length_1: '9'
+taxonomy_15_length_2: '90'
+taxonomy_15_length_3: '904'
+taxonomy_15_length_4: '904'
+taxonomy_15_length_5: '904'
+taxonomy_15_upper: '904'
+taxonomy_15_upper_length_1: '9'
+taxonomy_15_upper_length_2: '90'
+taxonomy_15_upper_length_3: '904'
+taxonomy_15_upper_length_4: '904'
+taxonomy_15_upper_length_5: '904'
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: sensor
+taxonomy_3_capital: Sensor
+taxonomy_3_first_letter: s
+taxonomy_3_first_letter_upper: S
+taxonomy_3_length_1: s
+taxonomy_3_length_2: se
+taxonomy_3_length_3: sen
+taxonomy_3_length_4: sens
+taxonomy_3_length_5: senso
+taxonomy_3_upper: SENSOR
+taxonomy_3_upper_length_1: S
+taxonomy_3_upper_length_2: SE
+taxonomy_3_upper_length_3: SEN
+taxonomy_3_upper_length_4: SENS
+taxonomy_3_upper_length_5: SENSO
+taxonomy_4: electrical
+taxonomy_4_capital: Electrical
+taxonomy_4_first_letter: e
+taxonomy_4_first_letter_upper: E
+taxonomy_4_length_1: e
+taxonomy_4_length_2: el
+taxonomy_4_length_3: ele
+taxonomy_4_length_4: elec
+taxonomy_4_length_5: elect
+taxonomy_4_upper: ELECTRICAL
+taxonomy_4_upper_length_1: E
+taxonomy_4_upper_length_2: EL
+taxonomy_4_upper_length_3: ELE
+taxonomy_4_upper_length_4: ELEC
+taxonomy_4_upper_length_5: ELECT
+taxonomy_5: current_voltage
+taxonomy_5_capital: Current Voltage
+taxonomy_5_first_letter: c
+taxonomy_5_first_letter_upper: C
+taxonomy_5_length_1: c
+taxonomy_5_length_2: cu
+taxonomy_5_length_3: cur
+taxonomy_5_length_4: curr
+taxonomy_5_length_5: curre
+taxonomy_5_upper: CURRENT_VOLTAGE
+taxonomy_5_upper_length_1: C
+taxonomy_5_upper_length_2: CU
+taxonomy_5_upper_length_3: CUR
+taxonomy_5_upper_length_4: CURR
+taxonomy_5_upper_length_5: CURRE
+taxonomy_6: ina219
+taxonomy_6_capital: Ina219
+taxonomy_6_first_letter: i
+taxonomy_6_first_letter_upper: I
+taxonomy_6_length_1: i
+taxonomy_6_length_2: in
+taxonomy_6_length_3: ina
+taxonomy_6_length_4: ina2
+taxonomy_6_length_5: ina21
+taxonomy_6_upper: INA219
+taxonomy_6_upper_length_1: I
+taxonomy_6_upper_length_2: IN
+taxonomy_6_upper_length_3: INA
+taxonomy_6_upper_length_4: INA2
+taxonomy_6_upper_length_5: INA21
+taxonomy_7: stemma_qt
+taxonomy_7_capital: Stemma Qt
+taxonomy_7_first_letter: s
+taxonomy_7_first_letter_upper: S
+taxonomy_7_length_1: s
+taxonomy_7_length_2: st
+taxonomy_7_length_3: ste
+taxonomy_7_length_4: stem
+taxonomy_7_length_5: stemm
+taxonomy_7_upper: STEMMA_QT
+taxonomy_7_upper_length_1: S
+taxonomy_7_upper_length_2: ST
+taxonomy_7_upper_length_3: STE
+taxonomy_7_upper_length_4: STEM
+taxonomy_7_upper_length_5: STEMM
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+thing:
+  bip_39_2_word_array:
+  - include
+  - radio
+  bip_39_2_word_no_space: includeradio
+  bip_39_2_word_space: include radio
+  bip_39_2_word_underscore: include_radio
+  bip_39_3_word_array:
+  - include
+  - radio
+  - become
+  bip_39_3_word_no_space: includeradiobecome
+  bip_39_3_word_space: include radio become
+  bip_39_3_word_underscore: include_radio_become
+  bip_39_full_array:
+  - include
+  - radio
+  - become
+  - clog
+  - humble
+  - regret
+  - easily
+  - high
+  - series
+  - delay
+  - stool
+  - jump
+  bip_39_full_no_space: includeradiobecomecloghumbleregreteasilyhighseriesdelaystooljump
+  bip_39_full_space: include radio become clog humble regret easily high series delay
+    stool jump
+  bip_39_full_underscore: include_radio_become_clog_humble_regret_easily_high_series_delay_stool_jump
+  board_variant: stemma_qt
+  breakout_description: stemma_qt
+  breakout_pcb_height: 20.32
+  breakout_pcb_width: 25.4
+  catalogue: i2c_breakouts
+  catalogue_status: product_page_reference
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 4.0
+      pos:
+      - 0.0
+      - 0.0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 59.0
+      - 59.0
+      - 3
+      type: positive
+      width: 4.0
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - -7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - 7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -7.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -7.5
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -7.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - -15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - 0.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - 15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -15.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -15.0
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -15.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -15.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -15.0
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -15.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 0.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 0.0
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 0.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 15.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 15.0
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 15.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 15.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 15.0
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 15.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - -10.16
+      - 7.62
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id001
+      - -10.16
+      - 7.62
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id001
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id001
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - 10.16
+      - 7.62
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id002
+      - 10.16
+      - 7.62
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id002
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id002
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - -10.16
+      - -7.62
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id003
+      - -10.16
+      - -7.62
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id003
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id003
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - 10.16
+      - -7.62
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id004
+      - 10.16
+      - -7.62
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id004
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id004
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  components_objects:
+  - breakout_pcb_height: 20.32
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 4.0
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$20:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$25:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -7.62
+    - diameter_mm: 2.5
+      id: U$27:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -7.62
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 7.62
+    - - 10.16
+      - 7.62
+    - - -10.16
+      - -7.62
+    - - 10.16
+      - -7.62
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+    pos:
+    - 0.0
+    - 0.0
+    - 0
+    save_type: none
+    shape: oobb_plate
+    type: positive
+    width: 4.0
+  - depth: 5
+    pos:
+    - -22.5
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - -7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - 7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -7.5
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -7.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 7.5
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 7.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - -7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - -15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - 0.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - 15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -15.0
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -15.0
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 0.0
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 0.0
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 15.0
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 15.0
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - -15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 0.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - breakout_pcb_height: 20.32
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$20:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$25:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -7.62
+    - diameter_mm: 2.5
+      id: U$27:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -7.62
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 7.62
+    - - 10.16
+      - 7.62
+    - - -10.16
+      - -7.62
+    - - 10.16
+      - -7.62
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+    pos:
+    - -10.16
+    - 7.62
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 20.32
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$20:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$25:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -7.62
+    - diameter_mm: 2.5
+      id: U$27:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -7.62
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 7.62
+    - - 10.16
+      - 7.62
+    - - -10.16
+      - -7.62
+    - - 10.16
+      - -7.62
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+    pos:
+    - -10.16
+    - 7.62
+    - 4.5
+    radius: 2.75
+    save_type: none
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 20.32
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$20:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$25:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -7.62
+    - diameter_mm: 2.5
+      id: U$27:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -7.62
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 7.62
+    - - 10.16
+      - 7.62
+    - - -10.16
+      - -7.62
+    - - 10.16
+      - -7.62
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+    pos:
+    - 10.16
+    - 7.62
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 20.32
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$20:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$25:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -7.62
+    - diameter_mm: 2.5
+      id: U$27:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -7.62
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 7.62
+    - - 10.16
+      - 7.62
+    - - -10.16
+      - -7.62
+    - - 10.16
+      - -7.62
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+    pos:
+    - 10.16
+    - 7.62
+    - 4.5
+    radius: 2.75
+    save_type: none
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 20.32
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$20:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$25:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -7.62
+    - diameter_mm: 2.5
+      id: U$27:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -7.62
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 7.62
+    - - 10.16
+      - 7.62
+    - - -10.16
+      - -7.62
+    - - 10.16
+      - -7.62
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+    pos:
+    - -10.16
+    - -7.62
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 20.32
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$20:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$25:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -7.62
+    - diameter_mm: 2.5
+      id: U$27:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -7.62
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 7.62
+    - - 10.16
+      - 7.62
+    - - -10.16
+      - -7.62
+    - - 10.16
+      - -7.62
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+    pos:
+    - -10.16
+    - -7.62
+    - 4.5
+    radius: 2.75
+    save_type: none
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 20.32
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$20:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$25:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -7.62
+    - diameter_mm: 2.5
+      id: U$27:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -7.62
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 7.62
+    - - 10.16
+      - 7.62
+    - - -10.16
+      - -7.62
+    - - 10.16
+      - -7.62
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+    pos:
+    - 10.16
+    - -7.62
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 20.32
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$20:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$25:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -7.62
+    - diameter_mm: 2.5
+      id: U$27:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -7.62
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 7.62
+    - - 10.16
+      - 7.62
+    - - -10.16
+      - -7.62
+    - - 10.16
+      - -7.62
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+    pos:
+    - 10.16
+    - -7.62
+    - 4.5
+    radius: 2.75
+    save_type: none
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_'electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_20.32_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$20:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$25:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-7.62}_{'diameter_mm':2.5_'id':'u$27:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-7.62}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_7.62_10.16_7.62_-10.16_-7.62_10.16_-7.62_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_4.0_width_4.0_height
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-22.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-22.5_-7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-22.5_7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-22.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-7.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-7.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_7.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_7.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_-7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-22.5_-15.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-22.5_0.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-22.5_15.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-15.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-15.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_0.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_0.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_15.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_15.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_-15.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_0.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_15.0_-1_pos
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_-10.16_7.62_0_pos_'electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_20.32_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$20:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$25:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-7.62}_{'diameter_mm':2.5_'id':'u$27:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-7.62}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_7.62_10.16_7.62_-10.16_-7.62_10.16_-7.62_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-10.16_7.62_4.5_pos_'electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_20.32_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$20:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$25:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-7.62}_{'diameter_mm':2.5_'id':'u$27:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-7.62}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_7.62_10.16_7.62_-10.16_-7.62_10.16_-7.62_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_10.16_7.62_0_pos_'electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_20.32_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$20:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$25:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-7.62}_{'diameter_mm':2.5_'id':'u$27:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-7.62}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_7.62_10.16_7.62_-10.16_-7.62_10.16_-7.62_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_10.16_7.62_4.5_pos_'electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_20.32_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$20:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$25:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-7.62}_{'diameter_mm':2.5_'id':'u$27:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-7.62}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_7.62_10.16_7.62_-10.16_-7.62_10.16_-7.62_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_-10.16_-7.62_0_pos_'electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_20.32_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$20:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$25:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-7.62}_{'diameter_mm':2.5_'id':'u$27:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-7.62}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_7.62_10.16_7.62_-10.16_-7.62_10.16_-7.62_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-10.16_-7.62_4.5_pos_'electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_20.32_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$20:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$25:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-7.62}_{'diameter_mm':2.5_'id':'u$27:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-7.62}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_7.62_10.16_7.62_-10.16_-7.62_10.16_-7.62_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_10.16_-7.62_0_pos_'electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_20.32_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$20:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$25:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-7.62}_{'diameter_mm':2.5_'id':'u$27:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-7.62}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_7.62_10.16_7.62_-10.16_-7.62_10.16_-7.62_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_10.16_-7.62_4.5_pos_'electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_20.32_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$20:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$21:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':7.62}_{'diameter_mm':2.5_'id':'u$25:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-7.62}_{'diameter_mm':2.5_'id':'u$27:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-7.62}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_7.62_10.16_7.62_-10.16_-7.62_10.16_-7.62_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_2.75_radius
+  data_gaps:
+  - Physical connector/pad map and coordinates not imported.
+  - Located mounting holes and complete assembly/connector clearances not imported.
+  - Pull-up values/rails and full electrical limits require schematic review.
+  - Carrier PCB outline dimensions not verified.
+  - Default I2C address not established in this import.
+  definition_authority: working_oomp_populate_i2c.py
+  description: Current and bus-voltage measurement for battery, solar and power-use
+    experiments.
+  description_extra: ''
+  description_main: ''
+  dimensions_mm:
+    height: null
+    scope: pcb_outline_not_established
+    source_id: null
+    status: unverified
+    width: null
+  directory: parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+  geometry_ready: false
+  i2c:
+    address_evidence_status: partial_product_page_evidence
+    address_selection: solder_jumpers
+    clock_stretching: unverified
+    default_address_7bit: null
+    documented_addresses_7bit:
+    - 64
+    - 65
+    - 68
+    - 69
+    maximum_clock_hz: null
+    source_id: product
+  id: electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+  id_no_class: electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+  id_no_size: electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+  id_no_type: electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+  interface_scope: documented_board_interfaces_only
+  interfaces:
+  - i2c
+  item_kind: breakout
+  kwargs:
+    breakout_pcb_height: 20.32
+    breakout_pcb_width: 25.4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$20:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$25:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -7.62
+    - diameter_mm: 2.5
+      id: U$27:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -7.62
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 7.62
+    - - 10.16
+      - 7.62
+    - - -10.16
+      - -7.62
+    - - 10.16
+      - -7.62
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+    save_type: none
+    type: default_mounting_plate_default
+  link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+  link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+  link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+  manufacturer: adafruit
+  manufacturer_part_number: '904'
+  md5: 7276184f95c6ef6951635cc4073f59bc
+  md5_10: 7276184f95
+  md5_10_upper: 7276184F95
+  md5_5: '72761'
+  md5_5_upper: '72761'
+  md5_6: '727618'
+  md5_6_alpha: 4gs2g
+  md5_6_alpha_upper: 4GS2G
+  md5_6_upper: '727618'
+  mounting_coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  mounting_geometry_ready: true
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$20:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$25:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -7.62
+  - diameter_mm: 2.5
+    id: U$27:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -7.62
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_hole_status: verified
+  mounting_holes:
+  - - -10.16
+    - 7.62
+  - - 10.16
+    - 7.62
+  - - -10.16
+    - -7.62
+  - - 10.16
+    - -7.62
+  mounting_lift: 3
+  mounting_research:
+    board_revision: Adafruit INA219 STEMMA QT carrier PCB, board file added 2021-08-31
+      (pinned EAGLE CAD commit 79101aee6a906cb73e03a1a171339960f7350576); product
+      history identifies the STEMMA QT mechanical update as 2021-01-29. Product listing
+      notes a pre-soldered terminal-block assembly option since 2024-05-31; this does
+      not change the PCB outline/hole geometry established by the carrier CAD.
+    board_size:
+    - 25.4
+    - 20.32
+    coordinate_system:
+      origin: pcb_bounding_box_centre
+      units: mm
+      view: top
+      x_positive: right
+      y_positive: up
+    derivation: "EAGLE XML layer-20 plain wires define a closed rounded outline with\
+      \ bounding limits x=0..25.4 mm and y=0..20.32 mm. Native origin is lower-left;\
+      \ top-view canonical coordinates use x_mm=x_native-12.7 and y_mm=y_native-10.16,\
+      \ with no quarter-turn (0). Thus each selected mounting pad at native (2.54\
+      \ or 22.86, 2.54 or 17.78) becomes x=\xB110.16 mm, y=\xB17.62 mm. Hole diameter\
+      \ is the CAD drill 2.5 mm. Preview intentionally shows the bounding box, not\
+      \ the rounded physical outline."
+    fit_status: generic_holder_not_physical_fit_tested
+    identity_evidence: "Adafruit product 904 is titled INA219 STEMMA QT and its revision\
+      \ history identifies the four-hole/two-QT mechanical revision. Adafruit repository\
+      \ adafruit/Adafruit-INA219-Current-Sensor-PCB describes the product 904 hardware;\
+      \ commit 79101aee6a906cb73e03a1a171339960f7350576 is explicitly \u201CAdd STEMMA\
+      \ QT board files\u201D and contains Adafruit INA219 STEMMA QT.brd."
+    mounting_holes:
+    - diameter_mm: 2.5
+      id: U$20:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: -10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: 10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$25:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: -10.16
+      y_mm: -7.62
+    - diameter_mm: 2.5
+      id: U$27:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: 10.16
+      y_mm: -7.62
+    record_sha256: 18e75ed199eee50d6dcdd36085d8063e9254dfcdf59fe510e616b4e7e9265492
+    research_file: source_file/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904/mounting.yaml
+    reviewed_by: gpt-6-luna
+    sources:
+    - bytes: 250983
+      id: cad
+      kind: manufacturer_cad
+      local_file: mounting_evidence/Adafruit INA219 STEMMA QT.brd
+      locator: Adafruit INA219 STEMMA QT.brd at commit 79101aee6a906cb73e03a1a171339960f7350576;
+        inspect complete XML board outline, dimension text, package names and all
+        drill candidates
+      registered_at: '2026-11-06T18:54:06+00:00'
+      sha256: 2a114d101bf924a550649b8eadee45d16584debab93e88410f6f2ab86a05fb45
+      url: https://raw.githubusercontent.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/79101aee6a906cb73e03a1a171339960f7350576/Adafruit%20INA219%20STEMMA%20QT.brd
+    - bytes: 5469
+      id: commit
+      kind: manufacturer_repository
+      local_file: mounting_evidence/commit.json
+      locator: Official repository commit dated 2021-08-31; message Add STEMMA QT
+        board files; pins exact board revision and CAD path
+      registered_at: '2026-11-06T18:54:30+00:00'
+      sha256: 0652c2369214bfcdf7a3487438070dc9e6d65a47d25d4d184fca0e121ac17626
+      url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB/commits/79101aee6a906cb73e03a1a171339960f7350576
+    - bytes: 7244
+      id: repository
+      kind: manufacturer_repository
+      local_file: mounting_evidence/repository.json
+      locator: Official Adafruit repository description maps hardware to product 904;
+        repository contains STEMMA QT EAGLE board design
+      registered_at: '2026-11-06T18:54:31+00:00'
+      sha256: ae72c01fbd0533fdab3bbdea7f95b43ae9a2c9cf5adefb26d921b681ff15333f
+      url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB
+    - bytes: 103110
+      id: product
+      kind: manufacturer_product
+      local_file: website.html
+      locator: Product 904 title identifies INA219 STEMMA QT; revision history says
+        January 29 2021 mechanical update introduced four mounting holes and two QT
+        connectors
+      registered_at: '2026-11-06T18:54:32+00:00'
+      sha256: ea561ba76669f58d7331f70cb05bb64e9ea4e7bfe9d7d476d7e384ac3074e3d3
+      url: https://www.adafruit.com/product/904
+    status: verified
+  name: Electronic Breakout Sensor Electrical Current Voltage Ina219 Stemma Qt Adafruit
+    904
+  name_no_class: Electronic Breakout Sensor Electrical Current Voltage Ina219 Stemma
+    Qt Adafruit 904
+  name_no_size: Electronic Breakout Sensor Electrical Current Voltage Ina219 Stemma
+    Qt Adafruit 904
+  name_no_type: Electronic Breakout Sensor Electrical Current Voltage Ina219 Stemma
+    Qt Adafruit 904
+  name_proper: Electronic Breakout Sensor Electrical Current Voltage Ina219 Stemma
+    Qt Adafruit 904
+  name_readable: Adafruit INA219, STEMMA QT
+  name_short: Default Mounting Plate Default
+  name_space: electronic breakout sensor electrical current voltage ina219 stemma
+    qt adafruit 904
+  name_text: Oobb Part Default Mounting Plate Default
+  name_upper: ELECTRONIC BREAKOUT SENSOR ELECTRICAL CURRENT VOLTAGE INA219 STEMMA
+    QT ADAFRUIT 904
+  notes:
+  - Product revisions may fit INA219A or INA219B in SOT-23 or SOIC packages; do not
+    assert a single fitted grade.
+  - The current board has a pre-soldered terminal block; board nominal shunt is 0.1
+    ohm.
+  oobb_details:
+  - breakout_pcb_height: 20.32
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$20:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$25:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -7.62
+    - diameter_mm: 2.5
+      id: U$27:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -7.62
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 7.62
+    - - 10.16
+      - 7.62
+    - - -10.16
+      - -7.62
+    - - 10.16
+      - -7.62
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+  - breakout_pcb_height: 20.32
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$20:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$25:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -7.62
+    - diameter_mm: 2.5
+      id: U$27:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -7.62
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 7.62
+    - - 10.16
+      - 7.62
+    - - -10.16
+      - -7.62
+    - - 10.16
+      - -7.62
+    mounting_layout: short_sides
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_short_sides
+  - breakout_pcb_height: 20.32
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$20:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$21:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 7.62
+    - diameter_mm: 2.5
+      id: U$25:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -7.62
+    - diameter_mm: 2.5
+      id: U$27:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -7.62
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 7.62
+    - - 10.16
+      - 7.62
+    - - -10.16
+      - -7.62
+    - - 10.16
+      - -7.62
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_long_side
+  oobb_name: mounting_plate_default
+  oomlout_ai_roboclick_1:
+    actions:
+    - command: text_jinja_template
+      convert_to_pdf: false
+      convert_to_png: false
+      dict_data:
+        board_variant: stemma_qt
+        breakout_description: stemma_qt
+        breakout_pcb_height: 20.32
+        breakout_pcb_width: 25.4
+        catalogue: i2c_breakouts
+        catalogue_status: product_page_reference
+        data_gaps:
+        - Physical connector/pad map and coordinates not imported.
+        - Located mounting holes and complete assembly/connector clearances not imported.
+        - Pull-up values/rails and full electrical limits require schematic review.
+        - Carrier PCB outline dimensions not verified.
+        - Default I2C address not established in this import.
+        definition_authority: working_oomp_populate_i2c.py
+        description: Current and bus-voltage measurement for battery, solar and power-use
+          experiments.
+        dimensions_mm:
+          height: null
+          scope: pcb_outline_not_established
+          source_id: null
+          status: unverified
+          width: null
+        directory: parts\electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+        geometry_ready: false
+        i2c:
+          address_evidence_status: partial_product_page_evidence
+          address_selection: solder_jumpers
+          clock_stretching: unverified
+          default_address_7bit: null
+          documented_addresses_7bit:
+          - 64
+          - 65
+          - 68
+          - 69
+          maximum_clock_hz: null
+          source_id: product
+        interface_scope: documented_board_interfaces_only
+        interfaces:
+        - i2c
+        item_kind: breakout
+        manufacturer: adafruit
+        manufacturer_part_number: '904'
+        mounting_coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        mounting_geometry_ready: true
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$20:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 7.62
+        - diameter_mm: 2.5
+          id: U$21:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 7.62
+        - diameter_mm: 2.5
+          id: U$25:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -7.62
+        - diameter_mm: 2.5
+          id: U$27:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: -7.62
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_hole_status: verified
+        mounting_holes:
+        - - -10.16
+          - 7.62
+        - - 10.16
+          - 7.62
+        - - -10.16
+          - -7.62
+        - - 10.16
+          - -7.62
+        mounting_lift: 3
+        mounting_research:
+          board_revision: Adafruit INA219 STEMMA QT carrier PCB, board file added
+            2021-08-31 (pinned EAGLE CAD commit 79101aee6a906cb73e03a1a171339960f7350576);
+            product history identifies the STEMMA QT mechanical update as 2021-01-29.
+            Product listing notes a pre-soldered terminal-block assembly option since
+            2024-05-31; this does not change the PCB outline/hole geometry established
+            by the carrier CAD.
+          board_size:
+          - 25.4
+          - 20.32
+          coordinate_system:
+            origin: pcb_bounding_box_centre
+            units: mm
+            view: top
+            x_positive: right
+            y_positive: up
+          derivation: "EAGLE XML layer-20 plain wires define a closed rounded outline\
+            \ with bounding limits x=0..25.4 mm and y=0..20.32 mm. Native origin is\
+            \ lower-left; top-view canonical coordinates use x_mm=x_native-12.7 and\
+            \ y_mm=y_native-10.16, with no quarter-turn (0). Thus each selected mounting\
+            \ pad at native (2.54 or 22.86, 2.54 or 17.78) becomes x=\xB110.16 mm,\
+            \ y=\xB17.62 mm. Hole diameter is the CAD drill 2.5 mm. Preview intentionally\
+            \ shows the bounding box, not the rounded physical outline."
+          fit_status: generic_holder_not_physical_fit_tested
+          identity_evidence: "Adafruit product 904 is titled INA219 STEMMA QT and\
+            \ its revision history identifies the four-hole/two-QT mechanical revision.\
+            \ Adafruit repository adafruit/Adafruit-INA219-Current-Sensor-PCB describes\
+            \ the product 904 hardware; commit 79101aee6a906cb73e03a1a171339960f7350576\
+            \ is explicitly \u201CAdd STEMMA QT board files\u201D and contains Adafruit\
+            \ INA219 STEMMA QT.brd."
+          mounting_holes:
+          - diameter_mm: 2.5
+            id: U$20:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: -10.16
+            y_mm: 7.62
+          - diameter_mm: 2.5
+            id: U$21:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: 10.16
+            y_mm: 7.62
+          - diameter_mm: 2.5
+            id: U$25:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: -10.16
+            y_mm: -7.62
+          - diameter_mm: 2.5
+            id: U$27:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: 10.16
+            y_mm: -7.62
+          record_sha256: 18e75ed199eee50d6dcdd36085d8063e9254dfcdf59fe510e616b4e7e9265492
+          research_file: source_file/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904/mounting.yaml
+          reviewed_by: gpt-6-luna
+          sources:
+          - bytes: 250983
+            id: cad
+            kind: manufacturer_cad
+            local_file: mounting_evidence/Adafruit INA219 STEMMA QT.brd
+            locator: Adafruit INA219 STEMMA QT.brd at commit 79101aee6a906cb73e03a1a171339960f7350576;
+              inspect complete XML board outline, dimension text, package names and
+              all drill candidates
+            registered_at: '2026-11-06T18:54:06+00:00'
+            sha256: 2a114d101bf924a550649b8eadee45d16584debab93e88410f6f2ab86a05fb45
+            url: https://raw.githubusercontent.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/79101aee6a906cb73e03a1a171339960f7350576/Adafruit%20INA219%20STEMMA%20QT.brd
+          - bytes: 5469
+            id: commit
+            kind: manufacturer_repository
+            local_file: mounting_evidence/commit.json
+            locator: Official repository commit dated 2021-08-31; message Add STEMMA
+              QT board files; pins exact board revision and CAD path
+            registered_at: '2026-11-06T18:54:30+00:00'
+            sha256: 0652c2369214bfcdf7a3487438070dc9e6d65a47d25d4d184fca0e121ac17626
+            url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB/commits/79101aee6a906cb73e03a1a171339960f7350576
+          - bytes: 7244
+            id: repository
+            kind: manufacturer_repository
+            local_file: mounting_evidence/repository.json
+            locator: Official Adafruit repository description maps hardware to product
+              904; repository contains STEMMA QT EAGLE board design
+            registered_at: '2026-11-06T18:54:31+00:00'
+            sha256: ae72c01fbd0533fdab3bbdea7f95b43ae9a2c9cf5adefb26d921b681ff15333f
+            url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB
+          - bytes: 103110
+            id: product
+            kind: manufacturer_product
+            local_file: website.html
+            locator: Product 904 title identifies INA219 STEMMA QT; revision history
+              says January 29 2021 mechanical update introduced four mounting holes
+              and two QT connectors
+            registered_at: '2026-11-06T18:54:32+00:00'
+            sha256: ea561ba76669f58d7331f70cb05bb64e9ea4e7bfe9d7d476d7e384ac3074e3d3
+            url: https://www.adafruit.com/product/904
+          status: verified
+        name: electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+        name_proper: Electronic Breakout Sensor Electrical Current Voltage Ina219
+          Stemma Qt Adafruit 904
+        name_readable: Adafruit INA219, STEMMA QT
+        name_space: electronic breakout sensor electrical current voltage ina219 stemma
+          qt adafruit 904
+        name_upper: ELECTRONIC BREAKOUT SENSOR ELECTRICAL CURRENT VOLTAGE INA219 STEMMA
+          QT ADAFRUIT 904
+        notes:
+        - Product revisions may fit INA219A or INA219B in SOT-23 or SOIC packages;
+          do not assert a single fitted grade.
+        - The current board has a pre-soldered terminal block; board nominal shunt
+          is 0.1 ohm.
+        oobb_details:
+        - breakout_pcb_height: 20.32
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 2.5
+            id: U$20:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 7.62
+          - diameter_mm: 2.5
+            id: U$21:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: 7.62
+          - diameter_mm: 2.5
+            id: U$25:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: -7.62
+          - diameter_mm: 2.5
+            id: U$27:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: -7.62
+          mounting_hole_radius_name: m2
+          mounting_hole_radius_names:
+          - m2
+          - m2
+          - m2
+          - m2
+          mounting_holes:
+          - - -10.16
+            - 7.62
+          - - 10.16
+            - 7.62
+          - - -10.16
+            - -7.62
+          - - 10.16
+            - -7.62
+          mounting_layout: full_wrap
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+        - breakout_pcb_height: 20.32
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 2.5
+            id: U$20:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 7.62
+          - diameter_mm: 2.5
+            id: U$21:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: 7.62
+          - diameter_mm: 2.5
+            id: U$25:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: -7.62
+          - diameter_mm: 2.5
+            id: U$27:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: -7.62
+          mounting_hole_radius_name: m2
+          mounting_hole_radius_names:
+          - m2
+          - m2
+          - m2
+          - m2
+          mounting_holes:
+          - - -10.16
+            - 7.62
+          - - 10.16
+            - 7.62
+          - - -10.16
+            - -7.62
+          - - 10.16
+            - -7.62
+          mounting_layout: short_sides
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_short_sides
+        - breakout_pcb_height: 20.32
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 2.5
+            id: U$20:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 7.62
+          - diameter_mm: 2.5
+            id: U$21:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: 7.62
+          - diameter_mm: 2.5
+            id: U$25:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: -7.62
+          - diameter_mm: 2.5
+            id: U$27:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: -7.62
+          mounting_hole_radius_name: m2
+          mounting_hole_radius_names:
+          - m2
+          - m2
+          - m2
+          - m2
+          mounting_holes:
+          - - -10.16
+            - 7.62
+          - - 10.16
+            - 7.62
+          - - -10.16
+            - -7.62
+          - - 10.16
+            - -7.62
+          mounting_layout: long_side
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_long_side
+        part_number: '904'
+        part_number_adafruit: '904'
+        pinout_status: unverified
+        pins: {}
+        product_dimensions_mm:
+          depth: 4.7
+          height: 20.4
+          scope: manufacturer_product_dimensions_not_verified_pcb_outline
+          source_id: product
+          width: 25.6
+        research_date: '2026-10-23'
+        schema_version: 1
+        sources:
+        - id: product
+          kind: manufacturer_product_page
+          retrieved: '2026-10-23'
+          scope: identity, stated interfaces/features and recorded nominal dimensions
+          url: https://www.adafruit.com/product/904
+        - bytes: 250983
+          id: mounting_cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Adafruit INA219 STEMMA QT.brd
+          locator: Adafruit INA219 STEMMA QT.brd at commit 79101aee6a906cb73e03a1a171339960f7350576;
+            inspect complete XML board outline, dimension text, package names and
+            all drill candidates
+          registered_at: '2026-11-06T18:54:06+00:00'
+          sha256: 2a114d101bf924a550649b8eadee45d16584debab93e88410f6f2ab86a05fb45
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/79101aee6a906cb73e03a1a171339960f7350576/Adafruit%20INA219%20STEMMA%20QT.brd
+        - bytes: 5469
+          id: mounting_commit
+          kind: manufacturer_repository
+          local_file: mounting_evidence/commit.json
+          locator: Official repository commit dated 2021-08-31; message Add STEMMA
+            QT board files; pins exact board revision and CAD path
+          registered_at: '2026-11-06T18:54:30+00:00'
+          sha256: 0652c2369214bfcdf7a3487438070dc9e6d65a47d25d4d184fca0e121ac17626
+          url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB/commits/79101aee6a906cb73e03a1a171339960f7350576
+        - bytes: 7244
+          id: mounting_repository
+          kind: manufacturer_repository
+          local_file: mounting_evidence/repository.json
+          locator: Official Adafruit repository description maps hardware to product
+            904; repository contains STEMMA QT EAGLE board design
+          registered_at: '2026-11-06T18:54:31+00:00'
+          sha256: ae72c01fbd0533fdab3bbdea7f95b43ae9a2c9cf5adefb26d921b681ff15333f
+          url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB
+        - bytes: 103110
+          id: mounting_product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: Product 904 title identifies INA219 STEMMA QT; revision history
+            says January 29 2021 mechanical update introduced four mounting holes
+            and two QT connectors
+          registered_at: '2026-11-06T18:54:32+00:00'
+          sha256: ea561ba76669f58d7331f70cb05bb64e9ea4e7bfe9d7d476d7e384ac3074e3d3
+          url: https://www.adafruit.com/product/904
+        taxonomy_1: electronic
+        taxonomy_10: ''
+        taxonomy_11: ''
+        taxonomy_12: ''
+        taxonomy_13: ''
+        taxonomy_14: adafruit
+        taxonomy_15: '904'
+        taxonomy_2: breakout
+        taxonomy_3: sensor
+        taxonomy_4: electrical
+        taxonomy_5: current_voltage
+        taxonomy_6: ina219
+        taxonomy_7: stemma_qt
+        taxonomy_8: ''
+        taxonomy_9: ''
+        taxonomy_schema: breakout_function_v1
+        type_1: sensor
+        type_2: electrical
+        type_3: current_voltage
+        type_4: ina219
+        url_chat: ''
+        webpage: https://www.adafruit.com/product/904
+        webpage_adafruit: https://www.adafruit.com/product/904
+      dict_data_files: {}
+      dict_data_files_exists: {}
+      file_output: label_oomp.svg
+      file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+      search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+  oomp_key: oomp_electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904
+  part_number: '904'
+  part_number_adafruit: '904'
+  pinout_status: unverified
+  pins: {}
+  product_dimensions_mm:
+    depth: 4.7
+    height: 20.4
+    scope: manufacturer_product_dimensions_not_verified_pcb_outline
+    source_id: product
+    width: 25.6
+  research_date: '2026-10-23'
+  schema_version: 1
+  short_name: ''
+  size: default_mounting_plate_default
+  sources:
+  - id: product
+    kind: manufacturer_product_page
+    retrieved: '2026-10-23'
+    scope: identity, stated interfaces/features and recorded nominal dimensions
+    url: https://www.adafruit.com/product/904
+  - bytes: 250983
+    id: mounting_cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit INA219 STEMMA QT.brd
+    locator: Adafruit INA219 STEMMA QT.brd at commit 79101aee6a906cb73e03a1a171339960f7350576;
+      inspect complete XML board outline, dimension text, package names and all drill
+      candidates
+    registered_at: '2026-11-06T18:54:06+00:00'
+    sha256: 2a114d101bf924a550649b8eadee45d16584debab93e88410f6f2ab86a05fb45
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/79101aee6a906cb73e03a1a171339960f7350576/Adafruit%20INA219%20STEMMA%20QT.brd
+  - bytes: 5469
+    id: mounting_commit
+    kind: manufacturer_repository
+    local_file: mounting_evidence/commit.json
+    locator: Official repository commit dated 2021-08-31; message Add STEMMA QT board
+      files; pins exact board revision and CAD path
+    registered_at: '2026-11-06T18:54:30+00:00'
+    sha256: 0652c2369214bfcdf7a3487438070dc9e6d65a47d25d4d184fca0e121ac17626
+    url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB/commits/79101aee6a906cb73e03a1a171339960f7350576
+  - bytes: 7244
+    id: mounting_repository
+    kind: manufacturer_repository
+    local_file: mounting_evidence/repository.json
+    locator: Official Adafruit repository description maps hardware to product 904;
+      repository contains STEMMA QT EAGLE board design
+    registered_at: '2026-11-06T18:54:31+00:00'
+    sha256: ae72c01fbd0533fdab3bbdea7f95b43ae9a2c9cf5adefb26d921b681ff15333f
+    url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB
+  - bytes: 103110
+    id: mounting_product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Product 904 title identifies INA219 STEMMA QT; revision history says
+      January 29 2021 mechanical update introduced four mounting holes and two QT
+      connectors
+    registered_at: '2026-11-06T18:54:32+00:00'
+    sha256: ea561ba76669f58d7331f70cb05bb64e9ea4e7bfe9d7d476d7e384ac3074e3d3
+    url: https://www.adafruit.com/product/904
+  taxonomy_1: electronic
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_14_capital: Adafruit
+  taxonomy_14_first_letter: a
+  taxonomy_14_first_letter_upper: A
+  taxonomy_14_length_1: a
+  taxonomy_14_length_2: ad
+  taxonomy_14_length_3: ada
+  taxonomy_14_length_4: adaf
+  taxonomy_14_length_5: adafr
+  taxonomy_14_upper: ADAFRUIT
+  taxonomy_14_upper_length_1: A
+  taxonomy_14_upper_length_2: AD
+  taxonomy_14_upper_length_3: ADA
+  taxonomy_14_upper_length_4: ADAF
+  taxonomy_14_upper_length_5: ADAFR
+  taxonomy_15: '904'
+  taxonomy_15_capital: '904'
+  taxonomy_15_first_letter: '9'
+  taxonomy_15_first_letter_upper: '9'
+  taxonomy_15_length_1: '9'
+  taxonomy_15_length_2: '90'
+  taxonomy_15_length_3: '904'
+  taxonomy_15_length_4: '904'
+  taxonomy_15_length_5: '904'
+  taxonomy_15_upper: '904'
+  taxonomy_15_upper_length_1: '9'
+  taxonomy_15_upper_length_2: '90'
+  taxonomy_15_upper_length_3: '904'
+  taxonomy_15_upper_length_4: '904'
+  taxonomy_15_upper_length_5: '904'
+  taxonomy_1_capital: Electronic
+  taxonomy_1_first_letter: e
+  taxonomy_1_first_letter_upper: E
+  taxonomy_1_length_1: e
+  taxonomy_1_length_2: el
+  taxonomy_1_length_3: ele
+  taxonomy_1_length_4: elec
+  taxonomy_1_length_5: elect
+  taxonomy_1_upper: ELECTRONIC
+  taxonomy_1_upper_length_1: E
+  taxonomy_1_upper_length_2: EL
+  taxonomy_1_upper_length_3: ELE
+  taxonomy_1_upper_length_4: ELEC
+  taxonomy_1_upper_length_5: ELECT
+  taxonomy_2: breakout
+  taxonomy_2_capital: Breakout
+  taxonomy_2_first_letter: b
+  taxonomy_2_first_letter_upper: B
+  taxonomy_2_length_1: b
+  taxonomy_2_length_2: br
+  taxonomy_2_length_3: bre
+  taxonomy_2_length_4: brea
+  taxonomy_2_length_5: break
+  taxonomy_2_upper: BREAKOUT
+  taxonomy_2_upper_length_1: B
+  taxonomy_2_upper_length_2: BR
+  taxonomy_2_upper_length_3: BRE
+  taxonomy_2_upper_length_4: BREA
+  taxonomy_2_upper_length_5: BREAK
+  taxonomy_3: sensor
+  taxonomy_3_capital: Sensor
+  taxonomy_3_first_letter: s
+  taxonomy_3_first_letter_upper: S
+  taxonomy_3_length_1: s
+  taxonomy_3_length_2: se
+  taxonomy_3_length_3: sen
+  taxonomy_3_length_4: sens
+  taxonomy_3_length_5: senso
+  taxonomy_3_upper: SENSOR
+  taxonomy_3_upper_length_1: S
+  taxonomy_3_upper_length_2: SE
+  taxonomy_3_upper_length_3: SEN
+  taxonomy_3_upper_length_4: SENS
+  taxonomy_3_upper_length_5: SENSO
+  taxonomy_4: electrical
+  taxonomy_4_capital: Electrical
+  taxonomy_4_first_letter: e
+  taxonomy_4_first_letter_upper: E
+  taxonomy_4_length_1: e
+  taxonomy_4_length_2: el
+  taxonomy_4_length_3: ele
+  taxonomy_4_length_4: elec
+  taxonomy_4_length_5: elect
+  taxonomy_4_upper: ELECTRICAL
+  taxonomy_4_upper_length_1: E
+  taxonomy_4_upper_length_2: EL
+  taxonomy_4_upper_length_3: ELE
+  taxonomy_4_upper_length_4: ELEC
+  taxonomy_4_upper_length_5: ELECT
+  taxonomy_5: current_voltage
+  taxonomy_5_capital: Current Voltage
+  taxonomy_5_first_letter: c
+  taxonomy_5_first_letter_upper: C
+  taxonomy_5_length_1: c
+  taxonomy_5_length_2: cu
+  taxonomy_5_length_3: cur
+  taxonomy_5_length_4: curr
+  taxonomy_5_length_5: curre
+  taxonomy_5_upper: CURRENT_VOLTAGE
+  taxonomy_5_upper_length_1: C
+  taxonomy_5_upper_length_2: CU
+  taxonomy_5_upper_length_3: CUR
+  taxonomy_5_upper_length_4: CURR
+  taxonomy_5_upper_length_5: CURRE
+  taxonomy_6: ina219
+  taxonomy_6_capital: Ina219
+  taxonomy_6_first_letter: i
+  taxonomy_6_first_letter_upper: I
+  taxonomy_6_length_1: i
+  taxonomy_6_length_2: in
+  taxonomy_6_length_3: ina
+  taxonomy_6_length_4: ina2
+  taxonomy_6_length_5: ina21
+  taxonomy_6_upper: INA219
+  taxonomy_6_upper_length_1: I
+  taxonomy_6_upper_length_2: IN
+  taxonomy_6_upper_length_3: INA
+  taxonomy_6_upper_length_4: INA2
+  taxonomy_6_upper_length_5: INA21
+  taxonomy_7: stemma_qt
+  taxonomy_7_capital: Stemma Qt
+  taxonomy_7_first_letter: s
+  taxonomy_7_first_letter_upper: S
+  taxonomy_7_length_1: s
+  taxonomy_7_length_2: st
+  taxonomy_7_length_3: ste
+  taxonomy_7_length_4: stem
+  taxonomy_7_length_5: stemm
+  taxonomy_7_upper: STEMMA_QT
+  taxonomy_7_upper_length_1: S
+  taxonomy_7_upper_length_2: ST
+  taxonomy_7_upper_length_3: STE
+  taxonomy_7_upper_length_4: STEM
+  taxonomy_7_upper_length_5: STEMM
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_schema: breakout_function_v1
+  type: part
+  type_1: sensor
+  type_2: electrical
+  type_3: current_voltage
+  type_4: ina219
+  url_chat: ''
+  webpage: https://www.adafruit.com/product/904
+  webpage_adafruit: https://www.adafruit.com/product/904
+type_1: sensor
+type_2: electrical
+type_3: current_voltage
+type_4: ina219
+url_chat: ''
+webpage: https://www.adafruit.com/product/904
+webpage_adafruit: https://www.adafruit.com/product/904

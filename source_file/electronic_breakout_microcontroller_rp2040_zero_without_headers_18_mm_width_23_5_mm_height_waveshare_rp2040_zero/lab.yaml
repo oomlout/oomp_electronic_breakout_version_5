@@ -1,0 +1,22 @@
+key: zero
+subtitle: Small board, full bench
+color: '#296ca2'
+usb: type_c
+default_gpio: 0
+default_adc: 26
+default_i2c:
+  sda: 0
+  scl: 1
+runtime:
+  page: https://micropython.org/download/RPI_PICO/
+  filename: RPI_PICO-20260824-v1.29.0.uf2
+  url: https://micropython.org/resources/firmware/RPI_PICO-20260824-v1.29.0.uf2
+notes:
+- GPIO17–25 are underside solder pads; positions remain undocumented.
+- Onboard WS2812 data GPIO16 is excluded from the exposed-pin controls.
+- Hold BOOT while connecting USB for the RP2040 boot drive.
+acceptance:
+  servo_pin: 2
+  led_pin: 4
+  digital_pin: 6
+  adc_pin: 26

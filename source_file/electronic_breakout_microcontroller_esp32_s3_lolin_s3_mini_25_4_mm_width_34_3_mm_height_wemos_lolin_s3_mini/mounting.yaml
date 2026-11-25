@@ -1,0 +1,65 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_s3_lolin_s3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_s3_mini
+status: needs_review
+board_revision: WEMOS LOLIN S3 Mini V1.0.0 carrier, as identified by the manufacturer-linked dimension drawing and schematic; mounting geometry incomplete
+identity_source_ids:
+- product
+- mechanical
+- schematic
+identity_evidence: The WEMOS LOLIN S3 Mini product page identifies this product, lists 25.4 x 34.3 mm dimensions, and links the Dimension V1.0.0 and Schematic V1.0.0 PDFs. The archived manufacturer dimension PDF hash matches the seeded context hash; the entire page was rendered and reviewed. The schematic is also the manufacturer-linked V1.0.0 revision.
+board_size:
+- 25.4
+- 34.3
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: mechanical
+derivation: The manufacturer Dimension V1.0.0 drawing specifies the 25.4 x 34.3 mm outline and shows two open circular candidate holes. The drawing gives 2.5 mm from the left board edge to the left centre and 20.4 mm centre spacing, so x_left = 2.5 - 25.4/2 = -10.2 mm and x_right = -10.2 + 20.4 = +10.2 mm. A 2.000 mm horizontal dimension is drawn across the right-hand candidate hole, supporting that hole's diameter only. The drawing does not dimension either candidate's vertical position relative to the PCB bounding box, and it does not explicitly state that the 2.000 mm callout applies to the left hole. No y coordinate or second diameter is inferred from illustration scale or apparent symmetry; the pattern is incomplete and cannot be promoted.
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources:
+- id: product
+  local_file: mounting_evidence/wemos_s3_mini_product.html
+  url: https://www.wemos.cc/en/latest/s3/s3_mini.html
+  kind: manufacturer_product
+  locator: Manufacturer product identity, nominal 25.4 x 34.3 mm dimensions, and links to V1.0.0 schematic and dimension drawing; fetched 2026-11-06.
+  registered_at: '2026-11-06T18:14:35+00:00'
+  bytes: 10696
+  sha256: 5de4d3b2a8322588e9ab435dd1427b1752dfbb174ee7f2b62a454cb9799844b1
+- id: mechanical
+  local_file: reference/dim_s3_mini_v1.0.0.pdf
+  url: https://www.wemos.cc/en/latest/_static/files/dim_s3_mini_v1.0.0.pdf
+  kind: dimensioned_drawing
+  locator: Complete one-page WEMOS Dimension V1.0.0 drawing; specifies outline and horizontal positions of two candidate holes. The 2.000 mm callout is dimensioned across the right candidate only; neither candidate's vertical position is dimensioned and the callout is not explicitly a two-hole callout.
+  registered_at: '2026-11-06T18:14:35+00:00'
+  bytes: 12571
+  sha256: 110f14d19c7f16ef2b0ad5771d56ec8877782129b68fca6be161faf95fe0770c
+- id: schematic
+  local_file: reference/sch_s3_mini_v1.0.0.pdf
+  url: https://www.wemos.cc/en/latest/_static/files/sch_s3_mini_v1.0.0.pdf
+  kind: manufacturer_schematic
+  locator: WEMOS LOLIN S3 Mini V1.0.0 schematic linked from exact manufacturer product page; identity/revision support only, not mounting geometry.
+  registered_at: '2026-11-06T18:15:49+00:00'
+  bytes: 165478
+  sha256: 23e49e9d7904eb2d9480b0707a19c46c8dddfdeed53dd8085e3f620d3edf4270
+attempts:
+- '2026-11-07: Reassessed the archived official WEMOS Dimension V1.0.0 drawing. The 2.000 mm callout spans the right candidate hole, in addition to the stated outline and horizontal positions. Neither candidate hole has a dimensioned vertical coordinate, and the callout is not explicitly shared with the left candidate.'
+- '2026-11-06: Checked the official wemos/docs GitHub repository tree at its current master revision for S3 Mini artifacts. It contains product documentation, photos, schematic and dimension PDFs, but no carrier PCB CAD source.'
+- '2026-11-06: Searched public web/GitHub results for exact LOLIN S3 Mini V1.0.0 PCB/EAGLE CAD; no exact manufacturer CAD or complete alternate dimensioned mechanical drawing was located. Third-party photos and family geometry were not used.'
+conflicts:
+- 'Unresolved geometry gap: WEMOS Dimension V1.0.0 specifies candidate centre x coordinates -10.2 mm and +10.2 mm and dimensions the right candidate at 2.000 mm diameter, but does not dimension either candidate y coordinate or explicitly specify the left candidate diameter. Exact two-hole geometry is therefore incomplete.'
+notes:
+- 'Known partial dimensions only: PCB outline 25.4 x 34.3 mm; candidate-hole horizontal spacing 20.4 mm and left edge-to-centre offset 2.5 mm, yielding x=-10.2 mm and +10.2 mm. The 2.000 mm dimension spans the right candidate hole. Do not infer either y coordinate or the left-hole diameter from pixels or symmetry.'
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T18:16:30+00:00'
+

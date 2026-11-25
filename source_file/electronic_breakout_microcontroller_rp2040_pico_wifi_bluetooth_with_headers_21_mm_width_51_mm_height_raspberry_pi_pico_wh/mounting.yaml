@@ -1,0 +1,179 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2040_pico_wifi_bluetooth_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_wh
+status: needs_review
+board_revision: Raspberry Pi Pico W/WH wireless carrier layout, represented by manufacturer
+  design file rpi-picow-r3-2.brd from the official 2022-06-07 Pico W design archive.
+  Raspberry Pi's official Pico-series documentation states Pico W and Pico WH share
+  the same board layout; WH adds presoldered headers and the keyed central debug connector.
+  Mounting geometry is taken from the matching official Pico W Figure 3 drawing.
+identity_source_ids:
+- product
+- cad_archive
+- cad_board
+- datasheet
+identity_evidence: Raspberry Pi's pinned official documentation identifies Pico W
+  and Pico WH as first-generation wireless RP2040 boards and explicitly says they
+  have the same board layout, with presoldered headers and debug connector style as
+  the physical distinctions. It links to the official Pico W/WH design files and Pico
+  W datasheet. The official archive contains rpi-picow-r3-2.brd; the binary CAD could
+  not be replayed by the XML EAGLE extractor, so the matching dimensioned Figure 3
+  in the official Pico W datasheet supplies the mounting dimensions.
+board_size:
+- 21
+- 51
+mounting_holes:
+- id: H1
+  x_mm: -5.7
+  y_mm: -23.5
+  diameter_mm: 2.1
+  source_id: datasheet
+- id: H2
+  x_mm: -5.7
+  y_mm: 23.5
+  diameter_mm: 2.1
+  source_id: datasheet
+- id: H3
+  x_mm: 5.7
+  y_mm: -23.5
+  diameter_mm: 2.1
+  source_id: datasheet
+- id: H4
+  x_mm: 5.7
+  y_mm: 23.5
+  diameter_mm: 2.1
+  source_id: datasheet
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: datasheet
+derivation: The manufacturer Figure 3 is a top assembly with the USB connector at
+  the top. Its outline is 21 mm wide by 51 mm high. The drawing and accompanying text
+  identify four Ø2.1 mm drilled mounting holes. The pair spacing across the width
+  is 11.4 mm, so x = ±11.4/2 = ±5.7 mm from the centred outline. Each end pair has
+  a 2 mm edge-to-centre offset along the 51 mm axis, so y = ±(51/2 - 2) = ±23.5 mm.
+  The drawing USB-at-top direction maps to canonical positive Y (up); X increases
+  right. All other visible drilled features are 1 mm header positions and are not
+  mounting holes; only the four explicitly called out 2.1 mm mounting drills are selected.
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: false
+reviewed_by: gpt-6-luna
+sources:
+- id: datasheet
+  local_file: mounting_evidence/pico-w-datasheet.pdf
+  url: https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf
+  kind: manufacturer_datasheet
+  locator: 'Raspberry Pi Pico W Datasheet, RP-008312-DS-2, page 6 / Figure 3: 51 x
+    21 x 1 mm PCB; four 2.1 mm drilled mounting holes; dimensioned top assembly drawing.'
+  registered_at: '2026-11-06T15:16:15+00:00'
+  bytes: 20175431
+  sha256: ba8649ba98437301b9f1621504569a27f1d2ba6111795b4df76783adb08de7c5
+- id: drawing
+  local_file: reference/mechanical.png
+  url: https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf
+  kind: manufacturer_drawing
+  locator: 'Archived image verified against the official PDF hash and visible title/page:
+    page 6, Figure 3. Shows full top assembly with four mounting holes and dimensions.'
+  registered_at: '2026-11-06T15:16:17+00:00'
+  bytes: 134241
+  sha256: efdad42532e8f7403a7e7fd786c105543314502b4ebea7a8cc593bb8bf9ddbb2
+- id: product
+  local_file: mounting_evidence/pico-series-about_pico.adoc
+  url: https://raw.githubusercontent.com/raspberrypi/documentation/9528dca178f2f8cc158ad173a2045cad08373e8c/documentation/asciidoc/microcontrollers/pico-series/about_pico.adoc
+  kind: manufacturer_product
+  locator: Raspberry Pi official documentation at pinned commit 9528dca178f2f8cc158ad173a2045cad08373e8c;
+    Wireless Raspberry Pi Pico W and WH share board layout and differ physically by
+    presoldered headers and debug connector; links official design files and datasheet.
+  registered_at: '2026-11-06T15:16:18+00:00'
+  bytes: 34446
+  sha256: a8302d259315387e89733c7b2bfa243589aef6ccfa9c9d2d6499c08303a8ff65
+- id: cad_archive
+  local_file: mounting_evidence/pico-w-design-files.zip
+  url: https://pip-assets.raspberrypi.com/categories/686-raspberry-pi-pico-w/documents/RP-008380-DS-1-RPi-PicoW-PUBLIC-20220607.zip
+  kind: manufacturer_cad
+  locator: Raspberry Pi official Pico W public design archive RP-008380-DS-1, dated
+    2022-06-07; contains rpi-picow-r3-2.brd (binary CAD board file) and RPI-PICOW-R2.DSN.
+    R3-2 file is not XML EAGLE and this workflow extractor cannot inspect it.
+  registered_at: '2026-11-06T15:17:27+00:00'
+  bytes: 1303978
+  sha256: 63bf2ffe4fe085c4cb035123f7c2892dd13b3d58754165a959ee86410cc311ef
+- id: cad_board
+  local_file: mounting_evidence/rpi-picow-r3-2.brd
+  url: https://pip-assets.raspberrypi.com/categories/686-raspberry-pi-pico-w/documents/RP-008380-DS-1-RPi-PicoW-PUBLIC-20220607.zip
+  kind: manufacturer_cad
+  locator: Exact board file rpi-picow-r3-2.brd extracted from official archive. Binary
+    CAD; mounting extractor rejects it as non-XML. Geometry reviewed from official
+    dimensioned Figure 3.
+  registered_at: '2026-11-06T15:17:28+00:00'
+  bytes: 4133408
+  sha256: 574c6112a3418dff77717f87e62839f5205cf9fd1899350f4ce16610dee731a5
+- id: step_archive
+  local_file: mounting_evidence/pico-w-step.zip
+  url: https://pip-assets.raspberrypi.com/categories/686-raspberry-pi-pico-w/documents/RP-008318-DS-1-PicoW-step.zip
+  kind: manufacturer_cad
+  locator: Raspberry Pi official Pico W STEP archive; identity/CAD context only; mounting
+    coordinates taken from the dimensioned manufacturer drawing.
+  registered_at: '2026-11-06T15:17:31+00:00'
+  bytes: 838467
+  sha256: fc282d072183f645718b3c1b0f456117b23b681c6b17073a8aa7131b53dba367
+- id: current_pip
+  local_file: mounting_evidence/pip-product-page.html
+  url: https://pip.raspberrypi.com/categories/686-raspberry-pi-pico-w
+  kind: manufacturer_product
+  locator: Official Raspberry Pi Product Information Portal, accessed 2026-11-07.
+    Lists Pico W datasheet updated 15 Jul 2026 and the exact Pico W design archive
+    and STEP archive; cross-check current linked datasheet Figure 3 and section 2.
+  registered_at: '2026-11-07T15:06:20+00:00'
+  bytes: 46655
+  sha256: 56c886b37fc7bc9d8e88e5192e3a239a776e1e7c674170273df57d9e34aeb0b7
+attempts:
+- source: Raspberry Pi official Pico W design archive RP-008380-DS-1, containing rpi-picow-r3-2.brd
+  result: Downloaded and verified the ZIP. The board file is binary and inspect-eagle
+    rejects it as non-XML; the mounting extractor cannot replay its geometry, so it
+    is retained as exact carrier identity evidence and not used for coordinates.
+- source: Raspberry Pi official Pico W STEP archive RP-008318-DS-1
+  result: Downloaded and registered the official mechanical CAD archive; mounting
+    coordinates are taken from the dimensioned manufacturer Figure 3, which explicitly
+    dimensions all four holes.
+- source: Standard holder preview for four manufacturer Ø2.1 mm drills
+  result: Rejected by the helper because supported M2/M2.5/M3 screw clearances require
+    at least 2.2 mm drill diameter. Exact hole geometry is established; standard holder
+    compatibility needs coordinator review.
+- source: Current Raspberry Pi Pico W Product Information Portal and July 2026 datasheet
+    recheck, accessed 2026-11-07
+  result: 'The official portal still lists the same 2022-06-07 Pico W design archive
+    and the Pico W datasheet updated 2026-07-15. The current official datasheet section
+    2 / Figure 3 explicitly specifies four 2.1 mm (plus or minus 0.05 mm) drilled
+    mounting holes; no revised 2.2 mm pattern was found. Reassessment confirms the
+    recorded geometry and does not change holder compatibility: mounting_geometry.screw_for_drill
+    requires 2.2 mm minimum for M2 under the existing >=0.2 mm diametral-clearance
+    policy. Keep needs_review pending a separate holder/screw policy decision; do
+    not promote or guess a custom design.'
+conflicts:
+- The manufacturer specifies Ø2.1 mm PCB mounting drills. The standard holder generator
+  requires at least 2.2 mm for its smallest supported M2 screw to maintain 0.2 mm
+  diametral clearance. Preview rejects these holes as too small; custom holder/screw
+  policy review is required before promotion.
+notes:
+- The archived Figure 3 image SHA256 matches mounting_context.json and was visually
+  reviewed against the downloaded official datasheet. All four marked 2.1 mm mounting
+  drills were reviewed; the header drill pattern is explicitly labelled Ø1 mm and
+  excluded.
+- The binary manufacturer board file and STEP archive are supporting revision/identity
+  evidence; coordinates are based on the dimensioned datasheet figure because the
+  permitted mounting extractor supports neither file format here.
+- Standard holder is generated geometry only. Component, connector, screw-head and
+  underside clearance, and physical fit, remain unverified.
+- 'Reassessment 2026-11-07: current official PIP page was archived as current_pip.
+  Its linked current datasheet and Figure 3 continue to specify Ø2.1 mm (plus or minus
+  0.05 mm); the 2.1 mm geometry is not a stale/revision mismatch and remains below
+  the standard holder''s 2.2 mm M2 threshold.'
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:07:23+00:00'

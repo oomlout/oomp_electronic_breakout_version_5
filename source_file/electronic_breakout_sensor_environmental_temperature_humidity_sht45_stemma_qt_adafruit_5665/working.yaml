@@ -1,0 +1,327 @@
+research_schema_version: 1
+part_id: electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665
+name_readable: Adafruit SHT45, STEMMA QT
+manufacturer: adafruit
+part_number: '5665'
+manufacturer_part_number: '5665'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: sensor
+  taxonomy_4: environmental
+  taxonomy_5: temperature_humidity
+  taxonomy_6: sht45
+  taxonomy_7: stemma_qt
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '5665'
+default_website:
+  url: https://www.adafruit.com/product/5665
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:12:17+00:00'
+  updated_at: '2026-10-23T20:13:00+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: SHT45 STEMMA QT / Qwiic breakout, without PTFE (product 5665)
+  status: identified_by_product_page
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: Product listing distinguishes product 5665 without PTFE from product 6174
+    with PTFE. No PCB revision marking was verified.
+description: A dedicated temperature/humidity option with better specified accuracy
+  for those measurements.
+interfaces:
+- i2c
+dimensions_mm:
+  width: null
+  height: null
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: unknown
+  source_ids:
+  - product_page
+  notes: Product page gives Product Dimensions 25.5 x 17.7 x 4.8 mm without explicitly
+    stating whether these are PCB outline and assembled envelope or their orientation.
+    Kept separate rather than asserting carrier PCB dimensions.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: unknown_not_documented
+connectors:
+  header_group:
+    kind: header
+    description: Small piece of header supplied; contact count and labels not specified
+      in captured product/guide text.
+    contacts: []
+    source_ids:
+    - product_page
+  QT1:
+    kind: cable_connector
+    description: STEMMA QT / Qwiic connector; pin numbering/labels not verified from
+      the page text.
+    contacts: []
+    source_ids:
+    - product_page
+    - guide_pinouts
+  QT2:
+    kind: cable_connector
+    description: Second STEMMA QT / Qwiic connector; pin numbering/labels not verified
+      from the page text.
+    contacts: []
+    source_ids:
+    - product_page
+    - guide_pinouts
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: unknown
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: Two QT connectors and a supplied header segment are shown/described, but
+    captured text does not establish physical contact inventory; no count inferred.
+pin_names: []
+electrical:
+  board_supply:
+    min_v: 3.3
+    max_v: 5.0
+    nominal_v:
+    - 3.3
+    - 5.0
+    status: documented_supported_nominals
+    source_ids:
+    - product_page
+    - guide_pinouts
+    notes: Product page states breakout board Vdd/logic 3.3 V to 5 V; guide says VIN
+      should match controller logic level and 3V is regulator output, up to 100 mA.
+  chip_supply:
+    status: unknown_not_transcribed
+    notes: Chip supply limits not transcribed in this pass.
+    source_ids:
+    - chip_datasheet
+  logic_levels:
+    status: documented
+    notes:
+    - Guide states SCL/SDA are level shifted for 3-5 V logic.
+    - VIN should match controller logic level.
+    - 3V is a regulated 3.3 V output, up to 100 mA.
+    source_ids:
+    - guide_pinouts
+  pullups:
+  - signals:
+    - SCL
+    - SDA
+    resistance_ohms: 10000
+    rail: null
+    designator: null
+    disconnect_method: null
+    source_ids:
+    - guide_pinouts
+  extra_signals: []
+  source_ids:
+  - product_page
+  - guide_pinouts
+i2c:
+  default_address_7bit: 68
+  documented_addresses_7bit:
+  - 68
+  address_selection: Fixed at 0x44; guide says cannot be changed.
+  maximum_clock_hz: null
+  chip_maximum_clock_hz: null
+  clock_stretching: unknown
+  status: documented_address_clock_capability_unknown
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: Product page calls it I2C FM+ but gives no verified whole-carrier maximum
+    clock. Chip/board clock maxima not set.
+chip:
+  manufacturer: Sensirion
+  part_number: SHT45-AD1B-R2
+  identity_status: product_listing_claim
+  source_ids:
+  - product_page
+  - chip_datasheet
+  notes: Product page names SHT45-AD1B-R2; datasheet covers SHT4x family. Product
+    title alone does not prove fitted production marking.
+datasheets:
+  status: downloaded
+  items:
+  - chip: Sensirion SHT4x family / SHT45
+    source_id: chip_datasheet
+    local_file: reference/chip_datasheet.pdf
+    url: https://cdn-learn.adafruit.com/assets/assets/000/117/503/original/Datasheet_SHT4x.pdf?1673387912
+    sha256: c0fdb4619a931e849082c4e372d69cc1737e4bb08f3634b7b24a6a79facf00f1
+    page_count: 22
+    revision: null
+  notes:
+  - 22-page PDF signature and page tree validated by capture helper; document title/revision
+    not independently inspected from rendered pages.
+software:
+- name: Adafruit SHT4x Arduino Library
+  framework: Arduino
+  official_url: https://github.com/adafruit/Adafruit_SHT4X
+  documentation_url: https://learn.adafruit.com/adafruit-sht40-temperature-humidity-sensor/arduino
+  tested: false
+  source_ids:
+  - product_page
+  - guide_downloads
+  notes: Product page states Arduino library code is available; guide identifies Arduino
+    section.
+- name: Adafruit CircuitPython SHT4x driver
+  framework: CircuitPython/Python
+  official_url: https://github.com/adafruit/Adafruit_CircuitPython_SHT4X
+  documentation_url: https://learn.adafruit.com/adafruit-sht40-temperature-humidity-sensor/python-circuitpython
+  tested: false
+  source_ids:
+  - product_page
+  - guide_downloads
+  notes: Product page states CircuitPython/Python code is available; no integration
+    test performed.
+extra_resources:
+- name: Adafruit SHT4x guide pinouts
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-sht40-temperature-humidity-sensor/pinouts
+  local_file: reference/guide_pinouts.html
+  source_id: guide_pinouts
+- name: Adafruit SHT4x guide downloads
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-sht40-temperature-humidity-sensor/downloads
+  local_file: reference/guide_downloads.html
+  source_id: guide_downloads
+- name: Adafruit SHT40 PCB hardware repository
+  kind: hardware_repository
+  url: https://github.com/adafruit/Adafruit-SHT40-PCB
+  source_id: guide_downloads
+- name: SHT4x Fritzing object
+  kind: fritzing
+  url: https://github.com/adafruit/Fritzing-Library/blob/master/parts/Adafruit%20SHT4x.fzpz
+  source_id: guide_downloads
+sources:
+- id: product_page
+  kind: product_page
+  requested_url: https://www.adafruit.com/product/5665
+  url: https://www.adafruit.com/product/5665
+  retrieved_at: '2026-10-23T20:12:28+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 95770
+  sha256: a02363110f818468983b31404172b85491e9a39060a2dbf5e762f857b5cec4b7
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 7762
+    sha256: cfece4c5db5e7510945f3c2d26ec9d6e3a52dea49bb596de44d1e3ec17452a69
+  - kind: links
+    local_file: website.links.json
+    bytes: 16888
+    sha256: 785e4aca05769b07dedb47c4df5423906c7061209d95506a620d716138cd7f1f
+  title: 'Adafruit Sensirion SHT45 Precision Temperature & Humidity Sensor [STEMMA
+    QT / Qwiic] : Adafruit Industries, Unique & fun DIY electronics and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_pinouts
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-sht40-temperature-humidity-sensor/pinouts
+  url: https://learn.adafruit.com/adafruit-sht40-temperature-humidity-sensor/pinouts
+  retrieved_at: '2026-10-23T20:12:29+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_pinouts.html
+  bytes: 73106
+  sha256: ff1c622ee4f05b3c7d307c09892e76284e58dd4935daeb24d554d4691ac706ca
+  derivatives:
+  - kind: text
+    local_file: reference/guide_pinouts.txt
+    bytes: 3815
+    sha256: 8d221d6c504e9f7c0eeb42175482fc93b20bbbd1a6b3468b072cbe7851bf4474
+  - kind: links
+    local_file: reference/guide_pinouts.links.json
+    bytes: 19201
+    sha256: 1bfb027ae39c74b313f62e62599e985817fee562de11e77f45fe7d7c7c158029
+  title: Pinouts | Adafruit Sensirion SHT40, SHT41 & SHT45 Temperature & Humidity
+    Sensors | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-sht40-temperature-humidity-sensor/downloads
+  url: https://learn.adafruit.com/adafruit-sht40-temperature-humidity-sensor/downloads
+  retrieved_at: '2026-10-23T20:12:30+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_downloads.html
+  bytes: 79185
+  sha256: df0c8893d322a50732ad7dd58eb0ae1e46bcdb75aa5e5424f9bb2e30cc94faac
+  derivatives:
+  - kind: text
+    local_file: reference/guide_downloads.txt
+    bytes: 2984
+    sha256: 33595c02c6b70afaaa3f38786a319a8648001a164288c0876cc12857a65579d9
+  - kind: links
+    local_file: reference/guide_downloads.links.json
+    bytes: 20316
+    sha256: 4e497a5ea7fbf7b3ececb4704da38915786c0aa0c9bf34a693d5b6b1ef3b9d2d
+  title: Downloads | Adafruit Sensirion SHT40, SHT41 & SHT45 Temperature & Humidity
+    Sensors | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn-learn.adafruit.com/assets/assets/000/117/503/original/Datasheet_SHT4x.pdf?1673387912
+  url: https://cdn-learn.adafruit.com/assets/assets/000/117/503/original/Datasheet_SHT4x.pdf?1673387912
+  retrieved_at: '2026-10-23T20:12:55+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_downloads
+  local_file: reference/chip_datasheet.pdf
+  bytes: 908361
+  sha256: c0fdb4619a931e849082c4e372d69cc1737e4bb08f3634b7b24a6a79facf00f1
+  derivatives: []
+  pdf_page_count: 22
+conflicts: []
+data_gaps:
+- Exact SHT45 carrier PCB outline, thickness, mounting-hole geometry, and complete
+  assembly envelope are not established; listed product dimensions have unspecified
+  scope/orientation.
+- Exact header and QT connector contact counts, connector references/pad numbering
+  and printed labels need reviewed carrier CAD or clear guide diagram.
+- No matching carrier CAD or schematic archived in this pass; guide link points to
+  a repository but no revision-specific file has been selected.
+- Chip datasheet title/revision and chip limits have not been read from the PDF pages.
+- Product page identifies SHT45-AD1B-R2 but fitted chip marking is unverified.
+- I2C maximum clock and clock-stretch behavior for the complete carrier remain unknown.
+- 'Pinout is incomplete: exact per-contact labels and numbering for the supplied header
+  and both STEMMA QT connectors need verification from carrier CAD or a legible labeled
+  diagram.'
+product_dimensions_mm:
+  dimensions:
+  - 25.5
+  - 17.7
+  - 4.8
+  units: mm
+  scope: manufacturer_product_dimensions_unspecified_orientation
+  status: documented
+  source_ids:
+  - product_page

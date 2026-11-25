@@ -1,0 +1,196 @@
+Adafruit INA219 Current Sensor Breakout
+Pinouts
+Adafruit INA219 Current Sensor Breakout
+Measure high side voltage and DC current draw over I2C
+by
+lady ada
+and
+Kattni Rembor
+published October 26, 2012, last edited August 19, 2026
+last major update September 21, 2023
+posted in
+Adafruit Products
+Arduino Compatibles
+Breakout Boards
+/
+Batteries/Power
+STEMMA
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly
+Wiring
+Arduino Code
+Library Reference
+Arduino Library Docs
+Python & CircuitPython
+Python Docs
+WipperSnapper
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Primary
+INA219  High Side DC Current Sensor Breakout - 26V ±3.2A Max
+$9.95
+Add  to Cart
+Your browser does not support the video tag.
+Primary
+Adafruit INA219 FeatherWing
+$7.95
+Add  to Cart
+View product details
+78
+Beginner
+Product guide
+Pinouts
+Power Pins
+The sensor on the breakout requires between a 2.7V and 5.5V, and can be easily used with most microcontrollers from an Arduino to a Feather or something else.
+VIN
+- This is the power pin. To power the board, give it the same power as the logic level of your microcontroller - e.g. for a 5V micro like Arduino, use 5V, or for a Feather use 3.3V.
+GND
+- This is common ground for power and logic.
+I2C Pins
+Default address is
+0x40
+.
+SCL
+- This is the I2C
+clock pin
+, connect to your microcontroller's I2C clock line. There's a
+10K pullup
+on this pin.
+SDA
+- This is the I2C
+data pin
+, connect to your microcontroller's I2C data line. There's a
+10K pullup
+on this pin.
+STEMMA QT
+-
+These connectors allow you to connect to development boards with
+STEMMA QT
+connectors, or to other things, with
+various associated accessories
+.
+Other Pins
+Vin+
+is the positive input pin. Connect to supply for high side current sensing or to load ground for low side sensing.
+Vin-
+is the negative input pin. Connect to load for high side current sensing or to board ground for low side sensing
+A0
+and
+A1 solder jumpers
+- These can be bridged with solder to pull the address pin up to VIN to change the I2C address according to the list below.
+I2C Addresses Based on Jumpers
+Default
+= 0x40
+A0 soldered
+= 0x41
+A1 soldered
+= 0x44
+A0 and A1 soldered
+= 0x45
+Page last edited March 08, 2024
+Overview
+Assembly
+Related Guides
+Make your own PCB with Eagle, OSH Park, and Adafruit!
+By
+Bryan Siepert
+intermediate
+74
+Your browser does not support the video tag. This links to the guide USB C Power Delivery Monitor.
+USB C Power Delivery Monitor
+By
+John Park
+intermediate
+24
+Introducing Adafruit Feather
+By
+lady ada
+beginner
+250
+Adafruit ADS122C04 24-Bit ADC
+By
+Liz Clark
+Product Guide
+1
+Your browser does not support the video tag. This links to the guide Adafruit STEMMA Speaker.
+Adafruit STEMMA Speaker
+By
+Kattni Rembor
+Product Guide
+41
+Adafruit 3.5" 480x320 TFT FeatherWing
+By
+lady ada
+Product Guide
+51
+Adafruit MEMENTO Camera Board
+By
+Liz Clark
+Product Guide
+67
+USB, DC & Solar Lipoly Charger
+By
+lady ada
+intermediate
+246
+Adafruit PCA9546 4-Channel STEMMA QT Multiplexer
+By
+Liz Clark
+Product Guide
+11
+Adafruit PiCowbell CAN Bus for Pico
+By
+Liz Clark
+Product Guide
+8
+Adafruit NeoRGB Stemma
+By
+Liz Clark
+Product Guide
+7
+Your browser does not support the video tag. This links to the guide Adafruit LTR-329 and LTR-303 Light Sensors.
+Adafruit LTR-329 and LTR-303 Light Sensors
+By
+Kattni Rembor
+Product Guide
+9
+Adafruit 1.27" and 1.5" Color OLED Breakout Board
+By
+Bill Earl
+Product Guide
+40
+Adafruit MCP4728 I2C Quad DAC
+By
+Bryan Siepert
+Product Guide
+13
+CircuitPython Display Support Using displayio
+By
+Carter Nelson
+beginner
+204
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

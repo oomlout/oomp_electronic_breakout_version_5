@@ -1,3 +1,428 @@
+<!-- oomp-documentation:start -->
+# Electronic Breakout Power Dc To Dc Step Down Lm2596 48 Mm Width 25 Mm Height Blue Pcb Aliexpress
+
+## Summary
+
+OOMP catalogue record for Electronic Breakout Power Dc To Dc Step Down Lm2596 48 Mm Width 25 Mm Height Blue Pcb Aliexpress. Use the metadata to identify this variant and the part folder to inspect its available assets.
+
+![Catalogue preview of Electronic Breakout Power Dc To Dc Step Down Lm2596 48 Mm Width 25 Mm Height Blue Pcb Aliexpress](3dpr_presentation.png)
+
+Catalogue illustration; consult the source dimensions and datasheet for specification.
+
+## Details
+
+**OOMP folder ID:** `electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress`
+
+[Catalogue](../../README.md) · [Part metadata](working.yaml)
+
+| Field | Value |
+| --- | --- |
+| id | electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress |
+| md5_6 | 222c96 |
+| md5_6_alpha | 1c046 |
+| oomp_key | oomp_electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress |
+| taxonomy_1 | electronic |
+| taxonomy_2 | breakout |
+| taxonomy_3 | power |
+| taxonomy_4 | dc_to_dc |
+| taxonomy_5 | step_down |
+| taxonomy_6 | lm2596 |
+| taxonomy_7 | 48_mm_width_25_mm_height_blue_pcb |
+| taxonomy_14 | aliexpress |
+
+<details>
+<summary>Full part metadata</summary>
+
+```yaml
+bip_39_2_word_array:
+- captain
+- gorilla
+bip_39_2_word_no_space: captaingorilla
+bip_39_2_word_space: captain gorilla
+bip_39_2_word_underscore: captain_gorilla
+bip_39_3_word_array:
+- captain
+- gorilla
+- object
+bip_39_3_word_no_space: captaingorillaobject
+bip_39_3_word_space: captain gorilla object
+bip_39_3_word_underscore: captain_gorilla_object
+bip_39_full_array:
+- captain
+- gorilla
+- object
+- fox
+- since
+- satoshi
+- theme
+- task
+- radar
+- village
+- season
+- like
+bip_39_full_no_space: captaingorillaobjectfoxsincesatoshithemetaskradarvillageseasonlike
+bip_39_full_space: captain gorilla object fox since satoshi theme task radar village
+  season like
+bip_39_full_underscore: captain_gorilla_object_fox_since_satoshi_theme_task_radar_village_season_like
+breakout_description: 48_mm_width_25_mm_height_blue_pcb
+breakout_pcb_height: 25
+breakout_pcb_width: 48
+breakout_pcb_width_extra: 10
+directory: parts/electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress
+id: electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress
+id_no_class: electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress
+id_no_size: electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress
+id_no_type: electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress
+manufacturer: aliexpress
+md5: 222c96602e2c937ef806f0b0be8308c0
+md5_10: 222c96602e
+md5_10_upper: 222C96602E
+md5_5: 222c9
+md5_5_upper: 222C9
+md5_6: 222c96
+md5_6_alpha: 1c046
+md5_6_alpha_upper: 1C046
+md5_6_upper: 222C96
+mounting_hole_radius_name: m3
+mounting_holes: &id001
+- - 18.0
+  - -10.0
+- - -18.0
+  - 10.0
+name: Electronic Breakout Power Dc To Dc Step Down Lm2596 48 Mm Width 25 Mm Height
+  Blue Pcb Aliexpress
+name_no_class: Electronic Breakout Power Dc To Dc Step Down Lm2596 48 Mm Width 25
+  Mm Height Blue Pcb Aliexpress
+name_no_size: Electronic Breakout Power Dc To Dc Step Down Lm2596 48 Mm Width 25 Mm
+  Height Blue Pcb Aliexpress
+name_no_type: Electronic Breakout Power Dc To Dc Step Down Lm2596 48 Mm Width 25 Mm
+  Height Blue Pcb Aliexpress
+name_proper: Electronic Breakout Power Dc To Dc Step Down Lm2596 48 Mm Width 25 Mm
+  Height Blue Pcb Aliexpress
+name_space: electronic breakout power dc to dc step down lm2596 48 mm width 25 mm
+  height blue pcb aliexpress
+name_upper: ELECTRONIC BREAKOUT POWER DC TO DC STEP DOWN LM2596 48 MM WIDTH 25 MM
+  HEIGHT BLUE PCB ALIEXPRESS
+oobb_details:
+- breakout_description: 48_mm_width_25_mm_height_blue_pcb
+  breakout_pcb_height: 25
+  breakout_pcb_width: 48
+  breakout_pcb_width_extra: 10
+  manufacturer: aliexpress
+  mounting_hole_radius_name: m3
+  mounting_holes: *id001
+  oobb_name: mounting_plate_default
+  part_number_aliexpress: '1005010001439374'
+  shift_wire_hole_x: -5
+  shift_wire_hole_y: -5
+  taxonomy_1: electronic
+  taxonomy_14: aliexpress
+  taxonomy_2: breakout
+  taxonomy_3: power
+  taxonomy_4: dc_to_dc
+  taxonomy_5: step_down
+  taxonomy_6: lm2596
+  taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+  type_1: power
+  type_2: dc_to_dc
+  type_3: step_down
+  type_4: lm2596
+  webpage_aliexpress: https://www.aliexpress.com/item/1005010001439374.html
+- breakout_description: 48_mm_width_25_mm_height_blue_pcb
+  breakout_pcb_height: 25
+  breakout_pcb_width: 48
+  breakout_pcb_width_extra: 10
+  manufacturer: aliexpress
+  mounting_hole_radius_name: m3
+  mounting_holes:
+  - - 18.0
+    - -10.0
+  - - -18.0
+    - 10.0
+  oobb_name: mounting_plate_oobb
+  part_number_aliexpress: '1005010001439374'
+  scad_output: working_oobb
+  shift_wire_hole_x: -5
+  shift_wire_hole_y: -5
+  taxonomy_1: electronic
+  taxonomy_14: aliexpress
+  taxonomy_2: breakout
+  taxonomy_3: power
+  taxonomy_4: dc_to_dc
+  taxonomy_5: step_down
+  taxonomy_6: lm2596
+  taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+  type_1: power
+  type_2: dc_to_dc
+  type_3: step_down
+  type_4: lm2596
+  webpage_aliexpress: https://www.aliexpress.com/item/1005010001439374.html
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      breakout_description: 48_mm_width_25_mm_height_blue_pcb
+      breakout_pcb_height: 25
+      breakout_pcb_width: 48
+      breakout_pcb_width_extra: 10
+      directory: parts\electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress
+      manufacturer: aliexpress
+      mounting_hole_radius_name: m3
+      mounting_holes: &id002
+      - - 18.0
+        - -10.0
+      - - -18.0
+        - 10.0
+      name: electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress
+      name_proper: Electronic Breakout Power Dc To Dc Step Down Lm2596 48 Mm Width
+        25 Mm Height Blue Pcb Aliexpress
+      name_space: electronic breakout power dc to dc step down lm2596 48 mm width
+        25 mm height blue pcb aliexpress
+      name_upper: ELECTRONIC BREAKOUT POWER DC TO DC STEP DOWN LM2596 48 MM WIDTH
+        25 MM HEIGHT BLUE PCB ALIEXPRESS
+      oobb_details:
+      - breakout_description: 48_mm_width_25_mm_height_blue_pcb
+        breakout_pcb_height: 25
+        breakout_pcb_width: 48
+        breakout_pcb_width_extra: 10
+        manufacturer: aliexpress
+        mounting_hole_radius_name: m3
+        mounting_holes: *id002
+        oobb_name: mounting_plate_default
+        part_number_aliexpress: '1005010001439374'
+        shift_wire_hole_x: -5
+        shift_wire_hole_y: -5
+        taxonomy_1: electronic
+        taxonomy_14: aliexpress
+        taxonomy_2: breakout
+        taxonomy_3: power
+        taxonomy_4: dc_to_dc
+        taxonomy_5: step_down
+        taxonomy_6: lm2596
+        taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+        type_1: power
+        type_2: dc_to_dc
+        type_3: step_down
+        type_4: lm2596
+        webpage_aliexpress: https://www.aliexpress.com/item/1005010001439374.html
+      - breakout_description: 48_mm_width_25_mm_height_blue_pcb
+        breakout_pcb_height: 25
+        breakout_pcb_width: 48
+        breakout_pcb_width_extra: 10
+        manufacturer: aliexpress
+        mounting_hole_radius_name: m3
+        mounting_holes:
+        - - 18.0
+          - -10.0
+        - - -18.0
+          - 10.0
+        oobb_name: mounting_plate_oobb
+        part_number_aliexpress: '1005010001439374'
+        scad_output: working_oobb
+        shift_wire_hole_x: -5
+        shift_wire_hole_y: -5
+        taxonomy_1: electronic
+        taxonomy_14: aliexpress
+        taxonomy_2: breakout
+        taxonomy_3: power
+        taxonomy_4: dc_to_dc
+        taxonomy_5: step_down
+        taxonomy_6: lm2596
+        taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+        type_1: power
+        type_2: dc_to_dc
+        type_3: step_down
+        type_4: lm2596
+        webpage_aliexpress: https://www.aliexpress.com/item/1005010001439374.html
+      part_number_aliexpress: '1005010001439374'
+      shift_wire_hole_x: -5
+      shift_wire_hole_y: -5
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: aliexpress
+      taxonomy_15: ''
+      taxonomy_2: breakout
+      taxonomy_3: power
+      taxonomy_4: dc_to_dc
+      taxonomy_5: step_down
+      taxonomy_6: lm2596
+      taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: power
+      type_2: dc_to_dc
+      type_3: step_down
+      type_4: lm2596
+      url_chat: ''
+      webpage_aliexpress: https://www.aliexpress.com/item/1005010001439374.html
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_power_dc_to_dc_step_down_lm2596_48_mm_width_25_mm_height_blue_pcb_aliexpress
+part_number_aliexpress: '1005010001439374'
+shift_wire_hole_x: -5
+shift_wire_hole_y: -5
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: aliexpress
+taxonomy_14_capital: Aliexpress
+taxonomy_14_first_letter: a
+taxonomy_14_first_letter_upper: A
+taxonomy_14_length_1: a
+taxonomy_14_length_2: al
+taxonomy_14_length_3: ali
+taxonomy_14_length_4: alie
+taxonomy_14_length_5: aliex
+taxonomy_14_upper: ALIEXPRESS
+taxonomy_14_upper_length_1: A
+taxonomy_14_upper_length_2: AL
+taxonomy_14_upper_length_3: ALI
+taxonomy_14_upper_length_4: ALIE
+taxonomy_14_upper_length_5: ALIEX
+taxonomy_15: ''
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: power
+taxonomy_3_capital: Power
+taxonomy_3_first_letter: p
+taxonomy_3_first_letter_upper: P
+taxonomy_3_length_1: p
+taxonomy_3_length_2: po
+taxonomy_3_length_3: pow
+taxonomy_3_length_4: powe
+taxonomy_3_length_5: power
+taxonomy_3_upper: POWER
+taxonomy_3_upper_length_1: P
+taxonomy_3_upper_length_2: PO
+taxonomy_3_upper_length_3: POW
+taxonomy_3_upper_length_4: POWE
+taxonomy_3_upper_length_5: POWER
+taxonomy_4: dc_to_dc
+taxonomy_4_capital: Dc To Dc
+taxonomy_4_first_letter: d
+taxonomy_4_first_letter_upper: D
+taxonomy_4_length_1: d
+taxonomy_4_length_2: dc
+taxonomy_4_length_3: dc_
+taxonomy_4_length_4: dc_t
+taxonomy_4_length_5: dc_to
+taxonomy_4_upper: DC_TO_DC
+taxonomy_4_upper_length_1: D
+taxonomy_4_upper_length_2: DC
+taxonomy_4_upper_length_3: DC_
+taxonomy_4_upper_length_4: DC_T
+taxonomy_4_upper_length_5: DC_TO
+taxonomy_5: step_down
+taxonomy_5_capital: Step Down
+taxonomy_5_first_letter: s
+taxonomy_5_first_letter_upper: S
+taxonomy_5_length_1: s
+taxonomy_5_length_2: st
+taxonomy_5_length_3: ste
+taxonomy_5_length_4: step
+taxonomy_5_length_5: step_
+taxonomy_5_upper: STEP_DOWN
+taxonomy_5_upper_length_1: S
+taxonomy_5_upper_length_2: ST
+taxonomy_5_upper_length_3: STE
+taxonomy_5_upper_length_4: STEP
+taxonomy_5_upper_length_5: STEP_
+taxonomy_6: lm2596
+taxonomy_6_capital: Lm2596
+taxonomy_6_first_letter: l
+taxonomy_6_first_letter_upper: L
+taxonomy_6_length_1: l
+taxonomy_6_length_2: lm
+taxonomy_6_length_3: lm2
+taxonomy_6_length_4: lm25
+taxonomy_6_length_5: lm259
+taxonomy_6_upper: LM2596
+taxonomy_6_upper_length_1: L
+taxonomy_6_upper_length_2: LM
+taxonomy_6_upper_length_3: LM2
+taxonomy_6_upper_length_4: LM25
+taxonomy_6_upper_length_5: LM259
+taxonomy_7: 48_mm_width_25_mm_height_blue_pcb
+taxonomy_7_capital: 48 mm Width 25 mm Height Blue Pcb
+taxonomy_7_first_letter: '4'
+taxonomy_7_first_letter_upper: '4'
+taxonomy_7_length_1: '4'
+taxonomy_7_length_2: '48'
+taxonomy_7_length_3: '48_'
+taxonomy_7_length_4: 48_m
+taxonomy_7_length_5: 48_mm
+taxonomy_7_upper: 48_MM_WIDTH_25_MM_HEIGHT_BLUE_PCB
+taxonomy_7_upper_length_1: '4'
+taxonomy_7_upper_length_2: '48'
+taxonomy_7_upper_length_3: '48_'
+taxonomy_7_upper_length_4: 48_M
+taxonomy_7_upper_length_5: 48_MM
+taxonomy_8: ''
+taxonomy_9: ''
+type_1: power
+type_2: dc_to_dc
+type_3: step_down
+type_4: lm2596
+url_chat: ''
+webpage_aliexpress: https://www.aliexpress.com/item/1005010001439374.html
+```
+
+</details>
+
+## Parts
+
+[Open the canonical part folder](./) for the files available for this variant. Alternative model formats describe the same record; they are not extra components.
+
+## Assembly
+
+No assembly procedure is inferred from this catalogue record. Use any retained technical notes and the original manufacturer documentation for installation details.
+<!-- oomp-documentation:end -->
+
+<details>
+<summary>Existing technical notes</summary>
+
 <!-- oobb-presentation:start -->
 # Aliexpress dc to dc step down
 
@@ -35,3 +460,5 @@ Select a plate and download its STL. Board fixing hardware is not specified in t
 
 [Catalogue record](working.yaml) · [Render sources](presentation/manifest.json)
 <!-- oobb-presentation:end -->
+
+</details>

@@ -1,0 +1,2 @@
+Downloaded 2026-11-06 from https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd
+Pinned repository commit: 1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1 (2021-08-04). The file is explicitly named Adafruit DS3231 STEMMA QT.brd. Adafruit product 5188 page distinguishes this current QT carrier from product 3013; the exact carrier PCB has a later silkscreen update noted 2023-01-09, which is not geometrically specified. Verify any change against current product evidence.

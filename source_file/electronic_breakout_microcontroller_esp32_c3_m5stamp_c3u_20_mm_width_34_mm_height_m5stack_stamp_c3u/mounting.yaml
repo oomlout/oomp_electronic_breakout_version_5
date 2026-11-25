@@ -1,0 +1,170 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_c3_m5stamp_c3u_20_mm_width_34_mm_height_m5stack_stamp_c3u
+status: needs_review
+board_revision: M5Stack Stamp-C3U, SKU C122-B; the official product page and dimension
+  drawing do not state a PCB revision. Geometry is limited to the manufacturer-published
+  C122-B carrier drawing.
+identity_evidence: The official M5Stack product page identifies Stamp-C3U, SKU C122-B,
+  and links the Structure Files directory in the official M5_Hardware repository.
+  At pinned repository commit ec351c516644b44defc145728cc029ced77381ff, that exact
+  product directory contains Stamp-C3U.stl only and no PCB layout CAD. The manufacturer
+  mechanical dimension drawing is specifically hosted in the Stamp-C3U product documentation
+  and depicts the 20 x 34 mm carrier with a single Ã˜2.10 mm PCB mounting hole. The
+  page and drawing do not publish a PCB revision label.
+board_size:
+- 20.0
+- 34.0
+mounting_holes:
+- id: central_mounting_hole
+  x_mm: 0.0
+  y_mm: -2.0
+  diameter_mm: 2.1
+  source_id: mechanical
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: mechanical
+derivation: 'Manufacturer dimension drawing, top view: nominal PCB outline 20.00 mm
+  wide x 34.00 mm high. The only feature called out Ã˜2.10 is the central PCB mounting
+  hole; its centreline is at the horizontal board centre, so X=0.00 mm. The drawing
+  dimensions its centre 19.00 mm from the bottom edge: drawing-origin Y = 19.00 mm;
+  centre the board at height/2 = 17.00 mm, giving drawing-centred Y=19.00-17.00=+2.00
+  mm. The drawing places the USB connector at the bottom edge; rotate the drawing
+  180 degrees to the canonical top view with USB at +Y, applying (x,y)->(-x,-y), which
+  yields canonical hole X=0.00 mm, Y=-2.00 mm. Review of the complete manufacturer
+  dimension sheet top, side and bottom views shows only this one PCB mounting hole;
+  edge contacts/pads and bottom-view artwork are not mounting holes. No PCB-layout
+  CAD is published in the exact product directory at the pinned repository commit,
+  so the drawing is the mechanical authority.'
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  local_file: mounting_evidence/product_page.html
+  url: https://docs.m5stack.com/en/core/Stamp-C3U?id=schematics
+  kind: manufacturer_product
+  locator: 'Official Stamp-C3U product page: SKU C122-B, product description and dimensional
+    specification, linked Structure Files and schematic section'
+  registered_at: '2026-11-06T17:47:16+00:00'
+  bytes: 134368
+  sha256: 5ce620a641cc38305818bd8b0a0c729659e3a4a12d7bed96b4141c73cf5aad05
+- id: mechanical
+  local_file: reference/dimensions.webp
+  url: https://static-cdn.m5stack.com/resource/docs/products/core/stamp_c3u/stamp_c3%26c3u_size_01.webp
+  kind: manufacturer_drawing
+  locator: Manufacturer dimension drawing, top and bottom views. 20.00 x 34.00 mm
+    board; top view one ÃƒËœ2.10 mm central PCB mounting hole, dimensioned 19.00 mm
+    from bottom edge; drawing has no revision label.
+  registered_at: '2026-11-06T17:47:16+00:00'
+  bytes: 51234
+  sha256: 63b4d2b16fa855c2aaddfd5b828096d4de1f3a03b366b16cccb9d7bf0fa4ccf4
+- id: hardware_repo
+  local_file: mounting_evidence/hardware_repo_tree.json
+  url: https://api.github.com/repos/m5stack/M5_Hardware/git/trees/ec351c516644b44defc145728cc029ced77381ff?recursive=1
+  kind: manufacturer_cad_index
+  locator: Official M5Stack hardware repository tree pinned at commit ec351c516644b44defc145728cc029ced77381ff.
+    Exact product directory C122-B_Stamp-C3U contains Structures/Stamp-C3U.stl only;
+    no PCB layout CAD.
+  registered_at: '2026-11-06T17:47:17+00:00'
+  bytes: 237935
+  sha256: 53c0fb513e0b455dac1feceb8766c621bc65c6e21a7e2fe8c09770341754c366
+- id: product_current
+  local_file: mounting_evidence/current_2026-11-07_product_page.html
+  url: https://docs.m5stack.com/en/core/Stamp-C3U?id=schematics
+  kind: manufacturer_product
+  locator: 'Current official product page reviewed 2026-11-07: identifies SKU C122-B,
+    nominal 34.0 x 20.0 x 4.6 mm size and M2 x 4 screw; Structure Files link is product-specific,
+    while the PcbDoc link incorrectly points to C056-B Stamp-C3 Footprint, not C122-B
+    C3U.'
+  registered_at: '2026-11-07T15:54:18+00:00'
+  bytes: 134368
+  sha256: 5ce620a641cc38305818bd8b0a0c729659e3a4a12d7bed96b4141c73cf5aad05
+- id: mechanical_current
+  local_file: mounting_evidence/current_2026-11-07_dimensions.webp
+  url: https://static-cdn.m5stack.com/resource/docs/products/core/stamp_c3u/stamp_c3%26c3u_size_01.webp
+  kind: manufacturer_drawing
+  locator: Current official Stamp-C3U dimension sheet rechecked 2026-11-07, all top/side/bottom
+    views. Top view explicitly calls out Ø2.10 mm for the central PCB mount; board
+    is 20.00 x 34.00 mm; centre is dimensioned 19.00 mm from bottom edge. No revision
+    label.
+  registered_at: '2026-11-07T15:54:18+00:00'
+  bytes: 51234
+  sha256: 63b4d2b16fa855c2aaddfd5b828096d4de1f3a03b366b16cccb9d7bf0fa4ccf4
+- id: hardware_repo_current
+  local_file: mounting_evidence/current_2026-11-07_hardware_repo_tree.json
+  url: https://api.github.com/repos/m5stack/M5_Hardware/git/trees/master?recursive=1
+  kind: manufacturer_cad_index
+  locator: Current official M5Stack M5_Hardware tree checked 2026-11-07; tree resolves
+    to commit ec351c516644b44defc145728cc029ced77381ff. Exact Products/C122-B_Stamp-C3U
+    directory contains Structures/Stamp-C3U.stl only; no PCB layout CAD.
+  registered_at: '2026-11-07T15:54:19+00:00'
+  bytes: 237935
+  sha256: 53c0fb513e0b455dac1feceb8766c621bc65c6e21a7e2fe8c09770341754c366
+attempts:
+- source_id: product
+  result: Official manufacturer product page reviewed. Confirms Stamp-C3U, SKU C122-B,
+    nominal product size 34.0 x 20.0 x 4.6 mm, M2 mounting screw specification, and
+    links the product structure files.
+- source_id: hardware_repo
+  result: Reviewed exact C122-B_Stamp-C3U directory at pinned official M5_Hardware
+    commit ec351c516644b44defc145728cc029ced77381ff. Directory has only Structures/Stamp-C3U.stl;
+    no PCB layout CAD available for extraction.
+- source_id: mechanical
+  result: Reviewed full manufacturer dimension drawing in top, side and bottom views.
+    It defines 20 x 34 mm outline and one explicitly dimensioned Ã˜2.10 mm board mounting
+    hole 19.00 mm from USB-opposite edge.
+- source_id: product_current
+  result: Rechecked the current official product page on 2026-11-07. It still identifies
+    SKU C122-B, lists nominal 34.0 x 20.0 x 4.6 mm dimensions and M2 x 4 countersunk
+    screws, and links product-specific C3U structure files. Its PcbDoc link currently
+    points to the C056-B Stamp-C3 Footprint directory, so it is not applicable C3U PCB CAD.
+- source_id: hardware_repo_current
+  result: Rechecked the live official repository tree on 2026-11-07. It resolves to the
+    same commit ec351c516644b44defc145728cc029ced77381ff; exact C122-B_Stamp-C3U directory
+    still contains only the structure STL, with no PCB layout CAD.
+- source_id: mechanical_current
+  result: Re-fetched and visually re-reviewed the complete current official dimension sheet
+    on 2026-11-07. It remains unchanged and explicitly labels the sole central PCB mounting
+    hole Ã˜2.10 mm; the board and hole location are unchanged, and the sheet still has no
+    PCB revision identifier.
+conflicts:
+- Known geometry is one Ø2.10 mm drill, but the standard holder helper cannot support
+  it under the required 0.2 mm diametral screw clearance; custom holder review is
+  required.
+notes:
+- The manufacturer drawing provides nominal board dimensions and hole geometry but
+  no explicit PCB revision identifier. This record applies to the documented C122-B
+  Stamp-C3U geometry.
+- The Ã˜2.10 mm value is the PCB drill/through-hole diameter shown in the drawing,
+  not the screw diameter. The product page separately specifies M2 x 4 countersunk
+  screws.
+- The standard holder is generated geometry only. Component, connector, screw-head
+  and underside clearance remain unverified; no physical fit test was performed.
+- 'Current source confirmation (2026-11-07): the manufacturer drawing still specifies
+  the same Ø2.10 mm PCB drill for SKU C122-B; the current official product page and repository
+  expose no newer applicable PCB-layout CAD or PCB revision. The exact drill therefore remains
+  below the standard-holder threshold and status remains needs_review.'
+- 'Helper preview rejected the exact Ø2.10 mm drill: its standard holder requires
+  at least 0.2 mm diametral clearance for supported M2/M2.5/M3 screws, so M2 does
+  not meet the policy (2.10 mm hole gives 0.10 mm diametral clearance). The workflow
+  requires custom holder review for this drill. No preview, validation, promotion,
+  or generation was performed; mounting geometry must not be changed to fit the standard
+  holder.'
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:54:19+00:00'
+identity_source_ids:
+- product
+- hardware_repo
+- mechanical
+- product_current
+- hardware_repo_current
+- mechanical_current

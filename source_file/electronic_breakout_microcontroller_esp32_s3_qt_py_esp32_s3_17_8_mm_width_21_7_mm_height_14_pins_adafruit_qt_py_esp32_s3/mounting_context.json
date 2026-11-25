@@ -1,0 +1,121 @@
+{
+  "name_readable": "Adafruit QT Py ESP32-S3 (memory SKU unresolved)",
+  "manufacturer": "adafruit",
+  "part_number": "qt_py_esp32_s3",
+  "webpage": null,
+  "sources": [
+    {
+      "id": "original_catalogue",
+      "url": null,
+      "title": "Original populate entries in this repository",
+      "local_file": null,
+      "scope": "Nominal dimensions and identity; not manufacturer verification",
+      "accessed": "2026-10-22"
+    },
+    {
+      "id": "chip_datasheet",
+      "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf",
+      "title": "chip_datasheet",
+      "accessed": "2026-10-22",
+      "scope": "GPIO capabilities, electrical limits and strapping; not carrier geometry"
+    },
+    {
+      "id": "board_guide",
+      "url": "https://learn.adafruit.com/adafruit-qt-py-esp32-s3/downloads",
+      "title": "qtpy_s3 manufacturer guide",
+      "accessed": "2026-10-22",
+      "scope": "Board identity, connector pinout and documented functions"
+    },
+    {
+      "id": "cad",
+      "url": "https://raw.githubusercontent.com/adafruit/Adafruit-QT-Py-ESP32-S3-PCB/main/Adafruit%20QT%20Py%20ESP32-S3.brd",
+      "title": "cad",
+      "accessed": "2026-10-22",
+      "scope": "Manufacturer CAD; see revision and product applicability notes",
+      "local_file": "reference/Adafruit QT Py ESP32-S3.brd",
+      "sha256": "25d1099881e85b492b1f9fcda87ef51981218c897d224dcefa8af8a71485cc39"
+    },
+    {
+      "id": "cad_schematic",
+      "url": "https://raw.githubusercontent.com/adafruit/Adafruit-QT-Py-ESP32-S3-PCB/main/Adafruit%20QT%20Py%20ESP32-S3.sch",
+      "title": "cad_schematic",
+      "accessed": "2026-10-22",
+      "scope": "Manufacturer CAD; see revision and product applicability notes",
+      "local_file": "reference/Adafruit QT Py ESP32-S3.sch",
+      "sha256": "5e50d2242105b1dcf9be8398c63cb8502333e5d861953078ba296ecd088f6360"
+    },
+    {
+      "id": "interface_variant",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/variants/adafruit_qtpy_esp32s3_n4r2/pins_arduino.h",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Arduino variant pin assignments; not a physical header drawing",
+      "local_file": "reference/interface_defaults/esp32_adafruit_qtpy_esp32s3_n4r2.h",
+      "sha256": "42249857aaede7255529641f26be99e7e0ab8270c8310f3ea204e6151f6c01ce"
+    },
+    {
+      "id": "interface_variant_other_sku",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/variants/adafruit_qtpy_esp32s3_nopsram/pins_arduino.h",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Both published QT Py S3 memory variants have identical bus pin aliases",
+      "local_file": "reference/interface_defaults/esp32_adafruit_qtpy_esp32s3_nopsram.h",
+      "sha256": "4cbd0d84d06c01fc0533e4577cc1d4b5d6825f258fd792c38a099497a1b0d807"
+    },
+    {
+      "id": "interface_board_selection",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/boards.txt",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework board names and variant selection; generic selections remain explicitly scoped",
+      "local_file": "reference/interface_defaults/esp32_boards.txt",
+      "sha256": "7a4ed03707cf8a6a2a31daa150450903540a7636f021626b0c4f53b9fc11787d",
+      "content_scope": "excerpt_of_board_names_and_variant_selections",
+      "source_document_sha256": "11b90d1f4795ec365418635749b685a2f3d8320d0e163d886aa2099e81277b07"
+    },
+    {
+      "id": "interface_runtime_uart",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/cores/esp32/HardwareSerial.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_HardwareSerial.cpp",
+      "sha256": "a555861fb4f28a2a4c1d903a8152d714902fee2510c9eaf3ad5311dbcd779035"
+    },
+    {
+      "id": "interface_runtime_i2c",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/Wire/src/Wire.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_Wire.cpp",
+      "sha256": "0454e5becf7acaa6f7cb466397682d762461f678cbb88644f31f313e653b71bc"
+    },
+    {
+      "id": "interface_runtime_spi",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/SPI/src/SPI.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_SPI.cpp",
+      "sha256": "4caea80d21fa230a528322d9eb900880a0acd9c91cb355bc5cec514ea02ecaed"
+    }
+  ],
+  "dimensions_mm": {
+    "width": 17.78,
+    "height": 20.701,
+    "pcb_thickness": null,
+    "assembled_height": null,
+    "scope": "pcb_outline_excludes_usb_overhang",
+    "source_id": "cad",
+    "status": "manufacturer_cad"
+  },
+  "coordinate_system": {
+    "units": "mm",
+    "origin": "centre_of_pcb_outline",
+    "view": "top_with_usb_at_positive_y",
+    "x_positive": "right",
+    "y_positive": "towards_usb"
+  },
+  "mounting_hole_details": []
+}

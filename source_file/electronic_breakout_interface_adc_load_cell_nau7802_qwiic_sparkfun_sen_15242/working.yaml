@@ -1,0 +1,254 @@
+research_schema_version: 1
+part_id: electronic_breakout_interface_adc_load_cell_nau7802_qwiic_sparkfun_sen_15242
+name_readable: SparkFun Qwiic Scale, NAU7802
+manufacturer: sparkfun
+part_number: sen_15242
+manufacturer_part_number: SEN-15242
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: interface
+  taxonomy_4: adc
+  taxonomy_5: load_cell
+  taxonomy_6: nau7802
+  taxonomy_7: qwiic
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: sparkfun
+  taxonomy_15: sen_15242
+default_website:
+  url: https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:26:29+00:00'
+  updated_at: '2026-10-23T20:26:47+00:00'
+  reviewed_by: null
+  attempts:
+  - url: https://cdn.sparkfun.com/assets/9/4/d/f/c/QwiicScale.zip
+    source_id: null
+    at: '2026-10-23T20:26:35+00:00'
+    outcome: failed
+    reason: 'not well-formed (invalid token): line 1, column 2'
+board_revision:
+  name: SparkFun Qwiic Scale NAU7802 SEN-15242
+  status: identified_by_product_page
+  source_ids: [product_page, hookup_guide]
+  notes: Qwiic scale carrier with spring terminal for load-cell leads and separate PTH ADC/interrupt/AVDD breakout. Product listing identifies fixed hardware I2C address.
+description: A 24-bit load-cell amplifier/converter for weighing and force projects. The external load
+  cell remains a separate component.
+interfaces:
+- i2c
+dimensions_mm:
+  width: null
+  height: null
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: unknown
+  source_ids: [product_page, hookup_guide, schematic]
+  notes: Product listing and guide don't specify carrier dimensions. Official design archive ZIP was discovered and attempted, but capture helper expected an Eagle XML and failed on ZIP bytes; preserved failed attempt.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: unknown_not_documented
+connectors:
+  qwiic_1:
+    kind: cable_connector
+    description: Qwiic 4-pin I2C connector
+    contacts: []
+    source_ids: [product_page, hookup_guide]
+  qwiic_2:
+    kind: cable_connector
+    description: Qwiic 4-pin I2C connector
+    contacts: []
+    source_ids: [product_page, hookup_guide]
+  load_cell_terminal:
+    kind: cable_connector
+    description: Four-position spring terminal for load-cell bridge wires (red/E+, black/E-, white/A-, green/A+); separate shield PTH provided for shielded load cells.
+    contacts: []
+    source_ids: [product_page, hookup_guide]
+  header_group:
+    kind: header
+    description: 0.1-inch pitch PTH breakout includes interrupt and AVDD and I2C/power signals; complete physical contact inventory awaits CAD review.
+    contacts: []
+    source_ids: [product_page, hookup_guide, schematic]
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: partial
+  source_ids: [product_page, hookup_guide, schematic]
+pin_names: []
+electrical:
+  board_supply:
+    min_v: 3.3
+    max_v: 3.3
+    nominal_v: [3.3]
+    status: documented_board_operating_voltage
+    source_ids: [product_page, hookup_guide]
+    notes: Listing says board operates at 3.3V; NAU7802 chip range 2.7–5.5V is separate and not promoted to carrier input capability.
+  chip_supply:
+    min_v: 2.7
+    max_v: 5.5
+    status: datasheet_chip_range
+    notes: Chip supply range from manufacturer datasheet.
+    source_ids: [chip_datasheet]
+  logic_levels:
+    status: documented_3v3
+    notes: ["Qwiic interface and board operating voltage are 3.3V.", "NAU7802 chip supports 2.7–5.5V; board spec remains 3.3V."]
+    source_ids: [product_page, hookup_guide]
+  pullups:
+  - signals: [SCL, SDA]
+    resistance_ohms: null
+    rail: 3.3V
+    designator: null
+    disconnect_method: unknown
+    source_ids: [schematic]
+  extra_signals:
+  - name: INT
+    direction: output
+    notes: Conversion-ready interrupt; defaults low when data is ready.
+    source_ids: [hookup_guide]
+  - name: AVDD
+    direction: output
+    notes: Load-cell bridge excitation voltage default 3.3V; regulator configurable down to 2.4V per guide.
+    source_ids: [hookup_guide]
+  source_ids: [product_page, hookup_guide, schematic]
+i2c:
+  default_address_7bit: 42
+  documented_addresses_7bit: [42]
+  address_selection: Fixed hardware-defined address 0x2A.
+  maximum_clock_hz: null
+  clock_stretching: unverified
+  status: documented
+  source_ids: [product_page, hookup_guide]
+chip:
+  manufacturer: Nuvoton (formerly Nuvoton/Nuvoton acquired Nuvoton? Datasheet by Nuvoton)
+  part_number: NAU7802
+  identity_status: product_page_and_datasheet_claim
+  source_ids: [product_page, chip_datasheet]
+datasheets:
+  status: downloaded
+  items:
+  - chip: NAU7802
+    source_id: chip_datasheet
+    local_file: reference/NAU7802.pdf
+    url: https://cdn.sparkfun.com/assets/e/c/8/7/6/NAU7802_Data_Sheet_V1.7.pdf
+    sha256: 2f4d7085bb244f9195e0d2f5a2e02abe6f26a37035e3788fad236880fa6203c6
+    page_count: 42
+    revision: 1.7
+  notes: Archived official SparkFun datasheet link. Chip manufacturer identity should be checked against datasheet cover page during later review.
+software:
+- name: SparkFun Qwiic Scale NAU7802 Arduino library
+  framework: Arduino
+  url: https://github.com/sparkfun/SparkFun_Qwiic_Scale_NAU7802_Arduino_Library
+  tested: false
+  source_ids: [product_page]
+- name: SparkFun Qwiic NAU7802 Python library
+  framework: Python/MicroPython/CircuitPython
+  url: https://github.com/sparkfun/qwiic_nau7802_py
+  tested: false
+  source_ids: [product_page]
+extra_resources:
+- name: Qwiic Scale hookup guide
+  kind: guide
+  url: https://learn.sparkfun.com/tutorials/qwiic-scale-hookup-guide
+  source_id: hookup_guide
+- name: Qwiic Scale schematic
+  kind: schematic
+  url: https://cdn.sparkfun.com/assets/6/a/5/9/d/Qwiic_Scale.pdf
+  source_id: schematic
+- name: Qwiic Scale hardware archive
+  kind: hardware_archive
+  url: https://cdn.sparkfun.com/assets/9/4/d/f/c/QwiicScale.zip
+  source_id: product_page
+sources:
+- id: product_page
+  kind: website
+  requested_url: https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html
+  url: https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html
+  retrieved_at: '2026-10-23T20:26:31+00:00'
+  content_type: text/html; charset=UTF-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 575731
+  sha256: c44a7fa24cc2fbf7bfedd00f0711b75b84ca1335f761e3c728ea9ce0c7aaac4b
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 3925
+    sha256: 601058be7948a0782b33c9b312284118922cf925d2419509402ed48c20999565
+  - kind: links
+    local_file: website.links.json
+    bytes: 56065
+    sha256: f266e830ae69ba808a4ef859a6522b84dadef43efb5e7393007df2c6a7687bcb
+  title: SparkFun Qwiic Scale - NAU7802 - SparkFun Electronics
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: hookup_guide
+  kind: guide
+  requested_url: https://learn.sparkfun.com/tutorials/qwiic-scale-hookup-guide
+  url: https://learn.sparkfun.com/tutorials/qwiic-scale-hookup-guide
+  retrieved_at: '2026-10-23T20:26:33+00:00'
+  content_type: text/html;charset=UTF-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/hookup.html
+  bytes: 69046
+  sha256: 101aff7acdae760cb13d40b3aa97f73d93e251b6dedd6c713a6b648e3af046da
+  derivatives:
+  - kind: text
+    local_file: reference/hookup.txt
+    bytes: 26350
+    sha256: 09afbbaa409693b64300a811044e01825464ccff52b9036c8df33e4c937080bb
+  - kind: links
+    local_file: reference/hookup.links.json
+    bytes: 18354
+    sha256: 2127fced8be2f03f89105bfdbe1d08bc588e52141c8699748b9fbbcca6d97847
+  title: Qwiic Scale Hookup Guide - SparkFun Learn
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn.sparkfun.com/assets/e/c/8/7/6/NAU7802_Data_Sheet_V1.7.pdf
+  url: https://cdn.sparkfun.com/assets/e/c/8/7/6/NAU7802_Data_Sheet_V1.7.pdf
+  retrieved_at: '2026-10-23T20:26:34+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/NAU7802.pdf
+  bytes: 1480351
+  sha256: 2f4d7085bb244f9195e0d2f5a2e02abe6f26a37035e3788fad236880fa6203c6
+  derivatives: []
+  pdf_page_count: 42
+- id: schematic
+  kind: schematic
+  requested_url: https://cdn.sparkfun.com/assets/6/a/5/9/d/Qwiic_Scale.pdf
+  url: https://cdn.sparkfun.com/assets/6/a/5/9/d/Qwiic_Scale.pdf
+  retrieved_at: '2026-10-23T20:26:47+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/Qwiic_Scale.pdf
+  bytes: 93755
+  sha256: 563713f0e512c22afca3f9dc1efa7d3645e55688b8d8944faf0e906ed9d80dee
+  derivatives: []
+conflicts: []
+data_gaps:
+- Exact PCB outline, thickness, assembled dimensions, and mounting-hole geometry not found in product or guide; archived official design ZIP capture failed because helper expected Eagle XML, so CAD must be extracted/reviewed separately under policy.
+- Header PTH count/labels and complete contact/net mapping remain unresolved; spring terminal has four load-cell positions and two Qwiic connectors are documented.
+- Board-level maximum I2C clock and detailed pullup resistance are not transcribed.
+- Chip manufacturer name and specific fitted marking need confirmation; official datasheet is archived.

@@ -1,0 +1,7 @@
+Evidence acquisition date: 2026-11-06.
+
+The BNO086 board file and repository identity README were downloaded from SparkFun's official GitHub repository, pinned to commit fc8ed693a5193c8faec3098f29d206dea171958e. The README names the SEN-22857 product and states initial release v1.0. The CAD file is Hardware/SparkFun_VR_IMU_Breakout_BNO086_QWIIC.brd. Product identity and dimension corroboration are also from SparkFun's product page and Hardware Overview page. Registration metadata in mounting.yaml records local SHA-256 hashes.
+
+Full EAGLE drill inventory returned 25 candidates. JP3 and JP4 are the only two package STAND-OFF holes, and the package's embedded description calls it a mechanical footprint for a #4 screw; each is an unplated 3.302 mm PCB drill. Other drilled candidates are plated through-hole pads in header packages: J1 (1x06), J3 (1x04), J5 (1x01), J6 (1x08), J7 (1x02), and J8 (1x02). These are electrical header pads. J2 and J4 are SMD Qwiic connectors and have no drills. Fiducials are separate fiducial packages, not selected holes.
+
+The raw EAGLE Dimension-layer bounding box is x=0..30.48 mm, y=0..25.4 mm; native centre=(15.24,12.7). Applying the extractor's explicit CCW quarter-turn 1 transform (x',y')=(-y,x), after centring, swaps extents to 25.4 x 30.48 mm and maps JP3/JP4 to x=-10.16 mm, y=-12.70/+12.70 mm. This matches the guide's stated 25.4 x 30.48 mm outline and two holes on one side. Preview visually checked from top view.

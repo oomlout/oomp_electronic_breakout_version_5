@@ -1,0 +1,430 @@
+board_variant: stemma_qt
+breakout_description: stemma_qt
+breakout_pcb_height: 17.78
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+- Default I2C address not established in this import.
+definition_authority: working_oomp_populate_i2c.py
+description: Adds a familiar earlier ToF family and a reference for comparison with
+  generic carriers. Keep its performance and mechanical evidence separate from the
+  VL53L1X.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+geometry_ready: false
+i2c:
+  address_evidence_status: unverified
+  address_selection: unverified
+  clock_stretching: unverified
+  default_address_7bit: null
+  documented_addresses_7bit: []
+  maximum_clock_hz: null
+  source_id: product
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+manufacturer: adafruit
+manufacturer_part_number: '3317'
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 2.5
+  id: U$30:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 6.35
+- diameter_mm: 2.5
+  id: U$31:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 6.35
+- diameter_mm: 2.5
+  id: U$33:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: -6.35
+- diameter_mm: 2.5
+  id: U$34:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: -6.35
+mounting_hole_radius_name: m2
+mounting_hole_radius_names:
+- m2
+- m2
+- m2
+- m2
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - 6.35
+- - 10.16
+  - 6.35
+- - -10.16
+  - -6.35
+- - 10.16
+  - -6.35
+mounting_lift: 3
+mounting_research:
+  board_revision: 'Adafruit product 3317 STEMMA QT carrier, revised July 21, 2020
+    to the 0.7 x 1.0 inch STEMMA QT standard. Exact mechanical file: Adafruit VL530X
+    STEMMA QT.brd at official Adafruit PCB repository commit 1ef873512150740edc9798f90028facfa35fd81f.'
+  board_size:
+  - 25.4
+  - 17.78
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'Exact manufacturer EAGLE board file Adafruit VL530X STEMMA QT.brd at
+    pinned commit 1ef873512150740edc9798f90028facfa35fd81f. Layer-20 dimension outline
+    bounds are x=0..25.4 mm and y=0..17.78 mm, so the native centre is (12.7, 8.89)
+    mm. For top view with quarter_turn=0, transform each native drill (X,Y) to centred
+    coordinates (x,y)=(X-12.7,Y-8.89), with no reflection or rotation. Selected all
+    four named MOUNTINGHOLE_2.5_PLATED pads U$30, U$31, U$33 and U$34; each PCB drill
+    is 2.5 mm. The complete drilled-feature inventory has 10 candidates: the other
+    six, JP2 pads 1 through 6 in package 1X06_ROUND_70, are the soldered header and
+    are not board mounting holes. The Adafruit product revision history also independently
+    specifies four mounting holes. Preview checked against the extraction: centred
+    rectangular extent and all four corner locations, diameters and count agree. Product
+    page separately lists 21.0 x 18.0 mm under Product Dimensions, which conflicts
+    with its more specific July 2020 0.7 x 1.0 inch carrier revision and the exact
+    QT CAD outline; use the exact carrier CAD bounds for the PCB outline.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit product page identifies product ID 3317 and states the
+    July 21, 2020 transition to the 0.7 x 1.0 inch STEMMA QT carrier with four mounting
+    holes and two STEMMA QT connectors. The official repository README links product
+    3317 and identifies the repository as its EagleCAD board/layout source; its exact
+    QT variant file is registered as cad. The official guide links to this repository
+    and its QT design files.
+  mounting_holes:
+  - diameter_mm: 2.5
+    id: U$30:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$33:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: -6.35
+  record_sha256: 78f5bf6dd9a62b125dd99b01dab5127cb5a7b31a84adcf330ce570c23b8cdf26
+  research_file: source_file/electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 108916
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Product ID 3317 and revision history states updated July 21, 2020 to
+      0.7 x 1.0 inch STEMMA QT standard, with four mounting holes and two STEMMA QT
+      connectors; dimensions are nominal product dimensions.
+    registered_at: '2026-11-06T19:48:46+00:00'
+    sha256: 2cf93309dba47e48e413c421c14360a80924c261f56dff8458b597f7b1166343
+    url: https://www.adafruit.com/product/3317
+  - bytes: 258962
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit_VL530X_STEMMA_QT.brd
+    locator: Exact QT variant filename at pinned official Adafruit PCB repository
+      commit 1ef873512150740edc9798f90028facfa35fd81f; EAGLE board, inspect outline
+      and all drills and compare four candidate mounting features.
+    registered_at: '2026-11-06T19:48:47+00:00'
+    sha256: 5953c86428a7e8e0c8e5cadc6cf0de3d312d2fe9cfa3c05005c4e0170cdc69b9
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/Adafruit%20VL530X%20STEMMA%20QT.brd
+  - bytes: 71457
+    id: guide
+    kind: manufacturer_document
+    local_file: reference/downloads.html
+    locator: 'Adafruit product guide identifies product 3317, links EagleCAD PCB files
+      on GitHub, distinguishes STEMMA QT and original schematic/fabrication prints,
+      and states M2.5 or #2-56 screws are used to mount.'
+    registered_at: '2026-11-06T19:49:11+00:00'
+    sha256: 87fb72e023733afd54f73eb52ad153a3b3b8f1130822f414a2fa5fca01014966
+    url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/downloads
+  - bytes: 2539
+    id: repo
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Official Adafruit repository README identifies this repository as the
+      PCB files for Adafruit VL53L0X ToF Distance Sensor and describes EagleCAD board
+      and schematic.
+    registered_at: '2026-11-06T19:49:12+00:00'
+    sha256: 15904ea1ad3d9caf7ccbba11996f223b3ff5f45cbbc17517a7a36117d9d56acd
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/README.md
+  status: verified
+name_readable: Adafruit VL53L0X Distance Sensor
+notes: []
+oobb_details:
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$30:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$33:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$30:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$33:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$30:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$33:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+part_number: '3317'
+part_number_adafruit: '3317'
+pinout_status: unverified
+pins: {}
+product_dimensions_mm:
+  depth: 2.8
+  height: 18
+  scope: manufacturer_product_dimensions_not_verified_pcb_outline
+  source_id: product
+  width: 21
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/3317
+- bytes: 108916
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: Product ID 3317 and revision history states updated July 21, 2020 to 0.7
+    x 1.0 inch STEMMA QT standard, with four mounting holes and two STEMMA QT connectors;
+    dimensions are nominal product dimensions.
+  registered_at: '2026-11-06T19:48:46+00:00'
+  sha256: 2cf93309dba47e48e413c421c14360a80924c261f56dff8458b597f7b1166343
+  url: https://www.adafruit.com/product/3317
+- bytes: 258962
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Adafruit_VL530X_STEMMA_QT.brd
+  locator: Exact QT variant filename at pinned official Adafruit PCB repository commit
+    1ef873512150740edc9798f90028facfa35fd81f; EAGLE board, inspect outline and all
+    drills and compare four candidate mounting features.
+  registered_at: '2026-11-06T19:48:47+00:00'
+  sha256: 5953c86428a7e8e0c8e5cadc6cf0de3d312d2fe9cfa3c05005c4e0170cdc69b9
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/Adafruit%20VL530X%20STEMMA%20QT.brd
+- bytes: 71457
+  id: mounting_guide
+  kind: manufacturer_document
+  local_file: reference/downloads.html
+  locator: 'Adafruit product guide identifies product 3317, links EagleCAD PCB files
+    on GitHub, distinguishes STEMMA QT and original schematic/fabrication prints,
+    and states M2.5 or #2-56 screws are used to mount.'
+  registered_at: '2026-11-06T19:49:11+00:00'
+  sha256: 87fb72e023733afd54f73eb52ad153a3b3b8f1130822f414a2fa5fca01014966
+  url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/downloads
+- bytes: 2539
+  id: mounting_repo
+  kind: manufacturer_repository
+  local_file: mounting_evidence/README.md
+  locator: Official Adafruit repository README identifies this repository as the PCB
+    files for Adafruit VL53L0X ToF Distance Sensor and describes EagleCAD board and
+    schematic.
+  registered_at: '2026-11-06T19:49:12+00:00'
+  sha256: 15904ea1ad3d9caf7ccbba11996f223b3ff5f45cbbc17517a7a36117d9d56acd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/README.md
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_15: '3317'
+taxonomy_2: breakout
+taxonomy_3: sensor
+taxonomy_4: distance
+taxonomy_5: time_of_flight
+taxonomy_6: vl53l0x
+taxonomy_7: stemma_qt
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: sensor
+type_2: distance
+type_3: time_of_flight
+type_4: vl53l0x
+webpage: https://www.adafruit.com/product/3317
+webpage_adafruit: https://www.adafruit.com/product/3317

@@ -1,0 +1,329 @@
+board_variant: stemma_qt
+breakout_description: stemma_qt
+breakout_pcb_height: 17.78
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+- Default I2C address not established in this import.
+definition_authority: working_oomp_populate_i2c.py
+description: Accurate timekeeping with battery backup; use the current QT carrier
+  rather than silently substituting the older 3013 board.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+geometry_ready: false
+i2c:
+  address_evidence_status: unverified
+  address_selection: unverified
+  clock_stretching: unverified
+  default_address_7bit: null
+  documented_addresses_7bit: []
+  maximum_clock_hz: null
+  source_id: product
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+manufacturer: adafruit
+manufacturer_part_number: '5188'
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 3.0
+  id: U$9:pad:P$1
+  package: MOUNTINGHOLE_3.0_PLATEDTHIN
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 6.35
+- diameter_mm: 3.0
+  id: U$17:pad:P$1
+  package: MOUNTINGHOLE_3.0_PLATEDTHIN
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 6.35
+mounting_hole_radius_name: m2_5
+mounting_hole_radius_names:
+- m2_5
+- m2_5
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - 6.35
+- - 10.16
+  - 6.35
+mounting_lift: 3
+mounting_research:
+  board_revision: Adafruit DS3231 Precision RTC STEMMA QT product 5188 carrier; exact
+    file Adafruit DS3231 STEMMA QT.brd from Adafruit PCB repository commit 1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1
+    (2021-08-04). Product 5188 notes a January 2023 silkscreen-only update and interchangeable
+    black/tan connectors; production revision is not independently marked in the CAD.
+  board_size:
+  - 25.4
+  - 17.78
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'EAGLE layer-20 outer outline spans native x=0..25.4 mm and y=0..17.78
+    mm. The bounding-box centre is (12.7, 8.89) mm. Quarter-turn is 0; canonical top-view
+    transform is x_mm=x_native-12.7 and y_mm=y_native-8.89, preserving +x right and
+    +y up. Full drill inspection found ten candidates: U$9:pad:P$1 and U$17:pad:P$1
+    are 3.0 mm plated drills in explicitly named MOUNTINGHOLE_3.0_PLATEDTHIN packages
+    and are the two board mounts. JP1:pad:1..8 are 1.0 mm plated 1X08_ROUND_70 electrical
+    header contacts and are excluded. The exact CAD selection and top-view preview
+    are reviewed against the raw board.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit product 5188 page identifies the DS3231 Precision RTC
+    STEMMA QT carrier and says the January 9, 2023 change was silkscreen only, with
+    older/newer vector-font boards otherwise identical. Its linked guide Downloads
+    page links the EagleCAD repository and separately lists the STEMMA QT fab print.
+    The pinned official repository contains the exact Adafruit DS3231 STEMMA QT.brd
+    file, distinct from the legacy Adafruit DS3231 RTC Breakout.brd. The CAD is the
+    appropriate QT carrier geometry; physical production revision was not verified.
+  mounting_holes:
+  - diameter_mm: 3.0
+    id: U$9:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 3.0
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 6.35
+  record_sha256: 451f68b691e1e90381071680a6cb4554877ea5507f6b1662bb8cab2777aa9f80
+  research_file: source_file/electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 260613
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit_DS3231_STEMMA_QT.brd
+    locator: Pinned Adafruit CAD repository commit 1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1;
+      exact filename Adafruit DS3231 STEMMA QT.brd; review board outline and every
+      drill/footprint, including plated hole functions.
+    registered_at: '2026-11-06T19:15:11+00:00'
+    sha256: 01c08bf96b77df0f2d026300c720540c41a7fdcb7ada94f49740bf9476c94a7d
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd
+  - bytes: 102781
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Adafruit product 5188 identity as DS3231 Precision RTC STEMMA QT breakout;
+      confirms current QT carrier is distinct from legacy product 3013 and notes 2023
+      silkscreen update.
+    registered_at: '2026-11-06T19:15:12+00:00'
+    sha256: 6bbbe586b7dc8126021f8e39c24da13edebeafd1a0de4176ae63dbd097356a6e
+    url: https://www.adafruit.com/product/5188
+  - bytes: 72911
+    id: guide
+    kind: manufacturer_guide
+    local_file: reference/guide_downloads.html
+    locator: 'Adafruit DS3231 guide Downloads page: lists separate 3D model, EagleCAD
+      PCB files, and schematic/fab print for STEMMA QT version; PCB link is the official
+      Adafruit repository.'
+    registered_at: '2026-11-06T19:16:05+00:00'
+    sha256: ee9854290a2c8d82134d34524a6d5185d7a468e802e1d5efac11f122349ef71a
+    url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads
+  - bytes: 2096
+    id: repository
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Pinned official repository README; repository includes separate Adafruit
+      DS3231 STEMMA QT .brd alongside legacy DS3231 breakout CAD.
+    registered_at: '2026-11-06T19:16:06+00:00'
+    sha256: 0472b51ef95f1dc9b9d9b56a0f07c321d8dfce0bf90e87c3f59b24b2cabedfff
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/README.md
+  status: verified
+name_readable: Adafruit DS3231 RTC, STEMMA QT
+notes: []
+oobb_details:
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.0
+    id: U$9:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 3.0
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  mounting_hole_radius_name: m2_5
+  mounting_hole_radius_names:
+  - m2_5
+  - m2_5
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.0
+    id: U$9:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 3.0
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  mounting_hole_radius_name: m2_5
+  mounting_hole_radius_names:
+  - m2_5
+  - m2_5
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.0
+    id: U$9:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 3.0
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  mounting_hole_radius_name: m2_5
+  mounting_hole_radius_names:
+  - m2_5
+  - m2_5
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+part_number: '5188'
+part_number_adafruit: '5188'
+pinout_status: unverified
+pins: {}
+product_dimensions_mm:
+  depth: 7.8
+  height: 17.8
+  scope: manufacturer_product_dimensions_not_verified_pcb_outline
+  source_id: product
+  width: 25.4
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/5188
+- bytes: 260613
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Adafruit_DS3231_STEMMA_QT.brd
+  locator: Pinned Adafruit CAD repository commit 1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1;
+    exact filename Adafruit DS3231 STEMMA QT.brd; review board outline and every drill/footprint,
+    including plated hole functions.
+  registered_at: '2026-11-06T19:15:11+00:00'
+  sha256: 01c08bf96b77df0f2d026300c720540c41a7fdcb7ada94f49740bf9476c94a7d
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/Adafruit%20DS3231%20STEMMA%20QT.brd
+- bytes: 102781
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: Adafruit product 5188 identity as DS3231 Precision RTC STEMMA QT breakout;
+    confirms current QT carrier is distinct from legacy product 3013 and notes 2023
+    silkscreen update.
+  registered_at: '2026-11-06T19:15:12+00:00'
+  sha256: 6bbbe586b7dc8126021f8e39c24da13edebeafd1a0de4176ae63dbd097356a6e
+  url: https://www.adafruit.com/product/5188
+- bytes: 72911
+  id: mounting_guide
+  kind: manufacturer_guide
+  local_file: reference/guide_downloads.html
+  locator: 'Adafruit DS3231 guide Downloads page: lists separate 3D model, EagleCAD
+    PCB files, and schematic/fab print for STEMMA QT version; PCB link is the official
+    Adafruit repository.'
+  registered_at: '2026-11-06T19:16:05+00:00'
+  sha256: ee9854290a2c8d82134d34524a6d5185d7a468e802e1d5efac11f122349ef71a
+  url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads
+- bytes: 2096
+  id: mounting_repository
+  kind: manufacturer_repository
+  local_file: mounting_evidence/README.md
+  locator: Pinned official repository README; repository includes separate Adafruit
+    DS3231 STEMMA QT .brd alongside legacy DS3231 breakout CAD.
+  registered_at: '2026-11-06T19:16:06+00:00'
+  sha256: 0472b51ef95f1dc9b9d9b56a0f07c321d8dfce0bf90e87c3f59b24b2cabedfff
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-DS3231-Precision-RTC-Breakout-PCB/1d60495b54bd6ff8fa4d5acca7a6e1c1a317cfe1/README.md
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_15: '5188'
+taxonomy_2: breakout
+taxonomy_3: timing
+taxonomy_4: rtc
+taxonomy_5: temperature_compensated
+taxonomy_6: ds3231
+taxonomy_7: stemma_qt
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: timing
+type_2: rtc
+type_3: temperature_compensated
+type_4: ds3231
+webpage: https://www.adafruit.com/product/5188
+webpage_adafruit: https://www.adafruit.com/product/5188

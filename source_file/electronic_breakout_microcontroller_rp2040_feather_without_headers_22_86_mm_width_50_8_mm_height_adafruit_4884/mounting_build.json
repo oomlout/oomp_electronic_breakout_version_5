@@ -1,0 +1,35 @@
+{
+  "record_sha256": "682a20915710a1f9d8ddd9fc83944ee25ddd222575f146fd2b8d31c6e4dd6b86",
+  "generated_at": "2026-11-06T15:13:48+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_microcontroller_rp2040_feather_without_headers_22_86_mm_width_50_8_mm_height_adafruit_4884/3dpr.scad",
+      "bytes": 4943,
+      "sha256": "1014e849534cddc2e75a8d1c4ce92ad4ac7057fcda933893f30ef5081ce0b08b"
+    },
+    {
+      "path": "parts/electronic_breakout_microcontroller_rp2040_feather_without_headers_22_86_mm_width_50_8_mm_height_adafruit_4884/3dpr.stl",
+      "bytes": 2102373,
+      "sha256": "5f2839f999cd42e1487d8790f59577aa3cf3b1ad934261d98cf47815e8d9a456"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 13723.104465529459,
+    "bounds_mm": [
+      [
+        -29.5,
+        -44.49013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        44.49013364214136,
+        6.0
+      ]
+    ]
+  }
+}

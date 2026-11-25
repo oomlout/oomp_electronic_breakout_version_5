@@ -1,0 +1,117 @@
+{
+  "record_sha256": "37e602465a4f057b774032bc6dd62a11d1b1a560b8312e388078d566b77ab70d",
+  "generated_at": "2026-11-06T19:03:49+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346/3dpr.scad",
+      "bytes": 4649,
+      "sha256": "49c65127a51122d231f60896e97b7efd6d441f327651317d7eb8fa255b8e6bc2"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346/3dpr_short_sides.scad",
+      "bytes": 3036,
+      "sha256": "da9e0bbf688e28beaf11093c4898e79b926b43a71e041677ef6d4fa188991000"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346/3dpr_long_side.scad",
+      "bytes": 3024,
+      "sha256": "590edf207549506ce412fc26ac9bd65e627420ca51edd8c574ab20372adbd42f"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346/3dpr.stl",
+      "bytes": 1906646,
+      "sha256": "0307cd8fbc7c3049e28df320749e48ec0ae08a45e0c1603d4b8b4e3f0ec74763"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346/3dpr_short_sides.stl",
+      "bytes": 839764,
+      "sha256": "e02b4bc21cb2ef2c8bdef55e814989291bfd24f647574b1da6a6cdc997a69800"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346/3dpr_long_side.stl",
+      "bytes": 787882,
+      "sha256": "72489c0ebb30cbeb4c210f8139022febacee029458e97c54dedce1e15eb0ad0b"
+    },
+    {
+      "path": "parts/electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346/mounting_variants.json",
+      "bytes": 4822,
+      "sha256": "e28a26095b2da2917aa37bcbf458a517eda156ecb548d419957ada524dd4c519"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 11326.703286762879,
+    "bounds_mm": [
+      [
+        -37.0,
+        -29.49013364214136,
+        0.0
+      ],
+      [
+        37.0,
+        29.49013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 11326.703286762879,
+        "bounds_mm": [
+          [
+            -37.0,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            37.0,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 6025.049205478613,
+        "bounds_mm": [
+          [
+            -37.0,
+            -14.490133642141359,
+            0.0
+          ],
+          [
+            37.0,
+            14.490133642141359,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 6179.565924455143,
+        "bounds_mm": [
+          [
+            -24.59,
+            -14.490133642141359,
+            0.0
+          ],
+          [
+            24.59,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

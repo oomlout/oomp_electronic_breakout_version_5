@@ -1,0 +1,80 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2040_zero_without_headers_18_mm_width_23_5_mm_height_waveshare_rp2040_zero
+status: no_holes
+board_revision: Waveshare RP2040-Zero; official STEP assembly RP2040_ZERO_ASM dated
+  2022-01-08. Manufacturer does not state a PCB revision number in the cited model
+  or mechanical drawing.
+identity_evidence: Waveshare RP2040-Zero manufacturer wiki identifies the exact board
+  and links its RP2040-Zero STEP 3D model. The archived official mechanical drawing
+  is named RP2040-Zero-3 and matches the model board outline and USB-at-top orientation.
+  STEP content identifies RP2040_ZERO_ASM and BOARD/PCB_ASM. Product revision number
+  is not stated by the manufacturer.
+board_size:
+- 18.0
+- 23.5
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: cad_step
+derivation: 'Nominal PCB outline is 18.00 mm × 23.50 mm from the official dimension
+  drawing (dimension labels span the bare PCB, not USB overhang). For STEP review,
+  the board solid bbox is X=[-0.0601036317,17.9600170327], Y=[0.0901532305,23.6100287848]
+  mm; centre=(8.9499567005,11.8500910076) mm. Mapping to centred top view: x=X-8.9499567005,
+  y=Y-11.8500910076; no rotation, axis swap, or reflection. Positive Y points toward
+  the USB connector, matching top view. The full STEP PCB solid contains no board-mount
+  features. Reviewed all unique cylindrical board features: 23 Ø0.9 mm exposed-edge
+  castellated pads, 8 Ø0.5 mm USB-C shell/anchor drills, and 2 Ø0.762 mm USB-C signal-pin
+  drills. These functions/locations are shown in the saved top-view CAD review image.
+  No feature is a mounting hole.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad_step
+  local_file: mounting_evidence/RP2040_Zero_stp.zip
+  url: https://files.waveshare.com/upload/f/f7/RP2040_Zero_stp.zip
+  kind: manufacturer_cad
+  locator: Official Waveshare RP2040-Zero STEP assembly; RP2040_Zero.stp / RP2040_ZERO_ASM
+    dated 2022-01-08; BOARD and PCB_ASM geometry, all solids and board drill/pad geometry
+    reviewed.
+  registered_at: '2026-11-06T15:59:39+00:00'
+  bytes: 1462340
+  sha256: b3f427a30da1c4a2d17fb28470c503189ad5d2c071b1c08b8d66b1d7c1031548
+- id: dimensions
+  local_file: reference/mechanical.jpg
+  url: https://www.waveshare.net/w/upload/thumb/2/2e/RP2040-Zero-3.jpg/800px-RP2040-Zero-3.jpg
+  kind: manufacturer_drawing
+  locator: 'Official RP2040-Zero mechanical dimension drawing: 18.00 × 23.50 mm board
+    extent and edge-pad depiction.'
+  registered_at: '2026-11-06T15:59:40+00:00'
+  bytes: 94690
+  sha256: f668799a41e270feff2987fd8ba7650e29d4991bc9a158d94bab816b6e5ea7d0
+attempts:
+- source: Waveshare RP2040-Zero official wiki and linked support files
+  result: Found manufacturer mechanical drawing and official STEP model. Downloaded
+    STEP ZIP on 2026-11-06; archive contains RP2040_Zero.stp, assembly name RP2040_ZERO_ASM
+    dated 2022-01-08.
+conflicts: []
+notes:
+- The official STEP model is not commit-pinned; Waveshare serves a static model URL
+  without a product revision identifier. The model itself identifies exact RP2040-Zero
+  assembly and agrees with the dimension drawing.
+- Full model review used the PCB solid, not component/chip dimensions. No candidate
+  board mounts; other drills are edge GPIO castellations and USB-C connector pins/anchors.
+- Model overall extents differ from drawing nominal dimensions by about 0.02 mm; nominal
+  board size follows the manufacturer drawing.
+- Underside/component, connector, screw-head and physical fit clearances remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T15:59:40+00:00'
+identity_source_ids:
+- cad_step
+- dimensions

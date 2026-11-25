@@ -1,0 +1,113 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_wrover_lolin_d32_pro_25_4_mm_width_65_mm_height_32_pins_wemos_lolin_d32_pro
+status: needs_review
+board_revision: WEMOS D32 Pro, Dimension V2.0.0 and Schematic V2.0.0 as linked from
+  the official D32 Pro documentation page.
+identity_evidence: The official WEMOS D32 Pro documentation page identifies the D32
+  Pro, states a 65 × 25.4 mm size, and links the Dimension V2.0.0 and Schematic V2.0.0
+  PDFs. The archived official PDFs were SHA-256 checked against mounting_context.json;
+  the dimension PDF hash matches 332a0ba3f8324d181a7fb768e8727c4eb3b228e0e01113efbed599dc1817e10c.
+board_size:
+- 25.4
+- 65.0
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: mechanical
+derivation: The complete official Dimension V2.0.0 page is a top-view drawing. It
+  labels the board 25.40 mm wide by 65.00 mm long, shows two circular candidate holes
+  at one end, gives 21.40 mm between their centres, and gives a 2.10 mm dimension
+  from the short edge to the near hole centre. It does not label the hole drill diameter.
+  Drawing view orientation relative to the product USB connector also is not labeled
+  on this page. Do not infer the PCB drill from circle pixels or assign canonical
+  coordinates until the drill and orientation are supported.
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources:
+- id: product
+  local_file: mounting_evidence/product_d32_pro.html
+  url: https://www.wemos.cc/en/latest/d32/d32_pro.html
+  kind: manufacturer_product
+  locator: Official WEMOS D32 Pro page identifies the board, states 65 × 25.4 mm,
+    and links Dimension V2.0.0 and Schematic V2.0.0.
+  registered_at: '2026-11-06T17:03:15+00:00'
+  bytes: 11105
+  sha256: edf8c36f69a10963ce82aec3f51faa45234bfea7fc4c9c08acf2123f8790a067
+- id: mechanical
+  local_file: reference/dim_d32_pro_v2.0.0.pdf
+  url: https://www.wemos.cc/en/latest/_static/files/dim_d32_pro_v2.0.0.pdf
+  kind: manufacturer_drawing
+  locator: Official Dimension V2.0.0 PDF linked from D32 Pro page; complete page identifies
+    25.40 × 65.00 mm board, two circles, 21.40 mm horizontal hole-centre spacing and
+    2.10 mm top-edge offset; no drill diameter callout.
+  registered_at: '2026-11-06T17:03:15+00:00'
+  bytes: 3250
+  sha256: 332a0ba3f8324d181a7fb768e8727c4eb3b228e0e01113efbed599dc1817e10c
+- id: schematic
+  local_file: reference/sch_d32_pro_v2.0.0.pdf
+  url: https://www.wemos.cc/en/latest/_static/files/sch_d32_pro_v2.0.0.pdf
+  kind: manufacturer_drawing
+  locator: Official Schematic V2.0.0 PDF linked from D32 Pro page; revision corroboration
+    only, no mechanical drill size.
+  registered_at: '2026-11-06T17:03:15+00:00'
+  bytes: 68075
+  sha256: 54cc89a4df45f76c847cae09e2acac86a95891a89c85421a8f146bca91cb3f60
+- id: official_docs_tree
+  local_file: mounting_evidence/wemos_docs_d32_pro_files_2026-11-07.json
+  url: https://api.github.com/repos/wemos/docs/git/trees/746363aa782bc51cc91eea300820f33d974253aa?recursive=1
+  kind: manufacturer_repository
+  locator: Pinned official WEMOS docs repository tree at commit 746363aa782bc51cc91eea300820f33d974253aa;
+    filtered D32 Pro asset paths. Confirms currently published official board docs
+    remain Dimension and Schematic V2.0.0; no D32 Pro CAD/mechanical model is present
+    among these paths.
+  registered_at: '2026-11-07T15:37:46+00:00'
+  bytes: 1246
+  sha256: 43acd3cd17c0b4e21c5e90f856ec13557f11fd5d829717acecc24071a2dc4b4c
+attempts:
+- '2026-11-06: Reviewed the official WEMOS D32 Pro product page and its linked Dimension
+  V2.0.0 PDF. Reused archived mechanical PDF only after its SHA-256 exactly matched
+  mounting_context.json. The complete page supports outline 25.40 × 65.00 mm, two
+  circular candidates, 21.40 mm centre spacing and 2.10 mm short-edge-to-centre offset,
+  but has no drill diameter callout.'
+- '2026-11-06: Searched official WEMOS documentation/repository and GitHub for an
+  exact D32 Pro V2.0.0 board CAD source (EAGLE/STEP); no manufacturer CAD source was
+  located. Therefore the drawing circles cannot be replayed against exact source geometry.'
+- '2026-11-06: Reviewed the official WEMOS Schematic V2.0.0 PDF and checked its archived
+  hash against mounting_context.json. It corroborates the revision but contains no
+  mechanical drill-size specification. Precise gap: PCB drill diameter for both circular
+  mounting candidates is unsupported; drawing-to-product orientation is also not labeled.'
+- '2026-11-07: Rechecked the current official WEMOS docs repository at pinned commit
+  746363aa782bc51cc91eea300820f33d974253aa. Its D32 Pro assets still identify Dimension
+  and Schematic V2.0.0, and contain no board CAD or mechanical model to supply drill data.
+  The current dimension PDF remains the same one-page drawing with no drill callout or
+  explicit USB-relative orientation. Precise unresolved gap remains: source-backed PCB
+  drill diameter for both candidate holes, plus a source tying drawing orientation to the
+  product USB end. Keep needs_review; no hole diameter or coordinates inferred.'
+conflicts: []
+notes:
+- The drawing indicates two likely mounting-hole candidates, but the candidate drill
+  diameter is not dimensioned. No diameter is inferred from rendered image pixels.
+- The complete mechanical drawing was visually reviewed. Its drawing orientation is
+  not explicitly tied to the USB connector; defer canonical hole coordinates until
+  that relation is evidenced.
+- The standard holder is generated geometry only. Component, connector, screw-head
+  and underside clearance, and physical fit, remain unverified.
+- Current official docs repository inventory is archived in
+  mounting_evidence/wemos_docs_d32_pro_files_2026-11-07.json; it provides no newer
+  dimension revision or exact CAD file and does not resolve either remaining gap.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:37:46+00:00'
+identity_source_ids:
+- product
+- mechanical
+- schematic

@@ -1,0 +1,435 @@
+board_variant: stemma_qt
+breakout_description: stemma_qt
+breakout_pcb_height: 22.86
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+definition_authority: working_oomp_populate_i2c.py
+description: Direct photoacoustic CO2 measurement, plus temperature and humidity.
+  This complements the gas-response BME688 rather than representing the same measurement.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+geometry_ready: false
+i2c:
+  address_evidence_status: partial_product_page_evidence
+  address_selection: not_recorded
+  clock_stretching: unverified
+  default_address_7bit: 98
+  documented_addresses_7bit:
+  - 98
+  maximum_clock_hz: null
+  source_id: product
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+manufacturer: adafruit
+manufacturer_part_number: '5187'
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 3.0
+  id: U$1:pad:P$1
+  package: MOUNTINGHOLE_3.0_PLATEDTHIN
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 8.89
+- diameter_mm: 3.0
+  id: U$17:pad:P$1
+  package: MOUNTINGHOLE_3.0_PLATEDTHIN
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 8.89
+- diameter_mm: 3.0
+  id: U$19:pad:P$1
+  package: MOUNTINGHOLE_3.0_PLATEDTHIN
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: -8.89
+- diameter_mm: 3.0
+  id: U$21:pad:P$1
+  package: MOUNTINGHOLE_3.0_PLATEDTHIN
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: -8.89
+mounting_hole_radius_name: m2_5
+mounting_hole_radius_names:
+- m2_5
+- m2_5
+- m2_5
+- m2_5
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - 8.89
+- - 10.16
+  - 8.89
+- - -10.16
+  - -8.89
+- - 10.16
+  - -8.89
+mounting_lift: 3
+mounting_research:
+  board_revision: Adafruit SCD-4x STEMMA QT carrier; pinned EagleCAD board file Adafruit
+    SCD-41.brd at manufacturer repository commit c83995482b4c830a835caef158e6196a507025b3.
+    Official SCD-4x guide states SCD-40 and SCD-43 use the same fab print as SCD-41.
+  board_size:
+  - 25.4
+  - 22.86
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'The complete layer 20 Dimension outline in the pinned Adafruit_SCD-41.brd
+    is a rounded rectangle with native extents X=0..25.4 mm and Y=0..22.86 mm, including
+    four R2.54 mm corners, giving the bounding-box dimensions 25.4 x 22.86 mm. Coordinates
+    are native EAGLE mm in top view. Transform to the canonical centred frame with
+    x_mm = x_native - 12.7 mm and y_mm = y_native - 11.43 mm; no mirroring or quarter-turn
+    is applied (0 CCW). Reviewed all nine drilled candidates: four named MOUNTINGHOLE_3.0_PLATEDTHIN
+    package pads at native (2.54,20.32), (22.86,20.32), (2.54,2.54), and (22.86,2.54),
+    each with a 3.0 mm plated PCB drill, are board mounting features. The other five
+    are the 1.0 mm plated JP2 1x05 header drills along the bottom edge and are excluded
+    as electrical header pads. No other drills are present in this CAD.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit product page identifies Product 5187 as the SCD-40 sensor
+    on its custom STEMMA QT PCB. The official SCD-4x guide lists EagleCAD PCB files
+    and states its SCD-41 fab print also shows the SCD-40 and SCD-43. The pinned Adafruit-SCD-4x-PCB
+    repository README links Product 5187 and names its EagleCAD layout Adafruit SCD-41.brd;
+    the pinned commit metadata and archived CAD establish the exact file revision.
+  mounting_holes:
+  - diameter_mm: 3.0
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 8.89
+  - diameter_mm: 3.0
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 8.89
+  - diameter_mm: 3.0
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: -8.89
+  - diameter_mm: 3.0
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: -8.89
+  record_sha256: cb8de8f39d02255fdefe969dedcac028e6d5928b04e0fd135e66f1adc44e74cc
+  research_file: source_file/electronic_breakout_sensor_environmental_carbon_dioxide_scd40_stemma_qt_adafruit_5187/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 104914
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Adafruit product 5187 identity, SCD-40 on custom STEMMA QT PCB; archived
+      official product page
+    registered_at: '2026-11-06T19:27:05+00:00'
+    sha256: c09dc00504a876f2ee3e95f3062b12a309e37d5efa304009c239ae2bfb34e0db
+    url: https://www.adafruit.com/product/5187
+  - bytes: 4143
+    id: readme
+    kind: manufacturer_repository
+    local_file: mounting_evidence/adafruit_scd4x_README.md
+    locator: Repository identifies PCB design as Adafruit SCD-4x and links product
+      5187; README says same fab print across SCD-40/41/43
+    registered_at: '2026-11-06T19:27:05+00:00'
+    sha256: 0a554d52acde7ace9fadf164d631aac9611fb2c0fd036f9c54dcf6850b1f6d28
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-SCD-4x-PCB/c83995482b4c830a835caef158e6196a507025b3/README.md
+  - bytes: 8566
+    id: revision
+    kind: manufacturer_repository
+    local_file: mounting_evidence/adafruit_scd4x_commit.json
+    locator: Pinned commit c83995482b4c830a835caef158e6196a507025b3 (2026-08-17),
+      names board source Adafruit SCD-41.brd
+    registered_at: '2026-11-06T19:27:06+00:00'
+    sha256: ec95681bcce4400118e4deae60f0d544bfa155d1883503faded6d7d78e6486d5
+    url: https://api.github.com/repos/adafruit/Adafruit-SCD-4x-PCB/commits/c83995482b4c830a835caef158e6196a507025b3
+  - bytes: 267748
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit_SCD-41.brd
+    locator: Pinned manufacturer EagleCAD Adafruit SCD-41 board, layer 20 outline
+      and complete drilling geometry; repository lists product 5187 and shared fab
+      print
+    registered_at: '2026-11-06T19:27:06+00:00'
+    sha256: ff2209c94618f266f03a1f8fcde63c90703752aaea600e6d5fa7c5a4af365881
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-SCD-4x-PCB/c83995482b4c830a835caef158e6196a507025b3/Adafruit%20SCD-41.brd
+  - bytes: 167416
+    id: guide
+    kind: manufacturer_product
+    local_file: mounting_evidence/adafruit_scd4x_guide.html
+    locator: Official SCD-4x guide lists EagleCAD PCB files and says the SCD-41 fab
+      print also represents SCD-40 and SCD-43; establishes CAD variant equivalence
+    registered_at: '2026-11-06T19:28:03+00:00'
+    sha256: 128df13bb8fbc24526d9b108a6487c57098013340ac3f99bb5fbecb3272cac95
+    url: https://learn.adafruit.com/adafruit-scd-40-and-scd-41?view=all
+  status: verified
+name_readable: Adafruit SCD-40 CO2 Sensor, STEMMA QT
+notes: []
+oobb_details:
+- breakout_pcb_height: 22.86
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.0
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 8.89
+  - diameter_mm: 3.0
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 8.89
+  - diameter_mm: 3.0
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -8.89
+  - diameter_mm: 3.0
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -8.89
+  mounting_hole_radius_name: m2_5
+  mounting_hole_radius_names:
+  - m2_5
+  - m2_5
+  - m2_5
+  - m2_5
+  mounting_holes:
+  - - -10.16
+    - 8.89
+  - - 10.16
+    - 8.89
+  - - -10.16
+    - -8.89
+  - - 10.16
+    - -8.89
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 22.86
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.0
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 8.89
+  - diameter_mm: 3.0
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 8.89
+  - diameter_mm: 3.0
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -8.89
+  - diameter_mm: 3.0
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -8.89
+  mounting_hole_radius_name: m2_5
+  mounting_hole_radius_names:
+  - m2_5
+  - m2_5
+  - m2_5
+  - m2_5
+  mounting_holes:
+  - - -10.16
+    - 8.89
+  - - 10.16
+    - 8.89
+  - - -10.16
+    - -8.89
+  - - 10.16
+    - -8.89
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 22.86
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.0
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 8.89
+  - diameter_mm: 3.0
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 8.89
+  - diameter_mm: 3.0
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -8.89
+  - diameter_mm: 3.0
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_3.0_PLATEDTHIN
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -8.89
+  mounting_hole_radius_name: m2_5
+  mounting_hole_radius_names:
+  - m2_5
+  - m2_5
+  - m2_5
+  - m2_5
+  mounting_holes:
+  - - -10.16
+    - 8.89
+  - - 10.16
+    - 8.89
+  - - -10.16
+    - -8.89
+  - - 10.16
+    - -8.89
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+part_number: '5187'
+part_number_adafruit: '5187'
+pinout_status: unverified
+pins: {}
+product_dimensions_mm:
+  depth: 7.7
+  height: 22.8
+  scope: manufacturer_product_dimensions_not_verified_pcb_outline
+  source_id: product
+  width: 25.5
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/5187
+- bytes: 104914
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: Adafruit product 5187 identity, SCD-40 on custom STEMMA QT PCB; archived
+    official product page
+  registered_at: '2026-11-06T19:27:05+00:00'
+  sha256: c09dc00504a876f2ee3e95f3062b12a309e37d5efa304009c239ae2bfb34e0db
+  url: https://www.adafruit.com/product/5187
+- bytes: 4143
+  id: mounting_readme
+  kind: manufacturer_repository
+  local_file: mounting_evidence/adafruit_scd4x_README.md
+  locator: Repository identifies PCB design as Adafruit SCD-4x and links product 5187;
+    README says same fab print across SCD-40/41/43
+  registered_at: '2026-11-06T19:27:05+00:00'
+  sha256: 0a554d52acde7ace9fadf164d631aac9611fb2c0fd036f9c54dcf6850b1f6d28
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-SCD-4x-PCB/c83995482b4c830a835caef158e6196a507025b3/README.md
+- bytes: 8566
+  id: mounting_revision
+  kind: manufacturer_repository
+  local_file: mounting_evidence/adafruit_scd4x_commit.json
+  locator: Pinned commit c83995482b4c830a835caef158e6196a507025b3 (2026-08-17), names
+    board source Adafruit SCD-41.brd
+  registered_at: '2026-11-06T19:27:06+00:00'
+  sha256: ec95681bcce4400118e4deae60f0d544bfa155d1883503faded6d7d78e6486d5
+  url: https://api.github.com/repos/adafruit/Adafruit-SCD-4x-PCB/commits/c83995482b4c830a835caef158e6196a507025b3
+- bytes: 267748
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Adafruit_SCD-41.brd
+  locator: Pinned manufacturer EagleCAD Adafruit SCD-41 board, layer 20 outline and
+    complete drilling geometry; repository lists product 5187 and shared fab print
+  registered_at: '2026-11-06T19:27:06+00:00'
+  sha256: ff2209c94618f266f03a1f8fcde63c90703752aaea600e6d5fa7c5a4af365881
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-SCD-4x-PCB/c83995482b4c830a835caef158e6196a507025b3/Adafruit%20SCD-41.brd
+- bytes: 167416
+  id: mounting_guide
+  kind: manufacturer_product
+  local_file: mounting_evidence/adafruit_scd4x_guide.html
+  locator: Official SCD-4x guide lists EagleCAD PCB files and says the SCD-41 fab
+    print also represents SCD-40 and SCD-43; establishes CAD variant equivalence
+  registered_at: '2026-11-06T19:28:03+00:00'
+  sha256: 128df13bb8fbc24526d9b108a6487c57098013340ac3f99bb5fbecb3272cac95
+  url: https://learn.adafruit.com/adafruit-scd-40-and-scd-41?view=all
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_15: '5187'
+taxonomy_2: breakout
+taxonomy_3: sensor
+taxonomy_4: environmental
+taxonomy_5: carbon_dioxide
+taxonomy_6: scd40
+taxonomy_7: stemma_qt
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: sensor
+type_2: environmental
+type_3: carbon_dioxide
+type_4: scd40
+webpage: https://www.adafruit.com/product/5187
+webpage_adafruit: https://www.adafruit.com/product/5187

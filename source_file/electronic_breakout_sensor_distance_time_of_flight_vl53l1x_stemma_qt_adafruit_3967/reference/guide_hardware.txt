@@ -1,0 +1,183 @@
+Adafruit VL53L1X Time of Flight Distance Sensor
+Overview
+Adafruit VL53L1X Time of Flight Distance Sensor
+Time of flight, up to 4 meters!
+by
+Kattni Rembor
+published October 27, 2021, last edited January 21, 2025
+last major update October 27, 2021
+posted in
+Adafruit Products
+Sensors
+/
+Proximity
+CircuitPython
+Breakout Boards
+STEMMA
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Python & CircuitPython
+Python Docs
+Arduino
+Arduino Docs
+WipperSnapper
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Your browser does not support the video tag.
+Primary
+Adafruit VL53L1X Time of Flight Distance Sensor - ~30 to 4000mm
+$14.95
+Add  to Cart
+View product details
+30
+Beginner
+Product guide
+😍
+2
+Overview
+Your browser does not support the video tag.
+The
+Adafruit VL53L1X Time of Flight Distance Sensor
+(also known as VL53L1CX) is a
+Time of Flight
+distance sensor that has a massive 4 meter range and LIDAR-like precision. The sensor contains a very tiny invisible laser source and a matching sensor. The VL53L1X can detect the "time of flight", or how long the light has taken to bounce back to the sensor.
+Text emphasized with a blue exclamation:
+This breakout ships with a protector over the sensor. It must be removed before use! See details below.
+Since the sensor uses a very narrow light source, it is good for determining the distance of only the surface directly in front of it. Unlike sonar that bounces ultrasonic waves, the 'cone' of sensing is very narrow. Unlike IR distance sensors that try to measure the amount of light bounced, the VL53L1X is much more precise and doesn't have linearity problems or 'double imaging' where you can't tell if an object is very far or very close.
+This is the 'next generation' of the
+VL53L0X ToF sensor
+and can handle about
+~30 to 4000mm
+of range distance, with up to 50Hz update rate. If you need an even smaller/closer range, check out the
+VL6180X
+which can measure 5mm to 200mm and also contains a light sensor.
+The sensor is small and easy to use in any robotics or interactive project. Since it needs 2.8V power and logic we put the little fellow on a breakout board with a regulator and level shifting. You can use it with any 3-5V power or logic microcontroller with no worries. Works great with the
+3.3V logic level of a Feather or Raspberry Pi, or the 5V level of a Metro 328 or Arduino Uno
+, this breakout is ready to work with most common microcontrollers or SBCs. and since it speaks I2C, you can easily connect it up with two data wires plus power and ground.
+As if that weren't enough, we've also added
+SparkFun qwiic
+compatible
+STEMMA QT
+connectors for the I2C bus
+so you don't even need to solder.
+Just wire up to your favorite micro with a plug-and-play cable to get ToF data ASAP. For a no-solder experience,
+just wire up to your favorite micro, like the STM32F405 Feather
+using a
+STEMMA QT adapter cable.
+The Stemma QT connectors also mean the VL53L1X can be used with our
+various associated accessories.
+QT Cable is not included, but we have a variety in the shop
+Communicating to the sensor is done over I2C with an API written by ST, so it's not too hard to port it to your favorite microcontroller.
+We've written a wrapper library for Arduino so you can use it with any of your Arduino-compatible boards
+.
+Removing the Protective Tape
+Text emphasized with a yellow exclamation:
+Be careful when removing the tape! You don't want to damage the sensor.
+Using tweezers (or some other appropriate tool), CAREFULLY remove the protective tape over the sensor, as seen in the image below. There is a small tab on the side of the tape that you can use to remove it.
+Page last edited March 08, 2024
+Pinouts
+Related Guides
+Your browser does not support the video tag. This links to the guide Motion Sensor Bat.
+Motion Sensor Bat
+By
+Ruiz Brothers
+beginner
+11
+Your browser does not support the video tag. This links to the guide Haunted Air Blaster.
+Haunted Air Blaster
+By
+John Park
+intermediate
+13
+Your browser does not support the video tag. This links to the guide PropMaker Jack O'Lantern.
+PropMaker Jack O'Lantern
+By
+Ruiz Brothers
+intermediate
+25
+Adafruit FONA 808 Cellular + GPS Shield for Arduino
+By
+lady ada
+intermediate
+30
+RGB LCD Shield
+By
+lady ada
+Product Guide
+69
+Gemma M0 Vibration Sensor Motion Alarm
+By
+John Park
+beginner
+23
+Three Button Foot Switch
+By
+Ruiz Brothers
+beginner
+48
+Introducing the Adafruit Bluefruit LE Friend
+By
+Kevin Townsend
+beginner
+38
+Adafruit STEMMA Reflective Photo Interrupt Sensor
+By
+Liz Clark
+Product Guide
+6
+Adafruit UPDI Friend
+By
+Liz Clark
+Product Guide
+7
+Your browser does not support the video tag. This links to the guide USB Rotary Media Dial.
+USB Rotary Media Dial
+By
+Ruiz Brothers
+beginner
+73
+Adafruit Feather HUZZAH ESP8266
+By
+lady ada
+Product Guide
+302
+Tandy 1000 Keyboard to USB with CircuitPython
+By
+Jeff Epler
+beginner
+4
+Moon Phase Clock for Adafruit Matrix Portal
+By
+Phillip Burgess
+beginner
+154
+Your browser does not support the video tag. This links to the guide Bluetooth Turtle Bot with CircuitPython and Crickit.
+Bluetooth Turtle Bot with CircuitPython and Crickit
+By
+John Park
+beginner
+20
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

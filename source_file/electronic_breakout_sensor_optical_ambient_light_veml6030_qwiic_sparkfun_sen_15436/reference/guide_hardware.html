@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLMFVVN');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile mode if small screen device -->
+    
+    <title>Qwiic Ambient Light Sensor (VEML6030) Hookup Guide - SparkFun Learn</title>
+
+          <link rel="canonical" href="https://learn.sparkfun.com/tutorials/qwiic-ambient-light-sensor-veml6030-hookup-guide/all">
+            
+    <link href="/css/bootstrap.min.css?rev=1792687498" rel="stylesheet">
+    <link rel="stylesheet" href="/css/theme.github.css?rev=1792687498" type="text/css" media="screen" />    <link rel="alternate" type="application/atom+xml" title="Education Blog" href="https://learn.sparkfun.com/feeds/blog" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorials" href="https://learn.sparkfun.com/feeds/tutorials" />
+    <link rel="alternate" type="application/atom+xml" title="Education Blog Comments" href="https://learn.sparkfun.com/feeds/blog_comments" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorial Comments" href="https://learn.sparkfun.com/feeds/tutorial_comments" />
+  </head>
+
+  <body id=learn class="layout-default no-type tutorials-view" ontouchstart="">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLMFVVN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <script>;
+    </script>
+    <div class="wrapper" itemscope itemtype="http://schema.org/WebSite">
+      <meta itemprop="url" content="https://learn.sparkfun.com/">
+      <div class=wrapper-inner>
+
+    <header>
+  <div class="support-nav-container container-fluid hidden-xs">
+    <div class="container">
+      <div class="support-nav">
+        <div aria-hidden="true">&nbsp;</div>
+
+        <div>
+          <ul class="professional-links">
+            <li><a href="https://www.sparkfun.com/professional">Professional</a></li>
+            <li><a href="https://www.sparkfun.com/education">EDU</a>            <li><a href="https://www.sparkfun.com/become-a-distributor">Distributor</a>          </ul>
+        </div>
+
+        <div class="cs">
+          <a href="https://www.sparkfun.com/support">Customer Support</a>        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-nav-buttons container-fluid hidden-xs">
+    <div class="container">
+      <div class="tab-bar">
+        <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header-content">
+      <div class="logo-container">
+        <button id="mobile-nav-menu-trigger" class="mobile-menu-button btn-unstyled hidden-sm hidden-md hidden-lg" type="button" aria-label="Open navigation menu">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+
+        <a class="logo" href="https://www.sparkfun.com/">
+          <span class="logo-sfe-primary"><span class="visuallyhidden">SparkFun Electronics - sparkfun.com</span></span>
+        </a>
+      </div>
+
+      <div class="search-block">
+                  <form id="search_form" class="search-block-form" action="https://learn.sparkfun.com/search/results" method="get">
+            <label for="global-search" class="sr-only">search documentation</label>
+            <input name="term" id="global-search" class="form-control" type="text" value="" placeholder="search documentation" autocomplete="off">
+            <button type="submit" class="glyphicon glyphicon-search global-search-icon" aria-label="Search"></button>
+          </form>
+        
+        <a href="https://www.sparkfun.com/" class="hidden-xs">Back to Webstore<span class="icon-header icon-header-undo" aria-hidden="true"></span></a>
+      </div>
+
+        <a class="account-link" href="https://www.sparkfun.com/customer/account">
+          <span class="img-account-silhouette visible-xs-inline-block"><span class="sr-only">My Account</span></span>
+          <span class="hidden-xs">My Account</span>
+        </a>
+
+    </div>
+  </div>
+
+  <div class="header-nav container-fluid hidden-xs">
+    <div class="container">
+      <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    </div>
+  </div>
+  <div id="nav-mobile-menu" class="nav-mobile-menu" aria-labelledby="nav-mobile-menu-heading" aria-role="dialog" aria-modal="true">
+    <h2 id="nav-mobile-menu-heading" class="sr-only">Navigation menu</h2>
+    <ul class="mobile-menu-tabs">
+      <li class="active"><a>Menu</a></li>
+      <li><a href="https://www.sparkfun.com/customer/account">Account</a></li>
+    </ul>
+    <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+  </div>
+</header>
+
+    
+    <div class=content>
+      <div class=container id=airlock>
+
+        
+        <div class=main-title>
+  <ul class="breadcrumb">
+    <li><a href="https://learn.sparkfun.com/">Home</a></li>
+    <li><a href="https://learn.sparkfun.com/tutorials">Tutorials</a></li>
+    <li>Qwiic Ambient Light Sensor (VEML6030) Hookup Guide</li>
+      </ul>
+
+  <h1>
+    Qwiic Ambient Light Sensor (VEML6030) Hookup Guide  </h1>
+
+</div>
+
+
+<a id=nav_toggle_pages class="nav_toggle nav-toggle-trigger" href="#"><span>&#8801;</span> Pages</a>
+
+<div id=tutorial class="row">
+
+  <div class="col-sm-8" id="sections">
+
+    <div class="contributors">
+                      Contributors:
+                <span class="contributor-alias"><img src="https://cdn.sparkfun.com/avatar/5c320824995fcd6990beaf7a3d3f6037?d=retro&s=20&r=pg" /> Elias The Sparkiest</span>          </div>
+
+    <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t915" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft915&name=Qwiic+Ambient+Light+Sensor+%28VEML6030%29+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft915" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=Qwiic+Ambient+Light+Sensor+%28VEML6030%29+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft915&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft915&t=Qwiic+Ambient+Light+Sensor+%28VEML6030%29+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft915&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F9%2F1%2F5%2F15436-SparkFun_Ambient_Light_Sensor_-_VEML6030__Qwiic_-01.jpg&description=Qwiic+Ambient+Light+Sensor+%28VEML6030%29+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+          <div class="section tutorial-page">
+        <h2 id="introduction">Introduction</h2>
+        <p>The <a href="https://www.sparkfun.com/products/15436">SparkFun Ambient Light Sensor (VEML6030)</a> is an I&sup2;C enabled ambient light sensor with high sensitivity and high accuracy. It reads ambient light in Lux and boasts a number of nice features including: the ability to set high and low thresholds for an optional interrupt, power saving features that enable single digit micro-amp current draw, and a readable range from zero to 120,000 Lux. We've also written an Arduino library that gives full access to all features and includes example code demonstrating all its' abilities. Follow along and let's learn about all its features and how to use them!</p>
+
+
+
+<div >
+<div class="tile product-tile big grid " data-id="product-15436">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-ambient-light-sensor-veml6030-qwiic.html">
+        <img src="https://cdn.sparkfun.com/r/600-600/assets/parts/1/3/9/9/6/15436-SparkFun_Ambient_Light_Sensor_-_VEML6030__Qwiic_-01.jpg" alt="SparkFun Ambient Light Sensor - VEML6030 (Qwiic)" height="600">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-ambient-light-sensor-veml6030-qwiic.html">
+          <span>SparkFun Ambient Light Sensor - VEML6030 (Qwiic)</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      SEN-15436    </span>
+
+          <p class="description" style="display:none">
+        The VEML6030 is a high accuracy ambient light sensor with 16-bit resolution.  Even more impressive is that it can detect ligh&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$5.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+
+<div class="flex-video-wrap clearfix">
+  <div class="flex-video widescreen img">
+    <iframe src="https://www.youtube.com/embed/z06t8706o98/?autohide=1&amp;border=0&amp;wmode=opaque&amp;enablejsapi=1" frameborder=0 allowfullscreen width="560" height="315"></iframe>
+  </div>
+</div>
+
+
+<h3>Required Materials</h3>
+
+<p>To follow along with the example code used in this tutorial, you will also need the following materials. You may not need everything though depending on what you have. Add it to your cart, read through the guide, and adjust the cart as necessary.</p>
+
+<script src="/wish_lists/153037.js"></script>
+
+<p>If you need different size Qwiic cables we offer a kit that contains many sizes but we also carry them individually as well:</p>
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid " data-id="product-15081">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-qwiic-cable-kit.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/3/4/3/1/15081-_01.jpg" alt="SparkFun Qwiic Cable Kit" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-qwiic-cable-kit.html">
+          <span>SparkFun Qwiic Cable Kit</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      KIT-15081    </span>
+
+          <p class="description" style="display:none">
+        To make it even easier to get started, we've assembled this Qwiic Cable Kit with a variety of Qwiic cables from 50mm to 500mm&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$12.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14425">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/qwiic-cable-breadboard-jumper-4-pin.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/1/14425-Qwiic_Cable_-_Breadboard_Jumper__4-pin_-01.jpg" alt="Qwiic Cable - Breadboard Jumper (4-pin)" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/qwiic-cable-breadboard-jumper-4-pin.html">
+          <span>Qwiic Cable - Breadboard Jumper (4-pin)</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14425    </span>
+
+          <p class="description" style="display:none">
+        This is a jumper adapter cable that comes pre-terminated with a female Qwiic JST connector on one end and a breadboard hookup&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14427">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/qwiic-cable-100mm.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/3/14427-Qwiic_Cable_-_100mm-01.jpg" alt="Qwiic Cable - 100mm" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/qwiic-cable-100mm.html">
+          <span>Qwiic Cable - 100mm</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14427    </span>
+
+          <p class="description" style="display:none">
+        This is a 100mm long 4-conductor cable with 1mm JST termination. It’s designed to connect Qwiic enabled components together&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14429">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/14429">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/4/5/5/14429-Qwiic_Cable_-_500mm-01.jpg" alt="Qwiic Cable - 500mm" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/14429">
+          <span>Qwiic Cable - 500mm</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      PRT-14429    </span>
+
+          <p class="description" style="display:none">
+        This is a 500mm long 4-conductor cable with 1mm JST termination. It’s designed to connect Qwiic enabled components together&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+<h3>Suggested Reading</h3>
+
+<p>If you aren't familiar with the Qwiic system, we recommend reading <a href="https://www.sparkfun.com/qwiic">here for an overview</a>.</p>
+
+<table class="table table-bordered">
+  <tr align="center">
+   <td><center><a href="https://www.sparkfun.com/qwiic"><img src="https://cdn.sparkfun.com/assets/custom_pages/2/7/2/qwiic-logo.png" alt="Qwiic Connect System" title="Qwiic Connect System"></a></center></td>
+  </tr>
+</table>
+
+<p>We would also recommend taking a look at the following tutorials if you aren't familiar with them.</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-82">
+  <a href="https://learn.sparkfun.com/tutorials/i2c">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/2/I2C-Block-Diagram.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">I2C</h3>
+      </a>
+
+      <div class="description">
+      An introduction to I2C, one of the main embedded communications protocols in use today.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-664">
+  <a href="https://learn.sparkfun.com/tutorials/how-to-work-with-jumper-pads-and-pcb-traces">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">How to Work with Jumper Pads and PCB Traces</h3>
+      </a>
+
+      <div class="description">
+      Handling PCB jumper pads and traces is an essential skill. Learn how to cut a PCB trace, add a solder jumper between pads to reroute connections, and repair a trace with the green wire method if a trace is damaged.
+    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-844">
+  <a href="https://learn.sparkfun.com/tutorials/redboard-qwiic-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/4/4/15123-SparkFun_RedBoard_Qwiic-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">RedBoard Qwiic Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      This tutorial covers the basic functionality of the RedBoard Qwiic. This tutorial also covers how to get started blinking an LED and using the Qwiic system.    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="hardware-overview">Hardware Overview</h2>
+        <h3>Power</h3>
+
+<p>You can provide <strong>3.3V</strong> through the Qwiic connector on the board or through the <code>3V3</code> labeled pin on the through hole header. When you correctly power the board, the on-board red power LED will turn on.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/VEML-TOP_Power_NEW.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/VEML-TOP_Power_NEW.jpg" alt="This image shows a picture of the top of the product with the Qwiic connectors and two left most through holes highlighted." /></a> </div></p>
+
+<h3>LED</h3>
+
+<p>There is one red LED on the product that will turn on when power is supplied to the board. You can disconnect this LED by cutting the jumper on the underside of the product labeled <code>LED</code>, see <strong>Jumpers</strong> below.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/VEML-TOP_POWER_LED1.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/VEML-TOP_POWER_LED1.jpg" alt="This shows an image of the top of teh board with the top left Power LED highlighted." /></a> </div></p>
+
+<h3>Qwiic Connector or I<sup>2</sup>C Pins</h3>
+
+<p>There are two Qwiic connectors on the board to easily connect to the sensor via I<sup>2</sup>C. Another option is to solder directly to the I<sup>2</sup>C plated through holes on the side of the board. We have many Qwiic sensors and Qwiic enabled micro-controllers. Check out our <a href="https://sparkfun.com/qwiic">Qwiic Ecosystem</a> page to get a glimpse of what else we have to offer.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/VEML-TOP_I2C_Header_Qwiic_NEW.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/VEML-TOP_I2C_Header_Qwiic_NEW.jpg" alt="This shows an image of the product with the Qwiic connectors again highlighted but now the two pins labeled SDA and SCL for I2C data lines are now hightlighted as well." /></a> </div></p>
+
+<h3>Interrupt Pin</h3>
+
+<p>A nice feature on the SparkFun Ambient Light sensor is its ability to set both <strong>LOW</strong> and <strong>HIGH</strong> thresholds that triggers an interrupt on the product. For example, we can know when the light in a room falls below a certain amount and conversely when the light comes back on! You don't have to settle for just the hardware interrupt though. We also have a software solution, check out the interrupt example code below.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/Interrupt_new.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/Interrupt_new.jpg" alt="This image shows a picture of the product the right most interrupt through hole labeled &quot;INT&quot; highlighted." /></a> </div></p>
+
+<h3>Jumpers</h3>
+
+<p>There are three jumpers on the underside of this board. Starting in the lower left is a triple jumper labeled <code>I2C</code> that connects pull-up resistors to the I&sup2;C data lines. If you're daisy chaining many I&sup2;C devices together than you may need to consider <a href="https://learn.sparkfun.com/tutorials/how-to-work-with-jumper-pads-and-pcb-traces">cutting these traces</a>.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/VEML_BOT_I2C_JUMP_NEW.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/VEML_BOT_I2C_JUMP_NEW.jpg" alt="I2C Jumper" /></a> </div></p>
+
+<p>To the right of that is the address jumper labeled <code>ADR</code> that allows you to select the SparkFun Ambient Light Sensor's other I&sup2;C address: <strong>0x10</strong>. By default your SparkFun Ambient Light Sensor is shipped with the I&sup2;C address <strong>0x48</strong>.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/VEML_BOT_ADDRESS_JUMP_NEW.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/VEML_BOT_ADDRESS_JUMP_NEW.jpg" alt="Address Jumper" /></a> </div></p>
+
+<p>Finally the jumper in the upper right is the <code>LED</code> jumper which can be cut to disconnect the on board power LED.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/VEML_BOT_LED_JUMP_NEW.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/VEML_BOT_LED_JUMP_NEW.jpg" alt="LED Jumper" /></a> </div></p>
+
+<h3>Gain and Integration Time Settings</h3>
+
+<p>What does <strong>gain</strong> and <strong>integration time</strong> mean? You can think of gain as an electronic mechanism to amplify a weak signal. If you're in a dark room with very little light, the sensor needs a way to amplify the weak light source to get accurate lux calculations and the <em>gain</em> is what give is it's <strong>oomph</strong>. Likewise, <strong>Integration time</strong> is the amount of time the sensitive photo diodes within the sensor absorb light before beginning its' Lux calculation. Both of these together are necessary for sensing in a dark room, but what if it was really bright outside?! Now there's so much light in the envinronment that you actually want to scale down the electronic's response to that saturation so you need a <em>lower</em> gain. And since there's so much light, the photo diodes don't need to be exposed long to get what they need to make the calculations, so a <em>lower integration</em> time is also needed.</p>
+
+<p>The SparkFun Ambient Light Sensor can detect ranges of light in <a href="https://en.wikipedia.org/wiki/Lux">Lux</a> from zero to 120,796! That's a gigantic range from dark to direct sun in the middle of the day. To accomplish this you have to set the <strong>Gain</strong> and <strong>Integration Time</strong> settings. This is trivial with the Arduino Library we've written and we'll walk you through it below in <strong>Example1 Ambient Light Basics</strong>. With each setting gives you a range of light that you can read. Check out the table below to see what's capable at each possible setting. Notice that slower integration and higher gain gives you a smallest range of (0->236) but the highest resolution (0.0036 lux/bit).</p>
+
+<div class="alert alert-warning"> The datasheet recommends that you use a setting of 1/4 (.25) or 1/8 (.125) unless the Ambient Light Sensor is going to sit behind dark glass. This will help to prevent over saturation of the photodiodes within the sensor. </div>
+
+<h4><strong><em>Maximum Light Detection Range: Lux</em></strong></h4>
+
+<table class="table table-hover table-bordered table-striped">
+    <tr>
+        <th class="text-center"> Integration Time 
+        (milliseconds)
+        </th>
+        <th class="text-center">GAIN 2
+        </th>
+        <th class="text-center">GAIN 1
+        </th>
+        <th class="text-center">GAIN 1/4
+        </th>
+        <th class="text-center">GAIN 1/8
+        </th>
+    </tr>
+    <tr align="center">
+        <td>800 </td>
+        <td>236 </td>
+        <td>472 </td>
+        <td>1887 </td>
+        <td>3775 </td>
+    </tr>
+    <tr align="center">
+        <td>400 </td>
+        <td>472 </td>
+        <td>944 </td>
+        <td>3775 </td>
+        <td>7550 </td>
+    </tr>
+    <tr align="center">
+        <td>200 </td>
+        <td>944 </td>
+        <td>1887 </td>
+        <td>7550 </td>
+        <td>15099 </td>
+    </tr>
+    <tr align="center">
+        <td>100 </td>
+        <td>1887 </td>
+        <td>3775 </td>
+        <td>15099 </td>
+        <td>30199 </td>
+    </tr>
+    <tr align="center">
+        <td>50 </td>
+        <td>3775 </td>
+        <td>7550 </td>
+        <td>30199 </td>
+        <td>60398 </td>
+    </tr>
+    <tr align="center">
+        <td>25 </td>
+        <td>7550 </td>
+        <td>15099 </td>
+        <td>60398 </td>
+        <td>120796 </td>
+    </tr>
+</table>
+
+<h4><strong><em>Resolution: Lux/Bit</em></strong></h4>
+
+<table class="table table-hover table-bordered table-striped">
+    <tr>
+        <th class="text-center"> Integration Time (milliseconds)
+        </th>
+        <th class="text-center">GAIN 2
+        </th>
+        <th class="text-center">GAIN 1
+        </th>
+        <th class="text-center">GAIN 1/4
+        </th>
+        <th class="text-center">GAIN 1/8
+        </th>
+    </tr>
+    <tr align="center">
+        <td>800 </td>
+        <td>0.0036 </td>
+        <td>0.0072 </td>
+        <td>0.0288 </td>
+        <td>0.0576 </td>
+    </tr>
+    <tr align="center">
+        <td>400 </td>
+        <td>0.0072 </td>
+        <td>0.0144 </td>
+        <td>0.0576 </td>
+        <td>0.1152 </td>
+    </tr>
+    <tr align="center">
+        <td>200 </td>
+        <td>0.0144 </td>
+        <td>0.0288 </td>
+        <td>0.1152 </td>
+        <td>0.2304 </td>
+    </tr>
+    <tr align="center">
+        <td>100 </td>
+        <td>0.0288 </td>
+        <td>0.0576 </td>
+        <td>0.2304 </td>
+        <td>0.4608 </td>
+    </tr>
+    <tr align="center">
+        <td>50 </td>
+        <td>0.0576 </td>
+        <td>0.1152 </td>
+        <td>0.4608 </td>
+        <td>0.9216 </td>
+    </tr>
+    <tr align="center">
+        <td>25 </td>
+        <td>0.1152 </td>
+        <td>0.2304 </td>
+        <td>0.9216 </td>
+        <td>1.8432 </td>
+    </tr>
+</table>
+
+<h3>Power Save Modes</h3>
+
+<p>Another cool feature of the SparkFun Ambient Light Sensor is its ability to run at <em>extremely</em> low currents. Power save modes should be used when you're continuously reading ambient light data. For example, if you're going to gather ambient light data every second, why not use a power save mode and save battery life? There are four power save modes that can be enabled with integration times of 100ms and above. Below is a table showing the power save mode, the current draw, and it's refresh rate. Check out Example 4 in the Arduino Library to see how to set it up and use the table below as a reference.</p>
+
+<div class="alert alert-warning"> Note the <b>Refresh Time</b> is the time needed for a new reading to be ready. Make sure there is a delay in your code of at least this length between readings to ensure you're getting new data. </div>
+
+<table class="table table-hover table-bordered table-striped">
+    <tr>
+        <th class="text-center"> Integration Time
+        </th>
+        <th class="text-center"> Power Save Mode
+        </th>
+        <th class="text-center"> Refresh Time (milliseconds)
+        </th>
+        <th class="text-center"> Current Draw (microamperes)
+        </th>
+        <th class="text-center"> Resolution (lx/bit)
+        </th>
+    </tr>
+    <tr align="center">
+        <td>100 </td>
+        <td>1 </td>
+        <td>600 </td>
+        <td>8 </td>
+        <td>0.0288 </td>
+    </tr>
+    <tr align="center">
+        <td>100 </td>
+        <td>2 </td>
+        <td>1100 </td>
+        <td>5 </td>
+        <td>0.0288 </td>
+    </tr>
+    <tr align="center">
+        <td>100 </td>
+        <td>3 </td>
+        <td>2100 </td>
+        <td>3 </td>
+        <td>0.0288 </td>
+    </tr>
+    <tr align="center">
+        <td>100 </td>
+        <td>4 </td>
+        <td>4100 </td>
+        <td>2 </td>
+        <td>0.0288 </td>
+    </tr>
+    <tr align="center">
+        <td>200 </td>
+        <td>1 </td>
+        <td>700 </td>
+        <td>13 </td>
+        <td>0.0144 </td>
+    </tr>
+    <tr align="center">
+        <td>200 </td>
+        <td>2 </td>
+        <td>1200 </td>
+        <td>8 </td>
+        <td>0.0144 </td>
+    </tr>
+    <tr align="center">
+        <td>200 </td>
+        <td>3 </td>
+        <td>2200 </td>
+        <td>5 </td>
+        <td>0.0144 </td>
+    </tr>
+    <tr align="center">
+        <td>200 </td>
+        <td>4 </td>
+        <td>4200 </td>
+        <td>3 </td>
+        <td>0.0144 </td>
+    </tr>
+    <tr align="center">
+        <td>400 </td>
+        <td>1 </td>
+        <td>900 </td>
+        <td>20 </td>
+        <td>0.0072 </td>
+    </tr>
+    <tr align="center">
+        <td>400 </td>
+        <td>2 </td>
+        <td>1400 </td>
+        <td>13 </td>
+        <td>0.0072 </td>
+    </tr>
+    <tr align="center">
+        <td>400 </td>
+        <td>3 </td>
+        <td>2400 </td>
+        <td>8 </td>
+        <td>0.0072 </td>
+    </tr>
+    <tr align="center">
+        <td>400 </td>
+        <td>4 </td>
+        <td>4400 </td>
+        <td>5 </td>
+        <td>0.0072 </td>
+    </tr>
+    <tr align="center">
+        <td>800 </td>
+        <td>1 </td>
+        <td>1300 </td>
+        <td>28 </td>
+        <td>0.0036 </td>
+    </tr>
+    <tr align="center">
+        <td>800 </td>
+        <td>2 </td>
+        <td>1800 </td>
+        <td>20 </td>
+        <td>0.0036 </td>
+    </tr>
+    <tr align="center">
+        <td>800 </td>
+        <td>3 </td>
+        <td>2800 </td>
+        <td>13 </td>
+        <td>0.0036 </td>
+    </tr>
+    <tr align="center">
+        <td>800 </td>
+        <td>4 </td>
+        <td>4800 </td>
+        <td>8 </td>
+        <td>0.0036 </td>
+    </tr>
+</table>
+
+<h3>Rounding Errors?!</h3>
+
+<p>Later on when you read back an interrupt threshold, you may notice that the interrupt lux values are off by one in some cases. This is because of the inherent rounding error with the Ambient Light Sensor. The final Lux value is calculated by multiplying the value of the bits that represent the ambient light by a decimal number (0.2304 for example). This decimal number is rounded to a whole number (e.g. 19.97 becomes 19) because the sensor does not care about fractions of a Lux. I chose to read back the rounded number because that's the interpreted value of the ambient light sensor and what is stored in its' registers.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="hardware-hookup">Hardware Hookup</h2>
+        <p>This will be an easy one thanks to the Qwiic connectors. Take one end of a Qwiic cable and plug it into your RedBoard Qwiic Board and then take the other end and plug it into the SparkFun Ambient Light Sensor.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/Redboard_and_VEML_NEW.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/9/1/5/Redboard_and_VEML_NEW.jpg" alt="This image shows a picture of the SparkFun Ambient Light Sensor connected to a Redboard Qwiic by a Qwiic cable." /></a> </div></p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="arduino-library">Arduino Library</h2>
+        <div class="alert alert-info">
+<b>Note:</b> This example below assumes you are using the latest version of the Arduino IDE on your desktop. If this is your first time using Arduino, please review our tutorial on <a href="https://learn.sparkfun.com/tutorials/installing-arduino-ide">installing the Arduino IDE.</a> If you have not previously installed an Arduino library, please check out our <a href="https://learn.sparkfun.com/tutorials/installing-an-arduino-library">installation guide.</a><br /><br />
+If you've never connected an CH340 device to your computer before, you may need to install drivers for the USB-to-serial converter. Check out our section on <a href="https://www.sparkfun.com/ch340">How to Install CH340 Drivers</a> for help with the installation
+</div>
+
+<p>We've written a library to make it even easier to get started with the SparkFun Ambient Light Sensor. The library will give you the full functionality of the sensor and provides example code to get the most our of your project. You can obtain these libraries through the Arduino Library Manager by searching <strong>SparkFun Ambient Light Sensor</strong>. The second option is to download the ZIP file below from its <a href="https://github.com/sparkfun/SparkFun_Ambient_Light_Sensor_Arduino_Library">GitHub repository</a> to manually install.</p>
+
+<p><div class="center-block text-center"> <a href="https://github.com/sparkfun/SparkFun_Ambient_Light_Sensor_Arduino_Library/archive/master.zip" class="btn btn-default">SparkFun Ambient Light Sensor Arduino Library (ZIP)</a> </div></p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="example-1-ambient-light-basics">Example 1:  Ambient Light Basics</h2>
+        <p>In this first example, we'll get you comfortable with gathering ambient light and setting two vital properties of the sensor's ability to read light: the <strong>gain</strong> and the <strong>integration time</strong>. These two properties determine the resolution (accuracy) of the reading and the available ranges of light that you can read! For example, a gain of 1/8 and 800ms integration time cannot read anything above 3775 Lux. This means you'll max out your sensor outdoors but would be a proper setting for dim rooms due to it's higher resolution.</p>
+
+<p>At the top of the example we have three variables <em>gain</em>, <em>time</em>, and <em>luxval</em>. The first two hold the value for the gain and integration time settings mentioned above. <strong>Gain</strong> settings can be: <code>2</code>, <code>1</code>, <code>1/4</code>, and <code>1/8</code>; typically 1/4 gain will capture everything you need with good resolution. Possible <strong>integration times</strong> can be <code>800</code>, <code>400</code>, <code>200</code>, <code>100</code>, <code>50</code>, <code>25</code> and by default the sensor is set to <code>100</code>; times are in milliseconds. Check the Gain and Integration Time table above under <strong>Hardware Overview</strong> to see maximum illumination capabilities and resolution for every setting.</p>
+
+<p>If you have any doubt with which settings to pick, just keep the example code's default settings: a gain of <strong>1/4 (0.125)</strong> and an integration time of <strong>100ms</strong>. This will give you a range of up to 15,000 Lux with a decent resolution!</p>
+
+<pre><code>language:c
+#include &lt;Wire.h&gt;
+#include "SparkFun_VEML6030_Ambient_Light_Sensor.h"
+
+#define AL_ADDR 0x48
+
+SparkFun_Ambient_Light light(AL_ADDR);
+
+// Possible values: .125(1/8), .25(1/4), 1, 2
+// Both .125 and .25 should be used in most cases except darker rooms.
+// A gain of 2 should only be used if the sensor will be covered by a dark
+// glass.
+float gain = .125;
+
+// Possible integration times in milliseconds: 800, 400, 200, 100, 50, 25
+// Higher times give higher resolutions and should be used in darker light. 
+int time = 100
+long luxVal = 0; 
+</code></pre>
+
+<p>In the setup, we call <code>light.begin()</code> to check if we can communicate with the SparkFun Ambient Light Sensor. Next, we call the <code>light.setGain()</code> and <code>light.setIntegTime()</code> functions giving them the variables holding the <strong>gain</strong> and <strong>time</strong> values above. Next we'll read back those values to make sure that they were set correctly. That's it! We're now set to read some light!</p>
+
+<pre><code>language:c
+void setup(){
+
+  Wire.begin();
+  Serial.begin(115200);
+
+  if(light.begin())
+    Serial.println("Ready to sense some light!"); 
+  else
+    Serial.println("Could not communicate with the sensor!");
+
+  // Again the gain and integration times determine the resolution of the lux
+  // value, and give different ranges of possible light readings. Check out
+  // hoookup guide for more info. 
+  light.setGain(gain);
+  light.setIntegTime(time);
+
+  Serial.println("Reading settings..."); 
+  Serial.print("Gain: ");
+  float gainVal = light.readGain();
+  Serial.print(gainVal, 3); 
+  Serial.print(" Integration Time: ");
+  int timeVal = light.readIntegTime();
+  Serial.println(timeVal);
+
+}
+</code></pre>
+
+<p>One thing to keep in mind is that you need to set a <code>delay()</code> in between readings. The <strong>Integration Time</strong> is the amount of time that the sensor uses to fill its' sensitive components with light. If you set an integration time of 100ms then make sure you're delay is at least that long. A longer integration time will need a longer delay.</p>
+
+<pre><code>language:c
+void loop(){
+
+  luxVal = light.readLight();
+  Serial.print("Ambient Light Reading: ");
+  Serial.print(luxVal);
+  Serial.println(" Lux");  
+  delay(1000);
+
+}
+</code></pre>      </div>
+          <div class="section tutorial-page">
+        <h2 id="example-2-and-3-ambient-light-interrupt">Example 2 and 3: Ambient Light Interrupt</h2>
+        <p>The SparkFun Ambient Light Sensor can issue an <em>interrupt</em> whenever the ambient light readings cross <strong>high</strong> or <strong>low</strong> thresholds. In this example, we'll talk about setting those thresholds and reading when those thresholds have been crossed in two different ways:</p>
+
+<ul>
+<li>the on-board hardware interrupt pin labeled <code>INT</code></li>
+<li>through software monitoring</li>
+</ul>
+
+<p>The code for both Example 2 and 3 only differ in the main <code>loop()</code> and these differences are highlighted under <strong>Example 2 - Hardware Interrupt</strong> and <strong>Example 3 - Software Interrupt</strong> sections below.</p>
+
+<p>Again as in example one, at the top we see the <code>gain</code>, <code>time</code> and <code>luxVal</code> variables. The <strong>gain</strong> and <strong>integration times</strong> are vital for setting the tolerance for light and resolution of your sensor - see the <strong>Gain and Integration Time</strong> table under <strong>Hardware Overview</strong> above. The <code>luxVal</code> variable holds the ambient light readings further down in the code. Just below we see the interrupt settings <code>lowThresh</code>, <code>highThresh</code> and <code>numbValues</code>. The first two set the low and high threshold variables that will trigger the interrupt when the ambient light crosses the given values. The last variable is the number of times a value must cross a threshold to trigger an interrupt. I have the variables set to 20 Lux for the lower end, 400 Lux for the upper end, and that an interrupt must be issued after the ambient light crosses one of these thresholds once.</p>
+
+<pre><code>language:c
+#include &lt;Wire.h&gt;
+#include "SparkFun_VEML6030_Ambient_Light_Sensor.h"
+
+
+// Close the address jumper on the product for addres 0x10.
+#define AL_ADDR 0x48
+
+SparkFun_Ambient_Light light(AL_ADDR);
+
+// Possible values: .125, .25, 1, 2
+// Both .125 and .25 should be used in most cases except darker rooms.
+// A gain of 2 should only be used if the sensor will be covered by a dark
+// glass.
+float gain = .125;
+
+// Possible integration times in milliseconds: 800, 400, 200, 100, 50, 25
+// Higher times give higher resolutions and should be used in darker light. 
+int time = 100;
+long luxVal = 0; 
+
+
+// Interrupt settings. 
+long lowThresh = 20; 
+long highThresh = 400; 
+int numbValues = 1;
+
+// Interrupt pin
+int intPin = 3;
+// -- OR -- if not using interrupt pin:
+int interrupt;
+</code></pre>
+
+<p>Again, as in the first example, we start communication with the sensor with <code>light.begin()</code>, set the gain (<code>light.setGain()</code>) and integration time settings (<code>light.setIntegTime()</code>), and read them back by printing them out to the serial monitor with the respective read functions. But just below we see where we set the two thresholds. First the low threshold with <code>light.setIntLowThresh()</code> and then the high threshold with <code>light.setIntHighThresh()</code>, giving these functions the values we set in the variables above. We then read those settings back to make sure that they're set correctly.</p>
+
+<p>Now we set how many values will need to cross the threshold with the <code>light.setProtect()</code> function call and read it back. This setting is optional and defaults to one. Finally, we <em>enable</em> the interrupt with <code>light.enableInt()</code>. While the sensor knows our thresholds it does not quite know we want the interrupt to be enabled until we tell it to.</p>
+
+<pre><code>language:c
+void setup(){
+
+  Wire.begin();
+  Serial.begin(115200);
+  pinMode(intPin, INPUT);
+
+  if(light.begin())
+    Serial.println("Ready to sense some light!"); 
+  else
+    Serial.println("Could not communicate with the sensor!");
+
+  // Again the gain and integration times determine the resolution of the lux
+  // value, and give different ranges of possible light readings. Check out
+  // hoookup guide for more info. The gain/integration time also affects 
+  // interrupt threshold settings so ALWAYS set gain and time first. 
+  light.setGain(gain);
+  light.setIntegTime(time);
+
+  Serial.println("Reading settings..."); 
+  Serial.print("Gain: ");
+  float gainVal = light.readGain();
+  Serial.print(gainVal, 3); 
+  Serial.print(" Integration Time: ");
+  int timeVal = light.readIntegTime();
+  Serial.println(timeVal);
+
+  // Set both low and high thresholds, they take values in lux.
+  light.setIntLowThresh(lowThresh);
+  light.setIntHighThresh(highThresh);
+  // Let's check that they were set correctly. 
+  // There are some rounding issues inherently in the IC's design so your lux
+  // may be one off. 
+  Serial.print("Low Threshold: ");
+  long lowVal = light.readLowThresh();
+  Serial.print(lowVal);
+  Serial.print(" High Threshold: ");
+  long highVal = light.readHighThresh();
+  Serial.println(highVal);
+
+  // This setting modifies the number of times a value has to fall below or
+  // above the threshold before the interrupt fires! Values include 1, 2, 4 and
+  // 8. 
+  light.setProtect(numbValues);
+  Serial.print("Number of values that must fall below/above threshold before interrupt occurrs: ");
+  int protectVal = light.readProtect();
+  Serial.println(protectVal);
+
+  // Now we enable the interrupt, now that he thresholds are set. 
+  light.enableInt();
+  Serial.print("Is interrupt enabled: ");
+  int enabInt = light.readIntSetting();
+  if( enabInt == 1 )
+    Serial.println("Yes"); 
+  else
+    Serial.println("No");
+
+  Serial.println("-------------------------------------------------");
+
+  // Give some time to read our settings on startup.
+  delay(3000);
+}
+</code></pre>
+
+<h3>Example 2: Hardware Interrupt</h3>
+
+<p>Now let's read some light! Since we're just using a hardware interrupt we have a pin attached to <code>PIN 3</code>. When the ambient light reading passes either threshold the pin will go <strong>LOW</strong>. When an interrupt fires we check  to see which threshold was crossed and print it out in the serial monitor.</p>
+
+<pre><code>language:c 
+void loop(){
+
+  luxVal = light.readLight();
+  Serial.print("Ambient Light Reading: ");
+  Serial.print(luxVal);
+  Serial.println(" Lux");  
+
+  if (digitalRead(intPin) == LOW){
+    int intVal = light.readInterrupt();
+    if (intVal == 1)
+      Serial.println("High threshold crossed!");
+    else if (intVal == 2){
+      Serial.println("Low threshold crossed!");
+    }
+  }
+
+  delay(200);
+</code></pre>
+
+<h3>Example 3: Software Interrupt</h3>
+
+<p>If you're committed to keeping this <strong>Qwiic</strong> then we can look for an interrupt by monitoring the Ambient Light Sensor directly rather than through a digital pin. In the code we'll use the <code>light.readInterrupt()</code> function call directly to see if there's been an interrupt issued. That's it!</p>
+
+<pre><code>language:c
+void loop(){
+
+  luxVal = light.readLight();
+  Serial.print("Ambient Light Reading: ");
+  Serial.print(luxVal);
+  Serial.println(" Lux");  
+
+  interrupt = light.readInterrupt();
+  if (interrupt == 1)
+    Serial.println("High threshold crossed!");
+  else if (interrupt == 2){
+    Serial.println("Low threshold crossed!");
+
+  delay(200);
+
+}
+</code></pre>
+
+<div class="alert alert-warning" role="alert"> <b>Rounding discrepancy?!</b> 
+  You may notice that the interrupt lux values are off by one in some cases. This is because of the inherent rounding error with the Ambient Light Sensor. The final Lux value is calculated by multiplying the value of the bits that represent the ambient light by a decimal number (0.2304 for example). This decimal number is rounded to a whole number (e.g. 19.97 becomes 19) because the Sensor does not care about fractions of a Lux. I chose to read back the rounded number because that's the interpreted value of the ambient light sensor. 
+</div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="example-4---power-save-mode">Example 4 - Power Save Mode</h2>
+        <p>I won't break down this example code because you have all the necessary tools to get you started with the Ambient Light Sensor. However, if you plan on continuously reading ambient light data then give this sketch a try. It'll show you how to put the board into power save mode, which will save you battery life while still getting ambient light data. Check the <strong>Power Save Mode</strong> section under <strong>Hardware Overview</strong> as a reference when looking at the sketch.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="resources-and-going-further">Resources and Going Further</h2>
+        <p>For more on the AS3935, check out the links below:</p>
+
+<ul>
+<li><a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/5/SparkFun_Ambient_Light_Sensor_VEML6030.pdf">Schematic (PDF)</a></li>
+<li><a href="https://cdn.sparkfun.com/assets/a/f/c/5/5/SparkFun_Ambient_Light_Sensor_VEML6030_V10.zip">Eagle Files (ZIP)</a></li>
+<li><a href="https://cdn.sparkfun.com/assets/d/7/4/2/9/veml6030_datasheet.pdf">Datasheet (PDF)</a></li>
+<li>GitHub
+
+<ul>
+<li><a href="https://github.com/sparkfun/SparkFun_Ambient_Light_Sensor_Arduino_Library">SparkFun Ambient Light Sensor Arduino LIbrary</a></li>
+<li><a href="https://github.com/sparkfun/SparkFun_Ambient_Sensor_VEML6030">Product Repo</a> - Design files and more datasheets!</li>
+</ul></li>
+<li><a href="https://www.youtube.com/watch?v=z06t8706o98">SFE Product Showcase</a></li>
+</ul>
+
+<p>Need some other <a href="https://www.sparkfun.com/categories/152">weather sensing parts</a> for your project? Check out some of the ones listed below.</p>
+
+
+
+<div class="tile-wrap">
+<div class="tile product-tile  grid " data-id="product-12909">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-pressure-sensor-breakout-ms5803-14ba.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/9/8/1/1/12909-01a.jpg" alt="SparkFun Pressure Sensor Breakout - MS5803-14BA" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-pressure-sensor-breakout-ms5803-14ba.html">
+          <span>SparkFun Pressure Sensor Breakout - MS5803-14BA</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      SEN-12909    </span>
+
+          <p class="description" style="display:none">
+        This is the MS5803-14BA Pressure Sensor Breakout, a high resolution pressure sensor with both an I2C and SPI interface.       </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$80.50</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-8942">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/8942">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/2/2/3/3/08942-01.jpg" alt="Weather Meters" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/8942">
+          <span>Weather Meters</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      SEN-08942    </span>
+
+          <p class="description" style="display:none">
+        Whether you're an agriculturalist, a professional meteorologist or a weather hobbyist, building your own weather station can &hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-13956">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-weather-shield.html">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/1/6/6/5/13956-01.jpg" alt="SparkFun Weather Shield" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-weather-shield.html">
+          <span>SparkFun Weather Shield</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      DEV-13956    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Weather Shield is an easy-to-use Arduino shield that grants you access to barometric pressure, relative humidity&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+<div class="tile product-tile  grid retired" data-id="product-14348">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/products/14348">
+        <img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/2/3/2/9/14348-01.jpg" alt="SparkFun Environmental Combo Breakout - CCS811/BME280 (Qwiic)" height="140">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/products/14348">
+          <span>SparkFun Environmental Combo Breakout - CCS811/BME280 (Qwiic)</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      SEN-14348    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun CCS811/BME280 Environmental Combo Breakout takes care of all your atmospheric-quality sensing needs with the pop&hellip;      </p>
+      </div>
+
+  
+      <strong class="retired">Retired</strong>
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+
+<p>Need some inspiration for your next project? Check out some of these related tutorials to sense your environment!</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-146">
+  <a href="https://learn.sparkfun.com/tutorials/mpl3115a2-pressure-sensor-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/a/5/6/4/a/5265a795757b7f7e4c8b4569.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">MPL3115A2 Pressure Sensor Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      Getting started with the MPL3115A2 Pressure Sensor.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-538">
+  <a href="https://learn.sparkfun.com/tutorials/environmental-monitoring-with-the-tessel-2">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/5/3/8/current-sensor.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Environmental Monitoring with the Tessel 2</h3>
+      </a>
+
+      <div class="description">
+      Build an air-conditioner monitoring device to collect environment information and store it in the cloud.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-687">
+  <a href="https://learn.sparkfun.com/tutorials/ccs811bme280-qwiic-environmental-combo-breakout-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/8/7/14348-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">CCS811/BME280 (Qwiic) Environmental Combo Breakout Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      Sense various environmental conditions such as temperature, humidity, barometric pressure, eCO2 and tVOCs with the CCS811 and BME280 combo breakout board.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-1989">
+  <a href="https://learn.sparkfun.com/tutorials/digital-temperature-sensor-breakout---as6212-qwiic-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/9/8/9/SparkFun_AS6212_Qwiic-Thumb.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Digital Temperature Sensor Breakout - AS6212 (Qwiic) Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      Get started measuring highly accurate temperatures at extremely low power with the AS6212 temperature sensor on the SparkFun Digital Temperature Sensor Breakout - AS6212 (Qwiic).    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>      </div>
+    
+        <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t915" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft915&name=Qwiic+Ambient+Light+Sensor+%28VEML6030%29+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft915" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=Qwiic+Ambient+Light+Sensor+%28VEML6030%29+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft915&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft915&t=Qwiic+Ambient+Light+Sensor+%28VEML6030%29+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft915&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F9%2F1%2F5%2F15436-SparkFun_Ambient_Light_Sensor_-_VEML6030__Qwiic_-01.jpg&description=Qwiic+Ambient+Light+Sensor+%28VEML6030%29+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+  </div>
+
+  <div class="col-sm-4 nav-menu" id="nav-pages">
+    <div id="sidebar_affix">
+      <div id="tutorial-pages" class="list-group">
+        <a class="list-group-item"><b>Sections</b></a>
+                          <a data-pagename="introduction" class="list-group-item" href="#introduction">
+            Introduction          </a>
+                  <a data-pagename="hardware-overview" class="list-group-item" href="#hardware-overview">
+            Hardware Overview          </a>
+                  <a data-pagename="hardware-hookup" class="list-group-item" href="#hardware-hookup">
+            Hardware Hookup          </a>
+                  <a data-pagename="arduino-library" class="list-group-item" href="#arduino-library">
+            Arduino Library          </a>
+                  <a data-pagename="example-1-ambient-light-basics" class="list-group-item" href="#example-1-ambient-light-basics">
+            Example 1:  Ambient Light Basics          </a>
+                  <a data-pagename="example-2-and-3-ambient-light-interrupt" class="list-group-item" href="#example-2-and-3-ambient-light-interrupt">
+            Example 2 and 3: Ambient Light Interrupt          </a>
+                  <a data-pagename="example-4---power-save-mode" class="list-group-item" href="#example-4---power-save-mode">
+            Example 4 - Power Save Mode          </a>
+                  <a data-pagename="resources-and-going-further" class="list-group-item" href="#resources-and-going-further">
+            Resources and Going Further          </a>
+              </div>
+
+      <div class="list-group">
+        <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/qwiic-ambient-light-sensor-veml6030-hookup-guide/discuss">
+          Comments
+          <span class="badge">1</span>
+        </a>
+                  <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/qwiic-ambient-light-sensor-veml6030-hookup-guide/introduction">
+            View Paginated
+          </a>
+                <a class="list-group-item" href="#" onclick="window.print(); return false;">
+          Print
+        </a>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>Tags</b></li>
+        <li class="list-group-item"><ul class="tags-list">
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/arduino">Arduino</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/hookup">Hookup</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/light">Light</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/sensors">Sensors</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/weather">Weather</a>  </li>
+</ul>
+</li>
+      </ul>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>License</b></li>
+        <li class="list-group-item">
+          <span class="sfe-icon-cc">
+            <span class="visuallyhidden">Creative Commons</span>
+          </span>
+          <small>tutorials are <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a></small>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+      </div> <!-- /container -->
+    </div> <!-- /content -->
+
+    <footer>
+  <div class="container">
+
+  <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>About SparkFun</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/about-sparkfun">Read Our Story</a></li>
+            <li><a href="https://www.sparkfun.com/press-and-media">Press &amp; Media</a></li>
+            <li><a href="http://www.sparkfuneducation.com" target="_blank">SparkFun Education <span class="glyphicon glyphicon-new-window"></span></a></li>
+            <li><a href="https://www.sparkfun.com/jobs">Job Openings</a></li>
+          </ul>
+
+          <h3>Partner With Us</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/partner">See Our Partners</a></li>
+            <li><a href="https://www.sparkfun.com/services">View Our Services</a></li>
+            <li><a href="https://www.sparkfun.com/become-a-distributor">Become a Distributor/Reseller</a></li>
+            <li><a href="https://www.sparkfun.com/volume-sales">Receive Volume Discounts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/support">Customer Support</a></li>
+            <li><a href="https://www.sparkfun.com/payments">Purchase Order &amp; Payment Terms</a></li>
+            <li><a href="https://www.sparkfun.com/technical-assistance">Technical Assistance</a></li>
+            <li><a href="https://www.sparkfun.com/faq">FAQs</a></li>
+          </ul>
+          <h3>Site Information</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/terms">Terms Of Service</a></li>
+            <li><a href="https://www.sparkfun.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://www.sparkfun.com/compliance">Compliance</a></li>
+            <li><a href="https://www.sparkfun.com/sitemap">Site Map</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Subscribe</h3>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "2224003",
+              formId: "257ad1af-ab9e-4275-8788-cbad81cc229e"
+            });
+          </script>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>View Our Social Channels</h3>
+          <ul class="spew">
+            <li><a href="https://www.youtube.com/sparkfun" target="_blank" class="icon-social-youtube"><span class="sr-only">YouTube</span></a></li>
+            <li><a href="https://www.instagram.com/sparkfun/" target="_blank" class="icon-social-instagram"><span class="sr-only">Instagram</span></a></li>
+            <li><a href="https://www.github.com/sparkfun" target="_blank" class="icon-social-github"><span class="sr-only">GitHub</span></a></li>
+            <li><a href="https://www.facebook.com/SparkFun" target="_blank" class="icon-social-facebook"><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://twitter.com/sparkfun" target="_blank" class="icon-social-twitter"><span class="sr-only">Twitter</span></a></li>
+            <li><a href="https://www.sparkfun.com/feeds" class="icon-social-rss"><span class="sr-only">RSS</span></a></li>
+            <li><a href="https://www.tiktok.com/@sparkfun.electronics?lang=en" target="_blank" class="icon-social-tiktok"><span class="sr-only">TikTok</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- end .row -->
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p class="copyleft">
+          <strong>SparkFun Electronics&nbsp;&reg;</strong>
+          <span class="hidden-xs hidden-sm">/</span>
+          <br class="visible-xs-inline visible-sm-inline"/>
+          6333 Dry Creek Parkway,
+          <br class="visible-xs-inline"/>
+          Niwot, CO 80503
+        </p>
+      </div>
+    </div><!-- end .row -->
+  </div><!-- end .container -->
+</footer>
+
+      </div><!-- end .wrapper-inner -->
+    </div><!-- end .wrapper -->
+
+    <script type="text/javascript">
+      // eslint-disable-next-line no-unused-vars
+      var SFECONFIG = {
+        dnt: false,
+        http_server: 'http://learn.sparkfun.com',
+        https_server: 'https://learn.sparkfun.com',
+        http_static: 'https://cdn.sparkfun.com',
+        learn_server: 'https://learn.sparkfun.com',
+        news_server: 'https://news.sparkfun.com',
+        base_url: '/',
+        url: '/',
+        controller: 'tutorials',
+        action: 'view',
+        auth: false,
+        sparkrev: '1792687498',
+        search_key: 'search-sngw3quge7ojic1tgr4eft5c',
+        search_url: 'https://sparkfun-electronics.ent.us-central1.gcp.cloud.es.io/api/as/v1/engines/sparkfun-01/search'
+      };
+    </script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+      <script src="/js/learn-built.min.js?sparkrev=1792687498"></script>
+    
+    <script>
+      /* global $ */
+      $.sfe();
+      $.shared();
+      $('#learn').learn();
+      $('#learn').sfeutil();
+    </script>
+                            <script src="/js/tutorials-built.min.js?sparkrev=1792687498"></script>
+                              <script>
+    var fbq = null;
+  </script>
+      
+          <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2224003.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+        <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0046/4761.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+      </body>
+</html>

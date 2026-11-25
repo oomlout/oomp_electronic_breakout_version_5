@@ -1,0 +1,448 @@
+{
+    "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html",
+    "accessed": "2026-10-22",
+    "tables": [
+        [
+            [
+                "Key Component",
+                "Description"
+            ],
+            [
+                "ESP32-S3-WROOM-1/1U/2",
+                "ESP32-S3-WROOM-1, ESP32-S3-WROOM-1U, and ESP32-S3-WROOM-2 are powerful, generic Wi-Fi + Bluetooth Low Energy MCU modules that have a rich set of peripherals. They provide acceleration for neural network computing and signal processing workloads. ESP32-S3-WROOM-1 and ESP32-S3-WROOM-2 comes with a PCB antenna. ESP32-S3-WROOM-1U comes with an external antenna connector."
+            ],
+            [
+                "5 V to 3.3 V LDO",
+                "Power regulator that converts a 5 V supply into a 3.3 V output."
+            ],
+            [
+                "Pin Headers",
+                "All available GPIO pins (except for the SPI bus for flash) are broken out to the pin headers on the board for easy interfacing and programming. For details, please see Header Block ."
+            ],
+            [
+                "USB-to-UART Port",
+                "A Micro-USB port used for power supply to the board, for flashing applications to the chip, as well as for communication with the chip via the on-board USB-to-UART bridge."
+            ],
+            [
+                "Boot Button",
+                "Download button. Holding down Boot and then pressing Reset initiates Firmware Download mode for downloading firmware through the serial port."
+            ],
+            [
+                "Reset Button",
+                "Press this button to restart the system."
+            ],
+            [
+                "USB Port",
+                "ESP32-S3 full-speed USB OTG interface, compliant with the USB 1.1 specification. The interface is used for power supply to the board, for flashing applications to the chip, for communication with the chip using USB 1.1 protocols, as well as for JTAG debugging."
+            ],
+            [
+                "USB-to-UART Bridge",
+                "Single USB-to-UART bridge chip provides transfer rates up to 3 Mbps."
+            ],
+            [
+                "RGB LED",
+                "Addressable RGB LED, driven by GPIO38."
+            ],
+            [
+                "3.3 V Power On LED",
+                "Turns on when the USB power is connected to the board."
+            ]
+        ],
+        [
+            [
+                "Part Number",
+                "On-board Module",
+                "Flash",
+                "PSRAM",
+                "Antenna"
+            ],
+            [
+                "ESP32-S3-DevKitC-1-N32R16V",
+                "ESP32-S3-WROOM-2-N32R16V",
+                "32 MB",
+                "16 MB",
+                "PCB on-board antenna"
+            ],
+            [
+                "ESP32-S3-DevKitC-1-N8R8",
+                "ESP32-S3-WROOM-1-N8R8",
+                "8 MB",
+                "8 MB",
+                "PCB on-board antenna"
+            ],
+            [
+                "ESP32-S3-DevKitC-1U-N8R8",
+                "ESP32-S3-WROOM-1U-N8R8",
+                "8 MB",
+                "8 MB",
+                "External antenna connector"
+            ],
+            [
+                "ESP32-S3-DevKitC-1-N8 (EOL)",
+                "ESP32-S3-WROOM-1-N8",
+                "8 MB",
+                "\u2014",
+                "PCB on-board antenna"
+            ],
+            [
+                "ESP32-S3-DevKitC-1-N8R2 (EOL)",
+                "ESP32-S3-WROOM-1-N8R2",
+                "8 MB",
+                "2 MB",
+                "PCB on-board antenna"
+            ],
+            [
+                "ESP32-S3-DevKitC-1U-N8 (EOL)",
+                "ESP32-S3-WROOM-1U-N8",
+                "8 MB",
+                "\u2014",
+                "External antenna connector"
+            ],
+            [
+                "ESP32-S3-DevKitC-1U-N8R2 (EOL)",
+                "ESP32-S3-WROOM-1U-N8R2",
+                "8 MB",
+                "2 MB",
+                "External antenna connector"
+            ]
+        ],
+        [
+            [
+                "No.",
+                "Name",
+                "Type [ 1 ]",
+                "Function"
+            ],
+            [
+                "1",
+                "3V3",
+                "P",
+                "3.3 V power supply"
+            ],
+            [
+                "2",
+                "3V3",
+                "P",
+                "3.3 V power supply"
+            ],
+            [
+                "3",
+                "RST",
+                "I",
+                "EN"
+            ],
+            [
+                "4",
+                "4",
+                "I/O/T",
+                "RTC_GPIO4, GPIO4, TOUCH4, ADC1_CH3"
+            ],
+            [
+                "5",
+                "5",
+                "I/O/T",
+                "RTC_GPIO5, GPIO5, TOUCH5, ADC1_CH4"
+            ],
+            [
+                "6",
+                "6",
+                "I/O/T",
+                "RTC_GPIO6, GPIO6, TOUCH6, ADC1_CH5"
+            ],
+            [
+                "7",
+                "7",
+                "I/O/T",
+                "RTC_GPIO7, GPIO7, TOUCH7, ADC1_CH6"
+            ],
+            [
+                "8",
+                "15",
+                "I/O/T",
+                "RTC_GPIO15, GPIO15, U0RTS, ADC2_CH4, XTAL_32K_P"
+            ],
+            [
+                "9",
+                "16",
+                "I/O/T",
+                "RTC_GPIO16, GPIO16, U0CTS, ADC2_CH5, XTAL_32K_N"
+            ],
+            [
+                "10",
+                "17",
+                "I/O/T",
+                "RTC_GPIO17, GPIO17, U1TXD, ADC2_CH6"
+            ],
+            [
+                "11",
+                "18",
+                "I/O/T",
+                "RTC_GPIO18, GPIO18, U1RXD, ADC2_CH7, CLK_OUT3"
+            ],
+            [
+                "12",
+                "8",
+                "I/O/T",
+                "RTC_GPIO8, GPIO8, TOUCH8, ADC1_CH7, SUBSPICS1"
+            ],
+            [
+                "13",
+                "3",
+                "I/O/T",
+                "RTC_GPIO3, GPIO3, TOUCH3, ADC1_CH2"
+            ],
+            [
+                "14",
+                "46",
+                "I/O/T",
+                "GPIO46"
+            ],
+            [
+                "15",
+                "9",
+                "I/O/T",
+                "RTC_GPIO9, GPIO9, TOUCH9, ADC1_CH8, FSPIHD, SUBSPIHD"
+            ],
+            [
+                "16",
+                "10",
+                "I/O/T",
+                "RTC_GPIO10, GPIO10, TOUCH10, ADC1_CH9, FSPICS0, FSPIIO4, SUBSPICS0"
+            ],
+            [
+                "17",
+                "11",
+                "I/O/T",
+                "RTC_GPIO11, GPIO11, TOUCH11, ADC2_CH0, FSPID, FSPIIO5, SUBSPID"
+            ],
+            [
+                "18",
+                "12",
+                "I/O/T",
+                "RTC_GPIO12, GPIO12, TOUCH12, ADC2_CH1, FSPICLK, FSPIIO6, SUBSPICLK"
+            ],
+            [
+                "19",
+                "13",
+                "I/O/T",
+                "RTC_GPIO13, GPIO13, TOUCH13, ADC2_CH2, FSPIQ, FSPIIO7, SUBSPIQ"
+            ],
+            [
+                "20",
+                "14",
+                "I/O/T",
+                "RTC_GPIO14, GPIO14, TOUCH14, ADC2_CH3, FSPIWP, FSPIDQS, SUBSPIWP"
+            ],
+            [
+                "21",
+                "5V",
+                "P",
+                "5 V power supply"
+            ],
+            [
+                "22",
+                "G",
+                "G",
+                "Ground"
+            ]
+        ],
+        [
+            [
+                "No.",
+                "Name",
+                "Type",
+                "Function"
+            ],
+            [
+                "1",
+                "G",
+                "G",
+                "Ground"
+            ],
+            [
+                "2",
+                "TX",
+                "I/O/T",
+                "U0TXD, GPIO43, CLK_OUT1"
+            ],
+            [
+                "3",
+                "RX",
+                "I/O/T",
+                "U0RXD, GPIO44, CLK_OUT2"
+            ],
+            [
+                "4",
+                "1",
+                "I/O/T",
+                "RTC_GPIO1, GPIO1, TOUCH1, ADC1_CH0"
+            ],
+            [
+                "5",
+                "2",
+                "I/O/T",
+                "RTC_GPIO2, GPIO2, TOUCH2, ADC1_CH1"
+            ],
+            [
+                "6",
+                "42",
+                "I/O/T",
+                "MTMS, GPIO42"
+            ],
+            [
+                "7",
+                "41",
+                "I/O/T",
+                "MTDI, GPIO41, CLK_OUT1"
+            ],
+            [
+                "8",
+                "40",
+                "I/O/T",
+                "MTDO, GPIO40, CLK_OUT2"
+            ],
+            [
+                "9",
+                "39",
+                "I/O/T",
+                "MTCK, GPIO39, CLK_OUT3, SUBSPICS1"
+            ],
+            [
+                "10",
+                "38",
+                "I/O/T",
+                "GPIO38, FSPIWP, SUBSPIWP, RGB LED"
+            ],
+            [
+                "11",
+                "37",
+                "I/O/T",
+                "SPIDQS, GPIO37, FSPIQ, SUBSPIQ"
+            ],
+            [
+                "12",
+                "36",
+                "I/O/T",
+                "SPIIO7, GPIO36, FSPICLK, SUBSPICLK"
+            ],
+            [
+                "13",
+                "35",
+                "I/O/T",
+                "SPIIO6, GPIO35, FSPID, SUBSPID"
+            ],
+            [
+                "14",
+                "0",
+                "I/O/T",
+                "RTC_GPIO0, GPIO0"
+            ],
+            [
+                "15",
+                "45",
+                "I/O/T",
+                "GPIO45"
+            ],
+            [
+                "16",
+                "48",
+                "I/O/T",
+                "GPIO48, SPICLK_N, SUBSPICLK_N_DIFF"
+            ],
+            [
+                "17",
+                "47",
+                "I/O/T",
+                "GPIO47, SPICLK_P, SUBSPICLK_P_DIFF"
+            ],
+            [
+                "18",
+                "21",
+                "I/O/T",
+                "RTC_GPIO21, GPIO21"
+            ],
+            [
+                "19",
+                "20",
+                "I/O/T",
+                "RTC_GPIO20, GPIO20, U1CTS, ADC2_CH9, CLK_OUT1, USB_D+"
+            ],
+            [
+                "20",
+                "19",
+                "I/O/T",
+                "RTC_GPIO19, GPIO19, U1RTS, ADC2_CH8, CLK_OUT2, USB_D-"
+            ],
+            [
+                "21",
+                "G",
+                "G",
+                "Ground"
+            ],
+            [
+                "22",
+                "G",
+                "G",
+                "Ground"
+            ]
+        ]
+    ],
+    "links": [
+        {
+            "title": "Download PDF",
+            "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp-dev-kits-en-master-esp32s3.pdf"
+        },
+        {
+            "title": "Board Schematic",
+            "url": "https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20220413.pdf"
+        },
+        {
+            "title": "ESP32-S3 Series Datasheet",
+            "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"
+        },
+        {
+            "title": "ESP32-S3 Datasheet",
+            "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"
+        },
+        {
+            "title": "ESP32-S3-WROOM-1 & ESP32-S3-WROOM-1U Datasheet",
+            "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"
+        },
+        {
+            "title": "ESP32-S3-WROOM-2 Datasheet",
+            "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-2_datasheet_en.pdf"
+        },
+        {
+            "title": "ESP32-S3-DevKitC-1 Schematic",
+            "url": "https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20221130.pdf"
+        },
+        {
+            "title": "ESP32-S3-DevKitC-1 PCB layout",
+            "url": "https://dl.espressif.com/dl/schematics/PCB_ESP32-S3-DevKitC-1_V1.1_20220429.pdf"
+        },
+        {
+            "title": "ESP32-S3-DevKitC-1 Dimensions",
+            "url": "https://dl.espressif.com/dl/schematics/esp_idf/DXF_ESP32-S3-DevKitC-1_V1.1_20220429.pdf"
+        },
+        {
+            "title": "ESP32-S3-DevKitC-1 Dimensions source file",
+            "url": "https://dl.espressif.com/dl/schematics/esp_idf/DXF_ESP32-S3-DevKitC-1_V1.1_20220429.dxf"
+        },
+        {
+            "title": "ESP32-S3-DevKitC-1 Reference Design",
+            "url": "https://documentation.espressif.com/ESP32-S3-DevKitC-1_Reference_Design.zip"
+        },
+        {
+            "title": "Edit on GitHub",
+            "url": "https://github.com/espressif/esp-dev-kits/blob/ae2a376/docs/en/esp32-s3-devkitc-1/user_guide_v1.1.rst"
+        },
+        {
+            "title": "theme",
+            "url": "https://github.com/espressif/sphinx_idf_theme"
+        },
+        {
+            "title": "Read the Docs Sphinx Theme",
+            "url": "https://github.com/readthedocs/sphinx_rtd_theme"
+        }
+    ]
+}

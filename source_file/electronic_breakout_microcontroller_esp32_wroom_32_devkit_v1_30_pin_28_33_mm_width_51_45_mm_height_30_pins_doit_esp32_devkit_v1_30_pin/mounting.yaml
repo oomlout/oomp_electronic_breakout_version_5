@@ -1,0 +1,78 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_wroom_32_devkit_v1_30_pin_28_33_mm_width_51_45_mm_height_30_pins_doit_esp32_devkit_v1_30_pin
+status: needs_review
+board_revision: null
+identity_evidence: null
+board_size: null
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: null
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: gpt-6-luna
+sources:
+- id: doit_v0_schematic
+  local_file: reference/doit_schematic.pdf
+  url: https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/SchematicsforESP32.pdf
+  kind: manufacturer_schematic
+  locator: Archived PDF bytes verified SHA-256 4f41a0cc695c2eb7344d6c8b970d944286000c05c7b4af48c60b133c811774f5;
+    schematic describes the 2x15 electrical design but has no PCB outline, dimensions,
+    mounting drills, or mechanical revision.
+  registered_at: '2026-11-06T16:44:42+00:00'
+  bytes: 42930
+  sha256: 4f41a0cc695c2eb7344d6c8b970d944286000c05c7b4af48c60b133c811774f5
+attempts:
+- avenue: official DOIT product and CAD search
+  date: '2026-11-06'
+  details: >-
+    Searched for official DOIT ESP32 DevKit V1 product documentation and
+    revision-linked PCB CAD. No manufacturer product page, downloadable CAD,
+    board revision, or dimensioned mechanical drawing was located.
+- avenue: manufacturer-linked hardware repository search
+  date: '2026-11-06'
+  details: >-
+    Searched for DOIT-linked GitHub or other public hardware repositories with
+    the exact 30-contact carrier design. No official repository or pinned
+    mechanical source linking the named product to a carrier revision was found.
+- avenue: archived schematic and community mechanical-source review
+  date: '2026-11-06'
+  details: >-
+    Verified the archived DOIT V0 schematic PDF hash and reviewed its scope;
+    it documents electrical connectivity only. Community KiCad footprints,
+    Wokwi board graphics, and third-party pinout drawings are not manufacturer
+    revision evidence or dimensioned mechanical drawings, so they cannot establish
+    this carrier's PCB outline or mounting holes.
+- avenue: follow-up review of newly indexed 30-pin DOIT repository
+  date: '2026-11-07'
+  details: >-
+    Reviewed https://github.com/TronixLab/DOIT_ESP32_DevKit-v1_30P directly.
+    Its visible repository contents are Docs, Examples, and a README describing
+    30-pin GPIO usage; it provides no carrier PCB CAD, dimensioned mechanical
+    drawing, or manufacturer-linked carrier revision. It therefore does not
+    identify the exact physical carrier or establish its outline or mounting holes.
+conflicts: []
+notes:
+- >-
+  Precise review gap: the DOIT ESP32 DevKit V1 30-contact name does not identify
+  a revision-controlled physical carrier, and no exact manufacturer CAD or
+  dimensioned mechanical drawing is available. Existing nominal catalogue
+  dimensions and schematic evidence cannot establish board size or mounting
+  pattern. Obtain a manufacturer-linked carrier revision and mechanical evidence
+  before extracting or confirming holes; no hole count or coordinates are asserted.
+- >-
+  Follow-up verification on 2026-11-07 found a public 30-pin DOIT GPIO reference
+  repository, but no mechanical design files or revision link; this does not close
+  the review gap.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T00:00:00+00:00'

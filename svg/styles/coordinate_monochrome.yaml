@@ -1,0 +1,16 @@
+name: Coordinate / monochrome
+description: Neutral graphite variation for monochrome printing.
+styles:
+  panel: {color: '#f8f8f8', stroke: '#dddddd'}
+  board: {color: '#eeeeee', stroke: '#333333'}
+  hole: {stroke: '#333333'}
+  badge: {color: '#333333'}
+  rule: {color: '#cccccc'}
+  grid: {color: '#dddddd'}
+  axis: {color: '#999999'}
+  accent: {color: '#333333'}
+  dimension: {color: '#222222'}
+  dimension.pitch: {color: '#666666'}
+  text: {color: '#222222'}
+  text.kicker: {color: '#555555'}
+  text.small: {color: '#666666'}

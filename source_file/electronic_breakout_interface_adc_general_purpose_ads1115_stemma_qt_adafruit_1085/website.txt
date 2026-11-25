@@ -1,0 +1,305 @@
+Due to high demand, USPS orders are shipping on a slight delay.
+Add the code
+BeGood15
+to your cart for 15% off our
+Halloween Guide Guide
+through Sunday 10/25! 👽🚲🌕
+Skip Navigation
+Shop
+Learn
+Blog
+Forums
+IO
+LIVE!
+AdaBox
+Sign In
+Shopping cart,
+0
+items.
+toggle menu
+Search
+Shopping cart,
+0
+items.
+Sign In
+|
+Create Account
+New Products
+Featured Products
+Gift Ideas
+Circuit Playground
+Feather
+Raspberry Pi
+Arduino
+LEDs
+All Categories
+Support
+Shipping & Returns
+About Us
+Products
+Products navigation
+Shop Categories
+view all
+categories
+Arduino
+CircuitPython
+Circuit Playground
+Feather
+STEMMA / STEMMA QT
+LCDs & Displays
+Raspberry Pi
+RP2040 / Pico
+Accessories
+Batteries
+Books
+Breakout Boards
+Cables
+Components & Parts
+Development Boards
+E-Ink / ThinkInk
+Gift Certificates
+Kits & Projects
+LEDs
+Mechanical Keyboards
+Neopixels
+Power
+Prototyping
+Robotics & CNC
+Sensors
+Tools
+Wearables
+Wireless
+Clearance Sale
+New Products
+view all
+New Products
+Adafruit Metro ESP32-P4 Hydra - with 16 MB PSRAM
+$34.95
+Adafruit RV-8803 High Accuracy Real Time Clock Breakout Board
+$10.95
+Adafruit CP2105 Friend - USB to Dual UART Serial Converters
+$6.95
+Adafruit TMF8806 Time of Flight Distance Sensor - 10mm to 5m
+$12.50
+Featured Products
+view all
+Featured Products
+Adafruit BMP581 I2C or SPI Temperature and Pressure Sensor
+$9.95
+Adafruit STSPIN220 Stepper Motor Driver Breakout Board
+$6.50
+Adafruit TPS61169 Constant Current Boost Converter for LEDs
+$4.50
+Adafruit Sparkle Motion Stick + Enclosure Kit
+$19.95
+Gift Ideas
+What's New
+Search
+Breakout Boards
+/
+ADC / DAC
+/
+ADS1115 16-Bit ADC - 4 Channel with Programmable Gain Amplifier
+ADS1115 16-Bit ADC - 4 Channel with Programmable Gain Amplifier - STEMMA QT / Qwiic
+Product ID:
+1085
+$14.95
+Product Images and Video
+Play video: New Prods 6/22/22 Feat. ADS1115 16-Bit ADC - 4 Channel w. Programmable Gain Amplifier - STEMMA QT!
+Qty
+Discount
+1-9
+$14.95
+10-99
+$13.46
+100+
+$11.96
+In stock
+Add to Cart
+Select ADS Breakout
+ADS1015 12-Bit
+$9.95
+ADS1115 16-Bit
+$14.95
+Qty
+Discount
+1-9
+$14.95
+10-99
+$13.46
+100+
+$11.96
+In stock
+Add to Wishlist
+Description
+For microcontrollers without an analog-to-digital converter or when you want a higher-precision ADC, the ADS1115 provides 16-bit precision at 860 samples/second over I2C. The chip can be configured as 4 single-ended input channels, or two differential channels. As a nice bonus, it even includes a programmable gain amplifier, up to x16, to help boost up smaller single/differential signals to the full range. We like this ADC because it can run from 2V to 5V power/logic, can measure a large range of signals and its super easy to use. It is a great general purpose 16 bit converter.
+The chip's fairly small so it comes on a breakout board with ferrites to keep the AVDD and AGND quiet. Interfacing is done via I2C. The address can be changed to one of four options (see the datasheet table 5) so you can have up to 4 ADS1115's connected on a single 2-wire I2C bus for 16 single ended inputs.
+Comes with a bit of 0.1" standard header in case you want to use it with a breadboard or perfboard.  Four mounting holes for easy attachment.
+To get you going fast, we spun up a custom-made PCB in the
+STEMMA QT
+form factor
+, making it easy to interface with. The
+STEMMA QT connectors
+on either side are compatible with the
+SparkFun Qwiic
+I2C connectors. This allows you to make solderless connections between your development board and the ADS1115 or to chain it with a wide range of other sensors and accessories using a
+compatible cable
+.
+QT Cable is not included
+, but we have a variety in the shop
+.
+We have
+example code for both the Raspberry Pi, Arduino, and CircuitPython
+. Simply connect GND to ground, VDD to your logic power supply, and SCL/SDA to your microcontroller's I2C port and run the example code to start reading data.
+Our detailed guide will get you started with wiring diagrams, example code for Arduino & CircuitPython, datasheets, and more!
+Play video: New Prods 6/22/22 Feat. ADS1115 16-Bit ADC - 4 Channel w. Programmable Gain Amplifier - STEMMA QT!
+Play video: JP’s Product Pick of the Week 6/6/23 ADS1x15 16-bit and 12-bit ADC Breakouts #adafruit
+Technical Details
+Revision History:
+As of January 16, 2023
+– we've updated this PCB with
+Adafruit Pinguin
+to make a lovely and legible silkscreen - you may get the new PCB or the older version with vector fonts - both are identical other than the fancy silkscreen.
+As of June 22, 2022
+- we've updated this breakout to be STEMMA QT compatible - that means there's now an easy way to plug-and-play this device without any soldering! The physical shape and pinout have changed a little but overall functionality is identical.
+Specifications:
+WIDE SUPPLY RANGE: 2.0V to 5.5V
+LOW CURRENT CONSUMPTION: Continuous Mode: Only 150µA Single-Shot Mode: Auto Shut-Down
+PROGRAMMABLE DATA RATE: 8SPS to 860SPS
+INTERNAL LOW-DRIFT VOLTAGE REFERENCE
+INTERNAL OSCILLATOR
+INTERNAL PGA
+I2C INTERFACE: Pin-Selectable Addresses
+FOUR SINGLE-ENDED OR TWO DIFFERENTIAL INPUTS
+PROGRAMMABLE COMPARATOR
+This board/chip uses I2C 7-bit addresses between 0x48-0x4B, selectable with jumpers
+Datasheets, Fritzing object, and EagleCAD PCB files available in the product tutorial
+Product Dimensions: 25.4mm x 17.8mm x 4.6mm / 1.0" x 0.7" x 0.2"
+Product Weight: 1.8g / 0.1oz
+Learn
+Smart Cocktail Shaker
+Use an Arduino and Android device to help you mix drinks!
+Raspberry Pi Pygame UI basics
+Getting to grips with Pygame as a UI framework on the PiTFT
+Raspberry Pi Analog to Digital Converters
+How to read analog signals from Python with an analog to digital converter and Raspberry Pi.
+Choosing an ADC
+More bits aren't necessarily better
+See All Guides
+May We Also Suggest…
+ADS1015 12-Bit ADC - 4 Channel with Programmable Gain Amplifier - STEMMA QT / Qwiic - STEMMA QT / Qwiic
+MCP3008 - 8-Channel 10-Bit ADC With SPI Interface
+MCP4725 Breakout Board - 12-Bit DAC with I2C Interface - STEMMA QT / qwiic - STEMMA QT / qwiic
+Stereo 2.8W Class D Audio Amplifier - I2C Control AGC - TPA2016
+Stereo 2.1W Class D Audio Amplifier - TPA2012
+Stereo 20W Class D Audio Amplifier - MAX9744
+Stereo 3.7W Class D Audio Amplifier - MAX98306
+Adafruit ATSAMD09 Breakout with seesaw
+Adafruit MCP4728 Quad DAC with EEPROM - STEMMA QT / Qwiic - STEMMA QT / Qwiic
+Adafruit FT232H Breakout - General Purpose USB to GPIO, SPI, I2C - USB C & Stemma QT - USB C & Stemma QT
+Adafruit PCF8591 Quad 8-bit ADC + 8-bit DAC - STEMMA QT / Qwiic
+Adafruit LC709203F LiPoly / LiIon Fuel Gauge and Battery Monitor - STEMMA JST PH & QT / Qwiic - STEMMA JST PH & QT / Qwiic
+Distributors
+Gotron BVBA
+Belgium
+Lextronic
+France
+Electrónica Embajadores
+Spain
+BerryBase
+Germany
+Pimoroni
+United Kingdom
+Kamami
+Poland
+Go Tronic
+France
+Paradisetronic.com
+Germany
+Mouser Electronics
+United States
+The Pi Hut
+United Kingdom
+Makersify
+United Kingdom
+Core Electronics
+Australia
+Pakronics
+Australia
+Sengoku Densyo Co., Ltd.
+Japan
+Little Bird Electronics
+Australia
+nettop
+Greece
+MicroCenter
+United States
+BricoGeek
+Spain
+Eckstein Komponente
+Germany
+Letmeknow
+France
+Kiwi Electronics
+Netherlands
+BOTLAND B. DERKACZ SP.K.
+Poland
+BOTLAND B. DERKACZ SP.K.
+Czech Republic
+BOTLAND B. DERKACZ SP.K.
+Germany
+DigiKey Electronics
+United States
+Switch Science
+Japan
+Play-Zone
+Switzerland
+NTREX, Inc.- Devicemart
+South Korea
+See our
+Distributors page
+for a complete list of distributors.
+ADS1115 16-Bit ADC - 4 Channel with Programmable Gain Amplifier - STEMMA QT / Qwiic
+Product ID:
+1085
+$14.95
+Select ADS Breakout
+ADS1015 12-Bit
+$9.95
+ADS1115 16-Bit
+$14.95
+In stock
+Add to Cart
+Qty
+Discount
+1-9
+$14.95
+10-99
+$13.46
+100+
+$11.96
+Add to Wishlist
+Description
+Technical Details
+Contact Us
+Tech Support Forums
+FAQs
+Shipping & Returns
+Freebies
+Terms of Service
+Privacy & Legal
+Website Accessibility
+About Us
+Press
+Educators
+Distributors
+Jobs
+Gift Cards
+“ The best way to predict the future is to invent it”
+Alan Kay
+A Minority and Woman-owned Business Enterprise (M/WBE)
+×
+Create New Wishlist
+Name
+Description
+Create Wishlist

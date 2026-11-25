@@ -1,0 +1,399 @@
+board_variant: stemma_qt
+breakout_description: stemma_qt
+breakout_pcb_height: 17.78
+breakout_pcb_width: 43.18
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+- Default I2C address not established in this import.
+definition_authority: working_oomp_populate_i2c.py
+description: Adds 16 digital inputs/outputs, with interrupts and selectable addresses.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+geometry_ready: false
+i2c:
+  address_evidence_status: unverified
+  address_selection: unverified
+  clock_stretching: unverified
+  default_address_7bit: null
+  documented_addresses_7bit: []
+  maximum_clock_hz: null
+  source_id: product
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+manufacturer: adafruit
+manufacturer_part_number: '5346'
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 2.5
+  id: U$1:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -19.05
+  y_mm: 6.35
+- diameter_mm: 2.5
+  id: U$17:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 19.05
+  y_mm: 6.35
+- diameter_mm: 2.5
+  id: U$19:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -19.05
+  y_mm: -6.35
+- diameter_mm: 2.5
+  id: U$21:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 19.05
+  y_mm: -6.35
+mounting_hole_radius_name: m2
+mounting_hole_radius_names:
+- m2
+- m2
+- m2
+- m2
+mounting_hole_status: verified
+mounting_holes:
+- - -19.05
+  - 6.35
+- - 19.05
+  - 6.35
+- - -19.05
+  - -6.35
+- - 19.05
+  - -6.35
+mounting_lift: 3
+mounting_research:
+  board_revision: Adafruit product 5346 carrier; manufacturer EagleCAD repository
+    initial design commit f73186f1b593f7a5a3e710d9ced889005b580c38 (2022-01-10). Product
+    page notes a 2023 silkscreen-only update; both silkscreen variants are mechanically
+    identical.
+  board_size:
+  - 43.18
+  - 17.78
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'Extracted from the exact manufacturer Eagle .brd file at the pinned
+    Adafruit repository commit f73186f1b593f7a5a3e710d9ced889005b580c38. Dimension-layer
+    outline bounds are x=0..43.18 mm and y=0..17.78 mm, giving board_size [43.18,17.78]
+    and native centre [21.59,8.89]. The extractor transforms each native hole position
+    to top-view centred coordinates by (x,y)=(x_native-21.59, y_native-8.89), quarter_turn=0
+    (no rotation or reflection). Selected only the four package features named MOUNTINGHOLE_2.5_PLATED:
+    U$1, U$17, U$19, U$21, each drill 2.5 mm. Full drill inventory has 46 drilled
+    features: remaining 42 are plated JP1, JP2, JP5, JP6, JP7 and JP8 header pads
+    (one 5-position and five? header rows represented by packages); not mounting features.
+    Preview image checked: top view, centred frame, symmetric four-corner locations
+    and diameters agree with exact extraction. Product page dimension 43.0 x 18.0
+    mm is nominal rounding; exact outline comes from CAD.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit product page identifies product ID 5346, MCP23017 I2C
+    GPIO Expander Breakout - STEMMA QT / Qwiic. The official Adafruit-MCP23017-PCB
+    README names the same carrier, links product 5346, and provides the Eagle board
+    file used here.
+  mounting_holes:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -19.05
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 19.05
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -19.05
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 19.05
+    y_mm: -6.35
+  record_sha256: 37e602465a4f057b774032bc6dd62a11d1b1a560b8312e388078d566b77ab70d
+  research_file: source_file/electronic_breakout_interface_gpio_expander_16_bit_mcp23017_stemma_qt_adafruit_5346/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 282694
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit_MCP23017_GPIO_Expander.brd
+    locator: Exact Adafruit Eagle board file at pinned repository commit f73186f1b593f7a5a3e710d9ced889005b580c38;
+      inspect dimension layer 20 and all drill features.
+    registered_at: '2026-11-06T19:03:05+00:00'
+    sha256: f9a6331254fd36dfc499e143c33ba0d3ec2940aff86b7c56213042c7645a36a7
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-MCP23017-PCB/f73186f1b593f7a5a3e710d9ced889005b580c38/Adafruit%20MCP23017%20GPIO%20Expander.brd
+  - bytes: 96729
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Product ID 5346; technical details list silkscreen revision update as
+      mechanically identical.
+    registered_at: '2026-11-06T19:03:06+00:00'
+    sha256: 1e90d47066ec98c5a777a8e8af5b5705fec17e613671c145ce45f81ab7496723
+    url: https://www.adafruit.com/product/5346
+  - bytes: 2460
+    id: cad_identity
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Repository README explicitly names MCP23017 STEMMA QT / QWIIC and links
+      product 5346; same repository contains the registered Eagle board file.
+    registered_at: '2026-11-06T19:03:20+00:00'
+    sha256: ab9be33b7f74b10a0a9fc26b62c9eb2e1224b587daf97adc4ed2af3140a81a00
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-MCP23017-PCB/f73186f1b593f7a5a3e710d9ced889005b580c38/README.md
+  status: verified
+name_readable: Adafruit MCP23017 GPIO Expander, STEMMA QT
+notes: []
+oobb_details:
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 43.18
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -19.05
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 19.05
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -19.05
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 19.05
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -19.05
+    - 6.35
+  - - 19.05
+    - 6.35
+  - - -19.05
+    - -6.35
+  - - 19.05
+    - -6.35
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 43.18
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -19.05
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 19.05
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -19.05
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 19.05
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -19.05
+    - 6.35
+  - - 19.05
+    - 6.35
+  - - -19.05
+    - -6.35
+  - - 19.05
+    - -6.35
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 43.18
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$1:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -19.05
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$17:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 19.05
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$19:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -19.05
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 19.05
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -19.05
+    - 6.35
+  - - 19.05
+    - 6.35
+  - - -19.05
+    - -6.35
+  - - 19.05
+    - -6.35
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+part_number: '5346'
+part_number_adafruit: '5346'
+pinout_status: unverified
+pins: {}
+product_dimensions_mm:
+  depth: 5
+  height: 18
+  scope: manufacturer_product_dimensions_not_verified_pcb_outline
+  source_id: product
+  width: 43
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/5346
+- bytes: 282694
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Adafruit_MCP23017_GPIO_Expander.brd
+  locator: Exact Adafruit Eagle board file at pinned repository commit f73186f1b593f7a5a3e710d9ced889005b580c38;
+    inspect dimension layer 20 and all drill features.
+  registered_at: '2026-11-06T19:03:05+00:00'
+  sha256: f9a6331254fd36dfc499e143c33ba0d3ec2940aff86b7c56213042c7645a36a7
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-MCP23017-PCB/f73186f1b593f7a5a3e710d9ced889005b580c38/Adafruit%20MCP23017%20GPIO%20Expander.brd
+- bytes: 96729
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: Product ID 5346; technical details list silkscreen revision update as mechanically
+    identical.
+  registered_at: '2026-11-06T19:03:06+00:00'
+  sha256: 1e90d47066ec98c5a777a8e8af5b5705fec17e613671c145ce45f81ab7496723
+  url: https://www.adafruit.com/product/5346
+- bytes: 2460
+  id: mounting_cad_identity
+  kind: manufacturer_repository
+  local_file: mounting_evidence/README.md
+  locator: Repository README explicitly names MCP23017 STEMMA QT / QWIIC and links
+    product 5346; same repository contains the registered Eagle board file.
+  registered_at: '2026-11-06T19:03:20+00:00'
+  sha256: ab9be33b7f74b10a0a9fc26b62c9eb2e1224b587daf97adc4ed2af3140a81a00
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-MCP23017-PCB/f73186f1b593f7a5a3e710d9ced889005b580c38/README.md
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_15: '5346'
+taxonomy_2: breakout
+taxonomy_3: interface
+taxonomy_4: gpio_expander
+taxonomy_5: 16_bit
+taxonomy_6: mcp23017
+taxonomy_7: stemma_qt
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: interface
+type_2: gpio_expander
+type_3: 16_bit
+type_4: mcp23017
+webpage: https://www.adafruit.com/product/5346
+webpage_adafruit: https://www.adafruit.com/product/5346

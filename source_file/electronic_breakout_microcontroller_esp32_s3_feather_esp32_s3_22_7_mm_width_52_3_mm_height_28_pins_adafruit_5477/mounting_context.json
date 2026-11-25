@@ -1,0 +1,119 @@
+{
+  "name_readable": "Adafruit ESP32-S3 Feather 4MB Flash / 2MB PSRAM (5477)",
+  "manufacturer": "adafruit",
+  "part_number": "5477",
+  "webpage": null,
+  "sources": [
+    {
+      "id": "original_catalogue",
+      "url": null,
+      "title": "Original populate entries in this repository",
+      "local_file": null,
+      "scope": "Nominal dimensions and identity; not manufacturer verification",
+      "accessed": "2026-10-22"
+    },
+    {
+      "id": "chip_datasheet",
+      "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf",
+      "title": "chip_datasheet",
+      "accessed": "2026-10-22",
+      "scope": "GPIO capabilities, electrical limits and strapping; not carrier geometry"
+    },
+    {
+      "id": "board_guide",
+      "url": "https://learn.adafruit.com/adafruit-esp32-s3-feather/downloads",
+      "title": "feather_s3 manufacturer guide",
+      "accessed": "2026-10-22",
+      "scope": "Board identity, connector pinout and documented functions"
+    },
+    {
+      "id": "cad",
+      "url": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/main/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd",
+      "title": "cad",
+      "accessed": "2026-10-22",
+      "scope": "Manufacturer CAD; see revision and product applicability notes",
+      "local_file": "reference/Adafruit ESP32-S3 8MB No PSRAM.brd",
+      "sha256": "5b06b9c6291545a2c9da0993a642e513a75c5901e26836a2ee559077147abcca"
+    },
+    {
+      "id": "cad_schematic",
+      "url": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/main/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.sch",
+      "title": "cad_schematic",
+      "accessed": "2026-10-22",
+      "scope": "Manufacturer CAD; see revision and product applicability notes",
+      "local_file": "reference/Adafruit ESP32-S3 8MB No PSRAM.sch",
+      "sha256": "b71cdf533f043c30c1b8ab87d476214c6a857b4f92245debe98694e88a69d398"
+    },
+    {
+      "id": "product",
+      "url": "https://www.adafruit.com/product/5477",
+      "title": "product",
+      "accessed": "2026-10-22",
+      "scope": "Exact SKU, 4 MB flash / 2 MB PSRAM and overall product dimensions"
+    },
+    {
+      "id": "interface_variant",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/variants/adafruit_feather_esp32s3/pins_arduino.h",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Arduino variant pin assignments; not a physical header drawing",
+      "local_file": "reference/interface_defaults/esp32_adafruit_feather_esp32s3.h",
+      "sha256": "f1787f96e8855a5b9be7b7bde03f23866a09234cc6fa03a6cc0ce4f0853aa7e3"
+    },
+    {
+      "id": "interface_board_selection",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/boards.txt",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework board names and variant selection; generic selections remain explicitly scoped",
+      "local_file": "reference/interface_defaults/esp32_boards.txt",
+      "sha256": "af7ce8a6007dbc4a76dbebed31eac2885bfb712a6ef404cb8cdd58fa7d2523e6",
+      "content_scope": "excerpt_of_board_names_and_variant_selections",
+      "source_document_sha256": "11b90d1f4795ec365418635749b685a2f3d8320d0e163d886aa2099e81277b07"
+    },
+    {
+      "id": "interface_runtime_uart",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/cores/esp32/HardwareSerial.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_HardwareSerial.cpp",
+      "sha256": "a555861fb4f28a2a4c1d903a8152d714902fee2510c9eaf3ad5311dbcd779035"
+    },
+    {
+      "id": "interface_runtime_i2c",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/Wire/src/Wire.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_Wire.cpp",
+      "sha256": "0454e5becf7acaa6f7cb466397682d762461f678cbb88644f31f313e653b71bc"
+    },
+    {
+      "id": "interface_runtime_spi",
+      "url": "https://raw.githubusercontent.com/espressif/arduino-esp32/6b41cf6f6f272538ee91746f26c5068e2ca692e4/libraries/SPI/src/SPI.cpp",
+      "revision": "6b41cf6f6f272538ee91746f26c5068e2ca692e4",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/esp32_SPI.cpp",
+      "sha256": "4caea80d21fa230a528322d9eb900880a0acd9c91cb355bc5cec514ea02ecaed"
+    }
+  ],
+  "dimensions_mm": {
+    "width": 22.7,
+    "height": 52.3,
+    "pcb_thickness": null,
+    "assembled_height": 7.2,
+    "scope": "overall_product_dimensions_including_components",
+    "source_id": "product",
+    "status": "manufacturer_product_not_pcb_outline"
+  },
+  "coordinate_system": {
+    "units": "mm",
+    "origin": "centre_of_pcb_outline",
+    "view": "top_with_usb_at_positive_y",
+    "x_positive": "right",
+    "y_positive": "towards_usb"
+  },
+  "mounting_hole_details": []
+}

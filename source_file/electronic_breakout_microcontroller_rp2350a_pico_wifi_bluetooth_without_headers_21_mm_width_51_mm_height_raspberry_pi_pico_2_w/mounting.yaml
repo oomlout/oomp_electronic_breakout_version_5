@@ -1,0 +1,157 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_without_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_w
+status: needs_review
+board_revision: Raspberry Pi Pico 2 W, RP-008304-DS-3 mechanical specification; headerless
+  wireless Pico 2 carrier.
+identity_evidence: Raspberry Pi official Pico series documentation at pinned commit
+  21d772e7ee022e36a8f43c3ee75e20ca359fb832 identifies Pico 2 W as an RP2350 wireless
+  model distinct from Pico 2 W with headers. The exact Pico 2 W datasheet RP-008304-DS-3
+  supplies the mechanical specification and Figure 3 for this carrier.
+board_size:
+- 21.0
+- 51.0
+mounting_holes:
+- id: H1
+  x_mm: -5.7
+  y_mm: -23.5
+  diameter_mm: 2.1
+  plated: null
+  source_id: datasheet
+- id: H2
+  x_mm: -5.7
+  y_mm: 23.5
+  diameter_mm: 2.1
+  plated: null
+  source_id: datasheet
+- id: H3
+  x_mm: 5.7
+  y_mm: -23.5
+  diameter_mm: 2.1
+  plated: null
+  source_id: datasheet
+- id: H4
+  x_mm: 5.7
+  y_mm: 23.5
+  diameter_mm: 2.1
+  plated: null
+  source_id: datasheet
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: datasheet
+derivation: 'Raspberry Pi RP-008304-DS-3 Figure 3 explicitly identifies a 21 x 51
+  x 1 mm PCB and four drilled mounting holes, diameter 2.1 mm (+/-0.05 mm). The drawing
+  dimensions the hole-column spacing as 11.4 mm and each end-hole centre 2 mm in from
+  its short PCB edge. In the dimensioned top assembly view, the left/right hole columns
+  are centred about the PCB width centreline: x = +/-11.4/2 = +/-5.7 mm. With the
+  USB edge at the top, y = +(51/2 - 2) = +23.5 mm at the USB end and y = -(51/2 -
+  2) = -23.5 mm at the antenna end. Frame transform: retain top view; drawing X right
+  is canonical +X right; drawing vertical orientation has USB at top, canonical +Y
+  toward USB; no mirror or quarter-turn. Hole plating is unspecified and recorded
+  null.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: false
+reviewed_by: gpt-6-luna
+sources:
+- id: datasheet
+  local_file: mounting_evidence/pico-2-w-datasheet.pdf
+  url: https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf
+  kind: manufacturer_drawing
+  locator: Raspberry Pi Pico 2 W Datasheet, RP-008304-DS-3, page 6 (PDF page 7), section
+    2 Figure 3; states 51 x 21 x 1 mm PCB and four drilled 2.1 mm mounting holes;
+    top assembly orientation with USB at top.
+  registered_at: '2026-11-06T16:13:02+00:00'
+  bytes: 3791194
+  sha256: 8f519b945e9f7078ffd3fee464992fca376d8037ebcd1f83bd2a021241717eb2
+- id: drawing_page
+  local_file: mounting_evidence/mechanical_page7.png
+  url: https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf
+  kind: manufacturer_drawing
+  locator: Rasterized from registered RP-008304-DS-3 datasheet, PDF page 7 (printed
+    page 6), Figure 3; reviewed for board outline, four mounting holes and dimensions.
+  registered_at: '2026-11-06T16:13:02+00:00'
+  bytes: 177787
+  sha256: 3d1bacbce6c3cdb5ec669b05a0d5c48c9f7bc402a0622150f66edf2e3a8e7b4a
+- id: product_docs
+  local_file: mounting_evidence/about_pico.adoc
+  url: https://raw.githubusercontent.com/raspberrypi/documentation/21d772e7ee022e36a8f43c3ee75e20ca359fb832/documentation/asciidoc/microcontrollers/pico-series/about_pico.adoc
+  kind: manufacturer_product
+  locator: Raspberry Pi official documentation at commit 21d772e7ee022e36a8f43c3ee75e20ca359fb832;
+    identifies Pico 2 W product family and distinction of W and headerless variants.
+  registered_at: '2026-11-06T16:13:03+00:00'
+  bytes: 34446
+  sha256: a8302d259315387e89733c7b2bfa243589aef6ccfa9c9d2d6499c08303a8ff65
+- id: current_datasheet
+  local_file: mounting_evidence/pico-2-w-datasheet-current.pdf
+  url: https://pip.raspberrypi.com/documents/RP-008304-DS
+  kind: manufacturer_drawing
+  locator: 'Current official Raspberry Pi Pico 2 W datasheet linked from the Raspberry
+    Pi Pico series documentation resource; PDF colophon Release 2, build date 03 July
+    2026, build d4e0f1799616. Printed page 6 (PDF page 7), Mechanical specification
+    and Figure 3: 51 x 21 x 1 mm PCB and four drilled mounting holes Ø2.1 mm ±0.05
+    mm.'
+  registered_at: '2026-11-07T15:23:17+00:00'
+  bytes: 3791194
+  sha256: 8f519b945e9f7078ffd3fee464992fca376d8037ebcd1f83bd2a021241717eb2
+attempts:
+- source: Raspberry Pi Pico 2 W Datasheet RP-008304-DS-3
+  result: Downloaded official PDF 2026-11-06; checked PDF cover and page 6 Figure
+    3. Figure explicitly states 21 x 51 x 1 mm PCB and four drilled 2.1 mm (+/-0.05
+    mm) mounting holes. Archived reference/mechanical.png hash matched mounting_context.json;
+    additionally reviewed newly rendered page 7.
+- source: Raspberry Pi official Pico series documentation
+  result: Retrieved at commit 21d772e7ee022e36a8f43c3ee75e20ca359fb832 on 2026-11-06;
+    checked the exact Pico 2 W row, headered variant distinction and wireless Pico
+    2 board layout section.
+- source: mounting_research.py preview
+  result: 'Preview reviewed against the manufacturer drawing, but helper stopped before
+    producing mounting_preview.png: Drill too small for supported M2/M2.5/M3 screws;
+    needs custom holder.'
+- source: mounting_research.py validate
+  result: 'Not promotable while status is needs_review; helper returned: Only verified/no_holes
+    records can be promoted. No promotion or generation attempted.'
+- source: Current Raspberry Pi Pico series documentation and linked datasheet
+  result: >-
+    Rechecked 2026-11-07. The official Pico-series page identifies Pico 2 W as the
+    wireless, headerless variant and links the current RP-008304-DS resource. The
+    current PDF is Release 2, build 03 July 2026 (d4e0f1799616); SHA-256
+    8f519b945e9f7078ffd3fee464992fca376d8037ebcd1f83bd2a021241717eb2 matches the
+    archived datasheet bytes. Printed page 6 / PDF page 7 still specifies four
+    drilled Ø2.1 ±0.05 mm mounting holes and a 21 x 51 x 1 mm PCB. Thus even the
+    maximum specified hole diameter (2.15 mm) remains below the helper's 2.2 mm
+    minimum for M2 plus 0.2 mm diametral clearance; no promotable standard-holder
+    evidence was found.
+conflicts:
+- issue: The current manufacturer datasheet confirms four 2.1 mm ±0.05 mm PCB drills; even
+    the 2.15 mm maximum is below the standard holder workflow's 2.2 mm minimum for M2
+    with 0.2 mm diametral clearance. Custom holder/fastener review is required before
+    promotion or generation.
+  evidence: 'The latest official RP-008304-DS resource (Release 2, build 03 July 2026) and the
+    archived RP-008304-DS-3 PDF have identical SHA-256 hashes; Figure 3 specifies four
+    2.1 mm (+/-0.05 mm) drilled mounting holes. The largest specified diameter, 2.15 mm,
+    is below the helper 2.2 mm clearance threshold. Running mounting_research.py preview
+    returned: Drill too small for supported M2/M2.5/M3 screws; needs custom holder. The
+    exact geometry is documented, but no qualified custom holder design is part of this
+    workflow.'
+notes:
+- Mounting coordinates are based on the manufacturer dimensioned drawing; no hole
+  positions are transferred from sibling boards.
+- USB connector overhang is outside the 21 x 51 mm PCB outline. The datasheet notes
+  antenna keep-out at the bottom edge; the standard holder does not perform antenna,
+  component, connector, screw-head or underside clearance review.
+- No custom holder or physical fit test is established by this evidence.
+- 'Precise workflow gap: standard_holder does not support the current manufacturer-specified
+  2.1 ±0.05 mm drill diameter (2.15 mm maximum remains below the 2.2 mm M2 clearance
+  threshold), so helper preview does not emit an image and no standard holder can be
+  promoted/generated for this board. Geometry record remains needs_review pending custom
+  mechanical review.'
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:23:17+00:00'

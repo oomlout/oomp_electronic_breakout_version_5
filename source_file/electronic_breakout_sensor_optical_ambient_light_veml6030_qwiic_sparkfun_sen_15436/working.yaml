@@ -1,0 +1,255 @@
+research_schema_version: 1
+part_id: electronic_breakout_sensor_optical_ambient_light_veml6030_qwiic_sparkfun_sen_15436
+name_readable: SparkFun VEML6030 Ambient Light Sensor, Qwiic
+manufacturer: sparkfun
+part_number: sen_15436
+manufacturer_part_number: SEN-15436
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: sensor
+  taxonomy_4: optical
+  taxonomy_5: ambient_light
+  taxonomy_6: veml6030
+  taxonomy_7: qwiic
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: sparkfun
+  taxonomy_15: sen_15436
+default_website:
+  url: https://www.sparkfun.com/sparkfun-ambient-light-sensor-veml6030-qwiic.html
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:14:14+00:00'
+  updated_at: '2026-10-23T20:15:00+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: SparkFun Ambient Light Sensor - VEML6030 (Qwiic), SEN-15436
+  status: product_variant_identified
+  source_ids:
+  - product_page
+  - guide_hardware
+  notes: Guide and product page identify the Qwiic VEML6030 carrier.
+description: A simple, inexpensive light measurement board.
+interfaces:
+- i2c
+dimensions_mm:
+  width: null
+  height: null
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: unknown
+  source_ids:
+  - product_page
+  notes: No carrier outline dimensions verified in the captured product page/guide
+    text.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: unknown_not_documented
+connectors:
+  header_group:
+    kind: header
+    description: Side plated-through holes include power and I2C, plus INT; exact
+      full row count not documented in captured text.
+    contacts: []
+    source_ids:
+    - guide_hardware
+  Qwiic1:
+    kind: cable_connector
+    description: Qwiic connector
+    contacts: []
+    source_ids:
+    - product_page
+    - guide_hardware
+  Qwiic2:
+    kind: cable_connector
+    description: Qwiic connector
+    contacts: []
+    source_ids:
+    - product_page
+    - guide_hardware
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: unknown
+  source_ids:
+  - guide_hardware
+pin_names: []
+electrical:
+  board_supply:
+    min_v: null
+    max_v: null
+    nominal_v:
+    - 3.3
+    status: documented_nominal
+    source_ids:
+    - guide_hardware
+    notes: Guide says supply 3.3 V via Qwiic or 3V3 labeled header pin.
+  chip_supply:
+    status: unknown_not_transcribed
+    notes: Chip limits not transcribed from datasheet.
+    source_ids:
+    - chip_datasheet
+  logic_levels:
+    status: unknown
+    notes:
+    - No 5V-tolerance claim recorded.
+    source_ids:
+    - guide_hardware
+  pullups:
+  - signals:
+    - SDA
+    - SCL
+    resistance_ohms: null
+    rail: null
+    designator: I2C triple jumper
+    disconnect_method: cut the I2C jumper traces to disconnect pull-up resistors
+    source_ids:
+    - guide_hardware
+  extra_signals:
+  - name: INT
+    direction: output
+    notes: Threshold interrupt; active low in example.
+    source_ids:
+    - guide_hardware
+  source_ids:
+  - guide_hardware
+i2c:
+  default_address_7bit: 72
+  documented_addresses_7bit:
+  - 72
+  - 16
+  address_selection: Cut/close ADR jumper to select alternate 0x10; guide says default
+    shipped 0x48.
+  maximum_clock_hz: null
+  chip_maximum_clock_hz: null
+  clock_stretching: unknown
+  status: documented_address
+  source_ids:
+  - product_page
+  - guide_hardware
+  notes: Guide identifies hardware address select; no carrier maximum bus speed established.
+chip:
+  manufacturer: Vishay
+  part_number: VEML6030
+  identity_status: product_page_claim
+  source_ids:
+  - product_page
+  - chip_datasheet
+  notes: Fitted package marking not inspected.
+datasheets:
+  status: downloaded
+  items:
+  - chip: Vishay VEML6030
+    source_id: chip_datasheet
+    local_file: reference/chip_datasheet.pdf
+    url: https://cdn.sparkfun.com/assets/d/7/4/2/9/veml6030_datasheet.pdf
+    sha256: ae58c9479213921c2f736618eee04b06b45cfb67d190932c6150f30314ed967e
+    page_count: 14
+    revision: null
+  notes:
+  - 14-page PDF signature and page tree validated; datasheet revision/title not inspected
+    from rendered pages.
+software:
+- name: SparkFun Ambient Light Sensor Arduino Library
+  framework: Arduino
+  official_url: https://github.com/sparkfun/SparkFun_Ambient_Light_Sensor_Arduino_Library
+  tested: false
+  source_ids:
+  - guide_hardware
+  notes: Guide describes full-featured Arduino library and says it is available through
+    Library Manager; hardware not tested.
+extra_resources:
+- name: SparkFun Qwiic Ambient Light Sensor hookup guide
+  kind: guide
+  url: https://learn.sparkfun.com/tutorials/qwiic-ambient-light-sensor-veml6030-hookup-guide
+  local_file: reference/guide_hardware.html
+  source_id: guide_hardware
+sources:
+- id: product_page
+  kind: product_page
+  requested_url: https://www.sparkfun.com/sparkfun-ambient-light-sensor-veml6030-qwiic.html
+  url: https://www.sparkfun.com/sparkfun-ambient-light-sensor-veml6030-qwiic.html
+  retrieved_at: '2026-10-23T20:14:16+00:00'
+  content_type: text/html; charset=UTF-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 575194
+  sha256: 3467698d92d538903baa27e7dc6f2ae2ce193a7577a76d08a15e8cd01796d119
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 4042
+    sha256: 3a3ac1c979ec4bfdaa71257fbab6bbcc2fa17c65dc555205a4b070aa5ee87fbd
+  - kind: links
+    local_file: website.links.json
+    bytes: 57296
+    sha256: c47e38884d8eb65d7a9fc6f0c17d6d6c4b38017925e7baa3823b8ea841759bbc
+  title: SparkFun Ambient Light Sensor - VEML6030 (Qwiic) - SparkFun Electronics
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_hardware
+  kind: guide
+  requested_url: https://learn.sparkfun.com/tutorials/qwiic-ambient-light-sensor-veml6030-hookup-guide
+  url: https://learn.sparkfun.com/tutorials/qwiic-ambient-light-sensor-veml6030-hookup-guide
+  retrieved_at: '2026-10-23T20:14:17+00:00'
+  content_type: text/html;charset=UTF-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_hardware.html
+  bytes: 68973
+  sha256: b70cba591f75adef7ea342e1fb8c8749861103769d8896a44ed6a29d0df0ef27
+  derivatives:
+  - kind: text
+    local_file: reference/guide_hardware.txt
+    bytes: 24630
+    sha256: 3d99b0af7cee88e8aac25864a99560748c2d54a3a6679ac0a5e37c5a018e4961
+  - kind: links
+    local_file: reference/guide_hardware.links.json
+    bytes: 16232
+    sha256: 4a0a489a37f0c3a62019289f050010a8ab7ecbf48fe6c154d9caa6b796a01fc3
+  title: Qwiic Ambient Light Sensor (VEML6030) Hookup Guide - SparkFun Learn
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn.sparkfun.com/assets/d/7/4/2/9/veml6030_datasheet.pdf
+  url: https://cdn.sparkfun.com/assets/d/7/4/2/9/veml6030_datasheet.pdf
+  retrieved_at: '2026-10-23T20:14:19+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/chip_datasheet.pdf
+  bytes: 226126
+  sha256: ae58c9479213921c2f736618eee04b06b45cfb67d190932c6150f30314ed967e
+  derivatives: []
+  pdf_page_count: 14
+conflicts: []
+data_gaps:
+- Carrier dimensions, thickness, mounting-hole locations and complete assembly envelope
+  remain unverified.
+- Exact header/Qwiic connector contact numbering and complete physical contact counts
+  need exact carrier CAD or labeled drawing review.
+- Datasheet electrical limits and I2C maximum clock were not transcribed from PDF
+  pages.
+- Matching board CAD/schematic is linked but not archived or selected for a revision;
+  chip package marking remains unverified.
+- 'Pinout is incomplete: exact connector pin numbering, complete header inventory
+  and physical contact counts require exact carrier CAD or a labeled drawing.'

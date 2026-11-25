@@ -1,0 +1,3814 @@
+bip_39_2_word_array:
+- avoid
+- source
+bip_39_2_word_no_space: avoidsource
+bip_39_2_word_space: avoid source
+bip_39_2_word_underscore: avoid_source
+bip_39_3_word_array:
+- avoid
+- source
+- scrap
+bip_39_3_word_no_space: avoidsourcescrap
+bip_39_3_word_space: avoid source scrap
+bip_39_3_word_underscore: avoid_source_scrap
+bip_39_full_array:
+- avoid
+- source
+- scrap
+- inner
+- bid
+- quiz
+- rib
+- clinic
+- raise
+- enjoy
+- omit
+- cupboard
+bip_39_full_no_space: avoidsourcescrapinnerbidquizribclinicraiseenjoyomitcupboard
+bip_39_full_space: avoid source scrap inner bid quiz rib clinic raise enjoy omit cupboard
+bip_39_full_underscore: avoid_source_scrap_inner_bid_quiz_rib_clinic_raise_enjoy_omit_cupboard
+board_variant: stemma_qt
+breakout_description: stemma_qt
+breakout_pcb_height: 17.78
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+- Default I2C address not established in this import.
+definition_authority: working_oomp_populate_i2c.py
+description: Adds a familiar earlier ToF family and a reference for comparison with
+  generic carriers. Keep its performance and mechanical evidence separate from the
+  VL53L1X.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+directory: parts/electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+geometry_ready: false
+i2c:
+  address_evidence_status: unverified
+  address_selection: unverified
+  clock_stretching: unverified
+  default_address_7bit: null
+  documented_addresses_7bit: []
+  maximum_clock_hz: null
+  source_id: product
+id: electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+id_no_class: electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+id_no_size: electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+id_no_type: electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+id_oobb: electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+kwargs:
+  breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  modes:
+  - 3dpr
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$30:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$33:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  overwrite: true
+  part_ids:
+  - electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+  scad_output: 3dpr_long_side
+  type: default_mounting_plate_default
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+manufacturer: adafruit
+manufacturer_part_number: '3317'
+md5: 101a0305ba31615fee3959b12956699a
+md5_10: 101a0305ba
+md5_10_upper: 101A0305BA
+md5_5: 101a0
+md5_5_upper: 101A0
+md5_6: 101a03
+md5_6_alpha: mm83
+md5_6_alpha_upper: MM83
+md5_6_upper: 101A03
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 2.5
+  id: U$30:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 6.35
+- diameter_mm: 2.5
+  id: U$31:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 6.35
+- diameter_mm: 2.5
+  id: U$33:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: -6.35
+- diameter_mm: 2.5
+  id: U$34:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: -6.35
+mounting_hole_radius_name: m2
+mounting_hole_radius_names:
+- m2
+- m2
+- m2
+- m2
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - 6.35
+- - 10.16
+  - 6.35
+- - -10.16
+  - -6.35
+- - 10.16
+  - -6.35
+mounting_lift: 3
+mounting_research:
+  board_revision: 'Adafruit product 3317 STEMMA QT carrier, revised July 21, 2020
+    to the 0.7 x 1.0 inch STEMMA QT standard. Exact mechanical file: Adafruit VL530X
+    STEMMA QT.brd at official Adafruit PCB repository commit 1ef873512150740edc9798f90028facfa35fd81f.'
+  board_size:
+  - 25.4
+  - 17.78
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'Exact manufacturer EAGLE board file Adafruit VL530X STEMMA QT.brd at
+    pinned commit 1ef873512150740edc9798f90028facfa35fd81f. Layer-20 dimension outline
+    bounds are x=0..25.4 mm and y=0..17.78 mm, so the native centre is (12.7, 8.89)
+    mm. For top view with quarter_turn=0, transform each native drill (X,Y) to centred
+    coordinates (x,y)=(X-12.7,Y-8.89), with no reflection or rotation. Selected all
+    four named MOUNTINGHOLE_2.5_PLATED pads U$30, U$31, U$33 and U$34; each PCB drill
+    is 2.5 mm. The complete drilled-feature inventory has 10 candidates: the other
+    six, JP2 pads 1 through 6 in package 1X06_ROUND_70, are the soldered header and
+    are not board mounting holes. The Adafruit product revision history also independently
+    specifies four mounting holes. Preview checked against the extraction: centred
+    rectangular extent and all four corner locations, diameters and count agree. Product
+    page separately lists 21.0 x 18.0 mm under Product Dimensions, which conflicts
+    with its more specific July 2020 0.7 x 1.0 inch carrier revision and the exact
+    QT CAD outline; use the exact carrier CAD bounds for the PCB outline.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit product page identifies product ID 3317 and states the
+    July 21, 2020 transition to the 0.7 x 1.0 inch STEMMA QT carrier with four mounting
+    holes and two STEMMA QT connectors. The official repository README links product
+    3317 and identifies the repository as its EagleCAD board/layout source; its exact
+    QT variant file is registered as cad. The official guide links to this repository
+    and its QT design files.
+  mounting_holes:
+  - diameter_mm: 2.5
+    id: U$30:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$33:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: -6.35
+  record_sha256: 78f5bf6dd9a62b125dd99b01dab5127cb5a7b31a84adcf330ce570c23b8cdf26
+  research_file: source_file/electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 108916
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Product ID 3317 and revision history states updated July 21, 2020 to
+      0.7 x 1.0 inch STEMMA QT standard, with four mounting holes and two STEMMA QT
+      connectors; dimensions are nominal product dimensions.
+    registered_at: '2026-11-06T19:48:46+00:00'
+    sha256: 2cf93309dba47e48e413c421c14360a80924c261f56dff8458b597f7b1166343
+    url: https://www.adafruit.com/product/3317
+  - bytes: 258962
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit_VL530X_STEMMA_QT.brd
+    locator: Exact QT variant filename at pinned official Adafruit PCB repository
+      commit 1ef873512150740edc9798f90028facfa35fd81f; EAGLE board, inspect outline
+      and all drills and compare four candidate mounting features.
+    registered_at: '2026-11-06T19:48:47+00:00'
+    sha256: 5953c86428a7e8e0c8e5cadc6cf0de3d312d2fe9cfa3c05005c4e0170cdc69b9
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/Adafruit%20VL530X%20STEMMA%20QT.brd
+  - bytes: 71457
+    id: guide
+    kind: manufacturer_document
+    local_file: reference/downloads.html
+    locator: 'Adafruit product guide identifies product 3317, links EagleCAD PCB files
+      on GitHub, distinguishes STEMMA QT and original schematic/fabrication prints,
+      and states M2.5 or #2-56 screws are used to mount.'
+    registered_at: '2026-11-06T19:49:11+00:00'
+    sha256: 87fb72e023733afd54f73eb52ad153a3b3b8f1130822f414a2fa5fca01014966
+    url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/downloads
+  - bytes: 2539
+    id: repo
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Official Adafruit repository README identifies this repository as the
+      PCB files for Adafruit VL53L0X ToF Distance Sensor and describes EagleCAD board
+      and schematic.
+    registered_at: '2026-11-06T19:49:12+00:00'
+    sha256: 15904ea1ad3d9caf7ccbba11996f223b3ff5f45cbbc17517a7a36117d9d56acd
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/README.md
+  status: verified
+name: Electronic Breakout Sensor Distance Time Of Flight Vl53L0X Stemma Qt Adafruit
+  3317
+name_no_class: Electronic Breakout Sensor Distance Time Of Flight Vl53L0X Stemma Qt
+  Adafruit 3317
+name_no_size: Electronic Breakout Sensor Distance Time Of Flight Vl53L0X Stemma Qt
+  Adafruit 3317
+name_no_type: Electronic Breakout Sensor Distance Time Of Flight Vl53L0X Stemma Qt
+  Adafruit 3317
+name_proper: Electronic Breakout Sensor Distance Time Of Flight Vl53L0X Stemma Qt
+  Adafruit 3317
+name_readable: Adafruit VL53L0X Distance Sensor
+name_space: electronic breakout sensor distance time of flight vl53l0x stemma qt adafruit
+  3317
+name_upper: ELECTRONIC BREAKOUT SENSOR DISTANCE TIME OF FLIGHT VL53L0X STEMMA QT ADAFRUIT
+  3317
+notes: []
+oobb_details:
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$30:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$33:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$30:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$33:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$30:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$33:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      board_variant: stemma_qt
+      breakout_description: stemma_qt
+      breakout_pcb_height: 17.78
+      breakout_pcb_width: 25.4
+      catalogue: i2c_breakouts
+      catalogue_status: product_page_reference
+      data_gaps:
+      - Physical connector/pad map and coordinates not imported.
+      - Located mounting holes and complete assembly/connector clearances not imported.
+      - Pull-up values/rails and full electrical limits require schematic review.
+      - Carrier PCB outline dimensions not verified.
+      - Default I2C address not established in this import.
+      definition_authority: working_oomp_populate_i2c.py
+      description: Adds a familiar earlier ToF family and a reference for comparison
+        with generic carriers. Keep its performance and mechanical evidence separate
+        from the VL53L1X.
+      dimensions_mm:
+        height: null
+        scope: pcb_outline_not_established
+        source_id: null
+        status: unverified
+        width: null
+      directory: parts\electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+      geometry_ready: false
+      i2c:
+        address_evidence_status: unverified
+        address_selection: unverified
+        clock_stretching: unverified
+        default_address_7bit: null
+        documented_addresses_7bit: []
+        maximum_clock_hz: null
+        source_id: product
+      interface_scope: documented_board_interfaces_only
+      interfaces:
+      - i2c
+      item_kind: breakout
+      manufacturer: adafruit
+      manufacturer_part_number: '3317'
+      mounting_coordinate_system:
+        origin: pcb_bounding_box_centre
+        units: mm
+        view: top
+        x_positive: right
+        y_positive: up
+      mounting_geometry_ready: true
+      mounting_hole_details:
+      - diameter_mm: 2.5
+        id: U$30:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: -10.16
+        y_mm: 6.35
+      - diameter_mm: 2.5
+        id: U$31:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: 10.16
+        y_mm: 6.35
+      - diameter_mm: 2.5
+        id: U$33:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: -10.16
+        y_mm: -6.35
+      - diameter_mm: 2.5
+        id: U$34:pad:P$1
+        package: MOUNTINGHOLE_2.5_PLATED
+        plated: true
+        source_id: mounting_cad
+        x_mm: 10.16
+        y_mm: -6.35
+      mounting_hole_radius_name: m2
+      mounting_hole_radius_names:
+      - m2
+      - m2
+      - m2
+      - m2
+      mounting_hole_status: verified
+      mounting_holes:
+      - - -10.16
+        - 6.35
+      - - 10.16
+        - 6.35
+      - - -10.16
+        - -6.35
+      - - 10.16
+        - -6.35
+      mounting_lift: 3
+      mounting_research:
+        board_revision: 'Adafruit product 3317 STEMMA QT carrier, revised July 21,
+          2020 to the 0.7 x 1.0 inch STEMMA QT standard. Exact mechanical file: Adafruit
+          VL530X STEMMA QT.brd at official Adafruit PCB repository commit 1ef873512150740edc9798f90028facfa35fd81f.'
+        board_size:
+        - 25.4
+        - 17.78
+        coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        derivation: 'Exact manufacturer EAGLE board file Adafruit VL530X STEMMA QT.brd
+          at pinned commit 1ef873512150740edc9798f90028facfa35fd81f. Layer-20 dimension
+          outline bounds are x=0..25.4 mm and y=0..17.78 mm, so the native centre
+          is (12.7, 8.89) mm. For top view with quarter_turn=0, transform each native
+          drill (X,Y) to centred coordinates (x,y)=(X-12.7,Y-8.89), with no reflection
+          or rotation. Selected all four named MOUNTINGHOLE_2.5_PLATED pads U$30,
+          U$31, U$33 and U$34; each PCB drill is 2.5 mm. The complete drilled-feature
+          inventory has 10 candidates: the other six, JP2 pads 1 through 6 in package
+          1X06_ROUND_70, are the soldered header and are not board mounting holes.
+          The Adafruit product revision history also independently specifies four
+          mounting holes. Preview checked against the extraction: centred rectangular
+          extent and all four corner locations, diameters and count agree. Product
+          page separately lists 21.0 x 18.0 mm under Product Dimensions, which conflicts
+          with its more specific July 2020 0.7 x 1.0 inch carrier revision and the
+          exact QT CAD outline; use the exact carrier CAD bounds for the PCB outline.'
+        fit_status: generic_holder_not_physical_fit_tested
+        identity_evidence: Adafruit product page identifies product ID 3317 and states
+          the July 21, 2020 transition to the 0.7 x 1.0 inch STEMMA QT carrier with
+          four mounting holes and two STEMMA QT connectors. The official repository
+          README links product 3317 and identifies the repository as its EagleCAD
+          board/layout source; its exact QT variant file is registered as cad. The
+          official guide links to this repository and its QT design files.
+        mounting_holes:
+        - diameter_mm: 2.5
+          id: U$30:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: -10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$31:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: 10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$33:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: -10.16
+          y_mm: -6.35
+        - diameter_mm: 2.5
+          id: U$34:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: cad
+          x_mm: 10.16
+          y_mm: -6.35
+        record_sha256: 78f5bf6dd9a62b125dd99b01dab5127cb5a7b31a84adcf330ce570c23b8cdf26
+        research_file: source_file/electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317/mounting.yaml
+        reviewed_by: gpt-6-luna
+        sources:
+        - bytes: 108916
+          id: product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: Product ID 3317 and revision history states updated July 21, 2020
+            to 0.7 x 1.0 inch STEMMA QT standard, with four mounting holes and two
+            STEMMA QT connectors; dimensions are nominal product dimensions.
+          registered_at: '2026-11-06T19:48:46+00:00'
+          sha256: 2cf93309dba47e48e413c421c14360a80924c261f56dff8458b597f7b1166343
+          url: https://www.adafruit.com/product/3317
+        - bytes: 258962
+          id: cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Adafruit_VL530X_STEMMA_QT.brd
+          locator: Exact QT variant filename at pinned official Adafruit PCB repository
+            commit 1ef873512150740edc9798f90028facfa35fd81f; EAGLE board, inspect
+            outline and all drills and compare four candidate mounting features.
+          registered_at: '2026-11-06T19:48:47+00:00'
+          sha256: 5953c86428a7e8e0c8e5cadc6cf0de3d312d2fe9cfa3c05005c4e0170cdc69b9
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/Adafruit%20VL530X%20STEMMA%20QT.brd
+        - bytes: 71457
+          id: guide
+          kind: manufacturer_document
+          local_file: reference/downloads.html
+          locator: 'Adafruit product guide identifies product 3317, links EagleCAD
+            PCB files on GitHub, distinguishes STEMMA QT and original schematic/fabrication
+            prints, and states M2.5 or #2-56 screws are used to mount.'
+          registered_at: '2026-11-06T19:49:11+00:00'
+          sha256: 87fb72e023733afd54f73eb52ad153a3b3b8f1130822f414a2fa5fca01014966
+          url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/downloads
+        - bytes: 2539
+          id: repo
+          kind: manufacturer_repository
+          local_file: mounting_evidence/README.md
+          locator: Official Adafruit repository README identifies this repository
+            as the PCB files for Adafruit VL53L0X ToF Distance Sensor and describes
+            EagleCAD board and schematic.
+          registered_at: '2026-11-06T19:49:12+00:00'
+          sha256: 15904ea1ad3d9caf7ccbba11996f223b3ff5f45cbbc17517a7a36117d9d56acd
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/README.md
+        status: verified
+      name: electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+      name_proper: Electronic Breakout Sensor Distance Time Of Flight Vl53L0X Stemma
+        Qt Adafruit 3317
+      name_readable: Adafruit VL53L0X Distance Sensor
+      name_space: electronic breakout sensor distance time of flight vl53l0x stemma
+        qt adafruit 3317
+      name_upper: ELECTRONIC BREAKOUT SENSOR DISTANCE TIME OF FLIGHT VL53L0X STEMMA
+        QT ADAFRUIT 3317
+      notes: []
+      oobb_details:
+      - breakout_pcb_height: 17.78
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$30:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$31:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$33:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -6.35
+        - diameter_mm: 2.5
+          id: U$34:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: -6.35
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -10.16
+          - 6.35
+        - - 10.16
+          - 6.35
+        - - -10.16
+          - -6.35
+        - - 10.16
+          - -6.35
+        mounting_layout: full_wrap
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+      - breakout_pcb_height: 17.78
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$30:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$31:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$33:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -6.35
+        - diameter_mm: 2.5
+          id: U$34:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: -6.35
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -10.16
+          - 6.35
+        - - 10.16
+          - 6.35
+        - - -10.16
+          - -6.35
+        - - 10.16
+          - -6.35
+        mounting_layout: short_sides
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_short_sides
+      - breakout_pcb_height: 17.78
+        breakout_pcb_width: 25.4
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$30:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$31:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$33:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -6.35
+        - diameter_mm: 2.5
+          id: U$34:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: -6.35
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_holes:
+        - - -10.16
+          - 6.35
+        - - 10.16
+          - 6.35
+        - - -10.16
+          - -6.35
+        - - 10.16
+          - -6.35
+        mounting_layout: long_side
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_long_side
+      part_number: '3317'
+      part_number_adafruit: '3317'
+      pinout_status: unverified
+      pins: {}
+      product_dimensions_mm:
+        depth: 2.8
+        height: 18
+        scope: manufacturer_product_dimensions_not_verified_pcb_outline
+        source_id: product
+        width: 21
+      research_date: '2026-10-23'
+      schema_version: 1
+      sources:
+      - id: product
+        kind: manufacturer_product_page
+        retrieved: '2026-10-23'
+        scope: identity, stated interfaces/features and recorded nominal dimensions
+        url: https://www.adafruit.com/product/3317
+      - bytes: 108916
+        id: mounting_product
+        kind: manufacturer_product
+        local_file: website.html
+        locator: Product ID 3317 and revision history states updated July 21, 2020
+          to 0.7 x 1.0 inch STEMMA QT standard, with four mounting holes and two STEMMA
+          QT connectors; dimensions are nominal product dimensions.
+        registered_at: '2026-11-06T19:48:46+00:00'
+        sha256: 2cf93309dba47e48e413c421c14360a80924c261f56dff8458b597f7b1166343
+        url: https://www.adafruit.com/product/3317
+      - bytes: 258962
+        id: mounting_cad
+        kind: manufacturer_cad
+        local_file: mounting_evidence/Adafruit_VL530X_STEMMA_QT.brd
+        locator: Exact QT variant filename at pinned official Adafruit PCB repository
+          commit 1ef873512150740edc9798f90028facfa35fd81f; EAGLE board, inspect outline
+          and all drills and compare four candidate mounting features.
+        registered_at: '2026-11-06T19:48:47+00:00'
+        sha256: 5953c86428a7e8e0c8e5cadc6cf0de3d312d2fe9cfa3c05005c4e0170cdc69b9
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/Adafruit%20VL530X%20STEMMA%20QT.brd
+      - bytes: 71457
+        id: mounting_guide
+        kind: manufacturer_document
+        local_file: reference/downloads.html
+        locator: 'Adafruit product guide identifies product 3317, links EagleCAD PCB
+          files on GitHub, distinguishes STEMMA QT and original schematic/fabrication
+          prints, and states M2.5 or #2-56 screws are used to mount.'
+        registered_at: '2026-11-06T19:49:11+00:00'
+        sha256: 87fb72e023733afd54f73eb52ad153a3b3b8f1130822f414a2fa5fca01014966
+        url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/downloads
+      - bytes: 2539
+        id: mounting_repo
+        kind: manufacturer_repository
+        local_file: mounting_evidence/README.md
+        locator: Official Adafruit repository README identifies this repository as
+          the PCB files for Adafruit VL53L0X ToF Distance Sensor and describes EagleCAD
+          board and schematic.
+        registered_at: '2026-11-06T19:49:12+00:00'
+        sha256: 15904ea1ad3d9caf7ccbba11996f223b3ff5f45cbbc17517a7a36117d9d56acd
+        url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/README.md
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: adafruit
+      taxonomy_15: '3317'
+      taxonomy_2: breakout
+      taxonomy_3: sensor
+      taxonomy_4: distance
+      taxonomy_5: time_of_flight
+      taxonomy_6: vl53l0x
+      taxonomy_7: stemma_qt
+      taxonomy_8: ''
+      taxonomy_9: ''
+      taxonomy_schema: breakout_function_v1
+      type_1: sensor
+      type_2: distance
+      type_3: time_of_flight
+      type_4: vl53l0x
+      url_chat: ''
+      webpage: https://www.adafruit.com/product/3317
+      webpage_adafruit: https://www.adafruit.com/product/3317
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+part_number: '3317'
+part_number_adafruit: '3317'
+pinout_status: unverified
+pins: {}
+product_dimensions_mm:
+  depth: 2.8
+  height: 18
+  scope: manufacturer_product_dimensions_not_verified_pcb_outline
+  source_id: product
+  width: 21
+project_name: C:\gh\oomp_electronic_breakout_version_5
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/3317
+- bytes: 108916
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: Product ID 3317 and revision history states updated July 21, 2020 to 0.7
+    x 1.0 inch STEMMA QT standard, with four mounting holes and two STEMMA QT connectors;
+    dimensions are nominal product dimensions.
+  registered_at: '2026-11-06T19:48:46+00:00'
+  sha256: 2cf93309dba47e48e413c421c14360a80924c261f56dff8458b597f7b1166343
+  url: https://www.adafruit.com/product/3317
+- bytes: 258962
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Adafruit_VL530X_STEMMA_QT.brd
+  locator: Exact QT variant filename at pinned official Adafruit PCB repository commit
+    1ef873512150740edc9798f90028facfa35fd81f; EAGLE board, inspect outline and all
+    drills and compare four candidate mounting features.
+  registered_at: '2026-11-06T19:48:47+00:00'
+  sha256: 5953c86428a7e8e0c8e5cadc6cf0de3d312d2fe9cfa3c05005c4e0170cdc69b9
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/Adafruit%20VL530X%20STEMMA%20QT.brd
+- bytes: 71457
+  id: mounting_guide
+  kind: manufacturer_document
+  local_file: reference/downloads.html
+  locator: 'Adafruit product guide identifies product 3317, links EagleCAD PCB files
+    on GitHub, distinguishes STEMMA QT and original schematic/fabrication prints,
+    and states M2.5 or #2-56 screws are used to mount.'
+  registered_at: '2026-11-06T19:49:11+00:00'
+  sha256: 87fb72e023733afd54f73eb52ad153a3b3b8f1130822f414a2fa5fca01014966
+  url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/downloads
+- bytes: 2539
+  id: mounting_repo
+  kind: manufacturer_repository
+  local_file: mounting_evidence/README.md
+  locator: Official Adafruit repository README identifies this repository as the PCB
+    files for Adafruit VL53L0X ToF Distance Sensor and describes EagleCAD board and
+    schematic.
+  registered_at: '2026-11-06T19:49:12+00:00'
+  sha256: 15904ea1ad3d9caf7ccbba11996f223b3ff5f45cbbc17517a7a36117d9d56acd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/README.md
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_14_capital: Adafruit
+taxonomy_14_first_letter: a
+taxonomy_14_first_letter_upper: A
+taxonomy_14_length_1: a
+taxonomy_14_length_2: ad
+taxonomy_14_length_3: ada
+taxonomy_14_length_4: adaf
+taxonomy_14_length_5: adafr
+taxonomy_14_upper: ADAFRUIT
+taxonomy_14_upper_length_1: A
+taxonomy_14_upper_length_2: AD
+taxonomy_14_upper_length_3: ADA
+taxonomy_14_upper_length_4: ADAF
+taxonomy_14_upper_length_5: ADAFR
+taxonomy_15: '3317'
+taxonomy_15_capital: '3317'
+taxonomy_15_first_letter: '3'
+taxonomy_15_first_letter_upper: '3'
+taxonomy_15_length_1: '3'
+taxonomy_15_length_2: '33'
+taxonomy_15_length_3: '331'
+taxonomy_15_length_4: '3317'
+taxonomy_15_length_5: '3317'
+taxonomy_15_upper: '3317'
+taxonomy_15_upper_length_1: '3'
+taxonomy_15_upper_length_2: '33'
+taxonomy_15_upper_length_3: '331'
+taxonomy_15_upper_length_4: '3317'
+taxonomy_15_upper_length_5: '3317'
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: sensor
+taxonomy_3_capital: Sensor
+taxonomy_3_first_letter: s
+taxonomy_3_first_letter_upper: S
+taxonomy_3_length_1: s
+taxonomy_3_length_2: se
+taxonomy_3_length_3: sen
+taxonomy_3_length_4: sens
+taxonomy_3_length_5: senso
+taxonomy_3_upper: SENSOR
+taxonomy_3_upper_length_1: S
+taxonomy_3_upper_length_2: SE
+taxonomy_3_upper_length_3: SEN
+taxonomy_3_upper_length_4: SENS
+taxonomy_3_upper_length_5: SENSO
+taxonomy_4: distance
+taxonomy_4_capital: Distance
+taxonomy_4_first_letter: d
+taxonomy_4_first_letter_upper: D
+taxonomy_4_length_1: d
+taxonomy_4_length_2: di
+taxonomy_4_length_3: dis
+taxonomy_4_length_4: dist
+taxonomy_4_length_5: dista
+taxonomy_4_upper: DISTANCE
+taxonomy_4_upper_length_1: D
+taxonomy_4_upper_length_2: DI
+taxonomy_4_upper_length_3: DIS
+taxonomy_4_upper_length_4: DIST
+taxonomy_4_upper_length_5: DISTA
+taxonomy_5: time_of_flight
+taxonomy_5_capital: Time Of Flight
+taxonomy_5_first_letter: t
+taxonomy_5_first_letter_upper: T
+taxonomy_5_length_1: t
+taxonomy_5_length_2: ti
+taxonomy_5_length_3: tim
+taxonomy_5_length_4: time
+taxonomy_5_length_5: time_
+taxonomy_5_upper: TIME_OF_FLIGHT
+taxonomy_5_upper_length_1: T
+taxonomy_5_upper_length_2: TI
+taxonomy_5_upper_length_3: TIM
+taxonomy_5_upper_length_4: TIME
+taxonomy_5_upper_length_5: TIME_
+taxonomy_6: vl53l0x
+taxonomy_6_capital: Vl53L0X
+taxonomy_6_first_letter: v
+taxonomy_6_first_letter_upper: V
+taxonomy_6_length_1: v
+taxonomy_6_length_2: vl
+taxonomy_6_length_3: vl5
+taxonomy_6_length_4: vl53
+taxonomy_6_length_5: vl53l
+taxonomy_6_upper: VL53L0X
+taxonomy_6_upper_length_1: V
+taxonomy_6_upper_length_2: VL
+taxonomy_6_upper_length_3: VL5
+taxonomy_6_upper_length_4: VL53
+taxonomy_6_upper_length_5: VL53L
+taxonomy_7: stemma_qt
+taxonomy_7_capital: Stemma Qt
+taxonomy_7_first_letter: s
+taxonomy_7_first_letter_upper: S
+taxonomy_7_length_1: s
+taxonomy_7_length_2: st
+taxonomy_7_length_3: ste
+taxonomy_7_length_4: stem
+taxonomy_7_length_5: stemm
+taxonomy_7_upper: STEMMA_QT
+taxonomy_7_upper_length_1: S
+taxonomy_7_upper_length_2: ST
+taxonomy_7_upper_length_3: STE
+taxonomy_7_upper_length_4: STEM
+taxonomy_7_upper_length_5: STEMM
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+thing:
+  bip_39_2_word_array:
+  - avoid
+  - source
+  bip_39_2_word_no_space: avoidsource
+  bip_39_2_word_space: avoid source
+  bip_39_2_word_underscore: avoid_source
+  bip_39_3_word_array:
+  - avoid
+  - source
+  - scrap
+  bip_39_3_word_no_space: avoidsourcescrap
+  bip_39_3_word_space: avoid source scrap
+  bip_39_3_word_underscore: avoid_source_scrap
+  bip_39_full_array:
+  - avoid
+  - source
+  - scrap
+  - inner
+  - bid
+  - quiz
+  - rib
+  - clinic
+  - raise
+  - enjoy
+  - omit
+  - cupboard
+  bip_39_full_no_space: avoidsourcescrapinnerbidquizribclinicraiseenjoyomitcupboard
+  bip_39_full_space: avoid source scrap inner bid quiz rib clinic raise enjoy omit
+    cupboard
+  bip_39_full_underscore: avoid_source_scrap_inner_bid_quiz_rib_clinic_raise_enjoy_omit_cupboard
+  board_variant: stemma_qt
+  breakout_description: stemma_qt
+  breakout_pcb_height: 17.78
+  breakout_pcb_width: 25.4
+  catalogue: i2c_breakouts
+  catalogue_status: product_page_reference
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 3.0
+      pos:
+      - 0.0
+      - 7.5
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 31.4
+      - 44.0
+      - 3
+      type: positive
+      width: 2.1599999999999997
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - -10.16
+      - 6.35
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id001
+      - -10.16
+      - 6.35
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id001
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id001
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - 10.16
+      - 6.35
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id002
+      - 10.16
+      - 6.35
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id002
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id002
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - -10.16
+      - -6.35
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id003
+      - -10.16
+      - -6.35
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id003
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id003
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.85
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -0.85
+          r1: 1.35
+          r2: 3.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.35
+          radius: 1.35
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 0.65
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -0.65
+          r1: 1.0
+          r2: 2.0
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.0
+          radius: 1.0
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - 10.16
+      - -6.35
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id004
+      - 10.16
+      - -6.35
+      - 3.0
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id004
+      r: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id004
+      r: 2.75
+      radius: 2.75
+      shape: cylinder
+      type: positive
+      width: 4
+  components_objects:
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 3.0
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$30:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$31:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$33:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$34:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+    pos:
+    - 0.0
+    - 7.5
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_plate
+    type: positive
+    width: 2.1599999999999997
+  - depth: 5
+    pos:
+    - -7.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 7.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 0.0
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$30:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$31:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$33:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$34:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+    pos:
+    - -10.16
+    - 6.35
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$30:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$31:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$33:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$34:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+    pos:
+    - -10.16
+    - 6.35
+    - 4.5
+    radius: 2.75
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$30:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$31:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$33:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$34:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+    pos:
+    - 10.16
+    - 6.35
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$30:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$31:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$33:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$34:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+    pos:
+    - 10.16
+    - 6.35
+    - 4.5
+    radius: 2.75
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$30:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$31:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$33:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$34:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+    pos:
+    - -10.16
+    - -6.35
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$30:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$31:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$33:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$34:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+    pos:
+    - -10.16
+    - -6.35
+    - 4.5
+    radius: 2.75
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$30:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$31:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$33:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$34:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+    pos:
+    - 10.16
+    - -6.35
+    - 0
+    radius_name: m2
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$30:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$31:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$33:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$34:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+    pos:
+    - 10.16
+    - -6.35
+    - 4.5
+    radius: 2.75
+    save_type: none
+    scad_output: 3dpr_long_side
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_0.0_7.5_0_pos_'electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$30:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$31:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$33:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$34:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_2.1599999999999997_width_3.0_height
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-7.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_7.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_0.0_22.5_-1_pos
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_-10.16_6.35_0_pos_'electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$30:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$31:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$33:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$34:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-10.16_6.35_4.5_pos_'electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$30:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$31:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$33:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$34:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_10.16_6.35_0_pos_'electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$30:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$31:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$33:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$34:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_10.16_6.35_4.5_pos_'electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$30:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$31:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$33:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$34:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_-10.16_-6.35_0_pos_'electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$30:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$31:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$33:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$34:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-10.16_-6.35_4.5_pos_'electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$30:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$31:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$33:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$34:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_2.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m2_radius_name_6_depth_10.16_-6.35_0_pos_'electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$30:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$31:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$33:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$34:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_10.16_-6.35_4.5_pos_'electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_17.78_breakout_pcb_height_25.4_breakout_pcb_width_{'diameter_mm':2.5_'id':'u$30:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$31:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':6.35}_{'diameter_mm':2.5_'id':'u$33:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':-10.16_'y_mm':-6.35}_{'diameter_mm':2.5_'id':'u$34:pad:p$1'_'package':'mountinghole_2.5_plated'_'plated':true_'source_id':'mounting_cad'_'x_mm':10.16_'y_mm':-6.35}_mounting_hole_details_m2_mounting_hole_radius_name_'m2'_'m2'_'m2'_'m2'_mounting_hole_radius_names_-10.16_6.35_10.16_6.35_-10.16_-6.35_10.16_-6.35_mounting_holes_long_side_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_3dpr_long_side_scad_output_4_width_4_height_2.75_radius
+  data_gaps:
+  - Physical connector/pad map and coordinates not imported.
+  - Located mounting holes and complete assembly/connector clearances not imported.
+  - Pull-up values/rails and full electrical limits require schematic review.
+  - Carrier PCB outline dimensions not verified.
+  - Default I2C address not established in this import.
+  definition_authority: working_oomp_populate_i2c.py
+  description: Adds a familiar earlier ToF family and a reference for comparison with
+    generic carriers. Keep its performance and mechanical evidence separate from the
+    VL53L1X.
+  description_extra: ''
+  description_main: ''
+  dimensions_mm:
+    height: null
+    scope: pcb_outline_not_established
+    source_id: null
+    status: unverified
+    width: null
+  directory: parts/electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+  geometry_ready: false
+  i2c:
+    address_evidence_status: unverified
+    address_selection: unverified
+    clock_stretching: unverified
+    default_address_7bit: null
+    documented_addresses_7bit: []
+    maximum_clock_hz: null
+    source_id: product
+  id: electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+  id_no_class: electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+  id_no_size: electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+  id_no_type: electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+  interface_scope: documented_board_interfaces_only
+  interfaces:
+  - i2c
+  item_kind: breakout
+  kwargs:
+    breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$30:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$31:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$33:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$34:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+    save_type: none
+    scad_output: 3dpr_long_side
+    type: default_mounting_plate_default
+  link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+  link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+  link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+  manufacturer: adafruit
+  manufacturer_part_number: '3317'
+  md5: 101a0305ba31615fee3959b12956699a
+  md5_10: 101a0305ba
+  md5_10_upper: 101A0305BA
+  md5_5: 101a0
+  md5_5_upper: 101A0
+  md5_6: 101a03
+  md5_6_alpha: mm83
+  md5_6_alpha_upper: MM83
+  md5_6_upper: 101A03
+  mounting_coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  mounting_geometry_ready: true
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$30:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$31:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 6.35
+  - diameter_mm: 2.5
+    id: U$33:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -6.35
+  - diameter_mm: 2.5
+    id: U$34:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -6.35
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_hole_status: verified
+  mounting_holes:
+  - - -10.16
+    - 6.35
+  - - 10.16
+    - 6.35
+  - - -10.16
+    - -6.35
+  - - 10.16
+    - -6.35
+  mounting_lift: 3
+  mounting_research:
+    board_revision: 'Adafruit product 3317 STEMMA QT carrier, revised July 21, 2020
+      to the 0.7 x 1.0 inch STEMMA QT standard. Exact mechanical file: Adafruit VL530X
+      STEMMA QT.brd at official Adafruit PCB repository commit 1ef873512150740edc9798f90028facfa35fd81f.'
+    board_size:
+    - 25.4
+    - 17.78
+    coordinate_system:
+      origin: pcb_bounding_box_centre
+      units: mm
+      view: top
+      x_positive: right
+      y_positive: up
+    derivation: 'Exact manufacturer EAGLE board file Adafruit VL530X STEMMA QT.brd
+      at pinned commit 1ef873512150740edc9798f90028facfa35fd81f. Layer-20 dimension
+      outline bounds are x=0..25.4 mm and y=0..17.78 mm, so the native centre is (12.7,
+      8.89) mm. For top view with quarter_turn=0, transform each native drill (X,Y)
+      to centred coordinates (x,y)=(X-12.7,Y-8.89), with no reflection or rotation.
+      Selected all four named MOUNTINGHOLE_2.5_PLATED pads U$30, U$31, U$33 and U$34;
+      each PCB drill is 2.5 mm. The complete drilled-feature inventory has 10 candidates:
+      the other six, JP2 pads 1 through 6 in package 1X06_ROUND_70, are the soldered
+      header and are not board mounting holes. The Adafruit product revision history
+      also independently specifies four mounting holes. Preview checked against the
+      extraction: centred rectangular extent and all four corner locations, diameters
+      and count agree. Product page separately lists 21.0 x 18.0 mm under Product
+      Dimensions, which conflicts with its more specific July 2020 0.7 x 1.0 inch
+      carrier revision and the exact QT CAD outline; use the exact carrier CAD bounds
+      for the PCB outline.'
+    fit_status: generic_holder_not_physical_fit_tested
+    identity_evidence: Adafruit product page identifies product ID 3317 and states
+      the July 21, 2020 transition to the 0.7 x 1.0 inch STEMMA QT carrier with four
+      mounting holes and two STEMMA QT connectors. The official repository README
+      links product 3317 and identifies the repository as its EagleCAD board/layout
+      source; its exact QT variant file is registered as cad. The official guide links
+      to this repository and its QT design files.
+    mounting_holes:
+    - diameter_mm: 2.5
+      id: U$30:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$31:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$33:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$34:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: cad
+      x_mm: 10.16
+      y_mm: -6.35
+    record_sha256: 78f5bf6dd9a62b125dd99b01dab5127cb5a7b31a84adcf330ce570c23b8cdf26
+    research_file: source_file/electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317/mounting.yaml
+    reviewed_by: gpt-6-luna
+    sources:
+    - bytes: 108916
+      id: product
+      kind: manufacturer_product
+      local_file: website.html
+      locator: Product ID 3317 and revision history states updated July 21, 2020 to
+        0.7 x 1.0 inch STEMMA QT standard, with four mounting holes and two STEMMA
+        QT connectors; dimensions are nominal product dimensions.
+      registered_at: '2026-11-06T19:48:46+00:00'
+      sha256: 2cf93309dba47e48e413c421c14360a80924c261f56dff8458b597f7b1166343
+      url: https://www.adafruit.com/product/3317
+    - bytes: 258962
+      id: cad
+      kind: manufacturer_cad
+      local_file: mounting_evidence/Adafruit_VL530X_STEMMA_QT.brd
+      locator: Exact QT variant filename at pinned official Adafruit PCB repository
+        commit 1ef873512150740edc9798f90028facfa35fd81f; EAGLE board, inspect outline
+        and all drills and compare four candidate mounting features.
+      registered_at: '2026-11-06T19:48:47+00:00'
+      sha256: 5953c86428a7e8e0c8e5cadc6cf0de3d312d2fe9cfa3c05005c4e0170cdc69b9
+      url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/Adafruit%20VL530X%20STEMMA%20QT.brd
+    - bytes: 71457
+      id: guide
+      kind: manufacturer_document
+      local_file: reference/downloads.html
+      locator: 'Adafruit product guide identifies product 3317, links EagleCAD PCB
+        files on GitHub, distinguishes STEMMA QT and original schematic/fabrication
+        prints, and states M2.5 or #2-56 screws are used to mount.'
+      registered_at: '2026-11-06T19:49:11+00:00'
+      sha256: 87fb72e023733afd54f73eb52ad153a3b3b8f1130822f414a2fa5fca01014966
+      url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/downloads
+    - bytes: 2539
+      id: repo
+      kind: manufacturer_repository
+      local_file: mounting_evidence/README.md
+      locator: Official Adafruit repository README identifies this repository as the
+        PCB files for Adafruit VL53L0X ToF Distance Sensor and describes EagleCAD
+        board and schematic.
+      registered_at: '2026-11-06T19:49:12+00:00'
+      sha256: 15904ea1ad3d9caf7ccbba11996f223b3ff5f45cbbc17517a7a36117d9d56acd
+      url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/README.md
+    status: verified
+  name: Electronic Breakout Sensor Distance Time Of Flight Vl53L0X Stemma Qt Adafruit
+    3317
+  name_no_class: Electronic Breakout Sensor Distance Time Of Flight Vl53L0X Stemma
+    Qt Adafruit 3317
+  name_no_size: Electronic Breakout Sensor Distance Time Of Flight Vl53L0X Stemma
+    Qt Adafruit 3317
+  name_no_type: Electronic Breakout Sensor Distance Time Of Flight Vl53L0X Stemma
+    Qt Adafruit 3317
+  name_proper: Electronic Breakout Sensor Distance Time Of Flight Vl53L0X Stemma Qt
+    Adafruit 3317
+  name_readable: Adafruit VL53L0X Distance Sensor
+  name_short: Default Mounting Plate Default
+  name_space: electronic breakout sensor distance time of flight vl53l0x stemma qt
+    adafruit 3317
+  name_text: Oobb Part Default Mounting Plate Default
+  name_upper: ELECTRONIC BREAKOUT SENSOR DISTANCE TIME OF FLIGHT VL53L0X STEMMA QT
+    ADAFRUIT 3317
+  notes: []
+  oobb_details:
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$30:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$31:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$33:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$34:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$30:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$31:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$33:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$34:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_layout: short_sides
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_short_sides
+  - breakout_pcb_height: 17.78
+    breakout_pcb_width: 25.4
+    mounting_hole_details:
+    - diameter_mm: 2.5
+      id: U$30:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$31:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: 6.35
+    - diameter_mm: 2.5
+      id: U$33:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: -10.16
+      y_mm: -6.35
+    - diameter_mm: 2.5
+      id: U$34:pad:P$1
+      package: MOUNTINGHOLE_2.5_PLATED
+      plated: true
+      source_id: mounting_cad
+      x_mm: 10.16
+      y_mm: -6.35
+    mounting_hole_radius_name: m2
+    mounting_hole_radius_names:
+    - m2
+    - m2
+    - m2
+    - m2
+    mounting_holes:
+    - - -10.16
+      - 6.35
+    - - 10.16
+      - 6.35
+    - - -10.16
+      - -6.35
+    - - 10.16
+      - -6.35
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_long_side
+  oobb_name: mounting_plate_default
+  oomlout_ai_roboclick_1:
+    actions:
+    - command: text_jinja_template
+      convert_to_pdf: false
+      convert_to_png: false
+      dict_data:
+        board_variant: stemma_qt
+        breakout_description: stemma_qt
+        breakout_pcb_height: 17.78
+        breakout_pcb_width: 25.4
+        catalogue: i2c_breakouts
+        catalogue_status: product_page_reference
+        data_gaps:
+        - Physical connector/pad map and coordinates not imported.
+        - Located mounting holes and complete assembly/connector clearances not imported.
+        - Pull-up values/rails and full electrical limits require schematic review.
+        - Carrier PCB outline dimensions not verified.
+        - Default I2C address not established in this import.
+        definition_authority: working_oomp_populate_i2c.py
+        description: Adds a familiar earlier ToF family and a reference for comparison
+          with generic carriers. Keep its performance and mechanical evidence separate
+          from the VL53L1X.
+        dimensions_mm:
+          height: null
+          scope: pcb_outline_not_established
+          source_id: null
+          status: unverified
+          width: null
+        directory: parts\electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+        geometry_ready: false
+        i2c:
+          address_evidence_status: unverified
+          address_selection: unverified
+          clock_stretching: unverified
+          default_address_7bit: null
+          documented_addresses_7bit: []
+          maximum_clock_hz: null
+          source_id: product
+        interface_scope: documented_board_interfaces_only
+        interfaces:
+        - i2c
+        item_kind: breakout
+        manufacturer: adafruit
+        manufacturer_part_number: '3317'
+        mounting_coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        mounting_geometry_ready: true
+        mounting_hole_details:
+        - diameter_mm: 2.5
+          id: U$30:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$31:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: 6.35
+        - diameter_mm: 2.5
+          id: U$33:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: -10.16
+          y_mm: -6.35
+        - diameter_mm: 2.5
+          id: U$34:pad:P$1
+          package: MOUNTINGHOLE_2.5_PLATED
+          plated: true
+          source_id: mounting_cad
+          x_mm: 10.16
+          y_mm: -6.35
+        mounting_hole_radius_name: m2
+        mounting_hole_radius_names:
+        - m2
+        - m2
+        - m2
+        - m2
+        mounting_hole_status: verified
+        mounting_holes:
+        - - -10.16
+          - 6.35
+        - - 10.16
+          - 6.35
+        - - -10.16
+          - -6.35
+        - - 10.16
+          - -6.35
+        mounting_lift: 3
+        mounting_research:
+          board_revision: 'Adafruit product 3317 STEMMA QT carrier, revised July 21,
+            2020 to the 0.7 x 1.0 inch STEMMA QT standard. Exact mechanical file:
+            Adafruit VL530X STEMMA QT.brd at official Adafruit PCB repository commit
+            1ef873512150740edc9798f90028facfa35fd81f.'
+          board_size:
+          - 25.4
+          - 17.78
+          coordinate_system:
+            origin: pcb_bounding_box_centre
+            units: mm
+            view: top
+            x_positive: right
+            y_positive: up
+          derivation: 'Exact manufacturer EAGLE board file Adafruit VL530X STEMMA
+            QT.brd at pinned commit 1ef873512150740edc9798f90028facfa35fd81f. Layer-20
+            dimension outline bounds are x=0..25.4 mm and y=0..17.78 mm, so the native
+            centre is (12.7, 8.89) mm. For top view with quarter_turn=0, transform
+            each native drill (X,Y) to centred coordinates (x,y)=(X-12.7,Y-8.89),
+            with no reflection or rotation. Selected all four named MOUNTINGHOLE_2.5_PLATED
+            pads U$30, U$31, U$33 and U$34; each PCB drill is 2.5 mm. The complete
+            drilled-feature inventory has 10 candidates: the other six, JP2 pads 1
+            through 6 in package 1X06_ROUND_70, are the soldered header and are not
+            board mounting holes. The Adafruit product revision history also independently
+            specifies four mounting holes. Preview checked against the extraction:
+            centred rectangular extent and all four corner locations, diameters and
+            count agree. Product page separately lists 21.0 x 18.0 mm under Product
+            Dimensions, which conflicts with its more specific July 2020 0.7 x 1.0
+            inch carrier revision and the exact QT CAD outline; use the exact carrier
+            CAD bounds for the PCB outline.'
+          fit_status: generic_holder_not_physical_fit_tested
+          identity_evidence: Adafruit product page identifies product ID 3317 and
+            states the July 21, 2020 transition to the 0.7 x 1.0 inch STEMMA QT carrier
+            with four mounting holes and two STEMMA QT connectors. The official repository
+            README links product 3317 and identifies the repository as its EagleCAD
+            board/layout source; its exact QT variant file is registered as cad. The
+            official guide links to this repository and its QT design files.
+          mounting_holes:
+          - diameter_mm: 2.5
+            id: U$30:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: -10.16
+            y_mm: 6.35
+          - diameter_mm: 2.5
+            id: U$31:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: 10.16
+            y_mm: 6.35
+          - diameter_mm: 2.5
+            id: U$33:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: -10.16
+            y_mm: -6.35
+          - diameter_mm: 2.5
+            id: U$34:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: cad
+            x_mm: 10.16
+            y_mm: -6.35
+          record_sha256: 78f5bf6dd9a62b125dd99b01dab5127cb5a7b31a84adcf330ce570c23b8cdf26
+          research_file: source_file/electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317/mounting.yaml
+          reviewed_by: gpt-6-luna
+          sources:
+          - bytes: 108916
+            id: product
+            kind: manufacturer_product
+            local_file: website.html
+            locator: Product ID 3317 and revision history states updated July 21,
+              2020 to 0.7 x 1.0 inch STEMMA QT standard, with four mounting holes
+              and two STEMMA QT connectors; dimensions are nominal product dimensions.
+            registered_at: '2026-11-06T19:48:46+00:00'
+            sha256: 2cf93309dba47e48e413c421c14360a80924c261f56dff8458b597f7b1166343
+            url: https://www.adafruit.com/product/3317
+          - bytes: 258962
+            id: cad
+            kind: manufacturer_cad
+            local_file: mounting_evidence/Adafruit_VL530X_STEMMA_QT.brd
+            locator: Exact QT variant filename at pinned official Adafruit PCB repository
+              commit 1ef873512150740edc9798f90028facfa35fd81f; EAGLE board, inspect
+              outline and all drills and compare four candidate mounting features.
+            registered_at: '2026-11-06T19:48:47+00:00'
+            sha256: 5953c86428a7e8e0c8e5cadc6cf0de3d312d2fe9cfa3c05005c4e0170cdc69b9
+            url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/Adafruit%20VL530X%20STEMMA%20QT.brd
+          - bytes: 71457
+            id: guide
+            kind: manufacturer_document
+            local_file: reference/downloads.html
+            locator: 'Adafruit product guide identifies product 3317, links EagleCAD
+              PCB files on GitHub, distinguishes STEMMA QT and original schematic/fabrication
+              prints, and states M2.5 or #2-56 screws are used to mount.'
+            registered_at: '2026-11-06T19:49:11+00:00'
+            sha256: 87fb72e023733afd54f73eb52ad153a3b3b8f1130822f414a2fa5fca01014966
+            url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/downloads
+          - bytes: 2539
+            id: repo
+            kind: manufacturer_repository
+            local_file: mounting_evidence/README.md
+            locator: Official Adafruit repository README identifies this repository
+              as the PCB files for Adafruit VL53L0X ToF Distance Sensor and describes
+              EagleCAD board and schematic.
+            registered_at: '2026-11-06T19:49:12+00:00'
+            sha256: 15904ea1ad3d9caf7ccbba11996f223b3ff5f45cbbc17517a7a36117d9d56acd
+            url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/README.md
+          status: verified
+        name: electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+        name_proper: Electronic Breakout Sensor Distance Time Of Flight Vl53L0X Stemma
+          Qt Adafruit 3317
+        name_readable: Adafruit VL53L0X Distance Sensor
+        name_space: electronic breakout sensor distance time of flight vl53l0x stemma
+          qt adafruit 3317
+        name_upper: ELECTRONIC BREAKOUT SENSOR DISTANCE TIME OF FLIGHT VL53L0X STEMMA
+          QT ADAFRUIT 3317
+        notes: []
+        oobb_details:
+        - breakout_pcb_height: 17.78
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 2.5
+            id: U$30:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 6.35
+          - diameter_mm: 2.5
+            id: U$31:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: 6.35
+          - diameter_mm: 2.5
+            id: U$33:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: -6.35
+          - diameter_mm: 2.5
+            id: U$34:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: -6.35
+          mounting_hole_radius_name: m2
+          mounting_hole_radius_names:
+          - m2
+          - m2
+          - m2
+          - m2
+          mounting_holes:
+          - - -10.16
+            - 6.35
+          - - 10.16
+            - 6.35
+          - - -10.16
+            - -6.35
+          - - 10.16
+            - -6.35
+          mounting_layout: full_wrap
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+        - breakout_pcb_height: 17.78
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 2.5
+            id: U$30:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 6.35
+          - diameter_mm: 2.5
+            id: U$31:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: 6.35
+          - diameter_mm: 2.5
+            id: U$33:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: -6.35
+          - diameter_mm: 2.5
+            id: U$34:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: -6.35
+          mounting_hole_radius_name: m2
+          mounting_hole_radius_names:
+          - m2
+          - m2
+          - m2
+          - m2
+          mounting_holes:
+          - - -10.16
+            - 6.35
+          - - 10.16
+            - 6.35
+          - - -10.16
+            - -6.35
+          - - 10.16
+            - -6.35
+          mounting_layout: short_sides
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_short_sides
+        - breakout_pcb_height: 17.78
+          breakout_pcb_width: 25.4
+          mounting_hole_details:
+          - diameter_mm: 2.5
+            id: U$30:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: 6.35
+          - diameter_mm: 2.5
+            id: U$31:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: 6.35
+          - diameter_mm: 2.5
+            id: U$33:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: -10.16
+            y_mm: -6.35
+          - diameter_mm: 2.5
+            id: U$34:pad:P$1
+            package: MOUNTINGHOLE_2.5_PLATED
+            plated: true
+            source_id: mounting_cad
+            x_mm: 10.16
+            y_mm: -6.35
+          mounting_hole_radius_name: m2
+          mounting_hole_radius_names:
+          - m2
+          - m2
+          - m2
+          - m2
+          mounting_holes:
+          - - -10.16
+            - 6.35
+          - - 10.16
+            - 6.35
+          - - -10.16
+            - -6.35
+          - - 10.16
+            - -6.35
+          mounting_layout: long_side
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_long_side
+        part_number: '3317'
+        part_number_adafruit: '3317'
+        pinout_status: unverified
+        pins: {}
+        product_dimensions_mm:
+          depth: 2.8
+          height: 18
+          scope: manufacturer_product_dimensions_not_verified_pcb_outline
+          source_id: product
+          width: 21
+        research_date: '2026-10-23'
+        schema_version: 1
+        sources:
+        - id: product
+          kind: manufacturer_product_page
+          retrieved: '2026-10-23'
+          scope: identity, stated interfaces/features and recorded nominal dimensions
+          url: https://www.adafruit.com/product/3317
+        - bytes: 108916
+          id: mounting_product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: Product ID 3317 and revision history states updated July 21, 2020
+            to 0.7 x 1.0 inch STEMMA QT standard, with four mounting holes and two
+            STEMMA QT connectors; dimensions are nominal product dimensions.
+          registered_at: '2026-11-06T19:48:46+00:00'
+          sha256: 2cf93309dba47e48e413c421c14360a80924c261f56dff8458b597f7b1166343
+          url: https://www.adafruit.com/product/3317
+        - bytes: 258962
+          id: mounting_cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Adafruit_VL530X_STEMMA_QT.brd
+          locator: Exact QT variant filename at pinned official Adafruit PCB repository
+            commit 1ef873512150740edc9798f90028facfa35fd81f; EAGLE board, inspect
+            outline and all drills and compare four candidate mounting features.
+          registered_at: '2026-11-06T19:48:47+00:00'
+          sha256: 5953c86428a7e8e0c8e5cadc6cf0de3d312d2fe9cfa3c05005c4e0170cdc69b9
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/Adafruit%20VL530X%20STEMMA%20QT.brd
+        - bytes: 71457
+          id: mounting_guide
+          kind: manufacturer_document
+          local_file: reference/downloads.html
+          locator: 'Adafruit product guide identifies product 3317, links EagleCAD
+            PCB files on GitHub, distinguishes STEMMA QT and original schematic/fabrication
+            prints, and states M2.5 or #2-56 screws are used to mount.'
+          registered_at: '2026-11-06T19:49:11+00:00'
+          sha256: 87fb72e023733afd54f73eb52ad153a3b3b8f1130822f414a2fa5fca01014966
+          url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/downloads
+        - bytes: 2539
+          id: mounting_repo
+          kind: manufacturer_repository
+          local_file: mounting_evidence/README.md
+          locator: Official Adafruit repository README identifies this repository
+            as the PCB files for Adafruit VL53L0X ToF Distance Sensor and describes
+            EagleCAD board and schematic.
+          registered_at: '2026-11-06T19:49:12+00:00'
+          sha256: 15904ea1ad3d9caf7ccbba11996f223b3ff5f45cbbc17517a7a36117d9d56acd
+          url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/README.md
+        taxonomy_1: electronic
+        taxonomy_10: ''
+        taxonomy_11: ''
+        taxonomy_12: ''
+        taxonomy_13: ''
+        taxonomy_14: adafruit
+        taxonomy_15: '3317'
+        taxonomy_2: breakout
+        taxonomy_3: sensor
+        taxonomy_4: distance
+        taxonomy_5: time_of_flight
+        taxonomy_6: vl53l0x
+        taxonomy_7: stemma_qt
+        taxonomy_8: ''
+        taxonomy_9: ''
+        taxonomy_schema: breakout_function_v1
+        type_1: sensor
+        type_2: distance
+        type_3: time_of_flight
+        type_4: vl53l0x
+        url_chat: ''
+        webpage: https://www.adafruit.com/product/3317
+        webpage_adafruit: https://www.adafruit.com/product/3317
+      dict_data_files: {}
+      dict_data_files_exists: {}
+      file_output: label_oomp.svg
+      file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+      search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+  oomp_key: oomp_electronic_breakout_sensor_distance_time_of_flight_vl53l0x_stemma_qt_adafruit_3317
+  part_number: '3317'
+  part_number_adafruit: '3317'
+  pinout_status: unverified
+  pins: {}
+  product_dimensions_mm:
+    depth: 2.8
+    height: 18
+    scope: manufacturer_product_dimensions_not_verified_pcb_outline
+    source_id: product
+    width: 21
+  research_date: '2026-10-23'
+  schema_version: 1
+  short_name: ''
+  size: default_mounting_plate_default
+  sources:
+  - id: product
+    kind: manufacturer_product_page
+    retrieved: '2026-10-23'
+    scope: identity, stated interfaces/features and recorded nominal dimensions
+    url: https://www.adafruit.com/product/3317
+  - bytes: 108916
+    id: mounting_product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Product ID 3317 and revision history states updated July 21, 2020 to
+      0.7 x 1.0 inch STEMMA QT standard, with four mounting holes and two STEMMA QT
+      connectors; dimensions are nominal product dimensions.
+    registered_at: '2026-11-06T19:48:46+00:00'
+    sha256: 2cf93309dba47e48e413c421c14360a80924c261f56dff8458b597f7b1166343
+    url: https://www.adafruit.com/product/3317
+  - bytes: 258962
+    id: mounting_cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit_VL530X_STEMMA_QT.brd
+    locator: Exact QT variant filename at pinned official Adafruit PCB repository
+      commit 1ef873512150740edc9798f90028facfa35fd81f; EAGLE board, inspect outline
+      and all drills and compare four candidate mounting features.
+    registered_at: '2026-11-06T19:48:47+00:00'
+    sha256: 5953c86428a7e8e0c8e5cadc6cf0de3d312d2fe9cfa3c05005c4e0170cdc69b9
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/Adafruit%20VL530X%20STEMMA%20QT.brd
+  - bytes: 71457
+    id: mounting_guide
+    kind: manufacturer_document
+    local_file: reference/downloads.html
+    locator: 'Adafruit product guide identifies product 3317, links EagleCAD PCB files
+      on GitHub, distinguishes STEMMA QT and original schematic/fabrication prints,
+      and states M2.5 or #2-56 screws are used to mount.'
+    registered_at: '2026-11-06T19:49:11+00:00'
+    sha256: 87fb72e023733afd54f73eb52ad153a3b3b8f1130822f414a2fa5fca01014966
+    url: https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/downloads
+  - bytes: 2539
+    id: mounting_repo
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: Official Adafruit repository README identifies this repository as the
+      PCB files for Adafruit VL53L0X ToF Distance Sensor and describes EagleCAD board
+      and schematic.
+    registered_at: '2026-11-06T19:49:12+00:00'
+    sha256: 15904ea1ad3d9caf7ccbba11996f223b3ff5f45cbbc17517a7a36117d9d56acd
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-VL53L0X-ToF-Distance-Sensor-PCB/1ef873512150740edc9798f90028facfa35fd81f/README.md
+  taxonomy_1: electronic
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_14_capital: Adafruit
+  taxonomy_14_first_letter: a
+  taxonomy_14_first_letter_upper: A
+  taxonomy_14_length_1: a
+  taxonomy_14_length_2: ad
+  taxonomy_14_length_3: ada
+  taxonomy_14_length_4: adaf
+  taxonomy_14_length_5: adafr
+  taxonomy_14_upper: ADAFRUIT
+  taxonomy_14_upper_length_1: A
+  taxonomy_14_upper_length_2: AD
+  taxonomy_14_upper_length_3: ADA
+  taxonomy_14_upper_length_4: ADAF
+  taxonomy_14_upper_length_5: ADAFR
+  taxonomy_15: '3317'
+  taxonomy_15_capital: '3317'
+  taxonomy_15_first_letter: '3'
+  taxonomy_15_first_letter_upper: '3'
+  taxonomy_15_length_1: '3'
+  taxonomy_15_length_2: '33'
+  taxonomy_15_length_3: '331'
+  taxonomy_15_length_4: '3317'
+  taxonomy_15_length_5: '3317'
+  taxonomy_15_upper: '3317'
+  taxonomy_15_upper_length_1: '3'
+  taxonomy_15_upper_length_2: '33'
+  taxonomy_15_upper_length_3: '331'
+  taxonomy_15_upper_length_4: '3317'
+  taxonomy_15_upper_length_5: '3317'
+  taxonomy_1_capital: Electronic
+  taxonomy_1_first_letter: e
+  taxonomy_1_first_letter_upper: E
+  taxonomy_1_length_1: e
+  taxonomy_1_length_2: el
+  taxonomy_1_length_3: ele
+  taxonomy_1_length_4: elec
+  taxonomy_1_length_5: elect
+  taxonomy_1_upper: ELECTRONIC
+  taxonomy_1_upper_length_1: E
+  taxonomy_1_upper_length_2: EL
+  taxonomy_1_upper_length_3: ELE
+  taxonomy_1_upper_length_4: ELEC
+  taxonomy_1_upper_length_5: ELECT
+  taxonomy_2: breakout
+  taxonomy_2_capital: Breakout
+  taxonomy_2_first_letter: b
+  taxonomy_2_first_letter_upper: B
+  taxonomy_2_length_1: b
+  taxonomy_2_length_2: br
+  taxonomy_2_length_3: bre
+  taxonomy_2_length_4: brea
+  taxonomy_2_length_5: break
+  taxonomy_2_upper: BREAKOUT
+  taxonomy_2_upper_length_1: B
+  taxonomy_2_upper_length_2: BR
+  taxonomy_2_upper_length_3: BRE
+  taxonomy_2_upper_length_4: BREA
+  taxonomy_2_upper_length_5: BREAK
+  taxonomy_3: sensor
+  taxonomy_3_capital: Sensor
+  taxonomy_3_first_letter: s
+  taxonomy_3_first_letter_upper: S
+  taxonomy_3_length_1: s
+  taxonomy_3_length_2: se
+  taxonomy_3_length_3: sen
+  taxonomy_3_length_4: sens
+  taxonomy_3_length_5: senso
+  taxonomy_3_upper: SENSOR
+  taxonomy_3_upper_length_1: S
+  taxonomy_3_upper_length_2: SE
+  taxonomy_3_upper_length_3: SEN
+  taxonomy_3_upper_length_4: SENS
+  taxonomy_3_upper_length_5: SENSO
+  taxonomy_4: distance
+  taxonomy_4_capital: Distance
+  taxonomy_4_first_letter: d
+  taxonomy_4_first_letter_upper: D
+  taxonomy_4_length_1: d
+  taxonomy_4_length_2: di
+  taxonomy_4_length_3: dis
+  taxonomy_4_length_4: dist
+  taxonomy_4_length_5: dista
+  taxonomy_4_upper: DISTANCE
+  taxonomy_4_upper_length_1: D
+  taxonomy_4_upper_length_2: DI
+  taxonomy_4_upper_length_3: DIS
+  taxonomy_4_upper_length_4: DIST
+  taxonomy_4_upper_length_5: DISTA
+  taxonomy_5: time_of_flight
+  taxonomy_5_capital: Time Of Flight
+  taxonomy_5_first_letter: t
+  taxonomy_5_first_letter_upper: T
+  taxonomy_5_length_1: t
+  taxonomy_5_length_2: ti
+  taxonomy_5_length_3: tim
+  taxonomy_5_length_4: time
+  taxonomy_5_length_5: time_
+  taxonomy_5_upper: TIME_OF_FLIGHT
+  taxonomy_5_upper_length_1: T
+  taxonomy_5_upper_length_2: TI
+  taxonomy_5_upper_length_3: TIM
+  taxonomy_5_upper_length_4: TIME
+  taxonomy_5_upper_length_5: TIME_
+  taxonomy_6: vl53l0x
+  taxonomy_6_capital: Vl53L0X
+  taxonomy_6_first_letter: v
+  taxonomy_6_first_letter_upper: V
+  taxonomy_6_length_1: v
+  taxonomy_6_length_2: vl
+  taxonomy_6_length_3: vl5
+  taxonomy_6_length_4: vl53
+  taxonomy_6_length_5: vl53l
+  taxonomy_6_upper: VL53L0X
+  taxonomy_6_upper_length_1: V
+  taxonomy_6_upper_length_2: VL
+  taxonomy_6_upper_length_3: VL5
+  taxonomy_6_upper_length_4: VL53
+  taxonomy_6_upper_length_5: VL53L
+  taxonomy_7: stemma_qt
+  taxonomy_7_capital: Stemma Qt
+  taxonomy_7_first_letter: s
+  taxonomy_7_first_letter_upper: S
+  taxonomy_7_length_1: s
+  taxonomy_7_length_2: st
+  taxonomy_7_length_3: ste
+  taxonomy_7_length_4: stem
+  taxonomy_7_length_5: stemm
+  taxonomy_7_upper: STEMMA_QT
+  taxonomy_7_upper_length_1: S
+  taxonomy_7_upper_length_2: ST
+  taxonomy_7_upper_length_3: STE
+  taxonomy_7_upper_length_4: STEM
+  taxonomy_7_upper_length_5: STEMM
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_schema: breakout_function_v1
+  type: part
+  type_1: sensor
+  type_2: distance
+  type_3: time_of_flight
+  type_4: vl53l0x
+  url_chat: ''
+  webpage: https://www.adafruit.com/product/3317
+  webpage_adafruit: https://www.adafruit.com/product/3317
+type_1: sensor
+type_2: distance
+type_3: time_of_flight
+type_4: vl53l0x
+url_chat: ''
+webpage: https://www.adafruit.com/product/3317
+webpage_adafruit: https://www.adafruit.com/product/3317

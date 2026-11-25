@@ -1,0 +1,136 @@
+{
+  "name_readable": "Adafruit Feather RP2350 HSTX",
+  "manufacturer": "adafruit",
+  "part_number": "6000",
+  "webpage": null,
+  "sources": [
+    {
+      "id": "cad",
+      "url": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2350-PCB/main/Adafruit%20Feather%20RP2350.brd",
+      "title": "Manufacturer Eagle board",
+      "accessed": "2026-10-20",
+      "scope": "Connector nets and pad centres, PCB outline and mounting holes",
+      "local_file": "reference/board.brd",
+      "sha256": "5e25817a1add376be8b04192b4367b8cf9d7516f3e32f964120ed369d9a16ec4"
+    },
+    {
+      "id": "schematic",
+      "url": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2350-PCB/main/Adafruit%20Feather%20RP2350.sch",
+      "title": "Manufacturer Eagle schematic",
+      "accessed": "2026-10-20",
+      "scope": "Circuit and board net names",
+      "local_file": "reference/schematic.sch",
+      "sha256": "457c42c30fbdf3cab59c757cf3bc42a03ef838c455438c5ad684d24ee2019788"
+    },
+    {
+      "id": "product",
+      "url": "https://www.adafruit.com/product/6000",
+      "title": "Adafruit Feather RP2350 HSTX",
+      "accessed": "2026-10-20",
+      "scope": "Chip, flash capacity, product and assembly identification"
+    },
+    {
+      "id": "chip_datasheet",
+      "url": "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf",
+      "title": "chip_datasheet",
+      "accessed": "2026-10-22",
+      "scope": "GPIO mux, PWM, ADC and electrical characteristics"
+    },
+    {
+      "id": "interface_variant",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/variants/adafruit_feather_rp2350_hstx/pins_arduino.h",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Arduino variant pin assignments; not a physical header drawing",
+      "local_file": "reference/interface_defaults/rp_adafruit_feather_rp2350_hstx.h",
+      "sha256": "3de313cda300035cb9c2e8c544ad56d3b83b39f7cbf4393ddf005baf0ed2e615"
+    },
+    {
+      "id": "interface_board_selection",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/boards.txt",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework board names and variant selection; generic selections remain explicitly scoped",
+      "local_file": "reference/interface_defaults/rp_boards.txt",
+      "sha256": "8b4a95ba674134be5dd74e362c963629ba495da623970007de6626dbaad76090",
+      "content_scope": "excerpt_of_board_names_and_variant_selections",
+      "source_document_sha256": "12fb03a0c15a09f5bd61d32ce1a59e1bca721b6e9aa059494b060623fcb7a26f"
+    },
+    {
+      "id": "interface_runtime_uart",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/cores/rp2040/SerialUART.cpp",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/rp_SerialUART.cpp",
+      "sha256": "52976eb468d3a8776a685eb3cd9f770023c2b7dc3017c78e79ddb7f0e86c163c"
+    },
+    {
+      "id": "interface_runtime_i2c",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/libraries/Wire/src/Wire.cpp",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/rp_Wire.cpp",
+      "sha256": "a27b11701b99a3d7e1936fc47ebb05d639ca318357bba574800b5bbd40c80075"
+    },
+    {
+      "id": "interface_runtime_spi",
+      "url": "https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/libraries/SPI/src/SPI.cpp",
+      "revision": "d087696645b98dce8a3df92c0afff40a3745d295",
+      "retrieved_date": "2026-10-23",
+      "scope": "Framework API construction/default behavior; USB Serial is separate from UART pin aliases",
+      "local_file": "reference/interface_defaults/rp_SPI.cpp",
+      "sha256": "523423a2d53d9cb5ce37ee7c3533850fcaea3c43e50a4e55454e4dc3e81e6029"
+    }
+  ],
+  "dimensions_mm": {
+    "width": 22.86,
+    "height": 50.8,
+    "assembled_height": null,
+    "scope": "pcb_outline_excludes_usb_overhang",
+    "pcb_thickness": null,
+    "source_id": "cad"
+  },
+  "coordinate_system": {
+    "units": "mm",
+    "origin": "centre_of_pcb_outline",
+    "view": "top_with_usb_at_positive_y",
+    "x_positive": "right",
+    "y_positive": "towards_usb"
+  },
+  "mounting_hole_details": [
+    {
+      "id": "H1",
+      "x_mm": 8.89,
+      "y_mm": -22.86,
+      "diameter_mm": 2.54,
+      "plated": false,
+      "source_id": "cad"
+    },
+    {
+      "id": "H2",
+      "x_mm": -8.89,
+      "y_mm": -22.86,
+      "diameter_mm": 2.54,
+      "plated": false,
+      "source_id": "cad"
+    },
+    {
+      "id": "H3",
+      "x_mm": 8.89,
+      "y_mm": 22.86,
+      "diameter_mm": 2.5,
+      "plated": true,
+      "source_id": "cad"
+    },
+    {
+      "id": "H4",
+      "x_mm": -8.89,
+      "y_mm": 22.86,
+      "diameter_mm": 2.5,
+      "plated": true,
+      "source_id": "cad"
+    }
+  ]
+}

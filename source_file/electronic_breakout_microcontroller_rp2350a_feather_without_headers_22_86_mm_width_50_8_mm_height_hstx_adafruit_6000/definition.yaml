@@ -1,0 +1,3055 @@
+schema_version: 1
+item_kind: breakout
+name_readable: Adafruit Feather RP2350 HSTX
+manufacturer: adafruit
+part_number: '6000'
+taxonomy_1: electronic
+taxonomy_2: breakout
+taxonomy_3: microcontroller
+taxonomy_4: rp2350a
+taxonomy_5: feather
+taxonomy_6: ''
+taxonomy_7: without_headers
+taxonomy_8: 22_86_mm_width_50_8_mm_height
+taxonomy_9: hstx
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_15: '6000'
+dimensions_mm:
+  width: 22.86
+  height: 50.8
+  assembled_height: null
+  scope: pcb_outline_excludes_usb_overhang
+  pcb_thickness: null
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: centre_of_pcb_outline
+  view: top_with_usb_at_positive_y
+  x_positive: right
+  y_positive: towards_usb
+mounting_holes:
+- - 8.89
+  - -22.86
+- - -8.89
+  - -22.86
+- - 8.89
+  - 22.86
+- - -8.89
+  - 22.86
+mounting_hole_details:
+- id: H1
+  x_mm: 8.89
+  y_mm: -22.86
+  diameter_mm: 2.54
+  plated: false
+  source_id: cad
+- id: H2
+  x_mm: -8.89
+  y_mm: -22.86
+  diameter_mm: 2.54
+  plated: false
+  source_id: cad
+- id: H3
+  x_mm: 8.89
+  y_mm: 22.86
+  diameter_mm: 2.5
+  plated: true
+  source_id: cad
+- id: H4
+  x_mm: -8.89
+  y_mm: 22.86
+  diameter_mm: 2.5
+  plated: true
+  source_id: cad
+mounting_hole_status: documented
+pins:
+  JP1_1:
+    connector: JP1
+    number: '1'
+    name: PSRAM_CS
+    gpio: 8
+    adc_channel: null
+    chip_pin_number: '12'
+    x_mm: -10.16
+    y_mm: -19.05
+    source_id: cad
+    net_name: PSRAM_CS
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: -19.05
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM4A
+    - PIO
+    - UART1_TX
+    - I2C0_SDA
+    - SPI1_RX
+    restrictions: []
+    aliases:
+    - PSRAM_CS
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_2:
+    connector: JP1
+    number: '2'
+    name: TX
+    gpio: 0
+    adc_channel: null
+    chip_pin_number: '2'
+    x_mm: -10.16
+    y_mm: -16.51
+    source_id: cad
+    net_name: TX
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: -16.51
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM0A
+    - PIO
+    - UART0_TX
+    - I2C0_SDA
+    - SPI0_RX
+    restrictions: []
+    aliases:
+    - TX
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: uart
+      signal: tx
+  JP1_3:
+    connector: JP1
+    number: '3'
+    name: RX
+    gpio: 1
+    adc_channel: null
+    chip_pin_number: '3'
+    x_mm: -10.16
+    y_mm: -13.97
+    source_id: cad
+    net_name: RX
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: -13.97
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM0B
+    - PIO
+    - UART0_RX
+    - I2C0_SCL
+    - SPI0_CSn
+    restrictions: []
+    aliases:
+    - RX
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: uart
+      signal: rx
+  JP1_4:
+    connector: JP1
+    number: '4'
+    name: MISO
+    gpio: 20
+    adc_channel: null
+    chip_pin_number: '32'
+    x_mm: -10.16
+    y_mm: -11.43
+    source_id: cad
+    net_name: MISO
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: -11.43
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM2A
+    - PIO
+    - UART1_TX
+    - I2C0_SDA
+    - SPI0_RX
+    restrictions: []
+    aliases:
+    - MISO
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi
+      signal: miso
+  JP1_5:
+    connector: JP1
+    number: '5'
+    name: MOSI
+    gpio: 23
+    adc_channel: null
+    chip_pin_number: '35'
+    x_mm: -10.16
+    y_mm: -8.89
+    source_id: cad
+    net_name: MOSI
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: -8.89
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM3B
+    - PIO
+    - UART1_RTS
+    - I2C1_SCL
+    - SPI0_TX
+    restrictions: []
+    aliases:
+    - MOSI
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi
+      signal: mosi
+  JP1_6:
+    connector: JP1
+    number: '6'
+    name: SCK
+    gpio: 22
+    adc_channel: null
+    chip_pin_number: '34'
+    x_mm: -10.16
+    y_mm: -6.35
+    source_id: cad
+    net_name: SCK
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: -6.35
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM3A
+    - PIO
+    - UART1_CTS
+    - I2C1_SDA
+    - SPI0_SCK
+    restrictions: []
+    aliases:
+    - SCK
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: spi
+      signal: sck
+  JP1_7:
+    connector: JP1
+    number: '7'
+    name: D25
+    gpio: 25
+    adc_channel: null
+    chip_pin_number: '37'
+    x_mm: -10.16
+    y_mm: -3.81
+    source_id: cad
+    net_name: D25
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: -3.81
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM4B
+    - PIO
+    - UART1_RX
+    - I2C0_SCL
+    - SPI1_CSn
+    restrictions: []
+    aliases:
+    - D25
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_8:
+    connector: JP1
+    number: '8'
+    name: D24
+    gpio: 24
+    adc_channel: null
+    chip_pin_number: '36'
+    x_mm: -10.16
+    y_mm: -1.27
+    source_id: cad
+    net_name: D24
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: -1.27
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM4A
+    - PIO
+    - UART1_TX
+    - I2C0_SDA
+    - SPI1_RX
+    restrictions: []
+    aliases:
+    - D24
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_9:
+    connector: JP1
+    number: '9'
+    name: A3
+    gpio: 29
+    adc_channel: 3
+    chip_pin_number: '43'
+    x_mm: -10.16
+    y_mm: 1.27
+    source_id: cad
+    net_name: A3
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: 1.27
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+    functions:
+    - PWM6B
+    - PIO
+    - UART0_RX
+    - I2C0_SCL
+    - SPI1_CSn
+    restrictions: []
+    aliases:
+    - A3
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: 0
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_10:
+    connector: JP1
+    number: '10'
+    name: A2
+    gpio: 28
+    adc_channel: 2
+    chip_pin_number: '42'
+    x_mm: -10.16
+    y_mm: 3.81
+    source_id: cad
+    net_name: A2
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: 3.81
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+    functions:
+    - PWM6A
+    - PIO
+    - UART0_TX
+    - I2C0_SDA
+    - SPI1_RX
+    restrictions: []
+    aliases:
+    - A2
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: 0
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_11:
+    connector: JP1
+    number: '11'
+    name: A1
+    gpio: 27
+    adc_channel: 1
+    chip_pin_number: '41'
+    x_mm: -10.16
+    y_mm: 6.35
+    source_id: cad
+    net_name: A1
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: 6.35
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+    functions:
+    - PWM5B
+    - PIO
+    - UART1_RTS
+    - I2C1_SCL
+    - SPI1_TX
+    restrictions: []
+    aliases:
+    - A1
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: 0
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_12:
+    connector: JP1
+    number: '12'
+    name: A0
+    gpio: 26
+    adc_channel: 0
+    chip_pin_number: '40'
+    x_mm: -10.16
+    y_mm: 8.89
+    source_id: cad
+    net_name: A0
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: 8.89
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+    functions:
+    - PWM5A
+    - PIO
+    - UART1_CTS
+    - I2C1_SDA
+    - SPI1_SCK
+    restrictions: []
+    aliases:
+    - A0
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: 0
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: true
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP1_13:
+    connector: JP1
+    number: '13'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: -10.16
+    y_mm: 11.43
+    source_id: cad
+    net_name: GND
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: 11.43
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities: []
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  JP1_14:
+    connector: JP1
+    number: '14'
+    name: 3.3V
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: -10.16
+    y_mm: 13.97
+    source_id: cad
+    net_name: 3.3V
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: 13.97
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities: []
+    functions:
+    - 3.3V
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  JP1_15:
+    connector: JP1
+    number: '15'
+    name: 3.3V
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: -10.16
+    y_mm: 16.51
+    source_id: cad
+    net_name: 3.3V
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: 16.51
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities: []
+    functions:
+    - 3.3V
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  JP1_16:
+    connector: JP1
+    number: '16'
+    name: '!RESET'
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '26'
+    x_mm: -10.16
+    y_mm: 19.05
+    source_id: cad
+    net_name: '!RESET'
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: -10.16
+      y_mm: 19.05
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities: []
+    functions:
+    - '!RESET'
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: control
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  X1_1:
+    connector: X1
+    number: '1'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 4.174
+    y_mm: 15.478
+    source_id: cad
+    net_name: GND
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: 4.174
+      y_mm: 15.478
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  X1_2:
+    connector: X1
+    number: '2'
+    name: VBAT
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 4.174
+    y_mm: 13.478
+    source_id: cad
+    net_name: VBAT
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: 4.174
+      y_mm: 13.478
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - VBAT
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  JP3_1:
+    connector: JP3
+    number: '1'
+    name: VBAT
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 10.2235
+    y_mm: 8.89
+    source_id: cad
+    net_name: VBAT
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: 10.2235
+      y_mm: 8.89
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities: []
+    functions:
+    - VBAT
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  JP3_2:
+    connector: JP3
+    number: '2'
+    name: EN
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 10.2235
+    y_mm: 6.35
+    source_id: cad
+    net_name: EN
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: 10.2235
+      y_mm: 6.35
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities: []
+    functions:
+    - EN
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: control
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  JP3_3:
+    connector: JP3
+    number: '3'
+    name: VBUS
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 10.2235
+    y_mm: 3.81
+    source_id: cad
+    net_name: VBUS
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: 10.2235
+      y_mm: 3.81
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities: []
+    functions:
+    - VBUS
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  JP3_4:
+    connector: JP3
+    number: '4'
+    name: D7
+    gpio: 7
+    adc_channel: null
+    chip_pin_number: '10'
+    x_mm: 10.2235
+    y_mm: 1.27
+    source_id: cad
+    net_name: D7
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: 10.2235
+      y_mm: 1.27
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM3B
+    - PIO
+    - UART1_RTS
+    - I2C1_SCL
+    - SPI0_TX
+    restrictions: []
+    aliases:
+    - D7
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP3_5:
+    connector: JP3
+    number: '5'
+    name: D4
+    gpio: 4
+    adc_channel: null
+    chip_pin_number: '7'
+    x_mm: 10.2235
+    y_mm: -1.27
+    source_id: cad
+    net_name: D4
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: 10.2235
+      y_mm: -1.27
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM2A
+    - PIO
+    - UART1_TX
+    - I2C0_SDA
+    - SPI0_RX
+    restrictions: []
+    aliases:
+    - D4
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP3_6:
+    connector: JP3
+    number: '6'
+    name: D11
+    gpio: 11
+    adc_channel: null
+    chip_pin_number: '15'
+    x_mm: 10.2235
+    y_mm: -3.81
+    source_id: cad
+    net_name: D11
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: 10.2235
+      y_mm: -3.81
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM5B
+    - PIO
+    - UART1_RTS
+    - I2C1_SCL
+    - SPI1_TX
+    restrictions: []
+    aliases:
+    - D11
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP3_7:
+    connector: JP3
+    number: '7'
+    name: D10
+    gpio: 10
+    adc_channel: null
+    chip_pin_number: '14'
+    x_mm: 10.2235
+    y_mm: -6.35
+    source_id: cad
+    net_name: D10
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: 10.2235
+      y_mm: -6.35
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM5A
+    - PIO
+    - UART1_CTS
+    - I2C1_SDA
+    - SPI1_SCK
+    restrictions: []
+    aliases:
+    - D10
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP3_8:
+    connector: JP3
+    number: '8'
+    name: D9
+    gpio: 9
+    adc_channel: null
+    chip_pin_number: '13'
+    x_mm: 10.2235
+    y_mm: -8.89
+    source_id: cad
+    net_name: D9
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: 10.2235
+      y_mm: -8.89
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM4B
+    - PIO
+    - UART1_RX
+    - I2C0_SCL
+    - SPI1_CSn
+    restrictions: []
+    aliases:
+    - D9
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP3_9:
+    connector: JP3
+    number: '9'
+    name: D6
+    gpio: 6
+    adc_channel: null
+    chip_pin_number: '9'
+    x_mm: 10.2235
+    y_mm: -11.43
+    source_id: cad
+    net_name: D6
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: 10.2235
+      y_mm: -11.43
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM3A
+    - PIO
+    - UART1_CTS
+    - I2C1_SDA
+    - SPI0_SCK
+    restrictions: []
+    aliases:
+    - D6
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP3_10:
+    connector: JP3
+    number: '10'
+    name: D5
+    gpio: 5
+    adc_channel: null
+    chip_pin_number: '8'
+    x_mm: 10.2235
+    y_mm: -13.97
+    source_id: cad
+    net_name: D5
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: 10.2235
+      y_mm: -13.97
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM2B
+    - PIO
+    - UART1_RX
+    - I2C0_SCL
+    - SPI0_CSn
+    restrictions: []
+    aliases:
+    - D5
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  JP3_11:
+    connector: JP3
+    number: '11'
+    name: SCL
+    gpio: 3
+    adc_channel: null
+    chip_pin_number: '5'
+    x_mm: 10.2235
+    y_mm: -16.51
+    source_id: cad
+    net_name: SCL
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: 10.2235
+      y_mm: -16.51
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM1B
+    - PIO
+    - UART0_RTS
+    - I2C1_SCL
+    - SPI0_TX
+    restrictions: []
+    aliases:
+    - SCL
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: i2c
+      signal: scl
+  JP3_12:
+    connector: JP3
+    number: '12'
+    name: SDA
+    gpio: 2
+    adc_channel: null
+    chip_pin_number: '4'
+    x_mm: 10.2235
+    y_mm: -19.05
+    source_id: cad
+    net_name: SDA
+    primary_drill_mm: 1.0
+    side: both
+    physical_contacts:
+    - x_mm: 10.2235
+      y_mm: -19.05
+      kind: pad
+      side: both
+      drill_mm: 1.0
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM1A
+    - PIO
+    - UART0_CTS
+    - I2C1_SDA
+    - SPI0_SCK
+    restrictions: []
+    aliases:
+    - SDA
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: i2c
+      signal: sda
+  TP3_P$1:
+    connector: TP3
+    number: P$1
+    name: USBBOOT
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: -6.985
+    y_mm: 12.954
+    source_id: cad
+    net_name: USBBOOT
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: -6.985
+      y_mm: 12.954
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - USBBOOT
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: control
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  SWD_P$1:
+    connector: SWD
+    number: P$1
+    name: SWDIO
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '25'
+    x_mm: -2.0955
+    y_mm: 5.969
+    source_id: cad
+    net_name: SWDIO
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: -2.0955
+      y_mm: 5.969
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - SWDIO
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: debug
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  SWC_P$1:
+    connector: SWC
+    number: P$1
+    name: SWCLK
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '24'
+    x_mm: -2.0955
+    y_mm: 8.509
+    source_id: cad
+    net_name: SWCLK
+    primary_drill_mm: 0
+    side: bottom
+    physical_contacts:
+    - x_mm: -2.0955
+      y_mm: 8.509
+      kind: smd
+      side: bottom
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - SWCLK
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: debug
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  CN2_1:
+    connector: CN2
+    number: '1'
+    name: 3.3V
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 5.123
+    y_mm: -16.626
+    source_id: cad
+    net_name: 3.3V
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: 5.123
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - 3.3V
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  CN2_2:
+    connector: CN2
+    number: '2'
+    name: SDA
+    gpio: 2
+    adc_channel: null
+    chip_pin_number: '4'
+    x_mm: 4.623
+    y_mm: -16.626
+    source_id: cad
+    net_name: SDA
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: 4.623
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM1A
+    - PIO
+    - UART0_CTS
+    - I2C1_SDA
+    - SPI0_SCK
+    restrictions: []
+    aliases:
+    - SDA
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: i2c
+      signal: sda
+  CN2_3:
+    connector: CN2
+    number: '3'
+    name: SCL
+    gpio: 3
+    adc_channel: null
+    chip_pin_number: '5'
+    x_mm: 4.123
+    y_mm: -16.626
+    source_id: cad
+    net_name: SCL
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: 4.123
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM1B
+    - PIO
+    - UART0_RTS
+    - I2C1_SCL
+    - SPI0_TX
+    restrictions: []
+    aliases:
+    - SCL
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: i2c
+      signal: scl
+  CN2_4:
+    connector: CN2
+    number: '4'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 3.623
+    y_mm: -16.626
+    source_id: cad
+    net_name: GND
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: 3.623
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  CN2_5:
+    connector: CN2
+    number: '5'
+    name: D10
+    gpio: 10
+    adc_channel: null
+    chip_pin_number: '14'
+    x_mm: 3.123
+    y_mm: -16.626
+    source_id: cad
+    net_name: D10
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: 3.123
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM5A
+    - PIO
+    - UART1_CTS
+    - I2C1_SDA
+    - SPI1_SCK
+    restrictions: []
+    aliases:
+    - D10
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  CN2_6:
+    connector: CN2
+    number: '6'
+    name: D11
+    gpio: 11
+    adc_channel: null
+    chip_pin_number: '15'
+    x_mm: 2.623
+    y_mm: -16.626
+    source_id: cad
+    net_name: D11
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: 2.623
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM5B
+    - PIO
+    - UART1_RTS
+    - I2C1_SCL
+    - SPI1_TX
+    restrictions: []
+    aliases:
+    - D11
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  CN2_7:
+    connector: CN2
+    number: '7'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 2.123
+    y_mm: -16.626
+    source_id: cad
+    net_name: GND
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: 2.123
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  CN2_8:
+    connector: CN2
+    number: '8'
+    name: NC
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 1.623
+    y_mm: -16.626
+    source_id: cad
+    net_name: ''
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: 1.623
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - NC
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: not_connected
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  CN2_9:
+    connector: CN2
+    number: '9'
+    name: NC
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 1.123
+    y_mm: -16.626
+    source_id: cad
+    net_name: ''
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: 1.123
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - NC
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: not_connected
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  CN2_10:
+    connector: CN2
+    number: '10'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: 0.623
+    y_mm: -16.626
+    source_id: cad
+    net_name: GND
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: 0.623
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  CN2_11:
+    connector: CN2
+    number: '11'
+    name: HSTX12
+    gpio: 12
+    adc_channel: null
+    chip_pin_number: '16'
+    x_mm: 0.123
+    y_mm: -16.626
+    source_id: cad
+    net_name: HSTX12
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: 0.123
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM6A
+    - PIO
+    - UART0_TX
+    - I2C0_SDA
+    - SPI1_RX
+    restrictions: []
+    aliases:
+    - HSTX12
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  CN2_12:
+    connector: CN2
+    number: '12'
+    name: HSTX13
+    gpio: 13
+    adc_channel: null
+    chip_pin_number: '17'
+    x_mm: -0.377
+    y_mm: -16.626
+    source_id: cad
+    net_name: HSTX13
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -0.377
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM6B
+    - PIO
+    - UART0_RX
+    - I2C0_SCL
+    - SPI1_CSn
+    restrictions: []
+    aliases:
+    - HSTX13
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  CN2_13:
+    connector: CN2
+    number: '13'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: -0.877
+    y_mm: -16.626
+    source_id: cad
+    net_name: GND
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -0.877
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  CN2_14:
+    connector: CN2
+    number: '14'
+    name: HSTX14
+    gpio: 14
+    adc_channel: null
+    chip_pin_number: '18'
+    x_mm: -1.377
+    y_mm: -16.626
+    source_id: cad
+    net_name: HSTX14
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -1.377
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM7A
+    - PIO
+    - UART0_CTS
+    - I2C1_SDA
+    - SPI1_SCK
+    restrictions: []
+    aliases:
+    - HSTX14
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  CN2_15:
+    connector: CN2
+    number: '15'
+    name: HSTX15
+    gpio: 15
+    adc_channel: null
+    chip_pin_number: '19'
+    x_mm: -1.877
+    y_mm: -16.626
+    source_id: cad
+    net_name: HSTX15
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -1.877
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM7B
+    - PIO
+    - UART0_RTS
+    - I2C1_SCL
+    - SPI1_TX
+    restrictions: []
+    aliases:
+    - HSTX15
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  CN2_16:
+    connector: CN2
+    number: '16'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: -2.377
+    y_mm: -16.626
+    source_id: cad
+    net_name: GND
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -2.377
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  CN2_17:
+    connector: CN2
+    number: '17'
+    name: HSTX16
+    gpio: 16
+    adc_channel: null
+    chip_pin_number: '27'
+    x_mm: -2.877
+    y_mm: -16.626
+    source_id: cad
+    net_name: HSTX16
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -2.877
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM0A
+    - PIO
+    - UART0_TX
+    - I2C0_SDA
+    - SPI0_RX
+    restrictions: []
+    aliases:
+    - HSTX16
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  CN2_18:
+    connector: CN2
+    number: '18'
+    name: HSTX17
+    gpio: 17
+    adc_channel: null
+    chip_pin_number: '28'
+    x_mm: -3.377
+    y_mm: -16.626
+    source_id: cad
+    net_name: HSTX17
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -3.377
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM0B
+    - PIO
+    - UART0_RX
+    - I2C0_SCL
+    - SPI0_CSn
+    restrictions: []
+    aliases:
+    - HSTX17
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  CN2_19:
+    connector: CN2
+    number: '19'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: -3.877
+    y_mm: -16.626
+    source_id: cad
+    net_name: GND
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -3.877
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  CN2_20:
+    connector: CN2
+    number: '20'
+    name: HSTX18
+    gpio: 18
+    adc_channel: null
+    chip_pin_number: '29'
+    x_mm: -4.377
+    y_mm: -16.626
+    source_id: cad
+    net_name: HSTX18
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -4.377
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM1A
+    - PIO
+    - UART0_CTS
+    - I2C1_SDA
+    - SPI0_SCK
+    restrictions: []
+    aliases:
+    - HSTX18
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  CN2_21:
+    connector: CN2
+    number: '21'
+    name: HSTX19
+    gpio: 19
+    adc_channel: null
+    chip_pin_number: '31'
+    x_mm: -4.877
+    y_mm: -16.626
+    source_id: cad
+    net_name: HSTX19
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -4.877
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM1B
+    - PIO
+    - UART0_RTS
+    - I2C1_SCL
+    - SPI0_TX
+    restrictions: []
+    aliases:
+    - HSTX19
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles: []
+  CN2_22:
+    connector: CN2
+    number: '22'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: -5.377
+    y_mm: -16.626
+    source_id: cad
+    net_name: GND
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -5.377
+      y_mm: -16.626
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  CONN1_2:
+    connector: CONN1
+    number: '2'
+    name: 3.3V
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: -2.0035
+    y_mm: -11.3745
+    source_id: cad
+    net_name: 3.3V
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -2.0035
+      y_mm: -11.3745
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - 3.3V
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: power
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  CONN1_3:
+    connector: CONN1
+    number: '3'
+    name: SDA
+    gpio: 2
+    adc_channel: null
+    chip_pin_number: '4'
+    x_mm: -2.0035
+    y_mm: -12.3745
+    source_id: cad
+    net_name: SDA
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -2.0035
+      y_mm: -12.3745
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM1A
+    - PIO
+    - UART0_CTS
+    - I2C1_SDA
+    - SPI0_SCK
+    restrictions: []
+    aliases:
+    - SDA
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: i2c
+      signal: sda
+  CONN1_1:
+    connector: CONN1
+    number: '1'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: -2.0035
+    y_mm: -10.3745
+    source_id: cad
+    net_name: GND
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -2.0035
+      y_mm: -10.3745
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  CONN1_4:
+    connector: CONN1
+    number: '4'
+    name: SCL
+    gpio: 3
+    adc_channel: null
+    chip_pin_number: '5'
+    x_mm: -2.0035
+    y_mm: -13.3745
+    source_id: cad
+    net_name: SCL
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -2.0035
+      y_mm: -13.3745
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities:
+    - gpio
+    - digital_input
+    - digital_output
+    - pwm
+    type: gpio
+    signal_types:
+    - digital
+    functions:
+    - PWM1B
+    - PIO
+    - UART0_RTS
+    - I2C1_SCL
+    - SPI0_TX
+    restrictions: []
+    aliases:
+    - SCL
+    surface: unspecified
+    direction: bidirectional
+    available_for_general_io: true
+    adc_unit: null
+    logic_voltage_v: 3.3
+    input_only: false
+    function_mapping_source_id: chip_datasheet
+    lab_analog_eligible: false
+    capability_source_id: chip_datasheet
+    default_interface_roles:
+    - interface: i2c
+      signal: scl
+  DEBUG_2:
+    connector: DEBUG
+    number: '2'
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: -7.3375
+    y_mm: -12.065
+    source_id: cad
+    net_name: GND
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -7.3375
+      y_mm: -12.065
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - GND
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: ground
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  DEBUG_3:
+    connector: DEBUG
+    number: '3'
+    name: SWDIO
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '25'
+    x_mm: -7.3375
+    y_mm: -13.065
+    source_id: cad
+    net_name: SWDIO
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -7.3375
+      y_mm: -13.065
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - SWDIO
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: debug
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+  DEBUG_1:
+    connector: DEBUG
+    number: '1'
+    name: SWCLK
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '24'
+    x_mm: -7.3375
+    y_mm: -11.065
+    source_id: cad
+    net_name: SWCLK
+    primary_drill_mm: 0
+    side: top
+    physical_contacts:
+    - x_mm: -7.3375
+      y_mm: -11.065
+      kind: smd
+      side: top
+      drill_mm: null
+      source_id: cad
+    capabilities: []
+    functions:
+    - SWCLK
+    restrictions: []
+    aliases: []
+    surface: unspecified
+    type: debug
+    direction: not_applicable
+    signal_types: []
+    available_for_general_io: false
+    adc_unit: null
+    default_interface_roles: []
+connectors:
+  JP1:
+    cad_reference: JP1
+    cad_footprint: 1X16_ROUND
+    source_id: cad
+    contact_count: 16
+  X1:
+    cad_reference: X1
+    cad_footprint: JSTPH2_BATT
+    source_id: cad
+    contact_count: 2
+  JP3:
+    cad_reference: JP3
+    cad_footprint: 1X12_ROUND
+    source_id: cad
+    contact_count: 12
+  TP3:
+    cad_reference: TP3
+    cad_footprint: TESTPOINT_ROUND_1.5MM_NO
+    source_id: cad
+    contact_count: 1
+  SWD:
+    cad_reference: SWD
+    cad_footprint: TESTPOINT_ROUND_1MM
+    source_id: cad
+    contact_count: 1
+  SWC:
+    cad_reference: SWC
+    cad_footprint: TESTPOINT_ROUND_1MM
+    source_id: cad
+    contact_count: 1
+  CN2:
+    cad_reference: CN2
+    cad_footprint: FPC_22PIN
+    source_id: cad
+    contact_count: 22
+  CONN1:
+    cad_reference: CONN1
+    cad_footprint: JST_SH4_RA
+    source_id: cad
+    contact_count: 4
+  DEBUG:
+    cad_reference: DEBUG
+    cad_footprint: JST_SH3_RA
+    source_id: cad
+    contact_count: 3
+sources:
+- id: cad
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2350-PCB/main/Adafruit%20Feather%20RP2350.brd
+  title: Manufacturer Eagle board
+  accessed: '2026-10-20'
+  scope: Connector nets and pad centres, PCB outline and mounting holes
+  local_file: reference/board.brd
+  sha256: 5e25817a1add376be8b04192b4367b8cf9d7516f3e32f964120ed369d9a16ec4
+- id: schematic
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2350-PCB/main/Adafruit%20Feather%20RP2350.sch
+  title: Manufacturer Eagle schematic
+  accessed: '2026-10-20'
+  scope: Circuit and board net names
+  local_file: reference/schematic.sch
+  sha256: 457c42c30fbdf3cab59c757cf3bc42a03ef838c455438c5ad684d24ee2019788
+- id: product
+  url: https://www.adafruit.com/product/6000
+  title: Adafruit Feather RP2350 HSTX
+  accessed: '2026-10-20'
+  scope: Chip, flash capacity, product and assembly identification
+- id: chip_datasheet
+  url: https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf
+  title: chip_datasheet
+  accessed: '2026-10-22'
+  scope: GPIO mux, PWM, ADC and electrical characteristics
+- id: interface_variant
+  url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/variants/adafruit_feather_rp2350_hstx/pins_arduino.h
+  revision: d087696645b98dce8a3df92c0afff40a3745d295
+  retrieved_date: '2026-10-23'
+  scope: Arduino variant pin assignments; not a physical header drawing
+  local_file: reference/interface_defaults/rp_adafruit_feather_rp2350_hstx.h
+  sha256: 3de313cda300035cb9c2e8c544ad56d3b83b39f7cbf4393ddf005baf0ed2e615
+- id: interface_board_selection
+  url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/boards.txt
+  revision: d087696645b98dce8a3df92c0afff40a3745d295
+  retrieved_date: '2026-10-23'
+  scope: Framework board names and variant selection; generic selections remain explicitly scoped
+  local_file: reference/interface_defaults/rp_boards.txt
+  sha256: 8b4a95ba674134be5dd74e362c963629ba495da623970007de6626dbaad76090
+  content_scope: excerpt_of_board_names_and_variant_selections
+  source_document_sha256: 12fb03a0c15a09f5bd61d32ce1a59e1bca721b6e9aa059494b060623fcb7a26f
+- id: interface_runtime_uart
+  url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/cores/rp2040/SerialUART.cpp
+  revision: d087696645b98dce8a3df92c0afff40a3745d295
+  retrieved_date: '2026-10-23'
+  scope: Framework API construction/default behavior; USB Serial is separate from UART pin aliases
+  local_file: reference/interface_defaults/rp_SerialUART.cpp
+  sha256: 52976eb468d3a8776a685eb3cd9f770023c2b7dc3017c78e79ddb7f0e86c163c
+- id: interface_runtime_i2c
+  url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/libraries/Wire/src/Wire.cpp
+  revision: d087696645b98dce8a3df92c0afff40a3745d295
+  retrieved_date: '2026-10-23'
+  scope: Framework API construction/default behavior; USB Serial is separate from UART pin aliases
+  local_file: reference/interface_defaults/rp_Wire.cpp
+  sha256: a27b11701b99a3d7e1936fc47ebb05d639ca318357bba574800b5bbd40c80075
+- id: interface_runtime_spi
+  url: https://raw.githubusercontent.com/earlephilhower/arduino-pico/d087696645b98dce8a3df92c0afff40a3745d295/libraries/SPI/src/SPI.cpp
+  revision: d087696645b98dce8a3df92c0afff40a3745d295
+  retrieved_date: '2026-10-23'
+  scope: Framework API construction/default behavior; USB Serial is separate from UART pin aliases
+  local_file: reference/interface_defaults/rp_SPI.cpp
+  sha256: 523423a2d53d9cb5ce37ee7c3533850fcaea3c43e50a4e55454e4dc3e81e6029
+notes:
+- Pin numbers and net names follow manufacturer CAD; firmware aliases such as D3 are not GPIO numbers.
+  Connector pad coordinates are solder-pad centres, not mating-contact positions.
+- Physical contacts sharing a KiCad pad number are grouped under physical_contacts. Extra castellated
+  Eagle pad numbers remain separate entries.
+- CAD specifies 2.50 mm plated mounting holes at the USB end and 2.54 mm non-plated holes at the far end.
+- 'Product 6000: PSRAM footprint is unpopulated. Product 6130 with fitted PSRAM needs its own definition.'
+data_gaps:
+- Assembled height and component keepout envelopes have not been captured.
+form_factor: feather
+chip:
+  part_number: rp2350a
+  oomp_id: electronic_ic_qfn_60_microcontroller_rp2_raspberry_pi_rp2350a
+  silicon_revision: null
+  family: rp2350
+assembly:
+  headers: without_headers
+  header_scope: main_expansion_headers_only
+  header_pitch_mm: 2.54
+memory:
+  external_flash_bytes: 8388608
+  psram_bytes: 0
+electrical:
+  logic_voltage_v: 3.3
+  usb_connector: usb_c
+  gpio_5v_tolerant: false
+breakout_pcb_width: 22.86
+breakout_pcb_height: 50.8
+breakout_description: 22_86_mm_width_50_8_mm_height
+pinout_scope: Listed expansion connectors and debug/test pads. USB socket contacts and component pads
+  are excluded.
+onboard_gpio_connections:
+- gpio: 0
+  net_name: TX
+  source_id: cad
+- gpio: 1
+  net_name: RX
+  source_id: cad
+- gpio: 2
+  net_name: SDA
+  source_id: cad
+- gpio: 3
+  net_name: SCL
+  source_id: cad
+- gpio: 4
+  net_name: D4
+  source_id: cad
+- gpio: 5
+  net_name: D5
+  source_id: cad
+- gpio: 6
+  net_name: D6
+  source_id: cad
+- gpio: 7
+  net_name: D7
+  source_id: cad
+- gpio: 8
+  net_name: PSRAM_CS
+  source_id: cad
+- gpio: 9
+  net_name: D9
+  source_id: cad
+- gpio: 10
+  net_name: D10
+  source_id: cad
+- gpio: 11
+  net_name: D11
+  source_id: cad
+- gpio: 12
+  net_name: HSTX12
+  source_id: cad
+- gpio: 13
+  net_name: HSTX13
+  source_id: cad
+- gpio: 14
+  net_name: HSTX14
+  source_id: cad
+- gpio: 15
+  net_name: HSTX15
+  source_id: cad
+- gpio: 16
+  net_name: HSTX16
+  source_id: cad
+- gpio: 17
+  net_name: HSTX17
+  source_id: cad
+- gpio: 18
+  net_name: HSTX18
+  source_id: cad
+- gpio: 19
+  net_name: HSTX19
+  source_id: cad
+- gpio: 20
+  net_name: MISO
+  source_id: cad
+- gpio: 21
+  net_name: NEOPIX
+  source_id: cad
+- gpio: 22
+  net_name: SCK
+  source_id: cad
+- gpio: 23
+  net_name: MOSI
+  source_id: cad
+- gpio: 24
+  net_name: D24
+  source_id: cad
+- gpio: 25
+  net_name: D25
+  source_id: cad
+- gpio: 26
+  net_name: A0
+  source_id: cad
+- gpio: 27
+  net_name: A1
+  source_id: cad
+- gpio: 28
+  net_name: A2
+  source_id: cad
+- gpio: 29
+  net_name: A3
+  source_id: cad
+definition_import:
+  project: oobb_electronic_microcontroller_web_based_lab
+  path: source_file/electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_hstx_adafruit_6000/definition.yaml
+  date: '2026-10-22'
+  sha256: d7a1eff2e21e92a9bbf9f7bf51df17492414c075f3660bc4913af7c31ef557e0
+type_1: microcontroller
+type_2: rp2350a
+type_3: feather
+mounting_hole_candidates: []
+legacy_ids:
+- electronic_breakout_microcontroller_rp2350a_feather_22_86_mm_width_50_8_mm_height_28_pin_hstx_adafruit_6000
+chip_resources:
+  cpu_core_count: 2
+  clock_max_mhz: 150
+  pwm_channels: 24
+  hardware_i2c_controllers: 2
+  general_purpose_spi_controllers: 2
+  hardware_uart_controllers: 2
+  pio_state_machines: 12
+  scope: silicon resources; board routing and firmware may reduce availability
+  source_id: chip_datasheet
+lab_support:
+  status: catalogue_reference_only
+  automatic_firmware_enable: false
+  requires_reviewed_board_profile: true
+  gpio_matrix_routing: false
+pinout_status: documented_contact_inventory
+mounting_hole_radius_name: m2
+svg_details:
+  svg_name: microcontroller
+  stylesheet: microcontroller
+  width: 22.86
+  height: 50.8
+gpio_summary:
+  exposed:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  general_io_candidates:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  analog_candidates:
+  - 26
+  - 27
+  - 28
+  - 29
+  automatic_firmware_enable: false
+default_interfaces:
+  uart:
+    protocol: uart
+    status: documented
+    basis: framework_defaults
+    framework: arduino-pico
+    variant: adafruit_feather_rp2350_hstx
+    variant_scope: board_variant
+    api: Serial1
+    peripheral: uart0
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_uart
+    tx_gpio: 0
+    rx_gpio: 1
+    pin_keys:
+      tx:
+      - JP1_2
+      rx:
+      - JP1_3
+    signal_status:
+      tx: mapped
+      rx: mapped
+    notes:
+    - UART GPIOs are distinct from USB CDC/USB Serial. The meaning of Serial depends on the core and USB
+      build settings.
+  i2c:
+    protocol: i2c
+    status: documented
+    basis: framework_defaults
+    framework: arduino-pico
+    variant: adafruit_feather_rp2350_hstx
+    variant_scope: board_variant
+    api: Wire
+    peripheral: i2c1
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_i2c
+    sda_gpio: 2
+    scl_gpio: 3
+    pin_keys:
+      sda:
+      - JP3_12
+      - CN2_2
+      - CONN1_3
+      scl:
+      - JP3_11
+      - CN2_3
+      - CONN1_4
+    signal_status:
+      sda: mapped
+      scl: mapped
+    notes: []
+  spi:
+    protocol: spi
+    status: documented
+    basis: framework_defaults
+    framework: arduino-pico
+    variant: adafruit_feather_rp2350_hstx
+    variant_scope: board_variant
+    api: SPI
+    peripheral: spi0
+    source_ids:
+    - interface_variant
+    - interface_board_selection
+    - interface_runtime_spi
+    sck_gpio: 22
+    mosi_gpio: 23
+    miso_gpio: 20
+    ss_gpio: 21
+    pin_keys:
+      sck:
+      - JP1_6
+      mosi:
+      - JP1_5
+      miso:
+      - JP1_4
+      ss: []
+    signal_status:
+      sck: mapped
+      mosi: mapped
+      miso: mapped
+      ss: not_in_pinout
+    notes:
+    - ss is the framework chip-select alias/default, not an automatically asserted CS. Select and drive
+      CS as required by the peripheral and library.
+interface_defaults_version: 1
+oobb_details:
+- breakout_pcb_width: 22.86
+  breakout_pcb_height: 50.8
+  mounting_holes:
+  - - 8.89
+    - -22.86
+  - - -8.89
+    - -22.86
+  - - 8.89
+    - 22.86
+  - - -8.89
+    - 22.86
+  mounting_hole_radius_name: m2
+  oobb_name: mounting_plate_default
+- breakout_pcb_width: 22.86
+  breakout_pcb_height: 50.8
+  mounting_holes:
+  - - 8.89
+    - -22.86
+  - - -8.89
+    - -22.86
+  - - 8.89
+    - 22.86
+  - - -8.89
+    - 22.86
+  mounting_hole_radius_name: m2
+  oobb_name: mounting_plate_oobb
+  scad_output: working_oobb

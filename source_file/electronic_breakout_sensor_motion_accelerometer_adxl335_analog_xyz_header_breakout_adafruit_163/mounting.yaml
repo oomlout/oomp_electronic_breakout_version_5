@@ -1,0 +1,143 @@
+schema_version: 1
+part_id: electronic_breakout_sensor_motion_accelerometer_adxl335_analog_xyz_header_breakout_adafruit_163
+status: needs_review
+board_revision: Adafruit ADXL335 carrier represented by manufacturer file “Adafruit
+  ADXL335.brd” at repository commit 5d5697510945702e7e5c9790b8da2b4c3df1f864 (EAGLE
+  9.6.2 XML), confirmed byte-for-byte identical to the current master file at commit
+  4b5be6d232f7f1de1bc2717aa0a4d334c16a64d9. Adafruit product 163 says the November
+  2022 PCB update changes silkscreen only and old/new editions are otherwise identical;
+  the published product does not identify a numbered PCB revision.
+identity_evidence: Adafruit product page identifies Product ID 163 as the ADXL335
+  analog accelerometer breakout and links the tutorial containing “ADXL335, ADXL326
+  & ADXL377 Breakout Board Eagle Files”. That manufacturer-linked repository describes
+  the analog accelerometer PCBs, links product 163, and contains the exact file “Adafruit
+  ADXL335.brd”; the pinned CAD board label and sensor design match that product. Product
+  163 says it has two 2 mm mounting holes.
+board_size:
+- 19.0554
+- 19.0502
+mounting_holes:
+- id: U$8:pad:P$1
+  x_mm: -6.9927
+  y_mm: 6.9723
+  diameter_mm: 2.0
+  plated: true
+  package: MOUNTINGHOLE_2.0_PLATED
+  source_id: cad
+- id: U$5:pad:P$1
+  x_mm: 6.9773
+  y_mm: 6.9723
+  diameter_mm: 2.0
+  plated: true
+  package: MOUNTINGHOLE_2.0_PLATED
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: Extracted layer-20 plain outline from the pinned XML EAGLE CAD. The rounded
+  outline bounds are x=0.005..19.0604 mm and y=0.0126..19.0628 mm; therefore width=19.0604-0.005=19.0554
+  mm, height=19.0628-0.0126=19.0502 mm, and native bounding-box centre=(9.5327, 9.5377)
+  mm. No quarter-turn. CAD x increases rightward and y upward; centred coordinates
+  are x_native-9.5327 and y_native-9.5377. Explicitly selected the two 2.0 mm plated
+  pads in packages MOUNTINGHOLE_2.0_PLATED, matching Adafruit’s stated two 2 mm mounting
+  holes. The other seven 1.0 mm plated drills are the 1x07 header pads and are excluded.
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: false
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  local_file: mounting_evidence/adafruit_product_163.html
+  url: https://www.adafruit.com/product/163
+  kind: manufacturer_product
+  locator: Product ID 163 identity; dimensions without header length/width 19 mm;
+    page states two 2 mm mounting holes; revision history says the November 2022 PCB
+    update changes silkscreen only and old/new boards otherwise identical.
+  registered_at: '2026-11-07T12:03:09+00:00'
+  bytes: 87547
+  sha256: fc9d8ae81998e6ad1416aa17f8d38ec7ac8002aadee1d3779fddfb4d1878c79d
+- id: cad
+  local_file: mounting_evidence/Adafruit_ADXL335_5d56975.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-Analog-Accelerometers-PCBs/5d5697510945702e7e5c9790b8da2b4c3df1f864/Adafruit%20ADXL335.brd
+  kind: manufacturer_cad
+  locator: XML EAGLE board named Adafruit ADXL335.brd, repository adafruit/Adafruit-Analog-Accelerometers-PCBs
+    at commit 5d5697510945702e7e5c9790b8da2b4c3df1f864; board outline wires and named/located
+    mounting holes inspected.
+  registered_at: '2026-11-07T12:03:10+00:00'
+  bytes: 124047
+  sha256: 13342499697a0c343ba42317518516692e4da54080ea1e5118999048ab599675
+- id: cad_current
+  local_file: mounting_evidence/Adafruit_ADXL335_4b5be6d.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-Analog-Accelerometers-PCBs/4b5be6d232f7f1de1bc2717aa0a4d334c16a64d9/Adafruit%20ADXL335.brd
+  kind: manufacturer_cad
+  locator: Current master at commit 4b5be6d232f7f1de1bc2717aa0a4d334c16a64d9; EAGLE 9.6.2 XML is byte-for-byte identical to the archived pinned CAD file, with the same outline and all nine drilled candidates.
+  registered_at: '2026-11-07T16:21:56+00:00'
+  bytes: 124047
+  sha256: 13342499697a0c343ba42317518516692e4da54080ea1e5118999048ab599675
+- id: repository
+  local_file: mounting_evidence/adafruit_analog_accelerometers_repo.html
+  url: https://github.com/adafruit/Adafruit-Analog-Accelerometers-PCBs
+  kind: manufacturer_repository
+  locator: Manufacturer-linked CAD repository README identifies the analog accelerometer
+    board family and links product 163; repository file list names exact Adafruit
+    ADXL335.brd alongside ADXL326 and ADXL377 files.
+  registered_at: '2026-11-07T12:04:32+00:00'
+  bytes: 220609
+  sha256: fa32492a711131ebbbac5a9c1cfd71050ead3fae639128fda896a03f874bafb9
+attempts:
+- '2026-11-07: Reviewed Adafruit product 163 page and its November 2022 silkscreen-only
+  revision note; followed the product tutorial CAD link to the manufacturer Adafruit-Analog-Accelerometers-PCBs
+  repository.'
+- '2026-11-07: Retrieved and hash-registered the exact ADXL335 XML EAGLE file from
+  pinned commit 5d5697510945702e7e5c9790b8da2b4c3df1f864; inspected layer-20 outline
+  and all nine drilled candidates; selected the two dedicated 2.0 mm mounting pads
+  and excluded seven 1.0 mm header drills.'
+- '2026-11-07: Requested the standard mounting preview; it was blocked because a 2.0
+  mm drill cannot accept the smallest supported M2 screw while retaining the required
+  0.2 mm diametral clearance.'
+- '2026-11-07: Rechecked current Adafruit product 163 page and latest manufacturer CAD
+  master commit 4b5be6d232f7f1de1bc2717aa0a4d334c16a64d9. The official page says the
+  November 2022 update is silkscreen-only and old/new editions are otherwise identical;
+  the current EAGLE board file is byte-for-byte identical to the pinned archived CAD.
+  Its complete drill inspection again shows only the two 2.0 mm mounting holes and
+  seven 1.0 mm header drills; no compatible alternate carrier revision is evidenced.'
+conflicts:
+- 'Mechanical holder policy conflict: both manufacturer CAD mounting drills are 2.0
+  mm diameter. The standard holder requires at least 0.2 mm diametral clearance and
+  supports no screw smaller than M2, so it cannot generate this board’s holder. A
+  custom small-screw/retention design requires review; no screw or geometry was guessed.'
+notes:
+- Evidence files were downloaded and registered on 2026-11-07. The product page gives
+  nominal 19 x 19 mm dimensions; CAD extraction yields 19.0554 x 19.0502 mm, consistent
+  with the nominal values.
+- 'Current master CAD commit 4b5be6d232f7f1de1bc2717aa0a4d334c16a64d9 has the same SHA-256
+  and exact drill geometry as the previously pinned CAD. The official product revision
+  history identifies only a silkscreen update, so the board remains unsupported by the
+  standard holder: 2.0 mm PCB drills are below the 2.2 mm minimum for an M2 screw with
+  0.2 mm diametral clearance.'
+- The mounting helper preview failed before writing a preview image because standard_holder
+  rejected the 2.0 mm drills. Geometry is recorded from CAD but is not promoted or
+  generated.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T16:21:56+00:00'
+extraction:
+  selected_ids:
+  - U$8:pad:P$1
+  - U$5:pad:P$1
+  quarter_turn: 0
+  native_centre_mm:
+  - 9.5327
+  - 9.5377
+identity_source_ids:
+- product
+- repository
+- cad
+- cad_current

@@ -1,0 +1,270 @@
+research_schema_version: 1
+part_id: electronic_breakout_sensor_motion_orientation_fusion_bno086_qwiic_25_4_mm_width_30_48_mm_height_sparkfun_sen_22857
+name_readable: SparkFun BNO086 VR IMU, Qwiic
+manufacturer: sparkfun
+part_number: sen_22857
+manufacturer_part_number: SEN-22857
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: sensor
+  taxonomy_4: motion
+  taxonomy_5: orientation_fusion
+  taxonomy_6: bno086
+  taxonomy_7: qwiic
+  taxonomy_8: 25_4_mm_width_30_48_mm_height
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: sparkfun
+  taxonomy_15: sen_22857
+default_website:
+  url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:28:39+00:00'
+  updated_at: '2026-10-23T20:28:56+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: SparkFun VR IMU Breakout BNO086 Qwiic SEN-22857 schematic v10
+  status: product_and_schematic_revision_identified
+  source_ids: [product_page, schematic, hardware_overview]
+  notes: Product and official guide identify BNO086. Schematic link explicitly v10. Product-page address claims conflict with guide jumper description; retained unresolved pending physical ADR resistor/pad and firmware review.
+description: Adds onboard sensor fusion and orientation outputs beyond a raw six-axis IMU. Supports I2C,
+  SPI and UART; host compatibility still needs checking before enabling a lab profile.
+interfaces:
+- i2c
+- spi
+- uart
+dimensions_mm:
+  width: 25.4
+  height: 30.48
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: documented_outline
+  source_ids: [hardware_overview]
+  notes: Guide states board is 1.0 x 1.2 inches (25.4 x 30.48 mm) and has two mounting holes on one side; dimension image is available but coordinates/diameter were not transcribed.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: two_holes_location_and_diameter_unknown
+connectors:
+  qwiic_1:
+    kind: cable_connector
+    description: Qwiic 4-pin connector
+    contacts: []
+    source_ids: [product_page, hardware_overview]
+  qwiic_2:
+    kind: cable_connector
+    description: Qwiic 4-pin connector
+    contacts: []
+    source_ids: [product_page, hardware_overview]
+  header_group:
+    kind: header
+    description: 0.1-inch-pitch pins broken out for I2C/SPI/UART modes; full contact count and labels not transcribed from schematic.
+    contacts: []
+    source_ids: [product_page, hardware_overview, schematic]
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: partial
+  source_ids: [product_page, hardware_overview]
+pin_names: []
+electrical:
+  board_supply:
+    min_v: 3.3
+    max_v: 3.3
+    nominal_v: [3.3]
+    status: qwiic_board_nominal
+    source_ids: [product_page, hardware_overview]
+    notes: Board Qwiic default is 3.3V. Chip input range not promoted to carrier range.
+  chip_supply:
+    status: datasheet_limits_not_transcribed
+    notes: See archived BNO080/085 family datasheet; exact BNO086 electrical limits not normalized in this pass.
+    source_ids: [chip_datasheet]
+  logic_levels:
+    status: documented_i2c_default
+    notes: ["Default interface is I2C, with SPI/UART alternatives configured by PS0/PS1 jumpers.", "I2C pullups are 2.2k and can be disconnected by cutting top-side jumpers."]
+    source_ids: [product_page, hardware_overview]
+  pullups:
+  - signals: [SCL, SDA]
+    resistance_ohms: 2200
+    rail: 3.3V
+    designator: null
+    disconnect_method: cut I2C jumper traces
+    source_ids: [hardware_overview]
+  extra_signals:
+  - name: ADR
+    direction: input
+    notes: Address solder jumper; guide's claimed values conflict with product listing.
+    source_ids: [product_page, hardware_overview]
+  - name: PS0/PS1
+    direction: input
+    notes: Protocol-selection jumper pads configure I2C, UART-RVC, UART, or SPI.
+    source_ids: [hardware_overview]
+  source_ids: [product_page, hardware_overview]
+i2c:
+  default_address_7bit: 75
+  documented_addresses_7bit: [72, 74, 75]
+  address_selection: Product lists 0x4B default or 0x4A alternate; guide says ADR open/silkscreen 0x48 and solder bridge changes to 0x4A. Conflict unresolved.
+  maximum_clock_hz: 400000
+  clock_stretching: unverified
+  status: conflicting_default_address; interface rates documented
+  source_ids: [product_page, hardware_overview]
+  notes: Hardware overview states I2C up to 400kHz. Address claims differ between listing and guide; do not assume one value pending schematic/resistor strap review.
+chip:
+  manufacturer: CEVA (product attribution)
+  part_number: BNO086
+  identity_status: product_page_claim
+  source_ids: [product_page, chip_datasheet]
+datasheets:
+  status: downloaded
+  items:
+  - chip: BNO08x (BNO080/BNO085 family datasheet linked for BNO086)
+    source_id: chip_datasheet
+    local_file: reference/BNO08x.pdf
+    url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/assets/component_documentation/BNO080_085-Datasheet_v1.16.pdf
+    sha256: 6f78cff64baa5a50d6ff17ec79d1be8e93cf0bc33e1e7dfb89ab18cab59951c0
+    page_count: 59
+    revision: 1.16
+  notes: Product links BNO080/085 datasheet for the BNO086; precise variant coverage should be verified from the PDF itself.
+software:
+- name: SparkFun BNO086 Arduino library
+  framework: Arduino
+  url: https://github.com/sparkfun/SparkFun_BNO08x_Arduino_Library
+  tested: false
+  source_ids: [product_page]
+extra_resources:
+- name: SparkFun BNO086 hookup guide
+  kind: guide
+  url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/
+  source_id: hookup_guide
+- name: SparkFun BNO086 hardware overview
+  kind: guide
+  url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/hardware_overview/
+  source_id: hardware_overview
+- name: SparkFun BNO086 schematic v10
+  kind: schematic
+  url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/assets/board_files/SparkFun_VR_IMU_Breakout_BNO086_QWIIC_Schematic_v10.pdf
+  source_id: schematic
+sources:
+- id: product_page
+  kind: website
+  requested_url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+  url: https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html
+  retrieved_at: '2026-10-23T20:28:41+00:00'
+  content_type: text/html; charset=UTF-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 574091
+  sha256: 9a835fd9da5f26a019732b8fa0bd3681a7de0673c8279c8cbc91ba20657ec196
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 4842
+    sha256: 4d3999dbc18969c21cde1ee00a30143497527924038c11fe670d31d0f0b83568
+  - kind: links
+    local_file: website.links.json
+    bytes: 57763
+    sha256: 73eb6827683a903457c97d1311af681546776eeafd2052ba5f5b79db361430b0
+  title: SparkFun VR IMU Breakout - BNO086 (Qwiic) - SparkFun Electronics
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: hookup_guide
+  kind: guide
+  requested_url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/
+  url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/
+  retrieved_at: '2026-10-23T20:28:42+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide.html
+  bytes: 434
+  sha256: a13628a25140db08ed1e0d12f20bb13b4b2d9c417024b1c84e6457b5da1b5165
+  derivatives:
+  - kind: text
+    local_file: reference/guide.txt
+    bytes: 46
+    sha256: 7bc7818ea9e119d6b3348b99537975d7a5d7e2e3e490f28325e663d6b36bbeb7
+  - kind: links
+    local_file: reference/guide.links.json
+    bytes: 135
+    sha256: 897b58cc29d6f4f98389b93d72d7b09e144a6442a2f945f8ee554026fa062547
+  title: Redirecting...
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/assets/component_documentation/BNO080_085-Datasheet_v1.16.pdf
+  url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/assets/component_documentation/BNO080_085-Datasheet_v1.16.pdf
+  retrieved_at: '2026-10-23T20:28:43+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/BNO08x.pdf
+  bytes: 1503166
+  sha256: 6f78cff64baa5a50d6ff17ec79d1be8e93cf0bc33e1e7dfb89ab18cab59951c0
+  derivatives: []
+  pdf_page_count: 59
+- id: schematic
+  kind: schematic
+  requested_url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/assets/board_files/SparkFun_VR_IMU_Breakout_BNO086_QWIIC_Schematic_v10.pdf
+  url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/assets/board_files/SparkFun_VR_IMU_Breakout_BNO086_QWIIC_Schematic_v10.pdf
+  retrieved_at: '2026-10-23T20:28:45+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/schematic.pdf
+  bytes: 198384
+  sha256: 0f31c105f6536573473e6d99f2fe4fee1f83ea459e54695843f57e1114cecbb1
+  derivatives: []
+- id: hardware_overview
+  kind: guide
+  requested_url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/hardware_overview/
+  url: https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/hardware_overview/
+  retrieved_at: '2026-10-23T20:28:56+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: hookup_guide
+  local_file: reference/hardware_overview.html
+  bytes: 87129
+  sha256: d0dc41ec98db197dac91577699384ec5d1fe97677234760223e641d1e48af566
+  derivatives:
+  - kind: text
+    local_file: reference/hardware_overview.txt
+    bytes: 9387
+    sha256: 36745e19dd9d5fbca9854335f209aa1ac8fd3094a398c69875ef2603ffb0b10e
+  - kind: links
+    local_file: reference/hardware_overview.links.json
+    bytes: 13687
+    sha256: 9d647c4c60d9021e91294d56addf791bf284c2a046ae68aafda23c277e06a188
+  title: Hardware Overview - SparkFun VR IMU Breakout - BNO086 (Qwiic) Hookup Guide
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+conflicts: []
+conflicts:
+- topic: BNO086 I2C default address
+  claims:
+  - claim: Product page says 0x4B default, with 0x4A alternate.
+    source_id: product_page
+  - claim: Hardware Overview says ADR open and printed default 0x48; bridging selects 0x4A.
+    source_id: hardware_overview
+  resolution: Unresolved. Both are official sources; inspect the exact SEN-22857 v10 schematic and fitted ADR strap/pull state, and confirm whether product listing or guide was updated incorrectly.
+  status: unresolved
+data_gaps:
+- Mounting hole exact centers and diameter, PCB thickness, and assembled height not transcribed; guide gives outline and a dimension image.
+- Physical header count, pin labels/nets and unique-net count not inventoried from the v10 schematic; two Qwiic sockets documented.
+- Datasheet file is BNO080/085 v1.16 although SparkFun links it on BNO086 product. Exact BNO086 silicon variant/firmware datasheet coverage remains to be confirmed.

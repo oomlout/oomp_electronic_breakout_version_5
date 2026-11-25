@@ -1,0 +1,121 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_s3_xiao_esp32s3_17_8_mm_width_21_mm_height_14_pins_seeed_studio_xiao_esp32s3
+status: needs_review
+board_revision: null
+identity_evidence: null
+board_size: null
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: null
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources:
+- id: product_guide
+  local_file: mounting_evidence/seeed_xiao_esp32s3_product_guide.html
+  url: https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/
+  kind: manufacturer_product
+  locator: Official Seeed guide distinguishes base XIAO ESP32-S3 from Sense and links
+    base resources; current link list and product identity.
+  registered_at: '2026-11-06T18:08:04+00:00'
+  bytes: 151168
+  sha256: b03a4daee5128a89fa43be759a8196c3a06848078ddf27930a92054598f7d445
+- id: base_dxf
+  local_file: mounting_evidence/xiao_esp32s3_v1.1_dimensioning.dxf
+  url: https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_v1.1_Dimensioning.dxf
+  kind: manufacturer_drawing
+  locator: Official linked base XIAO ESP32S3 v1.1 dimension drawing; layer 20 has
+    exactly two 0.6 mm circles at drawing coordinates (5.365,29.548), (11.145,29.548).
+    Their spacing and 0.58 mm drill match the two NPTH pads inside USB0's USB Type-C
+    footprint in seeed_opl_cad, identifying them as connector-related holes rather
+    than a board-mount pattern; exact CAD revision linkage remains unresolved.
+  registered_at: '2026-11-06T18:08:05+00:00'
+  bytes: 1713469
+  sha256: 5fd32e3ba7a4bd85b8cc0f5d9413e26dd947e84e27b2d0f03350a7d367903f23
+- id: linked_cad_zip
+  local_file: mounting_evidence/seeed_xiao_esp32s3_v1.4_sch_pcb.zip
+  url: https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/new-res/202003751_XIAO%20ESP32S3_v1.4_SCH%26PCB_260226.zip
+  kind: manufacturer_cad
+  locator: Current official base-board resource link resolves to ZIP named 202003753_XIAO
+    ESP32S3 Sense_v1.5; internal PCB title XIAO ESP32S3_V1.5 includes Sense camera/B2B
+    hardware, not assigned base-board variant; identity mismatch.
+  registered_at: '2026-11-06T18:08:15+00:00'
+  bytes: 836170
+  sha256: a82247725c8a8bcd8cac81a7acbd126396217e5b680f6dfe28958851e02d5cdb
+- id: seeed_opl_cad
+  local_file: mounting_evidence/OPL_ESP32S3.kicad_pcb
+  url: https://raw.githubusercontent.com/Seeed-Studio/OPL_Kicad_Library/5cb639feaf5ddbce9c253f016abd98c597a53e3f/Seeed%20Studio%20XIAO%20ESP32S3/ESP32S3.kicad_pcb
+  kind: manufacturer_cad
+  locator: Seeed-Studio-owned OPL_Kicad_Library repository, commit 5cb639feaf5ddbce9c253f016abd98c597a53e3f,
+    file Seeed Studio XIAO ESP32S3/ESP32S3.kicad_pcb; board silkscreen says XIAO ESP32S3,
+    USB0 UBF31-0171 footprint contains two 0.58 mm np_thru_hole pads; CAD has no revision
+    identifier and current product guide points to a Sense project archive rather
+    than this file.
+  registered_at: '2026-11-07T16:02:51+00:00'
+  bytes: 946818
+  sha256: 9db3fe4b213f048cfe973cc2a2f3c95231b2997586f9081c5b75a1dad73aa604
+- id: seeed_opl_commit_record
+  local_file: mounting_evidence/opl_commit.json
+  url: https://api.github.com/repos/Seeed-Studio/OPL_Kicad_Library/commits?path=Seeed%20Studio%20XIAO%20ESP32S3/ESP32S3.kicad_pcb&per_page=1
+  kind: manufacturer_repository
+  locator: GitHub repository API commit record for exact OPL KiCad board path; pins
+    the commit used for the archived raw PCB file and gives commit message Add KiCAD
+    files.
+  registered_at: '2026-11-07T16:05:28+00:00'
+  bytes: 3508
+  sha256: 568f88d14ebbcce24a3c097f2c0d05803ef73187af9d758630977ed99d054543
+attempts:
+- avenue: Official Seeed base-board dimension drawing
+  result: Downloaded the official XIAO ESP32S3 v1.1 dimension DXF linked by Seeed's
+    guide. Visual review shows a rear-side drawing and two small circular features;
+    the drawing's layer 20 circles have radius 0.3 mm at raw DXF coordinates (5.365,
+    29.548) and (11.145, 29.548). They are too small for the standard holder and the
+    drawing does not identify whether they are tooling, electrical, or mounting features.
+    No hole pattern was extracted.
+  gap: Cannot establish the exact function of the two circles or prove the complete
+    base carrier's mountable hole pattern from this dimension drawing alone.
+- avenue: Official Seeed-linked carrier CAD archive
+  result: Downloaded the ZIP currently linked as the base XIAO ESP32-S3 KiCad project.
+    Its archive folder is 202003753_XIAO ESP32S3 Sense_v1.5 and the PCB is titled
+    XIAO ESP32S3_V1.5 with Sense camera/B2B circuitry, so it is not the assigned base-board
+    carrier.
+  gap: Current official CAD link has a carrier identity mismatch and cannot establish
+    mounting features for the base XIAO ESP32-S3.
+- avenue: Seeed-Studio-owned OPL KiCad library board
+  result: Downloaded and pinned Seeed-Studio/OPL_Kicad_Library commit 5cb639feaf5ddbce9c253f016abd98c597a53e3f,
+    file Seeed Studio XIAO ESP32S3/ESP32S3.kicad_pcb. The board silkscreen says XIAO
+    ESP32S3; its USB0 footprint is USB2.0-TYPE-C UBF31-0171 and contains exactly two
+    0.58 mm NPTH pads. This explains the two 0.6 mm circles in the v1.1 drawing as
+    USB connector holes, not PCB mounting holes. However, the file has no board revision
+    identifier and is not the exact PCB member linked from the product guide, so it
+    cannot prove the assigned base carrier's full mounting pattern for a specific
+    revision.
+  gap: Need a manufacturer source linking this base-board PCB file (or a complete
+    mechanical drawing) to the exact assigned base carrier revision; the current product-guide
+    CAD link resolves to the Sense project and the separate OPL CAD has no revision
+    metadata.
+conflicts: []
+notes:
+- Official Seeed guide distinguishes the base XIAO ESP32-S3 from XIAO ESP32-S3 Sense.
+  The base v1.1 DXF's two 0.6 mm circles match the pair of 0.58 mm non-plated holes
+  inside the Type-C receptacle footprint in the Seeed-owned OPL CAD; they are connector
+  features, not board mounting holes. The current product-guide CAD link resolves
+  to the Sense project, and the separate OPL board has no revision identifier or direct
+  product-guide link. This leaves a carrier/revision identity gap, so the OPL file
+  cannot be used to assert a complete base-board mounting pattern.
+- No geometry was extracted; board_size and mounting_holes remain unknown. No-hole
+  status is not established. Resume when Seeed links revision-identified base-board
+  CAD or a complete mechanical drawing to the assigned base carrier revision.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T16:05:28+00:00'

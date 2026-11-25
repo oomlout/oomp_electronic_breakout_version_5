@@ -1,0 +1,120 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2040_feather_without_headers_22_86_mm_width_50_8_mm_height_adafruit_4884
+status: verified
+board_revision: Current Adafruit Feather RP2040 carrier design at Adafruit-Feather-RP2040-PCB
+  commit ea88166891ee0a1697a3899a5d55ab3722a2f125. Its board file contains the right-angle
+  BOOTSEL switch referenced by the product revision history. The product page says
+  the February 2022 pink PCB retained identical layout; this record covers that shared
+  mounting geometry and the current black PCB.
+identity_source_ids:
+- product
+- repository
+- cad
+identity_evidence: Adafruit product 4884 page identifies the Feather RP2040 and lists
+  four mounting holes and the Nov 28 2022 BOOTSEL change. The official Adafruit repository
+  README links product 4884 and identifies the repository as Feather RP2040 PCB files.
+  The pinned board file Adafruit Feather RP2040.brd includes the right-angle BOOTSEL
+  switch and its SHA256 matches the archived reference board file exactly.
+board_size:
+- 22.86
+- 50.8
+mounting_holes:
+- id: plain:1
+  x_mm: 8.89
+  y_mm: -22.86
+  diameter_mm: 2.54
+  plated: false
+  package: plain
+  source_id: cad
+- id: plain:2
+  x_mm: -8.89
+  y_mm: -22.86
+  diameter_mm: 2.54
+  plated: false
+  package: plain
+  source_id: cad
+- id: U$31:pad:P$1
+  x_mm: 8.89
+  y_mm: 22.86
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$32:pad:P$1
+  x_mm: -8.89
+  y_mm: 22.86
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: 'EAGLE layer-20 bounds; explicit package/plain drills; centred then rotated
+  clockwise 90 degrees to place USB at positive Y. Native EAGLE bounds are 50.8 x
+  22.86 mm with centre (25.4, 11.43). For each native point (X,Y), first centre it,
+  then apply quarter-turn 3: x = Y - 11.43 and y = -(X - 25.4). The resulting canonical
+  outline is 22.86 x 50.8 mm. Explicitly selected only the two plain board holes and
+  two pads in MOUNTINGHOLE_2.5_PLATED packages; connector, header, SWD and switch
+  drills were reviewed and excluded.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad
+  local_file: mounting_evidence/pinned.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2040-PCB/ea88166891ee0a1697a3899a5d55ab3722a2f125/Adafruit%20Feather%20RP2040.brd
+  kind: manufacturer_cad
+  locator: Exact manufacturer EAGLE board file, pinned commit ea88166891ee0a1697a3899a5d55ab3722a2f125;
+    board outline on layer 20, plain holes and MOUNTINGHOLE_2.5_PLATED devices. SHA256
+    matches archived reference/board.brd.
+  registered_at: '2026-11-06T15:12:23+00:00'
+  bytes: 2402611
+  sha256: 8ed4623de172bab6f33e27ac1675b28ac32fe68f8a6caf89c444167db343dda2
+- id: product
+  local_file: mounting_evidence/product_4884.html
+  url: https://www.adafruit.com/product/4884
+  kind: manufacturer_product
+  locator: 'Official product 4884 identity, four mounting holes, revision history:
+    Nov 28 2022 right-angle BOOTSEL and PCB back to black; Feb 23 2022 pink variant
+    otherwise identical layout.'
+  registered_at: '2026-11-06T15:12:24+00:00'
+  bytes: 119006
+  sha256: fded047e756a01e701c6106ec1822f2e137dd910549b398d37816442330e6984
+- id: repository
+  local_file: mounting_evidence/README.md
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2040-PCB/ea88166891ee0a1697a3899a5d55ab3722a2f125/README.md
+  kind: manufacturer_repository
+  locator: Pinned official Adafruit repository README names Feather RP2040 open-source
+    EAGLE board files, links product 4884, and establishes design identity.
+  registered_at: '2026-11-06T15:13:34+00:00'
+  bytes: 783
+  sha256: d11c270a8086a1596a9d8f10c78ce962fc98513d00abc000227d8bd57d0e753b
+attempts: []
+conflicts: []
+notes:
+- Board outline and selected drill coordinates were inspected from the pinned manufacturer
+  EAGLE CAD. Preview reviewed as a top view with USB at positive Y.
+- Standard holder is generated geometry only. Component, connector, screw-head and
+  underside clearance, and physical fit, remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T15:13:34+00:00'
+extraction:
+  selected_ids:
+  - plain:1
+  - plain:2
+  - U$31:pad:P$1
+  - U$32:pad:P$1
+  quarter_turn: 3
+  native_centre_mm:
+  - 25.4
+  - 11.43

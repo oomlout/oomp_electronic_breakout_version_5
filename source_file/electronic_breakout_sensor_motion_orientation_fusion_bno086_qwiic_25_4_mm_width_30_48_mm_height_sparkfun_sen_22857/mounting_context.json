@@ -1,0 +1,24 @@
+{
+  "name_readable": "SparkFun BNO086 VR IMU, Qwiic",
+  "manufacturer": "sparkfun",
+  "part_number": "sen_22857",
+  "webpage": "https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html",
+  "sources": [
+    {
+      "id": "product",
+      "url": "https://www.sparkfun.com/sparkfun-vr-imu-breakout-bno086-qwiic.html",
+      "retrieved": "2026-10-23",
+      "kind": "manufacturer_product_page",
+      "scope": "identity, stated interfaces/features and recorded nominal dimensions"
+    }
+  ],
+  "dimensions_mm": {
+    "width": 25.4,
+    "height": 30.48,
+    "status": "manufacturer_nominal",
+    "scope": "nominal_pcb_outline",
+    "source_id": "product"
+  },
+  "coordinate_system": null,
+  "mounting_hole_details": []
+}

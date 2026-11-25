@@ -1,0 +1,156 @@
+Adafruit  PCA9685 16-Channel Servo Driver
+Overview
+Adafruit  PCA9685 16-Channel Servo Driver
+Drive many servos easily
+by
+Bill Earl
+published October 16, 2012, last edited August 19, 2026
+posted in
+Adafruit Products
+Robotics & CNC
+Breakout Boards
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly
+Hooking it Up
+Chaining Drivers - Changing the I2C Address
+Using the Adafruit Library
+Library Reference
+Arduino Library Docs
+Python & CircuitPython
+Python Docs
+Python Docs: ServoKit
+Downloads
+FAQ
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+5V 2A (2000mA) switching power supply - UL Listed
+Out of Stock
+Featured
+5V 4A (4000mA) switching power supply - UL Listed
+$14.95
+Add  to Cart
+View product details
+169
+Beginner
+Product guide
+😍
+3
+Overview
+Driving servo motors with the Arduino Servo library is pretty easy, but each one consumes a precious pin - not to mention some Arduino processing power.  The Adafruit 16-Channel 12-bit PWM/Servo Driver will drive up to 16 servos over I2C with only 2 pins.  The on-board PWM controller will drive all 16 channels simultaneously with no additional Arduino processing overhead.  What's more, you can chain up to
+62 of them to control up to 992 servos - all with the same 2 pins!
+The Adafruit PWM/Servo Driver is the perfect solution for any project that requires a lot of servos.
+Page last edited October 10, 2012
+Pinouts
+Related Guides
+Your browser does not support the video tag. This links to the guide Ever-Burning Flame Painting.
+Ever-Burning Flame Painting
+By
+Erin St Blaine
+intermediate
+39
+Your browser does not support the video tag. This links to the guide Trash Panda.
+Trash Panda
+By
+Dano Wall
+beginner
+16
+Your browser does not support the video tag. This links to the guide LED Matrix FIFA World Cup Scoreboard.
+LED Matrix FIFA World Cup Scoreboard
+By
+Liz Clark
+intermediate
+6
+Your browser does not support the video tag. This links to the guide Spinning Disc Step Sequencer.
+Spinning Disc Step Sequencer
+By
+John Park
+intermediate
+54
+Your browser does not support the video tag. This links to the guide Living Starry Night Painting.
+Living Starry Night Painting
+By
+Dano Wall
+beginner
+37
+Your browser does not support the video tag. This links to the guide Magical Light-up Dreidel.
+Magical Light-up Dreidel
+By
+Erin St Blaine
+beginner
+6
+Your browser does not support the video tag. This links to the guide BLE Light Switch with Feather nRF52840 and Crickit.
+BLE Light Switch with Feather nRF52840 and Crickit
+By
+John Park
+beginner
+25
+Your browser does not support the video tag. This links to the guide Halloween Skeleton Transformation Illusion Prop.
+Halloween Skeleton Transformation Illusion Prop
+By
+Erin St Blaine
+beginner
+25
+Your browser does not support the video tag. This links to the guide Bluefruit Luminary Lanterns with Capacitive Touch.
+Bluefruit Luminary Lanterns with Capacitive Touch
+By
+Erin St Blaine
+intermediate
+44
+Your browser does not support the video tag. This links to the guide Four Seasons Fairy Bottle Lanterns.
+Four Seasons Fairy Bottle Lanterns
+By
+Erin St Blaine
+advanced
+48
+Your browser does not support the video tag. This links to the guide Tombstone Prop-Maker RP2040.
+Tombstone Prop-Maker RP2040
+By
+Ruiz Brothers
+intermediate
+20
+reef-pi Guide 6: pH Monitoring
+By
+Ranjib Dey
+beginner
+42
+Bluetooth-Controlled Matrix LED Sign using Bluefruit...
+By
+Trevor Beaton
+beginner
+23
+Your browser does not support the video tag. This links to the guide Crickit Powered Dancin' Snowman!.
+Crickit Powered Dancin' Snowman!
+By
+Isaac Wellish
+beginner
+8
+RGB Matrix Panels With Raspberry Pi 5
+By
+Tim C
+beginner
+29
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

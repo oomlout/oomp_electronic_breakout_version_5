@@ -1,0 +1,298 @@
+{
+    "url": "https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/",
+    "accessed": "2026-10-22",
+    "tables": [
+        [
+            [
+                "Seeed Studio XIAO ESP32C6"
+            ],
+            [
+                ""
+            ],
+            [
+                "Get One Now \ud83d\uddb1\ufe0f"
+            ]
+        ],
+        [
+            [
+                "Product",
+                "XIAO ESP32-C6",
+                "XIAO ESP32-C3",
+                "XIAO ESP32-S3"
+            ],
+            [
+                "Processor",
+                "Espressif ESP32-C6 SoC two 32-bit RISC-V processors, with the high-performance one running up to 160 MHz, and the low-power one clocking up to 20 MHz",
+                "Espressif ESP32-C3 SoC RISC-V single-core 32-bit chip processor with a four-stage pipeline that operates at up to 160 MHz",
+                "Espressif ESP32-S3R8 SoC Xtensa LX7 dual-core, 32-bit processor running up to 240 MHz"
+            ],
+            [
+                "Wireless",
+                "Complete 2.4GHz Wi-Fi 6 subsystem",
+                "Complete 2.4GHz Wi-Fi subsystem",
+                "Complete 2.4GHz Wi-Fi subsystem"
+            ],
+            [
+                "Bluetooth Low Energy 5.0"
+            ],
+            [
+                "Zigbee, Thread, IEEE 802.15.4",
+                "/",
+                "/"
+            ],
+            [
+                "On-chip Memory",
+                "512KB SRAM & 4MB Flash",
+                "400KB SRAM & 4MB Flash",
+                "8MB PSRAM & 8MB Flash"
+            ],
+            [
+                "Interface",
+                "1x UART 1x LP_UART 1x IIC 1x LP_IIC 1x SPI 11x GPIO(PWM) 7x ADC 1x SDIO",
+                "1x UART 1x IIC 1x SPI 11x GPIO(PWM) 4x ADC",
+                "1x UART 1x IIC 1x SPI 11x GPIO(PWM) 9x ADC 1x User LED 1x Charge LED"
+            ],
+            [
+                "1x Reset button 1x Boot button"
+            ],
+            [
+                "Dimensions",
+                "21 x 17.8mm"
+            ],
+            [
+                "Power",
+                "Input voltage (Type-C): 5V Input voltage (BAT): 3.7V"
+            ],
+            [
+                "Power Consumption Model (Typ.) (Supply Power: 3.8V)",
+                "Modem-sleep Model: 30 mA Light-sleep Model: 3.1 mA Deep Sleep Model: 15 \u03bcA",
+                "Modem-sleep Model: 24 mA Light-sleep Model: 3 mA Deep Sleep Model: 44 \u03bcA",
+                "Modem-sleep Model: 27 mA Light-sleep Model: 2 mA Deep Sleep Model: 14 \u03bcA"
+            ],
+            [
+                "Working Temperature",
+                "-40\u00b0C ~ 85\u00b0C",
+                "-40\u00b0C ~ 85\u00b0C",
+                "-40\u00b0C ~ 65\u00b0C"
+            ]
+        ],
+        [
+            [
+                "XIAO Pin",
+                "Function",
+                "Chip Pin",
+                "Alternate Functions",
+                "Description"
+            ],
+            [
+                "5V",
+                "VBUS",
+                "",
+                "",
+                "Power Input/Output"
+            ],
+            [
+                "GND",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "3V3",
+                "3V3_OUT",
+                "",
+                "",
+                "Power Output"
+            ],
+            [
+                "D0",
+                "Analog",
+                "GPIO0",
+                "LP_GPIO0",
+                "GPIO, ADC"
+            ],
+            [
+                "D1",
+                "Analog",
+                "GPIO1",
+                "LP_GPIO1",
+                "GPIO, ADC"
+            ],
+            [
+                "D2",
+                "Analog",
+                "GPIO2",
+                "LP_GPIO2",
+                "GPIO, ADC"
+            ],
+            [
+                "D3",
+                "Digital",
+                "GPIO21",
+                "SDIO_DATA1",
+                "GPIO"
+            ],
+            [
+                "D4",
+                "SDA",
+                "GPIO22",
+                "SDIO_DATA2",
+                "GPIO, I2C Data"
+            ],
+            [
+                "D5",
+                "SCL",
+                "GPIO23",
+                "SDIO_DATA3",
+                "GPIO, I2C Clock"
+            ],
+            [
+                "D6",
+                "TX",
+                "GPIO16",
+                "",
+                "GPIO, UART Transmit"
+            ],
+            [
+                "D7",
+                "RX",
+                "GPIO17",
+                "",
+                "GPIO, UART Receive"
+            ],
+            [
+                "D8",
+                "SCK",
+                "GPIO19",
+                "SPI_CLK",
+                "GPIO, SPI Clock"
+            ],
+            [
+                "D9",
+                "MISO",
+                "GPIO20",
+                "SPI_MISO",
+                "GPIO, SPI Data"
+            ],
+            [
+                "D10",
+                "MOSI",
+                "GPIO18",
+                "SPI_MOSI",
+                "GPIO, SPI Data"
+            ],
+            [
+                "MTDO",
+                "",
+                "GPIO7",
+                "",
+                "JTAG"
+            ],
+            [
+                "MTDI",
+                "",
+                "GPIO5",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "MTCK",
+                "",
+                "GPIO6",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "MTMS",
+                "",
+                "GPIO4",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "EN",
+                "",
+                "CHIP_PU",
+                "",
+                "Reset"
+            ],
+            [
+                "Boot",
+                "",
+                "GPIO9",
+                "",
+                "Enter Boot Mode"
+            ],
+            [
+                "RF Switch Port Select",
+                "",
+                "GPIO14",
+                "",
+                "Switch onboard antenna and the UFL antenna"
+            ],
+            [
+                "RF Switch Power",
+                "",
+                "GPIO3",
+                "",
+                "Power"
+            ],
+            [
+                "Light",
+                "",
+                "GPIO15",
+                "",
+                "User Light"
+            ]
+        ],
+        [
+            [
+                "",
+                ""
+            ]
+        ]
+    ],
+    "links": [
+        {
+            "title": "Have Suggestions?",
+            "url": "https://github.com/Seeed-Studio/wiki-documents/discussions/69"
+        },
+        {
+            "title": "Direct to Assignments",
+            "url": "https://github.com/orgs/Seeed-Studio/projects/6"
+        },
+        {
+            "title": "",
+            "url": "https://github.com/Seeed-Studio/wiki-documents"
+        },
+        {
+            "title": "Espressif ESP32-C6 Datasheet",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/res/esp32-c6_datasheet_en.pdf"
+        },
+        {
+            "title": "XIAO ESP32-C6 Schematic",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH_260114.pdf"
+        },
+        {
+            "title": "XIAO ESP32-C6 KiCad Project",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH&PCB_260114.zip"
+        },
+        {
+            "title": "XIAO Series KiCad Footprints",
+            "url": "https://files.seeedstudio.com/wiki/XIAO-KiCad-Library/New_XIAO_Series_Footprints.zip"
+        },
+        {
+            "title": "XIAO Series KiCad SCH Symbols",
+            "url": "https://files.seeedstudio.com/wiki/XIAO-KiCad-Library/XIAO_Series_SCH_Symbols.zip"
+        },
+        {
+            "title": "",
+            "url": "https://github.com/Seeed-Studio/wiki-documents/discussions/69"
+        },
+        {
+            "title": "Edit this page",
+            "url": "https://github.com/Seeed-Studio/wiki-documents/blob/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/XIAO_ESP32C6_Getting_Started.md"
+        }
+    ]
+}

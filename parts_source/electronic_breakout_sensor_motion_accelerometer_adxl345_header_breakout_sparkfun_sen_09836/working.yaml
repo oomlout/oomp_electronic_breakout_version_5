@@ -1,0 +1,303 @@
+board_variant: header_breakout
+breakout_description: header_breakout
+breakout_pcb_height: 15.24
+breakout_pcb_width: 20.32
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+- Default I2C address not established in this import.
+definition_authority: working_oomp_populate_i2c.py
+description: The familiar non-Qwiic header carrier, with I2C/SPI and two standoff
+  holes. The product specifies a 2.0-3.6 V supply; do not inherit the Adafruit carrier's
+  regulator/level-shifting claims. Vendor SKU is SEN-09836.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+geometry_ready: false
+i2c:
+  address_evidence_status: unverified
+  address_selection: unverified
+  clock_stretching: unverified
+  default_address_7bit: null
+  documented_addresses_7bit: []
+  maximum_clock_hz: null
+  source_id: product
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+- spi
+item_kind: breakout
+manufacturer: sparkfun
+manufacturer_part_number: SEN-09836
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 3.302
+  id: JP2:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: -7.62
+  y_mm: 5.08
+- diameter_mm: 3.302
+  id: JP3:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: 7.62
+  y_mm: 5.08
+mounting_hole_radius_name: m3
+mounting_hole_radius_names:
+- m3
+- m3
+mounting_hole_status: verified
+mounting_holes:
+- - -7.62
+  - 5.08
+- - 7.62
+  - 5.08
+mounting_lift: 3
+mounting_research:
+  board_revision: SparkFun ADXL345 Breakout SEN-09836, two-standoff-hole variant represented
+    by Hardware/ADXL345_Breakout.brd at repository commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+    SparkFun product listing calls this the newer version but gives no formal revision
+    number.
+  board_size:
+  - 20.32
+  - 15.24
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: EAGLE layer-20 bounds; explicit package/plain drills; centred then rotated
+    CCW.
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: The SparkFun product listing identifies SKU SEN-09836 and says
+    its newer version adds two standoff holes and an extra decoupling capacitor. The
+    SparkFun ADXL345_Breakout repository README identifies the board as SEN-09836
+    and states Hardware contains the EAGLE design files. The pinned Hardware/ADXL345_Breakout.brd
+    at commit 8e83a624bcaea0a3071885c58634b56fbefa346d has exactly two named STAND-OFF
+    plain drills, matching the product variant description. No formal PCB revision
+    label is supplied.
+  mounting_holes:
+  - diameter_mm: 3.302
+    id: JP2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: -7.62
+    y_mm: 5.08
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: 7.62
+    y_mm: 5.08
+  record_sha256: 299ebba2e6dc5cce29256f391933395db3a85a4eaf5efdfcb4f1260ba0368981
+  research_file: source_file/electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 563391
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: 'Archived manufacturer listing: SKU SEN-09836 and description states
+      new version adds two standoff holes plus an extra decoupling capacitor; archived
+      page identity checked against current SparkFun repo README.'
+    registered_at: '2026-11-07T11:57:30+00:00'
+    sha256: d53074ac5c28707935bff4bc1b5b59d7bb6d516b552e76f8d4275b4c7f4b6707
+    url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+  - bytes: 121142
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Hardware_ADXL345_Breakout.brd
+    locator: SparkFun ADXL345_Breakout repository pinned commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+      Hardware/ADXL345_Breakout.brd. Repo README identifies repository board as SEN-09836.
+      Inspect board outline, hole features and all drills.
+    registered_at: '2026-11-07T11:57:30+00:00'
+    sha256: c24922728d0d5e47a2ae2fc88ac5c1f9433176839e0dfac97392f58ebb3ae5ba
+    url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/Hardware/ADXL345_Breakout.brd
+  - bytes: 1049
+    id: repo_readme
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: README.md in SparkFun ADXL345_Breakout repository pinned commit; explicitly
+      labels ADXL345 Breakout Board (SEN-09836) and documents Hardware directory contains
+      EAGLE design files.
+    registered_at: '2026-11-07T11:57:31+00:00'
+    sha256: 5de18a7cf7eaef8abe2787aea1a0a37c2785e92550198165a7dbc3b345af6377
+    url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/README.md
+  status: verified
+name_readable: SparkFun ADXL345, traditional carrier
+notes:
+- Manufacturer lists 2.0-3.6 V supply; do not copy voltage tolerance from an Adafruit
+  carrier.
+oobb_details:
+- breakout_pcb_height: 15.24
+  breakout_pcb_width: 20.32
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -7.62
+    y_mm: 5.08
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 7.62
+    y_mm: 5.08
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -7.62
+    - 5.08
+  - - 7.62
+    - 5.08
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 15.24
+  breakout_pcb_width: 20.32
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -7.62
+    y_mm: 5.08
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 7.62
+    y_mm: 5.08
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -7.62
+    - 5.08
+  - - 7.62
+    - 5.08
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 15.24
+  breakout_pcb_width: 20.32
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -7.62
+    y_mm: 5.08
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 7.62
+    y_mm: 5.08
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -7.62
+    - 5.08
+  - - 7.62
+    - 5.08
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+part_number: sen_09836
+part_number_sparkfun: SEN-09836
+pinout_status: unverified
+pins: {}
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+- bytes: 563391
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: 'Archived manufacturer listing: SKU SEN-09836 and description states new
+    version adds two standoff holes plus an extra decoupling capacitor; archived page
+    identity checked against current SparkFun repo README.'
+  registered_at: '2026-11-07T11:57:30+00:00'
+  sha256: d53074ac5c28707935bff4bc1b5b59d7bb6d516b552e76f8d4275b4c7f4b6707
+  url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+- bytes: 121142
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Hardware_ADXL345_Breakout.brd
+  locator: SparkFun ADXL345_Breakout repository pinned commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+    Hardware/ADXL345_Breakout.brd. Repo README identifies repository board as SEN-09836.
+    Inspect board outline, hole features and all drills.
+  registered_at: '2026-11-07T11:57:30+00:00'
+  sha256: c24922728d0d5e47a2ae2fc88ac5c1f9433176839e0dfac97392f58ebb3ae5ba
+  url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/Hardware/ADXL345_Breakout.brd
+- bytes: 1049
+  id: mounting_repo_readme
+  kind: manufacturer_repository
+  local_file: mounting_evidence/README.md
+  locator: README.md in SparkFun ADXL345_Breakout repository pinned commit; explicitly
+    labels ADXL345 Breakout Board (SEN-09836) and documents Hardware directory contains
+    EAGLE design files.
+  registered_at: '2026-11-07T11:57:31+00:00'
+  sha256: 5de18a7cf7eaef8abe2787aea1a0a37c2785e92550198165a7dbc3b345af6377
+  url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/README.md
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: sparkfun
+taxonomy_15: sen_09836
+taxonomy_2: breakout
+taxonomy_3: sensor
+taxonomy_4: motion
+taxonomy_5: accelerometer
+taxonomy_6: adxl345
+taxonomy_7: header_breakout
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: sensor
+type_2: motion
+type_3: accelerometer
+type_4: adxl345
+webpage: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+webpage_sparkfun: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html

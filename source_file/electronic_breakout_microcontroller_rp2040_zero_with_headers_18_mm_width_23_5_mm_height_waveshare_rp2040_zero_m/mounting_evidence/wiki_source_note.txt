@@ -1,0 +1,5 @@
+Source capture: Waveshare official RP2040-Zero wiki, indexed result reviewed 2026-11-06.
+URL: https://www.waveshare.com/wiki/RP2040-Zero
+The official wiki identifies “RP2040-Zero” and lists “RP2040-Zero-STEP file (3D drawing)” under Supporting Resources. It links the manufacturer-hosted model at https://files.waveshare.com/upload/f/f7/RP2040_Zero_stp.zip.
+The downloaded STEP is named RP2040_Zero.stp and its STEP FILE_NAME metadata is RP2040_ZERO_ASM with timestamp 2022-01-08T18:25:42. The wiki does not state a PCB revision number. Treat this as the manufacturer model for RP2040-Zero, revision unspecified; the M suffix is the product page's header-populated sales option and not a different PCB outline.
+Retrieval note: direct wiki retrieval returned HTTP 403 on 2026-11-06. This note records the official indexed source/link and CAD metadata; it is not a raw HTML capture. No browser denial was bypassed.

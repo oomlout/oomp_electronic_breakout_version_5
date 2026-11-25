@@ -1,0 +1,87 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_s3_supermini_18_pin_18_mm_width_23_5_mm_height_18_pins_tenstar_esp32_s3_supermini
+status: needs_review
+board_revision: null
+identity_evidence: null
+board_size: null
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: null
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources:
+- id: retail_listing
+  local_file: mounting_evidence/tenstar_aliexpress_listing_1005007170832747.html
+  url: https://www.aliexpress.com/item/1005007170832747.html
+  kind: manufacturer_product
+  locator: TENSTAR listing metadata title covers ESP32-S3/C3/H2/C6 variants; exact
+    S3 variant geometry and revision not established.
+  registered_at: '2026-11-06T18:03:53+00:00'
+  bytes: 77945
+  sha256: bbb851505565a628576a1e1b5254bb780474e59f14813ba2aef8138769af6084
+- id: community_footprint
+  local_file: mounting_evidence/community_samplooler_esp32_s3_supermini.kicad_mod
+  url: https://raw.githubusercontent.com/willbearfruits/samplooler/93b483f67b0dc6330732da51d12177443580645b/hardware/lib/samplooler.pretty/ESP32-S3_SuperMini.kicad_mod
+  kind: community_cad
+  locator: Pinned third-party KiCad footprint from samplooler commit 93b483f67b0dc6330732da51d12177443580645b;
+    symbolic board footprint only, not Tenstar carrier PCB CAD and no mounting-hole
+    authority.
+  registered_at: '2026-11-06T18:03:53+00:00'
+  bytes: 18009
+  sha256: 263ab31e95e88286801d7ea257acf7cc1ef2d8543d80a9608efe5051704080b0
+attempts:
+- avenue: Official Tenstar product or hardware repository
+  result: No manufacturer-published, revision-pinned carrier CAD or mechanical drawing
+    was located for this exact S3 SuperMini during this review.
+  gap: Exact carrier revision and mounting-hole geometry are unavailable from an official
+    hardware source.
+- avenue: Manufacturer dimensions / instruction manual
+  result: The Tenstar-labeled series manual at https://manuals.plus/ae/1005005877531694
+    gives 23.5 x 18 mm overall dimensions for the ESP32-S3 SuperMini, but shows no
+    dimensioned hole pattern; the mirror groups C3/S3/H2/C6 and does not define a
+    PCB revision. Direct local retrieval returned HTTP 403, so it was not archived
+    or registered.
+  gap: Overall size does not establish hole locations, drills, or whether the complete
+    carrier has mounting holes.
+- avenue: Public hardware CAD and community footprints
+  result: Downloaded the pinned willbearfruits/samplooler ESP32-S3_SuperMini.kicad_mod
+    at commit 93b483f67b0dc6330732da51d12177443580645b. It is a third-party symbolic
+    footprint with connector and underside contact pads, not the Tenstar carrier board
+    CAD or its mechanical outline.
+  gap: Cannot identify mounting holes or prove their absence from a package footprint
+    that is not authoritative for this carrier.
+- avenue: Recheck of TENSTAR-labeled series manual
+  result: The currently browser-accessible TENSTAR ROBOT ESP32 SuperMini Development
+    Board User Manual at https://manuals.plus/ae/1005006406538478 identifies C3/S3/H2/C6
+    variants and states 18 x 23.5 mm for the S3. Its S3 pinout figure shows overall
+    dimensions but no dimensioned mounting-hole locations or drill sizes. The page
+    does not identify a carrier revision. A direct requests retrieval on 2026-11-07
+    returned HTTP 403 with a verification challenge, so no local evidence copy was
+    archived; the accessible browser-rendered page was inspected.
+  gap: The page supports the nominal outline only. It cannot establish exact carrier
+    revision, mounting-hole geometry, or that the carrier has no mounting holes.
+conflicts: []
+notes:
+- Tenstar board variants share the SuperMini name and available sources do not establish
+  that this exact catalogue entry maps to a single carrier revision. No-hole status
+  must not be inferred from the dimensions, photos, or community footprint.
+- Rechecking the TENSTAR-labeled series manual confirmed only the nominal S3 outline;
+  the S3 figure has no dimensioned mounting pattern. Its browser-accessible copy could
+  not be archived because direct retrieval returned a verification challenge.
+- No geometry was extracted; board_size and mounting_holes remain unknown. Review
+  can resume when exact manufacturer carrier CAD or a complete dimensioned mechanical
+  drawing is available.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:59:47+00:00'

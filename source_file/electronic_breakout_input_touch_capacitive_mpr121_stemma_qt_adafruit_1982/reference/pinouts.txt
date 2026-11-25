@@ -1,0 +1,189 @@
+Adafruit MPR121 12-Key Capacitive Touch Sensor Breakout Tutorial
+Pinouts
+Adafruit MPR121 12-Key Capacitive Touch Sensor Breakout Tutorial
+Get a little closer...closer...now touch it!
+by
+lady ada
+published July 25, 2014, last edited November 13, 2025
+posted in
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly
+Arduino
+Python & CircuitPython
+Python Docs
+Raspberry Pi Virtual Keyboard
+Electrodes
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+Adafruit 12-Key Capacitive Touch Sensor Breakout - MPR121
+$7.95
+Add  to Cart
+Featured
+Adafruit 12 x Capacitive Touch Shield for Arduino - MPR121
+$12.50
+Add  to Cart
+Your browser does not support the video tag.
+Featured
+Adafruit Capacitive Touch HAT for Raspberry Pi - Mini Kit
+$14.95
+Add  to Cart
+Featured
+Flex PCB Material - 6" by 6" Square
+Out of Stock
+Featured
+Copper Foil Tape with Conductive Adhesive - 25mm x 15 meter roll
+$19.95
+Add  to Cart
+Featured
+Copper Foil Tape with Conductive Adhesive - 6mm x 15 meter roll
+$5.95
+Add  to Cart
+Featured
+Bare Conductive Paint - 50mL
+No Longer Stocked
+Featured
+Woven Conductive Fabric - 20cm square
+$4.95
+Add  to Cart
+View product details
+79
+Intermediate
+Product guide
+Pinouts
+Text emphasized with a blue exclamation:
+The pins are in a slightly different order on the original board from the STEMMA QT version. They function the same!
+The little chip in the middle of the PCB is the actual MPR121 sensor that does all the capacitive sensing and filtering. We add all the extra components you need to get started, and 'break out' all the other pins you may want to connect to onto the PCB. For more details you can check out the schematics in the Downloads page.
+Power Pins
+The sensor on the breakout requires 3V power. Since many customers have 5V microcontrollers like Arduino, we tossed a 3.3V regulator on the board. Its ultra-low dropout so you can power it from 3.3V-5V just fine.
+Vin
+- this is the power pin. Since the chip uses 3 VDC, we have included a voltage regulator on board that will take 3-5VDC and safely convert it down. To power the board, give it the same power as the logic level of your microcontroller - e.g. for a 5V micro like Arduino, use 5V
+3Vo
+- this is the 3.3V output from the voltage regulator, you can grab up to 100mA from this if you like
+GND
+- common ground for power and logic
+I2C Pins
+SCL
+- I2C clock pin, connect to your microcontroller's I2C clock line.
+SDA
+- I2C data pin, connect to your microcontroller's I2C data line.
+IRQ and ADDR Pins
+ADDR
+is the I2C address select pin. By default this is pulled down to ground with a 100K resistor, for an I2C address of 0x5A. You can also connect it to the 3Vo pin for an address of 0x5B, the SDA pin for 0x5C or SCL for address 0x5D
+INT
+(IRQ on original version) is the Interrupt Request signal pin. It is pulled up to 3.3V on the breakout and when the sensor chip detects a change in the touch sense switches, the pin goes to 0V until the data is read over i2c
+Page last edited March 08, 2024
+Overview
+Assembly
+Related Guides
+Your browser does not support the video tag. This links to the guide Circuit Playground Powerpuff Girls Valentine.
+Circuit Playground Powerpuff Girls Valentine
+By
+Erin St Blaine
+beginner
+9
+Your browser does not support the video tag. This links to the guide Infinity Mirror Valentine's Candy Box.
+Infinity Mirror Valentine's Candy Box
+By
+Kathy Ceceri
+beginner
+20
+Your browser does not support the video tag. This links to the guide Bluefruit Luminary Lanterns with Capacitive Touch.
+Bluefruit Luminary Lanterns with Capacitive Touch
+By
+Erin St Blaine
+intermediate
+44
+Your browser does not support the video tag. This links to the guide Two Way Telegraph with Analog Feedback Servos.
+Two Way Telegraph with Analog Feedback Servos
+By
+Ruiz Brothers
+intermediate
+103
+AM Radio Morse Code Paddle
+By
+John Park
+beginner
+16
+Your browser does not support the video tag. This links to the guide Motorized Grinch Fireplace.
+Motorized Grinch Fireplace
+By
+Ruiz Brothers
+beginner
+6
+Adafruit Circuit Playground Express
+By
+lady ada
+Product Guide
+450
+Your browser does not support the video tag. This links to the guide Adventure Time Coffee Cup Lamp with MakeCode.
+Adventure Time Coffee Cup Lamp with MakeCode
+By
+Ruiz Brothers
+beginner
+16
+Your browser does not support the video tag. This links to the guide Crickit Powered Dancin' Snowman!.
+Crickit Powered Dancin' Snowman!
+By
+Isaac Wellish
+beginner
+8
+DIY Lego LED Bricks
+By
+Ruiz Brothers
+beginner
+48
+Your browser does not support the video tag. This links to the guide Epoxy Resin Torch Lamp with Touch Control & 3D Printed Base.
+Epoxy Resin Torch Lamp with Touch Control & 3D...
+By
+Erin St Blaine
+beginner
+24
+Your browser does not support the video tag. This links to the guide Automatic Cat Treat Dispenser.
+Automatic Cat Treat Dispenser
+By
+Dano Wall
+beginner
+117
+Remote Shutter Button for MEMENTO
+By
+Ruiz Brothers
+beginner
+23
+Your browser does not support the video tag. This links to the guide Glowing Bottle Castle and Capacitive Touch Piano.
+Glowing Bottle Castle and Capacitive Touch Piano
+By
+Erin St Blaine
+intermediate
+32
+Your browser does not support the video tag. This links to the guide NeoPixel Aquarium with Submersible Lights.
+NeoPixel Aquarium with Submersible Lights
+By
+Erin St Blaine
+intermediate
+26
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

@@ -1,0 +1,389 @@
+board_variant: qwiic
+breakout_description: qwiic
+breakout_pcb_height: 25.4
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Manufacturer nominal outline is not a traced CAD perimeter.
+definition_authority: working_oomp_populate_i2c.py
+description: A modern accelerometer/gyroscope board for motion, orientation experiments
+  and robotics.
+dimensions_mm:
+  height: 25.4
+  scope: nominal_pcb_outline
+  source_id: product
+  status: manufacturer_nominal
+  width: 25.4
+geometry_ready: false
+i2c:
+  address_evidence_status: partial_product_page_evidence
+  address_selection: solder_jumper
+  clock_stretching: unverified
+  default_address_7bit: 104
+  documented_addresses_7bit:
+  - 104
+  - 105
+  maximum_clock_hz: null
+  source_id: product
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+manufacturer: sparkfun
+manufacturer_part_number: SEN-22397
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 3.302
+  id: H1:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 10.16
+- diameter_mm: 3.302
+  id: H2:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 10.16
+- diameter_mm: 3.302
+  id: H3:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: -10.16
+- diameter_mm: 3.302
+  id: H4:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: -10.16
+mounting_hole_radius_name: m3
+mounting_hole_radius_names:
+- m3
+- m3
+- m3
+- m3
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - 10.16
+- - 10.16
+  - 10.16
+- - 10.16
+  - -10.16
+- - -10.16
+  - -10.16
+mounting_lift: 3
+mounting_research:
+  board_revision: SparkFun Qwiic 6DoF BMI270 standard 1x1 carrier; official Hardware/Qwiic
+    1x1/SparkFun_Qwiic_6DoF_BMI270.brd at commit c8bb01b27e91e4985eb9d526cc59eb7421a08bbb,
+    board artwork marked v10.
+  board_size:
+  - 25.4
+  - 25.4
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: EAGLE layer-20 outline bounds are x=0..25.4 mm and y=0..25.4 mm, giving
+    board_size=[25.4,25.4] mm. Native CAD origin is bottom-left; coordinates are centred
+    by x_mm=x_native-12.7 and y_mm=y_native-12.7. Quarter-turn=0, so axes remain CAD
+    +X right and +Y up in top view. All four selected drills are explicit H1-H4 plain
+    STAND-OFF holes (3.302 mm); J3/J4 drills are 1x06 connector/header pads and were
+    excluded.
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: SparkFun product page identifies SEN-22397, describes the standard
+    1 inch by 1 inch Qwiic BMI270 board, and links the official SparkFun_Qwiic_6DoF_BMI270
+    hardware repository. The repository README describes the standard 1in x 1in BMI270
+    breakout; the selected Hardware/Qwiic 1x1 board file is distinct from its Micro
+    board file.
+  mounting_holes:
+  - diameter_mm: 3.302
+    id: H1:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: 10.16
+    y_mm: -10.16
+  - diameter_mm: 3.302
+    id: H4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: -10.16
+    y_mm: -10.16
+  record_sha256: 48868648994f29b6e7091dd535b604438e1855b0c023b6c9ab559f0cee76c71f
+  research_file: source_file/electronic_breakout_sensor_motion_imu_6_axis_bmi270_qwiic_25_4_mm_width_25_4_mm_height_sparkfun_sen_22397/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 235065
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/SparkFun_Qwiic_6DoF_BMI270.brd
+    locator: SparkFun official hardware repo pinned commit c8bb01b27e91e4985eb9d526cc59eb7421a08bbb;
+      exact standard Qwiic 1x1 board file; inspect dimension 20 and all drill features
+    registered_at: '2026-11-06T18:44:24+00:00'
+    sha256: 4d7569ad9558a76de209c9a853295248b66b5ec590fc141a0fe9db1bcd612912
+    url: https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_6DoF_BMI270/c8bb01b27e91e4985eb9d526cc59eb7421a08bbb/Hardware/Qwiic%201x1/SparkFun_Qwiic_6DoF_BMI270.brd
+  - bytes: 567375
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: SparkFun product page identifies SKU SEN-22397 and board dimensions/standard
+      1 inch by 1 inch footprint; archived page
+    registered_at: '2026-11-06T18:44:26+00:00'
+    sha256: 8a15afebdedb2b868c7489815c3ff33f87a61b448bcc98a1b6cda17c5478c8e4
+    url: https://www.sparkfun.com/sparkfun-6dof-imu-breakout-bmi270-qwiic.html
+  - bytes: 3576
+    id: repo_identity
+    kind: manufacturer_repository
+    local_file: mounting_evidence/SparkFun_Qwiic_6DoF_BMI270-README.md
+    locator: Pinned official SparkFun hardware repo README names standard 1in x 1in
+      BMI270 Qwiic board; product page links this repository
+    registered_at: '2026-11-06T18:45:01+00:00'
+    sha256: 37f33427a15fea42f53172c33add4a4c8be066c04dcbc33628938d12c4e20274
+    url: https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_6DoF_BMI270/c8bb01b27e91e4985eb9d526cc59eb7421a08bbb/README.md
+  status: verified
+name_readable: SparkFun BMI270 6DoF IMU, Qwiic
+notes: []
+oobb_details:
+- breakout_pcb_height: 25.4
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: H1:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -10.16
+  - diameter_mm: 3.302
+    id: H4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -10.16
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - 10.16
+  - - 10.16
+    - 10.16
+  - - 10.16
+    - -10.16
+  - - -10.16
+    - -10.16
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 25.4
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: H1:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -10.16
+  - diameter_mm: 3.302
+    id: H4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -10.16
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - 10.16
+  - - 10.16
+    - 10.16
+  - - 10.16
+    - -10.16
+  - - -10.16
+    - -10.16
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 25.4
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: H1:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 10.16
+  - diameter_mm: 3.302
+    id: H3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -10.16
+  - diameter_mm: 3.302
+    id: H4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -10.16
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  - m3
+  - m3
+  mounting_holes:
+  - - -10.16
+    - 10.16
+  - - 10.16
+    - 10.16
+  - - 10.16
+    - -10.16
+  - - -10.16
+    - -10.16
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+part_number: sen_22397
+part_number_sparkfun: SEN-22397
+pinout_status: unverified
+pins: {}
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.sparkfun.com/sparkfun-6dof-imu-breakout-bmi270-qwiic.html
+- bytes: 235065
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/SparkFun_Qwiic_6DoF_BMI270.brd
+  locator: SparkFun official hardware repo pinned commit c8bb01b27e91e4985eb9d526cc59eb7421a08bbb;
+    exact standard Qwiic 1x1 board file; inspect dimension 20 and all drill features
+  registered_at: '2026-11-06T18:44:24+00:00'
+  sha256: 4d7569ad9558a76de209c9a853295248b66b5ec590fc141a0fe9db1bcd612912
+  url: https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_6DoF_BMI270/c8bb01b27e91e4985eb9d526cc59eb7421a08bbb/Hardware/Qwiic%201x1/SparkFun_Qwiic_6DoF_BMI270.brd
+- bytes: 567375
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: SparkFun product page identifies SKU SEN-22397 and board dimensions/standard
+    1 inch by 1 inch footprint; archived page
+  registered_at: '2026-11-06T18:44:26+00:00'
+  sha256: 8a15afebdedb2b868c7489815c3ff33f87a61b448bcc98a1b6cda17c5478c8e4
+  url: https://www.sparkfun.com/sparkfun-6dof-imu-breakout-bmi270-qwiic.html
+- bytes: 3576
+  id: mounting_repo_identity
+  kind: manufacturer_repository
+  local_file: mounting_evidence/SparkFun_Qwiic_6DoF_BMI270-README.md
+  locator: Pinned official SparkFun hardware repo README names standard 1in x 1in
+    BMI270 Qwiic board; product page links this repository
+  registered_at: '2026-11-06T18:45:01+00:00'
+  sha256: 37f33427a15fea42f53172c33add4a4c8be066c04dcbc33628938d12c4e20274
+  url: https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_6DoF_BMI270/c8bb01b27e91e4985eb9d526cc59eb7421a08bbb/README.md
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: sparkfun
+taxonomy_15: sen_22397
+taxonomy_2: breakout
+taxonomy_3: sensor
+taxonomy_4: motion
+taxonomy_5: imu_6_axis
+taxonomy_6: bmi270
+taxonomy_7: qwiic
+taxonomy_8: 25_4_mm_width_25_4_mm_height
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: sensor
+type_2: motion
+type_3: imu_6_axis
+type_4: bmi270
+webpage: https://www.sparkfun.com/sparkfun-6dof-imu-breakout-bmi270-qwiic.html
+webpage_sparkfun: https://www.sparkfun.com/sparkfun-6dof-imu-breakout-bmi270-qwiic.html

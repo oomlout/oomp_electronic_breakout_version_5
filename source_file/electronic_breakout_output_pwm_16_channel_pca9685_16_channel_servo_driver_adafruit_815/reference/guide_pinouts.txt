@@ -1,0 +1,198 @@
+Adafruit  PCA9685 16-Channel Servo Driver
+Pinouts
+Adafruit  PCA9685 16-Channel Servo Driver
+Drive many servos easily
+by
+Bill Earl
+published October 16, 2012, last edited August 19, 2026
+posted in
+Adafruit Products
+Robotics & CNC
+Breakout Boards
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly
+Hooking it Up
+Chaining Drivers - Changing the I2C Address
+Using the Adafruit Library
+Library Reference
+Arduino Library Docs
+Python & CircuitPython
+Python Docs
+Python Docs: ServoKit
+Downloads
+FAQ
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+5V 2A (2000mA) switching power supply - UL Listed
+Out of Stock
+Featured
+5V 4A (4000mA) switching power supply - UL Listed
+$14.95
+Add  to Cart
+View product details
+169
+Beginner
+Product guide
+😍
+3
+Pinouts
+The default I2C address is
+0x40
+. The
+Chaining Drivers - Changing the I2C Address
+guide page has more information on the I2C address.
+There are two sets of control input pins on either side.
+Both sides of the pins are identical!
+Use whichever side you like, you can also easily chain by connecting up two side-by-side
+Power Pins
+GND
+- This is the power and signal ground pin, must be connected
+VCC
+- This is the
+logic
+power pin, connect this to the logic level you want to use for the PCA9685 output, should be 3 - 5V max! It's also used for the 10K pullups on SCL/SDA so unless you have your own pullups, have it match the microcontroller's logic level too!
+V+
+- This is an
+optional
+power pin that will supply distributed power to the servos. If you are not using for servos you can leave disconnected. It is not used at all by the chip. You can also inject power from the 2-pin terminal block at the top of the board. You should provide 5-6VDC if you are using servos. If you have to, you can go higher to 12VDC, but if you mess up and connect VCC to V+ you could damage your board!
+Control Pins
+SCL
+- I2C clock pin, connect to your microcontrollers I2C clock line. Can use 3V or 5V logic, and has a weak pullup to
+VCC
+SDA
+- I2C data pin, connect to your microcontrollers I2C data line. Can use 3V or 5V logic, and has a weak pullup to
+VCC
+OE
+- Output enable. Can be used to quickly disable all outputs. When this pin is
+low
+all pins are
+enabled
+. When the pin is
+high
+the outputs are
+disabled
+. Pulled low by default so it's an optional pin!
+Output Ports
+There are 16 output ports. Each port has 3 pins: V+, GND and the PWM output. Each PWM runs completely independently
+but
+they must all have the same PWM frequency. That is, for LEDs you probably want 1.0 KHz but servos need 60 Hz - so you cannot use half for LEDs @ 1.0 KHz and half @ 60 Hz.
+They're set up for servos but you can use them for LEDs! Max current per pin is 25mA.
+There are 220 ohm resistors in series with all PWM Pins and the output logic is the same as
+VCC
+so keep that in mind if using LEDs.
+Page last edited May 19, 2026
+Overview
+Assembly
+Related Guides
+Your browser does not support the video tag. This links to the guide Ever-Burning Flame Painting.
+Ever-Burning Flame Painting
+By
+Erin St Blaine
+intermediate
+39
+Your browser does not support the video tag. This links to the guide Trash Panda.
+Trash Panda
+By
+Dano Wall
+beginner
+16
+Your browser does not support the video tag. This links to the guide LED Matrix FIFA World Cup Scoreboard.
+LED Matrix FIFA World Cup Scoreboard
+By
+Liz Clark
+intermediate
+6
+Your browser does not support the video tag. This links to the guide Spinning Disc Step Sequencer.
+Spinning Disc Step Sequencer
+By
+John Park
+intermediate
+54
+Your browser does not support the video tag. This links to the guide Living Starry Night Painting.
+Living Starry Night Painting
+By
+Dano Wall
+beginner
+37
+Your browser does not support the video tag. This links to the guide Magical Light-up Dreidel.
+Magical Light-up Dreidel
+By
+Erin St Blaine
+beginner
+6
+Your browser does not support the video tag. This links to the guide BLE Light Switch with Feather nRF52840 and Crickit.
+BLE Light Switch with Feather nRF52840 and Crickit
+By
+John Park
+beginner
+25
+Your browser does not support the video tag. This links to the guide Halloween Skeleton Transformation Illusion Prop.
+Halloween Skeleton Transformation Illusion Prop
+By
+Erin St Blaine
+beginner
+25
+Your browser does not support the video tag. This links to the guide Bluefruit Luminary Lanterns with Capacitive Touch.
+Bluefruit Luminary Lanterns with Capacitive Touch
+By
+Erin St Blaine
+intermediate
+44
+Your browser does not support the video tag. This links to the guide Four Seasons Fairy Bottle Lanterns.
+Four Seasons Fairy Bottle Lanterns
+By
+Erin St Blaine
+advanced
+48
+Your browser does not support the video tag. This links to the guide Tombstone Prop-Maker RP2040.
+Tombstone Prop-Maker RP2040
+By
+Ruiz Brothers
+intermediate
+20
+reef-pi Guide 6: pH Monitoring
+By
+Ranjib Dey
+beginner
+42
+Bluetooth-Controlled Matrix LED Sign using Bluefruit...
+By
+Trevor Beaton
+beginner
+23
+Your browser does not support the video tag. This links to the guide Crickit Powered Dancin' Snowman!.
+Crickit Powered Dancin' Snowman!
+By
+Isaac Wellish
+beginner
+8
+RGB Matrix Panels With Raspberry Pi 5
+By
+Tim C
+beginner
+29
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

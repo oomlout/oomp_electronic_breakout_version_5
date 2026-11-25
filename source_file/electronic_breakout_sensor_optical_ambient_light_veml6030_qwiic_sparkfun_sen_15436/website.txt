@@ -1,0 +1,118 @@
+Home
+Sensors
+Imaging
+SparkFun Ambient Light Sensor - VEML6030 (Qwiic)
+SEN-15436
+Skip to the end of the images gallery
+Skip to the beginning of the images gallery
+Share:
+SparkFun Ambient Light Sensor - VEML6030 (Qwiic)
+SKU: SEN-15436
+Add highly accurate, human-eye responsive ambient light sensing to your project with this low-power, Qwiic-enabled VEML6030 breakout.
+$5.95
+In stock
+SKU
+SEN-15436
+Qty
+-
++
+Add to Cart
+In stock
+Stock/Discounts
+Add to Wish List
+Compare
+Helpful Documentation
+Hookup Guide
+Schematic
+Datasheet (VEML6030)
+See all documentation
+Overview
+Recommended Products
+Features & Specs
+Documentation
+Reviews
+Overview
+Product Overview
+Sensing ambient light accurately means more than just detecting brightness; it requires understanding light the way the human eye does. The SparkFun Ambient Light Sensor is a highly sensitive 16-bit resolution sensor capable of mirroring human visual response and is powered by the VEML6030 from Vishay. It reads ambient light levels from 0 to an intense 120,000 lux, providing highly accurate environmental data for your custom electronics.
+Smart Alerts and Power Saving
+This Ambient Light Sensor is designed to be proactive and efficient rather than having your microcontroller constantly ask the sensor for brightness levels.
+Custom Interrupts:
+You can program specific high- and low-light thresholds directly into the sensor. If the ambient light crosses those boundaries, the sensor triggers an optional hardware interrupt, instantly alerting your main processor.
+High Efficiency:
+Built-in power-saving features reduce the active current draw to single-digit microamps, and the low standby current typically hovers around 0.5 uA, making this an ideal sensor for battery-powered, long-term deployments.
+Ready-to-Use Software:
+A fully featured Arduino library provides complete access to these power and threshold settings. We've also added some pretty extensive example code to get your sensor reading lux as fast as possible.
+Solderless I
+2
+C Integration
+Outfitted with the
+Qwiic Connect System
+, this sensor integrates with your I
+2
+C bus with absolutely no soldering. Dual Qwiic connectors allow you to easily daisy-chain the board with other sensors. Don't worry! We've still provided standard 0.1-inch spaced pins that are broken out along the edge for those who prefer to prototype on a breadboard.
+The back of the board includes jumpers to disable the power LED or remove the onboard pull-up resistors. You can also configure the default 0x48 I
+2
+C address to 0x10 using a simple solder jumper. Please keep in mind that a multiplexer (Mux) is required to communicate with multiple VEML6030 sensors over a single bus. If you need to use more than one VEML6030 sensor, consider using the
+Qwiic Mux Breakout
+.
+This product can be automatically detected, configured, and logged by DataLogger all without coding or soldering.
+LEARN MORE
+This product features Qwiic Connectors.
+LEARN MORE
+Documentation includes available MicroPython libraries.
+SEE LIBRARIES
+Recommended Products
+Features & Specs
+Features & Specs
+Floor life: 72h, MSL 4, according to J-STD-020
+Low stand by current consumption: typically 0.5uA
+Configurable I
+2
+C address (Default: 0x48)
+Removable pull-up resistors
+Removable power LED
+2x Qwiic Connectors
+Documentation
+Documentation
+Schematic
+Eagle Files
+Hookup Guide
+Datasheet
+(VEML6030)
+Libraries:
+Arduino
+Python / MicroPython / CircuitPython
+GitHub Hardware Repo
+WARNING:
+This product may contain chemicals known to the State of California to cause cancer and birth defects or other reproductive harm. See link below for more information.
+www.P65Warnings.ca.gov
+Reviews
+Customer Reviews
+Trustpilot
+Get a Quote for
+I agree to the
+Privacy Policy
+to get a quote for product
+Customer Name
+Customer Email
+Phone Number
+Comment
+Submit
+SparkFun Ambient Light Sensor - VEML6030 (Qwiic)
+$5.95
+SEN-15436
+Add to Cart
+$5.95
+retail price.
+Available Discounts
+$5.65
+|
+10+ units
+$5.36
+|
+25+ units
+$5.06
+|
+100+ units
+Looking for even larger quantities?
+Get in touch for Volume Pricing

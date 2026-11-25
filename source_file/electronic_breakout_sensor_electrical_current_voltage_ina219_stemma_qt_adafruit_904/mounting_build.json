@@ -1,0 +1,117 @@
+{
+  "record_sha256": "18e75ed199eee50d6dcdd36085d8063e9254dfcdf59fe510e616b4e7e9265492",
+  "generated_at": "2026-11-06T18:55:36+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904/3dpr.scad",
+      "bytes": 4355,
+      "sha256": "36392db5d7033d6896a11ffe2722fc3d8ff20eff7e2eb7790ff4c644a008771e"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904/3dpr_short_sides.scad",
+      "bytes": 3036,
+      "sha256": "b6e67cc8e5f4939a891b15435f4aa1c2eb77e3f13c95c10673fc3ec135d320ef"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904/3dpr_long_side.scad",
+      "bytes": 2874,
+      "sha256": "c0387acdb17cad2945280258572f8c6d9f0a57dd0294293f88b65b2050845c6a"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904/3dpr.stl",
+      "bytes": 1707913,
+      "sha256": "f1735c862c79d67a8c39a80d43f6d94092e2333c5bbeb8e2d84182748cad0dc2"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904/3dpr_short_sides.stl",
+      "bytes": 836327,
+      "sha256": "fdac87c771b733645bd7b3840a4bbcb1215d91ed8de67e6973b84979bbccbba0"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904/3dpr_long_side.stl",
+      "bytes": 689000,
+      "sha256": "d7fabac0b36180c98ae6cb2d8331bf08b09425cda597e2d771976bdbb7da0618"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904/mounting_variants.json",
+      "bytes": 4428,
+      "sha256": "35d33c661731c54c56316d945f6d16611ca7b8657dbb4129cb2cb377ecc96724"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 8932.07805241085,
+    "bounds_mm": [
+      [
+        -29.5,
+        -29.49013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        29.49013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 8932.07805241085,
+        "bounds_mm": [
+          [
+            -29.5,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 4720.937177685891,
+        "bounds_mm": [
+          [
+            -29.5,
+            -14.490133642141359,
+            0.0
+          ],
+          [
+            29.5,
+            14.490133642141359,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 3963.401864231851,
+        "bounds_mm": [
+          [
+            -15.7,
+            -14.490133642141359,
+            0.0
+          ],
+          [
+            15.7,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

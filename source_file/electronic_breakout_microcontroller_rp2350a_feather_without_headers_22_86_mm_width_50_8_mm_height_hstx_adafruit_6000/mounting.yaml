@@ -1,0 +1,103 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2350a_feather_without_headers_22_86_mm_width_50_8_mm_height_hstx_adafruit_6000
+status: verified
+board_revision: Adafruit Feather RP2350 HSTX carrier design in the official Adafruit-Feather-RP2350-PCB repository at pinned commit d7bc5cb6c16f071e01ae1cf790ee2142d376ee41 (2025-09-24). The official product page identifies this as product 6000 and lists four mounting holes.
+identity_source_ids:
+- product
+- repository
+- cad
+identity_evidence: The official Adafruit product 6000 page identifies the Feather RP2350 with HSTX and states it has four mounting holes. The pinned official repository README links product 6000 and identifies the repository as PCB files for the Adafruit Feather RP2350 in EAGLE format. The pinned Adafruit Feather RP2350.brd was inspected and its SHA256 exactly matches the previously archived board file.
+board_size:
+- 22.86
+- 50.8
+mounting_holes:
+- id: plain:1
+  x_mm: 8.89
+  y_mm: -22.86
+  diameter_mm: 2.54
+  plated: false
+  package: plain
+  source_id: cad
+- id: plain:2
+  x_mm: -8.89
+  y_mm: -22.86
+  diameter_mm: 2.54
+  plated: false
+  package: plain
+  source_id: cad
+- id: U$31:pad:P$1
+  x_mm: 8.89
+  y_mm: 22.86
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$32:pad:P$1
+  x_mm: -8.89
+  y_mm: 22.86
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: 'EAGLE layer-20 bounds; explicit package/plain drills; centred then rotated clockwise 90 degrees to place USB at positive Y. Native EAGLE bounds are 50.8 x 22.86 mm with centre (25.4, 11.43). For each native point (X,Y), first centre it, then apply quarter-turn 3: x = Y - 11.43 and y = -(X - 25.4). The resulting canonical outline is 22.86 x 50.8 mm. Explicitly selected only the two plain board holes and two pads in MOUNTINGHOLE_2.5_PLATED packages; all header pads, USB connector holes and tabs, and other drilled candidates were reviewed and excluded.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad
+  local_file: mounting_evidence/Adafruit_Feather_RP2350.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2350-PCB/d7bc5cb6c16f071e01ae1cf790ee2142d376ee41/Adafruit%20Feather%20RP2350.brd
+  kind: manufacturer_cad
+  locator: Adafruit exact product 6000 Feather RP2350 HSTX; board source filename;
+    native Eagle outline and all drill/feature records; pinned commit d7bc5cb6c16f071e01ae1cf790ee2142d376ee41
+  registered_at: '2026-11-06T16:04:28+00:00'
+  bytes: 2149359
+  sha256: 5e25817a1add376be8b04192b4367b8cf9d7516f3e32f964120ed369d9a16ec4
+- id: product
+  local_file: mounting_evidence/product_6000.html
+  url: https://www.adafruit.com/product/6000
+  kind: manufacturer_product
+  locator: Official product 6000 identity, Feather RP2350 with HSTX port, four mounting
+    holes
+  registered_at: '2026-11-06T16:04:28+00:00'
+  bytes: 104593
+  sha256: 504fbcfb76bf12069280b8f5a9687de970fd78a93956ac0815f190bd20c61e38
+- id: repository
+  local_file: mounting_evidence/README.md
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2350-PCB/d7bc5cb6c16f071e01ae1cf790ee2142d376ee41/README.md
+  kind: manufacturer_repository
+  locator: Pinned official Adafruit repository README links product 6000, identifies
+    official PCB files as Eagle CAD, names Feather RP2350
+  registered_at: '2026-11-06T16:05:08+00:00'
+  bytes: 1370
+  sha256: d7885678760fdc0e89c85dfcc3aa6f1bc1ce11a13bbb1ade0ffe18dc1102dd93
+attempts: []
+conflicts: []
+notes:
+- Official product page and pinned manufacturer repository README were reviewed to establish product and CAD identity. Current pinned CAD SHA256 matches archived reference/board.brd exactly.
+- Preview reviewed as a top view with USB at positive Y; selected drills and asymmetric plated/plain hole diameters match the CAD.
+- Standard holder is generated geometry only. Component, connector, screw-head and underside clearance, and physical fit, remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T16:05:08+00:00'
+extraction:
+  selected_ids:
+  - plain:1
+  - plain:2
+  - U$31:pad:P$1
+  - U$32:pad:P$1
+  quarter_turn: 3
+  native_centre_mm:
+  - 25.4
+  - 11.43

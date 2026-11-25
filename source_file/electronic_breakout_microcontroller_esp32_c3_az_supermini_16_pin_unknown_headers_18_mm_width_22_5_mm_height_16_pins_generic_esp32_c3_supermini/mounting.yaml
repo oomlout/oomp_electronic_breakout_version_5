@@ -1,0 +1,84 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_c3_az_supermini_16_pin_unknown_headers_18_mm_width_22_5_mm_height_16_pins_generic_esp32_c3_supermini
+status: needs_review
+board_revision: Unknown generic ESP32-C3 SuperMini carrier; chip marking/code does not
+  identify the carrier PCB or its revision.
+identity_evidence: The attached device was read by esptool as ESP32-C3 chip revision
+  v1.1. Espressif's datasheet nomenclature separately defines AZ as an other
+  identification code and X as the chip revision v1.1; neither identifies the
+  carrier PCB. No manufacturer, orderable carrier SKU, or revision-specific CAD or
+  drawing has been identified. Sources for other generic SuperMini variants cannot
+  link this carrier to their geometry.
+board_size: null
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: No board geometry extracted. The catalogue nominal 18 x 22.5 mm outline
+  is not sufficient to establish this assigned carrier identity, its exact outline,
+  or any mounting holes. Axis transform therefore cannot be applied.
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: gpt-6-luna
+sources:
+- id: chip_nomenclature
+  local_file: mounting_evidence/esp32-c3_datasheet_en.html
+  url: https://documentation.espressif.com/esp32-c3_datasheet_en.html
+  kind: manufacturer_product
+  locator: 'Espressif ESP32-C3 Series Datasheet v2.4, section 1.1 Nomenclature, Figure
+    1-1: AZ is other identification code; X is chip revision v1.1. Does not identify
+    a carrier board.'
+  registered_at: '2026-11-07T15:48:49+00:00'
+  bytes: 132782
+  sha256: eff63532dc270067d0a7c6a5556c6b5b300712747fe847543059e42ffac2e177
+attempts:
+- avenue: Official chip documentation and nomenclature
+  url: https://documentation.espressif.com/esp32-c3_datasheet_en.html
+  accessed: '2026-11-07'
+  finding: 'Section 1.1, Figure 1-1 of datasheet v2.4 defines AZ as an other
+    identification code and X as chip revision v1.1. The observed chip revision and
+    AZ code do not identify a carrier, revision, CAD, or mechanical drawing. Archived
+    and registered as chip_nomenclature.'
+- avenue: Generic SuperMini board documentation and dimensional PDF
+  url: https://dl.artronshop.co.th/ESP32-C3%20SuperMini%20datasheet.pdf
+  accessed: '2026-11-06'
+  finding: PDF names ESP32-C3FN4 and gives a nominal 22.52 x 18 mm outline and product
+    diagrams. It is a reseller-hosted generic document for FN4, not evidence that
+    the AZ-identified attached unit has this carrier or revision. Does not resolve
+    assigned board identity or prove its hole pattern.
+- avenue: Community CAD repository
+  url: https://github.com/ded811/ESP32-C3-Super-Mini-Kicad
+  accessed: '2026-11-06'
+  finding: Repository describes a KiCad design based on AliExpress ESP32-C3 Super
+    Mini boards and its own antenna changes. It is neither manufacturer-linked nor
+    shown to match the assigned AZ carrier; not authoritative for this board.
+- avenue: NuttX generic SuperMini support docs
+  url: https://nuttx.apache.org/docs/latest/platforms/risc-v/esp32c3/boards/esp32c3-supermini/index.html
+  accessed: '2026-11-06'
+  finding: Generic software target establishes pin/feature behavior only, not a revision-specific
+    physical carrier drawing or mounting geometry.
+conflicts:
+- 'Carrier identity/revision unresolved: assigned board is labelled from attached
+  AZ chip observation, but the only found dimensioned generic SuperMini PDF specifies
+  FN4; no evidence links either generic reference to the actual carrier. Mounting-hole
+  presence/absence and board dimensions remain unverified.'
+notes:
+- 'Do not set no_holes: complete carrier evidence has not been found, so absence of
+  holes is unproven.'
+- mounting_context.json describes AZ as a chip revision; this is corrected here
+  against Espressif datasheet v2.4 nomenclature. The attached chip revision v1.1
+  was reported by esptool and is distinct from the AZ identification code.
+- No promotion, validation, preview, or generation performed because exact carrier
+  identity and geometry are unsupported.
+- fit_status remains generic_holder_not_physical_fit_tested.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:48:49+00:00'

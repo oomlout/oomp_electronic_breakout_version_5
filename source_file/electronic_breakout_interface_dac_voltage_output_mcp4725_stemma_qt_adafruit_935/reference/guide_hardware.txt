@@ -1,0 +1,161 @@
+MCP4725 12-Bit DAC Tutorial
+Overview
+MCP4725 12-Bit DAC Tutorial
+Add an analog output to your microcontroller
+by
+lady ada
+published September 05, 2012, last edited September 30, 2026
+last major update February 09, 2022
+posted in
+Adafruit Products
+Microcontrollers
+Breakout Boards
+/
+Amplifiers/Sound
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Arduino Wiring
+Arduino Code
+Python & CircuitPython
+Python Docs
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+MCP4725 Breakout Board - 12-Bit DAC with I2C Interface
+$4.95
+Add  to Cart
+View product details
+35
+Beginner
+Product guide
+Overview
+Your microcontroller probably has an ADC (analog -> digital converter) but does it have a DAC (digital -> analog converter)??? Now it can! This breakout board features the easy-to-use MCP4725 12-bit DAC. Control it via I2C and send it the value you want it to output, and the VOUT pin will have it. Great for audio / analog projects, such as when you can't use PWM but need a sine wave or adjustable bias point.
+We break out the ADDR/A0 pin so you can connect two of these DACs on one I2C bus, just tie that pin of one high (or close the jumper on the back) to keep it from conflicting. Also included is a 6-pin header, for use in a breadboard. Works with both 3.3V or 5V logic.
+Some nice extras with this chip: for chips that have 3.4Mbps Fast Mode I2C (Arduino's don't) you can update the Vout at ~200 KHz. There's an EEPROM so if you write the output voltage, you can 'store it' so if the device is power cycled it will restore that voltage. The output voltage is rail-to-rail and proportional to the power pin so if you run it from 3.3V, the output range is 0-3.3V. If you run it from 5V the output range is 0-5V.
+We have an easy-to-use Arduino and CircuitPython/Python library and tutorial with a triangle-wave and sine-wave output example
+that can be used with just about any microcontroller or microcomputer with I2C host.
+Comes with a bit of 0.1" standard header in case you want to use it with a breadboard or perfboard.  Four mounting holes for easy attachment. There's an
+optional
+3.5mm terminal block spot on the PCB -
+we don't include a 3.5mm terminal block but they're both common and stocked in the shop
+- that you can solder in place if you like.
+To get you going fast, we spun up a custom-made PCB in the
+STEMMA QT
+form factor
+, making it easy to interface with. The
+STEMMA QT connectors
+on either side are compatible with the
+SparkFun Qwiic
+I2C connectors. This allows you to make solderless connections between your development board and the MCP4725 or to chain it with a wide range of other sensors and accessories using a
+compatible cable
+.
+QT Cable is not included
+, but we have a variety in the shop
+.
+Text emphasized with a blue exclamation:
+There are two versions of this board - the STEMMA QT version shown above, and the original header-only version shown below. Code works the same on both!
+Page last edited March 08, 2024
+Pinouts
+Related Guides
+Your browser does not support the video tag. This links to the guide CircuitPython MIDI to CV Skull.
+CircuitPython MIDI to CV Skull
+By
+Liz Clark
+beginner
+27
+Adafruit SPI Flash SD Card
+By
+Kattni Rembor
+Product Guide
+11
+Adafruit Pixel Shifter
+By
+Liz Clark
+Product Guide
+5
+Adafruit PyPortal Titano
+By
+Kattni Rembor
+Product Guide
+43
+Adafruit Proto Shield for Arduino
+By
+lady ada
+Product Guide
+49
+Your browser does not support the video tag. This links to the guide Audio Prank Gift Box.
+Audio Prank Gift Box
+By
+Becky Stern
+beginner
+24
+Adafruit Terminal PiCowbell for Pico
+By
+Liz Clark
+Product Guide
+2
+Madison's NeoClock - A PIC + KiCAD + NeoPixel adventure
+By
+David Littell
+beginner
+28
+LPC824 NeoPixel IR Distance Sensor
+By
+Kevin Townsend
+beginner
+15
+Adafruit PyBadge and PyBadge LC
+By
+Kattni Rembor
+Product Guide
+34
+Your browser does not support the video tag. This links to the guide Butterfly Bench with Edge Lit Acrylic.
+Butterfly Bench with Edge Lit Acrylic
+By
+Erin St Blaine
+intermediate
+6
+Network Interface Failover using FONA
+By
+Adam Kohring
+beginner
+28
+Audio Synthesis with CircuitPython synthio
+By
+John Park
+beginner
+49
+Adafruit Sparkle Motion
+By
+Erin St Blaine
+Product Guide
+19
+Storage humidity and temperature monitor
+By
+Dave Astels
+beginner
+19
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

@@ -1,0 +1,197 @@
+{
+  "board_size": [
+    19.0554,
+    19.0502
+  ],
+  "native_centre_mm": [
+    9.5327,
+    9.5377
+  ],
+  "quarter_turn": 0,
+  "candidates": [
+    {
+      "id": "JP2:pad:1",
+      "x_mm": -7.6277,
+      "y_mm": -6.9977,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X07_ROUND_76"
+    },
+    {
+      "id": "JP2:pad:2",
+      "x_mm": -5.0877,
+      "y_mm": -6.9977,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X07_ROUND_76"
+    },
+    {
+      "id": "JP2:pad:3",
+      "x_mm": -2.5477,
+      "y_mm": -6.9977,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X07_ROUND_76"
+    },
+    {
+      "id": "JP2:pad:4",
+      "x_mm": -0.0077,
+      "y_mm": -6.9977,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X07_ROUND_76"
+    },
+    {
+      "id": "JP2:pad:5",
+      "x_mm": 2.5323,
+      "y_mm": -6.9977,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X07_ROUND_76"
+    },
+    {
+      "id": "JP2:pad:6",
+      "x_mm": 5.0723,
+      "y_mm": -6.9977,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X07_ROUND_76"
+    },
+    {
+      "id": "JP2:pad:7",
+      "x_mm": 7.6123,
+      "y_mm": -6.9977,
+      "diameter_mm": 1.0,
+      "plated": true,
+      "package": "1X07_ROUND_76"
+    },
+    {
+      "id": "U$8:pad:P$1",
+      "x_mm": -6.9927,
+      "y_mm": 6.9723,
+      "diameter_mm": 2.0,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.0_PLATED"
+    },
+    {
+      "id": "U$5:pad:P$1",
+      "x_mm": 6.9773,
+      "y_mm": 6.9723,
+      "diameter_mm": 2.0,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.0_PLATED"
+    }
+  ],
+  "outline_points": [
+    [
+      9.5277,
+      6.9851
+    ],
+    [
+      6.9877,
+      9.5251
+    ],
+    [
+      6.9877,
+      9.5251
+    ],
+    [
+      6.9877,
+      9.5251
+    ],
+    [
+      -6.9877,
+      9.5251
+    ],
+    [
+      -6.9877,
+      9.5251
+    ],
+    [
+      -9.5277,
+      6.9851
+    ],
+    [
+      -6.9877,
+      9.5251
+    ],
+    [
+      -9.5277,
+      6.9851
+    ],
+    [
+      -9.5277,
+      6.9851
+    ],
+    [
+      -9.5277,
+      -6.9851
+    ],
+    [
+      -9.5277,
+      -6.9851
+    ],
+    [
+      -6.9877,
+      -9.5251
+    ],
+    [
+      -9.5277,
+      -6.9851
+    ],
+    [
+      -6.9877,
+      -9.5251
+    ],
+    [
+      -6.9877,
+      -9.5251
+    ],
+    [
+      6.9877,
+      -9.5251
+    ],
+    [
+      6.9877,
+      -9.5251
+    ],
+    [
+      9.5277,
+      -6.9851
+    ],
+    [
+      9.5277,
+      -6.9851
+    ],
+    [
+      6.9877,
+      -9.5251
+    ],
+    [
+      9.5277,
+      -6.9851
+    ],
+    [
+      9.5277,
+      6.9851
+    ]
+  ],
+  "mounting_holes": [
+    {
+      "id": "U$8:pad:P$1",
+      "x_mm": -6.9927,
+      "y_mm": 6.9723,
+      "diameter_mm": 2.0,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.0_PLATED"
+    },
+    {
+      "id": "U$5:pad:P$1",
+      "x_mm": 6.9773,
+      "y_mm": 6.9723,
+      "diameter_mm": 2.0,
+      "plated": true,
+      "package": "MOUNTINGHOLE_2.0_PLATED"
+    }
+  ]
+}

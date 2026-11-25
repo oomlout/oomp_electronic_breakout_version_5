@@ -1,0 +1,240 @@
+Adafruit 4-Channel ADC Breakouts
+Pinouts
+Adafruit 4-Channel ADC Breakouts
+A guide to the ADS1115 and ADS1015 analog converters
+by
+Liz Clark
+published November 29, 2012, last edited August 19, 2026
+last major update June 29, 2022
+posted in
+Arduino Compatibles
+CircuitPython
+Breakout Boards
+STEMMA
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly and Wiring
+Signal Connections
+Python & CircuitPython
+Python Docs
+Arduino Code
+Arduino Docs
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+ADS1115 16-Bit ADC - 4 Channel with Programmable Gain Amplifier
+$14.95
+Add  to Cart
+Featured
+ADS1015 12-Bit ADC - 4 Channel with Programmable Gain Amplifier
+$9.95
+Add  to Cart
+Featured
+STEMMA QT / Qwiic JST SH 4-Pin Cable - 50mm Long
+$0.95
+Add  to Cart
+Featured
+Adafruit Assembled Pi Cobbler Breakout + Cable for Raspberry Pi
+No Longer Stocked
+Featured
+Adafruit METRO 328 Fully Assembled - Arduino IDE compatible
+Out of Stock
+Featured
+Full Sized Premium Breadboard - 830 Tie Points
+$5.95
+Add  to Cart
+View product details
+86
+Beginner
+Project guide
+Pinouts
+The default I2C address is
+0x48
+.
+Power Pins
+The ADC on the breakout requires between
+2V to 5V power/logic
+, and can be easily used with most microcontrollers from an Arduino to a Feather or something else.
+VIN
+- this is the power pin. Acceptable voltages are
+2V to 5V.
+To power the board, give it the same power as the logic level of your microcontroller - e.g. for a 5V micro like Arduino, use 5V.
+GND
+- common ground for power and logic
+I2C Logic Pins
+SCL
+- I2C clock pin, connect to your microcontroller's I2C clock line. This pin has  a
+10K pullup
+to VIN
+SDA
+-I2C data pin, connect to your microcontroller's I2C data line. This pin has  a
+10K pullup
+to VIN.
+STEMMA QT
+-
+These connectors allow you to connect to development boards with
+STEMMA QT
+connectors, or to other things, with
+various associated accessories
+.
+Address Jumper
+On the back of the board is
+one address jumper
+, labeled
+A0
+,
+below the
+I2C Addr
+label on the board silk
+. This jumper allows you to chain up to 2 of these boards on the same pair of I2C clock and data pins. To do so, you solder the jumper "closed" by connecting the two pads.
+The default I2C address is
+0x48
+. The other address options can be calculated by “adding” the
+A0
+to the base of
+0x48
+.
+A0
+sets the lowest bit with a value of
+1
+.
+The final address is
+0x48 + A0
+which would be
+0x49
+.
+If
+A
+0
+is soldered closed, the address is
+0x48 + 1 = 0x49
+The table below shows all possible addresses, and whether the pin(s) should be high (closed) or low (open).
+Address Pin
+ADDR
+- I2C address selection pin.
+The ADS11x5 chips have a base 7-bit I2C address of 0x48 (1001000) and a clever addressing scheme that allows four different addresses using just one address pin (named
+ADDR
+for ADdRess). To program the address, connect the address pin as follows:
+Other Pins
+ALRT
+- Digital comparator output or conversion ready, can be set up and used for interrupt / asynchronous read.
+A+
+and
+A-
+- ADC power supply (VIN through a ferrite) and ADC ground (digital GND through a ferrite) these are OUTPUTs not inputs!
+A0, A1, A2, A3
+- ADC input pins for each channel.
+Power LED and Jumper
+Power LED -
+In the upper left corner, above the STEMMA connector, on the front of the board, is the power LED, labeled
+on
+. It is the green LED.
+LED jumper
+- In the upper right corner on the back of the board is a jumper for the power LED. If you wish to disable the power LED, simply cut the trace on this jumper.
+Page last edited March 08, 2024
+Overview
+Assembly and Wiring
+Related Guides
+Your browser does not support the video tag. This links to the guide CircuitPython OLED and Dual Knob Sketcher.
+CircuitPython OLED and Dual Knob Sketcher
+By
+Carter Nelson
+beginner
+24
+Your browser does not support the video tag. This links to the guide Adafruit ESP32-S2 Reverse TFT Feather.
+Adafruit ESP32-S2 Reverse TFT Feather
+By
+Kattni Rembor
+Product Guide
+44
+Adafruit Feather RP2040 RFM69
+By
+Kattni Rembor
+Product Guide
+29
+Your browser does not support the video tag. This links to the guide MakeCode Arcade with SAMD51 M4.
+MakeCode Arcade with SAMD51 M4
+By
+Peli de Halleux
+intermediate
+21
+Adafruit Feather RP2040 ThinkInk
+By
+Liz Clark
+Product Guide
+14
+CircuitPython Essentials
+By
+Kattni Rembor
+beginner
+480
+Your browser does not support the video tag. This links to the guide Quickstart IoT - Raspberry Pi Pico RP2040 with WiFi .
+Quickstart IoT - Raspberry Pi Pico RP2040 with WiFi
+By
+Brent Rubell
+beginner
+37
+Pick the Perfect Plant: Battery-Powered Sun Tracking
+By
+Tyler Cooper
+beginner
+14
+Adafruit Feather RP2040 with DVI Output Port
+By
+Kattni Rembor
+Product Guide
+11
+No-Code IoT Soil Sensor
+By
+Ruiz Brothers
+beginner
+78
+Adafruit MLX90640 IR Thermal Camera
+By
+Kattni Rembor
+Product Guide
+41
+An Introduction to RP2040 PIO with CircuitPython
+By
+Jeff Epler
+beginner
+100
+Raspberry Pi E-Ink Weather Station using Python
+By
+M. LeBlanc-Williams
+beginner
+39
+Adafruit Metro M7 1011 with AirLift
+By
+lady ada
+Product Guide
+17
+Generating Text with ChatGPT, Pico W & CircuitPython
+By
+Jeff Epler
+beginner
+39
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

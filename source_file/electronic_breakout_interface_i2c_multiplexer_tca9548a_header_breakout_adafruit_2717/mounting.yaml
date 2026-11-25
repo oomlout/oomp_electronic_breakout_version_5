@@ -1,0 +1,128 @@
+schema_version: 1
+part_id: electronic_breakout_interface_i2c_multiplexer_tca9548a_header_breakout_adafruit_2717
+status: verified
+board_revision: Revision C carrier, identified by the title block on the Adafruit
+  guide fabrication print (page 25) and official TCA9548A product/repository identity;
+  CAD source pinned to commit c5bdfe4c8e860cee7400539d6e45a235da7afcd2.
+identity_evidence: Adafruit product page identifies Product ID 2717 as TCA9548A I2C
+  Multiplexer. The official Adafruit-TCA9548A-I2C-Multiplexer-PCB repository README
+  names the same product and links product 2717; its pinned Adafruit TCA9548A.brd
+  CAD matches the revision-C guide fabrication print in the plain layer-20 rectangular
+  outline and two mounting sites. The guide drawing page 25 title block is TCA9548A_REV-C.
+board_size:
+- 17.78
+- 30.48
+mounting_holes:
+- id: U$4:P$1
+  x_mm: 0.0
+  y_mm: -12.7
+  diameter_mm: 2.5
+  source_id: cad
+- id: U$5:P$1
+  x_mm: 0.0
+  y_mm: 12.7
+  diameter_mm: 2.5
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: drawing
+derivation: 'Adafruit guide PDF page 26 fabrication print is reviewed in top view.
+  Drawing calls board outline 0.7 in x 1.2 in, hole-centre spacing 1.0 in, hole horizontal
+  centreline at 0.35 in from left edge (centred), lower hole centre setback 0.1 in
+  from bottom edge, and nominal hole diameter 0.1 in. Convert outline: 0.7*25.4=17.78
+  mm, 1.2*25.4=30.48 mm. Drawing centre spacing: 1.0*25.4=25.4 mm, hence centred y
+  positions +/-25.4/2=+/-12.7 mm. X coordinate: 0.35*25.4 - 17.78/2 = 0 mm. The drawing
+  nominal drill 0.1*25.4=2.54 mm is rounded; the exact associated CAD packages U$4
+  and U$5 (MOUNTINGHOLE_2.5_PLATED) each specify pad drill 2.5 mm, retained as the
+  exact PCB drill diameter. CAD board bounds are x=0..17.78 and y=0..30.48 mm, with
+  sites at (8.89,2.54) and (8.89,27.94) mm. Translate to the bounding-box centre by
+  subtracting (8.89,15.24), giving (0,-12.7) and (0,+12.7) mm. Axis transform: native
+  CAD top-view mm, x right/y up; subtract native bounding-box centre (8.89,15.24),
+  no rotation/reflection, resulting in canonical centred top-view axes. The drawing
+  fallback is used because the exact XML CAD layer 20 contains dimension annotation
+  entities that the current Eagle helper rejects; no source file was altered.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad
+  local_file: mounting_evidence/Adafruit_TCA9548A.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-TCA9548A-I2C-Multiplexer-PCB/c5bdfe4c8e860cee7400539d6e45a235da7afcd2/Adafruit%20TCA9548A.brd
+  kind: manufacturer_cad
+  locator: Adafruit-TCA9548A-I2C-Multiplexer-PCB, pinned commit c5bdfe4c8e860cee7400539d6e45a235da7afcd2;
+    Adafruit TCA9548A board XML. Plain layer-20 outline; inspect U$4/U$5 MOUNTINGHOLE_2.5_PLATED
+    drills and all header pads.
+  registered_at: '2026-11-06T19:07:42+00:00'
+  bytes: 276850
+  sha256: 30daff5274a01c51231acf7d136e7b2792a78b3eded8966ac974686c0959cb44
+- id: product
+  local_file: mounting_evidence/product_2717.html
+  url: https://www.adafruit.com/product/2717
+  kind: manufacturer_product
+  locator: Product ID 2717 and product technical dimensions; official product page.
+  registered_at: '2026-11-06T19:07:42+00:00'
+  bytes: 91026
+  sha256: c906aa26bddba34b406d638fb1c9992f9d3c5c9a45d56ea5a0ddd185dbf5afe1
+- id: repo
+  local_file: mounting_evidence/repository_readme.md
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-TCA9548A-I2C-Multiplexer-PCB/c5bdfe4c8e860cee7400539d6e45a235da7afcd2/README.md
+  kind: manufacturer_repository
+  locator: Official repository README states board files for Adafruit TCA9548A I2C
+    Multiplexer and links product 2717; pinned commit.
+  registered_at: '2026-11-06T19:07:43+00:00'
+  bytes: 1798
+  sha256: 16acac7d1ec65ea430f426d0a597bc543af8d30e5e850a730ffa0eebaa76323d
+- id: drawing
+  local_file: mounting_evidence/adafruit-tca9548a-guide.pdf
+  url: https://cdn-learn.adafruit.com/downloads/pdf/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout.pdf
+  kind: manufacturer_drawing
+  locator: Adafruit TCA9548A guide PDF, page 26 fabrication print, dimensions in inches;
+    title block on page 25 identifies TCA9548A_REV-C. Drawing depicts PCB outline,
+    two mounting holes, board width/height, centre spacing, edge setback and nominal
+    hole diameter.
+  registered_at: '2026-11-06T19:07:43+00:00'
+  bytes: 4946509
+  sha256: f91d9562b035e2ff4d7702dcdee6d9182b1b4fa0c21f1a3e43bdf824afb94c46
+attempts:
+- source: Pinned official Adafruit Eagle CAD repository
+  result: Exact XML CAD identified and reviewed. inspect-eagle rejects layer-20 dimension
+    annotations as unsupported; preserved original CAD and used drawing fallback.
+- source: Official Adafruit product page for product 2717
+  result: Identity and nominal product dimensions confirmed; product dimensions include
+    component/connector envelope and were not used as PCB outline dimensions.
+- source: Official Adafruit TCA9548A guide PDF fabrication print
+  result: Page 26 supplies dimensioned PCB outline, hole centre spacing, setback,
+    and nominal drill; page 25 title block identifies TCA9548A_REV-C.
+conflicts: []
+notes:
+- Inspected all drilled candidates in the exact Eagle CAD. U$4 and U$5 are the only
+  explicit mounting-feature packages; both are plated holes, 2.5 mm drill, 3.2 mm
+  annular pad, matching the two mounting sites shown in the fabrication drawing. JP1
+  and JP3 contain 1.0 mm electrical header drills and are excluded. Fiducials have
+  no drills. The selected hole diameter is the PCB drill, not screw size.
+- The guide fabrication print labels the nominal drill as 0.1 inch (2.54 mm); exact
+  CAD package drill is 2.5 mm. The small difference is drawing rounding; use the CAD
+  drill value.
+- 'Acquisition date for new evidence: 2026-11-06. CAD and README downloaded from official
+  Adafruit GitHub at commit c5bdfe4c8e860cee7400539d6e45a235da7afcd2; product page
+  and guide PDF downloaded from official Adafruit sources.'
+- The helper extraction path cannot process this otherwise plain rectangular outline
+  because it rejects EAGLE layer-20 dimension annotation entities. Used the manufacturer
+  dimensioned fabrication drawing fallback and exact CAD feature/drill data without
+  altering source CAD.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T19:07:43+00:00'
+identity_source_ids:
+- product
+- repo
+- cad
+- drawing

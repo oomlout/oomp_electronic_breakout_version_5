@@ -1,0 +1,164 @@
+Analog Devices ADXL343 Breakout Learning Guide
+Downloads
+Analog Devices ADXL343 Breakout Learning Guide
+Get up and running (tapping, free-falling, whatever!) in no time with this quality 3-axis accelerometer.
+by
+Liz Clark
+and
+Isaac Wellish
+published February 24, 2019, last edited August 26, 2026
+posted in
+Sensors
+Adafruit Products
+CircuitPython
+STEMMA
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinout
+Assembly
+Special HW Features
+Arduino
+HW Interrupts
+Arduino API
+Python and CircuitPython
+Python Docs
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Primary
+ADXL343 - Triple-Axis Accelerometer (+-2g/4g/8g/16g) w/ I2C/SPI
+$5.95
+Add  to Cart
+View product details
+8
+Beginner
+Product guide
+👍
+2
+Downloads
+Drivers
+CircuitPython:
+Adafruit_CircuitPython_ADXL34x
+Arduino:
+Adafruit_ADXL343
+Design Files
+The latest PCB design files (for Autodesk Eagle) can be found on Github at:
+Adafruit_ADXL343_PCB
+3D models on GitHub
+If you use Fritzing, the Fritzing object for this breakout is also available on Github at:
+Adafruit ADXL343 Fritzing Object Original Version
+Adafruit ADXL343 Fritzing Object STEMMA QT Version
+Datasheet
+You can download the datasheet for the ADXL343 via the button below:
+ADXL343 Datasheet
+Apps Notes
+Full-Features Pedometer Design (Analog Devices)
+If you're interested in going one step further with the ADXL34x device family, you may find the following app-note from Analog Devices useful for ideas of technical tips:
+Full-Featured Pedometer Design Realized with 3-Axis Digital Accelerometer
+This app note details a method of performing 'step detection' with an algorithm using threshold crossing and timing intervals, and may be a useful introduction to correlating sensor data with a specific behaviour model.
+Schematic and Fab Print STEMMA QT Version
+Schematic and Fab Print Original Version
+Text emphasized with a blue exclamation:
+All measurements below are in inches!
+Page last edited March 08, 2024
+Python and CircuitPython
+Related Guides
+Your browser does not support the video tag. This links to the guide Wireless ESP32-S2 Touch Screen Controller for Pure Data.
+Wireless ESP32-S2 Touch Screen Controller for Pure Data
+By
+Liz Clark
+beginner
+29
+CircuitPython Hardware: PCA9685 DC Motor & Stepper...
+By
+Tony DiCola
+intermediate
+28
+Adafruit VL53L4CD Time of Flight Distance Sensor
+By
+Liz Clark
+Product Guide
+19
+Adafruit 16-Channel PWM/Servo HAT & Bonnet for...
+By
+lady ada
+Product Guide
+105
+What’s Fresh Today? In-Season Produce Reminder for...
+By
+Phillip Burgess
+beginner
+33
+File Glider
+By
+Trevor Beaton
+beginner
+8
+Your browser does not support the video tag. This links to the guide Motorized Camera Slider 2-Axis.
+Motorized Camera Slider 2-Axis
+By
+Ruiz Brothers
+advanced
+39
+Adafruit Infrared IR Remote Transceiver
+By
+Liz Clark
+Product Guide
+12
+Adafruit MicroLipo and MiniLipo Battery Chargers
+By
+lady ada
+intermediate
+71
+Adafruit BNO055 + BMP280 BFF
+By
+Liz Clark
+Product Guide
+1
+Adafruit DS2484 I2C to 1-Wire Bus Adapter Breakout
+By
+Liz Clark
+Product Guide
+3
+Adafruit CH9328 UART to HID Keyboard Breakout
+By
+Liz Clark
+Product Guide
+5
+Adafruit Feather M0 WiFi with ATWINC1500
+By
+lady ada
+Product Guide
+134
+Adafruit ICM20649 Wide-Range 6-DoF IMU Accelerometer...
+By
+Bryan Siepert
+Product Guide
+10
+Adafruit Metro ESP32-S3
+By
+Kattni Rembor
+Product Guide
+24
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

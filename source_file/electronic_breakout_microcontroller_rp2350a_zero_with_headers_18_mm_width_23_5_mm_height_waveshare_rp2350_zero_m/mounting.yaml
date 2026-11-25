@@ -1,0 +1,97 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2350a_zero_with_headers_18_mm_width_23_5_mm_height_waveshare_rp2350_zero_m
+status: no_holes
+board_revision: Waveshare RP2350-Zero RP2350A board, RP2350-Zero-M pre-soldered-header
+  option; STEP model contains soldered headers but publishes no PCB revision code.
+identity_evidence: Waveshare identifies RP2350-Zero-M as RP2350-Zero with pre-soldered
+  header; its official RP2350-Zero wiki links the archived RP2350-Zero.step model.
+  The STEP assembly contains the two header rows; the board body is the same 18 x
+  23.5 mm carrier shown by the manufacturer drawing. No separate M-specific PCB revision
+  is stated.
+board_size:
+- 18.0
+- 23.5
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: cad
+derivation: 'Board size is directly labelled 18.00 x 23.50 mm on the official dimensioned
+  top view (mechanical). Coordinate frame: native STEP x increases right and y increases
+  from the non-USB edge toward USB; centre using x_mm=x_native-9.000 and y_mm=y_native-11.750,
+  with top view and +Y toward USB. STEP board solid 0 has native bounds approximately
+  x=-0.009..18.009, y=-0.014..23.509 mm due CAD tolerance. Reviewed all 25 cylindrical
+  faces on solid 0: 23 Ã˜0.900 mm through-hole header-contact drills in the two side
+  rows and bottom edge array, plus two Ã˜0.700 mm connector anchor features at native
+  xâ‰ˆ6.100/11.880, yâ‰ˆ18.272 mm associated with the USB connector. These are electrical
+  header pads or connector anchors, not board mounting holes. Complete board solid
+  has no remaining discrete mounting-hole candidate. The standard-hole list is explicitly
+  empty.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: cad_archive
+  local_file: mounting_evidence/RP2350_Zero_step.zip
+  url: https://files.waveshare.com/wiki/RP2350-Zero/RP2350_Zero_step.zip
+  kind: manufacturer_cad_archive
+  locator: Waveshare RP2350-Zero STEP archive; exact member RP2350-Zero.step, fetched
+    2026-11-06; 130 solids including PCB and soldered header assembly.
+  registered_at: '2026-11-06T16:37:54+00:00'
+  bytes: 3361569
+  sha256: 392250d4a9dcb1f9e3c10a684d958419a7be0557424295a7f7f8ed31fb7f74dc
+- id: cad
+  local_file: mounting_evidence/RP2350-Zero.step
+  url: https://files.waveshare.com/wiki/RP2350-Zero/RP2350_Zero_step.zip
+  kind: manufacturer_cad
+  locator: Exact STEP member RP2350-Zero.step from linked Waveshare archive; PCB body
+    bounds 18.018 x 23.523 mm with 25 cylindrical pad/connector features; no separate
+    board mounting holes.
+  registered_at: '2026-11-06T16:37:54+00:00'
+  bytes: 21063899
+  sha256: 35e056647c8cc47ff86458baefa52e94cba55adef9d489f9e061be726c42434a
+- id: product
+  local_file: mounting_evidence/RP2350-Zero-wiki.html
+  url: https://www.waveshare.net/wiki/RP2350-Zero
+  kind: manufacturer_product
+  locator: Official RP2350-Zero product wiki and its STEP/schematic resource links;
+    supports board identity and mechanical model provenance.
+  registered_at: '2026-11-06T16:37:54+00:00'
+  bytes: 93864
+  sha256: 1f26e7b5fa99bf944fd2deae91ec50fe9479cab0e2f15abdd8943ffe0a61f345
+- id: mechanical
+  local_file: reference/mechanical.jpg
+  url: https://www.waveshare.net/w/upload/thumb/6/6f/RP2350-Zero-details-size.jpg/800px-RP2350-Zero-details-size.jpg
+  kind: manufacturer_drawing
+  locator: Archived hash matches mounting_context.json; dimensioned top view labels
+    PCB 18.00 x 23.50 mm, pin-pad array and outline; no mounting holes depicted.
+  registered_at: '2026-11-06T16:37:54+00:00'
+  bytes: 35694
+  sha256: 84a88af49be5d0b212055fa8717b9d939feb44aaffc1bac6829ee33c0edd8108
+attempts:
+- source: Waveshare RP2350-Zero official wiki and linked STEP archive
+  result: Retrieved official wiki over waveshare.net after waveshare.com returned
+    HTTP 403 to direct requests; linked manufacturer archive downloaded successfully
+    on 2026-11-06. Exact CAD member inspected.
+conflicts: []
+notes:
+- RP2350-Zero-M changes the delivery configuration by pre-soldering headers; header
+  drills/pins do not become board mounting holes.
+- STEP CAD is a complete assembly, not a manufacturing PCB file; the board substrate
+  was isolated by solid bounds and its cylindrical faces reviewed.
+- The manufacturer drawing and CAD assembly contain no board mounting holes. Component,
+  connector, screw-head and underside clearance are unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T16:37:54+00:00'
+identity_source_ids:
+- product
+- cad
+- mechanical

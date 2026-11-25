@@ -1,0 +1,117 @@
+{
+  "record_sha256": "da025d9d7b0a2eba184e84bc3d66c93af02220d735999e91420ca2b2e9ac8c63",
+  "generated_at": "2026-11-06T19:21:04+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982/3dpr.scad",
+      "bytes": 3543,
+      "sha256": "c9fcf35257ab9cbb0b01528d767765a0f423135a4cb8350b4e9126342e3bba8b"
+    },
+    {
+      "path": "parts/electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982/3dpr_short_sides.scad",
+      "bytes": 1930,
+      "sha256": "df3473dedb35415e033c2c647488e37bc48d9f16075e8c4706d6c140eb862072"
+    },
+    {
+      "path": "parts/electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982/3dpr_long_side.scad",
+      "bytes": 1914,
+      "sha256": "b05ceb2935491a6ba290f06b1262445c4c51a12c90917703865f5a70c67e0e34"
+    },
+    {
+      "path": "parts/electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982/3dpr.stl",
+      "bytes": 1659911,
+      "sha256": "eb17bd9df4e77a12ae687ae94521207bc79505edcf7b2bd3220d43f0a8aa3946"
+    },
+    {
+      "path": "parts/electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982/3dpr_short_sides.stl",
+      "bytes": 591464,
+      "sha256": "aaa79f1879dc2af71d413ecd38093cbf520d49f3cd7760223898f277c490ff5b"
+    },
+    {
+      "path": "parts/electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982/3dpr_long_side.stl",
+      "bytes": 540033,
+      "sha256": "4b03199adb20caa4f848eff6ed90dfa249a3ef3a9df849736cb208b958b7b75d"
+    },
+    {
+      "path": "parts/electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982/mounting_variants.json",
+      "bytes": 4823,
+      "sha256": "074a74593ebff1d050d59a3659101d852b32919fbf5cb53856162e31e415cf47"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 11269.753432096679,
+    "bounds_mm": [
+      [
+        -37.0,
+        -29.49013364214136,
+        0.0
+      ],
+      [
+        37.0,
+        29.49013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 11269.753432096679,
+        "bounds_mm": [
+          [
+            -37.0,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            37.0,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 5968.099350812412,
+        "bounds_mm": [
+          [
+            -37.0,
+            -14.490133642141359,
+            0.0
+          ],
+          [
+            37.0,
+            14.490133642141359,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_input_touch_capacitive_mpr121_stemma_qt_adafruit_1982\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 5439.16271619119,
+        "bounds_mm": [
+          [
+            -22.0,
+            -14.490133642141359,
+            0.0
+          ],
+          [
+            22.0,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

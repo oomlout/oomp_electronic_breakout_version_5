@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLMFVVN');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile mode if small screen device -->
+    
+    <title>LIS3DH Hookup Guide - SparkFun Learn</title>
+
+          <link rel="canonical" href="https://learn.sparkfun.com/tutorials/lis3dh-hookup-guide/all">
+            
+    <link href="/css/bootstrap.min.css?rev=1792687498" rel="stylesheet">
+    <link rel="stylesheet" href="/css/theme.github.css?rev=1792687498" type="text/css" media="screen" />    <link rel="alternate" type="application/atom+xml" title="Education Blog" href="https://learn.sparkfun.com/feeds/blog" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorials" href="https://learn.sparkfun.com/feeds/tutorials" />
+    <link rel="alternate" type="application/atom+xml" title="Education Blog Comments" href="https://learn.sparkfun.com/feeds/blog_comments" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorial Comments" href="https://learn.sparkfun.com/feeds/tutorial_comments" />
+  </head>
+
+  <body id=learn class="layout-default no-type tutorials-view" ontouchstart="">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLMFVVN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <script>;
+    </script>
+    <div class="wrapper" itemscope itemtype="http://schema.org/WebSite">
+      <meta itemprop="url" content="https://learn.sparkfun.com/">
+      <div class=wrapper-inner>
+
+    <header>
+  <div class="support-nav-container container-fluid hidden-xs">
+    <div class="container">
+      <div class="support-nav">
+        <div aria-hidden="true">&nbsp;</div>
+
+        <div>
+          <ul class="professional-links">
+            <li><a href="https://www.sparkfun.com/professional">Professional</a></li>
+            <li><a href="https://www.sparkfun.com/education">EDU</a>            <li><a href="https://www.sparkfun.com/become-a-distributor">Distributor</a>          </ul>
+        </div>
+
+        <div class="cs">
+          <a href="https://www.sparkfun.com/support">Customer Support</a>        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-nav-buttons container-fluid hidden-xs">
+    <div class="container">
+      <div class="tab-bar">
+        <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header-content">
+      <div class="logo-container">
+        <button id="mobile-nav-menu-trigger" class="mobile-menu-button btn-unstyled hidden-sm hidden-md hidden-lg" type="button" aria-label="Open navigation menu">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+
+        <a class="logo" href="https://www.sparkfun.com/">
+          <span class="logo-sfe-primary"><span class="visuallyhidden">SparkFun Electronics - sparkfun.com</span></span>
+        </a>
+      </div>
+
+      <div class="search-block">
+                  <form id="search_form" class="search-block-form" action="https://learn.sparkfun.com/search/results" method="get">
+            <label for="global-search" class="sr-only">search documentation</label>
+            <input name="term" id="global-search" class="form-control" type="text" value="" placeholder="search documentation" autocomplete="off">
+            <button type="submit" class="glyphicon glyphicon-search global-search-icon" aria-label="Search"></button>
+          </form>
+        
+        <a href="https://www.sparkfun.com/" class="hidden-xs">Back to Webstore<span class="icon-header icon-header-undo" aria-hidden="true"></span></a>
+      </div>
+
+        <a class="account-link" href="https://www.sparkfun.com/customer/account">
+          <span class="img-account-silhouette visible-xs-inline-block"><span class="sr-only">My Account</span></span>
+          <span class="hidden-xs">My Account</span>
+        </a>
+
+    </div>
+  </div>
+
+  <div class="header-nav container-fluid hidden-xs">
+    <div class="container">
+      <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    </div>
+  </div>
+  <div id="nav-mobile-menu" class="nav-mobile-menu" aria-labelledby="nav-mobile-menu-heading" aria-role="dialog" aria-modal="true">
+    <h2 id="nav-mobile-menu-heading" class="sr-only">Navigation menu</h2>
+    <ul class="mobile-menu-tabs">
+      <li class="active"><a>Menu</a></li>
+      <li><a href="https://www.sparkfun.com/customer/account">Account</a></li>
+    </ul>
+    <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+  </div>
+</header>
+
+    
+    <div class=content>
+      <div class=container id=airlock>
+
+        
+        <div class=main-title>
+  <ul class="breadcrumb">
+    <li><a href="https://learn.sparkfun.com/">Home</a></li>
+    <li><a href="https://learn.sparkfun.com/tutorials">Tutorials</a></li>
+    <li>LIS3DH Hookup Guide</li>
+      </ul>
+
+  <h1>
+    LIS3DH Hookup Guide  </h1>
+
+</div>
+
+
+<a id=nav_toggle_pages class="nav_toggle nav-toggle-trigger" href="#"><span>&#8801;</span> Pages</a>
+
+<div id=tutorial class="row">
+
+  <div class="col-sm-8" id="sections">
+
+    <div class="contributors">
+                      Contributors:
+                <span class="contributor-alias"><img src="https://cdn.sparkfun.com/avatar/468388471d460cfeca6be21e3ab0defa?d=retro&s=20&r=pg" /> MTaylor</span>          </div>
+
+    <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t596" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft596&name=LIS3DH+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft596" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=LIS3DH+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft596&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft596&t=LIS3DH+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft596&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F5%2F9%2F6%2FLIS_Default2.jpg&description=LIS3DH+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+          <div class="section tutorial-page">
+        <h2 id="introduction">Introduction</h2>
+        <div >
+<div class="tile product-tile big grid " data-id="product-13963">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-lis3dh.html">
+        <img src="https://cdn.sparkfun.com/r/600-600/assets/parts/1/1/6/8/0/13963-02.jpg" alt="SparkFun Triple Axis Accelerometer Breakout - LIS3DH" height="600">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-lis3dh.html">
+          <span>SparkFun Triple Axis Accelerometer Breakout - LIS3DH</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      SEN-13963    </span>
+
+          <p class="description" style="display:none">
+        The LIS3DH Breakout is a smart, low-power, three-axis, capacitive micro-machined accelerometer with 12 bits of resolution tha&hellip;      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$7.75</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+
+<p>The <a href="https://www.sparkfun.com/products/13963">LIS3DH</a> is a triple axis accelerometer you can use to add translation detection to your project.  The "3D" in LIS3DH refers to the fact that it is a 3DoF, or 3 Degrees of Freedom.  Additionally, it has a few analog inputs to play with, and it has some built in movement detection features to detect things like free-fall, and to indicate if the FIFO buffers are full.</p>
+
+<p>If you're looking for something small and inexpensive, and are only measuring acceleration, this is the product for you.  Other inertial measurement units (or IMUs), such as the <a href="https://www.sparkfun.com/products/13284">LSM9DS1</a>; the <a href="https://www.sparkfun.com/products/13339">LSM6DS3</a>; or the <a href="https://www.sparkfun.com/products/13303">LSM303C</a>, can provide additional space location data such as gyroscopic or magnetometric.</p>
+
+<p>This guide presents the basics of plugging the board into a RedBoard, shows how to use the Arduino library to get acceleration data live or by FIFO collection, and describes the library usage.</p>
+
+<h3>Required Materials</h3>
+
+<p>To follow along, you'll need the following materials:</p>
+
+<ul>
+<li><a href="https://www.sparkfun.com/products/13963">LIS3DH Breakout Board</a></li>
+<li><a href="https://www.sparkfun.com/products/11021">Arduino UNO</a>, <a href="https://www.sparkfun.com/products/11575">RedBoard</a>, or another <a href="https://learn.sparkfun.com/tutorials/arduino-comparison-guide">Arduino-compatible board</a></li>
+<li><a href="https://www.sparkfun.com/products/116">Straight Male Headers</a> -- Or wire. Something to connect between the breakout and a breadboard.</li>
+<li><a href="https://www.sparkfun.com/products/12002">Breadboard</a> -- Any size (even mini) should do.</li>
+<li><a href="https://www.sparkfun.com/products/11026">M/M Jumper Wires</a> -- To connect between Arduino and breadboard.</li>
+</ul>
+
+<div class="alert alert-warning"><b>The LIS3DH is a 3.3V device!</b> Supplying voltages greater than ~3.6V can permanently damage the IC. As long as your Arduino has a 3.3V supply output, and you're OK with using I<sup>2</sup>C; you shouldn't need any extra level shifting. But, if you want to use SPI, you may need a <a href="https://www.sparkfun.com/products/12009">level shifter</a>.</div>
+
+<p>A logic level shifter is required for any 5V-operating Arduino (UNO, RedBoard, Leonardo, etc). If you use a 3.3V-based 'duino -- like the <a href="https://www.sparkfun.com/products/10914">Arduino Pro 3.3V</a> or <a href="https://www.sparkfun.com/products/11114">3.3V Pro Mini</a> -- there is no need for level shifting.</p>
+
+<h3>Suggested Reading</h3>
+
+<p>If you're not familiar with some of the concepts below, we recommend checking out that tutorial before continuing on.</p>
+
+<ul>
+<li><a href="https://learn.sparkfun.com/tutorials/accelerometer-basics">Accelerometer Basics</a></li>
+<li><a href="https://learn.sparkfun.com/tutorials/gyroscope">Gyroscopes</a></li>
+<li><a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi">Serial Peripheral Interface (SPI)</a></li>
+<li><a href="https://learn.sparkfun.com/tutorials/i2c">Inter-IC Communication (I<sup>2</sup>C)</a></li>
+<li><a href="https://learn.sparkfun.com/tutorials/logic-levels">Logic Levels</a></li>
+<li><a href="https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide">Bi-Directional Level Shifter Hookup Guide</a></li>
+</ul>
+
+<p>Also, the following ST documents are helpful for advanced users:</p>
+
+<ul>
+<li><a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/9/6/LIS3DH_Datasheet_DocID_17530rev1.pdf">LIS3DH_Datasheet</a> -- Hardware information and register map.</li>
+<li><a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/9/6/LIS3DH_AppNote_DocID_18198rev1.pdf">LIS3DH_AppNote</a> -- Descriptive material showing basic usage.</li>
+</ul>      </div>
+          <div class="section tutorial-page">
+        <h2 id="hardware-overview-and-assembly">Hardware Overview and Assembly</h2>
+        <p>There are a few different methods with which you can use the LIS3DH.</p>
+
+<p>The top side of the board has the LIS3DH sensor, some bypass caps and pull-up resistors.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/9/6/topNotated.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/5/9/6/topNotated.jpg" alt="board pinout" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>The pin connections</em> </div></p>
+
+<p>This table gives more information as to each pins functionality.  The serial port can be connected as either SPI or I2C, and it uses the same physical pins for both.  To get going, just wire up your choice of interface, supply 3.3v, and ground. Note that you will not need to use all the pins no matter which communication method you choose.</p>
+
+<table class="table table-striped table-bordered table-hover">
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th colspan="2">Connection</th>
+  </tr>
+  <tr>
+    <th>Group</th>
+    <th>Name</th>
+    <th>Direction</th>
+    <th>Description</th>
+    <th>I2C</th>
+    <th>SPI</th>
+  </tr>
+  <tr>
+    <th class="active" rowspan="4">Serial</th>
+    <td>!CS</td>
+    <td>I</td>
+    <td>Chip select (for SPI)</td>
+    <td>NC</td>
+    <td>!CS</td>
+  </tr>
+  <tr>
+    <td>SDO</td>
+    <td>O</td>
+    <td>Data output (MISO for SPI)</td>
+    <td>NC</td>
+    <td>MISO</td>
+  </tr>
+  <tr>
+    <td>SCL</td>
+    <td>I</td>
+    <td>Data clock</td>
+    <td>SCL</td>
+    <td>SCK</td>
+  </tr>
+  <tr>
+    <td>SDA/SDI</td>
+    <td>I/O</td>
+    <td>Data in (SDA for I2C, MOSI for SPI)</td>
+    <td>SDA</td>
+    <td>MOSI</td>
+  </tr>
+  <tr>
+    <th class="active" rowspan="2">Interrupts</th>
+    <td>I1</td>
+    <td>O</td>
+    <td>Primary int has FIFO + motion</td>
+    <td colspan="2">Optional MCU</td>
+  </tr>
+  <tr>
+    <td>I2</td>
+    <td>O</td>
+    <td>Secondary int has motion</td>
+    <td colspan="2">Optional MCU</td>
+  </tr>
+  <tr>
+    <th class="active" rowspan="3">ADC</th>
+    <td>A1</td>
+    <td>I</td>
+    <td>Analog in</td>
+    <td colspan="2">Optional</td>
+  </tr>
+  <tr>
+    <td>A2</td>
+    <td>I</td>
+    <td>Analog in</td>
+    <td colspan="2">Optional</td>
+  </tr>
+  <tr>
+    <td>A3</td>
+    <td>I</td>
+    <td>Analog in (unused for temp readings)</td>
+    <td colspan="2">Optional</td>
+  </tr>
+  <tr>
+    <th class="active" rowspan="2">Power</th>
+    <td>VCC</td>
+    <td>I</td>
+    <td>3.3V input</td>
+    <td colspan="2">Supply</td>
+  </tr>
+  <tr>
+    <td>GND</td>
+    <td>I</td>
+    <td>Ground connection (either PTH)</td>
+    <td colspan="2">Supply</td>
+  </tr>
+</table>
+
+<p>On the bottom, there are two jumpers that correspond to the I2C address and pull-up enable.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/9/6/botNotated.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/5/9/6/botNotated.jpg" alt="alt text" /></a> </div></p>
+
+<p>The following options are available:</p>
+
+<ul>
+<li><strong>The I2C Address Jumper</strong> -- Bridge to use alternate address 0x18, otherwise leave open for 0x19.  Leave open for SPI use.</li>
+<li><strong>The I2C Pull-up Enable</strong> -- Closed by default, this connects a pull-up resistor between the I2C lines and VCC.  This generally doesn't interfere with SPI operation, but, if less power consumption is required, carefully cut the copper traces.</li>
+</ul>
+
+<h3>Working with a Breadboard</h3>
+
+<p>This sensor works nicely with a breadboard for easy connection, and, because it gives some mass to the accelerometer, it more closely matches what might be expected from a project or cellphone.</p>
+
+<p>To add headers, break off two 6-pin lengths of <a href="https://www.sparkfun.com/products/116">0.1 inch male headers</a>, and set them into a breadboard to use as a soldering jig.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/9/6/Wifi_Cheeseburger_Project-03.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/5/9/6/Wifi_Cheeseburger_Project-03.jpg" alt="alt text" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>Two rows of headers placed and ready to solder.</em> </div></p>
+
+<p>Drop the breakout board onto the pins, and solder down the rows.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/9/6/Wifi_Cheeseburger_Project-04.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/5/9/6/Wifi_Cheeseburger_Project-04.jpg" alt="alt text" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>Soldering on the rows of pins.</em> </div></p>
+
+<p>Congratulations!  You're now ready to connect the sensor to a microcontroller of your choosing.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="getting-the-arduino-library">Getting the Arduino Library</h2>
+        <p>The examples in the guide use the Arduino IDE and a RedBoard to communicate with the LIS3DH.</p>
+
+<p>To get the Arduino library, download from Github, or use the Arduino Library Manager.</p>
+
+<h3>Download the Github Repository</h3>
+
+<p>Visit the <a href="https://github.com/sparkfun/SparkFun_LIS3DH_Arduino_Library">GitHub repository</a> to download the most recent version of the library, or click the link below:</p>
+
+<p><div class="center-block text-center"> <a href="https://github.com/sparkfun/SparkFun_LIS3DH_Arduino_Library/archive/master.zip" class="btn btn-default">Download the Arduino Library</a> </div></p>
+
+<h3>Library Manager</h3>
+
+<p>For help installing the library, check out our <a href="https://learn.sparkfun.com/tutorials/installing-an-arduino-library">How To Install An Arduino Library tutorial</a>.</p>
+
+<p>If you don't end up using the manger, you'll need to move the <em>SparkFun_LIS3DH_Arduino_Library</em> folder into a <em>libraries</em> folder within your Arduino sketchbook.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="example-i2c-analog-and-interrupts">Example: I2C, analog, and interrupts</h2>
+        <p>The first circuit allows a RedBoard to talk to the LIS3DH over I2C and provides connections on the interrupt and ADC pins.</p>
+
+<p>The interrupts are useful to indicate conditions like extreme Gs or freefall, and to tell the RedBoard that the FIFO is full and needs to be serviced.  The analog input pins are useful to measure various voltages similar to the RedBoard's analog inputs, but have a more constrained voltage range (about 0.9V to 1.8V).  If you don't need either of these, just connect power, ground, and communication pins, and ignore the interrupt and ADC examples.</p>
+
+<p>Use these two pictures as a guide for building the circuit.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/9/6/Wifi_Cheeseburger_Project-02.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/5/9/6/Wifi_Cheeseburger_Project-02.jpg" alt="alt text" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>The circuit built on a RedBoard</em> </div></p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/9/6/I2C_bb.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/5/9/6/I2C_bb.jpg" alt="alt text" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>The connections shown in Fritzing</em> </div></p>
+
+<h3>Basic Accelerometer Data Collection:</h3>
+
+<p>Start with just the basic accelerometer sketch, also called "<a href="https://github.com/sparkfun/SparkFun_LIS3DH_Arduino_Library/blob/master/examples/MinimalistExample/MinimalistExample.ino">MinimalistExample</a>" from the library.  This will periodically samples the sensor and displays data as number of Gs detected.  Remember, the vertical axis will read 1G while sitting at rest.</p>
+
+<pre><code>language:c
+#include "SparkFunLIS3DH.h"
+#include "Wire.h"
+#include "SPI.h"
+
+LIS3DH myIMU; //Default constructor is I2C, addr 0x19.
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  delay(1000); //relax...
+  Serial.println("Processor came out of reset.\n");
+
+  //Call .begin() to configure the IMU
+  myIMU.begin();
+
+}
+
+
+void loop()
+{
+  //Get all parameters
+  Serial.print("\nAccelerometer:\n");
+  Serial.print(" X = ");
+  Serial.println(myIMU.readFloatAccelX(), 4);
+  Serial.print(" Y = ");
+  Serial.println(myIMU.readFloatAccelY(), 4);
+  Serial.print(" Z = ");
+  Serial.println(myIMU.readFloatAccelZ(), 4);
+
+  delay(1000);
+}
+</code></pre>
+
+<p>Example output:</p>
+
+<pre><code>Processor came out of reset.
+
+
+Accelerometer:
+ X = -0.1481
+ Y = -0.1361
+ Z = 0.9768
+
+Accelerometer:
+ X = -0.1481
+ Y = -0.1361
+ Z = 0.9768
+
+Accelerometer:
+ X = -0.1481
+ Y = -0.1361
+ Z = 0.9768
+
+Accelerometer:
+ X = -0.1481
+ Y = -0.1361
+ Z = 0.9768
+</code></pre>
+
+<p>When run, the sketch will display data in Gs to the <a href="https://learn.sparkfun.com/tutorials/terminal-basics">serial terminal</a>.  Every second, the data is collected and printed.</p>
+
+<h3>Using the ADC</h3>
+
+<p>To try out the analog inputs, load the example called "<a href="https://github.com/sparkfun/SparkFun_LIS3DH_Arduino_Library/blob/master/examples/ADCUsage/ADCUsage.ino">ADCUsage</a>", or copy paste from the following section.  This example also shows some of the additional settings that can be applied within the <code>begin()</code> function.</p>
+
+<pre><code>language:c
+#include "SparkFunLIS3DH.h"
+#include "Wire.h"
+#include "SPI.h"
+
+LIS3DH myIMU; //Default constructor is I2C, addr 0x19.
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  delay(1000); //relax...
+  Serial.println("Processor came out of reset.\n");
+
+  myIMU.settings.adcEnabled = 1;
+  //Note:  By also setting tempEnabled = 1, temperature data is available
+  //on ADC3.  Temperature *differences* can be read at a rate of
+  //1 degree C per unit of ADC3
+  myIMU.settings.tempEnabled = 0;
+  myIMU.settings.accelSampleRate = 50;  //Hz.  Can be: 0,1,10,25,50,100,200,400,1600,5000 Hz
+  myIMU.settings.accelRange = 2;      //Max G force readable.  Can be: 2, 4, 8, 16
+  myIMU.settings.xAccelEnabled = 0;
+  myIMU.settings.yAccelEnabled = 0;
+  myIMU.settings.zAccelEnabled = 0;
+
+  //Call .begin() to configure the IMU
+  myIMU.begin();
+
+}
+
+void loop()
+{
+  //Get all parameters
+  Serial.print("\nADC:\n");
+  Serial.print(" 1 = ");
+  Serial.println(myIMU.read10bitADC1());
+  Serial.print(" 2 = ");
+  Serial.println(myIMU.read10bitADC2());
+  Serial.print(" 3 = ");
+  Serial.println(myIMU.read10bitADC3());
+
+  delay(300);
+}
+</code></pre>
+
+<p>Example output:</p>
+
+<pre><code>Processor came out of reset.
+
+
+ADC:
+ 1 = 1020
+ 2 = 522
+ 3 = 506
+
+ADC:
+ 1 = 1020
+ 2 = 544
+ 3 = 516
+
+ADC:
+ 1 = 1020
+ 2 = 540
+ 3 = 517
+</code></pre>
+
+<p>The sketch prints the three ADC values every 300ms.  Move the knob to see how the values change and how the effective voltage range is somewhat in the middle of the full range.  Move the wire from on ADC pin to another to see that the controlled value changes.</p>
+
+<h3>Using the Interrupt Pins</h3>
+
+<p>Interrupt behavior is highly configurable and is thus omitted as basic library functions.  Instead, LIS3DH registers are directly written in accordance with the datasheet.</p>
+
+<p>An example is provided that has the relevant registers configured with comments in a template function that can be copied into a project and modified.  Run the example named <a href="https://github.com/sparkfun/SparkFun_LIS3DH_Arduino_Library/blob/master/examples/IntUsage/IntUsage.ino">IntUsage</a>, which will throw an interrupt on one pin when an exceeded acceleration is detected and a pulse on the other when a tap is detected.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="example-spi-and-fifo-usage">Example: SPI and FIFO usage</h2>
+        <p>The second method in which to communicate with the LIS3DH is with the SPI interface.  The SPI interface operates at 3.3v, so use a <a href="https://www.sparkfun.com/products/12009?_ga=1.39639146.831177436.1424112780">logic level converter</a> or a MCU that operates at 3.3V.  Use the following pictures to help build the circuit.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/9/6/Wifi_Cheeseburger_Project-01.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/5/9/6/Wifi_Cheeseburger_Project-01.jpg" alt="Circuit Wired in SPI" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>The circuit built on a RedBoard</em> </div></p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/9/6/LIS3DH_SPI_bb.png"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/5/9/6/LIS3DH_SPI_bb.png" alt="LIS3DH_SPI" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>The connections shown in Fritzing</em> </div></p>
+
+<h3>Basic Accelerometer Data Collection:</h3>
+
+<p>SPI is not the default configuration, so you'll have to pass extra information to the library by constructing with parameters. Modify "MinimalistExample" by changing <code>LIS3DH myIMU;</code> to <code>LIS3DH myIMU(SPI_MODE, 10);</code> for SPI mode with the !CS pin connected to pin 10.</p>
+
+<p>The modified "MinimalistExample" is listed here:</p>
+
+<pre><code>language:c
+#include "SparkFunLIS3DH.h"
+#include "Wire.h"
+#include "SPI.h"
+
+LIS3DH myIMU(SPI_MODE, 10); // constructed with parameters for SPI and cs pin number
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  delay(1000); //relax...
+  Serial.println("Processor came out of reset.\n");
+
+  //Call .begin() to configure the IMU
+  myIMU.begin();
+
+}
+
+
+void loop()
+{
+  //Get all parameters
+  Serial.print("\nAccelerometer:\n");
+  Serial.print(" X = ");
+  Serial.println(myIMU.readFloatAccelX(), 4);
+  Serial.print(" Y = ");
+  Serial.println(myIMU.readFloatAccelY(), 4);
+  Serial.print(" Z = ");
+  Serial.println(myIMU.readFloatAccelZ(), 4);
+
+  delay(1000);
+}
+</code></pre>
+
+<p>Example output:</p>
+
+<pre><code>Processor came out of reset.
+
+
+Accelerometer:
+ X = -0.1481
+ Y = -0.1361
+ Z = 0.9768
+
+Accelerometer:
+ X = -0.1481
+ Y = -0.1361
+ Z = 0.9768
+
+Accelerometer:
+ X = -0.1481
+ Y = -0.1361
+ Z = 0.9768
+
+Accelerometer:
+ X = -0.1481
+ Y = -0.1361
+ Z = 0.9768
+</code></pre>
+
+<p>When run, the sketch will display data in Gs to the serial terminal.  Every second, the data is collected and printed.</p>
+
+<h3>FIFO usage:</h3>
+
+<p>The SPI bus can operate faster than I2C, so for high speed data collections where periodic sampling is required, SPI is advisable.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/9/6/CSVGraph.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/5/9/6/CSVGraph.jpg" alt="alt text" /></a> </div></p>
+
+<p><div class="center-block text-center"> <em>This graph was made by taking the output of the example and copy-pasting it into a spreadsheet program, then creating a chart.  During the data collection, the sensor was moved about a foot back and forth on each axis.</em> </div></p>
+
+<pre><code>language:c
+#include "SparkFunLIS3DH.h"
+#include "Wire.h"
+#include "SPI.h"
+
+LIS3DH myIMU(SPI_MODE, 10); //Constructing with SPI interface information
+//LIS3DH myIMU(I2C_MODE, 0x19); //Alternate constructor for I2C
+
+uint32_t sampleNumber = 0; //Used to make CSV output row numbers
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  delay(1000); //relax...
+  Serial.println("Processor came out of reset.\n");
+
+  myIMU.settings.adcEnabled = 0;
+  //Note:  By also setting tempEnabled = 1, temperature data is available
+  //instead of ADC3 in.  Temperature *differences* can be read at a rate of
+  //1 degree C per unit of ADC3 data.
+  myIMU.settings.tempEnabled = 0;
+  myIMU.settings.accelSampleRate = 10;  //Hz.  Can be: 0,1,10,25,50,100,200,400,1600,5000 Hz
+  myIMU.settings.accelRange = 2;      //Max G force readable.  Can be: 2, 4, 8, 16
+  myIMU.settings.xAccelEnabled = 1;
+  myIMU.settings.yAccelEnabled = 1;
+  myIMU.settings.zAccelEnabled = 1;
+
+  //FIFO control settings
+  myIMU.settings.fifoEnabled = 1;
+  myIMU.settings.fifoThreshold = 20;  //Can be 0 to 31
+  myIMU.settings.fifoMode = 1;  //FIFO mode.
+  //fifoMode can be:
+  //  0 (Bypass mode, FIFO off)
+  //  1 (FIFO mode)
+  //  3 (FIFO until full)
+  //  4 (FIFO when trigger)
+
+  //Call .begin() to configure the IMU (except for the fifo)
+  myIMU.begin();
+
+  Serial.print("Configuring FIFO with no error checking...");
+  myIMU.fifoBegin(); //Configure fifo
+  Serial.print("Done!\n");
+
+  Serial.print("Clearing out the FIFO...");
+  myIMU.fifoClear();
+  Serial.print("Done!\n");
+  myIMU.fifoStartRec(); //cause fifo to start taking data (re-applies mode bits)
+
+}
+
+void loop()
+{
+  //float temp;  //This is to hold read data
+  //uint16_t tempUnsigned;
+  //
+  while(( myIMU.fifoGetStatus() &amp; 0x80 ) == 0) {};  //Wait for watermark
+
+  //Now loop until FIFO is empty.
+  //If having problems with the fifo not restarting after reading data, use the watermark
+  //bits (b5 to b0) instead.
+  //while(( myIMU.fifoGetStatus() &amp; 0x1F ) &gt; 2) //This checks that there is only a couple entries left
+  while(( myIMU.fifoGetStatus() &amp; 0x20 ) == 0) //This checks for the 'empty' flag
+  {
+      Serial.print(sampleNumber);
+      Serial.print(",");
+      Serial.print(myIMU.readFloatAccelX());
+      Serial.print(",");
+      Serial.print(myIMU.readFloatAccelY());
+      Serial.print(",");
+      Serial.print(myIMU.readFloatAccelZ());
+      Serial.println();
+      sampleNumber++;
+  }
+
+}
+</code></pre>
+
+<p>Example output:</p>
+
+<pre><code>Processor came out of reset.
+
+Configuring FIFO with no error checking...Done!
+Clearing out the FIFO...Done!
+0,-0.15,-0.14,1.04
+1,-0.17,-0.12,1.02
+2,-0.21,-0.10,0.95
+3,-0.21,-0.10,1.01
+4,-0.22,-0.12,1.07
+5,-0.17,-0.12,0.99
+6,-0.12,-0.15,0.96
+7,-0.18,-0.12,0.94
+8,-0.19,-0.10,0.98
+9,-0.20,-0.14,1.04
+10,-0.19,-0.12,0.99
+11,-0.20,-0.10,0.95
+12,-0.21,-0.12,1.06
+13,-0.14,-0.12,0.98
+14,-0.10,-0.11,0.95
+15,-0.12,-0.10,0.94
+16,-0.14,-0.09,0.90
+...
+</code></pre>
+
+<p>Notice that the output produces batches of data periodically.  Even though the data waits to be collected, it is still sampled periodically.  The data is collected when the FIFO is past the watermark configured in the line <code>myIMU.settings.fifoThreshold = 20;</code>.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="extra-examples-and-arduino-library-reference">Extra Examples and Arduino Library Reference</h2>
+        <p>The following examples are included in the Arduino library:</p>
+
+<ul>
+<li><strong>ADCUsage</strong> - Demonstrates analog in reads and has notes about temperature collection</li>
+<li><strong>FifoExample</strong> - Demonstrates using the built-in buffer to burst-collect data - <strong>Good demonstration of settings</strong></li>
+<li><strong>FullSettingExample</strong> - Shows all settings, with non-used options commented out</li>
+<li><strong>IntUsage</strong> - shows configuration of interrupt bits</li>
+<li><strong>LowLevelExample</strong> - Demonstrates using only the core driver without math and settings overhead</li>
+<li><strong>MinimalistExample</strong> - The <strong>easiest</strong> configuration</li>
+<li><strong>MultiI2C</strong> - Using two LIS3DHs over I2C</li>
+<li><strong>MultiSPI</strong> - Using two LIS3DHs over SPI</li>
+</ul>
+
+<h3>Library Usage</h3>
+
+<p>Take the following steps to use the library</p>
+
+<ul>
+<li>construct an object in the global space with one of these constructions
+
+<ul>
+<li>No parameters -- I2C mode at address 0x19</li>
+<li>I2C_MODE, address</li>
+<li>SPI_MODE, pin number</li>
+</ul></li>
+<li>With in begin, set the .settings. values</li>
+<li>run <code>.begin()</code></li>
+</ul>
+
+<p>Example:</p>
+
+<pre><code>language:c
+LIS3DH myIMU; //This creates an instance the library object.
+
+void setup()
+{
+    myIMU.settings.adcEnabled = 1;
+    myIMU.settings.tempEnabled = 0;
+    myIMU.settings.accelSampleRate = 50;  //Hz.  Can be: 0,1,10,25,50,100,200,400,1600,5000 Hz
+    myIMU.settings.accelRange = 2;      //Max G force readable.  Can be: 2, 4, 8, 16
+    myIMU.begin();
+}
+</code></pre>
+
+<h4>Settings</h4>
+
+<p>The main LIS3DH class has a public member, which is named settings.  To configure settings, use the format <code>myIMU.settings.accelSampleRate = (...);</code>. Then, call <code>.begin()</code> to apply.</p>
+
+<p>Settings contains the following members:</p>
+
+<ul>
+<li><code>uint8_t adcEnabled</code> -- Set to 1 to enable ADCs</li>
+<li><code>uint8_t tempEnabled</code> -- Set to 1 to override ADC3 with delta temperature information</li>
+<li><code>uint16_t accelSampleRate</code> -- Can be: 0,1,10,25,50,100,200,400,1600,5000 Hz</li>
+<li><code>uint8_t accelRange</code> -- Max G force readable.  Can be: 2, 4, 8, 16</li>
+<li><code>uint8_t xAccelEnabled</code> -- Set to 1 to enable x axis</li>
+<li><code>uint8_t yAccelEnabled</code> -- Set to 1 to enable y axis</li>
+<li><code>uint8_t zAccelEnabled</code> -- Set to 1 to enable z axis</li>
+<li><code>uint8_t fifoEnabled</code> -- Set to 1 to enable FIFO</li>
+<li><code>uint8_t fifoMode</code> -- Can be 0x0,0x1,0x2,0x3</li>
+<li><code>uint8_t fifoThreshold</code> -- Number of bytes read before watermark is detected (0 to 31)</li>
+</ul>
+
+<h3>Functions</h3>
+
+<div class="alert alert-warning"><b>Advanced programmers:</b> The LIS3DH class inherits the LIS3DHCore, which can be used to communicate without all these functions, so you can write your own.  This class is not covered in this hookup guide.</div>
+
+<h4>uint8_t begin( void );</h4>
+
+<p>Call after providing settings to start the wire or SPI library as indicated by construction and runs <code>applySettings()</code>.  Returns 0 for success.</p>
+
+<h4>void applySettings( void );</h4>
+
+<p>This configures the IMU's registers based on the contents of .settings.</p>
+
+<h4>int16_t readRawAccelX( void );</h4>
+
+<h4>int16_t readRawAccelY( void );</h4>
+
+<h4>int16_t readRawAccelZ( void );</h4>
+
+<p>These functions return axis acceleration information as a 16 bit, signed integer.</p>
+
+<h4>float readFloatAccelX( void );</h4>
+
+<h4>float readFloatAccelY( void );</h4>
+
+<h4>float readFloatAccelZ( void );</h4>
+
+<p>These functions call the Raw functions, then apply math to convert to a float expressing acceleration in number of Gs.</p>
+
+<h4>uint16_t read10bitADC1( void );</h4>
+
+<h4>uint16_t read10bitADC2( void );</h4>
+
+<h4>uint16_t read10bitADC3( void );</h4>
+
+<p>These functions return the ADC values read from the pins.  Values will be 10 bit and the detectable range is about 0.9V to 1.8V.</p>
+
+<p>Note:  When <code>tempEnabled == 1</code>, ADC3 reads as an unreferenced temperature in degrees C.  Read twice and calculate the change in temperature.</p>
+
+<h4>void fifoBegin( void );</h4>
+
+<p>This enables the FIFO by writing the proper values into the FIFO control reg, and control reg 5.  This does not start the data collection to the FIFO, run <code>fifoStartRec()</code> when ready.</p>
+
+<p>Sample rate depends on data rate selected in .settings.</p>
+
+<h4>void fifoClear( void );</h4>
+
+<p>This reads all data until the status says none is available, discarding the data.  Use to start with new data if the FIFO fills with old data.</p>
+
+<h4>void fifoStartRec( void )</h4>
+
+<p>This enables FIFO data collection.  Run this before starting to check if data is available.</p>
+
+<p>After fifoStartRec is used, data from the X, Y, Z registers is not real time, but is the next available sample.</p>
+
+<h4>uint8_t fifoGetStatus( void )</h4>
+
+<p>This returns the FIFO status byte.  The contents of the byte are as follows:</p>
+
+<ul>
+<li>bit 7:  Watermark exceeded</li>
+<li>bit 6:  FIFO has overflowed</li>
+<li>bit 5:  FIFO is empty</li>
+<li>bit 4 through 0:  Number of samples available (0 to 31)</li>
+</ul>
+
+<h4>void fifoEnd( void );</h4>
+
+<p>This stops the FIFO and returns the device to regular operation.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="resource">Resources and Going Further</h2>
+        <p>You should now have a basic understanding of how to use the LIS3DH, but if you need some more information check out the following links:</p>
+
+<ul>
+<li><a href="https://github.com/sparkfun/LIS3DH_Breakout">LIS3DH Breakout Github repo</a> -- Design files.</li>
+<li><a href="https://github.com/sparkfun/SparkFun_LIS3DH_Arduino_Library">SparkFun LIS3DH Arduino Library Github Repo</a> -- arduino library.</li>
+<li><a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/9/6/LIS3DH_Datasheet_DocID_17530rev1.pdf">LIS3DH Datasheet</a> -- Hardware information and register map.</li>
+<li><a href="https://cdn.sparkfun.com/assets/learn_tutorials/5/9/6/LIS3DH_AppNote_DocID_18198rev1.pdf">LIS3DH AppNote</a> -- Descriptive material showing basic usage.</li>
+</ul>
+
+<h3>Going Further</h3>
+
+<p>Need a little inspiration? Check out some of these other great SparkFun tutorials.</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-258">
+  <a href="https://learn.sparkfun.com/tutorials/adxl337-and-adxl377-accelerometer-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/2/5/8/337_377_top.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">ADXL337 and ADXL377 Accelerometer Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      How to get started using both the ADXL337 and ADXL377 3-axis accelerometers with analog outputs.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-338">
+  <a href="https://learn.sparkfun.com/tutorials/redboard-santa-trap">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/3/3/8/Santa_Trap_Image.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">RedBoard Santa Trap</h3>
+      </a>
+
+      <div class="description">
+      A fun holiday project to try for anyone looking to catch Santa on Christmas!    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-416">
+  <a href="https://learn.sparkfun.com/tutorials/lsm6ds3-breakout-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/4/1/6/perspective.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">LSM6DS3 Breakout Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      A hookup guide for the LSM6DS3, which features a 3-axis accelerometer, 3-axis gyroscope, and FIFO buffer.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-490">
+  <a href="https://learn.sparkfun.com/tutorials/blynk-board-project-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/4/9/0/materials-01-iot-kit.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Blynk Board Project Guide</h3>
+      </a>
+
+      <div class="description">
+      A series of Blynk projects you can set up on the Blynk Board without ever re-programming it.    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>      </div>
+    
+        <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t596" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft596&name=LIS3DH+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft596" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=LIS3DH+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft596&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft596&t=LIS3DH+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft596&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F5%2F9%2F6%2FLIS_Default2.jpg&description=LIS3DH+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+  </div>
+
+  <div class="col-sm-4 nav-menu" id="nav-pages">
+    <div id="sidebar_affix">
+      <div id="tutorial-pages" class="list-group">
+        <a class="list-group-item"><b>Sections</b></a>
+                          <a data-pagename="introduction" class="list-group-item" href="#introduction">
+            Introduction          </a>
+                  <a data-pagename="hardware-overview-and-assembly" class="list-group-item" href="#hardware-overview-and-assembly">
+            Hardware Overview and Assembly          </a>
+                  <a data-pagename="getting-the-arduino-library" class="list-group-item" href="#getting-the-arduino-library">
+            Getting the Arduino Library          </a>
+                  <a data-pagename="example-i2c-analog-and-interrupts" class="list-group-item" href="#example-i2c-analog-and-interrupts">
+            Example: I2C, analog, and interrupts          </a>
+                  <a data-pagename="example-spi-and-fifo-usage" class="list-group-item" href="#example-spi-and-fifo-usage">
+            Example: SPI and FIFO usage          </a>
+                  <a data-pagename="extra-examples-and-arduino-library-reference" class="list-group-item" href="#extra-examples-and-arduino-library-reference">
+            Extra Examples and Arduino Library Reference          </a>
+                  <a data-pagename="resource" class="list-group-item" href="#resource">
+            Resources and Going Further          </a>
+              </div>
+
+      <div class="list-group">
+        <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/lis3dh-hookup-guide/discuss">
+          Comments
+          <span class="badge">0</span>
+        </a>
+                  <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/lis3dh-hookup-guide/introduction">
+            View Paginated
+          </a>
+                <a class="list-group-item" href="#" onclick="window.print(); return false;">
+          Print
+        </a>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>Tags</b></li>
+        <li class="list-group-item"><ul class="tags-list">
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/hookup">Hookup</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/motion">Motion</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/sensors">Sensors</a>  </li>
+</ul>
+</li>
+      </ul>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>License</b></li>
+        <li class="list-group-item">
+          <span class="sfe-icon-cc">
+            <span class="visuallyhidden">Creative Commons</span>
+          </span>
+          <small>tutorials are <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a></small>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+      </div> <!-- /container -->
+    </div> <!-- /content -->
+
+    <footer>
+  <div class="container">
+
+  <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>About SparkFun</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/about-sparkfun">Read Our Story</a></li>
+            <li><a href="https://www.sparkfun.com/press-and-media">Press &amp; Media</a></li>
+            <li><a href="http://www.sparkfuneducation.com" target="_blank">SparkFun Education <span class="glyphicon glyphicon-new-window"></span></a></li>
+            <li><a href="https://www.sparkfun.com/jobs">Job Openings</a></li>
+          </ul>
+
+          <h3>Partner With Us</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/partner">See Our Partners</a></li>
+            <li><a href="https://www.sparkfun.com/services">View Our Services</a></li>
+            <li><a href="https://www.sparkfun.com/become-a-distributor">Become a Distributor/Reseller</a></li>
+            <li><a href="https://www.sparkfun.com/volume-sales">Receive Volume Discounts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/support">Customer Support</a></li>
+            <li><a href="https://www.sparkfun.com/payments">Purchase Order &amp; Payment Terms</a></li>
+            <li><a href="https://www.sparkfun.com/technical-assistance">Technical Assistance</a></li>
+            <li><a href="https://www.sparkfun.com/faq">FAQs</a></li>
+          </ul>
+          <h3>Site Information</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/terms">Terms Of Service</a></li>
+            <li><a href="https://www.sparkfun.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://www.sparkfun.com/compliance">Compliance</a></li>
+            <li><a href="https://www.sparkfun.com/sitemap">Site Map</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Subscribe</h3>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "2224003",
+              formId: "257ad1af-ab9e-4275-8788-cbad81cc229e"
+            });
+          </script>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>View Our Social Channels</h3>
+          <ul class="spew">
+            <li><a href="https://www.youtube.com/sparkfun" target="_blank" class="icon-social-youtube"><span class="sr-only">YouTube</span></a></li>
+            <li><a href="https://www.instagram.com/sparkfun/" target="_blank" class="icon-social-instagram"><span class="sr-only">Instagram</span></a></li>
+            <li><a href="https://www.github.com/sparkfun" target="_blank" class="icon-social-github"><span class="sr-only">GitHub</span></a></li>
+            <li><a href="https://www.facebook.com/SparkFun" target="_blank" class="icon-social-facebook"><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://twitter.com/sparkfun" target="_blank" class="icon-social-twitter"><span class="sr-only">Twitter</span></a></li>
+            <li><a href="https://www.sparkfun.com/feeds" class="icon-social-rss"><span class="sr-only">RSS</span></a></li>
+            <li><a href="https://www.tiktok.com/@sparkfun.electronics?lang=en" target="_blank" class="icon-social-tiktok"><span class="sr-only">TikTok</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- end .row -->
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p class="copyleft">
+          <strong>SparkFun Electronics&nbsp;&reg;</strong>
+          <span class="hidden-xs hidden-sm">/</span>
+          <br class="visible-xs-inline visible-sm-inline"/>
+          6333 Dry Creek Parkway,
+          <br class="visible-xs-inline"/>
+          Niwot, CO 80503
+        </p>
+      </div>
+    </div><!-- end .row -->
+  </div><!-- end .container -->
+</footer>
+
+      </div><!-- end .wrapper-inner -->
+    </div><!-- end .wrapper -->
+
+    <script type="text/javascript">
+      // eslint-disable-next-line no-unused-vars
+      var SFECONFIG = {
+        dnt: false,
+        http_server: 'http://learn.sparkfun.com',
+        https_server: 'https://learn.sparkfun.com',
+        http_static: 'https://cdn.sparkfun.com',
+        learn_server: 'https://learn.sparkfun.com',
+        news_server: 'https://news.sparkfun.com',
+        base_url: '/',
+        url: '/',
+        controller: 'tutorials',
+        action: 'view',
+        auth: false,
+        sparkrev: '1792687498',
+        search_key: 'search-sngw3quge7ojic1tgr4eft5c',
+        search_url: 'https://sparkfun-electronics.ent.us-central1.gcp.cloud.es.io/api/as/v1/engines/sparkfun-01/search'
+      };
+    </script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+      <script src="/js/learn-built.min.js?sparkrev=1792687498"></script>
+    
+    <script>
+      /* global $ */
+      $.sfe();
+      $.shared();
+      $('#learn').learn();
+      $('#learn').sfeutil();
+    </script>
+                            <script src="/js/tutorials-built.min.js?sparkrev=1792687498"></script>
+                              <script>
+    var fbq = null;
+  </script>
+      
+          <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2224003.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+        <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0046/4761.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+      </body>
+</html>

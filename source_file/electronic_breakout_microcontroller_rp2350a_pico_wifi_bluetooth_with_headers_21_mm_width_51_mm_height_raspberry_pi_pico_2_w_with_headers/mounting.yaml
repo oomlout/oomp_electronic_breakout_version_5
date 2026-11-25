@@ -1,0 +1,160 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_rp2350a_pico_wifi_bluetooth_with_headers_21_mm_width_51_mm_height_raspberry_pi_pico_2_w_with_headers
+status: needs_review
+board_revision: Raspberry Pi Pico 2 W with headers (SC1634 headered wireless RP2350
+  carrier; current official datasheet RP-008304-DS-3 Release 2, Figure 3, published
+  03 July 2026, is the shared Pico 2 W base-board geometry)
+identity_source_ids:
+- product_current
+- datasheet_current
+identity_evidence: Official Raspberry Pi Pico series documentation identifies Pico
+  2 W with headers as a distinct RP2350 wireless/headered variant and states Pico
+  2 W and Pico 2 W with headers share the same board layout. The Raspberry Pi Product
+  Information Portal lists SC1633 and SC1634 under Pico 2 W and links its current
+  datasheet. Thus the RP-008304-DS-3 Pico 2 W mechanical drawing applies to this headered
+  variant; headers and the keyed debug connector are not changes to the PCB mounting
+  pattern.
+board_size:
+- 21.0
+- 51.0
+mounting_holes:
+- id: H1
+  x_mm: -5.7
+  y_mm: -23.5
+  diameter_mm: 2.1
+  plated: null
+  source_id: datasheet
+- id: H2
+  x_mm: -5.7
+  y_mm: 23.5
+  diameter_mm: 2.1
+  plated: null
+  source_id: datasheet
+- id: H3
+  x_mm: 5.7
+  y_mm: -23.5
+  diameter_mm: 2.1
+  plated: null
+  source_id: datasheet
+- id: H4
+  x_mm: 5.7
+  y_mm: 23.5
+  diameter_mm: 2.1
+  plated: null
+  source_id: datasheet
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: datasheet
+derivation: 'Manufacturer Figure 3 in RP-008304-DS-3 gives PCB outline 21 x 51 mm
+  and four drilled mounting holes diameter 2.1 mm (+/-0.05 mm). It dimensions 11.4
+  mm between hole columns and 2 mm from each short PCB edge to the adjacent mounting-hole
+  centre. Centring on the PCB bounding box: x=(+/-11.4/2)=+/-5.7 mm; y=+/-(51/2-2)=+/-23.5
+  mm. Frame transform: drawing top view is retained, X increases to the right, and
+  source drawing Y from the USB end toward the antenna end is converted to canonical
+  Y-up (USB at +Y); no quarter-turn or mirror. The headered variant has the same board
+  layout per official Pico series documentation. Hole plating is unspecified by the
+  datasheet, so null.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: false
+reviewed_by: gpt-6-luna
+sources:
+- id: drawing
+  local_file: reference/mechanical.png
+  url: https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf
+  kind: manufacturer_drawing
+  locator: 'Existing archived rendering of datasheet Figure 3, page 6: board outline
+    and four drilled mounting holes; verified against the manufacturer PDF.'
+  registered_at: '2026-11-06T16:07:16+00:00'
+  bytes: 134879
+  sha256: 9ee76baa477d0187536097d388b7e53d359291b973d30a776c17a7e8543920c6
+- id: datasheet
+  local_file: mounting_evidence/pico-2-w-datasheet.pdf
+  url: https://datasheets.raspberrypi.com/picow/pico-2-w-datasheet.pdf
+  kind: manufacturer_drawing
+  locator: Raspberry Pi Pico 2 W Datasheet, section 2 Figure 3, page 6; 51 x 21 x
+    1 mm PCB, text states four 2.1 mm drilled mounting holes; official product identity
+    and board family.
+  registered_at: '2026-11-06T16:07:16+00:00'
+  bytes: 3791194
+  sha256: 8f519b945e9f7078ffd3fee464992fca376d8037ebcd1f83bd2a021241717eb2
+- id: product
+  local_file: mounting_evidence/pico-2-w-product-portal.html
+  url: https://pip.raspberrypi.com/categories/1088-raspberry-pi-pico-2-w
+  kind: manufacturer_product
+  locator: Raspberry Pi Product Information Portal category for Pico 2 W lists product
+    codes SC1633 and SC1634; linked datasheet is RP-008304-DS-3.
+  registered_at: '2026-11-06T16:08:49+00:00'
+  bytes: 43515
+  sha256: b1506c015dc739a7f2d2a741191d555910fe23c7525eb0e59d0bdf53f1ee3828
+- id: datasheet_current
+  local_file: mounting_evidence/pico-2-w-datasheet-release-2-2026-07.pdf
+  url: https://pip-assets.raspberrypi.com/categories/1088-raspberry-pi-pico-2-w/documents/RP-008304-DS-3-pico-2-w-datasheet.pdf
+  kind: manufacturer_drawing
+  locator: Raspberry Pi Product Information Portal current Pico 2 W entry links this
+    exact Release 2 datasheet (updated 15 Jul 2026); PDF colophon Release 2, build
+    date 03/07/2026, build d4e0f1799616; section 2 Figure 3/page 6 specifies 21 x
+    51 mm PCB and four 2.1 mm (+/-0.05 mm) drilled holes. Bytes SHA-256 matches the
+    archived datasheet.
+  registered_at: '2026-11-07T15:19:22+00:00'
+  bytes: 3791194
+  sha256: 8f519b945e9f7078ffd3fee464992fca376d8037ebcd1f83bd2a021241717eb2
+- id: product_current
+  local_file: mounting_evidence/pico-2-w-product-portal-current.html
+  url: https://pip.raspberrypi.com/categories/1088-raspberry-pi-pico-2-w
+  kind: manufacturer_product
+  locator: Current official Pico 2 W Product Information Portal entry; identifies
+    SC1633 and SC1634 and lists the current RP-008304-DS-3 datasheet, updated 15 Jul
+    2026.
+  registered_at: '2026-11-07T15:19:23+00:00'
+  bytes: 43515
+  sha256: c7a7e60b98e75d2f2a3f2ce17f8b4c9aea98d06c5e8eb66eddc548d811196e62
+attempts:
+- source: Raspberry Pi official Pico series documentation
+  result: 'Reviewed current wireless-variant section: explicitly lists Pico 2 W with
+    headers and states its layout is the same as Pico 2 W; rechecked 2026-11-07 at
+    https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html.
+    It also states the physical changes between Pico 2 W and the headered variant are
+    presoldered headers and the keyed debug connector.'
+- source: Raspberry Pi Pico 2 W Datasheet RP-008304-DS-3
+  result: >-
+    Downloaded current official PDF 2026-11-06; verified Figure 3 and its four
+    drills against archived rendering reference/mechanical.png (matching archived
+    SHA-256). Rechecked current Product Information Portal listing 2026-11-07: it
+    links Release 2 (build date 03/07/2026, build d4e0f1799616, updated 15 Jul 2026);
+    downloaded bytes are identical (SHA-256 8f519b945e9f7078ffd3fee464992fca376d8037ebcd1f83bd2a021241717eb2).
+- source: mounting_research.py preview
+  result: >-
+    Standard holder preview rejected the 2.1 mm mounting drills as too small
+    for the supported M2/M2.5/M3 screw policy. Rechecked 2026-11-07: minimum supported
+    M2 clearance hole is 2.2 mm (2.0 mm nominal screw plus 0.2 mm diametral clearance);
+    the specified 2.1 +/-0.05 mm drills are 0.05-0.15 mm below that minimum. Custom
+    mechanical review is required; no promotion/generation attempted.
+conflicts:
+- issue: The documented 2.1 mm PCB drills are below the standard holder minimum for
+    M2/M2.5/M3 fasteners with the required 0.2 mm or greater diametral clearance.
+    No custom fastener/holder design is qualified in this workflow.
+  evidence: 'Current manufacturer datasheet RP-008304-DS-3 Release 2 Figure 3 specifies
+    four 2.1 mm (+/-0.05 mm) drilled holes. The smallest supported screw is nominal
+    M2 with a 2.0 mm diameter and 0.2 mm diametral clearance, requiring a 2.2 mm drill;
+    specified drills range 2.05-2.15 mm. Current standard preview reports: Drill too
+    small for supported M2/M2.5/M3 screws; needs custom holder.'
+notes:
+- Datasheet mechanical specification describes the base PCB; prescribed headers and
+  keyed debug connector are on the headered variant but do not alter the PCB outline/mounting
+  drills.
+- Connector/header features and component clearances are not part of the mounting
+  hole selection. Component, connector, screw-head and underside clearance remain
+  unverified.
+- The official product documentation page was accessible via web search but direct
+  requests returned HTTP 403; no access restriction was bypassed.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:19:23+00:00'

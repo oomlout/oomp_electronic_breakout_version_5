@@ -1,0 +1,104 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_wroom_32_nodemcu_32s_38_pin_26_mm_width_54_mm_height_38_pins_generic_nodemcu_32s
+status: needs_review
+board_revision: 'Unresolved: catalogue entry is generic NodeMCU-32S (Ai-Thinker reference
+  pinout), nominal 26 x 54 mm, but it does not identify a carrier revision or manufacturer.
+  The official Ai-Thinker NodeMCU-32 product page links a V1.3 specification for a
+  25.4 x 48.3 mm DIP38 board; the previously found V2.0 reference also gives 25.4 x
+  48.26 mm. Both conflict with the catalogue outline and neither supplies mounting-hole
+  coordinates or carrier CAD.'
+identity_evidence: 'Official Ai-Thinker NodeMCU-32 product page identifies the product
+  family and links to its board-use documentation. The page links the official
+  NodeMCU-32 Specification V1.3, whose indexed text identifies a DIP38 board sized
+  25.4 x 48.3 mm ±0.2; this does not match the catalogue''s nominal 26 x 54 mm. Both
+  the product''s hardware-resources archive and direct V1.3 PDF request were inaccessible
+  (HTTP 403). The archived PDF previously
+  labeled board_guide was hash-verified and reviewed: it is a NodeMCU-32S WIFI module
+  V1 datasheet for the ESP-WROOM-32S module, not the development-board carrier. The
+  exact generic carrier revision therefore cannot be linked to mechanical evidence.'
+board_size: null
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: No geometry extracted. Do not infer dimensions or hole locations from
+  the 26 x 54 mm catalogue outline, board photos, pinout references, or unrelated
+  ESP-WROOM-32 module drawings. Coordinate frame remains the seeded top view, centred
+  on the PCB bounding box, x right, y up; no axis transform can be recorded until
+  exact board evidence exists.
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: gpt-6-luna
+sources:
+- id: ai_thinker_product_page
+  local_file: mounting_evidence/ai_thinker_nodeMCU32_product.html
+  url: https://en.ai-thinker.com/pro_view-68.html
+  kind: manufacturer_product
+  locator: Official Ai-Thinker NodeMCU-32 product page, downloaded 2026-11-06; links
+    to official NodeMCU-32 Specification V1.3 (25.4 x 48.3 mm ±0.2, DIP38), but no
+    carrier CAD or mounting-hole coordinates. This is inconsistent with the catalogue
+    26 x 54 mm outline; the linked PDF was denied (HTTP 403) on 2026-11-07, so its
+    indexed text is noted as a lead, not archived local evidence.
+  registered_at: '2026-11-06T16:53:19+00:00'
+  bytes: 169667
+  sha256: 347ff8f5ecec77fd254ec4bc17110029aaf379dd9e51a4b6920da128d332ecbe
+- id: archived_board_guide
+  local_file: reference/nodemcu32s.pdf
+  url: https://en.ai-thinker.com/Uploads/file/20190715/20190715150654_18687.pdf
+  kind: manufacturer_product
+  locator: 'Archived PDF verified from title page: NodeMCU-32S WIFI module V1, 2019;
+    its dimensions and content are for ESP-WROOM-32S module, not the NodeMCU carrier
+    board, so it does not establish carrier geometry.'
+  registered_at: '2026-11-06T16:53:20+00:00'
+  bytes: 876602
+  sha256: b1896a5a1efa91c91055bc6381b0f9381077f551f2df6b51ed4961ff04006327
+attempts:
+- date: '2026-11-06'
+  source: Official Ai-Thinker product page https://en.ai-thinker.com/pro_view-68.html
+    and its linked hardware archive https://docs.ai-thinker.com/_media/esp32/boards/nodemcu/nodemcu_32s_hardware_resources.7z
+  result: Product page downloaded and hashed; establishes product family but does
+    not show carrier revision or mounting geometry. Archive request returned HTTP
+    403.
+- date: '2026-11-06'
+  source: Ai-Thinker NodeMCU-32S Development Board Technical Specification V2.0 found
+    via manufacturer-linked documentation
+  result: Describes CP2102 V1.2 and CH340 V1.3 carriers and gives a 25.4 x 48.26 mm
+    board size, conflicting with catalogue 26 x 54 mm; dimensioned mounting-hole coordinates/CAD
+    are not available in the accessible copy.
+- date: '2026-11-06'
+  source: Archived reference/nodemcu32s.pdf (SHA-256 b1896a5a1efa91c91055bc6381b0f9381077f551f2df6b51ed4961ff04006327)
+  result: 'Inspected title page and document: NodeMCU-32S WIFI module V1 / ESP-WROOM-32S
+    module datasheet, not the carrier PCB. It cannot establish this board’s outline
+    or hole pattern.'
+- date: '2026-11-07'
+  source: Official Ai-Thinker product page link https://docs.ai-thinker.com/_media/nodemcu32-s_specification_v1.3.pdf
+  result: Official product page links NodeMCU-32 Specification V1.3; indexed document
+    text identifies a DIP38 board with 25.4 x 48.3 mm ±0.2 dimensions, inconsistent
+    with the generic catalogue 26 x 54 mm outline. Direct download returned HTTP 403.
+    It provides no dimensioned mounting-hole layout or carrier CAD, and does not identify
+    which generic catalogue carrier revision is intended.
+conflicts:
+- type: mechanical_identity_and_outline
+  description: Catalogue identity is generic and nominal 26 x 54 mm, while the official
+    Ai-Thinker product page's linked V1.3 specification and the previously found V2.0
+    reference give 25.4 x 48.3/48.26 mm for a DIP38 carrier. The catalogue does not
+    identify a carrier revision or manufacturer, the published outline conflicts, and
+    no dimensioned mounting-hole layout or carrier CAD is available. Exact outline and
+    mounting-hole geometry therefore remain unknown.
+notes:
+- Retained needs_review after rechecking the official linked V1.3 specification; exact
+  catalogue-to-carrier identity and mounting-hole geometry are the unresolved gaps. Do
+  not promote until carrier-specific manufacturer CAD/dimensioned drawing or an exact
+  generic-board source resolves the 26 x 54 mm versus 25.4 x 48.3 mm outline conflict.
+- Component, connector, screw-head and underside clearance remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:33:04+00:00'

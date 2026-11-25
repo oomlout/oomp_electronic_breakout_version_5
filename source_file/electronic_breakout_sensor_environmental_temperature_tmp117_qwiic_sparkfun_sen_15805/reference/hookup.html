@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLMFVVN');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile mode if small screen device -->
+    
+    <title>Qwiic TMP117 High Precision Digital Temperature Sensor Hookup Guide - SparkFun Learn</title>
+
+          <link rel="canonical" href="https://learn.sparkfun.com/tutorials/qwiic-tmp117-high-precision-digital-temperature-sensor-hookup-guide/all">
+            
+    <link href="/css/bootstrap.min.css?rev=1792686932" rel="stylesheet">
+    <link rel="stylesheet" href="/css/theme.github.css?rev=1792686932" type="text/css" media="screen" />    <link rel="alternate" type="application/atom+xml" title="Education Blog" href="https://learn.sparkfun.com/feeds/blog" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorials" href="https://learn.sparkfun.com/feeds/tutorials" />
+    <link rel="alternate" type="application/atom+xml" title="Education Blog Comments" href="https://learn.sparkfun.com/feeds/blog_comments" />
+    <link rel="alternate" type="application/atom+xml" title="Tutorial Comments" href="https://learn.sparkfun.com/feeds/tutorial_comments" />
+  </head>
+
+  <body id=learn class="layout-default no-type tutorials-view" ontouchstart="">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLMFVVN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <script>;
+    </script>
+    <div class="wrapper" itemscope itemtype="http://schema.org/WebSite">
+      <meta itemprop="url" content="https://learn.sparkfun.com/">
+      <div class=wrapper-inner>
+
+    <header>
+  <div class="support-nav-container container-fluid hidden-xs">
+    <div class="container">
+      <div class="support-nav">
+        <div aria-hidden="true">&nbsp;</div>
+
+        <div>
+          <ul class="professional-links">
+            <li><a href="https://www.sparkfun.com/professional">Professional</a></li>
+            <li><a href="https://www.sparkfun.com/education">EDU</a>            <li><a href="https://www.sparkfun.com/become-a-distributor">Distributor</a>          </ul>
+        </div>
+
+        <div class="cs">
+          <a href="https://www.sparkfun.com/support">Customer Support</a>        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-nav-buttons container-fluid hidden-xs">
+    <div class="container">
+      <div class="tab-bar">
+        <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header-content">
+      <div class="logo-container">
+        <button id="mobile-nav-menu-trigger" class="mobile-menu-button btn-unstyled hidden-sm hidden-md hidden-lg" type="button" aria-label="Open navigation menu">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+
+        <a class="logo" href="https://www.sparkfun.com/">
+          <span class="logo-sfe-primary"><span class="visuallyhidden">SparkFun Electronics - sparkfun.com</span></span>
+        </a>
+      </div>
+
+      <div class="search-block">
+                  <form id="search_form" class="search-block-form" action="https://learn.sparkfun.com/search/results" method="get">
+            <label for="global-search" class="sr-only">search documentation</label>
+            <input name="term" id="global-search" class="form-control" type="text" value="" placeholder="search documentation" autocomplete="off">
+            <button type="submit" class="glyphicon glyphicon-search global-search-icon" aria-label="Search"></button>
+          </form>
+        
+        <a href="https://www.sparkfun.com/" class="hidden-xs">Back to Webstore<span class="icon-header icon-header-undo" aria-hidden="true"></span></a>
+      </div>
+
+        <a class="account-link" href="https://www.sparkfun.com/customer/account">
+          <span class="img-account-silhouette visible-xs-inline-block"><span class="sr-only">My Account</span></span>
+          <span class="hidden-xs">My Account</span>
+        </a>
+
+    </div>
+  </div>
+
+  <div class="header-nav container-fluid hidden-xs">
+    <div class="container">
+      <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    </div>
+  </div>
+  <div id="nav-mobile-menu" class="nav-mobile-menu" aria-labelledby="nav-mobile-menu-heading" aria-role="dialog" aria-modal="true">
+    <h2 id="nav-mobile-menu-heading" class="sr-only">Navigation menu</h2>
+    <ul class="mobile-menu-tabs">
+      <li class="active"><a>Menu</a></li>
+      <li><a href="https://www.sparkfun.com/customer/account">Account</a></li>
+    </ul>
+    <ul class="nav-product-categories" aria-label="Featured product categories">
+  <li><a href="https://www.sparkfun.com/featured">Featured <span class="sr-only">Products</span></a></li>
+  <li><a href="https://www.sparkfun.com/gnss">GPS/GNSS</a></li>
+  <li><a href="https://www.sparkfun.com/sensors">Sensors</a></li>
+  <li><a href="https://www.sparkfun.com/development-boards">Development Boards</a></li>
+  <li class="header-nav-iot"><a href="https://www.sparkfun.com/iot-wireless">IoT & Wireless</a></li>
+  <li class="header-nav-components"><a href="https://www.sparkfun.com/components">Components</a></li>
+  <li class="header-nav-kits"><a href="https://www.sparkfun.com/kits">Kits</a></li>
+  <li class="all-cat"><a href="https://www.sparkfun.com/all-categories"><span class="visible-xs-inline">Shop </span>All <span class="sr-only">Product</span> Categories</a></li>
+</ul>
+    <ul class="tab-navigation" aria-label="sparkfun.com navigation">
+  <li><a href="https://www.sparkfun.com/">Shop</a></li>
+  <li class="active"><a href="https://learn.sparkfun.com/">Documentation</a></li>
+  <li class=""><a href="https://news.sparkfun.com/">News</a></li>
+</ul>
+
+<ul class="sale-links" aria-label="Deals and special interests">
+  <li><a href="https://www.sparkfun.com/todays-deals"><span class="icon-header icon-header-sale" aria-hidden="true"></span>Today's Deals</a></li>
+  <li><a href="https://community.sparkfun.com/" target="_blank"><span class=" icon-header icon-header-community" aria-hidden="true"></span>Community</a></li>
+  <li><a class="sparkx" href="https://www.sparkpnt.com"><span class="logo-spark-pnt-primary"><span class="sr-only">SparkPNT (Position, Navigation & Timing)</span></span></a></li>
+</ul>
+  </div>
+</header>
+
+    
+    <div class=content>
+      <div class=container id=airlock>
+
+        
+        <div class=main-title>
+  <ul class="breadcrumb">
+    <li><a href="https://learn.sparkfun.com/">Home</a></li>
+    <li><a href="https://learn.sparkfun.com/tutorials">Tutorials</a></li>
+    <li>Qwiic TMP117 High Precision Digital Temperature Sensor Hookup Guide</li>
+      </ul>
+
+  <h1>
+    Qwiic TMP117 High Precision Digital Temperature Sensor Hookup Guide  </h1>
+
+</div>
+
+
+<a id=nav_toggle_pages class="nav_toggle nav-toggle-trigger" href="#"><span>&#8801;</span> Pages</a>
+
+<div id=tutorial class="row">
+
+  <div class="col-sm-8" id="sections">
+
+    <div class="contributors">
+                      Contributors:
+                <span class="contributor-alias"><img src="https://cdn.sparkfun.com/avatar/814545d7cad2a95dda668529c61c99d0?d=retro&s=20&r=pg" /> bboyho</span>          </div>
+
+    <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t916" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft916&name=Qwiic+TMP117+High+Precision+Digital+Temperature+Sensor+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft916" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=Qwiic+TMP117+High+Precision+Digital+Temperature+Sensor+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft916&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft916&t=Qwiic+TMP117+High+Precision+Digital+Temperature+Sensor+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft916&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F9%2F1%2F6%2F15805-SparkFun_High_Precision_Temperature_Sensor_TMP117__Qwiic_-01.jpg&description=Qwiic+TMP117+High+Precision+Digital+Temperature+Sensor+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+          <div class="section tutorial-page">
+        <h2 id="introduction">Introduction</h2>
+        <p>The <a href="https://www.sparkfun.com/products/15805">TMP117</a> is a high precision, digital temperature sensor. What makes the TMP117 stand out is its ability to be accurate down to &plusmn;0.1&deg;C (from -20&deg;C to 50&deg;C). The measurements can also have a resolution of 0.0078&deg;C! This is great for projects that require more stable temperature readings. There&apos;s also additional features that come with the TMP117. Some of these features include offsetting the temperature, entering low-power mode, and averaging the readings.</p>
+
+
+
+<div >
+<div class="tile product-tile big grid " data-id="product-15805">
+  <div class="actions-wrap">
+          <a class="thumb" href="https://www.sparkfun.com/sparkfun-high-precision-temperature-sensor-tmp117-qwiic.html">
+        <img src="https://cdn.sparkfun.com/r/600-600/assets/parts/1/4/4/3/0/15805-SparkFun_High_Precision_Temperature_Sensor_-_TMP117__Qwiic_-01.jpg" alt="SparkFun High Precision Temperature Sensor - TMP117 (Qwiic)" height="600">
+      </a>
+      </div>
+
+  <div class="main">
+    
+    <h3 class="title">
+              <a href="https://www.sparkfun.com/sparkfun-high-precision-temperature-sensor-tmp117-qwiic.html">
+          <span>SparkFun High Precision Temperature Sensor - TMP117 (Qwiic)</span>
+        </a>
+          </h3>
+
+    <span class="sku">
+      SEN-15805    </span>
+
+          <p class="description" style="display:none">
+        The SparkFun Qwiic TMP117 Breakout is a high precision temperature sensor equipped with an I2C interface.      </p>
+      </div>
+
+      <div>
+      <div class="prices">
+                <span class="price-sale">
+          <span class="price">$16.95</span>
+        </span>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+
+<div class="flex-video-wrap clearfix">
+  <div class="flex-video widescreen img">
+    <iframe src="https://www.youtube.com/embed/ZqE4EhQ8vQw/?autohide=1&amp;border=0&amp;wmode=opaque&amp;enablejsapi=1" frameborder=0 allowfullscreen width="560" height="315"></iframe>
+  </div>
+</div>
+
+
+<h3>Required Materials</h3>
+
+<p>To follow along with this tutorial, you will need the following materials. You may not need everything though depending on what you have. Add it to your cart, read through the guide, and adjust the cart as necessary.</p>
+
+<script src="/wish_lists/154826.js"></script>
+
+<h3>Suggested Reading</h3>
+
+<p>Before continuing on with this tutorial, you may want to familiarize yourself with some of these topics if they’re unfamiliar to you. If you aren't familiar with the Qwiic system, we recommend reading <a href="https://www.sparkfun.com/qwiic">here for an overview</a>.</p>
+
+<table class="table table-bordered">
+  <tr align="center">
+   <td><center><a href="https://www.sparkfun.com/qwiic"><img src="https://cdn.sparkfun.com/assets/custom_pages/2/7/2/qwiic-logo.png" alt="Qwiic Connect System" title="Qwiic Connect System"></a></center></td>
+  </tr>
+  <tr align="center">
+    <td><i><a href="https://www.sparkfun.com/qwiic">Qwiic Connect System</a></i></td>
+  </tr>
+</table>
+
+<p>If you aren’t familiar with the following concepts, we recommend checking out these tutorials before continuing. Make sure to install the appropriate drivers before uploading code. In this case, we'll need to make sure that the CH340 drivers are installed for the RedBoard Qwiic.</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-82">
+  <a href="https://learn.sparkfun.com/tutorials/i2c">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/2/I2C-Block-Diagram.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">I2C</h3>
+      </a>
+
+      <div class="description">
+      An introduction to I2C, one of the main embedded communications protocols in use today.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-844">
+  <a href="https://learn.sparkfun.com/tutorials/redboard-qwiic-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/4/4/15123-SparkFun_RedBoard_Qwiic-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">RedBoard Qwiic Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      This tutorial covers the basic functionality of the RedBoard Qwiic. This tutorial also covers how to get started blinking an LED and using the Qwiic system.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-908">
+  <a href="https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/9/0/8/USB-to-serial_converter_CH340-closeup.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">How to Install CH340 Drivers</h3>
+      </a>
+
+      <div class="description">
+      How to install CH340 drivers (if you need them) on Windows, Mac OS X, and Linux.     </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="hardware-overview">Hardware Overview</h2>
+        <h3>TMP117</h3>
+
+<p>The TMP117 is located on a tiny, isolated island between two slots that are cut into the PCB. This minimizes heat generated from components on the PCB and any errors that may result when taking temperature readings.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_sloted_PCB_thermal_isolation_1.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_sloted_PCB_thermal_isolation_1.jpg" alt="TMP117 surrounded by slots cut on the breakout board" /></a> </div></p>
+
+<h3>Power</h3>
+
+<p>The sensor has a low power consumption and is operates between 1.8V to 5.5V. To power the sensor on the breakout board, it utilizes <strong>3.3V</strong> from the Qwiic connector. Depending on your application, you can also connect a power via the plated through holes for 3.3V and GND. The corresponding PWR LED will light up to indicate if the sensor is being powered.</p>
+
+<table class="table table-hover table-striped table-bordered">
+  <tr align="center">
+   <td><a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_Power.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_Power.jpg" alt="Power Pins and Qwiic Connector Highlighted"></a></td>
+   <td><a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_Power_LED.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_Power_LED.jpg" alt="Power LED"></a></td>
+  </tr>
+</table>
+
+<div class="alert alert-info" role="alert">
+  <strong>Note:</strong> For accurate readings, make sure to use the minimal supply voltage acceptable for the system.
+</div>
+
+<h3>I<sup>2</sup>C Pins</h3>
+
+<p>To communicate with the sensor, you will need an I<sup>2</sup>C bus. The Qwiic system makes it easy to connect the TMP117 to your projects via the Qwiic connector. You can add a Qwiic cable between the sensor and development board to start experimenting with the sensor in your projects. Depending on your application, you can also connect to the I<sup>2</sup>C pins via the plated through holes for SDA and SCL.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_I2C.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_I2C.jpg" alt="I2C Pins and Qwiic Connector Highlighted" /></a> </div></p>
+
+<div class="alert alert-info" role="alert">
+  <strong>Note:</strong> For accurate readings, make sure to avoid heavy bypass traffic on the I<sup>2</sup>C bus and use the highest available communication speed. That is, try to not add too many I<sup>2</sup>C devices talking on the same bus or stretch your clock signal.
+</div>
+
+<h3>Interrupt Pin (a.k.a. Alert Pin)</h3>
+
+<p>The <span style="text-decoration: overline">INT</span> pin on the board is connected to the TMP117&apos;s "alert" pin. When the pin is active, it will be pulled LOW by default. If the TMP117&apos;s temperature limits are configured and the sensor exceeds the values, the alert pin will pulled LOW.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_Alert_Interrupt.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_Alert_Interrupt.jpg" alt="Interrupt Pin" /></a> </div></p>
+
+<h3>Jumpers</h3>
+
+<p>The board has a few jumper pads on the board. If you have not worked with jumper pads, make sure to check out the tutorial on "<a href="https://learn.sparkfun.com/tutorials/how-to-work-with-jumper-pads-and-pcb-traces">How to Work with Jumper Pads and PCB Traces</a>" for more information.</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile big grid " data-id="tutorial-664">
+  <a href="https://learn.sparkfun.com/tutorials/how-to-work-with-jumper-pads-and-pcb-traces">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/500-282/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">How to Work with Jumper Pads and PCB Traces</h3>
+    <div class="metaline">April 2, 2018</div>  </a>
+
+      <div class="description">
+      Handling PCB jumper pads and traces is an essential skill. Learn how to cut a PCB trace, add a solder jumper between pads to reroute connections, and repair a trace with the green wire method if a trace is damaged.
+    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>
+
+
+<h4>Address Select</h4>
+
+<p>The default address of the board is <strong>0x48</strong>. If you need to adjust the address of the sensor, you can cut the trace connecting to the default address and add a solder jumper to the respective pads to change the address to <em>0x49</em>, <em>0x4A</em>, or <em>0x4B</em>.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_I2C_Address_Select_Jumpers.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_I2C_Address_Select_Jumpers.jpg" alt="TMP117 Address Select" /></a> </div></p>
+
+<h4>LED</h4>
+
+<p>If you need to disable the PWR LED to make the board inconspicuous, conserve more power, or ensure that you are minimizing any heat generated from the LED, you can cut the jumper connecting to the LED.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_Power_LED_Jumper.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_Power_LED_Jumper.jpg" alt="Jumper to Disable the LED" /></a> </div></p>
+
+<h4>Pull-Up Resistors</h4>
+
+<p>The board also includes jumpers to disable the pull-up resistors on the I<sup>2</sup>C bus line. If you are using a few I<sup>2</sup>C devices on the same bus that already have pull-up resistors on their respective boards, you may want to cut the jumpers to disconnect. This is for special use cases when daisy chaining about 7x I<sup>2</sup>C devices on the same bus. Keep in mind that you will want to avoid heavy bypass traffic on the I<sup>2</sup>C bus if you are trying to take accurate readings.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_I2C_Pull-Up_Jumper.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_I2C_Pull-Up_Jumper.jpg" alt="Jumpers to Disable the I2C Pull-Up Resistors" /></a> </div></p>
+
+<p>There is also a pull-up resistor on the <span style="text-decoration: overline">INT</span> pin if you need to disable it.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_Interrupt_Jumper.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/High_Precision_Temperature_Sensor_TMP117_Interrupt_Jumper.jpg" alt="Jumper to Disable Interrupt Pull-Up Resistor" /></a> </div></p>
+
+<h3>Dimensions</h3>
+
+<p>The board uses the standard Qwiic 1.0"x1.0" board size with four mounting holes.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/f/6/5/8/8/SparkFun_High_Precision_TMP117_Temperature_Sensor_Dimensions.png"><img src="https://cdn.sparkfun.com/r/600-600/assets/f/6/5/8/8/SparkFun_High_Precision_TMP117_Temperature_Sensor_Dimensions.png" alt="Board Dimensions" /></a> </div></p>
+
+<div class="alert alert-info" role="alert">
+  <strong>Note:</strong> For accurate readings, make sure to place the sensor horizontally and out of any airflow when mounting the sensor to an application.
+</div>      </div>
+          <div class="section tutorial-page">
+        <h2 id="hardware-hookup">Hardware Hookup</h2>
+        <p>This board is an I<sup>2</sup>C based board and so we've included a Qwiic connector on the breakout board. Hooking the sensor up is easy. Just plug one end of the Qwiic cable into the Qwiic TMP117 and the other to your development board. In this case, it's the RedBoard Qwiic. You'll be ready to upload a sketch and start reading temperature values.  It seems like it's too easy too use, but that's why we made it that way!</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/TMP117_High_Precision_Hardware_Hookup.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/9/1/6/TMP117_High_Precision_Hardware_Hookup.jpg" alt="TMP117 easily connected to a RedBoard Qwiic with a Qwiic cable" /></a> </div></p>
+
+<p>If you need to temporarily access the pins via the standard breadboard spaced 0.1&quot; PTH pads, you can connect some IC hooks to the through holes. In the image below, the interrupt pin needed to be measured with a multimeter so two IC hooks were connected to the board as a temporary connection. For a secure connection, you&apos;ll need to <a href="https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering">solder headers to the PTH pads</a>.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/TMP117_High__Precision_IC_Hooks_PTH_Interrupt_Pin.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/9/1/6/TMP117_High__Precision_IC_Hooks_PTH_Interrupt_Pin.jpg" alt="IC Hooks connected to the TMP117's interrupt and ground pins" /></a> </div></p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="arduino-library">Arduino Library</h2>
+        <div class="alert alert-info">
+<b>Note:</b>  If this is your first time using Arduino, please review our tutorial on <a href="https://learn.sparkfun.com/tutorials/installing-arduino-ide">installing the Arduino IDE.</a> If you have not previously installed an Arduino library, please check out our <a href="https://learn.sparkfun.com/tutorials/installing-an-arduino-library">installation guide.</a>
+</div>
+
+<p>SparkFun has written a library to control the Qwiic TMP117. You can obtain these libraries through the Arduino Library Manager. By searching for <strong>TMP117</strong>, you will get two results. Click on the one written by <strong>SparkFun Electronics</strong> and you should be able to install the latest version. If you prefer downloading the libraries manually you can grab them from the <a href="https://github.com/sparkfun/SparkFun_TMP117_Arduino_Library">GitHub repository</a>.</p>
+
+<p><div class="center-block text-center"> <a href="https://github.com/sparkfun/SparkFun_TMP117_Arduino_Library/archive/master.zip" class="btn btn-default">Download the SparkFun TMP117 Arduino Library (ZIP)</a> </div></p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="arduino-example-code">Arduino Example Code</h2>
+        <h3>Example 1: Basic Readings</h3>
+
+<p>This example prints out the temperature in degrees Celsius and Fahrenheit. The beginning of the code is pretty much the same for the examples. The code initializes the I<sup>2</sup>C bus to communicate with the TMP117 and serial UART to pass the data to our <a href="https://learn.sparkfun.com/tutorials/terminal-basics/arduino-serial-monitor-windows-mac-linux">Arduino serial monitor</a>. We'll want to set the bus to fast mode as recommended by the datasheet. Once initialized, we&apos;ll check to see if the address matches the TMP117. By default, this is <strong>0x48</strong>. If it matches, we'll continue running the sketch.</p>
+
+<p>This particular example will check to see if the TMP117 measured and averaged the temperature readings. If there is data ready, the TMP117 will notify us from the configuration register. When ready, we'll read the temperature registers and output it out to the Arduino serial monitor.</p>
+
+<p>If you have not already, open the example up from your Arduino menu and clicking on the example: <strong>File</strong> > <strong>Examples</strong> > <strong>SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic</strong> > <strong>Example1_BasicReadings</strong>. Select your board (in this case <strong>Arduino/Genuino Uno</strong> and COM port that the board enumerated to. Hit the upload button. Open the serial monitor at <strong>115200</strong> baud to start reading the temperature readings. You should see something like the output below.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/Arduino_Serial_Monitor_TMP117_Temperature_Readings.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/Arduino_Serial_Monitor_TMP117_Temperature_Readings.jpg" alt="TMP117 Readings" /></a> </div></p>
+
+<p>Try heating the sensor with your finger or lightly breathe some air across the sensor to watch the temperature values change! The third reading from the output shows the temperature rising after placing my finger on the temperature sensor. Remember, the sensor is taking a few readings and averaging them together before we are able see the output. Make sure to be patient with the output. If you need to output data faster, you can configure the conversion averaging times in example 6</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/TMP117_High_Precision_Sensing_Temperature_from_Finger.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/9/1/6/TMP117_High_Precision_Sensing_Temperature_from_Finger.jpg" alt="Finger on TMP117" /></a> </div></p>
+
+<h3>Example 2: Alert Status</h3>
+
+<p>This example configures the serial I<sup>2</sup>C and UART like the first example. We'll set alert function mode and temperature limits in volatile memory. When ready, we&apos;ll check to see if the temperature exceeds the high or low limits. By default, the alert function mode is set to alert mode. We set it again just in case. If we above the high limit, the high alert flag will be raised and we will output <code>high alert</code>.. If we are below the low limit, the high alert flag will be raised and we will output the <code>low alert</code>. Otherwise, we will have message indicating that there is <code>no alert</code>.</p>
+
+<p>If you have not already, open the example up from the Arduino menu and clicking on the example: <strong>File</strong> > <strong>Examples</strong> > <strong>SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic</strong> > <strong>Example2_AlertStatuses</strong>. Select your board (in this case <strong>Arduino/Genuino Uno</strong> and COM port that the board enumerated to. Hit the upload button. Open the serial monitor at <strong>115200</strong> baud. You should see something like the output below.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/Arduino_Serial_Monitor_TMP117_Alert_Status_1.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/Arduino_Serial_Monitor_TMP117_Alert_Status_1.jpg" alt="Alert Status Example Output" /></a> </div></p>
+
+<p>The current temperature reading at the time was <code>25.36&deg;C</code>. This is within the boundary of our temperature limits that we set so our alert flag is <code>0</code>. You can adjust the limits as necessary but we made the temperature window narrow to easily test the functionality using the heat from our body. When we are outside the boundary limits, the alert flags will be set to <code>1</code> with their respective limits. As the temperature changes and is within our boundaries, the flag will be set back to <code>0</code>.</p>
+
+<table class="table table-hover table-striped table-bordered">
+  <tr align="center">
+   <td><a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/Arduino_Serial_Monitor_TMP117_Alert_Status_3.png"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/Arduino_Serial_Monitor_TMP117_Alert_Status_3.png" alt="Low Alert Flag High"></a></td>
+   <td><a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/Arduino_Serial_Monitor_TMP117_Alert_Status_2.png"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/Arduino_Serial_Monitor_TMP117_Alert_Status_2.png" alt="Low Alert Flag High"></a></td>
+  </tr>
+  <tr align="center">
+    <td><i>High Alert Flag Raised to 1</i></td>
+    <td><i>Low Alert Flag Raised to 1</i></td>
+  </tr>
+</table>
+
+<p><div class="center-block text-center"> <em>Click on images for a closer view of the outputs.</em> </div></p>
+
+<div class="alert alert-info" role="alert">
+  <strong>Note: </strong> The example code checks for the alert flag from the TMP117&apos;s configuration register. As the alert flag is raised, the alert pin will also be active. If you have a multimeter connected to the <span style="text-decoration: overline">INT</span> and GND pins, you will notice that it will change from a HIGH (~3.3V) to a LOW (0V) whenever the the high or low alert flags are raised as well. 
+  <br />
+  <br />
+  <div class="text-center"><a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/TMP117_High_Precision_Temperature_Multimeter_Interrupt_Pin.jpg"><img src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/9/1/6/TMP117_High_Precision_Temperature_Multimeter_Interrupt_Pin.jpg" alt="Multimeter Connected to INT pin"></a></div>
+  <br />
+  <br />
+If you look at <i>Figure 18 of the Alert Mode Timing Diagram</i> on <a href="https://cdn.sparkfun.com/assets/9/e/5/1/8/tmp117.pdf">page 15 of the datasheet</a>, the serial output and the voltage of the pin matches what we expect from the TMP117!
+  <br />
+  <br />
+  <div class="text-center"><a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/TMP117_Alert_Mode_Timing_Diagram.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/TMP117_Alert_Mode_Timing_Diagram.jpg" alt="Alert Mode Timing Diagram"></a></div>
+</div>
+
+<p>The example above shows what happens when we are in "alert mode." You'll notice that the flags and pin resets itself every time there is a read of the configuration register. If you modify the line that sets the alert function mode to "therm mode", the the flags behave slightly differently.</p>
+
+<pre><code>language:c
+//.
+//. somewhere in Example 2's setup(){} function
+//.
+
+  /*Note: Set to alert or therm mode. To change, simply adjust
+  add or remove a `//` to the line.*/
+  //sensor.setAlertFunctionMode(0);//set to alert mode
+  sensor.setAlertFunctionMode(1);//set to therm mode
+</code></pre>
+
+<p>If the current temperature exceeds the high temperature limit, you'll notice that the alert flag will stay at 1 until the temperature is below our low temperature limit.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/Arduino_Serial_Monitor_TMP117_Therm_Mode_Alert_Flags.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/Arduino_Serial_Monitor_TMP117_Therm_Mode_Alert_Flags.jpg" alt="Output in Therm Mode" /></a> </div></p>
+
+<div class="alert alert-info" role="alert">
+  <strong>Note:</strong> If you look at <i>Figure 19 of the Therm Mode Timing Diagram</i> on <a href="https://cdn.sparkfun.com/assets/9/e/5/1/8/tmp117.pdf">page 16 of the datasheet</a>, the serial output and the voltage of the pin matches what we expect from the TMP117!
+  <br />
+  <br />
+  <div class="text-center"><a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/TMP117_Therm_Mode_Timing_Diagram_1.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/TMP117_Therm_Mode_Timing_Diagram_1.jpg"></a></div>
+</div>
+
+<h3>Example 3: Set Offset Temperature</h3>
+
+<p>In this example, you can adjust the offset temperature of the TMP117. This is useful if you need to adjust the temperature readings based on your system in case the location you are measuring is warmer or colder than the surrounding environment.</p>
+
+<p>If you have not already, open the example up from the Arduino menu and clicking on the example: <strong>File</strong> > <strong>Examples</strong> > <strong>SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic</strong> > <strong>Example3_SetOffsetTemperatureValue</strong>. Select your board (in this case <strong>Arduino/Genuino Uno</strong> and COM port that the board enumerated to. Hit the upload button. Open the serial monitor at <strong>115200</strong> baud. You will be asked to enter a temperature offset. After entering a value and hitting your <kbd>ENTER</kbd> key, the TMP117 will save the offset in its volatile memory.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/Arduino_Serial_Monitor_TMP117_Temperature_Offset.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/Arduino_Serial_Monitor_TMP117_Temperature_Offset.jpg" alt="New Temperature Offset" /></a> </div></p>
+
+<h3>Example 4: Set Conversion Mode</h3>
+
+<p>You can change the continuous conversion mode. The default is in "continuous conversion mode". You can set it <strong>one-shot</strong> or <strong>shutdown mode</strong> for low power applications. In one-shot mode, the TMP117 will take one temperature reading. After one temperature reading, the sensor will enter low power shutdown mode. When the TMP117 is set to shutdown mode, all temperature conversions are aborted and the TMP117 will enter low power shutdown mode.</p>
+
+<p>If you have not already, open the example up from the Arduino menu and clicking on the example: <strong>File</strong> > <strong>Examples</strong> > <strong>SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic</strong> > <strong>Example4_SetConversionMode</strong>. Select your board (in this case <strong>Arduino/Genuino Uno</strong> and COM port that the board enumerated to. Hit the upload button. Open the serial monitor at <strong>115200</strong> baud. You will be asked to enter a temperature offset. After entering a value and hitting your <kbd>ENTER</kbd> key, the TMP117 will save the offset in its volatile memory.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/TMP117_Setting_Conversion_Mode.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/TMP117_Setting_Conversion_Mode.jpg" alt="Setting Conversion Mode" /></a> </div></p>
+
+<h3>Example 6: Set Conversion Cycle Time</h3>
+
+<div class="alert alert-info" role="alert">
+  <strong>Note:</strong> We're going to skip ahead to example 6 in the library. Example 5 provides a prompt to set the alert mode and temperature mode. Since we know how to do that from example 2, we'll go over the next example.
+</div>
+
+<p>In this example, you can adjust the conversion cycle bit and the conversion averaging mode. You can reduce the amount of noise by adjusting these values. By <strong>decreasing</strong> the cycle average mode and conversion cycle bit, you will get faster readings but the data will start to become more noisy. By <strong>increasing</strong> the conversion average mode and conversion cycle bit, you will get more stable temperature readings. You will get a slower output because it is averaging the several data points together. However, the readings will be smoother. As stated in the <a href="https://cdn.sparkfun.com/assets/9/e/5/1/8/tmp117.pdf">datasheet on page 33 under 8.2.2.1 Noise and Averaging</a>, you'll want higher averaging numbers whenever your "<i>system environment is noisy (such as when measuring air flow temperatures, power supply fluctuations, intensive communication on a serial bus...).</i>" Here's a table of the conversion cycle times from page 27 of the datasheet.</p>
+
+<table class="table table-hover table-bordered">
+    <tr>
+        <th class="text-center">
+        </th>
+        <th class="text-center">AVG = 0<br />(0 Conversions)
+        </th>
+        <th class="text-center">AVG = 1<br />(8 Conversions)
+        </th>
+        <th class="text-center">AVG = 2<br />(32 Conversions)
+        </th>
+        <th class="text-center">AVG = 3<br />(64 Conversions)
+        </th>
+    </tr>
+    <tr align="center">
+        <td><b>CONV = 0</b>
+        </td>
+        <td>15.5 ms
+        </td>
+        <td>125 ms
+        </td>
+        <td>500 ms
+        </td>
+        <td>1 sec
+        </td>
+    </tr>
+    <tr align="center">
+        <td><b>CONV = 1</b>
+        </td>
+        <td>125 ms
+        </td>
+        <td>125 ms
+        </td>
+        <td>500 ms
+        </td>
+        <td>1 sec
+        </td>
+    </tr>
+    <tr align="center">
+        <td><b>CONV = 2</b>
+        </td>
+        <td>250 ms
+        </td>
+        <td>250 ms
+        </td>
+        <td>500 ms
+        </td>
+        <td>1 sec
+        </td>
+    </tr>
+    <tr align="center">
+        <td><b>CONV = 3</b>
+        </td>
+        <td>500 ms
+        </td>
+        <td>500 ms
+        </td>
+        <td>500 ms
+        </td>
+        <td>1 sec
+        </td>
+    </tr>
+    <tr align="center">
+        <td><b>CONV = 4</b>
+        </td>
+        <td>1 sec
+        </td>
+        <td>1 sec
+        </td>
+        <td>1 sec
+        </td>
+        <td>1 sec
+        </td>
+    </tr>
+    <tr align="center">
+        <td><b>CONV = 5</b>
+        </td>
+        <td>4 sec
+        </td>
+        <td>4 sec
+        </td>
+        <td>4 sec
+        </td>
+        <td>4 sec
+        </td>
+    </tr>
+    <tr align="center">
+        <td><b>CONV = 6</b>
+        </td>
+        <td>8 sec
+        </td>
+        <td>8 sec
+        </td>
+        <td>8 sec
+        </td>
+        <td>8 sec
+        </td>
+    </tr>
+    <tr align="center">
+        <td><b>CONV = 7</b>
+        </td>
+        <td>16 sec
+        </td>
+        <td>16 sec
+        </td>
+        <td>16 sec
+        </td>
+        <td>16 sec
+        </td>
+    </tr>
+</table>
+
+<p>If you have not already, open the example up from the Arduino menu and clicking on the example: <strong>File</strong> > <strong>Examples</strong> > <strong>SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic</strong> > <strong>Example6_SetConversionCycleTime</strong>. Select your board (in this case <strong>Arduino/Genuino Uno</strong> and COM port that the board enumerated to. Hit the upload button. Open the serial monitor at <strong>115200</strong> baud.</p>
+
+<p><div class="center-block text-center"> <a href="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/TMP117_Set_Conversion_Cyle_Time.jpg"><img src="https://cdn.sparkfun.com/assets/learn_tutorials/9/1/6/TMP117_Set_Conversion_Cyle_Time.jpg" alt="Set Conversion Cycle Time" /></a> </div></p>
+
+<h3>More Examples</h3>
+
+<p>We only went over 5 of the examples. There's a few more in the library. Make sure to read through the description and comments in the code before trying out the additional examples that were not explained earlier!</p>
+
+<p><div class="center-block text-center">  <a href="https://github.com/sparkfun/SparkFun_TMP117_Arduino_Library/tree/master/examples" class="btn btn-default">GitHub: SparkFun_TMP117_Arduino_Library &gt; examples</a> </div></p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="resources-and-going-further">Resources and Going Further</h2>
+        <p>Now that you've successfully got your Qwiic TMP117 up and running, it's time to incorporate it into your own project! For more information, check out the resources below:</p>
+
+<ul>
+<li><a href="https://cdn.sparkfun.com/assets/2/0/f/c/a/SparkFun_TMP117_Qwiic_Schematic_v1.pdf">Schematic (PDF)</a></li>
+<li><a href="https://cdn.sparkfun.com/assets/0/0/1/8/c/Sparkfun_TMP117_Qwiic_v1.zip">Eagle Files (ZIP)</a></li>
+<li><a href="https://cdn.sparkfun.com/assets/f/6/5/8/8/SparkFun_High_Precision_TMP117_Temperature_Sensor_Dimensions.png">Board Dimensions (PNG)</a></li>
+<li><a href="https://cdn.sparkfun.com/assets/9/e/5/1/8/tmp117.pdf">Datasheet (PDF)</a></li>
+<li><a href="https://github.com/sparkfun/SparkFun_TMP117_Arduino_Library">Arduino Library</a></li>
+<li><a href="https://github.com/sparkfun/SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic">GitHub Product Repo</a></li>
+<li><a href="https://youtu.be/ZqE4EhQ8vQw">SFE Product Showcase</a></li>
+</ul>
+
+<p>Need some inspiration for your next project? Check out some of these related tutorials using temperature sensors:</p>
+
+
+<div class="tile-wrap">
+  <div class="tile tutorial-tile  grid " data-id="tutorial-331">
+  <a href="https://learn.sparkfun.com/tutorials/max31855k-thermocouple-breakout-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/3/3/1/13266-01.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">MAX31855K Thermocouple Breakout Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      Learn how to take readings with a k-type thermocouple using the MAX31855K cold-junction-compensated k-type thermocouple-to-digital converter.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-437">
+  <a href="https://learn.sparkfun.com/tutorials/lilypad-temperature-sensor-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/4/3/7/LilyPadTempSensor.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">LilyPad Temperature Sensor Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      How to hook up the LilyPad Temperature Sensor as well as some project ideas and example code.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-540">
+  <a href="https://learn.sparkfun.com/tutorials/tmp102-digital-temperature-sensor-hookup-guide">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/5/4/0/TMP102_2Crop.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">TMP102 Digital Temperature Sensor Hookup Guide</h3>
+      </a>
+
+      <div class="description">
+      How to connect and use the SparkFun Digital Temperature Sensor Breakout - TMP102 with an Arduino.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-891">
+  <a href="https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/9/1/SIK_Updates-Project_5-Overview.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">SparkFun Inventor&#039;s Kit Experiment Guide - v4.1</h3>
+      </a>
+
+      <div class="description">
+      The SparkFun Inventor&#039;s Kit (SIK) Experiment Guide contains all of the information needed to build all five projects, encompassing 16 circuits, in the latest version of the kit, v4.1.2 and v4.1.    </div>
+  
+  </div>
+<div class="tile tutorial-tile  grid " data-id="tutorial-1164">
+  <a href="https://learn.sparkfun.com/tutorials/temperature-sensor-comparison">
+          <div class="thumb-wrap">
+        <div class="thumb" style="background-image:url(https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/1/6/4/Temperature_TMP36_TMP102_TMP117_on_Arduino.jpg)"></div>
+      </div>
+    
+    
+    <h3 class="title">Temperature Sensor Comparison</h3>
+      </a>
+
+      <div class="description">
+      A comparison of analog and digital temperature sensors. Which is better?    </div>
+  
+  </div>
+</div>
+
+  <div class="clearfix"></div>      </div>
+    
+        <div class="share-link-inline">
+
+  <a class="share-link-toggle" href="#">
+    <span class="share-title">
+      <span class="sfe-icon-share"></span>
+      Share    </span>
+  </a>
+
+  <div class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t916" onclick="$(this).trigger('select');">
+
+    <div class="share-social">
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','tumblr');" href="https://www.tumblr.com/share/link?url=http%3A%2F%2Fsfe.io%2Ft916&name=Qwiic+TMP117+High+Precision+Digital+Temperature+Sensor+Hookup+Guide" title="Share on Tumblr"><span class="sfe-icon-tumblr hidetext"><span>Share on Tumblr</span></span></a>
+
+      <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','reddit');" href="https://www.reddit.com/submit?url=http%3A%2F%2Fsfe.io%2Ft916" title="Submit to reddit"><span class="sfe-icon-reddit hidetext"><span>Submit to reddi</span></span></a>
+
+    </div>
+
+    </div>
+  
+  <div class="share-social">
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','twitter');" href="https://twitter.com/intent/tweet?text=Qwiic+TMP117+High+Precision+Digital+Temperature+Sensor+Hookup+Guide&url=http%3A%2F%2Fsfe.io%2Ft916&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+    <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft916&t=Qwiic+TMP117+High+Precision+Digital+Temperature+Sensor+Hookup+Guide" title="Share on Facebook"><span class="sfe-icon-facebook-nobox hidetext"><span>Share on Facebook</span></span></a>
+
+          <a rel=nofollow onclick="return $(this).sfeutil('track_link',this,'Share','clicked','pinterest');" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fsfe.io%2Ft916&media=https%3A%2F%2Fcdn.sparkfun.com%2F%2Fr%2F500-1000%2Fassets%2Flearn_tutorials%2F9%2F1%2F6%2F15805-SparkFun_High_Precision_Temperature_Sensor_TMP117__Qwiic_-01.jpg&description=Qwiic+TMP117+High+Precision+Digital+Temperature+Sensor+Hookup+Guide" title="Pin It"><span class="sfe-icon-pinterest hidetext"><span>Pin It</span></span></a>
+    
+  </div>
+
+  
+</div>
+
+  </div>
+
+  <div class="col-sm-4 nav-menu" id="nav-pages">
+    <div id="sidebar_affix">
+      <div id="tutorial-pages" class="list-group">
+        <a class="list-group-item"><b>Sections</b></a>
+                          <a data-pagename="introduction" class="list-group-item" href="#introduction">
+            Introduction          </a>
+                  <a data-pagename="hardware-overview" class="list-group-item" href="#hardware-overview">
+            Hardware Overview          </a>
+                  <a data-pagename="hardware-hookup" class="list-group-item" href="#hardware-hookup">
+            Hardware Hookup          </a>
+                  <a data-pagename="arduino-library" class="list-group-item" href="#arduino-library">
+            Arduino Library          </a>
+                  <a data-pagename="arduino-example-code" class="list-group-item" href="#arduino-example-code">
+            Arduino Example Code          </a>
+                  <a data-pagename="resources-and-going-further" class="list-group-item" href="#resources-and-going-further">
+            Resources and Going Further          </a>
+              </div>
+
+      <div class="list-group">
+        <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/qwiic-tmp117-high-precision-digital-temperature-sensor-hookup-guide/discuss">
+          Comments
+          <span class="badge">0</span>
+        </a>
+                  <a class="list-group-item" href="https://learn.sparkfun.com/tutorials/qwiic-tmp117-high-precision-digital-temperature-sensor-hookup-guide/introduction">
+            View Paginated
+          </a>
+                <a class="list-group-item" href="#" onclick="window.print(); return false;">
+          Print
+        </a>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>Tags</b></li>
+        <li class="list-group-item"><ul class="tags-list">
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/arduino">Arduino</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/hookup">Hookup</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/qwiic">Qwiic</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/sensors">Sensors</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/weather">Weather</a>  </li>
+</ul>
+</li>
+      </ul>
+
+      <ul class="list-group">
+        <li class="list-group-item"><b>License</b></li>
+        <li class="list-group-item">
+          <span class="sfe-icon-cc">
+            <span class="visuallyhidden">Creative Commons</span>
+          </span>
+          <small>tutorials are <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a></small>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+      </div> <!-- /container -->
+    </div> <!-- /content -->
+
+    <footer>
+  <div class="container">
+
+  <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>About SparkFun</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/about-sparkfun">Read Our Story</a></li>
+            <li><a href="https://www.sparkfun.com/press-and-media">Press &amp; Media</a></li>
+            <li><a href="http://www.sparkfuneducation.com" target="_blank">SparkFun Education <span class="glyphicon glyphicon-new-window"></span></a></li>
+            <li><a href="https://www.sparkfun.com/jobs">Job Openings</a></li>
+          </ul>
+
+          <h3>Partner With Us</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/partner">See Our Partners</a></li>
+            <li><a href="https://www.sparkfun.com/services">View Our Services</a></li>
+            <li><a href="https://www.sparkfun.com/become-a-distributor">Become a Distributor/Reseller</a></li>
+            <li><a href="https://www.sparkfun.com/volume-sales">Receive Volume Discounts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/support">Customer Support</a></li>
+            <li><a href="https://www.sparkfun.com/payments">Purchase Order &amp; Payment Terms</a></li>
+            <li><a href="https://www.sparkfun.com/technical-assistance">Technical Assistance</a></li>
+            <li><a href="https://www.sparkfun.com/faq">FAQs</a></li>
+          </ul>
+          <h3>Site Information</h3>
+          <ul>
+            <li><a href="https://www.sparkfun.com/terms">Terms Of Service</a></li>
+            <li><a href="https://www.sparkfun.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://www.sparkfun.com/compliance">Compliance</a></li>
+            <li><a href="https://www.sparkfun.com/sitemap">Site Map</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>Subscribe</h3>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "2224003",
+              formId: "257ad1af-ab9e-4275-8788-cbad81cc229e"
+            });
+          </script>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-col-inner">
+          <h3>View Our Social Channels</h3>
+          <ul class="spew">
+            <li><a href="https://www.youtube.com/sparkfun" target="_blank" class="icon-social-youtube"><span class="sr-only">YouTube</span></a></li>
+            <li><a href="https://www.instagram.com/sparkfun/" target="_blank" class="icon-social-instagram"><span class="sr-only">Instagram</span></a></li>
+            <li><a href="https://www.github.com/sparkfun" target="_blank" class="icon-social-github"><span class="sr-only">GitHub</span></a></li>
+            <li><a href="https://www.facebook.com/SparkFun" target="_blank" class="icon-social-facebook"><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://twitter.com/sparkfun" target="_blank" class="icon-social-twitter"><span class="sr-only">Twitter</span></a></li>
+            <li><a href="https://www.sparkfun.com/feeds" class="icon-social-rss"><span class="sr-only">RSS</span></a></li>
+            <li><a href="https://www.tiktok.com/@sparkfun.electronics?lang=en" target="_blank" class="icon-social-tiktok"><span class="sr-only">TikTok</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- end .row -->
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p class="copyleft">
+          <strong>SparkFun Electronics&nbsp;&reg;</strong>
+          <span class="hidden-xs hidden-sm">/</span>
+          <br class="visible-xs-inline visible-sm-inline"/>
+          6333 Dry Creek Parkway,
+          <br class="visible-xs-inline"/>
+          Niwot, CO 80503
+        </p>
+      </div>
+    </div><!-- end .row -->
+  </div><!-- end .container -->
+</footer>
+
+      </div><!-- end .wrapper-inner -->
+    </div><!-- end .wrapper -->
+
+    <script type="text/javascript">
+      // eslint-disable-next-line no-unused-vars
+      var SFECONFIG = {
+        dnt: false,
+        http_server: 'http://learn.sparkfun.com',
+        https_server: 'https://learn.sparkfun.com',
+        http_static: 'https://cdn.sparkfun.com',
+        learn_server: 'https://learn.sparkfun.com',
+        news_server: 'https://news.sparkfun.com',
+        base_url: '/',
+        url: '/',
+        controller: 'tutorials',
+        action: 'view',
+        auth: false,
+        sparkrev: '1792686932',
+        search_key: 'search-sngw3quge7ojic1tgr4eft5c',
+        search_url: 'https://sparkfun-electronics.ent.us-central1.gcp.cloud.es.io/api/as/v1/engines/sparkfun-01/search'
+      };
+    </script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+      <script src="/js/learn-built.min.js?sparkrev=1792686932"></script>
+    
+    <script>
+      /* global $ */
+      $.sfe();
+      $.shared();
+      $('#learn').learn();
+      $('#learn').sfeutil();
+    </script>
+                            <script src="/js/tutorials-built.min.js?sparkrev=1792686932"></script>
+                              <script>
+    var fbq = null;
+  </script>
+      
+          <script type="text/javascript">
+      (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2224003.js';
+        e.parentNode.insertBefore(n, e);
+      })(document,"script","hs-analytics",300000);
+    </script>
+        <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0046/4761.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+      </body>
+</html>

@@ -1,0 +1,208 @@
+Monochrome OLED Breakouts
+Downloads
+Monochrome OLED Breakouts
+Using our small mono-OLED displays
+by
+lady ada
+published July 29, 2012, last edited September 07, 2026
+posted in
+Adafruit Products
+LCDs & Displays
+/
+OLED
+Breakout Boards
+/
+LCDs, LEDs, & Displays
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Power Requirements
+Arduino Library & Examples
+Wiring 128x64 OLEDs
+Wiring 128x32 SPI OLED display
+Wiring 128x32 I2C Display
+Wiring OLD 0.96" 128x64 OLED
+CircuitPython Wiring
+CircuitPython Setup
+CircuitPython Usage
+Python Wiring
+Python Setup
+Python Usage
+Troubleshooting
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Your browser does not support the video tag.
+Featured
+Monochrome 1.3" 128x64 OLED graphic display - STEMMA QT / Qwiic
+$19.95
+Add  to Cart
+Featured
+Monochrome 0.96" 128x64 OLED Graphic Display - STEMMA QT
+$17.50
+Add  to Cart
+Featured
+Monochrome 128x32 SPI OLED graphic display
+$17.50
+Add  to Cart
+Featured
+Monochrome 128x32 I2C OLED graphic display
+No Longer Stocked
+Your browser does not support the video tag.
+Featured
+Monochrome 0.91" 128x32 I2C OLED Display - STEMMA QT / Qwiic
+$12.50
+Add  to Cart
+View product details
+164
+Beginner
+Skill guide
+Downloads
+Software
+You can download our SSD1306 OLED display Arduino library from github
+which comes with example code. The library can print text, bitmaps, pixels, rectangles, circles and lines. It uses 1K of RAM since it needs to buffer the entire display but its very fast! The code is simple to adapt to any other microcontroller. You'll also have to install the
+Adafruit GFX graphics core library at this github repo
+and install it after you've gotten the OLED driver library.
+You can check out a simulator for these OLEDs at
+https://wokwi.com/arduino/libraries/Adafruit_SSD1306
+Datasheets
+UG-2864HSWEG01
+Datasheet
+UG-2832HSWEG02
+Datasheet
+UG-2864HSWEG01
+User Guide
+UG-2832HSWEG04
+Datasheet
+UG-2864KSWLG01
+Datasheet
+SSD1306
+Datasheet
+Files
+EagleCAD PCB files for 128x32 0.91" SPI display PCB
+EagleCAD PCB files for 128x32 0.91" I2C display on GitHub
+EagleCAD PCB files for 128x64 0.96" display on GitHub
+EagleCAD PCB files for 128x64 1.3" display on GitHub
+Fritzing objects available in the Adafruit Fritzing Library
+Schematic & Fabrication Print for 0.96" OLED - STEMMA QT version
+Schematic & Fabrication Print for 0.96" OLED - Original version
+Schematic & Fabrication Print for 1.3" OLED
+Schematic & Fabrication Print for 1.3" OLED STEMMA QT
+As of Nov 20, 2019
+we've done a re-design to make the display more plug and play. There is now an auto-reset circuit so that it will reset the display on power up. We've also changed the default protocol to be I2C instead of SPI.
+To convert to SPI mode you will need to cut two jumpers (there's a typo on the PCB).
+We have also added two STEMMA QT / Qwiic connectors for plug and play usage! The board size, mounting holes and layout has changed slightly to accommodate these changes.
+Schematic & Fabrication Print for 0.91" 128x32 I2C
+Schematic & Fabrication Print for 0.91" 128x32 I2C STEMMA QT
+As of Nov 20, 2019
+we've done a re-design to make the display more plug and play. There is now an auto-reset circuit so that it will reset the display on power up. We've also changed the default protocol to be I2C instead of SPI.
+To convert to SPI mode you will need to cut two jumpers (there's a typo on the PCB).
+We have also added two STEMMA QT / Qwiic connectors for plug and play usage! The board size, mounting holes and layout has changed slightly to accommodate these changes.
+Schematic & Fabrication Print for 0.91" 128x32 SPI
+Page last edited March 08, 2024
+Troubleshooting
+Related Guides
+Your browser does not support the video tag. This links to the guide LoRa and LoRaWAN Radio for Raspberry Pi.
+LoRa and LoRaWAN Radio for Raspberry Pi
+By
+Brent Rubell
+intermediate
+68
+Huzzah Weather Display
+By
+Andy Doro
+intermediate
+93
+Adafruit CAN Bus BFF
+By
+Liz Clark
+Product Guide
+5
+Monitor Your Greenhouse with a No-Code Environmental...
+By
+Brent Rubell
+beginner
+20
+Your browser does not support the video tag. This links to the guide Pico W HTTP Server with CircuitPython.
+Pico W HTTP Server with CircuitPython
+By
+Liz Clark
+intermediate
+63
+Your browser does not support the video tag. This links to the guide Gravity Falls Memory Gun.
+Gravity Falls Memory Gun
+By
+Ruiz Brothers
+intermediate
+27
+CircuitPython Powered Sip & Puff with ST LPS33HW...
+By
+Bryan Siepert
+beginner
+16
+Your browser does not support the video tag. This links to the guide CircuitPython OLED and Dual Knob Sketcher.
+CircuitPython OLED and Dual Knob Sketcher
+By
+Carter Nelson
+beginner
+24
+Your browser does not support the video tag. This links to the guide Toddler Timer.
+Toddler Timer
+By
+Ruiz Brothers
+beginner
+9
+MIDI Melody Maker
+By
+Ruiz Brothers
+intermediate
+101
+Adafruit BME680
+By
+lady ada
+Product Guide
+78
+Your browser does not support the video tag. This links to the guide Single Channel LoRaWAN Gateway for Raspberry Pi.
+Single Channel LoRaWAN Gateway for Raspberry Pi
+By
+Brent Rubell
+advanced
+23
+Your browser does not support the video tag. This links to the guide Stepper Motor Turntable.
+Stepper Motor Turntable
+By
+Ruiz Brothers
+intermediate
+37
+Using QMK on RP2040 Microcontrollers
+By
+Jeff Epler
+beginner
+33
+Your browser does not support the video tag. This links to the guide IoT Temperature Logger with Analog Devices ADT7410, Raspberry Pi, and Adafruit IO.
+IoT Temperature Logger with Analog Devices ADT7410,...
+By
+Brent Rubell
+beginner
+22
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

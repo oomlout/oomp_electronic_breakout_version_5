@@ -1,0 +1,127 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_s3_feather_esp32_s3_22_7_mm_width_52_3_mm_height_28_pins_adafruit_5477
+status: verified
+board_revision: Adafruit ESP32-S3 Feather carrier represented by Adafruit-Feather-ESP32-S3-PCB board file
+  at commit 2c95ed51a500d929fd6d8f519b895f0c4daeb982; the manufacturer README states this layout is common
+  to products 5323, 5477, and 5885.
+identity_evidence: Adafruit product page identifies SKU 5477 as the 4 MB Flash / 2 MB PSRAM Feather. The
+  manufacturer repository README explicitly states its EagleCAD layout is common to product 5477 as well
+  as 5323 and 5885. The pinned board filename says 8MB No PSRAM, but the manufacturer identifies this
+  as shared carrier CAD; its SHA-256 matches the archived file.
+board_size:
+- 22.86
+- 50.8
+mounting_holes:
+- id: plain:1
+  x_mm: -9.5885
+  y_mm: -22.86
+  diameter_mm: 2.2
+  plated: false
+  package: plain
+  source_id: manufacturer_cad
+- id: plain:2
+  x_mm: 9.525
+  y_mm: -22.86
+  diameter_mm: 2.2
+  plated: false
+  package: plain
+  source_id: manufacturer_cad
+- id: U$31:pad:P$1
+  x_mm: 8.89
+  y_mm: 22.86
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: manufacturer_cad
+- id: U$32:pad:P$1
+  x_mm: -8.89
+  y_mm: 22.86
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: manufacturer_cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: manufacturer_cad
+derivation: 'The exact EAGLE XML Layer-20 outline has native bounds X=0..50.80 mm and Y=0..22.86 mm, with
+  the documented 90 degree corner arcs, so the PCB outline is 50.80 x 22.86 mm. Its native bounding-box
+  centre is (25.40, 11.43) mm. The USB-C connector X3 is at native -X; apply quarter_turn=3 (270 degrees
+  CCW), mapping centred coordinates (x,y) to (y,-x), so USB points +Y and board_size is [22.86, 50.80]
+  mm. Selected all four board-mount features: plain:1 and plain:2 are 2.2 mm plain drilled holes at the
+  end opposite USB; U$31/U$32 are explicitly named MOUNTINGHOLE_2.5_PLATED package pads with 2.5 mm plated
+  drills at the USB end. Excluded the 1.0 mm JP1/JP3 header contact drills and X3 USB-C package mechanical
+  drills/anchors (0.65 mm holes and 0.60 mm pads). The preview shows four holes at their asymmetric extracted
+  positions with top view and USB toward +Y.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: manufacturer_cad
+  local_file: reference/Adafruit ESP32-S3 8MB No PSRAM.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/2c95ed51a500d929fd6d8f519b895f0c4daeb982/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd
+  kind: manufacturer_cad
+  locator: Pinned commit 2c95ed51a500d929fd6d8f519b895f0c4daeb982; exact EAGLE board file; Layer 20 outline;
+    plain holes and U$31/U$32 mounting packages; shared carrier for 5323, 5477, 5885 per manufacturer
+    README.
+  registered_at: '2026-11-06T18:18:30+00:00'
+  bytes: 444799
+  sha256: 5b06b9c6291545a2c9da0993a642e513a75c5901e26836a2ee559077147abcca
+- id: manufacturer_repo
+  local_file: mounting_evidence/manufacturer_readme.txt
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/2c95ed51a500d929fd6d8f519b895f0c4daeb982/README.md
+  kind: manufacturer_repository
+  locator: Pinned manufacturer README says EagleCAD board layout is common for products 5323, 5477, 5885.
+    Retrieved 2026-11-06.
+  registered_at: '2026-11-06T18:18:30+00:00'
+  bytes: 3767
+  sha256: 1c564dfcf48aba201f85727bab1f372b5a9722b21546f6d73686e99576b228cb
+- id: product_5477
+  local_file: mounting_evidence/product_5477.html
+  url: https://www.adafruit.com/product/5477
+  kind: manufacturer_product
+  locator: Official product 5477 identity, 4MB flash/2MB PSRAM, stated overall dimensions 22.7 mm x 52.3
+    mm; retrieved 2026-11-06.
+  registered_at: '2026-11-06T18:18:31+00:00'
+  bytes: 106316
+  sha256: 8bbe79b1cbdd8ddecf8915c28309579b33553ca915f672e3714fd7f191ab5809
+attempts:
+- Reviewed official Adafruit product 5477 page for SKU identity, 4 MB Flash / 2 MB PSRAM variant, and
+  overall product dimensions; retrieved 2026-11-06.
+- Reviewed manufacturer-linked Adafruit PCB repository README at pinned commit 2c95ed51a500d929fd6d8f519b895f0c4daeb982;
+  it says the EagleCAD design is common to products 5323, 5477, and 5885; retrieved 2026-11-06.
+- Verified archived EAGLE board bytes match the pinned manufacturer raw CAD URL SHA-256; inspected complete
+  Layer-20 outline and all 38 drilled candidates, then previewed selected four-hole pattern.
+conflicts: []
+notes:
+- Adafruit product page gives product-level dimensions 22.7 x 52.3 mm. The CAD Layer-20 PCB outline is
+  22.86 x 50.8 mm in canonical orientation. These stated extents differ; holder board_size uses the exact
+  CAD outline only, and no unverified explanation is assigned to the discrepancy.
+- Reviewed every drilled candidate in the exact carrier CAD. JP1/JP3 are header contacts and X3 candidates
+  are USB-C receptacle mechanical anchors; none are mounting holes.
+- Standard holder is generated geometry only; component, connector, screw-head, OOBB wire-adapter, and
+  underside clearance remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T18:18:41+00:00'
+extraction:
+  selected_ids:
+  - plain:1
+  - plain:2
+  - U$31:pad:P$1
+  - U$32:pad:P$1
+  quarter_turn: 3
+  native_centre_mm:
+  - 25.4
+  - 11.43
+identity_source_ids:
+- product_5477
+- manufacturer_repo
+- manufacturer_cad

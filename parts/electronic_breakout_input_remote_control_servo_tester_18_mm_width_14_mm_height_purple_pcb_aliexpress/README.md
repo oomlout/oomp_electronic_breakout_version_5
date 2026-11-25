@@ -1,3 +1,385 @@
+<!-- oomp-documentation:start -->
+# Electronic Breakout Input Remote Control Servo Tester 18 Mm Width 14 Mm Height Purple Pcb Aliexpress
+
+## Summary
+
+OOMP catalogue record for Electronic Breakout Input Remote Control Servo Tester 18 Mm Width 14 Mm Height Purple Pcb Aliexpress. Use the metadata to identify this variant and the part folder to inspect its available assets.
+
+![Catalogue preview of Electronic Breakout Input Remote Control Servo Tester 18 Mm Width 14 Mm Height Purple Pcb Aliexpress](3dpr_presentation.png)
+
+Catalogue illustration; consult the source dimensions and datasheet for specification.
+
+## Details
+
+**OOMP folder ID:** `electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress`
+
+[Catalogue](../../README.md) · [Part metadata](working.yaml)
+
+| Field | Value |
+| --- | --- |
+| id | electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress |
+| md5_6 | bc353a |
+| md5_6_alpha | 7cda2 |
+| oomp_key | oomp_electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress |
+| taxonomy_1 | electronic |
+| taxonomy_2 | breakout |
+| taxonomy_3 | input |
+| taxonomy_4 | remote_control |
+| taxonomy_5 | servo_tester |
+| taxonomy_6 | 18_mm_width_14_mm_height_purple_pcb |
+| taxonomy_14 | aliexpress |
+
+<details>
+<summary>Full part metadata</summary>
+
+```yaml
+bip_39_2_word_array:
+- rotate
+- prefer
+bip_39_2_word_no_space: rotateprefer
+bip_39_2_word_space: rotate prefer
+bip_39_2_word_underscore: rotate_prefer
+bip_39_3_word_array:
+- rotate
+- prefer
+- library
+bip_39_3_word_no_space: rotatepreferlibrary
+bip_39_3_word_space: rotate prefer library
+bip_39_3_word_underscore: rotate_prefer_library
+bip_39_full_array:
+- rotate
+- prefer
+- library
+- hard
+- consider
+- rocket
+- wise
+- what
+- bid
+- case
+- nephew
+- conduct
+bip_39_full_no_space: rotatepreferlibraryhardconsiderrocketwisewhatbidcasenephewconduct
+bip_39_full_space: rotate prefer library hard consider rocket wise what bid case nephew
+  conduct
+bip_39_full_underscore: rotate_prefer_library_hard_consider_rocket_wise_what_bid_case_nephew_conduct
+breakout_description: 18_mm_width_14_mm_height_purple_pcb
+breakout_pcb_height: 14
+breakout_pcb_width: 18
+directory: parts/electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress
+id: electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress
+id_no_class: electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress
+id_no_size: electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress
+id_no_type: electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress
+manufacturer: aliexpress
+md5: bc353a043492f576ff1fce1604665117
+md5_10: bc353a0434
+md5_10_upper: BC353A0434
+md5_5: bc353
+md5_5_upper: BC353
+md5_6: bc353a
+md5_6_alpha: 7cda2
+md5_6_alpha_upper: 7CDA2
+md5_6_upper: BC353A
+mounting_hole_radius_name: m2
+mounting_holes: &id001
+- - 7.5
+  - 5.5
+- - 7.5
+  - -5.5
+name: Electronic Breakout Input Remote Control Servo Tester 18 Mm Width 14 Mm Height
+  Purple Pcb Aliexpress
+name_no_class: Electronic Breakout Input Remote Control Servo Tester 18 Mm Width 14
+  Mm Height Purple Pcb Aliexpress
+name_no_size: Electronic Breakout Input Remote Control Servo Tester 18 Mm Width 14
+  Mm Height Purple Pcb Aliexpress
+name_no_type: Electronic Breakout Input Remote Control Servo Tester 18 Mm Width 14
+  Mm Height Purple Pcb Aliexpress
+name_proper: Electronic Breakout Input Remote Control Servo Tester 18 Mm Width 14
+  Mm Height Purple Pcb Aliexpress
+name_space: electronic breakout input remote control servo tester 18 mm width 14 mm
+  height purple pcb aliexpress
+name_upper: ELECTRONIC BREAKOUT INPUT REMOTE CONTROL SERVO TESTER 18 MM WIDTH 14 MM
+  HEIGHT PURPLE PCB ALIEXPRESS
+oobb_details:
+- breakout_description: 18_mm_width_14_mm_height_purple_pcb
+  breakout_pcb_height: 14
+  breakout_pcb_width: 18
+  manufacturer: aliexpress
+  mounting_hole_radius_name: m2
+  mounting_holes: *id001
+  oobb_name: mounting_plate_default
+  part_number_aliexpress: '1005009566745868'
+  taxonomy_1: electronic
+  taxonomy_14: aliexpress
+  taxonomy_2: breakout
+  taxonomy_3: input
+  taxonomy_4: remote_control
+  taxonomy_5: servo_tester
+  taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+  type_1: input
+  type_2: remote_control
+  type_3: servo_tester
+  webpage_aliexpress: https://www.aliexpress.com/item/1005009566745868.html
+- breakout_description: 18_mm_width_14_mm_height_purple_pcb
+  breakout_pcb_height: 14
+  breakout_pcb_width: 18
+  manufacturer: aliexpress
+  mounting_hole_radius_name: m2
+  mounting_holes:
+  - - 7.5
+    - 5.5
+  - - 7.5
+    - -5.5
+  oobb_name: mounting_plate_oobb
+  part_number_aliexpress: '1005009566745868'
+  scad_output: working_oobb
+  taxonomy_1: electronic
+  taxonomy_14: aliexpress
+  taxonomy_2: breakout
+  taxonomy_3: input
+  taxonomy_4: remote_control
+  taxonomy_5: servo_tester
+  taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+  type_1: input
+  type_2: remote_control
+  type_3: servo_tester
+  webpage_aliexpress: https://www.aliexpress.com/item/1005009566745868.html
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      breakout_description: 18_mm_width_14_mm_height_purple_pcb
+      breakout_pcb_height: 14
+      breakout_pcb_width: 18
+      directory: parts\electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress
+      manufacturer: aliexpress
+      mounting_hole_radius_name: m2
+      mounting_holes: &id002
+      - - 7.5
+        - 5.5
+      - - 7.5
+        - -5.5
+      name: electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress
+      name_proper: Electronic Breakout Input Remote Control Servo Tester 18 Mm Width
+        14 Mm Height Purple Pcb Aliexpress
+      name_space: electronic breakout input remote control servo tester 18 mm width
+        14 mm height purple pcb aliexpress
+      name_upper: ELECTRONIC BREAKOUT INPUT REMOTE CONTROL SERVO TESTER 18 MM WIDTH
+        14 MM HEIGHT PURPLE PCB ALIEXPRESS
+      oobb_details:
+      - breakout_description: 18_mm_width_14_mm_height_purple_pcb
+        breakout_pcb_height: 14
+        breakout_pcb_width: 18
+        manufacturer: aliexpress
+        mounting_hole_radius_name: m2
+        mounting_holes: *id002
+        oobb_name: mounting_plate_default
+        part_number_aliexpress: '1005009566745868'
+        taxonomy_1: electronic
+        taxonomy_14: aliexpress
+        taxonomy_2: breakout
+        taxonomy_3: input
+        taxonomy_4: remote_control
+        taxonomy_5: servo_tester
+        taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+        type_1: input
+        type_2: remote_control
+        type_3: servo_tester
+        webpage_aliexpress: https://www.aliexpress.com/item/1005009566745868.html
+      - breakout_description: 18_mm_width_14_mm_height_purple_pcb
+        breakout_pcb_height: 14
+        breakout_pcb_width: 18
+        manufacturer: aliexpress
+        mounting_hole_radius_name: m2
+        mounting_holes:
+        - - 7.5
+          - 5.5
+        - - 7.5
+          - -5.5
+        oobb_name: mounting_plate_oobb
+        part_number_aliexpress: '1005009566745868'
+        scad_output: working_oobb
+        taxonomy_1: electronic
+        taxonomy_14: aliexpress
+        taxonomy_2: breakout
+        taxonomy_3: input
+        taxonomy_4: remote_control
+        taxonomy_5: servo_tester
+        taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+        type_1: input
+        type_2: remote_control
+        type_3: servo_tester
+        webpage_aliexpress: https://www.aliexpress.com/item/1005009566745868.html
+      part_number_aliexpress: '1005009566745868'
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: aliexpress
+      taxonomy_15: ''
+      taxonomy_2: breakout
+      taxonomy_3: input
+      taxonomy_4: remote_control
+      taxonomy_5: servo_tester
+      taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+      taxonomy_7: ''
+      taxonomy_8: ''
+      taxonomy_9: ''
+      type_1: input
+      type_2: remote_control
+      type_3: servo_tester
+      url_chat: ''
+      webpage_aliexpress: https://www.aliexpress.com/item/1005009566745868.html
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_input_remote_control_servo_tester_18_mm_width_14_mm_height_purple_pcb_aliexpress
+part_number_aliexpress: '1005009566745868'
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: aliexpress
+taxonomy_14_capital: Aliexpress
+taxonomy_14_first_letter: a
+taxonomy_14_first_letter_upper: A
+taxonomy_14_length_1: a
+taxonomy_14_length_2: al
+taxonomy_14_length_3: ali
+taxonomy_14_length_4: alie
+taxonomy_14_length_5: aliex
+taxonomy_14_upper: ALIEXPRESS
+taxonomy_14_upper_length_1: A
+taxonomy_14_upper_length_2: AL
+taxonomy_14_upper_length_3: ALI
+taxonomy_14_upper_length_4: ALIE
+taxonomy_14_upper_length_5: ALIEX
+taxonomy_15: ''
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: input
+taxonomy_3_capital: Input
+taxonomy_3_first_letter: i
+taxonomy_3_first_letter_upper: I
+taxonomy_3_length_1: i
+taxonomy_3_length_2: in
+taxonomy_3_length_3: inp
+taxonomy_3_length_4: inpu
+taxonomy_3_length_5: input
+taxonomy_3_upper: INPUT
+taxonomy_3_upper_length_1: I
+taxonomy_3_upper_length_2: IN
+taxonomy_3_upper_length_3: INP
+taxonomy_3_upper_length_4: INPU
+taxonomy_3_upper_length_5: INPUT
+taxonomy_4: remote_control
+taxonomy_4_capital: Remote Control
+taxonomy_4_first_letter: r
+taxonomy_4_first_letter_upper: R
+taxonomy_4_length_1: r
+taxonomy_4_length_2: re
+taxonomy_4_length_3: rem
+taxonomy_4_length_4: remo
+taxonomy_4_length_5: remot
+taxonomy_4_upper: REMOTE_CONTROL
+taxonomy_4_upper_length_1: R
+taxonomy_4_upper_length_2: RE
+taxonomy_4_upper_length_3: REM
+taxonomy_4_upper_length_4: REMO
+taxonomy_4_upper_length_5: REMOT
+taxonomy_5: servo_tester
+taxonomy_5_capital: Servo Tester
+taxonomy_5_first_letter: s
+taxonomy_5_first_letter_upper: S
+taxonomy_5_length_1: s
+taxonomy_5_length_2: se
+taxonomy_5_length_3: ser
+taxonomy_5_length_4: serv
+taxonomy_5_length_5: servo
+taxonomy_5_upper: SERVO_TESTER
+taxonomy_5_upper_length_1: S
+taxonomy_5_upper_length_2: SE
+taxonomy_5_upper_length_3: SER
+taxonomy_5_upper_length_4: SERV
+taxonomy_5_upper_length_5: SERVO
+taxonomy_6: 18_mm_width_14_mm_height_purple_pcb
+taxonomy_6_capital: 18 mm Width 14 mm Height Purple Pcb
+taxonomy_6_first_letter: '1'
+taxonomy_6_first_letter_upper: '1'
+taxonomy_6_length_1: '1'
+taxonomy_6_length_2: '18'
+taxonomy_6_length_3: '18_'
+taxonomy_6_length_4: 18_m
+taxonomy_6_length_5: 18_mm
+taxonomy_6_upper: 18_MM_WIDTH_14_MM_HEIGHT_PURPLE_PCB
+taxonomy_6_upper_length_1: '1'
+taxonomy_6_upper_length_2: '18'
+taxonomy_6_upper_length_3: '18_'
+taxonomy_6_upper_length_4: 18_M
+taxonomy_6_upper_length_5: 18_MM
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+type_1: input
+type_2: remote_control
+type_3: servo_tester
+url_chat: ''
+webpage_aliexpress: https://www.aliexpress.com/item/1005009566745868.html
+```
+
+</details>
+
+## Parts
+
+[Open the canonical part folder](./) for the files available for this variant. Alternative model formats describe the same record; they are not extra components.
+
+## Assembly
+
+No assembly procedure is inferred from this catalogue record. Use any retained technical notes and the original manufacturer documentation for installation details.
+<!-- oomp-documentation:end -->
+
+<details>
+<summary>Existing technical notes</summary>
+
 <!-- oobb-presentation:start -->
 # Aliexpress remote control servo tester
 
@@ -35,3 +417,5 @@ Select a plate and download its STL. Board fixing hardware is not specified in t
 
 [Catalogue record](working.yaml) · [Render sources](presentation/manifest.json)
 <!-- oobb-presentation:end -->
+
+</details>

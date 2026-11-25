@@ -1,0 +1,377 @@
+research_schema_version: 1
+part_id: electronic_breakout_output_pwm_16_channel_pca9685_16_channel_servo_driver_adafruit_815
+name_readable: Adafruit PCA9685 PWM/Servo Driver
+manufacturer: adafruit
+part_number: '815'
+manufacturer_part_number: '815'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: output
+  taxonomy_4: pwm
+  taxonomy_5: 16_channel
+  taxonomy_6: pca9685
+  taxonomy_7: 16_channel_servo_driver
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '815'
+default_website:
+  url: https://www.adafruit.com/product/815
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:20:30+00:00'
+  updated_at: '2026-10-23T20:21:00+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: Adafruit PCA9685 16-channel PWM/Servo Driver breakout, product 815
+  status: identified_by_product_page
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: Traditional 16-channel servo driver carrier; board files needed to identify
+    matching revision. Product documents 2022 silkscreen update and 2015 reverse-polarity
+    protection transistor revision.
+description: Adds 16 channels of 12-bit PWM for servo signals and LED control. Separate
+  load power is part of the board definition.
+interfaces:
+- i2c
+dimensions_mm:
+  width: 62.5
+  height: 25.4
+  pcb_thickness: 3
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: documented_product_spec
+  source_ids:
+  - product_page
+  notes: Product specifies dimensions without headers or terminal block as 62.5 x
+    25.4 x 3mm; width/height follow displayed order, outline orientation not confirmed.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: unknown_not_documented
+connectors:
+  servo_outputs:
+    kind: header
+    description: 16 channels; three-pin output connectors arranged in groups of four,
+      male 3x4 headers included.
+    contacts: []
+    source_ids:
+    - product_page
+  control_header:
+    kind: header
+    description: 6-pin 0.1in header supplied for breadboard interface.
+    contacts: []
+    source_ids:
+    - product_page
+  power_terminal:
+    kind: cable_connector
+    description: 2-pin terminal block supplied for servo power input; reverse polarity
+      protection on terminal input.
+    contacts: []
+    source_ids:
+    - product_page
+  external_power_header:
+    kind: header
+    description: 0.1in power input breakouts on side.
+    contacts: []
+    source_ids:
+    - product_page
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: unknown
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: Physical connector inventory across servo headers, control header and terminal
+    block needs matched CAD/guide pinout extraction.
+pin_names: []
+electrical:
+  board_supply:
+    min_v: null
+    max_v: null
+    nominal_v:
+    - 3.3
+    - 5.0
+    status: documented_logic_supply_nominals
+    source_ids:
+    - product_page
+    - guide_pinouts
+    notes: Logic supply and servo V+ supply are separate. Product states 5V compliant
+      and 3.3V MCU can control with 3.3V pullups; output sinks up to 5.5V. Servo load
+      supply range/current not established.
+  chip_supply:
+    status: not_transcribed
+    notes: Chip supply limits not transcribed from datasheet.
+    source_ids:
+    - chip_datasheet
+  logic_levels:
+    status: documented
+    notes:
+    - I2C control compatible with 3.3V host logic; 3.3V logic pullups.
+    - Outputs can sink up to 5.5V.
+    source_ids:
+    - product_page
+  pullups: []
+  extra_signals:
+  - name: OE
+    direction: input
+    notes: Output-enable pin quickly disables all outputs.
+    source_ids:
+    - product_page
+  - name: PWM0-PWM15
+    direction: output
+    notes: 16 PWM outputs, configurable push-pull or open-drain, each with series
+      resistor.
+    source_ids:
+    - product_page
+  source_ids:
+  - product_page
+  - guide_pinouts
+i2c:
+  default_address_7bit: 64
+  documented_addresses_7bit:
+  - 64
+  - 65
+  - 66
+  - 67
+  - 68
+  - 69
+  - 70
+  - 71
+  - 72
+  - 73
+  - 74
+  - 75
+  - 76
+  - 77
+  - 78
+  - 79
+  - 80
+  - 81
+  - 82
+  - 83
+  - 84
+  - 85
+  - 86
+  - 87
+  - 88
+  - 89
+  - 90
+  - 91
+  - 92
+  - 93
+  - 94
+  - 95
+  - 96
+  - 97
+  - 98
+  - 99
+  - 100
+  - 101
+  - 102
+  - 103
+  - 104
+  - 105
+  - 106
+  - 107
+  - 108
+  - 109
+  - 110
+  - 111
+  - 112
+  - 113
+  - 114
+  - 115
+  - 116
+  - 117
+  - 118
+  - 119
+  address_selection: Six address-select solder jumpers; up to 62 devices documented
+    by product page.
+  maximum_clock_hz: null
+  chip_maximum_clock_hz: 1000000
+  clock_stretching: unknown
+  status: documented_address_range
+  source_ids:
+  - product_page
+  notes: Product listing claims a selectable 0x40–0x7F range; this record enumerates
+    non-reserved addresses through 0x77 for schema validation. Reserved upper values
+    and exact device behavior need datasheet review. PWM rate is not I2C clock.
+chip:
+  manufacturer: NXP Semiconductors
+  part_number: PCA9685
+  identity_status: product_page_claim
+  source_ids:
+  - product_page
+  - chip_datasheet
+datasheets:
+  status: downloaded
+  items:
+  - chip: NXP PCA9685
+    source_id: chip_datasheet
+    local_file: reference/chip_datasheet.pdf
+    url: https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf
+    sha256: 237d47f339cac4c3a0d56a5f0b4d3c93df71e3eb43f36ac57ea4ff38e6b2e585
+    page_count: 52
+    revision: null
+  notes:
+  - 52-page PDF validated; revision not transcribed.
+software:
+- name: Adafruit PWM Servo Driver Arduino library
+  framework: Arduino
+  official_url: https://github.com/adafruit/Adafruit-PWM-Servo-Driver-Library
+  tested: false
+  source_ids:
+  - guide_hardware
+- name: Adafruit CircuitPython PCA9685 driver
+  framework: CircuitPython
+  official_url: https://github.com/adafruit/Adafruit_CircuitPython_PCA9685
+  tested: false
+  source_ids:
+  - guide_hardware
+extra_resources:
+- name: PCA9685 pinouts guide
+  kind: guide
+  url: https://learn.adafruit.com/16-channel-pwm-servo-driver/pinouts
+  local_file: reference/guide_pinouts.html
+  source_id: guide_pinouts
+- name: PCA9685 downloads guide
+  kind: guide
+  url: https://learn.adafruit.com/16-channel-pwm-servo-driver/downloads
+  local_file: reference/guide_downloads.html
+  source_id: guide_downloads
+sources:
+- id: product_page
+  kind: product_page
+  requested_url: https://www.adafruit.com/product/815
+  url: https://www.adafruit.com/product/815
+  retrieved_at: '2026-10-23T20:20:31+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 101664
+  sha256: 4fdad7d3cefe46d8aba3bc119978d29dce035d4c2024013d4aaefe31c5137a93
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 8595
+    sha256: b32a422a75079936ac15ea276e9585a37cd7e8982ed69c597fbad3ec7d383afa
+  - kind: links
+    local_file: website.links.json
+    bytes: 16235
+    sha256: 5c8846dd77e11eca21b355c51962855b7dbc95704408f5dc1de649a660f06956
+  title: 'Adafruit 16-Channel 12-bit PWM/Servo Driver - I2C interface [PCA9685] :
+    Adafruit Industries, Unique & fun DIY electronics and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_hardware
+  kind: guide
+  requested_url: https://learn.adafruit.com/16-channel-pwm-servo-driver
+  url: https://learn.adafruit.com/16-channel-pwm-servo-driver
+  retrieved_at: '2026-10-23T20:20:32+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_hardware.html
+  bytes: 74842
+  sha256: 7a541f29c6de5e02ef1a469af6d3124bcb2f171e830a5e75a9d7e63702357842
+  derivatives:
+  - kind: text
+    local_file: reference/guide_hardware.txt
+    bytes: 3887
+    sha256: 6e54beb9001d9ce650c2dd67db6aca3e744533beed0f59fd41c29c7683d07d1f
+  - kind: links
+    local_file: reference/guide_hardware.links.json
+    bytes: 18993
+    sha256: 8d2fc023221e5fae4d2566a830622bafd437b927ddd861cbf5d428ac4a3cc78c
+  title: Overview | Adafruit  PCA9685 16-Channel Servo Driver | Adafruit Learning
+    System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/16-channel-pwm-servo-driver/downloads
+  url: https://learn.adafruit.com/16-channel-pwm-servo-driver/downloads
+  retrieved_at: '2026-10-23T20:20:33+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_downloads.html
+  bytes: 76693
+  sha256: 4b7c02920d62c7ef98f6cc85ae4ee0720972da853a6175b6fc6ba74fdaa16087
+  derivatives:
+  - kind: text
+    local_file: reference/guide_downloads.txt
+    bytes: 3520
+    sha256: 91faa482ed15d8ff62f671701f14a4720d347782d99563f75a3dfedf02923eeb
+  - kind: links
+    local_file: reference/guide_downloads.links.json
+    bytes: 20180
+    sha256: 6616c52ff8082aba384060549c675d58303f4e18ced7367c8df835bb62ecd1dd
+  title: Downloads | Adafruit  PCA9685 16-Channel Servo Driver | Adafruit Learning
+    System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_pinouts
+  kind: guide
+  requested_url: https://learn.adafruit.com/16-channel-pwm-servo-driver/pinouts
+  url: https://learn.adafruit.com/16-channel-pwm-servo-driver/pinouts
+  retrieved_at: '2026-10-23T20:20:42+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_pinouts.html
+  bytes: 76867
+  sha256: 173219eae5b668cfc0c5dd6cb3c0adb6fccd6e90e8786aaaad92dc644b079958
+  derivatives:
+  - kind: text
+    local_file: reference/guide_pinouts.txt
+    bytes: 5374
+    sha256: 0fcec25a3e7272f4923cc3364a06c7a7c9bf66181e09f7ef9169ae4e14a1044e
+  - kind: links
+    local_file: reference/guide_pinouts.links.json
+    bytes: 19600
+    sha256: 52ff2a4b8734ee6d825743fb7a8463243a5c58dc4c791c2fdcfe0bd8a5864259
+  title: Pinouts | Adafruit  PCA9685 16-Channel Servo Driver | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf
+  url: https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf
+  retrieved_at: '2026-10-23T20:20:43+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_downloads
+  local_file: reference/chip_datasheet.pdf
+  bytes: 408783
+  sha256: 237d47f339cac4c3a0d56a5f0b4d3c93df71e3eb43f36ac57ea4ff38e6b2e585
+  derivatives: []
+  pdf_page_count: 52
+conflicts: []
+data_gaps:
+- Exact contact numbering and physical pin/net inventory for 16 servo outputs, control
+  header, terminal block and power breakouts remain incomplete.
+- Mounting-hole geometry and matched CAD/revision not reviewed.
+- Datasheet revision, chip electrical limits and I2C maximum bus speed not transcribed.
+- Servo V+ load supply requirements and any on-board pull-up details require guide/CAD
+  review.
+- Product page states the full 0x40–0x7F selectable range; addresses 0x78–0x7F are
+  omitted from the structured seven-bit list pending datasheet review of reserved
+  values.

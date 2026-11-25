@@ -1,0 +1,102 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_c3_wroom_02_devkitc_02_30_pin_38_9_mm_width_25_4_mm_height_30_pins_espressif_esp32_c3_devkitc_02
+status: no_holes
+board_revision: Espressif ESP32-C3-DevKitC-02 V1.1 carrier, identified by the official PCB layout and
+  matching dimension drawing titled V1.1; official user guide lists no previous hardware versions.
+identity_evidence: Espressif’s official ESP32-C3-DevKitC-02 guide identifies the product and links its
+  schematic, PCB layout and dimension drawing. The matching PCB layout and dimension file names identify
+  V1.1; the six-page PCB layout title block identifies ESP32-C3-DevKitC-02 v1.1. The official guide says
+  there are no previous versions available.
+board_size:
+- 25.4
+- 38.91
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: mechanical
+derivation: 'The complete official dimension sheet labels the PCB bounding box 25.40 mm wide and 38.91
+  mm high. The drawing is a top view with the Micro-USB connector at the lower end; map x right and y
+  up, translating the lower-left outline bound (0,0) to the centred origin (12.70,19.455 mm): x_center
+  = x_drawing - 12.70 mm and y_center = y_drawing - 19.455 mm. No rotation, reflection or axis swap is
+  applied. Thus the USB connector is at negative Y. This resolves the seeded context note that incorrectly
+  states USB at positive Y. The full dimension sheet and all six pages of the exact V1.1 PCB layout were
+  reviewed. The thirty plated through-hole pads are the two 15-position headers. The large drilled/metallic
+  features by the lower USB end are connector retaining anchors and contacts, not board mounting holes;
+  remaining small drill/via and module features are likewise not mounting holes. The small circle appearing
+  at the upper edge of the dimension sheet is not present as a hole in the full board layout view and
+  is a drawing mark. No designated board mounting holes are shown in the complete carrier evidence.'
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+sources:
+- id: product
+  local_file: mounting_evidence/esp32-c3-devkitc-02_user_guide.html
+  url: https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c3/esp32-c3-devkitc-02/user_guide.html
+  kind: manufacturer_product
+  locator: 'Espressif product guide: exact ESP32-C3-DevKitC-02 identity, on-board ESP32-C3-WROOM-02 variant
+    and current revision/related-document listing; acquired 2026-11-06'
+  registered_at: '2026-11-06T17:28:54+00:00'
+  bytes: 35753
+  sha256: e81a43501c4f15d1d42be17caebe297826df88d3a2c379c65154dfc748e27b83
+- id: pcb_layout
+  local_file: mounting_evidence/PCB_ESP32-C3-DevKitC-02_V1_1_20210121AA.pdf
+  url: https://dl.espressif.com/dl/schematics/PCB_ESP32-C3-DevKitC-02_V1_1_20210121AA.pdf
+  kind: manufacturer_cad
+  locator: Complete 6-page Espressif PCB layout V1.1; reviewed layers/pages 1-6, both board sides, all
+    pad/drill candidates and connectors; no designated board mounting holes; acquired 2026-11-06
+  registered_at: '2026-11-06T17:28:54+00:00'
+  bytes: 1006094
+  sha256: 680ce4c040a3a0f4fd23089311e0b5711cc46a25ea41ef69951c2de3e17b44e7
+- id: mechanical
+  local_file: reference/DXF_ESP32-C3-DevKitC-02_V1_1_20210121AA.pdf
+  url: https://dl.espressif.com/dl/schematics/DXF_ESP32-C3-DevKitC-02_V1_1_20210121AA.pdf
+  kind: manufacturer_drawing
+  locator: 'Espressif dimensioned carrier drawing V1.1: exact outline 25.40 x 38.91 mm; full sheet reviewed,
+    no mounting-hole pattern or drill callout; existing archive SHA-256 verified against mounting_context.json'
+  registered_at: '2026-11-06T17:28:55+00:00'
+  bytes: 194776
+  sha256: 058072d75f90fa8668f7ada4548577078fca81b51850faeb1e6f6859bb9aaa8d
+- id: schematic
+  local_file: reference/SCH_ESP32-C3-DEVKITC-02_V1_1_20210126A.pdf
+  url: https://dl.espressif.com/dl/schematics/SCH_ESP32-C3-DEVKITC-02_V1_1_20210126A.pdf
+  kind: manufacturer_schematic
+  locator: Espressif schematic V1.1; exact board identity and reference design; existing archive SHA-256
+    verified against mounting_context.json
+  registered_at: '2026-11-06T17:28:55+00:00'
+  bytes: 345028
+  sha256: e694ac254e6bf7ddd570ac7237ddb5ffa4e874e953619185ee7ba9a0c9f8af6c
+attempts:
+- '2026-11-06: reviewed the official Espressif ESP32-C3-DevKitC-02 guide and its related-document list;
+  confirmed exact carrier identity, WROOM-02 population, no previous hardware revisions, and links to
+  matching V1.1 mechanical and PCB-layout documents.'
+- '2026-11-06: verified the archived V1.1 dimension PDF and schematic SHA-256 values against mounting_context.json;
+  both hashes match. Rendered the complete dimension sheet and confirmed its 25.40 x 38.91 mm board outline.'
+- '2026-11-06: downloaded and reviewed all six pages of the official PCB layout V1.1. Reviewed both copper/mask
+  sides, the complete top assembly, every drill-like pad and via, both header rows, and USB connector
+  features. No designated board mounting holes are present.'
+conflicts: []
+notes:
+- Official Espressif manufacturer files are served from static URLs rather than a pinned source-control
+  commit. Exact product identity is linked by the official guide and the carrier revision is identified
+  by the matching document filenames and PCB layout title block.
+- 'The seeded mounting_context.json states that USB is at positive Y. This is inconsistent with the official
+  top-view dimension drawing, which places the Micro-USB connector at the lower end. The mounting coordinate
+  frame follows the drawing: +Y points upward and USB is at negative Y.'
+- The standard holder is not generated for this confirmed no-hole carrier. Component, connector, screw-head
+  and underside clearance remain unverified; no physical fit test was performed.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T17:29:00+00:00'
+identity_source_ids:
+- product
+- pcb_layout
+- mechanical
+- schematic

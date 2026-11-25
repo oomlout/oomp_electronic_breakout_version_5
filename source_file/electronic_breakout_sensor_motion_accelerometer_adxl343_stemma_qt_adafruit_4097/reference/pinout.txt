@@ -1,0 +1,206 @@
+Analog Devices ADXL343 Breakout Learning Guide
+Pinout
+Analog Devices ADXL343 Breakout Learning Guide
+Get up and running (tapping, free-falling, whatever!) in no time with this quality 3-axis accelerometer.
+by
+Liz Clark
+and
+Isaac Wellish
+published February 24, 2019, last edited August 26, 2026
+posted in
+Sensors
+Adafruit Products
+CircuitPython
+STEMMA
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinout
+Assembly
+Special HW Features
+Arduino
+HW Interrupts
+Arduino API
+Python and CircuitPython
+Python Docs
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Primary
+ADXL343 - Triple-Axis Accelerometer (+-2g/4g/8g/16g) w/ I2C/SPI
+$5.95
+Add  to Cart
+View product details
+8
+Beginner
+Product guide
+👍
+2
+Pinout
+The ADXL343 breakout has the following pinout:
+Power Pins
+This breakout board can be run on
+3.3V
+and
+5V
+systems, although only the
+SCL
+and
+SDA
+lines are 5V safe (other pins like INT will need to be manually level-shifted by you).
+VIN
+- This is the input to the 3.3V voltage regulator, which makes it possible to use the 3.3V sensor on 5V systems. It also determines the logic level of the SCL and SDA pins. Connect this to
+3.3V
+on the MCU for 3.3V boards (Adafruit Feathers), or
+5.0V
+for 5V Arduinos (Arduino Uno, etc.).
+3V3
+- This is the
+OUTPUT
+of the 3.3V regulator, and can be used to provide 3.3V power to other parts of your project if required (<100mA).
+GND
+- Connect this to the
+GND
+pin on your development board to make sure they are sharing a common GND connection, or the electrons won't have anywhere to flow!
+Text emphasized with a yellow exclamation:
+NOTE: Only CS, SCL and SDA are 5V safe on this board. Using any other pins on a 5V system will require manual level shifting of the pins used (INT, etc.)
+I2C Pins
+SCL
+- The clock line on the I2C bus. This pin has an internal pullup resistor on the PCB, which is required as part of the I2C spec, meaning you don't need to add one externally yourself. This also functions as
+SCK
+in SPI mode.
+SDA
+- The data line on the I2C bus. This pin has an internal pullup resistor on the PCB, which is required as part of the I2C spec, meaning you don't need to add one externally yourself. This also functions as
+MOSI
+in SPI mode.
+STEMMA QT
+-
+These connectors allow you to connect to development boards with
+STEMMA QT
+connectors, or to other things, with
+various associated accessories
+.
+Text emphasized with a blue exclamation:
+The available pins are identical for both versions of the boards. However, on the STEMMA QT version, pins I2 (INT2), SDO, and CS are located at the top of the board.
+Other Pins
+SDO/ALT ADDR
+- This pin can be used as
+MISO
+in SPI mode, but is more commonly used as an optional bit in the I2C bus address.  By default this pin is pulled down, meaning it has a value of
+0
+at startup, which will results in an I2C address of
+0x53
+. If you set this pin high (to 3.3V), and reset, the I2C address will be updated to
+0x1D
+.
+CS
+: This dual purpose pin can be used as the chip select line in SPI mode, but also determines whether the board will boot up into I2C or SPI mode. The default of logic high sets the board up for I2C, and manually setting this pin low and resetting will cause the device to enter SPI mode. Please note that SPI mode is not actively support and the SPI pins are not all 5V safe and level shifted, so care will be required when using it!
+INT1
+and
+INT2
+: There are two optional interrupt output pins on this sensor, which can be configured to change their state when one or more 'events' occur. For details on how to use these interrupts, see the Arduino/HW Interrupts page later in this guide.
+LED Jumper
+LED jumper
+- This jumper is located on the back of the board. Cut the trace on this jumper to cut power to the "on" LED.
+Page last edited March 08, 2024
+Overview
+Assembly
+Related Guides
+Your browser does not support the video tag. This links to the guide Wireless ESP32-S2 Touch Screen Controller for Pure Data.
+Wireless ESP32-S2 Touch Screen Controller for Pure Data
+By
+Liz Clark
+beginner
+29
+CircuitPython Hardware: PCA9685 DC Motor & Stepper...
+By
+Tony DiCola
+intermediate
+28
+Adafruit VL53L4CD Time of Flight Distance Sensor
+By
+Liz Clark
+Product Guide
+19
+Adafruit 16-Channel PWM/Servo HAT & Bonnet for...
+By
+lady ada
+Product Guide
+105
+What’s Fresh Today? In-Season Produce Reminder for...
+By
+Phillip Burgess
+beginner
+33
+File Glider
+By
+Trevor Beaton
+beginner
+8
+Your browser does not support the video tag. This links to the guide Motorized Camera Slider 2-Axis.
+Motorized Camera Slider 2-Axis
+By
+Ruiz Brothers
+advanced
+39
+Adafruit Infrared IR Remote Transceiver
+By
+Liz Clark
+Product Guide
+12
+Adafruit MicroLipo and MiniLipo Battery Chargers
+By
+lady ada
+intermediate
+71
+Adafruit BNO055 + BMP280 BFF
+By
+Liz Clark
+Product Guide
+1
+Adafruit DS2484 I2C to 1-Wire Bus Adapter Breakout
+By
+Liz Clark
+Product Guide
+3
+Adafruit CH9328 UART to HID Keyboard Breakout
+By
+Liz Clark
+Product Guide
+5
+Adafruit Feather M0 WiFi with ATWINC1500
+By
+lady ada
+Product Guide
+134
+Adafruit ICM20649 Wide-Range 6-DoF IMU Accelerometer...
+By
+Bryan Siepert
+Product Guide
+10
+Adafruit Metro ESP32-S3
+By
+Kattni Rembor
+Product Guide
+24
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

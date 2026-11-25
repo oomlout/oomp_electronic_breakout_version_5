@@ -1,0 +1,172 @@
+Adafruit DS3231 Precision RTC Breakout
+Overview
+Adafruit DS3231 Precision RTC Breakout
+Repent and temperature-compensate your oscillator, said the tick-tock man!
+by
+lady ada
+published February 03, 2016, last edited January 22, 2025
+posted in
+Components
+Adafruit Products
+Breakout Boards
+/
+Clocks
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly
+Arduino Usage
+CircuitPython
+Python Docs
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+Adafruit DS3231 Precision RTC Breakout
+Out of Stock
+Featured
+CR1220 12mm Diameter - 3V Lithium Coin Cell Battery
+Out of Stock
+Featured
+Adafruit DS3231 Precision RTC - STEMMA QT
+$13.95
+Add  to Cart
+View product details
+94
+Intermediate
+Product guide
+😍
+4
+Overview
+The datasheet for the DS3231 explains that this part is an "Extremely Accurate I²C-Integrated RTC/TCXO/Crystal". And, hey, it does exactly what it says on the tin!
+±2ppm accuracy from 0°C to +40°C. This means ±1 minute/year.
+This Real Time Clock (RTC) is the most precise you can get in a small, low power package.
+We've had a breakout board version of this RTC for a while
+. We want to make it even easier for folks to use, so
+now it also comes with STEMMA QT connectors
+for plug-and-play simplicity. Be sure you buy the correct version you wish to use.
+Most RTC's use an external 32kHz timing crystal that is used to keep time with low current draw. And that's all well and good, but those crystals have slight drift, particularly when the temperature changes (the temperature changes the oscillation frequency very very very slightly but it does add up!) This RTC is in a beefy package because the crystal is
+inside
+the chip! And right next to the integrated crystal is a temperature sensor. That sensor compensates for the frequency changes by adding or removing clock ticks so that the timekeeping stays on schedule
+This is the finest RTC you can get, and now we have it in a compact, breadboard-friendly breakout. With a coin cell plugged into the back, you can get years of precision timekeeping, even when main power is lost. Great for datalogging and clocks, or anything where you need to really know the time.
+To make life easier so you can focus on your important work, we've taken the sensor and put it onto a breakout PCB along with support circuitry to let you use it with 3.3V (Feather/Raspberry Pi) or 5V (Arduino/ Metro328) logic levels. Additionally, since it speaks I2C you can easily connect it up with two wires (plus power and ground!).  We've even included
+SparkFun qwiic
+compatible
+STEMMA QT
+connectors for the I2C bus so
+you don't even need to solder!
+QT Cable is not included
+, but we have a variety in the shop
+. Just wire up to your favorite micro and you can use our
+CircuitPython
+/Python or
+Arduino drivers
+to easily interface with the DS3231.
+Comes as a fully assembled and tested breakout plus a small piece of header. You can solder header in to plug it into a breadboard, or solder wires directly.
+A coin cell is required to use the battery-backup capabilities! We don't include one by default, to make shipping easier for those abroad,
+but we do stock them so pick one up or use any CR1220 you have handy.
+Text emphasized with a blue exclamation:
+There are two versions of this board - the STEMMA QT version shown above (the black PCB), and the original header-only version shown below (the blue PCB). Code works the same on both!
+Page last edited March 20, 2024
+Pinouts
+Related Guides
+Your browser does not support the video tag. This links to the guide Prop-Maker Feather Talking Adabot Clock.
+Prop-Maker Feather Talking Adabot Clock
+By
+Liz Clark
+beginner
+18
+Simple Vertical Wordclock
+By
+Dano Wall
+beginner
+35
+No-Code Offline Data Logger with WipperSnapper
+By
+Brent Rubell
+intermediate
+10
+Adafruit PCF8523 Real Time Clock
+By
+lady ada
+Product Guide
+42
+Your browser does not support the video tag. This links to the guide Blahaj Alarm and Lamp.
+Blahaj Alarm and Lamp
+By
+Eva Herrada
+beginner
+15
+Adafruit MicroSD SPI or SDIO Card Breakout Board
+By
+Jeff Epler
+Product Guide
+25
+QT Py CH32V203 eInk / ePaper Daily Calendar and Clock
+By
+Liz Clark
+intermediate
+24
+No-Code, No-Solder Monitoring For Perfect Bread
+By
+Ben Everard
+beginner
+13
+Disconnected CO2 Data Logger
+By
+Liz Clark
+beginner
+37
+DS1307 Real Time Clock Breakout Board Kit
+By
+Tyler Cooper
+Product Guide
+48
+Metro Minimalist Clock
+By
+John Park
+intermediate
+46
+Adafruit PiCowbell Adalogger for Pico
+By
+Liz Clark
+Product Guide
+24
+Adafruit Adalogger FeatherWing
+By
+lady ada
+Product Guide
+103
+Digital Clock with CircuitPython
+By
+Ruiz Brothers
+intermediate
+64
+Your browser does not support the video tag. This links to the guide Feather RP2040 DVI CircuitPython Day 2024 Countdown Clock.
+Feather RP2040 DVI CircuitPython Day 2024 Countdown...
+By
+Liz Clark
+beginner
+4
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

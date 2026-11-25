@@ -1,0 +1,1754 @@
+<!doctype html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" data-theme="system">
+<head>
+  <meta charset="utf-8">
+  <link rel="mask-icon" href="/assets/adafruit_favicon-fa25640e.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon-5362a6c7.ico" />
+
+    <title>Pinouts | Adafruit MPR121 12-Key Capacitive Touch Sensor Breakout Tutorial | Adafruit Learning System</title>
+
+    
+
+<link rel="canonical" href="https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/pinouts" />
+
+<meta name="guide-title" content="Adafruit MPR121 12-Key Capacitive Touch Sensor Breakout Tutorial">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@adafruit">
+<meta name="twitter:title" content="Adafruit MPR121 12-Key Capacitive Touch Sensor Breakout Tutorial">
+<meta name="twitter:description" content="Get a little closer...closer...now touch it!">
+<meta name="twitter:image:src" content="https://cdn-learn.adafruit.com/guides/images/000/000/667/medium800/MPR121_STEMMA_top_angle.jpg">
+<meta name="twitter:domain" content="https://learn.adafruit.com">
+
+<meta property="og:site_name" content="Adafruit Learning System" />
+<meta property="og:title" content="Adafruit MPR121 12-Key Capacitive Touch Sensor Breakout Tutorial" />
+<meta property="og:description" content="Add lots of touch sensors to your next microcontroller project with this easy-to-use 12-channel capacitive touch sensor breakout board, starring the MPR121. This chip can handle up to 12 individual..." />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://cdn-learn.adafruit.com/guides/images/000/000/667/medium800/MPR121_STEMMA_top_angle.jpg" />
+<meta property="og:url" content="https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/pinouts" />
+
+<script type="application/ld+json" nonce="+C2SnUT496vkudLp4lj30g==">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Adafruit MPR121 12-Key Capacitive Touch Sensor Breakout Tutorial",
+    "description": "Add lots of touch sensors to your next microcontroller project with this easy-to-use 12-channel capacitive touch sensor breakout board, starring the MPR121. This chip can handle up to 12 individual...",
+    "image": "https://cdn-learn.adafruit.com/guides/images/000/000/667/medium800/MPR121_STEMMA_top_angle.jpg",
+    "url": "https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/pinouts",
+    "publisher": "Adafruit",
+    "datePublished": "2014-07-25T13:39:53-04:00",
+    "author": {
+      "@type": "Person",
+      "name": "lady ada"
+    }
+  }
+</script>
+
+
+  
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="BscKyAJ41zj2Ga2DbqTDVyQtZa4-UIy7T9mT-46GybVEdljR1euwFpnKspNUzGvQEY9vIwDZ_6nJnFCno9QDOA" />
+  <meta name="shop-uri" content="https://www.adafruit.com">
+  <link rel="alternate" type="application/atom+xml" title="ATOM" href="/feed" />
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.rss" />
+  <link rel="stylesheet" href="/assets/application-8813e530.css" data-turbo-track="reload" media="screen" />
+  <link rel="preload" href="https://cdn-shop.adafruit.com/fonts/proximanova/proximanova-light-webfont.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn-shop.adafruit.com/fonts/proximanova/proximanova-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://cdn-shop.adafruit.com/fonts/proximanova/proximanova-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin>
+  <script nonce="+C2SnUT496vkudLp4lj30g==">
+  var dataLayer = [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+
+
+
+  <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <script type="application/ld+json" nonce="+C2SnUT496vkudLp4lj30g==">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://learn.adafruit.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://learn.adafruit.com/search?q={search_term}",
+        "query-input": "required name=search_term"
+      }
+    }
+  </script>
+    <script src="/assets/application-801e063c.js" data-turbo-track="reload" type="module" nonce="+C2SnUT496vkudLp4lj30g=="></script>
+</head>
+
+<body class="application pages show production" data-rails-env="production">
+  
+  <div id="outer-wrapper">
+    <div id="inner-wrapper">
+      
+      <nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a data-turbo="false" href="#main-content-container">Skip to main content</a></li>
+      <li><a data-turbo="false" href="#article-body">Skip to article content</a></li>
+
+  </ul>
+</nav>
+
+
+        <div id="messaging-wrapper" class="messages-container" data-load="https://www.adafruit.com/api/multi_message.php"></div>
+
+
+      <header id="adafruit-header" aria-label="Adafruit header">
+  <div id="small-header">
+  <div class="first-row">
+      <nav aria-label="Adafruit applications menu">
+    <ul class="application-links">
+      <li><a aria-label="Adafruit Shop" href="https://www.adafruit.com">Shop</a></li>
+      <li class="selected"><a aria-label="Adafruit Learning System" href="https://learn.adafruit.com">Learn</a></li>
+      <li><a aria-label="Adafruit Blog" href="https://blog.adafruit.com">Blog</a></li>
+      <li><a aria-label="Adafruit Forums and Support" href="https://forums.adafruit.com">Forums</a></li>
+      <li><a aria-label="Adafruit IO, the internet of things" href="https://io.adafruit.com">IO</a></li>
+      <li><a aria-label="Adafruit Youtube Videos" href="https://www.youtube.com/adafruit/live">LIVE!</a></li>
+
+        <li><a aria-label="Adafruit product box subscription" href="https://www.adabox.com">AdaBox</a></li>
+    </ul>
+  </nav>
+
+  </div>
+
+  <div class="second-row">
+    <div class="row-content">
+      <div id="mobile-header-logo">
+        <a href="https://learn.adafruit.com">
+        <img id="small-logo" height="50" width="50" alt="Adafruit Logo" src="/logos/adafruit_logo_small.png?-2399977704570461940" />
+</a>      </div>
+
+      <button id="mobile-menu-button" class="c-hamburger c-hamburger--htx">
+        <span>toggle menu</span>
+      </button>
+
+      <div id="mobile-search-wrapper">
+        <form action="https://learn.adafruit.com/search" method="get">
+          <label for="mobile-search" style="display:none;">Search</label>
+
+          <input id="mobile-search" type="text" name="q" autocomplete="off"
+            data-app-id="W9DMM4OTH0"
+            data-app-key="28a76a2b87be38db12283ebda329425a"
+            data-app-index="learn_guides_production"
+            data-app-uri="https://learn.adafruit.com" />
+
+          <button type="submit" aria-label="Submit search"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+      <a id="mobile-header-cart" href="https://www.adafruit.com/shopping_cart">
+        <span class="small-cart-count" aria-live="polite">0</span>
+        <i class="fa fa-shopping-cart"></i>
+</a>    </div>
+  </div>
+
+  <nav id="small-header-nav">
+    <div id="small-menu">
+      <ul>
+          <li class="account-info">
+            <a href="/users/sign_in">Sign In</a> | <a href="https://accounts.adafruit.com/">Create Account</a>
+          </li>
+        <li><a href="https://adafruit-playground.com">Playground</a></li>
+          <li><a href="/guides/latest">New Guides</a></li>
+          <li><a href="/groups">Series</a></li>
+          <li><a href="https://www.adafruit.com/wishlists">Wishlists</a></li>
+          <li>
+            <a class="random-guide-link" aria-label="View a Random Guide" href="https://learn.adafruit.com/guides/random">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+  <g>
+    <path fill="currentColor" d="M478.578,244.475H278.047c-3.81,0-7.42,0.78-10.829,1.961l56.305-56.305c6.306-6.306,9.759-14.706,9.759-23.64
+      c0-8.935-3.454-17.335-9.759-23.64L190.282,9.609c-12.589-12.611-34.692-12.611-47.281,0L9.759,142.85
+      C3.454,149.156,0,157.556,0,166.491s3.454,17.335,9.759,23.64l133.242,133.242c6.306,6.306,14.683,9.759,23.64,9.759
+      c8.957,0,17.335-3.454,23.64-9.759l56.305-56.305c-1.181,3.409-1.961,7.019-1.961,10.829v200.531
+      c0,18.427,14.995,33.422,33.422,33.422h200.531c18.427,0,33.422-14.995,33.422-33.422V277.897
+      C512,259.47,497.005,244.475,478.578,244.475z M182.394,271.368c-4.345,4.345-10.049,6.506-15.753,6.506
+      s-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,248.552,191.106,262.679,182.394,271.368z M182.394,182.244c-4.345,4.345-10.049,6.506-15.753,6.506
+      c-5.704,0-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,159.428,191.106,173.554,182.394,182.244z M182.394,93.119c-4.345,4.345-10.049,6.506-15.753,6.506
+      c-5.704,0-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,70.303,191.106,84.429,182.394,93.119z M311.469,467.287c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281c12.277,0,22.281,9.982,22.281,22.281C333.75,457.305,323.746,467.287,311.469,467.287z
+       M311.469,333.6c-12.277,0-22.281-9.982-22.281-22.281c0-12.299,10.004-22.281,22.281-22.281c12.277,0,22.281,9.982,22.281,22.281
+      C333.75,323.618,323.746,333.6,311.469,333.6z M378.313,400.444c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281C400.594,390.462,390.59,400.444,378.313,400.444z
+       M445.156,467.287c-12.277,0-22.281-9.982-22.281-22.281c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281
+      C467.438,457.305,457.433,467.287,445.156,467.287z M445.156,333.6c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281C467.438,323.618,457.433,333.6,445.156,333.6z"/>
+  </g>
+</g>
+</svg>
+</a>
+          </li>
+      </ul>
+    </div>
+
+    <div id="mobile-search-results"></div>
+  </nav>
+</div>
+
+
+  <div id="large-header">
+    <nav class="first-row" aria-label="Adafruit main site">
+      <div class="row-content">
+          <nav aria-label="Adafruit applications menu">
+    <ul class="application-links">
+      <li><a aria-label="Adafruit Shop" href="https://www.adafruit.com">Shop</a></li>
+      <li class="selected"><a aria-label="Adafruit Learning System" href="https://learn.adafruit.com">Learn</a></li>
+      <li><a aria-label="Adafruit Blog" href="https://blog.adafruit.com">Blog</a></li>
+      <li><a aria-label="Adafruit Forums and Support" href="https://forums.adafruit.com">Forums</a></li>
+      <li><a aria-label="Adafruit IO, the internet of things" href="https://io.adafruit.com">IO</a></li>
+      <li><a aria-label="Adafruit Youtube Videos" href="https://www.youtube.com/adafruit/live">LIVE!</a></li>
+
+        <li><a aria-label="Adafruit product box subscription" href="https://www.adabox.com">AdaBox</a></li>
+    </ul>
+  </nav>
+
+
+        <div id="account">
+            <span class="sign-out"><a href="/users/sign_in">Sign In</a></span>
+          <div class="cart">
+            <a aria-label="Shopping Cart, 0 items" aria-live="polite" href="https://www.adafruit.com/shopping_cart">
+              <i class="fa fa-shopping-cart"></i> 0
+</a>          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="second-row" aria-label="Adafruit Learn application">
+      <div class="row-content">
+        <div class="left-content">
+          <div id="logo">
+            <a title="Adafruit Learning System" href="https://learn.adafruit.com">
+              <img alt="Adafruit Logo" src="/logos/logo_2x.png?-2399977704570461940" />
+</a>          </div>
+          <ul class="main-nav-links">
+            <li class="dropdown with-overlay">
+              <button class="dropdown-label nav-link" aria-haspopup="true">Explore & Learn</button>
+              <div class="dropdown-container">
+                <div class="dropdown-content" tabindex="-1">
+                    <div class="flyout">
+      <div class="three-panels">
+        <div class="first-column">
+          <div class="content-header">
+            <span class="title">Learn Categories</span>
+          </div>
+          <div class="categories">
+            <ul>
+                <li>
+                  <a href="https://learn.adafruit.com/category/3d-printing">3D Printing</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/adabox">AdaBox</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/adafruit-products">Adafruit Products</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/arduino">Arduino Compatibles</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/breakout-boards">Breakout Boards</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/circuit-playground">Circuit Playground</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/circuitpython">CircuitPython</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/clue">CLUE</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/community-support">Community Support</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/components">Components</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/crickit">Crickit</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/customer-projects">Customer &amp; Partner Projects</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/development-boards">Development Boards</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/educators">Educators</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/el">EL Wire/Tape/Panel</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/feather">Feather</a>
+                </li>
+                <li>
+                  <a href="https://learn.adafruit.com/category/gaming-1">Gaming</a>
+                </li>
+            </ul>
+            <ul>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/hacks">Hacks</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/internet-of-things-iot">Internet of Things - IOT</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/lcds-and-displays">LCDs &amp; Displays</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/leds">LEDs</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/machine-learning">Machine Learning</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/makecode">MakeCode</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/maker-business">Maker Business</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/micro-bit">micro:bit</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/microcontrollers">Microcontrollers</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/programming">Programming</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/raspberry-pi">Raspberry Pi</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/robotics">Robotics &amp; CNC</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/sensors">Sensors</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/stemma">STEMMA</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/tools">Tools</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/trellis">Trellis</a>
+                  </li>
+                  <li>
+                    <a href="https://learn.adafruit.com/category/wearables">Wearables</a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="middle-column">
+        </div>
+
+        <div class="last-column hide-md">
+          <section class="image-content-card">
+  <img loading="lazy" aria-hidden="true" alt="Explore, Groups to get your gears turning" src="https://learn.adafruit.com/assets/headlines/stemma-690676c3.jpg" />
+
+  <div class="text">
+    <div class="main">
+      <span>Explore</span>
+    </div>
+
+    <div class="tagline">
+      <span>Groups to get your gears turning</span>
+    </div>
+  </div>
+
+  <div class="button">
+    <a title="Groups to get your gears turning, Explore" href="https://learn.adafruit.com/explore">Explore Groups</a>
+  </div>
+</section>
+
+      </div>
+    </div>
+  </div>
+
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-link">
+              <a class="new-guides-link" href="https://learn.adafruit.com/guides/latest">New Guides</a>
+            </li>
+            <li class="nav-link">
+              <a href="https://adafruit-playground.com">Playground</a>
+            </li>
+            <li class="nav-link">
+              <a class="random-guide-link" aria-label="View a Random Guide" href="https://learn.adafruit.com/guides/random">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+  <g>
+    <path fill="currentColor" d="M478.578,244.475H278.047c-3.81,0-7.42,0.78-10.829,1.961l56.305-56.305c6.306-6.306,9.759-14.706,9.759-23.64
+      c0-8.935-3.454-17.335-9.759-23.64L190.282,9.609c-12.589-12.611-34.692-12.611-47.281,0L9.759,142.85
+      C3.454,149.156,0,157.556,0,166.491s3.454,17.335,9.759,23.64l133.242,133.242c6.306,6.306,14.683,9.759,23.64,9.759
+      c8.957,0,17.335-3.454,23.64-9.759l56.305-56.305c-1.181,3.409-1.961,7.019-1.961,10.829v200.531
+      c0,18.427,14.995,33.422,33.422,33.422h200.531c18.427,0,33.422-14.995,33.422-33.422V277.897
+      C512,259.47,497.005,244.475,478.578,244.475z M182.394,271.368c-4.345,4.345-10.049,6.506-15.753,6.506
+      s-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,248.552,191.106,262.679,182.394,271.368z M182.394,182.244c-4.345,4.345-10.049,6.506-15.753,6.506
+      c-5.704,0-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,159.428,191.106,173.554,182.394,182.244z M182.394,93.119c-4.345,4.345-10.049,6.506-15.753,6.506
+      c-5.704,0-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,70.303,191.106,84.429,182.394,93.119z M311.469,467.287c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281c12.277,0,22.281,9.982,22.281,22.281C333.75,457.305,323.746,467.287,311.469,467.287z
+       M311.469,333.6c-12.277,0-22.281-9.982-22.281-22.281c0-12.299,10.004-22.281,22.281-22.281c12.277,0,22.281,9.982,22.281,22.281
+      C333.75,323.618,323.746,333.6,311.469,333.6z M378.313,400.444c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281C400.594,390.462,390.59,400.444,378.313,400.444z
+       M445.156,467.287c-12.277,0-22.281-9.982-22.281-22.281c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281
+      C467.438,457.305,457.433,467.287,445.156,467.287z M445.156,333.6c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281C467.438,323.618,457.433,333.6,445.156,333.6z"/>
+  </g>
+</g>
+</svg>
+</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="right-content">
+            <div class="search-wrapper">
+              <div id="search-info" data-page=""
+                data-app-id="W9DMM4OTH0"
+                data-app-key="28a76a2b87be38db12283ebda329425a"
+                data-app-index="learn_guides_production"
+                data-app-uri="https://learn.adafruit.com"></div>
+              <div id="search"></div>
+              <i class="fa fa-search"></i>
+            </div>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</header>
+
+      <turbo-frame id="flash"></turbo-frame>
+      <main id="main-content">
+        <div id="main-content-container" tabindex="-1">
+
+            <div class="toolbar-primary ">
+    <div class="content">
+      <div class="left-content">
+        <div class="breadcrumbs" aria-label="Breadcrumbs">
+          <a href="https://learn.adafruit.com/"><i class='fa fa-home' role='img' title="Learn home"></i></a>
+
+            <i class="fa fa-chevron-right separator"></i>
+            <a href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial">Adafruit MPR121 12-Key Capacitive Touch Sensor Breakout Tutorial</a> <i class="fa fa-chevron-right separator"></i> Pinouts
+        </div>
+      </div>
+
+      <div class="right-content">
+        
+      </div>
+    </div>
+  </div>
+
+
+          
+
+
+
+<article id="content-wrapper" lang="en" class="" data-page-id="4014" data-guide-id="667">
+
+  
+
+  <header aria-label="Guide information" class="title-header">
+  <h1 class="title">Adafruit MPR121 12-Key Capacitive Touch Sensor Breakout Tutorial</h1>
+  <p>Get a little closer...closer...now touch it!</p>
+  <div class="details">
+      <img alt="Image for user adafruit2" class="user-image" src="https://secure.gravatar.com/avatar/3f7ca151e1f7f7dead8b2db60aa744c1?s=100" />
+
+      <div class="metadata">
+          <div class="byline">
+    by
+    <a aria-label="Guide author" data-turbo="false" href="/u/adafruit2">lady ada</a>
+
+  </div>
+
+        <div class="updated">
+            published July 25, 2014, last edited November 13, 2025<br>
+
+        </div>
+        <div class="small">
+          posted in 
+        </div>
+      </div>
+  </div>
+
+  <div class="buttons">
+
+    <span id="guide-favorite" class="button">
+  <span data-controller="modals">
+    <a data-action="click-&gt;modals#show" class="bg-btn-secondary" aria-label="Select to Save this guide." href="/guides/667/favorites">
+      <i class="fa fa-bookmark-o"></i> Save
+</a>    <div class="dialog-container modal"
+     id="favorites-modal"
+     data-modals-target="modal"
+     aria-labelledby="dialog-title"
+     aria-hidden="true">
+  <div class="dialog-overlay" data-a11y-dialog-hide></div>
+  <div class="dialog-content dialog-small">
+    <div class="dialog-header">
+      <div>
+      <h5 class="dialog-title">New Favorite</h5>
+      </div>
+      <a href="#" class="dialog-close" data-a11y-dialog-hide="favorites-modal" aria-label="Close this dialog window">&times;</a>
+    </div>
+    <div class="dialog-body">
+        <p>Please <a href="/users/sign_in">sign in</a> to include this guide in your list of favorites.</p>
+        <p>You will be redirected back to this guide once you <a href="/users/sign_in">sign in</a>, and can then save this guide as one of your favorites.</p>
+    </div>
+    <div class="dialog-footer">
+      <a href="#" class="dialog-close" data-a11y-dialog-hide="favorites-modal" aria-label="Close this dialog window">Close</a>
+    </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+
+  </span>
+</span>
+
+
+    <span class="button">
+  <a class="bg-btn-secondary remote-modal" data-remote="true" data-method="get" href="/guides/667/user_page_associations/new">
+    <i class="fa fa-link"></i> Link Note
+</a></span>
+
+
+
+      <a class="bg-btn-secondary button" href="https://cdn-learn.adafruit.com/downloads/pdf/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial.pdf">
+          <i class="fa fa-download"></i> Download
+</a>
+  </div>
+</header>
+
+
+  <div class="left-sidebar-layout" role="region" aria-label="Page content">
+    <div class="sidebar">
+  <nav aria-label="Guide navigation">
+      <div class="data-group">
+        <ul class="nested-page-list" aria-label="Guide pages">
+           <li class='parent' data-controller="collapse">
+
+        <a class="published " href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/overview">Overview</a>
+
+
+</li>
+ <li class='parent' data-controller="collapse">
+
+        <a class="published active" aria-current="page" href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/pinouts">Pinouts</a>
+
+
+</li>
+ <li class='parent' data-controller="collapse">
+
+        <a class="published " href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/assembly">Assembly</a>
+
+
+</li>
+ <li class='parent' data-controller="collapse">
+
+        <a class="published " href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/wiring">Arduino</a>
+
+
+</li>
+ <li class='parent' data-controller="collapse">
+    <button name="button" type="button" data-action="click-&gt;collapse#toggle" aria-label="Toggle child pages" aria-controls="page-13337-children" aria-expanded="false" class="collapsed-icon collapsed"></button>
+
+        <a class="published " href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/python-circuitpython">Python &amp; CircuitPython</a>
+
+
+        <ul id="page-13337-children" class="collapse  page-child nav" data-collapse-target="content">
+          	<li class='published'>
+
+		  <a href="https://circuitpython.readthedocs.io/projects/mpr121/en/latest/" class="published">Python Docs <i class="fa fa-external-link"></i></a>
+
+</li>
+	<li class='published'>
+
+	        <a class="published " href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/raspberry-pi-virtual-keyboard">Raspberry Pi Virtual Keyboard</a>
+
+</li>
+
+</ul></li>
+ <li class='parent' data-controller="collapse">
+
+        <a class="published " href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/electrodes">Electrodes</a>
+
+
+</li>
+ <li class='parent' data-controller="collapse">
+
+        <a class="published " href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/downloads">Downloads</a>
+
+
+</li>
+
+        </ul>
+
+        <div class="single-page-spacer"></div>
+        <ul class="nested-page-list" aria-label="Guide resources">
+          <li>
+              <a href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial?view=all">Single page</a>
+          </li>
+          <li>
+                <div id="feedback_page_4014">
+      <a data-turbo-stream="true" class="feedback-link" title="Feedback? Corrections?" rel="nofollow" href="/feedback/new?page_id=4014">
+            Feedback?  Corrections?
+</a>    </div>
+
+          </li>
+          <li>
+            <a href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial.md?view=all">Text View</a>
+          </li>
+        </ul>
+      </div>
+
+    
+
+      <section class="list-with-header">
+        <div class="list-header">
+          Guide Products
+          <span class="view-all">
+            <a class="featured-products-link" href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/featured_products">view all</a>
+          </span>
+        </div>
+
+        <ul class="small-product-list">
+            
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_1982" id="product_analytics_1982" value="{
+  &quot;item_list_id&quot;: 1335,
+  &quot;item_list_name&quot;: &quot;raspberry-pi-zero-npr-one-radio&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 1982,
+    &quot;item_name&quot;: &quot;Adafruit 12-Key Capacitive Touch Sensor Breakout - MPR121&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" />
+
+    <div class="product-image">
+        <img class='image-preview product-asset' src='https://cdn-shop.adafruit.com/640x480/1982-08.jpg' loading='lazy' alt='Adafruit 12-Key Capacitive Touch Sensor Breakout with Stemma QT' />
+
+    </div>
+
+    <div class="product-details">
+        <span class="featured-badge">Featured</span>
+
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/1982">Adafruit 12-Key Capacitive Touch Sensor Breakout - MPR121</a>
+      </div>
+
+        <div class="product-price">$7.95</div>
+
+      <a id="1982-product" class="product-buy btn-primary " data-pid="1982" data-qty="1" data-name="Adafruit 12-Key Capacitive Touch Sensor Breakout - MPR121" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/1982">Add  to Cart</a>
+    </div>
+  </li>
+
+            
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_2024" id="product_analytics_2024" value="{
+  &quot;item_list_id&quot;: 962,
+  &quot;item_list_name&quot;: &quot;metal-inlay-capacitive-touch-buttons&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 2024,
+    &quot;item_name&quot;: &quot;Adafruit 12 x Capacitive Touch Shield for Arduino - MPR121&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" />
+
+    <div class="product-image">
+        <img class='image-preview product-asset' src='https://cdn-shop.adafruit.com/640x480/2024-03.jpg' loading='lazy' alt='Top view of Capacitive Touch Shield for Arduino connected to various fruits and objects via alligator clips. ' />
+
+    </div>
+
+    <div class="product-details">
+        <span class="featured-badge">Featured</span>
+
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/2024">Adafruit 12 x Capacitive Touch Shield for Arduino - MPR121</a>
+      </div>
+
+        <div class="product-price">$12.50</div>
+
+      <a id="2024-product" class="product-buy btn-primary " data-pid="2024" data-qty="1" data-name="Adafruit 12 x Capacitive Touch Shield for Arduino - MPR121" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/2024">Add  to Cart</a>
+    </div>
+  </li>
+
+            
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_2340" id="product_analytics_2340" value="{
+  &quot;item_list_id&quot;: 1550,
+  &quot;item_list_name&quot;: &quot;circuit-playground-k-is-for-kits&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 2340,
+    &quot;item_name&quot;: &quot;Adafruit Capacitive Touch HAT for Raspberry Pi - Mini Kit&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" />
+
+    <div class="product-image">
+          <video class="video-preview product-asset" preload="auto" muted="muted" loop="loop" playsinline poster="https://cdn-shop.adafruit.com/product-videos/640x480/2340-00.jpg" aria-hidden=true>
+      <source data-src="https://cdn-shop.adafruit.com/product-videos/640x480/2340-00.mp4">
+      <source data-src="https://cdn-shop.adafruit.com/product-videos/640x480/2340-00.webm" type="video/webm; codecs=vp8,vorbis">
+      Your browser does not support the video tag.
+    </video>
+  <img class='image-preview product-asset' src='https://cdn-shop.adafruit.com/product-videos/640x480/2340-00.jpg' loading='lazy' alt='Video of a white hand pressing various bananas, oranges, and other fruits connected to a Raspberry Pi with Adafruit Capacitive Touch HAT via alligator test clip leads.' />
+
+    </div>
+
+    <div class="product-details">
+        <span class="featured-badge">Featured</span>
+
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/2340">Adafruit Capacitive Touch HAT for Raspberry Pi - Mini Kit</a>
+      </div>
+
+        <div class="product-price">$14.95</div>
+
+      <a id="2340-product" class="product-buy btn-primary " data-pid="2340" data-qty="1" data-name="Adafruit Capacitive Touch HAT for Raspberry Pi - Mini Kit" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/2340">Add  to Cart</a>
+    </div>
+  </li>
+
+            
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_1894" id="product_analytics_1894" value="{
+  &quot;item_list_id&quot;: 667,
+  &quot;item_list_name&quot;: &quot;adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 1894,
+    &quot;item_name&quot;: &quot;Flex PCB Material - 6\&quot; by 6\&quot; Square&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" />
+
+    <div class="product-image">
+        <img class='image-preview product-asset' src='https://cdn-shop.adafruit.com/640x480/1894-01.jpg' loading='lazy' alt='Red polished white hand flexing a corner of a Flex PCB Material - 6&quot; by 6&quot; Square - Shengyi SF305.' />
+
+    </div>
+
+    <div class="product-details">
+        <span class="featured-badge">Featured</span>
+
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/1894">Flex PCB Material - 6&quot; by 6&quot; Square</a>
+      </div>
+
+
+      <a id="1894-product" class="notify product-buy btn-primary " data-pid="1894" data-qty="1" data-name="Flex PCB Material - 6&quot; by 6&quot; Square" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/1894">Out of Stock</a>
+    </div>
+  </li>
+
+            
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_1127" id="product_analytics_1127" value="{
+  &quot;item_list_id&quot;: 2375,
+  &quot;item_list_name&quot;: &quot;circuit-playground-valentine&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 1127,
+    &quot;item_name&quot;: &quot;Copper Foil Tape with Conductive Adhesive - 25mm x 15 meter roll&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" />
+
+    <div class="product-image">
+        <img class='image-preview product-asset' src='https://cdn-shop.adafruit.com/640x480/1127-04.jpg' loading='lazy' alt='Angled Shot of the Copper Foil Tape with Conductive Adhesive - 25mm x 15 meter roll.' />
+
+    </div>
+
+    <div class="product-details">
+        <span class="featured-badge">Featured</span>
+
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/1127">Copper Foil Tape with Conductive Adhesive - 25mm x 15 meter roll</a>
+      </div>
+
+        <div class="product-price">$19.95</div>
+
+      <a id="1127-product" class="product-buy btn-primary " data-pid="1127" data-qty="1" data-name="Copper Foil Tape with Conductive Adhesive - 25mm x 15 meter roll" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/1127">Add  to Cart</a>
+    </div>
+  </li>
+
+            
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_1128" id="product_analytics_1128" value="{
+  &quot;item_list_id&quot;: 667,
+  &quot;item_list_name&quot;: &quot;adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 1128,
+    &quot;item_name&quot;: &quot;Copper Foil Tape with Conductive Adhesive - 6mm x 15 meter roll&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" />
+
+    <div class="product-image">
+        <img class='image-preview product-asset' src='https://cdn-shop.adafruit.com/640x480/1128-04.jpg' loading='lazy' alt='Angled Shot of the Copper Foil Tape with Conductive Adhesive - 6mm x 15 meter roll.' />
+
+    </div>
+
+    <div class="product-details">
+        <span class="featured-badge">Featured</span>
+
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/1128">Copper Foil Tape with Conductive Adhesive - 6mm x 15 meter roll</a>
+      </div>
+
+        <div class="product-price">$5.95</div>
+
+      <a id="1128-product" class="product-buy btn-primary " data-pid="1128" data-qty="1" data-name="Copper Foil Tape with Conductive Adhesive - 6mm x 15 meter roll" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/1128">Add  to Cart</a>
+    </div>
+  </li>
+
+            
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_1305" id="product_analytics_1305" value="{
+  &quot;item_list_id&quot;: 2496,
+  &quot;item_list_name&quot;: &quot;cpx-midi-controller&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 1305,
+    &quot;item_name&quot;: &quot;Bare Conductive Paint - 50mL&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" />
+
+    <div class="product-image">
+        <img class='image-preview product-asset' src='https://cdn-shop.adafruit.com/640x480/1305-00.jpg' loading='lazy' alt='Hand drawing black ink on paper with brush' />
+
+    </div>
+
+    <div class="product-details">
+        <span class="featured-badge">Featured</span>
+
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/1305">Bare Conductive Paint - 50mL</a>
+      </div>
+
+
+      <a id="1305-product" class="notify product-buy btn-primary " data-pid="1305" data-qty="1" data-name="Bare Conductive Paint - 50mL" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/1305">No Longer Stocked</a>
+    </div>
+  </li>
+
+            
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_1168" id="product_analytics_1168" value="{
+  &quot;item_list_id&quot;: 667,
+  &quot;item_list_name&quot;: &quot;adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 1168,
+    &quot;item_name&quot;: &quot;Woven Conductive Fabric - 20cm square&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" />
+
+    <div class="product-image">
+        <img class='image-preview product-asset' src='https://cdn-shop.adafruit.com/640x480/1168-03.jpg' loading='lazy' alt='Conductive Fabric - 20cm square' />
+
+    </div>
+
+    <div class="product-details">
+        <span class="featured-badge">Featured</span>
+
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/1168">Woven Conductive Fabric - 20cm square</a>
+      </div>
+
+        <div class="product-price">$4.95</div>
+
+      <a id="1168-product" class="product-buy btn-primary " data-pid="1168" data-qty="1" data-name="Woven Conductive Fabric - 20cm square" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/1168">Add  to Cart</a>
+    </div>
+  </li>
+
+
+          <li>
+            <a class="full-size" href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/featured_products">
+              View product details
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+</a>          </li>
+        </ul>
+      </section>
+
+  </nav>
+</div>
+
+
+    <div class="right-content" id="article-body" tabindex="-1">
+
+      <div class="badges headline-badges">
+      <div class="badge favorites-count " title="Saves" aria-label="This many users have saved this guide">
+        79
+      </div>
+
+
+    <div class="badge skill-level" title="Skill Level" aria-label="Guide skill level">
+      Intermediate
+    </div>
+
+    <div class="badge skill-level" title="Guide Type" aria-label="Guide type">
+      Product guide
+    </div>
+
+  <turbo-frame id="display_reactions"></turbo-frame>
+</div>
+
+
+        <h2>
+          <span id="pinouts">Pinouts</span>
+        </h2>
+
+        <div class="page-content">
+            <div class="" role="region" aria-label="Page content">
+        <figure class="element image-element">
+    <a href="/assets/98909">
+        <img class="98909-asset"
+             srcset="https://cdn-learn.adafruit.com/assets/assets/000/098/909/small360/sensors_MPR121_STEMMA_pinouts.jpg?1611617975 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/098/909/medium640/sensors_MPR121_STEMMA_pinouts.jpg?1611617975 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/098/909/medium800/sensors_MPR121_STEMMA_pinouts.jpg?1611617975 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/098/909/large1024/sensors_MPR121_STEMMA_pinouts.jpg?1611617975 1024w"
+              sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px"
+             src="https://cdn-learn.adafruit.com/assets/assets/000/098/909/medium800/sensors_MPR121_STEMMA_pinouts.jpg?1611617975"
+             loading="lazy"
+             alt="" />
+</a>  </figure>
+
+        <figure class="element image-element">
+    <a href="/assets/18427">
+        <img class="18427-asset"
+             srcset="https://cdn-learn.adafruit.com/assets/assets/000/018/427/small360/sensors_pinout.jpg?1406242331 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/018/427/medium640/sensors_pinout.jpg?1406242331 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/018/427/medium800/sensors_pinout.jpg?1406242331 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/018/427/large1024/sensors_pinout.jpg?1406242331 1024w"
+              sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px"
+             src="https://cdn-learn.adafruit.com/assets/assets/000/018/427/medium800/sensors_pinout.jpg?1406242331"
+             loading="lazy"
+             alt="" />
+</a>  </figure>
+
+      <div class="alert-element alert-info" role="note">
+  <span class="alert-icon" aria-hidden="true"><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M25 50a25 25 0 1 0 0-50 25 25 0 0 0 0 50zm0-37.5a2.338 2.338 0 0 1 2.344 2.344V25.78A2.338 2.338 0 0 1 25 28.125a2.338 2.338 0 0 1-2.344-2.344V14.844A2.338 2.338 0 0 1 25 12.5zm-3.125 21.875a3.125 3.125 0 1 1 6.25 0 3.125 3.125 0 0 1-6.25 0z" fill="currentColor"/>
+</svg>
+</span>
+  <span class="visually-hidden">Text emphasized with a blue exclamation: </span>
+  <span class="alert-content">The pins are in a slightly different order on the original board from the STEMMA QT version. They function the same!</span>
+</div>
+
+      <div class="text-element">
+  
+        <p>The little chip in the middle of the PCB is the actual MPR121 sensor that does all the capacitive sensing and filtering. We add all the extra components you need to get started, and 'break out' all the other pins you may want to connect to onto the PCB. For more details you can check out the schematics in the Downloads page.<br><br></p>
+<h1><div class="anchor-anchor"><a href="#power-pins-805436" class="anchor-link"><span class="fa fa-link"></span></a><span id="power-pins-805436" class="anchor-link-target"></span></div>Power Pins</h1>
+<p>The sensor on the breakout requires 3V power. Since many customers have 5V microcontrollers like Arduino, we tossed a 3.3V regulator on the board. Its ultra-low dropout so you can power it from 3.3V-5V just fine.</p>
+<ul>
+<li>
+<strong>Vin</strong> - this is the power pin. Since the chip uses 3 VDC, we have included a voltage regulator on board that will take 3-5VDC and safely convert it down. To power the board, give it the same power as the logic level of your microcontroller - e.g. for a 5V micro like Arduino, use 5V</li>
+<li>
+<strong>3Vo</strong> - this is the 3.3V output from the voltage regulator, you can grab up to 100mA from this if you like</li>
+<li>
+<strong>GND</strong> - common ground for power and logic</li>
+</ul>
+<p>&nbsp;</p>
+<h1><div class="anchor-anchor"><a href="#i2c-pins-805436" class="anchor-link"><span class="fa fa-link"></span></a><span id="i2c-pins-805436" class="anchor-link-target"></span></div>I2C Pins</h1>
+<ul>
+<li>
+<strong>SCL </strong>- I2C clock pin, connect to your microcontroller's I2C clock line.</li>
+<li>
+<strong>SDA </strong>- I2C data pin, connect to your microcontroller's I2C data line.</li>
+</ul>
+<p>&nbsp;</p>
+<h1><div class="anchor-anchor"><a href="#irq-and-addr-pins-805436" class="anchor-link"><span class="fa fa-link"></span></a><span id="irq-and-addr-pins-805436" class="anchor-link-target"></span></div>IRQ and ADDR Pins</h1>
+<ul>
+<li>
+<strong>ADDR</strong> is the I2C address select pin. By default this is pulled down to ground with a 100K resistor, for an I2C address of 0x5A. You can also connect it to the 3Vo pin for an address of 0x5B, the SDA pin for 0x5C or SCL for address 0x5D</li>
+<li>
+<strong>INT </strong>(IRQ on original version) is the Interrupt Request signal pin. It is pulled up to 3.3V on the breakout and when the sensor chip detects a change in the touch sense switches, the pin goes to 0V until the data is read over i2c</li>
+</ul>
+<h1><div class="anchor-anchor"><a href="#-805436" class="anchor-link"><span class="fa fa-link"></span></a><span id="-805436" class="anchor-link-target"></span></div>&nbsp;</h1>
+      
+</div>
+
+  </div>
+
+
+          <div class="page-last-updated">
+  <p>Page last edited March 08, 2024</p>
+</div>
+
+        </div>
+
+        <div class="page-navigation">
+            <a class="previous-page btn-primary large" aria-label="Previous page" href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/overview">
+              <i class="fa fa-chevron-left"></i>&nbsp;Overview
+</a>            <a class="next-page btn-primary large" aria-label="Next page" href="/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/assembly">
+              Assembly&nbsp;<i class="fa fa-chevron-right"></i>
+</a>        </div>
+    </div>
+  </div>
+</article>
+
+    <div class="related-guides-wrapper">
+  <section class="content-card-group-preview">
+  <div class="group-preview-headline">
+    <div class="title">
+      Related Guides
+    </div>
+
+    
+  </div>
+
+  <a class="scroll-back"><i class="fa fa-angle-left"></i></a>
+  <div class="content-card-group-container">
+    <div class="content-card-group">
+      <!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/circuit-playground-valentine">
+      <div class="image-container">
+          <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline tabindex="-1" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/375/medium640thumb/powerpuff_gif.gif?1548798406" aria-hidden="true">
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/375/medium640mp4/powerpuff_gif.mp4?1548798406"></source>
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/375/medium640webm/powerpuff_gif.webm?1548798406" type="video/webm; codecs=vp8,vorbis"></source>
+      Your browser does not support the video tag. This links to the guide Circuit Playground Powerpuff Girls Valentine.
+  </video>
+<img loading="lazy" alt="Heart-shaped background with animated lights and a Powerpuff Girls image. A finger interacts with the board, activating LEDs on a Circuit Playground Express." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/375/medium640thumb/powerpuff_gif.gif?1548798406" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/circuit-playground-valentine">Circuit Playground Powerpuff Girls Valentine</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/firepixie">
+        <span class="name">Erin St Blaine</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 9 times" aria-label="This guide has been saved 9 times">
+    <span>9</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/infinity-mirror-candy-box">
+      <div class="image-container">
+          <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline tabindex="-1" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/388/medium640thumb/00-MikeB-Candy-Box-Thumb.gif?1549479224" aria-hidden="true">
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/388/medium640mp4/00-MikeB-Candy-Box-Thumb.mp4?1549479224"></source>
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/388/medium640webm/00-MikeB-Candy-Box-Thumb.webm?1549479224" type="video/webm; codecs=vp8,vorbis"></source>
+      Your browser does not support the video tag. This links to the guide Infinity Mirror Valentine&#39;s Candy Box.
+  </video>
+<img loading="lazy" alt="Heart-shaped infinity mirror LED display with red lights in a decorative box. Smaller heart box on the side, both with glowing infinity mirror effects." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/388/medium640thumb/00-MikeB-Candy-Box-Thumb.gif?1549479224" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/infinity-mirror-candy-box">Infinity Mirror Valentine&#39;s Candy Box</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/KathyCeceri">
+        <span class="name">Kathy Ceceri</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 20 times" aria-label="This guide has been saved 20 times">
+    <span>20</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/bluefruit-luminary-lanterns-with-capacitive-touch">
+      <div class="image-container">
+          <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline tabindex="-1" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/809/medium640thumb/luminaries.gif?1574279911" aria-hidden="true">
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/809/medium640mp4/luminaries.mp4?1574279911"></source>
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/809/medium640webm/luminaries.webm?1574279911" type="video/webm; codecs=vp8,vorbis"></source>
+      Your browser does not support the video tag. This links to the guide Bluefruit Luminary Lanterns with Capacitive Touch.
+  </video>
+<img loading="lazy" alt="Three paper lanterns with intricate snowflake cutouts are illuminated in blue and green light. The lanterns vary in size and shape, showcasing decorative patterns." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/809/medium640thumb/luminaries.gif?1574279911" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/bluefruit-luminary-lanterns-with-capacitive-touch">Bluefruit Luminary Lanterns with Capacitive Touch</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/firepixie">
+        <span class="name">Erin St Blaine</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      intermediate
+    </div>
+
+  <div class="badge favorites " title="Saved 44 times" aria-label="This guide has been saved 44 times">
+    <span>44</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/two-way-display-with-analog-feedback-servos">
+      <div class="image-container">
+          <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline tabindex="-1" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/634/medium640thumb/guide-loop-4k.gif?1659632442" aria-hidden="true">
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/634/medium640mp4/guide-loop-4k.mp4?1659632442"></source>
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/634/medium640webm/guide-loop-4k.webm?1659632442" type="video/webm; codecs=vp8,vorbis"></source>
+      Your browser does not support the video tag. This links to the guide Two Way Telegraph with Analog Feedback Servos.
+  </video>
+<img loading="lazy" alt="2 Two Way Telegraphs with icons, including a heart and hand gestures, are mounted on stands. They feature colorful backgrounds and are part of an interactive project using Analog Feedback Servos." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/634/medium640thumb/guide-loop-4k.gif?1659632442" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/two-way-display-with-analog-feedback-servos">Two Way Telegraph with Analog Feedback Servos</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/pixil3d">
+        <span class="name">Ruiz Brothers</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      intermediate
+    </div>
+
+  <div class="badge favorites " title="Saved 103 times" aria-label="This guide has been saved 103 times">
+    <span>103</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/am-radio-morse-code-paddle">
+      <div class="image-container">
+        <img loading="lazy" alt="A Circuit Playground express round microcontroller board is connected to multiple alligator clips on a wooden board, with a hand holding a yellow wire suggesting a Morse code keyer. Various colored wires are attached to the microcontroller, indicating a circuit setup." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/001/959/medium640/morse_IMG_1244_2k.jpg?1520450587" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/am-radio-morse-code-paddle">AM Radio Morse Code Paddle</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/johnpark">
+        <span class="name">John Park</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 16 times" aria-label="This guide has been saved 16 times">
+    <span>16</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/grinch-fireplace">
+      <div class="image-container">
+          <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline tabindex="-1" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/316/medium640thumb/step-loop.gif?1544328602" aria-hidden="true">
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/316/medium640mp4/step-loop.mp4?1544328602"></source>
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/316/medium640webm/step-loop.webm?1544328602" type="video/webm; codecs=vp8,vorbis"></source>
+      Your browser does not support the video tag. This links to the guide Motorized Grinch Fireplace.
+  </video>
+<img loading="lazy" alt="A person wearing green and red elf slippers steps on a white rug in front of a holiday-themed fireplace. The scene includes nutcracker figures and wrapped gifts. A Grinch head is coming out of the fireplace." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/316/medium640thumb/step-loop.gif?1544328602" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/grinch-fireplace">Motorized Grinch Fireplace</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/pixil3d">
+        <span class="name">Ruiz Brothers</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 6 times" aria-label="This guide has been saved 6 times">
+    <span>6</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/adafruit-circuit-playground-express">
+      <div class="image-container">
+        <img loading="lazy" alt="A circular Circuit Playground Express board with glowing green LEDs and various labeled connection pads. A micro USB cable is connected at the top." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/001/799/medium640/cpx01.jpg?1520545756" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/adafruit-circuit-playground-express">Adafruit Circuit Playground Express</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/adafruit2">
+        <span class="name">lady ada</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge product-guide" aria-label="Product guide">
+      Product Guide
+    </div>
+
+  <div class="badge favorites " title="Saved 450 times" aria-label="This guide has been saved 450 times">
+    <span>450</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/adventure-time-coffee-cup-lamp">
+      <div class="image-container">
+          <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline tabindex="-1" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/337/medium640thumb/hero-rain-still.gif?1545874149" aria-hidden="true">
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/337/medium640mp4/hero-rain-still.mp4?1545874149"></source>
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/337/medium640webm/hero-rain-still.webm?1545874149" type="video/webm; codecs=vp8,vorbis"></source>
+      Your browser does not support the video tag. This links to the guide Adventure Time Coffee Cup Lamp with MakeCode.
+  </video>
+<img loading="lazy" alt="A lampshade featuring cartoon characters with a rainbow is illuminated from below. The design includes a colorful landscape scene." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/337/medium640thumb/hero-rain-still.gif?1545874149" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/adventure-time-coffee-cup-lamp">Adventure Time Coffee Cup Lamp with MakeCode</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/pixil3d">
+        <span class="name">Ruiz Brothers</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 16 times" aria-label="This guide has been saved 16 times">
+    <span>16</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/crickit-powered-dancin-snowman">
+      <div class="image-container">
+          <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline tabindex="-1" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/313/medium640thumb/snowmancovergif.gif?1544117285" aria-hidden="true">
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/313/medium640mp4/snowmancovergif.mp4?1544117285"></source>
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/313/medium640webm/snowmancovergif.webm?1544117285" type="video/webm; codecs=vp8,vorbis"></source>
+      Your browser does not support the video tag. This links to the guide Crickit Powered Dancin&#39; Snowman!.
+  </video>
+<img loading="lazy" alt="A snowman with a top hat and red plaid scarf waves its stick arms. It has a carrot nose and button eyes and mouth." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/313/medium640thumb/snowmancovergif.gif?1544117285" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/crickit-powered-dancin-snowman">Crickit Powered Dancin&#39; Snowman!</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/isaacwellish">
+        <span class="name">Isaac Wellish</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 8 times" aria-label="This guide has been saved 8 times">
+    <span>8</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/diy-lego-led-bricks">
+      <div class="image-container">
+        <img loading="lazy" alt="LEGO figures in a lab setting with a telescope, computer, and glowing green elements. A dinosaur skeleton model is displayed." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/001/583/medium640/hero-lab-close.jpg?1535580943" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/diy-lego-led-bricks">DIY Lego LED Bricks</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/pixil3d">
+        <span class="name">Ruiz Brothers</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 48 times" aria-label="This guide has been saved 48 times">
+    <span>48</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/epoxy-resin-torch-lamp-with-touch-control-3d-printed-base">
+      <div class="image-container">
+          <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline tabindex="-1" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/085/medium640thumb/Studio_Torch_01.gif?1598293040" aria-hidden="true">
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/085/medium640mp4/Studio_Torch_01.mp4?1598293040"></source>
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/085/medium640webm/Studio_Torch_01.webm?1598293040" type="video/webm; codecs=vp8,vorbis"></source>
+      Your browser does not support the video tag. This links to the guide Epoxy Resin Torch Lamp with Touch Control &amp; 3D Printed Base.
+  </video>
+<img loading="lazy" alt="Two tall cylindrical epoxy resin torch lamps with small LEDs making the lamps glow red." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/085/medium640thumb/Studio_Torch_01.gif?1598293040" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/epoxy-resin-torch-lamp-with-touch-control-3d-printed-base">Epoxy Resin Torch Lamp with Touch Control &amp; 3D...</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/firepixie">
+        <span class="name">Erin St Blaine</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 24 times" aria-label="This guide has been saved 24 times">
+    <span>24</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/automatic-cat-treat-dispenser">
+      <div class="image-container">
+          <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline tabindex="-1" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/162/medium640thumb/hero.gif?1535900635" aria-hidden="true">
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/162/medium640mp4/hero.mp4?1535900635"></source>
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/162/medium640webm/hero.webm?1535900635" type="video/webm; codecs=vp8,vorbis"></source>
+      Your browser does not support the video tag. This links to the guide Automatic Cat Treat Dispenser.
+  </video>
+<img loading="lazy" alt="Cardboard tubes are attached to a black cardboard case with a servo motor at the top to dispense cat treats. Sunlight filters through the window, illuminating the setup." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/162/medium640thumb/hero.gif?1535900635" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/automatic-cat-treat-dispenser">Automatic Cat Treat Dispenser</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/danowall">
+        <span class="name">Dano Wall</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 117 times" aria-label="This guide has been saved 117 times">
+    <span>117</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/memento-shutter">
+      <div class="image-container">
+        <img loading="lazy" alt="A small MEMENTO camera on a tripod with a screen and directional pad is connected to a 3D printed purple shutter remote with a red button." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/929/medium640/hero-plant.jpg?1705939157" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/memento-shutter">Remote Shutter Button for MEMENTO</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/pixil3d">
+        <span class="name">Ruiz Brothers</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      beginner
+    </div>
+
+  <div class="badge favorites " title="Saved 23 times" aria-label="This guide has been saved 23 times">
+    <span>23</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/glowing-bottle-castle-and-capacitive-touch-piano">
+      <div class="image-container">
+          <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline tabindex="-1" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/036/medium640thumb/Song_Castle_GIF_2.gif?1594667002" aria-hidden="true">
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/036/medium640mp4/Song_Castle_GIF_2.mp4?1594667002"></source>
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/036/medium640webm/Song_Castle_GIF_2.webm?1594667002" type="video/webm; codecs=vp8,vorbis"></source>
+      Your browser does not support the video tag. This links to the guide Glowing Bottle Castle and Capacitive Touch Piano.
+  </video>
+<img loading="lazy" alt="A multicolored castle made with decorated glass bottles lit with NeoPixel smart RGB LEDs." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/036/medium640thumb/Song_Castle_GIF_2.gif?1594667002" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/glowing-bottle-castle-and-capacitive-touch-piano">Glowing Bottle Castle and Capacitive Touch Piano</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/firepixie">
+        <span class="name">Erin St Blaine</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      intermediate
+    </div>
+
+  <div class="badge favorites " title="Saved 32 times" aria-label="This guide has been saved 32 times">
+    <span>32</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+    <a aria-hidden="true" tabindex="-1" href="/neopixel-aquarium-with-submersible-lights">
+      <div class="image-container">
+          <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline tabindex="-1" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/185/medium640thumb/aquarium.gif?1606666076" aria-hidden="true">
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/185/medium640mp4/aquarium.mp4?1606666076"></source>
+      <source data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/185/medium640webm/aquarium.webm?1606666076" type="video/webm; codecs=vp8,vorbis"></source>
+      Your browser does not support the video tag. This links to the guide NeoPixel Aquarium with Submersible Lights.
+  </video>
+<img loading="lazy" alt="LED-lit mushrooms and a snail shell create a glowing scene with fiber optic plants and scattered translucent beads. The setup is illuminated with blue and multicolored lights." class="image-preview" src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/185/medium640thumb/aquarium.gif?1606666076" />
+
+      </div>
+</a>
+  <div class="bottom-section">
+    <div class="content">
+      <a class="title" aria-label="Guide title" href="/neopixel-aquarium-with-submersible-lights">NeoPixel Aquarium with Submersible Lights</a>
+          <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="/u/firepixie">
+        <span class="name">Erin St Blaine</span>
+</a>    </div>
+
+    </div>
+
+    <div class="badges">
+    <div class="badge" aria-label="Guide skill level">
+      intermediate
+    </div>
+
+  <div class="badge favorites " title="Saved 26 times" aria-label="This guide has been saved 26 times">
+    <span>26</span>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+  <a class="scroll-forward"><i class="fa fa-angle-right"></i></a>
+</section>
+
+</div>
+
+
+
+
+<div class="dialog-container modal"
+     id="create-wishlist-modal"
+     data-modals-target="modal"
+     aria-labelledby="dialog-title"
+     aria-hidden="true">
+  <div class="dialog-overlay" data-a11y-dialog-hide></div>
+  <div class="dialog-content">
+    <div class="dialog-header">
+      <h5 class="dialog-title">Create Wishlist</h5>
+      <a href="#" class="dialog-close" data-a11y-dialog-hide="create-wishlist-modal" aria-label="Close this dialog window">&times;</a>
+    </div>
+    <form>
+      <div class="dialog-body">
+        <div class="form-group">
+          <label for="wishlist_title">Title</label>
+          <input type="text" name="wishlist_title" id="wishlist_title" />
+        </div>
+
+        <div class="form-group">
+          <label for="wishlist_description">Description</label>
+          <textarea name="wishlist_description" id="wishlist_description">
+</textarea>
+        </div>
+      </div>
+      <div class="dialog-footer">
+        <input type="submit" name="commit" value="Create Wishlist" class="btn-primary" id="create-wishlist" data-disable-with="Create Wishlist" />
+        <a href="#" class="dialog-close" data-a11y-dialog-hide="create-wishlist-modal" aria-label="Close this dialog window">Close</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+        </div>
+
+        <div id="search-container">
+  <div class="toolbar-primary">
+    <div class="content">
+      <div class="left-content">
+        <div class="breadcrumbs">
+          <a href="https://learn.adafruit.com" aria-label="Home page"><i class='fa fa-home'></i></a>
+          <i class="fa fa-chevron-right separator"></i> Search <i class="fa fa-chevron-right separator"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-header">
+    <div class="header-intro">
+      <h1 class="title">Search</h1>
+    </div>
+
+    <div class="header-main-content-wrapper">
+      <div class="header-main-content">
+        <div id="search-refinements" class="breakdown">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-content left-sidebar-layout">
+    <div>
+      <div class="facets-wrapper">
+        <h5 class="search-refinement-header">Categories</h5>
+        <div id="search-categories"></div>
+      </div>
+    </div>
+
+    <div>
+      <div id="search-results" class="search-content-card-group"></div>
+
+      <div id="search-pagination" class="pagination"></div>
+    </div>
+  </div>
+</div>
+
+
+        <div id='main-content-overlay'></div>
+      </main>
+        <footer id="adafruit-footer">
+    <div class="footer-container">
+      <div>
+        <ul>
+          <li>
+            <a href="https://www.adafruit.com/contact_us">Contact Us</a>
+          </li>
+          <li>
+            <a href="https://forums.adafruit.com/">Tech Support Forums</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/faq">FAQs</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/shippinginfo">Shipping &amp; Returns</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/free">Freebies</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/terms_of_service">Terms of Service</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/privacy">Privacy &amp; Legal</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/accessibility">Website Accessibility</a>
+          </li>
+          <li>
+            <a href="/llms.txt">LLMs.txt</a>
+          </li>
+        </ul>
+        <button type="button" class="theme-toggle "
+  data-controller="theme" data-action="theme#cycle"
+  aria-label="Change color theme (current: system)">
+  <i class="fa fa-circle-half-stroke" aria-hidden="true" data-theme-target="icon"></i>
+    <span data-theme-target="label">Theme: System</span>
+</button>
+
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="https://www.adafruit.com/about">About Us</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/press">Press</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/educators">Educators</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/distributors">Distributors</a>
+          </li>
+          <li>
+            <a href="https://jobs.adafruit.com">Jobs</a>
+          </li>
+          <li>
+            <a href="https://www.adafruit.com/category/14">Gift Cards</a>
+          </li>
+        </ul>
+      </div>
+      <aside>
+        <div class="quote">"Be quick, but don't hurry"</div>
+        <div class="quote-attribution"><a href="http://en.wikipedia.org/wiki/John_Wooden">John Wooden</a></div>
+      </aside>
+    </div>
+    <div class="footer-container bottom">
+      <a title="About Adafruit" id="footer-logo" href="https://learn.adafruit.com">
+        <img alt="Adafruit Logo" src="/logos/adafruit_logo_small.png?-2399977704570461940" />
+</a>
+      <div class="social-links">
+        <a href="https://www.instagram.com/adafruit/" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+        <a href="https://twitter.com/adafruit/" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+        <a class="mastodon-logo" href="https://fosstodon.org/@adafruit" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Mastodon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216.4144 232.00976"><path class="logo" d="M211.80734 139.0875c-3.18125 16.36625-28.4925 34.2775-57.5625 37.74875-15.15875 1.80875-30.08375 3.47125-45.99875 2.74125-26.0275-1.1925-46.565-6.2125-46.565-6.2125 0 2.53375.15625 4.94625.46875 7.2025 3.38375 25.68625 25.47 27.225 46.39125 27.9425 21.11625.7225 39.91875-5.20625 39.91875-5.20625l.8675 19.09s-14.77 7.93125-41.08125 9.39c-14.50875.7975-32.52375-.365-53.50625-5.91875C9.23234 213.82 1.40609 165.31125.20859 116.09125c-.365-14.61375-.14-28.39375-.14-39.91875 0-50.33 32.97625-65.0825 32.97625-65.0825C49.67234 3.45375 78.20359.2425 107.86484 0h.72875c29.66125.2425 58.21125 3.45375 74.8375 11.09 0 0 32.975 14.7525 32.975 65.0825 0 0 .41375 37.13375-4.59875 62.915" fill="currentColor"/><path d="M177.50984 80.077v60.94125h-24.14375v-59.15c0-12.46875-5.24625-18.7975-15.74-18.7975-11.6025 0-17.4175 7.5075-17.4175 22.3525v32.37625H96.20734V85.42325c0-14.845-5.81625-22.3525-17.41875-22.3525-10.49375 0-15.74 6.32875-15.74 18.7975v59.15H38.90484V80.077c0-12.455 3.17125-22.3525 9.54125-29.675 6.56875-7.3225 15.17125-11.07625 25.85-11.07625 12.355 0 21.71125 4.74875 27.8975 14.2475l6.01375 10.08125 6.015-10.08125c6.185-9.49875 15.54125-14.2475 27.8975-14.2475 10.6775 0 19.28 3.75375 25.85 11.07625 6.36875 7.3225 9.54 17.22 9.54 29.675" fill="#000"/></svg></a>
+
+        <a href="https://www.facebook.com/adafruitindustries" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+        <a href="https://www.youtube.com/adafruit" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on YouTube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+
+        <a href="https://github.com/adafruit" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Github"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+        <a class="tiktok-logo" aria-label="Adafruit on TikTok" href="https://www.tiktok.com/@adafruit"  target="_blank" rel="noopener noreferrer"><svg viewBox="3 2 20 22" xmlns="http://www.w3.org/2000/svg"><path class="logo" d="M19.8059 7.50695C18.7771 7.50695 17.8278 7.16612 17.0655 6.59113C16.1912 5.93198 15.5631 4.9651 15.3412 3.85069C15.2863 3.57534 15.2567 3.29119 15.2539 3H12.3149V11.0308L12.3114 15.4297C12.3114 16.6057 11.5455 17.6029 10.4839 17.9536C10.1758 18.0553 9.8431 18.1036 9.49663 18.0846C9.05438 18.0603 8.63995 17.9268 8.27975 17.7113C7.51322 17.2529 6.99351 16.4212 6.97942 15.4698C6.95724 13.9829 8.15933 12.7706 9.64522 12.7706C9.93852 12.7706 10.2202 12.8185 10.4839 12.9054V10.7104V9.92134C10.2058 9.88015 9.92268 9.85867 9.63641 9.85867C8.01004 9.85867 6.48894 10.5347 5.40164 11.7526C4.57982 12.6731 4.08687 13.8473 4.01082 15.0786C3.91117 16.6962 4.50306 18.2339 5.65093 19.3683C5.81959 19.5349 5.9967 19.6895 6.1819 19.8321C7.16604 20.5894 8.36919 21 9.63641 21C9.92268 21 10.2058 20.9789 10.4839 20.9377C11.6677 20.7623 12.7599 20.2204 13.6219 19.3683C14.681 18.3215 15.2662 16.9318 15.2726 15.4526L15.2574 8.88369C15.7627 9.27347 16.3152 9.596 16.9081 9.84635C17.8303 10.2354 18.8081 10.4326 19.8144 10.4322V8.29814V7.50625C19.8151 7.50695 19.8066 7.50695 19.8059 7.50695Z" fill="currentColor"/></svg></a>
+
+        <a class="tumblr-logo" aria-label="Adafruit on Tumblr" href="https://adafruit.tumblr.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+
+        <a class="threads-logo" href="https://www.threads.net/@adafruit" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Threads"><span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8c29.2 14.1 50.6 35.2 61.8 61.4c15.7 36.5 17.2 95.8-30.3 143.2c-36.2 36.2-80.3 52.5-142.6 53h-.3c-70.2-.5-124.1-24.1-160.4-70.2c-32.3-41-48.9-98.1-49.5-169.6V256v-.2C17 184.3 33.6 127.2 65.9 86.2C102.2 40.1 156.2 16.5 226.4 16h.3c70.3 .5 124.9 24 162.3 69.9c18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4c-29.2-35.8-73-54.2-130.5-54.6c-57 .5-100.1 18.8-128.2 54.4C72.1 146.1 58.5 194.3 58 256c.5 61.7 14.1 109.9 40.3 143.3c28 35.6 71.2 53.9 128.2 54.4c51.4-.4 85.4-12.6 113.7-40.9c32.3-32.2 31.7-71.8 21.4-95.9c-6.1-14.2-17.1-26-31.9-34.9c-3.7 26.9-11.8 48.3-24.7 64.8c-17.1 21.8-41.4 33.6-72.7 35.3c-23.6 1.3-46.3-4.4-63.9-16c-20.8-13.8-33-34.8-34.3-59.3c-2.5-48.3 35.7-83 95.2-86.4c21.1-1.2 40.9-.3 59.2 2.8c-2.4-14.8-7.3-26.6-14.6-35.2c-10-11.7-25.6-17.7-46.2-17.8H227c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1h.8c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3c25.6-1.4 54.6-11.4 59.5-73.2c-13.2-2.9-27.8-4.4-43.4-4.4c-4.8 0-9.6 .1-14.4 .4c-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z"/></svg></span></a>
+
+        <a class="discord-logo" aria-label="Adafruit on Discord" href="https://adafru.it/discord" target="_blank" rel="noopener noreferrer"><svg style="height: 1em; margin-bottom: -0.15em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"><path fill="currentColor" d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg></a>
+
+        <a class="bluesky-logo" aria-label="Adafruit on Bluesky" href="https://bsky.app/profile/adafruit.com" target="_blank" rel="noopener noreferrer"><svg style="height: 1em; margin-bottom: -0.15em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"/></svg>
+</a>
+      </div>
+      <div class="footer-messaging">
+        <a href="https://www.adafruit.com/about">A Minority and Woman-owned Business Enterprise (M/WBE)</a>
+      </div>
+    </div>
+  </footer>
+
+    </div>
+  </div>
+
+  <div id="remote-modal-wrapper"></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "name_readable": "Tenstar ESP32-S3 SuperMini (pinout unverified)",
+  "manufacturer": "tenstar",
+  "part_number": "esp32_s3_supermini",
+  "webpage": null,
+  "sources": [
+    {
+      "id": "original_catalogue",
+      "url": null,
+      "title": "Original populate entries in this repository",
+      "local_file": null,
+      "scope": "Nominal dimensions and identity; not manufacturer verification",
+      "accessed": "2026-10-22"
+    },
+    {
+      "id": "chip_datasheet",
+      "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf",
+      "title": "chip_datasheet",
+      "accessed": "2026-10-22",
+      "scope": "GPIO capabilities, electrical limits and strapping; not carrier geometry"
+    }
+  ],
+  "dimensions_mm": {
+    "width": 18,
+    "height": 23.5,
+    "pcb_thickness": null,
+    "assembled_height": null,
+    "scope": "nominal_catalogue_outline_not_measured",
+    "source_id": "original_catalogue",
+    "status": "unverified"
+  },
+  "coordinate_system": {
+    "units": "mm",
+    "origin": "centre_of_pcb_outline",
+    "view": "top_with_usb_at_positive_y",
+    "x_positive": "right",
+    "y_positive": "towards_usb"
+  },
+  "mounting_hole_details": []
+}

@@ -1,0 +1,12 @@
+Raspberry Pi Pico H mounting source acquisition notes
+Acquired 2026-11-06 (UTC), by direct HTTPS requests with timeout; bytes inspected after download.
+
+- Datasheet PDF: https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf
+  Local: pico_datasheet.pdf; 18,176,869 bytes; SHA-256 757ff485227493b9fcc0c2c96c4dea9de020e1d8b2b11e2aa4f9ee8b25aa89eb. PDF p.7 (printed p.6) contains complete mechanical figure and dimensions; p.25 identifies SC0917 Pico H.
+- Official R3 design archive: https://pip-assets.raspberrypi.com/categories/610-raspberry-pi-pico/documents/RP-008379-DS-1-RPi-Pico-R3-PUBLIC-20200119.zip
+  Local: pico_r3_design.zip; 651,151 bytes; SHA-256 90d120b7664bb1b7a458c50ab65ed087e28116e849f627793dc1ecf1585d415a. ZIP contents inspected; includes RPI-PICO-R3a-PUBLIC.brd.
+- Official Pico-R3 STEP archive: https://pip-assets.raspberrypi.com/categories/610-raspberry-pi-pico/documents/RP-008311-DS-1-Pico-R3-step.zip
+  Local: pico_r3_step.zip; 266,009 bytes; SHA-256 4008e557bd80d75119872d10460d9f30f2e0faf210606d058bbe78cd6598c931.
+- Existing archived figure: source_file/.../reference/mechanical.png; SHA-256 f0729092b3f28ee0fc488652c290022fb5a263d39405669496e90d1a14b6b855, matches the seed context record exactly.
+
+The board product/revision relationship was checked against Raspberry Pi's official pico-series documentation: https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html and official PIP listings https://pip.raspberrypi.com/categories/753-raspberry-pi-pico-h and https://pip.raspberrypi.com/categories/610-raspberry-pi-pico. A direct request to raspberrypi.com documentation returned HTTP 403; no retry or bypass was used. The official current documentation page was reviewed via its accessible GitHub-hosted Raspberry Pi documentation source.

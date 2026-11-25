@@ -1,0 +1,425 @@
+board_variant: stemma_qt
+breakout_description: stemma_qt
+breakout_pcb_height: 20.32
+breakout_pcb_width: 25.4
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+- Default I2C address not established in this import.
+definition_authority: working_oomp_populate_i2c.py
+description: Current and bus-voltage measurement for battery, solar and power-use
+  experiments.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+geometry_ready: false
+i2c:
+  address_evidence_status: partial_product_page_evidence
+  address_selection: solder_jumpers
+  clock_stretching: unverified
+  default_address_7bit: null
+  documented_addresses_7bit:
+  - 64
+  - 65
+  - 68
+  - 69
+  maximum_clock_hz: null
+  source_id: product
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+item_kind: breakout
+manufacturer: adafruit
+manufacturer_part_number: '904'
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 2.5
+  id: U$20:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: 7.62
+- diameter_mm: 2.5
+  id: U$21:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: 7.62
+- diameter_mm: 2.5
+  id: U$25:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: -10.16
+  y_mm: -7.62
+- diameter_mm: 2.5
+  id: U$27:pad:P$1
+  package: MOUNTINGHOLE_2.5_PLATED
+  plated: true
+  source_id: mounting_cad
+  x_mm: 10.16
+  y_mm: -7.62
+mounting_hole_radius_name: m2
+mounting_hole_radius_names:
+- m2
+- m2
+- m2
+- m2
+mounting_hole_status: verified
+mounting_holes:
+- - -10.16
+  - 7.62
+- - 10.16
+  - 7.62
+- - -10.16
+  - -7.62
+- - 10.16
+  - -7.62
+mounting_lift: 3
+mounting_research:
+  board_revision: Adafruit INA219 STEMMA QT carrier PCB, board file added 2021-08-31
+    (pinned EAGLE CAD commit 79101aee6a906cb73e03a1a171339960f7350576); product history
+    identifies the STEMMA QT mechanical update as 2021-01-29. Product listing notes
+    a pre-soldered terminal-block assembly option since 2024-05-31; this does not
+    change the PCB outline/hole geometry established by the carrier CAD.
+  board_size:
+  - 25.4
+  - 20.32
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: EAGLE XML layer-20 plain wires define a closed rounded outline with
+    bounding limits x=0..25.4 mm and y=0..20.32 mm. Native origin is lower-left; top-view
+    canonical coordinates use x_mm=x_native-12.7 and y_mm=y_native-10.16, with no
+    quarter-turn (0). Thus each selected mounting pad at native (2.54 or 22.86, 2.54
+    or 17.78) becomes x=±10.16 mm, y=±7.62 mm. Hole diameter is the CAD drill 2.5
+    mm. Preview intentionally shows the bounding box, not the rounded physical outline.
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: Adafruit product 904 is titled INA219 STEMMA QT and its revision
+    history identifies the four-hole/two-QT mechanical revision. Adafruit repository
+    adafruit/Adafruit-INA219-Current-Sensor-PCB describes the product 904 hardware;
+    commit 79101aee6a906cb73e03a1a171339960f7350576 is explicitly “Add STEMMA QT board
+    files” and contains Adafruit INA219 STEMMA QT.brd.
+  mounting_holes:
+  - diameter_mm: 2.5
+    id: U$20:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$25:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: -10.16
+    y_mm: -7.62
+  - diameter_mm: 2.5
+    id: U$27:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: cad
+    x_mm: 10.16
+    y_mm: -7.62
+  record_sha256: 18e75ed199eee50d6dcdd36085d8063e9254dfcdf59fe510e616b4e7e9265492
+  research_file: source_file/electronic_breakout_sensor_electrical_current_voltage_ina219_stemma_qt_adafruit_904/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 250983
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Adafruit INA219 STEMMA QT.brd
+    locator: Adafruit INA219 STEMMA QT.brd at commit 79101aee6a906cb73e03a1a171339960f7350576;
+      inspect complete XML board outline, dimension text, package names and all drill
+      candidates
+    registered_at: '2026-11-06T18:54:06+00:00'
+    sha256: 2a114d101bf924a550649b8eadee45d16584debab93e88410f6f2ab86a05fb45
+    url: https://raw.githubusercontent.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/79101aee6a906cb73e03a1a171339960f7350576/Adafruit%20INA219%20STEMMA%20QT.brd
+  - bytes: 5469
+    id: commit
+    kind: manufacturer_repository
+    local_file: mounting_evidence/commit.json
+    locator: Official repository commit dated 2021-08-31; message Add STEMMA QT board
+      files; pins exact board revision and CAD path
+    registered_at: '2026-11-06T18:54:30+00:00'
+    sha256: 0652c2369214bfcdf7a3487438070dc9e6d65a47d25d4d184fca0e121ac17626
+    url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB/commits/79101aee6a906cb73e03a1a171339960f7350576
+  - bytes: 7244
+    id: repository
+    kind: manufacturer_repository
+    local_file: mounting_evidence/repository.json
+    locator: Official Adafruit repository description maps hardware to product 904;
+      repository contains STEMMA QT EAGLE board design
+    registered_at: '2026-11-06T18:54:31+00:00'
+    sha256: ae72c01fbd0533fdab3bbdea7f95b43ae9a2c9cf5adefb26d921b681ff15333f
+    url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB
+  - bytes: 103110
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Product 904 title identifies INA219 STEMMA QT; revision history says
+      January 29 2021 mechanical update introduced four mounting holes and two QT
+      connectors
+    registered_at: '2026-11-06T18:54:32+00:00'
+    sha256: ea561ba76669f58d7331f70cb05bb64e9ea4e7bfe9d7d476d7e384ac3074e3d3
+    url: https://www.adafruit.com/product/904
+  status: verified
+name_readable: Adafruit INA219, STEMMA QT
+notes:
+- Product revisions may fit INA219A or INA219B in SOT-23 or SOIC packages; do not
+  assert a single fitted grade.
+- The current board has a pre-soldered terminal block; board nominal shunt is 0.1
+  ohm.
+oobb_details:
+- breakout_pcb_height: 20.32
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$20:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$25:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -7.62
+  - diameter_mm: 2.5
+    id: U$27:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -7.62
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 7.62
+  - - 10.16
+    - 7.62
+  - - -10.16
+    - -7.62
+  - - 10.16
+    - -7.62
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 20.32
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$20:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$25:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -7.62
+  - diameter_mm: 2.5
+    id: U$27:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -7.62
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 7.62
+  - - 10.16
+    - 7.62
+  - - -10.16
+    - -7.62
+  - - 10.16
+    - -7.62
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 20.32
+  breakout_pcb_width: 25.4
+  mounting_hole_details:
+  - diameter_mm: 2.5
+    id: U$20:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$21:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: 7.62
+  - diameter_mm: 2.5
+    id: U$25:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: -10.16
+    y_mm: -7.62
+  - diameter_mm: 2.5
+    id: U$27:pad:P$1
+    package: MOUNTINGHOLE_2.5_PLATED
+    plated: true
+    source_id: mounting_cad
+    x_mm: 10.16
+    y_mm: -7.62
+  mounting_hole_radius_name: m2
+  mounting_hole_radius_names:
+  - m2
+  - m2
+  - m2
+  - m2
+  mounting_holes:
+  - - -10.16
+    - 7.62
+  - - 10.16
+    - 7.62
+  - - -10.16
+    - -7.62
+  - - 10.16
+    - -7.62
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+part_number: '904'
+part_number_adafruit: '904'
+pinout_status: unverified
+pins: {}
+product_dimensions_mm:
+  depth: 4.7
+  height: 20.4
+  scope: manufacturer_product_dimensions_not_verified_pcb_outline
+  source_id: product
+  width: 25.6
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.adafruit.com/product/904
+- bytes: 250983
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Adafruit INA219 STEMMA QT.brd
+  locator: Adafruit INA219 STEMMA QT.brd at commit 79101aee6a906cb73e03a1a171339960f7350576;
+    inspect complete XML board outline, dimension text, package names and all drill
+    candidates
+  registered_at: '2026-11-06T18:54:06+00:00'
+  sha256: 2a114d101bf924a550649b8eadee45d16584debab93e88410f6f2ab86a05fb45
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-INA219-Current-Sensor-PCB/79101aee6a906cb73e03a1a171339960f7350576/Adafruit%20INA219%20STEMMA%20QT.brd
+- bytes: 5469
+  id: mounting_commit
+  kind: manufacturer_repository
+  local_file: mounting_evidence/commit.json
+  locator: Official repository commit dated 2021-08-31; message Add STEMMA QT board
+    files; pins exact board revision and CAD path
+  registered_at: '2026-11-06T18:54:30+00:00'
+  sha256: 0652c2369214bfcdf7a3487438070dc9e6d65a47d25d4d184fca0e121ac17626
+  url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB/commits/79101aee6a906cb73e03a1a171339960f7350576
+- bytes: 7244
+  id: mounting_repository
+  kind: manufacturer_repository
+  local_file: mounting_evidence/repository.json
+  locator: Official Adafruit repository description maps hardware to product 904;
+    repository contains STEMMA QT EAGLE board design
+  registered_at: '2026-11-06T18:54:31+00:00'
+  sha256: ae72c01fbd0533fdab3bbdea7f95b43ae9a2c9cf5adefb26d921b681ff15333f
+  url: https://api.github.com/repos/adafruit/Adafruit-INA219-Current-Sensor-PCB
+- bytes: 103110
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: Product 904 title identifies INA219 STEMMA QT; revision history says January
+    29 2021 mechanical update introduced four mounting holes and two QT connectors
+  registered_at: '2026-11-06T18:54:32+00:00'
+  sha256: ea561ba76669f58d7331f70cb05bb64e9ea4e7bfe9d7d476d7e384ac3074e3d3
+  url: https://www.adafruit.com/product/904
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: adafruit
+taxonomy_15: '904'
+taxonomy_2: breakout
+taxonomy_3: sensor
+taxonomy_4: electrical
+taxonomy_5: current_voltage
+taxonomy_6: ina219
+taxonomy_7: stemma_qt
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: sensor
+type_2: electrical
+type_3: current_voltage
+type_4: ina219
+webpage: https://www.adafruit.com/product/904
+webpage_adafruit: https://www.adafruit.com/product/904

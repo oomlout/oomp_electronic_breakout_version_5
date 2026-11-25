@@ -1,0 +1,339 @@
+research_schema_version: 1
+part_id: electronic_breakout_interface_adc_general_purpose_ads1115_stemma_qt_adafruit_1085
+name_readable: Adafruit ADS1115, STEMMA QT
+manufacturer: adafruit
+part_number: '1085'
+manufacturer_part_number: '1085'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: interface
+  taxonomy_4: adc
+  taxonomy_5: general_purpose
+  taxonomy_6: ads1115
+  taxonomy_7: stemma_qt
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '1085'
+default_website:
+  url: https://www.adafruit.com/product/1085
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:16:53+00:00'
+  updated_at: '2026-10-23T20:17:20+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: Adafruit ADS1115 16-bit ADC STEMMA QT breakout product 1085
+  status: listing_revision_history
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: STEMMA QT carrier shape/pinout introduced 2022-06-22; legible silkscreen
+    update 2023-01-16; functionality same.
+description: Four single-ended or two differential analog inputs, 16-bit conversion
+  and programmable gain.
+interfaces:
+- i2c
+dimensions_mm:
+  width: null
+  height: null
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: unknown
+  source_ids:
+  - product_page
+  notes: Product dimensions 25.4 x 17.8 x 4.6 mm do not specify orientation/scope;
+    stored separately.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: product page states four mounting holes; locations/diameters
+  unknown
+connectors:
+  header_group:
+    kind: header
+    description: 0.1in standard header segment supplied; guide labels VIN,GND,SCL,SDA,ADDR,ALRT,A+,A-,A0,A1,A2,A3;
+      count mapping needs CAD.
+    contacts: []
+    source_ids:
+    - product_page
+    - guide_pinouts
+  QT1:
+    kind: cable_connector
+    description: STEMMA QT connector
+    contacts: []
+    source_ids:
+    - product_page
+  QT2:
+    kind: cable_connector
+    description: STEMMA QT connector
+    contacts: []
+    source_ids:
+    - product_page
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: unknown
+  source_ids:
+  - product_page
+  - guide_pinouts
+pin_names: []
+electrical:
+  board_supply:
+    min_v: 2
+    max_v: 5.5
+    nominal_v: null
+    status: documented_range
+    source_ids:
+    - product_page
+    - guide_pinouts
+    notes: Product/guide says 2V to 5V; technical details specify 2.0-5.5V wide supply.
+  chip_supply:
+    status: not_transcribed
+    notes: Chip supply claims overlap board statement; datasheet limits not transcribed.
+    source_ids:
+    - chip_datasheet
+  logic_levels:
+    status: documented
+    notes:
+    - SCL and SDA each have 10K pull-up to VIN.
+    - VIN should match controller logic level.
+    source_ids:
+    - guide_pinouts
+  pullups:
+  - signals:
+    - SCL
+    - SDA
+    resistance_ohms: 10000
+    rail: VIN
+    designator: null
+    disconnect_method: null
+    source_ids:
+    - guide_pinouts
+  extra_signals:
+  - name: ALRT
+    direction: output
+    notes: Digital comparator output or conversion-ready; can be used as interrupt/asynchronous
+      read.
+    source_ids:
+    - guide_pinouts
+  - name: A+
+    direction: output
+    notes: ADC supply output, VIN through ferrite.
+    source_ids:
+    - guide_pinouts
+  - name: A-
+    direction: output
+    notes: ADC ground output, digital GND through ferrite.
+    source_ids:
+    - guide_pinouts
+  - name: A0/A1/A2/A3
+    direction: input
+    notes: ADC analog input channels.
+    source_ids:
+    - guide_pinouts
+  source_ids:
+  - product_page
+  - guide_pinouts
+i2c:
+  default_address_7bit: 72
+  documented_addresses_7bit:
+  - 72
+  - 73
+  - 74
+  - 75
+  address_selection: ADDR network/A0 solder jumper; guide details four selectable
+    address combinations and product listing gives 0x48–0x4B.
+  maximum_clock_hz: null
+  chip_maximum_clock_hz: 400000
+  clock_stretching: unknown
+  status: documented_address
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: Datasheet chip bus speed not transcribed yet; product page mentions 860 SPS
+    conversion data rate, not bus speed.
+chip:
+  manufacturer: Texas Instruments
+  part_number: ADS1115
+  identity_status: product_page_claim
+  source_ids:
+  - product_page
+  - chip_datasheet
+  notes: No fitted part marking verified.
+datasheets:
+  status: downloaded
+  items:
+  - chip: Texas Instruments ADS1115
+    source_id: chip_datasheet
+    local_file: reference/chip_datasheet.pdf
+    url: https://cdn-shop.adafruit.com/datasheets/ads1115.pdf
+    sha256: 34acf1284c89e9ba4fa4c3f333502db6181e12b86cd25108201e202a16f1b844
+    page_count: 36
+    revision: null
+  notes:
+  - 36-page PDF validated; revision not transcribed.
+software:
+- name: Adafruit ADS1X15 Arduino library
+  framework: Arduino
+  official_url: https://github.com/adafruit/Adafruit_ADS1X15
+  tested: false
+  source_ids:
+  - guide_hardware
+- name: Adafruit CircuitPython ADS1x15 driver
+  framework: CircuitPython
+  official_url: https://github.com/adafruit/Adafruit_CircuitPython_ADS1x15
+  tested: false
+  source_ids:
+  - guide_hardware
+extra_resources:
+- name: Adafruit ADC guide pinouts
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-4-channel-adc-breakouts/pinouts
+  local_file: reference/guide_pinouts.html
+  source_id: guide_pinouts
+- name: Adafruit ADC guide downloads
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-4-channel-adc-breakouts/downloads
+  local_file: reference/guide_downloads.html
+  source_id: guide_downloads
+sources:
+- id: product_page
+  kind: product_page
+  requested_url: https://www.adafruit.com/product/1085
+  url: https://www.adafruit.com/product/1085
+  retrieved_at: '2026-10-23T20:16:54+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 100658
+  sha256: cef4138d8b2e3cdb588a870a179acbb5dae9433f81b5eeb92bc91e63ee0790c6
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 7981
+    sha256: e3df4f22c7f2008a8dd0339c4510170f0cd79ac4011259bd267720b544690c0e
+  - kind: links
+    local_file: website.links.json
+    bytes: 16877
+    sha256: 071c02c213fc4d18312028e35195be8c3ebfc65ed1873acc75d9abef0cf0fa2f
+  title: 'ADS1115 16-Bit ADC - 4 Channel with Programmable Gain Amplifier [STEMMA
+    QT / Qwiic] : Adafruit Industries, Unique & fun DIY electronics and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_hardware
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-4-channel-adc-breakouts
+  url: https://learn.adafruit.com/adafruit-4-channel-adc-breakouts
+  retrieved_at: '2026-10-23T20:16:55+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_hardware.html
+  bytes: 78665
+  sha256: a06273ce481139a32edf380901dd49e59ae9b176121e8d08a6a2d8e2263c3872
+  derivatives:
+  - kind: text
+    local_file: reference/guide_hardware.txt
+    bytes: 5121
+    sha256: 1aca3b3f3ceaa690d1a193166e641d3f30ff644d4a751910ae663e1747bdd3d1
+  - kind: links
+    local_file: reference/guide_hardware.links.json
+    bytes: 19288
+    sha256: 983c129f6ec4a3a0a3ce52eb5216581fd8921dc5429c63b2377c9eb79d055991
+  title: Overview | Adafruit 4-Channel ADC Breakouts | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_pinouts
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-4-channel-adc-breakouts/pinouts
+  url: https://learn.adafruit.com/adafruit-4-channel-adc-breakouts/pinouts
+  retrieved_at: '2026-10-23T20:16:57+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_pinouts.html
+  bytes: 81256
+  sha256: 7b64407bc65804fd30bbaa651b47434a2f1785b36cdebf973eb79b37845c7551
+  derivatives:
+  - kind: text
+    local_file: reference/guide_pinouts.txt
+    bytes: 5361
+    sha256: dc6ad2806f28ce04983fc065b085cd56702c32851c642426a6eccb6ab6039a47
+  - kind: links
+    local_file: reference/guide_pinouts.links.json
+    bytes: 19950
+    sha256: e9aa5052ce89c412728b8ab88cd2499d060f774ab4daf0c6463925989e357b1b
+  title: Pinouts | Adafruit 4-Channel ADC Breakouts | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-4-channel-adc-breakouts/downloads
+  url: https://learn.adafruit.com/adafruit-4-channel-adc-breakouts/downloads
+  retrieved_at: '2026-10-23T20:16:58+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_downloads.html
+  bytes: 78884
+  sha256: 79f0e29df17d31cfaba65a482906211eae84910e240e823ca952be0daf218cbe
+  derivatives:
+  - kind: text
+    local_file: reference/guide_downloads.txt
+    bytes: 3485
+    sha256: 4dc7bf617b763c825bc81e00bc4e200ef7483b62d2968912447f570d95afceac
+  - kind: links
+    local_file: reference/guide_downloads.links.json
+    bytes: 20991
+    sha256: dfadc417f39c3900f56f089a62e16d6e8c362e5821d991d147ee783b3fd38150
+  title: Downloads | Adafruit 4-Channel ADC Breakouts | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://www.adafruit.com/datasheets/ads1115.pdf
+  url: https://cdn-shop.adafruit.com/datasheets/ads1115.pdf
+  retrieved_at: '2026-10-23T20:17:09+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_downloads
+  local_file: reference/chip_datasheet.pdf
+  bytes: 972992
+  sha256: 34acf1284c89e9ba4fa4c3f333502db6181e12b86cd25108201e202a16f1b844
+  derivatives: []
+  pdf_page_count: 36
+conflicts: []
+data_gaps:
+- Carrier PCB outline orientation/scope, thickness, hole geometry and assembled envelope
+  need exact carrier CAD; product dimensions are retained separately.
+- Exact header contact numbering, physical contact counts and pin label mapping need
+  CAD review.
+- Datasheet title/revision, chip supply/electrical limits and maximum I2C speed need
+  page-level transcription.
+- Fitted chip package marking unverified.
+product_dimensions_mm:
+  dimensions:
+  - 25.4
+  - 17.8
+  - 4.6
+  units: mm
+  scope: manufacturer_product_dimensions_unspecified_orientation
+  status: documented
+  source_ids:
+  - product_page

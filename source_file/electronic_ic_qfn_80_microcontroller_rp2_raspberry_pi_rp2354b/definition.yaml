@@ -1,0 +1,1177 @@
+schema_version: 1
+item_kind: chip
+name_readable: Raspberry Pi RP2354B
+manufacturer: raspberry_pi
+part_number: rp2354b
+taxonomy_1: electronic
+taxonomy_2: ic
+taxonomy_3: qfn_80
+taxonomy_4: microcontroller
+taxonomy_5: rp2
+taxonomy_6: ''
+taxonomy_7: ''
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: raspberry_pi
+taxonomy_15: rp2354b
+dimensions_mm:
+  width: 10
+  height: 10
+  assembled_height: null
+  scope: nominal_package_body
+  source_id: datasheet
+coordinate_system:
+  units: mm
+  origin: package_body_centre
+  view: manufacturer_top_view
+  x_positive: right
+  y_positive: up
+mounting_holes: []
+mounting_hole_details: []
+mounting_hole_status: not_applicable
+pins:
+  package_1:
+    connector: package
+    number: '1'
+    name: GPIO4
+    gpio: 4
+    adc_channel: null
+    chip_pin_number: '1'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_2:
+    connector: package
+    number: '2'
+    name: GPIO5
+    gpio: 5
+    adc_channel: null
+    chip_pin_number: '2'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_3:
+    connector: package
+    number: '3'
+    name: GPIO6
+    gpio: 6
+    adc_channel: null
+    chip_pin_number: '3'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_4:
+    connector: package
+    number: '4'
+    name: GPIO7
+    gpio: 7
+    adc_channel: null
+    chip_pin_number: '4'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_5:
+    connector: package
+    number: '5'
+    name: IOVDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '5'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_6:
+    connector: package
+    number: '6'
+    name: GPIO8
+    gpio: 8
+    adc_channel: null
+    chip_pin_number: '6'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_7:
+    connector: package
+    number: '7'
+    name: GPIO9
+    gpio: 9
+    adc_channel: null
+    chip_pin_number: '7'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_8:
+    connector: package
+    number: '8'
+    name: GPIO10
+    gpio: 10
+    adc_channel: null
+    chip_pin_number: '8'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_9:
+    connector: package
+    number: '9'
+    name: GPIO11
+    gpio: 11
+    adc_channel: null
+    chip_pin_number: '9'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_10:
+    connector: package
+    number: '10'
+    name: DVDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '10'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_11:
+    connector: package
+    number: '11'
+    name: GPIO12
+    gpio: 12
+    adc_channel: null
+    chip_pin_number: '11'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_12:
+    connector: package
+    number: '12'
+    name: GPIO13
+    gpio: 13
+    adc_channel: null
+    chip_pin_number: '12'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_13:
+    connector: package
+    number: '13'
+    name: GPIO14
+    gpio: 14
+    adc_channel: null
+    chip_pin_number: '13'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_14:
+    connector: package
+    number: '14'
+    name: GPIO15
+    gpio: 15
+    adc_channel: null
+    chip_pin_number: '14'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_15:
+    connector: package
+    number: '15'
+    name: IOVDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '15'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_16:
+    connector: package
+    number: '16'
+    name: GPIO16
+    gpio: 16
+    adc_channel: null
+    chip_pin_number: '16'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_17:
+    connector: package
+    number: '17'
+    name: GPIO17
+    gpio: 17
+    adc_channel: null
+    chip_pin_number: '17'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_18:
+    connector: package
+    number: '18'
+    name: GPIO18
+    gpio: 18
+    adc_channel: null
+    chip_pin_number: '18'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_19:
+    connector: package
+    number: '19'
+    name: GPIO19
+    gpio: 19
+    adc_channel: null
+    chip_pin_number: '19'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_20:
+    connector: package
+    number: '20'
+    name: GPIO20
+    gpio: 20
+    adc_channel: null
+    chip_pin_number: '20'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_21:
+    connector: package
+    number: '21'
+    name: GPIO21
+    gpio: 21
+    adc_channel: null
+    chip_pin_number: '21'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_22:
+    connector: package
+    number: '22'
+    name: GPIO22
+    gpio: 22
+    adc_channel: null
+    chip_pin_number: '22'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_23:
+    connector: package
+    number: '23'
+    name: GPIO23
+    gpio: 23
+    adc_channel: null
+    chip_pin_number: '23'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_24:
+    connector: package
+    number: '24'
+    name: IOVDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '24'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_25:
+    connector: package
+    number: '25'
+    name: GPIO24
+    gpio: 24
+    adc_channel: null
+    chip_pin_number: '25'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_26:
+    connector: package
+    number: '26'
+    name: GPIO25
+    gpio: 25
+    adc_channel: null
+    chip_pin_number: '26'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_27:
+    connector: package
+    number: '27'
+    name: GPIO26
+    gpio: 26
+    adc_channel: null
+    chip_pin_number: '27'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_28:
+    connector: package
+    number: '28'
+    name: GPIO27
+    gpio: 27
+    adc_channel: null
+    chip_pin_number: '28'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_29:
+    connector: package
+    number: '29'
+    name: IOVDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '29'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_30:
+    connector: package
+    number: '30'
+    name: XIN
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '30'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_31:
+    connector: package
+    number: '31'
+    name: XOUT
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '31'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_32:
+    connector: package
+    number: '32'
+    name: DVDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '32'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_33:
+    connector: package
+    number: '33'
+    name: SWCLK
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '33'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_34:
+    connector: package
+    number: '34'
+    name: SWDIO
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '34'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_35:
+    connector: package
+    number: '35'
+    name: RUN
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '35'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_36:
+    connector: package
+    number: '36'
+    name: GPIO28
+    gpio: 28
+    adc_channel: null
+    chip_pin_number: '36'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_37:
+    connector: package
+    number: '37'
+    name: GPIO29
+    gpio: 29
+    adc_channel: null
+    chip_pin_number: '37'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_38:
+    connector: package
+    number: '38'
+    name: GPIO30
+    gpio: 30
+    adc_channel: null
+    chip_pin_number: '38'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_39:
+    connector: package
+    number: '39'
+    name: GPIO31
+    gpio: 31
+    adc_channel: null
+    chip_pin_number: '39'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_40:
+    connector: package
+    number: '40'
+    name: GPIO32
+    gpio: 32
+    adc_channel: null
+    chip_pin_number: '40'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_41:
+    connector: package
+    number: '41'
+    name: IOVDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '41'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_42:
+    connector: package
+    number: '42'
+    name: GPIO33
+    gpio: 33
+    adc_channel: null
+    chip_pin_number: '42'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_43:
+    connector: package
+    number: '43'
+    name: GPIO34
+    gpio: 34
+    adc_channel: null
+    chip_pin_number: '43'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_44:
+    connector: package
+    number: '44'
+    name: GPIO35
+    gpio: 35
+    adc_channel: null
+    chip_pin_number: '44'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_45:
+    connector: package
+    number: '45'
+    name: GPIO36
+    gpio: 36
+    adc_channel: null
+    chip_pin_number: '45'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_46:
+    connector: package
+    number: '46'
+    name: GPIO37
+    gpio: 37
+    adc_channel: null
+    chip_pin_number: '46'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_47:
+    connector: package
+    number: '47'
+    name: GPIO38
+    gpio: 38
+    adc_channel: null
+    chip_pin_number: '47'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_48:
+    connector: package
+    number: '48'
+    name: GPIO39
+    gpio: 39
+    adc_channel: null
+    chip_pin_number: '48'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_49:
+    connector: package
+    number: '49'
+    name: GPIO40
+    gpio: 40
+    adc_channel: 0
+    chip_pin_number: '49'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+  package_50:
+    connector: package
+    number: '50'
+    name: IOVDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '50'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_51:
+    connector: package
+    number: '51'
+    name: DVDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '51'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_52:
+    connector: package
+    number: '52'
+    name: GPIO41
+    gpio: 41
+    adc_channel: 1
+    chip_pin_number: '52'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+  package_53:
+    connector: package
+    number: '53'
+    name: GPIO42
+    gpio: 42
+    adc_channel: 2
+    chip_pin_number: '53'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+  package_54:
+    connector: package
+    number: '54'
+    name: GPIO43
+    gpio: 43
+    adc_channel: 3
+    chip_pin_number: '54'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+  package_55:
+    connector: package
+    number: '55'
+    name: GPIO44
+    gpio: 44
+    adc_channel: 4
+    chip_pin_number: '55'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+  package_56:
+    connector: package
+    number: '56'
+    name: GPIO45
+    gpio: 45
+    adc_channel: 5
+    chip_pin_number: '56'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+  package_57:
+    connector: package
+    number: '57'
+    name: GPIO46
+    gpio: 46
+    adc_channel: 6
+    chip_pin_number: '57'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+  package_58:
+    connector: package
+    number: '58'
+    name: GPIO47
+    gpio: 47
+    adc_channel: 7
+    chip_pin_number: '58'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    - analog_input
+    type: gpio
+    signal_types:
+    - digital
+    - analog
+  package_59:
+    connector: package
+    number: '59'
+    name: ADC_AVDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '59'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_60:
+    connector: package
+    number: '60'
+    name: IOVDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '60'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_61:
+    connector: package
+    number: '61'
+    name: VREG_AVDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '61'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_62:
+    connector: package
+    number: '62'
+    name: VREG_PGND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '62'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_63:
+    connector: package
+    number: '63'
+    name: VREG_LX
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '63'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_64:
+    connector: package
+    number: '64'
+    name: VREG_VIN
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '64'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_65:
+    connector: package
+    number: '65'
+    name: VREG_FB
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '65'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_66:
+    connector: package
+    number: '66'
+    name: USB_DM
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '66'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_67:
+    connector: package
+    number: '67'
+    name: USB_DP
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '67'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_68:
+    connector: package
+    number: '68'
+    name: USB_OTP_VDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '68'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_69:
+    connector: package
+    number: '69'
+    name: QSPI_IOVDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '69'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_70:
+    connector: package
+    number: '70'
+    name: QSPI_SD3
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '70'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_71:
+    connector: package
+    number: '71'
+    name: QSPI_SCLK
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '71'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_72:
+    connector: package
+    number: '72'
+    name: QSPI_SD0
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '72'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_73:
+    connector: package
+    number: '73'
+    name: QSPI_SD2
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '73'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_74:
+    connector: package
+    number: '74'
+    name: QSPI_SD1
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '74'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_75:
+    connector: package
+    number: '75'
+    name: QSPI_SS
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '75'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_76:
+    connector: package
+    number: '76'
+    name: IOVDD
+    gpio: null
+    adc_channel: null
+    chip_pin_number: '76'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+  package_77:
+    connector: package
+    number: '77'
+    name: GPIO0
+    gpio: 0
+    adc_channel: null
+    chip_pin_number: '77'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_78:
+    connector: package
+    number: '78'
+    name: GPIO1
+    gpio: 1
+    adc_channel: null
+    chip_pin_number: '78'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_79:
+    connector: package
+    number: '79'
+    name: GPIO2
+    gpio: 2
+    adc_channel: null
+    chip_pin_number: '79'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_80:
+    connector: package
+    number: '80'
+    name: GPIO3
+    gpio: 3
+    adc_channel: null
+    chip_pin_number: '80'
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities:
+    - gpio
+    type: gpio
+    signal_types:
+    - digital
+  package_EP:
+    connector: package
+    number: EP
+    name: GND
+    gpio: null
+    adc_channel: null
+    chip_pin_number: null
+    x_mm: null
+    y_mm: null
+    source_id: datasheet
+    capabilities: []
+connectors: {}
+sources:
+- id: datasheet
+  url: https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf
+  title: RP2350 datasheet
+  accessed: '2026-10-20'
+  scope: Package pinout, GPIO/ADC mapping, capabilities and nominal body dimensions
+  pdf_page: 17
+- id: overview
+  url: https://www.raspberrypi.com/documentation/microcontrollers/microcontroller-chips.html
+  title: Raspberry Pi microcontroller chips
+  accessed: '2026-10-20'
+  scope: Commercial chip variants
+notes:
+- Two active cores; selectable Arm/RISC-V cores do not make this a four-core MCU.
+- 2 MiB flash is stacked inside the package. Dedicated QSPI pins are shared with this flash; do not treat
+  them as free GPIO.
+data_gaps:
+- Assembled height and component keepout envelopes have not been captured.
+- Package height, lead geometry and land pattern are not transcribed; use the manufacturer package drawing
+  for PCB design.
+package:
+  name: QFN-80
+  perimeter_pin_count: 80
+  exposed_pad: GND
+  lead_pitch_mm: null
+  land_pattern: null
+silicon_revision: null
+capabilities:
+  gpio_count: 48
+  adc_external_channels: 8
+  adc_resolution_bits: 12
+  sram_bytes: 532480
+  in_package_flash_bytes: 2097152
+  cpu_core_count: 2
+  clock_max_mhz: 150
+  architectures:
+  - arm_cortex_m33
+  - risc_v_hazard3
+family: rp2350
+pinout_scope: All perimeter pins plus the exposed ground pad; alternate peripheral mux functions are not
+  enumerated.

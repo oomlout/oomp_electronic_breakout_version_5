@@ -1,0 +1,14 @@
+Adafruit PCA9685 product 815 mounting evidence
+Acquired: 2026-11-06 (UTC date; local acquisition via requests with 30 s timeout)
+
+CAD: Adafruit_PCA9685_rev_C.brd downloaded from the Adafruit-16-Channel-PWM-Servo-Driver-PCB repository at commit 32578c83a5ba2946249b80b1aa1fb18ae4e61e7d. The pinned repository README describes the repository as the Adafruit 16-channel PWM servo driver PCB Eagle files and links Adafruit product 815. The official product page identifies product 815 and records the 2015 reverse-polarity transistor revision and 2022 silkscreen update; it states the silkscreen variants are otherwise identical. The official learning guide downloads page links the Eagle CAD repository and states mounting holes are 2.5 mm diameter.
+
+Review notes: The selected rev C EAGLE board has a plain, continuous layer 20 outline with corner arcs. Four footprint elements U$47 through U$50 use package MOUNTINGHOLE_2.5_PLATED and drill 2.5 mm. The helper's all-drills inspection lists 68 candidates total; the remaining 64 candidates belong to terminal block, capacitor, jumper, and servo header packages, not mounting features. Extraction is top view, native CAD orientation (quarter-turn 0), centred from the layer 20 bounding box: native centre (29.210, 6.223) mm, so canonical x = CAD x - 29.210 mm and y = CAD y - 6.223 mm. The official guide's fab note independently agrees with 2.5 mm drills.
+
+The manufacturer product dimensions are nominal 62.5 x 25.4 mm. CAD-derived layer 20 size is 62.23 x 25.40 mm and is used for geometry; the small width discrepancy is not resolved by rounding to the nominal product specification. The alternate EAGLE 9.6.2 board file in the same pinned repo was reviewed for outline and mounting-feature positions; its outline origin differs, but its centred dimensions and four hole coordinates are identical to rev C.
+
+Acquisition URLs:
+- https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/Adafruit%20PCA9685%20rev%20C.brd
+- https://raw.githubusercontent.com/adafruit/Adafruit-16-Channel-PWM-Servo-Driver-PCB/32578c83a5ba2946249b80b1aa1fb18ae4e61e7d/README.md
+- https://www.adafruit.com/product/815 (archived 2026-10-23 in source_file/ID/website.html)
+- https://learn.adafruit.com/16-channel-pwm-servo-driver/downloads (archived 2026-10-23 in source_file/ID/reference/guide_downloads.html)

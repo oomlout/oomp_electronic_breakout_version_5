@@ -1,0 +1,195 @@
+Adafruit 4-Channel ADC Breakouts
+Overview
+Adafruit 4-Channel ADC Breakouts
+A guide to the ADS1115 and ADS1015 analog converters
+by
+Liz Clark
+published November 29, 2012, last edited August 19, 2026
+last major update June 29, 2022
+posted in
+Arduino Compatibles
+CircuitPython
+Breakout Boards
+STEMMA
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly and Wiring
+Signal Connections
+Python & CircuitPython
+Python Docs
+Arduino Code
+Arduino Docs
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+ADS1115 16-Bit ADC - 4 Channel with Programmable Gain Amplifier
+$14.95
+Add  to Cart
+Featured
+ADS1015 12-Bit ADC - 4 Channel with Programmable Gain Amplifier
+$9.95
+Add  to Cart
+Featured
+STEMMA QT / Qwiic JST SH 4-Pin Cable - 50mm Long
+$0.95
+Add  to Cart
+Featured
+Adafruit Assembled Pi Cobbler Breakout + Cable for Raspberry Pi
+No Longer Stocked
+Featured
+Adafruit METRO 328 Fully Assembled - Arduino IDE compatible
+Out of Stock
+Featured
+Full Sized Premium Breadboard - 830 Tie Points
+$5.95
+Add  to Cart
+View product details
+86
+Beginner
+Project guide
+Overview
+The ADS1115 and ADS1015 4-channel breakout boards are perfect for adding high-resolution analog to digital conversion to any microprocessor-based project.  These boards can run with power and logic signals between 2v to 5v, so they are compatible with all common 3.3v and 5v processors.  As many of 4 of these boards can be controlled from the same 2-wire I2C bus, giving you up to 16 single-ended or 8 differential channels.  A programmable gain amplifier provides up to x16 gain for small signals.
+These two boards are very similar, differing only in resolution and speed. The ADS1115
+provides 16-bit precision at 860 samples/second, while
+t
+he ADS1015 provides 12-bit precision at 3300 samples/second.
+To get you going fast, we spun up a custom-made PCB in the
+STEMMA QT
+form factor
+, making it easy to interface with. The
+STEMMA QT connectors
+on either side are compatible with the
+SparkFun Qwiic
+I2C connectors. This allows you to make solderless connections between your development board and either the ADS1115 or ADS1015. You can chain the boards with a wide range of other sensors and accessories using a
+compatible cable
+.
+ADS1115 Features:
+WIDE SUPPLY RANGE: 2.0V to 5.5V
+LOW CURRENT CONSUMPTION: Continuous Mode: Only 150µA Single-Shot Mode: Auto Shut-Down
+PROGRAMMABLE DATA RATE: 8SPS to 860SPS
+INTERNAL LOW-DRIFT VOLTAGE REFERENCE
+INTERNAL OSCILLATOR
+INTERNAL PGA
+I2C INTERFACE: Pin-Selectable Addresses
+FOUR SINGLE-ENDED OR TWO DIFFERENTIAL INPUTS
+PROGRAMMABLE COMPARATOR
+This board/chip uses I2C 7-bit addresses between 0x48-0x4B, selectable with jumpers
+ADS1015 Features:
+WIDE SUPPLY RANGE: 2.0V to 5.5V
+LOW CURRENT CONSUMPTION: Continuous Mode: Only 150µA Single-Shot Mode: Auto Shut-Down
+PROGRAMMABLE DATA RATE: 128SPS to 3.3kSPS
+INTERNAL LOW-DRIFT VOLTAGE REFERENCE
+INTERNAL OSCILLATOR
+INTERNAL PGA
+I2C INTERFACE: Pin-Selectable Addresses
+FOUR SINGLE-ENDED OR TWO DIFFERENTIAL INPUTS
+PROGRAMMABLE COMPARATOR
+This board/chip uses I2C 7-bit addresses between 0x48-0x4B, selectable with jumpers
+Text emphasized with a blue exclamation:
+There are two versions of this board - the STEMMA QT version shown above, and the original header-only version shown below. Code works the same on both!
+Page last edited March 08, 2024
+Pinouts
+Related Guides
+Your browser does not support the video tag. This links to the guide CircuitPython OLED and Dual Knob Sketcher.
+CircuitPython OLED and Dual Knob Sketcher
+By
+Carter Nelson
+beginner
+24
+Your browser does not support the video tag. This links to the guide Adafruit ESP32-S2 Reverse TFT Feather.
+Adafruit ESP32-S2 Reverse TFT Feather
+By
+Kattni Rembor
+Product Guide
+44
+Adafruit Feather RP2040 RFM69
+By
+Kattni Rembor
+Product Guide
+29
+Your browser does not support the video tag. This links to the guide MakeCode Arcade with SAMD51 M4.
+MakeCode Arcade with SAMD51 M4
+By
+Peli de Halleux
+intermediate
+21
+Adafruit Feather RP2040 ThinkInk
+By
+Liz Clark
+Product Guide
+14
+CircuitPython Essentials
+By
+Kattni Rembor
+beginner
+480
+Your browser does not support the video tag. This links to the guide Quickstart IoT - Raspberry Pi Pico RP2040 with WiFi .
+Quickstart IoT - Raspberry Pi Pico RP2040 with WiFi
+By
+Brent Rubell
+beginner
+37
+Pick the Perfect Plant: Battery-Powered Sun Tracking
+By
+Tyler Cooper
+beginner
+14
+Adafruit Feather RP2040 with DVI Output Port
+By
+Kattni Rembor
+Product Guide
+11
+No-Code IoT Soil Sensor
+By
+Ruiz Brothers
+beginner
+78
+Adafruit MLX90640 IR Thermal Camera
+By
+Kattni Rembor
+Product Guide
+41
+An Introduction to RP2040 PIO with CircuitPython
+By
+Jeff Epler
+beginner
+100
+Raspberry Pi E-Ink Weather Station using Python
+By
+M. LeBlanc-Williams
+beginner
+39
+Adafruit Metro M7 1011 with AirLift
+By
+lady ada
+Product Guide
+17
+Generating Text with ChatGPT, Pico W & CircuitPython
+By
+Jeff Epler
+beginner
+39
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

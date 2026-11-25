@@ -1,0 +1,66 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_s2_wroom_devkitc_1_44_pin_25_4_mm_width_62_74_mm_height_44_pins_espressif_esp32_s2_devkitc_1
+status: no_holes
+board_revision: ESP32-S2-DevKitC-1 carrier PCB Rev 1.0 (Espressif drawing #36065, title block 2021-05-08); module variant is not asserted by this mounting record
+identity_evidence: The official ESP32-S2-DevKitC-1 guide identifies the carrier and says this is its first board revision; it links the ESP32-S2-DevKitC-1 dimensions and PCB layout. The archived drawing DXF_ESP32-S2-DevKitC-1_V1_20210511.pdf independently labels ESP32-S2-DevKitC-1, Rev 1.0, and drawing #36065, with matching 25.40 × 62.74 mm board dimensions. The catalogue ID includes “WROOM”, while Espressif's guide describes SOLO/SOLO-U and SOLO-2/SOLO-2U module variants; that module naming is not resolved here and the carrier-level mounting result is scoped to the named DevKitC-1 Rev 1.0.
+board_size:
+- 25.4
+- 62.74
+mounting_holes: []
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: mechanical
+derivation: >-
+  Reviewed the complete manufacturer mechanical layout, page 1, including the full
+  PCB boundary, both pin-header rows, both USB connectors and all component/pad
+  features. The outline is dimensioned 25.40 mm × 62.74 mm. No intentional board
+  mounting holes are drawn. The visible plated header positions are interface
+  pads; USB connector tabs/anchors belong to J2/J4 and are not board mounts. No
+  other candidate mounting drill is shown. Dimensions are already in mm; no unit
+  conversion is applied. For a top-left drawing origin with X right and Y down,
+  centred canonical coordinates are x = X - 25.40/2 and y = 62.74/2 - Y. Thus
+  the drawing's USB connectors at the bottom map to negative y in the canonical
+  positive-up frame. The pattern is empty, so no per-hole coordinates or diameter
+  derivations apply.
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+identity_source_ids:
+- product
+- mechanical
+sources:
+- id: mechanical
+  local_file: reference/DXF_ESP32-S2-DevKitC-1_V1_20210511.pdf
+  url: https://dl.espressif.com/dl/schematics/DXF_ESP32-S2-DevKitC-1_V1_20210511.pdf
+  kind: manufacturer_drawing
+  locator: Complete page 1 Rev 1.0 ESP32-S2-DevKitC-1 mechanical layout; title block
+    dated 2021-05-08; PCB outline dimensions 25.40 mm × 62.74 mm; review complete
+    top layout for drilled mounting holes
+  registered_at: '2026-11-06T17:50:15+00:00'
+  bytes: 255072
+  sha256: 0ebbd06bee38d9c9c97c830a867d71ff7227b3aec3faa11231b4e1a8ec4cf7e7
+- id: product
+  local_file: mounting_evidence/esp32-s2-devkitc-1-user-guide.html
+  url: https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s2/esp32-s2-devkitc-1/user_guide.html
+  kind: manufacturer_product
+  locator: Official ESP32-S2-DevKitC-1 guide identifies the product and lists supported
+    module variants; identity scope cross-checked against Rev 1.0 mechanical drawing
+  registered_at: '2026-11-06T17:50:16+00:00'
+  bytes: 38565
+  sha256: c51e46197ca278ec3d17662aead6f2e137f5959802cbf228de620ec569c0cd81
+attempts: []
+conflicts: []
+notes:
+- No-hole finding applies to the Espressif ESP32-S2-DevKitC-1 Rev 1.0 carrier layout; the catalogue's WROOM module wording is not corroborated and remains unresolved as an assembly variant.
+- The generated record verifies source-drawing geometry only. Holder/physical fit, connector clearance, screw heads, component clearance, underside clearance and manufacturing tolerances were not tested.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T17:50:16+00:00'

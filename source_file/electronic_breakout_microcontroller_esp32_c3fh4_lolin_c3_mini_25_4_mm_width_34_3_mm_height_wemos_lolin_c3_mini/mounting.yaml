@@ -1,0 +1,60 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_c3fh4_lolin_c3_mini_25_4_mm_width_34_3_mm_height_wemos_lolin_c3_mini
+status: needs_review
+board_revision: WEMOS LOLIN C3 Mini V2.1.0; official page identifies ESP32-C3FH4 and links the V2.1.0 dimension drawing. Drawing filename retains v1.0.0 despite its V2.1.0 title/link.
+identity_evidence: Official WEMOS C3 mini product page names the C3 mini and its latest V2.1.0 revision, based on ESP32-C3FH4, and links the one-page Dimension V2.1.0 PDF archived as reference/dim_c3_mini_v1.0.0.pdf. The archived bytes match the linked live PDF SHA-256.
+board_size:
+  - 25.4
+  - 34.3
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: null
+review:
+  identity: true
+  outline: true
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources:
+- id: dimension_v2_1
+  local_file: reference/dim_c3_mini_v1.0.0.pdf
+  url: https://www.wemos.cc/en/latest/_static/files/dim_c3_mini_v1.0.0.pdf
+  kind: manufacturer_drawing
+  locator: One-page Dimension V2.1.0 drawing linked by official C3 mini product page.
+    Board outline 25.4000 x 34.3000 mm; two candidate circular features and horizontal
+    offsets are drawn, but no Y centre offset or drill diameter is dimensioned.
+  registered_at: '2026-11-06T17:44:21+00:00'
+  bytes: 6011
+  sha256: 29e2342e46520c040902aff2e2b7e363a1b0591d560187de6d22e593ae36d3cc
+- id: product_v2_1
+  local_file: mounting_evidence/wemos_c3_mini_product.html
+  url: https://www.wemos.cc/en/latest/c3/c3_mini.html
+  kind: manufacturer_product
+  locator: Official product identity, ESP32-C3FH4 and version V2.1.0; links the Dimension
+    V2.1.0 PDF.
+  registered_at: '2026-11-06T17:44:21+00:00'
+  bytes: 11088
+  sha256: 0a86282dc97a2b43024373f15f99e4d9bc2b9bc9a34a06106a47a0d8fe18aa35
+attempts:
+  - avenue: Official WEMOS product page and linked V2.1.0 dimension drawing
+    result: Identity and nominal 25.4 x 34.3 mm board outline confirmed. The drawing shows two candidate circular mounting features and horizontal offsets, but omits their Y centre offset and drill diameters, so it cannot define complete holder geometry.
+  - avenue: Existing archived manufacturer drawing verification
+    result: Confirmed the archived one-page PDF is the same 6011-byte file as the current official URL (SHA-256 29e2342e46520c040902aff2e2b7e363a1b0591d560187de6d22e593ae36d3cc). Visual review confirms no missing second page; the needed Y and drill dimensions are absent.
+  - avenue: Manufacturer-linked/public WEMOS hardware repository search
+    result: No exact carrier CAD or other dimensioned mechanical source found. The official schematic is electrical evidence and does not provide mounting coordinates or drill sizes.
+  - avenue: Current official WEMOS V2.1.0 page and documentation links rechecked 2026-11-07
+    result: The live product page still marks V2.1.0 as the latest version and its Dimension V2.1.0 link resolves to the same one-page dim_c3_mini_v1.0.0.pdf already archived and hashed above. No alternate CAD/drawing link is present; the stated drawing still omits both the mounting-feature Y centre offset and drill diameters. Complete holder geometry remains unresolved.
+conflicts: []
+notes:
+  - 'Accessed official product page and linked dimension PDF on 2026-11-06. The drawing visibly includes two candidate circular features, connector/header drills and four elongated features; feature function and complete hole geometry cannot be established from the available dimensions. Do not infer coordinates or drill sizes from the illustration.'
+  - 'Rechecked the live official product page and V2.1.0 document link on 2026-11-07. The dimension link remains the archived one-page file with matching SHA-256; no alternate official mechanical CAD or drawing was exposed. Candidate mounting-feature Y centres and drill diameters remain undocumented.'
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-06T17:44:21+00:00'

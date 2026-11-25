@@ -1,0 +1,21 @@
+name: Coordinate / jade
+description: A restrained A4 engineering sheet. All sizes and line weights are in paper millimetres.
+styles:
+  paper: {color: '#ffffff', stroke: none, stroke_width: 0}
+  panel: {color: '#f5f8f7', stroke: '#dce5e1', stroke_width: 0.2}
+  board: {color: '#e4efeb', stroke: '#37685a', stroke_width: 0.38}
+  hole: {color: '#ffffff', stroke: '#37685a', stroke_width: 0.3}
+  badge: {color: '#37685a', stroke: none, stroke_width: 0}
+  rule: {color: '#cbd8d2', stroke_width: 0.22}
+  grid: {color: '#dce7e2', stroke_width: 0.13}
+  axis: {color: '#8b9e95', stroke_width: 0.22}
+  accent: {color: '#b57440', stroke_width: 0.4}
+  dimension: {color: '#263e35', stroke_width: 0.2, text_size: 2.7, font: 'Consolas, monospace', gap: 1.2, overshoot: 1, tick_size: 1, text_offset: 0.5}
+  dimension.pitch: {color: '#63776c', text_size: 2.35, stroke_width: 0.17}
+  text: {color: '#243b32', stroke: none, stroke_width: 0, font: 'Arial, sans-serif', size: 3, halign: left, valign: center}
+  text.title: {size: 6.8, font_weight: bold}
+  text.kicker: {size: 2.4, font_weight: bold, color: '#557164'}
+  text.small: {size: 2.45, color: '#63776c'}
+  text.mono: {font: 'Consolas, monospace', size: 2.9}
+  text.value: {font: 'Consolas, monospace', size: 4.2}
+  text.badge: {color: '#ffffff', size: 2.3, font_weight: bold, halign: center}

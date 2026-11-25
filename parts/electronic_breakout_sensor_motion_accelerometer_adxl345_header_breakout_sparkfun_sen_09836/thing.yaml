@@ -1,0 +1,3307 @@
+bip_39_2_word_array:
+- ball
+- movie
+bip_39_2_word_no_space: ballmovie
+bip_39_2_word_space: ball movie
+bip_39_2_word_underscore: ball_movie
+bip_39_3_word_array:
+- ball
+- movie
+- connect
+bip_39_3_word_no_space: ballmovieconnect
+bip_39_3_word_space: ball movie connect
+bip_39_3_word_underscore: ball_movie_connect
+bip_39_full_array:
+- ball
+- movie
+- connect
+- scheme
+- worth
+- staff
+- love
+- mention
+- staff
+- outdoor
+- magnet
+- fun
+bip_39_full_no_space: ballmovieconnectschemeworthstafflovementionstaffoutdoormagnetfun
+bip_39_full_space: ball movie connect scheme worth staff love mention staff outdoor
+  magnet fun
+bip_39_full_underscore: ball_movie_connect_scheme_worth_staff_love_mention_staff_outdoor_magnet_fun
+board_variant: header_breakout
+breakout_description: header_breakout
+breakout_pcb_height: 15.24
+breakout_pcb_width: 20.32
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+- Default I2C address not established in this import.
+definition_authority: working_oomp_populate_i2c.py
+description: The familiar non-Qwiic header carrier, with I2C/SPI and two standoff
+  holes. The product specifies a 2.0-3.6 V supply; do not inherit the Adafruit carrier's
+  regulator/level-shifting claims. Vendor SKU is SEN-09836.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+directory: parts/electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+geometry_ready: false
+i2c:
+  address_evidence_status: unverified
+  address_selection: unverified
+  clock_stretching: unverified
+  default_address_7bit: null
+  documented_addresses_7bit: []
+  maximum_clock_hz: null
+  source_id: product
+id: electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+id_no_class: electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+id_no_size: electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+id_no_type: electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+id_oobb: electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+- spi
+item_kind: breakout
+kwargs:
+  breakout_pcb_height: 15.24
+  breakout_pcb_width: 20.32
+  modes:
+  - 3dpr
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -7.62
+    y_mm: 5.08
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 7.62
+    y_mm: 5.08
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -7.62
+    - 5.08
+  - - 7.62
+    - 5.08
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  overwrite: true
+  part_ids:
+  - electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+  type: default_mounting_plate_default
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+manufacturer: sparkfun
+manufacturer_part_number: SEN-09836
+md5: 11f21cbce05fdfa8211c58d413a617af
+md5_10: 11f21cbce0
+md5_10_upper: 11F21CBCE0
+md5_5: 11f21
+md5_5_upper: 11F21
+md5_6: 11f21c
+md5_6_alpha: p7h8
+md5_6_alpha_upper: P7H8
+md5_6_upper: 11F21C
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 3.302
+  id: JP2:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: -7.62
+  y_mm: 5.08
+- diameter_mm: 3.302
+  id: JP3:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: 7.62
+  y_mm: 5.08
+mounting_hole_radius_name: m3
+mounting_hole_radius_names:
+- m3
+- m3
+mounting_hole_status: verified
+mounting_holes:
+- - -7.62
+  - 5.08
+- - 7.62
+  - 5.08
+mounting_lift: 3
+mounting_research:
+  board_revision: SparkFun ADXL345 Breakout SEN-09836, two-standoff-hole variant represented
+    by Hardware/ADXL345_Breakout.brd at repository commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+    SparkFun product listing calls this the newer version but gives no formal revision
+    number.
+  board_size:
+  - 20.32
+  - 15.24
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: EAGLE layer-20 bounds; explicit package/plain drills; centred then rotated
+    CCW.
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: The SparkFun product listing identifies SKU SEN-09836 and says
+    its newer version adds two standoff holes and an extra decoupling capacitor. The
+    SparkFun ADXL345_Breakout repository README identifies the board as SEN-09836
+    and states Hardware contains the EAGLE design files. The pinned Hardware/ADXL345_Breakout.brd
+    at commit 8e83a624bcaea0a3071885c58634b56fbefa346d has exactly two named STAND-OFF
+    plain drills, matching the product variant description. No formal PCB revision
+    label is supplied.
+  mounting_holes:
+  - diameter_mm: 3.302
+    id: JP2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: -7.62
+    y_mm: 5.08
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: 7.62
+    y_mm: 5.08
+  record_sha256: 299ebba2e6dc5cce29256f391933395db3a85a4eaf5efdfcb4f1260ba0368981
+  research_file: source_file/electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 563391
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: 'Archived manufacturer listing: SKU SEN-09836 and description states
+      new version adds two standoff holes plus an extra decoupling capacitor; archived
+      page identity checked against current SparkFun repo README.'
+    registered_at: '2026-11-07T11:57:30+00:00'
+    sha256: d53074ac5c28707935bff4bc1b5b59d7bb6d516b552e76f8d4275b4c7f4b6707
+    url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+  - bytes: 121142
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Hardware_ADXL345_Breakout.brd
+    locator: SparkFun ADXL345_Breakout repository pinned commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+      Hardware/ADXL345_Breakout.brd. Repo README identifies repository board as SEN-09836.
+      Inspect board outline, hole features and all drills.
+    registered_at: '2026-11-07T11:57:30+00:00'
+    sha256: c24922728d0d5e47a2ae2fc88ac5c1f9433176839e0dfac97392f58ebb3ae5ba
+    url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/Hardware/ADXL345_Breakout.brd
+  - bytes: 1049
+    id: repo_readme
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: README.md in SparkFun ADXL345_Breakout repository pinned commit; explicitly
+      labels ADXL345 Breakout Board (SEN-09836) and documents Hardware directory contains
+      EAGLE design files.
+    registered_at: '2026-11-07T11:57:31+00:00'
+    sha256: 5de18a7cf7eaef8abe2787aea1a0a37c2785e92550198165a7dbc3b345af6377
+    url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/README.md
+  status: verified
+name: Electronic Breakout Sensor Motion Accelerometer Adxl345 Header Breakout Sparkfun
+  Sen 09836
+name_no_class: Electronic Breakout Sensor Motion Accelerometer Adxl345 Header Breakout
+  Sparkfun Sen 09836
+name_no_size: Electronic Breakout Sensor Motion Accelerometer Adxl345 Header Breakout
+  Sparkfun Sen 09836
+name_no_type: Electronic Breakout Sensor Motion Accelerometer Adxl345 Header Breakout
+  Sparkfun Sen 09836
+name_proper: Electronic Breakout Sensor Motion Accelerometer Adxl345 Header Breakout
+  Sparkfun Sen 09836
+name_readable: SparkFun ADXL345, traditional carrier
+name_space: electronic breakout sensor motion accelerometer adxl345 header breakout
+  sparkfun sen 09836
+name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ACCELEROMETER ADXL345 HEADER BREAKOUT
+  SPARKFUN SEN 09836
+notes:
+- Manufacturer lists 2.0-3.6 V supply; do not copy voltage tolerance from an Adafruit
+  carrier.
+oobb_details:
+- breakout_pcb_height: 15.24
+  breakout_pcb_width: 20.32
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -7.62
+    y_mm: 5.08
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 7.62
+    y_mm: 5.08
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -7.62
+    - 5.08
+  - - 7.62
+    - 5.08
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 15.24
+  breakout_pcb_width: 20.32
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -7.62
+    y_mm: 5.08
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 7.62
+    y_mm: 5.08
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -7.62
+    - 5.08
+  - - 7.62
+    - 5.08
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 15.24
+  breakout_pcb_width: 20.32
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -7.62
+    y_mm: 5.08
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 7.62
+    y_mm: 5.08
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -7.62
+    - 5.08
+  - - 7.62
+    - 5.08
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      board_variant: header_breakout
+      breakout_description: header_breakout
+      breakout_pcb_height: 15.24
+      breakout_pcb_width: 20.32
+      catalogue: i2c_breakouts
+      catalogue_status: product_page_reference
+      data_gaps:
+      - Physical connector/pad map and coordinates not imported.
+      - Located mounting holes and complete assembly/connector clearances not imported.
+      - Pull-up values/rails and full electrical limits require schematic review.
+      - Carrier PCB outline dimensions not verified.
+      - Default I2C address not established in this import.
+      definition_authority: working_oomp_populate_i2c.py
+      description: The familiar non-Qwiic header carrier, with I2C/SPI and two standoff
+        holes. The product specifies a 2.0-3.6 V supply; do not inherit the Adafruit
+        carrier's regulator/level-shifting claims. Vendor SKU is SEN-09836.
+      dimensions_mm:
+        height: null
+        scope: pcb_outline_not_established
+        source_id: null
+        status: unverified
+        width: null
+      directory: parts\electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+      geometry_ready: false
+      i2c:
+        address_evidence_status: unverified
+        address_selection: unverified
+        clock_stretching: unverified
+        default_address_7bit: null
+        documented_addresses_7bit: []
+        maximum_clock_hz: null
+        source_id: product
+      interface_scope: documented_board_interfaces_only
+      interfaces:
+      - i2c
+      - spi
+      item_kind: breakout
+      manufacturer: sparkfun
+      manufacturer_part_number: SEN-09836
+      mounting_coordinate_system:
+        origin: pcb_bounding_box_centre
+        units: mm
+        view: top
+        x_positive: right
+        y_positive: up
+      mounting_geometry_ready: true
+      mounting_hole_details:
+      - diameter_mm: 3.302
+        id: JP2:hole:1
+        package: STAND-OFF
+        plated: false
+        source_id: mounting_cad
+        x_mm: -7.62
+        y_mm: 5.08
+      - diameter_mm: 3.302
+        id: JP3:hole:1
+        package: STAND-OFF
+        plated: false
+        source_id: mounting_cad
+        x_mm: 7.62
+        y_mm: 5.08
+      mounting_hole_radius_name: m3
+      mounting_hole_radius_names:
+      - m3
+      - m3
+      mounting_hole_status: verified
+      mounting_holes:
+      - - -7.62
+        - 5.08
+      - - 7.62
+        - 5.08
+      mounting_lift: 3
+      mounting_research:
+        board_revision: SparkFun ADXL345 Breakout SEN-09836, two-standoff-hole variant
+          represented by Hardware/ADXL345_Breakout.brd at repository commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+          SparkFun product listing calls this the newer version but gives no formal
+          revision number.
+        board_size:
+        - 20.32
+        - 15.24
+        coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        derivation: EAGLE layer-20 bounds; explicit package/plain drills; centred
+          then rotated CCW.
+        fit_status: generic_holder_not_physical_fit_tested
+        identity_evidence: The SparkFun product listing identifies SKU SEN-09836 and
+          says its newer version adds two standoff holes and an extra decoupling capacitor.
+          The SparkFun ADXL345_Breakout repository README identifies the board as
+          SEN-09836 and states Hardware contains the EAGLE design files. The pinned
+          Hardware/ADXL345_Breakout.brd at commit 8e83a624bcaea0a3071885c58634b56fbefa346d
+          has exactly two named STAND-OFF plain drills, matching the product variant
+          description. No formal PCB revision label is supplied.
+        mounting_holes:
+        - diameter_mm: 3.302
+          id: JP2:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: cad
+          x_mm: -7.62
+          y_mm: 5.08
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: cad
+          x_mm: 7.62
+          y_mm: 5.08
+        record_sha256: 299ebba2e6dc5cce29256f391933395db3a85a4eaf5efdfcb4f1260ba0368981
+        research_file: source_file/electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836/mounting.yaml
+        reviewed_by: gpt-6-luna
+        sources:
+        - bytes: 563391
+          id: product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: 'Archived manufacturer listing: SKU SEN-09836 and description states
+            new version adds two standoff holes plus an extra decoupling capacitor;
+            archived page identity checked against current SparkFun repo README.'
+          registered_at: '2026-11-07T11:57:30+00:00'
+          sha256: d53074ac5c28707935bff4bc1b5b59d7bb6d516b552e76f8d4275b4c7f4b6707
+          url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+        - bytes: 121142
+          id: cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Hardware_ADXL345_Breakout.brd
+          locator: SparkFun ADXL345_Breakout repository pinned commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+            Hardware/ADXL345_Breakout.brd. Repo README identifies repository board
+            as SEN-09836. Inspect board outline, hole features and all drills.
+          registered_at: '2026-11-07T11:57:30+00:00'
+          sha256: c24922728d0d5e47a2ae2fc88ac5c1f9433176839e0dfac97392f58ebb3ae5ba
+          url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/Hardware/ADXL345_Breakout.brd
+        - bytes: 1049
+          id: repo_readme
+          kind: manufacturer_repository
+          local_file: mounting_evidence/README.md
+          locator: README.md in SparkFun ADXL345_Breakout repository pinned commit;
+            explicitly labels ADXL345 Breakout Board (SEN-09836) and documents Hardware
+            directory contains EAGLE design files.
+          registered_at: '2026-11-07T11:57:31+00:00'
+          sha256: 5de18a7cf7eaef8abe2787aea1a0a37c2785e92550198165a7dbc3b345af6377
+          url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/README.md
+        status: verified
+      name: electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+      name_proper: Electronic Breakout Sensor Motion Accelerometer Adxl345 Header
+        Breakout Sparkfun Sen 09836
+      name_readable: SparkFun ADXL345, traditional carrier
+      name_space: electronic breakout sensor motion accelerometer adxl345 header breakout
+        sparkfun sen 09836
+      name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ACCELEROMETER ADXL345 HEADER BREAKOUT
+        SPARKFUN SEN 09836
+      notes:
+      - Manufacturer lists 2.0-3.6 V supply; do not copy voltage tolerance from an
+        Adafruit carrier.
+      oobb_details:
+      - breakout_pcb_height: 15.24
+        breakout_pcb_width: 20.32
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP2:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -7.62
+          y_mm: 5.08
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 7.62
+          y_mm: 5.08
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        mounting_holes:
+        - - -7.62
+          - 5.08
+        - - 7.62
+          - 5.08
+        mounting_layout: full_wrap
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+      - breakout_pcb_height: 15.24
+        breakout_pcb_width: 20.32
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP2:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -7.62
+          y_mm: 5.08
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 7.62
+          y_mm: 5.08
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        mounting_holes:
+        - - -7.62
+          - 5.08
+        - - 7.62
+          - 5.08
+        mounting_layout: short_sides
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_short_sides
+      - breakout_pcb_height: 15.24
+        breakout_pcb_width: 20.32
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP2:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -7.62
+          y_mm: 5.08
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 7.62
+          y_mm: 5.08
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        mounting_holes:
+        - - -7.62
+          - 5.08
+        - - 7.62
+          - 5.08
+        mounting_layout: long_side
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_long_side
+      part_number: sen_09836
+      part_number_sparkfun: SEN-09836
+      pinout_status: unverified
+      pins: {}
+      research_date: '2026-10-23'
+      schema_version: 1
+      sources:
+      - id: product
+        kind: manufacturer_product_page
+        retrieved: '2026-10-23'
+        scope: identity, stated interfaces/features and recorded nominal dimensions
+        url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+      - bytes: 563391
+        id: mounting_product
+        kind: manufacturer_product
+        local_file: website.html
+        locator: 'Archived manufacturer listing: SKU SEN-09836 and description states
+          new version adds two standoff holes plus an extra decoupling capacitor;
+          archived page identity checked against current SparkFun repo README.'
+        registered_at: '2026-11-07T11:57:30+00:00'
+        sha256: d53074ac5c28707935bff4bc1b5b59d7bb6d516b552e76f8d4275b4c7f4b6707
+        url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+      - bytes: 121142
+        id: mounting_cad
+        kind: manufacturer_cad
+        local_file: mounting_evidence/Hardware_ADXL345_Breakout.brd
+        locator: SparkFun ADXL345_Breakout repository pinned commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+          Hardware/ADXL345_Breakout.brd. Repo README identifies repository board as
+          SEN-09836. Inspect board outline, hole features and all drills.
+        registered_at: '2026-11-07T11:57:30+00:00'
+        sha256: c24922728d0d5e47a2ae2fc88ac5c1f9433176839e0dfac97392f58ebb3ae5ba
+        url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/Hardware/ADXL345_Breakout.brd
+      - bytes: 1049
+        id: mounting_repo_readme
+        kind: manufacturer_repository
+        local_file: mounting_evidence/README.md
+        locator: README.md in SparkFun ADXL345_Breakout repository pinned commit;
+          explicitly labels ADXL345 Breakout Board (SEN-09836) and documents Hardware
+          directory contains EAGLE design files.
+        registered_at: '2026-11-07T11:57:31+00:00'
+        sha256: 5de18a7cf7eaef8abe2787aea1a0a37c2785e92550198165a7dbc3b345af6377
+        url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/README.md
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: sparkfun
+      taxonomy_15: sen_09836
+      taxonomy_2: breakout
+      taxonomy_3: sensor
+      taxonomy_4: motion
+      taxonomy_5: accelerometer
+      taxonomy_6: adxl345
+      taxonomy_7: header_breakout
+      taxonomy_8: ''
+      taxonomy_9: ''
+      taxonomy_schema: breakout_function_v1
+      type_1: sensor
+      type_2: motion
+      type_3: accelerometer
+      type_4: adxl345
+      url_chat: ''
+      webpage: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+      webpage_sparkfun: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+part_number: sen_09836
+part_number_sparkfun: SEN-09836
+pinout_status: unverified
+pins: {}
+project_name: C:\gh\oomp_electronic_breakout_version_5
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+- bytes: 563391
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: 'Archived manufacturer listing: SKU SEN-09836 and description states new
+    version adds two standoff holes plus an extra decoupling capacitor; archived page
+    identity checked against current SparkFun repo README.'
+  registered_at: '2026-11-07T11:57:30+00:00'
+  sha256: d53074ac5c28707935bff4bc1b5b59d7bb6d516b552e76f8d4275b4c7f4b6707
+  url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+- bytes: 121142
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/Hardware_ADXL345_Breakout.brd
+  locator: SparkFun ADXL345_Breakout repository pinned commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+    Hardware/ADXL345_Breakout.brd. Repo README identifies repository board as SEN-09836.
+    Inspect board outline, hole features and all drills.
+  registered_at: '2026-11-07T11:57:30+00:00'
+  sha256: c24922728d0d5e47a2ae2fc88ac5c1f9433176839e0dfac97392f58ebb3ae5ba
+  url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/Hardware/ADXL345_Breakout.brd
+- bytes: 1049
+  id: mounting_repo_readme
+  kind: manufacturer_repository
+  local_file: mounting_evidence/README.md
+  locator: README.md in SparkFun ADXL345_Breakout repository pinned commit; explicitly
+    labels ADXL345 Breakout Board (SEN-09836) and documents Hardware directory contains
+    EAGLE design files.
+  registered_at: '2026-11-07T11:57:31+00:00'
+  sha256: 5de18a7cf7eaef8abe2787aea1a0a37c2785e92550198165a7dbc3b345af6377
+  url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/README.md
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: sparkfun
+taxonomy_14_capital: Sparkfun
+taxonomy_14_first_letter: s
+taxonomy_14_first_letter_upper: S
+taxonomy_14_length_1: s
+taxonomy_14_length_2: sp
+taxonomy_14_length_3: spa
+taxonomy_14_length_4: spar
+taxonomy_14_length_5: spark
+taxonomy_14_upper: SPARKFUN
+taxonomy_14_upper_length_1: S
+taxonomy_14_upper_length_2: SP
+taxonomy_14_upper_length_3: SPA
+taxonomy_14_upper_length_4: SPAR
+taxonomy_14_upper_length_5: SPARK
+taxonomy_15: sen_09836
+taxonomy_15_capital: Sen 09836
+taxonomy_15_first_letter: s
+taxonomy_15_first_letter_upper: S
+taxonomy_15_length_1: s
+taxonomy_15_length_2: se
+taxonomy_15_length_3: sen
+taxonomy_15_length_4: sen_
+taxonomy_15_length_5: sen_0
+taxonomy_15_upper: SEN_09836
+taxonomy_15_upper_length_1: S
+taxonomy_15_upper_length_2: SE
+taxonomy_15_upper_length_3: SEN
+taxonomy_15_upper_length_4: SEN_
+taxonomy_15_upper_length_5: SEN_0
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: sensor
+taxonomy_3_capital: Sensor
+taxonomy_3_first_letter: s
+taxonomy_3_first_letter_upper: S
+taxonomy_3_length_1: s
+taxonomy_3_length_2: se
+taxonomy_3_length_3: sen
+taxonomy_3_length_4: sens
+taxonomy_3_length_5: senso
+taxonomy_3_upper: SENSOR
+taxonomy_3_upper_length_1: S
+taxonomy_3_upper_length_2: SE
+taxonomy_3_upper_length_3: SEN
+taxonomy_3_upper_length_4: SENS
+taxonomy_3_upper_length_5: SENSO
+taxonomy_4: motion
+taxonomy_4_capital: Motion
+taxonomy_4_first_letter: m
+taxonomy_4_first_letter_upper: M
+taxonomy_4_length_1: m
+taxonomy_4_length_2: mo
+taxonomy_4_length_3: mot
+taxonomy_4_length_4: moti
+taxonomy_4_length_5: motio
+taxonomy_4_upper: MOTION
+taxonomy_4_upper_length_1: M
+taxonomy_4_upper_length_2: MO
+taxonomy_4_upper_length_3: MOT
+taxonomy_4_upper_length_4: MOTI
+taxonomy_4_upper_length_5: MOTIO
+taxonomy_5: accelerometer
+taxonomy_5_capital: Accelerometer
+taxonomy_5_first_letter: a
+taxonomy_5_first_letter_upper: A
+taxonomy_5_length_1: a
+taxonomy_5_length_2: ac
+taxonomy_5_length_3: acc
+taxonomy_5_length_4: acce
+taxonomy_5_length_5: accel
+taxonomy_5_upper: ACCELEROMETER
+taxonomy_5_upper_length_1: A
+taxonomy_5_upper_length_2: AC
+taxonomy_5_upper_length_3: ACC
+taxonomy_5_upper_length_4: ACCE
+taxonomy_5_upper_length_5: ACCEL
+taxonomy_6: adxl345
+taxonomy_6_capital: Adxl345
+taxonomy_6_first_letter: a
+taxonomy_6_first_letter_upper: A
+taxonomy_6_length_1: a
+taxonomy_6_length_2: ad
+taxonomy_6_length_3: adx
+taxonomy_6_length_4: adxl
+taxonomy_6_length_5: adxl3
+taxonomy_6_upper: ADXL345
+taxonomy_6_upper_length_1: A
+taxonomy_6_upper_length_2: AD
+taxonomy_6_upper_length_3: ADX
+taxonomy_6_upper_length_4: ADXL
+taxonomy_6_upper_length_5: ADXL3
+taxonomy_7: header_breakout
+taxonomy_7_capital: Header Breakout
+taxonomy_7_first_letter: h
+taxonomy_7_first_letter_upper: H
+taxonomy_7_length_1: h
+taxonomy_7_length_2: he
+taxonomy_7_length_3: hea
+taxonomy_7_length_4: head
+taxonomy_7_length_5: heade
+taxonomy_7_upper: HEADER_BREAKOUT
+taxonomy_7_upper_length_1: H
+taxonomy_7_upper_length_2: HE
+taxonomy_7_upper_length_3: HEA
+taxonomy_7_upper_length_4: HEAD
+taxonomy_7_upper_length_5: HEADE
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+thing:
+  bip_39_2_word_array:
+  - ball
+  - movie
+  bip_39_2_word_no_space: ballmovie
+  bip_39_2_word_space: ball movie
+  bip_39_2_word_underscore: ball_movie
+  bip_39_3_word_array:
+  - ball
+  - movie
+  - connect
+  bip_39_3_word_no_space: ballmovieconnect
+  bip_39_3_word_space: ball movie connect
+  bip_39_3_word_underscore: ball_movie_connect
+  bip_39_full_array:
+  - ball
+  - movie
+  - connect
+  - scheme
+  - worth
+  - staff
+  - love
+  - mention
+  - staff
+  - outdoor
+  - magnet
+  - fun
+  bip_39_full_no_space: ballmovieconnectschemeworthstafflovementionstaffoutdoormagnetfun
+  bip_39_full_space: ball movie connect scheme worth staff love mention staff outdoor
+    magnet fun
+  bip_39_full_underscore: ball_movie_connect_scheme_worth_staff_love_mention_staff_outdoor_magnet_fun
+  board_variant: header_breakout
+  breakout_description: header_breakout
+  breakout_pcb_height: 15.24
+  breakout_pcb_width: 20.32
+  catalogue: i2c_breakouts
+  catalogue_status: product_page_reference
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 4.0
+      pos:
+      - 0.0
+      - 0.0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 59.0
+      - 59.0
+      - 3
+      type: positive
+      width: 4.0
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - -7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - 7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -7.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -7.5
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -7.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 7.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 7.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 7.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 22.5
+      - -1
+      r: 3.25
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 22.5
+      - -1
+      r: 3.0
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - -15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - 0.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -22.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -22.5
+      - 15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -22.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -15.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -15.0
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -15.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - -15.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - -15.0
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - -15.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 0.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 0.0
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 0.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 0.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 15.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 15.0
+      - -22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 15.0
+      - -22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 15.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 15.0
+      - 22.5
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 15.0
+      - 22.5
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - -15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 0.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - depth: 5
+      h: 5
+      inclusion: laser
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 3dpr
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 1.8
+      shape: cylinder
+      type: negative
+    - depth: 5
+      h: 5
+      inclusion: 'true'
+      pos:
+      - 22.5
+      - 15.0
+      - -1
+      r: 1.5
+      shape: cylinder
+      type: negative
+  - - objects:
+      - - depth: 6
+          h: 1.7
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.4
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.9
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -1.9
+          r1: 1.8
+          r2: 3.6
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.7
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.9
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - -7.62
+      - 5.08
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id001
+      - -7.62
+      - 5.08
+      - 3.0
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id001
+      r: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id001
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+  - - objects:
+      - - depth: 6
+          h: 1.7
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.4
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.9
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -1.9
+          r1: 1.8
+          r2: 3.6
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 1.7
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.9
+          shape: cylinder
+          type: positive
+          width: 4
+      - - depth: 6
+          h: 6
+          height: 4
+          inclusion: laser
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 3dpr
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+        - depth: 6
+          h: 6
+          height: 4
+          inclusion: 'true'
+          pos:
+          - 0
+          - 0
+          - -6.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 4
+      pos:
+      - 7.62
+      - 5.08
+      - 0
+      rot:
+      - 0
+      - 180
+      - 0
+      type: rotation
+      typetype: negative
+  - - depth: 3
+      h: 3
+      height: 4
+      inclusion: laser
+      pos: &id002
+      - 7.62
+      - 5.08
+      - 3.0
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 3dpr
+      pos: *id002
+      r: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+    - depth: 3
+      h: 3
+      height: 4
+      inclusion: 'true'
+      pos: *id002
+      r: 3.75
+      radius: 3.75
+      shape: cylinder
+      type: positive
+      width: 4
+  components_objects:
+  - breakout_pcb_height: 15.24
+    breakout_pcb_width: 20.32
+    depth: 3
+    height: 4.0
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP2:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -7.62
+      y_mm: 5.08
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 7.62
+      y_mm: 5.08
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -7.62
+      - 5.08
+    - - 7.62
+      - 5.08
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+    pos:
+    - 0.0
+    - 0.0
+    - 0
+    save_type: none
+    shape: oobb_plate
+    type: positive
+    width: 4.0
+  - depth: 5
+    pos:
+    - -22.5
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - -7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - 7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -7.5
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -7.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 7.5
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 7.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - -22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - -7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 7.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 22.5
+    - -1
+    radius_name: m6
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - -15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - 0.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -22.5
+    - 15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -15.0
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - -15.0
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 0.0
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 0.0
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 15.0
+    - -22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 15.0
+    - 22.5
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - -15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 0.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - depth: 5
+    pos:
+    - 22.5
+    - 15.0
+    - -1
+    radius_name: m3
+    shape: oobb_hole
+    type: negative
+  - breakout_pcb_height: 15.24
+    breakout_pcb_width: 20.32
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP2:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -7.62
+      y_mm: 5.08
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 7.62
+      y_mm: 5.08
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -7.62
+      - 5.08
+    - - 7.62
+      - 5.08
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+    pos:
+    - -7.62
+    - 5.08
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 15.24
+    breakout_pcb_width: 20.32
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP2:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -7.62
+      y_mm: 5.08
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 7.62
+      y_mm: 5.08
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -7.62
+      - 5.08
+    - - 7.62
+      - 5.08
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+    pos:
+    - -7.62
+    - 5.08
+    - 4.5
+    radius: 3.75
+    save_type: none
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  - breakout_pcb_height: 15.24
+    breakout_pcb_width: 20.32
+    depth: 6
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP2:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -7.62
+      y_mm: 5.08
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 7.62
+      y_mm: 5.08
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -7.62
+      - 5.08
+    - - 7.62
+      - 5.08
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+    pos:
+    - 7.62
+    - 5.08
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    save_type: none
+    shape: oobb_screw_countersunk
+    type: negative
+    width: 4
+  - breakout_pcb_height: 15.24
+    breakout_pcb_width: 20.32
+    depth: 3
+    height: 4
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP2:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -7.62
+      y_mm: 5.08
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 7.62
+      y_mm: 5.08
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -7.62
+      - 5.08
+    - - 7.62
+      - 5.08
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+    pos:
+    - 7.62
+    - 5.08
+    - 4.5
+    radius: 3.75
+    save_type: none
+    shape: oobb_cylinder
+    type: positive
+    width: 4
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_'electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_15.24_breakout_pcb_height_20.32_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-7.62_'y_mm':5.08}_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':7.62_'y_mm':5.08}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_mounting_hole_radius_names_-7.62_5.08_7.62_5.08_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_4.0_width_4.0_height
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-22.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-22.5_-7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-22.5_7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-22.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-7.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_-7.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_7.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_7.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_-7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_7.5_-1_pos
+  - oobb_hole_shape_negative_type_m6_radius_name_5_depth_22.5_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-22.5_-15.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-22.5_0.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-22.5_15.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-15.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_-15.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_0.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_0.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_15.0_-22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_15.0_22.5_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_-15.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_0.0_-1_pos
+  - oobb_hole_shape_negative_type_m3_radius_name_5_depth_22.5_15.0_-1_pos
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_6_depth_-7.62_5.08_0_pos_'electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_15.24_breakout_pcb_height_20.32_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-7.62_'y_mm':5.08}_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':7.62_'y_mm':5.08}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_mounting_hole_radius_names_-7.62_5.08_7.62_5.08_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_-7.62_5.08_4.5_pos_'electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_15.24_breakout_pcb_height_20.32_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-7.62_'y_mm':5.08}_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':7.62_'y_mm':5.08}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_mounting_hole_radius_names_-7.62_5.08_7.62_5.08_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_3.75_radius
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_6_depth_7.62_5.08_0_pos_'electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_15.24_breakout_pcb_height_20.32_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-7.62_'y_mm':5.08}_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':7.62_'y_mm':5.08}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_mounting_hole_radius_names_-7.62_5.08_7.62_5.08_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_0_180_0_rot
+  - oobb_cylinder_shape_positive_type_3_depth_7.62_5.08_4.5_pos_'electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836'_part_ids_'3dpr'_modes_none_save_type_true_overwrite_15.24_breakout_pcb_height_20.32_breakout_pcb_width_{'diameter_mm':3.302_'id':'jp2:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':-7.62_'y_mm':5.08}_{'diameter_mm':3.302_'id':'jp3:hole:1'_'package':'stand-off'_'plated':false_'source_id':'mounting_cad'_'x_mm':7.62_'y_mm':5.08}_mounting_hole_details_m3_mounting_hole_radius_name_'m3'_'m3'_mounting_hole_radius_names_-7.62_5.08_7.62_5.08_mounting_holes_full_wrap_mounting_layout_3_mounting_lift_mounting_plate_default_oobb_name_4_width_4_height_3.75_radius
+  data_gaps:
+  - Physical connector/pad map and coordinates not imported.
+  - Located mounting holes and complete assembly/connector clearances not imported.
+  - Pull-up values/rails and full electrical limits require schematic review.
+  - Carrier PCB outline dimensions not verified.
+  - Default I2C address not established in this import.
+  definition_authority: working_oomp_populate_i2c.py
+  description: The familiar non-Qwiic header carrier, with I2C/SPI and two standoff
+    holes. The product specifies a 2.0-3.6 V supply; do not inherit the Adafruit carrier's
+    regulator/level-shifting claims. Vendor SKU is SEN-09836.
+  description_extra: ''
+  description_main: ''
+  dimensions_mm:
+    height: null
+    scope: pcb_outline_not_established
+    source_id: null
+    status: unverified
+    width: null
+  directory: parts/electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+  geometry_ready: false
+  i2c:
+    address_evidence_status: unverified
+    address_selection: unverified
+    clock_stretching: unverified
+    default_address_7bit: null
+    documented_addresses_7bit: []
+    maximum_clock_hz: null
+    source_id: product
+  id: electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+  id_no_class: electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+  id_no_size: electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+  id_no_type: electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+  interface_scope: documented_board_interfaces_only
+  interfaces:
+  - i2c
+  - spi
+  item_kind: breakout
+  kwargs:
+    breakout_pcb_height: 15.24
+    breakout_pcb_width: 20.32
+    modes:
+    - 3dpr
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP2:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -7.62
+      y_mm: 5.08
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 7.62
+      y_mm: 5.08
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -7.62
+      - 5.08
+    - - 7.62
+      - 5.08
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    oomp_description_extra: ''
+    oomp_description_main: mounting_plate_default_
+    overwrite: true
+    part_ids:
+    - electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+    save_type: none
+    type: default_mounting_plate_default
+  link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+  link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+  link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+  manufacturer: sparkfun
+  manufacturer_part_number: SEN-09836
+  md5: 11f21cbce05fdfa8211c58d413a617af
+  md5_10: 11f21cbce0
+  md5_10_upper: 11F21CBCE0
+  md5_5: 11f21
+  md5_5_upper: 11F21
+  md5_6: 11f21c
+  md5_6_alpha: p7h8
+  md5_6_alpha_upper: P7H8
+  md5_6_upper: 11F21C
+  mounting_coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  mounting_geometry_ready: true
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP2:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -7.62
+    y_mm: 5.08
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 7.62
+    y_mm: 5.08
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_hole_status: verified
+  mounting_holes:
+  - - -7.62
+    - 5.08
+  - - 7.62
+    - 5.08
+  mounting_lift: 3
+  mounting_research:
+    board_revision: SparkFun ADXL345 Breakout SEN-09836, two-standoff-hole variant
+      represented by Hardware/ADXL345_Breakout.brd at repository commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+      SparkFun product listing calls this the newer version but gives no formal revision
+      number.
+    board_size:
+    - 20.32
+    - 15.24
+    coordinate_system:
+      origin: pcb_bounding_box_centre
+      units: mm
+      view: top
+      x_positive: right
+      y_positive: up
+    derivation: EAGLE layer-20 bounds; explicit package/plain drills; centred then
+      rotated CCW.
+    fit_status: generic_holder_not_physical_fit_tested
+    identity_evidence: The SparkFun product listing identifies SKU SEN-09836 and says
+      its newer version adds two standoff holes and an extra decoupling capacitor.
+      The SparkFun ADXL345_Breakout repository README identifies the board as SEN-09836
+      and states Hardware contains the EAGLE design files. The pinned Hardware/ADXL345_Breakout.brd
+      at commit 8e83a624bcaea0a3071885c58634b56fbefa346d has exactly two named STAND-OFF
+      plain drills, matching the product variant description. No formal PCB revision
+      label is supplied.
+    mounting_holes:
+    - diameter_mm: 3.302
+      id: JP2:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: cad
+      x_mm: -7.62
+      y_mm: 5.08
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: cad
+      x_mm: 7.62
+      y_mm: 5.08
+    record_sha256: 299ebba2e6dc5cce29256f391933395db3a85a4eaf5efdfcb4f1260ba0368981
+    research_file: source_file/electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836/mounting.yaml
+    reviewed_by: gpt-6-luna
+    sources:
+    - bytes: 563391
+      id: product
+      kind: manufacturer_product
+      local_file: website.html
+      locator: 'Archived manufacturer listing: SKU SEN-09836 and description states
+        new version adds two standoff holes plus an extra decoupling capacitor; archived
+        page identity checked against current SparkFun repo README.'
+      registered_at: '2026-11-07T11:57:30+00:00'
+      sha256: d53074ac5c28707935bff4bc1b5b59d7bb6d516b552e76f8d4275b4c7f4b6707
+      url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+    - bytes: 121142
+      id: cad
+      kind: manufacturer_cad
+      local_file: mounting_evidence/Hardware_ADXL345_Breakout.brd
+      locator: SparkFun ADXL345_Breakout repository pinned commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+        Hardware/ADXL345_Breakout.brd. Repo README identifies repository board as
+        SEN-09836. Inspect board outline, hole features and all drills.
+      registered_at: '2026-11-07T11:57:30+00:00'
+      sha256: c24922728d0d5e47a2ae2fc88ac5c1f9433176839e0dfac97392f58ebb3ae5ba
+      url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/Hardware/ADXL345_Breakout.brd
+    - bytes: 1049
+      id: repo_readme
+      kind: manufacturer_repository
+      local_file: mounting_evidence/README.md
+      locator: README.md in SparkFun ADXL345_Breakout repository pinned commit; explicitly
+        labels ADXL345 Breakout Board (SEN-09836) and documents Hardware directory
+        contains EAGLE design files.
+      registered_at: '2026-11-07T11:57:31+00:00'
+      sha256: 5de18a7cf7eaef8abe2787aea1a0a37c2785e92550198165a7dbc3b345af6377
+      url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/README.md
+    status: verified
+  name: Electronic Breakout Sensor Motion Accelerometer Adxl345 Header Breakout Sparkfun
+    Sen 09836
+  name_no_class: Electronic Breakout Sensor Motion Accelerometer Adxl345 Header Breakout
+    Sparkfun Sen 09836
+  name_no_size: Electronic Breakout Sensor Motion Accelerometer Adxl345 Header Breakout
+    Sparkfun Sen 09836
+  name_no_type: Electronic Breakout Sensor Motion Accelerometer Adxl345 Header Breakout
+    Sparkfun Sen 09836
+  name_proper: Electronic Breakout Sensor Motion Accelerometer Adxl345 Header Breakout
+    Sparkfun Sen 09836
+  name_readable: SparkFun ADXL345, traditional carrier
+  name_short: Default Mounting Plate Default
+  name_space: electronic breakout sensor motion accelerometer adxl345 header breakout
+    sparkfun sen 09836
+  name_text: Oobb Part Default Mounting Plate Default
+  name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ACCELEROMETER ADXL345 HEADER BREAKOUT
+    SPARKFUN SEN 09836
+  notes:
+  - Manufacturer lists 2.0-3.6 V supply; do not copy voltage tolerance from an Adafruit
+    carrier.
+  oobb_details:
+  - breakout_pcb_height: 15.24
+    breakout_pcb_width: 20.32
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP2:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -7.62
+      y_mm: 5.08
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 7.62
+      y_mm: 5.08
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -7.62
+      - 5.08
+    - - 7.62
+      - 5.08
+    mounting_layout: full_wrap
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+  - breakout_pcb_height: 15.24
+    breakout_pcb_width: 20.32
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP2:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -7.62
+      y_mm: 5.08
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 7.62
+      y_mm: 5.08
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -7.62
+      - 5.08
+    - - 7.62
+      - 5.08
+    mounting_layout: short_sides
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_short_sides
+  - breakout_pcb_height: 15.24
+    breakout_pcb_width: 20.32
+    mounting_hole_details:
+    - diameter_mm: 3.302
+      id: JP2:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: -7.62
+      y_mm: 5.08
+    - diameter_mm: 3.302
+      id: JP3:hole:1
+      package: STAND-OFF
+      plated: false
+      source_id: mounting_cad
+      x_mm: 7.62
+      y_mm: 5.08
+    mounting_hole_radius_name: m3
+    mounting_hole_radius_names:
+    - m3
+    - m3
+    mounting_holes:
+    - - -7.62
+      - 5.08
+    - - 7.62
+      - 5.08
+    mounting_layout: long_side
+    mounting_lift: 3
+    oobb_name: mounting_plate_default
+    scad_output: 3dpr_long_side
+  oobb_name: mounting_plate_default
+  oomlout_ai_roboclick_1:
+    actions:
+    - command: text_jinja_template
+      convert_to_pdf: false
+      convert_to_png: false
+      dict_data:
+        board_variant: header_breakout
+        breakout_description: header_breakout
+        breakout_pcb_height: 15.24
+        breakout_pcb_width: 20.32
+        catalogue: i2c_breakouts
+        catalogue_status: product_page_reference
+        data_gaps:
+        - Physical connector/pad map and coordinates not imported.
+        - Located mounting holes and complete assembly/connector clearances not imported.
+        - Pull-up values/rails and full electrical limits require schematic review.
+        - Carrier PCB outline dimensions not verified.
+        - Default I2C address not established in this import.
+        definition_authority: working_oomp_populate_i2c.py
+        description: The familiar non-Qwiic header carrier, with I2C/SPI and two standoff
+          holes. The product specifies a 2.0-3.6 V supply; do not inherit the Adafruit
+          carrier's regulator/level-shifting claims. Vendor SKU is SEN-09836.
+        dimensions_mm:
+          height: null
+          scope: pcb_outline_not_established
+          source_id: null
+          status: unverified
+          width: null
+        directory: parts\electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+        geometry_ready: false
+        i2c:
+          address_evidence_status: unverified
+          address_selection: unverified
+          clock_stretching: unverified
+          default_address_7bit: null
+          documented_addresses_7bit: []
+          maximum_clock_hz: null
+          source_id: product
+        interface_scope: documented_board_interfaces_only
+        interfaces:
+        - i2c
+        - spi
+        item_kind: breakout
+        manufacturer: sparkfun
+        manufacturer_part_number: SEN-09836
+        mounting_coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        mounting_geometry_ready: true
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP2:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -7.62
+          y_mm: 5.08
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 7.62
+          y_mm: 5.08
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        mounting_hole_status: verified
+        mounting_holes:
+        - - -7.62
+          - 5.08
+        - - 7.62
+          - 5.08
+        mounting_lift: 3
+        mounting_research:
+          board_revision: SparkFun ADXL345 Breakout SEN-09836, two-standoff-hole variant
+            represented by Hardware/ADXL345_Breakout.brd at repository commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+            SparkFun product listing calls this the newer version but gives no formal
+            revision number.
+          board_size:
+          - 20.32
+          - 15.24
+          coordinate_system:
+            origin: pcb_bounding_box_centre
+            units: mm
+            view: top
+            x_positive: right
+            y_positive: up
+          derivation: EAGLE layer-20 bounds; explicit package/plain drills; centred
+            then rotated CCW.
+          fit_status: generic_holder_not_physical_fit_tested
+          identity_evidence: The SparkFun product listing identifies SKU SEN-09836
+            and says its newer version adds two standoff holes and an extra decoupling
+            capacitor. The SparkFun ADXL345_Breakout repository README identifies
+            the board as SEN-09836 and states Hardware contains the EAGLE design files.
+            The pinned Hardware/ADXL345_Breakout.brd at commit 8e83a624bcaea0a3071885c58634b56fbefa346d
+            has exactly two named STAND-OFF plain drills, matching the product variant
+            description. No formal PCB revision label is supplied.
+          mounting_holes:
+          - diameter_mm: 3.302
+            id: JP2:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: cad
+            x_mm: -7.62
+            y_mm: 5.08
+          - diameter_mm: 3.302
+            id: JP3:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: cad
+            x_mm: 7.62
+            y_mm: 5.08
+          record_sha256: 299ebba2e6dc5cce29256f391933395db3a85a4eaf5efdfcb4f1260ba0368981
+          research_file: source_file/electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836/mounting.yaml
+          reviewed_by: gpt-6-luna
+          sources:
+          - bytes: 563391
+            id: product
+            kind: manufacturer_product
+            local_file: website.html
+            locator: 'Archived manufacturer listing: SKU SEN-09836 and description
+              states new version adds two standoff holes plus an extra decoupling
+              capacitor; archived page identity checked against current SparkFun repo
+              README.'
+            registered_at: '2026-11-07T11:57:30+00:00'
+            sha256: d53074ac5c28707935bff4bc1b5b59d7bb6d516b552e76f8d4275b4c7f4b6707
+            url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+          - bytes: 121142
+            id: cad
+            kind: manufacturer_cad
+            local_file: mounting_evidence/Hardware_ADXL345_Breakout.brd
+            locator: SparkFun ADXL345_Breakout repository pinned commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+              Hardware/ADXL345_Breakout.brd. Repo README identifies repository board
+              as SEN-09836. Inspect board outline, hole features and all drills.
+            registered_at: '2026-11-07T11:57:30+00:00'
+            sha256: c24922728d0d5e47a2ae2fc88ac5c1f9433176839e0dfac97392f58ebb3ae5ba
+            url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/Hardware/ADXL345_Breakout.brd
+          - bytes: 1049
+            id: repo_readme
+            kind: manufacturer_repository
+            local_file: mounting_evidence/README.md
+            locator: README.md in SparkFun ADXL345_Breakout repository pinned commit;
+              explicitly labels ADXL345 Breakout Board (SEN-09836) and documents Hardware
+              directory contains EAGLE design files.
+            registered_at: '2026-11-07T11:57:31+00:00'
+            sha256: 5de18a7cf7eaef8abe2787aea1a0a37c2785e92550198165a7dbc3b345af6377
+            url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/README.md
+          status: verified
+        name: electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+        name_proper: Electronic Breakout Sensor Motion Accelerometer Adxl345 Header
+          Breakout Sparkfun Sen 09836
+        name_readable: SparkFun ADXL345, traditional carrier
+        name_space: electronic breakout sensor motion accelerometer adxl345 header
+          breakout sparkfun sen 09836
+        name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ACCELEROMETER ADXL345 HEADER
+          BREAKOUT SPARKFUN SEN 09836
+        notes:
+        - Manufacturer lists 2.0-3.6 V supply; do not copy voltage tolerance from
+          an Adafruit carrier.
+        oobb_details:
+        - breakout_pcb_height: 15.24
+          breakout_pcb_width: 20.32
+          mounting_hole_details:
+          - diameter_mm: 3.302
+            id: JP2:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -7.62
+            y_mm: 5.08
+          - diameter_mm: 3.302
+            id: JP3:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: 7.62
+            y_mm: 5.08
+          mounting_hole_radius_name: m3
+          mounting_hole_radius_names:
+          - m3
+          - m3
+          mounting_holes:
+          - - -7.62
+            - 5.08
+          - - 7.62
+            - 5.08
+          mounting_layout: full_wrap
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+        - breakout_pcb_height: 15.24
+          breakout_pcb_width: 20.32
+          mounting_hole_details:
+          - diameter_mm: 3.302
+            id: JP2:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -7.62
+            y_mm: 5.08
+          - diameter_mm: 3.302
+            id: JP3:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: 7.62
+            y_mm: 5.08
+          mounting_hole_radius_name: m3
+          mounting_hole_radius_names:
+          - m3
+          - m3
+          mounting_holes:
+          - - -7.62
+            - 5.08
+          - - 7.62
+            - 5.08
+          mounting_layout: short_sides
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_short_sides
+        - breakout_pcb_height: 15.24
+          breakout_pcb_width: 20.32
+          mounting_hole_details:
+          - diameter_mm: 3.302
+            id: JP2:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: -7.62
+            y_mm: 5.08
+          - diameter_mm: 3.302
+            id: JP3:hole:1
+            package: STAND-OFF
+            plated: false
+            source_id: mounting_cad
+            x_mm: 7.62
+            y_mm: 5.08
+          mounting_hole_radius_name: m3
+          mounting_hole_radius_names:
+          - m3
+          - m3
+          mounting_holes:
+          - - -7.62
+            - 5.08
+          - - 7.62
+            - 5.08
+          mounting_layout: long_side
+          mounting_lift: 3
+          oobb_name: mounting_plate_default
+          scad_output: 3dpr_long_side
+        part_number: sen_09836
+        part_number_sparkfun: SEN-09836
+        pinout_status: unverified
+        pins: {}
+        research_date: '2026-10-23'
+        schema_version: 1
+        sources:
+        - id: product
+          kind: manufacturer_product_page
+          retrieved: '2026-10-23'
+          scope: identity, stated interfaces/features and recorded nominal dimensions
+          url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+        - bytes: 563391
+          id: mounting_product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: 'Archived manufacturer listing: SKU SEN-09836 and description states
+            new version adds two standoff holes plus an extra decoupling capacitor;
+            archived page identity checked against current SparkFun repo README.'
+          registered_at: '2026-11-07T11:57:30+00:00'
+          sha256: d53074ac5c28707935bff4bc1b5b59d7bb6d516b552e76f8d4275b4c7f4b6707
+          url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+        - bytes: 121142
+          id: mounting_cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/Hardware_ADXL345_Breakout.brd
+          locator: SparkFun ADXL345_Breakout repository pinned commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+            Hardware/ADXL345_Breakout.brd. Repo README identifies repository board
+            as SEN-09836. Inspect board outline, hole features and all drills.
+          registered_at: '2026-11-07T11:57:30+00:00'
+          sha256: c24922728d0d5e47a2ae2fc88ac5c1f9433176839e0dfac97392f58ebb3ae5ba
+          url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/Hardware/ADXL345_Breakout.brd
+        - bytes: 1049
+          id: mounting_repo_readme
+          kind: manufacturer_repository
+          local_file: mounting_evidence/README.md
+          locator: README.md in SparkFun ADXL345_Breakout repository pinned commit;
+            explicitly labels ADXL345 Breakout Board (SEN-09836) and documents Hardware
+            directory contains EAGLE design files.
+          registered_at: '2026-11-07T11:57:31+00:00'
+          sha256: 5de18a7cf7eaef8abe2787aea1a0a37c2785e92550198165a7dbc3b345af6377
+          url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/README.md
+        taxonomy_1: electronic
+        taxonomy_10: ''
+        taxonomy_11: ''
+        taxonomy_12: ''
+        taxonomy_13: ''
+        taxonomy_14: sparkfun
+        taxonomy_15: sen_09836
+        taxonomy_2: breakout
+        taxonomy_3: sensor
+        taxonomy_4: motion
+        taxonomy_5: accelerometer
+        taxonomy_6: adxl345
+        taxonomy_7: header_breakout
+        taxonomy_8: ''
+        taxonomy_9: ''
+        taxonomy_schema: breakout_function_v1
+        type_1: sensor
+        type_2: motion
+        type_3: accelerometer
+        type_4: adxl345
+        url_chat: ''
+        webpage: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+        webpage_sparkfun: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+      dict_data_files: {}
+      dict_data_files_exists: {}
+      file_output: label_oomp.svg
+      file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+      search_and_replace: []
+    file_test: label_oomp.pdf
+    retries_until_complete: 0
+  oomp_key: oomp_electronic_breakout_sensor_motion_accelerometer_adxl345_header_breakout_sparkfun_sen_09836
+  part_number: sen_09836
+  part_number_sparkfun: SEN-09836
+  pinout_status: unverified
+  pins: {}
+  research_date: '2026-10-23'
+  schema_version: 1
+  short_name: ''
+  size: default_mounting_plate_default
+  sources:
+  - id: product
+    kind: manufacturer_product_page
+    retrieved: '2026-10-23'
+    scope: identity, stated interfaces/features and recorded nominal dimensions
+    url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+  - bytes: 563391
+    id: mounting_product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: 'Archived manufacturer listing: SKU SEN-09836 and description states
+      new version adds two standoff holes plus an extra decoupling capacitor; archived
+      page identity checked against current SparkFun repo README.'
+    registered_at: '2026-11-07T11:57:30+00:00'
+    sha256: d53074ac5c28707935bff4bc1b5b59d7bb6d516b552e76f8d4275b4c7f4b6707
+    url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+  - bytes: 121142
+    id: mounting_cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/Hardware_ADXL345_Breakout.brd
+    locator: SparkFun ADXL345_Breakout repository pinned commit 8e83a624bcaea0a3071885c58634b56fbefa346d;
+      Hardware/ADXL345_Breakout.brd. Repo README identifies repository board as SEN-09836.
+      Inspect board outline, hole features and all drills.
+    registered_at: '2026-11-07T11:57:30+00:00'
+    sha256: c24922728d0d5e47a2ae2fc88ac5c1f9433176839e0dfac97392f58ebb3ae5ba
+    url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/Hardware/ADXL345_Breakout.brd
+  - bytes: 1049
+    id: mounting_repo_readme
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: README.md in SparkFun ADXL345_Breakout repository pinned commit; explicitly
+      labels ADXL345 Breakout Board (SEN-09836) and documents Hardware directory contains
+      EAGLE design files.
+    registered_at: '2026-11-07T11:57:31+00:00'
+    sha256: 5de18a7cf7eaef8abe2787aea1a0a37c2785e92550198165a7dbc3b345af6377
+    url: https://raw.githubusercontent.com/sparkfun/ADXL345_Breakout/8e83a624bcaea0a3071885c58634b56fbefa346d/README.md
+  taxonomy_1: electronic
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: sparkfun
+  taxonomy_14_capital: Sparkfun
+  taxonomy_14_first_letter: s
+  taxonomy_14_first_letter_upper: S
+  taxonomy_14_length_1: s
+  taxonomy_14_length_2: sp
+  taxonomy_14_length_3: spa
+  taxonomy_14_length_4: spar
+  taxonomy_14_length_5: spark
+  taxonomy_14_upper: SPARKFUN
+  taxonomy_14_upper_length_1: S
+  taxonomy_14_upper_length_2: SP
+  taxonomy_14_upper_length_3: SPA
+  taxonomy_14_upper_length_4: SPAR
+  taxonomy_14_upper_length_5: SPARK
+  taxonomy_15: sen_09836
+  taxonomy_15_capital: Sen 09836
+  taxonomy_15_first_letter: s
+  taxonomy_15_first_letter_upper: S
+  taxonomy_15_length_1: s
+  taxonomy_15_length_2: se
+  taxonomy_15_length_3: sen
+  taxonomy_15_length_4: sen_
+  taxonomy_15_length_5: sen_0
+  taxonomy_15_upper: SEN_09836
+  taxonomy_15_upper_length_1: S
+  taxonomy_15_upper_length_2: SE
+  taxonomy_15_upper_length_3: SEN
+  taxonomy_15_upper_length_4: SEN_
+  taxonomy_15_upper_length_5: SEN_0
+  taxonomy_1_capital: Electronic
+  taxonomy_1_first_letter: e
+  taxonomy_1_first_letter_upper: E
+  taxonomy_1_length_1: e
+  taxonomy_1_length_2: el
+  taxonomy_1_length_3: ele
+  taxonomy_1_length_4: elec
+  taxonomy_1_length_5: elect
+  taxonomy_1_upper: ELECTRONIC
+  taxonomy_1_upper_length_1: E
+  taxonomy_1_upper_length_2: EL
+  taxonomy_1_upper_length_3: ELE
+  taxonomy_1_upper_length_4: ELEC
+  taxonomy_1_upper_length_5: ELECT
+  taxonomy_2: breakout
+  taxonomy_2_capital: Breakout
+  taxonomy_2_first_letter: b
+  taxonomy_2_first_letter_upper: B
+  taxonomy_2_length_1: b
+  taxonomy_2_length_2: br
+  taxonomy_2_length_3: bre
+  taxonomy_2_length_4: brea
+  taxonomy_2_length_5: break
+  taxonomy_2_upper: BREAKOUT
+  taxonomy_2_upper_length_1: B
+  taxonomy_2_upper_length_2: BR
+  taxonomy_2_upper_length_3: BRE
+  taxonomy_2_upper_length_4: BREA
+  taxonomy_2_upper_length_5: BREAK
+  taxonomy_3: sensor
+  taxonomy_3_capital: Sensor
+  taxonomy_3_first_letter: s
+  taxonomy_3_first_letter_upper: S
+  taxonomy_3_length_1: s
+  taxonomy_3_length_2: se
+  taxonomy_3_length_3: sen
+  taxonomy_3_length_4: sens
+  taxonomy_3_length_5: senso
+  taxonomy_3_upper: SENSOR
+  taxonomy_3_upper_length_1: S
+  taxonomy_3_upper_length_2: SE
+  taxonomy_3_upper_length_3: SEN
+  taxonomy_3_upper_length_4: SENS
+  taxonomy_3_upper_length_5: SENSO
+  taxonomy_4: motion
+  taxonomy_4_capital: Motion
+  taxonomy_4_first_letter: m
+  taxonomy_4_first_letter_upper: M
+  taxonomy_4_length_1: m
+  taxonomy_4_length_2: mo
+  taxonomy_4_length_3: mot
+  taxonomy_4_length_4: moti
+  taxonomy_4_length_5: motio
+  taxonomy_4_upper: MOTION
+  taxonomy_4_upper_length_1: M
+  taxonomy_4_upper_length_2: MO
+  taxonomy_4_upper_length_3: MOT
+  taxonomy_4_upper_length_4: MOTI
+  taxonomy_4_upper_length_5: MOTIO
+  taxonomy_5: accelerometer
+  taxonomy_5_capital: Accelerometer
+  taxonomy_5_first_letter: a
+  taxonomy_5_first_letter_upper: A
+  taxonomy_5_length_1: a
+  taxonomy_5_length_2: ac
+  taxonomy_5_length_3: acc
+  taxonomy_5_length_4: acce
+  taxonomy_5_length_5: accel
+  taxonomy_5_upper: ACCELEROMETER
+  taxonomy_5_upper_length_1: A
+  taxonomy_5_upper_length_2: AC
+  taxonomy_5_upper_length_3: ACC
+  taxonomy_5_upper_length_4: ACCE
+  taxonomy_5_upper_length_5: ACCEL
+  taxonomy_6: adxl345
+  taxonomy_6_capital: Adxl345
+  taxonomy_6_first_letter: a
+  taxonomy_6_first_letter_upper: A
+  taxonomy_6_length_1: a
+  taxonomy_6_length_2: ad
+  taxonomy_6_length_3: adx
+  taxonomy_6_length_4: adxl
+  taxonomy_6_length_5: adxl3
+  taxonomy_6_upper: ADXL345
+  taxonomy_6_upper_length_1: A
+  taxonomy_6_upper_length_2: AD
+  taxonomy_6_upper_length_3: ADX
+  taxonomy_6_upper_length_4: ADXL
+  taxonomy_6_upper_length_5: ADXL3
+  taxonomy_7: header_breakout
+  taxonomy_7_capital: Header Breakout
+  taxonomy_7_first_letter: h
+  taxonomy_7_first_letter_upper: H
+  taxonomy_7_length_1: h
+  taxonomy_7_length_2: he
+  taxonomy_7_length_3: hea
+  taxonomy_7_length_4: head
+  taxonomy_7_length_5: heade
+  taxonomy_7_upper: HEADER_BREAKOUT
+  taxonomy_7_upper_length_1: H
+  taxonomy_7_upper_length_2: HE
+  taxonomy_7_upper_length_3: HEA
+  taxonomy_7_upper_length_4: HEAD
+  taxonomy_7_upper_length_5: HEADE
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_schema: breakout_function_v1
+  type: part
+  type_1: sensor
+  type_2: motion
+  type_3: accelerometer
+  type_4: adxl345
+  url_chat: ''
+  webpage: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+  webpage_sparkfun: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+type_1: sensor
+type_2: motion
+type_3: accelerometer
+type_4: adxl345
+url_chat: ''
+webpage: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html
+webpage_sparkfun: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-adxl345.html

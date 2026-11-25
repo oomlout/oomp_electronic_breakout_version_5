@@ -1,0 +1,322 @@
+Due to high demand, USPS orders are shipping on a slight delay.
+Add the code
+BeGood15
+to your cart for 15% off our
+Halloween Guide Guide
+through Sunday 10/25! 👽🚲🌕
+Skip Navigation
+Shop
+Learn
+Blog
+Forums
+IO
+LIVE!
+AdaBox
+Sign In
+Shopping cart,
+0
+items.
+toggle menu
+Search
+Shopping cart,
+0
+items.
+Sign In
+|
+Create Account
+New Products
+Featured Products
+Gift Ideas
+Circuit Playground
+Feather
+Raspberry Pi
+Arduino
+LEDs
+All Categories
+Support
+Shipping & Returns
+About Us
+Products
+Products navigation
+Shop Categories
+view all
+categories
+Arduino
+CircuitPython
+Circuit Playground
+Feather
+STEMMA / STEMMA QT
+LCDs & Displays
+Raspberry Pi
+RP2040 / Pico
+Accessories
+Batteries
+Books
+Breakout Boards
+Cables
+Components & Parts
+Development Boards
+E-Ink / ThinkInk
+Gift Certificates
+Kits & Projects
+LEDs
+Mechanical Keyboards
+Neopixels
+Power
+Prototyping
+Robotics & CNC
+Sensors
+Tools
+Wearables
+Wireless
+Clearance Sale
+New Products
+view all
+New Products
+Adafruit Metro ESP32-P4 Hydra - with 16 MB PSRAM
+$34.95
+Adafruit RV-8803 High Accuracy Real Time Clock Breakout Board
+$10.95
+Adafruit CP2105 Friend - USB to Dual UART Serial Converters
+$6.95
+Adafruit TMF8806 Time of Flight Distance Sensor - 10mm to 5m
+$12.50
+Featured Products
+view all
+Featured Products
+Adafruit BMP581 I2C or SPI Temperature and Pressure Sensor
+$9.95
+Adafruit STSPIN220 Stepper Motor Driver Breakout Board
+$6.50
+Adafruit TPS61169 Constant Current Boost Converter for LEDs
+$4.50
+Adafruit Sparkle Motion Stick + Enclosure Kit
+$19.95
+Gift Ideas
+What's New
+Search
+Breakout Boards
+/
+Batteries/Power
+/
+INA219  High Side DC Current Sensor Breakout - 26V ±3.2A Max
+INA219  High Side DC Current Sensor Breakout - 26V ±3.2A Max - STEMMA QT
+Product ID:
+904
+$9.95
+Product Images and Video
+Play video: New Products 2/3/2021 Featuring #Adafruit #Sensirion #SHT40 Temperature &amp; Humidity Sensor!
+Play video: JP’s Product Pick of the Week 2/16/21 INA219 High Side DC Current Sensor @adafruit @johnedgarpark
+Play video: #NewProducts 9/28/2022 Featuring #Adafruit PCF8575 I2C 16 #GPIO Expander Breakout - STEMMA QT!
+Qty
+Discount
+1-9
+$9.95
+10-99
+$8.96
+100+
+$7.96
+In stock
+Add to Cart
+Also include
+1
+x
+STEMMA QT / Qwiic JST SH 4-pin to Premium Male Headers Cable
+($
+0.95
+)
+Also include
+1
+x
+STEMMA QT / Qwiic JST SH 4-pin Cable - 100mm Long
+($
+0.95
+)
+Qty
+Discount
+1-9
+$9.95
+10-99
+$8.96
+100+
+$7.96
+In stock
+Add to Wishlist
+Description
+This breakout board will solve all your power-monitoring problems. Instead of struggling with two multimeters, you can just use the handy INA219 chip on this breakout to both measure both the high side voltage and DC current draw over I2C with ±1% precision.
+Please Note:
+As of Sept 2022, due to the severe chip shortage, we've had to update this design to use
+either the INA219A or INA219B and in SOT-23 or SOIC package
+- whatever we are able to get on the market! The A version is ±1% total max current measurement error over the entire temp range (±0.5% max at 25*C) and the B version is ±0.5% total max current measurement error over the entire temp range (±0.3% max at 25*C). Overall functionality is otherwise the same.
+Most current-measuring devices such as our current panel meter are only good for
+low side
+measuring. That means that unless you want to get a battery involved, you have to stick the measurement resistor between the target ground and true ground. This can cause problems with circuits since electronics tend to not like it when the ground references change and move with varying current draw. This chip is much smarter - it can handle high side current measuring, up to +26VDC, even though it is powered with 3 or 5V. It will also report back that high side voltage, which is great for tracking battery life or solar panels.
+A precision amplifier measures the voltage across the 0.1 ohm, 1% sense resistor. Since the amplifier maximum input difference is ±320mV this means it can measure up to ±3.2 Amps. With the internal 12 bit ADC, the resolution at ±3.2A range is 0.8mA. With the internal gain set at the minimum of div8, the max current is ±400mA and the resolution is 0.1mA. Advanced hackers can remove the 0.1 ohm current sense resistor and replace it with their own to change the range (say a 0.01 ohm to measure up 32 Amps with a resolution of 8mA)
+We include a 6-pin header (so you can easily attach this sensor to a breadboard) as well as a 3.5mm terminal plug so you can easily attach and detach your load.
+Usage is simple. Power the sensor itself with 3 to 5VDC and connect the two I2C pins up to your microcontroller. Then connect your target power supply to VIN+ and the load to ground to VIN-.
+We have a detailed tutorial that will do all the gain, range and math for you - just plug and go with Arduino or CircuitPython!
+As if that weren't enough, we've now also added
+SparkFun qwiic
+compatible
+STEMMA QT
+connectors for the I2C bus
+so you don't even need to solder the I2C and power lines.
+Just wire up to your favorite micro using a
+STEMMA QT adapter cable.
+The Stemma QT connectors also mean the INA219 can be used with our
+various associated accessories.
+QT Cable is not included, but we have a variety in the shop
+.
+Play video: #NewProducts 9/28/2022 Featuring #Adafruit PCF8575 I2C 16 #GPIO Expander Breakout - STEMMA QT!
+Play video: JP’s Product Pick of the Week 2/16/21 INA219 High Side DC Current Sensor @adafruit @johnedgarpark
+Play video: New Products 2/3/2021 Featuring #Adafruit #Sensirion #SHT40 Temperature & Humidity Sensor!
+Play video: What is Stemma QT? #adafruit #stemma
+Technical Details
+Note:
+You may get an off-white or black JST connector.
+Revision History:
+As of May 31, 2024
+- We added a pre-soldered terminal block.
+As of January 29, 2021 -
+we've updated this sensor to our STEMMA QT standard for sensors. There are now four mounting holes and two STEMMA QT connectors for plug-and-play connectivity! The schematic is the same; only the mechanical shape has changed.
+As of Sept 22, 2022 -
+due to the severe chip shortage, we've had to update this design to use
+either the INA219A or INA219B and in SOT-23 or SOIC package
+- whatever we are able to get on the market! The A version is ±1% total max current measurement error over the entire temp range (±0.5% max at 25*C) and the B version is ±0.5% total max current measurement error over the entire temp range (±0.3% max at 25*C). Overall functionality is otherwise the same.
+Specifications:
+Datasheet, Fritzing, and EagleCAD PCB files available in the product tutorial
+0.1 ohm 1% 2W current sense resistor
+Up to +26V target voltage
+Up to ±3.2A current measurement, with ±0.8mA resolution
+Note:
+The terminal block included with your product may be blue or black. You may get an off-white or black JST connector.
+This board/chip uses I2C 7-bit addresses 0x40, 0x41, 0x44, 0x45, selectable with jumpers
+Product Dimensions: 25.6mm x 20.4mm x 4.7mm / 1.0" x 0.8" x 0.2"
+Learn
+Primary Guide:                 Adafruit INA219 Current Sensor Breakout
+Measure high side voltage and DC current draw over I2C
+USB C Power Delivery Monitor
+Turn USB C Power Delivery into a benchtop supply with selectable voltages and current readout
+Low Power WiFi Datalogger
+Log sensor data with an Arduino and CC3000 for days on batteries!
+Pro Trinket Power Meter
+Build a small meter to display voltage, current, and power usage.
+See All Guides
+May We Also Suggest…
+Panel Current Meter - 0 to 9.99A
+Pocket Autoranging Digital Multimeter
+Adafruit INA260 High or Low Side Voltage, Current, Power Sensor
+Adafruit INA219 FeatherWing
+INA169 Analog DC Current Sensor Breakout - 60V 5A Max
+Mini Power Meter with Voltage, Current, Watts, mAh & mWh Display
+Adafruit Power Relay FeatherWing
+Adalogger FeatherWing - RTC + SD Add-on For All Feather Boards
+ADS1015 12-Bit ADC - 4 Channel with Programmable Gain Amplifier - STEMMA QT / Qwiic - STEMMA QT / Qwiic
+TCA9548A I2C Multiplexer
+Adafruit USB Isolator - 100mA Isolated Low/Full Speed USB
+Nordic nRF-PPK2 - Power Profiler Kit II - Power Measurement Tool - Power Measurement Tool
+Distributors
+Mouser Electronics
+United States
+3DMakerWorld, Inc.
+United States
+Electrokit Sweden AB
+Sweden
+BerryBase
+Germany
+Pimoroni
+United Kingdom
+Pakronics
+Australia
+Sengoku Densyo Co., Ltd.
+Japan
+Kamami
+Poland
+Paradisetronic.com
+Germany
+Akizuki Denshi Tsusho Co.
+Japan
+Makersify
+United Kingdom
+The Pi Hut
+United Kingdom
+Go Tronic
+France
+Core Electronics
+Australia
+Eckstein Komponente
+Germany
+Kiwi Electronics
+Netherlands
+NTREX, Inc.- Devicemart
+South Korea
+BOTLAND B. DERKACZ SP.K.
+Poland
+BOTLAND B. DERKACZ SP.K.
+Czech Republic
+BOTLAND B. DERKACZ SP.K.
+Germany
+Electronics123.com, Inc.
+United States
+DigiKey Electronics
+United States
+Switch Science
+Japan
+Play-Zone
+Switzerland
+See our
+Distributors page
+for a complete list of distributors.
+INA219  High Side DC Current Sensor Breakout - 26V ±3.2A Max - STEMMA QT
+Product ID:
+904
+$9.95
+In stock
+Add to Cart
+Also include
+1
+x
+STEMMA QT / Qwiic JST SH 4-pin to Premium Male Headers Cable
+($
+0.95
+)
+Also include
+1
+x
+STEMMA QT / Qwiic JST SH 4-pin Cable - 100mm Long
+($
+0.95
+)
+Qty
+Discount
+1-9
+$9.95
+10-99
+$8.96
+100+
+$7.96
+Add to Wishlist
+Description
+Technical Details
+Contact Us
+Tech Support Forums
+FAQs
+Shipping & Returns
+Freebies
+Terms of Service
+Privacy & Legal
+Website Accessibility
+About Us
+Press
+Educators
+Distributors
+Jobs
+Gift Cards
+“ This good fun, explore, explore, explore, that's what science is, exploration, finding out new things, so have a good time with it”
+Charles Townes
+A Minority and Woman-owned Business Enterprise (M/WBE)
+×
+Create New Wishlist
+Name
+Description
+Create Wishlist

@@ -1,0 +1,117 @@
+{
+  "record_sha256": "bfc5ac7d29a1dbb27fa502c423ed87160cd0a6767d5aa3319629799c6e299b0e",
+  "generated_at": "2026-11-06T18:42:47+00:00",
+  "physical_fit_tested": false,
+  "artifacts": [
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665/3dpr.scad",
+      "bytes": 4355,
+      "sha256": "16ecf45cc4f8734a767fc2c7f66b2e8072d3d19e979f9f407a72c745f6e6b86c"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665/3dpr_short_sides.scad",
+      "bytes": 3036,
+      "sha256": "c94af8d7b13534dbea73a426171b7f5a20fca7f814e8f34dd900af9a87aabbc1"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665/3dpr_long_side.scad",
+      "bytes": 2874,
+      "sha256": "d97a26d2e1ce8d42be30e6de847dea26bb41ba36fb610cb1d687c8b81eb34205"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665/3dpr.stl",
+      "bytes": 1709923,
+      "sha256": "ef25e015664d4daf4a5648789f82af5aa1bcc87269c39e785c881e619c4bb34b"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665/3dpr_short_sides.stl",
+      "bytes": 836747,
+      "sha256": "4f7ad8dab9e06310a4763612bca9ee3b852fc31b728dc089ade07c19c481b2b5"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665/3dpr_long_side.stl",
+      "bytes": 689648,
+      "sha256": "d6f7d3ea464ba10c148406a9802042ef4d012c0552175ffa7781d60a417ff3ba"
+    },
+    {
+      "path": "parts/electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665/mounting_variants.json",
+      "bytes": 4428,
+      "sha256": "08751a50989a0904fa602ae60ab494725675495517c48f9d6ad86b06a0ec5420"
+    }
+  ],
+  "superseded_artifacts": [],
+  "mesh_check": {
+    "source": "parts\\electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665\\3dpr.stl",
+    "watertight": true,
+    "bodies": 1,
+    "volume_mm3": 8932.07805241085,
+    "bounds_mm": [
+      [
+        -29.5,
+        -29.49013364214136,
+        0.0
+      ],
+      [
+        29.5,
+        29.49013364214136,
+        6.0
+      ]
+    ],
+    "variants": [
+      {
+        "source": "parts\\electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665\\3dpr.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 8932.07805241085,
+        "bounds_mm": [
+          [
+            -29.5,
+            -29.49013364214136,
+            0.0
+          ],
+          [
+            29.5,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665\\3dpr_short_sides.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 4720.937177685889,
+        "bounds_mm": [
+          [
+            -29.5,
+            -14.490133642141359,
+            0.0
+          ],
+          [
+            29.5,
+            14.490133642141359,
+            6.0
+          ]
+        ]
+      },
+      {
+        "source": "parts\\electronic_breakout_sensor_environmental_temperature_humidity_sht45_stemma_qt_adafruit_5665\\3dpr_long_side.stl",
+        "watertight": true,
+        "bodies": 1,
+        "volume_mm3": 3963.40186423185,
+        "bounds_mm": [
+          [
+            -15.7,
+            -14.490133642141359,
+            0.0
+          ],
+          [
+            15.7,
+            29.49013364214136,
+            6.0
+          ]
+        ]
+      }
+    ]
+  }
+}

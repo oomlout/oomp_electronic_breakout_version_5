@@ -1,0 +1,1036 @@
+{
+    "url": "https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/",
+    "accessed": "2026-10-22",
+    "tables": [
+        [
+            [
+                "Seeed Studio XIAO ESP32-S3",
+                "Seeed Studio XIAO ESP32-S3 Sense",
+                "Seeed Studio XIAO ESP32-S3 Plus"
+            ],
+            [
+                "",
+                "",
+                ""
+            ],
+            [
+                "Get One Now \ud83d\uddb1\ufe0f",
+                "Get One Now \ud83d\uddb1\ufe0f",
+                "Get One Now \ud83d\uddb1\ufe0f"
+            ]
+        ],
+        [
+            [
+                "Product",
+                "XIAO ESP32-S3",
+                "XIAO ESP32-S3 Sense",
+                "XIAO ESP32-S3 Plus"
+            ],
+            [
+                "Processor",
+                "ESP32-S3R8 Xtensa LX7 dual-core, 32-bit processor that operates at up to 240 MHz"
+            ],
+            [
+                "Wireless",
+                "Complete 2.4GHz Wi-Fi subsystem Bluetooth Low Energy 5.0 / Bluetooth Mesh"
+            ],
+            [
+                "Built-in Sensors",
+                "/",
+                "1x OV5640 camera sensor (with Auto-Focus) 1x Digital Microphone",
+                "/"
+            ],
+            [
+                "Memory",
+                "On-chip 8MB PSRAM & 8MB Flash",
+                "On-chip 8MB PSRAM & 8MB Flash Onboard SD Card Slot, supporting 32GB FAT",
+                "On-chip 8MB PSRAM & 16MB Flash"
+            ],
+            [
+                "Interface",
+                "1x UART 1x IIC 1x SPI 11x GPIO(PWM) 9x ADC 1x User LED 1x Charge LED 1x Reset button 1x Boot button",
+                "1x UART 1x IIC 1x IIS 1x SPI 11x GPIOs (PWM) 9x ADC 1x User LED 1x Charge LED 1x B2B Connector (with 2 additional GPIOs) 1x Reset button 1x Boot button",
+                "2x UART 1x IIC 1x IIS 2x SPI 18x GPIOs (PWM) 9x ADC 1x User LED 1x Charge LED 1x B2B Connector 1x Reset button 1x Boot button"
+            ],
+            [
+                "Dimensions",
+                "21 x 17.8mm",
+                "21 x 17.8 x 15mm (with expansion board)",
+                "21 x 17.8mm"
+            ],
+            [
+                "Power(Typ.)",
+                "Input voltage (Type-C): 5V Input voltage (BAT): 3.7V"
+            ],
+            [
+                "Power Consumption",
+                "Circuit operating Voltage: - Type-C: 5V@19mA - BAT: 3.8V@22mA",
+                "Circuit operating Voltage: - Type-C: 5V@38.3mA - BAT: 3.8V@43.2mA (with expansion board)",
+                "Circuit operating Voltage: - Type-C: 5V@28mA - BAT: 3.8V@35mA"
+            ],
+            [
+                "/",
+                "Webcam Web application: - Type-C: -- Average power Consumption: 5V/~140mA -- Peak power consumption(Image Capture): 5V/~347mA - Battery: -- Average power Consumption: 3.8V/~155mA -- Peak power consumption(Image Capture): 3.8V/~366mA",
+                "/"
+            ],
+            [
+                "/",
+                "Microphone recording & SD card writing: - Type-C: -- Average power consumption: 5V/54.58mA -- Peak power consumption: 5V/86.7mA - Battery: -- Average power consumption: 3.8V/64.5mA -- Peak power consumption: 3.8V/109.3mA",
+                "/"
+            ],
+            [
+                "50mA(Fast) / 3.8mA(Trickle)",
+                "/",
+                "Charging current: 100mA(Fast) / 0.9mA(Trickle)"
+            ],
+            [
+                "Low Power Consumption Model(Typ.) (Supply Power: 3.8V)",
+                "Modem-sleep Mode: 27mA Light-sleep Mode: 2mA Deep Sleep Mode: 14\u03bcA",
+                "Modem-sleep Mode: 44mA Light-sleep Mode: 5mA Deep Sleep Mode: 3mA",
+                "Modem-sleep Mode: 3.8V/31.6 mA Light-sleep Mode: 3.8V/2.45 mA Deep Sleep Mode: 3.8V/33.51 \u03bcA"
+            ],
+            [
+                "Wi-Fi Enabled Power Consumption(Typ.)",
+                "Active Mode: 100 mA",
+                "Active Mode: 110 mA (with expansion board)",
+                "Active Mode: 81 mA"
+            ],
+            [
+                "BLE Enabled Power Consumption(Typ.)",
+                "Active Mode: 85 mA",
+                "Active Mode: 102 mA (with expansion board)",
+                "Active Mode: 101 mA"
+            ],
+            [
+                "Working Temperature",
+                "-20\u00b0C ~ 65\u00b0C"
+            ]
+        ],
+        [
+            [
+                "Item",
+                "OV5640 Camera (with AF)",
+                "OV3660 Camera",
+                "OV2640 Camera"
+            ],
+            [
+                "MAX Power Consumption on (640*480)",
+                "Active Model: ~ TBD",
+                "Active Model: ~ 0.6A",
+                "Active Model: ~ 0.65A"
+            ],
+            [
+                "AVG Power Consumption on (640*480)",
+                "Active Model: ~ TBD",
+                "Active Model: ~ 0.12A",
+                "Active Model: ~ 0.24A"
+            ],
+            [
+                "MIN Power Consumption on (640*480)",
+                "Active Model: ~ TBD",
+                "Active Model: ~ 0.12A",
+                "Active Model: ~ 0.15A"
+            ]
+        ],
+        [
+            [
+                "XIAO Pin",
+                "Function",
+                "Chip Pin",
+                "Alternate Functions",
+                "Description"
+            ],
+            [
+                "5V",
+                "VBUS",
+                "",
+                "",
+                "Power Input/Output"
+            ],
+            [
+                "GND",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "3V3",
+                "3V3_OUT",
+                "",
+                "",
+                "Power Output"
+            ],
+            [
+                "D0",
+                "Analog",
+                "GPIO1",
+                "TOUCH1",
+                "GPIO, ADC"
+            ],
+            [
+                "D1",
+                "Analog",
+                "GPIO2",
+                "TOUCH2",
+                "GPIO, ADC"
+            ],
+            [
+                "D2",
+                "Analog",
+                "GPIO3",
+                "TOUCH3",
+                "GPIO, ADC"
+            ],
+            [
+                "D3",
+                "Analog",
+                "GPIO4",
+                "TOUCH4",
+                "GPIO, ADC"
+            ],
+            [
+                "D4",
+                "Analog, SDA",
+                "GPIO5",
+                "TOUCH5",
+                "GPIO, I2C Data, ADC"
+            ],
+            [
+                "D5",
+                "Analog, SCL",
+                "GPIO6",
+                "TOUCH6",
+                "GPIO, I2C Clock, ADC"
+            ],
+            [
+                "D6",
+                "TX",
+                "GPIO43",
+                "",
+                "GPIO, UART Transmit"
+            ],
+            [
+                "D7",
+                "RX",
+                "GPIO44",
+                "",
+                "GPIO, UART Receive"
+            ],
+            [
+                "D8",
+                "Analog, SCK",
+                "GPIO7",
+                "TOUCH7",
+                "GPIO, SPI Clock, ADC"
+            ],
+            [
+                "D9",
+                "Analog, MISO",
+                "GPIO8",
+                "TOUCH8",
+                "GPIO, SPI Data, ADC"
+            ],
+            [
+                "D10",
+                "Analog, MOSI",
+                "GPIO9",
+                "TOUCH9",
+                "GPIO, SPI Data, ADC"
+            ],
+            [
+                "D11",
+                "Analog",
+                "GPIO42",
+                "TOUCH12",
+                "GPIO, ADC"
+            ],
+            [
+                "D12",
+                "Analog",
+                "GPIO41",
+                "TOUCH13",
+                "GPIO, ADC"
+            ],
+            [
+                "MTDO",
+                "",
+                "GPIO40",
+                "",
+                "JTAG"
+            ],
+            [
+                "MTDI",
+                "",
+                "GPIO41",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "MTCK",
+                "",
+                "GPIO39",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "MTMS",
+                "",
+                "GPIO42",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "Reset",
+                "",
+                "CHIP_PU",
+                "",
+                ""
+            ],
+            [
+                "Boot",
+                "",
+                "GPIO0",
+                "",
+                "Enter Boot Mode"
+            ],
+            [
+                "U.FL-R-SMT1",
+                "",
+                "LNA_IN",
+                "",
+                "UFL antenna"
+            ],
+            [
+                "CHARGE_LED",
+                "",
+                "",
+                "",
+                "CHG-LED"
+            ],
+            [
+                "USER_LED",
+                "",
+                "GPIO21",
+                "",
+                "User Light"
+            ]
+        ],
+        [
+            [
+                "XIAO Pin",
+                "Function",
+                "Chip Pin",
+                "Alternate Functions",
+                "Description"
+            ],
+            [
+                "5V",
+                "VBUS",
+                "",
+                "",
+                "Power Input/Output"
+            ],
+            [
+                "GND",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "3V3",
+                "3V3_OUT",
+                "",
+                "",
+                "Power Output"
+            ],
+            [
+                "D0",
+                "Analog",
+                "GPIO1",
+                "TOUCH1",
+                "GPIO, ADC"
+            ],
+            [
+                "D1",
+                "Analog",
+                "GPIO2",
+                "TOUCH2",
+                "GPIO, ADC"
+            ],
+            [
+                "D2",
+                "Analog",
+                "GPIO3",
+                "TOUCH3",
+                "GPIO, ADC"
+            ],
+            [
+                "D3",
+                "Analog",
+                "GPIO4",
+                "TOUCH4",
+                "GPIO, ADC"
+            ],
+            [
+                "D4",
+                "Analog, SDA",
+                "GPIO5",
+                "TOUCH5",
+                "GPIO, I2C Data, ADC"
+            ],
+            [
+                "D5",
+                "Analog, SCL",
+                "GPIO6",
+                "TOUCH6",
+                "GPIO, I2C Clock, ADC"
+            ],
+            [
+                "D6",
+                "TX",
+                "GPIO43",
+                "",
+                "GPIO, UART Transmit"
+            ],
+            [
+                "D7",
+                "RX",
+                "GPIO44",
+                "",
+                "GPIO, UART Receive"
+            ],
+            [
+                "D8",
+                "Analog, SCK",
+                "GPIO7",
+                "TOUCH7",
+                "GPIO, SPI Clock, ADC"
+            ],
+            [
+                "D9",
+                "Analog, MISO",
+                "GPIO8",
+                "TOUCH8",
+                "GPIO, SPI Data, ADC"
+            ],
+            [
+                "D10",
+                "Analog, MOSI",
+                "GPIO9",
+                "TOUCH9",
+                "GPIO, SPI Data, ADC"
+            ],
+            [
+                "D11",
+                "Analog",
+                "GPIO42",
+                "TOUCH12",
+                "GPIO, ADC"
+            ],
+            [
+                "D12",
+                "Analog",
+                "GPIO41",
+                "TOUCH13",
+                "GPIO, ADC"
+            ],
+            [
+                "MTDO",
+                "",
+                "GPIO40",
+                "",
+                "JTAG"
+            ],
+            [
+                "MTDI",
+                "",
+                "GPIO41",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "MTCK",
+                "",
+                "GPIO39",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "MTMS",
+                "",
+                "GPIO42",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "Reset",
+                "",
+                "CHIP_PU",
+                "",
+                ""
+            ],
+            [
+                "Boot",
+                "",
+                "GPIO0",
+                "",
+                "Enter Boot Mode"
+            ],
+            [
+                "U.FL-R-SMT1",
+                "",
+                "LNA_IN",
+                "",
+                "UFL antenna"
+            ],
+            [
+                "CHARGE_LED",
+                "",
+                "",
+                "",
+                "CHG-LED"
+            ],
+            [
+                "USER_LED",
+                "",
+                "GPIO21",
+                "",
+                "User Light"
+            ],
+            [
+                "Digital microphone_CLK",
+                "",
+                "GPIO42",
+                "",
+                "PDM clock pin for MIC"
+            ],
+            [
+                "Digital microphone_DATA",
+                "",
+                "GPIO41",
+                "",
+                "PDM data pin for MIC"
+            ],
+            [
+                "Onboard SD Card__CS",
+                "",
+                "GPIO21",
+                "",
+                "SD card chip select pin"
+            ],
+            [
+                "Onboard SD Card_SCK",
+                "",
+                "GPIO7",
+                "",
+                "SD card clock pin"
+            ],
+            [
+                "Onboard SD Card_MISO",
+                "",
+                "GPIO8",
+                "",
+                "SD card data input pin"
+            ],
+            [
+                "Onboard SD Card Slot_MOSI",
+                "",
+                "GPIO9",
+                "",
+                "SD card data output pin"
+            ]
+        ],
+        [
+            [
+                "Chip Pin",
+                "Description"
+            ],
+            [
+                "GPIO10",
+                "Camera-related clock pin"
+            ],
+            [
+                "GPIO11",
+                "Camera video data pin (Y8)"
+            ],
+            [
+                "GPIO12",
+                "Camera video data pin (Y7)"
+            ],
+            [
+                "GPIO13",
+                "Camera pixel clock pin"
+            ],
+            [
+                "GPIO14",
+                "Camera video data pin (Y6)"
+            ],
+            [
+                "GPIO15",
+                "Camera video data pin (Y2)"
+            ],
+            [
+                "GPIO16",
+                "Camera video data pin (Y5)"
+            ],
+            [
+                "GPIO17",
+                "Camera video data pin (Y3)"
+            ],
+            [
+                "GPIO18",
+                "Camera video data pin (Y4)"
+            ],
+            [
+                "GPIO40",
+                "I2C data pin for Camera"
+            ],
+            [
+                "GPIO39",
+                "I2C clock pin for Camera"
+            ],
+            [
+                "GPIO38",
+                "Camera vertical sync pin"
+            ],
+            [
+                "GPIO47",
+                "Camera horizontal sync pin"
+            ],
+            [
+                "GPIO48",
+                "Camera video data pin (Y9)"
+            ]
+        ],
+        [
+            [
+                "XIAO Pin",
+                "Function",
+                "Chip Pin",
+                "Alternate Functions",
+                "Description"
+            ],
+            [
+                "5V",
+                "VBUS",
+                "",
+                "",
+                "Power Input/Output"
+            ],
+            [
+                "GND",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "3V3",
+                "3V3_OUT",
+                "",
+                "",
+                "Power Output"
+            ],
+            [
+                "D0",
+                "Analog",
+                "GPIO1",
+                "",
+                "GPIO, ADC"
+            ],
+            [
+                "D1",
+                "Analog",
+                "GPIO2",
+                "",
+                "GPIO, ADC"
+            ],
+            [
+                "D2",
+                "Analog",
+                "GPIO3",
+                "",
+                "GPIO, ADC"
+            ],
+            [
+                "D3",
+                "Analog",
+                "GPIO4",
+                "",
+                "GPIO, ADC"
+            ],
+            [
+                "D4",
+                "Analog, SDA",
+                "GPIO5",
+                "",
+                "GPIO, I2C Data, ADC"
+            ],
+            [
+                "D5",
+                "Analog, SCL",
+                "GPIO6",
+                "",
+                "GPIO, I2C Clock, ADC"
+            ],
+            [
+                "D6",
+                "TX",
+                "GPIO43",
+                "",
+                "GPIO, UART Transmit"
+            ],
+            [
+                "D7",
+                "RX",
+                "GPIO44",
+                "",
+                "GPIO, UART Receive"
+            ],
+            [
+                "D8",
+                "Analog, SCK",
+                "GPIO7",
+                "",
+                "GPIO, SPI Clock, ADC"
+            ],
+            [
+                "D9",
+                "Analog, MISO",
+                "GPIO8",
+                "",
+                "GPIO, SPI Data, ADC"
+            ],
+            [
+                "D10",
+                "Analog, MOSI",
+                "GPIO9",
+                "",
+                "GPIO, SPI Data, ADC"
+            ],
+            [
+                "D11",
+                "",
+                "GPIO38",
+                "",
+                "GPIO, ADC"
+            ],
+            [
+                "D12",
+                "",
+                "GPIO39",
+                "",
+                "GPIO, ADC"
+            ],
+            [
+                "D13",
+                "",
+                "GPIO40",
+                "",
+                ""
+            ],
+            [
+                "D14",
+                "",
+                "GPIO41",
+                "",
+                ""
+            ],
+            [
+                "D15",
+                "",
+                "GPIO42",
+                "",
+                ""
+            ],
+            [
+                "D16",
+                "",
+                "GPIO10",
+                "",
+                ""
+            ],
+            [
+                "D17",
+                "",
+                "GPIO13",
+                "",
+                ""
+            ],
+            [
+                "D18",
+                "",
+                "GPIO12",
+                "",
+                ""
+            ],
+            [
+                "D19",
+                "",
+                "GPIO11",
+                "",
+                ""
+            ],
+            [
+                "MTDO",
+                "",
+                "GPIO40",
+                "",
+                "JTAG"
+            ],
+            [
+                "MTDI",
+                "",
+                "GPIO41",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "MTCK",
+                "",
+                "GPIO39",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "MTMS",
+                "",
+                "GPIO42",
+                "",
+                "JTAG, ADC"
+            ],
+            [
+                "Reset",
+                "",
+                "CHIP_PU",
+                "",
+                ""
+            ],
+            [
+                "Boot",
+                "",
+                "GPIO0",
+                "",
+                "Enter Boot Mode"
+            ],
+            [
+                "ADC_BAT",
+                "",
+                "GPIO10",
+                "",
+                "Read the BAT voltage value"
+            ],
+            [
+                "U.FL-R-SMT1",
+                "",
+                "LNA_IN",
+                "",
+                "UFL antenna"
+            ],
+            [
+                "CHARGE_LED",
+                "",
+                "VCC_3V3",
+                "",
+                "CHG-LED"
+            ],
+            [
+                "USER_LED",
+                "",
+                "GPIO21",
+                "",
+                "User Light"
+            ]
+        ],
+        [
+            [
+                "Test Sample",
+                "Peak Temperature on Backside"
+            ],
+            [
+                "Without Heat Sink",
+                "63.6\u00b0C"
+            ],
+            [
+                "With dual Heat Sinks",
+                "53.5\u00b0C (\ud83d\udd3b10\u00b0C)"
+            ]
+        ],
+        [
+            [
+                "",
+                ""
+            ]
+        ],
+        [
+            [
+                "",
+                ""
+            ]
+        ]
+    ],
+    "links": [
+        {
+            "title": "Have Suggestions?",
+            "url": "https://github.com/Seeed-Studio/wiki-documents/discussions/69"
+        },
+        {
+            "title": "Direct to Assignments",
+            "url": "https://github.com/orgs/Seeed-Studio/projects/6"
+        },
+        {
+            "title": "",
+            "url": "https://github.com/Seeed-Studio/wiki-documents"
+        },
+        {
+            "title": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/xiaos3-bin2uf2.zip",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/xiaos3-bin2uf2.zip"
+        },
+        {
+            "title": "\ud83d\udcda Learn More",
+            "url": "https://github.com/adafruit/tinyuf2/tree/master/ports/espressif"
+        },
+        {
+            "title": "Espressif ESP32-S3 Datasheet",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/esp32-s3_datasheet.pdf"
+        },
+        {
+            "title": "XIAO ESP32-S3 Schematic",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/new-res/202003751_XIAO%20ESP32S3_v1.4_SCH_260226.pdf.pdf"
+        },
+        {
+            "title": "XIAO ESP32-S3 KiCad Project",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/new-res/202003751_XIAO%20ESP32S3_v1.4_SCH&PCB_260226.zip"
+        },
+        {
+            "title": "XIAO Series KiCad Footprints",
+            "url": "https://files.seeedstudio.com/wiki/XIAO-KiCad-Library/New_XIAO_Series_Footprints.zip"
+        },
+        {
+            "title": "XIAO Series KiCad SCH Symbols",
+            "url": "https://files.seeedstudio.com/wiki/XIAO-KiCad-Library/XIAO_Series_SCH_Symbols.zip"
+        },
+        {
+            "title": "XIAO ESP32-S3 Dimension in DXF",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_v1.1_Dimensioning.dxf"
+        },
+        {
+            "title": "XIAO ESP32-S3 3D Model",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/seeed-studio-xiao-esp32s3-3d_model.zip"
+        },
+        {
+            "title": "XIAO ESP32-S3 Factory Firmware",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-firmware-20240814.zip"
+        },
+        {
+            "title": "Espressif ESP32-S3 Datasheet",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/esp32-s3_datasheet.pdf"
+        },
+        {
+            "title": "XIAO ESP32-S3 Sense Schematic",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/new-res/202003753_XIAO%20ESP32S3%20Sense_v1.5_SCH_260226.pdf.pdf"
+        },
+        {
+            "title": "XIAO ESP32-S3 ExpBoard Schematic",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_Exp_Board_v1.2_SCH_PDF_260810.pdf"
+        },
+        {
+            "title": "XIAO ESP32-S3 Sense KiCad Project",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/new-res/202003753_XIAO%20ESP32S3%20Sense_v1.5_SCH&PCB_260226.zip"
+        },
+        {
+            "title": "XIAO Series KiCad Footprints",
+            "url": "https://files.seeedstudio.com/wiki/XIAO-KiCad-Library/New_XIAO_Series_Footprints.zip"
+        },
+        {
+            "title": "XIAO Series KiCad SCH Symbols",
+            "url": "https://files.seeedstudio.com/wiki/XIAO-KiCad-Library/XIAO_Series_SCH_Symbols.zip"
+        },
+        {
+            "title": "XIAO ESP32-S3 Sense Dimension in DXF (Top)",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_ExpBoard_v1.0_top.dxf"
+        },
+        {
+            "title": "XIAO ESP32-S3 Sense Dimension in DXF (Bottom)",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_ExpBoard_v1.0_bot.dxf"
+        },
+        {
+            "title": "XIAO ESP32-S3 Sense 3D Model",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/seeed-studio-xiao-esp32s3-sense-3d_model.zip"
+        },
+        {
+            "title": "XIAO ESP32-S3 Sense Factory Firmware",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-Sense-firmware-20240814.zip"
+        },
+        {
+            "title": "Espressif ESP32-S3 Datasheet",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/esp32-s3_datasheet.pdf"
+        },
+        {
+            "title": "XIAO ESP32-S3 Plus Schematic",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_Plus_V1.1_SCH_260115.pdf"
+        },
+        {
+            "title": "XIAO ESP32-S3 Plus KiCad Project",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_Plus_V1.1_KiCad_260115.zip"
+        },
+        {
+            "title": "XIAO Plus Base \uff08with bottom pad lead out\uff09 KiCad Project",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_Plus_Base_with_botton_pad_lead_out_V1.0.zip"
+        },
+        {
+            "title": "XIAO Plus Base \uff08without bottom pad lead out\uff09 KiCad Project",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_Plus_Base_without_botton_pad_lead_out_V1.0.zip"
+        },
+        {
+            "title": "XIAO Series KiCad Footprints",
+            "url": "https://files.seeedstudio.com/wiki/XIAO-KiCad-Library/New_XIAO_Series_Footprints.zip"
+        },
+        {
+            "title": "XIAO Series KiCad SCH Symbols",
+            "url": "https://files.seeedstudio.com/wiki/XIAO-KiCad-Library/XIAO_Series_SCH_Symbols.zip"
+        },
+        {
+            "title": "XIAO ESP32-S3 Plus Dimension in DXF (Top)",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/TOP.dxf"
+        },
+        {
+            "title": "XIAO ESP32-S3 Plus Dimension in DXF (Bottom)",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/BOTTOM.dxf"
+        },
+        {
+            "title": "OV3660 Camera Module Specification",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/new-res/OV3660_Camera_Module_Specification.pdf"
+        },
+        {
+            "title": "OV3660 CMOS Sensor Datasheet",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/OV3660_datasheet.pdf"
+        },
+        {
+            "title": "OV5640 Camera Module Specification",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/new-res/OV5640_Camera_Module_Specification.pdf"
+        },
+        {
+            "title": "New OV5640 Camera Module Specification",
+            "url": "https://files.seeedstudio.com/wiki/xiaos3-sscma/OV5640-8225N-120.pdf"
+        },
+        {
+            "title": "OV5640 CMOS Sensor Datasheet",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/OV5640_datasheet.pdf"
+        },
+        {
+            "title": "OV2640 CMOS Sensor Datasheet",
+            "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/OV2640_datasheet.pdf"
+        },
+        {
+            "title": "",
+            "url": "https://github.com/Seeed-Studio/wiki-documents/discussions/69"
+        },
+        {
+            "title": "Edit this page",
+            "url": "https://github.com/Seeed-Studio/wiki-documents/blob/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md"
+        }
+    ]
+}

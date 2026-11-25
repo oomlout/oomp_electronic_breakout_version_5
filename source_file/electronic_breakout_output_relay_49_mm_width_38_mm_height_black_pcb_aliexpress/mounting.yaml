@@ -1,0 +1,85 @@
+schema_version: 1
+part_id: electronic_breakout_output_relay_49_mm_width_38_mm_height_black_pcb_aliexpress
+status: needs_review
+board_revision: null
+identity_evidence: null
+board_size: null
+mounting_holes: null
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: null
+geometry_source_id: null
+derivation: 'No mounting geometry extracted: exact carrier revision and a revision-specific
+  CAD/dimensioned drawing could not be established. An official SunFounder TS0010
+  candidate product has different published dimensions (50.5 x 38.5 mm) and is not
+  linked to the AliExpress listing, so it cannot resolve this carrier identity.'
+review:
+  identity: false
+  outline: false
+  hole_selection: false
+  coordinate_frame: false
+  conflicts_resolved: false
+reviewed_by: null
+sources:
+- id: listing
+  local_file: mounting_evidence/aliexpress_listing.html
+  url: https://www.aliexpress.com/item/1005002867727977.html
+  kind: manufacturer_product
+  locator: AliExpress listing item identity/title only; page scripts/assets checked
+    for revision-specific CAD/dimensioned mechanical drawing, none found. Acquired
+    2026-11-06; HTTP 200 HTML.
+  registered_at: '2026-11-06T15:07:35+00:00'
+  bytes: 77839
+  sha256: b3293213840c671870a88ed358f85d29db5809cf1bf2cb03d779db1d2b9fa80d
+- id: sunfounder_candidate
+  local_file: mounting_evidence/sunfounder_ts0010_product.html
+  url: https://www.sunfounder.com/collections/relay/products/2-channel-dc-5v-relay-module-low-level-trigger
+  kind: manufacturer_product
+  locator: Official SunFounder SKU TS0010 product page; specifies 50.5 x 38.5 x 18.5
+    mm. Candidate resembles generic 2-channel relay module but no linkage to AliExpress
+    item 1005002867727977 or its selectable carrier/revision; differs from catalogue
+    nominal 49 x 38 mm, so not used as identity or geometry evidence. Acquired 2026-11-07;
+    HTTP 200 HTML.
+  registered_at: '2026-11-07T15:02:02+00:00'
+  bytes: 339879
+  sha256: f363d2ddc27b0a0efd4c53f3a3002b4e04738d00d726dc44af82f45bf774e10d
+attempts:
+- source: AliExpress item 1005002867727977, fetched 2026-11-06
+  result: HTTP 200 returned generic browser-shell HTML with no product details, carrier
+    revision, dimensions, or CAD. Archived as mounting_evidence/aliexpress_listing.html;
+    SHA-256 registered under source listing.
+- source: Exact item-number search for 1005002867727977 with CAD/Gerber/EAGLE/PCB
+    terms
+  result: No official manufacturer CAD or dimensioned drawing found; results identify
+    a generic multi-variant relay listing.
+- source: Search for 49 x 38 mm two-channel optocoupler relay module and public design
+    repositories
+  result: Only unrelated/general relay designs and unlinked manuals found. No evidence
+    tying their CAD/dimensions to this AliExpress item or its carrier revision.
+- source: Official SunFounder TS0010 product page and its listed TS0010D datasheet,
+    checked 2026-11-07
+  result: The official TS0010 page describes a 50.5 x 38.5 mm 2-channel relay module.
+    A TS0010D datasheet search result reports four 3.1 mm holes, but neither source
+    links that carrier to AliExpress item 1005002867727977. The published outline also
+    conflicts with the catalogue's unsupported 49 x 38 mm nominal size. This is a
+    plausible lookalike only; it does not establish exact identity or hole coordinates.
+conflicts: []
+notes:
+- Catalogue working.yaml contains prior asserted dimensions 49 x 38 mm and four M3
+  positions at (+/-22, +/-16.5) mm; these claims were not supported by exact carrier
+  evidence and were not used.
+- Similar generic relay module products may differ by channel count, relay/terminal
+  layout, voltage variant, and PCB revision. Exact 2-channel carrier cannot be determined
+  from available official evidence.
+- >-
+  The official SunFounder TS0010 candidate is not an identity match: its 50.5 x 38.5 mm
+  dimensions differ from the catalogue label, and no cross-reference to the AliExpress
+  item or its variant was found. The TS0010D datasheet lacks coordinate dimensions even
+  for its stated 3.1 mm mounting holes.
+- No holes cannot be concluded from the available evidence. No geometry is promoted.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:02:02+00:00'

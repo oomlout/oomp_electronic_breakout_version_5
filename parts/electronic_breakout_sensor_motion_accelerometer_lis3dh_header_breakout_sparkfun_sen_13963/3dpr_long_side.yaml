@@ -1,0 +1,850 @@
+bip_39_2_word_array:
+- grape
+- broom
+bip_39_2_word_no_space: grapebroom
+bip_39_2_word_space: grape broom
+bip_39_2_word_underscore: grape_broom
+bip_39_3_word_array:
+- grape
+- broom
+- initial
+bip_39_3_word_no_space: grapebroominitial
+bip_39_3_word_space: grape broom initial
+bip_39_3_word_underscore: grape_broom_initial
+bip_39_full_array:
+- grape
+- broom
+- initial
+- next
+- profit
+- assault
+- design
+- embody
+- exhaust
+- rule
+- guitar
+- nice
+bip_39_full_no_space: grapebroominitialnextprofitassaultdesignembodyexhaustruleguitarnice
+bip_39_full_space: grape broom initial next profit assault design embody exhaust rule
+  guitar nice
+bip_39_full_underscore: grape_broom_initial_next_profit_assault_design_embody_exhaust_rule_guitar_nice
+board_variant: header_breakout
+breakout_description: header_breakout
+breakout_pcb_height: 12.7
+breakout_pcb_width: 22.86
+catalogue: i2c_breakouts
+catalogue_status: product_page_reference
+data_gaps:
+- Physical connector/pad map and coordinates not imported.
+- Located mounting holes and complete assembly/connector clearances not imported.
+- Pull-up values/rails and full electrical limits require schematic review.
+- Carrier PCB outline dimensions not verified.
+- Default I2C address not established in this import.
+definition_authority: working_oomp_populate_i2c.py
+description: A simple non-Qwiic I2C/SPI header carrier. The product specifies a 1.7-3.6
+  V supply and describes it as a 3.3 V board. Keep separate from SparkFun's Qwiic,
+  Micro and pre-headered carrier variants. Vendor SKU is SEN-13963.
+dimensions_mm:
+  height: null
+  scope: pcb_outline_not_established
+  source_id: null
+  status: unverified
+  width: null
+directory: parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+geometry_ready: false
+i2c:
+  address_evidence_status: unverified
+  address_selection: unverified
+  clock_stretching: unverified
+  default_address_7bit: null
+  documented_addresses_7bit: []
+  maximum_clock_hz: null
+  source_id: product
+id: electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+id_no_class: electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+id_no_size: electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+id_no_type: electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+id_oobb: electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+interface_scope: documented_board_interfaces_only
+interfaces:
+- i2c
+- spi
+item_kind: breakout
+kwargs:
+  breakout_pcb_height: 12.7
+  breakout_pcb_width: 22.86
+  modes:
+  - 3dpr
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -8.89
+    y_mm: 0.0
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 8.89
+    y_mm: 0.0
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -8.89
+    - 0.0
+  - - 8.89
+    - 0.0
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  oomp_description_extra: ''
+  oomp_description_main: mounting_plate_default_
+  overwrite: true
+  part_ids:
+  - electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+  scad_output: 3dpr_long_side
+  type: default_mounting_plate_default
+link_github: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+link_main: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+link_redirect: https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+manufacturer: sparkfun
+manufacturer_part_number: SEN-13963
+md5: 65c399cfcaaabc1b0ef2434f77a59f4a
+md5_10: 65c399cfca
+md5_10_upper: 65C399CFCA
+md5_5: 65c39
+md5_5_upper: 65C39
+md5_6: 65c399
+md5_6_alpha: 3yxzt
+md5_6_alpha_upper: 3YXZT
+md5_6_upper: 65C399
+mounting_coordinate_system:
+  origin: pcb_bounding_box_centre
+  units: mm
+  view: top
+  x_positive: right
+  y_positive: up
+mounting_geometry_ready: true
+mounting_hole_details:
+- diameter_mm: 3.302
+  id: JP3:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: -8.89
+  y_mm: 0.0
+- diameter_mm: 3.302
+  id: JP4:hole:1
+  package: STAND-OFF
+  plated: false
+  source_id: mounting_cad
+  x_mm: 8.89
+  y_mm: 0.0
+mounting_hole_radius_name: m3
+mounting_hole_radius_names:
+- m3
+- m3
+mounting_hole_status: verified
+mounting_holes:
+- - -8.89
+  - 0.0
+- - 8.89
+  - 0.0
+mounting_lift: 3
+mounting_research:
+  board_revision: SparkFun SEN-13963 hardware v1.0 (repository tag V_H1.0_L1.0.0);
+    board file bytes match the tagged file (SHA-256 dbb8693c545a98e21b53b401b2a105d8f26fa58efb095179618de399185d22a5).
+  board_size:
+  - 22.86
+  - 12.7
+  coordinate_system:
+    origin: pcb_bounding_box_centre
+    units: mm
+    view: top
+    x_positive: right
+    y_positive: up
+  derivation: 'EAGLE layer-20 outline has four straight edges from (0,0) to (22.86,12.7)
+    mm, so board_size=[22.86,12.7]. Native board centre is (11.43,6.35) mm; centred
+    top-view coordinates are x_native-11.43, y_native-6.35, with no rotation (quarter_turn=0).
+    Selected JP3:hole:1 and JP4:hole:1 from package STAND-OFF are explicit non-plated
+    drills, diameter 3.302 mm, at native x=2.54 and 20.32 mm and y=6.35 mm, yielding
+    (-8.89,0) and (8.89,0) mm. The full drill inspection found 14 candidates: these
+    two named stand-off holes and twelve 1.016 mm plated J1/J2 header pads, which
+    are electrical contacts and excluded.'
+  fit_status: generic_holder_not_physical_fit_tested
+  identity_evidence: The official SEN-13963 product page identifies the SKU and links
+    SparkFun GitHub hardware files. The linked SparkFun repository README maps its
+    LIS3DH Breakout to SEN-13963 and names hardware tag V_H1.0_L1.0.0. The registered
+    EAGLE file SparkFun_LIS3DH-Breakout.brd is byte-identical to that tagged board
+    file.
+  mounting_holes:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: -8.89
+    y_mm: 0.0
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: cad
+    x_mm: 8.89
+    y_mm: 0.0
+  record_sha256: f5cf9a944fb8c31b9837666ad54639b696135292650e2cbf71c18c70391479fa
+  research_file: source_file/electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963/mounting.yaml
+  reviewed_by: gpt-6-luna
+  sources:
+  - bytes: 68374
+    id: cad
+    kind: manufacturer_cad
+    local_file: mounting_evidence/SparkFun_LIS3DH-Breakout.brd
+    locator: SparkFun EAGLE board file for LIS3DH breakout; version history identifies
+      V_H1.0_L1.0.0; inspect layer 20 outline and all mounting candidates
+    registered_at: '2026-11-07T12:00:25+00:00'
+    sha256: dbb8693c545a98e21b53b401b2a105d8f26fa58efb095179618de399185d22a5
+    url: https://raw.githubusercontent.com/sparkfun/LIS3DH_Breakout/a57ba3b3d98e85724a43635a34a181869db26e82/Hardware/SparkFun_LIS3DH-Breakout.brd
+  - bytes: 1914
+    id: repo_readme
+    kind: manufacturer_repository
+    local_file: mounting_evidence/README.md
+    locator: SparkFun product repository README maps repository to Triple Axis Accelerometer
+      Breakout - LIS3DH (SEN-13963), hardware repository
+    registered_at: '2026-11-07T12:00:25+00:00'
+    sha256: 417b7da7838a1104b74ae3d0e956d756fd00a9292ac922ef15460496dc4a1095
+    url: https://raw.githubusercontent.com/sparkfun/LIS3DH_Breakout/a57ba3b3d98e85724a43635a34a181869db26e82/README.md
+  - bytes: 567960
+    id: product
+    kind: manufacturer_product
+    local_file: website.html
+    locator: Official product page identifies SKU SEN-13963 and links Eagle Files
+      and SparkFun GitHub hardware repository
+    registered_at: '2026-11-07T12:00:59+00:00'
+    sha256: 70d59dc2ce88ae8133de5122b2a049da7b9a7400efe0360518c3b8e1fe0b4323
+    url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-lis3dh.html
+  status: verified
+name: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Header Breakout Sparkfun
+  Sen 13963
+name_no_class: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Header Breakout
+  Sparkfun Sen 13963
+name_no_size: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Header Breakout
+  Sparkfun Sen 13963
+name_no_type: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Header Breakout
+  Sparkfun Sen 13963
+name_proper: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Header Breakout
+  Sparkfun Sen 13963
+name_readable: SparkFun LIS3DH, traditional carrier
+name_space: electronic breakout sensor motion accelerometer lis3dh header breakout
+  sparkfun sen 13963
+name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ACCELEROMETER LIS3DH HEADER BREAKOUT
+  SPARKFUN SEN 13963
+notes:
+- Manufacturer lists 1.7-3.6 V supply and describes the carrier as a 3.3 V device.
+oobb_details:
+- breakout_pcb_height: 12.7
+  breakout_pcb_width: 22.86
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -8.89
+    y_mm: 0.0
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 8.89
+    y_mm: 0.0
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -8.89
+    - 0.0
+  - - 8.89
+    - 0.0
+  mounting_layout: full_wrap
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+- breakout_pcb_height: 12.7
+  breakout_pcb_width: 22.86
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -8.89
+    y_mm: 0.0
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 8.89
+    y_mm: 0.0
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -8.89
+    - 0.0
+  - - 8.89
+    - 0.0
+  mounting_layout: short_sides
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_short_sides
+- breakout_pcb_height: 12.7
+  breakout_pcb_width: 22.86
+  mounting_hole_details:
+  - diameter_mm: 3.302
+    id: JP3:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: -8.89
+    y_mm: 0.0
+  - diameter_mm: 3.302
+    id: JP4:hole:1
+    package: STAND-OFF
+    plated: false
+    source_id: mounting_cad
+    x_mm: 8.89
+    y_mm: 0.0
+  mounting_hole_radius_name: m3
+  mounting_hole_radius_names:
+  - m3
+  - m3
+  mounting_holes:
+  - - -8.89
+    - 0.0
+  - - 8.89
+    - 0.0
+  mounting_layout: long_side
+  mounting_lift: 3
+  oobb_name: mounting_plate_default
+  scad_output: 3dpr_long_side
+oobb_name: mounting_plate_default
+oomlout_ai_roboclick_1:
+  actions:
+  - command: text_jinja_template
+    convert_to_pdf: false
+    convert_to_png: false
+    dict_data:
+      board_variant: header_breakout
+      breakout_description: header_breakout
+      breakout_pcb_height: 12.7
+      breakout_pcb_width: 22.86
+      catalogue: i2c_breakouts
+      catalogue_status: product_page_reference
+      data_gaps:
+      - Physical connector/pad map and coordinates not imported.
+      - Located mounting holes and complete assembly/connector clearances not imported.
+      - Pull-up values/rails and full electrical limits require schematic review.
+      - Carrier PCB outline dimensions not verified.
+      - Default I2C address not established in this import.
+      definition_authority: working_oomp_populate_i2c.py
+      description: A simple non-Qwiic I2C/SPI header carrier. The product specifies
+        a 1.7-3.6 V supply and describes it as a 3.3 V board. Keep separate from SparkFun's
+        Qwiic, Micro and pre-headered carrier variants. Vendor SKU is SEN-13963.
+      dimensions_mm:
+        height: null
+        scope: pcb_outline_not_established
+        source_id: null
+        status: unverified
+        width: null
+      directory: parts\electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+      geometry_ready: false
+      i2c:
+        address_evidence_status: unverified
+        address_selection: unverified
+        clock_stretching: unverified
+        default_address_7bit: null
+        documented_addresses_7bit: []
+        maximum_clock_hz: null
+        source_id: product
+      interface_scope: documented_board_interfaces_only
+      interfaces:
+      - i2c
+      - spi
+      item_kind: breakout
+      manufacturer: sparkfun
+      manufacturer_part_number: SEN-13963
+      mounting_coordinate_system:
+        origin: pcb_bounding_box_centre
+        units: mm
+        view: top
+        x_positive: right
+        y_positive: up
+      mounting_geometry_ready: true
+      mounting_hole_details:
+      - diameter_mm: 3.302
+        id: JP3:hole:1
+        package: STAND-OFF
+        plated: false
+        source_id: mounting_cad
+        x_mm: -8.89
+        y_mm: 0.0
+      - diameter_mm: 3.302
+        id: JP4:hole:1
+        package: STAND-OFF
+        plated: false
+        source_id: mounting_cad
+        x_mm: 8.89
+        y_mm: 0.0
+      mounting_hole_radius_name: m3
+      mounting_hole_radius_names:
+      - m3
+      - m3
+      mounting_hole_status: verified
+      mounting_holes:
+      - - -8.89
+        - 0.0
+      - - 8.89
+        - 0.0
+      mounting_lift: 3
+      mounting_research:
+        board_revision: SparkFun SEN-13963 hardware v1.0 (repository tag V_H1.0_L1.0.0);
+          board file bytes match the tagged file (SHA-256 dbb8693c545a98e21b53b401b2a105d8f26fa58efb095179618de399185d22a5).
+        board_size:
+        - 22.86
+        - 12.7
+        coordinate_system:
+          origin: pcb_bounding_box_centre
+          units: mm
+          view: top
+          x_positive: right
+          y_positive: up
+        derivation: 'EAGLE layer-20 outline has four straight edges from (0,0) to
+          (22.86,12.7) mm, so board_size=[22.86,12.7]. Native board centre is (11.43,6.35)
+          mm; centred top-view coordinates are x_native-11.43, y_native-6.35, with
+          no rotation (quarter_turn=0). Selected JP3:hole:1 and JP4:hole:1 from package
+          STAND-OFF are explicit non-plated drills, diameter 3.302 mm, at native x=2.54
+          and 20.32 mm and y=6.35 mm, yielding (-8.89,0) and (8.89,0) mm. The full
+          drill inspection found 14 candidates: these two named stand-off holes and
+          twelve 1.016 mm plated J1/J2 header pads, which are electrical contacts
+          and excluded.'
+        fit_status: generic_holder_not_physical_fit_tested
+        identity_evidence: The official SEN-13963 product page identifies the SKU
+          and links SparkFun GitHub hardware files. The linked SparkFun repository
+          README maps its LIS3DH Breakout to SEN-13963 and names hardware tag V_H1.0_L1.0.0.
+          The registered EAGLE file SparkFun_LIS3DH-Breakout.brd is byte-identical
+          to that tagged board file.
+        mounting_holes:
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: cad
+          x_mm: -8.89
+          y_mm: 0.0
+        - diameter_mm: 3.302
+          id: JP4:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: cad
+          x_mm: 8.89
+          y_mm: 0.0
+        record_sha256: f5cf9a944fb8c31b9837666ad54639b696135292650e2cbf71c18c70391479fa
+        research_file: source_file/electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963/mounting.yaml
+        reviewed_by: gpt-6-luna
+        sources:
+        - bytes: 68374
+          id: cad
+          kind: manufacturer_cad
+          local_file: mounting_evidence/SparkFun_LIS3DH-Breakout.brd
+          locator: SparkFun EAGLE board file for LIS3DH breakout; version history
+            identifies V_H1.0_L1.0.0; inspect layer 20 outline and all mounting candidates
+          registered_at: '2026-11-07T12:00:25+00:00'
+          sha256: dbb8693c545a98e21b53b401b2a105d8f26fa58efb095179618de399185d22a5
+          url: https://raw.githubusercontent.com/sparkfun/LIS3DH_Breakout/a57ba3b3d98e85724a43635a34a181869db26e82/Hardware/SparkFun_LIS3DH-Breakout.brd
+        - bytes: 1914
+          id: repo_readme
+          kind: manufacturer_repository
+          local_file: mounting_evidence/README.md
+          locator: SparkFun product repository README maps repository to Triple Axis
+            Accelerometer Breakout - LIS3DH (SEN-13963), hardware repository
+          registered_at: '2026-11-07T12:00:25+00:00'
+          sha256: 417b7da7838a1104b74ae3d0e956d756fd00a9292ac922ef15460496dc4a1095
+          url: https://raw.githubusercontent.com/sparkfun/LIS3DH_Breakout/a57ba3b3d98e85724a43635a34a181869db26e82/README.md
+        - bytes: 567960
+          id: product
+          kind: manufacturer_product
+          local_file: website.html
+          locator: Official product page identifies SKU SEN-13963 and links Eagle
+            Files and SparkFun GitHub hardware repository
+          registered_at: '2026-11-07T12:00:59+00:00'
+          sha256: 70d59dc2ce88ae8133de5122b2a049da7b9a7400efe0360518c3b8e1fe0b4323
+          url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-lis3dh.html
+        status: verified
+      name: electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+      name_proper: Electronic Breakout Sensor Motion Accelerometer Lis3Dh Header Breakout
+        Sparkfun Sen 13963
+      name_readable: SparkFun LIS3DH, traditional carrier
+      name_space: electronic breakout sensor motion accelerometer lis3dh header breakout
+        sparkfun sen 13963
+      name_upper: ELECTRONIC BREAKOUT SENSOR MOTION ACCELEROMETER LIS3DH HEADER BREAKOUT
+        SPARKFUN SEN 13963
+      notes:
+      - Manufacturer lists 1.7-3.6 V supply and describes the carrier as a 3.3 V device.
+      oobb_details:
+      - breakout_pcb_height: 12.7
+        breakout_pcb_width: 22.86
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -8.89
+          y_mm: 0.0
+        - diameter_mm: 3.302
+          id: JP4:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 8.89
+          y_mm: 0.0
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        mounting_holes:
+        - - -8.89
+          - 0.0
+        - - 8.89
+          - 0.0
+        mounting_layout: full_wrap
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+      - breakout_pcb_height: 12.7
+        breakout_pcb_width: 22.86
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -8.89
+          y_mm: 0.0
+        - diameter_mm: 3.302
+          id: JP4:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 8.89
+          y_mm: 0.0
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        mounting_holes:
+        - - -8.89
+          - 0.0
+        - - 8.89
+          - 0.0
+        mounting_layout: short_sides
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_short_sides
+      - breakout_pcb_height: 12.7
+        breakout_pcb_width: 22.86
+        mounting_hole_details:
+        - diameter_mm: 3.302
+          id: JP3:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: -8.89
+          y_mm: 0.0
+        - diameter_mm: 3.302
+          id: JP4:hole:1
+          package: STAND-OFF
+          plated: false
+          source_id: mounting_cad
+          x_mm: 8.89
+          y_mm: 0.0
+        mounting_hole_radius_name: m3
+        mounting_hole_radius_names:
+        - m3
+        - m3
+        mounting_holes:
+        - - -8.89
+          - 0.0
+        - - 8.89
+          - 0.0
+        mounting_layout: long_side
+        mounting_lift: 3
+        oobb_name: mounting_plate_default
+        scad_output: 3dpr_long_side
+      part_number: sen_13963
+      part_number_sparkfun: SEN-13963
+      pinout_status: unverified
+      pins: {}
+      research_date: '2026-10-23'
+      schema_version: 1
+      sources:
+      - id: product
+        kind: manufacturer_product_page
+        retrieved: '2026-10-23'
+        scope: identity, stated interfaces/features and recorded nominal dimensions
+        url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-lis3dh.html
+      - bytes: 68374
+        id: mounting_cad
+        kind: manufacturer_cad
+        local_file: mounting_evidence/SparkFun_LIS3DH-Breakout.brd
+        locator: SparkFun EAGLE board file for LIS3DH breakout; version history identifies
+          V_H1.0_L1.0.0; inspect layer 20 outline and all mounting candidates
+        registered_at: '2026-11-07T12:00:25+00:00'
+        sha256: dbb8693c545a98e21b53b401b2a105d8f26fa58efb095179618de399185d22a5
+        url: https://raw.githubusercontent.com/sparkfun/LIS3DH_Breakout/a57ba3b3d98e85724a43635a34a181869db26e82/Hardware/SparkFun_LIS3DH-Breakout.brd
+      - bytes: 1914
+        id: mounting_repo_readme
+        kind: manufacturer_repository
+        local_file: mounting_evidence/README.md
+        locator: SparkFun product repository README maps repository to Triple Axis
+          Accelerometer Breakout - LIS3DH (SEN-13963), hardware repository
+        registered_at: '2026-11-07T12:00:25+00:00'
+        sha256: 417b7da7838a1104b74ae3d0e956d756fd00a9292ac922ef15460496dc4a1095
+        url: https://raw.githubusercontent.com/sparkfun/LIS3DH_Breakout/a57ba3b3d98e85724a43635a34a181869db26e82/README.md
+      - bytes: 567960
+        id: mounting_product
+        kind: manufacturer_product
+        local_file: website.html
+        locator: Official product page identifies SKU SEN-13963 and links Eagle Files
+          and SparkFun GitHub hardware repository
+        registered_at: '2026-11-07T12:00:59+00:00'
+        sha256: 70d59dc2ce88ae8133de5122b2a049da7b9a7400efe0360518c3b8e1fe0b4323
+        url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-lis3dh.html
+      taxonomy_1: electronic
+      taxonomy_10: ''
+      taxonomy_11: ''
+      taxonomy_12: ''
+      taxonomy_13: ''
+      taxonomy_14: sparkfun
+      taxonomy_15: sen_13963
+      taxonomy_2: breakout
+      taxonomy_3: sensor
+      taxonomy_4: motion
+      taxonomy_5: accelerometer
+      taxonomy_6: lis3dh
+      taxonomy_7: header_breakout
+      taxonomy_8: ''
+      taxonomy_9: ''
+      taxonomy_schema: breakout_function_v1
+      type_1: sensor
+      type_2: motion
+      type_3: accelerometer
+      type_4: lis3dh
+      url_chat: ''
+      webpage: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-lis3dh.html
+      webpage_sparkfun: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-lis3dh.html
+    dict_data_files: {}
+    dict_data_files_exists: {}
+    file_output: label_oomp.svg
+    file_template: C:\gh\oomp_electronic_breakout_version_5\source_file\template_jinja\template_jinja_label_oomlout_76_2_mm_50_8_mm\working.svg.j2
+    search_and_replace: []
+  file_test: label_oomp.pdf
+  retries_until_complete: 0
+oomp_key: oomp_electronic_breakout_sensor_motion_accelerometer_lis3dh_header_breakout_sparkfun_sen_13963
+part_number: sen_13963
+part_number_sparkfun: SEN-13963
+pinout_status: unverified
+pins: {}
+project_name: C:\gh\oomp_electronic_breakout_version_5
+research_date: '2026-10-23'
+schema_version: 1
+sources:
+- id: product
+  kind: manufacturer_product_page
+  retrieved: '2026-10-23'
+  scope: identity, stated interfaces/features and recorded nominal dimensions
+  url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-lis3dh.html
+- bytes: 68374
+  id: mounting_cad
+  kind: manufacturer_cad
+  local_file: mounting_evidence/SparkFun_LIS3DH-Breakout.brd
+  locator: SparkFun EAGLE board file for LIS3DH breakout; version history identifies
+    V_H1.0_L1.0.0; inspect layer 20 outline and all mounting candidates
+  registered_at: '2026-11-07T12:00:25+00:00'
+  sha256: dbb8693c545a98e21b53b401b2a105d8f26fa58efb095179618de399185d22a5
+  url: https://raw.githubusercontent.com/sparkfun/LIS3DH_Breakout/a57ba3b3d98e85724a43635a34a181869db26e82/Hardware/SparkFun_LIS3DH-Breakout.brd
+- bytes: 1914
+  id: mounting_repo_readme
+  kind: manufacturer_repository
+  local_file: mounting_evidence/README.md
+  locator: SparkFun product repository README maps repository to Triple Axis Accelerometer
+    Breakout - LIS3DH (SEN-13963), hardware repository
+  registered_at: '2026-11-07T12:00:25+00:00'
+  sha256: 417b7da7838a1104b74ae3d0e956d756fd00a9292ac922ef15460496dc4a1095
+  url: https://raw.githubusercontent.com/sparkfun/LIS3DH_Breakout/a57ba3b3d98e85724a43635a34a181869db26e82/README.md
+- bytes: 567960
+  id: mounting_product
+  kind: manufacturer_product
+  local_file: website.html
+  locator: Official product page identifies SKU SEN-13963 and links Eagle Files and
+    SparkFun GitHub hardware repository
+  registered_at: '2026-11-07T12:00:59+00:00'
+  sha256: 70d59dc2ce88ae8133de5122b2a049da7b9a7400efe0360518c3b8e1fe0b4323
+  url: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-lis3dh.html
+taxonomy_1: electronic
+taxonomy_10: ''
+taxonomy_11: ''
+taxonomy_12: ''
+taxonomy_13: ''
+taxonomy_14: sparkfun
+taxonomy_14_capital: Sparkfun
+taxonomy_14_first_letter: s
+taxonomy_14_first_letter_upper: S
+taxonomy_14_length_1: s
+taxonomy_14_length_2: sp
+taxonomy_14_length_3: spa
+taxonomy_14_length_4: spar
+taxonomy_14_length_5: spark
+taxonomy_14_upper: SPARKFUN
+taxonomy_14_upper_length_1: S
+taxonomy_14_upper_length_2: SP
+taxonomy_14_upper_length_3: SPA
+taxonomy_14_upper_length_4: SPAR
+taxonomy_14_upper_length_5: SPARK
+taxonomy_15: sen_13963
+taxonomy_15_capital: Sen 13963
+taxonomy_15_first_letter: s
+taxonomy_15_first_letter_upper: S
+taxonomy_15_length_1: s
+taxonomy_15_length_2: se
+taxonomy_15_length_3: sen
+taxonomy_15_length_4: sen_
+taxonomy_15_length_5: sen_1
+taxonomy_15_upper: SEN_13963
+taxonomy_15_upper_length_1: S
+taxonomy_15_upper_length_2: SE
+taxonomy_15_upper_length_3: SEN
+taxonomy_15_upper_length_4: SEN_
+taxonomy_15_upper_length_5: SEN_1
+taxonomy_1_capital: Electronic
+taxonomy_1_first_letter: e
+taxonomy_1_first_letter_upper: E
+taxonomy_1_length_1: e
+taxonomy_1_length_2: el
+taxonomy_1_length_3: ele
+taxonomy_1_length_4: elec
+taxonomy_1_length_5: elect
+taxonomy_1_upper: ELECTRONIC
+taxonomy_1_upper_length_1: E
+taxonomy_1_upper_length_2: EL
+taxonomy_1_upper_length_3: ELE
+taxonomy_1_upper_length_4: ELEC
+taxonomy_1_upper_length_5: ELECT
+taxonomy_2: breakout
+taxonomy_2_capital: Breakout
+taxonomy_2_first_letter: b
+taxonomy_2_first_letter_upper: B
+taxonomy_2_length_1: b
+taxonomy_2_length_2: br
+taxonomy_2_length_3: bre
+taxonomy_2_length_4: brea
+taxonomy_2_length_5: break
+taxonomy_2_upper: BREAKOUT
+taxonomy_2_upper_length_1: B
+taxonomy_2_upper_length_2: BR
+taxonomy_2_upper_length_3: BRE
+taxonomy_2_upper_length_4: BREA
+taxonomy_2_upper_length_5: BREAK
+taxonomy_3: sensor
+taxonomy_3_capital: Sensor
+taxonomy_3_first_letter: s
+taxonomy_3_first_letter_upper: S
+taxonomy_3_length_1: s
+taxonomy_3_length_2: se
+taxonomy_3_length_3: sen
+taxonomy_3_length_4: sens
+taxonomy_3_length_5: senso
+taxonomy_3_upper: SENSOR
+taxonomy_3_upper_length_1: S
+taxonomy_3_upper_length_2: SE
+taxonomy_3_upper_length_3: SEN
+taxonomy_3_upper_length_4: SENS
+taxonomy_3_upper_length_5: SENSO
+taxonomy_4: motion
+taxonomy_4_capital: Motion
+taxonomy_4_first_letter: m
+taxonomy_4_first_letter_upper: M
+taxonomy_4_length_1: m
+taxonomy_4_length_2: mo
+taxonomy_4_length_3: mot
+taxonomy_4_length_4: moti
+taxonomy_4_length_5: motio
+taxonomy_4_upper: MOTION
+taxonomy_4_upper_length_1: M
+taxonomy_4_upper_length_2: MO
+taxonomy_4_upper_length_3: MOT
+taxonomy_4_upper_length_4: MOTI
+taxonomy_4_upper_length_5: MOTIO
+taxonomy_5: accelerometer
+taxonomy_5_capital: Accelerometer
+taxonomy_5_first_letter: a
+taxonomy_5_first_letter_upper: A
+taxonomy_5_length_1: a
+taxonomy_5_length_2: ac
+taxonomy_5_length_3: acc
+taxonomy_5_length_4: acce
+taxonomy_5_length_5: accel
+taxonomy_5_upper: ACCELEROMETER
+taxonomy_5_upper_length_1: A
+taxonomy_5_upper_length_2: AC
+taxonomy_5_upper_length_3: ACC
+taxonomy_5_upper_length_4: ACCE
+taxonomy_5_upper_length_5: ACCEL
+taxonomy_6: lis3dh
+taxonomy_6_capital: Lis3Dh
+taxonomy_6_first_letter: l
+taxonomy_6_first_letter_upper: L
+taxonomy_6_length_1: l
+taxonomy_6_length_2: li
+taxonomy_6_length_3: lis
+taxonomy_6_length_4: lis3
+taxonomy_6_length_5: lis3d
+taxonomy_6_upper: LIS3DH
+taxonomy_6_upper_length_1: L
+taxonomy_6_upper_length_2: LI
+taxonomy_6_upper_length_3: LIS
+taxonomy_6_upper_length_4: LIS3
+taxonomy_6_upper_length_5: LIS3D
+taxonomy_7: header_breakout
+taxonomy_7_capital: Header Breakout
+taxonomy_7_first_letter: h
+taxonomy_7_first_letter_upper: H
+taxonomy_7_length_1: h
+taxonomy_7_length_2: he
+taxonomy_7_length_3: hea
+taxonomy_7_length_4: head
+taxonomy_7_length_5: heade
+taxonomy_7_upper: HEADER_BREAKOUT
+taxonomy_7_upper_length_1: H
+taxonomy_7_upper_length_2: HE
+taxonomy_7_upper_length_3: HEA
+taxonomy_7_upper_length_4: HEAD
+taxonomy_7_upper_length_5: HEADE
+taxonomy_8: ''
+taxonomy_9: ''
+taxonomy_schema: breakout_function_v1
+type_1: sensor
+type_2: motion
+type_3: accelerometer
+type_4: lis3dh
+url_chat: ''
+webpage: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-lis3dh.html
+webpage_sparkfun: https://www.sparkfun.com/sparkfun-triple-axis-accelerometer-breakout-lis3dh.html

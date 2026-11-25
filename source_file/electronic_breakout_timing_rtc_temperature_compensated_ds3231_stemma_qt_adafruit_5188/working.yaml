@@ -1,0 +1,361 @@
+research_schema_version: 1
+part_id: electronic_breakout_timing_rtc_temperature_compensated_ds3231_stemma_qt_adafruit_5188
+name_readable: Adafruit DS3231 RTC, STEMMA QT
+manufacturer: adafruit
+part_number: '5188'
+manufacturer_part_number: '5188'
+catalogue_definition: working_oomp_populate_i2c.py
+taxonomy:
+  taxonomy_1: electronic
+  taxonomy_2: breakout
+  taxonomy_3: timing
+  taxonomy_4: rtc
+  taxonomy_5: temperature_compensated
+  taxonomy_6: ds3231
+  taxonomy_7: stemma_qt
+  taxonomy_8: ''
+  taxonomy_9: ''
+  taxonomy_10: ''
+  taxonomy_11: ''
+  taxonomy_12: ''
+  taxonomy_13: ''
+  taxonomy_14: adafruit
+  taxonomy_15: '5188'
+default_website:
+  url: https://www.adafruit.com/product/5188
+  source_id: product_page
+  local_file: website.html
+research:
+  status: complete_with_gaps
+  started_at: '2026-10-23T20:21:57+00:00'
+  updated_at: '2026-10-23T20:22:35+00:00'
+  reviewed_by: null
+  attempts: []
+board_revision:
+  name: Adafruit DS3231 Precision RTC STEMMA QT breakout product 5188
+  status: identified_by_product_page
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: Current QT carrier; listing says silkscreen update Jan 9, 2023, connector
+    color black or tan, same function. Distinct from earlier product 3013.
+description: Accurate timekeeping with battery backup; use the current QT carrier
+  rather than silently substituting the older 3013 board.
+interfaces:
+- i2c
+dimensions_mm:
+  width: null
+  height: null
+  pcb_thickness: null
+  assembled_height: null
+  scope: carrier_pcb_outline
+  status: unknown
+  source_ids:
+  - product_page
+  notes: Product dimensions 25.4 x 17.8 x 7.8 mm have no scope/orientation and include
+    uncertain coin-cell/holder envelope.
+coordinate_system:
+  units: mm
+  origin: null
+  view: null
+  orientation: null
+  status: unverified
+mounting_holes: []
+mounting_hole_status: unknown_not_documented
+connectors:
+  header_group:
+    kind: header
+    description: Eight-pin header piece pictured/supplied; guide identifies power/I2C/BAT/32K/SQW/RST
+      signals but physical count mapping needs CAD.
+    contacts: []
+    source_ids:
+    - product_page
+    - guide_pinouts
+  QT1:
+    kind: cable_connector
+    description: STEMMA QT connector
+    contacts: []
+    source_ids:
+    - product_page
+  QT2:
+    kind: cable_connector
+    description: STEMMA QT connector
+    contacts: []
+    source_ids:
+    - product_page
+  battery_holder:
+    kind: cable_connector
+    description: CR1220 coin cell holder on reverse; battery not included.
+    contacts: []
+    source_ids:
+    - product_page
+pins: {}
+pin_count:
+  header_contacts: null
+  cable_connector_contacts: null
+  total_exposed_contacts: null
+  unique_nets: null
+  scope: physical_connector_contacts_not_chip_package_pins
+  status: unknown
+  source_ids:
+  - product_page
+  - guide_pinouts
+  notes: Header and QT contacts require explicit physical count; coin cell holder
+    is not counted as external signal contact.
+pin_names: []
+electrical:
+  board_supply:
+    min_v: 2.3
+    max_v: 5.5
+    nominal_v:
+    - 3.3
+    - 5.0
+    status: documented_chip/board_supply_claim
+    source_ids:
+    - guide_pinouts
+    notes: Guide states RTC can run from 2.3–5.5V and board can connect to 3.3/5V
+      logic; coin cell backup requires CR1220.
+  chip_supply:
+    status: datasheet_revision_10
+    notes: Chip datasheet captured; limits not transcribed.
+    source_ids:
+    - chip_datasheet
+  logic_levels:
+    status: documented
+    notes:
+    - SCL/SDA each have 10K pullup to VIN.
+    - RST, 32K, SQW outputs are open drain; 32K/SQW require external pullups to read.
+    - RST has internal 50K pullup and goes low when main VIN lost.
+    source_ids:
+    - guide_pinouts
+  pullups:
+  - signals:
+    - SCL
+    - SDA
+    resistance_ohms: 10000
+    rail: VIN
+    designator: null
+    disconnect_method: null
+    source_ids:
+    - guide_pinouts
+  - signals:
+    - 32K
+    - SQW
+    resistance_ohms: null
+    rail: null
+    designator: null
+    disconnect_method: null
+    source_ids:
+    - guide_pinouts
+    notes: Open drain, requires external pullup.
+  - signals:
+    - RST
+    resistance_ohms: 50000
+    rail: VIN
+    designator: null
+    disconnect_method: null
+    source_ids:
+    - guide_pinouts
+    notes: Internal pullup.
+  extra_signals:
+  - name: BAT
+    direction: input/output
+    notes: Battery-positive node/backup supply; range cited 2.3–5.5V.
+    source_ids:
+    - guide_pinouts
+  - name: 32K
+    direction: output
+    notes: 32kHz oscillator output, open drain.
+    source_ids:
+    - guide_pinouts
+  - name: SQW
+    direction: output
+    notes: Square wave/interrupt output, open drain.
+    source_ids:
+    - guide_pinouts
+  - name: RST
+    direction: open-drain output
+    notes: External reset/status signal; internal 50K pullup.
+    source_ids:
+    - guide_pinouts
+  source_ids:
+  - guide_pinouts
+i2c:
+  default_address_7bit: 104
+  documented_addresses_7bit:
+  - 104
+  address_selection: Fixed DS3231 address; no selection documented.
+  maximum_clock_hz: 400000
+  chip_maximum_clock_hz: 400000
+  clock_stretching: unknown
+  status: documented
+  source_ids:
+  - chip_datasheet
+  notes: Analog Devices product page gives Fast 400kHz I2C interface.
+chip:
+  manufacturer: Analog Devices (formerly Maxim Integrated)
+  part_number: DS3231
+  identity_status: product_page_claim
+  source_ids:
+  - product_page
+  - chip_datasheet
+datasheets:
+  status: downloaded
+  items:
+  - chip: Analog Devices DS3231
+    source_id: chip_datasheet
+    local_file: reference/chip_datasheet.pdf
+    url: https://www.analog.com/media/en/technical-documentation/data-sheets/DS3231.pdf
+    sha256: dc81cd89bee82d0c57b654d6315e03dec913fb8fe753cc80b2a3f1cca71cbb34
+    page_count: 20
+    revision: Rev. 10
+  notes:
+  - Official Analog Devices product page identified DS3231 Data Sheet Rev. 10 dated
+    2015-03-19; PDF signature/page tree validated.
+software:
+- name: Adafruit DS3231 Arduino library
+  framework: Arduino
+  official_url: https://github.com/adafruit/RTClib
+  tested: false
+  source_ids:
+  - product_page
+  - guide_hardware
+- name: Adafruit CircuitPython DS3231 driver
+  framework: CircuitPython
+  official_url: https://github.com/adafruit/Adafruit_CircuitPython_DS3231
+  tested: false
+  source_ids:
+  - product_page
+  - guide_hardware
+extra_resources:
+- name: DS3231 pinouts guide
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/pinouts
+  local_file: reference/guide_pinouts.html
+  source_id: guide_pinouts
+- name: DS3231 downloads guide
+  kind: guide
+  url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads
+  local_file: reference/guide_downloads.html
+  source_id: guide_downloads
+sources:
+- id: product_page
+  kind: product_page
+  requested_url: https://www.adafruit.com/product/5188
+  url: https://www.adafruit.com/product/5188
+  retrieved_at: '2026-10-23T20:21:58+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: null
+  local_file: website.html
+  bytes: 102781
+  sha256: 6bbbe586b7dc8126021f8e39c24da13edebeafd1a0de4176ae63dbd097356a6e
+  derivatives:
+  - kind: text
+    local_file: website.txt
+    bytes: 7691
+    sha256: 08b63e65c52781a20156a90f6e5c834c459f6b2dc6c319b94e31c4ed74d7847e
+  - kind: links
+    local_file: website.links.json
+    bytes: 16519
+    sha256: fd3f481cda859f1ed10f0b06242a94eaaa3b8a990505f5c9afee4438ffab320d
+  title: 'Adafruit DS3231 Precision RTC - STEMMA QT : Adafruit Industries, Unique
+    & fun DIY electronics and kits'
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_hardware
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout
+  url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout
+  retrieved_at: '2026-10-23T20:22:00+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_hardware.html
+  bytes: 76298
+  sha256: 2cb13265960791c7f21cda7b638022b936d1a40327ee64322257de6f9cedc09e
+  derivatives:
+  - kind: text
+    local_file: reference/guide_hardware.txt
+    bytes: 5065
+    sha256: c1a097ad1dd63dda85b1fe9e28cf8fd32eb0a5f41d39fced47eae0fdd3995135
+  - kind: links
+    local_file: reference/guide_hardware.links.json
+    bytes: 18956
+    sha256: 6b62e26af9a3184545754452c2cdf46236d48f37593fed3d48a9197b44290054
+  title: Overview | Adafruit DS3231 Precision RTC Breakout | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_downloads
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads
+  url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads
+  retrieved_at: '2026-10-23T20:22:01+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_downloads.html
+  bytes: 72911
+  sha256: ee9854290a2c8d82134d34524a6d5185d7a468e802e1d5efac11f122349ef71a
+  derivatives:
+  - kind: text
+    local_file: reference/guide_downloads.txt
+    bytes: 2709
+    sha256: 673b374543195b15531d9ee45fa77fab300fb8f740c40dd74516cfcec58f3012
+  - kind: links
+    local_file: reference/guide_downloads.links.json
+    bytes: 19406
+    sha256: ba7c5247040dc09a63945469cf18f07d2f2516f8dad5b3dfea7121d89947a60e
+  title: Downloads | Adafruit DS3231 Precision RTC Breakout | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: guide_pinouts
+  kind: guide
+  requested_url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/pinouts
+  url: https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/pinouts
+  retrieved_at: '2026-10-23T20:22:02+00:00'
+  content_type: text/html; charset=utf-8
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: product_page
+  local_file: reference/guide_pinouts.html
+  bytes: 71464
+  sha256: f44ea21b53a17a0fe3b6a249d29ba64c1c6759aee2b696918321f126a5ee7ea5
+  derivatives:
+  - kind: text
+    local_file: reference/guide_pinouts.txt
+    bytes: 4363
+    sha256: 8314ef7bb268b18e2b8c7dc9861fb4ebefd881f0d06ef602d23a127abfdfb31b
+  - kind: links
+    local_file: reference/guide_pinouts.links.json
+    bytes: 18478
+    sha256: ec0857fb6960baf7effeae27cbd2ce2e68e0f15db95393d075e817990fd105f5
+  title: Pinouts | Adafruit DS3231 Precision RTC Breakout | Adafruit Learning System
+  snapshot_scope: HTML response, extracted text and links; remote assets are not bundled
+- id: chip_datasheet
+  kind: chip_datasheet
+  requested_url: https://www.analog.com/media/en/technical-documentation/data-sheets/DS3231.pdf
+  url: https://www.analog.com/media/en/technical-documentation/data-sheets/DS3231.pdf
+  retrieved_at: '2026-10-23T20:22:20+00:00'
+  content_type: application/pdf
+  acquisition: http_response_bytes_after_browser_discovery
+  discovered_from: guide_downloads
+  local_file: reference/chip_datasheet.pdf
+  bytes: 843828
+  sha256: dc81cd89bee82d0c57b654d6315e03dec913fb8fe753cc80b2a3f1cca71cbb34
+  derivatives: []
+  pdf_page_count: 20
+conflicts: []
+data_gaps:
+- Exact carrier board outline, coin-cell assembly envelope, mounting holes and contact
+  inventory need matching QT CAD review.
+- Structured mapping of header and QT physical contacts is incomplete.
+- Chip electrical operating/recovery current data was not transcribed from datasheet
+  pages.
+- No fitted chip marking observed.
+product_dimensions_mm:
+  dimensions:
+  - 25.4
+  - 17.8
+  - 7.8
+  units: mm
+  scope: manufacturer_product_dimensions_unspecified_orientation
+  status: documented
+  source_ids:
+  - product_page

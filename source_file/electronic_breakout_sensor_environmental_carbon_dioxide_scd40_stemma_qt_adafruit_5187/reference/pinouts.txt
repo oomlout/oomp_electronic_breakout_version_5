@@ -1,0 +1,200 @@
+Adafruit SCD-4x - True CO2 Temperature and Humidity Sensors
+Pinouts
+Adafruit SCD-4x - True CO2 Temperature and Humidity Sensors
+CO2 sensing over I2C in a tiny package!
+by
+Kattni Rembor
+published August 26, 2021, last edited August 19, 2026
+last major update August 19, 2026
+posted in
+Adafruit Products
+Sensors
+/
+Temperature & Humidity
+CircuitPython
+Breakout Boards
+Programming
+/
+Python
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Python & CircuitPython
+Python Docs
+Arduino
+WipperSnapper
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Primary
+Adafruit SCD-40 - True CO2, Temperature and Humidity Sensor
+$44.95
+Add  to Cart
+Primary
+Adafruit SCD-41 - True CO2 Temperature and Humidity Sensor
+$49.95
+Add  to Cart
+Primary
+Adafruit SCD-43 - True CO2 Temperature and Humidity Sensor
+$49.95
+Add  to Cart
+View product details
+38
+Updated
+Beginner
+Product guide
+😍
+2
+Pinouts
+Text emphasized with a blue info:
+The default I2C address for all three sensors is 0x62.
+The SCD-40, SCD-41 and SCD-43 have the same pinouts.
+Power Pins
+VIN
+- This is the power pin. To power the board, give it the same power as the logic level of your microcontroller - e.g. for a 3V microcontroller like a Feather M4, use 3V, or for a 5V microcontroller like Arduino, use 5V.
+3Vo
+- This is the output from the onboard 3.3V regulator. If you have a need for a clean 3.3V output, you can use this! It can provide at least 100mA output.
+GND
+- This is common ground for power and logic.
+I2C Logic Pins
+The default I2C address for the SCD-4x is
+0x62
+.
+SCL
+- I2C clock pin, connect to your microcontroller I2C clock line. There's a
+10K pullup
+on this pin.
+SDA
+- I2C data pin, connect to your microcontroller I2C data line. There's a
+10K pullup
+on this pin.
+STEMMA QT
+-
+These connectors allow you to connectors to development boards with
+STEMMA QT
+connectors or to other things with
+various associated accessories
+.
+Status LED
+There is a statis LED marked "on" when the sensor is powered (circled in green).
+If you do not want this LED to light up (saving power or avoiding light), cut the circuit board jumper in the red box. If you ever want to reenable it, bridge the pads with a bit of solder.
+Jumpers
+The SCD-4x can run from 3 to 5V DC, for both power and I2C data/logic. Normally that would mean we wouldn't put a regulator and logic level shifter on the breakout. However, the SCD-4x also does best with a quiet power supply that can also supply ~200mA peak. Since that may or may not be the same as the logic power supply of the microcontroller, advanced users can customize the power/logic level setup for the sensor. This is done using solder jumpers on the back of the breakout.
+On the
+left
+is the
+I2C logic level
+jumper. By default, this is set to 3.3V which should work for both 3.3V and 5V logic level boards. Power at Vin can be 5V even if using a 3.3V logic level board, since the I2C logic will be 3.3V. The only reason (should be rare) to change this jumper is if a 5V logic level board does *not* work with the 3.3V I2C logic levels. In that case, this jumper can be cut and soldered to change I2C logic to Vin, which should be 5V when using a 5V board.
+On the
+right
+is the
+Sensor Power
+jumper. By default, power comes from whatever is connected to Vin. This allows using 5V power if desired. To use the onboard 3.3V voltage regulator, cut and solder this jumper.
+If the above description is still confusing, checkout the schematic available at the end of this guide. The jumpers are very simple and it may be easier to just read the schematic to determine what they do.
+Rev A errata for SCD-40 and SCD-41
+Text emphasized with a red exclamation:
+The original silkscreen on the SCD-40 and SCD-41 boards labeled the jumpers backwards. Sensor Power was on the left and I2C logic was on the right, as shown below. If the image below matches your board, be aware that they are INCORRECTLY labeled!
+Page last edited August 19, 2026
+Overview
+Python & CircuitPython
+Related Guides
+Your browser does not support the video tag. This links to the guide No-Code IoT CO2 "Canary In a Coalmine".
+No-Code IoT CO2 "Canary In a Coalmine"
+By
+Ruiz Brothers
+beginner
+36
+No-Code Indoor Grow Monitor with PPFD and VPD...
+By
+Brent Rubell
+beginner
+10
+Disconnected CO2 Data Logger
+By
+Liz Clark
+beginner
+37
+Air Quality Monitor and Case
+By
+Ruiz Brothers
+beginner
+53
+DIY Trinkey No-Soldering USB Air Quality Monitor
+By
+Carter Nelson
+beginner
+45
+Using Piezo Buzzers with WipperSnapper
+By
+Eva Herrada
+beginner
+5
+Raspberry Pi Azure IoT Hub Dashboard with CircuitPython
+By
+Liz Clark
+intermediate
+40
+Adafruit Chainable DS18B20 Extender Breakout
+By
+Liz Clark
+Product Guide
+2
+DIY Darksaber Build - 3D Print with PropMaker...
+By
+Ruiz Brothers
+advanced
+147
+Your browser does not support the video tag. This links to the guide Severance Portable Macrodata Refinement Terminal.
+Severance Portable Macrodata Refinement Terminal
+By
+Liz Clark
+intermediate
+34
+Adafruit Metro Mini
+By
+lady ada
+Product Guide
+18
+Adafruit I2C to 8 Channel Solenoid Driver
+By
+Liz Clark
+Product Guide
+9
+Getting Started with the nRF8001 Bluefruit LE Breakout
+By
+Kevin Townsend
+beginner
+39
+Your browser does not support the video tag. This links to the guide Spinning Disc Step Sequencer.
+Spinning Disc Step Sequencer
+By
+John Park
+intermediate
+54
+Adafruit I2S Stereo Decoder - UDA1334A
+By
+lady ada
+Product Guide
+33
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

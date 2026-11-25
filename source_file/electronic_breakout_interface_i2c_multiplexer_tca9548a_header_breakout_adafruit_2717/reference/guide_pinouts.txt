@@ -1,0 +1,236 @@
+Adafruit TCA9548A 1-to-8 I2C Multiplexer Breakout
+Pinouts
+Adafruit TCA9548A 1-to-8 I2C Multiplexer Breakout
+I2C addresses collisions? No prob!
+by
+lady ada
+published September 11, 2015, last edited August 20, 2026
+last major update October 19, 2022
+posted in
+Adafruit Products
+Breakout Boards
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Assembly
+Arduino Wiring & Test
+CircuitPython & Python
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Featured
+TCA9548A I2C Multiplexer
+$6.95
+Add  to Cart
+View product details
+85
+Beginner
+Product guide
+🙌
+1
+Pinouts
+Power Pins:
+Vin
+- this is the power pin. Since the sensor chip uses 3-5 VDC. To power the board, give it the same power as the logic level of your microcontroller - e.g. for a 5V micro like Arduino, use 5V
+GND
+- common ground for power and logic
+I2C Control-Side pins:
+SCL
+- this is the I2C clock pin for the chip itself, connect to your microcontrollers I2C clock line.
+SDA
+- this is the I2C data pin for the chip itself, connect to your microcontrollers I2C data line.
+RST
+- this is the reset pin, for resetting the multiplexer chip. Pulled high by default, connect to ground to reset.
+I2C Address Selection
+The default I2C address is
+0x70
+.
+A0
+A1 A2
+- these are the address selection pins
+for the multiplexer
+. By default the multiplexer is at address
+0x70
+and these three pins are pulled low. Connect them to
+Vin
+to set the address to
+0x71
+-
+0x77
+.
+A0
+is the lowest-significant bit (if it is pulled high, it will increase the address by 1).
+A1
+is the 2nd-lowest-significant bit (if it is pulled high, it will increase the address by 2).
+A2
+is the 3rd-lowest-significant bit (if it is pulled high, it will increase the address by 4).
+The default I2C address is
+0x70
+. The other address options can be calculated by “adding” the
+A
+0/A1/A2
+to the base of
+0x70
+.
+A0
+sets the lowest bit with a value of
+1
+,
+A
+1
+sets the next bit with a value of
+2
+and
+A
+2
+sets the next bit with a value of
+4.
+The final address is
+0x70 + A2 + A1 + A0
+which would be
+0x77
+.
+So for example if
+A
+2
+is wired to power and
+A
+0
+is soldered closed, the address is
+0x70 + 4 + 1 = 0x75
+.
+If only
+A
+0
+is wired to power, the address is
+0x70 + 1 = 0x71
+If only
+A1
+is wired to power, the address is
+0x70 + 2 = 0x72
+If only
+A
+2
+is wired to power, the address is
+0x70 + 4 = 0x74
+The table below shows all possible addresses, and whether the pin(s) should be high/H (wired to power) or low/L (unconnected).
+I2C Multiplexed-Side pins:
+SDx
+and
+SCx
+:  There are 8 sets of
+SDx
+and
+SCx
+pins, from
+SD0/SC0
+to
+SD7/SC7
+. These are the multiplexed pins. Each one is a completely seperate I2C bus set. So you can have 8 I2C devices with identical addresses, as long as they are on one I2C bus each.
+These pins do not have any pullups installed, so if you are using a chip or breakout without i2c pullups be sure to add them!
+Nicely, you can have
+Vin
+be 3.3V and have these pins pulled up to 5V (that is, they are 5V compliant)
+Page last edited May 07, 2024
+Overview
+Assembly
+Related Guides
+Working with Multiple Same Address I2C Devices
+By
+Carter Nelson
+beginner
+43
+Your browser does not support the video tag. This links to the guide MIDI Laser Harp with Time of Flight Distance Sensors.
+MIDI Laser Harp with Time of Flight Distance Sensors
+By
+Liz Clark
+intermediate
+50
+Improve Brushed DC Motor Performance
+By
+Jan Goolsbey
+intermediate
+30
+Working with I2C Devices
+By
+Carter Nelson
+intermediate
+67
+FTDI Friend
+By
+lady ada
+Product Guide
+49
+Memories of an Arduino
+By
+Bill Earl
+beginner
+96
+Adafruit NeoRGB Stemma
+By
+Liz Clark
+Product Guide
+7
+Remote Control with the Huzzah + Adafruit.io
+By
+Richard Albritton
+intermediate
+74
+Adafruit Powerboost 1000C
+By
+lady ada
+Product Guide
+129
+Adafruit USB Host FeatherWing with MAX3421E
+By
+Liz Clark
+Product Guide
+6
+TIMESQUARE Watch Kit
+By
+lady ada
+beginner
+34
+Adafruit  PCA9685 16-Channel Servo Driver
+By
+Bill Earl
+Product Guide
+169
+Adafruit PCA9548 8-Channel STEMMA QT / Qwiic I2C...
+By
+Liz Clark
+Product Guide
+20
+Adafruit PiOLED - 128x32 Mini OLED for Raspberry Pi
+By
+lady ada
+Product Guide
+83
+Your browser does not support the video tag. This links to the guide Adafruit PCF8574 I2C GPIO Expander.
+Adafruit PCF8574 I2C GPIO Expander
+By
+Kattni Rembor
+Product Guide
+13
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

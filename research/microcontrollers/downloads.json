@@ -1,0 +1,332 @@
+[
+    {
+        "url": "https://www.wemos.cc/en/latest/_static/files/sch_c3_mini_v2.1.0.pdf",
+        "local_file": "c3_mini/sch_c3_mini_v2.1.0.pdf",
+        "sha256": "950782157e6bcf20bba8251211be8a46c87ce12e3dc6f4b253d0e472ef3054b4"
+    },
+    {
+        "url": "https://www.wemos.cc/en/latest/_static/files/dim_c3_mini_v1.0.0.pdf",
+        "local_file": "c3_mini/dim_c3_mini_v1.0.0.pdf",
+        "sha256": "29e2342e46520c040902aff2e2b7e363a1b0591d560187de6d22e593ae36d3cc"
+    },
+    {
+        "url": "https://www.wemos.cc/en/latest/_static/files/sch_d32_v1.0.0.pdf",
+        "local_file": "d32/sch_d32_v1.0.0.pdf",
+        "sha256": "6af98efaf9733ed7a56df28f79afbb2ef1147244f271a3e2523881f7ebb5f9b1"
+    },
+    {
+        "url": "https://www.wemos.cc/en/latest/_static/files/dim_d32_v1.0.0.pdf",
+        "local_file": "d32/dim_d32_v1.0.0.pdf",
+        "sha256": "c73e4be12df49e8a34a0fc2ab62d95ebdca93f750006bd9a96df2c7c3ba635c2"
+    },
+    {
+        "url": "https://www.wemos.cc/en/latest/_static/files/sch_d32_pro_v2.0.0.pdf",
+        "local_file": "d32_pro/sch_d32_pro_v2.0.0.pdf",
+        "sha256": "54cc89a4df45f76c847cae09e2acac86a95891a89c85421a8f146bca91cb3f60"
+    },
+    {
+        "url": "https://www.wemos.cc/en/latest/_static/files/dim_d32_pro_v2.0.0.pdf",
+        "local_file": "d32_pro/dim_d32_pro_v2.0.0.pdf",
+        "sha256": "332a0ba3f8324d181a7fb768e8727c4eb3b228e0e01113efbed599dc1817e10c"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/SCH_ESP32-C3-DEVKITC-02_V1_1_20210126A.pdf",
+        "local_file": "esp32-c3-devkitc-02/SCH_ESP32-C3-DEVKITC-02_V1_1_20210126A.pdf",
+        "sha256": "e694ac254e6bf7ddd570ac7237ddb5ffa4e874e953619185ee7ba9a0c9f8af6c"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/DXF_ESP32-C3-DevKitC-02_V1_1_20210121AA.pdf",
+        "local_file": "esp32-c3-devkitc-02/DXF_ESP32-C3-DevKitC-02_V1_1_20210121AA.pdf",
+        "sha256": "058072d75f90fa8668f7ada4548577078fca81b51850faeb1e6f6859bb9aaa8d"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/DXF_ESP32-C3-DevKitC-02_V1_1_20210121AA.dxf",
+        "local_file": "esp32-c3-devkitc-02/DXF_ESP32-C3-DevKitC-02_V1_1_20210121AA.dxf",
+        "sha256": "10a2599d85ab480fb74294127c13b27840384d99f0cdb4d0c9e750d9ad60bfa6"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/SCH_ESP32-C3-DEVKITM-1_V1_20200915A.pdf",
+        "local_file": "esp32-c3-devkitm-1/SCH_ESP32-C3-DEVKITM-1_V1_20200915A.pdf",
+        "sha256": "d2ac6d649cbea3ce4b2295a261f78823bf61e536f69fe4bee2b6e4142bd86542"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/DIMENSION_ESP32-C3-DEVKITM-1_V1_20200915AA.pdf",
+        "local_file": "esp32-c3-devkitm-1/DIMENSION_ESP32-C3-DEVKITM-1_V1_20200915AA.pdf",
+        "sha256": "284d7b4060098e252feafac8a412902b7c51d116b5df49111f4489fc84c92d92"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/DIMENSION_ESP32-C3-DEVKITM-1_V1_20200915AA.dxf",
+        "local_file": "esp32-c3-devkitm-1/DIMENSION_ESP32-C3-DEVKITM-1_V1_20200915AA.dxf",
+        "sha256": "eddd901305ce78b661658f726059ed0655ea51fc65281f750d5b40ad592ab312"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp32-c6-devkitc-1-schematics_v1.2.pdf",
+        "local_file": "esp32-c6-devkitc-1/esp32-c6-devkitc-1-schematics_v1.2.pdf",
+        "sha256": "4718c322c698db80bafe09c66cfe08e3c9ed3a09d5aaafa5748a15794d24902d"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp32-c6-devkitc-1-schematics_v1.3.pdf",
+        "local_file": "esp32-c6-devkitc-1/esp32-c6-devkitc-1-schematics_v1.3.pdf",
+        "sha256": "91513bdb655fa96419d14ac505bcdf4036ae89cb8c8dab401b30754efac805a5"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp32-c6-devkitc-1-schematics_v1.4.pdf",
+        "local_file": "esp32-c6-devkitc-1/esp32-c6-devkitc-1-schematics_v1.4.pdf",
+        "sha256": "ac01136198f286f11a3628e1ca39d22714aa6ce059cba85bd0c39e641c415a8a"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp32-c6-devkitc-1-dimensions_v1.2.pdf",
+        "local_file": "esp32-c6-devkitc-1/esp32-c6-devkitc-1-dimensions_v1.2.pdf",
+        "sha256": "44f8b92af56b5cdac607f356a244d6297ed054713dbd4d69c5a48848b1d75cac"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp32-c6-devkitc-1-dimensions_v1.2.dxf",
+        "local_file": "esp32-c6-devkitc-1/esp32-c6-devkitc-1-dimensions_v1.2.dxf",
+        "sha256": "8bfd7e5ed84bf3e4a1fc56498595cb1d5ffdc48c7cd8e8ff5544588fd14e9a63"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp32-c6-devkitm-1-schematics.pdf",
+        "local_file": "esp32-c6-devkitm-1/esp32-c6-devkitm-1-schematics.pdf",
+        "sha256": "9155f51c915831829b85902731fa27086d8cd38373d575957365096bab7e4f2c"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp32-c6-devkitm-1-dimensions.pdf",
+        "local_file": "esp32-c6-devkitm-1/esp32-c6-devkitm-1-dimensions.pdf",
+        "sha256": "b8c37ee9de83c565efb33c4b23a2b4106939fe8c278b4b6769b2c73dc6e816b0"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp32-c6-devkitm-1-dimensions.dxf",
+        "local_file": "esp32-c6-devkitm-1/esp32-c6-devkitm-1-dimensions.dxf",
+        "sha256": "a56f51b62baf765f848c683cd1ae3bf03911615d9aeab828ff2e6a537a22fcfa"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_sch.pdf",
+        "local_file": "esp32-devkitc/esp32_devkitc_v4_sch.pdf",
+        "sha256": "ea500de5a3bfa97633f32ddb88fabd2d680637225190ea9c3f81e91b7d8bb7f6"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_dimensions.pdf",
+        "local_file": "esp32-devkitc/esp32_devkitc_v4_dimensions.pdf",
+        "sha256": "93769872f5640475a25e6c367230b407606771e4bbee0aba56903263b17d8d30"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_dimensions.dxf",
+        "local_file": "esp32-devkitc/esp32_devkitc_v4_dimensions.dxf",
+        "sha256": "130450f283a9bc2a47b77d33d2275286c5023aeaf53ca74d83f8a084b5ea60b0"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp32-pico-kit-v4_schematic.pdf",
+        "local_file": "esp32-pico-kit/esp32-pico-kit-v4_schematic.pdf",
+        "sha256": "85b1cf2b4bb234074f9b1cd74860a49e9672042a752e02cf104177e87c8ccfb8"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp32-pico-kit-v4.1_schematic.pdf",
+        "local_file": "esp32-pico-kit/esp32-pico-kit-v4.1_schematic.pdf",
+        "sha256": "f5ac82ecd0cb4f03605dc11883c5f2056c5a625194e3d6186552b295f97272b6"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp-idf/SCH_ESP32-S2-DEVKITC-1_V1_20220817.pdf",
+        "local_file": "esp32-s2-devkitc-1/SCH_ESP32-S2-DEVKITC-1_V1_20220817.pdf",
+        "sha256": "eea5e87c8420d1bc8ca2eb4f9b6842125978e7ea3344d2495d9505ad322c769c"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/DXF_ESP32-S2-DevKitC-1_V1_20210511.pdf",
+        "local_file": "esp32-s2-devkitc-1/DXF_ESP32-S2-DevKitC-1_V1_20210511.pdf",
+        "sha256": "0ebbd06bee38d9c9c97c830a867d71ff7227b3aec3faa11231b4e1a8ec4cf7e7"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/DXF_ESP32-S2-DevKitC-1_V1_20210511.dxf",
+        "local_file": "esp32-s2-devkitc-1/DXF_ESP32-S2-DevKitC-1_V1_20210511.dxf",
+        "sha256": "4ad5bbacecba0ac5aec8bdf9eec81ddeff1c1c1cf123435982531870465cb81d"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20220413.pdf",
+        "local_file": "esp32-s3-devkitc-1/SCH_ESP32-S3-DevKitC-1_V1.1_20220413.pdf",
+        "sha256": "5f25ae344dd67b9c1c503570ed4bcb3ffd34e99c6931210fc501a9a26683e496"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/SCH_ESP32-S3-DevKitC-1_V1.1_20221130.pdf",
+        "local_file": "esp32-s3-devkitc-1/SCH_ESP32-S3-DevKitC-1_V1.1_20221130.pdf",
+        "sha256": "f116b5d9f1fdce126e9a63d8450388eb11295d8322d831502fbc9729442b72e4"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp_idf/DXF_ESP32-S3-DevKitC-1_V1.1_20220429.pdf",
+        "local_file": "esp32-s3-devkitc-1/DXF_ESP32-S3-DevKitC-1_V1.1_20220429.pdf",
+        "sha256": "9d092400db6f677b491926a07455bec7874054ec65ef6ccbddb6aa7ed3892a17"
+    },
+    {
+        "url": "https://dl.espressif.com/dl/schematics/esp_idf/DXF_ESP32-S3-DevKitC-1_V1.1_20220429.dxf",
+        "local_file": "esp32-s3-devkitc-1/DXF_ESP32-S3-DevKitC-1_V1.1_20220429.dxf",
+        "sha256": "02c88dea5acf89ef20c8073acd19f1c5fd1ac908fc57a5c0fd005cd021304983"
+    },
+    {
+        "url": "https://www.wemos.cc/en/latest/_static/files/sch_s2_mini_v1.0.0.pdf",
+        "local_file": "s2_mini/sch_s2_mini_v1.0.0.pdf",
+        "sha256": "c0fd02597603c4b70494377083b33df3438706a6980c4b681f8be38a618e20d8"
+    },
+    {
+        "url": "https://www.wemos.cc/en/latest/_static/files/dim_s2_mini_v1.0.0.pdf",
+        "local_file": "s2_mini/dim_s2_mini_v1.0.0.pdf",
+        "sha256": "4283a05be3aecf32159c4aaee09fc74d3a5f8a7f64aa67d8270de68e8437b4aa"
+    },
+    {
+        "url": "https://www.wemos.cc/en/latest/_static/files/sch_s3_mini_v1.0.0.pdf",
+        "local_file": "s3_mini/sch_s3_mini_v1.0.0.pdf",
+        "sha256": "23e49e9d7904eb2d9480b0707a19c46c8dddfdeed53dd8085e3f620d3edf4270"
+    },
+    {
+        "url": "https://www.wemos.cc/en/latest/_static/files/dim_s3_mini_v1.0.0.pdf",
+        "local_file": "s3_mini/dim_s3_mini_v1.0.0.pdf",
+        "sha256": "110f14d19c7f16ef2b0ad5771d56ec8877782129b68fca6be161faf95fe0770c"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_SCH_260116.pdf",
+        "local_file": "xiao_c3/XIAO_ESP32C3_v1.3_SCH_260116.pdf",
+        "sha256": "60d7d447d0d37b0c3ff6c50d372a45d50f750070b8b9d68ca7b906df43365081"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_KiCad_260116.zip",
+        "local_file": "xiao_c3/XIAO_ESP32C3_v1.3_KiCad_260116.zip",
+        "sha256": "477bc61cec652eaeefa887cb1f97abb1514e8a61ea9659240b88be7213c3b6ff"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/XIAO-KiCad-Library/New_XIAO_Series_Footprints.zip",
+        "local_file": "xiao_s3/New_XIAO_Series_Footprints.zip",
+        "sha256": "671cb119639e489091b87a64e070d4aba1f22860ddfdbecc85ff143c0c295e28"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/XIAO-KiCad-Library/XIAO_Series_SCH_Symbols.zip",
+        "local_file": "xiao_s3/XIAO_Series_SCH_Symbols.zip",
+        "sha256": "e80bc5e41b427ed5428e37ceebf0258a1b37f312f93135c29f5ffd898b8bfdf5"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-DXF.zip",
+        "local_file": "xiao_c3/XIAO-ESP32C3-DXF.zip",
+        "sha256": "eb3c9986857353440ee2e53f1d5a01745c7e0330371563fcde1c9d2df023f9fe"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/Seeed-Studio-XIAO-ESP32/XIAO_ESP32C3_v1.2_Dimensioning.zip",
+        "local_file": "xiao_c3/XIAO_ESP32C3_v1.2_Dimensioning.zip",
+        "sha256": "a75fe366c4fa160db8d50891da84820062011e9fd06343ae047ab67763035bd7"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH_260114.pdf",
+        "local_file": "xiao_c6/XIAO_ESP32_C6_v1.0_SCH_260114.pdf",
+        "sha256": "510f3f917bcded1201ca5c63374409183457c1ef83a836988517d6802180dad7"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH&PCB_260114.zip",
+        "local_file": "xiao_c6/XIAO_ESP32_C6_v1.0_SCH_PCB_260114.zip",
+        "sha256": "cea2ed66da575e4a1dd6c7a9acd60583ed4a9adbf6b1d2952851c1e4199c05fc"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/new-res/202003751_XIAO%20ESP32S3_v1.4_SCH_260226.pdf.pdf",
+        "local_file": "xiao_s3/202003751_XIAO ESP32S3_v1.4_SCH_260226.pdf.pdf",
+        "sha256": "15993097cd695d177af352f4664ca91290a99c833f51d122d1165ef222f9923c"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/new-res/202003751_XIAO%20ESP32S3_v1.4_SCH&PCB_260226.zip",
+        "local_file": "xiao_s3/202003751_XIAO ESP32S3_v1.4_SCH_PCB_260226.zip",
+        "sha256": "a82247725c8a8bcd8cac81a7acbd126396217e5b680f6dfe28958851e02d5cdb"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_v1.1_Dimensioning.dxf",
+        "local_file": "xiao_s3/XIAO_ESP32S3_v1.1_Dimensioning.dxf",
+        "sha256": "5fd32e3ba7a4bd85b8cc0f5d9413e26dd947e84e27b2d0f03350a7d367903f23"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/new-res/202003753_XIAO%20ESP32S3%20Sense_v1.5_SCH_260226.pdf.pdf",
+        "local_file": "xiao_s3/202003753_XIAO ESP32S3 Sense_v1.5_SCH_260226.pdf.pdf",
+        "sha256": "15993097cd695d177af352f4664ca91290a99c833f51d122d1165ef222f9923c"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_Exp_Board_v1.2_SCH_PDF_260810.pdf",
+        "local_file": "xiao_s3/XIAO_ESP32S3_Exp_Board_v1.2_SCH_PDF_260810.pdf",
+        "sha256": "151a31f9edd3c36dd0fff27a24861205f6f32f6d1d6d99fdb3957b69297e9f9f"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/new-res/202003753_XIAO%20ESP32S3%20Sense_v1.5_SCH&PCB_260226.zip",
+        "local_file": "xiao_s3/202003753_XIAO ESP32S3 Sense_v1.5_SCH_PCB_260226.zip",
+        "sha256": "a82247725c8a8bcd8cac81a7acbd126396217e5b680f6dfe28958851e02d5cdb"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_ExpBoard_v1.0_top.dxf",
+        "local_file": "xiao_s3/XIAO_ESP32S3_ExpBoard_v1.0_top.dxf",
+        "sha256": "4039bf565f6bece5209c60877c804c1f0bd2507173ec9905d5eb8c7ec79949cc"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_ExpBoard_v1.0_bot.dxf",
+        "local_file": "xiao_s3/XIAO_ESP32S3_ExpBoard_v1.0_bot.dxf",
+        "sha256": "2e6efd7b1c898cf5f432d1cf841bad5727004c93cdced70bdc94b56e09f75c07"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_Plus_V1.1_SCH_260115.pdf",
+        "local_file": "xiao_s3/XIAO_ESP32S3_Plus_V1.1_SCH_260115.pdf",
+        "sha256": "5d0213b6258b2658e5edae4d4ee166f6f852e1d0c304bddff5006f6ec6a7d9b9"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_Plus_V1.1_KiCad_260115.zip",
+        "local_file": "xiao_s3/XIAO_ESP32S3_Plus_V1.1_KiCad_260115.zip",
+        "sha256": "8a90aa5990a835e97bc1e74afdd36f6a84dc32ad2eee2c423a6818157e1e65cd"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_Plus_Base_with_botton_pad_lead_out_V1.0.zip",
+        "local_file": "xiao_s3/XIAO_Plus_Base_with_botton_pad_lead_out_V1.0.zip",
+        "sha256": "d4f9d380fab180c2f12f89ee7d01d9f9c1cc3a8ee849b263b39a97f6aa0315bd"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_Plus_Base_without_botton_pad_lead_out_V1.0.zip",
+        "local_file": "xiao_s3/XIAO_Plus_Base_without_botton_pad_lead_out_V1.0.zip",
+        "sha256": "6560f1adb2f53cfecce143168af68f5383fcc11b6c93d43ac85067c7bf7dc3f4"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/TOP.dxf",
+        "local_file": "xiao_s3/TOP.dxf",
+        "sha256": "e997a3c0c3d75e2925ce9bd7263cacc9be20d0c2caada9553bb7668730786dbb"
+    },
+    {
+        "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/BOTTOM.dxf",
+        "local_file": "xiao_s3/BOTTOM.dxf",
+        "sha256": "5773a720d7c33642cf6ad63b0121839b63c915fb5f122b84564e70883ff0e12d"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/main/Adafruit%20QT%20Py%20ESP32-C3.brd",
+        "local_file": "qtpy_c3/Adafruit QT Py ESP32-C3.brd",
+        "sha256": "629effaf43d2b46e0b0d41e3e65eecc33b8e5d75da1336589cde89e68426bbe9"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB/main/Adafruit%20QT%20Py%20ESP32-C3.sch",
+        "local_file": "qtpy_c3/Adafruit QT Py ESP32-C3.sch",
+        "sha256": "af6d9edfde7492297091703b7d3273f6009b588ddf6af33ef4b78945db86df3d"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/adafruit/Adafruit-QT-Py-ESP32-S3-PCB/main/Adafruit%20QT%20Py%20ESP32-S3.brd",
+        "local_file": "qtpy_s3/Adafruit QT Py ESP32-S3.brd",
+        "sha256": "25d1099881e85b492b1f9fcda87ef51981218c897d224dcefa8af8a71485cc39"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/adafruit/Adafruit-QT-Py-ESP32-S3-PCB/main/Adafruit%20QT%20Py%20ESP32-S3.sch",
+        "local_file": "qtpy_s3/Adafruit QT Py ESP32-S3.sch",
+        "sha256": "5e50d2242105b1dcf9be8398c63cb8502333e5d861953078ba296ecd088f6360"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/master/Adafruit%20HUZZAH32%20ESP32%20Feather.brd",
+        "local_file": "huzzah32/Adafruit HUZZAH32 ESP32 Feather.brd",
+        "sha256": "992bffd6f20cd5fb8087a5008e6154a038db17f7a3e3fe9dad4bcff48adc0200"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/adafruit/Adafruit-HUZZAH32-ESP32-Feather-PCB/master/Adafruit%20HUZZAH32%20ESP32%20Feather.sch",
+        "local_file": "huzzah32/Adafruit HUZZAH32 ESP32 Feather.sch",
+        "sha256": "c94cbaf666b6cde286453c09c5263a185b167b1a747a9e404b9103fc0cacc414"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/main/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.brd",
+        "local_file": "feather_s3/Adafruit ESP32-S3 8MB No PSRAM.brd",
+        "sha256": "5b06b9c6291545a2c9da0993a642e513a75c5901e26836a2ee559077147abcca"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/adafruit/Adafruit-Feather-ESP32-S3-PCB/main/Adafruit%20ESP32-S3%208MB%20No%20PSRAM.sch",
+        "local_file": "feather_s3/Adafruit ESP32-S3 8MB No PSRAM.sch",
+        "sha256": "b71cdf533f043c30c1b8ab87d476214c6a857b4f92245debe98694e88a69d398"
+    }
+]

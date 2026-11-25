@@ -1,0 +1,125 @@
+schema_version: 1
+part_id: electronic_breakout_microcontroller_esp32_wroom_32_lolin_d32_25_4_mm_width_57_mm_height_20_pins_wemos_lolin_d32
+status: needs_review
+board_revision: WEMOS LOLIN D32 V1.0.0 carrier; the manufacturer product documentation
+  links the V1.0.0 dimension drawing and schematic.
+identity_evidence: The official WEMOS D32 product page identifies the ESP32-WROOM-32
+  board, states 57 x 25.4 mm, and links both Schematic V1.0.0 and Dimension V1.0.0.
+  The archived dimension drawing filename is dim_d32_v1.0.0.pdf. The live page and
+  linked drawing fetched 2026-11-07 are byte-identical to the archived copies.
+board_size:
+- 25.4
+- 57.0
+mounting_holes:
+- id: H1
+  x_mm: -10.7
+  y_mm: 26.5
+  diameter_mm: 2.1
+  source_id: dimensions
+- id: H2
+  x_mm: 10.7
+  y_mm: 26.5
+  diameter_mm: 2.1
+  source_id: dimensions
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: dimensioned_drawing
+geometry_source_id: dimensions
+derivation: The complete official Dimension V1.0.0 PDF depicts the 25.40 x 57.00 mm
+  PCB outline and two circular drills at its same short end. Its explicit centre-to-centre
+  dimension is 21.40 mm; centering that dimension on the 25.40 mm outline gives x
+  = ±21.40/2 = ±10.70 mm. The drill callout is 2.10 mm. The vector drawing also places
+  each centre 16.98 PDF points from the corresponding bounding edge. Using the drawing
+  scale 215.88 points / 25.40 mm = 8.4992 points/mm gives an edge offset 16.98 / 8.4992
+  = 1.998 mm, nominally 2.00 mm. With the PCB bounding-box centre as origin and the
+  hole row at the upper end of the drawing, y = 57.00/2 - 2.00 = +26.50 mm for both
+  drills. The drawing is a top view with its long axis vertical and short axis horizontal,
+  so it maps directly to canonical +x right, +y up; no axis swap, rotation or reflection
+  is applied. The complete sheet shows exactly these two circular board drills; no
+  connector retention features or header pads are represented as additional mounts.
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: false
+reviewed_by: gpt-6-luna
+sources:
+- id: dimensions
+  local_file: reference/dim_d32_v1.0.0.pdf
+  url: https://www.wemos.cc/en/latest/_static/files/dim_d32_v1.0.0.pdf
+  kind: manufacturer_drawing
+  locator: Complete one-page Dimension V1.0.0 drawing reviewed. Explicit 25.40 x 57.00
+    mm outline, 21.40 mm hole centre spacing and 2.10 mm drill callout; reviewed both
+    depicted board drills and their location at the upper end.
+  registered_at: '2026-11-06T16:55:23+00:00'
+  bytes: 3387
+  sha256: c73e4be12df49e8a34a0fc2ab62d95ebdca93f750006bd9a96df2c7c3ba635c2
+- id: product
+  local_file: mounting_evidence/wemos_d32_product.html
+  url: https://www.wemos.cc/en/latest/d32/d32.html
+  kind: manufacturer_product
+  locator: D32 product identity, ESP32-WROOM-32, nominal 57 x 25.4 mm size, and links
+    to Schematic V1.0.0 and Dimension V1.0.0.
+  registered_at: '2026-11-06T16:56:33+00:00'
+  bytes: 10809
+  sha256: abb0267f39e2fc1f7638e3fdd47ab377b06812ebeaca52fb6a07f8072067ac1f
+- id: schematic
+  local_file: reference/sch_d32_v1.0.0.pdf
+  url: https://www.wemos.cc/en/latest/_static/files/sch_d32_v1.0.0.pdf
+  kind: manufacturer_schematic
+  locator: Schematic V1.0.0 carrier evidence linked by the official D32 product page;
+    confirms carrier revision context.
+  registered_at: '2026-11-06T16:55:30+00:00'
+  bytes: 51744
+  sha256: 6af98efaf9733ed7a56df28f79afbb2ef1147244f271a3e2523881f7ebb5f9b1
+- id: current_product_2026_11_07
+  local_file: mounting_evidence/current_wemos_d32_product_2026-11-07.html
+  url: https://www.wemos.cc/en/latest/d32/d32.html
+  kind: manufacturer_product
+  locator: Live official WEMOS D32 page fetched 2026-11-07; identifies ESP32-WROOM-32,
+    links Schematic V1.0.0 and Dimension V1.0.0, and states 57 x 25.4 mm.
+  registered_at: '2026-11-07T15:35:03+00:00'
+  bytes: 10809
+  sha256: abb0267f39e2fc1f7638e3fdd47ab377b06812ebeaca52fb6a07f8072067ac1f
+- id: current_dimensions_2026_11_07
+  local_file: mounting_evidence/current_dim_d32_v1.0.0_2026-11-07.pdf
+  url: https://www.wemos.cc/en/latest/_static/files/dim_d32_v1.0.0.pdf
+  kind: manufacturer_drawing
+  locator: Live linked Dimension V1.0.0 PDF fetched 2026-11-07; byte-identical SHA-256
+    to existing archived manufacturer drawing. Complete one-page vector drawing confirms
+    25.40 x 57.00 mm outline, 21.40 mm hole spacing and 2.10 mm drill callout.
+  registered_at: '2026-11-07T15:35:03+00:00'
+  bytes: 3387
+  sha256: c73e4be12df49e8a34a0fc2ab62d95ebdca93f750006bd9a96df2c7c3ba635c2
+identity_source_ids:
+- product
+- dimensions
+- schematic
+- current_product_2026_11_07
+- current_dimensions_2026_11_07
+attempts:
+- 2026-11-06 reviewed the official WEMOS D32 product page and its linked Dimension
+  V1.0.0 and Schematic V1.0.0 PDFs; existing dimension PDF SHA-256 matches mounting_context.json.
+- 2026-11-06 rendered and visually reviewed the complete one-page manufacturer drawing.
+  Its two 2.10 mm drills have 21.40 mm centre spacing; vector positions establish
+  a nominal 2.00 mm margin from the PCB bounding edges.
+- 2026-11-07 fetched the live official product page and linked Dimension V1.0.0 PDF.
+  Both files are byte-identical to the archived sources (matching SHA-256); the page
+  still identifies the D32 and links the V1.0.0 drawing, whose drill callout remains
+  2.10 mm. This is 0.10 mm below the standard holder's 2.20 mm minimum drill diameter.
+conflicts:
+- The manufacturer's 2.10 mm drills are smaller than the standard holder's supported
+  minimum for M2 hardware (2.2 mm diametral clearance). Preview rejects them and requests
+  a custom holder; the standard holder workflow cannot safely generate this board.
+  Preserve the measured geometry, but require coordinator review/custom-holder decision
+  before validation and promotion.
+notes:
+- Component, connector, screw-head and underside clearance remain unverified. The
+  standard-holder status is generic geometry only; no physical fit test was performed.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T15:35:03+00:00'

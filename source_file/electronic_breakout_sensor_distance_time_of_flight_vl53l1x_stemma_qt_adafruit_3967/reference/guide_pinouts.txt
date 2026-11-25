@@ -1,0 +1,179 @@
+Adafruit VL53L1X Time of Flight Distance Sensor
+Pinouts
+Adafruit VL53L1X Time of Flight Distance Sensor
+Time of flight, up to 4 meters!
+by
+Kattni Rembor
+published October 27, 2021, last edited January 21, 2025
+last major update October 27, 2021
+posted in
+Adafruit Products
+Sensors
+/
+Proximity
+CircuitPython
+Breakout Boards
+STEMMA
+Save
+New Favorite
+×
+Please
+sign in
+to include this guide in your list of favorites.
+You will be redirected back to this guide once you
+sign in
+, and can then save this guide as one of your favorites.
+Close
+Link Note
+Download
+Overview
+Pinouts
+Python & CircuitPython
+Python Docs
+Arduino
+Arduino Docs
+WipperSnapper
+Downloads
+Single page
+Feedback?  Corrections?
+Text View
+Guide Products
+view all
+Your browser does not support the video tag.
+Primary
+Adafruit VL53L1X Time of Flight Distance Sensor - ~30 to 4000mm
+$14.95
+Add  to Cart
+View product details
+30
+Beginner
+Product guide
+😍
+2
+Pinouts
+Text emphasized with a blue exclamation:
+This breakout ships with a protector over the sensor. It must be removed before use! See details at the bottom of the Overview page.
+Power Pins
+VIN
+- This is the power pin. To power the board, give it the same power as the logic level of your microcontroller - e.g. for a 3V microcontroller like a Feather M4, use 3V, or for a 5V microcontroller like Arduino, use 5V.
+GND
+- This is common ground for power and logic.
+I2C Logic Pins
+The default I2C address for the VL53L1X is
+0x29
+.
+SCL
+- I2C clock pin, connect to your microcontroller I2C clock line. There's a
+10K pullup
+on this pin.
+SDA
+- I2C data pin, connect to your microcontroller I2C data line. There's a
+10K pullup
+on this pin.
+STEMMA QT
+-
+These connectors allow you to connect to development boards with
+STEMMA QT
+connectors or to other things with
+various associated accessories
+.
+Other Pins
+GPIO
+- This is the interrupt output pin, it is 2.8V logic level output - it can be read by 3.3V and most 5V logic microcontrollers
+XSHUT
+- This is the shutdown pin. It is active low, and is logic-level shifted so you can use 3V or 5V logic.
+LED Jumper
+LED jumper
+- This jumper is located on the back of the board. Cut the trace on this jumper to cut power to the "on" LED.
+Page last edited March 08, 2024
+Overview
+Python & CircuitPython
+Related Guides
+Your browser does not support the video tag. This links to the guide Motion Sensor Bat.
+Motion Sensor Bat
+By
+Ruiz Brothers
+beginner
+11
+Your browser does not support the video tag. This links to the guide Haunted Air Blaster.
+Haunted Air Blaster
+By
+John Park
+intermediate
+13
+Your browser does not support the video tag. This links to the guide PropMaker Jack O'Lantern.
+PropMaker Jack O'Lantern
+By
+Ruiz Brothers
+intermediate
+25
+Adafruit FONA 808 Cellular + GPS Shield for Arduino
+By
+lady ada
+intermediate
+30
+RGB LCD Shield
+By
+lady ada
+Product Guide
+69
+Gemma M0 Vibration Sensor Motion Alarm
+By
+John Park
+beginner
+23
+Three Button Foot Switch
+By
+Ruiz Brothers
+beginner
+48
+Introducing the Adafruit Bluefruit LE Friend
+By
+Kevin Townsend
+beginner
+38
+Adafruit STEMMA Reflective Photo Interrupt Sensor
+By
+Liz Clark
+Product Guide
+6
+Adafruit UPDI Friend
+By
+Liz Clark
+Product Guide
+7
+Your browser does not support the video tag. This links to the guide USB Rotary Media Dial.
+USB Rotary Media Dial
+By
+Ruiz Brothers
+beginner
+73
+Adafruit Feather HUZZAH ESP8266
+By
+lady ada
+Product Guide
+302
+Tandy 1000 Keyboard to USB with CircuitPython
+By
+Jeff Epler
+beginner
+4
+Moon Phase Clock for Adafruit Matrix Portal
+By
+Phillip Burgess
+beginner
+154
+Your browser does not support the video tag. This links to the guide Bluetooth Turtle Bot with CircuitPython and Crickit.
+Bluetooth Turtle Bot with CircuitPython and Crickit
+By
+John Park
+beginner
+20
+Create Wishlist
+×
+Title
+Description
+Close
+Search
+Search
+Categories

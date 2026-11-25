@@ -1,0 +1,144 @@
+schema_version: 1
+part_id: electronic_breakout_sensor_motion_accelerometer_mma8451_header_breakout_adafruit_2019
+status: verified
+board_revision: >-
+  Adafruit MMA8451 product 2019 carrier represented by the official Adafruit
+  Adafruit MMA8451.brd at repository commit
+  f9fa425744bf6c85d7ff0a4c80fd36311a0da974. No separate silkscreen or
+  manufacturing revision is identified; this record is for this exact published
+  CAD layout and does not establish that every historical production batch is
+  identical.
+identity_evidence: >-
+  Adafruit product 2019 is the MMA8451 accelerometer breakout and states two
+  2.5 mm mounting holes. The official Adafruit MMA8451-Breakout-PCB repository
+  README describes its board files as the Adafruit MMA8451 Breakout and links
+  product 2019; the Downloads section of the official product guide links the
+  EagleCAD PCB files on GitHub. The pinned repository snapshot contains the
+  exact file Adafruit MMA8451.brd. The CAD is therefore linked to the catalogue
+  carrier, while the limitation on historical production revisions remains.
+board_size:
+- 20.32
+- 17.78
+mounting_holes:
+- id: U$3:pad:P$1
+  x_mm: -7.62
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+- id: U$6:pad:P$1
+  x_mm: 7.62
+  y_mm: 6.35
+  diameter_mm: 2.5
+  plated: true
+  package: MOUNTINGHOLE_2.5_PLATED
+  source_id: cad
+coordinate_system:
+  units: mm
+  origin: pcb_bounding_box_centre
+  view: top
+  x_positive: right
+  y_positive: up
+method: eagle
+geometry_source_id: cad
+derivation: >-
+  The complete EAGLE layer-20 outline comprises four straight edges and four
+  2.54 mm corner arcs, with native bounds x=[0,20.32] mm and y=[0,17.78] mm.
+  Thus the bounding-box board size is [20.32,17.78] mm and native centre is
+  (10.16,8.89) mm. Convert each native top-view position using
+  x_mm=x_native-10.16 and y_mm=y_native-8.89; no rotation or mirror is applied
+  (quarter_turn=0). U$3 and U$6 are placed at native (2.54,15.24) mm and
+  (17.78,15.24) mm, respectively, giving centred (-7.62,6.35) mm and
+  (7.62,6.35) mm. Both selected features are pads in the explicitly named
+  MOUNTINGHOLE_2.5_PLATED package, whose P$1 drill is 2.5 mm and pad diameter is
+  3.2 mm. The full drill review also found eight 1.0 mm JP1 header pad drills;
+  they are electrical header pads, not mounting holes. The product listing's
+  nominal 21 x 18 mm overall size is rounded and was not substituted for the
+  exact EAGLE outline dimensions.
+review:
+  identity: true
+  outline: true
+  hole_selection: true
+  coordinate_frame: true
+  conflicts_resolved: true
+reviewed_by: gpt-6-luna
+identity_source_ids:
+- product
+- guide_downloads
+- repo_readme
+- cad
+sources:
+- id: cad
+  local_file: mounting_evidence/Adafruit MMA8451.brd
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-MMA8451-Breakout-PCB/f9fa425744bf6c85d7ff0a4c80fd36311a0da974/Adafruit%20MMA8451.brd
+  kind: manufacturer_cad
+  locator: >-
+    Pinned commit f9fa425744bf6c85d7ff0a4c80fd36311a0da974, Eagle board named
+    Adafruit MMA8451.brd; inspect XML board outline and MOUNTINGHOLE_2.5_PLATED
+    packages U$3/U$6.
+  registered_at: '2026-11-07T11:50:11+00:00'
+  bytes: 134029
+  sha256: 83e363f22dca040fac9b27b0c7bdf0a6fbe297e233fe1c068ba72afb56cbe703
+- id: repo_readme
+  local_file: mounting_evidence/README.md
+  url: https://raw.githubusercontent.com/adafruit/Adafruit-MMA8451-Breakout-PCB/f9fa425744bf6c85d7ff0a4c80fd36311a0da974/README.md
+  kind: manufacturer_repository
+  locator: >-
+    Repository README identifies PCB files for Adafruit MMA8451 Breakout and
+    says the format is EagleCAD schematic and board layout; links product 2019.
+  registered_at: '2026-11-07T11:50:12+00:00'
+  bytes: 1794
+  sha256: 86b3f5d96facccad302626398ece63c900d6a445e94292577590b80d8b0621e2
+- id: product
+  local_file: website.html
+  url: https://www.adafruit.com/product/2019
+  kind: manufacturer_product
+  locator: >-
+    Product 2019 identity; page states two 2.5 mm mounting holes and nominal
+    dimensions 21 x 18 x 2 mm.
+  registered_at: '2026-11-07T11:50:12+00:00'
+  bytes: 83832
+  sha256: f3a69787cc314ecbdca56b703bdd7664940d2515cc227afcc15cef5e0b380150
+- id: guide_downloads
+  local_file: reference/downloads.html
+  url: https://learn.adafruit.com/adafruit-mma8451-accelerometer-breakout/downloads
+  kind: manufacturer_guide
+  locator: >-
+    Official product guide Downloads page lists EagleCAD PCB files on GitHub and
+    a fabrication print, corroborating the manufacturer's PCB repository link.
+  registered_at: '2026-10-23T20:34:16+00:00'
+  bytes: 66384
+  sha256: 483ba265f16f5a95b6408b2389f51c0ecdf3ec4b345d76e152839e9960ab4615
+attempts:
+- source: Adafruit product 2019 page and MMA8451 guide Downloads page
+  result: >-
+    Confirmed the product identity, two stated 2.5 mm mounting holes, nominal
+    dimensions, and official link to EagleCAD PCB files. The guide also lists a
+    fabrication print; exact drill centers and the board outline were instead
+    resolved from the pinned manufacturer EAGLE board file.
+- source: Adafruit-MMA8451-Breakout-PCB official repository, pinned commit f9fa425744bf6c85d7ff0a4c80fd36311a0da974
+  result: >-
+    Downloaded and hash-registered the named Adafruit MMA8451.brd and README.
+    Reviewed the full layer-20 outline and every drill candidate; selected only
+    the two explicitly named plated mounting-hole footprints.
+conflicts: []
+notes:
+- >-
+  The selected 2.5 mm values are plated PCB drill diameters; package copper pad
+  diameter is 3.2 mm. Product listing dimensions are rounded nominal values;
+  the registered CAD supplies the exact outline for this CAD revision.
+- >-
+  The preview and standard holder represent bounding-box size and hole geometry
+  only. Component, connector, screw-head and underside clearance and physical
+  fit remain unverified.
+fit_status: generic_holder_not_physical_fit_tested
+updated_at: '2026-11-07T11:50:13+00:00'
+extraction:
+  selected_ids:
+  - U$3:pad:P$1
+  - U$6:pad:P$1
+  quarter_turn: 0
+  native_centre_mm:
+  - 10.16
+  - 8.89
